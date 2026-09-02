@@ -1,0 +1,42 @@
+﻿{
+    "id":  910,
+    "hub_id":  1232,
+    "guid":  "com.icyclawz.itemattributefix",
+    "name":  "Item Attribute Fix",
+    "slug":  "item-attribute-fix",
+    "teaser":  "A universal fix for item attribute tooltip not being updated when the attribute has changed while the inspection window is open.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1232.png",
+    "downloads":  21841,
+    "favourites_count":  31,
+    "description":  "\u003cp\u003e\u003cstrong\u003eInstallation:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eExtract the ZIP to your SPT-AKI installation folder.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDescription:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eThe tooltip shown when hovering over an attribute in the item inspection window is static by default.\u003c/p\u003e\n\u003cp\u003eIn order to update it after an item has been changed (e.g. ammo added to a magazine, mods attached/detached to/from gear, etc.), the inspection window has to be closed and reopened.\u003c/p\u003e\n\u003cp\u003eThis simple client-side mod updates the tooltip’s text the moment the attribute is being updated.\u003c/p\u003e\n\u003cp\u003eThis fix can be used with any mod that utilizes the attribute tooltips (“FullStringValue” field of “ItemAttributeClass”).\u003c/p\u003e\n\u003cp\u003eThis fix was initially made as a companion to my “\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/909/item-sell-price\" rel=\"noreferrer noopener\"\u003eItem Sell Price\u003c/a\u003e” and “\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/914/magazine-inspector\" rel=\"noreferrer noopener\"\u003eMagazine Inspector\u003c/a\u003e” mods.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/910/item-attribute-fix",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-06-08T18:33:00.000000Z",
+    "created_at":  "2023-06-08T18:33:03.000000Z",
+    "updated_at":  "2026-07-28T06:05:09.000000Z",
+    "owner":  {
+                  "id":  31543,
+                  "name":  "IcyClawz",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/6cbf3ac470387423baf33591cb102396de5cc3d0_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/54e97f2ed2ecaf7e15d24a13e2dadf69cde55488_1280w.webp",
+                  "created_at":  "2023-05-26T10:06:34.000000Z",
+                  "updated_at":  "2026-07-26T16:27:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,42 @@
+﻿{
+    "id":  1575,
+    "hub_id":  2154,
+    "guid":  "redlaser42.increaseclimbheight",
+    "name":  "Increase Climb Height",
+    "slug":  "increase-climb-height",
+    "teaser":  "Increases the height at which you can perform a climb.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2154.png",
+    "downloads":  116814,
+    "favourites_count":  92,
+    "description":  "\u003cp\u003eAdd verticality to your gameplay. Access previously inaccessible roofs. Hop fences you know you could hop irl.\u003c/p\u003e\n\u003cp\u003eThis works much better than I ever thought it would. I have never gotten wedged or stuck outside the map anywhere. It works on all objects. Just look up a little and hold space.\u003c/p\u003e\n\u003cdiv class=\"youtube-lite\" data-video-id=\"1WVKBJ5D3W0\" data-embed-url=\"https://www.youtube-nocookie.com/embed/1WVKBJ5D3W0?autoplay=1\"\u003e\u003cimg src=\"https://i.ytimg.com/vi/1WVKBJ5D3W0/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /\u003e\u003c/div\u003e\n\u003cp\u003eLet me know if you find any good new spots. I have only played Woods.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1575/increase-climb-height",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-07-19T03:51:00.000000Z",
+    "created_at":  "2024-07-19T03:51:53.000000Z",
+    "updated_at":  "2026-07-28T09:47:44.000000Z",
+    "owner":  {
+                  "id":  51899,
+                  "name":  "redlaser42",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/334fd164f2c5b4783f7d47cf4cf3fa3350de7da4_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/cfc15f6f6e631c159e27f82a1f2517a093990e13_1280w.webp",
+                  "created_at":  "2024-05-15T18:12:45.000000Z",
+                  "updated_at":  "2026-08-10T02:26:26.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

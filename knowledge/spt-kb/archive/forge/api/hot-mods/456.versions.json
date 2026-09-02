@@ -1,0 +1,58 @@
+﻿[
+    {
+        "id":  3715,
+        "hub_id":  10543,
+        "version":  "3.1.1",
+        "description":  "\u003cp\u003eCompatible SPT-Aki 3.9.0\u003c/p\u003e\n\u003cp\u003ePlease update your \u003cstrong\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-eft-api\" rel=\"noreferrer noopener\"\u003eEFTApi\u003c/a\u003e\u003c/strong\u003e to 1.2.2\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/456/game-panel-hud/3.1.1",
+        "content_length":  null,
+        "spt_version_constraint":  "3.9.0",
+        "downloads":  72405,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-07-07T12:34:01.000000Z",
+        "created_at":  "2024-07-07T12:34:01.000000Z",
+        "updated_at":  "2026-05-14T03:55:37.000000Z"
+    },
+    {
+        "id":  2304,
+        "hub_id":  12304,
+        "version":  "3.2.0",
+        "description":  "\u003cp\u003eCompatible SPT-Aki 3.10.0\u003c/p\u003e\n\u003cp\u003eAdd Immersive Compass Setting\u003c/p\u003e\n\u003cp\u003ePlease update your \u003cstrong\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-eft-api\" rel=\"noreferrer noopener\"\u003eEFTApi\u003c/a\u003e\u003c/strong\u003e to 1.3.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/456/game-panel-hud/3.2.0",
+        "content_length":  null,
+        "spt_version_constraint":  "3.10.0",
+        "downloads":  47385,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-11-27T02:55:34.000000Z",
+        "created_at":  "2024-11-27T02:55:34.000000Z",
+        "updated_at":  "2026-05-14T03:19:23.000000Z"
+    },
+    {
+        "id":  1035,
+        "hub_id":  13751,
+        "version":  "3.3.0",
+        "description":  "\u003cp\u003eUpdate EFTApi to \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-kmy-tarkov-api/\" rel=\"noreferrer noopener\"\u003eKmyTarkovApi\u003c/a\u003e dependency\u003c/p\u003e\n\u003cp\u003eStop support for old versions (2.3.1-3.10.0)\u003c/p\u003e\n\u003cp\u003eStart 3.11.0 + support\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/456/game-panel-hud/3.3.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  67540,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-23T13:21:52.000000Z",
+        "created_at":  "2025-03-23T13:21:52.000000Z",
+        "updated_at":  "2026-05-14T02:03:20.000000Z"
+    },
+    {
+        "id":  12152,
+        "hub_id":  null,
+        "version":  "3.4.0",
+        "description":  "\u003cp\u003eCompatible SPT-Aki 4.0.0\u003c/p\u003e\n\u003cp\u003eImmersion Compass not working is not with GPH issue, BSG corrupted the MK2 compass again in an update. I don’t plan to fix this issue caused by BSG.\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/456/game-panel-hud/3.4.0",
+        "content_length":  157240,
+        "spt_version_constraint":  "4.0.x",
+        "downloads":  76269,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-11-03T10:43:00.000000Z",
+        "created_at":  "2025-11-03T10:44:07.000000Z",
+        "updated_at":  "2026-07-28T18:01:15.000000Z"
+    }
+]

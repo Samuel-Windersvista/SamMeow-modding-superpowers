@@ -1,0 +1,43 @@
+﻿{
+    "id":  1875,
+    "hub_id":  2536,
+    "guid":  null,
+    "name":  "Props Dad Gamer Mod for \u003e3.9",
+    "slug":  "props-dad-gamer-mod-for-39",
+    "teaser":  "Rebuilt for 3.11, I\u0027ll delete it as soon as Props will release new version",
+    "thumbnail":  "",
+    "downloads":  30266,
+    "favourites_count":  2,
+    "description":  "\u003cp\u003eProps \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/926-dad-gamer-mode/#overview\" rel=\"noreferrer noopener\"\u003eDad Gamer Mode\u003c/a\u003e, rebuilt for 3.10, I’ll delete it as soon as Props will release new version\u003c/p\u003e\n\u003cp\u003eI’ve tested\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGodMode,\u003c/li\u003e\n\u003cli\u003eCODMode + eating\u003c/li\u003e\n\u003cli\u003einfinite stamina and needs\u003c/li\u003e\n\u003cli\u003ereload speed modifiers\u003c/li\u003e\n\u003cli\u003eKeep1Health\u003c/li\u003e\n\u003c/ul\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1875/props-dad-gamer-mod-for-39",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2024-12-08T16:49:50.000000Z",
+    "created_at":  "2024-12-08T16:49:50.000000Z",
+    "updated_at":  "2026-05-14T03:13:52.000000Z",
+    "owner":  {
+                  "id":  21495,
+                  "name":  "sugonyak",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/b0570a2fc482c82cd4cc0e2296adc696f23b33b7_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2022-08-08T12:40:31.000000Z",
+                  "updated_at":  "2026-07-10T04:50:11.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  15516,
+                                   "name":  "Props",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/53f17847d86ea53a84f69a549ce2b50baf31d665_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-03-09T07:33:42.000000Z",
+                                   "updated_at":  "2026-07-10T04:50:00.000000Z"
+                               }
+                           ],
+    "category":  null
+}

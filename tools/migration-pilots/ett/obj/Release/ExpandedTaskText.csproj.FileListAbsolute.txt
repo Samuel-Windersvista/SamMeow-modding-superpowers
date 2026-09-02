@@ -1,0 +1,16 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\config\config.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\db\GunsmithLocaleEN.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\db\QuestInfo.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\ExpandedTaskText.deps.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\ExpandedTaskText.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\bin\Release\ExpandedTaskText.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\refint\ExpandedTaskText.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ExpandedTaskText.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\ett\obj\Release\ref\ExpandedTaskText.dll

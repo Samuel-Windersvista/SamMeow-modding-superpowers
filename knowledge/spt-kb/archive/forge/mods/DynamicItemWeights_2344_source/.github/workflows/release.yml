@@ -1,0 +1,55 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      build-ver:
+        description: Build version
+        required: true
+        default: v0.0.0
+        
+env:
+  PLUGIN_NAME: Tosox.DynamicItemWeights
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs:
+      - build
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: SPT-DynamicItemWeights
+        path: artifact
+
+    - name: Create Release Zip
+      run: |
+        mkdir -p release/BepInEx/plugins/${{ env.PLUGIN_NAME }}
+        cp -a artifact/*.dll release/BepInEx/plugins/
+        cp -a emptyweights.json release/BepInEx/plugins/${{ env.PLUGIN_NAME }}
+        cd release
+        zip -r ../${{ env.PLUGIN_NAME }}-${{ github.event.inputs.build-ver }}.zip .
+        cd ..
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.event.inputs.build-ver }}
+        name: ${{ github.event.inputs.build-ver }}
+        files: |
+          ${{ env.PLUGIN_NAME }}-${{ github.event.inputs.build-ver }}.zip
+        draft: false
+        prerelease: false
+        make_latest: true

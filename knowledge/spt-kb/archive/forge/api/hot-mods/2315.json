@@ -1,0 +1,36 @@
+﻿{
+    "id":  2315,
+    "hub_id":  3031,
+    "guid":  "ombarella",
+    "name":  "Ombarella",
+    "slug":  "ombarella",
+    "teaser":  "Light-dependent Bot Vision",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/3031.png",
+    "downloads":  8471,
+    "favourites_count":  17,
+    "description":  "\u003cp\u003eThis mod’s development was driven by desperation: with the apparent end of \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1453-that-s-lit-logical-ai-vision/\" rel=\"noreferrer noopener\"\u003eThatsLit\u003c/a\u003e support, I felt there was a serious gap in the SPT mod array. For many, ThatsLit was a core mod, its absence leaving SPT somewhat unplayable. So I did a little research and undertook to try and throw something together.\u003c/p\u003e\n\u003cp\u003eWhat results is a much different mod, far less complex and professional, and containing far fewer features – I am not the guy who can remake ThatsLit, nor have I tried to. Instead I’ve attempted to produce something that works pretty well most of the time. I basically assume that everybody playing SPT has SAIN installed, and some of the gaps in this mod can be plugged with SAIN presets (eg. detection times affected by indoor/outdoor, weather, etc).\u003c/p\u003e\n\u003cp\u003eOmbarella functions like this: a camera is constantly circling your player at random positions, essentially taking photos of you at fixed intervals. Each ‘photo’ is analyzed to determine how light or dark it is, and contributes to a running score of how much light is emitted from your character. This score is then pushed to the bots, and entered into the value of the time it takes for bots to identify you as a target.\u003c/p\u003e\n\u003cp\u003eOne of the nice upsides of this method is that your gear color is inherently calculated into your visibility factor: darker and grayer clothes and kit will result in a lower visibility score, especially at night and in dark places.\u003c/p\u003e\n\u003cp\u003eAFAIK this doesn’t work with Fika.\u003c/p\u003e\n\u003cp\u003eFor now?\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2315/ombarella",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-09-19T10:20:25.000000Z",
+    "created_at":  "2025-09-19T10:20:25.000000Z",
+    "updated_at":  "2026-07-28T09:25:02.000000Z",
+    "owner":  {
+                  "id":  52987,
+                  "name":  "adishee",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=a\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-05-31T11:11:42.000000Z",
+                  "updated_at":  "2026-07-17T15:45:21.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

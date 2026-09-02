@@ -1,0 +1,9 @@
+{
+    "68561cd4801134be939e11f6 name": "Gifts of The Past",
+    "68561cd4801134be939e11f6 description": "Hello mercenary. You know how memories creep up from the old days. Back when I was running things at the Factory I overheard my boss talking about a rare antique smoothbore pistol. Kept it in a fancy display case. Word is it was gifted to some accountant he dealt with. I want that piece for myself now. Something about the craft of it calls to me. Check the Black Knight building over in Military Reserve. That's where that accountant's office used to be. Find it and bring it back. I’ll make it worth your while.",
+    "68561cd4801134be939e11f6 startedMessageText": "Hey mercenary. Like I mentioned that accountant’s office should be somewhere in the Black Knight building. Probably up on the top floor. Look for a sign or something marking the door. Keep your eyes sharp.",
+    "68561cd4801134be939e11f6 successMessageText": "This is going to make a great part of my collection! Crafts like that are hard to come by.",
+    "68561b99da76e0be82eb3866": "Find the Antique Pistol Case located in the Senior Accountant's office located in Black Knight.",
+    "68561c0d6d60f67604f1feb9": "Hand in Antique Pistol Case",
+    "6859fed30c78167809e1d370": "Survive and extract from the location"
+}

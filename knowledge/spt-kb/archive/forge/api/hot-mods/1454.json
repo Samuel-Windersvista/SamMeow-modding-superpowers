@@ -1,0 +1,49 @@
+﻿{
+    "id":  1454,
+    "hub_id":  2010,
+    "guid":  "com.cwx.megamod",
+    "name":  "CWX-MegaMod",
+    "slug":  "cwx-megamod",
+    "teaser":  "All my mods in one, BushWhacker, GrassCutter, EnvironmentEnjoyer, MasterKey, InventoryViewer, SpaceUser, TradingPlayerView, WeatherPatcher, PainkillerDesat, AlarmReplacer",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2010.png",
+    "downloads":  75063,
+    "favourites_count":  45,
+    "description":  "\u003ch4\u003eThis is my collection of mods, combined into one for easy use and development\u003c/h4\u003e\n\u003cp\u003eMod page is WIP, just wanted to get 4.0.0 version out the way.\u003c/p\u003e\n\u003chr /\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003ch6\u003eMain Mods\u003c/h6\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul\u003e\n\u003cli\u003eBushWhacker - Lets you walk through bushes like the old days.\u003c/li\u003e\n\u003cli\u003eGrassCutter - Removes grass for a 90’s viewing experience.\u003c/li\u003e\n\u003cli\u003eMasterKey - Gives you the ability to use a Keycard for every door and lock in Tarkov.\u003c/li\u003e\n\u003cli\u003eTradingPlayerView - (bad naming) this will remove the massive list from your view when hovering over a box trying to sell to a trader and it saying this cannot be sold.\u003c/li\u003e\n\u003cli\u003eSpaceUser - This will give you the ability to buy from the flea by hitting space instead of (y) and will allow you to split ammo stacks aswell.\u003c/li\u003e\n\u003cli\u003eEnvironmentEnjoyer - Takes GrassCutter to the extreme and removes tree’s and bushes.\u003c/li\u003e\n\u003cli\u003ePainkillerDesat - Removes the visual effects of painkillers.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003ch6\u003eDebug Mods (for debug use only)\u003c/h6\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul\u003e\n\u003cli\u003eInstantSearch - Gives you the ability to instantly search all containers.\u003c/li\u003e\n\u003cli\u003eFoodWater - Stops your PMC from loosing hydration and energy.\u003c/li\u003e\n\u003cli\u003eLootLoss - Gets rid of loot locally for fast loading times.\u003c/li\u003e\n\u003cli\u003eInventoryViewer - Gives you the ability to View secure containers.\u003c/li\u003e\n\u003cli\u003eGodMode - Self explanatory.\u003c/li\u003e\n\u003cli\u003eCameraShake - Removes the aimpunch from being shot.\u003c/li\u003e\n\u003cli\u003eThermalMode - Adds the ability to see in thermal.\u003c/li\u003e\n\u003cli\u003eBetterThermalMode - Adds a less noisy version.\u003c/li\u003e\n\u003cli\u003eNightVisionMode - Adds the ability to see in Night vision\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cp\u003eAny issues, please report them here \u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/CWXDEV/MegaMod/issues\" rel=\"noreferrer noopener\"\u003ehttps://github.com/CWXDEV/MegaMod/issues\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1454/cwx-megamod",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  3,
+    "published_at":  "2024-06-02T08:51:00.000000Z",
+    "created_at":  "2024-06-02T08:51:23.000000Z",
+    "updated_at":  "2026-07-28T06:06:29.000000Z",
+    "owner":  {
+                  "id":  9668,
+                  "name":  "CWX",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/6c471bf012d488dbee6c4c67b5e81bbd404551f9_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2021-09-25T23:47:26.000000Z",
+                  "updated_at":  "2026-07-10T04:49:48.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  26188,
+                                   "name":  "Kaeno",
+                                   "profile_photo_url":  "https://ui-avatars.com/api/?name=K\u0026color=7F9CF5\u0026background=EBF4FF",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2023-01-28T16:18:10.000000Z",
+                                   "updated_at":  "2026-07-29T20:59:34.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  3,
+                     "hub_id":  19,
+                     "title":  "Scripting",
+                     "slug":  "scripting",
+                     "description":  ""
+                 }
+}

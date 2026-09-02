@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEADBEEF-BEEF-BEEF-BEEF-BEEFBEEFBEEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeparateHostility</RootNamespace>
+    <AssemblyName>dk.SeparateHostility</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /q /y "E:\WorkSpace\GameMods\SeparateHostility\bin\Debug\dk.SeparateHostility.dll" "D:\EFT\BepInEx\plugins\"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\EFT\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Accessibility">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Accessibility.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyMotion">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\AmplifyMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationSystem.Recording">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\AnimationSystem.Recording.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationSystem.Types">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\AnimationSystem.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Autodesk.Fbx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>D:\EFT\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.componentace.compression.libs.zlib">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\bsg.componentace.compression.libs.zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.console.core">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\bsg.console.core.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.microsoft.extensions.objectpool">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\bsg.microsoft.extensions.objectpool.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.system.buffers">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\bsg.system.buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="BSG.Unity.Wires">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\BSG.Unity.Wires.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.SoftMaskForUGUI">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Coffee.SoftMaskForUGUI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.nvidia.reflex.Runtime">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\com.nvidia.reflex.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Comfort.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonExtensions">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\CommonExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="FbxBuildTestAssets">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\FbxBuildTestAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="FilesChecker">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\FilesChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\ItemComponent.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemTemplate.Types">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\ItemTemplate.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="JBooth.MicroSplat.Core">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\JBooth.MicroSplat.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="kcp">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\kcp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibraryLoaderUtility">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\LibraryLoaderUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Meta.XR.Audio">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Meta.XR.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Mono.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.UnityConverters">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.UnityConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Novell.Directory.Ldap">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Novell.Directory.Ldap.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>D:\EFT\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Internals">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.ServiceModel.Internals.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="uLipSync.Runtime">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\uLipSync.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Formats.Fbx.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.MemoryProfiler">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlayableGraphVisualizer">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.PlayableGraphVisualizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Csg">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ProBuilder.Csg.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.KdTree">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ProBuilder.KdTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Poly2Tri">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Stl">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ProBuilder.Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Recorder.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="where-allocations">
+      <HintPath>D:\EFT\EscapeFromTarkov_Data\Managed\where-allocations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\BotsGroupManager.cs" />
+    <Compile Include="Patches\BotsGroupManagerPatch.cs" />
+    <Compile Include="Patches\GetGroupsCombinedPatch.cs" />
+    <Compile Include="Patches\SplitPmcGroupPatch.cs" />
+    <Compile Include="Patches\SetHostilityPatch.cs" />
+    <Compile Include="ShMod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs"/>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

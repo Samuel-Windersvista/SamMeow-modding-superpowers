@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Violate Responsive Admin Template">
+        <meta name="keywords" content="A sentiment and stock analysis tool made at BoilerMake.">
+        <title>Show Me The Money | A Public Sentiment Stock Analysis Tool</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/icons.css" rel="stylesheet">
+        <link href="css/generics.css" rel="stylesheet"> 
+        <link href="css/d3.css" rel="stylesheet">
+         <link href="css/toastr.css" rel="stylesheet">
+    </head>
+    <body id="skin-blur-greenish">
+        <header id="header" class="media">
+            <a class="logo pull-left" href="index.html">Show Me The Money</a>
+            
+            <div class="media-body">
+                <div class="media" id="top-menu">
+
+                    <div id="time" class="pull-right">
+                        <span id="hours"></span>
+                        :
+                        <span id="min"></span>
+                        :
+                        <span id="sec"></span>
+                    </div>
+                    
+                    <div class="media-body">
+                        <input type="text" class="main-search" placeholder = "Input New Stock Ticker Here" id = "inputFormTicker">
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="clearfix"></div>
+        
+        <section id="main" class="p-relative" role="main">
+            
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                
+                <!-- Sidbar Widgets -->
+                <div class="side-widgets overflow">
+                    <!-- Profile Menu -->
+                    <div class="text-center s-widget m-b-25 dropdown m-t-25" id="profile-menu">
+                        <img class="profile-pic animated">
+                        <h3 class="m-0">GOOG</h3>
+                        <div id="sub">Google</div>
+                    </div>
+                    
+                    <!-- Calendar -->
+                    <div class="s-widget m-b-25">
+                        <div id="sidebar-calendar"></div>
+                    </div>
+                    
+                    <!-- Feeds -->
+                    <div class="s-widget m-b-25">
+                        <h2 class="tile-title">
+                           News Feeds
+                        </h2>
+                        
+                        <div class="s-widget-body">
+                            <div id="news-feed"><ul class="feedEkList list-unstyled" id = "newsFeedList"></ul></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+            </aside>
+        
+            <!-- Content -->
+            <section id="content" class="container">
+            
+                <!-- Messages Drawer -->
+                <div id="messages" class="tile drawer animated">
+                    <div class="listview narrow">
+                        <div class="media">
+                            <a href="">Send a New Message</a>
+                            <span class="drawer-close">&times;</span>
+                            
+                        </div>
+                        <div class="overflow" style="height: 254px">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem sit amet tristique.</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body"></small><br>
+                                    <a class="t-overflow" href="">Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted"></small><br>
+                                    <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem sit amet tristique.</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">Wendy Mitchell - On 19/12/2013</small><br>
+                                    <a class="t-overflow" href="">Integer a eros dapibus, vehicula quam accumsan, tincidunt purus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media text-center whiter l-100">
+                            <a href=""><small>VIEW ALL</small></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notification Drawer -->
+                <div id="notifications" class="tile drawer animated">
+                    <div class="listview narrow">
+                        <div class="media">
+                            <a href="">Notification Settings</a>
+                            <span class="drawer-close">&times;</span>
+                        </div>
+                        <div class="overflow" style="height: 254px">
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">Nadin Jackson - 2 Hours ago</small><br>
+                                    <a class="t-overflow" href="">Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">David Villa - 5 Hours ago</small><br>
+                                    <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">Harris worgon - On 15/12/2013</small><br>
+                                    <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">Mitch Bradberry - On 14/12/2013</small><br>
+                                    <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem sit amet tristique.</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">Nadin Jackson - On 15/12/2013</small><br>
+                                    <a class="t-overflow" href="">Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img width="40" src="" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <small class="text-muted">David Villa - On 16/12/2013</small><br>
+                                    <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media text-center whiter l-100">
+                            <a href=""><small>VIEW ALL</small></a>
+                        </div>
+                    </div>
+                </div>
+                                                
+                <hr class="whiter" />
+                
+                <!-- Quick Stats -->
+
+                <hr class="whiter" />
+                
+                <!-- Main Widgets -->
+               
+                <div class="block-area">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Main Chart -->
+                            <div class="tile">
+                                <h2 class="tile-title">Statistics</h2>
+                                <div  style = "margin-left:20px; margin-top:30px; padding-bottom:30px;">
+                                <canvas id="myChart" width="880px" height="400px"></canvas>
+                                </div>
+                            </div>
+    
+                            <!-- Pies -->
+                            <div class="tile text-center">
+                                <!--
+                                <div class="tile-dark p-10">
+                                    <div class="pie-chart-tiny" data-percent="86">
+                                        <span class="percent"></span>
+                                        <span class="pie-title">New Visitors <i class="m-l-5 fa fa-retweet"></i></span>
+                                    </div>
+                                    <div class="pie-chart-tiny" data-percent="23">
+                                        <span class="percent"></span>
+                                        <span class="pie-title">Bounce Rate <i class="m-l-5 fa fa-retweet"></i></span>
+                                    </div>
+                                    <div class="pie-chart-tiny" data-percent="57">
+                                        <span class="percent"></span>
+                                        <span class="pie-title">Emails Sent <i class="m-l-5 fa fa-retweet"></i></span>
+                                    </div>
+                                    <div class="pie-chart-tiny" data-percent="34">
+                                        <span class="percent"></span>
+                                        <span class="pie-title">Sales Rate <i class="m-l-5 fa fa-retweet"></i></span>
+                                    </div>
+                                    <div class="pie-chart-tiny" data-percent="81">
+                                        <span class="percent"></span>
+                                        <span class="pie-title">New Signups <i class="m-l-5 fa fa-retweet"></i></span>
+                                    </div>
+                                </div>
+                            -->
+                            </div>
+
+                            <!--  Recent Postings -->
+                            <div class="row">
+                                                           <!-- USA Map -->
+                                <div class="tile col-md-5" style = "padding-left: 0px;padding-right: 0px; margin-left:15px">
+                                        <h2 class="tile-title">Positive Sentiment</h2>
+                                        <div class="listview narrow" id = "positiveSentiment">
+                                            
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="tile col-md-5" style = "padding-left: 0px;padding-right: 0px; margin-right:15px; margin-left: 25px">
+                                        <h2 class="tile-title">Negative Sentiment</h2>
+                                        <div class="listview narrow" id = "negativeSentiment">
+                                             
+                                        </div>  
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+               
+                    
+            </section>
+        </section>
+    </body>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/stocks.js"></script>
+    <script src="../main.js"></script>
+    <script src="../scripts/toastr.js"></script>
+    <script src="../scripts/Chart.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+</script>
+</html>

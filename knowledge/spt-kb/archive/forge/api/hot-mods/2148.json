@@ -1,0 +1,43 @@
+﻿{
+    "id":  2148,
+    "hub_id":  2848,
+    "guid":  null,
+    "name":  "Stash Search",
+    "slug":  "stash-search",
+    "teaser":  "Search your stash with ease.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2848.png",
+    "downloads":  14340,
+    "favourites_count":  1,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-2-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eOverview\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eRe-uploaded with the permission of \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/37201-dirtbikercj/\" rel=\"noreferrer noopener\"\u003eCj\u003c/a\u003e All credit for this amazing mod goes to him.\u003c/p\u003e\n\u003cp\u003eAdds a search bar to your stash. Supports strict and loosely typed searches. Also supports searching multiple items at once, just separate each search term with a comma example: Dollars, 7.62, ifak. When the stash is in a searched state it becomes locked to prevent potential data loss. You can drag items out, but cannot drag items back into it until you clear the search. This is a technical limitation and a safe guard. Also yes, you lost 1 row of stash view at a time…. Trade off, worth.\u003c/p\u003e\n\u003cp\u003eHuge thanks to Cj, Arys and DrakiaXYZ for all the help in creating this. It wouldn’t have been possible without them!\u003c/p\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eSearch Reference Sheet\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eList of applicable item class searches\u003c/p\u003e\n\u003cp\u003e@weapon - matches any weapon in the inventory @magazine - matches any magazine in the inventory @ammo - matches any loose ammo or boxed ammo in the inventory @meds - matches any medical items in the inventory @food - matches any food item in the inventory @knife - matches any knives in the inventory @mod - matches any mod in the inventory, I.E scopes, grips etc. @grenade - matches any grenades in the inventory @barter - matches any barter items in the inventory @rig - matches any rigs in the inventory @goggles - matches any goggles in the inventory @container - matches any containers in the inventory @armor - matches any armor in the inventory @info - matches any info items in the inventory @keys - matches any keys in the inventory @fir - matches any found in raid item in the inventory # Tabs {.tabset}\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstallation\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eInstallation directions: Extract using 7zip to the root of your SPT directory as shown below\u003c/p\u003e\n\u003cp\u003eDemonstration Video\u003c/p\u003e\n\u003cp\u003e(Yes, it’s SAIN, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos)\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2148/stash-search",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-05-24T12:38:51.000000Z",
+    "created_at":  "2025-05-24T12:38:51.000000Z",
+    "updated_at":  "2026-07-07T16:59:07.000000Z",
+    "owner":  {
+                  "id":  52282,
+                  "name":  "ArchangelWTF",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-05-20T14:55:34.000000Z",
+                  "updated_at":  "2026-08-09T21:39:13.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  33963,
+                                   "name":  "Cj",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+                                   "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+                                   "created_at":  "2023-07-14T19:01:21.000000Z",
+                                   "updated_at":  "2026-08-10T02:32:30.000000Z"
+                               }
+                           ],
+    "category":  null
+}

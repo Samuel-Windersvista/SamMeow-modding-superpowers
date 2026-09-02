@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{798133E6-F502-4D73-BB3A-4C4D56D14FF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GamePanelHUDHit</RootNamespace>
+    <AssemblyName>GamePanelHUDHit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UNITY_EDITOR|AnyCPU'">
+    <OutputPath>bin\UNITY_EDITOR\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_EDITOR</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>kmyuhkyuk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Preview|AnyCPU'">
+    <OutputPath>bin\Preview\</OutputPath>
+    <DefineConstants>TRACE;Preview</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="KmyTarkovApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=13a2b05844723184, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KmyTarkovApi\Build\bin\Current\KmyTarkovApi.dll</HintPath>
+    </Reference>
+    <Reference Include="KmyTarkovReflection">
+      <HintPath>..\..\KmyTarkovApi\Build\bin\Current\KmyTarkovReflection.dll</HintPath>
+    </Reference>
+    <Reference Include="KmyTarkovUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=13a2b05844723184, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KmyTarkovApi\Build\bin\Current\KmyTarkovUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils, Version=22.1.29.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\BepInEx\core\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Battlestate Games\Client.0.16.1.3.35392\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HitHUDController.cs" />
+    <Compile Include="GamePanelHUDHitPlugin.cs" />
+    <Compile Include="Models\ArmorModel.cs" />
+    <Compile Include="Models\HitHUDModel.cs" />
+    <Compile Include="Models\HitModel.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="Patches\ApplyDamage.cs" />
+    <Compile Include="Patches\ApplyDamageInfo.cs" />
+    <Compile Include="Patches\CoopApplyShot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\HitHUDView.cs" />
+    <Compile Include="Views\HitUIView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kmyuhkyuk.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamePanelHUDCore\GamePanelHUDCore.csproj">
+      <Project>{55f2fbf1-8cec-4b1e-a920-fa6dd908b751}</Project>
+      <Name>GamePanelHUDCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

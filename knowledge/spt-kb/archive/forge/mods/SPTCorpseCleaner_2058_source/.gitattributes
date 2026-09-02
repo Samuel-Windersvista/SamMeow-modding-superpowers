@@ -1,0 +1,4 @@
+* text=auto
+
+*.md text=true eol=lf
+*.cs text=true eol=lf

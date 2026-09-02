@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SkillsExtended/1.6.0": {
+        "runtime": {
+          "SkillsExtended.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SkillsExtended/1.6.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,42 @@
+﻿{
+    "id":  1349,
+    "hub_id":  1870,
+    "guid":  "xyz.drakia.lootradius",
+    "name":  "Loot Radius",
+    "slug":  "loot-radius",
+    "teaser":  "Ever get fed up trying to line your crosshair up just right to loot an item? No more! Now loot any loose loot nearby",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1870.png",
+    "downloads":  117626,
+    "favourites_count":  3,
+    "description":  "\u003ch1\u003eNote: Loot Radius requires a complete rewrite of its grid system due to changes in the latest Tarkov client. The mod will be updated when it’s updated. Do not bother wasting your time attempting to update this mod, it is unlikely I will accept any PRs on this mod\u003c/h1\u003e\n\u003chr /\u003e\n\u003cp\u003eHave you ever seen an item you wanted to loot, but just couldn’t quite line your crosshair up on it to pick it up? No more! Now you can open your inventory and loot any loose loot item within a configurable radius that you can see.\u003c/p\u003e\n\u003cp\u003eThat’s really about it, functionally it’s pretty straight forward, technically it was a major pain to get working. Let me know if you run into any bugs\u003c/p\u003e\n\u003cp\u003eNote: Quest Items can not be drag/dropped into your inventory, as they are not standard inventory items. You can Ctrl+Click them to move them straight into your quest inventory\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://streamable.com/e/h2g671\" rel=\"noreferrer noopener\"\u003ePreview Video\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e2) Select the folder in the zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folder from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos. No, you don’t need to drop it onto LICENSE-Launcher.txt, just drop it into your SPT folder):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eConfiguration\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eLoot Radius (Default: 1.5 meters):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eThe distance to look for loot. The center point is the middle of your body, 0.5m off the ground. 1.5m worked well in my testing\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eCompatibility\u003c/strong\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eMay conflict with True Items and other mods that allow items to stack that don’t normally stack\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1349/loot-radius",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-04-22T05:56:00.000000Z",
+    "created_at":  "2024-04-22T05:56:08.000000Z",
+    "updated_at":  "2026-07-07T16:58:55.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,42 @@
+﻿{
+    "id":  1341,
+    "hub_id":  1859,
+    "guid":  "xyz.drakia.quickmovetocontainer",
+    "name":  "Quick Move To Containers",
+    "slug":  "quick-move-to-containers",
+    "teaser":  "Quickly move items between your inventory or stash, and any open container(s)",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1859.png",
+    "downloads":  130547,
+    "favourites_count":  89,
+    "description":  "\u003cp\u003eHave you ever bought a shiny new Scav Junk Box, and dreaded the thought of shift+clicking a bunch of items into your sorting table, then individually dragging them into their new home?\u003c/p\u003e\n\u003cp\u003eNo more!\u003c/p\u003e\n\u003cp\u003eWith Quick Move To Container, now you just need to open up your Scav Junk Box, and \u003cstrong\u003eCtrl+Click\u003c/strong\u003e any compatible item to have it instantly teleported into that container. No more mussing and fussing with moving items around.\u003c/p\u003e\n\u003cp\u003eCan also be used to move items between two compatible containers by having both open, and \u003cstrong\u003eCtrl+Clicking\u003c/strong\u003e an item (For example, sorting ammo between Ammunition Cases)\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e2) Select the folder in the zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folder from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003eConfiguration\u003c/h3\u003e\n\u003cp\u003eThere is only one option, which I recommend leaving at the default value of enabled\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTarget All Open Containers (Default: True):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eWhen enabled, Ctrl+Clicking an item will look through all open container windows for a compatible target.\u003c/p\u003e\n\u003cp\u003eWhen disabled, only the topmost window will be checked.\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eCompatibility\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eThere are no currently known conflicts with this mod.\u003c/p\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1341/quick-move-to-containers",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-04-19T06:36:00.000000Z",
+    "created_at":  "2024-04-19T06:36:31.000000Z",
+    "updated_at":  "2026-08-03T06:02:26.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

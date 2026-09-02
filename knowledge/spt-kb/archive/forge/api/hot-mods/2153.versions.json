@@ -1,0 +1,14 @@
+﻿{
+    "id":  520,
+    "hub_id":  14337,
+    "version":  "1.6.4",
+    "description":  "\u003cp\u003eFor SPT 3.11\u003c/p\u003e\n\u003cp\u003eRe-release of v1.6.3.\u003c/p\u003e\n",
+    "link":  "https://forge.sp-tarkov.com/mod/download/2153/expanded-task-text-ett/1.6.4",
+    "content_length":  null,
+    "spt_version_constraint":  "~3.11.0",
+    "downloads":  14297,
+    "fika_compatibility":  "unknown",
+    "published_at":  "2025-05-26T02:00:14.000000Z",
+    "created_at":  "2025-05-26T02:00:14.000000Z",
+    "updated_at":  "2026-05-14T01:49:41.000000Z"
+}

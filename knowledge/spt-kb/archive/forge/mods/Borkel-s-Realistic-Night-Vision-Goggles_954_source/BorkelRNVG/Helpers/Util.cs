@@ -1,0 +1,64 @@
+﻿using BorkelRNVG.Enum;
+using Comfort.Common;
+using EFT;
+using EFT.CameraControl;
+using EFT.InventoryLogic;
+using UnityEngine;
+
+namespace BorkelRNVG.Helpers
+{
+    public static class Util
+    {
+        public static bool IsNvgValid()
+        {
+            return Singleton<GameWorld>.Instance.MainPlayer?.NightVisionObserver?.Component?.Item?.StringTemplateId != null;
+        }
+
+        public static EMuzzleDeviceType GetMuzzleDeviceType(Player.FirearmController controller)
+        {
+            if (controller == null) return EMuzzleDeviceType.None;
+            if (controller.IsSilenced) return EMuzzleDeviceType.Suppressor;
+
+            Slot[] slots = controller.Weapon.Slots;
+            foreach (Slot slot in slots)
+            {
+                switch (slot.ContainedItem)
+                {
+                    case FlashHider:
+                        return EMuzzleDeviceType.FlashHider;
+                    case Silencer:
+                        return EMuzzleDeviceType.Suppressor;
+                }
+            }
+
+            return EMuzzleDeviceType.None;
+        }
+
+        public static float FlashAmountFromMuzzleType(EMuzzleDeviceType muzzleType)
+        {
+            return muzzleType switch
+            {
+                EMuzzleDeviceType.Suppressor => 1f,
+                EMuzzleDeviceType.FlashHider => 0.3f,
+                EMuzzleDeviceType.None => 0f,
+                _ => 0f
+            };
+        }
+
+        public static bool VisibilityCheckBetweenPoints(Vector3 v1, Vector3 v2, LayerMask layer)
+        {
+            Vector3 dir = v2 - v1;
+            Vector3 dirNormal = dir.normalized;
+            float dist = dir.magnitude;
+            bool hit = Physics.Raycast(v1, dirNormal, dist, layer);
+
+            return !hit;
+        }
+
+        public static bool VisibilityCheckOnScreen(Vector3 pos)
+        {
+            Vector3 screenPos = CameraManager.Instance.Camera.WorldToScreenPoint(pos);
+            return screenPos.z > 0 && screenPos.x > 0 && screenPos.x < Screen.width && screenPos.y > 0 && screenPos.y < Screen.height;
+        }
+    }
+}

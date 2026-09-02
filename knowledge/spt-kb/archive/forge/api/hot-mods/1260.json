@@ -1,0 +1,36 @@
+﻿{
+    "id":  1260,
+    "hub_id":  1758,
+    "guid":  "com.mattdokn.reachextender",
+    "name":  "Reach Extender",
+    "slug":  "reach-extender",
+    "teaser":  "Gives you one of those picker upper thingies.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1758.png",
+    "downloads":  23186,
+    "favourites_count":  32,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eDescription\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eYou can now reach really far to open doors and containers, as well as picking up loot!\u003c/p\u003e\n\u003cp\u003eHelps to scrub in those hard to reach areas!\u003c/p\u003e\n\u003cp\u003eConfig Options:\u003c/p\u003e\n\u003cp\u003e- Loot/Container Interaction Distance: How far away you can open containers and pickup loot.\u003c/p\u003e\n\u003cp\u003e- Door Interaction Distance: How far away you can open doors from.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eInstallation Instructions\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e- unzip the file into your SPT Game folder.\u003c/strong\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eSupport My Work\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eNever feel obligated to donate for support.\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/mattdokn\" rel=\"noreferrer noopener\"\u003ehttps://ko-fi.com/mattdokn\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1260/reach-extender",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2024-03-22T00:38:49.000000Z",
+    "created_at":  "2024-03-22T00:38:49.000000Z",
+    "updated_at":  "2026-07-28T06:06:02.000000Z",
+    "owner":  {
+                  "id":  41131,
+                  "name":  "Mattdokn",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/89604c57f05fe3a50ae9cee0fb450fe70fa1a8c1_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/1adc5c0f9967a60f96e9eab432644a0329932c81_1280w.webp",
+                  "created_at":  "2023-11-25T01:52:38.000000Z",
+                  "updated_at":  "2026-07-25T18:31:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

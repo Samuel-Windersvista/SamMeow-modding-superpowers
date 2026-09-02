@@ -1,0 +1,42 @@
+﻿{
+    "id":  2395,
+    "hub_id":  null,
+    "guid":  "com.lacyway.lpt",
+    "name":  "Lacy\u0027s PvE Tweaks",
+    "slug":  "lacys-pve-tweaks",
+    "teaser":  "Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now you can queue right into it! Want to make quests less grindy, or less restrictive? Now you can!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/0ug5F4fg5Eacip5HI2O2JQAWPalcgzexsooby6xn.png",
+    "downloads":  31611,
+    "favourites_count":  80,
+    "description":  "\u003cp\u003eThis mod contains several options to tweak the PvE experience to be less annoying and more fun.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eRef Changes\u003c/strong\u003e: Makes all Ref changes actually PvE, and removes all arena quests (automatically disabled if Acid’s Ref mod is loaded)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRemove Transit Quests\u003c/strong\u003e: All transits quests are removed and turned into normal quests.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRemove Recipes\u003c/strong\u003e: Removes all redundant recipes that clogs hideout crafting, e.g. arena crates\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnable Labyrinth\u003c/strong\u003e: Enables Labyrinth on the map screen, making it more approachable. It still requires the key, like Labs\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eQuest Tweaks\u003c/strong\u003e: Makes some quests less grindy\n\u003cul\u003e\n\u003cli\u003eCurrently: Test Drive Part 2, 3, 4 \u0026amp; 5, Hunter, Gendarmerie - Mall Cop\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAdd Recipes\u003c/strong\u003e: Adds new recipes to the hideout\n\u003cul\u003e\n\u003cli\u003eCurrently: Labrys keycard (requires level 2 Intelligence Center)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRemove Map Limitations\u003c/strong\u003e: Removes map limitations from certain quests (e.g. not on Factory)\n\u003cul\u003e\n\u003cli\u003eCurrently tweaks: Punisher Pt. 6, Insomnia, Surv Path - Zhivchik, Surv Path - Eagle-Owl\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTweak Extracts\u003c/strong\u003e: Makes certain extracts less annoying (mainly for the use with Fika)\n\u003cul\u003e\n\u003cli\u003eCurrently changes Labyrinth to:\n\u003cul\u003e\n\u003cli\u003e5 minutes until it opens, down from 15\u003c/li\u003e\n\u003cli\u003eNo longer shared and can be reused\u003c/li\u003e\n\u003cli\u003eNo longer deactivates after 5 seconds even if not used\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eHideout Customizations\u003c/strong\u003e: Allows you to unlock otherwise unobtainable hideout customizations from events, i.e. Kindergarten and Minotaur room kits\n\u003cul\u003e\n\u003cli\u003eBoth have their own, unique requirements to unlock\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTweakASVal\u003c/strong\u003e: Makes the VSS/VAL not overheat as fast by reducing the heat per shot, and nerfing the heat per shot on various 9x39 ammo\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eEvery option can be enabled/disabled in the configuration file. All are disabled by default. I might add suggestions, but I will not change existing options. This was made for me and my group of friends that I play with, and I decided to share it with like-minded individuals.\u003c/p\u003e\n\u003cp\u003eYou can support me on Ko-Fi\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2395/lacys-pve-tweaks",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  2,
+    "published_at":  "2025-10-23T07:48:00.000000Z",
+    "created_at":  "2025-10-23T07:52:05.000000Z",
+    "updated_at":  "2026-08-03T18:02:24.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  2,
+                     "hub_id":  79,
+                     "title":  "Overhauls",
+                     "slug":  "overhauls",
+                     "description":  "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+                 }
+}

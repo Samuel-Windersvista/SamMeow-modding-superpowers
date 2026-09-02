@@ -1,0 +1,42 @@
+﻿{
+    "id":  1425,
+    "hub_id":  1975,
+    "guid":  "wtf.archangel.unflashbanghideout",
+    "name":  "Un-flashbang Hideout",
+    "slug":  "un-flashbang-hideout",
+    "teaser":  "Running Super Sampling and have just completed a few raids late at night? Went into your hideout to upgrade something or craft and just got flashbanged? No more!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1975.png",
+    "downloads":  5940,
+    "favourites_count":  9,
+    "description":  "\u003cp\u003eFixes the issue in the hideout that creates a crazy white light by disabling the Super Sampling in the hideout.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eInstallation:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1425/un-flashbang-hideout",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-05-20T15:17:00.000000Z",
+    "created_at":  "2024-05-20T15:17:14.000000Z",
+    "updated_at":  "2026-08-02T06:02:13.000000Z",
+    "owner":  {
+                  "id":  52282,
+                  "name":  "ArchangelWTF",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-05-20T14:55:34.000000Z",
+                  "updated_at":  "2026-08-09T21:39:13.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

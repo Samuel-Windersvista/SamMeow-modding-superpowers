@@ -1,0 +1,72 @@
+﻿[
+    {
+        "id":  3726,
+        "hub_id":  10529,
+        "version":  "2.0.0",
+        "description":  "\u003cp\u003eUpdated for 3.9.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1477/autorun/2.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "3.9.0",
+        "downloads":  1416,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-07-07T05:10:20.000000Z",
+        "created_at":  "2024-07-07T05:10:20.000000Z",
+        "updated_at":  "2026-05-14T03:55:42.000000Z"
+    },
+    {
+        "id":  2321,
+        "hub_id":  12286,
+        "version":  "3.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 3.10\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1477/autorun/3.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.10.0",
+        "downloads":  1039,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-11-26T19:41:04.000000Z",
+        "created_at":  "2024-11-26T19:41:04.000000Z",
+        "updated_at":  "2026-05-14T03:19:44.000000Z"
+    },
+    {
+        "id":  1180,
+        "hub_id":  13596,
+        "version":  "4.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 3.11 🚀\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1477/autorun/4.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  1623,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-16T04:05:01.000000Z",
+        "created_at":  "2025-03-16T04:05:01.000000Z",
+        "updated_at":  "2026-05-14T02:07:26.000000Z"
+    },
+    {
+        "id":  11881,
+        "hub_id":  null,
+        "version":  "5.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 4.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1477/autorun/5.0.0",
+        "content_length":  4833,
+        "spt_version_constraint":  "~4.0.0",
+        "downloads":  2622,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-10-17T09:00:00.000000Z",
+        "created_at":  "2025-10-17T18:00:37.000000Z",
+        "updated_at":  "2026-07-28T06:04:37.000000Z"
+    },
+    {
+        "id":  14597,
+        "hub_id":  null,
+        "version":  "6.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 4.1 🚀\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1477/autorun/6.0.0",
+        "content_length":  4818,
+        "spt_version_constraint":  "~4.1",
+        "downloads":  197,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2026-08-09T16:34:00.000000Z",
+        "created_at":  "2026-08-09T16:35:06.000000Z",
+        "updated_at":  "2026-08-09T18:02:47.000000Z"
+    }
+]

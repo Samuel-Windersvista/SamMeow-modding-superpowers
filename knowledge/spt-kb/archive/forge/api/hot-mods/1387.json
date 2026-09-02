@@ -1,0 +1,57 @@
+﻿{
+    "id":  1387,
+    "hub_id":  1920,
+    "guid":  "com.mpstark.simplecrosshair",
+    "name":  "Simple Crosshair",
+    "slug":  "simple-crosshair",
+    "teaser":  "A pointfire/hipfire crosshair for all the non-purists among us.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1920.png",
+    "downloads":  54821,
+    "favourites_count":  55,
+    "description":  "\u003cp\u003e\u003cstrong\u003eNotice:\u003c/strong\u003e I’m stepping back from my SPT mods for now and have added some known community authors in the case that I am out of touch, which is very likely to happen in next months. These authors are not obligated to anything, just want to make sure that someone can add a maintainer in the future. My SPT projects were started to keep me occupied after a death in my immediate family and I’ve lost interest in Tarkov for now.\u003c/p\u003e\n\u003cp\u003eMakes point-firing much easier, and hey, I don’t judge. Optional (default off) dynamic position mode moves the crosshair to where the gun is pointing instead of being locked into the middle of the screen – works with blind-fire, left shoulder, and Realism stances!\u003c/p\u003e\n\u003cp\u003eAuto-hides somewhat intelligently, currently:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWhile aiming\u003c/li\u003e\n\u003cli\u003eDuring certain movement actions, like sprinting, breaching a door, or crawling\u003c/li\u003e\n\u003cli\u003eWhen you don’t have a firearm, melee weapon, or grenade in your hands\u003c/li\u003e\n\u003cli\u003eOn interactions being available or the perception dot is displayed\u003c/li\u003e\n\u003cli\u003eWhen the gesture menu is open\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/mpstark/SPT-SimpleCrosshair/raw/main/Screenshots/crosshair.png\" alt=\"crosshair.png\" /\u003e\u003cbr /\u003e\n\u003cstrong\u003eThe Default Crosshair (with some boxes)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/mpstark/SPT-SimpleCrosshair/raw/main/Screenshots/dynamic_crosshair.gif\" alt=\"dynamic_crosshair.gif\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eWith optional (turned off by default) dynamic positioning!\u003c/strong\u003e\u003c/p\u003e\n\u003ch2\u003eInstallation\u003c/h2\u003e\n\u003cp\u003e- Drag folder from zip file directly into your SPT-AKI install folder\u003c/p\u003e\n\u003ch2\u003eConfiguration\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCrosshair Image\u003c/strong\u003e: The image to load out of the plugin directory, lists all found .png files on game launch\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eShow Crosshair:\u003c/strong\u003e If the crosshair should be shown\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCrosshair Color\u003c/strong\u003e: Adjust the color and opacity of the crosshair\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCrosshair Size\u003c/strong\u003e: Adjust the size of the crosshair. Image will fit into the square bounds.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCrosshair X/Y Offset\u003c/strong\u003e: Adjust the offset of the crosshair outside of the exact middle. Good for custom crosshairs where the middle of the image is not the aim point.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCrosshair Fade Time\u003c/strong\u003e: Adjust the fade in/out time on show/hide\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eEnable Dynamic Crosshair Position\u003c/strong\u003e: Instead of just being a static image in the direct middle, dynamically reposition with weapon facing\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCenter Radius Behavior\u003c/strong\u003e: What to do if the crosshair is/out of the center radius\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eHide Inside\u003c/strong\u003e: Hide crosshair when in the center circle, good for only showing when the weapon is obstructed\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eHide Outside\u003c/strong\u003e: Hide crosshair when outside the center circle, good for ignoring when weapon is way outside\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCenter Radius\u003c/strong\u003e: The radius of a centered circle to do the above behavior on\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTry ~100 with Hide Inside, to act only as a warning\u003c/li\u003e\n\u003cli\u003eTry ~300 with Hide Outside, to ignore when the weapon isn’t facing forward\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eKeyboard Shortcut\u003c/strong\u003e: A keyboard shortcut to press\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eShortcut Behavior\u003c/strong\u003e: What to do when the keyboard shortcut button is pressed\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003ePress Toggles\u003c/strong\u003e: Shows and hides the crosshair, taking the “Show Crosshair” option as an initial value\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eShow While Holding\u003c/strong\u003e: Shows the crosshair while the shortcut button is held down. A little wonky right now.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eRecommended Other UI Mods\u003c/h2\u003e\n\u003cp\u003e- Tyfon’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1342/ui-fixes\" rel=\"noreferrer noopener\"\u003eUI Fixes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e- DrakiaXYZ’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1136/equip-from-weapon-rack\" rel=\"noreferrer noopener\"\u003eEquip from Weapon Rack\u003c/a\u003e, \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1341/quick-move-to-containers\" rel=\"noreferrer noopener\"\u003eQuick Move to Containers\u003c/a\u003e, \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1140/quest-tracker\" rel=\"noreferrer noopener\"\u003eQuest Tracker\u003c/a\u003e, \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/824/task-list-fixes\" rel=\"noreferrer noopener\"\u003eTask List Fixes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e- ChooChoo’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1283/trader-modding-and-improved-weapon-building\" rel=\"noreferrer noopener\"\u003eTrader Modding and Improved Weapon Building\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e- CJ’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2148/stash-search\" rel=\"noreferrer noopener\"\u003eStash Search\u003c/a\u003e, which I have contributed to\u003c/p\u003e\n\u003cp\u003e- My other mods \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1364/quick-weapon-rack-access\" rel=\"noreferrer noopener\"\u003eQuick Weapon Rack Access\u003c/a\u003e and \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1374/player-encumbrance-bar\" rel=\"noreferrer noopener\"\u003ePlayer Encumbrance Bar\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1387/simple-crosshair",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-05-06T19:05:00.000000Z",
+    "created_at":  "2024-05-06T19:05:26.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  47478,
+                  "name":  "mpstark",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=m\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-04-04T09:27:41.000000Z",
+                  "updated_at":  "2025-09-26T15:36:51.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  27605,
+                                   "name":  "DrakiaXYZ",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2023-02-26T18:51:50.000000Z",
+                                   "updated_at":  "2026-08-10T04:45:59.000000Z"
+                               },
+                               {
+                                   "id":  33963,
+                                   "name":  "Cj",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+                                   "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+                                   "created_at":  "2023-07-14T19:01:21.000000Z",
+                                   "updated_at":  "2026-08-10T02:32:30.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

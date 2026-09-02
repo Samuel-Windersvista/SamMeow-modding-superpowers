@@ -1,0 +1,42 @@
+﻿{
+    "id":  1173,
+    "hub_id":  1643,
+    "guid":  "li.barlog.unda",
+    "name":  "Unda",
+    "slug":  "unda",
+    "teaser":  "Another bots wave generator",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1643.jpeg",
+    "downloads":  23842,
+    "favourites_count":  10,
+    "description":  "\u003cp\u003eThis is another bot waves generator mod.\u003c/p\u003e\n\u003cp\u003eInspired by \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1002-betterspawnsplus/\" rel=\"noreferrer noopener\"\u003eBetterSpawnsPlus\u003c/a\u003e, \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1059-moar-bots-spawning-difficulty/\" rel=\"noreferrer noopener\"\u003eMOAR\u003c/a\u003e and \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/878-swag-donuts-dynamic-spawn-waves-and-custom-spawn-points/\" rel=\"noreferrer noopener\"\u003eSWAG + Donuts\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eAny of this mods can do more and do it better.\u003c/p\u003e\n\u003cp\u003eThis mod is meant to be as simple as possible.\u003c/p\u003e\n\u003cp\u003eIf you happy with big spawn mods don’t use this one. I made it mostly for myself to keep game as close as possible to vanila SPT-AKI and fix issue when PMC spawns among Scavs and immidently kill each other.\u003c/p\u003e\n\u003cp\u003eThis mod realize only one algorithm for spawns with minimal settings.\u003c/p\u003e\n\u003cp\u003eFor PMC\u003c/p\u003e\n\u003cp\u003eAmount of PMC is \u003cstrong\u003elocationData.base.MinPlayers\u003c/strong\u003e. Splits by random size groups from 1 to \u003cstrong\u003econfig.maxPmcGroupSize\u003c/strong\u003e. PMC spawns as a bosses in beginnig of raid (game spawn them in first 60 seconds).\nGame spawns PMC at real PMC spawns points.\u003c/p\u003e\n\u003cp\u003eFor Scavs\u003c/p\u003e\n\u003cp\u003eMaximum amount of regular scavs on a map (locationData.base.BotMax - amount of marksman scavs) split by random size groups from 0 to \u003ccode\u003econfig.maxScavGroupSize\u003c/code\u003e randomly spreaded by spawn zones.\u003c/p\u003e\n\u003cp\u003eScavs spawns in 3 general waves:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003enormal difficulty between 60 seconds and +120 seconds.\u003c/li\u003e\n\u003cli\u003enormal difficulty between \u003ccode\u003eraidLength / 4\u003c/code\u003e and +120 seconds.\u003c/li\u003e\n\u003cli\u003ehard difficulty between \u003ccode\u003eraidLength / 2\u003c/code\u003e and +120 seconds.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003ePMC and Scavs waves and groups generate after each raid from scratch.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSince PMC bots count as bots in game, mod increases MaxBots value for most maps by random value between \u003ccode\u003eMinPlayers / 2\u003c/code\u003e and \u003ccode\u003eMinPlayers + 1\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eChanceForQuietRaid\u003c/strong\u003e option changes percent when MaxBots value for map does not increase.\u003c/p\u003e\n\u003cp\u003eFor small maps like Factory, Laboratory and Reserve by random value between \u003ccode\u003eMaxPlayers / 2\u003c/code\u003e and \u003ccode\u003eMaxPlayers - 1\u003c/code\u003e.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1173/unda",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  5,
+    "published_at":  "2025-10-13T20:28:00.000000Z",
+    "created_at":  "2023-11-30T05:57:28.000000Z",
+    "updated_at":  "2026-07-28T09:03:38.000000Z",
+    "owner":  {
+                  "id":  34614,
+                  "name":  "Barlog_M",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/728735d6623562a97ccfe0f0a06dd4c208c1ae58_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-07-29T15:20:32.000000Z",
+                  "updated_at":  "2026-07-10T04:50:40.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  5,
+                     "hub_id":  22,
+                     "title":  "Bots",
+                     "slug":  "bots",
+                     "description":  ""
+                 }
+}

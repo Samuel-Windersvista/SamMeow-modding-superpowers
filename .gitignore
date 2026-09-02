@@ -71,4 +71,9 @@ AGENTS.md
 # Superpowers skill auto-injected docs (not committed)
 docs/superpowers/
 
+# ILSpy decompilation cache (EFT/SPT assemblies). Derived artifacts, regenerable
+# via ilspycmd -p --nested-directories -o <target> <dll>; too large to commit.
+/external/decompile-cache/
+
 ModOrganizer-*.dmp
+*.ala

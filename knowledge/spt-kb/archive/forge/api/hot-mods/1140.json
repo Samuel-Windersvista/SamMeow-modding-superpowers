@@ -1,0 +1,42 @@
+﻿{
+    "id":  1140,
+    "hub_id":  1574,
+    "guid":  "xyz.drakia.questtracker",
+    "name":  "Quest Tracker",
+    "slug":  "quest-tracker",
+    "teaser":  "Track quests while in-raid with a handy toggleable overlay!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1574.png",
+    "downloads":  150981,
+    "favourites_count":  129,
+    "description":  "\u003ch3\u003e\u003cstrong\u003eFeatures\u003c/strong\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eQuickly see your tracked quest progress via an in-game overlay at the push of a button, or by completing quest objectives\u003c/li\u003e\n\u003cli\u003eEasily toggle whether a quest is tracked by right-clicking it in either your player task list, or vendor quest list\u003c/li\u003e\n\u003cli\u003eTell which tasks are tracked at a glance via the Status column in either your player task list, or vendor quest list\u003c/li\u003e\n\u003cli\u003eHave a more simplified view with just quest names and their overall progress, or include individual quest objectives for a more advanced look at your quests\u003c/li\u003e\n\u003cli\u003eSeparate tracked quest lists for each server profile\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003ePreview:\u003c/p\u003e\n\u003cdiv class=\"youtube-lite\" data-video-id=\"Pm5zt02sqa8\" data-embed-url=\"https://www.youtube-nocookie.com/embed/Pm5zt02sqa8?autoplay=1\"\u003e\u003cimg src=\"https://i.ytimg.com/vi/Pm5zt02sqa8/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /\u003e\u003c/div\u003e\n\u003ch3\u003e\u003cstrong\u003eInstallation\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e2) Select the folders in the zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folders from 7-zip into your SPT folder\u003c/p\u003e\n\u003cp\u003eInstallation Video:\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eUsage\u003c/strong\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eToggle whether a quest is tracked by right-clicking on it, either in your player task list, or a vendor’s quest list\u003c/li\u003e\n\u003cli\u003eNote: Only quests that are \u003cem\u003ecurrently active\u003c/em\u003e can be tracked. Completed, locked, or failed quests can not be tracked\u003c/li\u003e\n\u003cli\u003eWhether a quest is tracked is visible via the “Status” column in the player task list, and the right side Status text in the vendor quest list.\u003c/li\u003e\n\u003cli\u003eBy default, the keybind to show the task list in-raid is i\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong\u003eConfiguration\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eConfiguration is done via the F12 menu. The below table includes the list of available configuration options, what they do, and what their default value is.\u003c/p\u003e\n\u003cp\u003eSettingDescriptionDefaultVisible At Raid Start\u003cbr /\u003e\nWhether the quest tracker panel is visible at raid start.\u003cbr /\u003e\ntruePanel Toggle KeyThey key to press to toggle the quest tracker panel visibilityiAuto HideWhether to automatically hide the quest tracker panel after a timeouttrueAuto Hide TimerHow long to show the quest tracker panel when either Auto Hide is set, or Show On Objective Progress is enabled5 secondsShow On Objective ProgressWhether to temporarily show the quest tracker panel any time you advance a quest objective\u003cbr /\u003e\nThe panel shows for “Auto Hide Timer” secondstrueInclude Current Map QuestsWhether to include all quests for your current map in the quest tracker panel, not just those you’ve explicitly tracked. This does \u003cstrong\u003eNOT\u003c/strong\u003e include tasks with the location marked as “Any”falseExclude Other Map QuestsWhether to exclude quests that are explicitly not for your current map from the quest tracker paneltrueProgress As Percent\u003cbr /\u003e\nWhether to show the total quest progress as a percent, instead of a [current]/[total] text display\u003cbr /\u003e\ntrue\u003cbr /\u003e\nHide Completed Quests\u003cbr /\u003e\nWhether to remove quests that are ready to hand in from the quest tracker paneltrueShow Objectives\u003cbr /\u003e\nWhether to include quest objectives underneath each quest, including their current progress\u003cbr /\u003e\ntrueObjectives As Percent\u003cbr /\u003e\nWhether to show quest objective progress as a percent, instead of a [current]/[total] text display\u003cbr /\u003e\nfalse\u003cbr /\u003e\nHide Completed Objectives\u003cbr /\u003e\nWhether to hide completed objectives from the objective list\u003cbr /\u003e\ntrueMaximum Width\u003cbr /\u003e\nThe maximum width of the panel before text wraps\u003cbr /\u003e\n1/6 Screen WidthPanel TransparencyThe transparency value for the panel background40%Font SizeThe font size of quest names and their progress in the quest tracker panel30Objective Font SizeThe font size of quest objectives and their progress in the quest tracker panel20AlignmentWhether to snap the quest tracker panel to the right or left side of the screenRight ### \u003cstrong\u003eKnown Issues \u0026amp; Limitations\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eThe following is a non-exhaustive list of issues and limitations\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSome daily/weekly tasks may have confusing objectives, such as missing what map to extract from\u003c/li\u003e\n\u003cli\u003eSometimes the vendor quest list “Tracked!” text gets overwritten with “Active” for daily/weekly quests\u003c/li\u003e\n\u003cli\u003eIf something goes wrong in the plugin, it can break interacting with the Quest list. A restart of the client should resolve this\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong\u003eCompatibility\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eThere are no currently known conflicts with this mod.\u003c/p\u003e\n\u003cp\u003eIf you are running my “Task List Fixes” plugin, please make sure you are running the latest version (1.2.2 or later) to support sorting tracked quests to the top of your player task list.\u003c/p\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1140/quest-tracker",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-11-02T07:08:00.000000Z",
+    "created_at":  "2023-11-02T07:08:18.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,36 @@
+﻿{
+    "id":  1469,
+    "hub_id":  2027,
+    "guid":  "com.tyfon.autodeposit",
+    "name":  "AutoDeposit",
+    "slug":  "autodeposit",
+    "teaser":  "Transfer items into stash containers with matching items, inspired by Terraria\u0027s Quick Stack.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2027.png",
+    "downloads":  97155,
+    "favourites_count":  52,
+    "description":  "\u003ch3\u003eAutoDeposit\u003c/h3\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eFeatures\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eFeatures\u003c/p\u003e\n\u003ch3\u003eWhat this mod will do\u003c/h3\u003e\n\u003cp\u003eClick the button added to your equipment, and items will be transferred to containers in your stash that already contain that same item. This allows you to quickly group multiple copies of items into the same container. This leaves it up to you, the player, to decide where to put the first instance of any given item that you get.\u003c/p\u003e\n\u003cp\u003eIf you have containers in your equipment (like a rig in your backpack), it will transfer items inside those containers. It will also transfer the container itself if and once they are empty, following the same rules as any other item. It will not transfer non-empty containers.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Qk0k2aa.png\" alt=\"Qk0k2aa.png\" /\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003eWhat this mod is NOT\u003c/h3\u003e\n\u003cp\u003eThis mod is not a “dump my whole inventory and automatically sort it into specialty containers” mod. The responsibility of organizing your stash is still on you, but (for example) once you’ve decided that 855A1 ammo goes into that particular ammo box, this mod will deposit future 855A1 into that same box.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstallation\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eInstallation\u003c/p\u003e\n\u003cp\u003eLike almost every mod here, extract the 7z archive into your SPT directory.\u003c/p\u003e\n\u003cp\u003eYou need \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7zip\u003c/a\u003e to extract and install this mod.\u003c/p\u003e\n\u003cp\u003eExample (thanks DrakiaXYZ for the gif)\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003eUninstallation\u003c/h3\u003e\n\u003cp\u003eTo uninstall, simply delete \u003cstrong\u003eTyfon.AutoDeposit.dll\u003c/strong\u003e from \u003cstrong\u003e\u0026lt;your SPT folder\u0026gt;/BepInEx/plugins\u003c/strong\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eTroubleshooting\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eTroubleshooting\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eQ: My items were deleted!\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eA: Have you double and triple checked? This mod will put items into containers even if they’re nested 50 backpacks deep. Check again. Use \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1769-stash-search/\" rel=\"noreferrer noopener\"\u003eStash Search\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eQ: Your icon is Terraria’s deposit icon, not quick stack.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eA: Hush, you.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eQ: I found a bug!\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eA: Open an \u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/AutoDeposit/issues\" rel=\"noreferrer noopener\"\u003eissue\u003c/a\u003e or make a comment here. Please include logs if possible!\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cp\u003eIf you’d like to support my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tyfon\" rel=\"noreferrer noopener\"\u003ebuy me a coffee\u003c/a\u003e ☕\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1469/autodeposit",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2024-06-07T08:03:44.000000Z",
+    "created_at":  "2024-06-07T08:03:44.000000Z",
+    "updated_at":  "2026-07-28T06:04:39.000000Z",
+    "owner":  {
+                  "id":  46005,
+                  "name":  "Tyfon",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-02-27T23:21:18.000000Z",
+                  "updated_at":  "2026-08-10T04:22:04.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

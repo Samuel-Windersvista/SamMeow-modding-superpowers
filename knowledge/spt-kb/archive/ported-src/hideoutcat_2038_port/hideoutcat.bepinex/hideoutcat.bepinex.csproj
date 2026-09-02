@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4C1D2E3-5F6A-4B7C-8D9E-0F1A2B3C4D5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hideoutcat.bepinex</RootNamespace>
+    <AssemblyName>hideoutcat.bepinex</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>12.0</LangVersion>
+    <SignAssembly>false</SignAssembly>
+    <Deterministic>true</Deterministic>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Refs-410\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Refs-410\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Refs-410\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Refs-410\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Refs-410\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Refs-410\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Refs-410\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\hideoutcat\hideoutcat.csproj">
+      <Project>{8A3F2C91-4B5D-4E6F-8A7B-0C1D2E3F4A5B}</Project>
+      <Name>hideoutcat</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="BepInExEvents.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="PropManager.cs" />
+    <Compile Include="PatchHideoutInit.cs" />
+    <Compile Include="TarkinStubs.cs" />
+    <Compile Include="Patches\PatchAreaSelected.cs" />
+    <Compile Include="Patches\PatchAvailableHideoutActions.cs" />
+    <Compile Include="Patches\PatchBonusPanelShow.cs" />
+    <Compile Include="Patches\PatchHideoutAwake.cs" />
+    <Compile Include="Patches\PatchPlayerPrepareWorkout.cs" />
+    <Compile Include="Patches\PatchPlayerStopWorkout.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

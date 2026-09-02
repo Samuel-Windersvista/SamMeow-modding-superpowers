@@ -1,0 +1,42 @@
+﻿{
+    "id":  2095,
+    "hub_id":  2780,
+    "guid":  "xyz.drakia.nobosspmcs",
+    "name":  "No Boss PMCs",
+    "slug":  "no-boss-pmcs",
+    "teaser":  "Simply removes boss brains from the PMC brain pool",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/IJl7wZpbwvRvLNGk76HeDlgvNkMVP7kTk2Sr5oKB.png",
+    "downloads":  14391,
+    "favourites_count":  0,
+    "description":  "\u003ch1\u003eThis mod is no longer necessary for SPT 4.0+, do not bug me about updating it\u003c/h1\u003e\n\u003chr /\u003e\n\u003cp\u003e\u003cstrong\u003eTHIS MOD IS NOT COMPATIBLE WITH SAIN\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/qgH6DP_T99oAAAAd/reading-sign.gif\" alt=\"reading-sign.gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003eInstructions this way\u003c/h3\u003e\n\u003ch3\u003e↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\u003c/h3\u003e\n\u003ch3\u003e↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\u003c/h3\u003e\n\u003ch3\u003e↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\u003c/h3\u003e\n\u003ch3\u003e↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\u003c/h3\u003e\n\u003ch3\u003e↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\u003c/h3\u003e\n\u003cp\u003eThis is a very simple mod that removes all boss brains from PMCs, and makes them only utilize BSGs PMC AI. This should help reduce the amount of times you get shot from extreme distances, and other strange behaviour generally only associated with bosses.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAll PMCs now only have a single brain choice (pmcBEAR for bear, pmcUSEC for usec)\u003c/li\u003e\n\u003cli\u003ePlayer scavs choose randomly between pmcBEAR, pmcUSEC, or assault\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eBut why does SPT include boss brains in PMCs?\u003c/p\u003e\n\u003cp\u003ePrior to BSG adding PvE, there was no PMC AI in Tarkov. This meant that for variety and difficulty, SPT needed to use boss brains to “fill in the gaps”.\u003c/p\u003e\n\u003cp\u003eModern versions of SPT still utilize boss brains to give variety, and a sense of running into more challenging opponents. However some users find these encounters frustrating, which is why I’ve made this mod.\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e2) Select the folder in the zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folder from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes this video is for Live Flea Prices, I’m not making unique install videos per mod. No you don’t need to drop it onto the Launcher license file, just drop it in your SPT folder. Yes, the SPT server/launcher are named different, this is an old install gif, it doesn’t matter):\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/wMIskD3.gif\" rel=\"noreferrer noopener\"\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wMIskD3.gif\" alt=\"wMIskD3.gif\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2095/no-boss-pmcs",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  5,
+    "published_at":  "2025-04-12T17:05:00.000000Z",
+    "created_at":  "2025-04-12T17:05:38.000000Z",
+    "updated_at":  "2026-07-13T21:04:07.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  5,
+                     "hub_id":  22,
+                     "title":  "Bots",
+                     "slug":  "bots",
+                     "description":  ""
+                 }
+}

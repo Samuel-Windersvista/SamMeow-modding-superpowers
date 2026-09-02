@@ -1,0 +1,72 @@
+﻿[
+    {
+        "id":  3200,
+        "hub_id":  11183,
+        "version":  "1.0.1",
+        "description":  "\u003cul\u003e\n\u003cli\u003eFull credit to \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/45940-daz96050/\" rel=\"noreferrer noopener\"\u003edaz96050\u003c/a\u003e for the port to 3.9\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1425/un-flashbang-hideout/1.0.1",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.9.0",
+        "downloads":  705,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-08-03T01:18:00.000000Z",
+        "created_at":  "2024-08-03T01:18:00.000000Z",
+        "updated_at":  "2026-05-14T03:45:52.000000Z"
+    },
+    {
+        "id":  1931,
+        "hub_id":  12754,
+        "version":  "1.0.2",
+        "description":  "\u003cp\u003e- Updated to 3.10\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1425/un-flashbang-hideout/1.0.2",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.10.0",
+        "downloads":  671,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-12-21T16:03:43.000000Z",
+        "created_at":  "2024-12-21T16:03:43.000000Z",
+        "updated_at":  "2026-05-14T02:41:12.000000Z"
+    },
+    {
+        "id":  164,
+        "hub_id":  14718,
+        "version":  "1.0.3",
+        "description":  "\u003cp\u003e- Updated to 3.11\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1425/un-flashbang-hideout/1.0.3",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  635,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-08-01T16:58:49.000000Z",
+        "created_at":  "2025-08-01T16:58:49.000000Z",
+        "updated_at":  "2026-05-14T01:39:05.000000Z"
+    },
+    {
+        "id":  11776,
+        "hub_id":  null,
+        "version":  "1.0.4",
+        "description":  "\u003cul\u003e\n\u003cli\u003eUpdate to SPT 4.0\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1425/un-flashbang-hideout/1.0.4",
+        "content_length":  2875,
+        "spt_version_constraint":  "~4.0 \u003c4.1.0",
+        "downloads":  2846,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-10-11T19:39:00.000000Z",
+        "created_at":  "2025-10-11T19:39:42.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    },
+    {
+        "id":  14368,
+        "hub_id":  null,
+        "version":  "1.0.5",
+        "description":  "\u003cul\u003e\n\u003cli\u003eUpdated to SPT 4.1\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1425/un-flashbang-hideout/1.0.5",
+        "content_length":  3112,
+        "spt_version_constraint":  "~4.1",
+        "downloads":  587,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2026-08-02T02:01:00.000000Z",
+        "created_at":  "2026-08-02T02:01:52.000000Z",
+        "updated_at":  "2026-08-02T06:02:13.000000Z"
+    }
+]

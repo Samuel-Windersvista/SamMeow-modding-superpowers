@@ -1,0 +1,36 @@
+﻿{
+    "id":  2046,
+    "hub_id":  2729,
+    "guid":  "com.netvnum.pause",
+    "name":  "PAUSE",
+    "slug":  "pause",
+    "teaser":  "This mod allows you to PAUSE the raid in progress, giving you time to take care of real life!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2729.jpeg",
+    "downloads":  64755,
+    "favourites_count":  108,
+    "description":  "\u003cp\u003e\u003cstrong\u003eThis mod will pause the following:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eYou\n\u003cul\u003e\n\u003cli\u003eCharacter movement\u003c/li\u003e\n\u003cli\u003eHealth\u003c/li\u003e\n\u003cli\u003eHydration and Energy\u003c/li\u003e\n\u003cli\u003eStamina\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAI\u003c/li\u003e\n\u003cli\u003eTime of day\u003c/li\u003e\n\u003cli\u003eRaid Timer will read “PAUSED”\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eDefault keybinding is F9, but can be changed in the F12 BepInEx menu.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePossible Bugs, Conflicts, and Unexpected Behaviors:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eNote: These may be due to issues with EFT code, and not the fault of SPT or this mod. There’s no guarantee that these can be fixed in future updates!\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eNote: None of the below have been reported as wide spread issues. \u003cstrong\u003eI have been unable to replicate any of them:\u003c/strong\u003e\u003c/em\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003ePausing with less than 10 minutes on Lighthouse does not stop the timers in the background. Resuming the game will show you have lost time, potentially resulting in an early MIA.\u003c/li\u003e\n\u003cli\u003eAdding extra time to raids using SVM or Raid Overhaul can interfere with pausing raid timers, potentially resulting in an early MIA.\u003c/li\u003e\n\u003cli\u003ePausing the game, pressing ESC to access the menus and then back into the game can stop the player from being able to loot and damage enemies when resumed.\u003c/li\u003e\n\u003cli\u003ePausing the game, pressing alt-tab to another window, returning to the game and resuming can stop the player from being to loot, interact, change weapons, or change stance.\u003c/li\u003e\n\u003cli\u003ePausing the game during a door opening or closing will stop the animation of the door. After resuming, the door is stuck in place and will no longer open or close.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eSpecial thanks to everyone that has updated and released this mod in previous versions. Those of us like myself with interruptions Thank You!\u003c/p\u003e\n\u003cp\u003eSPT 3.7 - \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/38437-epidemicz/\" rel=\"noreferrer noopener\"\u003eepidemicz\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSPT 3.8 - \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/26786-nyrus/\" rel=\"noreferrer noopener\"\u003enyrus\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSPT 3.9 - \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/18746-props/\" rel=\"noreferrer noopener\"\u003eProps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSPT 3.10 - \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/73439-vesuvius1300/\" rel=\"noreferrer noopener\"\u003eVesuvius1300\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2046/pause",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-03-21T15:56:05.000000Z",
+    "created_at":  "2025-03-21T15:56:05.000000Z",
+    "updated_at":  "2026-07-28T06:04:44.000000Z",
+    "owner":  {
+                  "id":  74904,
+                  "name":  "netVnum",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/b68be39e6843ad710a55abd84b558947f1225475_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/78cb218cc38e5b93331c9aa78d8e5fec08002427.jpeg",
+                  "created_at":  "2025-03-16T11:59:03.000000Z",
+                  "updated_at":  "2026-07-10T04:57:07.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

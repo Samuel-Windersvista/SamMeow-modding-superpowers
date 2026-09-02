@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C987E9F-C3DF-456E-A956-CE3A11E960A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoreCheckmarks</RootNamespace>
+    <AssemblyName>MoreCheckmarks</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>7.3</LangVersion>
+    <SignAssembly>false</SignAssembly>
+    <!-- Don't generate PDB files -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <!-- Don't copy app.config or runtime assemblies -->
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DisableFastUpToDateCheck>false</DisableFastUpToDateCheck>
+    <!-- Prevent copying .NET Framework facade assemblies -->
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+  </PropertyGroup>
+
+  <!-- Build output goes to dist folder, matching SPT/BepInEx structure -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>..\dist\BepInEx\plugins\MoreCheckmarks\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\dist\BepInEx\plugins\MoreCheckmarks\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="DataLoader.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="InventoryCounts.cs" />
+    <Compile Include="MoreCheckmarks.cs" />
+    <Compile Include="QuestFirFilter.cs" />
+    <Compile Include="QuestPrerequisites.cs" />
+    <Compile Include="Patches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+
+  <!-- Assets to copy alongside the DLL (Config.json no longer needed - using BepInEx config) -->
+  <ItemGroup>
+    <Content Include="Assets\MoreCheckmarksAssets">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>MoreCheckmarksAssets</Link>
+    </Content>
+  </ItemGroup>
+
+  <!-- Reference assemblies - Private=false prevents copying to output -->
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Refs-410\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Refs-410\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\Refs-410\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\Refs-410\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Refs-410\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Refs-410\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\..\Refs-410\spt-common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Refs-410\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Refs-410\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Refs-410\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Refs-410\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

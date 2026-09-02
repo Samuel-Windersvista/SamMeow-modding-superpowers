@@ -1,0 +1,5 @@
+bin/
+obj/
+LockableDoors-Server/node_modules/
+/*.zip
+/.vs

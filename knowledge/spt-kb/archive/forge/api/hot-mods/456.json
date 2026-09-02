@@ -1,0 +1,36 @@
+﻿{
+    "id":  456,
+    "hub_id":  652,
+    "guid":  "com.kmyuhkyuk.gamepanelhudcore",
+    "name":  "Game Panel HUD",
+    "slug":  "game-panel-hud",
+    "teaser":  "Tarkov All-in-one HUD Expansion",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/652.png",
+    "downloads":  525710,
+    "favourites_count":  162,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eDescription\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eHighly Customizable, modular, Integrated HUD Extension system\u003c/p\u003e\n\u003cp\u003eYou can toggle any panel as desired\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstall\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eThis Mod \u003cstrong\u003eREQUIRES\u003c/strong\u003e \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-kmy-tarkov-api/\" rel=\"noreferrer noopener\"\u003eKmyTarkovApi\u003c/a\u003e \u003cstrong\u003e1.4.0 or later\u003c/strong\u003e, You \u003cstrong\u003eMUST\u003c/strong\u003e install it\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eExtract BepInEx folder to client directory\u003c/strong\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eSupport Me\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eMake and Update Mods takes a lot of my free time\u003c/p\u003e\n\u003cp\u003eYou can support me on one of the below websites, this keeps me motivated doing modding work for you\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://afdian.net/a/kmyuhkyuk\" rel=\"noreferrer noopener\"\u003eAfDian\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.buymeacoffee.com/kmyuhkyuk\" rel=\"noreferrer noopener\"\u003eBuymeaCoffee\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://patreon.com/kmyuhkyuk\" rel=\"noreferrer noopener\"\u003ePatreon\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-4\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eRepost\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003ePlease do not repost my work on other websites without my consent\u003c/p\u003e\n\u003cp\u003eThis mod is only released on the following sites:\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://sns.oddba.cn/27290.html\" rel=\"noreferrer noopener\"\u003eOddba\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/652-game-panel-hud\" rel=\"noreferrer noopener\"\u003eSPT\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-5\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eJoin Preview / Report\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003e\u003cstrong\u003eHey, would you like to try out the Preview version and help make this project better?\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eJoin Discord to get Preview version and chat with developer\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/ckZgR43DNc\" rel=\"noreferrer noopener\"\u003eEFT Mods Project\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/456/game-panel-hud",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  true,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2022-05-04T09:59:49.000000Z",
+    "created_at":  "2022-05-04T09:59:49.000000Z",
+    "updated_at":  "2026-07-28T18:01:15.000000Z",
+    "owner":  {
+                  "id":  4974,
+                  "name":  "kmyuhkyuk",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/380f1a041b48c289ed4a4f686792a26d02977dfb_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2021-05-17T14:03:42.000000Z",
+                  "updated_at":  "2026-07-10T04:49:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\containerspanelpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\containerspanelpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\helpers\\ui mappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:helpers\\ui mappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\beltslot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:beltslot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\equipmentbuildsscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\equipmentbuildsscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\playerequipmentwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\playerequipmentwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\inventoryscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\inventoryscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\inventoryequipmentpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\inventoryequipmentpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\helpers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:helpers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\inventorycontrollerpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\inventorycontrollerpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\getprioritizedcontainerspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\getprioritizedcontainerspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\equipmenttabpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\equipmenttabpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\patches\\getprioritizedcontainerspacknstrappatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:patches\\getprioritizedcontainerspacknstrappatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\beltslot v2\\beltslot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:beltslot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryControllerPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryControllerPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\InventoryControllerPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryControllerPatch.cs",
+              "RelativeToolTip": "Patches\\InventoryControllerPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T23:26:11.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerEquipmentWindow.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\PlayerEquipmentWindow.cs",
+              "RelativeDocumentMoniker": "Patches\\PlayerEquipmentWindow.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\PlayerEquipmentWindow.cs",
+              "RelativeToolTip": "Patches\\PlayerEquipmentWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T21:35:40.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryScreenPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryScreenPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\InventoryScreenPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryScreenPatch.cs",
+              "RelativeToolTip": "Patches\\InventoryScreenPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T20:04:16.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventoryEquipmentPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryEquipmentPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\InventoryEquipmentPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\InventoryEquipmentPatch.cs",
+              "RelativeToolTip": "Patches\\InventoryEquipmentPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T17:52:23.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Helpers\\Settings.cs",
+              "RelativeDocumentMoniker": "Helpers\\Settings.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Helpers\\Settings.cs",
+              "RelativeToolTip": "Helpers\\Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T16:46:45.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UI Mappings.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Helpers\\UI Mappings.cs",
+              "RelativeDocumentMoniker": "Helpers\\UI Mappings.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Helpers\\UI Mappings.cs",
+              "RelativeToolTip": "Helpers\\UI Mappings.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwMAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:44:14.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetPrioritizedContainersPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\GetPrioritizedContainersPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\GetPrioritizedContainersPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\GetPrioritizedContainersPatch.cs",
+              "RelativeToolTip": "Patches\\GetPrioritizedContainersPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:35:46.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetPrioritizedContainersPackNStrapPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\GetPrioritizedContainersPackNStrapPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\GetPrioritizedContainersPackNStrapPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\GetPrioritizedContainersPackNStrapPatch.cs",
+              "RelativeToolTip": "Patches\\GetPrioritizedContainersPackNStrapPatch.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowHAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:35:04.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BeltSlot",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\BeltSlot.csproj",
+              "RelativeDocumentMoniker": "BeltSlot.csproj",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\BeltSlot.csproj",
+              "RelativeToolTip": "BeltSlot.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T15:27:55.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BeltSlot.csproj",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\BeltSlot.csproj",
+              "RelativeDocumentMoniker": "BeltSlot.csproj",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\BeltSlot.csproj",
+              "RelativeToolTip": "BeltSlot.csproj",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T15:27:15.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContainersPanelPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\ContainersPanelPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\ContainersPanelPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\ContainersPanelPatch.cs",
+              "RelativeToolTip": "Patches\\ContainersPanelPatch.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAJAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:27:07.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquipmentBuildsScreenPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\EquipmentBuildsScreenPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\EquipmentBuildsScreenPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\EquipmentBuildsScreenPatch.cs",
+              "RelativeToolTip": "Patches\\EquipmentBuildsScreenPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:27:07.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EquipmentTabPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\EquipmentTabPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\EquipmentTabPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Patches\\EquipmentTabPatch.cs",
+              "RelativeToolTip": "Patches\\EquipmentTabPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:27:06.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\BeltSlot v2\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:26:47.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

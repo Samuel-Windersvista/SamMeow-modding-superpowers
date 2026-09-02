@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\mods\\PerformanceTweaks\\PerformanceTweaks.csproj": {}
+  },
+  "projects": {
+    "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\mods\\PerformanceTweaks\\PerformanceTweaks.csproj": {
+      "version": "0.3.0",
+      "restore": {
+        "projectUniqueName": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\mods\\PerformanceTweaks\\PerformanceTweaks.csproj",
+        "projectName": "SamMeow.PerformanceTweaks",
+        "projectPath": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\mods\\PerformanceTweaks\\PerformanceTweaks.csproj",
+        "packagesPath": "C:\\Users\\Winde\\.nuget\\packages\\",
+        "outputPath": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\mods\\PerformanceTweaks\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Winde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "framework": "net471",
+            "targetAlias": "net471",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net471": {
+          "framework": "net471",
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

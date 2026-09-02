@@ -1,0 +1,35 @@
+﻿{
+    "id":  1860,
+    "hub_id":  2512,
+    "guid":  "com.boogle.oldtarkovmovement",
+    "name":  "Old Tarkov Movement (No Inertia)",
+    "slug":  "old-tarkov-movement-no-inertia",
+    "teaser":  "Completely removes any inertia and slowed down movement, and replaces it with the official much faster movement from Tarkov 12.10 3.9 Version in comments",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2512.png",
+    "downloads":  125380,
+    "favourites_count":  103,
+    "description":  "\u003ch1\u003eOld Tarkov Movement\u003c/h1\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInfo\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cblockquote\u003e\n\u003cp\u003eThis mod restores the movement from Tarkov in \u003cstrong\u003e2021\u003c/strong\u003e. It \u003cstrong\u003ecompletely removes\u003c/strong\u003e the modern movement that has \u003cstrong\u003einertia\u003c/strong\u003e, and other hidden values \u003cstrong\u003ethat made the game way slower\u003c/strong\u003e.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cdiv class=\"youtube-lite\" data-video-id=\"WuX0DidY3aA\" data-embed-url=\"https://www.youtube-nocookie.com/embed/WuX0DidY3aA?autoplay=1\"\u003e\u003cimg src=\"https://i.ytimg.com/vi/WuX0DidY3aA/hqdefault.jpg\" alt=\"YouTube video thumbnail\" loading=\"lazy\" decoding=\"async\" /\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstallation\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003e\u003cem\u003eIt will only ask you to replace if you are reinstalling the mod.\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TheBoogle/OldTarkovMovement/blob/main/installation23.gif?raw=true\" alt=\"installation\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1860/old-tarkov-movement-no-inertia",
+    "fika_compatibility":  true,
+    "featured":  true,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  2,
+    "published_at":  "2024-11-29T20:02:00.000000Z",
+    "created_at":  "2024-11-29T20:02:03.000000Z",
+    "updated_at":  "2026-07-28T08:30:32.000000Z",
+    "owner":  {
+                  "id":  26862,
+                  "name":  "Boogle",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/Q8DqhVD6tCUxzB7KA9eCQSdfTwMxk57AKnSwQ0XI_256w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/7020a362cf8799dbbe5ee5a3a9bed0083a6dfb9a_1280w.webp",
+                  "created_at":  "2023-02-12T21:19:29.000000Z",
+                  "updated_at":  "2026-08-02T06:37:19.000000Z"
+              },
+    "additional_authors":  [
+
+                           ]
+}

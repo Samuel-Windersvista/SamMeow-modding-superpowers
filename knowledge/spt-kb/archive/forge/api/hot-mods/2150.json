@@ -1,0 +1,49 @@
+﻿{
+    "id":  2150,
+    "hub_id":  2850,
+    "guid":  "com.takenmake.nosaveondeath",
+    "name":  "No Save On Death - Respawned",
+    "slug":  "no-save-on-death-respawned",
+    "teaser":  "A keep your equipment style mod that still punishes you for death.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2850.png",
+    "downloads":  4604,
+    "favourites_count":  1,
+    "description":  "\u003cp\u003eThis is a mod based on toaddsworth’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1557-nosaveondeath/?highlight=nosave\" rel=\"noreferrer noopener\"\u003eNoSaveOnDeath\u003c/a\u003e mod. Earlier versions of the mod were more of an update, however with the release of SPT 4.0 the mod had to be completely rewritten and so only the general concept remains the same at this point. Here’s a short snippet of the original description to explain what the mod does:\u003c/p\u003e\n\u003cp\u003e“\u003cem\u003eThis mod makes it so that when you die in raid, your progress is not saved. This means that in the event that you die, go MIA, or quit the raid through the menu, everything including gear, experience, and quest progress is restored to how it was before you went on the raid.\u003c/em\u003e”\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2150/no-save-on-death-respawned",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  4,
+    "published_at":  "2026-03-11T10:59:00.000000Z",
+    "created_at":  "2025-05-24T23:30:25.000000Z",
+    "updated_at":  "2026-07-28T07:24:50.000000Z",
+    "owner":  {
+                  "id":  30564,
+                  "name":  "takenmake",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/7a2e933cb62f58af193896c7ca919ec0191cf5a3_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-04-25T21:03:17.000000Z",
+                  "updated_at":  "2026-08-03T16:02:13.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  24452,
+                                   "name":  "toaddsworth",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/363681800ad4f71e964e9b863191a53b6060023f_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-12-28T01:40:49.000000Z",
+                                   "updated_at":  "2026-07-19T16:15:09.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  4,
+                     "hub_id":  21,
+                     "title":  "Items",
+                     "slug":  "items",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrakiaXYZ-BotDebug", "DrakiaXYZ-BotDebug.csproj", "{30D38A81-B688-474D-A40A-47BFC63BFE69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Package|Any CPU = Package|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Standalone|Any CPU = Standalone|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Package|Any CPU.ActiveCfg = Package|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Package|Any CPU.Build.0 = Package|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Standalone|Any CPU.ActiveCfg = Standalone|Any CPU
+		{30D38A81-B688-474D-A40A-47BFC63BFE69}.Standalone|Any CPU.Build.0 = Standalone|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84ADCAFF-F26A-46A2-9366-643544F79F7E}
+	EndGlobalSection
+EndGlobal

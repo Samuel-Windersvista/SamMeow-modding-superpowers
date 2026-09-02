@@ -1,0 +1,43 @@
+﻿{
+    "id":  1965,
+    "hub_id":  2642,
+    "guid":  "com.utjan.planttimemodifier",
+    "name":  "Plant Time Modifier - Updated by CrocodileJonesy",
+    "slug":  "plant-time-modifier-updated-by-crocodilejonesy",
+    "teaser":  "An update for the original plant time modifier mod that allows you to set the time it takes to plant items for certain quests, you can adjust it to be either quicker or slower.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2642.png",
+    "downloads":  14510,
+    "favourites_count":  23,
+    "description":  "\u003cp\u003eThis is the plant time modifier mod updated to work with the current SPT version, since I thought to have a go at modding I chose this mod to start since it is a very useful mod (and since it hasn’t been updated).\u003c/p\u003e\n\u003cp\u003eCredits go to the original creator Utjan, you can find the original mod \u003ca target=\"_blank\" class=\"external-link\" href=\"http://hub.sp-tarkov.com/files/file/2030-plant-time-modifier\" rel=\"noreferrer noopener\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eIf Utjan would like me to remove this, or the original mod gets updated, then I shall do so.\u003c/p\u003e\n\u003cp\u003eI have tested it and it works as intended, if there are any issues let me know and I will look into it when I can. Enjoy\u003c/p\u003e\n\u003cp\u003eInstallation is simple just extract the zip to your SPT installation folder.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1965/plant-time-modifier-updated-by-crocodilejonesy",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-01-14T10:43:35.000000Z",
+    "created_at":  "2025-01-14T10:43:35.000000Z",
+    "updated_at":  "2026-07-28T06:07:03.000000Z",
+    "owner":  {
+                  "id":  70754,
+                  "name":  "CrocodileJonesy",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/rYukf9ucpTosx75JcEx5oow0LFLskESDBuovkqZA_256w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-01-03T16:02:06.000000Z",
+                  "updated_at":  "2026-08-10T09:16:28.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  52958,
+                                   "name":  "Utjan",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/b2315b34c693da726ec3fad055059562ba4ba826_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2024-05-30T19:49:38.000000Z",
+                                   "updated_at":  "2026-08-05T21:57:25.000000Z"
+                               }
+                           ],
+    "category":  null
+}

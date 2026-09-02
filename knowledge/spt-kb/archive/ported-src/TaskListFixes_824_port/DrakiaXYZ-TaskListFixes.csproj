@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A2F3B4C-5D6E-4F70-8A91-B2C3D4E5F607}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DrakiaXYZ.TaskListFixes</RootNamespace>
+    <AssemblyName>DrakiaXYZ-TaskListFixes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <SignAssembly>false</SignAssembly>
+    <Copyright>Copyright © 2025 DrakiaXYZ</Copyright>
+    <LangVersion>latest</LangVersion>
+    <AssemblyVersion>1.8.0</AssemblyVersion>
+    <FileVersion>1.8.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\Refs-410\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\Refs-410\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\Refs-410\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\Refs-410\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskListFixesPlugin.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ConfigurationManagerAttributes.cs" />
+    <Compile Include="Comparers\QuestTypeComparer.cs" />
+    <Compile Include="Comparers\QuestTraderComparer.cs" />
+    <Compile Include="Comparers\QuestStatusComparer.cs" />
+    <Compile Include="Comparers\QuestProgressComparer.cs" />
+    <Compile Include="Comparers\QuestNameComparer.cs" />
+    <Compile Include="Comparers\QuestLocationComparer.cs" />
+    <Compile Include="VersionChecker\TarkovVersion.cs" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+</Project>

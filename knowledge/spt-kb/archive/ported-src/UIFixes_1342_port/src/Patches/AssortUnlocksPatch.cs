@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Threading.Tasks;
+using EFT.UI;
+using EFT;
+using EFT.UI.Ragfair;
+using HarmonyLib;
+using Newtonsoft.Json;
+using SPT.Common.Http;
+using SPT.Reflection.Patching;
+
+namespace UIFixes;
+
+public class AssortUnlocksPatch : ModulePatch
+{
+    private static bool Loading = false;
+    private static Dictionary<string, string> AssortUnlocks = null;
+
+    protected override MethodBase GetTargetMethod()
+    {
+        return AccessTools.Method(typeof(OfferView), nameof(OfferView.OnPointerEnter));
+    }
+
+    [PatchPostfix]
+    public static void Postfix(OfferView __instance, HoverTooltipArea ____hoverTooltipArea)
+    {
+        if (!Settings.ShowRequiredQuest.Value)
+        {
+            return;
+        }
+
+        if (AssortUnlocks == null && !Loading)
+        {
+            Loading = true;
+
+            Task<string> response = RequestHandler.GetJsonAsync("/uifixes/assortUnlocks");
+            response.ContinueWith(task =>
+            {
+                string json = task.Result;
+                if (!String.IsNullOrEmpty(json))
+                {
+                    try
+                    {
+                        AssortUnlocks = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.LogError(ex);
+                    }
+                }
+
+                Loading = false;
+            });
+        }
+
+        if (__instance.Offer.Locked)
+        {
+            if (AssortUnlocks != null && AssortUnlocks.TryGetValue(__instance.Offer.Item.Id, out string questName))
+            {
+                ____hoverTooltipArea.SetMessageText(" (" + questName.Localized(EFT.EStringCase.None) + ")", true);
+            }
+        }
+    }
+}

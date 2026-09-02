@@ -1,0 +1,30 @@
+﻿[
+    {
+        "id":  12728,
+        "hub_id":  null,
+        "version":  "1.0.0",
+        "description":  "\u003ch3\u003e\u003cstrong\u003eThis version will only work for SPT 4.0.10+\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eInitial Release\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2523/bosses-have-gp-coins/1.0.0",
+        "content_length":  4829,
+        "spt_version_constraint":  "~4.0.10",
+        "downloads":  27674,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-31T16:17:00.000000Z",
+        "created_at":  "2025-12-31T16:17:18.000000Z",
+        "updated_at":  "2026-07-28T07:24:52.000000Z"
+    },
+    {
+        "id":  14489,
+        "hub_id":  null,
+        "version":  "1.1.0",
+        "description":  "\u003ch3\u003e\u003cstrong\u003eThis version will only work for SPT 4.1.x\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e4.1\nAdded config to SIC\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2523/bosses-have-gp-coins/1.1.0",
+        "content_length":  8290,
+        "spt_version_constraint":  "~4.1",
+        "downloads":  2938,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2026-08-06T00:07:00.000000Z",
+        "created_at":  "2026-08-06T00:07:18.000000Z",
+        "updated_at":  "2026-08-06T06:02:14.000000Z"
+    }
+]

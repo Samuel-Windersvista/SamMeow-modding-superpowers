@@ -1,0 +1,204 @@
+﻿using System;
+using System.Linq;
+using BepInEx;
+using BepInEx.Bootstrap;
+using BepInEx.Logging;
+using Comfort.Common;
+using EFT;
+using TMPro;
+using UnityEngine.EventSystems;
+
+namespace UIFixes;
+
+[BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+[BepInDependency("com.fika.core", BepInDependency.DependencyFlags.SoftDependency)]
+[BepInDependency("xyz.pit.fireteam", BepInDependency.DependencyFlags.SoftDependency)]
+[BepInDependency("com.lacyway.mc", BepInDependency.DependencyFlags.SoftDependency)]
+[BepInDependency("com.bepis.bepinex.configurationmanager", BepInDependency.DependencyFlags.HardDependency)]
+public class Plugin : BaseUnityPlugin
+{
+    public static Plugin Instance;
+
+    public new ManualLogSource Logger => base.Logger;
+
+    public void Awake()
+    {
+        Instance = this;
+
+        Settings.Init(Config);
+
+        R.Init();
+
+        if (FikaPresent())
+        {
+            Fika.Sync.Init();
+        }
+
+        NetworkTransactionWatcher.Enable();
+        ConfirmDialogKeysPatches.Enable();
+        MailPatches.Enable();
+        FixTooltipPatches.Enable();
+        QuickAccessPanelPatches.Enable();
+        FocusFleaOfferNumberPatches.Enable();
+        HideoutSearchPatches.Enable();
+        HideoutLevelPatches.Enable();
+        InspectWindowResizePatches.Enable();
+        InspectWindowStatsPatches.Enable();
+        new RemoveDoorActionsPatch().Enable();
+        ScrollPatches.Enable();
+        StackFirItemsPatches.Enable();
+        SwapPatches.Enable();
+        SyncScrollPositionPatches.Enable();
+        new TransferConfirmPatch().Enable();
+        PlayerModelViewPatches.Enable();
+        WeaponPresetConfirmPatches.Enable();
+        WeaponZoomPatches.Enable();
+        WeaponPanPatches.Enable();
+        WeaponPreviewPatches.Enable();
+        new MoveTaskbarPatch().Enable();
+        FixFleaPatches.Enable();
+        FleaPrevSearchPatches.Enable();
+        KeepOfferWindowOpenPatches.Enable();
+        AddOfferClickablePricesPatches.Enable();
+        new AssortUnlocksPatch().Enable(); // TODO: Implement server side
+        new AutofillQuestItemsPatch().Enable();
+        ContextMenuPatches.Enable();
+        TradingAutoSwitchPatches.Enable();
+        AddOfferRememberAutoselectPatches.Enable();
+        KeepMessagesOpenPatches.Enable();
+        TradeQuantityPatches.Enable();
+        RememberRepairerPatches.Enable();
+        new GridWindowButtonsPatch().Enable();
+        MagPresetsPatches.Enable();
+        WindowPatches.Enable();
+        ContextMenuShortcutPatches.Enable();
+        OpenSortingTablePatches.Enable();
+        LoadAmmoInRaidPatches.Enable();
+        MultiSelectPatches.Enable();
+        LoadMultipleMagazinesPatches.Enable();
+        UnloadAmmoPatches.Enable();
+        FixTraderControllerPatches.Enable();
+        new PutToolsBackPatch().Enable();
+        RebindConsumablesPatches.Enable();
+        AimToggleHoldPatches.Enable();
+        ReorderGridsPatches.Enable();
+        GPCoinPatches.Enable();
+        FleaSlotSearchPatches.Enable();
+        FilterOutOfStockPatches.Enable();
+        SortPatches.Enable();
+        ReloadInPlacePatches.Enable();
+        BarterOfferPatches.Enable();
+        CursorPatches.Enable();
+        LimitDragPatches.Enable();
+        HideoutCameraPatches.Enable();
+        WeaponModdingPatches.Enable();
+        TagPatches.Enable();
+        TacticalBindsPatches.Enable();
+        new OperationQueuePatch().Enable();
+        SliderPatches.Enable();
+        DropdownPatches.Enable();
+        new FixPlayerInspectPatch().Enable();
+        QuestKeysPatches.Enable();
+        // Disabled: ModifyUnsearchedContainerPatch target method (ItemManipulator.smethod_24) removed in 4.1.2
+        // new ModifyUnsearchedContainerPatch().Enable();
+        RemoveAdsPatches.Enable();
+        BTRPaymentPatches.Enable();
+        TradingHighlightPatches.Enable();
+        TraderAvatarPatches.Enable();
+        FilterStockPresetsPatches.Enable();
+        WishlistPatches.Enable();
+        StashSearchPatches.Enable();
+        InternalMagPatches.Enable();
+        BarrelOnlyPatches.Enable();
+        RevolverPatches.Enable();
+        TextboxPatches.Enable();
+        VariableScopeFixPatches.Enable();
+        new TransferMergePatch().Enable();
+        GridHighlightPatches.Enable();
+        QueueInputPatches.Enable();
+        new CompassGogglesPatch().Enable();
+        new FixGridPrepareItemsPatch().Enable();
+        new FixTraderFiltersPatch().Enable();
+        QuickMovePreviewPatches.Enable();
+        new RotateKeybindPatch().Enable();
+        new HideInviteUIPatch().Enable();
+    }
+
+    public void Start()
+    {
+        // TODO: Re-enable with 4.1
+        // CheckForOldInterop();
+    }
+
+    public static bool InRaid()
+    {
+        var instance = Singleton<AbstractGame>.Instance;
+        return instance != null && instance.InRaid;
+    }
+
+    public static bool TextboxActive()
+    {
+        return EventSystem.current?.currentSelectedGameObject != null &&
+            EventSystem.current.currentSelectedGameObject.activeInHierarchy &&
+            EventSystem.current.currentSelectedGameObject.GetComponent<TMP_InputField>() != null;
+    }
+
+    private void CheckForOldInterop()
+    {
+        var pluginsWithOldDependency = Chainloader.PluginInfos.Values.Where(p => p.Dependencies.Any(d => d.DependencyGUID == "Tyfon.UIFixes"));
+        if (pluginsWithOldDependency.Any())
+        {
+            var names = string.Join(",", [.. pluginsWithOldDependency.Select(p => p.Metadata.Name)]);
+            Logger.LogWarning($"The following client mods depend on an old version of UI Fixes, and need to update their dependency GUID to 'com.tyfon.uifixes': {names}");
+        }
+    }
+
+    private static bool? IsFikaPresent;
+    private static readonly System.Version MinimumFikaVersion = new("1.1.3");
+
+    public static bool FikaPresent()
+    {
+        if (!IsFikaPresent.HasValue)
+        {
+            if (Chainloader.PluginInfos.TryGetValue("com.fika.core", out BepInEx.PluginInfo pluginInfo))
+            {
+                if (pluginInfo.Metadata.Version < MinimumFikaVersion)
+                {
+                    Instance.Logger.LogError($"Unsupported Fika version! {MinimumFikaVersion} or newer is required");
+                }
+
+                IsFikaPresent = true;
+            }
+            else
+            {
+                IsFikaPresent = false;
+            }
+        }
+
+        return IsFikaPresent.Value;
+    }
+
+    private static bool? IsMergeConsumablesPresent;
+
+    public static bool MergeConsumablesPresent()
+    {
+        if (!IsMergeConsumablesPresent.HasValue)
+        {
+            IsMergeConsumablesPresent = Chainloader.PluginInfos.ContainsKey("com.lacyway.mc");
+        }
+
+        return IsMergeConsumablesPresent.Value;
+    }
+
+    private static bool? IsPITFireteamPresent;
+
+    public static bool PITFireteamPresent()
+    {
+        if (!IsPITFireteamPresent.HasValue)
+        {
+            IsPITFireteamPresent = Chainloader.PluginInfos.ContainsKey("xyz.pit.fireteam");
+        }
+
+        return IsPITFireteamPresent.Value;
+    }
+}

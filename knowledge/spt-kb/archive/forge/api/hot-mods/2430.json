@@ -1,0 +1,49 @@
+﻿{
+    "id":  2430,
+    "hub_id":  null,
+    "guid":  "com.odt.iteminfo",
+    "name":  "ODT\u0027s Item Info - SPT 4.0",
+    "slug":  "odts-item-info-spt-40",
+    "teaser":  "Massive QOL Item Info mod for SPTarkov",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/h7JeQcfahQUpTPD8Jbvj7SXD78uWgpqYetXpwgOC.png",
+    "downloads":  44811,
+    "favourites_count":  61,
+    "description":  "\u003ch1\u003eODT-ItemInfo\u003c/h1\u003e\n\u003cp\u003eMassive QOL Item Info mod for SPTarkov.\nEnglish only (for now).\u003c/p\u003e\n\u003ch1\u003eFeatures:\u003c/h1\u003e\n\u003ch2\u003eRarity Recolor\u003c/h2\u003e\n\u003cp\u003eThis BETA feature clears and changes background color on EVERY item in the game based on MMO style rarity tier-list with colors that make actual sense.\nTiers are based on trader level you can purchase or barter the item.\nBarters are considered +1 rarity level.\nBanned on flea market items are given highest rarity - overpowered.\nThe tier list:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCommon (grey background, bought with level 1 traders)\u003c/li\u003e\n\u003cli\u003eRare (blue, level 2 trades for currency and level 1 barters)\u003c/li\u003e\n\u003cli\u003eEpic (purple, level 3 and level 2 barters)\u003c/li\u003e\n\u003cli\u003eLegendary (dim yellow, level 4 and level 3 barters)\u003c/li\u003e\n\u003cli\u003eUber (bright yellow, level 4 barters only)\u003c/li\u003e\n\u003cli\u003eUNOBTAINIUM (bright green, super rare spawns, not 100% accurate to actual in-game spawns, especially for keys, but good enough)\u003c/li\u003e\n\u003cli\u003eOP (bright red, banned on flea market)\u003c/li\u003e\n\u003cli\u003eCUSTOM (dim red, not used by default).\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWorks for 95% of items well enough to be very much usable. Can add tier name to Prices Info module. Add custom item rarities in config.\n\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215009820-772c0b0a-3659-4923-8b63-266ce0d05bd5.png\" alt=\"image\" /\u003e\u003c/p\u003e\n\u003ch2\u003eMark Valueable Items\u003c/h2\u003e\n\u003cp\u003eMarks most valuable items by adding symbols ★ and ☆ to item names and inventory icons based on item per-slot value (configured by thresholds in config) when sold to traders OR fleamarket AVG price.\u003c/p\u003e\n\u003ch2\u003eBullet Stats In Name\u003c/h2\u003e\n\u003cp\u003eAdds bullet stats to bullet name (damage / armor penetration). Calculates total damage for buckshot rounds. VERY usefull in raid, because bullet name is shown when check magazine action is used.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e5.45x39mm PP gs (44/36)\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch1\u003eDescription modules:\u003c/h1\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010036-daafcc4c-760a-4750-91ad-372e3206ee97.png\" alt=\"image\" /\u003e\u003c/p\u003e\n\u003ch2\u003ePrices Info\u003c/h2\u003e\n\u003cp\u003eBasic module that adds prices information to item description, includes avarage flea price and best trader to sell to.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eFlea price: 61703₽ | Ragman’s valuation: 37386₽\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eBarter Info\u003c/h2\u003e\n\u003cp\u003eAdds information about how you can buy the item from traders, their levels, price or resources (barter resources short names are used and total sum is based on AVG flea prices)\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[T H I C C item case] Bought @ Therapist lv.4 \u0026lt; ★Defibrillator ×15 + ★LEDX ×15 + Ibuprofen ×15 + ★Toothpaste ×15 | Σ ≈ 12877545₽\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eProduction Info\u003c/h2\u003e\n\u003cp\u003eIf item can be crafted, adds information on resources and total crafting sum per item based on flea prices.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[9x19mm AP 6.3] Crafted ×150 @ Workbench lv.2 \u0026lt; ☆Hawk ×2 + ☆Pst ×400 | Σ per item ≈ 1686₽\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eCrafting Material Info\u003c/h2\u003e\n\u003cp\u003eShows if item is used in crafts along with other materials and profit delta based on flea prices only (this messes up calculation on some crafts that can be done insanely cheap using trader materials or items obtained from other crafts). This is a guideline for crafting profits, not a rule.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[SSD drive] Part ×1 \u0026gt; Secure Flash drive ×3 @ Intelligence Center lv.2 \u0026lt; … + ★GPX ×1 + ☆GPhone ×1 | Δ ≈ 16234₽\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eBarter Resource Info\u003c/h2\u003e\n\u003cp\u003eShows info if an item can be traded for something with traders along with other resources. Calculates total sum of all resourses (based on flea prices) and delta between buying the final item directly on flea or from trader. Positive delta = profit, negative = don’t bother, buy it directly if you can.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[Ibuprofen painkillers] Traded ×15 @ Therapist lv.4 \u0026gt; T H I C C item case \u0026lt; … + ★Defibrillator ×15 + ★LEDX ×15 + ★Toothpaste ×15 | Δ ≈ -9777545₽\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eQuest Info\u003c/h2\u003e\n\u003cp\u003eAdds information if the item needs to be handed in for a quest. Marks find in raid quest condition with a checkmark with an option to add this checkmark to an item name.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[CMS surgical kit] Found (✔) ×2 \u0026gt; Ambulance @ Jaeger\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eHideout Info\u003c/h2\u003e\n\u003cp\u003eShows if item is needed for hideout construcion.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[Secure Flash drive] Need ×3 \u0026gt; Intelligence Center lv.2\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eArmor Info\u003c/h2\u003e\n\u003cp\u003eAdds armor stats for armor level (usefull for Realism mod), effective durability calculation, material quality and per repair degradation.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[BNTI Zhuk-6a body armor] Armor class: 6 | Effective durability: 94 (Max: 75 x Ceramic: 1.3) | Repair degradation: 17% - 22%\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eContainer Info\u003c/h2\u003e\n\u003cp\u003eAdds slot effeciency calculation for rigs, backpacks and containers (number of internal slots / item size)\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[WARTECH TV-110 plate carrier rig] Slot effeciency: ×1.92 (23/12)\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://user-images.githubusercontent.com/33424002/215010328-c6fe2241-6e35-4c2c-908f-c59c4b523d32.png\" alt=\"image\" /\u003e\u003c/p\u003e\n\u003ch2\u003eHeadset Info\u003c/h2\u003e\n\u003cp\u003eAdds headset actual audio stats with pseudo compression boost calculation. In theory, more compression  and lower ambient volume = better (BSG headset rarity tiering supports this theory), but it seems for me, in practice, it’s not always the case in-game. Higher resonance means harsher sound and boost at filter frequency.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[Peltor ComTac 2 headset] Ambient Volume: -5dB | Compressor: Gain 10dB × Treshold -25dB ≈ ×2.5 Boost | Resonance \u0026amp; Filter: 2.47@245Hz | Distortion: 28%\u003c/p\u003e\n\u003c/blockquote\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2430/odts-item-info-spt-40",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  4,
+    "published_at":  "2025-11-08T13:09:00.000000Z",
+    "created_at":  "2025-11-08T13:09:23.000000Z",
+    "updated_at":  "2026-07-28T08:06:13.000000Z",
+    "owner":  {
+                  "id":  78428,
+                  "name":  "kobethuy",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/xwnzuK5gF0ndmEIlazGfekomSx7oeNGvTE7UQckP_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-05-04T22:32:08.000000Z",
+                  "updated_at":  "2026-08-10T11:10:24.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  5975,
+                                   "name":  "ODT",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d02464f71763fe074db3a85d66abacb269d90905_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2021-06-26T19:49:19.000000Z",
+                                   "updated_at":  "2026-07-10T04:49:39.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  4,
+                     "hub_id":  21,
+                     "title":  "Items",
+                     "slug":  "items",
+                     "description":  ""
+                 }
+}

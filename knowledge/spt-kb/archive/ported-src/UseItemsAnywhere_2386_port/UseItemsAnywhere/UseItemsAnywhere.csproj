@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F3B7A2C-5D4E-4F0A-9B1C-2E6D8A4F7C13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UseItemsAnywhere</RootNamespace>
+    <AssemblyName>UseItemsFromAnywhere</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SignAssembly>false</SignAssembly>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Refs-410 : SPT 4.1.2 managed assemblies (mirrors original project reference set, only entries present in Refs-410) -->
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>..\..\Refs-410\Comfort.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>..\..\Refs-410\ItemComponent.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Refs-410\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Refs-410\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Refs-410\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Refs-410\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Refs-410\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Refs-410\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Refs-410\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Refs-410\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Refs-410\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Plugin.cs" />
+    <Compile Include="VersionChecker.cs" />
+    <Compile Include="Patches\ContainerSlotsPatch.cs" />
+    <Compile Include="Patches\GetThrowablePriorityGrenadeListPatch.cs" />
+    <Compile Include="Patches\GrenadeThrowingSlotsPatch.cs" />
+    <Compile Include="Patches\IsAtBindablePlacePatch.cs" />
+    <Compile Include="Patches\IsAtReachablePlacePatch.cs" />
+    <Compile Include="Patches\PaymentSlotsPatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

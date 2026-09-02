@@ -1,0 +1,212 @@
+﻿<UserControl
+    x:Class="SPT_AKI_Profile_Editor.Views.ExtendedControls.Info"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extendedcontrols="clr-namespace:SPT_AKI_Profile_Editor.Views.ExtendedControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:SPT_AKI_Profile_Editor.Views"
+    x:Name="Control"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance Type=views:InfoTabViewModel}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="collapsibleRow" TargetType="{x:Type RowDefinition}">
+            <Setter Property="MaxHeight" Value="50" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=Control, Path=Character.IsScav}" Value="True">
+                    <Setter Property="MaxHeight" Value="0" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer CanContentScroll="True" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Style="{StaticResource collapsibleRow}" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition Style="{StaticResource collapsibleRow}" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition Style="{StaticResource collapsibleRow}" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition MaxHeight="50" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_id], FallbackValue=tab_info_id}"
+                Template="{StaticResource TitleLabel}" />
+            <TextBox
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                IsEnabled="False"
+                Text="{Binding ElementName=Control, Path=Character.Aid, UpdateSourceTrigger=PropertyChanged}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_nickname], FallbackValue=tab_info_nickname}"
+                Template="{StaticResource TitleLabel}" />
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                Text="{Binding ElementName=Control, Path=Character.Info.Nickname, UpdateSourceTrigger=PropertyChanged}" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_side], FallbackValue=tab_info_side}"
+                Template="{StaticResource TitleLabel}" />
+            <ComboBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                ItemsSource="{Binding Sides}"
+                SelectedItem="{Binding ElementName=Control, Path=Character.Info.Side, UpdateSourceTrigger=PropertyChanged}" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_voice], FallbackValue=tab_info_voice}"
+                Template="{StaticResource TitleLabel}" />
+            <ComboBox
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                DisplayMemberPath="Value"
+                ItemsSource="{Binding ServerDatabase.Voices}"
+                SelectedValue="{Binding ElementName=Control, Path=Character.Customization.Voice, UpdateSourceTrigger=PropertyChanged}"
+                SelectedValuePath="Key" />
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_level], FallbackValue=tab_info_level}"
+                Template="{StaticResource TitleLabel}" />
+            <extendedcontrols:NumericUpDownExt
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                Interval="1"
+                Maximum="{Binding ServerDatabase.ServerGlobals.Config.Exp.Level.MaxLevel}"
+                Minimum="1"
+                NumericInputMode="Numbers"
+                TextAlignment="Left"
+                Value="{Binding ElementName=Control, Path=Character.Info.Level, UpdateSourceTrigger=PropertyChanged}" />
+            <Label
+                Grid.Row="5"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_experience], FallbackValue=tab_info_experience}"
+                Template="{StaticResource TitleLabel}" />
+            <Grid
+                Grid.Row="5"
+                Grid.Column="1"
+                Margin="10,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <extendedcontrols:NumericUpDownExt
+                    Grid.Column="0"
+                    Width="120"
+                    Margin="0,0,10,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Culture="ru-RU"
+                    Interval="1000"
+                    Maximum="{Binding ServerDatabase.ServerGlobals.Config.Exp.Level.MaxExp}"
+                    Minimum="0"
+                    NumericInputMode="Numbers"
+                    StringFormat="N0"
+                    TextAlignment="Left"
+                    Value="{Binding ElementName=Control, Path=Character.Info.Experience, UpdateSourceTrigger=PropertyChanged}" />
+                <Slider
+                    Grid.Column="1"
+                    Margin="2,0"
+                    VerticalAlignment="Center"
+                    Maximum="{Binding ServerDatabase.ServerGlobals.Config.Exp.Level.MaxExp}"
+                    TickFrequency="1000000"
+                    TickPlacement="BottomRight"
+                    Value="{Binding ElementName=Control, Path=Character.Info.Experience}" />
+            </Grid>
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_game_version], FallbackValue=tab_info_game_version}"
+                Template="{StaticResource TitleLabel}" />
+            <TextBox
+                Grid.Row="6"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                IsEnabled="False"
+                Text="{Binding ElementName=Control, Path=Character.Info.GameVersion}" />
+            <Label
+                Grid.Row="7"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_head], FallbackValue=tab_info_head}"
+                Template="{StaticResource TitleLabel}" />
+            <ComboBox
+                Grid.Row="7"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                DisplayMemberPath="Value"
+                ItemsSource="{Binding ServerDatabase.Heads}"
+                SelectedValue="{Binding ElementName=Control, Path=Character.Customization.Head}"
+                SelectedValuePath="Key" />
+            <Label
+                Grid.Row="8"
+                Grid.Column="0"
+                Content="{Binding AppLocalization.Translations[tab_info_pockets], FallbackValue=tab_info_pockets}"
+                Template="{StaticResource TitleLabel}" />
+            <ComboBox
+                Grid.Row="8"
+                Grid.Column="1"
+                Margin="10,5"
+                VerticalAlignment="Center"
+                DisplayMemberPath="Value"
+                ItemsSource="{Binding ServerDatabase.Pockets}"
+                SelectedValue="{Binding ElementName=Control, Path=Character.Inventory.Pockets}"
+                SelectedValuePath="Key" />
+            <Label
+                Grid.Row="9"
+                Grid.Column="0"
+                VerticalAlignment="Top"
+                Content="{Binding AppLocalization.Translations[tab_info_health], FallbackValue=tab_info_health}"
+                Template="{StaticResource TitleLabel}" />
+            <WrapPanel
+                Grid.Row="9"
+                Grid.Column="1"
+                Margin="10,0,10,5"
+                Orientation="Horizontal">
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.Head.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Head], FallbackValue=Head}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.Chest.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Chest], FallbackValue=Chest}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.Stomach.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Stomach], FallbackValue=Stomach}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.RightArm.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Right Hand], FallbackValue=Right Hand}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.LeftArm.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Left Hand], FallbackValue=Left Hand}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.RightLeg.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Right Leg], FallbackValue=Right Leg}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.BodyParts.LeftLeg.Health}" MetricName="{Binding ServerDatabase.LocalesGlobal[Left Leg], FallbackValue=Left Leg}" />
+            </WrapPanel>
+            <WrapPanel
+                Grid.Row="10"
+                Grid.Column="1"
+                Margin="10,0,10,5"
+                Orientation="Horizontal">
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.Hydration}" MetricName="{Binding ServerDatabase.LocalesGlobal[HYDRATION], FallbackValue=HYDRATION}" />
+                <extendedcontrols:MetricView CharacterMetric="{Binding ElementName=Control, Path=Character.Health.Energy}" MetricName="{Binding ServerDatabase.LocalesGlobal[ENERGY], FallbackValue=ENERGY}" />
+            </WrapPanel>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

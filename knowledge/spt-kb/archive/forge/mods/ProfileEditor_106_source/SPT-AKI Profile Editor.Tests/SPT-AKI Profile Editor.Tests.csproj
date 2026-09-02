@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.17763.0</TargetFramework>
+    <RootNamespace>SPT_AKI_Profile_Editor.Tests</RootNamespace>
+    <UseAppHost>true</UseAppHost>
+
+    <IsPackable>false</IsPackable>
+
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="coverlet.collector" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SPT-AKI Profile Editor\SPT-AKI Profile Editor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HelperModTestDirectoryWithMod\SPT-AKI Profile Editor.ModHelper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="HelperModTestDirectoryWithMod\version">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ModHelperTestUpdate\SPT-AKI Profile Editor.ModHelper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ModHelperTestUpdate\SPT-AKI Profile Editor.ModHelper.dlle">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ModHelperTestUpdate\version">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\profileWithDuplicatedItems.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\testBuild.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\testEquipmentBuild.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\testModdedBuild.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\testModdedEquipmentBuild.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="testFiles\testProfileProgress.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+MAKEFLAGS += --no-print-directory
+
+gamepath = /mnt/d/BattleStateGames/SPT_3_11
+pluginpath = BepInEx/plugins
+tspath = user/mods
+dllpath = bin/Debug/netstandard2.1
+
+dllsinto:
+	@mkdir -p ../$(TARGET)/export/$(pluginpath)/$(TARGET)
+	cp -u $(dllpath)/$(modname).dll ../$(TARGET)/export/$(pluginpath)/$(TARGET)/
+	@for dependency in $(dependencies) ; do \
+		(cd ../$${dependency} && make dllsinto TARGET=$(TARGET) --no-print-directory) ; \
+	done
+clean:
+	rm -f -r export
+info:
+	@echo Modname: $(modname)
+publish:
+	make clean
+	make assemble
+	(cd export && zip -r $(modname).zip *)
+	mv export/$(modname).zip .
+install:
+	if [ ! -f omit.txt ]; then make forceinstall; fi

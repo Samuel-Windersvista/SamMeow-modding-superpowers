@@ -1,0 +1,55 @@
+﻿using System.Reflection;
+using System.Threading.Tasks;
+using dvize.GodModeTest;
+using EFT.Hideout;
+using HarmonyLib;
+using SPT.Reflection.Patching;
+
+namespace dvize.DadGamerMode.Patches
+{
+    //hideout upgrades
+
+    // Patch for the InitConstructing method (construction and upgrade timing)
+    internal class InstantConstructionPatch : ModulePatch
+    {
+        protected override MethodBase GetTargetMethod()
+        {
+            return AccessTools.Method(typeof(AreaData), "InitConstructing", new[] { typeof(int), typeof(bool) });
+        }
+
+        [PatchPrefix]
+        private static bool Prefix(ref Task __result, AreaData __instance, int timestamp, bool alreadyUnderConstructing)
+        {
+            if (dadGamerPlugin.InstantConstructionEnabled.Value)
+            {
+                if (__instance == null)
+                {
+                    // handle the null instance case
+                    __result = Task.CompletedTask;
+                    return false;
+                }
+
+                __result = InstantCompleteConstruction(__instance, timestamp);
+                return false;
+            }
+            return true;
+        }
+
+        private static async Task InstantCompleteConstruction(AreaData __instance, int timestamp)
+        {
+            await Task.Yield();
+
+            if (__instance?.CurrentStage == null)
+            {
+                // handle the null CurrentStage case
+                return;
+            }
+
+            Stage currentStage = __instance.CurrentStage;
+            currentStage.Waiting = false;
+            __instance.Status = (__instance.CurrentLevel > 0) ? EAreaStatus.ReadyToInstallUpgrade : EAreaStatus.ReadyToInstallConstruct;
+            currentStage.ActionGoing = false;
+            currentStage.ActionReady = true;
+        }
+    }
+}

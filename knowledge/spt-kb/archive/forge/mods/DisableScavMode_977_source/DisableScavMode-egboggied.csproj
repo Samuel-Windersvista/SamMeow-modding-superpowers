@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>netstandard2.1</TargetFramework>
+	<RootNamespace>_DisableScavMode_egboggied</RootNamespace>
+    <AssemblyName>DisableScavMode-egboggied</AssemblyName>
+    <Version>1.1.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+	  <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+	  <Deterministic>false</Deterministic>
+	  <Authors>egbog</Authors>
+	  <Configurations>Debug;Release;Source-Debug</Configurations>
+	  <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<DebugType>Full</DebugType>
+	<Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  
+  <!-- Allow go to declaration using project source instead of decompiled source -->
+  <ItemGroup Condition="'$(Configuration)'=='Source-Debug'">
+    <ProjectReference Include="..\Decompiled-SPT4.0.0\Assembly-CSharp\Assembly-CSharp.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(Configuration)'!='Source-Debug'">
+    <Reference Include="Assembly-CSharp" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+	<Reference Include="UnityEngine.CoreModule" />
+	<Reference Include="UnityEngine.UI" />
+	<Reference Include="spt-reflection" />
+	<Reference Include="spt-common" />
+	<Reference Include="Sirenix.Serialization" />
+  </ItemGroup>
+  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="PowerShell.exe -ExecutionPolicy Bypass -File &quot;$(ProjectDir)\PostBuild.ps1&quot; -DebugMode &quot;$(DebugMode)&quot; -AssemblyName &quot;$(AssemblyName)&quot; -Configuration &quot;$(ConfigurationName)&quot; -Framework &quot;$(TargetFramework)&quot;" />
+  </Target>
+  
+</Project>

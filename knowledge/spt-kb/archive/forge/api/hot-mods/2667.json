@@ -1,0 +1,42 @@
+﻿{
+    "id":  2667,
+    "hub_id":  null,
+    "guid":  "com.fiodor.pipdisabler",
+    "name":  "Picture in Picture Disabler",
+    "slug":  "picture-in-picture-disabler",
+    "teaser":  "FPS maxxxing and PiP scopes begone",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/3VfNC0kP1YGZy8X01VrVgJfL3lF0Tfk8Ck41kScY.png",
+    "downloads":  24642,
+    "favourites_count":  90,
+    "description":  "\u003cp\u003eTired of losing 20 FPS when aiming with optic scopes ? Boy do I have some good news for you.\u003cbr /\u003e\nBe prepared for some jank, if the performance gain is worth it is up to you !\u003c/p\u003e\n\u003chr /\u003e\n\u003ch1\u003eWhat does it do ?:\u003c/h1\u003e\n\u003cp\u003eWhen aiming with an optic scope this mod disables the optic camera, zooms the whole screen, scales the models and cuts through the meshes.\u003cbr /\u003e\nDepending on the scenarios I gain between 15 to 50 FPS.\u003cbr /\u003e\nWorks with mod scopes, reverts to vanilla PiP system with NVG and thermal scopes.\u003c/p\u003e\n\u003chr /\u003e\n\u003ch1\u003eF12 menu:\u003c/h1\u003e\n\u003ch2\u003eGeneral:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eDepth of Field\u003c/li\u003e\n\u003cli\u003eNear blur when using NVGs aka real life fixed focal distance\u003c/li\u003e\n\u003cli\u003eFOV fix like behaviour (1x is your base game settings FOV)\u003c/li\u003e\n\u003cli\u003eGlobal scope and reticle scaling multiplier\u003c/li\u003e\n\u003cli\u003eFOV transition duration\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eWhitelist and blacklist system:\u003c/h2\u003e\n\u003cp\u003eSelect a key for the system you want to use.\u003cbr /\u003e\nWhile ADS, press the key to add that scope to the corresponding list.\u003cbr /\u003e\nTo remove a scope, press the key while ADS.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWhitelist = Only use the scopes in the list.\u003c/li\u003e\n\u003cli\u003eBlacklist = Let the scopes added to the list use the vanilla PiP system.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eJank:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eMultiple hacks to alleviate the jankiness.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eGraphics:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eAuto Lodbias changes when aiming, multiplies the magnification level by a value you can choose.\u003c/li\u003e\n\u003cli\u003eManual LODbias, will override the auto if set to anything else than zero.\u003c/li\u003e\n\u003cli\u003eThere’s an option to keep the LODbias until you open your inventory/search a container. It helps alleviate the tree crossfade but has a performance cost.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003ePer scope settings:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eVignette settings, those only work if vignette is enabled globally.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eThe following settings only take effect once you’ve saved them by pressing the dedicated key while ADS:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePer scope reticle size.\u003c/li\u003e\n\u003cli\u003eFor variable reticles you can set the minimum and maximum size.\u003c/li\u003e\n\u003cli\u003eScaling multipliers if you think that a specific scope is too big or too small for you.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003ch1\u003eIllustrations:\u003c/h1\u003e\n\u003ch2\u003eStreets of Tarkov:\u003c/h2\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_Off.png?raw=true\" alt=\"\" /\u003e\n\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Streets_On.png?raw=true\" alt=\"\" /\u003e\u003c/p\u003e\n\u003ch2\u003eShoreline:\u003c/h2\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Vanilla.png?raw=true\" alt=\"\" /\u003e\n\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Fiodorwellfme/PiP-Disabler/blob/main/images/Mod.png?raw=true\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003eMy specs: 9800x3D, 7900XTX, 96 GB DDR5.\u003c/p\u003e\n\u003chr /\u003e\n\u003ch1\u003eInstallation:\u003c/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eOpen the downloaded zip file.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eDrag the BepInEx folder from the zip file into your SPT folder.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /\u003e\u003c/p\u003e\n\u003chr /\u003e\n\u003ch1\u003eSupport:\u003c/h1\u003e\n\u003cp\u003eDiscord thread in the SPT discord : \u003ca target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1482076311903146054\" rel=\"noreferrer noopener\"\u003ehttps://discord.com/channels/875684761291599922/1482076311903146054\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eEpic’s All in One is supported up to 4.0.7, 4.0.8 breaks the modded scopes so be sure to blacklist them.\u003c/h3\u003e\n\u003ch3\u003eIf something looks wrong and you have Fontaine’s FOVfix, make sure you’ve updated it to 4.0.1.\u003c/h3\u003e\n\u003ch3\u003eScopeUpdateBackport is not supported, you’ll have to mess with the per-scope settings if you want to use it.\u003c/h3\u003e\n\u003chr /\u003e\n\u003ch1\u003eThanks:\u003c/h1\u003e\n\u003cp\u003eThe whole SPT and Fika teams for making this awesome project.\u003cbr /\u003e\nDrakia for the original gif and his config order automatizer.\u003cbr /\u003e\n7bpencil for his initial attempt.\u003cbr /\u003e\nFontaine for his work on the FOV and the ribcage scaling.\u003c/p\u003e\n\u003chr /\u003e\n\u003ch1\u003eDisclaimer:\u003c/h1\u003e\n\u003cp\u003eAfter having thought about it for a while I’m going to retire from modding for the time being.\u003c/p\u003e\n\u003cp\u003eI’m relying way too much on AI to do most of the heavy work. Whenever I see AI art I can’t stop myself from being disgusted by it and I’ve come to feel the same way about AI mods.\nHence why I’ve decided to stop modding altogether and dedicate the free time I have to learn C# and Unity.\u003c/p\u003e\n\u003cp\u003eThe only thing I’ll keep updated will be the per-scope config for PiP-Disabler.\u003c/p\u003e\n\u003cp\u003eIf anyone wants to maintain my mods they’re free to do so !\nAlthough PiP-Disabler is an absolute mess and would probably need to be rewritten from the ground up to be maintainable…\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2667/picture-in-picture-disabler",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  true,
+    "custom_ai_disclosure":  "\u003cp\u003eI’ll have to completely rewrite this without using AI, relied way too much on it initially.\u003c/p\u003e\n",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2026-04-19T09:22:00.000000Z",
+    "created_at":  "2026-04-19T09:29:04.000000Z",
+    "updated_at":  "2026-07-28T09:07:21.000000Z",
+    "owner":  {
+                  "id":  97183,
+                  "name":  "Fiodor",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=F\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-12-18T08:15:12.000000Z",
+                  "updated_at":  "2026-08-09T09:47:37.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>Tyfon.WeaponCustomizer.Server</AssemblyName>
+    <SPTModType>Server</SPTModType>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Configurations>Debug;Release</Configurations>
+    <Version>3.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Common" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.Reflection" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.2" />
+  </ItemGroup>
+
+</Project>

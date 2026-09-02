@@ -1,0 +1,60 @@
+﻿using Newtonsoft.Json;
+using SPT_AKI_Profile_Editor.Core.HelperClasses;
+
+namespace SPT_AKI_Profile_Editor.Core.ProfileClasses
+{
+    public class CharacterTraderStanding : BindableEntity
+    {
+        private int loyaltyLevel;
+
+        private long salesSum;
+
+        private float standing;
+
+        private bool unlocked;
+
+        [JsonProperty("loyaltyLevel")]
+        public int LoyaltyLevel
+        {
+            get => loyaltyLevel;
+            set
+            {
+                loyaltyLevel = value;
+                OnPropertyChanged(nameof(LoyaltyLevel));
+            }
+        }
+
+        [JsonProperty("salesSum")]
+        public long SalesSum
+        {
+            get => salesSum;
+            set
+            {
+                salesSum = value;
+                OnPropertyChanged(nameof(SalesSum));
+            }
+        }
+
+        [JsonProperty("standing")]
+        public float Standing
+        {
+            get => standing;
+            set
+            {
+                standing = value;
+                OnPropertyChanged(nameof(Standing));
+            }
+        }
+
+        [JsonProperty("unlocked")]
+        public bool Unlocked
+        {
+            get => unlocked;
+            set
+            {
+                unlocked = value;
+                OnPropertyChanged(nameof(Unlocked));
+            }
+        }
+    }
+}

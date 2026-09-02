@@ -1,0 +1,42 @@
+﻿{
+    "id":  2494,
+    "hub_id":  null,
+    "guid":  "ciallo.keycarddoorbreach",
+    "name":  "Keycard Door Simplify Breach",
+    "slug":  "keycard-door-simplify-breach",
+    "teaser":  "Simplify doors without card selection, optional 100% breach success to any doors.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2iioNBIbvtfEhOwWdInflK24AVeXsOqrGn0jS4gZ.png",
+    "downloads":  7770,
+    "favourites_count":  9,
+    "description":  "\u003ch1\u003eSPT - Keycard Door Breach\u003c/h1\u003e\n\u003cp\u003eA SPT BepInEx plugin for Doors:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSimplifies keycard doors by removing card selection, allowing the “breach” option directly.\u003c/li\u003e\n\u003cli\u003eAdds a toggle to force any “Door Breach” to have 100% success.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch5\u003eOnly one checkbox in the F12 menu:\u003c/h5\u003e\n\u003cul\u003e\n\u003cli\u003eEnable or disable 100% Door Breach success.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eHow to Install\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eDownload the zip package, open it and drag the ‘‘BepInEx’’ folder to merge into your main folder of EFT. The final DLL should locate at “Your SPT path\\BepInEx\\plugins\\KeycardDoorSimplify.dll”\u003c/li\u003e\n\u003cli\u003eTo uninstall, just delete the DLL file in that path.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eCompatibility\u003c/h2\u003e\n\u003cp\u003eThis mod will downgrade keycard doors to normal doors, so any mod adding new features to doors will also happened to keycard doors (Like lock picking, sprint breaching)\u003c/p\u003e\n\u003ch5\u003eIdea credit to \u003ca target=\"_blank\" class=\"external-link\" href=\"https://sns.oddba.cn/45242.html\" rel=\"noreferrer noopener\"\u003eDoors ClientMods\u003c/a\u003e by woohooFly on ODDBA forum.\u003c/h5\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2494/keycard-door-simplify-breach",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  true,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  1,
+    "published_at":  "2025-12-11T05:39:00.000000Z",
+    "created_at":  "2025-12-11T06:11:46.000000Z",
+    "updated_at":  "2026-07-28T07:04:42.000000Z",
+    "owner":  {
+                  "id":  85525,
+                  "name":  "ancientmako",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/AxbAZF3TgLUKDCQMaNKaj6a9kBK77qgTKj3eablM_256w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/SQlBgVI3HKcFWbwal9Z9AZPPv30tg1Luy9Pr17zh_1280w.webp",
+                  "created_at":  "2025-10-10T02:17:24.000000Z",
+                  "updated_at":  "2026-08-10T04:13:46.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  1,
+                     "hub_id":  17,
+                     "title":  "Tools",
+                     "slug":  "tools",
+                     "description":  "Various standalone tools and programs that aren\u0027t installed like normal mods"
+                 }
+}

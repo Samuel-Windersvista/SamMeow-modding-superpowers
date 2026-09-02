@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>SamSWAT.HeliCrash.ArysReloaded</RootNamespace>
+    <AssemblyName>SamSWAT.HeliCrash.ArysReloaded.Core</AssemblyName>
+    <Version>2.5.2</Version>
+    <SignAssembly>false</SignAssembly>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+    <NoWarn>1701;1702;0649</NoWarn>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>false</Optimize>
+    <DebugType>none</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\spt-custom.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityToolkit\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityToolkit\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>D:\Temp\opencode\m2-port\Refs-410\UnityToolkit\ZLinq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Compile Remove="bin\**" />
+    <None Remove="obj\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+  <Target Name="CopyRuntimeFiles" AfterTargets="Build">
+    <ItemGroup>
+      <RuntimeFiles Include="$(MSBuildProjectDirectory)\CopyToOutput\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(RuntimeFiles)" DestinationFolder="$(OutputPath)" />
+  </Target>
+</Project>

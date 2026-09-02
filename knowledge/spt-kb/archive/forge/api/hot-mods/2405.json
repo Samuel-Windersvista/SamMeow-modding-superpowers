@@ -1,0 +1,42 @@
+﻿{
+    "id":  2405,
+    "hub_id":  null,
+    "guid":  "com.lacyway.lmrc",
+    "name":  "LetMeRightClick",
+    "slug":  "letmerightclick",
+    "teaser":  "Why can\u0027t I right-click when searching? Well - now I can.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/6zLllXtIZ2qbTCJtba4FWy0amAstYp8nHwtXD5Fz.png",
+    "downloads":  16241,
+    "favourites_count":  58,
+    "description":  "\u003cp\u003eThis mod lets you right-click item when searching. Use responsibly, busy hands are on you.\u003c/p\u003e\n\u003cp\u003eYou can support me on Ko-Fi\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2405/letmerightclick",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-10-28T22:29:00.000000Z",
+    "created_at":  "2025-10-28T22:30:28.000000Z",
+    "updated_at":  "2026-08-08T18:02:21.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

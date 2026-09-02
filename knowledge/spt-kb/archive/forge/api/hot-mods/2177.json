@@ -1,0 +1,42 @@
+﻿{
+    "id":  2177,
+    "hub_id":  2880,
+    "guid":  null,
+    "name":  "Use Items Anywhere",
+    "slug":  "use-items-anywhere",
+    "teaser":  "Keybind items for Quick Use from anywhere!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2880.png",
+    "downloads":  17704,
+    "favourites_count":  0,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eFeatures and Usage\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003ch3\u003e\u003cstrong\u003eFeatures\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eSet Quick Use keybinds for items anywhere in your player inventory.\u003c/p\u003e\n\u003cp\u003eIn vanilla Tarkov you can set Quick Use keybinds to items in your\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePockets\u003c/li\u003e\n\u003cli\u003eTactical Rig\u003c/li\u003e\n\u003cli\u003eSpecial Slots\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThis mod allows you to also set Quick Use keybinds to items in your\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eBackpack\u003c/li\u003e\n\u003cli\u003eSecured Container\u003c/li\u003e\n\u003cli\u003eother containers nested in one of the above containers.\n\u003cul\u003e\n\u003cli\u003eex: a Zagustin Injector inside of an injector case. That injector case could then be\n\u003cul\u003e\n\u003cli\u003ejust in your pocket\u003c/li\u003e\n\u003cli\u003eor inside a rig, inside a backpack, in the backpack on your player\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong\u003eUsage\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eSet Quick Use keybinds exactly as you do in vanilla!\u003c/p\u003e\n\u003cp\u003eHover\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eFind the item you want to keybind for Quick Use\u003c/li\u003e\n\u003cli\u003eHover your mouse over that item\u003c/li\u003e\n\u003cli\u003ePress the keybind to which you want to set the item under your mouse cursor\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eDrag\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eFind the item you want to keybind for Quick Use\u003c/li\u003e\n\u003cli\u003eDrag that item onto the Quick Use slot to which you want to set that item\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e(If there are other methods in vanilla to set Quick Use keybinds, they probably work as well but please let me know because I’d love to learn about them!)\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstallation\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eThis must be installed on all clients and the raid host. If you use a headless/dedicated client, it must be installed there as well.\u003c/p\u003e\n\u003cp\u003eExtract zip and drop BepInEx folder inside of your SPTarkov folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (this is for SAIN, which also has a user folder, but the same concept applies to all of my mods). Credit to Drakia for the video\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eKnown Issues\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003ch3\u003eFika\u003c/h3\u003e\n\u003cp\u003eFor full functionality, the mod must be installed on all clients (so it must be installed on a headless client if you’re using one). If the mod is not installed on the client hosting the raid, you will be limited to vanilla-behavior while in raid.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eYou can only add bindings to items in your pockets or rig for the duration of the raid.\u003c/li\u003e\n\u003cli\u003eThe bindings created while out of raid are kept and will continue to work during the raid\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-4\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eCredits\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eOriginal Mod by Dirtbikercj. Re-posted for 3.11 with permission.\u003c/p\u003e\n\u003cp\u003ePlease show him lots of love. I’ve agreed to handle maintenance going forward but he’s the real creator. He’s given a lot to this community and deserves all the credit and praise, and none of the grief that’s been shown him in the past. I hope he makes his way back to modding but I wish him the best regardless.\u003c/p\u003e\n\u003cp\u003eEdit: Cj is back to modding! I will keep this for 3.11 but he will be taking over maintenance, starting with SPT 4.0. See \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2386/use-items-anywhere\" rel=\"noreferrer noopener\"\u003ehttps://forge.sp-tarkov.com/mod/2386/use-items-anywhere\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2177/use-items-anywhere",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  15,
+    "published_at":  "2025-06-10T02:45:00.000000Z",
+    "created_at":  "2025-06-10T02:45:58.000000Z",
+    "updated_at":  "2026-07-07T16:59:08.000000Z",
+    "owner":  {
+                  "id":  59225,
+                  "name":  "FriedEngineer",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/91891bd774ac1b69c20a05d344b99328c8586f3c_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/cEEbS8VzFZzi2nuKoiuuKh4V1ox6IISnNe4U8FJv_1280w.webp",
+                  "created_at":  "2024-07-23T06:28:10.000000Z",
+                  "updated_at":  "2026-08-10T04:16:13.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  15,
+                     "hub_id":  78,
+                     "title":  "Equipment",
+                     "slug":  "equipment",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>WTT-CornerStore</AssemblyName>
+    <RootNamespace>WTT_CornerStore</RootNamespace>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.2" />
+    <PackageReference Include="SemanticVersioning" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="WTT-ServerCommonLib">
+      <HintPath>ref\WTT-ServerCommonLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

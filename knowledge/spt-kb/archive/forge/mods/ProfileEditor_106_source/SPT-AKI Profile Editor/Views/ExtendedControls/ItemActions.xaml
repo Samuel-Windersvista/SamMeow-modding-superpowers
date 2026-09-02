@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="SPT_AKI_Profile_Editor.Views.ExtendedControls.ItemActions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extendedcontrols="clr-namespace:SPT_AKI_Profile_Editor.Views.ExtendedControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewHelpers="clr-namespace:SPT_AKI_Profile_Editor.Helpers"
+    x:Name="Control"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <viewHelpers:NullVisibilityConverter x:Key="NullToVisibilityConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <extendedcontrols:ButtonFontAwesomeIcon
+            Grid.Column="0"
+            Margin="5"
+            VerticalAlignment="Center"
+            d:Visibility="Visible"
+            Command="{Binding ElementName=Control, Path=InspectWeapon}"
+            CommandParameter="{Binding ElementName=Control, Path=Item}"
+            Icon="EyeSolid"
+            IconSize="15"
+            Style="{StaticResource IconOnlyButton}"
+            ToolTip="{Binding ElementName=Control, Path=LocalizationDict[tab_stash_inspect]}"
+            Visibility="{Binding ElementName=Control, Path=Item.IsWeapon, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}" />
+        <extendedcontrols:ButtonFontAwesomeIcon
+            Grid.Column="1"
+            Margin="5"
+            VerticalAlignment="Center"
+            d:Visibility="Visible"
+            Command="{Binding ElementName=Control, Path=OpenContainer}"
+            CommandParameter="{Binding ElementName=Control, Path=Item}"
+            Icon="EyeSolid"
+            IconSize="15"
+            Style="{StaticResource IconOnlyButton}"
+            ToolTip="{Binding ElementName=Control, Path=LocalizationDict[tab_stash_open]}"
+            Visibility="{Binding ElementName=Control, Path=Item.IsContainer, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}" />
+        <Border
+            Grid.Column="2"
+            Margin="5"
+            VerticalAlignment="Center"
+            d:Visibility="Visible"
+            Visibility="{Binding ElementName=Control, Path=RemovingAllowed, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+            <extendedcontrols:ButtonFontAwesomeIcon
+                d:Visibility="Visible"
+                Command="{Binding ElementName=Control, Path=RemoveItem}"
+                CommandParameter="{Binding ElementName=Control, Path=Item.Id}"
+                Icon="TrashCanSolid"
+                IconSize="15"
+                Style="{StaticResource IconOnlyButton}"
+                ToolTip="{Binding ElementName=Control, Path=LocalizationDict[tab_backups_remove]}"
+                Visibility="{Binding ElementName=Control, Path=Item, Converter={StaticResource NullToVisibilityConverter}}" />
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,42 @@
+﻿{
+    "id":  1538,
+    "hub_id":  2108,
+    "guid":  "com.acidphantasm.reffriendlyquests",
+    "name":  "Ref - SPT Friendly Quests",
+    "slug":  "ref-spt-friendly-quests",
+    "teaser":  "Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an added Lega Medal to each quest. Includes the sword unlock and secure container.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2108.png",
+    "downloads":  276839,
+    "favourites_count":  281,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eInstallation\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDownload Ref - SPT Friendly Quests\u003c/li\u003e\n\u003cli\u003eOpen the downloaded 7z file in 7-zip\u003c/li\u003e\n\u003cli\u003eSelect the SPT folder in the 7z file in 7-zip\u003c/li\u003e\n\u003cli\u003eDrag the SPT folder from 7-zip into your root SPT folder\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eDemonstration Video (yoink):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eUNINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eNOTE: Deletion may not be possible because this mod adds quests. You may need to start a new profile.\nIf you insist on removing it, you can do the following.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDelete \u003ccode\u003e/ROOTSPT/SPT/user/mods/acidphantasm-reffriendlyquests\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003eDone\u003c/li\u003e\n\u003c/ol\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eRECOMMENDED MODS\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eRecommended Mods:\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1508-kaeno-traderscrolling/\" rel=\"noreferrer noopener\"\u003eKaeno-TraderScrolling\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2109-bosses-have-lega-medals/\" rel=\"noreferrer noopener\"\u003eBosses Have Lega Medals\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cp\u003eIf you enjoy my work - you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\"\u003ebuy me a coffee\u003c/a\u003e~\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1538/ref-spt-friendly-quests",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  16,
+    "published_at":  "2024-07-09T08:04:00.000000Z",
+    "created_at":  "2024-07-09T08:04:45.000000Z",
+    "updated_at":  "2026-08-08T06:02:11.000000Z",
+    "owner":  {
+                  "id":  48110,
+                  "name":  "acidphantasm",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-04-11T21:22:35.000000Z",
+                  "updated_at":  "2026-08-10T12:36:53.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  16,
+                     "hub_id":  29,
+                     "title":  "Traders",
+                     "slug":  "traders",
+                     "description":  ""
+                 }
+}

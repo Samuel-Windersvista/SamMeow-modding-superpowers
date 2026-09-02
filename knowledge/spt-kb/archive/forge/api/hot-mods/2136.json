@@ -1,0 +1,49 @@
+﻿{
+    "id":  2136,
+    "hub_id":  2835,
+    "guid":  "com.karmamgl.loothighlight",
+    "name":  "Loot Highlighter",
+    "slug":  "loot-highlighter",
+    "teaser":  "Loot Highlighter makes valuable items, containers, and corpses stand out with customizable highlights and labels. Color-coded by rarity and featuring distance indicators, this mod ensures you never miss important loot while exploring Tarkov.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2835.png",
+    "downloads":  25557,
+    "favourites_count":  23,
+    "description":  "\u003cp\u003eLoot Highlighter transforms your looting experience in SPT-AKI by making valuable items, containers, and corpses instantly visible with customizable highlights and clear labels. Items are color-coded by rarity, with ultra-rare items popping in purple, rare items in yellow, and uncommon items in blue.\u003c/p\u003e\n\u003cp\u003eThe intuitive debug menu (press F12) gives you complete control - adjust detection radius, refresh rate, toggle categories, and customize highlight colors to your preference. Enable distance indicators to see exactly how far away each item is.\u003c/p\u003e\n\u003cp\u003eThe mod intelligently identifies container types, showing whether you’re looking at medical supplies, ammo boxes, weapon crates, or other specialized containers.\u003c/p\u003e\n\u003cp\u003eDesigned with performance in mind, Loot Highlighter runs smoothly and integrates well with other mods by using the standard F12 debug key.\u003c/p\u003e\n\u003cp\u003eNever overlook valuable items again - spot that rare key card across the room or find that hidden stash without pixel hunting!\u003c/p\u003e\n\u003cp\u003e(warning its still in beta !)\u003c/p\u003e\n\u003ch2\u003eKey Features (Bullet Points)\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eVisual highlights for loot items, containers, and corpses\u003c/li\u003e\n\u003cli\u003eAuto color-coding by item rarity\u003c/li\u003e\n\u003cli\u003eOptional distance indicators\u003c/li\u003e\n\u003cli\u003eContainer type identification\u003c/li\u003e\n\u003cli\u003eFully customizable settings via F12 debug menu\u003c/li\u003e\n\u003cli\u003eOptimized for performance\u003c/li\u003e\n\u003cli\u003eCompatible with other mods\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eSocial Media Announcement\u003c/h2\u003e\n\u003cp\u003e📢 New Mod Release: Loot Highlighter!\u003c/p\u003e\n\u003cp\u003eTired of missing valuable items in the dark corners of Tarkov? Loot Highlighter makes all important items, containers, and corpses stand out with customizable colored highlights. Press F1 to toggle highlighting, F12 for full customization.\u003c/p\u003e\n\u003cp\u003eDownload now and never miss that GPU or rare key again! #SPTAki #Tarkov #Mods\u003c/p\u003e\n\u003ch2\u003eInstallation Instructions\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003eDownload the Loot Highlighter zip file\u003c/li\u003e\n\u003cli\u003eExtract the contents to your SPT/BepInEx/plugins/ folder\u003c/li\u003e\n\u003cli\u003eStart the game\u003c/li\u003e\n\u003cli\u003eUse F1 to toggle highlighting and F12 to access setting\u003c/li\u003e\n\u003c/ol\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2136/loot-highlighter",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  true,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  4,
+    "published_at":  "2025-05-15T18:49:00.000000Z",
+    "created_at":  "2025-05-15T18:49:23.000000Z",
+    "updated_at":  "2026-07-28T08:06:07.000000Z",
+    "owner":  {
+                  "id":  78830,
+                  "name":  "KarmaMLG",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/e54e9b2f181cecb2ecfcaecc3795cb5e4c1421eb_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-05-12T12:11:23.000000Z",
+                  "updated_at":  "2026-07-10T04:51:59.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  69402,
+                                   "name":  "flir",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/c6b09b9b0ec85eafdaed4a0fcd100ec77d72d939_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2024-12-12T12:24:24.000000Z",
+                                   "updated_at":  "2026-08-09T14:14:47.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  4,
+                     "hub_id":  21,
+                     "title":  "Items",
+                     "slug":  "items",
+                     "description":  ""
+                 }
+}

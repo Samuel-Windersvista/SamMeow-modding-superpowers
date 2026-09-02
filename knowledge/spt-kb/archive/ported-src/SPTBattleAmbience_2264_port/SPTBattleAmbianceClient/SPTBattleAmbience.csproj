@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-4A7B-8C9D-0E1F2A3B4C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPTBattleAmbience</RootNamespace>
+    <AssemblyName>SPTBattleAmbience</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Refs-410\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Refs-410\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\Refs-410\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\Refs-410\Comfort.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Refs-410\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\Refs-410\spt-reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Refs-410\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\Refs-410\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Refs-410\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Config\ConfigurationManagerAttributes.cs" />
+    <Compile Include="Config\MapConfigBase.cs" />
+    <Compile Include="Config\MapConfigStruct.cs" />
+    <Compile Include="Config\General\GeneralConfig.cs" />
+    <Compile Include="Controllers\BattleAmbienceController.cs" />
+    <Compile Include="Data\ClipInfo.cs" />
+    <Compile Include="Data\Enum\ETimeRestriction.cs" />
+    <Compile Include="Helpers\AmbientHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\GameWorldHelper.cs" />
+    <Compile Include="Helpers\ModGlobals.cs" />
+    <Compile Include="Managers\AmbienceManager.cs" />
+    <Compile Include="Models\BattleSoundEntry.cs" />
+    <Compile Include="Models\BattleSoundSequence.cs" />
+    <Compile Include="Models\Maps\AmbienceEventConfig.cs" />
+    <Compile Include="Models\Maps\AmbienceEventConfigGroup.cs" />
+    <Compile Include="Models\Maps\AmbienceEvents.cs" />
+    <Compile Include="Models\Sounds\AmbientSoundCategory.cs" />
+    <Compile Include="Models\Sounds\AmbientSounds.cs" />
+    <Compile Include="Patches\GameWorldPatches.cs" />
+    <Compile Include="Utility\Category.cs" />
+    <Compile Include="Utility\DebugLogger.cs" />
+    <Compile Include="Utility\Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assets\**\*.*">
+      <Link>assets\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

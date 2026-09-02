@@ -1,0 +1,16 @@
+{
+  "687b616db015c21f329bf45f name": "Gunsmith - Abakan",
+  "687b616db015c21f329bf45f description": "Come in, have a seat. I’ve got something unusual for you today. Sergey’s buried in his own work, tinkering with some high-priority builds. He asked me to deal with it, but I’m stretched thin keeping the reserve in check. Looters are crawling all over, and I’m out here playing whack-a-mole with them, so I’m passing this to you. There’s an AN94 stashed out there, left by someone who wants to stay in the shadows. No names, no details, just how they like it. The rifle’s hidden somewhere at the old makeshift military base near the lake. There’s a list of attachments and mods they want on it. I trust you to get it done right and not run off with the gun.  Get it done, and bring it back to me. I’ll make sure it gets to where it’s supposed to go.  ",
+  "687b616db015c21f329bf45f startedMessageText": "Watch your back out there. The woods are crawling with scavs, and they’d love to get their hands on a prize like that. Move quick, stay sharp.",
+  "687b616db015c21f329bf45f successMessageText": "Impressive work. Let me see it...Clean job. You followed the specs to the letter. I’ve got some extra gear stashed away, good stuff from the reserve. You earned it. Oh, Sergey said you should go by and see him, he's got some new wares you might be interested in. \n\n\n\n\n\n\n\n",
+  "687b616db015c21f329bf45f failMessageText": "Unfortunate. ",
+  "687b573e9a195e91cdbfeb3e": "Find the parts list left by Mechanic's client.",
+  "687b576a812a0cbb6a84bbcd": "Find the AN94 rifle",
+  "687bfe14c7992e70e4182043": "Handover the rifle to Jaeger.",
+  "687c00f3ab87dcd3d33110c2": "Handover the AN-94 skeletonized stock",
+  "687c0504ecb8b6f3c29ea6fc": "Handover the 6L23 camo mag",
+  "687c05c4f0c26d721dfc76e5": "Handover the NPZ PK1 Obzor",
+  "687c0668111c9ed31ee0b298": "Handover the CSS knurled charging handle",
+  "687c08947e7e6875c8cb5b03": "Handover the AK Custom Guns AR type pistol grip adapter",
+  "687c09233b1e9653adb86cfc": "Handover the AR-15 F1 skeletonized style 2 PC pistol grip"
+}

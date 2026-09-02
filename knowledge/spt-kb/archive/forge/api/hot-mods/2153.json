@@ -1,0 +1,36 @@
+﻿{
+    "id":  2153,
+    "hub_id":  2853,
+    "guid":  null,
+    "name":  "Expanded Task Text (ETT)",
+    "slug":  "expanded-task-text-ett",
+    "teaser":  "Knowledge is power, unfortunately Nikita doesn\u0027t see it that way.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2853.png",
+    "downloads":  14297,
+    "favourites_count":  1,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eFeatures and Usage\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003ch3\u003eFeatures\u003c/h3\u003e\n\u003cp\u003eAdds extra information to tasks.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eShows key(s) required for the task if applicable.\u003c/li\u003e\n\u003cli\u003eIf the task is required for collector.\u003c/li\u003e\n\u003cli\u003eIf the task is required for lightkeeper.\u003c/li\u003e\n\u003cli\u003eShows the next quest(s) in the chain\u003c/li\u003e\n\u003cli\u003eGunsmith tasks list all required parts and what trader(s) sell those parts\u003c/li\u003e\n\u003cli\u003eIf applicable shows the time gate until next gunsmith task unlocks.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://hub.sp-tarkov.com/attachment/6062-pasted-from-clipboard-png/\" alt=\"6062-pasted-from-clipboard-png\" /\u003e\u003c/h3\u003e\n\u003ch3\u003eUsage\u003c/h3\u003e\n\u003cp\u003eJust install it!\u003c/p\u003e\n\u003ch3\u003eAdditional Details\u003c/h3\u003e\n\u003cp\u003eIf you find any issues, open a Github issue \u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/robpneu/SPT-Expanded-Task-Text/issues\" rel=\"noreferrer noopener\"\u003ehere\u003c/a\u003e and I’ll see what I can do.\u003c/p\u003e\n\u003cp\u003eThis is a re-release with permission of the original author, Dirtbikercj\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInstallation\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eExtract zip and drop user folder inside of your SPTarkov folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (this is for SAIN, but the same concept applies to all of my mods). Credit to Drakia for the video\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eCredits\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eOriginal Mod by Dirtbikercj. Re-posted with permission.\u003c/p\u003e\n\u003cp\u003ePlease show him lots of love. I’ve agreed to handle maintenance going forward but he’s the real creator. He’s given a lot to this community and deserves all the credit and praise, and none of the grief that’s been shown him in the past. I hope he makes his way back to modding but I wish him the best regardless.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2153/expanded-task-text-ett",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-05-26T02:00:14.000000Z",
+    "created_at":  "2025-05-26T02:00:14.000000Z",
+    "updated_at":  "2026-07-07T16:59:08.000000Z",
+    "owner":  {
+                  "id":  59225,
+                  "name":  "FriedEngineer",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/91891bd774ac1b69c20a05d344b99328c8586f3c_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/cEEbS8VzFZzi2nuKoiuuKh4V1ox6IISnNe4U8FJv_1280w.webp",
+                  "created_at":  "2024-07-23T06:28:10.000000Z",
+                  "updated_at":  "2026-08-10T04:16:13.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

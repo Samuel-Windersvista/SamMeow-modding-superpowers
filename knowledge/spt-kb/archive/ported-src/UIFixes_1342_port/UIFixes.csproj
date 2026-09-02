@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1E7A0C2-5D3F-4A6E-9B8D-2C4F6A8E1D35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UIFixes</RootNamespace>
+    <AssemblyName>Tyfon.UIFixes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <LangVersion>latest</LangVersion>
+    <Version>5.3.11</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="0Harmony">
+      <HintPath>..\Refs-410\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AnimationSystem.Types">
+      <HintPath>..\Refs-410\AnimationSystem.Types.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Refs-410\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\Refs-410\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\Refs-410\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>..\Refs-410\Comfort.Unity.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ConfigurationManager">
+      <HintPath>..\Refs-410\ConfigurationManager.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Fika.Core">
+      <HintPath>..\Refs-410\Fika.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>..\Refs-410\ItemComponent.Types.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Refs-410\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\Refs-410\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\Refs-410\spt-common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\Refs-410\spt-reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\Refs-410\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Refs-410\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\Refs-410\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\Refs-410\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\Refs-410\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\Refs-410\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Refs-410\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\Refs-410\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UIFixes.Net\UIFixes.Net.csproj">
+      <Project>{8A3F2C41-9B7E-4D2A-A5C6-1E7F90B34D21}</Project>
+      <Name>UIFixes.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

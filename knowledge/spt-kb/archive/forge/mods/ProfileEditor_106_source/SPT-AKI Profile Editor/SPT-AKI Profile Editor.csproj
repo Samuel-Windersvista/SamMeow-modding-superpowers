@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.17763.0</TargetFramework>
+    <RootNamespace>SPT_AKI_Profile_Editor</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Version>4.1.0</Version>
+    <ApplicationIcon>Resources\killa_ico_k3r_icon.ico</ApplicationIcon>
+    <PackageId>SPT-AKI Profile Editor</PackageId>
+    <Authors>SkiTles55</Authors>
+    <Company>SkiTles55</Company>
+    <Product>SPT-AKI Profile Editor</Product>
+    <Description>Program for editing player profile on the SPT Server</Description>
+    <Copyright>SkiTles55</Copyright>
+    <PackageProjectUrl>https://github.com/SkiTles55/SPT-AKI-Profile-Editor</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\ltcWallet.png" />
+    <None Remove="profileeditor.png" />
+    <None Remove="Resources\Images\spt-server.gif" />
+    <None Remove="Resources\Localizations\ch.json" />
+    <None Remove="Resources\Localizations\en.json" />
+    <None Remove="Resources\Localizations\jp.json" />
+    <None Remove="Resources\Localizations\ru.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.11" />
+    <PackageReference Include="MahApps.Metro.IconPacks.FontAwesome" Version="6.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="ReleaseChecker.GitHub" Version="1.0.2" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\ltcWallet.png" />
+    <Resource Include="Resources\Images\spt-server.gif" />
+    <EmbeddedResource Include="Resources\Localizations\ch.json" />
+    <EmbeddedResource Include="Resources\Localizations\en.json" />
+    <EmbeddedResource Include="Resources\Localizations\jp.json" />
+    <EmbeddedResource Include="Resources\Localizations\ru.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="Resources\Images\profileeditor.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ModHelper\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ModHelper\SPT-AKI Profile Editor.ModHelper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ModHelper\version">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

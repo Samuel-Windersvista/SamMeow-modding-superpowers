@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "LocaleTest/0.1.0": {
+        "runtime": {
+          "LocaleTest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LocaleTest/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 835487534
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: radarhud
+      Dependencies: {}

@@ -1,0 +1,42 @@
+﻿{
+    "id":  2200,
+    "hub_id":  2903,
+    "guid":  "com.shibatsu.dynamicexternalresolution",
+    "name":  "Dynamic External Resolution Patch (DERP)",
+    "slug":  "dynamic-external-resolution-patch-derp",
+    "teaser":  "Dynamically change the resolution of the external image rendering when we enter the optical sight, which gives us an increase in frame rate",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2903.png",
+    "downloads":  21622,
+    "favourites_count":  42,
+    "description":  "\u003ch1\u003eWhat this mod does\u003c/h1\u003e\n\u003cp\u003eEscape from Tarkov uses “picture in picture” (PiP) to render weapon scopes. This means the game’s engine has to render the entire scene twice. Once for your main screen and a second time inside the scope’s view. This is very demanding on system performance and often causes significant FPS drops. This mod changes rendering resolution of main screen when using scopes which can boost performance.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/RFxqk1H.jpeg\" alt=\"\" /\u003e\u003c/p\u003e\n\u003ch1\u003eInstallation\u003c/h1\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /\u003e\u003c/p\u003e\n\u003ch1\u003eHow to change settings\u003c/h1\u003e\n\u003cp\u003ePress F12 in game and find this mod in mode menu.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/t6m2G5E.jpeg\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003eHere you can change settings\u003c/p\u003e\n\u003cp\u003eSampling downgrade changes resolution with TAA enabled(no FSR/DLSS).\u003c/p\u003e\n\u003cp\u003e0 - no change\n25 - 75% of default resolution\n50 - 50% of default resolution\n75 - 25% of default resolution\n100 - 0% of default resolution (dont use it)\u003c/p\u003e\n\u003cp\u003e50% TAA example\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/t6m2G5E.jpeg\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/b9gfjfV.jpeg\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e80% TAA example\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/eqoqoBO.png\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/6ClwZzK.jpeg\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003eFSR/DLSS settings changes FSR/DLSS preset of external image when scoped. Preset in game settings sets for image in scope.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSetting this same as your game settings does nothing(this is why black flickers disappear)\u003c/strong\u003e\u003c/p\u003e\n\u003ch1\u003eKnown bugs\u003c/h1\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eBlack flickering when ADSing with FSR/DLSS enabled. Dont know how to fix this. Only solution is to use TAA instead of FSR/DLSS. On my PC setup it changes nothing because of CPU bottleneck.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eBlack strips/flickering black screen using TAA. Not so often but can happen. Try changing settings in game and mod menu and it go away.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2200/dynamic-external-resolution-patch-derp",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-06-24T13:14:00.000000Z",
+    "created_at":  "2025-06-24T13:14:41.000000Z",
+    "updated_at":  "2026-07-28T08:09:23.000000Z",
+    "owner":  {
+                  "id":  80746,
+                  "name":  "Sh1ba",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=S\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-06-24T12:19:48.000000Z",
+                  "updated_at":  "2026-03-12T03:05:22.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

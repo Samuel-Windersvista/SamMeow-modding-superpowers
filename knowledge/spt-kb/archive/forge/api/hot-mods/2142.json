@@ -1,0 +1,43 @@
+﻿{
+    "id":  2142,
+    "hub_id":  2841,
+    "guid":  null,
+    "name":  "ODT\u0027s Item Info - 3.11 Update \u0026 Added Colored Name",
+    "slug":  "odts-item-info-311-update-added-colored-name",
+    "teaser":  "An updated version of ODT\u0027s Item Info mod.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2841.png",
+    "downloads":  8233,
+    "favourites_count":  0,
+    "description":  "\u003cp\u003eThis is an updated version of ODT’s \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/985-item-info/\" rel=\"noreferrer noopener\"\u003eItem Info mod\u003c/a\u003e. Uploaded with his permission.\u003c/p\u003e\n\u003cp\u003eFeatures:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eUpdated to SPT 3.11\u003c/li\u003e\n\u003cli\u003eAdded colors to item name\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eEdit file “tiers_hex.json” to change colors.\u003c/p\u003e\n\u003cp\u003eDependencies: ColorConverterAPI\u003c/p\u003e\n\u003cp\u003eInstallation:\u003c/p\u003e\n\u003cp\u003e- Copy the mod folder into user/mods (user/mods/ODT-IntemInfo)\u003c/p\u003e\n\u003cp\u003eKnown Issue:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eEnglish locale only at the moment.\u003c/li\u003e\n\u003c/ul\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2142/odts-item-info-311-update-added-colored-name",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-05-20T11:04:21.000000Z",
+    "created_at":  "2025-05-20T11:04:21.000000Z",
+    "updated_at":  "2026-07-07T16:59:08.000000Z",
+    "owner":  {
+                  "id":  78428,
+                  "name":  "kobethuy",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/xwnzuK5gF0ndmEIlazGfekomSx7oeNGvTE7UQckP_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-05-04T22:32:08.000000Z",
+                  "updated_at":  "2026-08-10T11:10:24.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  5975,
+                                   "name":  "ODT",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d02464f71763fe074db3a85d66abacb269d90905_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2021-06-26T19:49:19.000000Z",
+                                   "updated_at":  "2026-07-10T04:49:39.000000Z"
+                               }
+                           ],
+    "category":  null
+}

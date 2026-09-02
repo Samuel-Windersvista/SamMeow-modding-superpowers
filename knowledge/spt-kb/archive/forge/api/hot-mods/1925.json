@@ -1,0 +1,42 @@
+﻿{
+    "id":  1925,
+    "hub_id":  2596,
+    "guid":  "com.lacyway.nbg",
+    "name":  "NerfBotGrenades",
+    "slug":  "nerfbotgrenades",
+    "teaser":  "Allows you to multiply bot inaccuracy with grenades.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2596.png",
+    "downloads":  36598,
+    "favourites_count":  50,
+    "description":  "\u003cp\u003eTired of bots with insane grenade accuracy? This mod allows you to multiply their inaccuracy when throwing grenades. Each bot by default has a very small inaccuracy offset when throwing a grenade, however it is so minor that it is barely noticeable. This mod lets you tweak this value up to 10x.\u003c/p\u003e\n\u003cp\u003eI \u003cem\u003e\u003cstrong\u003ewill not\u003c/strong\u003e\u003c/em\u003e read any bug reports unless proper logs are given.\u003c/p\u003e\n\u003cp\u003eYou can support me on Ko-Fi\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1925/nerfbotgrenades",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  5,
+    "published_at":  "2024-12-30T07:40:00.000000Z",
+    "created_at":  "2024-12-30T07:40:16.000000Z",
+    "updated_at":  "2026-08-08T18:02:21.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  5,
+                     "hub_id":  22,
+                     "title":  "Bots",
+                     "slug":  "bots",
+                     "description":  ""
+                 }
+}

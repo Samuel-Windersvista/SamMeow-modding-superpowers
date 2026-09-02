@@ -1,0 +1,10 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/FontReplace/CopilotIndices/17.14.827.52834
+/.vs/FontReplace/DesignTimeBuild
+/.vs/FontReplace/FileContentIndex
+/.vs
+/obj
+/bin

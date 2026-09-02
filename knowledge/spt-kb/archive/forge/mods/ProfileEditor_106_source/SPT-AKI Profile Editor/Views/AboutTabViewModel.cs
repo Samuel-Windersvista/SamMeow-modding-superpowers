@@ -1,0 +1,37 @@
+﻿using SPT_AKI_Profile_Editor.Core;
+using SPT_AKI_Profile_Editor.Helpers;
+using System.Windows;
+
+namespace SPT_AKI_Profile_Editor.Views
+{
+    public class AboutTabViewModel(IApplicationManager applicationManager) : BindableViewModel
+    {
+        public static AppSettings AppSettings => AppData.AppSettings;
+
+        public static string RepositoryURL => $"https://github.com/{AppSettings.repoAuthor}/{AppSettings.repoName}/releases/latest";
+
+        public static string AuthorURL => $"https://github.com/{AppSettings.repoAuthor}";
+
+        public static string YoomoneyUrl => AppSettings.yoomoneyUrl;
+
+        public static string LtcWallet => AppSettings.ltcWallet;
+
+        public static string SptProjectUrl => AppSettings.sptProjectUrl;
+
+        public static RelayCommand CopyLtcWallet => new(obj => Clipboard.SetText(LtcWallet));
+
+        public RelayCommand OpenAutorGitHubUrl => new(obj => OpenUrl(AuthorURL));
+
+        public RelayCommand OpenRepositoryGitHubUrl => new(obj => OpenUrl(RepositoryURL));
+
+        public RelayCommand OpenDiscord => new(obj => applicationManager.OpenDiscord());
+
+        public RelayCommand OpenYoomoneyUrl => new(obj => OpenUrl(YoomoneyUrl));
+
+        public RelayCommand OpenSteamUrl => new(obj => OpenUrl(AppSettings.steamTradeUrl));
+
+        public RelayCommand OpenSptProjectUrl => new(obj => OpenUrl(SptProjectUrl));
+
+        private void OpenUrl(string url) => applicationManager.OpenUrl(url);
+    }
+}

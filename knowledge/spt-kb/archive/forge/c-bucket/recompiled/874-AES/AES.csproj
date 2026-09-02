@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>AES</AssemblyName>
+    <RootNamespace>AES_Trader</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Version>0.7.9</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.2" />
+    <PackageReference Include="SemanticVersioning" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WTT-ServerCommonLib">
+      <HintPath>E:\Game\EFT_Offline\Inescapable Tarkov\mods\[1]前置框架-WTT公共库-WTT-ClientCommonLib\SPT_Runtime\user\mods\WTT-ServerCommonLib\WTT-ServerCommonLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

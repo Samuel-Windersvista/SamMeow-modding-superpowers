@@ -1,0 +1,49 @@
+﻿{
+    "id":  1945,
+    "hub_id":  2617,
+    "guid":  "com.dvize.ailimit",
+    "name":  "Ai Limit",
+    "slug":  "ai-limit",
+    "teaser":  "Temporarily disable far bots to reduce cpu load",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/iFN5tmtV0BCSMeEQLeU1CoMwB4x4XgF27OU2xmbj.png",
+    "downloads":  59697,
+    "favourites_count":  41,
+    "description":  "\u003cp\u003eFor more FPS you can try NVidia Smooth motion with NVidia GPU RTX 4000+\u003c/p\u003e\n\u003cp\u003eDisable AI (temporarily) based on distance to the player and user defined bot limit within that distance. Only the closest bots (distance wise) are enabled based on a max value you set in bepinex config.\u003c/p\u003e\n\u003cp\u003eFor instance, i could set the AI Distance limit to 400 and the bot limit to 5.\u003c/p\u003e\n\u003cp\u003eWithin that max distance of 400, my version will only enable the closest 5 bots.\u003c/p\u003e\n\u003cp\u003eOnce you kill the bots close to you, it could activate bots up to your maximum much further away.\u003c/p\u003e\n\u003cp\u003eDon’t use this mod with Questing Bots.\u003cbr /\u003e\nQuesting Bots have their own AI Limiter.\u003c/p\u003e\n\u003cp\u003eOriginal mod \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/793-ai-limit/?highlight=ai%20li#overview\" rel=\"noreferrer noopener\"\u003eAI Limit\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1945/ai-limit",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  5,
+    "published_at":  "2025-01-06T10:28:00.000000Z",
+    "created_at":  "2025-01-06T10:28:40.000000Z",
+    "updated_at":  "2026-07-28T06:08:41.000000Z",
+    "owner":  {
+                  "id":  26519,
+                  "name":  "wizard83",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=w\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-03T13:05:13.000000Z",
+                  "updated_at":  "2026-08-10T11:04:56.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  15516,
+                                   "name":  "Props",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/53f17847d86ea53a84f69a549ce2b50baf31d665_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-03-09T07:33:42.000000Z",
+                                   "updated_at":  "2026-07-10T04:50:00.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  5,
+                     "hub_id":  22,
+                     "title":  "Bots",
+                     "slug":  "bots",
+                     "description":  ""
+                 }
+}

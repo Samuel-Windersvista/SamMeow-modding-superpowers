@@ -1,0 +1,44 @@
+﻿[
+    {
+        "id":  11946,
+        "hub_id":  null,
+        "version":  "1.3.0",
+        "description":  "\u003cp\u003eSPT ~4.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2386/use-items-anywhere/1.3.0",
+        "content_length":  5744,
+        "spt_version_constraint":  "~4.0 \u003c4.1.0",
+        "downloads":  5481,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-10-20T23:54:00.000000Z",
+        "created_at":  "2025-10-20T23:54:21.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    },
+    {
+        "id":  12245,
+        "hub_id":  null,
+        "version":  "1.3.1",
+        "description":  "\u003cul\u003e\n\u003cli\u003eFixes fast access grenade menu not finding all grenades in your inventory\u003c/li\u003e\n\u003cli\u003eFixes bug where you could bind unexamined items\u003c/li\u003e\n\u003cli\u003eFixes bug where you could bind non-complete guns\u003c/li\u003e\n\u003cli\u003eFixes BSG bug where you could not use your secure container as payment slots\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2386/use-items-anywhere/1.3.1",
+        "content_length":  6736,
+        "spt_version_constraint":  "~4.0 \u003c4.1.0",
+        "downloads":  1047,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-11-09T02:45:00.000000Z",
+        "created_at":  "2025-11-09T02:45:29.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    },
+    {
+        "id":  12257,
+        "hub_id":  null,
+        "version":  "1.3.2",
+        "description":  "\u003cul\u003e\n\u003cli\u003eFix issue with grenades having to be rebound to use them\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2386/use-items-anywhere/1.3.2",
+        "content_length":  6674,
+        "spt_version_constraint":  "~4.0 \u003c4.1.0",
+        "downloads":  89137,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-11-09T19:17:00.000000Z",
+        "created_at":  "2025-11-09T19:18:00.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    }
+]

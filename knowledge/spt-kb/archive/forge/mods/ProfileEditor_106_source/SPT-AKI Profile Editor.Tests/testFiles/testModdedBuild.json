@@ -1,0 +1,96 @@
+{
+  "id": "654eacde4b0b43b6ef0ebb59",
+  "name": "mppppp",
+  "root": "9f215cf9934fa41e9aab9363",
+  "items": [
+    {
+      "_id": "9f215cf9934fa41e9aab9363",
+      "_tpl": "5de7bd7bfd6b4e6e2276dc25",
+      "upd": {
+        "Repairable": {
+          "MaxDurability": 55,
+          "Durability": 19
+        },
+        "Foldable": {
+          "Folded": false
+        },
+        "FireMode": {
+          "FireMode": "single"
+        }
+      }
+    },
+    {
+      "_id": "f1bec06a904d30d33ff52b13",
+      "_tpl": "5de8eac42a78646d96665d91",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_magazine"
+    },
+    {
+      "_id": "e5ddhhhh915b6b86fe88e3c4",
+      "_tpl": "5de8f237bbaf010b10528a70",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_muzzle"
+    },
+    {
+      "_id": "4d8379ad4d6ad60b0ddfc9a1",
+      "_tpl": "5de910da8b6c4240ba2651b5",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_stock"
+    },
+    {
+      "_id": "558fa8ed16158abc2fccb45b",
+      "_tpl": "5de8fbad2fbe23140d3ee9c4",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_foregrip"
+    },
+    {
+      "_id": "872e67dfkkkkaca11b17c9d0",
+      "_tpl": "5de8e67c4a9jjjjbc92edbd7",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_reciever"
+    },
+    {
+      "_id": "0feaa14c0a36837db0fda740",
+      "_tpl": "5de922d4b11454561e39239f",
+      "parentId": "9f215cf9934fa41e9aab9363",
+      "slotId": "mod_charge"
+    },
+    {
+      "_id": "6baffa1881c7b312d79fe1db",
+      "_tpl": "5de8f2d5b74cdiiii0650c72",
+      "parentId": "e5dd4745915b6b86fe88e3c4",
+      "slotId": "mod_muzzle"
+    },
+    {
+      "_id": "7824ea238a50f7c845371cc4",
+      "_tpl": "560d657b4bdc2da74d8b4572",
+      "parentId": "e5dd4745915b6b86fe88e3c4",
+      "slotId": "mod_tactical",
+      "upd": {
+        "Light": {
+          "IsActive": true,
+          "SelectedMode": 0
+        }
+      }
+    },
+    {
+      "_id": "f3150fc4641d3d7ca110212b",
+      "_tpl": "59f9d8158moddedc7506ee62",
+      "parentId": "872e67df7744aca11b17c9d0",
+      "slotId": "mod_scope",
+      "upd": {
+        "Sight": {
+          "ScopesCurrentCalibPointIndexes": [
+            0
+          ],
+          "ScopesSelectedModes": [
+            0
+          ],
+          "SelectedScope": 0
+        }
+      }
+    }
+  ],
+  "type": "weapon",
+  "Parent": "5447b5e04bdc2d62278b4567"
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C5C3F7E-1907-4A1E-8A7B-5E3C2B1F4A0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeaveItThere</RootNamespace>
+    <AssemblyName>LeaveItThere</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SignAssembly>false</SignAssembly>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\m2-port\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\m2-port\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\m2-port\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\m2-port\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\m2-port\Refs-410\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\m2-port\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>..\..\m2-port\Refs-410\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\..\m2-port\Refs-410\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\m2-port\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.console.core">
+      <HintPath>E:\Game\EFT_Offline\SPT_410\EscapeFromTarkov_Data\Managed\bsg.console.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\m2-port\Refs-410\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\m2-port\Refs-410\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\ConfigurationManagerAttributes.cs" />
+    <Compile Include="src\Helpers.CursorHelper\CursorHelper.cs" />
+    <Compile Include="src\LeaveItThere\Plugin.cs" />
+    <Compile Include="src\LeaveItThere.Addon\AddonToolsExamples.cs" />
+    <Compile Include="src\LeaveItThere.Addon\EPacketDestination.cs" />
+    <Compile Include="src\LeaveItThere.Addon\LITFikaTools.cs" />
+    <Compile Include="src\LeaveItThere.Addon\LITPacketRegistration.cs" />
+    <Compile Include="src\LeaveItThere.Addon\LITStaticEvents.cs" />
+    <Compile Include="src\LeaveItThere.Common\ConsoleCommands.cs" />
+    <Compile Include="src\LeaveItThere.Common\CustomInteraction.cs" />
+    <Compile Include="src\LeaveItThere.Common\InteractionExamples.cs" />
+    <Compile Include="src\LeaveItThere.Common\ItemFilter.cs" />
+    <Compile Include="src\LeaveItThere.Common\PlacedItemData.cs" />
+    <Compile Include="src\LeaveItThere.Common\PlacedItemDataPack.cs" />
+    <Compile Include="src\LeaveItThere.Components\FakeItem.cs" />
+    <Compile Include="src\LeaveItThere.Components\ItemMover.cs" />
+    <Compile Include="src\LeaveItThere.Components\LITSession.cs" />
+    <Compile Include="src\LeaveItThere.Components\Moveable.cs" />
+    <Compile Include="src\LeaveItThere.CustomUI\ButtonDrag.cs" />
+    <Compile Include="src\LeaveItThere.CustomUI\MoveModeUI.cs" />
+    <Compile Include="src\LeaveItThere.CustomUI\UIColorHelper.cs" />
+    <Compile Include="src\LeaveItThere.Fika\FikaBridge.cs" />
+    <Compile Include="src\LeaveItThere.Helpers\BundleThings.cs" />
+    <Compile Include="src\LeaveItThere.Helpers\InteractionHelper.cs" />
+    <Compile Include="src\LeaveItThere.Helpers\ItemHelper.cs" />
+    <Compile Include="src\LeaveItThere.Helpers\LITUtils.cs" />
+    <Compile Include="src\LeaveItThere.Helpers\Settings.cs" />
+    <Compile Include="src\LeaveItThere.Patches\EarlyGameStartedPatch.cs" />
+    <Compile Include="src\LeaveItThere.Patches\EarlyGameStartedPatchFika.cs" />
+    <Compile Include="src\LeaveItThere.Patches\GameEndedPatch.cs" />
+    <Compile Include="src\LeaveItThere.Patches\GetAvailableActionsPatch.cs" />
+    <Compile Include="src\LeaveItThere.Patches\InteractionsChangedHandlerPatch.cs" />
+    <Compile Include="src\LeaveItThere.Patches\LootExperiencePatch.cs" />
+    <Compile Include="src\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

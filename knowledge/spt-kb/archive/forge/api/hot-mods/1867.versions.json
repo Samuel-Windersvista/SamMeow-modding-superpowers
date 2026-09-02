@@ -1,0 +1,44 @@
+﻿[
+    {
+        "id":  1192,
+        "hub_id":  13584,
+        "version":  "2.4.0",
+        "description":  "\u003cp\u003e\u003cstrong\u003eWhat’s Changed\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e:Crab: :Crab: 3.11 :Crab: :Crab:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/2.3.0...2.4.0\" rel=\"noreferrer noopener\"\u003e\u003cstrong\u003eFull Changelog\u003c/strong\u003e\u003c/a\u003e\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1867/qcadjustments/2.4.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  321,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-15T23:32:24.000000Z",
+        "created_at":  "2025-03-15T23:32:24.000000Z",
+        "updated_at":  "2026-05-14T02:07:34.000000Z"
+    },
+    {
+        "id":  657,
+        "hub_id":  14171,
+        "version":  "3.0.1",
+        "description":  "\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/3.0.0...3.0.1\" rel=\"noreferrer noopener\"\u003e\u003cstrong\u003eFull Changelog\u003c/strong\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eBug Fixes\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFixed issue with unexpected VCQ JSON differences from Vanilla. May be present on other quest types.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eUpdating from an older version?\u003c/p\u003e\n\u003cp\u003eUnzip the new release into your SPT directory and override existing files.\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1867/qcadjustments/3.0.1",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  970,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-05-05T16:20:00.000000Z",
+        "created_at":  "2025-05-05T16:20:51.000000Z",
+        "updated_at":  "2026-05-14T01:53:42.000000Z"
+    },
+    {
+        "id":  11840,
+        "hub_id":  null,
+        "version":  "4.0.0",
+        "description":  "\u003cp\u003e\u003cstrong\u003eFull Changelog\u003c/strong\u003e: \u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/compare/3.0.1...4.0.0\" rel=\"noreferrer noopener\"\u003ehttps://github.com/ScidaJ/QCAdjustments/compare/3.0.1...4.0.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/9b7913bd297dd388a936ff3c89d2bddf501649b2\" rel=\"noreferrer noopener\"\u003e4.0. Complete rewite in C# for SPT4.0. Config.json is almost exactly …\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/2de2f6fd7015c0d5e274dcb9c5f58c75341b9c00\" rel=\"noreferrer noopener\"\u003eCompliance with coding standards for SPT.\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/commit/ebe2e1c9a89f2788889587515108a9552364ed7e\" rel=\"noreferrer noopener\"\u003ekill_target changes working.\u003c/a\u003e\u003c/p\u003e\n\u003ch2\u003eUpdating from an older version?\u003c/h2\u003e\n\u003cp\u003eSimply download and unzip into the root directory of your SPT installation. All installations come with a \u003ccode\u003eConfig.json\u003c/code\u003e that could be overwritten on future updates! It is recommended to backup your config before updating.\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1867/qcadjustments/4.0.0",
+        "content_length":  30767,
+        "spt_version_constraint":  "~4.0.0",
+        "downloads":  1903,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-10-14T18:28:00.000000Z",
+        "created_at":  "2025-10-14T18:28:55.000000Z",
+        "updated_at":  "2026-07-28T06:03:54.000000Z"
+    }
+]

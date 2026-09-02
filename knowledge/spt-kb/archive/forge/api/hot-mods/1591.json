@@ -1,0 +1,36 @@
+﻿{
+    "id":  1591,
+    "hub_id":  2176,
+    "guid":  "com.pein.betterrearsights",
+    "name":  "Better Rear Sights",
+    "slug":  "better-rear-sights",
+    "teaser":  "This mod attempts to make iron sights less crappy",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2176.png",
+    "downloads":  52976,
+    "favourites_count":  58,
+    "description":  "\u003ch3\u003eIntroduction\u003c/h3\u003e\n\u003cp\u003eTarkov’s default iron sights suck. This mod attempts to make them slightly better.\u003c/p\u003e\n\u003ch3\u003eModified Items\u003c/h3\u003e\n\u003cp\u003eShort version: a bunch.\u003c/p\u003e\n\u003cp\u003eLong version:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eHK MP7 flip-up rear sight\u003c/li\u003e\n\u003cli\u003eKAC Folding rear sight\u003c/li\u003e\n\u003cli\u003eKAC Folding micro rear sight\u003c/li\u003e\n\u003cli\u003eAK-12 rear sight\u003c/li\u003e\n\u003cli\u003eM14 SA Enlarged Military Aperture sight\u003c/li\u003e\n\u003cli\u003eAK-545 SAG rear sight\u003c/li\u003e\n\u003cli\u003eASh-12 rear sight carry handle\u003c/li\u003e\n\u003cli\u003eHK 416A5 flip-up rear sight\u003c/li\u003e\n\u003cli\u003eKRISS Defiance low profile flip-up rear sight\u003c/li\u003e\n\u003cli\u003eSA-58 Holland Type rear sight\u003c/li\u003e\n\u003cli\u003eHK G36 rear sight\u003c/li\u003e\n\u003cli\u003eFN SCAR flip-up rear sight\u003c/li\u003e\n\u003cli\u003eRPK-16 rear sight\u003c/li\u003e\n\u003cli\u003eAR-15 Colt A2 rear sight\u003c/li\u003e\n\u003cli\u003eAR-15 rear sight carry handle\u003c/li\u003e\n\u003cli\u003eMP9 rear sight\u003c/li\u003e\n\u003cli\u003eAK Taktika Tula TT01 rear sight rail\u003c/li\u003e\n\u003cli\u003eAK RD Enhanced V2 Rear Sight\u003c/li\u003e\n\u003cli\u003eAK-105 rear sight\u003c/li\u003e\n\u003cli\u003eAK-74 rear sight\u003c/li\u003e\n\u003cli\u003eAK-74M rear sight\u003c/li\u003e\n\u003cli\u003eAKM rear sight\u003c/li\u003e\n\u003cli\u003eAKMB system rear sight\u003c/li\u003e\n\u003cli\u003eAKMP system rear sight\u003c/li\u003e\n\u003cli\u003eMosin Rifle carbine rear sight\u003c/li\u003e\n\u003cli\u003eMosin Rifle rear sight\u003c/li\u003e\n\u003cli\u003eSVT-40 rear sight\u003c/li\u003e\n\u003cli\u003eSVDS rear sight\u003c/li\u003e\n\u003cli\u003eVPO-101 rear sight\u003c/li\u003e\n\u003cli\u003eVPO-209 rear sight\u003c/li\u003e\n\u003cli\u003eVSS rear sight\u003c/li\u003e\n\u003cli\u003ePK rear sight\u003c/li\u003e\n\u003cli\u003eRPD rear sight\u003c/li\u003e\n\u003cli\u003eSKS rear sight\u003c/li\u003e\n\u003cli\u003eVPO-215-02 .366TKM 600mm barrel\u003c/li\u003e\n\u003cli\u003eAKS-74U dust cover\u003c/li\u003e\n\u003cli\u003eAKS-74UB dust cover\u003c/li\u003e\n\u003cli\u003eAKS-74U Legal Arsenal Pilgrim railed dust cover\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eIf you think there’s a sight that should be included or changed then feel free to leave a suggestion.\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003ePreview\u003c/h3\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/SAzh06R.gif\" rel=\"noreferrer noopener\"\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/SAzh06R.gif\" alt=\"SAzh06R.gif\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003eAs per usual for any mod, just drag and drop.\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/2pgzyia.gif\" rel=\"noreferrer noopener\"\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/d1LD6lk.gif\" alt=\"d1LD6lk.gif\" /\u003e\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1591/better-rear-sights",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2024-07-26T03:01:07.000000Z",
+    "created_at":  "2024-07-26T03:01:07.000000Z",
+    "updated_at":  "2026-07-28T06:14:31.000000Z",
+    "owner":  {
+                  "id":  12179,
+                  "name":  "pein",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=p\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+                  "created_at":  "2021-12-14T17:06:03.000000Z",
+                  "updated_at":  "2026-08-10T12:40:14.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

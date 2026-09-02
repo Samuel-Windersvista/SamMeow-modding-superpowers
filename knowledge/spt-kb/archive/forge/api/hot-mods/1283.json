@@ -1,0 +1,49 @@
+﻿{
+    "id":  1283,
+    "hub_id":  1795,
+    "guid":  "com.choochoo.tradermodding",
+    "name":  "Trader Modding And Improved Weapon Building",
+    "slug":  "trader-modding-and-improved-weapon-building",
+    "teaser":  "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds Button to detach items in use, Highlights mods attached to other guns or ready to use, Ability to zoom in/out.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1795.png",
+    "downloads":  103259,
+    "favourites_count":  99,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eOverview\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003e\u003cstrong\u003eFeatures\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eAdds a new checkbox in the weapon preset screen to only show trader items, and your own items ofc.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eShows item prices from current Traders (Supports custom traders)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/hARimio.png\" alt=\"hARimio.png\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eQuick Buy Button\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/b706b57c-bca2-4bbc-850c-9b84752c553f\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003eAlso shows \u003cstrong\u003eflea prices\u003c/strong\u003e if the item is available there and the trader only checkbox is unticked:\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/GRDBpzs.png\" alt=\"GRDBpzs.png\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eMovable Build Cost Panel:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ssVdgkJ.gif\" alt=\"ssVdgkJ.gif\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eButton to detach items in use elsewhere (Doesn’t touch equipped guns by default):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ydLnvei.gif\" alt=\"ydLnvei.gif\" /\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHighlights parts (Colors customizable in F12):\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDirectly usable (Loose in stash)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e**Already present in the current gun build\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAttached to other stuff (But purchasable from traders)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAttached to other stuff (NOT purchasable)\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eColored borders while modding:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Cxs10j9.png\" alt=\"Cxs10j9.png\" /\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eShows items on PMC, as well as in Rigs etc.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/p8KWeB0.png\" alt=\"p8KWeB0.png\" /\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eQoL change: Ability to zoom in/out with the mousewheel for those big chonkers\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/tgqEQfz.gif\" alt=\"tgqEQfz.gif\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eEverything is configurable in the F12 menu:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/X6FDRVS.png\" alt=\"X6FDRVS.png\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eThere is also the option to invert the Trader only view to show NO items from traders instead (Essentially flea and own items only):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/oK8LqHV.png\" alt=\"oK8LqHV.png\" /\u003e\u003c/p\u003e\n\u003cp\u003eIf you have any issues, let me know\u003cbr /\u003e\nI tested everything thoroughly, without crashes and issues, but you never know\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eCredit to\u003c/strong\u003e \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/25757-wara/\" rel=\"noreferrer noopener\"\u003e\u003cstrong\u003ewara\u003c/strong\u003e\u003c/a\u003efor the awesome \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1433-trader-modding/\" rel=\"noreferrer noopener\"\u003eoriginal mod\u003c/a\u003e,\u003c/h3\u003e\n\u003cp\u003egiving me the inspiration to push it to the next level.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eHow to Install\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eJust extract the .zip file with BepInEx and user folder to your SPT folder.\u003c/p\u003e\n\u003cp\u003e**If you are upgrading from a version before 1.7.0: Please delete the folder “user/mods/ChooChoo-TraderModding-1.2.0”\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eShould you have version 1.0.0 installed, before installing the latest version, remove:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eWara-TraderModding.dll in BepInEx/plugins Wara-TraderModding-1.0.0 folder in user/mods\u003c/strong\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eCustom Trader Support\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eI changed the server mod to automatically get all custom traders that are installed.\u003cbr /\u003e\nShould work, but let me know if you notice any weird issues.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-4\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eRecommended Mods\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eTo further improve the QoL when modding your guns, the modding stats helper from wara shows stat comparisons in a nice Tooltip\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1814-modding-stats-helper-by-wara-for-3-8-0/\" rel=\"noreferrer noopener\"\u003eWara’s modding stats helper\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1283/trader-modding-and-improved-weapon-building",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  13,
+    "published_at":  "2024-04-05T19:57:00.000000Z",
+    "created_at":  "2024-04-05T19:57:01.000000Z",
+    "updated_at":  "2026-08-05T06:03:56.000000Z",
+    "owner":  {
+                  "id":  47646,
+                  "name":  "ChooChoo",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/319ec236ca25f48645b6698950be7d636cd6b12f_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/5d33f3c4ef095ffacd23d543d01376fda0e3cf9b_1280w.webp",
+                  "created_at":  "2024-04-05T19:27:45.000000Z",
+                  "updated_at":  "2026-08-07T19:44:50.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  22526,
+                                   "name":  "wara",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/ecf9812cb20e2bcebc5a43d4c852be998efc1601_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-09-17T19:33:00.000000Z",
+                                   "updated_at":  "2026-07-10T04:50:13.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  13,
+                     "hub_id":  76,
+                     "title":  "Weapons",
+                     "slug":  "weapons",
+                     "description":  ""
+                 }
+}

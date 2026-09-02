@@ -1,0 +1,20 @@
+{
+  "6873248b615c003311ebb292 name": "Immortal Nostalgia",
+  "6873248b615c003311ebb292 description": "\"Yo, merc, got a weird one for ya. Some high-roller client of mine’s got a hard-on for his old-school stuff, and he’s paying big to get it back. He’s after some old game console and a bootleg Star Wars DVD he stashed somewhere at the Health Resort. Problem is, I was three vodkas deep when he told me the room number, so I got no clue where exactly. You’ll need to sniff around the resort’s fancy suites y’know, the ones with the plush carpets and overpriced views. Once you’ve nabbed the goods, drop ‘em off at the mini theater in Interchange, in the back somewhere by the poster he said. Don’t even think about popping that DVD in for a watch or selling it for a quick buck, don't try fucking with that  game console either. This guy’s obsessive, and I ain’t dealing with his tantrums. They're messy; do this clean, and we’ll talk more work.\"\n\n",
+  "6873248b615c003311ebb292 startedMessageText": "Good Luck out there. Try not to die over this. ",
+  "6873248b615c003311ebb292 failMessageText": "Do svidaniya, mercenary. ",
+  "6873248b615c003311ebb292 completePlayerMessage": "",
+  "6873248b615c003311ebb292 successMessageText": "Well, damn, merc, you actually pulled it off! Found that console and dvd, huh? Not bad for a glorified scavenger. Dropped ‘em off at the mini theater like I asked, too? My client’s gonna be over the moon, probably crying into his vintage popcorn. You’ve got some skills, operator. Stick around, nice to have someone that don't fuck up a simple fetch job. Now go clean your gear or something.",
+  "686fb59d8b0538a76b923998": "Find the bootleg DVD at the Health Resort",
+  "687309c0742d221499ecb69e": "Find the game console at the Health Resort",
+  "68730b8f645d8547cbf06740": "Place the bootlegged DVD at the mini theater on Interchange",
+  "68730c98c6a9aafc1a8c2078": "Place the game console at the mini theater on Interchange",
+
+
+
+  "686051774a290eb6f216471f name": "Arms Recovery",
+  "686051774a290eb6f216471f description": "I tracked down tracked down a shipment of NATO weapons that was delivered to Customs. We aren't sure what the weapons are, but I want you to go and track them down and mark the shipment for me!",
+  "686051774a290eb6f216471f startedMessageText": "Get your ass out there and find that shipment!",
+  "686051774a290eb6f216471f successMessageText": "Great work on finding that shipment. Turns out that the weapons were absolute garbage!! You can keep two for yourself and I guess I will just sell the rest. Thanks again I suppose.",
+  "6860529aac68575f65f0578e": "Place a MS2000 Marker on the boxes in the basement of Fortress near the extraction point."
+}

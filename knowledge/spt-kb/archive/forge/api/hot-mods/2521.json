@@ -1,0 +1,42 @@
+﻿{
+    "id":  2521,
+    "hub_id":  null,
+    "guid":  "xyz.drakia.sense",
+    "name":  "Amands\u0027 Sense - Updated",
+    "slug":  "amands-sense-updated",
+    "teaser":  "Interactable icons for items, containers, bodies and extracts.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/9Wf52P2s2vmf2WRrkSl5ziP1b84VounUoLLX4nsg.png",
+    "downloads":  63331,
+    "favourites_count":  176,
+    "description":  "\u003ch3\u003eDescription\u003c/h3\u003e\n\u003cp\u003eSense shows icons over interactable items within a range, such as Loot, Containers, and Dead Bodies. There are unique highlights for Kappa, Quest and Wishlist Items. It will also show an icon and distance to map extracts, along with extract status.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/8DbjpFd.png\" alt=\"Preview\" /\u003e\u003c/p\u003e\n\u003cp\u003eActivate Sense key is \u003cstrong\u003eDouble Click F\u003c/strong\u003e by default.\u003c/p\u003e\n\u003cp\u003eColors, Audio, Keybind, Cooldown, Speed, Duration and Radius can all be changed in the F12 menu\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded 7z file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e2) Select the folder in the 7z file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folder from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003eThanks\u003c/h3\u003e\n\u003cp\u003eThanks to Amands2Mello for Sense, they did all the real work, I just updated it :)\u003c/p\u003e\n\u003cp\u003ePermission was obtained from Amands2Mello to release this fork.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2521/amands-sense-updated",
+    "fika_compatibility":  false,
+    "featured":  true,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-12-29T23:20:00.000000Z",
+    "created_at":  "2025-12-29T23:20:59.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,11 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\bin\Release\SamMeow.PerformanceTweaks413.deps.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\bin\Release\SamMeow.PerformanceTweaks413.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\bin\Release\SamMeow.PerformanceTweaks413.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\PerformanceTweaks413.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\SamMeow.PerformanceTweaks413.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\mods\PerformanceTweaks413\obj\Release\SamMeow.PerformanceTweaks413.pdb

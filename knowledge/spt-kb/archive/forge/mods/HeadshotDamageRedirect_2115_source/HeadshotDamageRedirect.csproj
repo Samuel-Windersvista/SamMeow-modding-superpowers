@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>perfk.HeadShotRedirect</AssemblyName>
+    <Description>HeadShotRedirect</Description>
+    <Version>1.7.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>references\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>references\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>references\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="bsg.console.core">
+      <HintPath>references\bsg.console.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>references\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>references\Comfort.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>references\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-core">
+      <HintPath>references\spt-core.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>references\spt-custom.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-debugging">
+      <HintPath>references\spt-debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>references\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-singleplayer">
+      <HintPath>references\spt-singleplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>references\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>references\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>references\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y /f &quot;$(TargetPath)&quot; &quot;$(ProjectDir)\Build\BepInEx\plugins\&quot;" />
+    <Exec Command="xcopy /y /f &quot;$(TargetPath)&quot; &quot;E:\SPTEFT\BepInEx\plugins\&quot;" />
+    <Exec Command="(powershell Compress-Archive -Path '$(TargetPath)' -DestinationPath '$(ProjectDir)\Build\perfk.HeadShotDamageRedirect.zip' -Force)"/>
+  </Target>
+</Project>

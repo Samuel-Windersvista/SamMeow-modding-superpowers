@@ -1,0 +1,43 @@
+﻿{
+    "id":  1676,
+    "hub_id":  2286,
+    "guid":  "jehree.interactableexfilsapi",
+    "name":  "Interactable Exfils API",
+    "slug":  "interactable-exfils-api",
+    "teaser":  "Adds interaction prompts to exfils, letting you toggle the exfil timer on and off (you can finally loot that body without extracting!) as well as API tools for modders to add their own exfil interaction options.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2286.png",
+    "downloads":  24067,
+    "favourites_count":  34,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eOverview\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003e\u003cstrong\u003eModders, see “Modders” tab for info on the API functions of this mod\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eOn its own, this mod does very little.\u003c/p\u003e\n\u003cp\u003eIt will:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMake all extracts have an “Extract” prompt appear when you are inside their extraction zone. Interacting with it will toggle the extraction timer (read: loot bodies that end up in an extraction area without accidentally extracting)\u003c/li\u003e\n\u003cli\u003eBepInEx config option exists to set whether the timer will be on immediately upon entering an exfil zone or if it will require you to interact with it first.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003ePLEASE DO NOT REDISTRIBUTE THIS MOD\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eIf you are using it as a dependency to one of your projects, \u003cem\u003elink it as a dependency.\u003c/em\u003e Do not package it with your upload.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/GifDump/blob/main/InteractableExfil.gif?raw=true\" rel=\"noreferrer noopener\"\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/Jehree/GifDump/blob/main/InteractableExfil.gif?raw=true\" alt=\"InteractableExfil.gif?raw=true\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eIf you’d like to support my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/jehree\" rel=\"noreferrer noopener\"\u003ebuy me a coffee!\u003c/a\u003e\u003c/strong\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eModders\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/SPT-InteractableExfilsAPI/blob/main/README.md\" rel=\"noreferrer noopener\"\u003eDocumentation link\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1676/interactable-exfils-api",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2024-08-23T05:04:08.000000Z",
+    "created_at":  "2024-08-23T05:04:08.000000Z",
+    "updated_at":  "2026-07-28T07:50:34.000000Z",
+    "owner":  {
+                  "id":  29457,
+                  "name":  "Jehree",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/b76a842c5be538441b8116448f409081876f9783_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-03-30T17:43:41.000000Z",
+                  "updated_at":  "2026-08-07T18:40:36.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  15099,
+                                   "name":  "trap",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/41ab2aa33f6b06b13693b306ff047cfdcb4ea7b7_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-02-25T10:50:17.000000Z",
+                                   "updated_at":  "2026-07-10T04:49:59.000000Z"
+                               }
+                           ],
+    "category":  null
+}

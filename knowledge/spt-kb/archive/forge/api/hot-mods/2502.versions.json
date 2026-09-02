@@ -1,0 +1,44 @@
+﻿[
+    {
+        "id":  12605,
+        "hub_id":  null,
+        "version":  "1.0.0",
+        "description":  "\u003cp\u003eFirst release, check description for what this mod does\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2502/eotech-fix/1.0.0",
+        "content_length":  3039,
+        "spt_version_constraint":  "4.0.8",
+        "downloads":  134,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-16T00:09:00.000000Z",
+        "created_at":  "2025-12-16T00:09:41.000000Z",
+        "updated_at":  "2026-07-28T07:05:54.000000Z"
+    },
+    {
+        "id":  12606,
+        "hub_id":  null,
+        "version":  "1.0.1",
+        "description":  "\u003cul\u003e\n\u003cli\u003eJust an adjustment to the zip directory to be “plugins” instead of “Plugins” for linux users\u003c/li\u003e\n\u003cli\u003eAlso removed small part of code that was left over from a different mod of mine (it had no effect on anything it was just a value)\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2502/eotech-fix/1.0.1",
+        "content_length":  3027,
+        "spt_version_constraint":  "4.0.8",
+        "downloads":  999,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-16T02:23:00.000000Z",
+        "created_at":  "2025-12-16T02:23:40.000000Z",
+        "updated_at":  "2026-07-28T07:05:55.000000Z"
+    },
+    {
+        "id":  12631,
+        "hub_id":  null,
+        "version":  "1.0.2",
+        "description":  "\u003cp\u003eJust fixes the version number in the mod so that mod managers don’t see it as outdated\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2502/eotech-fix/1.0.2",
+        "content_length":  3027,
+        "spt_version_constraint":  "4.0.13",
+        "downloads":  10126,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-18T21:39:00.000000Z",
+        "created_at":  "2025-12-18T21:39:36.000000Z",
+        "updated_at":  "2026-07-28T07:06:34.000000Z"
+    }
+]

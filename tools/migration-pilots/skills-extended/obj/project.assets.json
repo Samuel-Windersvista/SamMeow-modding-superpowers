@@ -1,0 +1,63 @@
+{
+  "version": 4,
+  "targets": {
+    "net472": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net472": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Winde\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.6.0",
+    "restore": {
+      "projectUniqueName": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\tools\\migration-pilots\\skills-extended\\SkillsExtendedClient.csproj",
+      "projectName": "SkillsExtended",
+      "projectPath": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\tools\\migration-pilots\\skills-extended\\SkillsExtendedClient.csproj",
+      "packagesPath": "C:\\Users\\Winde\\.nuget\\packages\\",
+      "outputPath": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\tools\\migration-pilots\\skills-extended\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Winde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
+    },
+    "frameworks": {
+      "net472": {
+        "framework": "net472",
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

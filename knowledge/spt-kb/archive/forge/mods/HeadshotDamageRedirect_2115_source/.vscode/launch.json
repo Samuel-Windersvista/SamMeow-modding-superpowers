@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch SPT with Mod",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-release",
+            "program": "E:\\SPTEFT\\EscapeFromTarkov.exe",
+            "cwd": "E:\\SPTEFT",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}

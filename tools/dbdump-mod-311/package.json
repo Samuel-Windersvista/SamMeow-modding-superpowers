@@ -1,0 +1,12 @@
+{
+    "name": "SptDbDump311",
+    "version": "0.1.0",
+    "main": "src/mod.js",
+    "license": "MIT",
+    "author": "SamMeow",
+    "sptVersion": "3.11.x",
+    "loadBefore": [],
+    "loadAfter": [],
+    "incompatibilities": [],
+    "contributors": []
+}

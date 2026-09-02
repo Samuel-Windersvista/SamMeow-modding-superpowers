@@ -1,0 +1,42 @@
+﻿{
+    "id":  824,
+    "hub_id":  1114,
+    "guid":  "xyz.drakia.tasklistfixes",
+    "name":  "Task List Fixes",
+    "slug":  "task-list-fixes",
+    "teaser":  "Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you\u0027ll get it all in one simple DLL",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1114.png",
+    "downloads":  79919,
+    "favourites_count":  86,
+    "description":  "\u003ch3\u003e\u003cstrong\u003eInstallation\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e2) Select the folders in the zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folders from 7-zip into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eDescription\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eFix a few issues people have encountered with the Task list:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTask list is now properly sorted alphabetically by the selected column\u003c/li\u003e\n\u003cli\u003eSorting by trader now sorts by their nickname, instead of their ID\u003c/li\u003e\n\u003cli\u003eSorting by location now sorts by its name, instead of its ID\u003c/li\u003e\n\u003cli\u003eProgress column data is now cached for sorting, to reduce the time it takes to sort by the Progress column\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTogglable Options:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAdd a new feature that defaults the sort order of columns to a more sane value when changing between columns\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eTask, Trader and Location will now default to sorting in ascending order\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eProgress and Status will now default to sorting in descending order\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eImproved sorting order to include sub-sorting, to make finding quests in your list a lot easier\n\u003cul\u003e\n\u003cli\u003eSorting by trader now sub-sorts by location, then name\u003c/li\u003e\n\u003cli\u003eSorting by location now sub-sorts by trader, then name\u003c/li\u003e\n\u003cli\u003eSorting by type now sub-sorts by name\u003c/li\u003e\n\u003cli\u003eSorting by status now sub-sorts by name\u003c/li\u003e\n\u003cli\u003eSorting by progress now sub-sorts by name\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong\u003eCompatibility\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eNote that this mod is not compatible with other task list sorting fix mods, as they will all be modifying the same method and conflict with each other.\u003c/p\u003e\n\u003cp\u003eFunctionality-wise, this mod both fixes sorting, and improves it, so should cover all cases that might be resolved by other mods.\u003c/p\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNOTE: Any requests for assistance MUST be accompanied by the “BepInEx/LogOutput.log” file. Any support request without this file provided will be met with a request for this file, then ignored. Log content can be uploaded to: \u003ca target=\"_blank\" class=\"external-link\" href=\"https://pastebin.com/\" rel=\"noreferrer noopener\"\u003ehttps://pastebin.com/\u003c/a\u003e\u003c/strong\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/824/task-list-fixes",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-04-01T22:32:00.000000Z",
+    "created_at":  "2023-04-01T22:32:41.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

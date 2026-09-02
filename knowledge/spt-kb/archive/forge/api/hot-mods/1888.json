@@ -1,0 +1,42 @@
+﻿{
+    "id":  1888,
+    "hub_id":  2550,
+    "guid":  "com.flir.betterkeys",
+    "name":  "Better Keys NG",
+    "slug":  "better-keys-ng",
+    "teaser":  "Get some useful info about each key. Is it required for a quest? What is behind the lock? Is it used to exit/transit ?",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2550.webp",
+    "downloads":  50856,
+    "favourites_count":  81,
+    "description":  "\u003ch1\u003eFeatures\u003c/h1\u003e\n\u003cp\u003eColored background for keys and keycards according to which map they belongs to.\u003c/p\u003e\n\u003cp\u003eMaps, Extracts, Quests and Loot information in the item descriptions.\u003c/p\u003e\n\u003cp\u003ePossibility to rename all keys to add a custom prefix based on the map they “belong to”.\u003c/p\u003e\n\u003cp\u003eUsers can copy the config.jsonc file to a file named configuser.jsonc which will be read in priority if present. This allows to keep your config while updating (You will need to copy/paste any new entry if/when they appear in the config.jsonc though)\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1888/better-keys-ng",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-12-13T18:17:00.000000Z",
+    "created_at":  "2024-12-13T18:17:39.000000Z",
+    "updated_at":  "2026-07-28T08:06:21.000000Z",
+    "owner":  {
+                  "id":  69402,
+                  "name":  "flir",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/c6b09b9b0ec85eafdaed4a0fcd100ec77d72d939_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-12-12T12:24:24.000000Z",
+                  "updated_at":  "2026-08-09T14:14:47.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

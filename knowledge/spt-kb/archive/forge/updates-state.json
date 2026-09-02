@@ -1,0 +1,1040 @@
+﻿[
+    {
+        "id":  865,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.1.1",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  1303,
+        "latestVersion":  "3.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  2667,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~4 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:27"
+    },
+    {
+        "id":  2238,
+        "latestVersion":  "1.3.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:25"
+    },
+    {
+        "id":  1261,
+        "latestVersion":  "1.1.8",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  910,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  1431,
+        "latestVersion":  "1.2.1",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  1109,
+        "latestVersion":  "0.11.0",
+        "sptConstraint":  "~4.0.2",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  2405,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "\u003e=4.1.0",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  933,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  2240,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:25"
+    },
+    {
+        "id":  2027,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  1560,
+        "latestVersion":  "0.3.1",
+        "sptConstraint":  "~3.9.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1348,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~4.0.3",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  2394,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~4.0.4",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  1055,
+        "latestVersion":  "1.3100.3",
+        "sptConstraint":  "~3.10.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2246,
+        "latestVersion":  "2.0.5",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1459,
+        "latestVersion":  "1.2.0",
+        "sptConstraint":  "3.11",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  2025,
+        "latestVersion":  "1.3.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  2352,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~3.11",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  2132,
+        "latestVersion":  "1.0.1",
+        "sptConstraint":  "4.0.12",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  2386,
+        "latestVersion":  "1.3.2",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1274,
+        "latestVersion":  "5.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1768,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  416,
+        "latestVersion":  "1.6.4",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  812,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:20"
+    },
+    {
+        "id":  686,
+        "latestVersion":  "1.9.3",
+        "sptConstraint":  "~3.9.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  2053,
+        "latestVersion":  "1.1.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  827,
+        "latestVersion":  "1.9.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1888,
+        "latestVersion":  "1.7.1",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:24"
+    },
+    {
+        "id":  1469,
+        "latestVersion":  "5.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  1136,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  147,
+        "latestVersion":  "4.0.3",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1025,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2115,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  858,
+        "latestVersion":  "1.9.0",
+        "sptConstraint":  "~3.9.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  1342,
+        "latestVersion":  "6.0.1",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  2315,
+        "latestVersion":  "0.5.0",
+        "sptConstraint":  "3.11",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  1652,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  2430,
+        "latestVersion":  "2.0.14",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  2110,
+        "latestVersion":  "1.0.1+3105",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  1688,
+        "latestVersion":  "1.2.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  918,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  456,
+        "latestVersion":  "3.4.0",
+        "sptConstraint":  "4.0.x",
+        "checkedAt":  "2026-08-11 08:20"
+    },
+    {
+        "id":  1532,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~3.9.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1349,
+        "latestVersion":  "1.4.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  2195,
+        "latestVersion":  "1.3.5",
+        "sptConstraint":  "~4.0.10",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  856,
+        "latestVersion":  "1.1.0+spt371",
+        "sptConstraint":  "3.7.1",
+        "checkedAt":  "2026-08-11 08:20"
+    },
+    {
+        "id":  236,
+        "latestVersion":  "2.2.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1425,
+        "latestVersion":  "1.0.5",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  954,
+        "latestVersion":  "2.2.4",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  1542,
+        "latestVersion":  "4.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  1387,
+        "latestVersion":  "1.4.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  2248,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  1401,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~3.8.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1038,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~3.7.0",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  2058,
+        "latestVersion":  "1.0.5",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  1341,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  1965,
+        "latestVersion":  "1.4.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:24"
+    },
+    {
+        "id":  2251,
+        "latestVersion":  "1.3.2",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1850,
+        "latestVersion":  "1.1.2",
+        "sptConstraint":  "~3.10.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  2339,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1989,
+        "latestVersion":  "1.0.6",
+        "sptConstraint":  "3.11",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  2046,
+        "latestVersion":  "1.4.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  1616,
+        "latestVersion":  "1.2.1",
+        "sptConstraint":  "~3.9.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  2523,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:27"
+    },
+    {
+        "id":  1896,
+        "latestVersion":  "0.43.5",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  742,
+        "latestVersion":  "3.2.1",
+        "sptConstraint":  "~3.10.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2614,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1298,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "\u003e=4.1.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  934,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  1343,
+        "latestVersion":  "1.1.4",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  2003,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~4 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:24"
+    },
+    {
+        "id":  1907,
+        "latestVersion":  "2.0.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  106,
+        "latestVersion":  "4.0.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:20"
+    },
+    {
+        "id":  1125,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2153,
+        "latestVersion":  "1.6.4",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  2264,
+        "latestVersion":  "2.3.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  2521,
+        "latestVersion":  "3.1.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  1373,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  649,
+        "latestVersion":  "2.0.4",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1978,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~4 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:24"
+    },
+    {
+        "id":  1247,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1260,
+        "latestVersion":  "1.4.1",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1760,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  1173,
+        "latestVersion":  "3.1.0",
+        "sptConstraint":  "~4.0.13",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1591,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  1140,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  791,
+        "latestVersion":  "4.4.3",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1925,
+        "latestVersion":  "1.3.0",
+        "sptConstraint":  "\u003e=4.1.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  592,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1923,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~4.0.8",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  1278,
+        "latestVersion":  "2.0.4",
+        "sptConstraint":  "~4.0.3",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  1292,
+        "latestVersion":  "2.5.2",
+        "sptConstraint":  "~4.0.3",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1950,
+        "latestVersion":  "3.0.3",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  2470,
+        "latestVersion":  "2.0.7",
+        "sptConstraint":  "~4.0.12",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  2000,
+        "latestVersion":  "1.2.0",
+        "sptConstraint":  "~3.10.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  2009,
+        "latestVersion":  "1.0.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  972,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  1117,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-11 08:22"
+    },
+    {
+        "id":  2200,
+        "latestVersion":  "1.1.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:25"
+    },
+    {
+        "id":  2181,
+        "latestVersion":  "1.0.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-11 08:25"
+    },
+    {
+        "id":  2213,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~4 \u003c4.1.0",
+        "checkedAt":  "2026-08-11 08:25"
+    },
+    {
+        "id":  2148,
+        "latestVersion":  "1.4.2",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  2360,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  902,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2097,
+        "latestVersion":  "2.0.19",
+        "sptConstraint":  "~4.0.3",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  2047,
+        "latestVersion":  "1.0.2",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  1657,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "\u003e=4.1.1",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  2050,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  940,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  2676,
+        "latestVersion":  "0.9.0",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1884,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "\u003e=4.1.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  1860,
+        "latestVersion":  "1.1.2",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  1089,
+        "latestVersion":  "4.0.0",
+        "sptConstraint":  "4.0.*",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2136,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  1192,
+        "latestVersion":  "3.0.3",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  1971,
+        "latestVersion":  "2.0.5",
+        "sptConstraint":  "~4.1.2",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  1179,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~3.8.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2162,
+        "latestVersion":  "1.1.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  898,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "4.0.x",
+        "checkedAt":  "2026-08-11 08:21"
+    },
+    {
+        "id":  1867,
+        "latestVersion":  "4.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  2143,
+        "latestVersion":  "1.0.4",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1018,
+        "latestVersion":  "1.0.8",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  1676,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.0.11",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  2006,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  2502,
+        "latestVersion":  "1.0.2",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1100,
+        "latestVersion":  "1.3.0",
+        "sptConstraint":  "4.1.1",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  1945,
+        "latestVersion":  "1.8.6",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  1538,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  2119,
+        "latestVersion":  "1.0.5",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  701,
+        "latestVersion":  "4.0.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  1283,
+        "latestVersion":  "2.1.2",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-09 08:22"
+    },
+    {
+        "id":  1594,
+        "latestVersion":  "2.0.8",
+        "sptConstraint":  "\u003e=4.0.2 \u003c 4.0.9",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1454,
+        "latestVersion":  "4.0.1",
+        "sptConstraint":  "4.0.*",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  861,
+        "latestVersion":  "2.2.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2299,
+        "latestVersion":  "2.7.0",
+        "sptConstraint":  "~4.0.11",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  2098,
+        "latestVersion":  "1.0.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  1023,
+        "latestVersion":  "3.0.1",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  1858,
+        "latestVersion":  "1.3.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  820,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  2628,
+        "latestVersion":  "1.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1462,
+        "latestVersion":  "2.2.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  977,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~3.7.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2422,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "~4.0.4",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1575,
+        "latestVersion":  "2.0.1",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1766,
+        "latestVersion":  "1.0.7",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  985,
+        "latestVersion":  "1.1.8",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2150,
+        "latestVersion":  "2.0.0",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  2494,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  2344,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1537,
+        "latestVersion":  "4.8.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  938,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2112,
+        "latestVersion":  "1.1.5",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:31"
+    },
+    {
+        "id":  1437,
+        "latestVersion":  "2.2.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-11 08:23"
+    },
+    {
+        "id":  2060,
+        "latestVersion":  "1.5.6",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-08 21:30"
+    },
+    {
+        "id":  994,
+        "latestVersion":  "1.5.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-09 08:21"
+    },
+    {
+        "id":  2209,
+        "latestVersion":  "1.1.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  2329,
+        "latestVersion":  "1.6.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:26"
+    },
+    {
+        "id":  1621,
+        "latestVersion":  "1.5.2",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  2395,
+        "latestVersion":  "1.3.0",
+        "sptConstraint":  "\u003e=4.1.0",
+        "checkedAt":  "2026-08-11 08:26"
+    },
+    {
+        "id":  2038,
+        "latestVersion":  "1.0.1",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  1477,
+        "latestVersion":  "5.0.0",
+        "sptConstraint":  "~4.0.0",
+        "checkedAt":  "2026-08-09 08:23"
+    },
+    {
+        "id":  1539,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.1",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  824,
+        "latestVersion":  "1.8.0",
+        "sptConstraint":  "~4.1.0",
+        "checkedAt":  "2026-08-11 08:20"
+    },
+    {
+        "id":  1358,
+        "latestVersion":  "2.1.0",
+        "sptConstraint":  "~4.1.1",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  1775,
+        "latestVersion":  "1.2.2",
+        "sptConstraint":  "~4.0 \u003c4.1.0",
+        "checkedAt":  "2026-08-09 08:24"
+    },
+    {
+        "id":  697,
+        "latestVersion":  "1.7.0",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-09 08:20"
+    },
+    {
+        "id":  2173,
+        "latestVersion":  "1.0.3",
+        "sptConstraint":  "4.0.13",
+        "checkedAt":  "2026-08-09 08:25"
+    },
+    {
+        "id":  148,
+        "latestVersion":  "2.2.6",
+        "sptConstraint":  "~3.7.0",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  1263,
+        "latestVersion":  "4.0.8",
+        "sptConstraint":  "~4.0.13",
+        "checkedAt":  "2026-08-08 21:29"
+    },
+    {
+        "id":  874,
+        "latestVersion":  "0.7.9",
+        "sptConstraint":  "~4.0.2",
+        "checkedAt":  "2026-08-08 21:28"
+    },
+    {
+        "id":  2007,
+        "latestVersion":  "1.0.2",
+        "sptConstraint":  "~3.11.0",
+        "checkedAt":  "2026-08-08 21:30"
+    }
+]

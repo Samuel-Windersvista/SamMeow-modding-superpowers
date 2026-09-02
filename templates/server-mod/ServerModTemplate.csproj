@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- SPT 4.1 服务端目标框架，与服务器程序集保持一致 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}</AssemblyName>
+    <Version>{{MOD_VERSION}}</Version>
+
+    <!--
+      SPT 4.1 服务器安装根目录（含 SPT.Server.exe 与 SPTarkov.*.dll 的目录）。
+      可在命令行覆盖：dotnet build -p:SPTInstallPath="D:\SPT\Server"
+      或改成你自己的固定路径。
+    -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">{{SPT_INSTALL_PATH}}</SPTInstallPath>
+
+    <!-- 输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 4.1 必需：核心库（IModMetadata / 表模型 / OnLoadOrder / IOnLoad） -->
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：DI 注解（[Injectable]） -->
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPTInstallPath)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：公共库（ISptLogger） -->
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：SemanticVersioning（IModMetadata 的 Version/Range 类型） -->
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPTInstallPath)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 Mod Web Pages（IModBlazorMetadata），再引用 SPTarkov.Server.Web.dll 并把 SDK 换成 Microsoft.NET.Sdk.Web -->
+  </ItemGroup>
+
+</Project>

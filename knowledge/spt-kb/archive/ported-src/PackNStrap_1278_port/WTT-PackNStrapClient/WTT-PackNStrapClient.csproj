@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B635121B-E371-45EB-9945-CC4DEBDC2F94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PackNStrap</RootNamespace>
+    <AssemblyName>WTT-PackNStrap</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SignAssembly>false</SignAssembly>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CHEATMODE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;CHEATMODE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Refs-410\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Refs-410\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\Refs-410\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\Refs-410\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>..\..\Refs-410\ItemComponent.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemTemplate.Types">
+      <HintPath>..\..\Refs-410\ItemTemplate.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\..\Refs-410\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Refs-410\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Refs-410\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\Refs-410\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="WTT-ClientCommonLib">
+      <HintPath>..\..\Refs-410\WTT-ClientCommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Refs-410\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PackNStrap.cs" />
+    <Compile Include="Core\Items\CustomBeltItemClass.cs" />
+    <Compile Include="Core\Items\CustomContainerItemClass.cs" />
+    <Compile Include="Core\Items\CustomSecureContainerClass.cs" />
+    <Compile Include="Core\Templates\CustomContainerTemplateClass.cs" />
+    <Compile Include="Helpers\Common.cs" />
+    <Compile Include="Helpers\NewTemplateIdToObjectIdClass.cs" />
+    <Compile Include="Patches\EquipmentClassPatches.cs" />
+    <Compile Include="Patches\FindSlotForPickupPatch.cs" />
+    <Compile Include="Patches\GetPrioritizedGridsForUnloadedObjectPatch.cs" />
+    <Compile Include="Patches\SlotPatches.cs" />
+    <Compile Include="Patches\UnloadWeaponPatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

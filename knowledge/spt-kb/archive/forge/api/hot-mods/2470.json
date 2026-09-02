@@ -1,0 +1,42 @@
+﻿{
+    "id":  2470,
+    "hub_id":  null,
+    "guid":  "blackhorse311.keepstartinggear",
+    "name":  "Keep Starting Gear",
+    "slug":  "keep-starting-gear",
+    "teaser":  "Auto-saves your gear at raid start. Die? Get it back. Extract? Keep your loot.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/IfE16eN0b1yhuIOIM4LKqaz2FpazjiY6UOiWdmjA.png",
+    "downloads":  9982,
+    "favourites_count":  12,
+    "description":  "\u003chr /\u003e\n\u003cp\u003eKeep Starting Gear\u003c/p\u003e\n\u003cp\u003eThe cure for gear fear. Protect your loadout. Die without consequences.\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003eWhat It Does\u003c/p\u003e\n\u003cp\u003eKeep Starting Gear saves your equipment when you enter a raid and restores it if you die. Extract successfully?\u003c/p\u003e\n\u003cp\u003eKeep your loot. Die? Get your starting gear back.\u003c/p\u003e\n\u003cp\u003eNo Run-Through penalty. No exploits. Just protection.\u003c/p\u003e\n\u003cp\u003e30 Seconds to Understand\u003c/p\u003e\n\u003cp\u003eEnter Raid → Gear auto-saved → Die → Gear restored → Extract → Keep your loot\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003eKey Features\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAutomatic Snapshots – Gear saved at raid start (default) or manually via keybind\u003c/li\u003e\n\u003cli\u003eFull Restoration – Durability, ammo counts, medical uses, armor plates, all preserved\u003c/li\u003e\n\u003cli\u003eNo Penalties – Server-side restoration bypasses “Run-Through” status\u003c/li\u003e\n\u003cli\u003eSlot Control – Protect exactly what you want, 16 individual slot toggles\u003c/li\u003e\n\u003cli\u003eModded Items – Works with any custom weapons, armor, and equipment\u003c/li\u003e\n\u003cli\u003eSVM Compatible – Works with Server Value Modifier (disable Softcore Mode \u0026amp; Safe Exit)\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cp\u003eQuick Start\u003c/p\u003e\n\u003cp\u003eExtract the archive directly into your SPT root folder (where SPT.Server.exe is located) and merge when prompted.\u003c/p\u003e\n\u003cp\u003eBoth client and server components are included and pre-configured.\u003c/p\u003e\n\u003cp\u003eAfter install you should have:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eClient: BepInEx/plugins/Blackhorse311-KeepStartingGear/Blackhorse311.KeepStartingGear.dll\u003c/li\u003e\n\u003cli\u003eServer: SPT/user/mods/Blackhorse311-KeepStartingGear/Blackhorse311.KeepStartingGear.Server.dll\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDefault Behavior\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eEnter raid – green notification confirms snapshot\u003c/li\u003e\n\u003cli\u003eDie – gear automatically restored\u003c/li\u003e\n\u003cli\u003eExtract – snapshot cleared, loot kept\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr /\u003e\n\u003cp\u003ePlaystyle Presets\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCasual (Default) – Maximum protection, zero hassle. Auto-snapshot at raid start, all slots protected.\u003c/li\u003e\n\u003cli\u003eHardcore – Manual snapshots only. Exclude Found-in-Raid and insured items. Risk what you find, protect what you bring.\u003c/li\u003e\n\u003cli\u003eCustom – Fine-tune every setting: snapshot mode, individual slots, keybinds, notifications.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cp\u003eConfiguration\u003c/p\u003e\n\u003cp\u003ePress F12 in-game to access settings:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSnapshot Mode (Auto Only) – Auto / Auto+Manual / Manual\u003c/li\u003e\n\u003cli\u003eIndividual Slots (All enabled) – 16 slots individually toggled\u003c/li\u003e\n\u003cli\u003eProtect FIR Items (off) – Exclude Found-in-Raid items from snapshots\u003c/li\u003e\n\u003cli\u003eExclude Insured (off) – Let insurance handle insured items\u003c/li\u003e\n\u003cli\u003eManual Keybind (Ctrl+Alt+F8) – Keybind for manual snapshots\u003c/li\u003e\n\u003cli\u003eNotifications (on) – On-screen snapshot/restore messages\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cp\u003eCompatibility\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSPT 4.0.x – Supported, tested on 4.0.12\u003c/li\u003e\n\u003cli\u003eSVM – Compatible, disable Softcore Mode \u0026amp; Safe Exit\u003c/li\u003e\n\u003cli\u003eFIKA – Not compatible, single-player only\u003c/li\u003e\n\u003cli\u003eCustom Items – Full support, works with any modded gear\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr /\u003e\n\u003cp\u003eWhat’s New in v2.0.7\u003c/p\u003e\n\u003cp\u003eCritical: Fixed gear not restoring on death when SVM is installed. SVM replaces MatchCallbacks, which prevented our primary restoration path from running. The fallback was too late in SPT’s pipeline. Fix: override SetInventory to restore snapshot items before they get copied to the server profile.\u003c/p\u003e\n\u003cp\u003eMedium: Fixed melee weapons being deleted from non-managed Scabbard slots. In normal Tarkov, melee weapons are never lost on death. Scabbard is now always preserved.\u003c/p\u003e\n\u003cp\u003e48 unit tests (10 serialization + 38 restoration algorithm). Server-side fix, client DLL unchanged.\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003eLinks\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/Blackhorse311/KeepStartingGear\" rel=\"noreferrer noopener\"\u003ehttps://github.com/Blackhorse311/KeepStartingGear\u003c/a\u003e – Source code, bug reports, documentation\u003c/li\u003e\n\u003cli\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/7ae500007d34edf610e86fcf99a769f6d662b3585c211904b011104d3f691621\" rel=\"noreferrer noopener\"\u003ehttps://www.virustotal.com/gui/file/7ae500007d34edf610e86fcf99a769f6d662b3585c211904b011104d3f691621\u003c/a\u003e – 0/64 clean\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOpen source. MIT licensed. Community-tested with 40+ bug fixes since v1.0.\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2470/keep-starting-gear",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  true,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  15,
+    "published_at":  "2026-02-19T20:01:00.000000Z",
+    "created_at":  "2025-11-26T04:11:03.000000Z",
+    "updated_at":  "2026-07-28T08:05:15.000000Z",
+    "owner":  {
+                  "id":  40646,
+                  "name":  "Blackhorse311",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/22d76c9b7be880fa3a4974a19f4e3a90c6c9b2cf_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/EVJBNkSE7DYjNGXMsLM6HFrJWWjFiZRREsogUxcB_1280w.webp",
+                  "created_at":  "2023-11-16T18:47:45.000000Z",
+                  "updated_at":  "2026-07-10T04:56:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  15,
+                     "hub_id":  78,
+                     "title":  "Equipment",
+                     "slug":  "equipment",
+                     "description":  ""
+                 }
+}

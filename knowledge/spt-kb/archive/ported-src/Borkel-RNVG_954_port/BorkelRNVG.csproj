@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3A7C9E1-2B4D-4E8A-9C5F-6D1E2A3B4C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BorkelRNVG</RootNamespace>
+    <AssemblyName>BorkelRNVG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- PORT-NOTE: 移除签名（离线引用环境无强命名密钥） -->
+    <SignAssembly>false</SignAssembly>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <!-- PORT-NOTE: SDK 风格 PackageReference(BepInEx.Core / PluginInfoProps / UnityEngine.Modules / Analyzers) 全部移除，
+       改为直接引用 Refs-410 只读目录下的 4.1.2 程序集（含 Unity.Postprocessing.Runtime.dll、Assembly-CSharp-firstpass.dll，
+       两者已从 SPT_410\EscapeFromTarkov_Data\Managed\ 复制入 Refs-410）。 -->
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Refs-410\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\Refs-410\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\Refs-410\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\Refs-410\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\Refs-410\Comfort.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>..\Refs-410\ItemComponent.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Refs-410\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\Refs-410\spt-reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\Refs-410\Unity.Postprocessing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Refs-410\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\Refs-410\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\Refs-410\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\Refs-410\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\Refs-410\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\Refs-410\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\Refs-410\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\Refs-410\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\Refs-410\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Refs-410\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**" />
+  </ItemGroup>
+
+  <Target Name="CopyToSPT" AfterTargets="AfterBuild" Condition="'$(SPTPath)' != ''">
+    <PropertyGroup>
+      <ModsDirectoryPath>$(SPTPath)\BepInEx\plugins\$(MSBuildProjectName)</ModsDirectoryPath>
+    </PropertyGroup>
+
+    <Message Importance="high" Text="Copying mods to $(ModsDirectoryPath)" />
+    <ItemGroup>
+      <FilesToCopy Include="$(OutputPath)$(TargetName)$(TargetExt)" />
+      <FilesToCopy Include="$(OutputPath)$(TargetName).pdb" />
+      <FilesToCopy Include="Resources\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(ModsDirectoryPath)\%(RecursiveDir)" ContinueOnError="false" />
+    <Message Importance="high" Text="Files copied" />
+  </Target>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+</Project>

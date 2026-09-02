@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SecureMapbookMod</RootNamespace>
+    <AssemblyName>SecureMapbookMod</AssemblyName>
+    <Version>1.0.0</Version>
+
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410\SPT_Runtime</SPTInstallPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPTInstallPath)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPTInstallPath)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- bundle + 数据文件随 mod 打包 -->
+    <None Include="bundles\**" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="bundles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="config\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

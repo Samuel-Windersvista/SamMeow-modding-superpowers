@@ -1,0 +1,39 @@
+<Project>
+  <Import Project="SharedConfiguration/Shared.props" />
+  <PropertyGroup>
+    <TargetSptVersion>4.0.3</TargetSptVersion>
+    <Authors>Arys</Authors>
+    <Copyright>Copyright © SamSWAT, Arys 2025</Copyright>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug;SPT-3.10 Release;SPT-3.11 Release;SPT-4.0 Release</Configurations>
+    <SolutionName>SamSWAT.HeliCrash.ArysReloaded</SolutionName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>Build\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'SPT-3.10 Release' ">
+    <OutputPath>Build\SPT-3.10\</OutputPath>
+    <SptVersion>310x</SptVersion>
+    <Optimize>true</Optimize>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'SPT-3.11 Release' ">
+    <OutputPath>Build\SPT-3.11\</OutputPath>
+    <SptVersion>311x</SptVersion>
+    <Optimize>true</Optimize>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'SPT-4.0 Release' ">
+    <OutputPath>Build\SPT-4.0\</OutputPath>
+    <SptVersion>400x</SptVersion>
+    <Optimize>true</Optimize>
+    <NoWarn>1701;1702;0649</NoWarn>
+  </PropertyGroup>
+</Project>

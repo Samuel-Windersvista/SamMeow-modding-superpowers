@@ -1,0 +1,42 @@
+﻿{
+    "id":  2502,
+    "hub_id":  null,
+    "guid":  "com.matsix.eotechfix",
+    "name":  "EOTech Fix",
+    "slug":  "eotech-fix",
+    "teaser":  "Aims to fix the long standing accuracy issues with some collimator sights",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/DMi3xaXvUw8AsGb7CObNOpg0VKr5GuSub8W2lKkU.png",
+    "downloads":  11258,
+    "favourites_count":  38,
+    "description":  "\u003cp\u003e\u003cstrong\u003eNOTE: If you are using SPT-VR, you do not need this mod, it’s built into SPT-VR already\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSo, before I took over development on the SPT-VR mod, I noticed that a lot of sights, mainly EOTech Holo sights, have an accuracy issue. Something a lot of people have always thought but as far as I know, no one was ever able to fully confirm. Well the VR mod made it VERY apparent. Me and the original dev looked at the material values and I noticed MarkScale, suggested he set it to 1 and use MarkShift to adjust the crosshair instead and what do ya know? It fixed it.\u003c/p\u003e\n\u003cp\u003eBasically, the issue with EOTech’s and other sights with accuracy issues, appears to be due to a value on the collimator sight material called “_MarkScale”. I assume BSG uses this value to adjust the size of the crosshair on the sight, the problem is that scaling the crosshair this way results in broken accuracy unless you’re looking directly down the middle of the sight.\u003c/p\u003e\n\u003cp\u003eThis mod basically forces MarkScale value to 1 and changes another material value called “MarkShift” to adjust the crosshair back to the correct position.\u003c/p\u003e\n\u003cp\u003eAfter having this in the VR mod for a while, I figured I might as well release it as a separate mod because I know I’ve heard a lot of people bring up accuracy issues with these sights on flatscreen too. I imagine this would do wonders for people that use mods that significantly changes gun handling and gun view model.\u003c/p\u003e\n\u003cp\u003eI am not sure if this has compatibility issues with any other mods, if it does, please let me know.\u003c/p\u003e\n\u003cp\u003eYou can support my work on ko-fi: \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/matsix\" rel=\"noreferrer noopener\"\u003ehttps://ko-fi.com/matsix\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2502/eotech-fix",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  15,
+    "published_at":  "2025-12-16T00:04:00.000000Z",
+    "created_at":  "2025-12-16T00:07:27.000000Z",
+    "updated_at":  "2026-07-28T07:06:34.000000Z",
+    "owner":  {
+                  "id":  62969,
+                  "name":  "matsix",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=m\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-09-01T23:20:29.000000Z",
+                  "updated_at":  "2026-08-05T04:07:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  15,
+                     "hub_id":  78,
+                     "title":  "Equipment",
+                     "slug":  "equipment",
+                     "description":  ""
+                 }
+}

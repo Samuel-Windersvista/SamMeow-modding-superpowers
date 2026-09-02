@@ -1,0 +1,42 @@
+﻿{
+    "id":  2173,
+    "hub_id":  2876,
+    "guid":  "com.matsix.sptvramcleaner",
+    "name":  "VRAM Cleaner",
+    "slug":  "vram-cleaner",
+    "teaser":  "Clears up unused assets after raid start timer finishes",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2876.png",
+    "downloads":  83580,
+    "favourites_count":  131,
+    "description":  "\u003cp\u003e\u003cstrong\u003eNOTE: I just want to dispel some misinformation that gets tossed around about this mod. First, I mention in this description that I’m not sure if it causes issues with other mods, so far I have never experienced a single issue. Second, there is no reason NOT to install this mod, it only does good, less VRAM usage = good. And third, this doesn’t just remove pre-allocation. Unity on DX11 doesn’t reserve a fixed VRAM pool. Tarkov’s VRAM stats with the fps 3 command, I’m 99% sure is not accurate, check task manager to see actual VRAM usage.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eHave you ever wanted to play SPT at 12k resolution but your VRAM keeps maxing out?\u003c/p\u003e\n\u003cp\u003eWell, now you can! No not really, but this mod should help clear up about 1-2GB of VRAM. There will be a small lag spike right after the start raid countdown finishes, this only happens once at the start of each raid.\u003c/p\u003e\n\u003cp\u003eThis mod unloads unused assets such as textures, meshes, and audio and as a result, clears up a chunk of VRAM.\u003c/p\u003e\n\u003cp\u003eAfter testing, I haven’t noticed any negative side effects from this, I also can’t confirm if it’ll cause issues for other mods that load any assets like textures/models. If anyone does notice any negative side effects let me know what it breaks and I’ll add a list here for what it’s not compatible with. It should definitely work with base SPT and other just general non-asset related mods.\u003c/p\u003e\n\u003cp\u003eI’ve made this mainly for the SPT VR mod I’m working on because VRAM usage can get pretty insane on there, figured it’d be better as a mod on its own though because I tested it on flat screen and found it clears up a good amount of VRAM even on there. Check out SPTVR - \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2419-spt-vr/\" rel=\"noreferrer noopener\"\u003eSPT-VR  \u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003cstrong\u003eCompatibility:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eThis may have compatibility issues with the declutter mod\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eInstall instructions:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eMove Bepinex folder into your SPT folder\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDon’t\u003c/strong\u003e install onto a fika headless client\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eSupport me on ko-fi \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/matsix\" rel=\"noreferrer noopener\"\u003ehttps://ko-fi.com/matsix\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2173/vram-cleaner",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-06-07T18:49:00.000000Z",
+    "created_at":  "2025-06-07T18:49:00.000000Z",
+    "updated_at":  "2026-07-28T06:09:15.000000Z",
+    "owner":  {
+                  "id":  62969,
+                  "name":  "matsix",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=m\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-09-01T23:20:29.000000Z",
+                  "updated_at":  "2026-08-05T04:07:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

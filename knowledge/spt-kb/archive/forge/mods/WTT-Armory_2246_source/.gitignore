@@ -1,0 +1,17 @@
+/types
+/node_modules
+/package-lock.json
+/tsconfig.json
+order.json
+WTT-PresetConverterPlus
+Virtual's Custom Quest Loader/src
+Virtual's Custom Quest Loader/res
+Virtual's Custom Quest Loader/LICENSE
+Virtual's Custom Quest Loader/package.json
+Virtual's Custom Quest Loader/database/config
+Virtual's Custom Quest Loader/database/config/config.json
+Virtual's Custom Quest Loader/database/locales
+Virtual's Custom Quest Loader/database/assorts
+Virtual's Custom Quest Loader/database/quests
+Virtual's Custom Quest Loader/database/quests/README.txt
+config.json

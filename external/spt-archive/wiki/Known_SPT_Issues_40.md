@@ -1,0 +1,85 @@
+---
+title: Known SPT Issues
+description: Known SPT issues and possible fixes for SPT 4.0.
+published: true
+date: 2026-08-01T22:31:51.707Z
+tags: 
+editor: markdown
+dateCreated: 2025-10-10T12:33:53.585Z
+---
+
+> This page applies to SPT version `4.0`
+{.is-info}
+
+## [Github tracked issues](<https://github.com/sp-tarkov/build/wiki/Known-SPT-issues>)
+- Some quests need PMCs to spawn in map locations with no bot spawns, making them impossible to complete (e.g. kill x PMCs in scav fortress/base).
+- Selecting the overview tab as a scav can break your client, <kbd>Alt</kbd> + <kbd>F4</kbd> to revert the raid.
+- Your active flea offers are marked as expired when the server is offline and items are returned in the mail.
+- Flea categories don't always show the correct number of offers when filtering by item.
+- The server will not load when placed in a folder path containing certain unicode characters (Japanese and Korean characters especially).
+- Looting a PMC dogtag doesn't always show their name on the post-raid kill screen.
+- Insured quest items that are consumed in a quest can be returned to the player.
+- Failed quests that're restarted retain their task completion status until client is restarted (e.g. `Bullshit` - Shooting a scav after collecting the flash drive results in that task remaining completed).
+- Using a low hp medpack while extracting can result in a 0 resource item being left in your inventory.
+- Lightkeeper does not give rewards in-game, they are sent by mail.
+- The bitcoin counter in hideout is slightly desynced to your game client, your game will say a bitcoin is ready to collect but the server is ~5 minutes behind.
+- Replacing a daily/weekly quest with another from the same trader will cause a client soft lock, restarting the client fixes the issue.
+
+## The server has unexpectedly stopped... : Decoded string is not a valid IDN name.
+Remove any trailing symbols from your PC's name (e.g.: `My-PC-` > `My-PC`).
+The 15th character of your PC name can't be a symbol either. 
+Your PC name should also not use any special characters. Only `a-z`, `A-Z`, `0-9` and `-` are valid (e.g.: `My-PÇ` > `My-PC`). 
+You can rename your PC by searching for `View your PC name` in the Start menu, and clicking on `Rename this PC`.
+
+## Server mods don't appear in the SPT Launcher
+[Update your SPT.](/Updating_SPT)
+Note that [Client mods](/Mod_Types) won't show up in the SPT Server nor Launcher.
+
+## There are little to no PMCs in your Scav runs
+[Update your SPT](<https://wiki.sp-tarkov.com/Updating_SPT>), and make sure you don't have an extended raid timer, as EFT's spawning system tends to break with them.
+
+## Empty flea with `404 not found` errors
+[Update your SPT](<https://wiki.sp-tarkov.com/Updating_SPT>).
+
+## Server doesn't launch or closes immediately
+For SPT 4.0.13: From [here](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+For SPT 4.1.0: From [here](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
+
+Download the latest version of **both**
+- `ASP.NET Core Runtime`
+- `.NET Desktop Runtime`
+
+If it tells you that you already have them installed, then use the repair option. Restart your PC after.
+
+<div style="margin-top: 20px;"></div>
+<img src="/runtimes.png" alt=".NET runtimes" width=400 style="display: block; margin: 0 auto;">
+
+If that didn't help, verify that your SPT install path doesn't have any special characters (`;,[]{}` etc.).
+
+## Kollontay still spawns on high level Ground Zero
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## Crisis does not unlock new crafts
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## SPT Launcher doesn't do anything when you click Play
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## `Not a valid Win32 FileTime` when using the Hijri calendar
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## Festive Airdrops have no loot
+No known fix.
+
+## `Enable Bosses` being disabled stops spawning PMC bots
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## Loading in as a PMC when you selected scav
+[Update your SPT.](<https://wiki.sp-tarkov.com/Updating_SPT>)
+
+## `Access to the path '\\?\C:\Users\[username]\OneDrive\Desktop\SPT\SPT\user\profiles\backups\[date] is denied.`
+You have moved SPT onto your OneDrive enabled desktop. Move it back to a folder like `C:\Games\SPT`, and delete the profile backup mentioned in the error message.
+
+
+# See also
+[Frequently Asked Questions](/FAQs_40)

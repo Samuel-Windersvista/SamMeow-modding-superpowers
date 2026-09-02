@@ -1,0 +1,42 @@
+﻿{
+    "id":  934,
+    "hub_id":  1265,
+    "guid":  "xyz.drakia.searchopencontainers",
+    "name":  "Search Open Containers",
+    "slug":  "search-open-containers",
+    "teaser":  "Allow searching open containers without needing to close them first",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1265.png",
+    "downloads":  172701,
+    "favourites_count":  164,
+    "description":  "\u003cp\u003eHave you ever run across an open filing cabinet, and questioned why a trained PMC operative needs to close a drawer just to open it again before being able to look inside it?\u003c/p\u003e\n\u003cp\u003eNo more! SPT now has the most highly trained PMC operatives, who know how to look in open drawers (And all other lootable containers)!\u003c/p\u003e\n\u003cp\u003eIn simple terms, this mod allows using the “Search” action on any container that is already opened, without needing to close it first.\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e2) Select the folders in the zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folders from 7-zip into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n\u003ch3\u003eUsage\u003c/h3\u003e\n\u003cp\u003eUse the standard interaction menu on open containers, the default option will now be “Search”\u003c/p\u003e\n\u003ch3\u003eSpecial Thanks\u003c/h3\u003e\n\u003cp\u003eSpecial thanks to \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30408-gaylatea/\" rel=\"noreferrer noopener\"\u003eGaylatea\u003c/a\u003e for her \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1264-use-loose-loot/\" rel=\"noreferrer noopener\"\u003eUse Loose Loot\u003c/a\u003e mod that reminded me I wanted to make this, and for the general area of code to start looking in!\u003c/p\u003e\n\u003cp\u003eIf you enjoy my work, you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\"\u003efeed my caffeine addiction\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/934/search-open-containers",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-06-20T04:25:00.000000Z",
+    "created_at":  "2023-06-20T04:25:45.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  27605,
+                  "name":  "DrakiaXYZ",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-26T18:51:50.000000Z",
+                  "updated_at":  "2026-08-10T04:45:59.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

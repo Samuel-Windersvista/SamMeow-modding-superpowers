@@ -1,0 +1,18 @@
+{
+  "name": "ShowMeTheMoney",
+  "version": "1.0.0",
+  "description": "Stock data visualization comparing public sentiment to trade volumes",
+  "main": "index.js",
+  "author": "Chris Chan, Tushig Ochirhkuyag, and William Xie",
+  "dependencies": {
+    "blpapi": "latest",
+    "express": "latest",
+    "cheerio": "latest",
+    "request": "latest",
+    "jquery": "latest",
+    "fs": "latest",
+    "Sentimental": "latest",
+    "feed-read": "latest",
+    "moment": "latest"
+  }
+}

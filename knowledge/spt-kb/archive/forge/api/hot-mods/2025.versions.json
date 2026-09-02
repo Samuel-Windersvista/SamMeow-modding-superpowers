@@ -1,0 +1,72 @@
+﻿[
+    {
+        "id":  1085,
+        "hub_id":  13698,
+        "version":  "1.2.0",
+        "description":  "\u003ch3\u003eAdditions\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eUpdated for SPT 3.11\u003c/li\u003e\n\u003cli\u003eAdded Russian language (\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AllQuestsCheckmarks/pull/2\" rel=\"noreferrer noopener\"\u003eCommunity contribution\u003c/a\u003e)\u003c/li\u003e\n\u003cli\u003eAdded Chinese language (\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AllQuestsCheckmarks/pull/3\" rel=\"noreferrer noopener\"\u003eCommunity contribution\u003c/a\u003e)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eFor SPT 3.10.5 users\u003c/h3\u003e\n\u003cp\u003eNext update introducing new features will also be backported to SPT 3.10.5.\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2025/all-quests-checkmarks/1.2.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  1246,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-20T01:55:16.000000Z",
+        "created_at":  "2025-03-20T01:55:16.000000Z",
+        "updated_at":  "2026-05-14T02:04:00.000000Z"
+    },
+    {
+        "id":  1051,
+        "hub_id":  13733,
+        "version":  "1.2.1",
+        "description":  "\u003cp\u003eThis version is for SPT 3.11 only\u003c/p\u003e\n\u003ch3\u003eChanges:\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eAdded \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1159-morecheckmarks/\" rel=\"noreferrer noopener\"\u003eMoreCheckmarks\u003c/a\u003e compatibility (minimum version 1.5.17 required)\u003c/li\u003e\n\u003cli\u003eRussian localization improvements (\u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/danx91/AllQuestsCheckmarks/pull/6\" rel=\"noreferrer noopener\"\u003ecommunity contribution\u003c/a\u003e)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eFor SPT 3.10 Users:\u003c/h3\u003e\n\u003cp\u003eMoreCheckmarks compatibility \u003cstrong\u003ewill not\u003c/strong\u003e be backported to SPT 3.10.5\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2025/all-quests-checkmarks/1.2.1",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  1382,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-22T13:51:22.000000Z",
+        "created_at":  "2025-03-22T13:51:22.000000Z",
+        "updated_at":  "2026-05-14T02:03:32.000000Z"
+    },
+    {
+        "id":  649,
+        "hub_id":  14183,
+        "version":  "1.2.4",
+        "description":  "\u003ch3\u003eChanges\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eAdded OnlyActiveQuests option (feature request)\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2025/all-quests-checkmarks/1.2.4",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  13130,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-05-06T16:36:31.000000Z",
+        "created_at":  "2025-05-06T16:36:31.000000Z",
+        "updated_at":  "2026-05-14T01:53:40.000000Z"
+    },
+    {
+        "id":  12515,
+        "hub_id":  null,
+        "version":  "1.3.0",
+        "description":  "\u003cp\u003eUpdated to SPT 4.0\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSupport for MoreCheckmarks has been dropped as it’s not available for SPT 4.0\u003c/strong\u003e\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2025/all-quests-checkmarks/1.3.0",
+        "content_length":  37978,
+        "spt_version_constraint":  "~4.0.0",
+        "downloads":  995,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-04T05:00:00.000000Z",
+        "created_at":  "2025-12-04T05:00:11.000000Z",
+        "updated_at":  "2026-07-28T06:59:41.000000Z"
+    },
+    {
+        "id":  12523,
+        "hub_id":  null,
+        "version":  "1.3.1",
+        "description":  "\u003ch3\u003eChanges\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eMassive changes to data parsing and serialization - mod should run even faster, cause less net traffic, and be more resistant to errors\u003c/li\u003e\n\u003cli\u003eAdded option to include unreachable quests (feature request)\u003c/li\u003e\n\u003cli\u003eUpdated C# language version on the client to the latest\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eBugfixes\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eFixed crash that occurred when playing with other people as Scav (Fika)\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2025/all-quests-checkmarks/1.3.1",
+        "content_length":  43090,
+        "spt_version_constraint":  "~4.0.0",
+        "downloads":  25037,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-04T23:14:14.000000Z",
+        "created_at":  "2025-12-04T23:11:23.000000Z",
+        "updated_at":  "2026-07-28T07:01:25.000000Z"
+    }
+]

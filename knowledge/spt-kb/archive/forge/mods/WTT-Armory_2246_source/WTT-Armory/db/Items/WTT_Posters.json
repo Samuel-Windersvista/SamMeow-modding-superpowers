@@ -1,0 +1,1223 @@
+{
+	"6fe34081c815d875ddca8322": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_733_commando.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Colt 733 Poster",
+				"shortName": "Colt 733",
+				"description": "A poster portraying the beloved Colt 733 carbine."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 62000,
+		"handbookPriceRoubles": 50000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"929ee8d8dea876224fe8daa6": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_bebop_1.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Cowboy Bebop Poster 1",
+				"shortName": "Cowboy Bebop",
+				"description": "See you space cowboy."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 72000,
+		"handbookPriceRoubles": 50000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"6f21f29f125d6da3953f4438": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_bebop_2.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Cowboy Bebop Poster 2",
+				"shortName": "Cowboy Bebop",
+				"description": "See you space cowboy (But like, different this time)."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 85000,
+		"handbookPriceRoubles": 60000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"484236f4faa2cd6a4bffcee8": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_galil.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Galil Poster",
+				"shortName": "Galil",
+				"description": "A poster portraying the balashnikov creation."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 55000,
+		"handbookPriceRoubles": 50000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"9b6d3042e08188ba7ccb2e36": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_m16_patent.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "M16 Patent Poster",
+				"shortName": "M16 Patent",
+				"description": "A poster portraying a stylized version of the original M16 patent."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 77000,
+		"handbookPriceRoubles": 55000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"6bff49546a0a2a8d75cea190": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_m16a2.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "M16A2 Poster",
+				"shortName": "M16A2",
+				"description": "A cool synthwave M16A2 poster."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 80000,
+		"handbookPriceRoubles": 55000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"f5329885c0d82effc2d4930c": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_missing_tex.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Missing Texture Poster",
+				"shortName": "Missing Texture",
+				"description": "<color=#ff0000><b>ERROR: MISSING TEXTURE ON GAME OBJECTS, PLEASE ENSURE CS:SOURCE IS LOADED</b></color>."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 180000,
+		"handbookPriceRoubles": 90000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"fd1dc8b28bf5a17bbc218dc0": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_pulp_fiction_1.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Pulp Fiction Poster",
+				"shortName": "Pulp Fiction",
+				"description": "A soft, moist, shapeless mass of matter."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 96000,
+		"handbookPriceRoubles": 60000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"ae64bd806a5e9ca6d8ec656c": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_pulp_fiction_2.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Pulp Fiction 2 Poster",
+				"shortName": "Pulp Fiction",
+				"description": "A magazine or book containing lurid subject matter and being characteristically printed on rough, unfinished paper."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 96000,
+		"handbookPriceRoubles": 60000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"1df16fcdbecde4b7fd772028": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_uzi_synthwave.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Uzi Synthwave Poster",
+				"shortName": "Uzi Synthwave",
+				"description": "A cool synthwave poster of an UZI."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 82200,
+		"handbookPriceRoubles": 50000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	},
+	"5a5061c950ff1642f5f79de0": {
+		"itemTplToClone": "675a0d2d57dd12f0260c4a31",
+		"parentId": "6759673c76e93d8eb20b2080",
+		"handbookParentId": "5b47574386f77428ca22b2f4",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "Posters/poster_whiskey.bundle",
+				"rcid": ""
+			}
+		},
+		"locales": {
+			"en": {
+				"name": "Whiskey Project Poster",
+				"shortName": "Whiskey Project",
+				"description": "A cool poster courtesy of the Whiskey Project."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"Poster_Security_1",
+			"Poster_Security_2",
+			"Poster_Generator_1",
+			"Poster_Generator_2",
+			"Poster_ScavCase_1",
+			"Poster_ScavCase_2",
+			"Poster_Stash_1",
+			"Poster_WaterCloset_1",
+			"Poster_ShootingRange_1",
+			"Poster_Workbench_1",
+			"Poster_IntelligenceCenter_1",
+			"Poster_Kitchen_1",
+			"Poster_MedStation_1",
+			"Poster_AirFilteringUnit_1",
+			"Poster_RestSpace_1",
+			"Poster_RestSpace_2",
+			"Poster_RestSpace_3",
+			"Poster_RestSpace_4",
+			"Poster_Heating_1",
+			"Poster_Heating_2",
+			"Poster_Heating_3",
+			"Poster_Gym_1",
+			"Poster_Gym_2",
+			"Poster_Gym_3",
+			"Poster_Gym_4",
+			"Poster_Gym_5",
+			"Poster_Gym_6",
+			"Poster_Security_3",
+			"Poster_ShootingRange_2"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 94000,
+		"handbookPriceRoubles": 72000,
+		"addtoTraders": false,
+		"traderId": "PEACEKEEPER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 72,
+				"_tpl": "DOLLARS"
+			}
+		],
+		"loyallevelitems": 2,
+		"addtoBots": false,
+		"addtostaticlootcontainer": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_AIRDROP_WEAPON_CRATE",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X2",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_6X3",
+				"Probability": 3000
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_WOODEN_CRATE",
+				"Probability": 3000
+			}
+		],
+		"masteries": false,
+		"masterySections": [
+			{
+				"Name": "M4",
+				"Templates": [
+					"4b81488c78c8a8ac7d37f9b9"
+				]
+			}
+		],
+		"addweaponpreset": false,
+		"weaponpresets": []
+	}
+}

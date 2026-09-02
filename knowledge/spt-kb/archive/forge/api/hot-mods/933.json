@@ -1,0 +1,49 @@
+﻿{
+    "id":  933,
+    "hub_id":  1264,
+    "guid":  "com.gaylatea.uselooseloot",
+    "name":  "Use Loose Loot",
+    "slug":  "use-loose-loot",
+    "teaser":  "Use meds and food direct from the world instead of only your pockets. ;)",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1264.png",
+    "downloads":  101064,
+    "favourites_count":  101,
+    "description":  "\u003cp\u003eAre you tired of having to drag that Alyonka into your inventory in order to taste its chocolatey delight? Are you tired of bleeding out because you have to shuffle your pockets to fit that Car medkit you just found? Look no further, friend, than this mod.\u003c/p\u003e\n\u003cp\u003eFood items will be entirely eaten with the “Use” prompt; meds will be used as if you had done so from your inventory screen. If med resources are left after usage, the loose item will remain where it is so you can use it again.\u003c/p\u003e\n\u003ch3\u003eInstall Instructions\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e2) Select the folders in the zip file in 7-zip\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folders from 7-zip into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/933/use-loose-loot",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-06-20T00:15:00.000000Z",
+    "created_at":  "2023-06-20T00:15:06.000000Z",
+    "updated_at":  "2026-08-03T06:02:27.000000Z",
+    "owner":  {
+                  "id":  27174,
+                  "name":  "gaylatea",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/36ff2ea60e32966b4406be6a6ceefb6f16324d45_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-02-17T21:52:37.000000Z",
+                  "updated_at":  "2026-07-10T04:50:24.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  27605,
+                                   "name":  "DrakiaXYZ",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/M9qMWlknCITEk33QXO07mJG0j8qP4xhz1QOsHUHD_128w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2023-02-26T18:51:50.000000Z",
+                                   "updated_at":  "2026-08-10T04:45:59.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

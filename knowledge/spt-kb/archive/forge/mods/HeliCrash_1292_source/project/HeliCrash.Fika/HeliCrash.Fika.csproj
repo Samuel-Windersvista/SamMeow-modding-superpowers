@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildThisFileDirectory)../../Fika.Build.props" />
+  <PropertyGroup>
+    <RootNamespace>SamSWAT.HeliCrash.ArysReloaded.Fika</RootNamespace>
+    <AssemblyName>SamSWAT.HeliCrash.ArysReloaded.Fika</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(SptBepInExCoreDir)0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Fika.Core">
+      <HintPath>$(SptBepInExPluginsDir)Fika\Fika.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(SptTarkovManagedDir)Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-custom.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SptTarkovManagedDir)Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(SptBepInExCoreDir)BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>$(SptTarkovManagedDir)Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>$(SptBepInExCoreDir)Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(SptTarkovManagedDir)Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\ZLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq.Unity">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\ZLinq.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="build\**" />
+    <Compile Remove="build\**" />
+    <EmbeddedResource Remove="build\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="References\**" />
+    <EmbeddedResource Remove="References\**" />
+    <None Remove="References\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeliCrash.Core\HeliCrash.Core.csproj" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;$(SptBepInExPluginsDir)$(SolutionName)\$(TargetFileName)&quot;" />
+  </Target>
+  <Target Name="CreateFikaSyncZip" AfterTargets="PostBuild">
+    <Exec
+      Command="if not &quot;$(ConfigurationName)&quot;==&quot;Debug&quot; (&#xA;    cd /D &quot;$(SptBepInExPluginsDir)..\..\&quot;&#xA;    &quot;C:\Program Files\7-Zip\7z.exe&quot; a &quot;$(ReleaseArchivePath)&quot; &quot;BepInEx\plugins\$(SolutionName)\$(TargetFileName)&quot;&#xA;)"
+    />
+  </Target>
+</Project>

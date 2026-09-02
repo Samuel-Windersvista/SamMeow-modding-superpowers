@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{B564F039-D349-4612-8662-D4233F60E3C7}") = "WeaponCustomizer", "WeaponCustomizer.csproj", "{B9777E1A-581C-4A81-895E-27C97CF96CDF}"
+EndProject
+Project("{BE20C66C-BC51-4882-B00D-AF90FD5067AC}") = "WeaponCustomizer.Server", "WeaponCustomizer.Server\WeaponCustomizer.Server.csproj", "{DB5A125C-2656-46A1-BAB3-C90A3531FD5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9777E1A-581C-4A81-895E-27C97CF96CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9777E1A-581C-4A81-895E-27C97CF96CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9777E1A-581C-4A81-895E-27C97CF96CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9777E1A-581C-4A81-895E-27C97CF96CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5A125C-2656-46A1-BAB3-C90A3531FD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5A125C-2656-46A1-BAB3-C90A3531FD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5A125C-2656-46A1-BAB3-C90A3531FD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5A125C-2656-46A1-BAB3-C90A3531FD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DCC2809-67BB-4E6A-B0D6-8F9475945F07}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿{
+    "id":  2213,
+    "hub_id":  2916,
+    "guid":  "com.janky.visualassist",
+    "name":  "Janky\u0027s Visual Assist",
+    "slug":  "jankys-visual-assist",
+    "teaser":  "Accurate visual ballistic arc for grenades. Do you identify as a pitching machine? Yearn to sink a grenade down a scav\u0027s pants from a dozen yards? This is the tool to get you going.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2916.jpg",
+    "downloads":  19557,
+    "favourites_count":  28,
+    "description":  "\u003cp\u003eThis here is a visual assistance mod. For now it’s fairly barebones as it only contains the ballistic arc assist for grenades that was part of my HollywoodCam mod but separated after on numerous requests to make it standalone. Perhaps it’ll grow into something more over time.\u003c/p\u003e\n\u003cp\u003e* Accurate visual ballistic arc for grenades\u003c/p\u003e\n\u003cp\u003e* Works both in 1st person and 3rd person (with my patent pending HollywoodCam apparatus linked below)\u003c/p\u003e\n\u003cp\u003eBest used with \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2904-hollywoodcam/\" rel=\"noreferrer noopener\"\u003eHollywoodCam\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://youtu.be/W\" rel=\"noreferrer noopener\"\u003ehttps://youtu.be/W\u003c/a\u003e__gMFvLIPE\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2213/jankys-visual-assist",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-07-07T19:29:58.000000Z",
+    "created_at":  "2025-07-07T19:29:58.000000Z",
+    "updated_at":  "2026-07-28T06:01:10.000000Z",
+    "owner":  {
+                  "id":  72916,
+                  "name":  "JankyTheClown",
+                  "profile_photo_url":  "https://ui-avatars.com/api/?name=J\u0026color=7F9CF5\u0026background=EBF4FF",
+                  "cover_photo_url":  null,
+                  "created_at":  "2025-02-04T22:53:52.000000Z",
+                  "updated_at":  "2026-08-06T13:07:37.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

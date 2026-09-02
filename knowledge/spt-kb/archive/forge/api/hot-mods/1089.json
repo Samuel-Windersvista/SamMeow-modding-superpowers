@@ -1,0 +1,49 @@
+﻿{
+    "id":  1089,
+    "hub_id":  1508,
+    "guid":  "com.kaeno.traderscrolling",
+    "name":  "Kaeno-TraderScrolling",
+    "slug":  "kaeno-traderscrolling",
+    "teaser":  "Allows for side scrolling of the traders",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1508.png",
+    "downloads":  285419,
+    "favourites_count":  209,
+    "description":  "\u003cp\u003eSimple mod that allows horizontal scrolling when you have a large number of traders\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1089/kaeno-traderscrolling",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  3,
+    "published_at":  "2023-10-08T21:33:00.000000Z",
+    "created_at":  "2023-10-08T21:33:53.000000Z",
+    "updated_at":  "2026-07-28T06:04:22.000000Z",
+    "owner":  {
+                  "id":  9668,
+                  "name":  "CWX",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/6c471bf012d488dbee6c4c67b5e81bbd404551f9_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2021-09-25T23:47:26.000000Z",
+                  "updated_at":  "2026-07-10T04:49:48.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  26188,
+                                   "name":  "Kaeno",
+                                   "profile_photo_url":  "https://ui-avatars.com/api/?name=K\u0026color=7F9CF5\u0026background=EBF4FF",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2023-01-28T16:18:10.000000Z",
+                                   "updated_at":  "2026-07-29T20:59:34.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  3,
+                     "hub_id":  19,
+                     "title":  "Scripting",
+                     "slug":  "scripting",
+                     "description":  ""
+                 }
+}

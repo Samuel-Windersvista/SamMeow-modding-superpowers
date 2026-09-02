@@ -1,0 +1,36 @@
+﻿{
+    "id":  2162,
+    "hub_id":  2863,
+    "guid":  null,
+    "name":  "Skill Multiplier",
+    "slug":  "skill-multiplier",
+    "teaser":  "Adds sliders for individual skill EXP multipliers.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2863.png",
+    "downloads":  12145,
+    "favourites_count":  2,
+    "description":  "\u003ch2\u003eFeatures\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003ePer-skill XP multipliers (configurable via f12)\u003c/li\u003e\n\u003cli\u003eGlobal XP multiplier\u003c/li\u003e\n\u003cli\u003eOption to disable skill fatigue (always gain full XP, enabled by default)\u003c/li\u003e\n\u003cli\u003eAutomatically generates config entries for all available skills (Should, in theory, work with any mod that adds custom skills)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDefault multipliers are 1x, which effectively means disabled. must be configured in f12 to take effect!\u003c/p\u003e\n\u003cp\u003eInstallation instructions shamelessly stolen from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30839-drakiaxyz/\" rel=\"noreferrer noopener\"\u003eDrakiaXYZ\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003cp\u003e1) Open the downloaded zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e2) Select the folder in the zip file in \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e3) Drag the selected folder from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"\u003e7-zip\u003c/a\u003e into your SPT folder\u003c/p\u003e\n\u003cp\u003eDemonstration Video (Yes, it’s Quest Tracker, but the same concept applies to most mods. No, you don’t need to drop it onto LICENSE-Launcher.txt, just drop it into your SPT folder):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2162/skill-multiplier",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  null,
+    "published_at":  "2025-05-26T11:37:40.000000Z",
+    "created_at":  "2025-05-26T11:37:40.000000Z",
+    "updated_at":  "2026-07-13T18:01:01.000000Z",
+    "owner":  {
+                  "id":  61596,
+                  "name":  "Dazzuh",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d8b04059bb58964e2a0e977e7a4e6f203619984b_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-08-17T12:54:38.000000Z",
+                  "updated_at":  "2026-07-10T04:51:30.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  null
+}

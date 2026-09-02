@@ -1,0 +1,30 @@
+﻿[
+    {
+        "id":  12067,
+        "hub_id":  null,
+        "version":  "1.0.0",
+        "description":  "\u003cp\u003eInitial release\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2405/letmerightclick/1.0.0",
+        "content_length":  8233,
+        "spt_version_constraint":  "~4 \u003c4.1.0",
+        "downloads":  15114,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-10-28T22:30:00.000000Z",
+        "created_at":  "2025-10-28T22:30:58.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    },
+    {
+        "id":  14535,
+        "hub_id":  null,
+        "version":  "1.1.0",
+        "description":  "\u003cul\u003e\n\u003cli\u003eUpdated for SPT 4.1\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2405/letmerightclick/1.1.0",
+        "content_length":  3114,
+        "spt_version_constraint":  "\u003e=4.1.0",
+        "downloads":  1128,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2026-08-08T07:24:00.000000Z",
+        "created_at":  "2026-08-08T07:25:12.000000Z",
+        "updated_at":  "2026-08-08T18:02:21.000000Z"
+    }
+]

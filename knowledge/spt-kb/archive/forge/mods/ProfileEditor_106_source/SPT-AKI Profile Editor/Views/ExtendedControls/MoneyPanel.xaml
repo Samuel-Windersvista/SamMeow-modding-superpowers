@@ -1,0 +1,105 @@
+﻿<UserControl
+    x:Class="SPT_AKI_Profile_Editor.Views.MoneyPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extendedcontrols="clr-namespace:SPT_AKI_Profile_Editor.Views.ExtendedControls"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:SPT_AKI_Profile_Editor.Views"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance Type=views:StashTabViewModel}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="addButton" TargetType="Button">
+            <Button
+                Width="30"
+                Height="30"
+                Command="{TemplateBinding Command}"
+                CommandParameter="{TemplateBinding CommandParameter}"
+                Style="{DynamicResource MahApps.Styles.Button.Circle}">
+                <Button.ContentTemplate>
+                    <DataTemplate>
+                        <iconPacks:PackIconFontAwesome
+                            Width="10"
+                            Height="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="{DynamicResource MahApps.Brushes.Accent}"
+                            Kind="PlusSolid" />
+                    </DataTemplate>
+                </Button.ContentTemplate>
+            </Button>
+        </ControlTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <extendedcontrols:Warning
+            Grid.Row="0"
+            Margin="5"
+            Text="{Binding AppLocalization.Translations[tab_stash_mod_items], FallbackValue=tab_stash_mod_items}"
+            Visibility="{Binding Profile.Characters.Pmc.Inventory.ContainsModdedItems, Converter={StaticResource BooleanToVisibilityConverter}}" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <StackPanel.Style>
+                <Style TargetType="StackPanel">
+                    <Setter Property="IsEnabled" Value="True" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Profile.Characters.Pmc.Inventory.ContainsModdedItems}" Value="True">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+            <iconPacks:PackIconFontAwesome
+                Width="15"
+                Height="15"
+                VerticalAlignment="Center"
+                Kind="RubleSignSolid" />
+            <Label
+                Margin="5,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Content="{Binding Profile.Characters.Pmc.Inventory.RublesCount, FallbackValue=0}"
+                FontWeight="Bold" />
+            <Button
+                Command="{Binding AddMoney}"
+                CommandParameter="{Binding AppSettings.MoneysRublesTpl}"
+                Template="{StaticResource addButton}" />
+            <iconPacks:PackIconFontAwesome
+                Width="15"
+                Height="15"
+                Margin="10,0,0,0"
+                VerticalAlignment="Center"
+                Kind="EuroSignSolid" />
+            <Label
+                Margin="5,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Content="{Binding Profile.Characters.Pmc.Inventory.EurosCount, FallbackValue=0}"
+                FontWeight="Bold" />
+            <Button
+                Command="{Binding AddMoney}"
+                CommandParameter="{Binding AppSettings.MoneysEurosTpl}"
+                Template="{StaticResource addButton}" />
+            <iconPacks:PackIconFontAwesome
+                Width="15"
+                Height="15"
+                Margin="10,0,0,0"
+                VerticalAlignment="Center"
+                Kind="DollarSignSolid" />
+            <Label
+                Margin="5,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Content="{Binding Profile.Characters.Pmc.Inventory.DollarsCount, FallbackValue=0}"
+                FontWeight="Bold" />
+            <Button
+                Command="{Binding AddMoney}"
+                CommandParameter="{Binding AppSettings.MoneysDollarsTpl}"
+                Template="{StaticResource addButton}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

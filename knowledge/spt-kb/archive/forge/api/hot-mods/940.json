@@ -1,0 +1,42 @@
+﻿{
+    "id":  940,
+    "hub_id":  1283,
+    "guid":  "com.icyclawz.itemcontextmenuext",
+    "name":  "Item Context Menu Extended",
+    "slug":  "item-context-menu-extended",
+    "teaser":  "A mod that adds extra context menu items for specific item types and allows changing the scaling of context menus.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1283.png",
+    "downloads":  20822,
+    "favourites_count":  23,
+    "description":  "\u003cp\u003e\u003cstrong\u003eInstallation:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eExtract the ZIP to your SPT-AKI installation folder.\u003c/p\u003e\n\u003cp\u003eNote: This mod depends on my “\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/938/custom-interactions\" rel=\"noreferrer noopener\"\u003eCustom Interactions\u003c/a\u003e” library.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDescription:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eCurrently included custom context menu items:\u003c/p\u003e\n\u003cp\u003e* “\u003cstrong\u003eFiring mode\u003c/strong\u003e” for weapons.\u003cbr /\u003e\n* “\u003cstrong\u003eActive scope\u003c/strong\u003e”, “\u003cstrong\u003eActive mode\u003c/strong\u003e” (incl. zoom) and “\u003cstrong\u003eZero distance\u003c/strong\u003e” for sights.\u003cbr /\u003e\n* “\u003cstrong\u003eTurn on/off\u003c/strong\u003e” and “\u003cstrong\u003eActive mode\u003c/strong\u003e” for tactical devices.\u003c/p\u003e\n\u003cp\u003eNote: Auxillary scopes and sight/tactical modes have no names in the game, just an index.\u003c/p\u003e\n\u003cp\u003eYou can change the context menu scaling from the mod’s settings.\u003c/p\u003e\n\u003cp\u003eIf you have an idea of a useful menu item that should be added, let me know in the comments.\u003cbr /\u003e\nOnly no-nonsense ideas will be considered.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eImportant\u003c/strong\u003e: The game does not have a facility for saving any of these interactions to your server-side profile directly because they are literally impossible to do outside of raid. That will require a custom server-side solution I may include in a later version. If you use any of these interactions outside of raid, they will persist as long as the game is running, but will be saved server-side only when you enter a raid and then extract from it, with those items being in your gear.\u003c/p\u003e\n\u003cp\u003eA few screenshots:\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ikxxkZ9.png\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/qOzuCCu.png\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/71pJRw2.png\" alt=\"\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/6OaXNby.png\" alt=\"\" /\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/940/item-context-menu-extended",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2023-06-24T01:28:00.000000Z",
+    "created_at":  "2023-06-24T01:28:22.000000Z",
+    "updated_at":  "2026-07-28T06:05:05.000000Z",
+    "owner":  {
+                  "id":  31543,
+                  "name":  "IcyClawz",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/6cbf3ac470387423baf33591cb102396de5cc3d0_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/54e97f2ed2ecaf7e15d24a13e2dadf69cde55488_1280w.webp",
+                  "created_at":  "2023-05-26T10:06:34.000000Z",
+                  "updated_at":  "2026-07-26T16:27:36.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

@@ -1,0 +1,35 @@
+﻿{
+    "id":  2386,
+    "hub_id":  null,
+    "guid":  "com.cj.usefromanywhere",
+    "name":  "Use Items Anywhere",
+    "slug":  "use-items-anywhere",
+    "teaser":  "Use and bind items from anywhere in your inventory",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/QFT3IUEWMKU90z1iyMFKtR2fgscGNQxVG7zMpR5u.png",
+    "downloads":  95653,
+    "favourites_count":  228,
+    "description":  "\u003cp\u003eUse and bind items from anywhere in your characters inventory, that is all. Not much else to say\u003c/p\u003e\n\u003cp\u003eExtract to the root of your SPT install as shown below.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"InstallGif\" /\u003e\u003c/p\u003e\n\u003cp\u003eBuy me coffee \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/dirtbikercj\" rel=\"noreferrer noopener\"\u003ehere\u003c/a\u003e!\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2386/use-items-anywhere",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  15,
+    "published_at":  "2025-10-20T23:50:00.000000Z",
+    "created_at":  "2025-10-20T23:52:15.000000Z",
+    "updated_at":  "2026-07-28T06:19:30.000000Z",
+    "owner":  {
+                  "id":  33963,
+                  "name":  "Cj",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+                  "created_at":  "2023-07-14T19:01:21.000000Z",
+                  "updated_at":  "2026-08-10T02:32:30.000000Z"
+              },
+    "additional_authors":  [
+
+                           ]
+}

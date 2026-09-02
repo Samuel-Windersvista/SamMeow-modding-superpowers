@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\LibGit2Sharp.NativeBinaries.2.0.322\build\net46\LibGit2Sharp.NativeBinaries.props" Condition="Exists('..\packages\LibGit2Sharp.NativeBinaries.2.0.322\build\net46\LibGit2Sharp.NativeBinaries.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A86680EF-DD21-4DDA-AD2A-132D83B61263}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Build</RootNamespace>
+    <AssemblyName>Build</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>false</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UNITY_EDITOR|AnyCPU'">
+    <OutputPath>bin\UNITY_EDITOR\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_EDITOR</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Preview|AnyCPU'">
+    <OutputPath>bin\Preview\</OutputPath>
+    <DefineConstants>TRACE;Preview</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CopyBuildAssembly, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CopyBuildAssembly.1.0.0\lib\net472\CopyBuildAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="LibGit2Sharp, Version=0.30.0.0, Culture=neutral, PublicKeyToken=7cbde695407f0333, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibGit2Sharp.0.30.0\lib\net472\LibGit2Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=1.6.1.23, Culture=neutral, PublicKeyToken=c8ff6ba0184838bb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Squid-Box.SevenZipSharp.1.6.1.23\lib\net472\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="ReadMe.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="localized\compass\en.json" />
+    <None Include="localized\compass\zh.json" />
+    <None Include="localized\core\en.json" />
+    <None Include="localized\core\zh.json" />
+    <None Include="localized\grenade\en.json" />
+    <None Include="localized\grenade\zh.json" />
+    <None Include="localized\health\en.json" />
+    <None Include="localized\health\zh.json" />
+    <None Include="localized\hit\en.json" />
+    <None Include="localized\hit\zh.json" />
+    <None Include="localized\kill\en.json" />
+    <None Include="localized\kill\zh.json" />
+    <None Include="localized\weapon\en.json" />
+    <None Include="localized\weapon\zh.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamePanelHUDCompass\GamePanelHUDCompass.csproj">
+      <Project>{51efd06c-e92c-4710-a8b1-ed3cc4b3035e}</Project>
+      <Name>GamePanelHUDCompass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDCore\GamePanelHUDCore.csproj">
+      <Project>{55f2fbf1-8cec-4b1e-a920-fa6dd908b751}</Project>
+      <Name>GamePanelHUDCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDGrenade\GamePanelHUDGrenade.csproj">
+      <Project>{694937a0-2dcd-48d5-a4f2-d6893d3fdc94}</Project>
+      <Name>GamePanelHUDGrenade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDHit\GamePanelHUDHit.csproj">
+      <Project>{798133e6-f502-4d73-bb3a-4c4d56d14ff5}</Project>
+      <Name>GamePanelHUDHit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDHealth\GamePanelHUDHealth.csproj">
+      <Project>{d0b0c60c-0a9c-4e93-8cb3-73c4becdea8d}</Project>
+      <Name>GamePanelHUDHealth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDKill\GamePanelHUDKill.csproj">
+      <Project>{d067f025-d2b8-44e8-869e-747e1c9a7b78}</Project>
+      <Name>GamePanelHUDKill</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePanelHUDWeapon\GamePanelHUDWeapon.csproj">
+      <Project>{808deb9b-1331-4f71-b3a1-dd7a8d699466}</Project>
+      <Name>GamePanelHUDWeapon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(ProjectDir)localized\ $(TargetDir)localized\ /E /Y
+start $(TargetPath) $(ConfigurationName) $(SolutionDir)</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\7z.Libs.23.01.0\build\net\7z.Libs.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\7z.Libs.23.01.0\build\net\7z.Libs.targets'))" />
+    <Error Condition="!Exists('..\packages\LibGit2Sharp.NativeBinaries.2.0.322\build\net46\LibGit2Sharp.NativeBinaries.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\LibGit2Sharp.NativeBinaries.2.0.322\build\net46\LibGit2Sharp.NativeBinaries.props'))" />
+    <Error Condition="!Exists('..\packages\CopyBuildAssembly.1.0.0\build\CopyBuildAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CopyBuildAssembly.1.0.0\build\CopyBuildAssembly.targets'))" />
+  </Target>
+  <Import Project="..\packages\7z.Libs.23.01.0\build\net\7z.Libs.targets" Condition="Exists('..\packages\7z.Libs.23.01.0\build\net\7z.Libs.targets')" />
+  <Import Project="..\packages\CopyBuildAssembly.1.0.0\build\CopyBuildAssembly.targets" Condition="Exists('..\packages\CopyBuildAssembly.1.0.0\build\CopyBuildAssembly.targets')" />
+</Project>

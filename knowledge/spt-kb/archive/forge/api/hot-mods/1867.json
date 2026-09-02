@@ -1,0 +1,42 @@
+﻿{
+    "id":  1867,
+    "hub_id":  2521,
+    "guid":  "com.rootsnine.qcadjustments",
+    "name":  "QCAdjustments",
+    "slug":  "qcadjustments",
+    "teaser":  "Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor tasks to your gameplay style.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2521.png",
+    "downloads":  5443,
+    "favourites_count":  4,
+    "description":  "\u003cp\u003eQCAdjustments\u003c/p\u003e\n\u003cp\u003eTired of grinding through Tarkov’s quests? \u003cstrong\u003eQCAdjustments\u003c/strong\u003e lets you customize quest conditions for a smoother or more challenging experience. Adjust conditions for CounterCreator, FindItem, HandoverItem, LeaveItemAtLocation, and SellItemToTrader quests. The mod also offers tweaks for the \u003cstrong\u003eGunsmith\u003c/strong\u003e quest line, allowing you to add kill requirements or replace the weapon turn-in condition with a kill task.\u003c/p\u003e\n\u003cp\u003eThis mod doesn’t remove quest conditions entirely—the minimum value is 1—so you can fine-tune difficulty without breaking the game’s progression.\u003c/p\u003e\n\u003ch3\u003eCompatibility\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eWorks with existing profiles, but creating a backup beforehand is recommended.\u003c/li\u003e\n\u003cli\u003eWorks with quests added and/or adjusted using \u003cstrong\u003eVirtual’s Custom Quest Loader\u003c/strong\u003e (~3.11)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGunsmith Tweaks\u003c/strong\u003e is confirmed compatible. Other Gunsmith-related mods are untested.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eInstallation\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003eDownload the latest mod release.\u003c/li\u003e\n\u003cli\u003eExtract the contents of the archive into your SPT directory or manually drag the user folder into the SPT directory.\u003c/li\u003e\n\u003cli\u003eEdit the config found in \u003ccode\u003eSPT/user/mods/qcadjustments/config.json\u003c/code\u003e to your preferences.\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eUpdating\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eSee release notes for version specific updating instructions.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eIssues\u003c/h3\u003e\n\u003cp\u003eWhile extensively tested, bugs may still occur. If you encounter any issues, please leave a comment or \u003ca target=\"_blank\" class=\"external-link\" href=\"https://github.com/ScidaJ/QCAdjustments/issues\" rel=\"noreferrer noopener\"\u003eopen an issue on GitHub.\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eConfiguration\u003c/h3\u003e\n\u003cp\u003eAll values in the config file must be greater than 0. If set to 0, the defaults will be used.\u003c/p\u003e\n\u003cp\u003eKill Targets\u003c/p\u003e\n\u003cp\u003eThis section allows you to change the targets for kill quests. It will not target any quests involving Rogues, Raiders, or Scav Bosses. The default values will retain vanilla kill targets on quests. Note: This will \u003cem\u003e\u003cstrong\u003eNOT\u003c/strong\u003e\u003c/em\u003e change the task text. If you change all Bear quests to Any, the task will still say Bear PMCs, but any kill will count. As an aside that has made testing this very difficult, so please let me know of any issues you find and I will do my best to solve them as quickly as possible.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eany\u003c/strong\u003e (Default: Any)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eany_pmc\u003c/strong\u003e (Default: AnyPmc)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ebear\u003c/strong\u003e (Default: Bear)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003escavs\u003c/strong\u003e (Default: Savage)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eusec\u003c/strong\u003e (Default: Usec)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eTask Multipliers\u003c/h4\u003e\n\u003cp\u003eAdjust the total amounts for quest conditions. Lower values mean easier tasks.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003ecounter\u003c/strong\u003e (Default: 0.5)\u003cbr /\u003e\nProgress tracked by actions (e.g., kills, shots on specific body parts, etc.).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003efind_handover\u003c/strong\u003e (Default: 0.5)\u003cbr /\u003e\nTasks requiring you to find items in raid and hand them over.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eleave_at\u003c/strong\u003e (Default: 0.5)\u003cbr /\u003e\nTasks where you must stash an item at a specific location.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003esell\u003c/strong\u003e (Default: 0.5)\u003cbr /\u003e\nTasks that require selling items to traders.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003etimer\u003c/strong\u003e (Default: 0.5)\u003cbr /\u003e\nThe time spent placing or stashing an item at a location.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003exp\u003c/strong\u003e (Default: 1.0)\u003cbr /\u003e\nThe experience rewarded by quests.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eGunsmith Adjustments\u003c/h4\u003e\n\u003cp\u003eCustomize the Gunsmith quest line with new conditions:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eenabled\u003c/strong\u003e (Default: false)\u003cbr /\u003e\nEnables Gunsmith adjustments, adding a kill requirement.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ereplace_task\u003c/strong\u003e (Default: false)\u003cbr /\u003e\nReplaces the handover condition with a kill requirement.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ekills\u003c/strong\u003e (Default: 10)\u003cbr /\u003e\nNumber of kills required. This value is not affected by Task Multipliers.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eQuest Blacklist(Optional)\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003equest_blacklist\u003c/strong\u003e (Default: [])\u003cbr /\u003e\nA list of quest names to skip when applying changes. Example: [“Regulated Materials”, “Gunsmith - Part 6”]\u003c/li\u003e\n\u003c/ul\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1867/qcadjustments",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  true,
+    "cheat_notice":  false,
+    "category_id":  7,
+    "published_at":  "2024-12-03T21:40:00.000000Z",
+    "created_at":  "2024-12-03T21:40:29.000000Z",
+    "updated_at":  "2026-07-28T06:03:54.000000Z",
+    "owner":  {
+                  "id":  68245,
+                  "name":  "RootsNine",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/3704bcc09c0f48794f8658db7548ebafb01223ea_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-11-26T16:12:18.000000Z",
+                  "updated_at":  "2026-08-03T14:31:32.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  7,
+                     "hub_id":  24,
+                     "title":  "Quests",
+                     "slug":  "quests",
+                     "description":  ""
+                 }
+}

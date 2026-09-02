@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>UpdateHierarchy</AssemblyName>
+    <Description>My first plugin</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony20">
+      <HintPath>..\..\SPT 0.15\BepInEx\core\0Harmony20.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\SPT 0.15\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>..\..\SPT 0.15\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.UnityConverters">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.UnityConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-core">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-core.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-custom.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-debugging">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-singleplayer">
+      <HintPath>..\..\SPT 0.15\BepInEx\plugins\spt\spt-singleplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\SPT 0.15\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+</Project>

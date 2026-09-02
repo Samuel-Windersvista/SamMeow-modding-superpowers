@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>1.0.5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\EscapeFromTarkov@4.0\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>E:\EscapeFromTarkov@4.0\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>E:\EscapeFromTarkov@4.0\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>E:\EscapeFromTarkov@4.0\EscapeFromTarkov_Data\Managed\Comfort.Unity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>E:\EscapeFromTarkov@4.0\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\EscapeFromTarkov@4.0\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\EscapeFromTarkov@4.0\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

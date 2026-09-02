@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AssemblyName>Tyrian-Radar</AssemblyName>
+		<DependencyVersion>4.1.1</DependencyVersion>
+		<Nullable>enable</Nullable>
+		<!-- Show build version in file properties -->
+        <Version>1.2.1</Version>
+	</PropertyGroup>
+	<PropertyGroup>
+    	<LangVersion>9</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>False</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="..\dependencies\$(DependencyVersion)\Assembly-CSharp.dll">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="..\dependencies\$(DependencyVersion)\BepInEx.dll">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Comfort">
+			<HintPath>..\dependencies\Comfort.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>..\dependencies\UnityEngine.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>..\dependencies\UnityEngine.AssetBundleModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\dependencies\UnityEngine.CoreModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>..\dependencies\UnityEngine.UI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>..\dependencies\UnityEngine.ImageConversionModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>..\dependencies\UnityEngine.UIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>..\dependencies\UnityEngine.PhysicsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="spt-reflection">
+			<HintPath>..\dependencies\spt-reflection.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="spt-common">
+			<HintPath>..\dependencies\spt-common.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>..\dependencies\Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="bundle\radarhud.bundle" />
+		<EmbeddedResource Include="bundle\radarhud.bundle" />
+		<None Remove="bundle\**\*.png" />
+		<EmbeddedResource Include="bundle\**\*.png" />
+	</ItemGroup>
+</Project>

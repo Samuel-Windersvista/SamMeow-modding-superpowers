@@ -1,0 +1,42 @@
+﻿{
+    "id":  2360,
+    "hub_id":  null,
+    "guid":  "com.hazelify.servertweaks",
+    "name":  "Server Tweaks - Discount SVM",
+    "slug":  "server-tweaks-discount-svm",
+    "teaser":  "A simple mod that contains some universal server config tweaks.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/7O1PVR4U1hjMuOVcdX8rd5DV7kGK2l0sZPpmeH4c.png",
+    "downloads":  4219,
+    "favourites_count":  2,
+    "description":  "\u003cp\u003eThis mod allows enabling some of the universally popular features from \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/236/server-value-modifier-svm\" rel=\"noreferrer noopener\"\u003epopular Server Value Modifier\u003c/a\u003e. It’s a deliberately small mod for those of us who don’t want everything SVM has.\u003c/p\u003e\n\u003cp\u003ePlease keep in mind that some wanted features are not in the mod yet. I have not had enough time to research and implement them.\u003c/p\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-2-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eImage gallery\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eHere is what the config utility looks like. Use it before you run the server.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://github.com/minihazel/ServerTweaksUI/blob/master/ServerTweaksUI_0EVJuOC8Rg.png?raw=true\" alt=\"alt text\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003chr /\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eLogging\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eEnable Full Logging\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eEnable full logging in the server console\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eHideout\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eGlobal Construction Time\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eControl how fast construction is\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eRemove Restrictions\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRemove all cost for constructing\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eRaids\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eEnable Extended Duration\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhether \u003ccode\u003eExtra Exfiltration Time\u003c/code\u003e should be enabled\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eExtra Exfiltration Time\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eExtend every raid by X amount of minutes\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOpen Standard Exfils\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOpen all the exfils available to your character (does not affect paid/coop)\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCost for Coop Exfiltration\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSet how much coop exfils cost (if \u003ccode\u003eUse Paid Coop Exfiltration\u003c/code\u003e is enabled)\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eUse Paid Coop Exfiltration\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eConvert coop exfils to paid exfils\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-4\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInventory\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eWeighted Armbands\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAllow adjusting the weight of armbands (easy way for no weight)\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eArmband Weight\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSet the weight of all armbands, if using weighted armbands\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eLootable Melee\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAllow looting melee from bots\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMaster Key\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhether \u003ccode\u003eLose Items on Death\u003c/code\u003e is enabled\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eLose Items on Death\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAdjust what on your character can be lost on death\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-5\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eTraders\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eAll Clothing is Free\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMake the available clothing free of charge and available at level 1\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-6\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eFlea Market\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eUnlock Flea at Level 1\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhether to unlock the Flea Market on level 1.\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-7\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eInsurance\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cul\u003e\n\u003cli\u003eInsurance on Labs\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eEnable insurance on Laboratory\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGuaranteed Return for Prapor\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhether Prapor’s insurance is guaranteed to return\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGuaranteed Return for Therapist\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhether Therapist’s insurance is guaranteed to return\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eInsurance Max Storage Time\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHow long insurance can be stored before going MIA\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWhen Should Insurance Return\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHow long until insurance can return\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2360/server-tweaks-discount-svm",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-10-13T20:04:00.000000Z",
+    "created_at":  "2025-10-12T21:03:18.000000Z",
+    "updated_at":  "2026-07-28T06:03:42.000000Z",
+    "owner":  {
+                  "id":  20914,
+                  "name":  "Devraccoon",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/gH4j72I3sL5ip5WBdAdO0itXtjFRSfHbOacX2IKE_256w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2022-07-23T23:58:07.000000Z",
+                  "updated_at":  "2026-08-10T06:28:31.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

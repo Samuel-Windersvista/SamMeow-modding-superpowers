@@ -1,0 +1,1459 @@
+{
+ "generated": "2026-09-02",
+ "schema_version": 1,
+ "entries": [
+  {
+   "path": "curated/api-notes-4.1/config-system.md",
+   "title": "配置系统笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "config",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/database-structure.md",
+   "title": "数据库结构笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "database",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/di-container.md",
+   "title": "DI 容器笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "di",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/http-routing.md",
+   "title": "HTTP 路由笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "routes",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/mod-loading.md",
+   "title": "Mod 加载流程笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "mod-loading",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/README.md",
+   "title": "SPT 4.1 服务端 API 笔记（源码提炼）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "index",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/save-profile.md",
+   "title": "存档（Profile）笔记 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "save-profile",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/api-mapping-311-to-41.md",
+   "title": "3.11 -> 4.1 API 映射表",
+   "version": [
+    "3.11",
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/bundle-311-to-41.md",
+   "title": "3.11 -> 4.1 Bundle 迁移指南",
+   "version": [
+    "3.11",
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/client-mod-311-to-41.md",
+   "title": "3.11 -> 4.1 客户端 mod 迁移指南",
+   "version": [
+    "3.11",
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/client-obfuscation-mapping-skills-extended.md",
+   "title": "客户端混淆名映射（SkillsExtended 实战解析）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-ett.md",
+   "title": "迁移流水线实战经验（ETT 试点）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-secure-mapbook.md",
+   "title": "迁移流水线实战经验（SecureMapbookMod bundle 试点）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-skills-extended.md",
+   "title": "迁移流水线实战经验（SkillsExtended 三合一试点）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-guide/01-environment-toolchain.md",
+   "title": "环境与工具链 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "environment",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-guide/02-server-mod-anatomy.md",
+   "title": "Server Mod 解剖 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "server-anatomy",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-guide/03-client-mod-anatomy.md",
+   "title": "Client Mod 解剖 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "client-anatomy",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-guide/04-example-walkthroughs.md",
+   "title": "官方示例逐例解读（4.0 → 4.1 迁移对照）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "examples",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-guide/README.md",
+   "title": "SPT Mod 开发指南（重组版）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "index",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/01-add-custom-trader.md",
+   "title": "配方：添加自定义商人 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/02-edit-database-values.md",
+   "title": "配方：修改数据库数值（globals / bot / hideout / 地图）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/03-add-custom-item.md",
+   "title": "配方：添加自定义物品 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/04-edit-item-properties.md",
+   "title": "配方：修改现有物品属性 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/05-loot-tweaks.md",
+   "title": "配方：修改战利品刷新（Loot）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/06-add-custom-quest.md",
+   "title": "配方：添加自定义任务（Quest）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/07-bot-difficulty-tweaks.md",
+   "title": "配方：修改 Bot 难度与行为参数 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/08-trader-restock.md",
+   "title": "配方：修改商人补货逻辑 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/09-custom-http-routes.md",
+   "title": "配方：挂自定义 HTTP 路由 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/10-mod-communication.md",
+   "title": "配方：Mod 间通信 [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/11-mod-web-config-ui.md",
+   "title": "配方：Mod 配置界面（Mod Web Pages / 浏览器编辑器）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/recipes/README.md",
+   "title": "SPT 4.1 Mod 任务配方集",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "wiki/5050-method.md",
+   "title": "What is the 50/50 Method?",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Beginners_Guide.md",
+   "title": "Welcome to SPT!",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "getting-started",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/bleeding-edge-install-instructions.md",
+   "title": "Testing Only",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Bot_Difficulties.md",
+   "title": "EFT Pre-Raid Difficulty Settings",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/FAQs_40.md",
+   "title": "Why are there so many files in the new \\SPT folder?",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/guides-and-advanced-topics/console-commands.md",
+   "title": "console-commands",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/home.md",
+   "title": "Single Player Tarkov Wiki",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "index",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/How_SPT_Works.md",
+   "title": "Installation",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "architecture",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/how_to_contribute.md",
+   "title": "Wiki.js",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "contributing",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Installation_Guide.md",
+   "title": "What you need to do before you install Single Player Tarkov",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Installing_Mods.md",
+   "title": "Before installing your mods",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Known_EFT_Issues_40.md",
+   "title": "Github tracked issues",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Known_Mod_Issues_40.md",
+   "title": "Infinite loading after installing mods",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Known_SPT_Issues_40.md",
+   "title": "Github tracked issues",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Manual-Install-Instructions.md",
+   "title": "What you need to do before you manually install Single Player Tarkov",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Mod_Types.md",
+   "title": "Server mods",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "modding-general",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/Modding_Resources.md",
+   "title": "SPT Discord server mod development channels",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "modding-general",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/body-part-reference.md",
+   "title": "Body Part Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/bot-types.md",
+   "title": "Bot Information Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/location-information.md",
+   "title": "Location Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/map-scenes.md",
+   "title": "Map Scenes Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/quest-values.md",
+   "title": "Quest Value Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/skills-reference.md",
+   "title": "Skill Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/references/trader-information.md",
+   "title": "Trader Reference Sheet",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/tutorials/Client_Modding_Quick_Guide.md",
+   "title": "Resources",
+   "version": [
+    "通用"
+   ],
+   "domain": "client",
+   "topic": "tutorial",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/tutorials/debug_dnSpy.md",
+   "title": "Prerequisites",
+   "version": [
+    "通用"
+   ],
+   "domain": "client",
+   "topic": "tutorial",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/modding/tutorials/WTT_Vol1.md",
+   "title": "Prerequisites",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "tutorial",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Performance_Tuning.md",
+   "title": "Optimisations",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "performance",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Profiles.md",
+   "title": "What are profiles?",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "profiles",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Recommended_Mods_40.md",
+   "title": "Mods for better AI",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "mod-recommendations",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Reporting_Issues.md",
+   "title": "Common Pitfalls",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_311/FAQs_311.md",
+   "title": "SPT 3.11",
+   "version": [
+    "3.11"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_311/Manual-Installation-Instructions_311.md",
+   "title": "What you need to do before you install Single Player Tarkov",
+   "version": [
+    "3.11"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_311/Recommended_Mods_311.md",
+   "title": "Mods for better AI",
+   "version": [
+    "3.11"
+   ],
+   "domain": "both",
+   "topic": "mod-recommendations",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_40/Manual-Installation-Instructions_40.md",
+   "title": "What you need to do before you manually install SPT",
+   "version": [
+    "4.0"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_41/Client_40_to_41.md",
+   "title": "Everything got its real name back",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_41/modding/client/Class_Name_Mappings.md",
+   "title": "Class_Name_Mappings",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "reference-data",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_41/modding/EnumExtensions.md",
+   "title": "Do you actually need one?",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "modding-general",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_41/modding/server/Mod_Web_Pages.md",
+   "title": "Opting in",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "tutorial",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_41/Server_40_to_41.md",
+   "title": "Metadata",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/SPT_and_Commando_Bots.md",
+   "title": "SPT",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "general",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Style_Guide.md",
+   "title": "Markdown",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "contributing",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/system-requirements.md",
+   "title": "System Requirements",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "requirements",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/thank-you.md",
+   "title": "A thank you from me to everyone",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "general",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Uninstalling_Mods.md",
+   "title": "Uninstalling mods",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "installation",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/Updating_SPT.md",
+   "title": "Replacing files",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "updating",
+   "source": "wiki"
+  },
+  {
+   "path": "wiki/UPSTREAM.md",
+   "title": "Wiki Vendor 副本 — 上游坐标",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "meta",
+   "source": "wiki"
+  },
+  {
+   "path": "curated/recipes/12-weapon-preset-assort.md",
+   "title": "配方：商人上货武器 preset [4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "recipe",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-warsaw-trader.md",
+   "title": "从零写商人 mod 实战经验（WarsawTrader 试点）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-lootingbots.md",
+   "title": "客户端混淆名映射（LootingBots 实战：20+ 类型映射/价格重构/Harmony 字段改名）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "curated/api-notes-4.1/server-mod-metadata-dll.md",
+   "title": "4.1 Server Mod 元数据读取（DLL / IModMetadata）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "server",
+   "topic": "mod-metadata",
+   "source": "curated"
+  },
+  {
+   "path": "archive/3114-sources/MANIFEST.md",
+   "title": "3114 整合包 Mod 源码归档 MANIFEST（51 个 mod）",
+   "version": [
+    "3.11"
+   ],
+   "domain": "both",
+   "topic": "archive-index",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/destructive-operation-guardrails.md",
+   "title": "破坏性操作护栏（Forge release 误删教训）",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "operations",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/conflict-analysis-input-model.md",
+   "title": "Mod 冲突分析的正确输入模型（modlist 过滤 + 嵌套路径 + hash）",
+   "version": [
+    "3.11",
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "conflict-analysis",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/3114-il-conflict-report.md",
+   "title": "3114 整合包 IL 级 Harmony patch 冲突报告（776 patch / 62 碰撞）",
+   "version": [
+    "3.11"
+   ],
+   "domain": "client",
+   "topic": "conflict-analysis",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/3114-il-conflict-report-v2.md",
+   "title": "3114 整合包 IL 级冲突深度报告（行为分析版 + 规则盲区）",
+   "version": [
+    "3.11"
+   ],
+   "domain": "client",
+   "topic": "conflict-analysis",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/3114-il-conflict-report-v3.md",
+   "title": "3114 整合包 IL 级冲突深度报告 v3（源码级定论 + 规则修正）",
+   "version": [
+    "3.11"
+   ],
+   "domain": "client",
+   "topic": "conflict-analysis",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-kmytarkovapi.md",
+   "title": "客户端混淆名映射（KmyTarkovApi 实战：库类 mod 移植 + 静态类转枚举）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "curated"
+  },
+  {
+   "path": "archive/ported-src/MANIFEST.md",
+   "title": "SPT 4.1 移植源码归档 MANIFEST（9 个已移植 mod 源码持久化）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "archive-index",
+   "source": "curated"
+  },
+  {
+   "title": "Bundle 兼容性知识：SPT 3.11 -> 4.1.2",
+   "topic": "migration",
+   "domain": "both",
+   "version": "4.1",
+   "path": "curated/migration/bundle-compat-311-to-41.md",
+   "keywords": [
+    "bundle",
+    "AssetBundle",
+    "UnityPy",
+    "Unity版本",
+    "shader",
+    "MonoScript",
+    "兼容性"
+   ],
+   "summary": "Unity 2022.3.43f1 向后兼容加载 2019.4 bundle（原包验证）；真正风险点是 bundle 内 MonoBehaviour 对重编译 DLL 的脚本引用（程序集名+命名空间+类名）；检查方法 + 决策树 + 19 个 bundle 实测结论"
+  },
+  {
+   "title": "服务端 mod 迁移知识：SPT 3.11 -> 4.1.2（SPTarkov C#）",
+   "topic": "migration",
+   "domain": "server",
+   "version": "4.1",
+   "path": "curated/migration/server-mod-311-to-41.md",
+   "keywords": [
+    "SPTarkov",
+    "服务端",
+    "server mod",
+    "IModMetadata",
+    "TS重写",
+    "net10",
+    "Injectable",
+    "OnLoadAsync"
+   ],
+   "summary": "4.0→4.1 SPTarkov C# 服务端迁移全知识：AbstractModMetadata断链、表模型注入、TS→C#重写模板（AKResonant实战4轮修复）、Router生命周期、WTT依赖区间、IModMetadata接口。2026-08-11新增第8章TS→C#迁移"
+  },
+  {
+   "title": "C 桶 Forge 下载归档 MANIFEST（旧版本 mod 留档）",
+   "topic": "archive-index",
+   "domain": "both",
+   "version": [
+    "3.11",
+    "4.0",
+    "4.1"
+   ],
+   "path": "archive/forge/c-bucket/MANIFEST.md",
+   "keywords": [
+    "C桶",
+    "c-bucket",
+    "归档",
+    "Forge下载",
+    "黑盒DLL",
+    "SPTarkov版本"
+   ],
+    "summary": "C 桶 12 个 mod 的 Forge 下载留档：版本/SPTarkov 编译目标（4.0.3/4.0.4）/zip 归档状态/部署状态。旧版本 mod 黑盒 DLL 无源码，DLL 引用版本可判断 4.1 兼容性"
+   },
+   {
+    "title": "EFT 世界观与背景知识分区（lore README）",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/README.md",
+    "keywords": [
+     "世界观",
+     "lore",
+     "背景",
+     "剧情",
+     "塔科夫",
+     "索引"
+    ],
+    "summary": "lore 分区索引与阅读顺序：9 篇 EFT 世界观文档（世界观/时间线/派系/TerraGroup/地图/商人/剧情/术语/游戏史），2026-08-16 建立",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫世界观总览",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/01-world-overview.md",
+    "keywords": [
+     "Norvinsk",
+     "特别经济区",
+     "SEZ",
+     "Russia-2028",
+     "Contract Wars",
+     "冲突起因",
+     "地理"
+    ],
+    "summary": "Norvinsk SEZ 设定、塔科夫/诺文斯克两城、TerraGroup 丑闻→冲突→封锁链条、Contract Wars 前传（化工厂16号/旧锯木厂）、对 mod 开发的意义",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫时间线",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/02-timeline.md",
+    "keywords": [
+     "时间线",
+     "timeline",
+     "删档",
+     "Wipe",
+     "赛季",
+     "版本史",
+     "PVP",
+     "PVE"
+    ],
+    "summary": "世界线（2004-封锁后）+ 1.0 主线章节顺序 + PVP 删档赛季全表（2017-2026）+ PVE 无删档 + 现实版本演化对照 SPT 4.1",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫派系志",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/03-factions.md",
+    "keywords": [
+     "派系",
+     "USEC",
+     "BEAR",
+     "Scav",
+     "Rogues",
+     "Cultists",
+     "邪教徒",
+     "UNTAR",
+     "Black Division",
+     "karma"
+    ],
+    "summary": "USEC/BEAR 成立史与任务、Scav 构成与 karma 体系、Scav Raiders/Rogues/Cultists（降临的见证者）/UNTAR/黑师、派系关系图与 SPT bot 映射",
+    "source": "curated"
+   },
+   {
+    "title": "TerraGroup 与阴谋主线",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/04-terragroup.md",
+    "keywords": [
+     "TerraGroup",
+     "实验室",
+     "The Lab",
+     "迷宫",
+     "净化",
+     "无名者",
+     "Kerman",
+     "罪证"
+    ],
+    "summary": "TerraGroup 集团架构与 Labs PLC、四大设施（总部/实验室/迷宫/化工厂16号）、净化与无名者设定、门票线重大罪证 9 选 8 清单",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫地图设定（13 图）",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/05-locations.md",
+    "keywords": [
+     "地图",
+     "locations",
+     "Ground Zero",
+     "中心区",
+     "街区",
+     "海关",
+     "森林",
+     "灯塔",
+     "迷宫",
+     "破冰船",
+     "码头",
+     "转场"
+    ],
+    "summary": "13 张地图总览表（定位/控制势力/剧情意义）+ 各图 lore 要点（Boss、帮派、转场、剧情关联）+ Transit 机制 + SPT locations 映射",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫商人志",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/06-traders.md",
+    "keywords": [
+     "商人",
+     "traders",
+     "Prapor",
+     "Therapist",
+     "Fence",
+     "Skier",
+     "Peacekeeper",
+     "Mechanic",
+     "Ragman",
+     "Jaeger",
+     "Lightkeeper",
+     "BTR司机"
+    ],
+    "summary": "11 位商人本名/背景/驻地/立场（含 Lightkeeper 战局内交易与 BTR 司机破冰船线）、与 SPT traders 数据库及商人 mod 设计的映射",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫主线剧情章节（1.0）",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/07-story-chapters.md",
+    "keywords": [
+     "剧情",
+     "主线",
+     "章节",
+     "Story Chapters",
+     "Tour",
+     "Boreas",
+     "门票",
+     "The Ticket",
+     "结局",
+     "Kerman"
+    ],
+    "summary": "九章主线（塔科夫之旅→Boreas）逐章剧情与抉择点、门票四结局×双分支体系、重大罪证 9 选 8、破冰船支线与成就、SPT 章节系统复用",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫术语表",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/08-glossary.md",
+    "keywords": [
+     "术语",
+     "glossary",
+     "Raid",
+     "PMC",
+     "Scav",
+     "karma",
+     "Kappa",
+     "删档",
+     "藏身处",
+     "跳蚤",
+     "转场"
+    ],
+    "summary": "机制术语（Raid/PMC/Scav/karma/Boss/保险/BTR…）+ 世界观术语（TerraGroup/无名者/Kerman/Zryachiy…）+ 物品简称，与 SPT 数据库对象对照",
+    "source": "curated"
+   },
+   {
+    "title": "塔科夫游戏史",
+    "topic": "lore",
+    "domain": "both",
+    "version": [
+     "通用"
+    ],
+    "path": "curated/lore/09-game-history.md",
+    "keywords": [
+     "游戏史",
+     "开发史",
+     "1.0",
+     "Arena",
+     "发布",
+     "Steam",
+     "版本线",
+     "地图史"
+    ],
+    "summary": "2012 开发启动→2025-11-15 1.0 发布（Steam）、Arena 竞技模式、删档赛季摘要、地图版本发展线（工厂→破冰船 13 图）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/operations/3114-eft016-perf-hotspots.md",
+    "title": "EFT 0.16 (SPT 3.11.4) 客户端性能热点地图（反编译实证）",
+    "version": [
+     "3.11"
+    ],
+    "domain": "client",
+    "topic": "performance",
+    "keywords": [
+     "性能",
+     "帧率",
+     "反编译",
+     "AI",
+     "感知射线",
+     "寻路",
+     "GC",
+     "UpdateManual",
+     "ILSpy"
+    ],
+    "summary": "EFT 0.16 全量反编译实证：每帧代码纪律良好，热点集中在 Bot AI 链（感知射线风暴/25子系统串行/同步寻路/睡眠感知漏洞）+ 弹道物理查询 + 未降频系统；含 12 个补丁目标表与产出 mod PerformanceTweaks 指针",
+    "source": "curated"
+   },
+   {
+    "path": "curated/operations/client-mod-compat-audit-playbook.md",
+    "title": "客户端 mod Harmony 冲突审计 playbook（9 仓源码实证）",
+    "version": [
+     "3.11"
+    ],
+    "domain": "client",
+    "topic": "conflict-analysis",
+    "keywords": [
+     "Harmony",
+     "冲突",
+     "审计",
+     "SAIN",
+     "QuestingBots",
+     "LootingBots",
+     "Realism",
+     "ThatsLit",
+     "Donuts",
+     "优先级",
+     "Transpiler"
+    ],
+    "summary": "有源码时的冲突审计流程（双通道 grep + 语义判定规则）+ 9 仓实证事实：SAIN 只 patch 感知参数级方法、QB 的 CheckLookEnemy prefix 顺序敏感、ThatsLit 走 addSensorDistance 不改 VisibleDist、Donuts 局末绕过 UnregisterPlayer、spt-singleplayer 对 UpdateManual 的固定索引 Transpiler 等",
+    "source": "curated"
+   },
+   {
+    "path": "curated/operations/3114-client-mod-build-gotchas.md",
+    "title": "SPT 3.11.4 反编译与客户端 mod 构建坑",
+    "version": [
+     "3.11"
+    ],
+    "domain": "client",
+    "topic": "tooling",
+    "keywords": [
+     "ilspycmd",
+     "反编译",
+     "net471",
+     "Comfort.dll",
+     "Paths",
+     "构建",
+     "BepInEx",
+     "验证"
+    ],
+    "summary": "ilspycmd 10.1 崩溃需升 11.0；EFT 0.16 命名空间分布（AI 类全局/BotOwner 在 EFT）；net471 构建坑（Comfort.dll 引用、全局 Paths 遮蔽 BepInEx.Paths、FieldRefAccess 返回类型）；不进战局的补丁加载验证捷径（-token/-config 直启 + LogOutput.log）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/operations/pilot-experience-performancetweaks.md",
+    "title": "PerformanceTweaks 制作经验（客户端性能 mod 全流程试点）",
+    "version": [
+     "3.11"
+    ],
+    "domain": "client",
+    "topic": "operations",
+    "keywords": [
+     "性能",
+     "试点",
+     "反编译",
+     "Harmony",
+     "实测",
+     "Adrenalin",
+     "配置文案",
+     "经验"
+    ],
+    "summary": "客户端性能 mod 全流程管线（反编译→侦察→证据表→补丁→审计→实测）；三次侦察误判的读码修正（SAIN 感知链假设/GClass1828 伪热点/目录归档引用爆炸）；补丁四原则；实测教训（1% low 不为所动、AMD CSV 是零成本 A/B 源）；配置文案人话化；mods/ 产出约定",
+    "source": "curated"
+   },
+   {
+    "path": "curated/operations/413-fork-transition.md",
+    "title": "SPT 4.1.3 与官方归档/fork 迁移",
+    "version": [
+     "4.1"
+    ],
+    "domain": "both",
+    "topic": "migration",
+    "keywords": [
+     "4.1.3",
+     "SP-Tushonka",
+     "fork",
+     "归档",
+     "sp-tarkov",
+     "二进制兼容",
+     "重命名"
+    ],
+    "summary": "官方 sp-tarkov 2026-08-11 归档全部仓库（4.1.2 为最后官方版）；SP-Tushonka fork 2026-08-20 发布 4.1.3。47 commits/2059 文件中约 2025 个是重命名噪声；程序集名/命名空间/IModMetadata/客户端版本要求全部不变 → mod 二进制兼容。冲击在源码仓库层面不在运行时层面。08-22 补充：客户端源码家=modules 仓库（已同步 4.1.3）、4.1 无性能补丁目录、PrePatch/patcher 预补丁路径、SP-Tushonka 组织 14 仓全景",
+    "source": "curated"
+   },
+   {
+    "path": "archive/tarkov-dev/README.md",
+    "title": "tarkov.dev 数据源归档 README（live 参考快照）[live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "archive-index",
+    "keywords": [
+     "tarkov.dev",
+     "live",
+     "json.tarkov.dev",
+     "快照",
+     "provenance"
+    ],
+    "summary": "tarkov.dev live 数据快照归档说明：抓取时间/源端点/live 版本 1.1.0.1.46911 对应/许可/已知缺口（#474 GraphQL 故障、#481 商人报价缺失）/排除项（prices/status/pve 模式）",
+    "source": "curated"
+   },
+   {
+    "path": "archive/tarkov-dev/snapshot-2026-09-02/IMAGE-REPORT.md",
+    "title": "tarkov.dev 数据画像与 SPT 对照报告（2026-09-02）[live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "画像",
+     "对照",
+     "弹药",
+     "一致率",
+     "items",
+     "tasks",
+     "maps"
+    ],
+    "summary": "批次 0 数据画像：items 5312/tasks 517/barters 789/maps 17 计数与类型分布、properties 覆盖 78.4%、_zh 字典映射验证、SPT 弹药抽样对照 100 字段 100% 一致、live 212 vs SPT 208 弹药差异、SPT 特有地图（develop/privatearea/suburbs/town）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/ammo.md",
+    "title": "弹药数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "弹药",
+     "ammo",
+     "穿透",
+     "初速",
+     "口径",
+     "tracer"
+    ],
+    "summary": "tarkov.dev 快照提炼：212 种弹药全量表（按 32 口径分组，含中文名/id/肉伤/穿透/甲伤/初速/碎弹率/跳弹率/重量/叠放）+ 26 tracer 清单；SPT 对照 100 字段 100% 一致；live 212 vs SPT 208 覆盖差异",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/armor.md",
+    "title": "护甲与头盔数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "护甲",
+     "头盔",
+     "armor",
+     "插板",
+     "class",
+     "zones"
+    ],
+    "summary": "tarkov.dev 快照提炼：138 护甲/背心 + 109 头盔全量表（class/耐久/防护部位/插板槽/隔音/跳弹）+ 插板系统结构；SPT 4.1 对照关键发现：护甲数值已迁移到 Slots→Plate 插板体系（顶层 armorClass 清零，插板槽级一致率 97.7%）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/tasks.md",
+    "title": "任务体系数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "任务",
+     "quest",
+     "目标类型",
+     "reward",
+     "商人"
+    ],
+    "summary": "tarkov.dev 快照提炼：517 任务全量总览（按 11 商人分组）+ 20 种目标类型逐类字段说明与示例 + 10 种奖励类型；SPT 558 vs live 517（id 交集 463），抽样揭示 3 处真实差异（HandoverItem 阶段/目标枚举/1.0 重新编号）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/maps.md",
+    "title": "地图点位数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "地图",
+     "点位",
+     "loot",
+     "撤离点",
+     "boss",
+     "spawn"
+    ],
+    "summary": "tarkov.dev 快照提炼：17 图总览 + 点位统计（spawns/extracts/lootContainers/lootLoose）+ 撤离点/Boss 刷新结构；SPT 对照：14 图一一对应、SPT 特有 5 空壳、静态容器几乎一致、loose loot 模型差异（SPT 概率候选池）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/barters-crafts-hideout.md",
+    "title": "易物/制作/藏身处数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "易物",
+     "barter",
+     "制作",
+     "craft",
+     "藏身处",
+     "hideout"
+    ],
+    "summary": "tarkov.dev 快照提炼：789 易物全量表（按商人分组）+ 214 制作全量表（按工作站分组）+ 26 藏身处站总览；物品中文名 join 100% 命中；SPT 对照：28 区域 vs 26 站、production 226 vs 214",
+    "source": "curated"
+   },
+   {
+    "path": "curated/game-data-ref/traders.md",
+    "title": "商人库存数据参考 [live-ref]",
+    "version": [
+     "live-ref"
+    ],
+    "domain": "both",
+    "topic": "reference-data",
+    "keywords": [
+     "商人",
+     "trader",
+     "库存",
+     "报价",
+     "assort"
+    ],
+    "summary": "tarkov.dev 快照提炼：商人总览（16 条目 = 11 SPT 同 id + 5 live 特有）+ 等级/报价结构；dump 无报价数据（N/A 标注，改用 SPT assort 统计 8 商人）；已知缺口 #481；SPT 12 vs live 16 id 对应",
+    "source": "curated"
+   }
+  ],
+ "tarkov_dev": {
+  "path": "archive/tarkov-dev/snapshot-2026-09-02/",
+  "description": "tarkov.dev live 数据快照（18 端点，2026-09-02 抓取，对应 EFT 1.1.0.1.46911）",
+  "fetch_script": "archive/tarkov-dev/fetch-dump.ps1"
+ },
+ "forge_catalog": {
+  "path": "archive/forge/api/mods-catalog.json",
+  "description": "1822 mod metadata from Forge archive",
+  "hot_index": "archive/forge/hot-index.json"
+ },
+ "external_repos": {
+  "path": "external/spt-archive/",
+  "manifest": "external/spt-archive/MANIFEST.md"
+ }
+}

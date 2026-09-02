@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      客户端 mod 必须在 Unity 的 Mono 运行时下加载，net10.0 程序集无法被 Mono 加载。
+      SPT 4.1 官方客户端模块（external/spt-archive/modules）同样以 netstandard2.1 为目标。
+      不要改成 net10.0，除非目标环境已是 BepInEx 6（.NET 6+）。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}</AssemblyName>
+    <Version>{{MOD_VERSION}}</Version>
+
+    <!--
+      SPT 客户端安装根目录（含 EscapeFromTarkov.exe 的目录）。
+      可在命令行覆盖：dotnet build -p:SPTInstallPath="D:\Games\SPT"
+    -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">{{SPT_INSTALL_PATH}}</SPTInstallPath>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 5 核心（BepInEx/plugins/ 下的插件由它加载） -->
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 2.x（补丁库） -->
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 游戏主程序集（4.1 已反混淆，类型有真名真命名空间），补丁目标类在这里 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- MonoBehaviour 基类所在（BaseUnityPlugin 继承它），必须引用 -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 UnityEngine.UI / EventSystems 等，按需补充 UnityEngine.UI.dll / UnityEngine.UIModule.dll -->
+  </ItemGroup>
+
+</Project>

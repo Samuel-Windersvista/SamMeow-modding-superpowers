@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9C2E4F1-7B3D-4E6A-9F8C-5D1E2A3B4C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UpdateHierarchy</RootNamespace>
+    <AssemblyName>UpdateHierarchy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- PORT-NOTE: 移除签名（离线引用环境无强命名密钥） -->
+    <SignAssembly>false</SignAssembly>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <!-- PORT-NOTE: SDK 风格 HintPath（SPT 0.15 路径）全部改指 Refs-410 只读目录（SPT 4.1.2 程序集）。
+       0Harmony20 -> 0Harmony（同一 Harmony 2.9 程序集，BepInEx5 运行时改名）；
+       BepInEx.Harmony / Newtonsoft.Json.UnityConverters 在 Refs-410 中不存在且源码未使用，已移除。 -->
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Refs-410\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Refs-410\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\Refs-410\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\Refs-410\Comfort.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Refs-410\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>..\Refs-410\spt-common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-core">
+      <HintPath>..\Refs-410\spt-core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>..\Refs-410\spt-custom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-debugging">
+      <HintPath>..\Refs-410\spt-debugging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>..\Refs-410\spt-reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="spt-singleplayer">
+      <HintPath>..\Refs-410\spt-singleplayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Refs-410\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Refs-410\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**" />
+  </ItemGroup>
+
+  <!-- PORT-NOTE: 原 SDK 打包 Target 保留；SPTPath 未设置时自动跳过（Condition 保护），离线编译无副作用。 -->
+  <Target Name="CopyToSPT" AfterTargets="AfterBuild" Condition="'$(SPTPath)' != ''">
+    <PropertyGroup>
+      <ModsDirectoryPath>$(SPTPath)\BepInEx\plugins\$(MSBuildProjectName)</ModsDirectoryPath>
+    </PropertyGroup>
+
+    <Message Importance="high" Text="Copying mods to $(ModsDirectoryPath)" />
+    <ItemGroup>
+      <FilesToCopy Include="$(OutputPath)$(TargetName)$(TargetExt)" />
+      <FilesToCopy Include="$(OutputPath)$(TargetName).pdb" />
+      <FilesToCopy Include="Resources\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(ModsDirectoryPath)\%(RecursiveDir)" ContinueOnError="false" />
+    <Message Importance="high" Text="Files copied" />
+  </Target>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+</Project>

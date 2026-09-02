@@ -1,0 +1,58 @@
+﻿[
+    {
+        "id":  3725,
+        "hub_id":  10530,
+        "version":  "2.0.0",
+        "description":  "\u003cp\u003eUpdated for 3.9.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1469/autodeposit/2.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "3.9.0",
+        "downloads":  21396,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-07-07T05:11:46.000000Z",
+        "created_at":  "2024-07-07T05:11:46.000000Z",
+        "updated_at":  "2026-05-14T03:55:41.000000Z"
+    },
+    {
+        "id":  2317,
+        "hub_id":  12290,
+        "version":  "3.0.0",
+        "description":  "\u003cp\u003eUpdated for 3.10\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1469/autodeposit/3.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.10.0",
+        "downloads":  3084,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-11-26T19:45:33.000000Z",
+        "created_at":  "2024-11-26T19:45:33.000000Z",
+        "updated_at":  "2026-05-14T03:19:42.000000Z"
+    },
+    {
+        "id":  1181,
+        "hub_id":  13595,
+        "version":  "4.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 3.11 🚀\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1469/autodeposit/4.0.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  23931,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-03-16T04:04:15.000000Z",
+        "created_at":  "2025-03-16T04:04:15.000000Z",
+        "updated_at":  "2026-05-14T02:07:26.000000Z"
+    },
+    {
+        "id":  11882,
+        "hub_id":  null,
+        "version":  "5.0.0",
+        "description":  "\u003cp\u003eUpdated for SPT 4.0\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/1469/autodeposit/5.0.0",
+        "content_length":  10405,
+        "spt_version_constraint":  "~4.0.0",
+        "downloads":  26409,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-10-17T09:02:00.000000Z",
+        "created_at":  "2025-10-17T18:02:53.000000Z",
+        "updated_at":  "2026-07-28T06:04:39.000000Z"
+    }
+]

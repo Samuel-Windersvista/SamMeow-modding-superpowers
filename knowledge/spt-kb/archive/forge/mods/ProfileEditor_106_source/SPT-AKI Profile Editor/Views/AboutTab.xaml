@@ -1,0 +1,112 @@
+﻿<UserControl
+    x:Class="SPT_AKI_Profile_Editor.Views.AboutTab"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:SPT_AKI_Profile_Editor.Views"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance Type=views:AboutTabViewModel}"
+    mc:Ignorable="d">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="0,0,10,0">
+                <Label Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_text], FallbackValue=tab_about_text}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <Label Margin="0,5,0,0" Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_developer], FallbackValue=tab_about_developer}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenAutorGitHubUrl}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="{Binding AuthorURL, FallbackValue=AuthorURL}" />
+                    </Hyperlink>
+                </TextBlock>
+                <Label Margin="0,5,0,0" Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_latest_version], FallbackValue=tab_about_latest_version}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenRepositoryGitHubUrl}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="{Binding RepositoryURL, FallbackValue=RepositoryURL}" />
+                    </Hyperlink>
+                </TextBlock>
+                <Label Margin="0,5,0,0" Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_discord], FallbackValue=tab_about_discord}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenDiscord}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="https://discord.gg/NTwSA4AfRP" />
+                    </Hyperlink>
+                </TextBlock>
+                <Label Margin="0,5,0,0" Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_support], FallbackValue=tab_about_support}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenYoomoneyUrl}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="{Binding YoomoneyUrl, FallbackValue=YoomoneyUrl}" />
+                    </Hyperlink>
+                </TextBlock>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenSteamUrl}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_steam_trade_url], FallbackValue=tab_about_steam_trade_url}" TextWrapping="Wrap" />
+                    </Hyperlink>
+                </TextBlock>
+                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                    <Label
+                        VerticalAlignment="Center"
+                        Content="LTC:"
+                        Style="{DynamicResource NonLinkStyle}" />
+                    <Label
+                        VerticalAlignment="Center"
+                        Content="{Binding LtcWallet, FallbackValue=LtcWallet}"
+                        Style="{DynamicResource NonLinkStyle}" />
+                    <Button
+                        Margin="5,0,0,0"
+                        VerticalAlignment="Center"
+                        Command="{Binding CopyLtcWallet}">
+                        <Button.ContentTemplate>
+                            <DataTemplate>
+                                <iconPacks:PackIconFontAwesome
+                                    Width="15"
+                                    Height="15"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="{DynamicResource MahApps.Brushes.Gray1}"
+                                    Kind="CopyRegular" />
+                            </DataTemplate>
+                        </Button.ContentTemplate>
+                    </Button>
+                </StackPanel>
+                <Image
+                    Width="150"
+                    Margin="6,0,0,0"
+                    HorizontalAlignment="Left">
+                    <Image.Source>
+                        <BitmapImage UriSource="/Resources/Images/ltcWallet.png" />
+                    </Image.Source>
+                </Image>
+                <Label Margin="0,5,0,0" Style="{DynamicResource DescriptionHeaderStyle}">
+                    <Label.Content>
+                        <TextBlock Text="{Binding AppLocalization.Translations[tab_about_spt_project_url], FallbackValue=tab_about_spt_project_url}" TextWrapping="Wrap" />
+                    </Label.Content>
+                </Label>
+                <TextBlock Margin="6,0,0,5">
+                    <Hyperlink Command="{Binding OpenSptProjectUrl}" Style="{DynamicResource LinkStyle}">
+                        <TextBlock Text="{Binding SptProjectUrl, FallbackValue=SptProjectUrl}" />
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

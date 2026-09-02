@@ -1,0 +1,44 @@
+﻿[
+    {
+        "id":  12229,
+        "hub_id":  null,
+        "version":  "1.0.0",
+        "description":  "\u003cp\u003eInitial release\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2422/foldables/1.0.0",
+        "content_length":  33437,
+        "spt_version_constraint":  "~4.0.3",
+        "downloads":  1904,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-11-07T18:39:00.000000Z",
+        "created_at":  "2025-11-07T18:39:52.000000Z",
+        "updated_at":  "2026-07-28T06:17:49.000000Z"
+    },
+    {
+        "id":  12283,
+        "hub_id":  null,
+        "version":  "1.0.1",
+        "description":  "\u003cp\u003eAdded:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFoldable headsets\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eFixed:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFoldable items ending up on top when sorting\u003c/li\u003e\n\u003cli\u003eImage scale when folded item is rotated\u003c/li\u003e\n\u003cli\u003eSome cases of null ref exceptions\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eModified:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSmaller default folding sizes to encourage folding\u003c/li\u003e\n\u003cli\u003eTry optimize mod’s server start\u003c/li\u003e\n\u003cli\u003eUse SPT patch manager\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eNote\u003c/strong\u003e: This update changes the config’s default values, it is recommended to make a backup of your current config then \u003cem\u003emigrate\u003c/em\u003e your changes\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2422/foldables/1.0.1",
+        "content_length":  35382,
+        "spt_version_constraint":  "~4.0.4",
+        "downloads":  8051,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-11-11T18:11:00.000000Z",
+        "created_at":  "2025-11-11T18:11:07.000000Z",
+        "updated_at":  "2026-07-28T06:20:53.000000Z"
+    },
+    {
+        "id":  12688,
+        "hub_id":  null,
+        "version":  "1.0.3",
+        "description":  "\u003cp\u003eAdded:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eRussian language localization (Thanks \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/user/78370/dragonx86\" rel=\"noreferrer noopener\"\u003e@DragonX86-dev\u003c/a\u003e!)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eFixed:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOut of bounds issue\u003c/li\u003e\n\u003cli\u003eMod compatibility load order\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eModified:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFallback locale languages to English\u003c/li\u003e\n\u003c/ul\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2422/foldables/1.0.3",
+        "content_length":  37549,
+        "spt_version_constraint":  "~4.0.4",
+        "downloads":  24802,
+        "fika_compatibility":  "compatible",
+        "published_at":  "2025-12-27T17:15:00.000000Z",
+        "created_at":  "2025-12-27T17:15:28.000000Z",
+        "updated_at":  "2026-07-28T07:13:28.000000Z"
+    }
+]

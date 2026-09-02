@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      SPT 4.1.x (EFT 0.16.9.5) 客户端 mod。4.1 官方客户端模块以 netstandard2.1 为目标
+      （templates/client-mod 约定），BepInEx 5 / Unity Mono，勿改 net6+。
+      与 3.11 版（mods/PerformanceTweaks，net471）独立演进，不共享源码。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.SPT.PerformanceTweaks413</RootNamespace>
+    <AssemblyName>SamMeow.PerformanceTweaks413</AssemblyName>
+    <Version>0.3.0</Version>
+
+    <!-- SPT 4.1.2 安装根目录（含 EscapeFromTarkov.exe）。可命令行覆盖：-p:SPTInstallPath="..." -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410</SPTInstallPath>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- EFT 0.16.9.5 主程序集（4.1 已反混淆，真名真命名空间），补丁目标类在这里 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- P13 SphereCollider（UnityEngine.PhysicsModule）/ P15 NavMeshObstacle（UnityEngine.AIModule） -->
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Comfort.Common（Singleton<T> 全局单例访问） -->
+    <Reference Include="Comfort">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 构建后把 DLL 复制到 release/，方便直接拿取部署到 BepInEx/plugins/ -->
+  <Target Name="CopyToRelease" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)release" />
+  </Target>
+
+</Project>

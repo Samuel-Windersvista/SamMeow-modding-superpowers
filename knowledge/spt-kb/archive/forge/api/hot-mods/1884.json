@@ -1,0 +1,42 @@
+﻿{
+    "id":  1884,
+    "hub_id":  2546,
+    "guid":  "com.lacyway.ch",
+    "name":  "Continuous Healing",
+    "slug":  "continuous-healing",
+    "teaser":  "Tired of having to heal every limb one by one? Now you can heal them all in one go until done or manually cancelled!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2546.png",
+    "downloads":  119788,
+    "favourites_count":  162,
+    "description":  "\u003ch3\u003e\u003cstrong\u003eWhat does the mod do?\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eWith \u003cstrong\u003eContinuous Healing\u003c/strong\u003e you can click the healing button once and it will continue healing all limbs until you reach 100%, removing the need to do it for every limb and waiting for the animations to bring up your weapon. The delay that is normally 2 seconds is removed between each limb, speeding up healing slightly as well. If the med kit runs out it will stop as per usual. Tested and working with Fika.\u003c/p\u003e\n\u003cp\u003eI \u003cem\u003e\u003cstrong\u003ehighly recommend\u003c/strong\u003e\u003c/em\u003e using this with \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1779-healing-autocancel\" rel=\"noreferrer noopener\"\u003eHealing Autocancel\u003c/a\u003e!\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eIncompatible mods\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/260-bettermeds-revised/\" rel=\"noreferrer noopener\"\u003eBetter Meds Revised\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003eKnown issues\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003eHealing a destroyed limb with a \u003cstrong\u003eCMS\u003c/strong\u003e or \u003cstrong\u003eSurv12 kit\u003c/strong\u003e will not play the animation on the second limb due to how the animations work for these items. You will still heal them at a slightly faster rate, just wait until your weapon appears and it’s done. Looking for an elegant fix if possible down the line.\u003c/p\u003e\n\u003cp\u003eIf you have any issues with the mod, be thorough in your report or you will be ignored. Thanks!\u003c/p\u003e\n\u003cp\u003eYou can support me on Ko-Fi\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1884/continuous-healing",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  3,
+    "published_at":  "2024-12-12T09:18:00.000000Z",
+    "created_at":  "2024-12-12T09:18:22.000000Z",
+    "updated_at":  "2026-08-08T18:02:21.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  3,
+                     "hub_id":  19,
+                     "title":  "Scripting",
+                     "slug":  "scripting",
+                     "description":  ""
+                 }
+}

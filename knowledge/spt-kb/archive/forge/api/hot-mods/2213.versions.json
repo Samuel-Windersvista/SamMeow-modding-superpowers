@@ -1,0 +1,30 @@
+﻿[
+    {
+        "id":  197,
+        "hub_id":  14680,
+        "version":  "1.0.3",
+        "description":  "\u003cp\u003e* Grenade arc assist: fixed mass handling (grenades have subtly different weights that I didn’t account for before)\u003c/p\u003e\n\u003cp\u003e* Grenade arc assist: (hopefully) fixed fika compatibility issue\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2213/jankys-visual-assist/1.0.3",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  4216,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-07-27T11:51:21.000000Z",
+        "created_at":  "2025-07-27T11:51:21.000000Z",
+        "updated_at":  "2026-05-14T01:40:35.000000Z"
+    },
+    {
+        "id":  11751,
+        "hub_id":  null,
+        "version":  "1.1.0",
+        "description":  "\u003cp\u003eSPT4 Release\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/2213/jankys-visual-assist/1.1.0",
+        "content_length":  7251,
+        "spt_version_constraint":  "~4 \u003c4.1.0",
+        "downloads":  12548,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-10-11T19:30:03.000000Z",
+        "created_at":  "2025-10-11T08:45:39.000000Z",
+        "updated_at":  "2026-08-01T20:39:03.000000Z"
+    }
+]

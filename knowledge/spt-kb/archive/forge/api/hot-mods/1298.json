@@ -1,0 +1,42 @@
+﻿{
+    "id":  1298,
+    "hub_id":  1810,
+    "guid":  "com.lacyway.hanb",
+    "name":  "HandsAreNotBusy",
+    "slug":  "handsarenotbusy",
+    "teaser":  "Annoyed by the ancient \"Hands are busy\" bug?HandsAreNotBusy (HANB) is a mod that can fix certain scenarios of the \"Hands are busy\" bug for you!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1810.png",
+    "downloads":  142962,
+    "favourites_count":  164,
+    "description":  "\u003ch2\u003e\u003cstrong\u003eWhat is HANB?\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eHANB\u003c/strong\u003e allows you to reset your hand controller and certain queued events in the inventory controller to get out of the “Hands are busy” bug. It works best if you have a weapon equipped and use the hotkey as soon as the bug happens. Stay calm, don’t and simply press the hotkey to fix your hands.\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003eCan I change the hotkey?\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eYes, in the Configuration Manager (F12) you can change the hotkey. Default is ‘End’.\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003eWhat should I avoid doing with HANB?\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eDo not spam the key, click it once gently and wait. Clicking it in rapid succession will most likely cause more harm.\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003eWhat do I do if it didn’t work or want to report a bug/incompatibility?\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eReport the exact steps you were doing to make your hands get stuck, and provide a log file so that I can try to reproduce it and add support for that specific scenario in the mod. “Hands are busy” is a very complicated bug to fix and this is a hacky workaround. So far it has been consistently working for me as long as the explained steps are followed.\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003eHow do I install/uninstall the mod?\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eExtract/remove the ‘HandsAreNotBusy.dll’ file to/from your BepInEx\\plugins folder.\u003c/p\u003e\n\u003cp\u003eYou can support me on Ko-Fi\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1298/handsarenotbusy",
+    "fika_compatibility":  true,
+    "featured":  true,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  3,
+    "published_at":  "2024-04-10T11:16:00.000000Z",
+    "created_at":  "2024-04-10T11:16:45.000000Z",
+    "updated_at":  "2026-08-07T11:47:21.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  3,
+                     "hub_id":  19,
+                     "title":  "Scripting",
+                     "slug":  "scripting",
+                     "description":  ""
+                 }
+}

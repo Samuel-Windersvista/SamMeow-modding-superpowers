@@ -1,0 +1,42 @@
+﻿{
+    "id":  2240,
+    "hub_id":  2944,
+    "guid":  "com.acidphantasm.letmeout",
+    "name":  "LET ME OUT",
+    "slug":  "let-me-out",
+    "teaser":  "Stops transit interaction from disabling all the other exfils. I want out, let me out!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2944.png",
+    "downloads":  8631,
+    "favourites_count":  13,
+    "description":  "\u003cp\u003eAll this does is allow you to exfil from other points on the map if you happen to accidentally interact with a transit.\u003c/p\u003e\n\u003cp\u003eTransits still work with this mod. Probably. I tested one transit and it loaded.\u003c/p\u003e\n\u003cp\u003eWhether or not this allows you to actually utilize the transit “send stuff to stash” if you choose not to transit - I have no idea. If your stuff goes poof that’s on you.\u003c/p\u003e\n\u003cp\u003eWhether or not this works with Fika - I have no idea. If your raid blows up, or your Fika server crashes, or if Fika staff come to your house and beat you senseless, that’s on you. (If it works - great, let me know in the comments… if it doesn’t work - I’ll fix it eventually, maybe, or maybe not)\u003c/p\u003e\n\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eInstallation\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDownload LET ME OUT\u003c/li\u003e\n\u003cli\u003eOpen the downloaded zip file in 7-zip\u003c/li\u003e\n\u003cli\u003eSelect the BepInEx folder in the zip file in 7-zip\u003c/li\u003e\n\u003cli\u003eDrag the BepInEx folder from 7-zip into your SPT folder\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eDemonstration Video (yoink):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eUNINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003col\u003e\n\u003cli\u003eDelete \u003ccode\u003e/ROOTSPT/Bepinex/plugins/acidphantasm-letmeout\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003eDone\u003c/li\u003e\n\u003c/ol\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eSUPPORT\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003ePlease comment on the hub page, or preferably create an issue on the GitHub, or \u003cem\u003emore\u003c/em\u003e preferably visit #acidphantasm-mods in the SPT Discord!\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cp\u003eIf you enjoy my work - you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\"\u003ebuy me a coffee\u003c/a\u003e~\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2240/let-me-out",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  8,
+    "published_at":  "2025-08-02T01:48:00.000000Z",
+    "created_at":  "2025-08-02T01:48:13.000000Z",
+    "updated_at":  "2026-08-06T06:02:14.000000Z",
+    "owner":  {
+                  "id":  48110,
+                  "name":  "acidphantasm",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-04-11T21:22:35.000000Z",
+                  "updated_at":  "2026-08-10T12:36:53.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  8,
+                     "hub_id":  25,
+                     "title":  "Locations",
+                     "slug":  "locations",
+                     "description":  ""
+                 }
+}

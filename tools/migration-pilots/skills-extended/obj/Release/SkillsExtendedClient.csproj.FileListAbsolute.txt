@@ -1,0 +1,10 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtendedClient.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtended.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\obj\Release\SkillsExtended.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\bin\Release\SkillsExtended.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\skills-extended\bin\Release\SkillsExtended.pdb

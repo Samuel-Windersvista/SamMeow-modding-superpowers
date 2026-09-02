@@ -1,0 +1,35 @@
+﻿{
+    "id":  1657,
+    "hub_id":  2262,
+    "guid":  "com.lacyway.mc",
+    "name":  "MergeConsumables",
+    "slug":  "mergeconsumables",
+    "teaser":  "Tired of not being able to merge your medical items or food? Now you can!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2262.png",
+    "downloads":  69189,
+    "favourites_count":  125,
+    "description":  "\u003ch2\u003eWhat is MergeConsumables?\u003c/h2\u003e\n\u003cp\u003eMergeConsumables lets you merge (not stack!) any consumable item with a limited amount of uses, such as a bottle of water or an AFAK. Simply drag and drop one item on top of another item of the same type! For example, dragging an AFAK with 200/400 on to an AFAK with 50/400 would result in one item with 250/400!\u003c/p\u003e\n\u003ch2\u003eWhat do I do if it didn’t work or want to report a bug/incompatibility?\u003c/h2\u003e\n\u003cp\u003eReport the exact steps to reproduce the bug, and provide log files. I’ve tried as many cases as I can to find limitations, but it’s hard to find them all! A detailed report makes them easier to fix.\u003c/p\u003e\n\u003ch2\u003eHow do I install the mod?\u003c/h2\u003e\n\u003cp\u003eExtract the contents of the .zip to your SPT install\u003c/p\u003e\n\u003ch3\u003eYou can support me on Ko-Fi\u003c/h3\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\"\u003eClick\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1657/mergeconsumables",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  4,
+    "published_at":  "2024-08-19T14:30:00.000000Z",
+    "created_at":  "2024-08-19T14:30:23.000000Z",
+    "updated_at":  "2026-08-10T08:48:22.000000Z",
+    "owner":  {
+                  "id":  47969,
+                  "name":  "Lacyway",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+                  "cover_photo_url":  "https://forge-static.sp-tarkov.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+                  "created_at":  "2024-04-09T17:00:56.000000Z",
+                  "updated_at":  "2026-08-10T08:56:42.000000Z"
+              },
+    "additional_authors":  [
+
+                           ]
+}

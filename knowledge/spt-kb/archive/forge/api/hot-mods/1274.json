@@ -1,0 +1,49 @@
+﻿{
+    "id":  1274,
+    "hub_id":  1779,
+    "guid":  "healingautocancel",
+    "name":  "Healing Autocancel",
+    "slug":  "healing-autocancel",
+    "teaser":  "Healing Autocancel",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/1779.webp",
+    "downloads":  85624,
+    "favourites_count":  102,
+    "description":  "\u003cp\u003eAutomatically cancels applied med kits when the body part is at full health and is not bleeding or broken.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003e\u003cstrong\u003eHighly recommend\u003c/strong\u003e\u003c/em\u003e to be used with \u003ca target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2546-continuous-healing\" rel=\"noreferrer noopener\"\u003eContinuous Healing\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1274/healing-autocancel",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-04-02T21:55:00.000000Z",
+    "created_at":  "2024-04-02T21:55:48.000000Z",
+    "updated_at":  "2026-07-28T06:44:07.000000Z",
+    "owner":  {
+                  "id":  39420,
+                  "name":  "IhanaMies",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/f1bd69885f5b47be112a6e5b872160c3b5fbf359_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2023-10-23T13:59:12.000000Z",
+                  "updated_at":  "2026-07-10T04:50:50.000000Z"
+              },
+    "additional_authors":  [
+                               {
+                                   "id":  20914,
+                                   "name":  "Devraccoon",
+                                   "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/gH4j72I3sL5ip5WBdAdO0itXtjFRSfHbOacX2IKE_256w.webp",
+                                   "cover_photo_url":  null,
+                                   "created_at":  "2022-07-23T23:58:07.000000Z",
+                                   "updated_at":  "2026-08-10T06:28:31.000000Z"
+                               }
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

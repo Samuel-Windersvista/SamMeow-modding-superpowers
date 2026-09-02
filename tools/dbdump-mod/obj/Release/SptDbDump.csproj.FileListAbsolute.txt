@@ -1,0 +1,13 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\bin\Release\SptDbDump.deps.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\bin\Release\SptDbDump.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\bin\Release\SptDbDump.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\refint\SptDbDump.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\SptDbDump.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\dbdump-mod\obj\Release\ref\SptDbDump.dll

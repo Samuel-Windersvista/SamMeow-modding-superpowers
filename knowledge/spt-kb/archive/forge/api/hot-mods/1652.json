@@ -1,0 +1,42 @@
+﻿{
+    "id":  1652,
+    "hub_id":  2252,
+    "guid":  "wtf.archangel.stophotkeyautovault",
+    "name":  "Stop Hotkey Auto-Vault",
+    "slug":  "stop-hotkey-auto-vault",
+    "teaser":  "Tired of your character still automatically vaulting over things and getting your legs broken or killed even though you have \u0027Hotkey\u0027 selected as your preferred vaulting method? No more!",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/2252.png",
+    "downloads":  3938,
+    "favourites_count":  2,
+    "description":  "\u003cp\u003eFixes the weird auto-vaulting bug where sometimes auto-vaulting will still be enabled even though in the settings hotkey has been selected.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eInstallation:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"\" /\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/1652/stop-hotkey-auto-vault",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2024-08-13T21:26:00.000000Z",
+    "created_at":  "2024-08-13T21:26:53.000000Z",
+    "updated_at":  "2026-07-28T06:02:21.000000Z",
+    "owner":  {
+                  "id":  52282,
+                  "name":  "ArchangelWTF",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-05-20T14:55:34.000000Z",
+                  "updated_at":  "2026-08-09T21:39:13.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

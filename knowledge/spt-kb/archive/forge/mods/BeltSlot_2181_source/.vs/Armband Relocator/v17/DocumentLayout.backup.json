@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\beltslot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:beltslot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\beltslot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|BeltSlot.csproj|solutionrelative:beltslot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\patches\\containerspanelpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|solutionrelative:patches\\containerspanelpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\patches\\equipmentbuildsscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|solutionrelative:patches\\equipmentbuildsscreenpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|d:\\sp-tarkov dev\\development\\armband relocator\\patches\\equipmenttabpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D62B974-7967-4FA6-A569-5B4DAB931B26}|Armband Relocator.csproj|solutionrelative:patches\\equipmenttabpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 176,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeltSlot",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\BeltSlot.csproj",
+              "RelativeDocumentMoniker": "BeltSlot.csproj",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\BeltSlot.csproj",
+              "RelativeToolTip": "BeltSlot.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T15:23:49.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EquipmentTabPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\EquipmentTabPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\EquipmentTabPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\EquipmentTabPatch.cs",
+              "RelativeToolTip": "Patches\\EquipmentTabPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:15:48.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquipmentBuildsScreenPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\EquipmentBuildsScreenPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\EquipmentBuildsScreenPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\EquipmentBuildsScreenPatch.cs",
+              "RelativeToolTip": "Patches\\EquipmentBuildsScreenPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:14:40.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContainersPanelPatch.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\ContainersPanelPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\ContainersPanelPatch.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Patches\\ContainersPanelPatch.cs",
+              "RelativeToolTip": "Patches\\ContainersPanelPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:11:32.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Armband Relocator.csproj",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\BeltSlot.csproj",
+              "RelativeDocumentMoniker": "BeltSlot.csproj",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\BeltSlot.csproj",
+              "RelativeToolTip": "BeltSlot.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T02:09:03.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "D:\\SP-Tarkov Dev\\Development\\Armband Relocator\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:06:25.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

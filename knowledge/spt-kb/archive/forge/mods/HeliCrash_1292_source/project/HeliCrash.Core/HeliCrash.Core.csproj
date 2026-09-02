@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildThisFileDirectory)../../SPT.Build.props" />
+  <PropertyGroup>
+    <RootNamespace>SamSWAT.HeliCrash.ArysReloaded</RootNamespace>
+    <AssemblyName>SamSWAT.HeliCrash.ArysReloaded.Core</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CopyToOutputDir>$(MSBuildThisFileDirectory)CopyToOutput</CopyToOutputDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(SptBepInExCoreDir)0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(SptTarkovManagedDir)Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-common">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-common.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-custom">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-custom.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>$(SptBepInExPluginsDir)spt\spt-reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SptTarkovManagedDir)Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(SptBepInExCoreDir)BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>$(SptTarkovManagedDir)Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>$(SptBepInExCoreDir)Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(SptTarkovManagedDir)Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(SptTarkovManagedDir)UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\ZLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq.Unity">
+      <HintPath>$(SptBepInExPluginsDir)UnityToolkit\ZLinq.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="build\**" />
+    <Compile Remove="build\**" />
+    <EmbeddedResource Remove="build\**" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec
+      Command="if not exist &quot;$(SptBepInExPluginsDir)$(SolutionName)&quot; (&#xA;    mkdir &quot;$(SptBepInExPluginsDir)$(SolutionName)&quot;&#xA;)&#xA;&#xA;copy &quot;$(TargetPath)&quot; &quot;$(SptBepInExPluginsDir)$(SolutionName)\$(TargetFileName)&quot;&#xA;xcopy /y &quot;$(CopyToOutputDir)&quot; &quot;$(SptBepInExPluginsDir)$(SolutionName)\&quot;"
+    />
+  </Target>
+  <Target Name="CreateMainReleaseZip" AfterTargets="PostBuild">
+    <Exec
+      Command="if not &quot;$(ConfigurationName)&quot;==&quot;Debug&quot; (&#xA;    cd /D &quot;$(SptBepInExPluginsDir)..\..\&quot;&#xA;    &quot;C:\Program Files\7-Zip\7z.exe&quot; a &quot;$(ReleaseArchivePath)&quot; &quot;BepInEx\plugins\$(SolutionName)\*&quot; -xr!$(SolutionName).Fika.dll&#xA;)"
+    />
+  </Target>
+</Project>

@@ -1,0 +1,16 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTraderMod.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\data\assort.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\data\base.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\WarsawTrader.deps.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\WarsawTrader.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\WarsawTrader.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTrader.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\refint\WarsawTrader.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\WarsawTrader.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\obj\Release\ref\WarsawTrader.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\warsaw-trader-mod\bin\Release\data\voron.jpg

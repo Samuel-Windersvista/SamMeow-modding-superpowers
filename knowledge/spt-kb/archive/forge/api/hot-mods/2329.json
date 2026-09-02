@@ -1,0 +1,42 @@
+﻿{
+    "id":  2329,
+    "hub_id":  null,
+    "guid":  "com.hazelify.bushwhacker",
+    "name":  "BushWhacker - Standalone",
+    "slug":  "bushwhacker-standalone",
+    "teaser":  "Disables the slowdown effect of bushes and swamps",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/btWYu2nJIOrztENJgIEG9axjsogeiUzqbUPlkwuP.png",
+    "downloads":  14866,
+    "favourites_count":  32,
+    "description":  "\u003cp\u003eHave you ever been running from a squad only to run right into a bush and die because you couldn’t sprint through it? Then this mod is for you. BushWhacker disables all bush and swamp slowdown effects, allowing you to sprint through them as if they don’t exist.\u003c/p\u003e\n\u003cp\u003eThis mod has been made standalone and is distributed with permission from the original author.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eLink to original modpage: \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/451/cwx-bushwhacker\" rel=\"noreferrer noopener\"\u003eCWX BUSHWHACKER\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eLink to original MegaMod: \u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1454/cwx-megamod\" rel=\"noreferrer noopener\"\u003eCWX-MegaMod\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/user/9668/cwx\" rel=\"noreferrer noopener\"\u003eCWX’s profile page, click this link to show them some love!\u003c/a\u003e\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2329/bushwhacker-standalone",
+    "fika_compatibility":  false,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  3,
+    "published_at":  "2025-09-28T19:10:00.000000Z",
+    "created_at":  "2025-09-28T19:10:24.000000Z",
+    "updated_at":  "2026-08-10T06:02:26.000000Z",
+    "owner":  {
+                  "id":  20914,
+                  "name":  "Devraccoon",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/gH4j72I3sL5ip5WBdAdO0itXtjFRSfHbOacX2IKE_256w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2022-07-23T23:58:07.000000Z",
+                  "updated_at":  "2026-08-10T06:28:31.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  3,
+                     "hub_id":  19,
+                     "title":  "Scripting",
+                     "slug":  "scripting",
+                     "description":  ""
+                 }
+}

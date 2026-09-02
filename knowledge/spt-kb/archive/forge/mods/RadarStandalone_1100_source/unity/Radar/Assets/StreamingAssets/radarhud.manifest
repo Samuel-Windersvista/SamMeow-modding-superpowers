@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 3861262405
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a8cb1c9fe22c28df42a06dc396b22d62
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 11a47caa1be0ca9be3d8282b8580ff63
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Examples/Halo Reach/Hud/EnemyBlip.png
+- Assets/Examples/Halo Reach/Hud/EnemyBlipUp.png
+- Assets/Examples/Halo Reach/Hud/EnemyBlipDown.png
+- Assets/Examples/Halo Reach/Hud/RadarBlipHUD.prefab
+- Assets/Examples/Halo Reach/Hud/EnemyBlipDead.png
+- Assets/Examples/Halo Reach/Hud/RadarHUD.prefab
+Dependencies: []

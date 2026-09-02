@@ -1,0 +1,142 @@
+{
+  "66ba297b859e57cf91e38a5d": {
+    "itemTplToClone": "5bc09a18d4351e003562b68e",
+    "parentId": "55818ac54bdc2d5b648b456e",
+    "handbookParentId": "5b5f746686f77447ec5d7708",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Attachment_IronSights/mbus3rearblk.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true
+    },
+    "locales": {
+      "en": {
+        "name": "Magpul MBUS Gen3 flip-up rear sight",
+        "shortName": "MBUS3 RS",
+        "description": "Removable folding rear sight Magpul MBUS Gen.3. Comes in black and flat dark earth."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_sight_rear"
+    ],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 4500,
+    "handbookPriceRoubles": 1950,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "Probability": 250,
+    "traders": {},
+    "StaticLootContainers": []
+  },
+  "66ba29d44744d98a4df0073b": {
+    "itemTplToClone": "5bc09a18d4351e003562b68e",
+    "parentId": "55818ac54bdc2d5b648b456e",
+    "handbookParentId": "5b5f746686f77447ec5d7708",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Attachment_IronSights/mbus3rearfde.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true
+    },
+    "locales": {
+      "en": {
+        "name": "Magpul MBUS Gen3 flip-up rear sight",
+        "shortName": "MBUS3 RS",
+        "description": "Removable folding rear sight Magpul MBUS Gen.3. Comes in black and flat dark earth."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_sight_rear"
+    ],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 4500,
+    "handbookPriceRoubles": 1950,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "Probability": 250,
+    "traders": {},
+    "StaticLootContainers": []
+  },
+  "66ba2a6be18ed84221edd72d": {
+    "itemTplToClone": "5bc09a30d4351e00367fb7c8",
+    "parentId": "55818ac54bdc2d5b648b456e",
+    "handbookParentId": "5b5f746686f77447ec5d7708",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Attachment_IronSights/mbus3frontfde.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true
+    },
+    "locales": {
+      "en": {
+        "name": "Magpul MBUS Gen3 flip-up front sight",
+        "shortName": "MBUS3 FS",
+        "description": "Removable folding front sight Magpul MBUS Gen.3, installed on the mount. Comes in black and flat dark earth."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_sight_front"
+    ],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 3500,
+    "handbookPriceRoubles": 1500,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "Probability": 250,
+    "traders": {},
+    "StaticLootContainers": []
+  },
+  "66ba2a7583204e25695233c0": {
+    "itemTplToClone": "5bc09a30d4351e00367fb7c8",
+    "parentId": "55818ac54bdc2d5b648b456e",
+    "handbookParentId": "5b5f746686f77447ec5d7708",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Attachment_IronSights/mbus3frontblk.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true
+    },
+    "locales": {
+      "en": {
+        "name": "Magpul MBUS Gen3 flip-up front sight",
+        "shortName": "MBUS3 FS",
+        "description": "Removable folding front sight Magpul MBUS Gen.3, installed on the mount. Comes in black and flat dark earth."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_sight_front"
+    ],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 3500,
+    "handbookPriceRoubles": 1500,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "Probability": 250,
+    "traders": {},
+    "StaticLootContainers": []
+  }
+}

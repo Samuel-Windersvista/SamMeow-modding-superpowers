@@ -1,0 +1,42 @@
+﻿{
+    "id":  2523,
+    "hub_id":  null,
+    "guid":  "com.acidphantasm.bosseshavegpcoins",
+    "name":  "Bosses Have Gp Coins",
+    "slug":  "bosses-have-gp-coins",
+    "teaser":  "From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. Amazing.",
+    "thumbnail":  "https://forge-static.sp-tarkov.com/mods/oLo38uiIG222atjYaUllSWh3em3f6dcGxfXwPVcN.png",
+    "downloads":  30606,
+    "favourites_count":  138,
+    "description":  "\u003cdiv class=\"tabset\"\u003e\u003cdiv id=\"tabset-1-panel-1\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eInstallation\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDownload Bosses Have Gp Coins\u003c/li\u003e\n\u003cli\u003eOpen the downloaded 7z file in 7-zip\u003c/li\u003e\n\u003cli\u003eSelect the SPT folder in the 7z file in 7-zip\u003c/li\u003e\n\u003cli\u003eDrag the SPT folder from 7-zip into your root SPT folder\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eDemonstration Video (yoink):\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-2\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eUNINSTALLATION\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003col\u003e\n\u003cli\u003eDelete \u003ccode\u003e/ROOTSPT/SPT/user/mods/acidphantasm-bosseshavegpcoins\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003eDone\u003c/li\u003e\n\u003c/ol\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cdiv id=\"tabset-1-panel-3\" class=\"tab-panel\"\u003e\u003cdiv class=\"tab-title\"\u003eRECOMMENDED MODS\u003c/div\u003e\n\u003cdiv class=\"tab-content\"\u003e\u003cp\u003eRecommended Mods:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/2524/item-limits-begone/\" rel=\"noreferrer noopener\"\u003eItem Limits Begone!\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1539/bosses-have-lega-medals/\" rel=\"noreferrer noopener\"\u003eBosses Have Lega Medals\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca target=\"_blank\" class=\"external-link\" href=\"https://forge.sp-tarkov.com/mod/1538/ref-spt-friendly-quests/\" rel=\"noreferrer noopener\"\u003eRef - SPT Friendly Quests\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cp\u003eIf you enjoy my work - you can \u003ca target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\"\u003ebuy me a coffee\u003c/a\u003e~\u003c/p\u003e\n",
+    "detail_url":  "https://forge.sp-tarkov.com/mod/2523/bosses-have-gp-coins",
+    "fika_compatibility":  true,
+    "featured":  false,
+    "contains_ads":  false,
+    "contains_ai_content":  false,
+    "custom_ai_disclosure":  "",
+    "shows_profile_binding_notice":  false,
+    "cheat_notice":  false,
+    "category_id":  17,
+    "published_at":  "2025-12-31T16:16:00.000000Z",
+    "created_at":  "2025-12-31T16:16:45.000000Z",
+    "updated_at":  "2026-08-06T06:02:14.000000Z",
+    "owner":  {
+                  "id":  48110,
+                  "name":  "acidphantasm",
+                  "profile_photo_url":  "https://forge-static.sp-tarkov.com/profile-photos/539f89fb275187ce761506de5f60c3a09690ee32_128w.webp",
+                  "cover_photo_url":  null,
+                  "created_at":  "2024-04-11T21:22:35.000000Z",
+                  "updated_at":  "2026-08-10T12:36:53.000000Z"
+              },
+    "additional_authors":  [
+
+                           ],
+    "category":  {
+                     "id":  17,
+                     "hub_id":  28,
+                     "title":  "Other",
+                     "slug":  "other",
+                     "description":  ""
+                 }
+}

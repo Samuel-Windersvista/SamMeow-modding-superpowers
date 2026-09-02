@@ -1,0 +1,44 @@
+﻿[
+    {
+        "id":  2123,
+        "hub_id":  12528,
+        "version":  "2.4.0",
+        "description":  "\u003cp\u003e\u003cstrong\u003e3.10 UPDATE!\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eThe “Really very alpha” build!\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFixed client bepinex settings not applying to client until after raid end (now it resets immediately).\u003c/li\u003e\n\u003cli\u003eFixed a number of small issues with boss spawning. (I suggest keeping gradual invasion on for boss invasion!)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThat’s all for now!\u003c/p\u003e\n\u003cp\u003eMany thanks to DrakiaXYZ for all the help!\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/789/moar-bagels-ultra-lite-spawn-mod/2.4.0",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.10.0",
+        "downloads":  5172,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2024-12-07T05:33:19.000000Z",
+        "created_at":  "2024-12-07T05:33:19.000000Z",
+        "updated_at":  "2024-12-07T05:33:19.000000Z"
+    },
+    {
+        "id":  703,
+        "hub_id":  14120,
+        "version":  "3.1.0+rc5-beta",
+        "description":  "\u003cp\u003eUpdate to version 3.11.3\u003c/p\u003e\n\u003cp\u003e- Additional sniper spawns disabled.\u003c/p\u003e\n\u003cp\u003e- Additional spawn points re-added.\u003c/p\u003e\n\u003cp\u003eThat’s all for now.\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/789/moar-bagels-ultra-lite-spawn-mod/3.1.0+rc5-beta",
+        "content_length":  null,
+        "spt_version_constraint":  "3.11.3",
+        "downloads":  5411,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-04-29T05:32:28.000000Z",
+        "created_at":  "2025-04-29T05:32:28.000000Z",
+        "updated_at":  "2026-05-14T01:55:25.000000Z"
+    },
+    {
+        "id":  393,
+        "hub_id":  14478,
+        "version":  "3.1.6",
+        "description":  "\u003cp\u003e\u003cstrong\u003eThe “MOAR PRESETS” update!\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eAdded quite a few new presets to try out!\u003cbr /\u003e\nREMEMBER, you CAN set the random preset weightings in the presetWeighting config\u003cbr /\u003e\n(think of these numbers as tickets added to a bucket and you randomly pull one out).\u003cbr /\u003e\nSet any preset you don’t want used when on random to 0.\u003cbr /\u003e\nFika users: Set all to 0 except for the one you want to effectively have that be set on server.\u003cbr /\u003e\nSpt users: just select the preset in your bepinex menu if there is one you prefer.\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eUpdated a number of configs to help with performance\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eUpdated Partizan spawn logic (He can now spawn anytime, properly).\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cstrong\u003eAll bossConfig changes that are off of default will print to server, feel free to go update the bossConfig.json if you don’t like these.\u003c/strong\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cstrong\u003eReduced total bots on certain maps (lighthouse/streets) these are overrides that dramatically help performance.\u003cbr /\u003e\nIf you don’t like good frames, adjust those in the mapConfig.json for each map.\u003c/strong\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eThat’s all for now.\u003c/strong\u003e\u003c/p\u003e\n",
+        "link":  "https://forge.sp-tarkov.com/mod/download/789/moar-bagels-ultra-lite-spawn-mod/3.1.6",
+        "content_length":  null,
+        "spt_version_constraint":  "~3.11.0",
+        "downloads":  53307,
+        "fika_compatibility":  "unknown",
+        "published_at":  "2025-06-16T22:16:05.000000Z",
+        "created_at":  "2025-06-16T22:16:05.000000Z",
+        "updated_at":  "2026-05-14T01:46:19.000000Z"
+    }
+]

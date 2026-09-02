@@ -1,0 +1,16 @@
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.csproj.AssemblyReference.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.GeneratedMSBuildEditorConfig.editorconfig
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.AssemblyInfoInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.AssemblyInfo.cs
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.csproj.CoreCompileInputs.cache
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.sourcelink.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\bundles\assets\content\items\barter\item_mapbook\mapbook.bundle
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\bundles.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\config\config.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\SecureMapbookMod.deps.json
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\SecureMapbookMod.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\bin\Release\SecureMapbookMod.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\refint\SecureMapbookMod.dll
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\SecureMapbookMod.pdb
+E:\云文件\GitHub\SamMeow-modding-superpowers\tools\migration-pilots\secure-mapbook\obj\Release\ref\SecureMapbookMod.dll

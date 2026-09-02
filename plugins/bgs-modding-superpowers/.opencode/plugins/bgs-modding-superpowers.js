@@ -26,6 +26,7 @@ const SKILLS_DIR = path.join(PLUGIN_ROOT, 'skills');
 const XEDIT_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'xedit-mcp', 'dist', 'index.js');
 const BGS_KB_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'bgs-kb-mcp', 'dist', 'index.js');
 const MO2_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'mo2-mcp', 'dist', 'index.js');
+const SPT_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'dist', 'index.js');
 const BOOTSTRAP_SKILL = path.join(SKILLS_DIR, 'using-bgs-modding-superpowers', 'SKILL.md');
 
 // Sentinel used to detect already-injected bootstrap so we don't double-inject across reloads.
@@ -96,6 +97,27 @@ export const BgsModdingSuperpowersPlugin = async () => {
         enabled: true,
         environment: {},
         timeout: 240000,
+      };
+      // spt-mcp: file-based MCP server (no daemon, all tools synchronous).
+      // Shorter timeout than xedit because there is no 60-240s daemon startup.
+      // BGS_SPT_KB_ROOT: point at the repo-root knowledge/spt-kb (two levels
+      // up from the materialized plugin tree) so the MCP can find the Forge
+      // archive and index.json.
+      // SPT_MCP_HELPER: .NET helper CLI that reads SPT 4.1 server mod DLL
+      // metadata (IModMetadata via AsmResolver). Rebuilt with
+      // `dotnet build tools/spt-mcp/helper -c Release`.
+      // SPT_IL_HELPER: .NET helper CLI that reads SPT client mod DLL Harmony
+      // patch targets + IL behavior (Mono.Cecil). Rebuilt with
+      // `dotnet build tools/spt-mcp/il-helper -c Release`.
+      const SPT_KB_ROOT = path.resolve(PLUGIN_ROOT, '..', '..', 'knowledge', 'spt-kb');
+      const SPT_MCP_HELPER = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'helper', 'bin', 'Release', 'spt-metadata-reader.exe');
+      const SPT_IL_HELPER = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'il-helper', 'bin', 'Release', 'spt-il-reader.exe');
+      config.mcp.spt ??= {
+        type: 'local',
+        command: ['node', SPT_MCP_ENTRY],
+        enabled: true,
+        environment: { BGS_SPT_KB_ROOT: SPT_KB_ROOT, SPT_MCP_HELPER: SPT_MCP_HELPER, SPT_IL_HELPER: SPT_IL_HELPER },
+        timeout: 60000,
       };
     },
 
