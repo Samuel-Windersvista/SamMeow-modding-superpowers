@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02",
+ "generated": "2026-09-07",
  "schema_version": 1,
  "entries": [
   {
@@ -1182,6 +1182,63 @@
     ],
     "summary": "2012 开发启动→2025-11-15 1.0 发布（Steam）、Arena 竞技模式、删档赛季摘要、地图版本发展线（工厂→破冰船 13 图）",
     "source": "curated"
+   },   {
+    "path": "curated/lore/10-map-landmarks.md",
+    "title": "地图地标方位参考 [通用]",
+    "version": [
+     "通用"
+    ],
+    "domain": "both",
+    "topic": "lore",
+    "keywords": [
+     "地图",
+     "地标",
+     "方位",
+     "Boss领地",
+     "任务点",
+     "Woods"
+    ],
+    "summary": "12 图地标方位表（Woods/Customs/Shoreline/Streets/Factory 等）：Boss 领地/任务点/撤离点按八方位+相对描述定位；坐标推断方法可复现；Woods 的 Goons=Scav Base 最西北角（玩家实测修正，坐标推断 ZoneScavBase2 存疑已标注）",
+    "source": "curated"
+   },
+   {
+    "path": "curated/lore/11-trader-questlines.md",
+    "title": "商人支线任务线梳理 [通用]",
+    "version": [
+     "通用"
+    ],
+    "domain": "both",
+    "topic": "lore",
+    "keywords": [
+     "任务线",
+     "支线",
+     "Prapor",
+     "Therapist",
+     "Skier",
+     "Mechanic",
+     "Jaeger",
+     "任务主题"
+    ],
+    "summary": "按 11 位商人的 517 任务重组叙事主题线：Prapor=新兵/惩罚者猎杀/军需/老兵回忆；Therapist=医疗隐私/人道/失踪调查；Skier=Chemical 走私/洗白；Mechanic=Gunsmith/灯塔接触/Introduction；Jaeger=猎人之路/生存者之路/神射手；附跨商人链与小说弧线用途",
+    "source": "curated"
+   },   {
+    "path": "curated/lore/12-map-relations.md",
+    "title": "塔科夫地图间地理关系 [通用]",
+    "version": [
+     "通用"
+    ],
+    "domain": "both",
+    "topic": "lore",
+    "keywords": [
+     "地图关系",
+     "图间通路",
+     "转场",
+     "开放世界",
+     "地理",
+     "商人据点"
+    ],
+    "summary": "玩家合成图（NICK'S OPEN WORLD）提炼：11 图整体布局（城区北-东北/野外在西-南/海在西-南）+ 18 对图间通路表 + 共享城镇标签 + 商人据点标注（Jaeger=森林ZB-014 等，与 lore/06 有分歧已注明）+ 写作与开放世界 mod 用途",
+    "source": "curated"
    },
    {
     "path": "curated/operations/3114-eft016-perf-hotspots.md",
@@ -1438,11 +1495,137 @@
      "报价",
      "assort"
     ],
-    "summary": "tarkov.dev 快照提炼：商人总览（16 条目 = 11 SPT 同 id + 5 live 特有）+ 等级/报价结构；dump 无报价数据（N/A 标注，改用 SPT assort 统计 8 商人）；已知缺口 #481；SPT 12 vs live 16 id 对应",
-    "source": "curated"
-   }
-  ],
- "tarkov_dev": {
+     "summary": "tarkov.dev 快照提炼：商人总览（16 条目 = 11 SPT 同 id + 5 live 特有）+ 等级/报价结构；dump 无报价数据（N/A 标注，改用 SPT assort 统计 8 商人）；已知缺口 #481；SPT 12 vs live 16 id 对应",
+     "source": "curated"
+    },
+    {
+     "path": "curated/api-notes-4.1/architecture-map.md",
+     "title": "SPT 4.1.5 服务端架构图（Codemap 提炼）[4.1]",
+     "version": [
+      "4.1"
+     ],
+     "domain": "server",
+     "topic": "architecture",
+     "keywords": [
+      "架构",
+      "architecture",
+      "启动链",
+      "请求链",
+      "DI",
+      "SPTarkov",
+      "SPTushonka",
+      "codemap",
+      "模块地图"
+     ],
+     "summary": "4.1.5 fork 源码实读提炼：整体式架构 + 自研反射 DI；启动链（ConfigLoader→ModLoader→DatabaseImporter→HostBuilder）；请求链（Kestrel→HttpServer→Router→Callbacks→Controller→Service）；DatabaseTables 十张表；关键接口（Injectable/IOnLoad/Router/ISerializer）；目录 vs 命名空间（SPTushonka.* 目录 / SPTarkov.* 命名空间）",
+     "source": "curated"
+    },
+    {
+     "path": "curated/operations/415-source-review-report.md",
+     "title": "SPT 4.1.5 服务端源码审查报告（bug/优化）[4.1]",
+     "version": [
+      "4.1"
+     ],
+     "domain": "server",
+     "topic": "operations",
+     "keywords": [
+      "源码审查",
+      "review",
+      "bug",
+      "优化",
+      "移植语义失真",
+      "NOTIFY",
+      "string.Intern",
+      "ForwardedHeaders",
+      "路径遍历",
+      "死循环",
+      "并发"
+     ],
+      "summary": "4.1.5 fork 全库（989 文件/10.7 万行）8 路并行只读审查：Critical 含黑名单反转/谓词反转/string.Intern 未判空/NOTIFY 通道失效/AirdropService 编译错误/ForwardedHeaders 认证绕过/路径遍历；Major 含无锁共享状态/死循环/坏档拖垮启动/枚举序列化策略混乱；附最值得修的 10 件事与 S.P.E.C.I.A.L. 评级",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/README.md",
+      "title": "SPT 3.11 服务端 API 笔记（源码提炼）",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "index",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/architecture-map.md",
+      "title": "SPT 3.11 服务端架构图（源码提炼）[3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "architecture",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/di-container.md",
+      "title": "DI 容器笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "di",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/mod-loading.md",
+      "title": "Mod 加载流程笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "mod-loading",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/config-system.md",
+      "title": "配置系统笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "config",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/database-structure.md",
+      "title": "数据库结构笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "database",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/http-routing.md",
+      "title": "HTTP 路由笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "routes",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-3.11/save-profile.md",
+      "title": "存档（Profile）笔记 [3.11]",
+      "version": [
+       "3.11"
+      ],
+      "domain": "server",
+      "topic": "save-profile",
+      "source": "curated"
+     }
+    ],
+  "tarkov_dev": {
   "path": "archive/tarkov-dev/snapshot-2026-09-02/",
   "description": "tarkov.dev live 数据快照（18 端点，2026-09-02 抓取，对应 EFT 1.1.0.1.46911）",
   "fetch_script": "archive/tarkov-dev/fetch-dump.ps1"

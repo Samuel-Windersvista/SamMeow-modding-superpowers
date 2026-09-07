@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("New Skills!")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.6.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.6.0+470405b2-dirty")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.6.0+54c1bf37-dirty")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillsExtended")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillsExtended")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.6.0.0")]

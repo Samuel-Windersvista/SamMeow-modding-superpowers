@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("acidphantasm-harryhideout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("3.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.0+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.0+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("acidphantasm-harryhideout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("acidphantasm-harryhideout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("3.0.0.0")]

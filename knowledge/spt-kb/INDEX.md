@@ -11,9 +11,11 @@
 | 官方示例代码 | `external/spt-archive/server-mod-examples/`（登记见 sources/repositories.md） | [4.x] |
 | 4.0→4.1 服务端迁移 | `wiki/SPT_41/Server_40_to_41.md` | [4.1] |
 | 4.1 Mod 网页（Mod Web Pages） | `wiki/SPT_41/modding/server/Mod_Web_Pages.md` | [4.1] |
-| 服务端 API 笔记（源码提炼） | `curated/api-notes-4.1/` | [4.1] |
-| 4.1 服务端完整源码 | `E:\云文件\GitHub\SamMeow_SPT410_source_code` | [4.1] |
-| 3.11 服务端实现对照 | `E:\云文件\GitHub\A-核心服务端/server\`（TypeScript 版，外部保留） | [3.11] |
+| 服务端 API 笔记（源码提炼） | `curated/api-notes-4.1/`（含 architecture-map.md 架构图） | [4.1] |
+| 4.1.5 服务端完整源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（fork，目录 `SPTushonka.*`，命名空间 `SPTarkov.*`） | [4.1] |
+| 4.1.5 源码审查报告（bug/优化） | `curated/operations/415-source-review-report.md` | [4.1] |
+| 3.11 服务端实现对照 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code`（SPT-AKI 3.11.5-Live-In-Norvinsk-Edition，基线 3.11.x） | [3.11] |
+| 3.11 服务端 API 笔记（源码提炼） | `curated/api-notes-3.11/`（DI/路由/mod 加载/config/数据库/存档） | [3.11] |
 
 ## 写客户端 mod (Client Mod / BepInEx)
 

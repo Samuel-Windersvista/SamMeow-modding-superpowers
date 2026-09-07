@@ -53,7 +53,7 @@ source: curated
 
 ### 森林 Woods（第 3 图）
 - 普里奥泽尔斯克自然保护区（Priozersk Nature Reserve），国家保护野生动物保护区。
-- 核心地标：**锯木厂**（Shturman 领地）、西北天线区（Goons 刷新点）、北部破败村庄（Cultists 仪式点）。
+- 核心地标：**锯木厂**（Shturman 领地）、西北 **Scav Base**（Goons 刷新点，USEC 营地以北；2026-09-03 玩家实测修正，旧说「西北天线区」指向同一区域）、北部破败村庄（Cultists 仪式点）。
 - 剧情：Boreas 通讯基站修复点（Scav 地堡）；Jaeger 在此守卫猎场。
 - 边境狙击手 + 雷区；BTR 司机常驻（森林/街区）。
 

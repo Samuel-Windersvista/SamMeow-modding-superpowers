@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("spt-metadata-reader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("spt-metadata-reader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("spt-metadata-reader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

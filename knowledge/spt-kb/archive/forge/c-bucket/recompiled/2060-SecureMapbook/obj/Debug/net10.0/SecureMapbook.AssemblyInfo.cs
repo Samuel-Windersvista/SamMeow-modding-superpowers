@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MrVibesRSA-SecureMapbook")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.5.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.5.5+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.5.5+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("MrVibesRSA-SecureMapbook")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MrVibesRSA-SecureMapbook")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.5.5.0")]

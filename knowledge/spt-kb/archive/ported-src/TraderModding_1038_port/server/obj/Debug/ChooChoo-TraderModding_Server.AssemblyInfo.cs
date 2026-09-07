@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("MIT")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Trader Modding Server Mod for SPT 4.1.X")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.2")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.2+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.2+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("Choo²-TraderModding-ServerMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChooChoo-TraderModding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.1.2")]

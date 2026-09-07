@@ -43,6 +43,7 @@
 | 仓库 | 本地路径 | 说明 |
 |------|---------|------|
 | server-csharp (fork) | `E:\云文件\GitHub\SamMeow_SPT410_source_code` | SPT 4.1 C# 服务端，fork 自 sp-tarkov/server-csharp。本地 `main` 已同步至 4.1.2（`cf04a112`，tag `4.1.2`）；`upstream/4.1.x-dev` = `04a58332`（4.1 开发线）。**部署验证**：`E:\Game\EFT_Offline\SPT_410\SPT_Runtime\SPTarkov.Server.Core.dll` FileVersion=4.1.2，ProductVersion 含 `cf04a112` —— 与 fork tag 一致，服务器运行的就是 4.1.2 源码构建 |
+| server (3.11 branch, 本地) | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` | SPT-AKI 3.11.5-Live-In-Norvinsk-Edition（基线 SPT-AKI 3.11.x，TypeScript 版）。与官方 sp-tarkov/server（Tier 2 登记，96e5b73f/2025-09-07）同代；`server/project/package.json` `spt-server` v3.11.3，`assets/configs/core.json` sptVersion=3.11.4。**api-notes-3.11/ 笔记的实读来源** |
 
 ## 完整性校验方法
 

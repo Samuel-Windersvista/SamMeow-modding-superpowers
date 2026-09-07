@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EukyreECOT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.5+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.5+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("EukyreECOT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EukyreECOT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.3.5.0")]

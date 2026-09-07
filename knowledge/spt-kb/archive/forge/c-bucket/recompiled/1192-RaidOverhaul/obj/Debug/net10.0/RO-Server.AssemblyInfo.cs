@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RO-Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("3.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.3+470405b203a0f8dbf2efa49c256f85bb47de27dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.3+54c1bf3792739a2a1df5bad2d647cf5b59408135")]
 [assembly: System.Reflection.AssemblyProductAttribute("RO-Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RO-Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("3.0.3.0")]

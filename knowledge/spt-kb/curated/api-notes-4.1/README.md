@@ -6,8 +6,8 @@ source: curated
 ---
 # SPT 4.1 服务端 API 笔记（源码提炼）
 
-> 状态：首轮提炼完成（源自 4.1 迁移文档、EnumExtensions、Mod_Web_Pages 与官方示例；标注「待核对」处需对照本地 4.1 源码逐一验证）
-> 适用版本：[4.1] | 提炼自：`E:\云文件\GitHub\SamMeow_SPT410_source_code`
+> 状态：首轮提炼完成 + 2026-09-06 对照 4.1.5 fork 源码实读核对（`E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`，commit `7d7add55`）
+> 适用版本：[4.1] | 源码：`E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（fork，目录 `SPTushonka.*`，命名空间仍 `SPTarkov.*`）
 
 这些是 wiki 上没有、只有读源码才能得到的硬情报。每篇笔记标注源码文件坐标（路径 + 类名），源码更新后按坐标复查。
 
@@ -15,12 +15,13 @@ source: curated
 
 | 笔记 | 要回答的问题 | 源码入口线索 |
 |------|------------|-------------|
-| di-container.md | 服务怎么注册与解析？mod 能拿到哪些服务？ | `SPTarkov.Server/` 下的 DI 启动配置 |
-| mod-loading.md | mod 加载顺序、mod.json 解析、依赖与版本约束检查 | 加载器相关类 |
-| config-system.md | SPT 自身 config 的加载与覆盖机制，mod 如何读 config | config 相关类 |
-| database-structure.md | 内存数据库（物品/商人/任务/地图）的表结构与访问接口 | database 相关类 |
-| http-routing.md | 自定义路由怎么挂？客户端请求如何到达 mod | server 路由层 |
-| save-profile.md | 存档结构、读写时机、mod 持久化数据放哪 | profile/save 相关类 |
+| architecture-map.md | 系统整体架构、启动链、请求链、模块职责地图 | `SPTushonka.Server/Program.cs`、`DependencyInjectionHandler.cs` |
+| di-container.md | 服务怎么注册与解析？mod 能拿到哪些服务？ | `SPTushonka.DI/DependencyInjectionHandler.cs` |
+| mod-loading.md | mod 加载顺序、mod.json 解析、依赖与版本约束检查 | `SPTushonka.Server/Modding/ModLoader.cs` |
+| config-system.md | SPT 自身 config 的加载与覆盖机制，mod 如何读 config | `Core/Loaders/ConfigLoader.cs` |
+| database-structure.md | 内存数据库（物品/商人/任务/地图）的表结构与访问接口 | `Core/Utils/ImporterUtil.cs`、`DatabaseTables` |
+| http-routing.md | 自定义路由怎么挂？客户端请求如何到达 mod | `Core/DI/Router.cs`、`Routers/HttpRouter.cs` |
+| save-profile.md | 存档结构、读写时机、mod 持久化数据放哪 | `Core/Servers/SaveServer.cs`、`Core/Migration/` |
 
 ## 写作规范
 
