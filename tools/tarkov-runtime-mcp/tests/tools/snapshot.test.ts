@@ -193,6 +193,7 @@ describe("tarkov_snapshot", () => {
         host: "127.0.0.1",
         candidatePorts: [6969],
         anchorVersion: DEFAULT_ANCHORED_VERSION,
+        username: "Overseer",
       },
       connect: () => connection,
     });

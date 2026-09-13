@@ -15,12 +15,18 @@ import {
 } from "../types.js";
 import type { SptConnection } from "../transport/connection.js";
 import { extractVersionLabel, performHandshake } from "./handshake.js";
+import { fetchServerModsRoute, type ServerModsRouteResult } from "./mods-route.js";
+import { acquireSession, type AcquiredSession } from "./session.js";
 import { VERSION_ENDPOINT } from "./version.js";
 
 export interface SptClientOptions {
   host: string;
   candidatePorts: number[];
   anchorVersion: string;
+  /** session 受限路由所需的 profile username（未配置时会话获取抛 SESSION_NOT_CONFIGURED） */
+  username?: string;
+  /** 可选密码：配置后先经 /launcher/v2/login 校验 */
+  password?: string;
   /** 端口 -> 连接工厂；测试注入 fake SptConnection */
   connect: (host: string, port: number) => SptConnection;
 }
@@ -34,6 +40,7 @@ export class SptClient {
   private readonly options: SptClientOptions;
   private cachedHandshake: HandshakeResult | null = null;
   private cachedDiscovery: DiscoveryEntry[] | null = null;
+  private cachedSession: AcquiredSession | null = null;
 
   constructor(options: SptClientOptions) {
     this.options = options;
@@ -97,6 +104,48 @@ export class SptClient {
     const handshake = await performHandshake(found[0].connection, this.options.anchorVersion);
     this.cachedHandshake = handshake;
     return handshake;
+  }
+
+  /**
+   * 确保会话已建立：解析 profileId 并注入 PHPSESSID（结果缓存）。
+   *
+   * session 受限工具（快照等）在读取前调用；未配置 username / 匹配失败 /
+   * 凭据失败时抛结构化错误，由工具层转为错误信封。
+   */
+  async ensureSession(): Promise<AcquiredSession> {
+    if (this.cachedSession) {
+      return this.cachedSession;
+    }
+    const found = await this.discover();
+    if (found.length === 0) {
+      throw new SptRuntimeError(
+        RUNTIME_ERROR_CODES.SERVER_UNREACHABLE,
+        `未在候选端口发现 SPT server（host=${this.options.host}）`,
+        { host: this.options.host, ports: this.options.candidatePorts },
+      );
+    }
+    const session = await acquireSession(found[0].connection, {
+      username: this.options.username,
+      password: this.options.password,
+    });
+    this.cachedSession = session;
+    return session;
+  }
+
+  /**
+   * 读取已加载 server mod 清单（路由来源）。
+   * 网络/非 2xx 抛结构化错误，由 server_status 回落日志来源。
+   */
+  async serverModsRoute(): Promise<ServerModsRouteResult> {
+    const found = await this.discover();
+    if (found.length === 0) {
+      throw new SptRuntimeError(
+        RUNTIME_ERROR_CODES.SERVER_UNREACHABLE,
+        `未在候选端口发现 SPT server（host=${this.options.host}）`,
+        { host: this.options.host, ports: this.options.candidatePorts },
+      );
+    }
+    return fetchServerModsRoute(found[0].connection);
   }
 
   async instances(): Promise<InstancesData> {

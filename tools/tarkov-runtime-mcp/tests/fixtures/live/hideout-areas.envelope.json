@@ -1,0 +1,361 @@
+{
+  "err": 0,
+  "errmsg": null,
+  "data": [
+    {
+      "_id": "5d494a0e5b56502f18c98a02",
+      "type": 13,
+      "enabled": true,
+      "stages": {
+        "0": {
+          "autoUpgrade": false,
+          "bonuses": [],
+          "constructionTime": 0,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [],
+          "slots": 0
+        },
+        "1": {
+          "autoUpgrade": false,
+          "bonuses": [
+            {
+              "id": "64f5b9e5fa34f11b380756f7",
+              "type": "ExperienceRate",
+              "passive": true,
+              "production": false,
+              "visible": true,
+              "value": 15
+            },
+            {
+              "id": "64f5b9e5fa34f11b380756f8",
+              "type": "SkillGroupLevelingBoost",
+              "passive": true,
+              "production": false,
+              "visible": true,
+              "value": 30,
+              "skillType": 3
+            }
+          ],
+          "constructionTime": 194400,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [
+            {
+              "areaType": 9,
+              "requiredLevel": 3,
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "type": "Area"
+            },
+            {
+              "templateId": "5449016a4bdc2d6f028b456f",
+              "count": 400000,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "skillName": "HideoutManagement",
+              "skillLevel": 5,
+              "type": "Skill"
+            },
+            {
+              "templateId": "573478bc24597738002c6175",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "573474f924597738002c6174",
+              "count": 2,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c639286f774151567fa95",
+              "count": 8,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c645c86f77412b01304d9",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c651286f7741e566b6461",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "62a09e73af34e73a266d932a",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            }
+          ],
+          "slots": 0
+        }
+      }
+    },
+    {
+      "_id": "6377a9b9a93bde8fa30eb79a",
+      "type": 23,
+      "enabled": true,
+      "stages": {
+        "0": {
+          "autoUpgrade": false,
+          "bonuses": [],
+          "constructionTime": 0,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [],
+          "slots": 0
+        },
+        "1": {
+          "autoUpgrade": false,
+          "bonuses": [],
+          "constructionTime": 14400,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [
+            {
+              "templateId": "590c2e1186f77425357b6124",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "59e35de086f7741778269d84",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d40419286f774318526545f",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "57347c77245977448d35f6e2",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "57347c5b245977448d35f6e1",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c5bbd86f774785762df04",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5734795124597738002c6176",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "areaType": 15,
+              "requiredLevel": 2,
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "type": "Area"
+            },
+            {
+              "areaType": 0,
+              "requiredLevel": 2,
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "type": "Area"
+            }
+          ],
+          "slots": 0
+        }
+      }
+    },
+    {
+      "_id": "5d494a3f5b56502f18c98a0e",
+      "type": 19,
+      "enabled": true,
+      "stages": {
+        "0": {
+          "autoUpgrade": false,
+          "bonuses": [],
+          "constructionTime": 0,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [],
+          "slots": 0
+        },
+        "1": {
+          "autoUpgrade": false,
+          "bonuses": [
+            {
+              "id": "5d8b82b854358e8b7383cf4f",
+              "type": "TextBonus",
+              "passive": true,
+              "production": false,
+              "visible": true,
+              "value": 0,
+              "icon": "/files/Hideout/icon_hideout_createitem_generic.png"
+            }
+          ],
+          "constructionTime": 172800,
+          "container": "",
+          "description": "",
+          "displayInterface": true,
+          "improvements": [],
+          "requirements": [
+            {
+              "areaType": 6,
+              "requiredLevel": 3,
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "type": "Area"
+            },
+            {
+              "areaType": 8,
+              "requiredLevel": 3,
+              "templateId": "",
+              "isEncoded": false,
+              "traderId": "",
+              "type": "Area"
+            },
+            {
+              "templateId": "5d1b39a386f774252339976f",
+              "count": 10,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d1b32c186f774252167a530",
+              "count": 2,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d1b327086f7742525194449",
+              "count": 2,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "59e35cbb86f7741778269d83",
+              "count": 10,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "619cbfccbedcde2f5b3f7bdd",
+              "count": 1,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": true,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d1c774f86f7746d6620f8db",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "61bf7b6302b3924be92fa8c3",
+              "count": 5,
+              "isEncoded": false,
+              "isFunctional": false,
+              "traderId": "",
+              "isSpawnedInSession": false,
+              "type": "Item"
+            }
+          ],
+          "slots": 0
+        }
+      }
+    }
+  ]
+}

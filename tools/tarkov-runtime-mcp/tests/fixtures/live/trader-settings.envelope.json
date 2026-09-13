@@ -1,0 +1,127 @@
+{
+  "err": 0,
+  "errmsg": null,
+  "data": [
+    {
+      "_id": "54cb50c76803fa8b248b4571",
+      "name": "Павел Егорович",
+      "nickname": "Прапор",
+      "loyaltyLevels": [
+        {
+          "buy_price_coef": 60,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 21,
+          "minLevel": 0,
+          "minSalesSum": 0,
+          "minStanding": 0,
+          "repair_price_coef": 280
+        },
+        {
+          "buy_price_coef": 60,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 20,
+          "minLevel": 6,
+          "minSalesSum": 0,
+          "minStanding": 0.7,
+          "repair_price_coef": 275
+        },
+        {
+          "buy_price_coef": 60,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 19,
+          "minLevel": 21,
+          "minSalesSum": 0,
+          "minStanding": 2.7,
+          "repair_price_coef": 270
+        },
+        {
+          "buy_price_coef": 60,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 18,
+          "minLevel": 36,
+          "minSalesSum": 0,
+          "minStanding": 7.9,
+          "repair_price_coef": 265
+        }
+      ]
+    },
+    {
+      "_id": "54cb57776803fa99248b456e",
+      "name": "Эльвира",
+      "nickname": "Терапевт",
+      "loyaltyLevels": [
+        {
+          "buy_price_coef": 49,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 315,
+          "insurance_price_coef": 28,
+          "minLevel": 0,
+          "minSalesSum": 0,
+          "minStanding": 0,
+          "repair_price_coef": 0
+        },
+        {
+          "buy_price_coef": 49,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 310,
+          "insurance_price_coef": 27,
+          "minLevel": 5,
+          "minSalesSum": 0,
+          "minStanding": 0.6,
+          "repair_price_coef": 0
+        },
+        {
+          "buy_price_coef": 49,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 305,
+          "insurance_price_coef": 26,
+          "minLevel": 18,
+          "minSalesSum": 0,
+          "minStanding": 2.1,
+          "repair_price_coef": 0
+        },
+        {
+          "buy_price_coef": 49,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 350,
+          "insurance_price_coef": 23,
+          "minLevel": 37,
+          "minSalesSum": 0,
+          "minStanding": 5.8,
+          "repair_price_coef": 0
+        }
+      ]
+    },
+    {
+      "_id": "579dc571d53a0658a154fbec",
+      "name": "<Настоящее имя неизвестно>",
+      "nickname": "",
+      "loyaltyLevels": [
+        {
+          "buy_price_coef": 76,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 100,
+          "minLevel": 1,
+          "minSalesSum": 0,
+          "minStanding": 0,
+          "repair_price_coef": 300
+        },
+        {
+          "buy_price_coef": 76,
+          "exchange_price_coef": 0,
+          "heal_price_coef": 0,
+          "insurance_price_coef": 100,
+          "minLevel": 1,
+          "minSalesSum": 0,
+          "minStanding": 6,
+          "repair_price_coef": 250
+        }
+      ]
+    }
+  ]
+}

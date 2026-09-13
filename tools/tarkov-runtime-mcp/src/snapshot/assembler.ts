@@ -18,6 +18,7 @@ import {
   type SnapshotSectionName,
 } from "./schema.js";
 import { TRADERS_ROUTE, normalizeTradersSection } from "./traders.js";
+import { unwrapEnvelope } from "./util.js";
 
 /** 判断 section 名是否已实现 */
 export function isSupportedSection(name: string): name is SnapshotSectionName {
@@ -42,27 +43,27 @@ export async function assembleSnapshot(
     switch (name) {
       case "profile": {
         const response = await connection.request({ method: "POST", path: PROFILE_ROUTE, body: {} });
-        snapshot.sections.profile = normalizeProfileSection(response.body);
+        snapshot.sections.profile = normalizeProfileSection(unwrapEnvelope(response.body));
         break;
       }
       case "traders": {
         const response = await connection.request({ method: "POST", path: TRADERS_ROUTE, body: {} });
-        snapshot.sections.traders = normalizeTradersSection(response.body);
+        snapshot.sections.traders = normalizeTradersSection(unwrapEnvelope(response.body));
         break;
       }
       case "quests": {
         const response = await connection.request({ method: "POST", path: QUESTS_ROUTE, body: {} });
-        snapshot.sections.quests = normalizeQuestsSection(response.body);
+        snapshot.sections.quests = normalizeQuestsSection(unwrapEnvelope(response.body));
         break;
       }
       case "hideout": {
         const response = await connection.request({ method: "POST", path: HIDEOUT_ROUTE, body: {} });
-        snapshot.sections.hideout = normalizeHideoutSection(response.body);
+        snapshot.sections.hideout = normalizeHideoutSection(unwrapEnvelope(response.body));
         break;
       }
       case "inventory": {
         const response = await connection.request({ method: "POST", path: INVENTORY_ROUTE, body: {} });
-        snapshot.sections.inventory = normalizeInventorySection(response.body);
+        snapshot.sections.inventory = normalizeInventorySection(unwrapEnvelope(response.body));
         break;
       }
     }

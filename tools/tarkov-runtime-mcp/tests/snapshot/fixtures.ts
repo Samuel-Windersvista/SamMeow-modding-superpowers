@@ -1,28 +1,35 @@
-// 快照测试 fixture：模拟 SPT `/client/game/profile/list` 的响应体。
+// 快照测试 fixture：模拟 SPT 5.0 `/client/*` 路由的响应。
 //
-// 形状依据 KB `api-notes-5.0/save-profile.md`（SptProfile 顶层：info/characters）与
-// 研究文档 `docs/research/spt-runtime-state-export.md` 的路由表。字段名采用 SPT
-// JsonUtil 的 camelCase 序列化约定。
+// 形状依据 2026-09-13 live smoke 实测（本机运行中的 SPT 5.0 server）：
+//   - 统一信封 `{err, errmsg, data}`；
+//   - `/client/game/profile/list` 的 data 为「扁平 profile」数组：PMC 条目带非空
+//     `savage`，字段为 PascalCase（`Info` / `Skills.Common` / `Quests` / `Inventory` /
+//     `Hideout` / `TradersInfo`）；
+//   - scav 条目 `savage` 为 null。
+//
+// 与 KB `api-notes-5.0/save-profile.md` 描述的「存档文件」结构（`info`/`characters.pmc`）
+// 不同：路由返回的是客户端面扁平化后的 profile，此处以 live 实测为准。
 
 import type { SptResponse } from "../../src/transport/connection.js";
 
-/** 构造 `/client/game/profile/list` 的 200 响应 */
-export function profileListResponse(profiles: unknown[]): SptResponse {
-  return { status: 200, body: profiles, text: JSON.stringify(profiles) };
+/** 构造 SPT `/client/*` 路由的成功响应信封 `{err:0, errmsg:null, data}` */
+export function envelopeResponse(data: unknown): SptResponse {
+  const body = { err: 0, errmsg: null, data };
+  return { status: 200, body, text: JSON.stringify(body) };
 }
 
-/** 通用数组 200 响应构造器 */
-function arrayResponse(body: unknown[]): SptResponse {
-  return { status: 200, body, text: JSON.stringify(body) };
+/** 构造 `/client/game/profile/list` 的 200 响应 */
+export function profileListResponse(profiles: unknown[]): SptResponse {
+  return envelopeResponse(profiles);
 }
 
 // -----------------------------------------------------------------------------
 // traders（`/client/trading/api/traderSettings`）
 // -----------------------------------------------------------------------------
 
-/** 构造 traderSettings 的 200 响应（裸数组） */
+/** 构造 traderSettings 的 200 响应 */
 export function traderSettingsResponse(traders: unknown[]): SptResponse {
-  return arrayResponse(traders);
+  return envelopeResponse(traders);
 }
 
 /**
@@ -44,9 +51,9 @@ export function tradersFixture(): Record<string, unknown>[] {
 // quests（`/client/quest/list`）
 // -----------------------------------------------------------------------------
 
-/** 构造 quest/list 的 200 响应（裸数组） */
+/** 构造 quest/list 的 200 响应 */
 export function questListResponse(quests: unknown[]): SptResponse {
-  return arrayResponse(quests);
+  return envelopeResponse(quests);
 }
 
 /** 任务 fixture：覆盖字符串状态与数字枚举状态，四个计数桶各 1~2 条 */
@@ -64,9 +71,9 @@ export function questsFixture(): Record<string, unknown>[] {
 // hideout（`/client/hideout/areas`）
 // -----------------------------------------------------------------------------
 
-/** 构造 hideout/areas 的 200 响应（裸数组） */
+/** 构造 hideout/areas 的 200 响应 */
 export function hideoutAreasResponse(areas: unknown[]): SptResponse {
-  return arrayResponse(areas);
+  return envelopeResponse(areas);
 }
 
 /** 藏身处区域 fixture：type 乱序，含一个未建造（level=0）区域 */
@@ -82,61 +89,52 @@ export function hideoutAreasFixture(): Record<string, unknown>[] {
 // inventory（复用 `/client/game/profile/list`）
 // -----------------------------------------------------------------------------
 
-/** 带库存的 PMC profile fixture：3 件物品、2 个不同模板 */
+/** 带库存的 PMC profile fixture（live 扁平形状）：3 件物品、2 个不同模板 */
 export function inventoryProfileFixture(): Record<string, unknown> {
   return {
-    info: { id: "64f0a1b2c3d4e5f6a7b8c9d0", username: "Overseer" },
-    characters: {
-      pmc: {
-        info: { level: 10, experience: 1000 },
-        inventory: {
-          items: [
-            { _id: "item-1", _tpl: "tpl-A" },
-            { _id: "item-2", _tpl: "tpl-A" },
-            { _id: "item-3", _tpl: "tpl-B" },
-          ],
-        },
-      },
+    _id: "6aa408bf3c427c14241039f5",
+    savage: "6aa408bf3c427c14241039f6",
+    Info: { Nickname: "Overseer", Side: "Bear", Level: 10, Experience: 1000 },
+    Inventory: {
+      items: [
+        { _id: "item-1", _tpl: "tpl-A" },
+        { _id: "item-2", _tpl: "tpl-A" },
+        { _id: "item-3", _tpl: "tpl-B" },
+      ],
     },
   };
 }
 
 /**
- * 一个完整的 PMC profile 条目。
+ * 一个完整的 PMC profile 条目（live 扁平形状）。
  *
  * 技能：3 条，其中 2 条 progress > 0。
  * 任务：6 条，覆盖字符串状态、数字枚举状态与未知状态（未知状态不计数）。
  */
 export function pmcProfileFixture(): Record<string, unknown> {
   return {
-    info: {
-      id: "64f0a1b2c3d4e5f6a7b8c9d0",
-      scavId: "64f0a1b2c3d4e5f6a7b8c9d1",
-      aid: 424242,
-      username: "Overseer",
-      wipe: false,
-      edition: "Edge of Darkness",
+    _id: "6aa408bf3c427c14241039f5",
+    savage: "6aa408bf3c427c14241039f6",
+    Info: {
+      Nickname: "Overseer",
+      Side: "Bear",
+      Level: 42,
+      Experience: 1234567,
     },
-    characters: {
-      pmc: {
-        info: { level: 42, experience: 1234567 },
-        skills: {
-          common: [
-            { id: "Strength", progress: 100 },
-            { id: "Endurance", progress: 0 },
-            { id: "Attention", progress: 50.5 },
-          ],
-        },
-        quests: [
-          { qid: "quest-available", status: "AvailableForStart" },
-          { qid: "quest-started", status: "Started" },
-          { qid: "quest-finishable", status: 3 },
-          { qid: "quest-success", status: "Success" },
-          { qid: "quest-fail", status: 5 },
-          { qid: "quest-unknown", status: "NotARealStatus" },
-        ],
-      },
-      scav: { info: { level: 5, experience: 100 } },
+    Skills: {
+      Common: [
+        { Id: "Strength", Progress: 100 },
+        { Id: "Endurance", Progress: 0 },
+        { Id: "Attention", Progress: 50.5 },
+      ],
     },
+    Quests: [
+      { qid: "quest-available", status: "AvailableForStart" },
+      { qid: "quest-started", status: "Started" },
+      { qid: "quest-finishable", status: 3 },
+      { qid: "quest-success", status: "Success" },
+      { qid: "quest-fail", status: 5 },
+      { qid: "quest-unknown", status: "NotARealStatus" },
+    ],
   };
 }

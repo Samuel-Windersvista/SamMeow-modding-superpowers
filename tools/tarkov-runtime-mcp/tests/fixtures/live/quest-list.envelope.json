@@ -1,0 +1,41 @@
+{
+  "err": 0,
+  "errmsg": null,
+  "data": [
+    {
+      "_id": "68cbd33676fe74b1e80bfd91",
+      "name": "68cbd33676fe74b1e80bfd91 name",
+      "type": "Completion",
+      "status": 0,
+      "sptStatus": 2
+    },
+    {
+      "_id": "6895bbb0e7dac53c7c08797b",
+      "name": "6895bbb0e7dac53c7c08797b name",
+      "type": "Exploration",
+      "status": 0,
+      "sptStatus": 2
+    },
+    {
+      "_id": "600302d73b897b11364cd161",
+      "name": "600302d73b897b11364cd161 name",
+      "type": "Elimination",
+      "status": 0,
+      "sptStatus": 1
+    },
+    {
+      "_id": "5a27bafb86f7741c73584017",
+      "name": "5a27bafb86f7741c73584017 name",
+      "type": "PickUp",
+      "status": 0,
+      "sptStatus": 1
+    },
+    {
+      "_id": "5a0327ba86f77456b9154236",
+      "name": "5a0327ba86f77456b9154236 name",
+      "type": "PickUp",
+      "status": 0,
+      "sptStatus": 1
+    }
+  ]
+}

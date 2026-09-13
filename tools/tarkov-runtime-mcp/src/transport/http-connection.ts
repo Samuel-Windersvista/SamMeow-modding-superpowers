@@ -69,6 +69,11 @@ export class HttpSptConnection implements SptConnection {
     return this.sessionId;
   }
 
+  /** 显式注入会话 id（见 SptConnection.setSessionId 说明） */
+  setSessionId(sessionId: string): void {
+    this.sessionId = sessionId;
+  }
+
   async request(options: SptRequestOptions): Promise<SptResponse> {
     const { method, path } = options;
     const headers: Record<string, string> = { ...options.headers };

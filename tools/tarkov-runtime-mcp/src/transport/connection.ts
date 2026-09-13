@@ -30,4 +30,12 @@ export interface SptConnection {
   readonly port: number;
   readonly baseUrl: string;
   request(options: SptRequestOptions): Promise<SptResponse>;
+  /**
+   * 显式设置会话 id（PHPSESSID cookie 值）。
+   *
+   * SPT server 直接以 cookie 值构造 MongoId（`HttpServer.cs`），故 session 受限
+   * 路由要求该值等于目标 profile 的 profileId。server 的 Set-Cookie 对免会话
+   * 路由只回写空值，无法由此推导，需在会话获取后显式注入。
+   */
+  setSessionId(sessionId: string): void;
 }

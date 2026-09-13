@@ -1,0 +1,121 @@
+{
+  "err": 0,
+  "errmsg": null,
+  "data": [
+    {
+      "_id": "6aa408bf3c427c14241039f5",
+      "savage": "6aa408bf3c427c14241039f6",
+      "Info": {
+        "Nickname": "Samuel",
+        "Side": "Bear",
+        "Level": 1,
+        "Experience": 0
+      },
+      "Skills": {
+        "Common": [
+          {
+            "Id": "BotReload",
+            "Progress": 0
+          },
+          {
+            "Id": "BotSound",
+            "Progress": 0
+          },
+          {
+            "Id": "Endurance",
+            "Progress": 0
+          }
+        ]
+      },
+      "Quests": [
+        {
+          "qid": "68cbd33676fe74b1e80bfd91",
+          "status": 2
+        },
+        {
+          "qid": "6895bbb0e7dac53c7c08797b",
+          "status": 2
+        },
+        {
+          "qid": "68fc085738c4a9e0060bddfc",
+          "status": 2
+        }
+      ],
+      "Inventory": {
+        "items": [
+          {
+            "_id": "6aa409923c427c1424103c2a",
+            "_tpl": "55d7217a4bdc2d86028b456d"
+          },
+          {
+            "_id": "676db384777490e23c45b657",
+            "_tpl": "673c7b00cbf4b984b5099181"
+          },
+          {
+            "_id": "6aa409923c427c1424103c2b",
+            "_tpl": "5ac4cd105acfc40016339859"
+          }
+        ]
+      },
+      "Hideout": {
+        "Areas": [
+          {
+            "type": 3,
+            "level": 4,
+            "active": true
+          },
+          {
+            "type": 0,
+            "level": 0,
+            "active": true
+          },
+          {
+            "type": 1,
+            "level": 0,
+            "active": true
+          }
+        ]
+      },
+      "TradersInfo": {
+        "579dc571d53a0658a154fbec": {
+          "salesSum": 0,
+          "standing": 0.5,
+          "nextResupply": 1788890296,
+          "unlocked": true,
+          "disabled": false
+        },
+        "54cb57776803fa99248b456e": {
+          "salesSum": 0,
+          "standing": 0.2,
+          "nextResupply": 1789138291,
+          "unlocked": false,
+          "disabled": false
+        }
+      }
+    },
+    {
+      "_id": "6aa408bf3c427c14241039f6",
+      "savage": null,
+      "Info": {
+        "Nickname": "Клофелинщик Умник",
+        "Side": "Savage",
+        "Level": 1,
+        "Experience": 0
+      },
+      "Skills": {
+        "Common": []
+      },
+      "Quests": [],
+      "Inventory": {
+        "items": [
+          {
+            "_id": "6aa409923c427c1424103e02",
+            "_tpl": "55d7217a4bdc2d86028b456d"
+          }
+        ]
+      },
+      "Hideout": null,
+      "TradersInfo": {}
+    }
+  ]
+}

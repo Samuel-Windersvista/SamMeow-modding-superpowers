@@ -9,7 +9,7 @@ import { describe, expect, it } from "vitest";
 
 import type { SptResponse } from "../../src/transport/connection.js";
 import { createSnapshotTool } from "../../src/tools/snapshot.js";
-import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
+import { FakeConnection, LAUNCHER_PROFILES_PATH, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 import {
   hideoutAreasFixture,
   hideoutAreasResponse,
@@ -258,10 +258,13 @@ describe("tarkov_snapshot 多选与确定性", () => {
     const result = await tool({ sections: ["traders"] });
 
     expect(result.ok).toBe(true);
-    // 握手会两次访问版本端点（探测 + 门禁），此处只关注业务路由
+    // 握手会两次访问版本端点（探测 + 门禁），会话获取访问 /launcher/v2/profiles；
+    // 此处只关注业务路由
     const businessPaths = connection.requests
       .map((request) => request.path)
-      .filter((path) => path !== "/singleplayer/settings/version");
+      .filter(
+        (path) => path !== "/singleplayer/settings/version" && path !== LAUNCHER_PROFILES_PATH,
+      );
     expect(businessPaths).toEqual([TRADERS_ROUTE]);
   });
 

@@ -59,6 +59,8 @@ export function createSnapshotTool(client: SptClient): ToolHandler {
     try {
       // 握手/版本门禁：确保 server 可达且版本匹配
       await client.connect();
+      // 会话获取：session 受限路由要求 PHPSESSID=profileId
+      await client.ensureSession();
       const instances = await client.discover();
       const connection = instances.length > 0 ? instances[0].connection : undefined;
       if (!connection) {

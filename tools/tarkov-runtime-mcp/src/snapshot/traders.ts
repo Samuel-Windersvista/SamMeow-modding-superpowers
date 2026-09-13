@@ -1,10 +1,16 @@
 // =============================================================================
 // traders section 归一
 //
-// 数据来源：`POST /client/trading/api/traderSettings`（SPT server 现有 `/client/*`
-// 路由，零桥直连；见 ADR-0003）。该路由为静态路由（`TraderStaticRouter`），
-// 请求方法/响应形状无 5.0 KB 记载 —— 按 profile 同款假设 POST + 空 body，
-// 响应为商人设置数组（或 `{ traders: [...] }`）。假设，待 ticket 06 live smoke 验证。
+// 数据来源：`POST /client/trading/api/traderSettings`（SPT server 现有
+// `/client/*` 路由，零桥直连；见 ADR-0003）。响应信封 `{err, errmsg, data}` 由
+// util.unwrapEnvelope 统一解开。
+//
+// [已知语义缺口] 5.0 live 实测（2026-09-13）：该路由返回商人「静态设置」
+// （`_id` / `name` / `loyaltyLevels` 档位配置等），不含玩家好感（standing）与
+// assort 条目；玩家 standing 位于 `/client/game/profile/list` 的 PMC 条目
+// `TradersInfo`。因此 `standing` / `assortItems` 恒为 0，`loyaltyLevel` 退化为
+// `loyaltyLevels.length`（档位总数，非玩家当前等级）。改用 profile 来源属后续
+// 工单（见 ticket 07 报告）。
 //
 // 归一为计数型摘要：商人总数 + 逐商人（好感 / 忠诚等级 / assort 条目数），
 // 逐商人条目按 id 升序，保证快照确定性；不做全量 assort 枚举。

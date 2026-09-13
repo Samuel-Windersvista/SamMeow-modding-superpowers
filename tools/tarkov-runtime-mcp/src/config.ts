@@ -23,6 +23,10 @@ export interface TarkovRuntimeConfig {
   host: string;
   candidatePorts: number[];
   anchorVersion: string;
+  /** session 受限路由所需的 profile username；缺省 undefined（会话受限工具将报 SESSION_NOT_CONFIGURED） */
+  username?: string;
+  /** 可选密码；配置后先经 /launcher/v2/login 校验 */
+  password?: string;
 }
 
 function parsePorts(raw: string | undefined): number[] | null {
@@ -39,5 +43,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): TarkovRuntimeC
   const host = env.TARKOV_RUNTIME_MCP_HOST?.trim() || DEFAULT_HOST;
   const candidatePorts = parsePorts(env.TARKOV_RUNTIME_MCP_PORTS) ?? [...DEFAULT_CANDIDATE_PORTS];
   const anchorVersion = env.TARKOV_RUNTIME_MCP_ANCHOR_VERSION?.trim() || DEFAULT_ANCHORED_VERSION;
-  return { host, candidatePorts, anchorVersion };
+  const username = env.TARKOV_RUNTIME_MCP_USERNAME?.trim() || undefined;
+  const password = env.TARKOV_RUNTIME_MCP_PASSWORD?.trim() || undefined;
+  return { host, candidatePorts, anchorVersion, username, password };
 }

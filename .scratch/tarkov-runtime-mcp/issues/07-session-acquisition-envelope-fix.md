@@ -8,7 +8,7 @@
 
 **Blocked by:** None（基于已合回的 main；实质上是 ticket 06 冒烟的修复闭环）
 
-**Status:** ready-for-agent
+**Status:** claimed
 
 - [ ] 配置 username 后握手自动获取会话，session 受限 sections 返回真实数据
 - [ ] 未配置 username 时 session 受限工具返回结构化错误，而非静默空数据

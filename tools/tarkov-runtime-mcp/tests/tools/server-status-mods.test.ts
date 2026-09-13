@@ -6,16 +6,40 @@
 // =============================================================================
 
 import { fileURLToPath } from "node:url";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
+import { MODS_ROUTE, type ServerModsRouteResult } from "../../src/client/mods-route.js";
 import type { ServerModListResult } from "../../src/logs/log-reader.js";
 import { SUPPORTED_SECTIONS } from "../../src/snapshot/schema.js";
 import { createServerStatusTool } from "../../src/tools/server-status.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 
 function connectedClient() {
-  return fakeClient(new FakeConnection(() => versionResponse("SPT 5.0.0 (BEM) ff0bf32")));
+  return fakeClient(
+    new FakeConnection((options) => {
+      if (options.path === "/singleplayer/settings/version") {
+        return versionResponse("SPT 5.0.0 (BEM) ff0bf32");
+      }
+      throw new Error(`fake 未预期的路由：${options.path}`);
+    }),
+  );
 }
+
+const ROUTE_MODS: ServerModsRouteResult = {
+  source: "route",
+  available: true,
+  route: MODS_ROUTE,
+  count: 1,
+  mods: [
+    {
+      name: "RouteMod",
+      version: "9.9.9",
+      guid: "com.example.routemod",
+      author: "Author",
+      targetsSpt: "~5.0.0",
+    },
+  ],
+};
 
 const AVAILABLE_MODS: ServerModListResult = {
   source: "server-log",
@@ -142,5 +166,64 @@ describe("tarkov_server_status.mods", () => {
     if (!data.mods.available) return;
     expect(data.mods.count).toBe(3);
     expect(data.mods.mods.map((mod) => mod.name)).toEqual(["MyMod", "Other Mod", "SimpleMod"]);
+  });
+});
+
+describe("tarkov_server_status.mods 路由优先 / 日志兜底", () => {
+  it("路由可用：mods 标注 source=route，且不读取日志", async () => {
+    const readModList = vi.fn(async () => AVAILABLE_MODS);
+    const tool = createServerStatusTool(connectedClient(), {
+      logDir: "C:/SPT/user/logs/spt",
+      readModsRoute: async () => ROUTE_MODS,
+      readModList,
+    });
+
+    const result = await tool({});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const data = result.data as { mods: ServerModsRouteResult };
+    expect(data.mods).toEqual(ROUTE_MODS);
+    expect(data.mods.source).toBe("route");
+    expect(result.summary).toContain("来源 route");
+    expect(readModList).not.toHaveBeenCalled();
+  });
+
+  it("路由失败：回落日志来源（source=server-log）", async () => {
+    const tool = createServerStatusTool(connectedClient(), {
+      logDir: "C:/SPT/user/logs/spt",
+      readModsRoute: async () => {
+        throw new Error("route down");
+      },
+      readModList: async () => AVAILABLE_MODS,
+    });
+
+    const result = await tool({});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const data = result.data as { mods: ServerModListResult };
+    expect(data.mods).toEqual(AVAILABLE_MODS);
+    expect(data.mods.source).toBe("server-log");
+    expect(result.summary).toContain("来源 server-log");
+  });
+
+  it("路由与日志均不可用：整体仍成功，mods 为结构化降级", async () => {
+    const tool = createServerStatusTool(connectedClient(), {
+      logDir: "C:/SPT/user/logs/spt",
+      readModsRoute: async () => {
+        throw new Error("route down");
+      },
+      readModList: async () => UNAVAILABLE_MODS,
+    });
+
+    const result = await tool({});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const data = result.data as { mods: ServerModListResult };
+    expect(data.mods.available).toBe(false);
+    if (data.mods.available) return;
+    expect(data.mods.source).toBe("server-log");
   });
 });

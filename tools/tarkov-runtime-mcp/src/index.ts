@@ -141,6 +141,8 @@ export function createRuntime(options: RuntimeOptions = {}) {
     host: config.host,
     candidatePorts: config.candidatePorts,
     anchorVersion: config.anchorVersion,
+    username: config.username,
+    password: config.password,
     connect,
   });
   return { client, invoke: createDispatcher(client), config };

@@ -33,4 +33,17 @@ describe("loadConfig", () => {
     const config = loadConfig({ TARKOV_RUNTIME_MCP_PORTS: "not-a-port" });
     expect(config.candidatePorts).toEqual([...DEFAULT_CANDIDATE_PORTS]);
   });
+
+  it("username / password 经环境变量装载；缺省为 undefined", () => {
+    const bare = loadConfig({});
+    expect(bare.username).toBeUndefined();
+    expect(bare.password).toBeUndefined();
+
+    const configured = loadConfig({
+      TARKOV_RUNTIME_MCP_USERNAME: "Samuel",
+      TARKOV_RUNTIME_MCP_PASSWORD: "secret",
+    });
+    expect(configured.username).toBe("Samuel");
+    expect(configured.password).toBe("secret");
+  });
 });

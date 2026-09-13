@@ -2,15 +2,17 @@
 // tarkov_server_status
 //
 // 返回连接信息、server 自报版本、锚定 tag 与门禁结果、已加载 server mod 清单
-// （来源标注 server-log，见 ADR-0003），以及 MCP 自身能力自报。
+// （路由 `/launcher/v2/mods` 优先，source: "route"；失败回落日志，source:
+// "server-log"，见 ADR-0003 与工单 07），以及 MCP 自身能力自报。
 // 未连接/版本不匹配时返回结构化错误信封。
 //
-// mod 清单读取失败（日志缺失/不可读）只降级 mods 字段，不拖垮整体结果。
+// mod 清单读取失败（路由与日志均不可用）只降级 mods 字段，不拖垮整体结果。
 // =============================================================================
 
 import { z } from "zod";
 
 import type { SptClient } from "../client/client.js";
+import type { ServerModsRouteResult } from "../client/mods-route.js";
 import { toErrorEnvelope } from "../errors.js";
 import {
   readServerModList,
@@ -30,6 +32,9 @@ import { RAID_TOOL_NAMES } from "./raid.js";
 export const ServerStatusInput = z.object({}).strict();
 
 export type ToolHandler = (args: unknown) => Promise<Envelope>;
+
+/** server mod 清单：路由来源优先，日志来源兜底 */
+export type ServerModsResult = ServerModsRouteResult | ServerModListResult;
 
 /** MCP 当前已实现的工具（不含 Phase 2 占位） */
 const IMPLEMENTED_TOOLS = [
@@ -66,16 +71,19 @@ export interface ServerStatusCapabilities {
 /** server_status 输出数据：在 ticket 01 骨架上加 mods 与增强能力自报 */
 export interface ServerStatusToolData extends Omit<ServerStatusData, "capabilities"> {
   capabilities: ServerStatusCapabilities;
-  mods: ServerModListResult;
+  mods: ServerModsResult;
 }
 
 export type ReadModListFn = (options: ReadServerModListOptions) => Promise<ServerModListResult>;
+export type ReadModsRouteFn = (client: SptClient) => Promise<ServerModsRouteResult>;
 
 export interface ServerStatusToolDeps {
   /** server 日志目录；缺省按 resolveServerLogDir() 从环境变量/cwd 推导 */
   logDir?: string;
   /** 覆盖日志读取器（测试注入） */
   readModList?: ReadModListFn;
+  /** 覆盖路由读取器（测试注入） */
+  readModsRoute?: ReadModsRouteFn;
 }
 
 function degradeMods(logDir: string, error: unknown): ServerModListResult {
@@ -90,11 +98,33 @@ function degradeMods(logDir: string, error: unknown): ServerModListResult {
   };
 }
 
+function modsSummary(mods: ServerModsResult): string {
+  if (mods.available) {
+    return `server mod ${mods.count} 个（来源 ${mods.source}）`;
+  }
+  return `server mod 清单不可用（server-log: ${mods.reason}）`;
+}
+
 export function createServerStatusTool(
   client: SptClient,
   deps: ServerStatusToolDeps = {},
 ): ToolHandler {
   const readModList = deps.readModList ?? readServerModList;
+  const readModsRoute = deps.readModsRoute ?? ((target: SptClient) => target.serverModsRoute());
+
+  /** 路由优先（`/launcher/v2/mods`），失败回落日志；两者均失败降级为结构化不可用 */
+  async function resolveMods(logDir: string): Promise<ServerModsResult> {
+    try {
+      return await readModsRoute(client);
+    } catch {
+      // 路由不可用（网络/非 2xx）：静默回落日志来源
+    }
+    try {
+      return await readModList({ logDir });
+    } catch (error) {
+      return degradeMods(logDir, error);
+    }
+  }
 
   return async function runServerStatus(args: unknown): Promise<Envelope> {
     const parsed = ServerStatusInput.safeParse(args ?? {});
@@ -109,14 +139,7 @@ export function createServerStatusTool(
     try {
       const status = await client.serverStatus();
       const logDir = deps.logDir ?? resolveServerLogDir();
-
-      // 日志读取本身不应拖垮 server_status：任何异常都降级为结构化不可用
-      let mods: ServerModListResult;
-      try {
-        mods = await readModList({ logDir });
-      } catch (error) {
-        mods = degradeMods(logDir, error);
-      }
+      const mods = await resolveMods(logDir);
 
       const data: ServerStatusToolData = {
         ...status,
@@ -130,12 +153,9 @@ export function createServerStatusTool(
       };
 
       const channel = status.version.channel ? ` (${status.version.channel})` : "";
-      const modsSummary = mods.available
-        ? `server mod ${mods.count} 个（来源 server-log）`
-        : `server mod 清单不可用（server-log: ${mods.reason}）`;
       return okEnv(
         "tarkov_server_status",
-        `SPT ${status.version.core}${channel} 版本门禁通过；${modsSummary}`,
+        `SPT ${status.version.core}${channel} 版本门禁通过；${modsSummary(mods)}`,
         data,
       );
     } catch (error) {

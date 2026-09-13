@@ -2,11 +2,14 @@
 // hideout section 归一
 //
 // 数据来源：`POST /client/hideout/areas`（SPT server 现有 `/client/*` 路由，
-// 零桥直连；见 ADR-0003）。该路由返回玩家藏身处区域（`HideoutArea`：
-// `type` + `level` + active/constructing 等）；数据库侧的区域配置在
-// `/client/hideout/settings`，此处不用。请求方法/响应形状无 5.0 KB 记载 ——
-// 按 profile 同款假设 POST + 空 body，响应为区域数组（或 `{ areas: [...] }`）。
-// 假设，待 ticket 06 live smoke 验证。
+// 零桥直连；见 ADR-0003）。响应信封 `{err, errmsg, data}` 由 util.unwrapEnvelope
+// 统一解开。
+//
+// [已知语义缺口] 5.0 live 实测（2026-09-13）：该路由返回的是藏身处区域「配置模板」
+// （`type` / `enabled` / `stages` / `requirements`，无 `level`），并非玩家已建区域
+// 状态；玩家真实区域等级位于 `/client/game/profile/list` 的 PMC 条目
+// `Hideout.Areas`（`type` / `level`）。因此本 section 的 `areaCount` 是模板总数，
+// `builtAreas` / `totalLevel` 恒为 0。改用 profile 来源属后续工单（见 ticket 07 报告）。
 //
 // 归一为计数型摘要：区域总数 / 已建造数 / 等级总和 + 逐区域等级（按 type 升序）。
 // =============================================================================

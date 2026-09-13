@@ -5,6 +5,8 @@
 // 容错一致（缺失即回落 0 / 空），从而维持快照确定性。
 // =============================================================================
 
+import { SptRuntimeError } from "../errors.js";
+import { RUNTIME_ERROR_CODES } from "../types.js";
 import type { QuestCounts } from "./schema.js";
 
 export function isRecord(value: unknown): value is Record<string, unknown> {
@@ -39,6 +41,49 @@ export function extractArray(body: unknown, ...keys: string[]): unknown[] {
     }
   }
   return [];
+}
+
+/** SPT `/client/*` 路由统一响应信封：`{err, errmsg, data}`（5.0 live 实测，2026-09-13） */
+export interface RouteEnvelope {
+  err: unknown;
+  errmsg?: unknown;
+  data?: unknown;
+}
+
+/** 判断是否为 `{err, ..., data}` 信封（须同时含 err 与 data 键，避免误判业务对象） */
+export function isRouteEnvelope(body: unknown): body is RouteEnvelope {
+  return isRecord(body) && "err" in body && "data" in body;
+}
+
+/**
+ * 解 SPT `/client/*` 路由的 `{err, errmsg, data}` 信封。
+ *
+ * - 非信封（裸数组 / 业务对象）原样返回，保持对既有形状的兼容；
+ * - `err` 为 0 / "0" / falsy 时返回 `data`；
+ * - 否则抛结构化 ROUTE_ERROR（携带 errmsg），绝不把业务错误静默当空数据。
+ */
+export function unwrapEnvelope(body: unknown): unknown {
+  if (!isRouteEnvelope(body)) {
+    return body;
+  }
+  const err = body.err;
+  const failed = err !== 0 && err !== "0" && Boolean(err);
+  if (failed) {
+    throw new SptRuntimeError(
+      RUNTIME_ERROR_CODES.ROUTE_ERROR,
+      readString(body.errmsg) || "SPT 路由返回未知错误",
+      { err, errmsg: body.errmsg ?? null },
+    );
+  }
+  return body.data;
+}
+
+/** 解 launcher v2 免会话路由的 `{Response: ...}` 信封；非信封原样返回 */
+export function unwrapLauncherEnvelope(body: unknown): unknown {
+  if (isRecord(body) && "Response" in body) {
+    return body.Response;
+  }
+  return body;
 }
 
 /** EFT QuestStatus 名称 -> 计数桶（小写匹配） */
