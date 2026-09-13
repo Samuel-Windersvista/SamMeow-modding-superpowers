@@ -17,7 +17,7 @@ foreach ($path in $requiredPaths) {
 $readme = Get-Content -Path (Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/README.md") -Raw
 foreach ($phrase in @(
     "live bridge",
-    ".artifacts/mo2/plugins/",
+    "plugins/mo2_agent_control.py",
     "scaffold-only"
 )) {
     if ($readme -notmatch [regex]::Escape($phrase)) {
@@ -27,7 +27,7 @@ foreach ($phrase in @(
 
 $deployScript = Get-Content -Path (Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/deploy-live-bridge.ps1") -Raw
 foreach ($phrase in @(
-    ".artifacts/mo2/plugins/",
+    "plugins/mo2_agent_control.py",
     "Mo2AgentControl",
     "scaffold",
     '$pluginTarget',
@@ -51,8 +51,7 @@ foreach ($phrase in @(
 $bridgeSource = Get-Content -Path (Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/mo2_agent_control.py") -Raw
 foreach ($phrase in @(
     "MO2 live bootstrap bridge",
-    ".artifacts/mo2/plugins/",
-    ".artifacts/mo2/plugins/mo2_agent_control.py",
+    "plugins/mo2_agent_control.py",
     "Mo2AgentControl/bootstrap/runtime"
 )) {
     if ($bridgeSource -notmatch [regex]::Escape($phrase)) {

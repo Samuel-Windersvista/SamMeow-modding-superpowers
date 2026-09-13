@@ -112,10 +112,16 @@ if (-not (Test-Path $bridgeSourcePath -PathType Leaf)) {
 $tempRoot = Join-Path $env:TEMP ("mo2-live-launch-flow-" + [guid]::NewGuid().ToString("N"))
 $runtimeRoot = Join-Path $tempRoot "runtime"
 $harnessScriptPath = Join-Path $tempRoot "launch-harness.py"
+$organizerFailureScriptPath = Join-Path $tempRoot "organizer-failure-harness.py"
+$registryCleanupScriptPath = Join-Path $tempRoot "registry-cleanup-harness.py"
+$retentionScriptPath = Join-Path $tempRoot "retention-harness.py"
+$threadSafeScriptPath = Join-Path $tempRoot "thread-safe-harness.py"
 $pipeName = "mo2-control-plane-launch-" + [guid]::NewGuid().ToString("N")
 $harnessJob = $null
 
 try {
+    $null = New-Item -ItemType Directory -Path $tempRoot -Force
+
     $organizerFailureHarness = @'
 import importlib.util
 import json
@@ -192,7 +198,9 @@ print(json.dumps({
 }))
 '@
 
-    $organizerFailureOutput = & python -c $organizerFailureHarness $bridgeSourcePath 2>&1
+    Set-Content -Path $organizerFailureScriptPath -Value $organizerFailureHarness -Encoding UTF8
+
+    $organizerFailureOutput = & python $organizerFailureScriptPath $bridgeSourcePath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Organizer runtime failure harness should execute cleanly: $($organizerFailureOutput -join "`n")"
     }
@@ -332,7 +340,9 @@ print(json.dumps({
 }))
 '@
 
-    $registryCleanupOutput = & python -c $registryCleanupHarness $bridgeSourcePath 2>&1
+    Set-Content -Path $registryCleanupScriptPath -Value $registryCleanupHarness -Encoding UTF8
+
+    $registryCleanupOutput = & python $registryCleanupScriptPath $bridgeSourcePath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Launch registry cleanup harness should execute cleanly: $($registryCleanupOutput -join "`n")"
     }
@@ -460,7 +470,9 @@ print(json.dumps({
 }))
 '@
 
-    $retentionOutput = & python -c $retentionHarness $bridgeSourcePath 2>&1
+    Set-Content -Path $retentionScriptPath -Value $retentionHarness -Encoding UTF8
+
+    $retentionOutput = & python $retentionScriptPath $bridgeSourcePath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Launch retention harness should execute cleanly: $($retentionOutput -join "`n")"
     }
@@ -597,7 +609,9 @@ print(json.dumps({
 }))
 '@
 
-    $threadSafeOutput = & python -c $threadSafeHarnessScript $bridgeSourcePath 2>&1
+    Set-Content -Path $threadSafeScriptPath -Value $threadSafeHarnessScript -Encoding UTF8
+
+    $threadSafeOutput = & python $threadSafeScriptPath $bridgeSourcePath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Organizer-backed launch marshalling harness should pass: $($threadSafeOutput -join "`n")"
     }

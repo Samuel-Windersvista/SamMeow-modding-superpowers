@@ -5,7 +5,7 @@
  *   1. Build an unbound BindingManager (lazy MO2 root/session selection)
  *   2. Wire ToolContext with binding + plans + snapshots + audit (P-F9)
  *   3. Start MCP stdio server, register tools/list + tools/call handlers
- *   4. Best-effort eager auto-bind if BGS_MO2_ROOT is present
+ *   4. Best-effort eager auto-bind if MO2_ROOT is present
  *
  * Tools register via side-effect imports (S3+ adds them); S2 registers ZERO
  * tools — server boots clean and tools/list returns [].
@@ -135,16 +135,16 @@ async function main(): Promise<void> {
   const transport = new StdioServerTransport();
   await server.connect(transport);
 
-  // Eager auto-bind: if BGS_MO2_ROOT is set, do the bind BEFORE writing the
+  // Eager auto-bind: if MO2_ROOT is set, do the bind BEFORE writing the
   // "ready" log so clients can treat the ready signal as "tools are usable
   // immediately". We await + try/catch so a failed bind never blocks server
   // startup — the server still becomes ready in unbound/failed state and the
   // agent can recover via mo2_session({ mo2Root, ... }).
-  // BGS_MO2_PROFILE is also honored so the eager bind targets the right
-  // profile when an install has multiple profiles (e.g. BB84自用 vs Default).
-  if (process.env.BGS_MO2_ROOT) {
-    const eagerRoot = process.env.BGS_MO2_ROOT;
-    const eagerProfile = process.env.BGS_MO2_PROFILE;
+  // MO2_PROFILE is also honored so the eager bind targets the right
+  // profile when an install has multiple profiles.
+  if (process.env.MO2_ROOT) {
+    const eagerRoot = process.env.MO2_ROOT;
+    const eagerProfile = process.env.MO2_PROFILE;
     try {
       const snapshot = await binding.bind({ mo2Root: eagerRoot, profile: eagerProfile });
       process.stderr.write(

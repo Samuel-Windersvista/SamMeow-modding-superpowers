@@ -3,9 +3,8 @@ $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $bridgeSourcePath = Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/mo2_agent_control.py"
 $readmePath = Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/README.md"
-$liveIntegrationPath = Join-Path $repoRoot "tools/mo2-control-plane/live-integration.md"
 
-foreach ($requiredPath in @($bridgeSourcePath, $readmePath, $liveIntegrationPath)) {
+foreach ($requiredPath in @($bridgeSourcePath, $readmePath)) {
     if (-not (Test-Path $requiredPath -PathType Leaf)) {
         throw "Missing required file: $requiredPath"
     }
@@ -13,7 +12,6 @@ foreach ($requiredPath in @($bridgeSourcePath, $readmePath, $liveIntegrationPath
 
 $bridgeSource = Get-Content -Path $bridgeSourcePath -Raw
 $readme = Get-Content -Path $readmePath -Raw
-$liveIntegration = Get-Content -Path $liveIntegrationPath -Raw
 
 foreach ($anchor in @(
     @{ Pattern = 'RUNTIME_TRANSPORT\s*=\s*"named-pipe"'; Message = 'must publish named-pipe transport in endpoint.json' },
@@ -134,8 +132,7 @@ finally {
 }
 
 foreach ($document in @(
-    @{ Path = 'tools/mo2-control-plane/live-bridge/README.md'; Content = $readme },
-    @{ Path = 'tools/mo2-control-plane/live-integration.md'; Content = $liveIntegration }
+    @{ Path = 'tools/mo2-control-plane/live-bridge/README.md'; Content = $readme }
 )) {
     foreach ($phrase in @(
         'named-pipe',
@@ -154,16 +151,6 @@ foreach ($document in @(
 
     if ($document.Content -notmatch '(?i)(pipe name|endpoint field|endpoint value)') {
         throw "$($document.Path) must describe a pipe name or endpoint field in endpoint.json"
-    }
-}
-
-foreach ($forbiddenPhrase in @(
-    'Real broker read-path check',
-    '## Verify Real Broker Read Path',
-    '## Verify Real Launch'
-)) {
-    if ($liveIntegration -match [regex]::Escape($forbiddenPhrase)) {
-        throw "tools/mo2-control-plane/live-integration.md should not describe later-slice verification yet: $forbiddenPhrase"
     }
 }
 

@@ -2,9 +2,9 @@
  * Configuration loader for the MO2 MCP server.
  *
  * Loads from two sources at startup (no hot-reload — oracle §3.3):
- * 1. BGS_MO2_ROOT env var → mo2Root (required)
+ * 1. MO2_ROOT env var → mo2Root (required)
  * 2. <mo2Root>/.mo2-mcp.json → permission_ceiling, allowed_profiles, deny, ...
- * 3. BGS_MO2_PERMISSION_CEILING env var → permission_ceiling override
+ * 3. MO2_PERMISSION_CEILING env var → permission_ceiling override
  *
  * Defaults applied via Zod when .mo2-mcp.json missing or fields absent.
  */
@@ -37,7 +37,7 @@ export interface Config {
 
 export async function loadConfig(opts: { mo2Root: string }): Promise<Config> {
   if (!opts.mo2Root) {
-    throw new Error("BGS_MO2_ROOT not set");
+    throw new Error("MO2_ROOT not set");
   }
 
   let raw: unknown = {};
@@ -53,7 +53,7 @@ export async function loadConfig(opts: { mo2Root: string }): Promise<Config> {
     }
   }
 
-  const envPermissionCeiling = process.env.BGS_MO2_PERMISSION_CEILING;
+  const envPermissionCeiling = process.env.MO2_PERMISSION_CEILING;
   const rawWithEnv = envPermissionCeiling
     ? {
         ...(raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {}),

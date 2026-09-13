@@ -9,6 +9,7 @@ if (-not (Test-Path $bridgeSourcePath -PathType Leaf)) {
 
 $tempRoot = Join-Path $env:TEMP ("mo2-live-launch-contract-" + [guid]::NewGuid().ToString("N"))
 $bridgeCopyPath = Join-Path $tempRoot "mo2_agent_control.py"
+$pythonScriptPath = Join-Path $tempRoot "launch-contract-harness.py"
 
 try {
     $null = New-Item -ItemType Directory -Path $tempRoot -Force
@@ -101,7 +102,9 @@ print(json.dumps({
 }))
 '@
 
-    $output = & python -c $pythonScript $bridgeCopyPath 2>&1
+    Set-Content -Path $pythonScriptPath -Value $pythonScript -Encoding UTF8
+
+    $output = & python $pythonScriptPath $bridgeCopyPath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Importing and probing the live launch contract should succeed: $($output -join "`n")"
     }

@@ -39,7 +39,7 @@ function Wait-XeditClientAutomationReady {
     # On a non-trivial Fallout 4 profile (10+ plugins + Stock Game masters via
     # MO2 VFS) cold-start parsing routinely takes 60-180s; 30s would falsely
     # report "not ready" while xEdit is still loading masters. Override per-call
-    # via -TimeoutSeconds or set BGS_XEDIT_READY_TIMEOUT_SECONDS env var.
+    # via -TimeoutSeconds or set XEDIT_READY_TIMEOUT_SECONDS env var.
     param([string]$XeditExecutablePath, [int]$XeditPid, [string]$SessionPath, [int]$TimeoutSeconds = 240)
     $requestPath = Join-Path $SessionPath 'ready.request.json'
     $responsePath = Join-Path $SessionPath 'ready.response.json'

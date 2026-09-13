@@ -1,9 +1,23 @@
 [CmdletBinding()]
 param(
-  [string]$Mo2Root = "B:\WastelandBlues 2.0",
-  [string]$Profile = "BB84自用",
+  # Owner must supply MO2_ROOT: the live MO2 install root (the directory
+  # containing ModOrganizer.exe). No BGS-era game path is baked in here.
+  [string]$Mo2Root = $env:MO2_ROOT,
+  # Owner must supply MO2_PROFILE (falls back to the MO2 default profile name).
+  [string]$Profile = $(if ($env:MO2_PROFILE) { $env:MO2_PROFILE } else { "Default" }),
   [ValidateSet("all", "live", "closed")] [string]$Mode = "all"
 )
+
+if ([string]::IsNullOrWhiteSpace($Mo2Root)) {
+  throw "MO2_ROOT is not set. Set it to the live MO2 install root (the directory containing ModOrganizer.exe) before running this acceptance script."
+}
+
+# The live suite also drives a second MO2 sandbox root (the dev harness).
+# Owner must supply MO2_HARNESS_ROOT; no BGS-era sandbox path is baked in.
+$HarnessRoot = $env:MO2_HARNESS_ROOT
+if ([string]::IsNullOrWhiteSpace($HarnessRoot)) {
+  throw "MO2_HARNESS_ROOT is not set. Set it to the live MO2 sandbox root used by the harness acceptance suite."
+}
 
 function Ensure-Mo2Alive {
   param([string]$Root)
@@ -32,8 +46,9 @@ function Stop-AllMo2 {
 }
 
 $env:MO2_MCP_ACCEPTANCE = "1"
-$env:BGS_MO2_ROOT = $Mo2Root
-$env:BGS_MO2_PROFILE = $Profile
+$env:MO2_ROOT = $Mo2Root
+$env:MO2_PROFILE = $Profile
+$env:MO2_ACCEPTANCE_PROJECT_ROOT = (Resolve-Path "$PSScriptRoot\..").Path
 
 Push-Location "$PSScriptRoot\..\tools\mo2-mcp"
 try {
@@ -46,10 +61,10 @@ try {
   if ($Mode -in @("all", "live")) {
     Write-Host ""
     Write-Host "=== Phase: LIVE suite ==="
-    # Live suite mixes realEnv (WL2) tests and harnessEnv (.artifacts/mo2) tests
-    # in the same vitest run -- both MO2 launchers must be alive simultaneously.
+    # Live suite mixes realEnv (MO2_ROOT) tests and harnessEnv (MO2_HARNESS_ROOT)
+    # tests in the same vitest run -- both MO2 launchers must be alive simultaneously.
     Ensure-Mo2Alive -Root $Mo2Root
-    Ensure-Mo2Alive -Root "D:\awesome-bgs-mod-master\.artifacts\mo2"
+    Ensure-Mo2Alive -Root $HarnessRoot
     npx vitest run tests/acceptance-live.test.ts
     $liveExit = $LASTEXITCODE
   }
@@ -72,6 +87,7 @@ try {
 finally {
   Pop-Location
   Remove-Item env:MO2_MCP_ACCEPTANCE -ErrorAction SilentlyContinue
-  Remove-Item env:BGS_MO2_ROOT -ErrorAction SilentlyContinue
-  Remove-Item env:BGS_MO2_PROFILE -ErrorAction SilentlyContinue
+  Remove-Item env:MO2_ROOT -ErrorAction SilentlyContinue
+  Remove-Item env:MO2_PROFILE -ErrorAction SilentlyContinue
+  Remove-Item env:MO2_ACCEPTANCE_PROJECT_ROOT -ErrorAction SilentlyContinue
 }

@@ -13,17 +13,17 @@ Copies:
 MO2 must NOT be running when this script executes (file lock on plugin tree).
 
 .PARAMETER MO2Root
-Absolute path to the MO2 install root. Defaults to $env:BGS_MO2_ROOT.
+Absolute path to the MO2 install root. Defaults to $env:MO2_ROOT.
 #>
 [CmdletBinding()]
 param(
-    [string]$MO2Root = $env:BGS_MO2_ROOT
+    [string]$MO2Root = $env:MO2_ROOT
 )
 
 $ErrorActionPreference = "Stop"
 
 if (-not $MO2Root) {
-    throw "MO2Root not provided and `$env:BGS_MO2_ROOT is unset."
+    throw "MO2Root not provided and `$env:MO2_ROOT is unset."
 }
 
 $repoRoot = (Resolve-Path "$PSScriptRoot/..").Path

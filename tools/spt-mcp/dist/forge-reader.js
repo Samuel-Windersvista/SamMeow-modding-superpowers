@@ -18,7 +18,7 @@ export const FORGE_HOT_INDEX_REL = "archive/forge/hot-index.json";
 export const KB_INDEX_REL = "index.json";
 /** 知识库根目录：默认按 dist/src 文件位置回退到仓库 knowledge/spt-kb */
 export function resolveKbRoot() {
-    const env = process.env.BGS_SPT_KB_ROOT;
+    const env = process.env.SPT_KB_ROOT;
     if (env && env.length > 0)
         return env;
     const here = dirname(fileURLToPath(import.meta.url));

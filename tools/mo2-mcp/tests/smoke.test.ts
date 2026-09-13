@@ -21,7 +21,7 @@ async function _fixtureMo2Root(): Promise<string> {
 describe("mo2-mcp smoke", () => {
   it("server starts, tools/list returns registered S3A tools, clean shutdown", async () => {
     const mo2Root = await _fixtureMo2Root();
-    const env = { ...process.env, BGS_MO2_ROOT: mo2Root };
+    const env = { ...process.env, MO2_ROOT: mo2Root };
 
     const proc = spawn("node", ["./dist/index.js"], {
       stdio: ["pipe", "pipe", "pipe"],

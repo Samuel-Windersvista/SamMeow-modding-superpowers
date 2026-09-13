@@ -46,7 +46,7 @@ export const permissionCeilingRule: Rule = {
       decision: "block",
       message:
         `Tool ${tool.name} requires permission_ceiling >= ${required}, current is ${configured}. ` +
-        "Set permission_ceiling in .mo2-mcp.json or env BGS_MO2_PERMISSION_CEILING.",
+        "Set permission_ceiling in .mo2-mcp.json or env MO2_PERMISSION_CEILING.",
       tier: tool.tier,
       required_ceiling: required,
       configured_ceiling: configured,

@@ -3,22 +3,26 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { expect } from "vitest";
 
-export const PROJECT_ROOT = process.env.BGS_MO2_ACCEPTANCE_PROJECT_ROOT ?? String.raw`D:\awesome-bgs-mod-master`;
-export const REAL_MO2_ROOT = process.env.BGS_MO2_ROOT ?? String.raw`B:\WastelandBlues 2.0`;
-export const REAL_PROFILE = process.env.BGS_MO2_PROFILE ?? "BB84自用";
-export const HARNESS_MO2_ROOT = process.env.BGS_MO2_HARNESS_ROOT ?? String.raw`D:\awesome-bgs-mod-master\.artifacts\mo2`;
-export const HARNESS_PROFILE = process.env.BGS_MO2_HARNESS_PROFILE ?? "Default";
+// The acceptance suite drives a real MO2 install. The owner supplies MO2_ROOT
+// (the live install) and MO2_HARNESS_ROOT (the dev sandbox). No BGS-era path is
+// baked in here — an unset root surfaces as an empty string and the suite fails
+// loudly rather than silently targeting a stale game path.
+export const PROJECT_ROOT = process.env.MO2_ACCEPTANCE_PROJECT_ROOT ?? process.cwd();
+export const REAL_MO2_ROOT = process.env.MO2_ROOT ?? "";
+export const REAL_PROFILE = process.env.MO2_PROFILE ?? "Default";
+export const HARNESS_MO2_ROOT = process.env.MO2_HARNESS_ROOT ?? "";
+export const HARNESS_PROFILE = process.env.MO2_HARNESS_PROFILE ?? "Default";
 export const ARTIFACTS = join(PROJECT_ROOT, ".opencode", "artifacts", "mo2-mcp", "acceptance");
 export const MCP_CWD = process.cwd();
 
-export const ACCEPTANCE_MOD = process.env.BGS_MO2_ACCEPTANCE_MOD ?? "LODGen 覆盖素材";
-export const ACCEPTANCE_SEPARATOR = process.env.BGS_MO2_ACCEPTANCE_SEPARATOR;
-export const ALT_PROFILE = process.env.BGS_MO2_ACCEPTANCE_ALT_PROFILE;
-export const FOMOD_ARCHIVE = process.env.BGS_MO2_ACCEPTANCE_FOMOD_ARCHIVE ?? join(ARTIFACTS, "fixtures", "test-fomod.7z");
-export const SIMPLE_ARCHIVE = process.env.BGS_MO2_ACCEPTANCE_SIMPLE_ARCHIVE ?? join(ARTIFACTS, "fixtures", "test-simple.7z");
-export const OVERRIDDEN_FILE = process.env.BGS_MO2_ACCEPTANCE_OVERRIDDEN_FILE ?? "textures/acceptance/winner.dds";
-export const EXPECTED_WINNER = process.env.BGS_MO2_ACCEPTANCE_EXPECTED_WINNER;
-export const EXPECTED_ESP_COUNT = Number(process.env.BGS_MO2_ACCEPTANCE_ESP_COUNT ?? "NaN");
+export const ACCEPTANCE_MOD = process.env.MO2_ACCEPTANCE_MOD ?? "LODGen 覆盖素材";
+export const ACCEPTANCE_SEPARATOR = process.env.MO2_ACCEPTANCE_SEPARATOR;
+export const ALT_PROFILE = process.env.MO2_ACCEPTANCE_ALT_PROFILE;
+export const FOMOD_ARCHIVE = process.env.MO2_ACCEPTANCE_FOMOD_ARCHIVE ?? join(ARTIFACTS, "fixtures", "test-fomod.7z");
+export const SIMPLE_ARCHIVE = process.env.MO2_ACCEPTANCE_SIMPLE_ARCHIVE ?? join(ARTIFACTS, "fixtures", "test-simple.7z");
+export const OVERRIDDEN_FILE = process.env.MO2_ACCEPTANCE_OVERRIDDEN_FILE ?? "textures/acceptance/winner.dds";
+export const EXPECTED_WINNER = process.env.MO2_ACCEPTANCE_EXPECTED_WINNER;
+export const EXPECTED_ESP_COUNT = Number(process.env.MO2_ACCEPTANCE_ESP_COUNT ?? "NaN");
 
 export interface ToolResponse {
   ok: boolean;
@@ -41,11 +45,11 @@ export async function withMcp<T>(env: Record<string, string>, fn: (mcp: McpHandl
 }
 
 export function realEnv(extra: Record<string, string> = {}): Record<string, string> {
-  return { BGS_MO2_ROOT: REAL_MO2_ROOT, BGS_MO2_PROFILE: REAL_PROFILE, BGS_MO2_PERMISSION_CEILING: "full-control", ...extra };
+  return { MO2_ROOT: REAL_MO2_ROOT, MO2_PROFILE: REAL_PROFILE, MO2_PERMISSION_CEILING: "full-control", ...extra };
 }
 
 export function harnessEnv(extra: Record<string, string> = {}): Record<string, string> {
-  return { BGS_MO2_ROOT: HARNESS_MO2_ROOT, BGS_MO2_PROFILE: HARNESS_PROFILE, BGS_MO2_PERMISSION_CEILING: "full-control", ...extra };
+  return { MO2_ROOT: HARNESS_MO2_ROOT, MO2_PROFILE: HARNESS_PROFILE, MO2_PERMISSION_CEILING: "full-control", ...extra };
 }
 
 export async function planApply(mcp: McpHandle, tool: string, args: Record<string, unknown>): Promise<{ plan: ToolResponse; apply: ToolResponse }> {

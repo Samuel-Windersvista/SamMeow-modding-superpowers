@@ -45,7 +45,7 @@
 | Templates | `templates/modpack/` directory | **Deleted.** Dev-log + release-changelog created at runtime by dedicated skills. |
 | `agents/repo-bootstrap/` | Internal bootstrap-agent persona | **Deleted.** |
 | Contributor doc | Public guide for PR contributors | `CONTRIBUTING.md` (no public `CLAUDE.md`). |
-| Phase-0 stub skills | Old `skills/{conflict-auditor,install-planner,...}` | Move to `docs/internal/future-skills/` as design notes. |
+| Phase-0 stub skills | Old `skills/{conflict-auditor,install-planner,...}` | Move to `docs/internal/future-skills/` as design notes (dir deleted in the 2026-09 SPT-only cleanup). |
 | MCP/hook spec MDs | `mcps/*.md`, `hooks/*.md` | Move to `docs/internal/{mcp-specs,hook-specs}/`. |
 | Empty placeholders | `commands/`, `knowledge/`, `research/summaries/` | Delete. |
 | Dev memory | `AGENTS.md` (root), `.opencode/{memory,artifacts,skills}` | Stays gitignored. **Working skills move out to top-level `skills/`**; `.opencode/` itself stays fully ignored. |
@@ -119,7 +119,7 @@ awesome-bgs-mod-master/                            (= bgs-modding-superpowers re
 │   │   ├── superpowers/{specs,plans}/             # incl this plan
 │   │   ├── standards/repo-hygiene.md
 │   │   ├── research/
-│   │   ├── future-skills/                         # ex-Phase-0 stubs
+│   │   ├── future-skills/                         # ex-Phase-0 stubs (deleted 2026-09)
 │   │   ├── mcp-specs/                             # ex-mcps/
 │   │   ├── hook-specs/                            # ex-hooks/
 │   │   └── repo-bootstrap.md                      # absorbed agents/repo-bootstrap content (or deleted)
@@ -225,7 +225,7 @@ Goal: dev-only docs consolidated under `docs/internal/`; public README + CONTRIB
 - [ ] P3.5 Move `docs/research/` → `docs/internal/research/`.
 - [ ] P3.6 Move `docs/superpowers/` → `docs/internal/superpowers/` (incl. this plan; update self-references).
 - [ ] P3.7 Move `docs/initial_pormpt.md` → leave untracked / move under gitignored `.opencode/artifacts/` if user wants to preserve it (currently gitignored).
-- [ ] P3.8 Move `skills/{conflict-auditor,install-planner,localization-assistant,mod-evaluator,test-session-guide,write-dev-log,write-release-changelog}/` → `docs/internal/future-skills/`. **Do not** ship these as runnable skills; they are design notes for v0.2+.
+- [ ] P3.8 Move `skills/{conflict-auditor,install-planner,localization-assistant,mod-evaluator,test-session-guide,write-dev-log,write-release-changelog}/` → `docs/internal/future-skills/`. **Do not** ship these as runnable skills; they are design notes for v0.2+. (That directory was deleted in the 2026-09 SPT-only cleanup.)
 - [ ] P3.9 Move `mcps/{xedit-readonly,nexus-metadata,loot-metadata,translation-memory}.md` + `mcps/README.md` → `docs/internal/mcp-specs/`.
 - [ ] P3.10 Move `hooks/{dev-log-reminder,repo-cleanliness,runtime-compatibility,scope-guard}.md` → `docs/internal/hook-specs/`. **Note:** `hooks/` at root is now reserved for runtime hook code (P1 work); the spec MDs are docs only.
 - [ ] P3.11 Move `agents/repo-bootstrap/AGENT.md` content into `docs/internal/repo-bootstrap.md`, then delete `agents/` dir. (Per user: `agents/repo-bootstrap/` → deleted.)
@@ -342,7 +342,7 @@ Goal: prove the reshape works on all three harnesses against a clean MO2.
 | OpenCode plugin-return `mcp:` field undocumented but observed | Use the `config:` hook merge as primary (documented surface); add `mcp:` return as belt-and-suspenders. |
 | `BB-84C/TES5Edit` release zip layout may not match expected paths | P6.2 — inspect actual release artifact in dev sandbox; adjust extraction path. |
 | Pre-built `dist/` in git inflates repo diff | Accept; matches `oh-my-opencode-slim` pattern; `prepare` script handles direct checkout. |
-| Phase-0 stub skills moved to `docs/internal/future-skills/` may rot | Acceptable; they're design notes, not promises. Future plans rebuild them as real skills. |
+| Phase-0 stub skills moved to `docs/internal/future-skills/` (deleted in the 2026-09 SPT-only cleanup) may rot | Acceptable; they're design notes, not promises. Future plans rebuild them as real skills. |
 | `agents/repo-bootstrap` deletion loses dev context | Content absorbed into `docs/internal/repo-bootstrap.md` (P3.11) before delete. |
 | Templates deletion loses dev-log scaffolds | Acceptable per user decision; future skills (`writing-modpack-devlog`, `writing-modpack-changelog`) will create files at runtime. Flag as v0.2 follow-up. |
 | `.opencode/plugins/` gitignore exception may break unrelated `.opencode/` files | Test with `git check-ignore -v` on each new tracked file. |

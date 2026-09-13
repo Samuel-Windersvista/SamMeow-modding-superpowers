@@ -3,6 +3,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $modulePath = Join-Path $repoRoot "tools/mo2-control-plane/live-bridge/mo2_agent_control.py"
 $runtimeRoot = Join-Path $env:TEMP ("mo2-blocker-runtime-test-" + [guid]::NewGuid().ToString("N"))
+$pythonScriptPath = Join-Path $env:TEMP ("mo2-blocker-runtime-harness-" + [guid]::NewGuid().ToString("N") + ".py")
 
 try {
     New-Item -ItemType Directory -Path $runtimeRoot -Force | Out-Null
@@ -264,7 +265,9 @@ assert fourth_record["result"] == "handled", fourth_record
 print("MO2 live dialog blocker runtime checks passed.")
 '@
 
-    $output = & python -c $pythonCode $modulePath $runtimeRoot 2>&1
+    Set-Content -Path $pythonScriptPath -Value $pythonCode -Encoding UTF8
+
+    $output = & python $pythonScriptPath $modulePath $runtimeRoot 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw ((($output | ForEach-Object { $_.ToString() }) -join "`n"))
     }
@@ -274,5 +277,9 @@ print("MO2 live dialog blocker runtime checks passed.")
 finally {
     if (Test-Path $runtimeRoot) {
         Remove-Item -Path $runtimeRoot -Recurse -Force
+    }
+
+    if (Test-Path $pythonScriptPath) {
+        Remove-Item -Path $pythonScriptPath -Force
     }
 }

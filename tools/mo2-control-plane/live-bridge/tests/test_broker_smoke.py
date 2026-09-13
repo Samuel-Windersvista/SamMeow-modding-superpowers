@@ -1,13 +1,13 @@
 r"""Gated E2E smoke test against a real running MO2 instance.
 
 Skipped unless MO2_HARNESS=1 is set. Requires:
-- MO2 running at $BGS_MO2_ROOT (defaults to D:\awesome-bgs-mod-master\.artifacts\mo2)
+- MO2 running at $MO2_ROOT (owner-supplied; no default path is baked in)
 - mo2_agent_control plugin loaded + endpoint.json published
 - PowerShell 7+ for NamedPipeClientStream
 
 Run from project root:
     $env:MO2_HARNESS = "1"
-    $env:BGS_MO2_ROOT = "D:\awesome-bgs-mod-master\.artifacts\mo2"
+    $env:MO2_ROOT = "<path to the live MO2 install root>"
     # Start MO2 manually first
     pytest tools/mo2-control-plane/live-bridge/tests/test_broker_smoke.py -v
 """
@@ -28,7 +28,9 @@ pytestmark = pytest.mark.skipif(
     reason="Requires running MO2 instance; set MO2_HARNESS=1 to enable",
 )
 
-MO2_ROOT = Path(os.environ.get("BGS_MO2_ROOT", r"D:\awesome-bgs-mod-master\.artifacts\mo2"))
+# Owner must supply MO2_ROOT (the directory containing ModOrganizer.exe); no
+# BGS-era sandbox path is baked in.
+MO2_ROOT = Path(os.environ.get("MO2_ROOT", ""))
 ENDPOINT_FILE = MO2_ROOT / "plugins" / "Mo2AgentControl" / "bootstrap" / "runtime" / "endpoint.json"
 
 

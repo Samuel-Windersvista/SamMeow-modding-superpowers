@@ -1,8 +1,0 @@
-{
-    "files.exclude": {
-        "**/bin": true,
-        "**/obj": true
-    },
-    "omnisharp.useModernNet": false,
-    "dotnet.defaultSolution": "HeadshotDamageRedirect.sln"
-}

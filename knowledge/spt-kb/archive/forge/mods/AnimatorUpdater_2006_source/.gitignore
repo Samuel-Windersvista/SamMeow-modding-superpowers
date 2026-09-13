@@ -1,9 +1,0 @@
-obj/
-bin/
-.vs/
-.idea/
-.git/
-ref/
-UpdateHierarchy.sln.DotSettings.user
-UpdateHierarchy.sln
-NuGet.Config
