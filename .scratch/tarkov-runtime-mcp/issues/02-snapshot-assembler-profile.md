@@ -4,7 +4,7 @@
 
 **Blocked by:** 01（穿甲弹：握手与传输层）
 
-**Status:** ready-for-agent
+**Status:** claimed
 
 - [ ] `tarkov_snapshot` 带 `sections: ["profile"]` 返回等级/技能/任务进度计数摘要
 - [ ] 快照输出确定性：相同 fixture 输入两次调用产出逐字节一致
