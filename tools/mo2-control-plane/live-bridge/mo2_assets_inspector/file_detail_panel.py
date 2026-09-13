@@ -2,7 +2,7 @@
 
 Renders the full resolution rationale + KB citation for one selected entry.
 The body is a plain QTextBrowser (read-only). KB record IDs are displayed
-as plain text the user can paste into `bgs_kb_get`.
+as plain text for the user to copy and look up.
 
 NOTE: No automated tests for this module - PyQt6 import fails in the
 anaconda dev env. Behavioral verification at Plan B Task 9 manual MO2

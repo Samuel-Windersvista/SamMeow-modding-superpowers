@@ -1,7 +1,7 @@
 /**
  * Lifecycle state machine for the MO2 MCP server.
- * Ported from xedit-mcp pattern: states transition not_started -> starting -> ready,
- * or any -> failed. Domain tools require ready state.
+ * States transition not_started -> starting -> ready, or any -> failed.
+ * Domain tools require ready state.
  */
 export type LifecycleState = "not_started" | "starting" | "ready" | "failed";
 

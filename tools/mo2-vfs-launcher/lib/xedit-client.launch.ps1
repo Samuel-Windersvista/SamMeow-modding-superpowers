@@ -393,8 +393,8 @@ function Invoke-XeditClientProcessLaunch {
 
         # --i-know-what-im-doing (optional, sentinel "1") translates to xEdit's
         # -IKnowWhatImDoing startup flag, which the daemon then advertises via
-        # `consentEnabled: true` in system.describe. xedit-mcp's TS side gates
-        # mutating intent tools on this flag — without it, requests fast-fail
+        # `consentEnabled: true` in system.describe. The MCP client's TS side
+        # gates mutating intent tools on this flag — without it, requests fast-fail
         # with `mutation_requires_iknowwhatimdoing` BEFORE the daemon is hit.
         # Adding the flag is explicit, per-launch, and audited at the MCP call
         # site (no env-var fallback by design).

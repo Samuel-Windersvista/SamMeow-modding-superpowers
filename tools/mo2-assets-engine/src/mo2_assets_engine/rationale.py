@@ -1,8 +1,8 @@
 """Per-bucket explanation + KB record citation.
 
 Bucket -> short human-readable rationale + canonical KB record IDs that
-explain the underlying rule. KB record IDs are stable identifiers from
-`knowledge/bgs-kb/packs/core/records/archive-precedence/`.
+explain the underlying rule. KB record IDs are stable identifiers carried
+for citation.
 
 Consumers (CLI, GUI, future MO2 MCP) use this to render "why this verdict"
 without re-deriving the engine rules in presentation code.

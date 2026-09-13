@@ -8,9 +8,6 @@ resolution which only needs the file-path list.
 Wire format reference:
   https://en.uesp.net/wiki/Fallout_4_Mod:Archive_File_Format
   https://starfieldwiki.net/wiki/Modding:Archive_File_Format
-
-Lifted and generalized from
-`tools/bgs-translator/bgs_translator/parsers/strings_io.py:179-244`.
 """
 
 from __future__ import annotations

@@ -184,12 +184,11 @@ main().catch((e) => {
  *     strict validator happens to accept the `{type:"object", ..., anyOf:[...]}`
  *     wrapped shape, which is why the bug looks "Anthropic-only" from the
  *     outside.
- *   - The sibling MCP `tools/xedit-mcp` solves this by hand-writing object
- *     schemas with all modes' properties merged at top level (see its
- *     `xedit_find_record` comment: "top-level oneOf/anyOf/allOf/enum/not is
- *     forbidden by OpenAI-style strict tool-schema backends"). The real
- *     branch-by-branch validation lives in the Zod `safeParse` inside
- *     `dispatch.ts`, NOT in the wire schema.
+ *   - The established workaround is to hand-write object schemas with all
+ *     modes' properties merged at top level: top-level
+ *     oneOf/anyOf/allOf/enum/not is forbidden by OpenAI-style strict
+ *     tool-schema backends. The real branch-by-branch validation lives in
+ *     the Zod `safeParse` inside `dispatch.ts`, NOT in the wire schema.
  *
  * What this function does:
  *   1. If `schema` is already `type: "object"` AND carries no top-level
