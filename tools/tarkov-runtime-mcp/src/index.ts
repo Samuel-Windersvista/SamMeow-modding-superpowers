@@ -31,6 +31,7 @@ import {
   raidPlaceholderEnvelope,
 } from "./tools/raid.js";
 import { ServerStatusInput, createServerStatusTool, type ToolHandler } from "./tools/server-status.js";
+import { WaitForInput, createWaitForTool } from "./tools/wait-for.js";
 import { RUNTIME_ERROR_CODES, errEnv, type Envelope } from "./types.js";
 
 const SERVER_NAME = "tarkov-runtime-mcp";
@@ -56,6 +57,12 @@ export const TOOL_DEFINITIONS = [
       "探测候选端口（默认 6969，可经 TARKOV_RUNTIME_MCP_PORTS 覆盖），返回发现的单实例信息（host/port/baseUrl/versionLabel）。不执行版本门禁。",
     inputSchema: schemaFor(InstancesInput),
   },
+  {
+    name: "tarkov_wait_for",
+    description:
+      "对任意工具结果轮询求值谓词，直到满足或超时。谓词语法：`<字段路径> <运算符> <值>`，运算符含 contains / equals / matches 与数值比较（> >= < <=）。满足返回求值结果与耗时；超时返回结构化 WAIT_TIMEOUT（谓词/最后观察值/耗时）。",
+    inputSchema: schemaFor(WaitForInput),
+  },
   ...RAID_TOOL_NAMES.map((name) => ({
     name,
     description: `raid.* 局内状态占位工具（Phase 2 BepInEx Client Bridge）。首版固定返回 CLIENT_BRIDGE_NOT_INSTALLED。`,
@@ -66,6 +73,7 @@ export const TOOL_DEFINITIONS = [
 const AVAILABLE_TOOLS = [
   "tarkov_server_status",
   "tarkov_instances",
+  "tarkov_wait_for",
   ...RAID_TOOL_NAMES,
 ].join(", ");
 
@@ -80,7 +88,10 @@ export function createDispatcher(
     handlers[name] = createRaidPlaceholderTool(name);
   }
 
-  return async function invoke(name, args) {
+  const invoke = async function invoke(
+    name: string,
+    args: Record<string, unknown>,
+  ): Promise<Envelope> {
     const handler = handlers[name];
     if (!handler) {
       if (isRaidToolName(name)) {
@@ -99,6 +110,11 @@ export function createDispatcher(
       return toErrorEnvelope(name, error);
     }
   };
+
+  // wait_for 需调用其他工具，故在 invoke 定义后注入（自引用）
+  handlers.tarkov_wait_for = createWaitForTool(invoke);
+
+  return invoke;
 }
 
 export interface RuntimeOptions {
