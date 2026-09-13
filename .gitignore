@@ -24,8 +24,8 @@ Desktop.ini
 !/.opencode/plugins/
 !/.opencode/INSTALL.md
 
-# Dev-internal router (per AGENTS.md policy)
-AGENTS.md
+# AGENTS.md is now a tracked agent-skills config (see docs/agents/). The old
+# gitignored dev-router role is retired with the SPT-only cleanup.
 
 # xedit-hook-bridge: ship the DLL from dist/ only. The .pas source lives in
 # the sister xEdit fork (D:\TES5Edit-contrib), and Delphi build leftovers
