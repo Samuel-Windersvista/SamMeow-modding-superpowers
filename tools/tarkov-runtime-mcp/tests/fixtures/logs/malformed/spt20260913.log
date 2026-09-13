@@ -1,0 +1,6 @@
+this is not a log line at all
+[broken line without closing bracket
+[2026-09-13 10:30:11.000][Information][SPTarkov.Server.Modding.ModValidator] ModLoader: loading: 2 server mods...
+[2026-09-13 10:30:12.345][Information][SPTarkov.Server.Modding.ModValidator] Mod: GoodMod version: 1.0.0 (GUID: com.example.good | targets SPT: ~5.0.0) by: Author loaded
+[2026-09-13 10:30:12.500][Warning][SPTarkov.Server.Modding.ModValidator] Mod: version:  by: loaded
+[2026-09-13 10:30:12.600][Information][SPTarkov.Server.Modding.ModValidator] trailing garbage after loaded line

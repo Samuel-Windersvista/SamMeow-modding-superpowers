@@ -4,7 +4,7 @@
 
 **Blocked by:** 01（穿甲弹：server_status 骨架）
 
-**Status:** ready-for-agent
+**Status:** claimed
 
 - [ ] 日志解析器从 fixture 日志正确提取 mod 清单（含版本号，若日志提供）
 - [ ] `server_status.mods` 返回清单且标注 `source: "server-log"`

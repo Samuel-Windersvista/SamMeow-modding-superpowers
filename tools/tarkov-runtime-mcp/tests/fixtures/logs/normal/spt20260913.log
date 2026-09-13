@@ -1,0 +1,6 @@
+[2026-09-13 10:30:00.000][Information][SPTarkov.Server.Program] Server starting...
+[2026-09-13 10:30:11.000][Information][SPTarkov.Server.Modding.ModValidator] ModLoader: loading: 3 server mods...
+[2026-09-13 10:30:12.345][Information][SPTarkov.Server.Modding.ModValidator] Mod: MyMod version: 1.2.3 (GUID: com.example.mymod | targets SPT: ~5.0.0) by: Author loaded
+[2026-09-13 10:30:12.400][Information][SPTarkov.Server.Modding.ModValidator] Mod: Other Mod version: 0.4.0 (GUID: org.example.other | targets SPT: ~5.0.0) by: Someone loaded
+[2026-09-13 10:30:12.450][Information][SPTarkov.Server.Modding.ModValidator] Mod: SimpleMod version: 2.0.0 by: Dev loaded
+[2026-09-13 10:30:13.000][Information][SPTarkov.Server.Program] Server started
