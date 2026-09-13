@@ -5,6 +5,7 @@
 //   tarkov_server_status  连接信息 + server 版本 + BEM tag 门禁结果 + 能力自报
 //   tarkov_instances      候选端口探测出的单实例信息
 //   tarkov_snapshot       语义化状态快照（首版 profile section）
+//   tarkov_wait_for       谓词轮询原语（任意工具结果，超时返回 WAIT_TIMEOUT）
 //   raid_status           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
 //   raid_player           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
 //   raid_bots             Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
@@ -33,6 +34,7 @@ import {
 } from "./tools/raid.js";
 import { ServerStatusInput, createServerStatusTool, type ToolHandler } from "./tools/server-status.js";
 import { SNAPSHOT_TOOL_NAME, SnapshotInput, createSnapshotTool } from "./tools/snapshot.js";
+import { WaitForInput, createWaitForTool } from "./tools/wait-for.js";
 import { RUNTIME_ERROR_CODES, errEnv, type Envelope } from "./types.js";
 
 const SERVER_NAME = "tarkov-runtime-mcp";
@@ -64,6 +66,12 @@ export const TOOL_DEFINITIONS = [
       "读取 SPT server 局外状态并返回确定性快照。sections 可选（本期合法值：profile）；profile section 返回等级/技能/任务进度计数摘要，并标注数据来源路由与新鲜度。未知 section 返回 UNSUPPORTED_SECTION。",
     inputSchema: schemaFor(SnapshotInput),
   },
+  {
+    name: "tarkov_wait_for",
+    description:
+      "对任意工具结果轮询求值谓词，直到满足或超时。谓词语法：`<字段路径> <运算符> <值>`，运算符含 contains / equals / matches 与数值比较（> >= < <=）。满足返回求值结果与耗时；超时返回结构化 WAIT_TIMEOUT（谓词/最后观察值/耗时）。",
+    inputSchema: schemaFor(WaitForInput),
+  },
   ...RAID_TOOL_NAMES.map((name) => ({
     name,
     description: `raid.* 局内状态占位工具（Phase 2 BepInEx Client Bridge）。首版固定返回 CLIENT_BRIDGE_NOT_INSTALLED。`,
@@ -75,6 +83,7 @@ const AVAILABLE_TOOLS = [
   "tarkov_server_status",
   "tarkov_instances",
   SNAPSHOT_TOOL_NAME,
+  "tarkov_wait_for",
   ...RAID_TOOL_NAMES,
 ].join(", ");
 
@@ -90,7 +99,10 @@ export function createDispatcher(
     handlers[name] = createRaidPlaceholderTool(name);
   }
 
-  return async function invoke(name, args) {
+  const invoke = async function invoke(
+    name: string,
+    args: Record<string, unknown>,
+  ): Promise<Envelope> {
     const handler = handlers[name];
     if (!handler) {
       if (isRaidToolName(name)) {
@@ -109,6 +121,11 @@ export function createDispatcher(
       return toErrorEnvelope(name, error);
     }
   };
+
+  // wait_for 需调用其他工具，故在 invoke 定义后注入（自引用）
+  handlers.tarkov_wait_for = createWaitForTool(invoke);
+
+  return invoke;
 }
 
 export interface RuntimeOptions {

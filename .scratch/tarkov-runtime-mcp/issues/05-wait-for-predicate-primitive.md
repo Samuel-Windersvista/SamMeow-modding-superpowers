@@ -4,7 +4,7 @@
 
 **Blocked by:** 01（穿甲弹：工具层与连接握手）
 
-**Status:** ready-for-agent
+**Status:** claimed
 
 - [ ] 谓词满足时立即返回成功（含求值结果与耗时）
 - [ ] 超时返回结构化 `WAIT_TIMEOUT`（谓词/最后观察值/耗时）
