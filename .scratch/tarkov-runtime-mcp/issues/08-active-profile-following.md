@@ -1,17 +1,25 @@
-# 08: æ´»è·ƒ profile è·Ÿéšï¼ˆA: è‡ªåŠ¨é€‰æ‹©è§„åˆ™ + B: å¯é€‰æ´»è·ƒæ¢é’ˆ modï¼‰
+# 08: æ´»è·ƒ profile è·Ÿéšï¼ˆA: è‡ªåŠ¨é€‰æ‹©è§„åˆ™ + B: å¯é€‰æ´»è·ƒæ¢é’?modï¼?
+**What to build:** ä¼šè¯è·å–ä»?å¿…é¡»é…ç½® username"å‡çº§ä¸ºè·Ÿéšç©å®¶å®é™…ä½¿ç”¨çš„ profileï¼?
+- **Aï¼ˆå¿…åšï¼Œçº?MCP ä¾§ï¼‰**ï¼š`/launcher/v2/profiles` è¿”å›æ°å¥½ 1 ä¸?profile æ—¶é›¶é…ç½®è‡ªåŠ¨é€‰ç”¨ï¼›å¤š profile ä¸”æœªé…ç½® username æ—¶è¿”å›ç»“æ„åŒ– `AMBIGUOUS_PROFILE`ï¼ˆåˆ—å‡ºå€™é€?usernameï¼‰ï¼›å·²é…ç½?username ç»´æŒç²¾ç¡®åŒ¹é…ã€‚æ¢æµ‹åˆ°æ´»è·ƒæ¢é’ˆè·¯ç”±ï¼ˆBï¼‰æ—¶ä¼˜å…ˆä½¿ç”¨æ´»è·ƒ profileã€?- **Bï¼ˆå¯é€‰å¢å¼ºï¼Œæ¸¸æˆä¾§å¾® modï¼?*ï¼šSPT 5.0 C# server modï¼ˆIModMetadata + StaticRouterï¼‰ï¼Œåªæ³¨å†Œä¸€ä¸ªåªè¯»è·¯ç”?`/spt/runtime/active-profiles`ï¼Œè¿”å›?`ProfileActivityService.GetActiveProfileIdsWithinMinutes(N)` çš?profileId åˆ—è¡¨ã€‚MCP æ¡æ‰‹æ—¶æ¢æµ‹è¯¥è·¯ç”±ï¼šå¯ç”¨åˆ™è·Ÿéšæ´»è·ƒ profileï¼Œä¸å¯ç”¨é€€å›?A è§„åˆ™ï¼ˆæ¸è¿›å¢å¼ºï¼Œä¸å­˜åœ¨ä¸æŠ¥é”™ï¼‰ã€‚éƒ¨ç½²æ–¹å¼ä¸ MO2 overlay éªŒè¯ï¼ˆå‡è®?A-1ï¼‰åœ¨æ‰§è¡Œæ—¶ç¡®è®¤ã€?
+**Blocked by:** Noneï¼ˆåŸºäº?mainï¼›A ä¸?B å¯åˆ†åˆ«éªŒè¯ï¼‰
 
-**What to build:** ä¼šè¯è·å–ä»"å¿…é¡»é…ç½® username"å‡çº§ä¸ºè·Ÿéšç©å®¶å®é™…ä½¿ç”¨çš„ profileï¼š
+**Status:** ready-for-human
 
-- **Aï¼ˆå¿…åšï¼Œçº¯ MCP ä¾§ï¼‰**ï¼š`/launcher/v2/profiles` è¿”å›æ°å¥½ 1 ä¸ª profile æ—¶é›¶é…ç½®è‡ªåŠ¨é€‰ç”¨ï¼›å¤š profile ä¸”æœªé…ç½® username æ—¶è¿”å›ç»“æ„åŒ– `AMBIGUOUS_PROFILE`ï¼ˆåˆ—å‡ºå€™é€‰ usernameï¼‰ï¼›å·²é…ç½® username ç»´æŒç²¾ç¡®åŒ¹é…ã€‚æ¢æµ‹åˆ°æ´»è·ƒæ¢é’ˆè·¯ç”±ï¼ˆBï¼‰æ—¶ä¼˜å…ˆä½¿ç”¨æ´»è·ƒ profileã€‚
-- **Bï¼ˆå¯é€‰å¢å¼ºï¼Œæ¸¸æˆä¾§å¾® modï¼‰**ï¼šSPT 5.0 C# server modï¼ˆIModMetadata + StaticRouterï¼‰ï¼Œåªæ³¨å†Œä¸€ä¸ªåªè¯»è·¯ç”± `/spt/runtime/active-profiles`ï¼Œè¿”å› `ProfileActivityService.GetActiveProfileIdsWithinMinutes(N)` çš„ profileId åˆ—è¡¨ã€‚MCP æ¡æ‰‹æ—¶æ¢æµ‹è¯¥è·¯ç”±ï¼šå¯ç”¨åˆ™è·Ÿéšæ´»è·ƒ profileï¼Œä¸å¯ç”¨é€€å› A è§„åˆ™ï¼ˆæ¸è¿›å¢å¼ºï¼Œä¸å­˜åœ¨ä¸æŠ¥é”™ï¼‰ã€‚éƒ¨ç½²æ–¹å¼ä¸ MO2 overlay éªŒè¯ï¼ˆå‡è®¾ A-1ï¼‰åœ¨æ‰§è¡Œæ—¶ç¡®è®¤ã€‚
+- [ ] å?profile é›¶é…ç½®è‡ªåŠ¨é€‰ç”¨ï¼Œsession å—é™å·¥å…·ç›´æ¥å¯ç”¨
+- [ ] å¤?profile æœªé…ç½?username è¿”å› `AMBIGUOUS_PROFILE` ä¸”åˆ—å‡ºå€™é€?- [ ] å·²é…ç½?username æ—¶ç²¾ç¡®åŒ¹é…è¡Œä¸ºä¸å›é€€
+- [ ] æ¢é’ˆè·¯ç”±å¯ç”¨æ—¶ä¼˜å…ˆè·Ÿéšæ´»è·?profileï¼›ä¸å¯ç”¨æ—¶é™é»˜é€€å›?A è§„åˆ™
+- [ ] æ¢é’ˆ mod åœ¨çœŸå®?5.0 server åŠ è½½å¹¶æˆåŠŸè¿”å›æ´»è·?profileï¼ˆlive éªŒè¯ï¼?- [ ] å…¨é‡æµ‹è¯•ç»¿ï¼ˆå«æ—¢æœ?142ï¼?
+## Comments
 
-**Blocked by:** Noneï¼ˆåŸºäº mainï¼›A ä¸ B å¯åˆ†åˆ«éªŒè¯ï¼‰
+### 2026-09-13 orchestrator ½»¸¶¼ÇÂ¼
 
-**Status:** ready-for-agent
-
-- [ ] å• profile é›¶é…ç½®è‡ªåŠ¨é€‰ç”¨ï¼Œsession å—é™å·¥å…·ç›´æ¥å¯ç”¨
-- [ ] å¤š profile æœªé…ç½® username è¿”å› `AMBIGUOUS_PROFILE` ä¸”åˆ—å‡ºå€™é€‰
-- [ ] å·²é…ç½® username æ—¶ç²¾ç¡®åŒ¹é…è¡Œä¸ºä¸å›é€€
-- [ ] æ¢é’ˆè·¯ç”±å¯ç”¨æ—¶ä¼˜å…ˆè·Ÿéšæ´»è·ƒ profileï¼›ä¸å¯ç”¨æ—¶é™é»˜é€€å› A è§„åˆ™
-- [ ] æ¢é’ˆ mod åœ¨çœŸå® 5.0 server åŠ è½½å¹¶æˆåŠŸè¿”å›æ´»è·ƒ profileï¼ˆlive éªŒè¯ï¼‰
-- [ ] å…¨é‡æµ‹è¯•ç»¿ï¼ˆå«æ—¢æœ‰ 142ï¼‰
+- A ²¿·Ö£¨MCP ²à¹æÔòÁ´£©£ºÌ½ÕëÓÅÏÈ -> username ¾«È· -> µ¥ profile ×Ô¶¯ -> ¶à profile AMBIGUOUS_PROFILE¡£148/148 ²âÊÔÂÌ¡£
+- B ²¿·Ö£¨Ì½Õë mod£©£ºtools/tarkov-active-probe ¹¹½¨ 0 ´í 0 ¾¯¡£
+- **A-1 ¼ÙÉèÑéÖ¤Í¨¹ı**£º¾­ MO2£¨ÊµÀı SPT5£¬gamePath E:\Game\EFT_Offline\SPT_5xx£¬base_directory Inescapable Tarkov£©VFS Æô¶¯ server£¬Ì½Õë mod ³É¹¦¼ÓÔØ£¬`/spt/runtime/active-profiles` ·µ»ØÔ¤ÆÚĞÎ×´¡£
+- ÁãÅäÖÃ live ÑéÖ¤£ºÎŞ TARKOV_RUNTIME_MCP_USERNAME Ê±¿ìÕÕ×Ô¶¯Ñ¡ÓÃÎ¨Ò» profile£¨auto-single£©£¬·µ»ØÕæÊµÊı¾İ¡£Ì½Õë active-probe Â·¾¶µÄÍêÕû live ÑéÖ¤´ıÓÎÏ·¿Í»§¶ËÊµ¼ÊÓÎÍæ£¨µ±Ç°ÎŞ¿Í»§¶ËÇëÇó£¬Ì½Õë·µ»Ø¿ÕÁĞ±í²¢ÕıÈ·ÍË»Ø A ¹æÔò£©¡£
+- »·¾³±ä¸ü¼ÇÂ¼£¨²¿ÊğºÛ¼££©£º
+  1. ¸´ÖÆ `ModOrganizer.ini` µ½ÊµÀı base_directory ¸ù£¨ÃÖ²¹ mo2-mcp ²»½âÎö base_directory ÖØ¶¨ÏòµÄÈ±¿Ú£»MO2 ×ÔÉí²»¶Á¸ÃÎ»ÖÃ£©£»
+  2. `.mo2-mcp.json`£¨permission_ceiling=full-control£©Ğ´ÈëÊµÀı base_directory Óë LOCALAPPDATA ÊµÀıÄ¿Â¼£»
+  3. modlist.txt ÊÖ¶¯×·¼Ó `+TarkovActiveProbe`£¨ÀëÏß´´½¨Â·¾¶£¬MO2 Ë¢ĞÂºó×ÔÇ¢£©£»
+  4. MO2 Æô¶¯¹ıÒ»´Î£¨SPT-Organizer v2.5.2£©£¬ÆÚ¼ä±ÀÀ£¹ıÒ»´ÎºóÖØÆôÎÈ¶¨¡£
+- ·¢ÏÖ£ºmo2-mcp ¶ÔÈ«¾ÖÊµÀı£¨ini Óë base_directory ·ÖÀë£©Ö§³ÖÓĞÈ±¿Ú£»broker Î´×°£¨pipeConnected=false£©£¬create_mod Ğè live broker£¬ÀëÏßÂ·¾¶ÎªÊÖĞ´ modlist¡£½¨Òé¼ÇÎª mo2-mcp µÄ¸Ä½øÏî¡£
