@@ -13,10 +13,10 @@ Desktop.ini
 
 /.external-resource
 
-# Build output of scripts/build-portable-plugin.ps1 (Target 1 publishability).
-# This is generated, not source — ignore it from the dev tree. Release branches
-# may carry a single materialized copy if a portable release is being staged.
+# Build output of scripts/build-portable-plugin.ps1 (portable plugin staging).
+# Generated, not source — never tracked; rebuilt on demand.
 /dist/
+/plugins/
 
 # .opencode/ holds dev memory + acceptance artifacts + legacy skill stash;
 # ship only the OpenCode plugin code and the user-facing INSTALL.md.
@@ -27,25 +27,6 @@ Desktop.ini
 # AGENTS.md is now a tracked agent-skills config (see docs/agents/). The old
 # gitignored dev-router role is retired with the SPT-only cleanup.
 
-# xedit-hook-bridge: ship the DLL from dist/ only. The .pas source lives in
-# the sister xEdit fork (D:\TES5Edit-contrib), and Delphi build leftovers
-# (.dcu / .dproj.local / .identcache / .res) are dev-only artifacts.
-/tools/xedit-hook-bridge/src/
-/tools/xedit-hook-bridge/*.dcu
-/tools/xedit-hook-bridge/*.dproj.local
-/tools/xedit-hook-bridge/*.identcache
-/tools/xedit-hook-bridge/*.res
-
-# /plugins/ is the materialized end-user marketplace tree required by Codex's
-# marketplace schema (see .agents/plugins/marketplace.json). It is regenerated
-# from source via scripts/build-portable-plugin.ps1 on every release, so the
-# whole tree is a build artifact and must never be tracked.
-/plugins/
-
-# BGS KB pack build artifact; source records + manifest.json are committed.
-/knowledge/bgs-kb/packs/*/kb.sqlite
-*.pyc
-
 # Vendored / mirrored knowledge archives are reference material, not source.
 # The curated index, guides, wiki snapshot, and sources stay tracked.
 /knowledge/spt-kb/archive/
@@ -54,31 +35,22 @@ Desktop.ini
 **/obj/
 **/bin/
 
-# Python package build artifacts for the standalone bgs-translator PyPI package.
-/tools/bgs-translator/build/
-/tools/bgs-translator/dist/
-/tools/bgs-translator/*.egg-info/
+# Node dependency trees — installed per tool via `npm ci`, never tracked.
+**/node_modules/
 
-# Universal Python dev-artifact excludes — apply at any depth, including inside
-# the materialized plugins/bgs-modding-superpowers/tools/bgs-translator/ tree.
-# These caches are produced by pytest / mypy / ruff and must not ship to
-# end-user vendor clones.
+# Python dev artifacts (pytest / mypy / ruff) — apply at any depth.
 **/__pycache__/
 **/.mypy_cache/
 **/.pytest_cache/
 **/.ruff_cache/
 **/*.egg-info/
-
-# Mirror the bgs-translator source-side build artifact excludes inside the
-# materialized plugin tree, for the same reason.
-/plugins/bgs-modding-superpowers/tools/bgs-translator/build/
-/plugins/bgs-modding-superpowers/tools/bgs-translator/dist/
+*.pyc
 
 # Superpowers skill auto-injected docs (not committed)
 docs/superpowers/
 
-# ILSpy decompilation cache (EFT/SPT assemblies). Derived artifacts, regenerable
-# via ilspycmd -p --nested-directories -o <target> <dll>; too large to commit.
+# ILSpy decompilation cache (EFT/SPT assemblies). Derived, regenerable via
+# ilspycmd -p --nested-directories -o <target> <dll>; too large to commit.
 /external/decompile-cache/
 
 # Vendored SPT archive mirror. The original lives outside the repo at
