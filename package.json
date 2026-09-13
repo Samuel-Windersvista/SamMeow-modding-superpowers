@@ -1,12 +1,11 @@
 {
-  "name": "bgs-modding-superpowers",
+  "name": "spt-modding-superpowers",
   "version": "0.2.0",
   "type": "module",
-  "main": "plugins/bgs-modding-superpowers/.opencode/plugins/bgs-modding-superpowers.js",
-  "files": ["plugins/bgs-modding-superpowers"],
-  "description": "Agentic superpowers for Bethesda Game Studio modpack curation: MCP-driven xEdit conflict audit, MO2 control plane, and runtime install/dev-log skills.",
+  "main": ".opencode/plugins/spt-modding-superpowers.js",
+  "description": "Agentic superpowers for SPT (Single Player Tarkov) modpack curation: MO2 control plane, SPT knowledge-base tooling, and runtime install/dev-log skills.",
   "license": "MIT",
   "repository": "https://github.com/BB-84C/bgs-modding-superpowers",
   "homepage": "https://github.com/BB-84C/bgs-modding-superpowers",
-  "keywords": ["bethesda", "modding", "mo2", "xedit", "modpack", "opencode-plugin", "claude-code-plugin", "codex-plugin", "skills", "mcp"]
+  "keywords": ["spt", "tarkov", "modding", "mo2", "modpack", "opencode-plugin", "skills", "mcp"]
 }

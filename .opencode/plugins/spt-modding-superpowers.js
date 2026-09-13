@@ -1,11 +1,11 @@
-// bgs-modding-superpowers — OpenCode plugin entrypoint
+// spt-modding-superpowers — OpenCode plugin entrypoint
 //
 // Wires three things:
 //   1. config.skills.paths: append <plugin>/skills so OpenCode discovers our SKILL.md files
-//   2. config.mcp.xedit + config.mcp.bgs_kb + config.mcp.mo2:
+//   2. config.mcp.mo2 + config.mcp.spt:
 //                           register the bundled MCP stdio servers
 //                           (node tools/<server>/dist/index.js)
-//   3. first-user-message bootstrap: inject the using-bgs-modding-superpowers SKILL body
+//   3. first-user-message bootstrap: inject the using-spt-modding-superpowers SKILL body
 //                                    into the first user message so the host agent loads
 //                                    the bootstrap on every session start
 //
@@ -23,14 +23,12 @@ const __dirname = path.dirname(__filename);
 const PLUGIN_ROOT = path.resolve(__dirname, '..', '..');
 
 const SKILLS_DIR = path.join(PLUGIN_ROOT, 'skills');
-const XEDIT_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'xedit-mcp', 'dist', 'index.js');
-const BGS_KB_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'bgs-kb-mcp', 'dist', 'index.js');
 const MO2_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'mo2-mcp', 'dist', 'index.js');
 const SPT_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'dist', 'index.js');
-const BOOTSTRAP_SKILL = path.join(SKILLS_DIR, 'using-bgs-modding-superpowers', 'SKILL.md');
+const BOOTSTRAP_SKILL = path.join(SKILLS_DIR, 'using-spt-modding-superpowers', 'SKILL.md');
 
 // Sentinel used to detect already-injected bootstrap so we don't double-inject across reloads.
-const BOOTSTRAP_MARKER = 'EXTREMELY_IMPORTANT_BGS_MODDING_SUPERPOWERS';
+const BOOTSTRAP_MARKER = 'EXTREMELY_IMPORTANT_SPT_MODDING_SUPERPOWERS';
 
 function readBootstrap() {
   try {
@@ -42,7 +40,7 @@ function readBootstrap() {
   }
 }
 
-export const BgsModdingSuperpowersPlugin = async () => {
+export const SptModdingSuperpowersPlugin = async () => {
   const bootstrap = readBootstrap();
 
   return {
@@ -65,32 +63,13 @@ export const BgsModdingSuperpowersPlugin = async () => {
       //     config.mcp surface. Use ??= so user overrides in opencode.json win.
       //     `enabled: true` is explicit per every real-world LOCAL-stdio MCP
       //     precedent observed in public opencode plugins.
-      //
-      //     timeout = 240s because the first xedit_session call lazily starts
-      //     the xEdit daemon via MO2's control plane, which takes ~60-180s.
-      //     Subsequent calls are fast (the toolset is cached for the server's
-      //     lifetime). The default 5s timeout would always trip on first call.
       config.mcp ??= {};
-      config.mcp.xedit ??= {
-        type: 'local',
-        command: ['node', XEDIT_MCP_ENTRY],
-        enabled: true,
-        environment: {},
-        timeout: 240000,
-      };
-      config.mcp.bgs_kb ??= {
-        type: 'local',
-        command: ['node', BGS_KB_MCP_ENTRY],
-        enabled: true,
-        environment: {},
-        timeout: 240000,
-      };
       // mo2-mcp: lazy-bind MCP server (v1.2-pre refactor landed). Server starts
-      // clean with no BGS_MO2_ROOT requirement; agent binds to an MO2 instance
-      // by calling mo2_session({ mo2Root, profile? }). If BGS_MO2_ROOT is set
-      // in the parent env, main() does an eager auto-bind before writing the
-      // ready log. environment: {} passes through the parent env transparently
-      // (no hardcoded paths in the plugin file).
+      // clean with no MO2 root env requirement; agent binds to an MO2 instance
+      // by calling mo2_session({ mo2Root, profile? }). If the MO2 root env var
+      // is set in the parent env, main() does an eager auto-bind before writing
+      // the ready log. environment: {} passes through the parent env
+      // transparently (no hardcoded paths in the plugin file).
       config.mcp.mo2 ??= {
         type: 'local',
         command: ['node', MO2_MCP_ENTRY],
@@ -99,10 +78,9 @@ export const BgsModdingSuperpowersPlugin = async () => {
         timeout: 240000,
       };
       // spt-mcp: file-based MCP server (no daemon, all tools synchronous).
-      // Shorter timeout than xedit because there is no 60-240s daemon startup.
-      // BGS_SPT_KB_ROOT: point at the repo-root knowledge/spt-kb (two levels
-      // up from the materialized plugin tree) so the MCP can find the Forge
-      // archive and index.json.
+      // The KB-root env var points at the repo-root knowledge/spt-kb (two
+      // levels up from the plugin root) so the MCP can find the Forge archive
+      // and index.json.
       // SPT_MCP_HELPER: .NET helper CLI that reads SPT 4.1 server mod DLL
       // metadata (IModMetadata via AsmResolver). Rebuilt with
       // `dotnet build tools/spt-mcp/helper -c Release`.
@@ -116,7 +94,7 @@ export const BgsModdingSuperpowersPlugin = async () => {
         type: 'local',
         command: ['node', SPT_MCP_ENTRY],
         enabled: true,
-        environment: { BGS_SPT_KB_ROOT: SPT_KB_ROOT, SPT_MCP_HELPER: SPT_MCP_HELPER, SPT_IL_HELPER: SPT_IL_HELPER },
+        environment: { SPT_KB_ROOT: SPT_KB_ROOT, SPT_MCP_HELPER: SPT_MCP_HELPER, SPT_IL_HELPER: SPT_IL_HELPER },
         timeout: 60000,
       };
     },
@@ -140,4 +118,4 @@ export const BgsModdingSuperpowersPlugin = async () => {
   };
 };
 
-export default BgsModdingSuperpowersPlugin;
+export default SptModdingSuperpowersPlugin;
