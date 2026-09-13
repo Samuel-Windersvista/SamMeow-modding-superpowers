@@ -14,6 +14,7 @@ $checks = @(
     "tests/bootstrap/verify-skills.ps1",
     "tests/bootstrap/verify-bootstrap-injection.ps1",
     "tests/bootstrap/verify-mcp-surface.ps1",
+    "tests/bootstrap/verify-mcp-entrypoints.ps1",
     "tests/bootstrap/verify-git-hygiene.ps1",
     "tests/bootstrap/verify-templates.ps1"
 )

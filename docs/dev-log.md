@@ -61,3 +61,23 @@ found two breakages the cleanup had introduced; both are fixed.
   `opencode.json` `spt-mcp` entry was a functionally duplicate (and worse-configured)
   registration — it passed none of `SPT_KB_ROOT` / `SPT_MCP_HELPER` / `SPT_IL_HELPER`.
   It has been removed, so both MCP servers are now scoped to this repo only.
+
+## 2026-09-13 — MCP build-artifact policy unified
+
+The two bundled MCP servers disagreed on whether to ship `dist/`:
+`tools/spt-mcp/dist` was tracked (the package had no `.gitignore`), while
+`tools/mo2-mcp/dist` was ignored and its package had no `prepare` script. A fresh
+clone therefore had a dead `mo2` MCP — the plugin points at
+`tools/mo2-mcp/dist/index.js`, which nothing produced.
+
+Unified to "dist is build output, never tracked":
+
+- `tools/spt-mcp/.gitignore` added; `tools/spt-mcp/dist` untracked (26 files).
+- `tools/mo2-mcp/package.json` gains `"prepare": "npm run build"`, matching
+  `tools/spt-mcp`, so a single `npm install` builds each server.
+- New `tests/bootstrap/verify-mcp-entrypoints.ps1` asserts both entrypoints exist,
+  both packages carry a `prepare` script, and neither dist tree is tracked.
+  Wired into `verify-all.ps1` (now 7 checks).
+
+A fresh clone needs one command per server directory (`npm install`) before the
+MCP surface is live, and the suite now fails loudly if that step is missed.
