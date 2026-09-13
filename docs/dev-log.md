@@ -26,3 +26,36 @@ SPT-only OpenCode toolkit carrying the Matt Pocock agent-skills configuration.
 - Owner must rename local environment variables (`BGS_MO2_ROOT` → `MO2_ROOT`, `BGS_MO2_*` → `MO2_*`, `BGS_SPT_KB_ROOT` → `SPT_KB_ROOT`) and provide `MO2_ROOT` / `MO2_HARNESS_ROOT` for the MO2 acceptance scripts.
 - Fresh-session smoke check pending: restart OpenCode, confirm the SPT bootstrap is injected, the SPT skill set is visible, and the `mo2` / `spt` MCP servers respond.
 - Pre-existing MO2 control-plane test failures are not regressions (missing `plugin/README.md`, missing `live-integration.md`, no `pwsh`, Python inline-script issues).
+
+## 2026-09-13 — post-restart smoke check
+
+Restarted OpenCode and verified the SPT-only harness end to end. The smoke check
+found two breakages the cleanup had introduced; both are fixed.
+
+### Found and fixed
+
+- **Runtime dependencies were deleted along with their git index entries.**
+  `git rm --cached` on `tools/spt-mcp/node_modules` (plus the merge that removed
+  it from the index) deleted the directory from disk, and `tools/mo2-mcp/dist`
+  was absent. Both MCP servers could no longer start:
+  `ERR_MODULE_NOT_FOUND: Cannot find package '@modelcontextprotocol/sdk'`.
+  Fixed by `npm install` in `tools/spt-mcp` (138 packages; its `prepare` script
+  re-ran `tsc`) and `npm install` + `npm run build` in `tools/mo2-mcp`.
+  `node_modules` stays untracked — it is regenerable.
+- **The owner's global `opencode.json` pointed `spt-mcp` at the deleted
+  materialized tree** (`plugins/bgs-modding-superpowers/tools/spt-mcp/dist/index.js`).
+  Repointed to `tools/spt-mcp/dist/index.js`.
+
+### Verified
+
+- `mo2-mcp` starts and logs `mo2-mcp ready (session ..., binding=unbound)`.
+- `spt-mcp` starts with no module-resolution errors.
+- The session skill set is the 14 SPT skills, with no BGS skills.
+- The injected bootstrap carries the SPT marker (`EXTREMELY_IMPORTANT_SPT_MODDING_SUPERPOWERS`).
+- `verify-all.ps1` 6/6 PASS; `git status` clean apart from pre-existing owner work.
+
+### Follow-up
+
+- Restart OpenCode once more so the corrected `spt-mcp` path is picked up.
+- Note: the repo plugin also registers `mo2` and `spt` MCP servers, so the global
+  `spt-mcp` entry is redundant — kept for compatibility.
