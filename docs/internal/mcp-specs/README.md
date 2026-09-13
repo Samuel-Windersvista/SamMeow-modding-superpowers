@@ -12,4 +12,4 @@ This directory holds MCP specs and contracts only.
 | `nexus-metadata.md` | **BACKLOG — 仅有设计，未实现**（同上） |
 | `translation-memory.md` | **BACKLOG — 仅有设计，未实现**（同上；SPT 侧翻译需求对应 RELEASE-NOTES 的 `using-spt-translator` deferred 项） |
 
-> 三个 BACKLOG 设计不被任何活跃战线引用。若重启，先确认需求方存在再动工；否则建议未来清理时移入 `docs/archive/`。
+> 三个 BACKLOG 设计不被任何活跃战线引用。若重启，先确认需求方存在再动工；否则建议未来清理时直接删除（原计划的归档目标目录已随 SPT-only 清理移除）。
