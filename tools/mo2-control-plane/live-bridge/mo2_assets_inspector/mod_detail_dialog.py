@@ -3,7 +3,7 @@
 Mirrors MO2's `信息 → 冲突 → 常规` tab from the user's reference screenshots,
 extended with archive-bucket entries (loose + BA2/BSA in one view).
 Layout: three sections on the left, a file-detail panel on the right
-showing per-entry rationale + KB citation.
+showing per-entry rationale.
 
 NOTE: No automated tests for this module - PyQt6 import fails in the
 anaconda dev env. Behavioral verification at Plan B Task 9 manual MO2

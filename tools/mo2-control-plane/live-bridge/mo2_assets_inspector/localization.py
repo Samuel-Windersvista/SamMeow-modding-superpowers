@@ -33,7 +33,6 @@ class Strings:
     column_file_count: str
     column_archive_type: str
     rationale_header: str
-    kb_reference_header: str
     unsupported_game_message: str
 
 
@@ -53,7 +52,6 @@ _ZH_HANS = Strings(
     column_file_count="文件数",
     column_archive_type="来源类型",
     rationale_header="判定依据",
-    kb_reference_header="知识库引用",
     unsupported_game_message=(
         "当前游戏暂未在 mo2-assets-engine 的第一阶段覆盖范围内。"
         "支持的游戏：Skyrim 系列 / Fallout 3 / Fallout NV / Fallout 4 / Starfield。"
@@ -76,7 +74,6 @@ _EN = Strings(
     column_file_count="Files",
     column_archive_type="Source",
     rationale_header="Resolution rationale",
-    kb_reference_header="Knowledge-base references",
     unsupported_game_message=(
         "The active game is not in mo2-assets-engine's Phase 1 coverage. "
         "Supported: Skyrim family / Fallout 3 / Fallout NV / Fallout 4 / Starfield."

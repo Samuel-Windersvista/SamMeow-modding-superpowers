@@ -33,7 +33,6 @@ def test_every_locale_provides_full_string_set(locale: Locale) -> None:
         "column_file_count",
         "column_archive_type",
         "rationale_header",
-        "kb_reference_header",
         "unsupported_game_message",
     ]
     for attr in required_attrs:

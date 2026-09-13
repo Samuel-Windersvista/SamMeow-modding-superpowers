@@ -1,8 +1,7 @@
 """Right-hand file detail panel.
 
-Renders the full resolution rationale + KB citation for one selected entry.
-The body is a plain QTextBrowser (read-only). KB record IDs are displayed
-as plain text for the user to copy and look up.
+Renders the full resolution rationale for one selected entry.
+The body is a plain QTextBrowser (read-only).
 
 NOTE: No automated tests for this module - PyQt6 import fails in the
 anaconda dev env. Behavioral verification at Plan B Task 9 manual MO2
@@ -49,9 +48,6 @@ class FileDetailPanel(QWidget):
             f"Losers:\n{loser_lines or '  (none)'}\n"
             f"\n"
             f"{self._strings.rationale_header}:\n{rationale.short}\n"
-            f"\n"
-            f"{self._strings.kb_reference_header}:\n"
-            + "\n".join(f"  - {rid}" for rid in rationale.kb_record_ids)
         )
         self._browser.setPlainText(body)
 
@@ -62,9 +58,6 @@ class FileDetailPanel(QWidget):
             f"Bucket: {ConflictBucket.NO_CONFLICT.value}\n"
             f"\n"
             f"{self._strings.rationale_header}:\n{rationale.short}\n"
-            f"\n"
-            f"{self._strings.kb_reference_header}:\n"
-            + "\n".join(f"  - {rid}" for rid in rationale.kb_record_ids)
         )
         self._browser.setPlainText(body)
 
