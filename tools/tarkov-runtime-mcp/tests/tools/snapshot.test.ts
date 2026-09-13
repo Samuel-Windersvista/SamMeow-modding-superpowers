@@ -83,6 +83,44 @@ describe("tarkov_snapshot", () => {
     });
   });
 
+  it("快照输出暴露会话来源：默认配置为 username 路径", async () => {
+    const tool = createSnapshotTool(clientWith([pmcProfileFixture()]));
+
+    const result = await tool({ sections: ["profile"] });
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({
+      session: { source: "username", username: "Overseer", profileId: "fake-profile-id" },
+    });
+  });
+
+  it("快照输出暴露会话来源：探针活跃时为 active-probe", async () => {
+    const connection = new FakeConnection(
+      (options) => {
+        if (options.path === "/singleplayer/settings/version") {
+          return versionResponse(VERSION);
+        }
+        if (options.path === PROFILE_ROUTE) {
+          return profileListResponse([pmcProfileFixture()]);
+        }
+        throw new Error(`fake 未预期的路由：${options.path}`);
+      },
+      "127.0.0.1",
+      6969,
+      { activeProfilesResponse: { activeProfiles: ["fake-profile-id"] } },
+    );
+    const tool = createSnapshotTool(fakeClient(connection));
+
+    const result = await tool({ sections: ["profile"] });
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({
+      session: { source: "active-probe", profileId: "fake-profile-id" },
+    });
+  });
+
   it("省略 sections 时默认读取全部已实现 section", async () => {
     const tool = createSnapshotTool(fullClient());
 

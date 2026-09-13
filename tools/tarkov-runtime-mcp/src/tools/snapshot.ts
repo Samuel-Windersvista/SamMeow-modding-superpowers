@@ -7,7 +7,8 @@
 // 行为：
 //   - sections 缺省或空数组 -> 读取全部已实现 section；
 //   - 未知 section -> 结构化 UNSUPPORTED_SECTION（原子拒绝，不发起路由请求）；
-//   - 读取前先执行握手/版本门禁，快照不建立在错误版本上。
+//   - 读取前先执行握手/版本门禁，快照不建立在错误版本上；
+//   - 输出附 `session` 来源（active-probe / username / auto-single），供测试断言与排查。
 // =============================================================================
 
 import { z } from "zod";
@@ -60,7 +61,7 @@ export function createSnapshotTool(client: SptClient): ToolHandler {
       // 握手/版本门禁：确保 server 可达且版本匹配
       await client.connect();
       // 会话获取：session 受限路由要求 PHPSESSID=profileId
-      await client.ensureSession();
+      const session = await client.ensureSession();
       const instances = await client.discover();
       const connection = instances.length > 0 ? instances[0].connection : undefined;
       if (!connection) {
@@ -73,7 +74,15 @@ export function createSnapshotTool(client: SptClient): ToolHandler {
 
       const sections = requested as SnapshotSectionName[];
       const snapshot = await assembleSnapshot(connection, sections);
-      return okEnv(SNAPSHOT_TOOL_NAME, `快照完成：${sections.join(", ")}`, snapshot);
+      return okEnv(SNAPSHOT_TOOL_NAME, `快照完成：${sections.join(", ")}`, {
+        ...snapshot,
+        // 会话来源可观测性：测试自动化需要知道"这次读的是哪个 profile、经哪条路径"
+        session: {
+          source: session.source,
+          username: session.username,
+          profileId: session.profileId,
+        },
+      });
     } catch (error) {
       return toErrorEnvelope(SNAPSHOT_TOOL_NAME, error);
     }

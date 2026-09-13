@@ -27,6 +27,9 @@ const QUESTS_ROUTE = "/client/quest/list";
 const HIDEOUT_ROUTE = "/client/hideout/areas";
 const PROFILE_ROUTE = "/client/game/profile/list";
 
+/** 默认 fake 会话（走 username=Overseer 规则）；快照输出会带上它 */
+const SESSION = { source: "username", username: "Overseer", profileId: "fake-profile-id" };
+
 /** 用路由 -> 响应映射构造 fake client；未映射路由视为测试失败 */
 function clientFor(routes: Record<string, SptResponse>) {
   return fakeClient(
@@ -55,6 +58,7 @@ describe("tarkov_snapshot.traders", () => {
     if (!result.ok) return;
     expect(result.data).toEqual({
       schemaVersion: 1,
+      session: SESSION,
       sections: {
         traders: {
           meta: { source: "route", route: TRADERS_ROUTE, freshness: "live" },
@@ -106,6 +110,7 @@ describe("tarkov_snapshot.quests", () => {
     if (!result.ok) return;
     expect(result.data).toEqual({
       schemaVersion: 1,
+      session: SESSION,
       sections: {
         quests: {
           meta: { source: "route", route: QUESTS_ROUTE, freshness: "live" },
@@ -146,6 +151,7 @@ describe("tarkov_snapshot.hideout", () => {
     if (!result.ok) return;
     expect(result.data).toEqual({
       schemaVersion: 1,
+      session: SESSION,
       sections: {
         hideout: {
           meta: { source: "route", route: HIDEOUT_ROUTE, freshness: "live" },
@@ -187,6 +193,7 @@ describe("tarkov_snapshot.inventory", () => {
     if (!result.ok) return;
     expect(result.data).toEqual({
       schemaVersion: 1,
+      session: SESSION,
       sections: {
         inventory: {
           meta: { source: "route", route: PROFILE_ROUTE, freshness: "live" },
