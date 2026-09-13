@@ -63,7 +63,7 @@ export const TOOL_DEFINITIONS = [
   {
     name: SNAPSHOT_TOOL_NAME,
     description:
-      "读取 SPT server 局外状态并返回确定性快照。sections 可选（本期合法值：profile）；profile section 返回等级/技能/任务进度计数摘要，并标注数据来源路由与新鲜度。未知 section 返回 UNSUPPORTED_SECTION。",
+      "读取 SPT server 局外状态并返回确定性快照。sections 可选（合法值：profile / traders / quests / hideout / inventory），缺省或空数组读取全部；各 section 返回计数型摘要并标注数据来源路由与新鲜度。未知 section 返回 UNSUPPORTED_SECTION。",
     inputSchema: schemaFor(SnapshotInput),
   },
   {
