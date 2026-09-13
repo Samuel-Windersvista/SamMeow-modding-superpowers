@@ -4,7 +4,7 @@
 
 **Blocked by:** 03, 05.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] README describes an SPT modding toolkit and lists the SPT skill and MCP surface
 - [ ] Release notes no longer reference BGS removal-era tooling

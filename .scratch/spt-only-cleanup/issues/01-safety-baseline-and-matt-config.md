@@ -4,7 +4,7 @@
 
 **Blocked by:** None (can start immediately).
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] `archive/bgs-final` tag exists on the pre-cleanup `main` HEAD
 - [ ] `chore/spt-only-cleanup` branch exists and is checked out

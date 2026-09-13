@@ -4,7 +4,7 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] The bootstrap verification entrypoint runs to completion without PowerShell errors
 - [ ] Checks exist for: layout, SPT skill set, bootstrap injection, MCP declaration surface, git hygiene, SPT templates

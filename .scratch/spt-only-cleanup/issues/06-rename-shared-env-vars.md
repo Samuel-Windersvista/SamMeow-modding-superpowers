@@ -4,7 +4,7 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] `BGS_MO2_ROOT` is renamed to `MO2_ROOT` across shared tools and scripts
 - [ ] `BGS_SPT_KB_ROOT` is renamed to `SPT_KB_ROOT` across SPT tools and scripts

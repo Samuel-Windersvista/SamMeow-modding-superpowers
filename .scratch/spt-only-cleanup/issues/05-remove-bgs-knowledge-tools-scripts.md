@@ -4,7 +4,7 @@
 
 **Blocked by:** 03.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] `knowledge/bgs-kb/` is removed
 - [ ] BGS-only tools are removed: xEdit MCP, xEdit hook bridge, BGS KB MCP, BGS archive, BGS Papyrus, BGS translator

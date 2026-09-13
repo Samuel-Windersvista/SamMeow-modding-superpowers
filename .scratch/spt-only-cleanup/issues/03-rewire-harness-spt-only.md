@@ -4,7 +4,7 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Plugin and package renamed to `spt-modding-superpowers` (manifest, entrypoint filename, exported plugin function, bootstrap marker constant, README/release-notes references)
 - [ ] The OpenCode plugin entrypoint injects the SPT bootstrap skill; the BGS bootstrap marker constant and injection path are gone

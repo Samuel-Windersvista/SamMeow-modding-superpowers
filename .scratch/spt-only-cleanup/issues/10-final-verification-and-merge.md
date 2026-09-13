@@ -4,7 +4,7 @@
 
 **Blocked by:** 02, 03, 04, 05, 06, 07, 08, 09.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] The bootstrap verification suite passes end to end
 - [ ] A fresh OpenCode session smoke check is performed and recorded: SPT bootstrap injected, SPT skills visible, no BGS skills, MO2 and SPT MCP reachable

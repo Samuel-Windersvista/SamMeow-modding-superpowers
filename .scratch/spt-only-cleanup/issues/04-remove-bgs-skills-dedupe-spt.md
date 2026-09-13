@@ -4,7 +4,7 @@
 
 **Blocked by:** 03.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] All 12 BGS skills and the BGS bootstrap skill are removed
 - [ ] The generic devlog and changelog skills are removed in favor of the SPT-flavored pair

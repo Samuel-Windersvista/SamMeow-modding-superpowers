@@ -4,7 +4,7 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] All tracked `obj/` and `bin/` build artifacts are untracked and ignored
 - [ ] `external/spt-archive/` is deleted from disk and removed from tracking (its original lives outside the repo)

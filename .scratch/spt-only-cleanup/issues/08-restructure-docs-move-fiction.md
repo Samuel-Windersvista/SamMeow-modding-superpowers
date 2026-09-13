@@ -4,7 +4,7 @@
 
 **Blocked by:** 01.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] `docs/archive/` is deleted
 - [ ] `docs/internal/future-skills/` is deleted
