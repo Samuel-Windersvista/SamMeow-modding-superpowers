@@ -1,51 +1,95 @@
+# Skills invariant: the canonical SPT skill set exists with valid frontmatter,
+# and the BGS skills plus the generic devlog/changelog pair are gone.
+
 $ErrorActionPreference = "Stop"
 
-$requiredPaths = @(
-    "skills/mod-evaluator/SKILL.md",
-    "skills/install-planner/SKILL.md",
-    "skills/conflict-auditor/SKILL.md",
-    "skills/write-dev-log/SKILL.md",
-    "skills/write-release-changelog/SKILL.md",
-    "skills/localization-assistant/SKILL.md",
-    "skills/test-session-guide/SKILL.md"
+. (Join-Path $PSScriptRoot "_assert.ps1")
+
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+$skillsRoot = Join-Path $repoRoot "skills"
+
+$requiredSkills = @(
+    "using-spt-modding-superpowers",
+    "setting-up-spt-modding-environment",
+    "maintaining-spt-modding-environment",
+    "evaluating-spt-mods",
+    "interpreting-spt-mod-instructions",
+    "curating-spt-modpack",
+    "building-spt-modpack",
+    "testing-spt-modpack",
+    "diagnosing-spt-problems",
+    "spt-conflict-audit",
+    "spt-mcp-automation",
+    "writing-spt-mod",
+    "writing-spt-modpack-devlog",
+    "writing-spt-modpack-changelog"
 )
 
-$missing = $requiredPaths | Where-Object { -not (Test-Path $_) }
-if ($missing.Count -gt 0) {
-    throw "Missing skill files: $($missing -join ', ')"
-}
+function Get-Frontmatter {
+    param([string]$Content)
 
-$requiredHeadings = @("## Purpose", "## When To Use", "## Workflow", "## Outputs")
-
-function Get-SectionBody {
-    param(
-        [string]$Content,
-        [string]$Heading
-    )
-
-    $escapedHeading = [regex]::Escape($Heading)
-    $pattern = "(?ms)^$escapedHeading\s*(.*?)\s*(?=^##\s|\z)"
-    $match = [regex]::Match($Content, $pattern)
-
+    $match = [regex]::Match($Content, "(?s)\A---\s*\r?\n(.*?)\r?\n---")
     if (-not $match.Success) {
         return $null
     }
 
-    return $match.Groups[1].Value.Trim()
+    return $match.Groups[1].Value
 }
 
-foreach ($path in $requiredPaths) {
-    $content = Get-Content $path -Raw
-    foreach ($heading in $requiredHeadings) {
-        $sectionBody = Get-SectionBody -Content $content -Heading $heading
-        if ($null -eq $sectionBody) {
-            throw "$path is missing heading: $heading"
-        }
+foreach ($skill in $requiredSkills) {
+    $skillFile = Join-Path $skillsRoot (Join-Path $skill "SKILL.md")
+    if (-not (Test-Path -LiteralPath $skillFile)) {
+        Add-BootstrapFailure "missing required SPT skill: skills/$skill/SKILL.md"
+        continue
+    }
 
-        if ([string]::IsNullOrWhiteSpace($sectionBody)) {
-            throw "$path has an empty section body: $heading"
+    $content = Get-Content -LiteralPath $skillFile -Raw
+    $frontmatter = Get-Frontmatter -Content $content
+    if ($null -eq $frontmatter) {
+        Add-BootstrapFailure "skills/$skill/SKILL.md has no YAML frontmatter block"
+        continue
+    }
+
+    $nameMatch = [regex]::Match($frontmatter, "(?m)^name:\s*(.+?)\s*$")
+    if (-not $nameMatch.Success) {
+        Add-BootstrapFailure "skills/$skill/SKILL.md frontmatter is missing 'name:'"
+    } else {
+        $declaredName = $nameMatch.Groups[1].Value.Trim().Trim('"', "'")
+        if ($declaredName -ne $skill) {
+            Add-BootstrapFailure "skills/$skill/SKILL.md frontmatter name '$declaredName' does not match directory name '$skill'"
         }
+    }
+
+    $descriptionMatch = [regex]::Match($frontmatter, "(?m)^description:\s*(.+?)\s*$")
+    if (-not $descriptionMatch.Success -or [string]::IsNullOrWhiteSpace($descriptionMatch.Groups[1].Value)) {
+        Add-BootstrapFailure "skills/$skill/SKILL.md frontmatter is missing a non-empty 'description:'"
     }
 }
 
-Write-Host "Skill bootstrap checks passed."
+$absentSkillDirs = @(
+    # Generic pair superseded by the SPT-flavored devlog/changelog.
+    "writing-modpack-devlog",
+    "writing-modpack-changelog",
+    # BGS skills whose directory names do not contain "bgs", so the substring
+    # scan below cannot catch them.
+    "maintaining-modding-environments",
+    "interpreting-mod-author-instructions",
+    "xedit-automation",
+    "xedit-conflict-audit"
+)
+
+foreach ($skill in $absentSkillDirs) {
+    $skillDir = Join-Path $skillsRoot $skill
+    if (Test-Path -LiteralPath $skillDir) {
+        Add-BootstrapFailure "skill directory should be removed (BGS or superseded generic): skills/$skill"
+    }
+}
+
+if (Test-Path -LiteralPath $skillsRoot) {
+    $bgsDirs = @(Get-ChildItem -LiteralPath $skillsRoot -Directory | Where-Object { $_.Name -match "(?i)bgs" })
+    foreach ($dir in $bgsDirs) {
+        Add-BootstrapFailure "BGS skill directory should be removed: skills/$($dir.Name)"
+    }
+}
+
+Complete-BootstrapCheck -SuccessMessage "SPT skill set present with valid frontmatter; BGS and generic skills gone."
