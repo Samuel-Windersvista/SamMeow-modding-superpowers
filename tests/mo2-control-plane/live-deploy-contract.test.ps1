@@ -9,13 +9,18 @@ if (-not (Test-Path $deployScriptPath -PathType Leaf)) {
 
 $tempRoot = Join-Path $env:TEMP ("mo2-live-deploy-" + [guid]::NewGuid().ToString("N"))
 $mo2Root = Join-Path $tempRoot "ModOrganizer"
-$pluginsRoot = Join-Path $mo2Root ".artifacts/mo2/plugins"
+$modOrganizerIniPath = Join-Path $mo2Root "ModOrganizer.ini"
+$pluginsRoot = Join-Path $mo2Root "plugins"
 $pluginSupportRoot = Join-Path $pluginsRoot "Mo2AgentControl"
 $bridgeTargetPath = Join-Path $pluginsRoot "mo2_agent_control.py"
 $bootstrapDataRoot = Join-Path $pluginSupportRoot "bootstrap"
 
 try {
     $null = New-Item -ItemType Directory -Path $mo2Root -Force
+    Set-Content -Path $modOrganizerIniPath -Value @(
+        "[Settings]",
+        "lock_gui=true"
+    )
 
     & pwsh -NoProfile -File $deployScriptPath -Mo2Root $mo2Root
     if ($LASTEXITCODE -ne 0) {
@@ -23,11 +28,11 @@ try {
     }
 
     if (-not (Test-Path $pluginsRoot -PathType Container)) {
-        throw "deploy-live-bridge.ps1 should create the plugin root under .artifacts/mo2/plugins"
+        throw "deploy-live-bridge.ps1 should create the plugin root under the caller-provided MO2 root"
     }
 
     if (-not (Test-Path $pluginSupportRoot -PathType Container)) {
-        throw "deploy-live-bridge.ps1 should create the support directory under .artifacts/mo2/plugins/Mo2AgentControl"
+        throw "deploy-live-bridge.ps1 should create the support directory under plugins/Mo2AgentControl"
     }
 
     if (-not (Test-Path $bridgeTargetPath -PathType Leaf)) {

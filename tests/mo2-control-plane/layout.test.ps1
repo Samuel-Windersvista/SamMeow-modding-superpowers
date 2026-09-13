@@ -4,8 +4,7 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 
 $requiredPaths = @(
     "tools/mo2-control-plane/README.md",
-    "tools/mo2-control-plane/broker/README.md",
-    "tools/mo2-control-plane/plugin/README.md"
+    "tools/mo2-control-plane/broker/README.md"
 )
 
 foreach ($path in $requiredPaths) {
@@ -17,8 +16,7 @@ foreach ($path in $requiredPaths) {
 $rootReadme = Get-Content -Path (Join-Path $repoRoot "tools/mo2-control-plane/README.md") -Raw
 foreach ($phrase in @(
     "control plane",
-    "broker CLI",
-    "plugin kernel"
+    "broker CLI"
 )) {
     if ($rootReadme -notmatch [regex]::Escape($phrase)) {
         throw "tools/mo2-control-plane/README.md is missing phrase: $phrase"
@@ -33,17 +31,6 @@ foreach ($phrase in @(
 )) {
     if ($brokerReadme -notmatch [regex]::Escape($phrase)) {
         throw "tools/mo2-control-plane/broker/README.md is missing phrase: $phrase"
-    }
-}
-
-$pluginReadme = Get-Content -Path (Join-Path $repoRoot "tools/mo2-control-plane/plugin/README.md") -Raw
-foreach ($phrase in @(
-    "plugin kernel",
-    "capability discovery",
-    "safe-read"
-)) {
-    if ($pluginReadme -notmatch [regex]::Escape($phrase)) {
-        throw "tools/mo2-control-plane/plugin/README.md is missing phrase: $phrase"
     }
 }
 

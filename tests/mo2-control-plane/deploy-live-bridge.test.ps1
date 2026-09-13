@@ -17,7 +17,7 @@ function New-TestMo2Root {
     )
 
     $root = Join-Path $tempRoot $Name
-    $configRoot = Join-Path $root ".artifacts/mo2"
+    $configRoot = $root
     $iniPath = Join-Path $configRoot "ModOrganizer.ini"
     $pluginsRoot = Join-Path $configRoot "plugins"
     $pluginSupportRoot = Join-Path $pluginsRoot "Mo2AgentControl"
@@ -71,7 +71,7 @@ try {
 
     $mo2Ini = Get-Content -Path $rewriteCase.IniPath -Raw
     if ($mo2Ini -notmatch '(?m)^lock_gui=false$') {
-        throw "deploy-live-bridge.ps1 should normalize lock_gui=false in .artifacts/mo2/ModOrganizer.ini"
+        throw "deploy-live-bridge.ps1 should normalize lock_gui=false in ModOrganizer.ini"
     }
 
     if ($mo2Ini -match '(?m)^lock_gui=true$') {
@@ -111,7 +111,7 @@ try {
     $missingIniCase = New-TestMo2Root -Name "missing-ini-case"
     $missingIniOutput = & pwsh -NoProfile -File $deployScriptPath -Mo2Root $missingIniCase.Root 2>&1
     if ($LASTEXITCODE -eq 0) {
-        throw "deploy-live-bridge.ps1 should fail when .artifacts/mo2/ModOrganizer.ini is missing"
+        throw "deploy-live-bridge.ps1 should fail when ModOrganizer.ini is missing"
     }
 
     $missingIniText = ($missingIniOutput | Out-String)

@@ -12,6 +12,7 @@ $pluginsRoot = Join-Path $tempRoot "plugins"
 $pluginSupportRoot = Join-Path $pluginsRoot "Mo2AgentControl"
 $bootstrapRoot = Join-Path $pluginSupportRoot "bootstrap"
 $bridgeCopyPath = Join-Path $pluginsRoot "mo2_agent_control.py"
+$pythonScriptPath = Join-Path $tempRoot "transport-runtime-harness.py"
 
 try {
     $null = New-Item -ItemType Directory -Path $bootstrapRoot -Force
@@ -89,7 +90,9 @@ summary = {
 print(json.dumps(summary))
 '@
 
-    $output = & python -c $pythonScript $bridgeCopyPath 2>&1
+    Set-Content -Path $pythonScriptPath -Value $pythonScript -Encoding UTF8
+
+    $output = & python $pythonScriptPath $bridgeCopyPath 2>&1
     if ($LASTEXITCODE -ne 0) {
         throw "Importing and probing the deployed bridge should succeed: $($output -join "`n")"
     }
