@@ -15,6 +15,10 @@
     "spt": {
       "command": "node",
       "args": ["${CLAUDE_PLUGIN_ROOT}/plugins/bgs-modding-superpowers/tools/spt-mcp/dist/index.js"]
+    },
+    "tarkov": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/plugins/bgs-modding-superpowers/tools/tarkov-runtime-mcp/dist/index.js"]
     }
   }
 }
