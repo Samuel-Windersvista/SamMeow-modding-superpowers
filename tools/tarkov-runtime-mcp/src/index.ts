@@ -1,9 +1,10 @@
 // =============================================================================
 // tarkov-runtime-mcp — SPT 5.x 运行时状态 MCP server
 //
-// 首版（工单 01）工具面：
+// 工具面：
 //   tarkov_server_status  连接信息 + server 版本 + BEM tag 门禁结果 + 能力自报
 //   tarkov_instances      候选端口探测出的单实例信息
+//   tarkov_snapshot       语义化状态快照（首版 profile section）
 //   raid_status           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
 //   raid_player           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
 //   raid_bots             Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
@@ -31,6 +32,7 @@ import {
   raidPlaceholderEnvelope,
 } from "./tools/raid.js";
 import { ServerStatusInput, createServerStatusTool, type ToolHandler } from "./tools/server-status.js";
+import { SNAPSHOT_TOOL_NAME, SnapshotInput, createSnapshotTool } from "./tools/snapshot.js";
 import { RUNTIME_ERROR_CODES, errEnv, type Envelope } from "./types.js";
 
 const SERVER_NAME = "tarkov-runtime-mcp";
@@ -56,6 +58,12 @@ export const TOOL_DEFINITIONS = [
       "探测候选端口（默认 6969，可经 TARKOV_RUNTIME_MCP_PORTS 覆盖），返回发现的单实例信息（host/port/baseUrl/versionLabel）。不执行版本门禁。",
     inputSchema: schemaFor(InstancesInput),
   },
+  {
+    name: SNAPSHOT_TOOL_NAME,
+    description:
+      "读取 SPT server 局外状态并返回确定性快照。sections 可选（本期合法值：profile）；profile section 返回等级/技能/任务进度计数摘要，并标注数据来源路由与新鲜度。未知 section 返回 UNSUPPORTED_SECTION。",
+    inputSchema: schemaFor(SnapshotInput),
+  },
   ...RAID_TOOL_NAMES.map((name) => ({
     name,
     description: `raid.* 局内状态占位工具（Phase 2 BepInEx Client Bridge）。首版固定返回 CLIENT_BRIDGE_NOT_INSTALLED。`,
@@ -66,6 +74,7 @@ export const TOOL_DEFINITIONS = [
 const AVAILABLE_TOOLS = [
   "tarkov_server_status",
   "tarkov_instances",
+  SNAPSHOT_TOOL_NAME,
   ...RAID_TOOL_NAMES,
 ].join(", ");
 
@@ -75,6 +84,7 @@ export function createDispatcher(
   const handlers: Record<string, ToolHandler> = {
     tarkov_server_status: createServerStatusTool(client),
     tarkov_instances: createInstancesTool(client),
+    [SNAPSHOT_TOOL_NAME]: createSnapshotTool(client),
   };
   for (const name of RAID_TOOL_NAMES) {
     handlers[name] = createRaidPlaceholderTool(name);
