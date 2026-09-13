@@ -53,10 +53,13 @@ Do not use when:
 - The question is an SPT-specific engine fact. Query the spt-kb instead of fossilizing it here.
 - You are tempted to substitute a generic "install normally" checklist for the author's actual instructions.
 
-## Data source: the offline Forge archive
+## Data source: Forge archive (local snapshot; live API for freshness)
 
-All install instructions come from the local archive at
-`knowledge/spt-kb/archive/forge/`. A mod's author 说明 lives in:
+Install instructions come from the local archive at
+`knowledge/spt-kb/archive/forge/`; for mods not in the archive (or recent
+updates), the live Forge API v0 at `https://sp-mod.com/api/v0` exposes the
+same fields (`include=source_code_links,versions`; public, read-only). A mod's
+author 说明 lives in:
 
 | Archive path | What it gives you |
 |---|---|

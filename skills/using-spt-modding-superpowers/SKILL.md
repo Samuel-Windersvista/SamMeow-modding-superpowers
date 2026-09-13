@@ -81,8 +81,13 @@ file. Do not guess directory locations.
 5. **First-run state**: if SPT / MO2 / the mod templates are not yet set up on
    this machine, invoke `setting-up-spt-modding-environment` BEFORE any modpack
    or mod development work.
-6. **Forge is offline.** All mod data comes from the local archive at
-   `knowledge/spt-kb/archive/forge/`. Do not attempt to call live Forge APIs.
+6. **Forge API v0 is LIVE at `https://sp-mod.com/api/v0`** (public, read-only,
+   ~300 req/min). Respect the ToS, cache responses, and send a descriptive
+   User-Agent. The local archive at `knowledge/spt-kb/archive/forge/` remains
+   the offline snapshot -- prefer it for stable lookups; use the live API for
+   freshness (recent updates, new mods, source links). Reference:
+   `https://sp-mod.com/docs/` (OpenAPI spec at `/docs/openapi.yaml`).
+   Refresh tooling: `scripts/spt-kb/` (fetch -> clone -> finalize MANIFEST).
 7. **Paths vary per user.** MO2 install path and SPT install path are
    user-specific. Never hardcode paths. Use environment detection or
    configuration. The `setting-up-spt-modding-environment` skill handles this.

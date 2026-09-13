@@ -23,3 +23,13 @@
 - `tarkov_snapshot` 输出新增 `session`（source / username / profileId）可观测性——测试自动化可断言"这次读的是哪个 profile、经哪条路径"。
 - **live 验证通过（玩家实际游玩中）**：探针路由返回活跃 profileId；零配置快照 `session.source=active-probe`，正确跟随 Samuel——"玩家实时用哪个 profile，MCP 就读哪个"全链路证实。tarkov-runtime-mcp 150/150 绿。
 - 注意：本机 mo2 MCP 连接在 ticket 08 的 run_tool 调用后断开（实例修复经脚本完成）；`snapshot.session` 字段在下次会话重启 MCP 后生效。
+
+## 2026-09-14 — KB 更新：Tushonka wiki 同步 + sp-mod.com 源码采集（近一月 4.1.5）
+
+- **wiki 通道**：克隆 `SP-Tushonka/wiki`（@392e5005，2026-09-11，经代理）→ vendor 至 `knowledge/spt-kb/wiki-tushonka/`（78 文件，2.06MB）；新增 UPSTREAM.md；`sources/repositories.md` 登记源；index.json 新增 64 条（总 205）。
+- **源码通道**：sp-mod.com API v0（`filter[spt_version]=4.1.5` & `filter[updated_between]=2026-08-14,2026-09-14`）→ 271 mod / 297 唯一仓库；批量浅克隆（`git clone --depth 1`，经代理 7890）至 `archive/forge/mods/`（gitignored，不污染仓库）。
+  - 最终 **297/297 全就位**（含 17 条网页 URL 规范化补克隆）；392 个 `_source` 目录共 ~14.7GB；`MANIFEST-sp-mod-2026-09.md` 记录 provenance（mod 名 / id / URL / commit）。
+  - 教训：API 的 `source_code_links` 混有网页 URL（`/tree/<branch>`、`/releases/tag/<v>`），批量克隆前必须规范化（tree/tag → `--branch`）。
+- **旧 wiki 保留**：`wiki/`（sp-tarkov 官方快照）不整体替换——全文 120 处旧路径引用（skills/curated/docs）；两棵树并存，新知识优先查 `wiki-tushonka/`。
+- **技能表述已更新**（Overseer 批准）：`using-spt-modding-superpowers` / `maintaining-spt-modding-environment` / `setting-up-spt-modding-environment` / `evaluating-spt-mods` / `interpreting-spt-mod-instructions` 五处 "Forge is offline" 全部改为 "Forge API v0 在线（sp-mod.com/api/v0，公共只读，~300 req/min，守 ToS）"，本地归档定位为稳定快照。
+- **工具固化**：`scripts/spt-kb/`（fetch → clone → finalize MANIFEST 三步，含 URL 规范化与 dry-run）——供未来重复采集。

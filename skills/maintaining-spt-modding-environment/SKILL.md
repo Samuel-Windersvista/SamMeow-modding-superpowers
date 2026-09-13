@@ -28,9 +28,11 @@ checks, and version-pinning advice.
 
 ## What this skill does NOT cover (removed from the BGS lineage)
 
-- **No Nexus credential management.** Forge is offline; there is no Nexus API
-  key, no OAuth token, no `meta.ini` update-state refresh. Mod metadata comes
-  exclusively from the local archive at `knowledge/spt-kb/archive/forge/`.
+- **No Nexus credential management.** There is no Nexus API key, no OAuth
+  token, no `meta.ini` update-state refresh. Mod metadata comes from the local
+  archive at `knowledge/spt-kb/archive/forge/` or, for freshness, the live
+  Forge API v0 at `https://sp-mod.com/api/v0` (public, read-only; respect the
+  ToS and rate limit).
 - **No xEdit.** There are no plugin records, no load-order files, no xEdit
   daemon to maintain.
 - **No xSE / script-extender update cascade.** SPT client mods are BepInEx
@@ -97,9 +99,11 @@ read knowledge/spt-kb/index.json
 ## Cache / archive hygiene (Forge snapshot)
 
 The Forge snapshot under `knowledge/spt-kb/archive/forge/` is a **point-in-time
-offline archive**. Its tools (`snapshot.ps1`, `fetch-versions.ps1`,
-`fetch-releases.ps1`, `build-index.ps1`) were for the live API, which is now
-offline — do not re-run them expecting fresh data.
+archive**. The old BGS-era scripts (`snapshot.ps1`, `fetch-versions.ps1`,
+`fetch-releases.ps1`, `build-index.ps1`) targeted the former Forge host and are
+obsolete — do not re-run them. The current Forge host is `sp-mod.com` (API v0
+live); refresh deliberately via `scripts/spt-kb/` (fetch -> clone -> finalize
+MANIFEST).
 
 Hygiene policy:
 
@@ -115,7 +119,9 @@ Hygiene policy:
   get explicit approval. Preview with a dry-run listing first.
 
 If the archive is missing entirely (fresh clone), restore it from the plugin
-distribution or a backup rather than re-fetching from the dead API.
+distribution or a backup; the live API (`sp-mod.com/api/v0`) can rebuild
+metadata, but source clones only come from the repo URLs recorded in a
+MANIFEST.
 
 ## Template restoration
 
@@ -198,8 +204,10 @@ to `comments=` by default.
 
 - Never write directly into the SPT install or vanilla EFT install. Any
   game-local change goes through an MO2 mod overlay or overwrite surface.
-- Do not re-run the Forge snapshot scripts expecting live data; the API is
-  offline. The archive is a snapshot to be preserved, not refreshed.
+- Do not re-run the obsolete BGS-era Forge scripts (`snapshot.ps1` etc.); the
+  live API is now `sp-mod.com/api/v0` — use `scripts/spt-kb/` for deliberate
+  refreshes. The local archive is a snapshot to be preserved, not blindly
+  re-fetched.
 - Do not delete Forge source clones (`mods/<id>_source/`) — they are the only
   surviving source copy.
 - Do not prune archive content without user consent and a dry-run listing.

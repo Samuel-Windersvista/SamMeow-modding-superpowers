@@ -1,0 +1,112 @@
+---
+title: Performance Tuning
+description: Tips for improving FPS and stability.
+published: true
+date: 2026-09-09T21:52:35.692Z
+tags: guide, performance
+editor: markdown
+dateCreated: 2026-08-08T11:23:21.704Z
+---
+
+> This page applies to any SPT version
+{.is-info}
+
+SPT's performance will generally be worse than a live PVP or online PVE raid, where bot AI logic (scavs, PMCs, bosses) is running on official game servers. SPT and local PVE runs all of the bot AI logic locally on your PC, which has a significant impact on your performance due to severe CPU bottlenecking.
+
+This manifests as low usage of both your GPU and CPU. Your GPU cannot run at full power because it's busy waiting on instructions from your CPU, and your CPU cannot run at full power because it has to slowly process all the bots. To see this in action, disable bots in either Pre-Raid Settings, or the bot spawning mod you installed.
+
+CPUs with powerful single-threaded performance will improve your in-game FPS the most. AMD's X3D CPUs are optimal for this reason.
+
+## Optimisations
+- Use [Waypoints](https://sp-mod.com/mod/827/waypoints-expanded-navmesh) to optimise AI pathfinding.
+- Use [VRAM Cleaner](https://sp-mod.com/mod/2173/vram-cleaner) to free up VRAM usage of your GPU.
+- If using [Dynamic Maps](https://sp-mod.com/mod/1431/dynamic-maps) disable the minimap.
+- Use [PIP Disabler](https://sp-mod.com/mod/2667/picture-in-picture-disabler)^4.0^.
+	- [DERP](https://sp-mod.com/mod/2200/dynamic-external-resolution-patch-derp)^4.0^ is another mod that help the same issue, but [see here](/SPT_40/Known_Mod_Issues_40#screen-flickers-black-when-using-derp) before using it.
+- Set vaulting from `Auto` to `Press` in the in-game settings.
+- Disable `Nvidia Reflex` and `V-Sync` in the graphics settings.
+- Set your texture quality to `Low` or `Medium`.
+- Use `Low texture mode for Streets` to further minimise GPU memory usage.
+- If you're using Vulkan on Linux or DXVK on Windows, do not use the `Unheard` menu background.
+- Remove mods that add new functions to AI.
+  - As bots are the main cause of performance issues, mods that add new functions to them will impact performance.
+- Use [AI Limit](https://sp-mod.com/mod/1945/ai-limit)^4.0^.
+  - AI Limit works by disabling distant AIs. This will have an impact on gameplay, but will improve performance.
+  - Some mods are incompatible with AI Limit.
+  - [Questing Bots](https://sp-mod.com/mod/1109/questing-bots)^4.0^ already includes an AI limiter. Use it instead if you have it installed.
+- Tweak your bot spawning mod to spawn less bots.
+  - Less bots mean less demand on your system, but it will make raid feel "less alive" if lowered too much.
+
+## Headless client
+
+> While we provide support with [Project Fika](https://sp-mod.com/mod/2326/project-fika) installed, we do not offer support for the mod itself. If your issue is due to Fika, we ask that you seek support from the Project Fika team.
+[Project Fika's Wiki](https://wiki.project-fika.com/) contains solutions to frequently encountered issues. If you require further support, you can receive it from Project Fika's [Discord server](http://project-fika.com/discord). Their knowledgeable team will be happy to help you.. 
+{.is-info}
+
+As stated in the introduction, the main performance impact on your game is bots. The game does not efficiently utilise your system resources, using the same CPU thread to process bots and render your game. When you play an online raid in the official game, all bot processing happens on official game servers, letting your CPU "concentrate" on rendering the game. If your game is not processing the bots, SPT's performance becomes much closer to the retail game. You should then become GPU bottlenecked, so your graphics will become the primary source of your performance.
+
+[Fika](https://sp-mod.com/mod/2326/project-fika) allows you to host a raid on a different computer as the one you're playing on. This lets you recreate the conditions of a live raid while still using SPT. To set up a headless client, [follow this guide](https://project-fika.gitbook.io/wiki/advanced-features/headless-client).
+
+
+It's also possible to use it to the raid on the same computer as the one you're playing on, letting one part of your CPU render the game, while another processes the bots. It's not necessary to use a program like Process Lasso for this. Please note that **support from Project Fika is limited if you choose to run the headless client on the same PC where you are playing SPT**. This is not the officially supported configuration and may lead to:
+- Performance degradation.
+- Increased incidence of crashes.
+- Significant increase in page file usage.
+- General instability that may adversely affect the entire PC or operating system.
+
+
+## Further tweaks
+- You will see minor improvements by changing your graphic settings. Follow any graphics guide for the game.
+- In the case you're severely GPU limited, [CWX's MegaMod](https://sp-mod.com/mod/1454/cwx-megamod)'s `GrassCutter` and `EnvironmentEnjoyer` features might help your performance.
+- Enabling Nvidia's `Smooth motion` (for 40 and 50 series GPUs), or AMD's `Fluid Motion Frames` for the game will let your GPU interpolate extra frames, using the unused part of your GPU.
+  - If neither are available to you, use [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling)'s Frame Generation.
+  - Any form of frame generation will result in some increase in latency.
+- For further tweaks and discussion, visit the [Optimization Megathread](https://discord.com/channels/875684761291599922/1163777314862149683) in our [Discord server](https://discord.sp-tushonka.com/).
+
+## Pagefile
+
+The pagefile in Windows is used as "storage" for your RAM. If your RAM is filling up, Windows will start moving files to and from it. Even an SSD will be much slower than RAM, hence why it's used sparingly. Windows should automatically increase it as required. 
+**It's recommended to have at least 50GB free on your drives for the pagefile and any other caching your system might need.**
+
+Your pagefile should be set to be automatically managed by Windows. To check if it is:
+
+1. Press <kbd>Win</kbd> and search for "View advanced system settings" and open the link. 
+2. Under `Performance`, go into `Settings`, then the `Advanced` tab.
+3. Under `Virtual memory` press `Change`.
+4. Ensure you have `Automatically manage paging file size for all drives` enabled.
+
+<br>
+
+However if you have mixed storage devices (M.2 SSD, SATA SSD and a HDD) you can set the pagefile to use the fastest drive you have available:
+
+1. Follow steps 1-3 from the above list.
+2. Untick `Automatically manage paging file size for all drives`.
+3. Select your fastest drive and set it to `System managed size`.
+4. Select your slower drives and set them to `No paging file`.
+
+<br>
+
+`RAM Cleaner Fix` at best won't help you with any issues you might have, and at worst will cause your pagefile to be overused, which will instead cause issues. You shouldn't use it.
+
+**Manually setting a fixed pagefile size is not recommended.** Ensure the drives have sufficient free space available instead. We recommend a minimum of 50GB, but more is better.
+To make space on your drive, we recommend [WizTree](https://www.diskanalyzer.com/) to find files you can delete, and [CompactGUI](https://compactgui.org/) for reducing the size of files you can't delete.
+
+## Boot.config
+Your `boot.config` file is located in `[game folder]\EscapeFromTarkov_Data`. 
+Editing it brings **no performance improvements**.
+By default, it contains this:
+
+```
+gfx-enable-gfx-jobs=1
+gfx-enable-native-gfx-jobs=1
+wait-for-native-debugger=0
+hdr-display-enabled=0
+gc-max-time-slice=3
+single-instance=
+build-guid=[some ID]
+```
+
+That's what it should look like to avoid any issues.
+
+# See also
+[System Requirements](/SPT_4x/system-requirements)

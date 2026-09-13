@@ -1,0 +1,141 @@
+---
+title: FAQs for SPT 4.1
+description: Answers to frequently asked questions.
+published: true
+date: 2026-09-10T04:57:42.180Z
+tags: 
+editor: markdown
+dateCreated: 2026-08-08T15:06:51.667Z
+---
+
+> This page applies to SPT version `4.1`
+{.is-info}
+
+# Quick troubleshooting tips
+- Do not install mods until you've launched SPT at least once. Verify your SPT install works, then install mods.
+- Do not install out of date mods.
+- Do not install multiple mods at once (unless they're dependencies). Install mods one at a time or in small batches. That way when something goes wrong, you'll know exactly what mod is responsible.
+- Read mod pages. Not only is it just common courtesy to read the mod page __before__ asking for help, chances are the mod page has exactly the information you need. What the mod does, how to install it, how to use it, and known issues or incompatibility with other mods.
+
+- "I'm still having issues and it wasn't the last mod I installed, what do I do?" 
+Start removing mods one at a time, or if you have a lot of mods, follow the [50/50 Method](/SPT_4x/5050-method). When you've identified the mod responsible, check the mod page to see if it's actually an issue or an intended feature. Check the comments section to see if anyone else reported the same problem you're experiencing. 
+If none of that helps, then it's time to create a support ticket. Join our [Discord Server](https://discord.sp-tushonka.com/) and read through the [#support-guidelines](https://discord.com/channels/875684761291599922/1172733248317694022) for instructions.
+
+
+## What client version of the game is SPT 4.1 running?
+Version `0.16.9.5.40743`, released 22nd October 2025.
+
+## Can I use my profile and mods from 4.0?
+***If*** the `4.0` profile was ***un-modded***, yes. Otherwise a new profile will be required. None of your `4.0` mods are compatible.
+See the guide on [Updating SPT](/SPT_4x/Updating_SPT) for more details.
+
+## I miss 4.0, can I re-download it?
+Yes. Simply select `4.0` in the SPT Installer. See the [Installation Guide](/SPT_4x/Installation_Guide) for instructions.
+
+## When is (insert mod here) going to update to 4.1?
+Nobody knows when certain mods are going to update, not even the authors themselves. Do not pester mod authors about updates to their mods.
+
+## Why are `SPT.Launcher` and `SPT.Server` shortcuts?
+SPT files were relocated in SPT 4.0 for better modding support. The actual exe files are in your `\SPT_Runtime` folder, and the installer creates shortcuts in your main folder for your convenience.
+
+## Where is my `user` folder?
+Also in `\SPT_Runtime`.
+
+## Will a mod marked compatible for `4.1.X` work on future versions of `4.1`?
+Mods made for previous hotfix versions should work on the latest version. Those that don't might have received an update to address that.
+Mods known to be incompatible with be stated in [Known Mod Issues for 4.1](/SPT_41/Known_Mod_Issues_41).
+For an explanation of how SPT versions work and how to update your SPT, read through the [Updating SPT](/SPT_4x/Updating_SPT>) Wiki page.
+
+## How much free space is necessary to install SPT?
+This is the current space requirements (compounding) to install SPT:
+- Patcher: 8GB (Always `C:\` drive)
+- Client: 70GB
+- Extract/Copy Patcher: 14GB
+- Post-patcher: ~35GB
+
+So while the final install size is ~60GB, the maximum allocated for SPT and associated install files *during the install process* is ~100GB combined.
+
+## Bot spawns
+SPT uses the game's PvE bot spawning system. Bots will continuously spawn up to a map-specific limit. When enough are killed, more will spawn to replace them. Bot spawns aren't checked for the distance to you or other bots which can let bots can spawn next to you. 
+Use a bot spawning mod like [ABPS](https://sp-mod.com/mod/2097/abps-acids-bot-placement-system) to change this system.
+
+## SPT `5.0` for Live `1.1`
+SPT wasn't going be updated to `1.0` and beyond. However, recent developments have changed that. SPT `5.0` is in development for version `1.1` of the game.
+### Will all content from the `1.0` release be included?
+Yes.
+### Will mods made for `4.0` or `4.1` work on `5.0`?
+No.
+### Will `4.1` stop being supported?
+No. `4.1` is the best version of SPT released for modding. It will remain indefinitely available and supported even after the release of `5.0`.
+### Will there be as many mods for `5.0` as there are for `4.1`?
+Definitively not. With `1.0` the game switched over to IL2CPP, which will make client mods extremely difficult to make.
+### What is IL2CPP?
+It's a different way of compiling Unity games. The Live game switched over to it for performance improvements and anti-cheat benefits. As a result, it makes development of SPT for it harder.
+### Should I pester mod authors to update their mods for `5.0`?
+**Absolutely not**. Most mod authors will not be porting or making mods for `5.0`. **Anyone pestering mod authors about mod updates will receive warnings, removals, or bans based on their behaviour.**
+
+<br>
+
+
+## Need space on your drive? Don't play live?
+After you install SPT, you cannot completely uninstall your retail copy, but you can delete the `_Data` folder from your live game folder if you really need the space.
+
+You **will** have to validate files through the retail game launcher if you need to reinstall SPT again by going into the launcher's `Game Settings` and clicking on `Integrity check`. 
+On Steam right click the game and open `Properties...`, and in `Installed Files` press `Verify integrity of game files`.
+
+## Do I need to keep my server running to get my insurance back?
+**No.**
+
+SPT uses your system clock for things like insurance, crafts, upgrades, etc. When one of these timers start, a completion timestamp will be generated. 
+When you start your server, and load a profile, it will automatically compare your current system clock to the completion timestamp and then update the timer. 
+Once your system clock matches or surpasses the timestamp that timer will mark as complete and you will receive the outcome.
+
+*Once insurance is complete, the claim timer will only start on your next login.*
+
+This is so you do not need to keep your `SPT.Server.exe` open while you are not playing.
+
+## Server Information Center (SIC)
+SPT 4.1 added the Server Information Center which is a tool for modifying your SPT server. It's accessible from the SIC button in the SPT Launcher or from https://127.0.0.1:6969/. Your SPT Server needs to be running to access it.
+For the common user the most useful sections are:
+- Database browser: See all items from the vanilla game and mods. This includes their ID.
+- Config editor: Modify the base SPT configs. Some mods also register their configs to be editable through it in the "Mods" tab.
+- Profile control: Modify your profiles. This includes experience, skills, hideout, quests, traders and prestige. Items can be added through [Commando](/SPT_4x/SPT_and_Commando_Bots).
+- Mod pages: Some mods register their config pages in the SIC for easy access.
+
+## Using 7-Zip
+7-Zip is the recommended tool for opening archives. Unlike WinRAR or Windows, it will not randomly corrupt the extracted files.
+You can download and install 7-Zip from [here](https://www.7-zip.org/).
+### To set 7-Zip as the default program for opening archives:
+1. Right click on a mod archive (`.7z`, `.zip`, `.rar`) and click `Open with`.
+  - On Windows 11, you might need to click on `Show more options`.
+2. Click `Choose another app`.
+3. Select `7-Zip File Manager` and `Always`.
+  - If 7-Zip is not on the list, click `Choose an app on your PC`, navigate to `C:\Program Files\7-Zip` and select `7zFM.exe`.
+
+For a modern take on 7-Zip, try [NanaZip](https://github.com/rescenic/nanazip).
+
+
+# Known Issues
+- [Known Live Issues for SPT 4.1](/SPT_41/Known_Live_Issues_41)
+- [Known SPT Issues for SPT 4.1](/SPT_41/Known_SPT_Issues_41)
+- [Known Mod Issues for SPT 4.1](/SPT_41/Known_Mod_Issues_41)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

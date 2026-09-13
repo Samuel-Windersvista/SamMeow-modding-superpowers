@@ -1,0 +1,52 @@
+---
+title: Mod Types
+description: Learn the difference between server mods and client mods.
+published: true
+date: 2026-08-08T16:06:58.427Z
+tags: guide, mods
+editor: markdown
+dateCreated: 2026-08-08T11:23:17.930Z
+---
+
+> This page applies to SPT version `4.0` and `4.1`
+{.is-info}
+
+
+SPT mods are divided into two categories: server mods, and client mods. Server mods, which are installed in the `[game folder]\SPT_Runtime\user\mods` folder in SPT `4.1` and in `[game folder]\SPT\user\mods` in SPT `4.0`, and client mods, which are installed in the `BepInEx` folder.
+
+## Server mods
+Server mods interact with the SPT server, which handles everything a live game server would: your profiles, traders, quests, items, the flea etc, etc. While less "powerful" than client mods, they still let mod authors create custom traders, quests, weapons and items. They can also tweak things like insurance rates, skill gain or bot spawning.
+
+Server mods are installed in the `\user\mods` folder. They are configured either by `config` files, or by a mod-included configuration tool. **Your game and server must be closed** to configure server mods.
+
+Most server mods can be added to an existing profile. However, **removing some mods might be impossible without making a new profile**. Mods that add new traders, quests, or items fall under that category. Always **read the modpage**, as the author should specify if a mod is unsafe to remove from a profile. See the section on [Mods](/SPT_4x/Profiles#mods) for a "last resort" to fix a profile with those mods removed.
+
+Only server mods will show up in your Server console and Launcher.
+
+Server mods are written in C# as of SPT `4.0`.
+
+## Client mods
+
+Client mods interact directly with the game. They are capable of changing anything in it given enough effort. The most comprehensive mods are usually client mods. They are capable of completely altering bot behaviour, adding new animations and mechanics or adding new elements to the HUD.
+
+Client mods are installed in the `\BepInEx\plugins` folder. Few mods also include a `prepatcher` file that goes into the `\BepInEx\patchers` folder. The vast majority of client mods are configured from the <kbd>F12</kbd> menu in-game. Some have a dedicated button for opening their configuration menu. Few include config files inside `Bepinex\plugins` for manual editing. Changes made in the <kbd>F12</kbd> menu should apply immediately to your game unless the setting states otherwise.
+
+Client mods will only show up in your <kbd>F12</kbd> menu if they have settings to configure. Some client mods don't, which means there's no good way to check if they are installed and running or not, except to see if they do what they are meant to.
+
+Nearly all client mods can be added to an existing profile. Always **read the modpage**, as the author should specify if a mod is unsafe to remove from a profile.
+
+All client mods are written in C#.
+
+## Combination mods
+Some mods include both a server and a client component. Some changes are easier to make in one or the other. While you can configure the client-side settings in the <kbd>F12</kbd> menu, they can have separate config files inside their folder in `user\mods`. 
+
+## Making mods
+The easiest mods to start with are server mods. With basic knowledge of C# you can open any of the provided [mod examples](https://github.com/sp-tarkov/server-mod-examples) and make your mod from them. See the [Modding Resources](/modding/Modding_Resources) page for more tools and information to get started.
+
+The best place to get guidance is in our [Discord server's](https://discord.sp-tushonka.com/) [`#mod-development`](https://discord.com/channels/875684761291599922/875803116409323562) channel. Note that it's a channel dedicated only to mod developers, not users. Make best effort to describe the issue you have in detail, provide a snippet of the code you're working on, and one of the many knowledgeable modders will be happy to help you.
+
+# See also
+[Installing Mods](/SPT_4x/Installing_Mods)
+[Uninstalling Mods](/SPT_4x/Uninstalling_Mods)
+[Modding Resources](/modding/Modding_Resources)
+[Profiles](/SPT_4x/Profiles)

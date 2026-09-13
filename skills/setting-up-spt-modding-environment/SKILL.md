@@ -18,8 +18,10 @@ This is the first-run bootstrap. Use it when:
 
 Target version: **SPT 4.1** (final locked version). SPT 3.11 materials are
 reference-only. The mod management layer is **MO2** — retained from the BGS
-lineage. There is **no xEdit** in this ecosystem, and **Forge is offline**: all
-mod data comes from the local archive at `knowledge/spt-kb/archive/forge/`.
+lineage. There is **no xEdit** in this ecosystem. The Forge API v0 is LIVE at
+`https://sp-mod.com/api/v0`; the local archive at
+`knowledge/spt-kb/archive/forge/` remains the offline snapshot for stable
+lookups.
 
 ## Hard guardrails
 
@@ -332,8 +334,10 @@ dev-log / changelog steps need to pass.
 - **Expecting an xEdit daemon to exist.** There is no xEdit in the SPT
   ecosystem. Mod analysis goes through the `spt` MCP / the conflict taxonomy,
   never through plugin-record tooling.
-- **Trying to hit the live Forge API.** Forge is offline. All mod data comes
-  from `knowledge/spt-kb/archive/forge/`.
+- **Trying to hit the Forge API without the proxy / rate-limit discipline.**
+  Forge API v0 is live at `https://sp-mod.com/api/v0` (public, read-only,
+  ~300 req/min; cache responses, respect the ToS). The local archive at
+  `knowledge/spt-kb/archive/forge/` stays the stable snapshot.
 - **Starting MO2 with `Start-Process -WindowStyle Hidden`** (or any other
   invisible/background mode). Always use the `start-mo2.ps1` helper, which
   forces a visible window.

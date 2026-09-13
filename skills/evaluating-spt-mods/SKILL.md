@@ -55,10 +55,13 @@ Do not use when:
 - The pack 风格 has not been declared; first declare it via `curating-spt-modpack` to name the axis being judged.
 - You are tempted to replace judgment with a generic popularity/recency checklist. This framework is anti-checklist: situational thought over rules.
 
-## Data source: the offline Forge archive
+## Data source: local Forge archive (+ live API for freshness)
 
-Forge is offline. ALL mod data comes from the local archive at
-`knowledge/spt-kb/archive/forge/`. Do not attempt to call live Forge APIs.
+The local archive at `knowledge/spt-kb/archive/forge/` is the primary, stable
+source (metadata + source clones). The Forge API v0 is LIVE at
+`https://sp-mod.com/api/v0` (public, read-only, ~300 req/min; respect the ToS,
+cache responses) — use it for freshness: recent updates, new mods, source
+links (`include=source_code_links`). Refresh tooling: `scripts/spt-kb/`.
 
 | Archive path | What it gives you |
 |---|---|

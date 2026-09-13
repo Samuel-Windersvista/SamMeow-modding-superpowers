@@ -1,0 +1,64 @@
+---
+title: How SPT Works
+description: The basics of how SPT works.
+published: true
+date: 2026-09-11T21:37:53.431Z
+tags: 
+editor: markdown
+dateCreated: 2026-08-08T11:22:54.936Z
+---
+
+> This page applies to any SPT version
+{.is-info}
+
+## Installation
+<div style="margin-top: 20px;"></div>
+<img src="/how_spt_works/spt_installer.png" alt="SPT installer" width=800 style="display: block; margin: 0 auto;">
+<div style="margin-top: 10px;"></div>
+
+- The [SPT installer](https://sp-mod.com/installer) makes a copy of your game client files, and if necessary, automatically downgrades them to an older version.
+- You can select which version of SPT you want to install in it.
+- Each SPT version is made for a specific version of the game. You can see what version is used on that SPT version Release page.
+- This means that, once installed, SPT is completely seperate from your retail game copy files. You can update the retail game as much as you want, and it will not affect your SPT install.
+	- After you install SPT, you cannot completely uninstall the retail game, but you can delete the `_Data` folder from your live game folder if you really need the space.
+	- If you own the game through Steam you will need to disable auto-updates to prevent Steam from re-downloading said folder.
+- Once installed, you can freely copy, move or delete your SPT install.
+	- If you make a copy of your SPT, you will need to tweak the shortcuts inside it, as they will be pointing towards the original SPT folder.
+- The SPT developers need to make a new SPT version to include new content released for the retail game. No deadline is given, but it usually takes several month. A new SPT version is usually announced a week before release.
+
+For a guide on installing SPT, see the [Installation Guide](/SPT_4x/Installation_Guide) page.
+
+## Can I get banned?
+- You cannot get banned for using SPT so long as you don't run SPT and the live game at the same time, that includes the launcher.
+	- Don't install SPT to the same folder as your retail game copy.
+	- Don't brag to the retail game devs or flaunt it in their Discord while screaming your Live username.
+- You can play the official retail game whenever you want so long as you're not also running SPT.
+- We recommend you do not stream SPT. The Live devs have struck down channels, and might go out of their way to issue a game ban if your account names match your Live. 
+
+We have no verified reports of people being banned from the retail game just for playing SPT. Many SPT developers would be banned on Live by now if this were true.
+
+## Updates
+
+- Your SPT can be updated between hotfix versions (e.g.: `4.0.1` → `4.0.4`) by simply applying the new release files to your existing SPT install. There is no need to install a new copy of SPT.
+- You cannot update an older version of SPT (e.g.: `4.0.13` → `4.1.0`). You have to install a new copy of SPT. You don't need to delete your old install.
+- Your profiles will work on a new hotfix version.
+- All mods made for an older hotfix version should work on a newer one. So a mod made for `4.0.0` should work on `4.0.4`.
+- Mods not made for the version of SPT you have installed will not work. A mod made for `3.11.4` will not work on `4.0.4`.
+
+For a guide on updating SPT, see the [Updating SPT](/SPT_4x/Updating_SPT) page.
+
+## In-game
+
+- When creating a profile, you can choose any edition you want. It's not limited to the edition you bought.
+- SPT has all the functionality of the retail game's PvE mode:
+	- All quests, items and traders are available (for the game version that SPT is using).
+	- Flea market is emulated with randomly generated offers.
+	- All progress you make is saved on a raid's end.
+- AI PMCs will gain better gear as you level up.
+- SPT the practice raid system to work. This means that you're always running a "practice raid", however your loot and quest progress will get saved.
+- Practice mode's settings will apply to your raids.
+- If you <kbd>Alt</kbd> + <kbd>F4</kbd> or crash in the middle of your raid, no progress will be saved. It will be as if the raid never happened.
+- You do not need to have your SPT server running for insurance, flea, or Hideout crafts to continue. Once you reopen SPT, those will "catch-up" to where they should be.
+
+# See also
+[Beginner's Guide](/Beginners_Guide)
