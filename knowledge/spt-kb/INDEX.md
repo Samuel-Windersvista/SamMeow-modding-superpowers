@@ -16,6 +16,9 @@
 | 4.1.5 源码审查报告（bug/优化） | `curated/operations/415-source-review-report.md` | [4.1] |
 | 3.11 服务端实现对照 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code`（SPT-AKI 3.11.5-Live-In-Norvinsk-Edition，基线 3.11.x） | [3.11] |
 | 3.11 服务端 API 笔记（源码提炼） | `curated/api-notes-3.11/`（DI/路由/mod 加载/config/数据库/存档） | [3.11] |
+| 5.0 服务端源码（开发线） | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code`（`5.0x-dev`，SptVersion 5.0.0，目标 EFT 1.1.5.0.47242） | [5.0] |
+| 5.x 源码核实与进展 | `curated/operations/5xx-source-verification.md`（真伪判定/与 4.1 差异/克隆记录/进展） | [5.0] |
+| 5.0 服务端 API 笔记（源码提炼） | `curated/api-notes-5.0/`（DI/路由/mod 加载/能力面 API/config/数据库/存档；**含 UNSTABLE 标记**） | [5.0] |
 
 ## 写客户端 mod (Client Mod / BepInEx)
 
@@ -25,6 +28,7 @@
 | 官方客户端模块源码 | `external/spt-archive/modules/` | [4.1] |
 | 4.0→4.1 客户端迁移 | `wiki/SPT_41/Client_40_to_41.md` | [4.1] |
 | 4.1 类名映射（混淆对照） | `wiki/SPT_41/modding/client/Class_Name_Mappings.md` | [4.1] |
+| EFT 1.1.5 类名清单与 4.1→1.1.5 对照 | `docs/eft-1.1.5-类名映射重建报告.md` + `archive/eft-1.1.5/`（含 UNSTABLE 性质） | [5.0] |
 | 4.1 枚举扩展 | `wiki/SPT_41/modding/EnumExtensions.md` | [4.1] |
 | dnSpy 调试教程 | `wiki/modding/tutorials/debug_dnSpy.md` | [通用] |
 | 示例代码 | `external/spt-archive/mod-examples/` | [3.11] |

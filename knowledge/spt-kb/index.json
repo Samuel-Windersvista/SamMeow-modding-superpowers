@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07",
+ "generated": "2026-09-13",
  "schema_version": 1,
  "entries": [
   {
@@ -1622,6 +1622,116 @@
       ],
       "domain": "server",
       "topic": "save-profile",
+      "source": "curated"
+     },
+     {
+      "path": "curated/operations/5xx-source-verification.md",
+      "title": "SPT 5.x 源码核实与进展（5.0x-dev）[5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "operations",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/README.md",
+      "title": "SPT 5.0 服务端 API 笔记（源码提炼）",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "index",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/architecture-map.md",
+      "title": "SPT 5.0 服务端架构图 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "architecture",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/mod-loading.md",
+      "title": "Mod 加载流程笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "mod-loading",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/di-container.md",
+      "title": "DI 容器笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "di",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/http-routing.md",
+      "title": "HTTP 路由笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "routes",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/modding-api.md",
+      "title": "Mod 能力面 API 笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "modding-api",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/config-system.md",
+      "title": "配置系统笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "config",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/database-structure.md",
+      "title": "数据库结构笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "database",
+      "source": "curated"
+     },
+     {
+      "path": "curated/api-notes-5.0/save-profile.md",
+      "title": "存档（Profile）笔记 [5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "server",
+      "topic": "save-profile",
+      "source": "curated"
+     },
+     {
+      "path": "archive/eft-1.1.5/README.md",
+      "title": "EFT 1.1.5 类名清单归档（SPT 5.0 客户端）[5.0]",
+      "version": [
+       "5.0"
+      ],
+      "domain": "client",
+      "topic": "archive-index",
       "source": "curated"
      }
     ],
