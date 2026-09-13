@@ -23,7 +23,7 @@ export interface SptClientOptions {
   host: string;
   candidatePorts: number[];
   anchorVersion: string;
-  /** session 受限路由所需的 profile username（未配置时会话获取抛 SESSION_NOT_CONFIGURED） */
+  /** session 受限路由所需的 profile username；缺省时自动选择（单 profile）或报 AMBIGUOUS_PROFILE（多 profile） */
   username?: string;
   /** 可选密码：配置后先经 /launcher/v2/login 校验 */
   password?: string;

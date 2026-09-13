@@ -21,6 +21,8 @@ export const RUNTIME_ERROR_CODES = {
   SESSION_NOT_CONFIGURED: "SESSION_NOT_CONFIGURED",
   /** 已配置 username 但 `/launcher/v2/profiles` 中无匹配 profile */
   PROFILE_NOT_FOUND: "PROFILE_NOT_FOUND",
+  /** 未配置 username 且存在多个 profile，无法自动选择（details 含候选 username 列表） */
+  AMBIGUOUS_PROFILE: "AMBIGUOUS_PROFILE",
   /** 配置了 password 但 `/launcher/v2/login` 校验失败 */
   AUTH_FAILED: "AUTH_FAILED",
   /** SPT 路由返回 `{err != 0, errmsg}` 业务错误信封 */

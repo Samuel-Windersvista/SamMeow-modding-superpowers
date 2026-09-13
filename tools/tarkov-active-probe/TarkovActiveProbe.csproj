@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TarkovActiveProbe</RootNamespace>
+    <AssemblyName>TarkovActiveProbe</AssemblyName>
+    <Version>0.1.0</Version>
+
+    <!--
+      tarkov-runtime-MCP 的可选活跃探针（ADR-0004，ticket 08 B 部分）。
+      唯一职责：暴露只读路由 /spt/runtime/active-profiles，
+      返回 ProfileActivityService 跟踪的近期活跃 profileId 列表。
+      SPT 5.0 runtime 根目录，命令行覆盖：dotnet build -p:SPT5Runtime="..."
+    -->
+    <SPT5Runtime Condition="'$(SPT5Runtime)' == ''">E:\Game\EFT_Offline\SPT_5xx\SPT_Runtime</SPT5Runtime>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPT5Runtime)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPT5Runtime)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPT5Runtime)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPT5Runtime)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -25,10 +25,18 @@ export interface FakeSessionOptions {
   loginResponse?: unknown;
   /** 直接覆盖 `/launcher/v2/profiles` 的整个响应体（用于畸形/缺字段场景） */
   profilesResponse?: unknown;
+  /** 多 profile 列表（覆盖 username/profileId 的单 profile 默认值） */
+  profiles?: { username: string; profileId: string }[];
+  /**
+   * 活跃探针 `/spt/runtime/active-profiles` 的响应体；
+   * 缺省时模拟"探针 mod 未安装"（server 对未知路由的 UNHANDLED 信封）
+   */
+  activeProfilesResponse?: unknown;
 }
 
 export const LAUNCHER_PROFILES_PATH = "/launcher/v2/profiles";
 export const LAUNCHER_LOGIN_PATH = "/launcher/v2/login";
+export const ACTIVE_PROFILES_PATH = "/spt/runtime/active-profiles";
 
 function jsonResponse(body: unknown): SptResponse {
   return { status: 200, body, text: JSON.stringify(body) };
@@ -68,7 +76,7 @@ export class FakeConnection implements SptConnection {
     if (options.path === LAUNCHER_PROFILES_PATH) {
       return jsonResponse(
         this.session.profilesResponse ?? {
-          Response: [
+          Response: this.session.profiles ?? [
             {
               username: this.session.username ?? "Overseer",
               profileId: this.session.profileId ?? "fake-profile-id",
@@ -79,6 +87,16 @@ export class FakeConnection implements SptConnection {
     }
     if (options.path === LAUNCHER_LOGIN_PATH) {
       return jsonResponse({ Response: this.session.loginResponse ?? true });
+    }
+    // 活跃探针：缺省模拟"mod 未安装"时 server 对未知路由的 UNHANDLED 信封
+    if (options.path === ACTIVE_PROFILES_PATH) {
+      return jsonResponse(
+        this.session.activeProfilesResponse ?? {
+          err: 404,
+          errmsg: `UNHANDLED RESPONSE: ${ACTIVE_PROFILES_PATH}`,
+          data: null,
+        },
+      );
     }
 
     const result = this.responder(options);
