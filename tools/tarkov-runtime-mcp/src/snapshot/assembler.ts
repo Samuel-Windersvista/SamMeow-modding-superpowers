@@ -2,18 +2,22 @@
 // 快照组装器
 //
 // 按 `SUPPORTED_SECTIONS` 的规范顺序组装所选 section：输出字段顺序与入参顺序
-// 无关，保证相同输入逐字节一致。每个 section 只发起一次路由请求，一次调用
-// 原子返回全部所选数据。
+// 无关，保证相同输入逐字节一致。每个 section 发起自身所需的路由请求，一次
+// 调用原子返回全部所选数据。
 // =============================================================================
 
 import type { SptConnection } from "../transport/connection.js";
+import { HIDEOUT_ROUTE, normalizeHideoutSection } from "./hideout.js";
+import { INVENTORY_ROUTE, normalizeInventorySection } from "./inventory.js";
 import { PROFILE_ROUTE, normalizeProfileSection } from "./profile.js";
+import { QUESTS_ROUTE, normalizeQuestsSection } from "./quests.js";
 import {
   SNAPSHOT_SCHEMA_VERSION,
   SUPPORTED_SECTIONS,
   type Snapshot,
   type SnapshotSectionName,
 } from "./schema.js";
+import { TRADERS_ROUTE, normalizeTradersSection } from "./traders.js";
 
 /** 判断 section 名是否已实现 */
 export function isSupportedSection(name: string): name is SnapshotSectionName {
@@ -35,13 +39,32 @@ export async function assembleSnapshot(
 
   for (const name of SUPPORTED_SECTIONS) {
     if (!selected.has(name)) continue;
-    if (name === "profile") {
-      const response = await connection.request({
-        method: "POST",
-        path: PROFILE_ROUTE,
-        body: {},
-      });
-      snapshot.sections.profile = normalizeProfileSection(response.body);
+    switch (name) {
+      case "profile": {
+        const response = await connection.request({ method: "POST", path: PROFILE_ROUTE, body: {} });
+        snapshot.sections.profile = normalizeProfileSection(response.body);
+        break;
+      }
+      case "traders": {
+        const response = await connection.request({ method: "POST", path: TRADERS_ROUTE, body: {} });
+        snapshot.sections.traders = normalizeTradersSection(response.body);
+        break;
+      }
+      case "quests": {
+        const response = await connection.request({ method: "POST", path: QUESTS_ROUTE, body: {} });
+        snapshot.sections.quests = normalizeQuestsSection(response.body);
+        break;
+      }
+      case "hideout": {
+        const response = await connection.request({ method: "POST", path: HIDEOUT_ROUTE, body: {} });
+        snapshot.sections.hideout = normalizeHideoutSection(response.body);
+        break;
+      }
+      case "inventory": {
+        const response = await connection.request({ method: "POST", path: INVENTORY_ROUTE, body: {} });
+        snapshot.sections.inventory = normalizeInventorySection(response.body);
+        break;
+      }
     }
   }
 

@@ -4,7 +4,7 @@
 
 **Blocked by:** 02（快照组装器与 schema）
 
-**Status:** ready-for-agent
+**Status:** claimed
 
 - [ ] 四个新 section 各自返回符合 schema 的计数型摘要
 - [ ] `sections` 参数支持多选组合，单调用原子返回全部所选 section

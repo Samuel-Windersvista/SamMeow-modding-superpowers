@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 
 import type { ServerModListResult } from "../../src/logs/log-reader.js";
+import { SUPPORTED_SECTIONS } from "../../src/snapshot/schema.js";
 import { createServerStatusTool } from "../../src/tools/server-status.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 
@@ -94,6 +95,20 @@ describe("tarkov_server_status.mods", () => {
     );
     expect(data.capabilities.sections).toEqual(expect.arrayContaining(["mods"]));
     expect(data.capabilities.bridge).toBe("not_installed");
+  });
+
+  it("能力自报：sections 覆盖全部已实现快照 section（traders/quests/hideout/inventory）", async () => {
+    const tool = createServerStatusTool(connectedClient(), {
+      logDir: "C:/SPT/user/logs/spt",
+      readModList: async () => UNAVAILABLE_MODS,
+    });
+
+    const result = await tool({});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const data = result.data as { capabilities: { sections: string[] } };
+    expect(data.capabilities.sections).toEqual(expect.arrayContaining([...SUPPORTED_SECTIONS]));
   });
 
   it("读取器抛异常：整体仍成功，mods 降级为 log_unreadable", async () => {

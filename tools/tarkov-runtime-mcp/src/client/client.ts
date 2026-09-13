@@ -128,7 +128,16 @@ export class SptClient {
       capabilities: {
         // 注意：工具层（server-status.ts）会以自身维护的能力清单整体覆盖此字段；
         // 此处保持与工具层一致仅为防止 client 被单独消费时误导
-        sections: ["server_status", "instances", "mods", "profile"],
+        sections: [
+          "server_status",
+          "instances",
+          "mods",
+          "profile",
+          "traders",
+          "quests",
+          "hideout",
+          "inventory",
+        ],
         bridge: "not_installed",
       },
     };

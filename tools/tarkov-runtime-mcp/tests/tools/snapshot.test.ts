@@ -5,7 +5,17 @@ import { createRuntime } from "../../src/index.js";
 import { createSnapshotTool, SNAPSHOT_TOOL_NAME } from "../../src/tools/snapshot.js";
 import { RUNTIME_ERROR_CODES } from "../../src/types.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
-import { pmcProfileFixture, profileListResponse } from "../snapshot/fixtures.js";
+import {
+  hideoutAreasFixture,
+  hideoutAreasResponse,
+  inventoryProfileFixture,
+  pmcProfileFixture,
+  profileListResponse,
+  questListResponse,
+  questsFixture,
+  traderSettingsResponse,
+  tradersFixture,
+} from "../snapshot/fixtures.js";
 
 const VERSION = "SPT 5.0.0 (BEM) ff0bf32";
 const PROFILE_ROUTE = "/client/game/profile/list";
@@ -21,6 +31,28 @@ function clientWith(profiles: unknown[]) {
         return profileListResponse(profiles);
       }
       throw new Error(`fake 未预期的路由：${options.path}`);
+    }),
+  );
+}
+
+/** 构造响应全部已实现 section 路由的 fake client（默认 sections 场景） */
+function fullClient() {
+  return fakeClient(
+    new FakeConnection((options) => {
+      switch (options.path) {
+        case "/singleplayer/settings/version":
+          return versionResponse(VERSION);
+        case PROFILE_ROUTE:
+          return profileListResponse([inventoryProfileFixture()]);
+        case "/client/trading/api/traderSettings":
+          return traderSettingsResponse(tradersFixture());
+        case "/client/quest/list":
+          return questListResponse(questsFixture());
+        case "/client/hideout/areas":
+          return hideoutAreasResponse(hideoutAreasFixture());
+        default:
+          throw new Error(`fake 未预期的路由：${options.path}`);
+      }
     }),
   );
 }
@@ -52,13 +84,21 @@ describe("tarkov_snapshot", () => {
   });
 
   it("省略 sections 时默认读取全部已实现 section", async () => {
-    const tool = createSnapshotTool(clientWith([pmcProfileFixture()]));
+    const tool = createSnapshotTool(fullClient());
 
     const result = await tool({});
 
     expect(result.ok).toBe(true);
     if (!result.ok) return;
-    expect(result.data).toMatchObject({ sections: { profile: { profileCount: 1 } } });
+    expect(result.data).toMatchObject({
+      sections: {
+        profile: { profileCount: 1 },
+        traders: { traderCount: 3 },
+        quests: { questCount: 5 },
+        hideout: { areaCount: 3 },
+        inventory: { itemCount: 3 },
+      },
+    });
   });
 
   it("空 profile 列表：返回零计数摘要（pmc=null）", async () => {
@@ -108,12 +148,15 @@ describe("tarkov_snapshot", () => {
     });
     const tool = createSnapshotTool(fakeClient(connection));
 
-    const result = await tool({ sections: ["traders"] });
+    const result = await tool({ sections: ["raid"] });
 
     expect(result.ok).toBe(false);
     if (result.ok) return;
     expect(result.code).toBe(RUNTIME_ERROR_CODES.UNSUPPORTED_SECTION);
-    expect(result.details).toEqual({ unsupported: ["traders"], supported: ["profile"] });
+    expect(result.details).toEqual({
+      unsupported: ["raid"],
+      supported: ["profile", "traders", "quests", "hideout", "inventory"],
+    });
   });
 
   it("版本不匹配：透传 VERSION_MISMATCH（快照不建立在错误版本上）", async () => {

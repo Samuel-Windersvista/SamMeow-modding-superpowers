@@ -39,8 +39,17 @@ const IMPLEMENTED_TOOLS = [
   "tarkov_wait_for",
 ] as const;
 
-/** MCP 当前已实现的状态 sections */
-const IMPLEMENTED_SECTIONS = ["server_status", "instances", "mods", "profile"] as const;
+/** MCP 当前已实现的状态 sections（含快照全部 section；与 snapshot/schema.ts 保持一致） */
+const IMPLEMENTED_SECTIONS = [
+  "server_status",
+  "instances",
+  "mods",
+  "profile",
+  "traders",
+  "quests",
+  "hideout",
+  "inventory",
+] as const;
 
 /** 能力自报：吸收 5.0 版本线内部漂移，明确首版边界 */
 export interface ServerStatusCapabilities {
