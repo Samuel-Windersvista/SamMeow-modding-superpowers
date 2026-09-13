@@ -20,3 +20,11 @@
 - stdio 冒烟通过：`tools/list` 返回完整工具面（server_status / instances / snapshot / wait_for / raid.* 占位）。
 - 真实 server 冒烟**未执行**：127.0.0.1:6969 无监听（本机无运行中的 SPT 5.0 server）。待 Overseer 手动启动 server 后执行冒烟清单：握手+门禁、全 sections 快照（人工核对游戏内数据）、wait_for 成功/超时各一、raid.* 占位行为。冒烟发现的假设偏差（三条新路由的方法/形状、profile/list 方法）修 normalizer 单文件即可。
 - dev-log 记录随冒烟结果一并补记。
+
+### 2026-09-13 live smoke 第一轮结果（部分通过）
+
+- 通过：握手+版本门禁（真实版本 `SPT 5.0.0 (BEM) 49aff9`，门禁 passed）、instances（1 实例）、wait_for 成功/超时双路径、raid.* 占位、传输层（HTTPS+zlib+cookie 链路真实跑通）。
+- 暴露问题 1：session 受限路由（profile/list、traderSettings、quest/list）无 PHPSESSID 时服务端抛 "session id provided was empty"，MCP 静默归零。源码确认 cookie 值即 profileId；`/launcher/v2/profiles` 免会话可枚举。
+- 暴露问题 2：hideout/areas（免会话，99KB 真实数据）经 MCP 返回 0——正常器未解 `{err,errmsg,data}` 信封。
+- 附带发现：`/launcher/v2/mods` 免会话返回已加载 mod 元数据（实测 `{}`，该 server 无 mod），优于日志兜底。
+- 处置：全部转入 ticket 07 修复，修复后重跑冒烟。
