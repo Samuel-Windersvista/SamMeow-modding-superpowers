@@ -6,9 +6,11 @@
  */
 import { z } from "zod";
 import { join } from "node:path";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import { registerTool } from "../tool-registry.js";
 import { routeToPlanApply, type PlanApplyHandler } from "../plan-apply.js";
+import { atomicWriteText } from "../atomic.js";
+import { upsertIniValue, qsQuote } from "../ini-helpers.js";
 import { readProfile } from "../profile-reader.js";
 import { resolveProfileDir, resolveModsDir } from "../path-helpers.js";
 import { assertActiveProfile } from "../profile-guard.js";
@@ -22,6 +24,10 @@ const inputSchema = z.discriminatedUnion("mode", [
     name: z.string().min(1),
     above: z.string().optional(),
     profile: z.string().default("Default"),
+    // Every created overlay must be self-documenting: comments = short
+    // summary shown in MO2's mod list, notes = longer install record.
+    comments: z.string().min(1),
+    notes: z.string().optional(),
   }),
   z.object({ mode: z.literal("apply"), plan_id: z.string().min(1), lease_token: z.string().min(1) }),
 ]);
@@ -70,12 +76,17 @@ const handler: PlanApplyHandler = {
     const above = _normalizeAbove(args.above);
     const targetPri = await _targetPriority(bound.config.mo2Root, profile, above);
     const modlistPath = join(resolveProfileDir(ctx, profile), "modlist.txt");
+    // The mod dir is created during apply (meta.ini annotations included), so
+    // include it in affectedFiles for snapshot/rollback coverage. Keep
+    // modlistPath first to preserve the existing envelope shape.
+    const modsDir = await resolveModsDir(ctx);
+    const modDir = join(modsDir, args.name as string);
     const aboveText = above !== undefined
       ? ` above ${above} (pri=${String(targetPri)})`
       : "";
     return {
       diff: `Create empty mod ${String(args.name)}${aboveText}`,
-      affectedFiles: [modlistPath],
+      affectedFiles: [modlistPath, modDir],
       targets: [{ path: modlistPath, kind: "text-file" }],
     };
   },
@@ -102,6 +113,21 @@ const handler: PlanApplyHandler = {
       ? (result.absolute_path as string)
       : join(modsDir, plan.args.name as string);
     await mkdir(absPath, { recursive: true });
+
+    // Write annotations into meta.ini so the overlay is self-documenting
+    // (comments required; notes optional). Merge into any existing meta.ini.
+    const metaPath = join(absPath, "meta.ini");
+    let metaText = await readFile(metaPath, "utf8").catch(() => "");
+    if (metaText.length === 0) metaText = "[General]\n";
+    metaText = upsertIniValue(metaText, "General", "comments", qsQuote(plan.args.comments as string));
+    metaText = upsertIniValue(
+      metaText,
+      "General",
+      "notes",
+      qsQuote((plan.args.notes as string | undefined) ?? ""),
+    );
+    await atomicWriteText(metaPath, metaText);
+
     await invalidateWorld(ctx, [profile]);
     return result;
   },
@@ -111,7 +137,7 @@ registerTool({
   name: "mo2_create_mod",
   tier: "T3",
   description:
-    "Create empty mod via broker mods.create. Optional 'above' positions it above a named mod.",
+    "Create empty mod via broker mods.create. Optional 'above' positions it above a named mod. comments (required — short summary shown in MO2's list) + notes (optional — longer install record) are written to meta.ini; name per '<category>-<mod-name>-<version>'.",
   inputSchema,
   handler: (args, ctx) =>
     routeToPlanApply(handler, args, ctx, ctx.plans, ctx.snapshots) as Promise<unknown>,

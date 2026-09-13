@@ -24,16 +24,22 @@ Execute the modpack build: take the user's confirmed mod list and assemble it in
 
 ### Step 2: Install mods into MO2
 
+Every overlay must be self-documenting: a readable name following
+`<category>-<mod-name>-<version>` (e.g. `工具-MCP活跃探针-0.1.0`), plus
+`comments` (1–2 sentence summary shown in MO2's mod list) and `notes`
+(longer install record) in meta.ini. The install tools require `comments`
+and write both fields automatically.
+
 For each mod in the confirmed list:
 
 1. **From Forge archive** (most common):
    - Locate the mod's release zip in `knowledge/spt-kb/archive/forge/mods/<id>_release/`
-   - Install into MO2 as a new mod overlay
+   - Install into MO2 as a new mod overlay, passing `comments` (required) + `notes` (when useful)
    - Name the overlay: `<category>-<mod-name>-<version>`
 
 2. **From source** (custom-developed mods):
    - Build the mod if not already built (`dotnet build -c Release`)
-   - Create an MO2 mod overlay with the compiled DLL(s)
+   - Create an MO2 mod overlay with the compiled DLL(s), passing `comments`/`notes` at creation
    - Server mod DLLs go in overlay path `SPT_Runtime/user/mods/<ModName>/`
    - Client mod DLLs go in overlay path `BepInEx/plugins/`
 
@@ -84,6 +90,7 @@ The build output is an **MO2 profile** that can be:
 ## Anti-patterns
 
 - **Do not** write mod files directly into the SPT installation directory -- always use MO2 overlays
+- **Do not** install an overlay without a readable name + `comments`/`notes` -- a bare technical folder name is future debugging debt
 - **Do not** skip conflict analysis before building -- even if the user says "just build it"
 - **Do not** hardcode MO2 or SPT paths -- use configured paths from environment setup
 - **Do not** declare a build successful without Level B verification

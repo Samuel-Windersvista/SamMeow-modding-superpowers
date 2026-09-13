@@ -35,3 +35,20 @@ export function upsertIniValue(
   }
   return text + (text.endsWith("\n") ? "" : "\n") + `[${section}]\n${key}=${value}\n`;
 }
+
+/**
+ * Quote + escape a value for QSettings-compatible INI output (meta.ini).
+ *
+ * MO2 reads meta.ini through QSettings (Qt IniFormat). Values with special
+ * characters are written quoted, with `\` -> `\\`, `"` -> `\"` and newlines
+ * escaped as literal `\n` sequences (verified against real MO2-written
+ * `notes=` fields). Always quoting also keeps empty strings and
+ * whitespace-padded values intact on read-back.
+ */
+export function qsQuote(value: string): string {
+  const escaped = value
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\r\n|\r|\n/g, "\\n");
+  return `"${escaped}"`;
+}

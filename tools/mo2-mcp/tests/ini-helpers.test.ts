@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { upsertIniValue } from "../src/ini-helpers.js";
+import { upsertIniValue, qsQuote } from "../src/ini-helpers.js";
 
 describe("upsertIniValue", () => {
   it("updates existing key in existing section", () => {
@@ -27,5 +27,23 @@ describe("upsertIniValue", () => {
   it("creates section + key from empty text", () => {
     const after = upsertIniValue("", "General", "key", "value");
     expect(after).toContain("[General]\nkey=value");
+  });
+});
+
+describe("qsQuote", () => {
+  it("quotes plain values", () => {
+    expect(qsQuote("hello")).toBe('"hello"');
+  });
+
+  it("quotes empty string", () => {
+    expect(qsQuote("")).toBe('""');
+  });
+
+  it("escapes quotes, backslashes and newlines (QSettings format)", () => {
+    expect(qsQuote('a"b\\c\nd')).toBe('"a\\"b\\\\c\\nd"');
+  });
+
+  it("normalizes CRLF and lone CR to \\n", () => {
+    expect(qsQuote("a\r\nb\rc")).toBe('"a\\nb\\nc"');
   });
 });

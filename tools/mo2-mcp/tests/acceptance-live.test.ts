@@ -150,6 +150,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
         archive_path: FOMOD_ARCHIVE,
         mod_name: modName,
         profile: HARNESS_PROFILE,
+        comments: "AT6 FOMOD 安装测试",
       });
       expect(noChoices.ok).toBe(false);
       expect(String(noChoices.error?.message ?? noChoices.error?.code)).toMatch(/fomod_choices_required/i);
@@ -157,6 +158,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
         archive_path: FOMOD_ARCHIVE,
         mod_name: modName,
         profile: HARNESS_PROFILE,
+        comments: "AT6 FOMOD 安装测试",
         fomod_choices: [{ page_name: "Install", selected_options: [{ group_name: "Main", option_name: "Default" }] }],
       });
       try {
@@ -213,7 +215,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
   it("AT11: audit query contains plan and applied records for mutations", async () => {
     await withMcp(harnessEnv(), async (mcp) => {
       const modName = uniqueName("AT11-Audit");
-      const create = await planApply(mcp, "mo2_create_mod", { name: modName });
+      const create = await planApply(mcp, "mo2_create_mod", { name: modName, comments: "AT11 审计测试 mod" });
       try {
         expectOk(create.apply);
         const audit = await mcp.call("mo2_audit_query", { tool: "mo2_create_mod", max_results: 100 });
@@ -300,7 +302,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
       const modName = uniqueName("AT16-Mod");
       const sepName = uniqueName("AT16-Separator");
       try {
-        const createMod = await planApply(mcp, "mo2_create_mod", { name: modName });
+        const createMod = await planApply(mcp, "mo2_create_mod", { name: modName, comments: "AT16 往返测试 mod" });
         const createSeparator = await planApply(mcp, "mo2_create_separator", { name: sepName, color: "#336699" });
         expectOk(createMod.apply);
         expectOk(createSeparator.apply);
@@ -351,6 +353,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
         archive_path: SIMPLE_ARCHIVE,
         mod_name: modName,
         profile: HARNESS_PROFILE,
+        comments: "AT18 简单归档安装测试",
       });
       try {
         expectOk(install.apply);

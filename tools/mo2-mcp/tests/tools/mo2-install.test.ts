@@ -67,7 +67,7 @@ describe("mo2_install", () => {
     const tool = getTool("mo2_install")!;
     await expect(
       tool.handler(
-        { mode: "plan", archive_path: "/tmp/foo.7z", mod_name: "NewMod" },
+        { mode: "plan", archive_path: "/tmp/foo.7z", mod_name: "NewMod", comments: "测试 mod" },
         ctx,
       ),
     ).rejects.toThrow(/sidecar_required/);
@@ -90,7 +90,7 @@ describe("mo2_install", () => {
     }));
     const tool = getTool("mo2_install")!;
     const caught = await tool.handler(
-      { mode: "plan", archive_path: "/tmp/fomod.7z", mod_name: "FomodMod" },
+      { mode: "plan", archive_path: "/tmp/fomod.7z", mod_name: "FomodMod", comments: "测试 FOMOD" },
       ctx,
     ).then(() => undefined, (e: unknown) => e);
 
@@ -116,7 +116,7 @@ describe("mo2_install", () => {
     }));
     const tool = getTool("mo2_install")!;
     const plan = (await tool.handler(
-      { mode: "plan", archive_path: "/tmp/simple.7z", mod_name: "SimpleMod" },
+      { mode: "plan", archive_path: "/tmp/simple.7z", mod_name: "SimpleMod", comments: "测试简单 mod" },
       ctx,
     )) as { ok: boolean; result: { planId: string; diff: string } };
     expect(plan.ok).toBe(true);
@@ -151,7 +151,7 @@ describe("mo2_install", () => {
 
     const tool = getTool("mo2_install")!;
     const plan = (await tool.handler(
-      { mode: "plan", archive_path: "/tmp/simple.7z", mod_name: "EmptyChoicesSimple", fomod_choices: [] },
+      { mode: "plan", archive_path: "/tmp/simple.7z", mod_name: "EmptyChoicesSimple", comments: "空选择测试", fomod_choices: [] },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string; diff: string } };
     expect(plan.ok).toBe(true);
@@ -188,7 +188,7 @@ describe("mo2_install", () => {
     const tool = getTool("mo2_install")!;
 
     const caught = await tool.handler(
-      { mode: "plan", archive_path: "/tmp/fomod.7z", mod_name: "FomodMod", fomod_choices: [] },
+      { mode: "plan", archive_path: "/tmp/fomod.7z", mod_name: "FomodMod", comments: "FOMOD 空选择测试", fomod_choices: [] },
       ctx,
     ).then(() => undefined, (e: unknown) => e);
 
@@ -209,7 +209,7 @@ describe("mo2_install", () => {
     const tool = getTool("mo2_install")!;
     await expect(
       tool.handler(
-        { mode: "plan", archive_path: "/tmp/x.7z", mod_name: "Existing" },
+        { mode: "plan", archive_path: "/tmp/x.7z", mod_name: "Existing", comments: "已存在测试" },
         ctx,
       ),
     ).rejects.toThrow(/mod_name_exists/);
@@ -238,7 +238,7 @@ describe("mo2_install", () => {
 
     const tool = getTool("mo2_install")!;
     const plan = (await tool.handler(
-      { mode: "plan", archive_path: "/tmp/test.7z", mod_name: "NewSimple", target_priority: "bottom" },
+      { mode: "plan", archive_path: "/tmp/test.7z", mod_name: "NewSimple", target_priority: "bottom", comments: "简单归档安装" },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string } };
     expect(plan.ok).toBe(true);
@@ -271,6 +271,50 @@ describe("mo2_install", () => {
     expect(rollback.failed).toEqual([]);
     expect(existsSync(join(root, "mods", "NewSimple"))).toBe(false);
     expect(await readFile(join(root, "profiles", "Default", "modlist.txt"), "utf8")).toBe("+ExistingMod\n");
+  });
+
+  it("apply writes comments + notes into meta.ini with QSettings escaping", async () => {
+    const { root, ctx } = await _fixture((rootDir) => ({
+      call: async (method, params) => {
+        if (method === "fomod.parse_choices") {
+          throw new Error("not_a_fomod");
+        }
+        if (method === "archive.extract_all") {
+          const dest = (params as { dest: string }).dest;
+          await mkdir(dest, { recursive: true });
+          await writeFile(join(dest, "annotated.esp"), "fake", "utf8");
+          return { files: ["annotated.esp"], file_count: 1, dest, format: "7z" };
+        }
+        if (method === "world.invalidate") return { invalidated: true };
+        throw new Error(`unmocked: ${method}`);
+      },
+      isReady: () => true,
+      start: async () => {},
+      stop: async () => {},
+    }));
+
+    const tool = getTool("mo2_install")!;
+    const plan = (await tool.handler(
+      {
+        mode: "plan",
+        archive_path: "/tmp/annotated.7z",
+        mod_name: "工具-注释测试-0.1.0",
+        comments: '摘要 "带引号"',
+        notes: "第一行\n第二行",
+      },
+      ctx,
+    )) as { ok: boolean; result: { planId: string; lease_token: string } };
+    expect(plan.ok).toBe(true);
+
+    const apply = (await tool.handler(
+      { mode: "apply", plan_id: plan.result.planId, lease_token: plan.result.lease_token },
+      ctx,
+    )) as { ok: boolean };
+    expect(apply.ok).toBe(true);
+
+    const meta = await readFile(join(root, "mods", "工具-注释测试-0.1.0", "meta.ini"), "utf8");
+    expect(meta).toContain('comments="摘要 \\"带引号\\""');
+    expect(meta).toContain('notes="第一行\\n第二行"');
   });
 
   it("apply live broker path copies staged content into broker-created mod dir", async () => {
@@ -312,7 +356,7 @@ describe("mo2_install", () => {
 
     const tool = getTool("mo2_install")!;
     const plan = (await tool.handler(
-      { mode: "plan", archive_path: "/tmp/live.7z", mod_name: "LiveMod", target_priority: "bottom" },
+      { mode: "plan", archive_path: "/tmp/live.7z", mod_name: "LiveMod", target_priority: "bottom", comments: "live broker 安装" },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string } };
 
@@ -367,7 +411,7 @@ describe("mo2_install", () => {
     const tool = getTool("mo2_install")!;
 
     await expect(tool.handler(
-      { mode: "plan", archive_path: "/tmp/blocked.7z", mod_name: "BlockedLive", profile: "BB84自用" },
+      { mode: "plan", archive_path: "/tmp/blocked.7z", mod_name: "BlockedLive", profile: "BB84自用", comments: "跨 profile 阻止测试" },
       ctx,
     )).rejects.toThrow(/cross_profile_live_mutation_blocked/);
     expect(existsSync(join(ctx.config.mo2Root, "mods", "BlockedLive"))).toBe(false);
@@ -393,7 +437,7 @@ describe("mo2_install", () => {
     }));
     const tool = getTool("mo2_install")!;
     const plan = (await tool.handler(
-      { mode: "plan", archive_path: "/tmp/offline.7z", mod_name: "OfflineMod" },
+      { mode: "plan", archive_path: "/tmp/offline.7z", mod_name: "OfflineMod", comments: "离线覆盖保护测试" },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string } };
     await mkdir(join(root, "mods", "OfflineMod"), { recursive: true });

@@ -10,7 +10,7 @@ import { registerTool } from "../tool-registry.js";
 import { routeToPlanApply, type PlanApplyHandler } from "../plan-apply.js";
 import { atomicWriteText } from "../atomic.js";
 import { resolveModMetaPath } from "../path-helpers.js";
-import { upsertIniValue } from "../ini-helpers.js";
+import { upsertIniValue, qsQuote } from "../ini-helpers.js";
 import { requireBoundContext, bindingSnapshot } from "../binding.js";
 
 // BUG-10 fix (2026-06-17): name + plan_id + lease_token gain .min(1). `notes`
@@ -37,7 +37,7 @@ const handler: PlanApplyHandler = {
     if (pipeClient) {
       const resp = await pipeClient.call("mods.meta_write", {
         name: args.name,
-        updates: { General: { notes: `"${args.notes}"` } },
+        updates: { General: { notes: qsQuote(args.notes as string) } },
       });
       if (!resp.ok) throw new Error(resp.error?.message ?? "broker error");
       return resp.result as Record<string, unknown>;
@@ -49,7 +49,7 @@ const handler: PlanApplyHandler = {
     } catch {
       // create new
     }
-    text = upsertIniValue(text, "General", "notes", `"${args.notes}"`);
+    text = upsertIniValue(text, "General", "notes", qsQuote(args.notes as string));
     await atomicWriteText(metaPath, text);
     return { name: args.name, notes_set: true, source: "offline" };
   },
@@ -59,7 +59,7 @@ registerTool({
   name: "mo2_set_mod_notes",
   tier: "T2",
   description:
-    "Set mod notes (meta.ini [General] notes=). Plan returns diff; apply atomically writes via temp+rename or broker mods.meta_write.",
+    "Set mod notes (meta.ini [General] notes=, QSettings-escaped: quotes/backslashes/newlines are safely encoded). Plan returns diff; apply atomically writes via temp+rename or broker mods.meta_write.",
   inputSchema,
   handler: (args, ctx) => routeToPlanApply(handler, args, ctx, ctx.plans, ctx.snapshots) as Promise<unknown>,
 });

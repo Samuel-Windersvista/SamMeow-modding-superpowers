@@ -25,6 +25,7 @@ import { randomUUID } from "node:crypto";
 import { registerTool } from "../tool-registry.js";
 import { routeToPlanApply, type PlanApplyHandler } from "../plan-apply.js";
 import { atomicWriteText } from "../atomic.js";
+import { qsQuote } from "../ini-helpers.js";
 import { resolveModsDir, resolveProfileDir } from "../path-helpers.js";
 import { readMoIni, resolveGameName } from "../mo-ini.js";
 import { assertActiveProfile } from "../profile-guard.js";
@@ -56,6 +57,10 @@ const inputSchema = z.discriminatedUnion("mode", [
     nexus_mod_id: z.number().int().optional(),
     version: z.string().optional(),
     category: z.string().optional(),
+    // Every installed overlay must be self-documenting: comments = short
+    // summary shown in MO2's mod list, notes = longer install record.
+    comments: z.string().min(1),
+    notes: z.string().optional(),
   }),
   z.object({ mode: z.literal("apply"), plan_id: z.string().min(1), lease_token: z.string().min(1) }),
 ]);
@@ -210,7 +215,8 @@ const handler: PlanApplyHandler = {
       "nexusFileStatus=1",
       "repository=Nexus",
       `category="${args.category ?? 0}"`,
-      "notes=\"\"",
+      `comments=${qsQuote(args.comments as string)}`,
+      `notes=${qsQuote((args.notes as string | undefined) ?? "")}`,
       "validated=true",
     ].join("\n");
     await atomicWriteText(join(finalDestPath, "meta.ini"), meta + "\n");
@@ -243,7 +249,7 @@ registerTool({
   name: "mo2_install",
   tier: "T3",
   description:
-    "Install mod from archive (.zip/.7z/.rar). FOMOD non-interactive via fomod_choices. Pattern A: sidecar parse/extract → broker createMod → move → meta.ini → register modlist.txt.",
+    "Install mod from archive (.zip/.7z/.rar). FOMOD non-interactive via fomod_choices. Pattern A: sidecar parse/extract → broker createMod → move → meta.ini → register modlist.txt. Name the overlay per the convention '<category>-<mod-name>-<version>' (e.g. '工具-MCP活跃探针-0.1.0'); comments (required — short summary shown in MO2's list) and notes (optional — longer install record for the Notes tab) are written to meta.ini so every overlay is self-documenting.",
   inputSchema,
   handler: (args, ctx) =>
     routeToPlanApply(handler, args, ctx, ctx.plans, ctx.snapshots) as Promise<unknown>,

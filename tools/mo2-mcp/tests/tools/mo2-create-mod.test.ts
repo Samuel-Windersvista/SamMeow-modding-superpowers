@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll } from "vitest";
-import { mkdtemp, mkdir, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, writeFile, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
@@ -76,7 +76,7 @@ describe("mo2_create_mod", () => {
     const tool = getTool("mo2_create_mod")!;
 
     const plan = (await tool.handler(
-      { mode: "plan", name: "NewEmpty", above: "AnchorMod" },
+      { mode: "plan", name: "NewEmpty", above: "AnchorMod", comments: "测试空 mod" },
       ctx,
     )) as { ok: boolean; result: { diff: string; affected_files: string[] } };
 
@@ -90,7 +90,7 @@ describe("mo2_create_mod", () => {
     const tool = getTool("mo2_create_mod")!;
 
     await expect(
-      tool.handler({ mode: "plan", name: "NewEmpty", above: "Missing" }, ctx),
+      tool.handler(      { mode: "plan", name: "NewEmpty", above: "Missing", comments: "测试空 mod" }, ctx),
     ).rejects.toThrow(/above_mod_not_found: Missing/);
   });
 
@@ -104,7 +104,7 @@ describe("mo2_create_mod", () => {
     const tool = getTool("mo2_create_mod")!;
 
     const plan = (await tool.handler(
-      { mode: "plan", name: "NewEmpty", above: "" },
+      { mode: "plan", name: "NewEmpty", above: "", comments: "测试空 mod" },
       ctx,
     )) as { ok: boolean; result: { diff: string; affected_files: string[] } };
 
@@ -120,7 +120,7 @@ describe("mo2_create_mod", () => {
     const tool = getTool("mo2_create_mod")!;
 
     const plan = (await tool.handler(
-      { mode: "plan", name: "NewEmpty" },
+      { mode: "plan", name: "NewEmpty", comments: "测试空 mod" },
       ctx,
     )) as { ok: boolean; result: { diff: string } };
 
@@ -149,7 +149,7 @@ describe("mo2_create_mod", () => {
     } as unknown as ToolContext["sidecar"];
     const tool = getTool("mo2_create_mod")!;
     const plan = (await tool.handler(
-      { mode: "plan", name: "BottomMod2", above: "" },
+      { mode: "plan", name: "BottomMod2", above: "", comments: "底部空 mod" },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string } };
 
@@ -191,7 +191,7 @@ describe("mo2_create_mod", () => {
     } as unknown as ToolContext["sidecar"];
     const tool = getTool("mo2_create_mod")!;
     const plan = (await tool.handler(
-      { mode: "plan", name: "NewEmpty", above: "AnchorMod" },
+      { mode: "plan", name: "NewEmpty", above: "AnchorMod", comments: "测试空 mod" },
       ctx,
     )) as { ok: boolean; result: { planId: string; lease_token: string } };
 
@@ -214,6 +214,31 @@ describe("mo2_create_mod", () => {
     ]);
   });
 
+  it("apply writes comments + notes into meta.ini (QSettings-escaped)", async () => {
+    const { root, ctx } = await _fixture();
+    const tool = getTool("mo2_create_mod")!;
+    const plan = (await tool.handler(
+      {
+        mode: "plan",
+        name: "工具-空Mod-0.1.0",
+        comments: '空 mod "摘要"',
+        notes: "记录行1\n记录行2",
+      },
+      ctx,
+    )) as { ok: boolean; result: { planId: string; lease_token: string } };
+    expect(plan.ok).toBe(true);
+
+    const apply = (await tool.handler(
+      { mode: "apply", plan_id: plan.result.planId, lease_token: plan.result.lease_token },
+      ctx,
+    )) as { ok: boolean };
+    expect(apply.ok).toBe(true);
+
+    const meta = await readFile(join(root, "mods", "工具-空Mod-0.1.0", "meta.ini"), "utf8");
+    expect(meta).toContain('comments="空 mod \\"摘要\\""');
+    expect(meta).toContain('notes="记录行1\\n记录行2"');
+  });
+
   // BUG-9 fix (2026-06-17): cross-profile request is rejected at plan time,
   // not only at apply time. The plan envelope never lands in the agent's
   // hand if MO2 is live on a different profile.
@@ -231,7 +256,7 @@ describe("mo2_create_mod", () => {
     const tool = getTool("mo2_create_mod")!;
 
     await expect(tool.handler(
-      { mode: "plan", name: "NewEmpty", above: "AnchorMod", profile: "BB84自用" },
+      { mode: "plan", name: "NewEmpty", above: "AnchorMod", profile: "BB84自用", comments: "跨 profile 测试" },
       ctx,
     )).rejects.toThrow(/cross_profile_live_mutation_blocked/);
   });
