@@ -41,11 +41,3 @@
 *.ico            binary
 *.pdf            binary
 *.heapsnapshot   binary
-
-# Plugin / archive binary formats live in bgs-mod-plugins fixtures.
-*.esp            binary
-*.esm            binary
-*.esl            binary
-*.nif            binary
-*.bgsm           binary
-*.bgem           binary

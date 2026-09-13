@@ -1,17 +1,17 @@
 # SamMeow-modding-superpowers
 
-[BB-84C/bgs-modding-superpowers](https://github.com/BB-84C/bgs-modding-superpowers) 的 **SPT 改造版**——面向《离线塔科夫 SPT》mod 开发与整合包自动化搭建的 agent 插件工作区。
+面向《离线塔科夫 SPT》(Single Player Tarkov) 的 mod 开发与整合包自动化搭建工具包，以 OpenCode 插件形式分发。
 
-> 定位：原项目是 Bethesda Game Studio 模组包策展工具（xEdit / MO2 / bgs_kb）；本仓库保留其上游能力，并以此为骨架改造为 SPT 生态服务。
+> 定位：纯 SPT、纯 OpenCode 的 agent 工具链——用一组 skills 加本地 MCP 服务器，把「评估 mod -> 读懂作者说明 -> 写 mod -> 策展整合包 -> 冲突审计 -> 构建 -> 验证」串成一条可复用的流水线。
 
 **快速上手：** [`docs/使用指南.md`](docs/使用指南.md)
 
 ## 为什么存在
 
-SPT（Single Player Tarkov）项目可能停止运作。本仓库承担两项使命：
+SPT 项目可能停止运作。本仓库承担两项使命：
 
-1. **资料抢救**：SPT 官方 wiki、21 个官方仓库、Forge 模组站 1822 个 mod 的元数据、95 个热门 mod 成品与 18 个源码仓库，已全部归档（见下方知识库）。
-2. **能力建设**：基于 bgs-modding-superpowers 的架构（MCP 服务器 + skills + 控制面），改造为 SPT 4.1 的 mod 开发与整合包搭建流水线。
+1. **资料抢救**：SPT 官方 wiki、官方仓库、Forge 模组站 mod 元数据与成品，已全部归档（见下方知识库）。
+2. **能力建设**：以 MCP 服务器 + skills + MO2 控制面构成的 SPT 4.1 mod 开发与整合包搭建流水线。
 
 ## SPT 版本策略
 
@@ -21,6 +21,38 @@ SPT（Single Player Tarkov）项目可能停止运作。本仓库承担两项使
 | 目标（终态） | **SPT 4.1** | 最终锁定版本，可能永远停留于此 |
 
 mod 开发一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table 注入体系），3.11 资料仅作概念对照。
+
+## 技能集（`skills/`）
+
+14 个 skill，覆盖整合包全生命周期：
+
+| Skill | 用途 |
+|-------|------|
+| `using-spt-modding-superpowers` | 会话 bootstrap + 路由总表（每次会话自动注入） |
+| `setting-up-spt-modding-environment` | 首次运行：MO2 检测、控制面安装、SPT 路径配置、模板与 dev-log 初始化 |
+| `maintaining-spt-modding-environment` | 后续维护：知识库更新、缓存清理、环境体检 |
+| `evaluating-spt-mods` | 安装前判断一个 mod 是否值得进包（质量/契合度/风险/包价值） |
+| `interpreting-spt-mod-instructions` | 按作者说明选择文件与安装方式 |
+| `curating-spt-modpack` | 整包增量策展：批次策略、回滚点、命名、风格声明 |
+| `building-spt-modpack` | 生成 MO2 profile 并执行整合包构建 |
+| `spt-conflict-audit` | 用 20 类冲突分类学审计 mod 冲突与胜出方 |
+| `spt-mcp-automation` | `spt` MCP 的操作中枢与路由 |
+| `testing-spt-modpack` | 安装后主动验证（Level B/C 标准） |
+| `diagnosing-spt-problems` | 症状优先的崩溃 / 掉帧 / 加载失败诊断 |
+| `writing-spt-mod` | 从模板写新 mod（服务端 C# 或客户端 BepInEx/Harmony） |
+| `writing-spt-modpack-devlog` | 维护项目 dev-log |
+| `writing-spt-modpack-changelog` | 维护发布 changelog |
+
+## MCP 表面
+
+OpenCode 插件通过 `config.mcp` 钩子声明两个本地 stdio MCP 服务器：
+
+| Server | 入口 | 能力 |
+|--------|------|------|
+| `mo2` | `tools/mo2-mcp/dist/index.js` | MO2 控制面：会话绑定、profile/mod/plugin 读写、FOMOD 安装、资产冲突、备份/回滚、审计日志（约 40 个 `mo2_*` 工具） |
+| `spt` | `tools/spt-mcp/dist/index.js` | 纯文件系统 SPT mod 分析（无守护进程）：mod 清点、元数据读取、文件扫描、冲突分析、加载顺序预测、Forge 归档检索、知识库查询 |
+
+MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成，用 `scripts/install-mo2-control-plane.ps1` 部署。
 
 ## 知识库：knowledge/spt-kb
 
@@ -41,7 +73,6 @@ mod 开发一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table �
 
 | 资产 | 路径 |
 |------|------|
-| SPT 关键仓库（已合并入库） | `external/spt-archive/`（server-mod-examples、modules、mod-examples、wiki） |
 | SPT 官方 20 仓库全量 clone（外部保留） | `E:\云文件\GitHub\SPT-archive\` |
 | SPT 4.1 服务端源码 fork | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
 
@@ -50,74 +81,21 @@ mod 开发一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table �
 **架构决策已锁定**（wayfinder，2026-08-02，见 `docs/wayfinder/MAP.md`）：
 
 - **6 阶段管线**：意图理解 -> mod 匹配/开发 -> 冲突分析 -> 人工审查 -> 构建 -> 验证
-- **14 个 SPT skills**：9 个从 bgs 映射 + 3 个转型 + 2 个新增（见 `skills/using-spt-modding-superpowers/`）
+- **14 个 SPT skills**：覆盖策展、构建、评估、安装解读、冲突审计、测试、诊断、mod 编写、dev-log/changelog（见 `skills/using-spt-modding-superpowers/`）
 - **冲突分类学**：20 类冲突，元数据级可检测大部分服务端冲突（见 `docs/wayfinder/findings/`）
-- **Mod 模板**：`templates/server-mod/` + `templates/client-mod/`（开发中）
+- **Mod 模板**：`templates/server-mod/` + `templates/client-mod/`
 - **MO2 保留**作为 mod 管理层，SPT 特化版 MO2 为未来方向
 - **Forge 离线模式**：全部 mod 数据来自本地归档，不依赖 live API
 
 需求分析（历史）：`docs/可行性研究报告-SPT整合包自动化搭建.md`（v3.0，基线 SPT 3.11.4，部分结论已被 wayfinder 取代）
 
----
+## 安装与使用
 
-## 上游能力保留（bgs-modding-superpowers v0.2）
+见 [`.opencode/INSTALL.md`](.opencode/INSTALL.md)。要点：
 
-以下为原项目能力，保留未动，供未来改造 SPT 工作流时复用：
-
-- **`xedit` MCP server** — 九种意图工具 + 原子 `xedit_call` 透传，7 阶段 harness 管线
-- **`bgs_kb` MCP server** — 本地 SQLite + FTS5 知识库查询（`bgs_kb_status` / `bgs_kb_query` / `bgs_kb_get`）
-- **MO2 control plane** — C++ MO2 插件 DLL + Python 加载器 + broker（`scripts/install-mo2-control-plane.ps1` 部署）
-- **xEdit hook bridge** — Delphi DLL，解除 MO2 下 xEdit 无人值守启动限制（`tools/xedit-hook-bridge/dist/`）
-- **Skills**：`using-bgs-modding-superpowers`、`setting-up-bgs-modding-environment`、`xedit-automation`、`xedit-conflict-audit`、`writing-modpack-devlog`、`writing-modpack-changelog`
-
-### 安装（上游方式）
-
-OpenCode：
-
-```json
-{
-  "plugin": ["bgs-modding-superpowers@git+https://github.com/BB-84C/bgs-modding-superpowers.git"]
-}
-```
-
-Claude Code / Codex 安装方式见 `.opencode/INSTALL.md` 与 `.mcp.json`（通过 `${CLAUDE_PLUGIN_ROOT}` 解析）。
-
-> 注：SPT 版 skills 正在编写中。核心 skills 已完成（bootstrap、writing-spt-mod、curating-spt-modpack、spt-conflict-audit、building-spt-modpack），辅助 skills 进行中。上游 bgs skills 保留作参考。
-
-### 首次运行（上游模式）
-
-在模组包项目目录提问「Set up the BGS modding environment.」——检测 MO2、安装控制面、可选拉取 xEdit、初始化 dev-log 与 changelog。
-
-### 需求（上游）
-
-- Windows（MO2 控制面与 xEdit hook bridge 仅限 Windows）
-- 目标游戏：Skyrim SE/AE、Fallout 4/76、Starfield（上游）；SPT 场景不需要 MO2
-- Node 22+（MCP 服务器运行于 Node）
-
-### 指向你自己的 MO2
-
-`xedit` MCP 通过 `BGS_MO2_ROOT` 环境变量定位 MO2（`ModOrganizer.exe` 所在目录）：
-
-- OpenCode（`~/.config/opencode/opencode.json`，harness MCP 块，在 `xedit` server 条目上设 env）：
-
-  ```json
-  {
-    "mcp": {
-      "xedit": { "env": { "BGS_MO2_ROOT": "D:\\Starfield MO2" } }
-    }
-  }
-  ```
-
-- Codex（`~/.codex/config.toml`，`codex plugin add` 之后）：
-
-  ```toml
-  [mcp_servers.xedit.env]
-  BGS_MO2_ROOT = "D:\\Starfield MO2"
-  ```
-
-- Claude Code：编辑物化插件 `.mcp.json` 的 env 块，或在启动 Claude Code 的 shell 中设置环境变量。
-
-设置后启动器默认使用 `<BGS_MO2_ROOT>/tools/xEdit/xEdit.exe`，从 `<BGS_MO2_ROOT>/profiles/<profile>/` 解析 `plugins.txt`。每次调用的覆盖参数（`xedit_start({ moRoot, launcherPath, ... })`）优先于环境变量。`setting-up-bgs-modding-environment` skill 会在首次运行时检测你的 MO2 安装并引导接线。
+- 纯 OpenCode 插件，无其他 harness 依赖。
+- Windows（MO2 控制面仅限 Windows）。
+- Node 22+（两个 MCP 服务器运行于 Node）。
 
 ### 贡献与许可
 
