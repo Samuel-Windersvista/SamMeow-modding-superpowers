@@ -59,3 +59,11 @@ docs/superpowers/
 
 ModOrganizer-*.dmp
 *.ala
+
+# BEGIN oh-my-opencode-slim worktrees
+.slim/worktrees/
+.slim/worktrees.json
+# END oh-my-opencode-slim worktrees
+
+# tarkov-runtime-mcp 测试 fixture 日志需入库（ticket 04）
+!tools/tarkov-runtime-mcp/tests/fixtures/**/*.log

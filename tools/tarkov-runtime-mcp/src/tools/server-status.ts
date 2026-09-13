@@ -32,10 +32,15 @@ export const ServerStatusInput = z.object({}).strict();
 export type ToolHandler = (args: unknown) => Promise<Envelope>;
 
 /** MCP 当前已实现的工具（不含 Phase 2 占位） */
-const IMPLEMENTED_TOOLS = ["tarkov_server_status", "tarkov_instances"] as const;
+const IMPLEMENTED_TOOLS = [
+  "tarkov_server_status",
+  "tarkov_instances",
+  "tarkov_snapshot",
+  "tarkov_wait_for",
+] as const;
 
 /** MCP 当前已实现的状态 sections */
-const IMPLEMENTED_SECTIONS = ["server_status", "instances", "mods"] as const;
+const IMPLEMENTED_SECTIONS = ["server_status", "instances", "mods", "profile"] as const;
 
 /** 能力自报：吸收 5.0 版本线内部漂移，明确首版边界 */
 export interface ServerStatusCapabilities {
