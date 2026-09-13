@@ -57,5 +57,7 @@ found two breakages the cleanup had introduced; both are fixed.
 ### Follow-up
 
 - Restart OpenCode once more so the corrected `spt-mcp` path is picked up.
-- Note: the repo plugin also registers `mo2` and `spt` MCP servers, so the global
-  `spt-mcp` entry is redundant — kept for compatibility.
+- Note: the repo plugin registers `mo2` and `spt` MCP servers itself, so the global
+  `opencode.json` `spt-mcp` entry was a functionally duplicate (and worse-configured)
+  registration — it passed none of `SPT_KB_ROOT` / `SPT_MCP_HELPER` / `SPT_IL_HELPER`.
+  It has been removed, so both MCP servers are now scoped to this repo only.
