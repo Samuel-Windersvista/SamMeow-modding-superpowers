@@ -1,8 +1,0 @@
-{
-    "manifest": [
-      {
-        "key": "assets/content/items/barter/item_mapbook/mapbook.bundle",
-        "dependencyKeys": []
-      }
-    ]
-}

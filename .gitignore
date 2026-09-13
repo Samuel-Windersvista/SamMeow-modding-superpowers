@@ -36,17 +36,23 @@ Desktop.ini
 /tools/xedit-hook-bridge/*.identcache
 /tools/xedit-hook-bridge/*.res
 
-# /plugins/<name>/ is the materialized end-user marketplace tree required by
-# Codex's marketplace schema (see .agents/plugins/marketplace.json). It is
-# regenerated from source via scripts/build-portable-plugin.ps1 on every
-# release. Tracked, not ignored. The sibling marketplace.json that the build
-# script writes at /plugins/marketplace.json (portable-distribution shape) is
-# NOT our canonical marketplace manifest and stays ignored.
-/plugins/marketplace.json
+# /plugins/ is the materialized end-user marketplace tree required by Codex's
+# marketplace schema (see .agents/plugins/marketplace.json). It is regenerated
+# from source via scripts/build-portable-plugin.ps1 on every release, so the
+# whole tree is a build artifact and must never be tracked.
+/plugins/
 
 # BGS KB pack build artifact; source records + manifest.json are committed.
 /knowledge/bgs-kb/packs/*/kb.sqlite
 *.pyc
+
+# Vendored / mirrored knowledge archives are reference material, not source.
+# The curated index, guides, wiki snapshot, and sources stay tracked.
+/knowledge/spt-kb/archive/
+
+# Build artifacts — never source, never tracked, at any depth.
+**/obj/
+**/bin/
 
 # Python package build artifacts for the standalone bgs-translator PyPI package.
 /tools/bgs-translator/build/
@@ -74,6 +80,10 @@ docs/superpowers/
 # ILSpy decompilation cache (EFT/SPT assemblies). Derived artifacts, regenerable
 # via ilspycmd -p --nested-directories -o <target> <dll>; too large to commit.
 /external/decompile-cache/
+
+# Vendored SPT archive mirror. The original lives outside the repo at
+# E:\云文件\GitHub\SPT-archive\; nothing under here is source.
+/external/spt-archive/
 
 ModOrganizer-*.dmp
 *.ala

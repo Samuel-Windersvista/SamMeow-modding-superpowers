@@ -1,8 +1,0 @@
-BepInEx/
-.vs/
-.vscode/
-obj/
-bin/
-*.zip
-*.pdb
-COMPILE.md
