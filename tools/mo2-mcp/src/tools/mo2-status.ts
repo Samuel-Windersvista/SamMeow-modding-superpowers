@@ -27,7 +27,7 @@ function resolveActiveProfile(
   const bound = requireBoundContext(ctx);
   return (
     nonEmpty(args.profile) ??
-    nonEmpty(process.env.BGS_MO2_PROFILE) ??
+    nonEmpty(process.env.MO2_PROFILE) ??
     nonEmpty(ini.general.selectedProfile) ??
     nonEmpty(bound.config.allowedProfiles[0]) ??
     null
@@ -58,7 +58,7 @@ registerTool({
         result: null,
         error: {
           code: "no_profile_available",
-          message: "No profile from args.profile, BGS_MO2_PROFILE, ModOrganizer.ini selected_profile, or allowed_profiles[0]",
+          message: "No profile from args.profile, MO2_PROFILE, ModOrganizer.ini selected_profile, or allowed_profiles[0]",
         },
       };
     }

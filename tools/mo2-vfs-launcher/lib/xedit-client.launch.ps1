@@ -16,7 +16,7 @@ function Get-XeditClientProjectRoot {
 
 function Get-XeditClientDefaultMo2SandboxRoot {
     # Resolution priority for the MO2 root the launcher should drive:
-    #   1. $env:BGS_MO2_ROOT  — end-user install path (set by the harness MCP
+    #   1. $env:MO2_ROOT  — end-user install path (set by the harness MCP
     #      server config, or by the setting-up-bgs-modding-environment skill
     #      once MO2 is detected).
     #   2. <project-root>\.artifacts\mo2  — dev sandbox; only used when it
@@ -24,7 +24,7 @@ function Get-XeditClientDefaultMo2SandboxRoot {
     # If neither resolves, callers see an empty string and surface a clear
     # error rather than silently constructing a wrong sandbox path under the
     # plugin install location.
-    $envRoot = [System.Environment]::GetEnvironmentVariable('BGS_MO2_ROOT')
+    $envRoot = [System.Environment]::GetEnvironmentVariable('MO2_ROOT')
     if (-not [string]::IsNullOrWhiteSpace($envRoot)) { return $envRoot }
     $devRoot = Join-Path (Get-XeditClientProjectRoot) '.artifacts\mo2'
     if (Test-Path -LiteralPath $devRoot -PathType Container) { return $devRoot }
@@ -355,14 +355,14 @@ function Invoke-XeditClientProcessLaunch {
         $moProfile = Get-XeditClientValidatedMoProfile -Options $options
         if ($moProfile -is [bool] -and -not $moProfile) { return 1 }
         # MO2 sandbox root: explicit --mo2-root wins; else fall through to
-        # Get-XeditClientDefaultMo2SandboxRoot which honors $env:BGS_MO2_ROOT
+        # Get-XeditClientDefaultMo2SandboxRoot which honors $env:MO2_ROOT
         # and the dev-sandbox fallback. End-user installs MUST pass one of
         # those; otherwise we surface a clear error rather than constructing
         # a wrong path under the plugin install root.
         $sandboxRootOverride = if ($options.ContainsKey('--mo2-root')) { [string]$options['--mo2-root'] } else { $null }
         $resolvedSandboxRoot = if (-not [string]::IsNullOrWhiteSpace($sandboxRootOverride)) { $sandboxRootOverride } else { Get-XeditClientDefaultMo2SandboxRoot }
         if ([string]::IsNullOrWhiteSpace($resolvedSandboxRoot)) {
-            Write-Host "MO2 sandbox root is not configured. Pass --mo2-root <path>, set `$env:BGS_MO2_ROOT, or run from a dev checkout that has .artifacts\mo2\."
+            Write-Host "MO2 sandbox root is not configured. Pass --mo2-root <path>, set `$env:MO2_ROOT, or run from a dev checkout that has .artifacts\mo2\."
             return 1
         }
         $pluginSource = Get-XeditClientResolvedPluginSource -Options $options -GameMode $options['--game-mode'] -MoProfile $moProfile -SandboxRoot $resolvedSandboxRoot
@@ -428,8 +428,8 @@ function Invoke-XeditClientProcessLaunch {
         # to finish loading active masters before system.describe answers, and
         # 30s tripped on real profiles. See Wait-XeditClientAutomationReady def.
         $readyTimeoutSeconds = 240
-        if ($env:BGS_XEDIT_READY_TIMEOUT_SECONDS -and [int]::TryParse($env:BGS_XEDIT_READY_TIMEOUT_SECONDS, [ref]$null)) {
-            $parsed = [int]$env:BGS_XEDIT_READY_TIMEOUT_SECONDS
+        if ($env:XEDIT_READY_TIMEOUT_SECONDS -and [int]::TryParse($env:XEDIT_READY_TIMEOUT_SECONDS, [ref]$null)) {
+            $parsed = [int]$env:XEDIT_READY_TIMEOUT_SECONDS
             if ($parsed -gt 0) { $readyTimeoutSeconds = $parsed }
         }
         $null = Wait-XeditClientAutomationReady -XeditExecutablePath $normalizedLauncherCommand.DetectionPath -XeditPid $processId -SessionPath $session.SessionPath -TimeoutSeconds $readyTimeoutSeconds

@@ -168,7 +168,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
     });
   }, 120_000);
 
-  it.skipIf(!ALT_PROFILE)("AT7: mo2_switch_profile cold-restarts to alternate profile and back (requires BGS_MO2_ACCEPTANCE_ALT_PROFILE)", async () => {
+  it.skipIf(!ALT_PROFILE)("AT7: mo2_switch_profile cold-restarts to alternate profile and back (requires MO2_ACCEPTANCE_ALT_PROFILE)", async () => {
     await withMcp(realEnv(), async (mcp) => {
       const toAlt = await planApply(mcp, "mo2_switch_profile", { new_profile: ALT_PROFILE! });
       expectOk(toAlt.apply);
@@ -245,7 +245,7 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
     }
   }, 90_000);
 
-  it.skipIf(!ACCEPTANCE_SEPARATOR)("AT13: mo2_send_mod_to covers all six implemented target modes (requires BGS_MO2_ACCEPTANCE_SEPARATOR)", async () => {
+  it.skipIf(!ACCEPTANCE_SEPARATOR)("AT13: mo2_send_mod_to covers all six implemented target modes (requires MO2_ACCEPTANCE_SEPARATOR)", async () => {
     await withMcp(realEnv(), async (mcp) => {
       const cases = [
         { target_mode: "top" },
@@ -265,11 +265,11 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
     });
   }, 240_000);
 
-  it.skipIf(!EXPECTED_WINNER)("AT14: mo2_assets_resolve winner matches manual MO2 GUI cross-check (requires BGS_MO2_ACCEPTANCE_EXPECTED_WINNER)", async () => {
+  it.skipIf(!EXPECTED_WINNER)("AT14: mo2_assets_resolve winner matches manual MO2 GUI cross-check (requires MO2_ACCEPTANCE_EXPECTED_WINNER)", async () => {
     // Manual assertion recorded for the selected file: the expected winner must
     // be set by the operator after checking MO2's Conflicts/Data view.
     await withMcp(realEnv(), async (mcp) => {
-      expect(EXPECTED_WINNER, "set BGS_MO2_ACCEPTANCE_EXPECTED_WINNER from MO2 GUI cross-check").toBeTruthy();
+      expect(EXPECTED_WINNER, "set MO2_ACCEPTANCE_EXPECTED_WINNER from MO2 GUI cross-check").toBeTruthy();
       const resolved = await mcp.call("mo2_assets_resolve", { profile: REAL_PROFILE, virtual_path: OVERRIDDEN_FILE });
       expectOk(resolved);
       expect(resolved.result.winner).toBe(EXPECTED_WINNER);
@@ -292,10 +292,10 @@ describe.skipIf(process.env.MO2_MCP_ACCEPTANCE !== "1")("v1 acceptance (live)", 
 
   it("AT16: create_mod + create_separator round-trip then remove_mod", async () => {
     // Uses harnessEnv (.artifacts/mo2) because this exercises broker round-trips
-    // that need the configured BGS_MO2_ROOT to match the live MO2 instance the
+    // that need the configured MO2_ROOT to match the live MO2 instance the
     // pipe actually targets. realEnv (WL2) without a live broker there would
     // make PipeClient fall back to harness, leaving the resulting mod at a path
-    // that the TS layer (computing modsDir from BGS_MO2_ROOT) can't see.
+    // that the TS layer (computing modsDir from MO2_ROOT) can't see.
     await withMcp(harnessEnv(), async (mcp) => {
       const modName = uniqueName("AT16-Mod");
       const sepName = uniqueName("AT16-Separator");

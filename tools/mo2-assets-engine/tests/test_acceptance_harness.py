@@ -14,10 +14,12 @@ from typer.testing import CliRunner
 
 from mo2_assets_engine.cli.app import app
 
+# Owner must supply MO2_ROOT (the live MO2 install root); no BGS-era sandbox
+# path is baked in. Unset => empty Path => the harness-profile skipif trips.
 HARNESS_PROFILE = Path(
     os.environ.get(
-        "BGS_MO2_ROOT",
-        r"D:\awesome-bgs-mod-master\.artifacts\mo2",
+        "MO2_ROOT",
+        "",
     )
 ) / "profiles" / "Default"
 

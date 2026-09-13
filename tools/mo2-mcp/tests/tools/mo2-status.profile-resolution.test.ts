@@ -56,7 +56,7 @@ async function status(args: Record<string, unknown>, ctx: ToolContext) {
 }
 
 describe("mo2_status profile resolution", () => {
-  const previousEnvProfile = process.env.BGS_MO2_PROFILE;
+  const previousEnvProfile = process.env.MO2_PROFILE;
 
   beforeAll(async () => {
     _clearToolsForTests();
@@ -64,16 +64,16 @@ describe("mo2_status profile resolution", () => {
   });
 
   beforeEach(() => {
-    delete process.env.BGS_MO2_PROFILE;
+    delete process.env.MO2_PROFILE;
   });
 
   afterEach(() => {
-    if (previousEnvProfile === undefined) delete process.env.BGS_MO2_PROFILE;
-    else process.env.BGS_MO2_PROFILE = previousEnvProfile;
+    if (previousEnvProfile === undefined) delete process.env.MO2_PROFILE;
+    else process.env.MO2_PROFILE = previousEnvProfile;
   });
 
   it("uses args.profile before env, ini, and config fallbacks", async () => {
-    process.env.BGS_MO2_PROFILE = "EnvProfile";
+    process.env.MO2_PROFILE = "EnvProfile";
     const { ctx } = await setupRoot({
       profiles: ["ArgProfile", "EnvProfile", "IniProfile", "ConfigProfile"],
       selectedProfile: "IniProfile",
@@ -87,8 +87,8 @@ describe("mo2_status profile resolution", () => {
     expect(response.result?.counts?.mods_total).toBe(2);
   });
 
-  it("uses BGS_MO2_PROFILE when args.profile is absent", async () => {
-    process.env.BGS_MO2_PROFILE = "EnvProfile";
+  it("uses MO2_PROFILE when args.profile is absent", async () => {
+    process.env.MO2_PROFILE = "EnvProfile";
     const { ctx } = await setupRoot({
       profiles: ["EnvProfile", "IniProfile", "ConfigProfile"],
       selectedProfile: "IniProfile",

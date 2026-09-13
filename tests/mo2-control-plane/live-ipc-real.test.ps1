@@ -9,7 +9,12 @@ param(
 $ErrorActionPreference = "Stop"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
-$liveMo2Root = "D:\awesome-bgs-mod-master\.artifacts\mo2"
+# Owner must supply MO2_HARNESS_ROOT: the live MO2 sandbox root. No BGS-era
+# sandbox path is baked in.
+$liveMo2Root = $env:MO2_HARNESS_ROOT
+if ([string]::IsNullOrWhiteSpace($liveMo2Root)) {
+    throw "MO2_HARNESS_ROOT is not set. Set it to the live MO2 sandbox root (the directory containing ModOrganizer.exe) before running this opt-in harness."
+}
 $liveRepoRoot = (Split-Path (Split-Path $liveMo2Root -Parent) -Parent)
 $mo2ExecutablePath = Join-Path $liveMo2Root "ModOrganizer.exe"
 $pluginSupportRoot = Join-Path $liveMo2Root "plugins\Mo2AgentControl"
@@ -165,7 +170,7 @@ function Remove-ItemIfPresent {
 }
 
 if (-not $AllowLiveSandbox) {
-    throw "This real harness touches D:\awesome-bgs-mod-master\.artifacts\mo2. Re-run with -AllowLiveSandbox to opt in."
+    throw "This real harness touches the live MO2 sandbox. Re-run with -AllowLiveSandbox to opt in."
 }
 
 if (-not (Test-Path $liveMo2Root -PathType Container)) {

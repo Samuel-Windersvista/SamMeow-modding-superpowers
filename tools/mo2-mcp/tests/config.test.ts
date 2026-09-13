@@ -10,7 +10,7 @@ async function writeConfigFixture(root: string, fixtureName: string): Promise<vo
 }
 
 describe("loadConfig", () => {
-  it("reads BGS_MO2_ROOT and .mo2-mcp.json", async () => {
+  it("reads MO2_ROOT and .mo2-mcp.json", async () => {
     const root = await mkdtemp(join(tmpdir(), "mo2-test-"));
     await writeFile(
       join(root, ".mo2-mcp.json"),
@@ -78,7 +78,7 @@ describe("loadConfig", () => {
   });
 
   it("rejects empty mo2Root", async () => {
-    await expect(loadConfig({ mo2Root: "" })).rejects.toThrow(/BGS_MO2_ROOT/);
+    await expect(loadConfig({ mo2Root: "" })).rejects.toThrow(/MO2_ROOT/);
   });
 
   it("accepts read-only ceiling", async () => {
@@ -92,20 +92,20 @@ describe("loadConfig", () => {
     expect(cfg.permissionCeiling).toBe("read-only");
   });
 
-  it("BGS_MO2_PERMISSION_CEILING overrides .mo2-mcp.json", async () => {
+  it("MO2_PERMISSION_CEILING overrides .mo2-mcp.json", async () => {
     const root = await mkdtemp(join(tmpdir(), "mo2-test-"));
     await writeFile(
       join(root, ".mo2-mcp.json"),
       JSON.stringify({ permission_ceiling: "metadata-editable" }),
     );
-    const previous = process.env.BGS_MO2_PERMISSION_CEILING;
-    process.env.BGS_MO2_PERMISSION_CEILING = "full-control";
+    const previous = process.env.MO2_PERMISSION_CEILING;
+    process.env.MO2_PERMISSION_CEILING = "full-control";
     try {
       const cfg = await loadConfig({ mo2Root: root });
       expect(cfg.permissionCeiling).toBe("full-control");
     } finally {
-      if (previous === undefined) delete process.env.BGS_MO2_PERMISSION_CEILING;
-      else process.env.BGS_MO2_PERMISSION_CEILING = previous;
+      if (previous === undefined) delete process.env.MO2_PERMISSION_CEILING;
+      else process.env.MO2_PERMISSION_CEILING = previous;
     }
   });
 
