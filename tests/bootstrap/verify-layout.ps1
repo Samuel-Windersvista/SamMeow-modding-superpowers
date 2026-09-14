@@ -1,10 +1,15 @@
 # Layout invariant: the repository carries the SPT-only tree and none of the
-# dead BGS/harness shape (materialized BGS plugin tree, empty harness dirs,
-# BGS-era MCP manifest, BGS knowledge base).
-# Recalibrated 2026-09-14: external/spt-archive was dropped from the absent
-# list -- it is a gitignored, locally cloned vendored corpus backing the
-# knowledge base (see .gitignore and the clonedeps skill). Its on-disk
-# presence is a machine-local workflow matter, not a layout regression.
+# dead BGS/harness shape is COMMITTED (materialized BGS plugin tree, harness
+# manifests, BGS-era MCP manifest, BGS knowledge base).
+# Recalibrated 2026-09-14:
+# - external/spt-archive was dropped entirely -- it is a gitignored, locally
+#   cloned vendored corpus backing the knowledge base (see .gitignore and the
+#   clonedeps skill); its on-disk presence is a machine-local workflow matter.
+# - plugins/ hooks/ .claude-plugin/ .codex-plugin/ .agents/ .mcp.json are
+#   materialized at the repo root by the OpenCode plugin on every session
+#   start. The invariant for them is "never tracked by git" (checked via
+#   git ls-files), not "absent from disk" -- deletion does not survive a
+#   running harness, which is expected, not a regression.
 
 $ErrorActionPreference = "Stop"
 
@@ -27,13 +32,22 @@ foreach ($relative in $requiredPaths) {
     Assert-PathExists -Path (Join-Path $repoRoot $relative) -Label $relative
 }
 
-$absentPaths = @(
+# Harness-runtime paths: regenerated at the repo root by the OpenCode plugin
+# on every session start. The invariant is "never tracked by git".
+$runtimePaths = @(
     "plugins",
     "hooks",
     ".claude-plugin",
     ".codex-plugin",
     ".agents",
-    ".mcp.json",
+    ".mcp.json"
+)
+
+foreach ($relative in $runtimePaths) {
+    Assert-PathNotTracked -RepoRoot $repoRoot -Path $relative -Label $relative
+}
+
+$absentPaths = @(
     "knowledge/bgs-kb"
 )
 

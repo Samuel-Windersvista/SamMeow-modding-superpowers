@@ -55,8 +55,13 @@ if (-not (Test-Path -LiteralPath $pluginPath)) {
     Assert-McpServerSet -Declared $declared -Label "OpenCode plugin config.mcp hook"
 }
 
+# .mcp.json is harness-runtime state: the OpenCode plugin regenerates it at
+# the repo root on every session start (from a stale template, as of
+# 2026-09-14). Only enforce its contents when it is actually tracked by git;
+# the canonical declaration surface is the plugin's config.mcp hook.
 $staticMcpPath = Join-Path $repoRoot ".mcp.json"
-if (Test-Path -LiteralPath $staticMcpPath) {
+$staticTracked = @(git -C $repoRoot ls-files -- ".mcp.json")
+if ((Test-Path -LiteralPath $staticMcpPath) -and $staticTracked.Count -gt 0) {
     try {
         $static = Get-Content -LiteralPath $staticMcpPath -Raw | ConvertFrom-Json
         $staticServers = @()

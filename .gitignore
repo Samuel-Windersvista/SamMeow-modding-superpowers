@@ -24,6 +24,14 @@ Desktop.ini
 !/.opencode/plugins/
 !/.opencode/INSTALL.md
 
+# Harness-runtime files materialized at the repo root by the OpenCode plugin
+# on every session start (regenerated automatically; never commit).
+/.mcp.json
+/hooks/
+/.claude-plugin/
+/.codex-plugin/
+/.agents/
+
 # AGENTS.md is now a tracked agent-skills config (see docs/agents/). The old
 # gitignored dev-router role is retired with the SPT-only cleanup.
 
@@ -65,5 +73,5 @@ ModOrganizer-*.dmp
 .slim/worktrees.json
 # END oh-my-opencode-slim worktrees
 
-# tarkov-runtime-mcp ²âÊÔ fixture ÈÕÖ¾ÐèÈë¿â£¨ticket 04£©
+# tarkov-runtime-mcp ï¿½ï¿½ï¿½ï¿½ fixture ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½â£¨ticket 04ï¿½ï¿½
 !tools/tarkov-runtime-mcp/tests/fixtures/**/*.log

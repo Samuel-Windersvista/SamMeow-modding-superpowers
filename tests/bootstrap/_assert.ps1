@@ -47,8 +47,20 @@ function Assert-ContentContains {
     }
 }
 
-function Assert-ContentNotContains {
+function Assert-PathNotTracked {
     param(
+        [string]$RepoRoot,
+        [string]$Path,
+        [string]$Label = $Path
+    )
+
+    $tracked = @(git -C $RepoRoot ls-files -- $Path)
+    if ($tracked.Count -gt 0) {
+        Add-BootstrapFailure "$Label is tracked by git but must stay harness-runtime-local ($($tracked.Count) tracked file(s), first: $($tracked[0]))"
+    }
+}
+
+function Assert-ContentNotContains {    param(
         [string]$Content,
         [string]$Needle,
         [string]$Label
