@@ -196,6 +196,171 @@
    "source": "curated"
   },
   {
+   "path": "curated/modding-standard/01-structure.md",
+   "title": "编写规范 01：仓库与目录结构（STRUCT）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/02-metadata.md",
+   "title": "编写规范 02：元数据与版本声明（META）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/03-build.md",
+   "title": "编写规范 03：构建与目标框架（BUILD）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/04-server.md",
+   "title": "编写规范 04：服务端机制（SRV）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "server",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/05-client.md",
+   "title": "编写规范 05：客户端机制（CLI）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "client",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/06-config.md",
+   "title": "编写规范 06：配置系统（CFG）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/07-logging.md",
+   "title": "编写规范 07：日志与错误处理（LOG）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/08-dependencies.md",
+   "title": "编写规范 08：依赖管理（DEP）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/09-packaging.md",
+   "title": "编写规范 09：打包与发布（PKG）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/10-verification.md",
+   "title": "编写规范 10：验证流程（VERIFY）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/11-version-differences.md",
+   "title": "编写规范 11：版本差异（VER）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/12-bundle-assets.md",
+   "title": "编写规范 12：bundle/资产（BND）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/13-perf-security.md",
+   "title": "编写规范 13：性能与安全（PERF）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/evidence-index.md",
+   "title": "编写规范：证据索引（Evidence Index）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
+   "path": "curated/modding-standard/README.md",
+   "title": "SPT Mod 编写规范（Modding Standard）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
    "path": "curated/recipes/01-add-custom-trader.md",
    "title": "配方：添加自定义商人 [4.1]",
    "version": [
