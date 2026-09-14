@@ -65,6 +65,10 @@ docs/superpowers/
 # E:\云文件\GitHub\SPT-archive\; nothing under here is source.
 /external/spt-archive/
 
+# External reference clones for the in-raid bridge work (ecosystem prior art:
+# Web Minimap / bepinex-mcp). Local corpus, never source.
+/external/references/
+
 ModOrganizer-*.dmp
 *.ala
 

@@ -55,3 +55,42 @@
 - **RELEASE-NOTES.md 全文中文化**（Overseer 指示；标识符/路径/版本号保持原文）
 - **教训（harness 运行时态）**：删除 plugins/ hooks/ .mcp.json 等根级 harness 文件后，OpenCode 插件在会话期重新物化——布局不变量从「磁盘不存在」改为「git 不跟踪」（新增 Assert-PathNotTracked）；.mcp.json 移出索引 + .gitignore 收编 6 项运行时路径；verify-mcp-surface 仅对受跟踪的 .mcp.json 强制内容
 - **验证**：bootstrap 8/8（活跃会话下运行，运行时文件在盘但通过）；遗留：5.0 正式 tag 的 KB 技术复核列入后续工单；基线何时迁 5.x 属 Modding Standard 修订决策
+
+## 2026-09-14（SPT5 更新）— BEM-20260914 同步 + 安装升级 + Phase 1 冒烟复验
+
+- **源码同步**：`server-csharp` 新 tag `5.0.0-BEM-20260914`（`ec15a4083`，距 0910 共 21 commits：战斗通行证 / 任务系统与数据重生成 / 套装修复 / bot 数据全量重生成 / DI 重构；**未触及**版本端点、HTTP 监听、加密与 shuffle、Mod 加载器）；`modules`（客户端）0910 与 0914 为**同一 commit**（`b5513e6`）；EFT 兼容版本 `1.1.5.0.47242` **未变**。
+- **安装升级**（Overseer 操作）：`SPT_5xx` 替换为 `SPT-BLEEDINGEDGEMODS-5.0.0-47242-ec15a40-20260914`；`SPT_Runtime\user`（1 profile）保留。
+- **台账更新**：`tarkov-runtime-mcp` anchor 默认值 `5.0.0-BEM-20260910` → `0914`（config.ts / types.ts / version.ts 注释 + config.test.ts；150/150 绿 + typecheck 通过）；`.scratch/tarkov-runtime-inraid/spec.md` 增环境基线注记；KB `5xx-source-verification.md` tag 列表 + 再同步记录；CONTEXT.md（Bridge / In-Raid State）去「首版不实现」。
+- **Phase 1 冒烟复验（live，直启 server）**：版本门禁通过（自报 `SPT 5.0.0 (BEM) ec15a4` × anchor `5.0.0-BEM-20260914`）；`tarkov_instances` 1 实例；`tarkov_snapshot` 全 5 section 真实数据（profile L3 / exp 5437 / 技能 37；商人 18；任务 62 条 30-26-5；藏身处 28 区；库存 485 件 / 259 模板；session=auto-single Samuel 零配置）；`tarkov_wait_for` 满足 + 超时两路径正常；`raid_status` 占位错误码正常。冒烟后 server 已停止。
+- **已知项（非回归）**：商人 assort 计数、藏身处等级为既有 follow-up（读路径待改 `TradersInfo` / `Hideout.Areas`）。
+
+## 2026-09-14（T03–T07）— 局内桥全字段 + 错误模型 + wait_for + 录制：三局 live 验收闭环
+
+- **交付**：桥插件扩展（`/bridge/info` + 玩家全字段 + raid 元数据 + bot 域；`SPTInstallPath` 标准名 + LICENSE）；MCP 侧协议门禁 + 错误码拆分（`BRIDGE_UNREACHABLE`/`BRIDGE_VERSION_MISMATCH`/`NOT_IN_RAID`）+ `raid_status`/`raid_player`/`raid_bots` 真实化 + wait_for 快速失败 + 录制/回放；测试 **214/214**（25 文件）
+- **live 验收（三局真实 raid，Overseer 配合）**：
+  - 采样间隔配置实证（1000→250ms，`/bridge/info` + age 观测 ≤250ms）
+  - 姿态 Stand↔Duck（`wait_for` `pose equals Duck` 11.2s/23 轮询满足）；移动比对 Δ≈64 单位；**击杀 1 scav → bot 计数 13→12 精确反映**；**受伤 → Chest 85→78.93 / total 440→433.93**
+  - `raidId` 三轮 live 驱动修正：空 profileId → `MainPlayer.ProfileId`；`StartDateTime` 不可靠（同局翻转 `0001-11-23…`↔`no-start`）→ **桥自持会话起点墙钟**（两次读取完全一致，`<profileId>@<UTC ISO>`）
+  - bot 分类修正：role 优先（`pmcUSEC`/`pmcBEAR` 的 side 为 `Savage`，side 优先会误计）
+- **回归资产**：真实 raid 录制（profileId 匿名化）入 `tests/fixtures/live-raid/` + 回放测试 4 条
+- **Modding Standard 机检**（`-TargetSptVersion 5.0.0`）：**PASS=11 FAIL=0 WAIVED=3**（豁免记录在桥目录）；补齐 LICENSE、`SPTInstallPath` 标准名（兼容 `GameDir`）
+- **live 踩坑记录**：usvfs 把**新建**配置文件重定向到 MO2 `overwrite/BepInEx/config/`；覆盖层 DLL 在游戏运行中被锁定（部署需先退出游戏）
+- 遗留（第二波）：事件流（击杀/受伤/撤离）、装备/武器状态、`getInfo` 缓存策略复核、boss 判定扩展（`sectantPriest` 等无 "boss" 字样）
+
+## 2026-09-15（凌晨）— Phase 2 双轴评审 + 修复闭环
+
+- **双轴评审**（@oracle ×2：Standards + Spec）对象 = Phase 2 未提交改动（13 tracked + 27 new）：
+  - **Spec 轴**：1 实质缺口——桥侧零单测（spec 测试决策要求）→ 已补 xunit 测试工程 **85 用例**（纯逻辑抽取 `BridgeRouter`/`BridgePayloads`/`RaidIdBuilder`，主工程 0 error）；采样间隔范围收紧 **250–5000ms**（spec 0.25–5s）；`raid_status` 非 raid 路径补桥自报（US23）；README 过时行修正
+  - **Standards 轴**：MUST（mod 级 `.gitignore`）已补；SHOULD（关闭路径空 catch 静默）已修（Debug 留痕 + 注释，STD-LOG-004）；smell 清理（`PLACEHOLDER_TOOLS` 移除、raid 工具编排上收 `fetchRaidSample`、`MainPlayer` 单次取值）；CLI-007 标准漂移（5.0 用 `Unload()` 而非 `Dispose()`）记录为**标准/检查器校准 follow-up**
+  - 附带：MCP 测试 flake 根治（`listen(0)` 偶发命中 fetch forbidden port（实测 5061）→ 命中换端口重试）
+- **验证**：桥 `0 error` + **85/85**；MCP **214/214**（连跑 3 次）；Modding Standard 机检 **PASS=11 FAIL=0 WAIVED=3**；新 DLL（31,232 bytes）已部署覆盖层（游戏关闭时）
+- **Phase 2 状态**：T01–T08 全部核销（含三局 live 验收）；全部改动**未提交**（按 Overseer 规则）
+
+## 2026-09-14（T02 首刀）— 局内桥 live 打通：MO2 客户端投送 / IL2CPP 读数 / HttpListener 三假设全成立
+
+- **交付**：`tools/tarkov-runtime-bridge/`（BepInEx 6 IL2CPP 桥插件 0.1.0，net6.0，GUID `com.sammeow.tarkov-runtime-bridge`）+ `tarkov-runtime-mcp` MCP 侧 `BridgeConnection` 接缝与 `raid_player` 真实化（168/168 测试绿，基线 150 + 18）
+- **MO2 交付链路**：覆盖层 `工具-tarkov-runtime-client-bridge-0.1.0`（实例 `Inescapable Tarkov` / Default）→ `BepInEx/plugins/TarkovRuntimeBridge.dll`；BepInEx 日志确认加载（`Loading [Tarkov Runtime Bridge 0.1.0]` + `listening on 127.0.0.1:49777`）
+- **live 验收（真实游戏）**：菜单 `{"inRaid":false}` → raid `{"inRaid":true,"position":{...}}` → 移动比对 x 64.30→99.06 / z 157.47→172.60（Δ≈38 单位）；MCP `raid_player` 全链路 ok；采样循环 age ≤1s
+- **三假设实测结论**：① usvfs 客户端投送成立（A-1 扩展）；② IL2CPP 成员读数成立（`MainPlayer.Position`）；③ HttpListener 在游戏进程内可用（127.0.0.1 免 URL ACL；另经受限令牌预测试）
+- **架构落点**：ADR-0007（插件内嵌 HTTP + MCP 拉取）首刀验证；MCP 侧唯一新接缝 `BridgeConnection`
+- 遗留：T03（采样/错误模型加固）、T08（Modding Standard 机检与文档收尾）

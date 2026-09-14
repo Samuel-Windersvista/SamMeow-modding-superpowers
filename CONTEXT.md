@@ -15,7 +15,7 @@ _Avoid_: SPT 工具、mod 分析器
 _Avoid_: 运行时 MCP、live MCP、tarkov-MCP
 
 **Bridge**:
-安装进游戏侧、为 tarkov-runtime-MCP 暴露状态的组件。按 ADR-0003 采用混合策略：局外状态零桥（MCP 直连 `/client/*` 路由），局内状态用 Client Bridge（BepInEx 插件，Phase 2，MO2 overlay 交付）。首版无任何游戏侧组件。
+安装进游戏侧、为 tarkov-runtime-MCP 暴露状态的组件。按 ADR-0003 采用混合策略：局外状态零桥（MCP 直连 `/client/*` 路由），局内状态用 Client Bridge（BepInEx 插件，Phase 2，MO2 overlay 交付；Phase 2 起为唯一游戏侧组件）。
 _Avoid_: 插件、适配器（adapter 指别的东西）、shim
 
 ### 状态域
@@ -25,7 +25,7 @@ SPT server 掌握的持久化状态：存档 profile、库存、商人、任务�
 _Avoid_: 离线状态、菜单状态
 
 **In-Raid State（局内状态）**:
-raid 进行中仅存在于客户端进程的状态：玩家位置、血量、AI。需 Client Bridge（BepInEx + Harmony + IPC）。架构预留 `raid.*` 工具命名空间，首版不实现。
+raid 进行中仅存在于客户端进程的状态：玩家位置、血量、AI。需 Client Bridge（BepInEx + Harmony + IPC）；工具面为 `raid.*`（Phase 2 实现）。
 _Avoid_: 实时状态（局外状态也是实时的，此词有歧义）
 
 **Snapshot（快照）**:
