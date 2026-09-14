@@ -1,6 +1,6 @@
 # SPT 知识库全局索引
 
-按「我想做什么」检索。最后更新：2026-08-02
+按「我想做什么」检索。最后更新：2026-09-14
 > Agent 机读索引：`index.json`（按 version/domain/topic 过滤）
 
 ## 写服务端 mod (Server Mod)
@@ -12,6 +12,7 @@
 | 4.0→4.1 服务端迁移 | `wiki/SPT_41/Server_40_to_41.md` | [4.1] |
 | 4.1 Mod 网页（Mod Web Pages） | `wiki/SPT_41/modding/server/Mod_Web_Pages.md` | [4.1] |
 | 服务端 API 笔记（源码提炼） | `curated/api-notes-4.1/`（含 architecture-map.md 架构图） | [4.1] |
+| 4.1/5.0 mod 开发规范（Modding Standard） | `curated/modding-standard/`（README 入口；84 条规则 + evidence-index + version-matrix；机读索引 `index.json`） | [4.1][5.0] |
 | 4.1.5 服务端完整源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（fork，目录 `SPTushonka.*`，命名空间 `SPTarkov.*`） | [4.1] |
 | 4.1.5 源码审查报告（bug/优化） | `curated/operations/415-source-review-report.md` | [4.1] |
 | 3.11 服务端实现对照 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code`（SPT-AKI 3.11.5-Live-In-Norvinsk-Edition，基线 3.11.x） | [3.11] |
@@ -30,6 +31,7 @@
 | 4.1 类名映射（混淆对照） | `wiki/SPT_41/modding/client/Class_Name_Mappings.md` | [4.1] |
 | EFT 1.1.5 类名清单与 4.1→1.1.5 对照 | `docs/eft-1.1.5-类名映射重建报告.md` + `archive/eft-1.1.5/`（含 UNSTABLE 性质） | [5.0] |
 | 4.1 枚举扩展 | `wiki/SPT_41/modding/EnumExtensions.md` | [4.1] |
+| 客户端规范速查（Harmony / BepInEx / 配置 / 日志 / 性能） | `curated/modding-standard/05-client.md`、`06-config.md`、`07-logging.md`、`13-perf-security.md` | [4.1][5.0] |
 | dnSpy 调试教程 | `wiki/modding/tutorials/debug_dnSpy.md` | [通用] |
 | 示例代码 | `external/spt-archive/mod-examples/` | [3.11] |
 

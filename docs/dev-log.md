@@ -33,3 +33,15 @@
 - **旧 wiki 保留**：`wiki/`（sp-tarkov 官方快照）不整体替换——全文 120 处旧路径引用（skills/curated/docs）；两棵树并存，新知识优先查 `wiki-tushonka/`。
 - **技能表述已更新**（Overseer 批准）：`using-spt-modding-superpowers` / `maintaining-spt-modding-environment` / `setting-up-spt-modding-environment` / `evaluating-spt-mods` / `interpreting-spt-mod-instructions` 五处 "Forge is offline" 全部改为 "Forge API v0 在线（sp-mod.com/api/v0，公共只读，~300 req/min，守 ToS）"，本地归档定位为稳定快照。
 - **工具固化**：`scripts/spt-kb/`（fetch → clone → finalize MANIFEST 三步，含 URL 规范化与 dry-run）——供未来重复采集。
+
+## 2026-09-14（晚）：Modding Standard 全流程闭环 + BGS 残留清理 + 二期检查器
+
+- **Modding Standard 12 票全部完成**：grilling → spec → tickets → implement → 双轴评审 → 试点校准 → S3 自检，提交 8 笔（d71f27f6 … 2e69d920）
+  - 规则集 84 条 / 13 维度（28 MUST），双源证据（机制 + 语料），evidence-index 21 锚点 + EV-CALIBRATION 校准记录
+  - version-matrix.md：4.1.5 ↔ 5.0 双轨差异矩阵
+  - 模板：server/client 升级（config 链 + LICENSE + 规则注释）+ 新增 paired-mod（Client/Server/Shared + 根级 Directory.Build.props 版本联动 + pack.ps1）；S1 构建通过
+  - writing-spt-mod 技能改造：三模板绑定 + 60 Rule ID + 豁免流程
+  - 试点校准：3 份合规报告，R1–R8 修订（5.0 客户端形态 IL2CPP、monorepo 作用域、CFG 边界等）
+- **BGS 残留清理**：删除 plugins/bgs-modding-superpowers 物化树、空 hooks/ .claude-plugin/ .codex-plugin/ .agents/、被跟踪且已失效的 .mcp.json（引用 BGS 插件树）；verify-layout.ps1 重新校准（external/spt-archive 为 gitignored 本地语料，移出 absent 清单）
+- **二期检查器**：scripts/check-mod-standard.ps1（约 25 条机检规则子集；monorepo 感知——根级 Directory.Build.props 版本/安装路径、共享 README/LICENSE；模板占位符 SKIP；豁免约定 Waiver: STD-XXX-NNN: reason）；接入 bootstrap 为 verify-standard-compliance.ps1，四套模板目标全 PASS，bootstrap 8/8 全绿
+- **文档同步**：README（版本策略改双轨 + Modding Standard 专节 + 15 skills + 知识库表增行）、RELEASE-NOTES（v0.2.0-spt 新增小节）、spt-kb/INDEX.md（增行 + 日期更新）

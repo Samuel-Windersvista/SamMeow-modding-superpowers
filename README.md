@@ -17,14 +17,15 @@ SPT 项目可能停止运作。本仓库承担两项使命：
 
 | 阶段 | 版本 | 说明 |
 |------|------|------|
-| 基线（现状） | SPT 3.11.4 | 可行性研究报告的验证基线（150+ mod） |
-| 目标（终态） | **SPT 5.x** | 未来的发展方向 |
+| 历史基线 | SPT 3.11.4 | 可行性研究验证基线（150+ mod），现仅作概念对照 |
+| 开发基线（锁定） | **SPT 4.1.5** | mod 一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table 注入体系） |
+| 前瞻线 | SPT 5.0（预发布） | 双轨适配中：差异与风险见 Modding Standard 的 `version-matrix.md`，规则以 `Applies` 标注 4.1.5 / 5.0 / both |
 
-mod 开发一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table 注入体系），3.11 资料仅作概念对照。
+开发规范由 **Modding Standard** 统一约束（见下文专节），3.11 资料仅作概念对照。
 
 ## 技能集（`skills/`）
 
-14 个 skill，覆盖整合包全生命周期：
+15 个 skill，覆盖整合包全生命周期：
 
 | Skill | 用途 |
 |-------|------|
@@ -39,7 +40,8 @@ mod 开发一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table �
 | `spt-mcp-automation` | `spt` MCP 的操作中枢与路由 |
 | `testing-spt-modpack` | 安装后主动验证（Level B/C 标准） |
 | `diagnosing-spt-problems` | 症状优先的崩溃 / 掉帧 / 加载失败诊断 |
-| `writing-spt-mod` | 从模板写新 mod（服务端 C# 或客户端 BepInEx/Harmony） |
+| `writing-spt-mod` | 从模板写新 mod（服务端 C# 或客户端 BepInEx/Harmony，遵循 Modding Standard） |
+| `using-spt-translator` | 翻译 SPT mod 文本（汉化/本地化） |
 | `writing-spt-modpack-devlog` | 维护项目 dev-log |
 | `writing-spt-modpack-changelog` | 维护发布 changelog |
 
@@ -64,10 +66,19 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 | [`knowledge/spt-kb/curated/modding-guide/`](knowledge/spt-kb/curated/modding-guide/) | 4.1 mod 开发指南（服务端/客户端解剖、25 示例迁移对照） | 4 章 |
 | [`knowledge/spt-kb/curated/api-notes-4.1/`](knowledge/spt-kb/curated/api-notes-4.1/) | 4.1 源码 API 笔记（DI/加载/配置/数据库/路由/存档，多数已源码实读核销） | 7 篇 |
 | [`knowledge/spt-kb/curated/recipes/`](knowledge/spt-kb/curated/recipes/) | 任务配方：加商人/自定义物品/自定义任务/路由/mod 通信等 | 12 份 |
+| [`knowledge/spt-kb/curated/modding-standard/`](knowledge/spt-kb/curated/modding-standard/) | SPT mod 开发规范（Modding Standard）：84 条可审计规则 / 13 维度 + 语料证据索引 + 4.1.5↔5.0 版本矩阵 | 16 文件 |
 | [`knowledge/spt-kb/archive/forge/`](knowledge/spt-kb/archive/forge/) | Forge 模组站归档：全站目录 + 热门详情 + 成品 zip + 源码 clone + 抓取脚本 | 1822 mod / 398MB |
 | [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案 | 2 文件 |
 
 入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。
+
+### Modding Standard（mod 开发规范）
+
+84 条可审计规则，13 维度（结构 / 元数据 / 构建 / 服务端 / 客户端 / 配置 / 日志 / 依赖 / 打包 / 验证 / 版本差异 / 资源包 / 性能与安全），覆盖 4.1.5 与 5.0 双轨（每条规则 `Applies` 标注）。每条规则双源留证（机制 + 语料），证据索引 21 个 `EV-*` 锚点。
+
+- 规则集入口：[`knowledge/spt-kb/curated/modding-standard/README.md`](knowledge/spt-kb/curated/modding-standard/README.md)
+- 机械检查器：`scripts/check-mod-standard.ps1`（约 25 条机检规则子集；monorepo 感知；模板占位符报 SKIP；豁免约定 `Waiver: STD-XXX-NNN: <reason>`，默认读 `<mod>/MODDING-STD-WAIVER.md`）
+- 质量门：`tests/bootstrap/verify-standard-compliance.ps1` —— 三套模板四套目标（含 paired 两端）全量过检
 
 ### 本地关联资产（仓库之外）
 
@@ -83,7 +94,8 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 - **6 阶段管线**：意图理解 -> mod 匹配/开发 -> 冲突分析 -> 人工审查 -> 构建 -> 验证
 - **14 个 SPT skills**：覆盖策展、构建、评估、安装解读、冲突审计、测试、诊断、mod 编写、dev-log/changelog（见 `skills/using-spt-modding-superpowers/`）
 - **冲突分类学**：20 类冲突，元数据级可检测大部分服务端冲突（见 `docs/wayfinder/findings/`）
-- **Mod 模板**：`templates/server-mod/` + `templates/client-mod/`
+- **Mod 模板**：`templates/server-mod/` + `templates/client-mod/` + `templates/paired-mod/`（paired = 同仓库 Client/Server/Shared，根级 `Directory.Build.props` 版本联动 + `pack.ps1` 单 zip 双端打包）
+- **开发规范**：Modding Standard 统一约束模板与 skill 输出（见上文「Modding Standard」专节）
 - **MO2 保留**作为 mod 管理层，SPT 特化版 MO2 为未来方向
 - **Forge 离线模式**：全部 mod 数据来自本地归档，不依赖 live API
 

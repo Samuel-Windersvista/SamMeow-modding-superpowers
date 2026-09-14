@@ -15,6 +15,13 @@ SPT-only release of the SamMeow SPT modding toolkit -- an OpenCode plugin for SP
 - Rewrote the bootstrap verification suite around SPT-only invariants.
 - Adopted the Matt agent-skills configuration: `docs/agents/` config files, a tracked `AGENTS.md`, a local-markdown issue tracker, and the five default triage labels.
 
+### Modding Standard + repo recalibration (2026-09-14)
+
+- **Modding Standard** (`knowledge/spt-kb/curated/modding-standard/`): 84 auditable rules across 13 dimensions (28 MUST / 51 SHOULD / 5 MAY), each dual-sourced (mechanism + corpus). Evidence index with 21 EV anchors (corpus statistics from 392 surveyed source dirs), pilot calibration record (R1-R8 revisions incl. 5.0 IL2CPP client form and monorepo applicability), and a 4.1.5 <-> 5.0 version matrix. Registered in the machine-readable `index.json` (16 entries).
+- **Templates**: server/client upgraded per the standard (config registration chain, LICENSE, rule annotations); new `templates/paired-mod/` (Client/Server/Shared, root `Directory.Build.props` version linkage + `pack.ps1`). `writing-spt-mod` skill rewired to the three templates with a 60-rule ID reference table and the waiver flow.
+- **Phase-2 checker**: `scripts/check-mod-standard.ps1` (~25 machine-checkable rules, monorepo-aware, scaffold-placeholder SKIP, `Waiver: STD-XXX-NNN: <reason>` convention), wired into the bootstrap suite as `verify-standard-compliance.ps1`. All four template targets green.
+- **Layout recalibration**: removed BGS-era leftovers -- stale materialized `plugins/bgs-modding-superpowers` tree, empty `hooks/` / `.claude-plugin/` / `.codex-plugin/` / `.agents/` dirs, and the tracked BGS `.mcp.json` (pointing at the old BGS plugin tree). `external/spt-archive` (gitignored local corpus backing the KB) dropped from the layout absent-list. Bootstrap suite 8/8 green.
+
 ### Architecture (wayfinder, 2026-08-02)
 
 All architectural decisions locked via wayfinder map (`docs/wayfinder/MAP.md`). 7 tickets closed, 1 deferred.
