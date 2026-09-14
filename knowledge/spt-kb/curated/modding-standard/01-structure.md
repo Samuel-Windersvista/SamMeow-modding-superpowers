@@ -25,7 +25,7 @@ source: curated
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`templates/server-mod/.gitignore`、`templates/client-mod/.gitignore`；语料：近期 297 个源码目录中 269 个含 `.gitignore`（EV-CORPUS-CSPROJ）。
-- **Rule:** 每个 mod 仓库根目录必须包含 `.gitignore`，至少排除构建产物（`bin/`、`obj/`）与常见 IDE/用户文件。
+- **Rule:** 每个 mod 仓库根目录必须包含 `.gitignore`，至少排除构建产物（`bin/`、`obj/`）与常见 IDE/用户文件（至少 `.vs/`、`.idea/`、`*.user`）。monorepo 场景下 `.gitignore` 可由上层仓库根提供——只要其覆盖范围包含该 mod 目录即算满足。
 
 ```gitignore
 # 构建产物
@@ -45,7 +45,7 @@ obj/
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`templates/server-mod/.gitignore`、`templates/client-mod/.gitignore`（模板显式忽略构建产物）；语料：近期 297 个目录中 `bin/` 与 `obj/` 各出现 19 次（约 6.4% 仓库违规提交）（`EV-CORPUS-STRUCT`、`EV-CORPUS-TOP5`）。
-- **Rule:** 源码仓库不得包含 `bin/`、`obj/` 及其内容；构建产物只应存在于本地或 CI 输出目录，由发布流程单独打包。
+- **Rule:** 源码仓库不得包含 `bin/`、`obj/` 及其内容；构建产物只应存在于本地或 CI 输出目录，由发布流程单独打包。判定以「是否被 git 跟踪」为准：文件物理存在但已被 `.gitignore` 忽略（`git check-ignore` 命中）即视为合规。
 
 ```powershell
 # 已误提交时从索引移除（保留本地文件）
@@ -99,7 +99,7 @@ my-paired-mod/
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：`templates/server-mod/README.md`、`templates/client-mod/README.md`；语料：近期 297 个目录中 217 个含 `README*`（约 73%）（`EV-CORPUS-STRUCT`）。
-- **Rule:** 仓库根应包含 `README.md`，至少说明 mod 用途、安装位置（`user/mods/` 或 `BepInEx/plugins/`）与主要配置项。
+- **Rule:** 仓库根应包含 `README.md`，至少说明 mod 用途、安装位置（`user/mods/` 或 `BepInEx/plugins/`）与主要配置项。monorepo 场景下 README 须覆盖该 mod——提供独立 `README.md`（仓库根或 mod 目录）或在仓库根 README 中设该 mod 的独立小节均可。
 
 ```text
 # My Mod
@@ -115,7 +115,7 @@ SPT 4.1 服务端 mod。安装：把 MyMod.dll 放入 user/mods/MyMod/。
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 语料：近期 297 个目录中 227 个含 `LICENSE*`（约 76%）（`EV-CORPUS-STRUCT`）；机制：模板未附带 LICENSE 文件。
-- **Rule:** 仓库根应包含 `LICENSE`（或 `LICENSE.md`），明确授权条款，便于玩家与整合包维护者判断可否再分发。
+- **Rule:** 仓库根应包含 `LICENSE`（或 `LICENSE.md`），明确授权条款，便于玩家与整合包维护者判断可否再分发。monorepo 场景下 LICENSE 可由上层仓库根统一提供——只要其覆盖整个仓库（含该 mod 目录）即算满足。
 
 ```text
 MIT License

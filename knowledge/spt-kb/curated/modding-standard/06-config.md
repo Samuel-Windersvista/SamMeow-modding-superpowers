@@ -17,6 +17,7 @@ source: curated
 - `IOnDIConstruct` + `AddSingleton` 加载
 - 配置类禁止 `[Injectable]`
 - 客户端 BepInEx `Config.Bind`
+- 边界：本维度仅覆盖「玩家可改的运行时配置」；随包交付的只读内容数据（如商人 assort、静态数据文件）不属于配置，相关规则判 N-A
 
 ## 规则
 
@@ -25,7 +26,7 @@ source: curated
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`Libraries/SPTarkov.Server.Core/Helpers/Server/ModHelper.cs:10-19`、`knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md:65-76`（EV-GAP-CFG）；语料：`GetAbsolutePathToModFolder` 91 处（EV-GAP-CFG）
-- **Rule:** 服务端 mod 的配置文件必须随 mod 一同部署在 `user/mods/<ModName>/` 内，运行时用 `ModHelper.GetAbsolutePathToModFolder(Assembly)` 取得 mod 根目录后拼接相对路径读取；禁止硬编码绝对路径或依赖进程工作目录。
+- **Rule:** 服务端 mod 的配置文件必须随 mod 一同部署在 `user/mods/<ModName>/` 内，运行时用 `ModHelper.GetAbsolutePathToModFolder(Assembly)` 取得 mod 根目录后拼接相对路径读取；禁止硬编码绝对路径或依赖进程工作目录。本规则仅适用于玩家可改的运行时配置；随包交付的只读内容数据（如商人 assort、静态数据文件）不属于配置，判 N-A。
 
 ```csharp
 using SPTarkov.Server.Core.Helpers.Server;
@@ -49,7 +50,7 @@ public class MyConfigManager(ModHelper modHelper)
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：`knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md:65-76`（EV-GAP-CFG）；语料：`config/` 20 次 vs 根目录 15 次（EV-GAP-CFG）、`*.jsonc` 85 个 vs `config.json` 47 个（EV-CORPUS-CFG）
-- **Rule:** mod 私有配置应放在 mod 根目录的 `config/` 子目录下并命名 `config.jsonc`，优先使用允许注释的 `.jsonc` 扩展名；`.json` 可接受但非首选。
+- **Rule:** mod 私有配置应放在 mod 根目录的 `config/` 子目录下并命名 `config.jsonc`，优先使用允许注释的 `.jsonc` 扩展名；`.json` 可接受但非首选。本规则同样只覆盖玩家可改的运行时配置；只读内容数据判 N-A。
 
 ```text
 user/mods/<ModName>/

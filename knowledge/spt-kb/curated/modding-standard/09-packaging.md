@@ -26,7 +26,7 @@ source: curated
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`knowledge/spt-kb/wiki/Installing_Mods.md`（SPT 4.0 起 mod 归档必须以 `SPT`/`BepInEx` 顶层结构交付，整体拖入游戏根目录）；`knowledge/spt-kb/curated/api-notes-4.1/mod-loading.md`（`ModPath = "./user/mods/"`）；语料：58 个 hybrid 的 12 例布局/打包抽样中，发布形态多为单归档且含两端树；SPT-Casino 发布 zip 顶层含 `BepInEx/`（67 条目）与 `SPT_Runtime/`（22 条目）（EV-GAP-PAIRED）
-- **Rule:** 发布归档的顶层目录必须按游戏根相对路径组织：客户端产物置于 `BepInEx/plugins/<Name>/`，服务端产物置于 `SPT_Runtime/user/mods/<Name>/`，使归档可直接拖入 SPT 根目录，或原样作为 MO2 overlay 安装。
+- **Rule:** 发布归档的顶层目录必须按游戏根相对路径组织：客户端产物置于 `BepInEx/plugins/<Name>/`，服务端产物置于 `SPT_Runtime/user/mods/<Name>/`，使归档可直接拖入 SPT 根目录，或原样作为 MO2 overlay 安装。本规则面向发布归档 / MO2 overlay 场景；纯源码仓库（不产出发布归档）判 N-A。
 
 ```
 <release>.zip
@@ -46,7 +46,7 @@ source: curated
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：`tools/mo2-mcp/src/tools/mo2-install.ts`（`comments` 为必填 `.min(1)`，与可选 `notes` 一并写入 meta.ini `[General]`）；`tools/mo2-mcp/src/tools/mo2-set-mod-notes.ts`（`notes` 可后置写入）；`skills/building-spt-modpack/SKILL.md`（overlay 命名 `<category>-<mod-name>-<version>`，每个 overlay 自描述）；语料：机制推断，无语料先例（EV-NOCORPUS）
-- **Rule:** 每个 mod 以独立 MO2 overlay 安装，overlay 名遵循 `<category>-<mod-name>-<version>`，并在 meta.ini 写入非空 `comments`（MO2 mod 列表短摘要）与 `notes`（较长的安装记录：来源、版本、安装日期、作者说明）。
+- **Rule:** 每个 mod 以独立 MO2 overlay 安装，overlay 名遵循 `<category>-<mod-name>-<version>`，并在 meta.ini 写入非空 `comments`（MO2 mod 列表短摘要）与 `notes`（较长的安装记录：来源、版本、安装日期、作者说明）。本规则面向发布归档 / MO2 overlay 场景；纯源码仓库（不产出发布归档）判 N-A。
 
 ```
 [General]
@@ -114,13 +114,14 @@ SPT_Runtime/user/mods/MyMod/
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：无（仓库卫生惯例）；语料：近期 297 个仓库中 README 217 个、LICENSE 227 个（EV-CORPUS-STRUCT），缺失率约 27 % / 24 %（EV-CORPUS-TOP5）
-- **Rule:** 仓库根目录提供 README（安装步骤、配置说明、兼容性/不兼容说明）与 LICENSE（授权条款），便于玩家与整合包维护者使用。
+- **Rule:** README / LICENSE 的提供要求见 `STD-STRUCT-005`、`STD-STRUCT-006`；本规则只补充打包侧要求——发布归档须随附 README 与 LICENSE，便于玩家与整合包维护者开箱使用。
 
 ```
-<repo>/
+<release>.zip
 ├── README.md      # 安装 / 配置 / 兼容性
 ├── LICENSE        # 授权
-└── ...
+├── BepInEx/plugins/<Name>/       # 客户端产物（如有）
+└── SPT_Runtime/user/mods/<Name>/ # 服务端产物（如有）
 ```
 
 > 深入：[evidence-index.md](../../curated/modding-standard/evidence-index.md)（EV-CORPUS-STRUCT、EV-CORPUS-TOP5）

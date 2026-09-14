@@ -13,21 +13,24 @@ source: curated
 
 ## 维度范围
 
-- `BaseUnityPlugin` + `[BepInPlugin]` 入口形态
+- 入口形态：4.1.5 `BaseUnityPlugin` + `Awake`；5.0 `BasePlugin` + `Load()`（均标 `[BepInPlugin]`）
 - Harmony patch 组织与目标选择
 - `[BepInDependency]` 声明
 - 客户端日志
 
 ## 规则
 
-### STD-CLI-001 — 客户端入口类继承 `BaseUnityPlugin` 并标 `[BepInPlugin]`
+### STD-CLI-001 — 客户端入口类继承版本对应的插件基类并标 `[BepInPlugin]`
 
 - **Level:** MUST
 - **Applies:** both
-- **Evidence:** 机制：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)（客户端 mod = BepInEx 插件 DLL，装进 `BepInEx/plugins/`）、模板 `templates/client-mod/src/Plugin.cs`；语料：`BaseUnityPlugin` 275、`[BepInPlugin]` 251（EV-CORPUS-MECH）
-- **Rule:** 客户端 mod 入口类继承 `BaseUnityPlugin` 并标 `[BepInPlugin(guid, name, version)]`，在 `Awake` 中完成配置绑定、Harmony 初始化与日志；DLL 部署到 `BepInEx/plugins/`。
+- **Evidence:** 机制：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)（客户端 mod = BepInEx 插件 DLL，装进 `BepInEx/plugins/`）、模板 `templates/client-mod/src/Plugin.cs`；5.0 机制：`mods/SPT5-NoStaminaDrain/src/Plugin.cs:9-19`（IL2CPP 入口基类 `BepInEx.Unity.IL2CPP.BasePlugin`、入口方法 `Load()`）；语料：`BaseUnityPlugin` 275、`[BepInPlugin]` 251（EV-CORPUS-MECH）
+- **Rule:** 客户端 mod 入口类继承版本对应的插件基类并标 `[BepInPlugin(guid, name, version)]`，在入口方法中完成配置绑定、Harmony 初始化与日志；DLL 部署到 `BepInEx/plugins/`。入口形态按版本分支：
+  - 4.1.5（Mono / BepInEx 5）：继承 `BaseUnityPlugin`，入口为 `Awake()`；
+  - 5.0（IL2CPP / BepInEx 6）：继承 `BepInEx.Unity.IL2CPP.BasePlugin`，入口为 `public override void Load()`。
 
 ```csharp
+// 4.1.5（Mono / BepInEx 5）
 using BepInEx;
 using HarmonyLib;
 
@@ -50,6 +53,27 @@ public class MyModPlugin : BaseUnityPlugin
     }
 
     private void OnDestroy() => _harmony?.UnpatchSelf();
+}
+```
+
+```csharp
+// 5.0（IL2CPP / BepInEx 6）：基类与入口方法均不同
+using BepInEx;
+using BepInEx.Unity.IL2CPP;
+using HarmonyLib;
+
+namespace MyMod;
+
+[BepInPlugin("com.author.mymod", "My Mod", "1.0.0")]
+public class MyModPlugin : BasePlugin
+{
+    public override void Load()
+    {
+        var harmony = new Harmony("com.author.mymod");
+        harmony.PatchAll();
+
+        Log.LogInfo("My Mod v1.0.0 已加载");
+    }
 }
 ```
 
@@ -139,30 +163,41 @@ public class MyModPlugin : BaseUnityPlugin { }
 > 深入：[evidence-index.md](evidence-index.md)（EV-GAP-DEP）
 > 交叉引用：`STD-DEP-004`、`STD-DEP-005`（依赖声明策略）。
 
-### STD-CLI-006 — 客户端日志使用 `BaseUnityPlugin.Logger`
+### STD-CLI-006 — 客户端日志使用 BepInEx 日志源（`Logger` / `Log`）
 
 - **Level:** MUST
 - **Applies:** both
-- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Logger.LogInfo`）、[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)；语料：`Logger.` 4968（EV-CORPUS-MECH）
-- **Rule:** 客户端日志通过 `BaseUnityPlugin.Logger` 属性（`Logger.LogInfo` / `Logger.LogWarning` / `Logger.LogError`）输出，统一进入 BepInEx 日志。
+- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Logger.LogInfo`）、[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)；5.0 机制：`mods/SPT5-NoStaminaDrain/src/Plugin.cs:20,25`（IL2CPP `BasePlugin.Log`，类型 `ManualLogSource`）；语料：`Logger.` 4968（EV-CORPUS-MECH）
+- **Rule:** 客户端日志通过 BepInEx 日志源输出（`LogInfo` / `LogWarning` / `LogError`），统一进入 BepInEx 日志。属性名按版本分支：
+  - 4.1.5（Mono / BepInEx 5）：`BaseUnityPlugin.Logger`；
+  - 5.0（IL2CPP / BepInEx 6）：`BasePlugin.Log`（`ManualLogSource`）。
 
 ```csharp
+// 4.1.5（Mono / BepInEx 5）
 Logger.LogInfo("My Mod 已加载");
 Logger.LogWarning("配置值超出预期范围，使用默认值");
 Logger.LogError("目标方法签名不匹配，补丁未生效");
+
+// 5.0（IL2CPP / BepInEx 6）：属性名为 Log（ManualLogSource），方法名不变
+Log.LogInfo("My Mod 已加载");
+Log.LogWarning("配置值超出预期范围，使用默认值");
+Log.LogError("目标方法签名不匹配，补丁未生效");
 ```
 
 > 深入：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)
 > 交叉引用：`STD-LOG-003`（客户端日志约定）。
 
-### STD-CLI-007 — 在 `Awake` 中应用补丁，在 `OnDestroy` 中撤销
+### STD-CLI-007 — 在入口方法中应用补丁，在生命周期回调中撤销
 
 - **Level:** SHOULD
 - **Applies:** both
-- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Awake` 内 `PatchAll`、`OnDestroy` 内 `UnpatchSelf`）；语料：无（机制推断，无语料先例，登记 EV-NOCORPUS；EV-CORPUS-MECH 计 `BaseUnityPlugin` 275，未覆盖生命周期用法）
-- **Rule:** 在 `Awake` 中创建 `Harmony` 实例并 `PatchAll()`，在 `OnDestroy` 中调用 `UnpatchSelf()`，避免热重载或退出时残留补丁。
+- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Awake` 内 `PatchAll`、`OnDestroy` 内 `UnpatchSelf`）；5.0 机制：`mods/SPT5-NoStaminaDrain/src/Plugin.cs:18-23`（`Load` 内 `PatchAll`，对应撤销路径为 `Dispose()`）；语料：无（机制推断，无语料先例，登记 EV-NOCORPUS；EV-CORPUS-MECH 计 `BaseUnityPlugin` 275，未覆盖生命周期用法）
+- **Rule:** 在入口方法中创建 `Harmony` 实例并 `PatchAll()`，在对应生命周期回调中调用 `UnpatchSelf()`，避免热重载或退出时残留补丁。时机按版本分支：
+  - 4.1.5（Mono / BepInEx 5）：`Awake` 应用、`OnDestroy` 撤销；
+  - 5.0（IL2CPP / BepInEx 6）：`Load()` 应用、`Dispose()` 撤销。
 
 ```csharp
+// 4.1.5（Mono / BepInEx 5）
 private void Awake()
 {
     _harmony = new Harmony("com.author.mymod");
@@ -170,6 +205,17 @@ private void Awake()
 }
 
 private void OnDestroy() => _harmony?.UnpatchSelf();
+```
+
+```csharp
+// 5.0（IL2CPP / BepInEx 6）：Load 应用、Dispose 撤销
+public override void Load()
+{
+    _harmony = new Harmony("com.author.mymod");
+    _harmony.PatchAll();
+}
+
+public override void Dispose() => _harmony?.UnpatchSelf();
 ```
 
 > 深入：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)

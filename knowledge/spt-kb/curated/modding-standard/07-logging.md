@@ -24,7 +24,7 @@ source: curated
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`Libraries/SPTarkov.Common/Models/Logging/ISptLogger.cs`（EV-MECH-COORD）、`knowledge/spt-kb/curated/api-notes-4.1/di-container.md`；语料：`ISptLogger` 614 处（EV-CORPUS-MECH）
-- **Rule:** 服务端 mod 的日志一律使用构造函数注入的 `ISptLogger<T>`（`T` 为当前类），不得绕过它使用 `Console.WriteLine` 或自建静态日志器。
+- **Rule:** 服务端 mod 的日志一律使用构造函数注入的 `ISptLogger<T>`（`T` 为当前类），不得绕过它使用 `Console.WriteLine` 或自建静态日志器。本规则约束的是「记录日志时的方式」——无日志需求的 mod 不强制产生日志。
 
 ```csharp
 using SPTarkov.Common.Models.Logging;
@@ -107,7 +107,7 @@ catch (Exception ex)
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：`knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md:52-56`（生命周期方法带 `CancellationToken`、让 `OperationCanceledException` 正常传播）；语料：无对应计数（机制推断，无语料先例）（EV-NOCORPUS）
-- **Rule:** 生命周期与异步 IO 应把 `CancellationToken` 传播给一切接受它的调用；长时间同步循环中定期调用 `ThrowIfCancellationRequested()`；不要捕获吞掉 `OperationCanceledException`，也不要把取消记为 `Error`。
+- **Rule:** 生命周期与异步 IO 应把 `CancellationToken` 传播给一切接受它的调用；长时间同步循环中定期调用 `ThrowIfCancellationRequested()`；不要捕获吞掉 `OperationCanceledException`，也不要把取消记为 `Error`。纯同步实现（无 IO / 异步调用）没有可传播的 token，保持接口签名即可（见 `STD-SRV-003`），此情形下不要求额外的取消检查。
 
 ```csharp
 public async Task OnLoadAsync(CancellationToken cancellationToken)

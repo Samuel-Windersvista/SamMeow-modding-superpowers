@@ -656,3 +656,20 @@ my-paired-mod/
 - **语料集更新**（新增 MANIFEST 或新增 `_source` 目录）→ 复核 `EV-CORPUS-*`（类型/语言/结构/元数据/机制/配置/异常/TOP5）。
 - **4.1/5.0 源码更新** → 复核 `EV-GAP-*` 与 `EV-MECH-COORD`（接口定义、校验逻辑、路径 API、本地化文本）。
 - **KB 新增文档**（modding-guide / api-notes / operations / migration / templates / wiki-tushonka / docs/agents）→ 复核 `EV-CORPUS-MATERIALS`。
+
+## 6. 校准记录（EV-CALIBRATION）
+
+ticket 11 试点校准（2026-09-14）：以 3 个自研 mod 的逐规则合规报告为输入，对规则集做以下修订。报告：`.scratch/modding-standard/pilot/warsaw-trader.md`（PASS 31 / FAIL 4 / N-A 49）、`tarkov-active-probe.md`（23 / 6 / 55）、`spt5-no-stamina-drain.md`（19 / 7 / 58）。
+
+| 修订 | 涉及规则 | 类型 | 改了什么 | 为什么 |
+|------|----------|------|----------|--------|
+| R1 | STD-BUILD-002/003、STD-CLI-001/006/007 | 与机制矛盾 | 增加 5.0（IL2CPP / BepInEx 6）分支：`net6.0`、`BepInEx/interop/` 引用、`BasePlugin` + `Load()`、`ManualLogSource`、`Dispose()` 撤销 | 原规则文本仅描述 4.1 Mono 形态但标 `both`；试点 5.0 mod 实证不同（`mods/SPT5-NoStaminaDrain/`） |
+| R2 | STD-STRUCT-001/002/005/006、STD-PKG-006 | 表述不清 | monorepo / 嵌套 mod 判定口径；bin/obj 以 git 跟踪判定；README / LICENSE 允许仓库根提供；PKG-006 去重指向 STRUCT | 试点为 monorepo 嵌套目录，作用域歧义导致误判 FAIL |
+| R3 | STD-STRUCT-001 | 表述不清 | 排除清单明确化（`bin/`、`obj/`、`.vs/`、`.idea/`、`*.user`） | 两个试点因「等」模糊在 `.vs/` / `*.user` 上失分 |
+| R4 | STD-CFG-001/002 | 表述不清 | 界定「玩家可改运行时配置」与「随包只读内容数据」边界 | WarsawTrader 的 `data/` 内容数据被误套配置规则 |
+| R5 | STD-SRV-003/005/006、STD-LOG-001/005 | 表述不清 | 纯同步 token 判定；`+1` 偏移归 SRV-002；`_` 参数判定；无日志 mod 不强制产生日志 | 试点边界情形判定无据 |
+| R6 | STD-PKG-001/002、STD-VERIFY-002..009/006 | 表述不清 | 适用性口径（发布归档 / 批次验证 vs 纯源码仓库）；spt-mcp 工具限制注记 | 试点场景与规则默认场景不匹配 |
+| R7 | STD-BUILD-004 | 分级不当 | MUST 收敛为「引用版本不得高于运行时」；PackageReference 降为推荐 | 「优先」与 MUST 混写 |
+| R8 | STD-BUILD-006 | 表述不清 | 属性名可版本化自定义（`SPTInstallPath` / `SPT5Path` / `SPT5Runtime` 等），须可覆盖 | 试点用 `SPT5Runtime` 被误判 |
+
+未采纳建议：逐规则 `Domain` 字段（spt5-no-stamina-drain 报告提出）——文件级 domain + `Applies` + 规则文本已可判定，避免 84 条全量格式变更；记录为未来可选项。

@@ -73,7 +73,7 @@ public class MyModEntry : IOnLoad
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)（`OnLoadAsync(CancellationToken)` 替代 `OnLoad()`；token 传播给 IO/HTTP/Delay）、[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)（生命周期由 DI 启动链调用）；语料：`IOnLoad` 279（EV-CORPUS-MECH）
-- **Rule:** 实现 `IOnLoad` 时用 `Task OnLoadAsync(CancellationToken cancellationToken)`，把 token 传播给一切接受它的调用（文件 IO、HTTP、`Task.Delay`），长同步工作周期调用 `ThrowIfCancellationRequested()`。
+- **Rule:** 实现 `IOnLoad` 时用 `Task OnLoadAsync(CancellationToken cancellationToken)`，把 token 传播给一切接受它的调用（文件 IO、HTTP、`Task.Delay`），长同步工作周期调用 `ThrowIfCancellationRequested()`。若实现为纯同步逻辑（无任何 IO / 异步调用），可不实际使用 token，但必须保留接口签名中的 `CancellationToken` 参数。
 
 ```csharp
 using SPTarkov.Common.Models.Logging;
@@ -128,7 +128,7 @@ public class MyPeriodicTask : IOnUpdate
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：[api-notes-4.1/http-routing.md](../api-notes-4.1/http-routing.md) 与 [api-notes-5.0/http-routing.md](../api-notes-5.0/http-routing.md)（`StaticRouter` 精确匹配 / `DynamicRouter` 包含匹配；标 `[Injectable(TypePriority = OnLoadOrder.Routers + n)]` 由 DI 收集）、[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)；语料：`StaticRouter` 90、`DynamicRouter` 12（EV-CORPUS-MECH）
-- **Rule:** 游戏客户端流量一律走 Router（网页/工具流量才用 MVC Controller）；精确路径用 `StaticRouter`，前缀/包含匹配用 `DynamicRouter`，并标 `[Injectable(TypePriority = OnLoadOrder.Routers + n)]`（新路由从 `+1` 起，覆盖 SPT 现有路由用 `-1`）。
+- **Rule:** 游戏客户端流量一律走 Router（网页/工具流量才用 MVC Controller）；精确路径用 `StaticRouter`，前缀/包含匹配用 `DynamicRouter`，并标 `[Injectable(TypePriority = OnLoadOrder.Routers + n)]`。偏移写法（含新路由 `+1`、覆盖 SPT 现有路由 `-1`）遵循 `STD-SRV-002` 的约定，不作为本规则的独立 MUST 要求。
 
 ```csharp
 using SPTarkov.DI.Annotations;
@@ -166,13 +166,14 @@ public class MyDynamicRouter(JsonUtil jsonUtil, MyCallbacks callbacks)
 ```
 
 > 深入：[api-notes-4.1/http-routing.md](../api-notes-4.1/http-routing.md) · [api-notes-5.0/http-routing.md](../api-notes-5.0/http-routing.md)
+> 交叉引用：`STD-SRV-002`（`TypePriority` 偏移写法）。
 
 ### STD-SRV-006 — Router action 签名必须包含 `CancellationToken`
 
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：[api-notes-4.1/http-routing.md](../api-notes-4.1/http-routing.md)（action 签名必须含 `CancellationToken`，源自 `HttpContext.RequestAborted`）、[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)；语料：无（机制推断，无语料先例，登记 EV-NOCORPUS；EV-CORPUS-MECH 计 `StaticRouter` 90，未覆盖 action 签名）
-- **Rule:** 所有路由 action 显式声明 `CancellationToken` 参数（即使不用也要声明），并在后续调用中继续传递，使请求中止能传播。
+- **Rule:** 所有路由 action 显式声明 `CancellationToken` 参数（即使不用也要声明），并在后续调用中继续传递，使请求中止能传播。若本 action 确实不消费该 token，参数名可写为 `_`（丢弃），但签名仍必须包含 `CancellationToken` 参数。
 
 ```csharp
 new RouteAction<EmptyRequestData>(

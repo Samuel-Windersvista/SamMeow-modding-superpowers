@@ -10,6 +10,7 @@ source: curated
 > **Domain slug:** `VERIFY` · **规则 ID 前缀:** `STD-VERIFY-`
 > 分级标准、规则条目格式与豁免流程见 [README.md](README.md)。
 > 状态：规则已填充（ticket 05，2026-09-14）。
+> 范围：本维度面向 modpack 批次验证与单 mod 冒烟；纯源码仓库（不产出归档）场景按 N-A 处理。
 
 ## 维度范围
 
@@ -94,7 +95,7 @@ tarkov_snapshot(sections: ["traders", "quests"])  # 断言商人类/任务类 mo
 - **Level:** SHOULD
 - **Applies:** both
 - **Evidence:** 机制：`tools/spt-mcp/src/tools/list-mods.ts`（扫描 mod 清单）、`predict-load-order.ts`（预测服务端加载顺序）、`analyze-conflicts.ts`（重复 GUID / 文件覆盖 / JSON key 碰撞）；语料：机制推断，无语料先例（EV-NOCORPUS）
-- **Rule:** 在启动冒烟前，用 `spt_list_mods` 核对安装目录中的 mod 清单、`spt_predict_load_order` 预测服务端加载顺序、`spt_analyze_conflicts` 检出冲突，作为日志断言前的静态基线。
+- **Rule:** 在启动冒烟前，用 `spt_list_mods` 核对安装目录中的 mod 清单、`spt_predict_load_order` 预测服务端加载顺序、`spt_analyze_conflicts` 检出冲突，作为日志断言前的静态基线。注意工具限制：`spt_list_mods(type: "server")` 仅扫描 `package.json`（JS/TS mod），C# DLL-only 服务端 mod 不会被列出，需结合其他手段（客户端插件扫描 / BepInEx 日志）核对。
 
 ```
 spt_list_mods(path: "<SPT_Root>/SPT_Runtime/user/mods", type: "server")
