@@ -13,6 +13,7 @@ client-mod/
 │   └── Patches/
 │       └── ExamplePatch.cs      # Harmony 补丁示例（Prefix / Postfix）
 ├── README.md
+├── LICENSE
 └── .gitignore
 ```
 
@@ -26,6 +27,7 @@ client-mod/
 | `{{MOD_CLASS_NAME}}` | 类名前缀（PascalCase，同时是程序集名） | `MyClientMod` |
 | `{{MOD_NAME}}` | 显示名 | `My Client Mod` |
 | `{{MOD_GUID}}` | 全局唯一 ID（BepInPlugin GUID） | `com.sammeow.myclientmod` |
+| `{{MOD_AUTHOR}}` | 作者名（写入 `LICENSE` 版权行） | `SamMeow` |
 | `{{MOD_VERSION}}` | 版本（semver 三段式） | `1.0.0` |
 | `{{SPT_INSTALL_PATH}}` | SPT 客户端根目录（含 `EscapeFromTarkov.exe`） | `D:\Games\SPT` |
 | `{{TARGET_CLASS_NAME}}` | 补丁目标游戏类型（4.1 反混淆真名） | `EFT.Player` |
@@ -69,12 +71,40 @@ D:\Games\SPT\BepInEx\plugins\MyClientMod.dll
 
 配置文件生成在 `BepInEx/config/com.sammeow.myclientmod.cfg`。
 
+## 配置（BepInEx ConfigFile）
+
+客户端配置经 `BaseUnityPlugin.Config`（`ConfigFile`）的 `Config.Bind` 声明，运行时落在 `BepInEx/config/<ModGuid>.cfg`；不要自建 JSON 配置读取——`STD-CFG-006`。见 `src/Configuration.cs`。
+
+## 规则对照（STD）
+
+模板内关键位置已用注释标注对应 Rule ID（`STD-XXX-nnn`，可检索）：
+
+| Rule ID | 位置 | 要求 |
+|---|---|---|
+| STD-STRUCT-001 | `.gitignore` | 排除 `bin/`、`obj/` 与 IDE/用户文件 |
+| STD-STRUCT-003 | `src/` | 源码放 `src/` 或功能子目录 |
+| STD-STRUCT-005 | `README.md` | 仓库根 README 说明用途、安装与配置 |
+| STD-STRUCT-006 | `LICENSE` | 仓库根提供授权文件 |
+| STD-BUILD-002 | csproj | 4.1.5 用 `netstandard2.1`；5.0 用 `net6.0` |
+| STD-BUILD-003 | csproj | `<HintPath>` + `<Private>false</Private>` 引用运行时程序集 |
+| STD-BUILD-005 | csproj | `AppendTargetFrameworkToOutputPath=false` |
+| STD-BUILD-006 | csproj | 安装路径属性可覆盖（`Condition` + `-p:`） |
+| STD-META-005/006 | `src/Plugin.cs` | 三段式版本；`[BepInPlugin]` 三参数齐备 |
+| STD-CLI-001/002 | `src/Plugin.cs` | `BaseUnityPlugin` + `Awake`（4.1.5）；反向域名 GUID |
+| STD-CLI-003/004 | `src/Patches/ExamplePatch.cs` | `[HarmonyPatch]` 标注、`Patches/` 目录、真实类型名 |
+| STD-CLI-005 | `src/Plugin.cs` | `[BepInDependency]` 声明依赖（模板内为注释示例） |
+| STD-CLI-006/007 | `src/Plugin.cs` | BepInEx 日志源；`Awake` 应用补丁、`OnDestroy` 撤销 |
+| STD-CFG-006 | `src/Configuration.cs` | `Config.Bind` 声明客户端配置 |
+| STD-LOG-003 | `src/Plugin.cs` | 用 `BaseUnityPlugin.Logger` 记录日志 |
+
 ## 关键点（4.1）
 
 - **目标框架是 `netstandard2.1`，不是 net10.0**：客户端在 Unity 的 Mono 运行时下加载，net10.0 程序集无法被 Mono 加载。SPT 官方客户端模块（`external/spt-archive/modules/`）同样以 netstandard2.1 为目标
+- **5.0 形态（IL2CPP / BepInEx 6）不在本模板内实现**：需把目标框架换成 `net6.0`、入口基类换成 `BepInEx.Unity.IL2CPP.BasePlugin`、入口方法换成 `Load()`（撤销路径 `Dispose()`）、日志属性换成 `Log`，并把引用路径改到 `BepInEx/interop/` 与 `BepInEx/core/`——参见 `STD-BUILD-002`、`STD-BUILD-003`、`STD-CLI-001`、`STD-CLI-006`、`STD-CLI-007`
 - 客户端改「表现」（UI/输入/渲染/本地计算），服务端改「规则与数据」——跨端同步的枚举数值必须一致
 - 不要为 enum 扩展写自研 prepatcher DLL：4.1 由服务端 mod 经 `ClientEnumDefinitions` 注册，客户端内建 prepatcher 拉取
 - `BepInEx/plugins/spt/` 与 `BepInEx/patchers/spt-prepatch.dll` 是 SPT 官方文件，卸载 mod 时不要删
+- 发布归档按 `BepInEx/plugins/<Name>/` 组织，并把 `README.md`、`LICENSE` 一并随包（`STD-PKG-001`、`STD-PKG-006`）
 
 完整参考：`knowledge/spt-kb/curated/modding-guide/03-client-mod-anatomy.md`。
 

@@ -4,8 +4,11 @@ namespace {{ROOT_NAMESPACE}};
 
 /// <summary>
 /// BepInEx 配置封装：在 Plugin.Awake 中创建，绑定 BaseUnityPlugin.Config（ConfigFile）。
-/// 配置写入 BepInEx/config/&lt;GUID&gt;.cfg，玩家可手改或用 ConfigurationManager 插件改。
+/// STD-CFG-006：客户端配置必须经 BaseUnityPlugin.Config 的 Config.Bind 声明，
+///              运行时落在 BepInEx/config/&lt;ModGuid&gt;.cfg；不要自建 JSON 配置读取。
+/// 玩家可手改 .cfg，或用 ConfigurationManager 插件改。
 /// </summary>
+// STD-CFG-006
 public class {{MOD_CLASS_NAME}}Configuration
 {
     /// <summary>总开关示例</summary>

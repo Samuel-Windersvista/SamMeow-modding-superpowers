@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- SPT 4.1 服务端目标框架，与服务器程序集保持一致 -->
+    <!-- STD-BUILD-001：SPT 4.1 服务端目标框架必须是 net10.0，与服务器程序集保持一致 -->
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,20 +9,27 @@
     <OutputType>Library</OutputType>
     <RootNamespace>{{ROOT_NAMESPACE}}</RootNamespace>
     <AssemblyName>{{MOD_CLASS_NAME}}</AssemblyName>
+    <!-- STD-META-005：三段式 semver -->
     <Version>{{MOD_VERSION}}</Version>
 
     <!--
-      SPT 4.1 服务器安装根目录（含 SPT.Server.exe 与 SPTarkov.*.dll 的目录）。
-      可在命令行覆盖：dotnet build -p:SPTInstallPath="D:\SPT\Server"
-      或改成你自己的固定路径。
+      STD-BUILD-006：SPT 4.1 服务器安装根目录（含 SPT.Server.exe 与 SPTarkov.*.dll 的目录）。
+      用 Condition 提供可覆盖默认值；可在命令行覆盖：
+        dotnet build -p:SPTInstallPath="D:\SPT\Server"
+      或改成你自己的固定路径。禁止写成无法覆盖的硬编码。
     -->
     <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">{{SPT_INSTALL_PATH}}</SPTInstallPath>
 
-    <!-- 输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <!-- STD-BUILD-005：输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <!--
+      STD-BUILD-004：服务端必须引用 SPTarkov.Server.Core（及 SPTarkov.DI、SPTarkov.Common），
+      且引用的 SPTarkov.Server.* 版本不得高于目标运行时版本。此处用 HintPath 指向目标安装的运行时 DLL，
+      版本天然与运行时匹配。若改用 NuGet PackageReference，请锁定与目标 SPT 一致的版本号。
+    -->
     <!-- 4.1 必需：核心库（IModMetadata / 表模型 / OnLoadOrder / IOnLoad） -->
     <Reference Include="SPTarkov.Server.Core">
       <HintPath>$(SPTInstallPath)\SPTarkov.Server.Core.dll</HintPath>
@@ -44,6 +51,16 @@
       <Private>false</Private>
     </Reference>
     <!-- 如需 Mod Web Pages（IModBlazorMetadata），再引用 SPTarkov.Server.Web.dll 并把 SDK 换成 Microsoft.NET.Sdk.Web -->
+  </ItemGroup>
+
+  <!--
+    STD-CFG-003：IOnDIConstruct 的方法签名使用 IServiceCollection，该类型定义在
+    Microsoft.Extensions.DependencyInjection.Abstractions 中。SPT.Server 运行在
+    Microsoft.AspNetCore.App 共享框架上（见 SPT.Server.runtimeconfig.json），
+    这里用 FrameworkReference 引用同一框架即可拿到该类型；共享框架程序集不会被复制进输出目录。
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>
