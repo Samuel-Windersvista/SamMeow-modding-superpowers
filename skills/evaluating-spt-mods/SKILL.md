@@ -87,7 +87,7 @@ digraph evaluating_spt_mods {
   start [shape=doublecircle, label="Mod candidate\n(Forge archive entry)"];
   read_entry [label="Read the archive entry fully\n(description, versions, best_spt, github, teaser)"];
   classify [label="Classify mod type\n(server mod? client/BepInEx? both? patch?)"];
-  compat [label="SPT 4.1 compatibility check\nbest_spt field + version history\n(4.1 locked; 3.11 reference-only)"];
+  compat [label="SPT 4.1 compatibility check\nbest_spt field + version history\n(4.1.5 baseline; 5.0 forward line; 3.11 reference-only)"];
   systemic [label="Systemic-fit check\nDoes it reinforce raid/economy/bot feedback?\nQuery spt-kb for SPT facts"];
   conflict [label="Conflict-potential check\n20-type taxonomy: table injection, routes,\nDI services, config, load order, IL patches"];
   quality [label="Quality signals\n说明 quality, version history, github source, technical discussion"];
@@ -140,7 +140,7 @@ conflict rules"; it must not fossilize one SPT version's internals.
 3. If there is no author 说明 at all, reject by default. You cannot evaluate
    consequences that the author did not describe.
 4. Check the SPT compatibility axis first: `best_spt` from the hot-index and
-   the version history. SPT 4.1 is the locked target; a mod pinned to 3.11 or
+   the version history. SPT 4.1.5 is the stable development baseline (5.0 is the released forward line); a mod pinned to 3.11 or
    4.0 without a 4.1 path is incompatible unless the user explicitly accepts
    the older pin. 4.1 ecosystem is still migrating — most hot mods sit in the
    `~4.0` band (see `archive/forge/README.md`).

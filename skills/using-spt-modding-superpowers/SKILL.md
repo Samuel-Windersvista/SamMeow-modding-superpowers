@@ -17,8 +17,9 @@ gives you an agent-driven toolkit for SPT (Single Player Tarkov) mod development
 and modpack curation: knowledge base, mod templates, conflict analysis, and
 MO2-integrated build pipeline.
 
-Target version: **SPT 4.1** (final locked version). SPT 3.11 materials are
-reference-only.
+Target version: **SPT 4.1.5** (stable development baseline per Modding Standard).
+**SPT 5.0 is released** as the forward line (dual-track; see version-matrix).
+SPT 3.11 materials are reference-only.
 
 ## Available skills (auto-trigger on these intents)
 

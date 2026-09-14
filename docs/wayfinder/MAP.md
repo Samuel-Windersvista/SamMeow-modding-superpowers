@@ -13,11 +13,11 @@ Build a dual-purpose SPT 4.1 toolchain on the bgs-modding-superpowers skeleton:
 
 Core new component: `spt` MCP server -- replaces xEdit's role for SPT mod analysis (BepInEx plugin metadata, server mod IModMetadata, file overwrite conflicts).
 
-Input source: local Forge archives only (1822 mod metadata, 95 release zips, 124 source backups -- 4.x-compatible hot mods fully covered, see `knowledge/spt-kb/archive/forge/README.md`). No live Forge dependency -- Forge is shutting down.
+Input source: local Forge archives only (1822 mod metadata, 95 release zips, 124 source backups -- 4.x-compatible hot mods fully covered, see `knowledge/spt-kb/archive/forge/README.md`). Local Forge archives are authoritative for offline reproducibility + rate/ToS compliance; the live API is available again at sp-mod.com (Forge v0 API, ~300 req/min cap) as a secondary channel.
 
 MO2 retained as mod management layer. SPT native directory structure not used directly.
 
-Target version: SPT 4.1 (final locked version, may never change).
+Target version: SPT 4.1.5 stable development baseline (Modding Standard Dev-Baseline); SPT 5.0 released as the forward line -- dual-track, see ADR-0006.
 
 ## Notes
 
@@ -70,5 +70,5 @@ Target version: SPT 4.1 (final locked version, may never change).
 ## Out of scope
 
 - BGS modding workflow improvements (upstream concern, separate project)
-- Live Forge API integration (Forge shutting down)
+- Live Forge API integration via sp-mod.com (available; local archive remains authoritative)
 - SPT 3.11.x support (3.11 materials are reference-only)

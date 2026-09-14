@@ -64,7 +64,7 @@
 
 见 `curated/recipes/` — 加商人、改物品、自定义任务等逐步配方。
 
-## 资料溯源与应急
+## 资料溯源与应急（应急预案为 2026-08 历史备案）
 
 - 仓库清单与锁定 commit：`sources/repositories.md`
 - 第三方资料与抓取应急预案：`sources/third-party.md`

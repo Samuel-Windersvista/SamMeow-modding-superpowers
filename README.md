@@ -8,18 +8,17 @@
 
 ## 为什么存在
 
-SPT 项目可能停止运作。本仓库承担两项使命：
+SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档后，SP-Tushonka fork 成为事实主线并持续演进（4.1.x 稳定线，**5.0 已发布**）。而 mod 开发与整合包搭建始终是高度手工、知识分散的活儿——本仓库把这条流水线工具化：一组 skills + 本地 MCP 服务器 + 知识库 + Modding Standard，让 agent 与人类都能可复用地走完「评估 mod → 读懂作者说明 → 写 mod → 策展整合包 → 冲突审计 → 构建 → 验证」全周期。
 
-1. **资料抢救**：SPT 官方 wiki、官方仓库、Forge 模组站 mod 元数据与成品，已全部归档（见下方知识库）。
-2. **能力建设**：以 MCP 服务器 + skills + MO2 控制面构成的 SPT 4.1 mod 开发与整合包搭建流水线。
+本仓库早期以「资料抢救」为使命（官方 wiki、Forge 模组站、源码仓库的本地归档）。该使命已完成：归档层作为长期参考资产与离线兜底保留维护，不再以"项目可能停止运作"为前提（姿态调整见 [`docs/adr/0006-posture-active-toolchain.md`](docs/adr/0006-posture-active-toolchain.md)）。
 
 ## SPT 版本策略
 
 | 阶段 | 版本 | 说明 |
 |------|------|------|
-| 历史基线 | SPT 3.11.4 | 可行性研究验证基线（150+ mod），现仅作概念对照 |
-| 开发基线（锁定） | **SPT 4.1.5** | mod 一律按 4.1 目标编写（C# 服务端，`IModMetadata`/DI/Table 注入体系） |
-| 前瞻线 | SPT 5.0（预发布） | 双轨适配中：差异与风险见 Modding Standard 的 `version-matrix.md`，规则以 `Applies` 标注 4.1.5 / 5.0 / both |
+| 历史基线 | SPT 3.11.x | 概念对照材料（大量社区 mod 与教程基于 3.11） |
+| 稳定开发基线 | **SPT 4.1.5** | mod 开发目标（Modding Standard Dev-Baseline，C# 服务端 `IModMetadata`/DI/Table 注入体系） |
+| 新主线（已发布） | **SPT 5.0** | SP-Tushonka fork 正式发布；双轨适配中：差异与风险见 `version-matrix.md`，规则以 `Applies` 标注 4.1.5 / 5.0 / both |
 
 开发规范由 **Modding Standard** 统一约束（见下文专节），3.11 资料仅作概念对照。
 
@@ -58,7 +57,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 
 ## 知识库：knowledge/spt-kb
 
-本仓库核心资产。SPT 资料抢救的全部产物，供 agent 与人类检索：
+本仓库核心资产。SPT 资料归档与提炼的全部产物（早期抢救阶段建成，现作为长期参考资产维护），供 agent 与人类检索：
 
 | 目录 | 内容 | 规模 |
 |------|------|------|
@@ -68,7 +67,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 | [`knowledge/spt-kb/curated/recipes/`](knowledge/spt-kb/curated/recipes/) | 任务配方：加商人/自定义物品/自定义任务/路由/mod 通信等 | 12 份 |
 | [`knowledge/spt-kb/curated/modding-standard/`](knowledge/spt-kb/curated/modding-standard/) | SPT mod 开发规范（Modding Standard）：84 条可审计规则 / 13 维度 + 语料证据索引 + 4.1.5↔5.0 版本矩阵 | 16 文件 |
 | [`knowledge/spt-kb/archive/forge/`](knowledge/spt-kb/archive/forge/) | Forge 模组站归档：全站目录 + 热门详情 + 成品 zip + 源码 clone + 抓取脚本 | 1822 mod / 398MB |
-| [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案 | 2 文件 |
+| [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案（2026-08 历史备案） | 2 文件 |
 
 入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。
 
@@ -84,8 +83,12 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 
 | 资产 | 路径 |
 |------|------|
-| SPT 官方 20 仓库全量 clone（外部保留） | `E:\云文件\GitHub\SPT-archive\` |
-| SPT 4.1 服务端源码 fork | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 官方 20 仓库全量 clone | `E:\云文件\GitHub\SPT-archive\` |
+| SPT 4.1.5 服务端源码 fork | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 3.11.4 服务端源码 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` |
+| SPT 5.x 服务端源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code` |
+| SPT 特化版 MO2（源码，ticket #8 验证） | `E:\云文件\GitHub\SamMeow-Tarkov-specific-Mod-Organizer` |
+| SPT 特化版 MO2（构建产物） | `E:\build\spt-mo2\prefix\install\bin` |
 
 ## 整合包搭建与 mod 开发
 
@@ -96,7 +99,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 - **冲突分类学**：20 类冲突，元数据级可检测大部分服务端冲突（见 `docs/wayfinder/findings/`）
 - **Mod 模板**：`templates/server-mod/` + `templates/client-mod/` + `templates/paired-mod/`（paired = 同仓库 Client/Server/Shared，根级 `Directory.Build.props` 版本联动 + `pack.ps1` 单 zip 双端打包）
 - **开发规范**：Modding Standard 统一约束模板与 skill 输出（见上文「Modding Standard」专节）
-- **MO2 保留**作为 mod 管理层，SPT 特化版 MO2 为未来方向
+- **MO2** 作为 mod 管理层；**SPT 特化版 MO2 已建成**（`SamMeow-Tarkov-specific-Mod-Organizer`，usvfs 进程传播验证通过，wayfinder ticket #8 CLOSED）
 - **Forge 离线模式**：全部 mod 数据来自本地归档，不依赖 live API
 
 需求分析（历史）：`docs/可行性研究报告-SPT整合包自动化搭建.md`（v3.0，基线 SPT 3.11.4，部分结论已被 wayfinder 取代）

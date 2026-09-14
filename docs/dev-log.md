@@ -45,3 +45,13 @@
 - **BGS 残留清理**：删除 plugins/bgs-modding-superpowers 物化树、空 hooks/ .claude-plugin/ .codex-plugin/ .agents/、被跟踪且已失效的 .mcp.json（引用 BGS 插件树）；verify-layout.ps1 重新校准（external/spt-archive 为 gitignored 本地语料，移出 absent 清单）
 - **二期检查器**：scripts/check-mod-standard.ps1（约 25 条机检规则子集；monorepo 感知——根级 Directory.Build.props 版本/安装路径、共享 README/LICENSE；模板占位符 SKIP；豁免约定 Waiver: STD-XXX-NNN: reason）；接入 bootstrap 为 verify-standard-compliance.ps1，四套模板目标全 PASS，bootstrap 8/8 全绿
 - **文档同步**：README（版本策略改双轨 + Modding Standard 专节 + 15 skills + 知识库表增行）、RELEASE-NOTES（v0.2.0-spt 新增小节）、spt-kb/INDEX.md（增行 + 日期更新）
+
+## 2026-09-14（深夜续）：姿态大调整——抢救前提退役（ADR-0006）+ RELEASE-NOTES 中文化
+
+- **背景**：SPT 5.0 已由 SP-Tushonka 社区 fork 正式发布；「SPT 可能停止运作」的创立前提作废（ Overseer 指示全仓方向调整）
+- **ADR-0006**（`docs/adr/0006-posture-active-toolchain.md`）：抢救使命关闭（归档层转长期参考资产 + 离线兜底）；版本策略重述（4.1.5 稳定开发基线 + 5.0 已发布新主线双轨；3.11 历史对照）；ADR-0002 维持不变；Forge 策略动机改写（离线可复现 + 速率/ToS，非幸存副本）
+- **全仓清扫**：@explorer 普查约 25 处 → 双 fixer lane 落地 25 项 + 主会话 20+ 项——README（使命/版本策略/资产表六项/特化 MO2 已建成）、VERSIONS.md、CONTEXT.md、kb README、5 个 skills、docs 6 份、KB curated 4 份；rescue 设计文档标 [HISTORICAL]
+- **本地资产清单扩展为六项**：+3.11.4 源码、5.x 源码、特化 MO2 源码（`SamMeow-Tarkov-specific-Mod-Organizer`）与构建产物（`E:\build\spt-mo2\prefix\install\bin`）
+- **RELEASE-NOTES.md 全文中文化**（Overseer 指示；标识符/路径/版本号保持原文）
+- **教训（harness 运行时态）**：删除 plugins/ hooks/ .mcp.json 等根级 harness 文件后，OpenCode 插件在会话期重新物化——布局不变量从「磁盘不存在」改为「git 不跟踪」（新增 Assert-PathNotTracked）；.mcp.json 移出索引 + .gitignore 收编 6 项运行时路径；verify-mcp-surface 仅对受跟踪的 .mcp.json 强制内容
+- **验证**：bootstrap 8/8（活跃会话下运行，运行时文件在盘但通过）；遗留：5.0 正式 tag 的 KB 技术复核列入后续工单；基线何时迁 5.x 属 Modding Standard 修订决策

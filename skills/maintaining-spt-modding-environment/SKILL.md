@@ -57,7 +57,7 @@ there is no remote pack distribution and no versioned cache root. Its layout:
 | `archive/forge/` | Offline Forge snapshot (catalog, hot-index, mod zips, source clones) | Read-only snapshot; prune only with consent |
 
 Version tags follow `VERSIONS.md`: `[3.11]` reference-only, `[4.0]`, `[4.1]`
-(the locked target), `[通用]` cross-version. New curated content must be tagged;
+(the stable development baseline), `[5.0]` (released forward line), `[通用]` cross-version. New curated content must be tagged;
 do not write untagged SPT facts into `curated/`.
 
 ## Check + apply spt-kb updates
@@ -113,8 +113,9 @@ Hygiene policy:
   `mods/<id>_release/` when multiple versions are present and only the
   best-version zip is referenced by the hot-index; stale `incoming`-style
   partial downloads left by interrupted fetches.
-- **Do not prune** source clones under `mods/<id>_source/` — they are the only
-  surviving copy of that code if Forge is gone.
+- **Do not prune** source clones under `mods/<id>_source/` — they are the
+  authoritative local archive and provenance trail (offline reproducibility, not
+  a survival-copy rationale).
 - Before deleting any archive file, surface the exact path list to the user and
   get explicit approval. Preview with a dry-run listing first.
 
@@ -173,7 +174,7 @@ Never write custom content into `wiki/` (read-only vendor copy).
 
 ## Version-pinning advice
 
-- **SPT version is pinned by policy: 4.1 is the final locked target.** SPT 3.11
+- **SPT version policy (ADR-0006): 4.1.5 is the stable development baseline; SPT 5.0 is released as the forward line (dual-track).** SPT 3.11
   materials are reference-only learning material, not install targets. Record
   any deviation in the modpack dev-log.
 - **Forge mod versions**: the archive's `best_version` / `best_spt` fields are
@@ -208,8 +209,8 @@ to `comments=` by default.
   live API is now `sp-mod.com/api/v0` — use `scripts/spt-kb/` for deliberate
   refreshes. The local archive is a snapshot to be preserved, not blindly
   re-fetched.
-- Do not delete Forge source clones (`mods/<id>_source/`) — they are the only
-  surviving source copy.
+- Do not delete Forge source clones (`mods/<id>_source/`) — they are the
+  authoritative local archive (offline reproducibility + provenance).
 - Do not prune archive content without user consent and a dry-run listing.
 - Do not hand-edit `wiki/` vendor files; corrections belong in `curated/`.
 - Do not add untagged curated content; every doc needs a version tag.

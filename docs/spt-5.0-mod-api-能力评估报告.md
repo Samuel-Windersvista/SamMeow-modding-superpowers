@@ -135,7 +135,7 @@ public class MyService { }   // InjectionType: HostedService | Singleton | Trans
 | `SP-Tushonka/modules`（客户端 BepInEx） | `4.0.x-dev` / `master` | **`5.0x-dev`** | **新增**（09-05 时无） |
 | `SP-Tushonka/launcher` | `4.1.x-dev` / `mod-manager` | **`5.0.x-dev`** | **新增**（09-05 时无） |
 
-即：**服务端 + 客户端模块 + 启动器三条 5.0 分支均已出现**，生态开始成形（成熟度待验证）。另有 `5.0.0-BEM-20260909/0910` 预发布标签。
+即：**服务端 + 客户端模块 + 启动器三条 5.0 分支均已出现**，生态开始成形（成熟度待验证）。另有 `5.0.0-BEM-20260909/0910` 预发布标签。（2026-09-14：SPT 5.0 已正式发布，BEM 为早期构建标签；本文结论按正式 tag 复核前维持原判。）
 
 ---
 

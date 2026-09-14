@@ -136,7 +136,7 @@ types and config conventions"; it must not fossilize one SPT version's layout.
 4. If the 说明 is in another language, translate it. Skipping because it is long or not in your language is not acceptable.
 5. If no author 说明 exists, stop by default. Ask for the original source or decline to form an install plan.
 6. Query the spt-kb for SPT-specific facts before applying a version, folder, config, or dependency assumption.
-7. Build a version/file matrix from `<id>.versions.json`: which version targets SPT 4.1 (locked target), which versions are 3.11/4.0-only. Pick the 4.1-compatible version; flag if none exists.
+7. Build a version/file matrix from `<id>.versions.json`: which version targets SPT 4.1.5 (stable baseline; 5.0 is the released forward line), which versions are 3.11/4.0-only. Pick the 4.1-compatible version; flag if none exists.
 8. Inspect the release zip layout: identify the server component (`user/mods/<ModFolder>/` with `package.json` + DLLs), client component (`BepInEx/plugins/<ModFolder>/` DLLs), prepatch (`user/patchers/`), and any config files.
 9. Choose the variant from author meaning plus current pack state, not from filename vibes or download counts.
 10. Sequence prerequisites before dependents: required dependency mods first (e.g. Fika, SVM, or a base mod), then the mod, then optional patches/translations as instructed.

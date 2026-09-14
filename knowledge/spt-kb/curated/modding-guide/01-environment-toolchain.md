@@ -25,7 +25,7 @@ source: curated
 
 ### 官方
 - 服务端 mod 示例集：`E-Mod开发示例/server-mod-examples/`（25 个项目，覆盖绝大多数常见场景）
-- SPT 技术文档（DeepWiki 自动生成）：https://deepwiki.com/sp-tarkov/server-csharp/1-overview — 注意：此站为第三方镜像站，若 SPT 停止运作可能失效，必要时抓取存档
+- SPT 技术文档（DeepWiki 自动生成）：https://deepwiki.com/sp-tarkov/server-csharp/1-overview — 注意：此站为第三方镜像站，其可用性独立于 SPT 项目状态，必要时抓取存档
 
 ### 数据查询（写 mod 查 ID 用）
 - SPT 物品数据库：https://db.sp-tarkov.com/（对应源码仓库 `G-网站与维基/db-website/`）

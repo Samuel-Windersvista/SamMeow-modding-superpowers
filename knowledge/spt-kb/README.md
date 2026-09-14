@@ -1,17 +1,17 @@
 # SPT 知识库 (spt-kb)
 
-为 SPT 4.1 mod 开发与整合包搭建服务的抢救性知识库。
-建立日期：2026-08-02 | 背景：SPT 项目可能停止运作，本库为资料抢救 + 提炼的产物。
+为 SPT mod 开发与整合包搭建服务的知识库（4.1.5 稳定基线 + 5.0 已发布新主线，双轨）。
+建立日期：2026-08-02 | 初始背景：官方组织归档期的资料抢救；该前提 2026-09-14 作废（ADR-0006），本库现作为长期参考资产 + 离线兜底维护。
 
 ## 目录导航
 
 | 目录 | 内容 | 何时查阅 |
 |------|------|---------|
 | [`INDEX.md`](INDEX.md) | 全局主题索引 | 找任何资料的入口 |
-| [`VERSIONS.md`](VERSIONS.md) | SPT 版本地图（3.11 / 4.0 / 4.1） | 确认某资料适用哪个版本 |
+| [`VERSIONS.md`](VERSIONS.md) | SPT 版本地图（3.11 / 4.0 / 4.1 / 5.0） | 确认某资料适用哪个版本 |
 | [`wiki/`](wiki/) | 官方 wiki 全站 Markdown vendor 副本 | 查官方文档原文 |
 | [`curated/`](curated/) | 提炼层：重组指南、API 笔记、任务配方、live 参考数据 | 实际写 mod 时 |
-| [`sources/`](sources/) | 资料来源登记册（仓库清单、第三方资料、应急预案） | 追溯出处、更新资料 |
+| [`sources/`](sources/) | 资料来源登记册（仓库清单、第三方资料、应急预案〔2026-08 历史备案〕） | 追溯出处、更新资料 |
 | [`archive/`](archive/) | Forge 快照、tarkov.dev 数据快照、第三方教程 | 查社区资料 |
 
 ## 本地相关资产（本仓库之外）
@@ -19,7 +19,11 @@
 | 资产 | 路径 |
 |------|------|
 | SPT 官方仓库归档（20 个全量 clone） | `E:\云文件\GitHub\SPT-archive\` |
-| SPT 4.1 服务端源码（本地 fork） | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 4.1.5 服务端源码（本地 fork） | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 3.11.4 服务端源码 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` |
+| SPT 5.x 服务端源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code` |
+| SPT 特化版 MO2（源码） | `E:\云文件\GitHub\SamMeow-Tarkov-specific-Mod-Organizer` |
+| SPT 特化版 MO2（构建产物） | `E:\build\spt-mo2\prefix\install\bin` |
 
 ## 使用原则
 

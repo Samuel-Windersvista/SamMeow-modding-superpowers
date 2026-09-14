@@ -1,6 +1,6 @@
 ﻿# SPT 版本地图
 
-最后更新：2026-09-13 | 状态标注：`[已确认]` = 有资料佐证，`[待核实]` = 需要进一步确认
+最后更新：2026-09-14 | 状态标注：`[已确认]` = 有资料佐证，`[待核实]` = 需要进一步确认
 
 > **2026-08-21 重大变更**：官方 sp-tarkov 组织已于 2026-08-11 归档全部仓库（4.1.2 为官方最后版本）；
 > 社区 fork **SP-Tushonka/server-csharp** 成为事实延续，2026-08-20 发布 **4.1.3**（47 commits/2059 文件，
@@ -16,7 +16,7 @@
 > 目标客户端 **EFT `1.1.5.0.47242`**（4.1.x 为 `0.16.9.40743`），已有 `5.0.0-BEM-20260909/0910` 预发布标签。
 > 新增 BattlePass/赛季/tarcoin 商店/多结局/剧情任务链/扩展包等系统与破冰船等新地图。
 > 已克隆至 `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code`；详见 `curated/operations/5xx-source-verification.md`。
-> **本项目「最终目标 SPT 4.1」策略待 Overseer 复核**（本记录不擅自改策略）。
+> **2026-09-14 策略复核完成（ADR-0006）**：「最终目标 SPT 4.1、可能永久停留」表述作废——4.1.5 为稳定开发基线，5.0 为已发布新主线，双轨适配。详见 `docs/adr/0006-posture-active-toolchain.md`。
 >
 > **2026-09-13 能力沉淀**：新增 `curated/api-notes-5.0/`（9 篇，**全部带 [UNSTABLE-PREVIEW] 标记**，因 5.0 仍在开发初期）。
 > 客户端侧：已重建 EFT 1.1.5 类名清单（IL2CPP 但名称未混淆，16,435 类），制品见 `archive/eft-1.1.5/`，报告见 `docs/eft-1.1.5-类名映射重建报告.md`。
@@ -28,7 +28,7 @@
 | 3.11 LTS | TypeScript（`server` 仓库） | 长期支持版 [已确认] | `wiki/SPT_311/` |
 | 4.0 | C# 重写（`server-csharp`） | 已发布，对应 EFT 1.0 时代 [已确认] | `wiki/SPT_40/`、`wiki/FAQs_40.md` |
 | 4.1 | C#（`server-csharp`） | 已发布 4.1.0~4.1.5（2026-09 最新 4.1.5）[已确认] | `wiki/SPT_41/`、本地 fork |
-| 5.0 | C#（`server-csharp`，SP-Tushonka fork） | **开发中**（分支 `5.0x-dev`），有 `5.0.0-BEM-*` 预发布标签 [已确认] | `curated/operations/5xx-source-verification.md`、本地 fork `SamMeow_SP-Tushonka_5xx_source_code` |
+| 5.0 | C#（`server-csharp`，SP-Tushonka fork） | **已发布**（2026-09-14 确认；原 `5.0x-dev` 开发线，`5.0.0-BEM-*` 为早期预发布标签；正式 tag 明细待复核）[已确认] | `curated/operations/5xx-source-verification.md`、本地 fork `SamMeow_SP-Tushonka_5xx_source_code` |
 
 ## 4.1 发布线（2026-08-07 核实）
 
@@ -46,7 +46,7 @@
 
 ## 本项目版本策略
 
-- **最终目标：SPT 4.1**，且可能永远停留在 4.1（不再跟随后续版本）
+- **稳定开发基线：SPT 4.1.5**（mod 开发目标，Modding Standard Dev-Baseline；原「最终目标 4.1、可能永久停留」表述作废，见 ADR-0006）；**新主线：SPT 5.0（已发布）**，双轨适配中
 - 3.11 资料价值：大量社区 mod 与教程基于 3.11，是 modding 概念的主要学习材料
 - 4.0→4.1 迁移文档是最关键的桥梁资料：
   - `wiki/SPT_41/Server_40_to_41.md` — 服务端迁移
@@ -72,7 +72,7 @@
 - `[3.11]` — 仅适用 3.11 LTS
 - `[4.0]` — 仅适用 4.0
 - `[4.1]` — 适用 4.1（本项目主目标）
-- `[5.0]` — 适用 SPT 5.0 开发线（`5.0x-dev`，2026-09-13 新增）：目标客户端 EFT `1.1.5.0.47242`，预发布阶段；本项目尚未迁移，仅作资料登记
+- `[5.0]` — 适用 SPT 5.0（2026-09-13 登记，**2026-09-14 确认已正式发布**；目标客户端 EFT `1.1.5.0.47242`）：双轨适配中，预发布快照的 API 结论按正式 tag 复核前维持原标注
 - `[通用]` — 跨版本概念
 - `[live-ref]` — live EFT 参考数据（2026-09-02 新增）：来自 tarkov.dev 等 live 数据源，非 SPT 事实；仅作对照/概念参考，数值权威性以 SPT 本地数据库为准。文档须标注快照日期与对应 live 版本（见 `archive/tarkov-dev/README.md`）
 

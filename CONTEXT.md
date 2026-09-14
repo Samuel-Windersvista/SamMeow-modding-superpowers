@@ -35,11 +35,11 @@ _Avoid_: dump、export
 ### 版本
 
 **Version Line（版本线）**:
-一个 SPT 大版本系列。tarkov-runtime-MCP 只适配 SPT 5.x 版本线（见 ADR-0002），3.11 与 4.x 材料仅作参考。
+一个 SPT 大版本系列。当前两条活跃线：4.1.x（稳定开发基线，Modding Standard 的 Dev-Baseline）与 5.x（新主线，已发布）；3.11 为历史对照。tarkov-runtime-MCP 锚定 5.x 线（见 ADR-0002；5.0 发布后该范围决策不变）。
 _Avoid_: 版本（过于宽泛）、分支
 
 **Moving Target（移动靶）**:
-SPT 5.0 当前处于 bleeding-edge 开发阶段（`5.0x-dev` 分支），API 与内容随时可变。版本线内的漂移靠 capability 自报与版本门禁吸收。
+SPT 5.0 已正式发布（2026-09-14 确认；此前 `5.0x-dev`/BEM 阶段 API 漂移剧烈），5.x 线内仍可能存在 API 与内容漂移。版本线内的漂移靠 capability 自报与版本门禁吸收。
 _Avoid_: 不稳定版本
 
 ### 规范
