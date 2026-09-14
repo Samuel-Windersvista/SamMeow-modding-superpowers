@@ -4,9 +4,18 @@
 
 **Blocked by:** 01
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] 三个维度文件完成，规则五要素齐全
-- [ ] BND 明确"约定+陷阱"边界，链接 `curated/migration/bundle-*.md` 与 operations 报告
-- [ ] PERF 引用 `3114-eft016-perf-hotspots.md` 与 `415-source-review-report.md` 的具体发现
-- [ ] index.json 登记本票文件
+- [x] 三个维度文件完成，规则五要素齐全
+- [x] BND 明确"约定+陷阱"边界，链接 `curated/migration/bundle-*.md` 与 operations 报告
+- [x] PERF 引用 `3114-eft016-perf-hotspots.md` 与 `415-source-review-report.md` 的具体发现
+- [x] index.json 登记本票文件
+
+## Comments
+
+**2026-09-14 完成（agent）**
+
+- 交付：`11-version-differences.md`（STD-VER-002..004，3 条）、`12-bundle-assets.md`（STD-BND-001..006）、`13-perf-security.md`（STD-PERF-001..008），共 17 条规则。
+- 双轴评审后修复：删除与 STD-META-004 重复的 STD-VER-001（编号空洞保留，附注指向）；补 9 个样例（BND-002/003/006、PERF-001/002/003/005/006/008）；VER-004 / PERF-007/008 补 `EV-NOCORPUS` 锚点。
+- BND 链接 `curated/migration/bundle-*.md`；PERF 引用 `3114-eft016-perf-hotspots.md` 与 `415-source-review-report.md` 的具体发现。
+- 机械核验：五要素齐全、ID 唯一、链接与锚点全部可解析。

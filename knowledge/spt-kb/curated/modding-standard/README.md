@@ -161,4 +161,4 @@ mod README / dev-log 中的记录示例：
 
 ---
 
-> 状态：骨架（ticket 01 建立）。规则由 ticket 02–06 填充；`version-matrix.md` 由 ticket 07 交付。
+> 状态：规则已填充（ticket 02–06，2026-09-14）。`version-matrix.md` 待交付（ticket 07）。

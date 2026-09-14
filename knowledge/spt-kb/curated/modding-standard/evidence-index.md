@@ -116,6 +116,87 @@ Get-ChildItem -LiteralPath $modRoot -Directory | Group-Object Name | Sort-Object
 Get-ChildItem -LiteralPath $modRoot -File | Where-Object { $_.Name -like 'README*' }
 ```
 
+### EV-CORPUS-CSPROJ — 工程文件普查（csproj / .gitignore / ModMetadata.cs）
+
+> 补充普查（2026-09-14，ticket 02 撰写期执行，只读）。对象：MANIFEST 近期 297 个源码目录，共 509 个 csproj。供 STRUCT / META / BUILD 维度规则引用。
+
+| 指标 | 结果 |
+|------|------|
+| `.gitignore` 存在 | 269 / 297 |
+| 文件名恰为 `ModMetadata.cs` | 63 / 297（其余散落 `Metadata.cs`、`*Metadata.cs` 等） |
+| 服务端 csproj（引用 `SPTarkov.Server`） | 114 |
+| └ TargetFramework | `net10.0` 95 / `net9.0` 17 / `net9.0-windows` 1 |
+| └ 引用方式 | `<PackageReference>` 83 / 本地 DLL 31 |
+| └ `AppendTargetFrameworkToOutputPath=false` | 67；`<Private>false</Private>` 26；`<HintPath>` 34 |
+| 客户端 csproj（引用 BepInEx、不含服务端） | 264 |
+| └ TargetFramework | `netstandard2.1` 135 / `net472` 79 / `net471` 7 / `netstandard21` 3 / `net48` 2 / `net46` 1 / `net10.0` 1 |
+| └ `<HintPath>` | 226；`AppendTargetFrameworkToOutputPath=false` 43；`<Private>false</Private>` 111 |
+| `<Version>` 格式 | 三段式 214 / 四段式 5 / MSBuild 属性插值 72（`$(AssemblyVersion)` 49、`$(ModVersion)` 14、`$(Version)` 9） |
+
+命令（完整脚本，可复现）：
+
+```powershell
+$root = 'knowledge\spt-kb\archive\forge\mods'
+$manifest = Join-Path $root 'MANIFEST-sp-mod-2026-09.md'
+$dirs = Get-Content -LiteralPath $manifest | Where-Object { $_ -match '^\| ' } |
+  ForEach-Object { ($_ -split '\|')[1].Trim() } | Where-Object { $_ -like '*_source' } | Select-Object -Unique
+
+$serverTf=@{}; $clientTf=@{}
+$srv=0; $cli=0; $sAppend=0; $cAppend=0; $sPriv=0; $cPriv=0; $sHint=0; $cHint=0
+$gitignore=0; $modMetaFile=0; $csprojTotal=0
+$ver3=0; $ver4=0; $verOther=0; $appendTotal=0
+$srvPkgRef=0; $srvLocalRef=0; $cliHintRef=0
+function Add-Tf($h,$k){ if($k){ if($h.ContainsKey($k)){$h[$k]++}else{$h[$k]=1} } }
+
+foreach ($d in $dirs) {
+  $p = Join-Path $root $d
+  if (Test-Path -LiteralPath (Join-Path $p '.gitignore')) { $gitignore++ }
+  if (Get-ChildItem -LiteralPath $p -File -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq 'ModMetadata.cs' }) { $modMetaFile++ }
+  foreach ($c in (Get-ChildItem -LiteralPath $p -File -Filter '*.csproj' -Recurse -ErrorAction SilentlyContinue)) {
+    $csprojTotal++
+    $t = Get-Content -LiteralPath $c.FullName -Raw -ErrorAction SilentlyContinue
+    if ($null -eq $t) { continue }
+    $tf=$null; if ($t -match '<TargetFramework>([^<]+)</TargetFramework>') { $tf=$Matches[1].Trim() }
+    $isS = ($t -match 'Include="SPTarkov\.Server' -or $t -match 'SPTarkov\.Server\.Core\.dll')
+    $isC = ($t -match 'Include="BepInEx' -or $t -match 'BepInEx\.dll')
+    $sPkg = ($t -match '<PackageReference[^>]*Include="SPTarkov\.Server')
+    if ($isS) { $srv++; Add-Tf $serverTf $tf; if($sPkg){$srvPkgRef++}else{$srvLocalRef++} }
+    if ($isC -and -not $isS) { $cli++; Add-Tf $clientTf $tf; if($t -match '<HintPath>'){$cliHintRef++} }
+    if ($isS -and -not $isC) { if($t -match 'AppendTargetFrameworkToOutputPath>false'){$sAppend++}; if($t -match '<Private>false</Private>'){$sPriv++}; if($t -match '<HintPath>'){$sHint++} }
+    if ($isC -and -not $isS) { if($t -match 'AppendTargetFrameworkToOutputPath>false'){$cAppend++}; if($t -match '<Private>false</Private>'){$cPriv++} }
+    if ($t -match 'AppendTargetFrameworkToOutputPath>false') { $appendTotal++ }
+    if ($t -match '<Version>([^<]+)</Version>') {
+      $v=$Matches[1].Trim()
+      if ($v -match '^\d+\.\d+\.\d+$'){$ver3++} elseif ($v -match '^\d+\.\d+\.\d+\.\d+$'){$ver4++} else {$verOther++}
+    }
+  }
+}
+[pscustomobject]@{ manifestDirs=$dirs.Count; csprojTotal=$csprojTotal; gitignore=$gitignore; modMetadataFile=$modMetaFile
+  serverCsproj=$srv; serverTargetFramework=$serverTf; serverPkgRef=$srvPkgRef; serverLocalRef=$srvLocalRef
+  serverAppendFalse=$sAppend; serverPrivateFalse=$sPriv; serverHintPath=$sHint
+  clientCsproj=$cli; clientTargetFramework=$clientTf; clientHintPath=$cliHintRef; clientAppendFalse=$cAppend; clientPrivateFalse=$cPriv
+  appendTargetFrameworkFalseTotal=$appendTotal; version3Seg=$ver3; version4Seg=$ver4; versionOther=$verOther } | ConvertTo-Json -Depth 6
+```
+
+结果（2026-09-14 实跑）：
+
+```json
+{
+  "manifestDirs": 297, "csprojTotal": 509, "gitignore": 269, "modMetadataFile": 63,
+  "serverCsproj": 114,
+  "serverTargetFramework": { "net9.0": 17, "net9.0-windows": 1, "net10.0": 95 },
+  "serverPkgRef": 83, "serverLocalRef": 31,
+  "serverAppendFalse": 67, "serverPrivateFalse": 26, "serverHintPath": 34,
+  "clientCsproj": 264,
+  "clientTargetFramework": { "net471": 7, "net472": 79, "net46": 1, "net10.0": 1, "netstandard21": 3, "netstandard2.1": 135, "net48": 2 },
+  "clientHintPath": 226, "clientAppendFalse": 43, "clientPrivateFalse": 111,
+  "appendTargetFrameworkFalseTotal": 145,
+  "version3Seg": 214, "version4Seg": 5, "versionOther": 72
+}
+```
+
+注：`versionOther` 72 例为 MSBuild 属性插值（`$(AssemblyVersion)` 49、`$(ModVersion)` 14、`$(Version)` 9），非违规。`net9.0` 17 例可能含向 5.x 迁移的过渡期样本。
+
 ### EV-CORPUS-META — 元数据惯例
 
 采样 19 例含 `IModMetadata` / `AbstractModMetadata` 的 C# 服务端 mod（下表列出 15 例坐标），加上 183 个 `[BepInPlugin("...",...)]` 客户端插件入口，观察结果如下：
@@ -530,6 +611,7 @@ my-paired-mod/
 | ModDependencies 校验 | `SPTarkov.Server/Modding/ModValidator.cs:243-287` | 4.1/5.0 | 缺失/版本不满足即整批拒载；自依赖仅 Warning |
 | 依赖错误本地化 | `Libraries/SPTarkov.Server.Assets/SPT_Data/database/locales/server/en.json:227/241` | 4.1/5.0 | `modloader-missing_dependency` / `modloader-outdated_dependency` 文本 |
 | mod 目录路径 API | `Libraries/SPTarkov.Server.Core/Helpers/Server/ModHelper.cs:10-19` | 4.1/5.0 | `GetAbsolutePathToModFolder(Assembly)` 返回 `user/mods/<ModName>/` |
+| 配置注册接口定义 | `Libraries/SPTarkov.Server.Core/DI/IOnDIConstruct.cs` | 4.1/5.0 | `IOnDIConstruct` 接口（`OnDIConstructAsync` 静态抽象）；5.0 对应 `Libraries/SPTushonka.Server.Core/DI/IOnDIConstruct.cs` |
 | 配置注册推荐模式 | `knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md:65-76` | 4.1 | `IOnDIConstruct` + `AddSingleton`；警告 config 类不要加 `[Injectable]` |
 | 4.1 配置系统说明 | `knowledge/spt-kb/curated/api-notes-4.1/config-system.md` | 4.1 | 4.1 已移除 `ConfigServer.GetConfig<T>()` |
 | paired mod 官方描述 | `external/spt-archive/wiki/Mod_Types.md:40-41` | wiki | 仅说明可同时含 server 与 client 组件，未规定目录结构 |
@@ -550,6 +632,24 @@ my-paired-mod/
 
 1. **ModDependencies 真实声明** — 适用标注：**机制推断，无语料先例**。392 个源码目录与官方示例中均无非空 `ModDependencies`；推荐写法（`new()` + `Add("guid", range)`）由 `IModMetadata.cs:91` 接口类型与 `ModValidator.cs:243-287` 校验逻辑推断。
 2. **paired mod 仓库结构的文档级规范** — 适用标注：**机制推断，无语料先例**。wiki/curated 文档无明确规范；推荐布局由语料中 58 个 hybrid mod 的共同做法归纳。
+
+### 规则级登记（ticket 02–06 撰写期，2026-09-14）
+
+以下规则在 Evidence 栏标注「机制推断，无语料先例」（级别均为 SHOULD；`STD-VERIFY-009` 为 MAY）：
+
+| 文件 | Rule IDs | 无语料原因（机制来源摘要） |
+|------|----------|--------------------------|
+| `04-server.md` | STD-SRV-002 / -006 / -007 | `TypePriority` 写法、Router action 签名、Router→Callbacks 分层：语料未统计（机制：modding-guide/02、api-notes-4.1/5.0 http-routing） |
+| `05-client.md` | STD-CLI-004 / -007 | Harmony 目标类型名、Awake/OnDestroy 生命周期：无语料计数（机制：modding-guide/03、模板 Plugin.cs） |
+| `06-config.md` | STD-CFG-004 | config 类禁 `[Injectable]`：无直接语料计数（机制：modding-guide/02 警告） |
+| `07-logging.md` | STD-LOG-004 / -005 | 异常记录降级、取消传播：语料未统计（机制：ISptLogger 签名、modding-guide/02） |
+| `08-dependencies.md` | STD-DEP-003 | 可选依赖 `IOnLoad` 自判：无自判模式语料（机制：ModValidator 仅硬依赖） |
+| `09-packaging.md` | STD-PKG-002 | MO2 overlay / meta.ini 约定：无约定语料（机制：tools/mo2-mcp 接口） |
+| `10-verification.md` | STD-VERIFY-002 – -009 | 工具链/技能文档单源（机制：skills/testing-spt-modpack、tools/spt-mcp、tools/tarkov-runtime-mcp） |
+| `11-version-differences.md` | STD-VER-004 | 5.0 无 mod 语料（机制：5xx-source-verification「待专项评估」） |
+| `13-perf-security.md` | STD-PERF-007 / -008 | 路径遍历、fail-closed：单点审查发现（机制：415-source-review-report） |
+
+注：`STD-DEP-001` 由上方第 1 条覆盖。
 
 ## 5. 复核触发（EV-REVIEW）
 
