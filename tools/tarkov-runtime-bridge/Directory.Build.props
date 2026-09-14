@@ -1,0 +1,71 @@
+<Project>
+
+  <!--
+    tarkov-runtime-bridge 客户端插件（tarkov-runtime-MCP Phase 2 首刀）。
+    仿 SPT 官方 modules@5.0x-dev 的根 Directory.Build.props：
+    SPT 5.0 / EFT 1.1.5 为 IL2CPP + BepInEx 6，客户端插件必须面向 net6.0
+    （STD-BUILD-002），运行时程序集经 <HintPath> 引用且 Private=false
+    （STD-BUILD-003）。SPT 安装根可命令行覆盖（STD-BUILD-006）：
+    dotnet build -p:SPTInstallPath="..."（兼容旧别名 -p:GameDir="..."）
+  -->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Configuration>Release</Configuration>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- STD-BUILD-006：可覆盖的安装路径（SPTInstallPath 标准名；GameDir 为兼容别名）。 -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == '' AND '$(GameDir)' != ''">$(GameDir)</SPTInstallPath>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:/Game/EFT_Offline/SPT_5xx</SPTInstallPath>
+    <GameDir Condition="'$(GameDir)' == ''">$(SPTInstallPath)</GameDir>
+    <BepInExCore>$(SPTInstallPath)/BepInEx/core</BepInExCore>
+    <Interop>$(SPTInstallPath)/BepInEx/interop</Interop>
+  </PropertyGroup>
+
+  <!-- 直接从本地 SPT 安装引用；不随本插件分发任何游戏程序集。 -->
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(BepInExCore)/BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(BepInExCore)/BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(BepInExCore)/Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(Interop)/Il2Cppmscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>$(Interop)/Il2CppSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(Interop)/Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>$(Interop)/Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- EBodyPart 声明在 PlayerEnums.dll（跨程序集，见 01-signature-verification-report §6-2）。 -->
+    <Reference Include="PlayerEnums">
+      <HintPath>$(Interop)/PlayerEnums.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(Interop)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

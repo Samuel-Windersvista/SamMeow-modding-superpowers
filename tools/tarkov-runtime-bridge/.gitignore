@@ -1,0 +1,9 @@
+# 构建产物（根 .gitignore 亦有 **/bin/、**/obj/，此处显式覆盖本组件）
+bin/
+obj/
+
+# IDE / 用户文件
+.vs/
+.idea/
+*.user
+*.suo

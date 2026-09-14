@@ -1,0 +1,16 @@
+<Project>
+
+  <!--
+    测试工程独立配置：位于 tests/ 之下，MSBuild 就近取本文件，
+    不会继承 ../Directory.Build.props（后者含游戏程序集 HintPath，测试不需要）。
+  -->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+</Project>
