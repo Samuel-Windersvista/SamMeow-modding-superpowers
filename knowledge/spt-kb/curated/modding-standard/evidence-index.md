@@ -639,15 +639,15 @@ my-paired-mod/
 
 | 文件 | Rule IDs | 无语料原因（机制来源摘要） |
 |------|----------|--------------------------|
-| `04-server.md` | STD-SRV-002 / -006 / -007 | `TypePriority` 写法、Router action 签名、Router→Callbacks 分层：语料未统计（机制：modding-guide/02、api-notes-4.1/5.0 http-routing） |
-| `05-client.md` | STD-CLI-004 / -007 | Harmony 目标类型名、Awake/OnDestroy 生命周期：无语料计数（机制：modding-guide/03、模板 Plugin.cs） |
+| `04-server.md` | STD-SRV-002、STD-SRV-006、STD-SRV-007 | `TypePriority` 写法、Router action 签名、Router→Callbacks 分层：语料未统计（机制：modding-guide/02、api-notes-4.1/5.0 http-routing） |
+| `05-client.md` | STD-CLI-004、STD-CLI-007 | Harmony 目标类型名、Awake/OnDestroy 生命周期：无语料计数（机制：modding-guide/03、模板 Plugin.cs） |
 | `06-config.md` | STD-CFG-004 | config 类禁 `[Injectable]`：无直接语料计数（机制：modding-guide/02 警告） |
-| `07-logging.md` | STD-LOG-004 / -005 | 异常记录降级、取消传播：语料未统计（机制：ISptLogger 签名、modding-guide/02） |
+| `07-logging.md` | STD-LOG-004、STD-LOG-005 | 异常记录降级、取消传播：语料未统计（机制：ISptLogger 签名、modding-guide/02） |
 | `08-dependencies.md` | STD-DEP-003 | 可选依赖 `IOnLoad` 自判：无自判模式语料（机制：ModValidator 仅硬依赖） |
 | `09-packaging.md` | STD-PKG-002 | MO2 overlay / meta.ini 约定：无约定语料（机制：tools/mo2-mcp 接口） |
-| `10-verification.md` | STD-VERIFY-002 – -009 | 工具链/技能文档单源（机制：skills/testing-spt-modpack、tools/spt-mcp、tools/tarkov-runtime-mcp） |
+| `10-verification.md` | STD-VERIFY-002、STD-VERIFY-003、STD-VERIFY-004、STD-VERIFY-005、STD-VERIFY-006、STD-VERIFY-007、STD-VERIFY-008、STD-VERIFY-009 | 工具链/技能文档单源（机制：skills/testing-spt-modpack、tools/spt-mcp、tools/tarkov-runtime-mcp） |
 | `11-version-differences.md` | STD-VER-004 | 5.0 无 mod 语料（机制：5xx-source-verification「待专项评估」） |
-| `13-perf-security.md` | STD-PERF-007 / -008 | 路径遍历、fail-closed：单点审查发现（机制：415-source-review-report） |
+| `13-perf-security.md` | STD-PERF-007、STD-PERF-008 | 路径遍历、fail-closed：单点审查发现（机制：415-source-review-report） |
 
 注：`STD-DEP-001` 由上方第 1 条覆盖。
 
