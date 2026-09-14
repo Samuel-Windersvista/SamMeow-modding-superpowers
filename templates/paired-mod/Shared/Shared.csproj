@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      STD-STRUCT-004：Shared 只放两端共享的纯数据/常量，不引用 SPT 或 BepInEx。
+      目标框架用 netstandard2.0，使 netstandard2.1 的客户端工程与 net10.0 的服务端工程都能引用。
+    -->
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}.Shared</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}.Shared</AssemblyName>
+
+    <!-- STD-BUILD-005：输出路径不带框架名 -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- 版本号不在此定义：由仓库根 Directory.Build.props 集中提供（STD-META-007 / STD-PKG-005） -->
+  </PropertyGroup>
+
+</Project>

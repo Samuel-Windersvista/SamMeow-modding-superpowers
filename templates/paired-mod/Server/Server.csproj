@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- STD-BUILD-001：SPT 4.1 服务端目标框架必须是 net10.0，与服务器程序集保持一致 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}.Server</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}.Server</AssemblyName>
+
+    <!-- STD-BUILD-005：输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- 版本号不在此定义：由仓库根 Directory.Build.props 集中提供（STD-META-007 / STD-PKG-005） -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- STD-STRUCT-004：两端共享的纯数据/常量放 Shared/，两端共同引用 -->
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      STD-BUILD-004：服务端必须引用 SPTarkov.Server.Core（及 SPTarkov.DI、SPTarkov.Common），
+      且引用的 SPTarkov.Server.* 版本不得高于目标运行时版本。此处用 HintPath 指向
+      $(SPTServerPath)（= SPT 根目录\SPT_Runtime\）的运行时 DLL，版本天然与运行时匹配。
+    -->
+    <!-- 4.1 必需：核心库（IModMetadata / 表模型 / OnLoadOrder / IOnLoad） -->
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPTServerPath)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：DI 注解（[Injectable]） -->
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPTServerPath)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：公共库（ISptLogger） -->
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPTServerPath)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：SemanticVersioning（IModMetadata 的 Version/Range 类型） -->
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPTServerPath)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 Mod Web Pages（IModBlazorMetadata），再引用 SPTarkov.Server.Web.dll 并把 SDK 换成 Microsoft.NET.Sdk.Web -->
+  </ItemGroup>
+
+  <!--
+    STD-CFG-003：IOnDIConstruct 的方法签名使用 IServiceCollection，该类型定义在
+    Microsoft.Extensions.DependencyInjection.Abstractions 中。SPT.Server 运行在
+    Microsoft.AspNetCore.App 共享框架上（见 SPT.Server.runtimeconfig.json），
+    这里用 FrameworkReference 引用同一框架即可拿到该类型；共享框架程序集不会被复制进输出目录。
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      STD-BUILD-002：客户端半必须使用与目标 SPT 版本运行时兼容的目标框架。
+      4.1.5（Mono / BepInEx 5）：netstandard2.1（net472/net471 亦可），禁止 net10.0/net9.0 等 .NET Core/5+ 目标；
+      5.0（IL2CPP / BepInEx 6）：net6.0。5.0 形态不在本模板内实现，参见 STD-BUILD-002 / STD-CLI-001。
+
+      客户端 mod 在 Unity 的 Mono 运行时下加载，net10.0 程序集无法被 Mono 加载。
+      SPT 4.1 官方客户端模块同样以 netstandard2.1 为目标。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}.Client</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}.Client</AssemblyName>
+
+    <!-- STD-BUILD-005：输出路径不带框架名，方便把 DLL 复制到 BepInEx/plugins/ -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- 版本号不在此定义：由仓库根 Directory.Build.props 集中提供（STD-META-007 / STD-PKG-005） -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- STD-STRUCT-004：两端共享的纯数据/常量放 Shared/，两端共同引用 -->
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      STD-BUILD-003：客户端运行时程序集（BepInEx / Harmony / Assembly-CSharp / UnityEngine）
+      必须通过 <HintPath> 指向实际运行时 DLL，并设 <Private>false</Private>，不得复制进构建输出。
+      路径相对 SPT 根目录（$(SPTClientPath)，见 Directory.Build.props）。
+      5.0（IL2CPP / BepInEx 6）引用路径不同：core 在 BepInEx\core\，游戏程序集在 BepInEx\interop\。
+    -->
+    <!-- BepInEx 5 核心（BepInEx/plugins/ 下的插件由它加载） -->
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTClientPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 2.x（补丁库） -->
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTClientPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 游戏主程序集（4.1 已反混淆，类型有真名真命名空间），补丁目标类在这里 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTClientPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- MonoBehaviour 基类所在（BaseUnityPlugin 继承它），必须引用 -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTClientPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTClientPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 UnityEngine.UI / EventSystems 等，按需补充 UnityEngine.UI.dll / UnityEngine.UIModule.dll -->
+  </ItemGroup>
+
+</Project>

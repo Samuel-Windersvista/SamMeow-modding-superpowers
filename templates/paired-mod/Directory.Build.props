@@ -1,0 +1,48 @@
+<Project>
+
+  <!--
+    STD-META-007 / STD-PKG-005：paired mod 的 Client / Server / Shared 共用同一版本号。
+    版本号只在此处定义一次，三个 csproj 不再各自写 <Version>；改版本只改这一行。
+    三个工程都继承本文件（MSBuild 自动向上查找 Directory.Build.props）。
+  -->
+  <PropertyGroup>
+    <Version>{{MOD_VERSION}}</Version>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!--
+    STD-BUILD-006：用一个可覆盖的安装路径属性定位 SPT 安装目录。
+    paired mod 的客户端与服务端运行时不在同一层：
+      - 客户端运行时（BepInEx / 0Harmony / Assembly-CSharp / UnityEngine）在 SPT 根目录下；
+      - 服务端运行时（SPTarkov.*.dll / SemanticVersioning.dll）在 SPT 根目录的 SPT_Runtime\ 下。
+    因此 SPTInstallPath 指 SPT 根目录（含 EscapeFromTarkov.exe 与 SPT_Runtime\），再派生 SPTServerPath。
+    属性必须可覆盖，禁止写成无法覆盖的硬编码：
+      dotnet build -c Release -p:SPTInstallPath="D:\SPT"
+      dotnet build -c Release -p:SPTClientPath="D:\SPT" -p:SPTServerPath="D:\SPT\SPT_Runtime"
+  -->
+  <PropertyGroup>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">{{SPT_INSTALL_PATH}}</SPTInstallPath>
+    <SPTClientPath Condition="'$(SPTClientPath)' == ''">$(SPTInstallPath)</SPTClientPath>
+    <SPTServerPath Condition="'$(SPTServerPath)' == ''">$(SPTClientPath)\SPT_Runtime</SPTServerPath>
+  </PropertyGroup>
+
+  <!--
+    STD-META-007 / STD-PKG-005（版本联动到代码）：把集中定义的 $(Version) 生成为编译期常量
+    ModVersion.Value，供客户端 [BepInPlugin] 与服务端 IModMetadata.Version 引用。
+    const 可作为特性实参，使版本号在代码里也只有一个来源（$(Version)），不会与 csproj 漂移。
+  -->
+  <Target Name="GenerateModVersionConstant" BeforeTargets="BeforeCompile;CoreCompile">
+    <PropertyGroup>
+      <ModVersionGeneratedFile>$(IntermediateOutputPath)ModVersion.g.cs</ModVersionGeneratedFile>
+    </PropertyGroup>
+    <MakeDir Directories="$(IntermediateOutputPath)" />
+    <WriteLinesToFile
+      File="$(ModVersionGeneratedFile)"
+      Overwrite="true"
+      Lines="internal static class ModVersion { public const string Value = &quot;$(Version)&quot;%3B }" />
+    <ItemGroup>
+      <Compile Include="$(ModVersionGeneratedFile)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

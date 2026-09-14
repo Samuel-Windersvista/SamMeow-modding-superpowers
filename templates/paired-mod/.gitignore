@@ -1,0 +1,11 @@
+# 构建产物
+bin/
+obj/
+
+# 发布产物（pack.ps1 输出）
+dist/
+
+# IDE / 用户文件
+*.user
+.vs/
+.idea/

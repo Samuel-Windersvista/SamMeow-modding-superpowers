@@ -1,0 +1,9 @@
+// {{MOD_NAME}} 服务端默认配置——STD-CFG-005
+// 安装/首次加载时若 config/config.jsonc 不存在，会复制本文件为 config.jsonc；
+// 已存在的 config.jsonc 永远不会被覆盖，玩家改动得以保留。
+// .jsonc 允许注释与尾随逗号（STD-CFG-002 / STD-CFG-003）。
+{
+  "enabled": true,
+  "exampleMultiplier": 1.0,
+  "exampleTags": ["example"]
+}
