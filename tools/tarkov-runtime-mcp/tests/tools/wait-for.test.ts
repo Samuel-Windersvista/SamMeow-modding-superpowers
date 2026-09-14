@@ -8,6 +8,7 @@ import { describe, expect, it } from "vitest";
 import { createDispatcher } from "../../src/index.js";
 import { createWaitForTool, type ToolCaller } from "../../src/tools/wait-for.js";
 import { RUNTIME_ERROR_CODES, errEnv, okEnv, type Envelope } from "../../src/types.js";
+import { fakeBridge, inRaidBotsSummary } from "../helpers/fake-bridge.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 
 /** 按顺序返回信封的假调用器；耗尽后重复最后一个 */
@@ -228,5 +229,113 @@ describe("tarkov_wait_for 对 server_status 结果可用（fake connection）", 
     expect(result.ok).toBe(true);
     // 默认超时远大于本用例耗时；立即满足不应等待默认间隔
     expect(Date.now() - started).toBeLessThan(2000);
+  });
+});
+
+describe("tarkov_wait_for raid 谓词（T06）", () => {
+  function raidDispatcher(bridge = fakeBridge({ bots: inRaidBotsSummary() })) {
+    return createDispatcher(
+      fakeClient(new FakeConnection(() => versionResponse("SPT 5.0.0 (BEM) ff0bf32"))),
+      bridge,
+    );
+  }
+
+  it("raid 谓词满足：对 raid_bots 摘要求值并返回观察值", async () => {
+    const invoke = raidDispatcher(fakeBridge({ bots: inRaidBotsSummary({ alive: 8 }) }));
+
+    const result = await invoke("tarkov_wait_for", {
+      tool: "raid_bots",
+      predicate: "alive > 5",
+      timeoutMs: 500,
+      intervalMs: 1,
+    });
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({ tool: "raid_bots", attempts: 1, value: 8 });
+  });
+
+  it("raid 谓词永不满足：超时返回结构化 WAIT_TIMEOUT（谓词/最后观测值）", async () => {
+    const invoke = raidDispatcher(fakeBridge({ bots: inRaidBotsSummary({ alive: 1 }) }));
+
+    const result = await invoke("tarkov_wait_for", {
+      tool: "raid_bots",
+      predicate: "alive > 5",
+      timeoutMs: 30,
+      intervalMs: 5,
+    });
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.code).toBe(RUNTIME_ERROR_CODES.WAIT_TIMEOUT);
+    expect(result.details).toMatchObject({
+      tool: "raid_bots",
+      predicate: "alive > 5",
+      lastValue: 1,
+      pathFound: true,
+    });
+  });
+
+  it("首轮 BRIDGE_UNREACHABLE：立即返回该错误信封，不轮询到超时", async () => {
+    const bridgeGone = errEnv(
+      "raid_status",
+      "桥不可达",
+      RUNTIME_ERROR_CODES.BRIDGE_UNREACHABLE,
+    );
+    const { callTool, callCount } = sequencedCaller([bridgeGone, READY]);
+    const tool = createWaitForTool(callTool);
+
+    const result = await tool({
+      tool: "raid_status",
+      predicate: "map equals Woods",
+      timeoutMs: 5000,
+      intervalMs: 1,
+    });
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.code).toBe(RUNTIME_ERROR_CODES.BRIDGE_UNREACHABLE);
+    expect(callCount()).toBe(1);
+  });
+
+  it("首轮 CLIENT_BRIDGE_NOT_INSTALLED：立即返回该错误信封，不轮询到超时", async () => {
+    const notInstalled = errEnv(
+      "raid_status",
+      "桥未安装",
+      RUNTIME_ERROR_CODES.CLIENT_BRIDGE_NOT_INSTALLED,
+    );
+    const { callTool, callCount } = sequencedCaller([notInstalled, READY]);
+    const tool = createWaitForTool(callTool);
+
+    const result = await tool({
+      tool: "raid_status",
+      predicate: "map equals Woods",
+      timeoutMs: 5000,
+      intervalMs: 1,
+    });
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.code).toBe(RUNTIME_ERROR_CODES.CLIENT_BRIDGE_NOT_INSTALLED);
+    expect(callCount()).toBe(1);
+  });
+
+  it("首轮 NOT_IN_RAID：不快速失败，继续轮询直至满足", async () => {
+    const notInRaid = errEnv("raid_status", "不在 raid", RUNTIME_ERROR_CODES.NOT_IN_RAID);
+    const inRaid = okEnv("raid_status", "在 raid", { map: "Woods" });
+    const { callTool, callCount } = sequencedCaller([notInRaid, inRaid]);
+    const tool = createWaitForTool(callTool);
+
+    const result = await tool({
+      tool: "raid_status",
+      predicate: "map equals Woods",
+      timeoutMs: 500,
+      intervalMs: 1,
+    });
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({ attempts: 2, value: "Woods" });
+    expect(callCount()).toBe(2);
   });
 });

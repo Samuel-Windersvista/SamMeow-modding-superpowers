@@ -36,12 +36,13 @@ export type ToolHandler = (args: unknown) => Promise<Envelope>;
 /** server mod 清单：路由来源优先，日志来源兜底 */
 export type ServerModsResult = ServerModsRouteResult | ServerModListResult;
 
-/** MCP 当前已实现的工具（不含 Phase 2 占位） */
+/** MCP 当前已实现的工具（Phase 2 起 raid.* 全部真实化，无占位） */
 const IMPLEMENTED_TOOLS = [
   "tarkov_server_status",
   "tarkov_instances",
   "tarkov_snapshot",
   "tarkov_wait_for",
+  ...RAID_TOOL_NAMES,
 ] as const;
 
 /** MCP 当前已实现的状态 sections（含快照全部 section；与 snapshot/schema.ts 保持一致） */
@@ -60,12 +61,10 @@ const IMPLEMENTED_SECTIONS = [
 export interface ServerStatusCapabilities {
   /** 已实现的工具名 */
   tools: string[];
-  /** 已注册但未实现的 Phase 2 占位工具 */
-  placeholderTools: string[];
   /** 已实现的状态 sections */
   sections: string[];
-  /** 局内状态桥（Phase 2 BepInEx Client Bridge）状态 */
-  bridge: "not_installed";
+  /** 局内状态桥（BepInEx Client Bridge）支持状态：Phase 2 已支持 */
+  bridge: "supported";
 }
 
 /** server_status 输出数据：在 ticket 01 骨架上加 mods 与增强能力自报 */
@@ -145,9 +144,8 @@ export function createServerStatusTool(
         ...status,
         capabilities: {
           tools: [...IMPLEMENTED_TOOLS],
-          placeholderTools: [...RAID_TOOL_NAMES],
           sections: [...IMPLEMENTED_SECTIONS],
-          bridge: "not_installed",
+          bridge: "supported",
         },
         mods,
       };

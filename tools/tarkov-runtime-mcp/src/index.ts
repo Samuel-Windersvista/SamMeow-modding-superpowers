@@ -6,11 +6,12 @@
 //   tarkov_instances      候选端口探测出的单实例信息
 //   tarkov_snapshot       语义化状态快照（首版 profile section）
 //   tarkov_wait_for       谓词轮询原语（任意工具结果，超时返回 WAIT_TIMEOUT）
-//   raid_status           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
-//   raid_player           Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
-//   raid_bots             Phase 2 占位，返回 CLIENT_BRIDGE_NOT_INSTALLED
+//   raid_status           raid 元数据 + 桥自报（经 BridgeConnection）
+//   raid_player           玩家局内全字段（经 BridgeConnection）
+//   raid_bots             bot 摘要 / 明细（经 BridgeConnection）
 //
 // 传输层（zlib / PHPSESSID / 5.0 shuffle）封装在 SptConnection 之后（S1 接缝）。
+// 局内状态经 BridgeConnection 抽象拉取（Phase 2 唯一新接缝）。
 // =============================================================================
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
@@ -20,18 +21,34 @@ import { pathToFileURL } from "node:url";
 import { zodToJsonSchema } from "zod-to-json-schema";
 
 import { SptClient } from "./client/client.js";
-import { loadConfig, type TarkovRuntimeConfig } from "./config.js";
+import { loadConfig, DEFAULT_BRIDGE_HOST, DEFAULT_BRIDGE_PORT, type TarkovRuntimeConfig } from "./config.js";
 import { toErrorEnvelope } from "./errors.js";
+import { HttpBridgeConnection } from "./bridge/http-bridge-connection.js";
+import { RecordingBridgeConnection } from "./bridge/recording.js";
+import type { BridgeConnection } from "./bridge/connection.js";
 import { HttpSptConnection } from "./transport/http-connection.js";
 import type { SptConnection } from "./transport/connection.js";
 import { InstancesInput, createInstancesTool } from "./tools/instances.js";
 import {
   RAID_TOOL_NAMES,
-  RaidPlaceholderInput,
-  createRaidPlaceholderTool,
   isRaidToolName,
   raidPlaceholderEnvelope,
 } from "./tools/raid.js";
+import {
+  RAID_BOTS_TOOL_NAME,
+  RaidBotsInput,
+  createRaidBotsTool,
+} from "./tools/raid-bots.js";
+import {
+  RAID_PLAYER_TOOL_NAME,
+  RaidPlayerInput,
+  createRaidPlayerTool,
+} from "./tools/raid-player.js";
+import {
+  RAID_STATUS_TOOL_NAME,
+  RaidStatusInput,
+  createRaidStatusTool,
+} from "./tools/raid-status.js";
 import { ServerStatusInput, createServerStatusTool, type ToolHandler } from "./tools/server-status.js";
 import { SNAPSHOT_TOOL_NAME, SnapshotInput, createSnapshotTool } from "./tools/snapshot.js";
 import { WaitForInput, createWaitForTool } from "./tools/wait-for.js";
@@ -69,14 +86,27 @@ export const TOOL_DEFINITIONS = [
   {
     name: "tarkov_wait_for",
     description:
-      "对任意工具结果轮询求值谓词，直到满足或超时。谓词语法：`<字段路径> <运算符> <值>`，运算符含 contains / equals / matches 与数值比较（> >= < <=）。满足返回求值结果与耗时；超时返回结构化 WAIT_TIMEOUT（谓词/最后观察值/耗时）。",
+      "对任意工具结果轮询求值谓词，直到满足或超时。谓词语法：`<字段路径> <运算符> <值>`，运算符含 contains / equals / matches 与数值比较（> >= < <=）；可直接用于 raid.* 工具（如 `raid_bots` 的 `alive > 5`）。满足返回求值结果与耗时；超时返回结构化 WAIT_TIMEOUT（谓词/最后观察值/耗时）。首轮即遇 BRIDGE_UNREACHABLE / CLIENT_BRIDGE_NOT_INSTALLED 时立即返回该错误（bridge 缺席不误报超时）；NOT_IN_RAID 不短路（等进 raid 是合法用法，继续轮询）。",
     inputSchema: schemaFor(WaitForInput),
   },
-  ...RAID_TOOL_NAMES.map((name) => ({
-    name,
-    description: `raid.* 局内状态占位工具（Phase 2 BepInEx Client Bridge）。首版固定返回 CLIENT_BRIDGE_NOT_INSTALLED。`,
-    inputSchema: schemaFor(RaidPlaceholderInput),
-  })),
+  {
+    name: RAID_STATUS_TOOL_NAME,
+    description:
+      "读取当前 raid 元数据（地图/状态/剩余时间/raidId）并附带 bridge 自报（pluginVersion/protocolVersion/samplingIntervalMs，经本地 BepInEx Client Bridge 拉取）。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
+    inputSchema: schemaFor(RaidStatusInput),
+  },
+  {
+    name: RAID_PLAYER_TOOL_NAME,
+    description:
+      "读取当前 raid 中玩家的实时状态（经本地 BepInEx Client Bridge 拉取）：position（x/y/z）、rotation（x/y）、pose（站/蹲/趴）、health（alive/total/各肢体）、数据新鲜度 sampleAgeMs。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
+    inputSchema: schemaFor(RaidPlayerInput),
+  },
+  {
+    name: RAID_BOTS_TOOL_NAME,
+    description:
+      "读取当前 raid 的 bot 状态（经本地 BepInEx Client Bridge 拉取）。默认返回摘要（total/alive/PMC-Scav-Boss-其他分类计数/生成器计数/sampleAgeMs）；detail=true 追加每个 bot 的明细（x/y/z/role/side/alive）与 truncated 截断标记。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
+    inputSchema: schemaFor(RaidBotsInput),
+  },
 ];
 
 const AVAILABLE_TOOLS = [
@@ -89,15 +119,16 @@ const AVAILABLE_TOOLS = [
 
 export function createDispatcher(
   client: SptClient,
+  bridge: BridgeConnection = new HttpBridgeConnection(DEFAULT_BRIDGE_HOST, DEFAULT_BRIDGE_PORT),
 ): (name: string, args: Record<string, unknown>) => Promise<Envelope> {
   const handlers: Record<string, ToolHandler> = {
     tarkov_server_status: createServerStatusTool(client),
     tarkov_instances: createInstancesTool(client),
     [SNAPSHOT_TOOL_NAME]: createSnapshotTool(client),
+    [RAID_STATUS_TOOL_NAME]: createRaidStatusTool(bridge),
+    [RAID_PLAYER_TOOL_NAME]: createRaidPlayerTool(bridge),
+    [RAID_BOTS_TOOL_NAME]: createRaidBotsTool(bridge),
   };
-  for (const name of RAID_TOOL_NAMES) {
-    handlers[name] = createRaidPlaceholderTool(name);
-  }
 
   const invoke = async function invoke(
     name: string,
@@ -132,6 +163,8 @@ export interface RuntimeOptions {
   config?: TarkovRuntimeConfig;
   /** 注入连接工厂（测试用） */
   connect?: (host: string, port: number) => SptConnection;
+  /** 注入 bridge 连接（测试用）；缺省构造 HTTP 实现 */
+  bridge?: BridgeConnection;
 }
 
 export function createRuntime(options: RuntimeOptions = {}) {
@@ -145,7 +178,17 @@ export function createRuntime(options: RuntimeOptions = {}) {
     password: config.password,
     connect,
   });
-  return { client, invoke: createDispatcher(client), config };
+  const baseBridge =
+    options.bridge ??
+    new HttpBridgeConnection(
+      config.bridgeHost ?? DEFAULT_BRIDGE_HOST,
+      config.bridgePort ?? DEFAULT_BRIDGE_PORT,
+    );
+  // T07：仅当配置提供录制路径时包装（默认关）；注入连接同样可被包装。
+  const bridge = config.bridgeRecordPath
+    ? new RecordingBridgeConnection(baseBridge, config.bridgeRecordPath)
+    : baseBridge;
+  return { client, bridge, invoke: createDispatcher(client, bridge), config };
 }
 
 function jsonResult(body: unknown, isError = false) {

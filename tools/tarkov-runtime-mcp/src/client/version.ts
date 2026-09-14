@@ -6,7 +6,7 @@
 //   -> Watermark.GetInGameVersionLabel() = "{ProjectName} {SPT_VERSION}{build} {commit6}"
 //   例：BEM 构建 "SPT 5.0.0 (BEM) ff0bf32"；BE 构建 "SPT 5.0.0 (BE) abc1234"；正式版 "SPT 5.0.0"
 //
-// 锚定 tag 形如 "5.0.0-BEM-20260910"（GitHub workflow 由 tag 推导 BLEEDINGEDGEMODS）。
+// 锚定 tag 形如 "5.0.0-BEM-20260914"（GitHub workflow 由 tag 推导 BLEEDINGEDGEMODS）。
 //
 // [限制] 该端点只暴露核心版本 + 构建通道 + commit，不含 tag 的日期段；
 // 因此门禁比较核心版本与构建通道，日期段仅作锚点标识、不参与比较（见 ADR-0003 / 工单复核说明）。

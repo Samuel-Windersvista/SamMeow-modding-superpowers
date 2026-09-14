@@ -13,8 +13,14 @@ export const RUNTIME_ERROR_CODES = {
   SERVER_UNREACHABLE: "SERVER_UNREACHABLE",
   /** 请求的 section 未被本 MCP 实现 */
   UNSUPPORTED_SECTION: "UNSUPPORTED_SECTION",
-  /** raid.* 局内工具：Phase 2 的 BepInEx Client Bridge 尚未安装 */
+  /** raid.* 未注册前缀兜底：Phase 2 的 BepInEx Client Bridge 尚未安装 */
   CLIENT_BRIDGE_NOT_INSTALLED: "CLIENT_BRIDGE_NOT_INSTALLED",
+  /** 连接类失败：桥未安装 / 未运行 / 启动失败（拒绝/超时/非 2xx/响应非法） */
+  BRIDGE_UNREACHABLE: "BRIDGE_UNREACHABLE",
+  /** 桥自报协议版本与 MCP 期望不一致 */
+  BRIDGE_VERSION_MISMATCH: "BRIDGE_VERSION_MISMATCH",
+  /** raid 工具：桥在线但当前不在 raid 中 */
+  NOT_IN_RAID: "NOT_IN_RAID",
   /** wait_for 谓词超时（Phase 2 工具使用） */
   WAIT_TIMEOUT: "WAIT_TIMEOUT",
   /** session 受限工具未配置 username（无法获取 PHPSESSID 会话） */
@@ -88,13 +94,13 @@ export interface ParsedSptVersion {
 
 /** 锚定的 BEM 预发布 tag（配置常量）的解析结果 */
 export interface AnchoredVersion {
-  /** 原始 tag，如 "5.0.0-BEM-20260910" */
+  /** 原始 tag，如 "5.0.0-BEM-20260914" */
   raw: string;
   /** 核心版本，如 "5.0.0" */
   core: string;
   /** 构建通道，如 "BEM"；正式 tag 为 null */
   channel: string | null;
-  /** 构建日期段，如 "20260910"；正式 tag 为 null */
+  /** 构建日期段，如 "20260914"；正式 tag 为 null */
   build: string | null;
 }
 
@@ -158,6 +164,6 @@ export interface ServerStatusData {
   /** MCP 自身能力自报（吸收 5.0 版本线内部漂移） */
   capabilities: {
     sections: string[];
-    bridge: "not_installed";
+    bridge: "supported";
   };
 }

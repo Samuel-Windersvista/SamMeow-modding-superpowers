@@ -4,9 +4,11 @@
 // 对任意工具结果轮询求值谓词，直到满足或超时：
 //   - 满足：返回求值结果与耗时（attempts / elapsedMs / value）
 //   - 超时：返回结构化 WAIT_TIMEOUT（谓词 / 最后观察值 / 耗时）
+//   - 首轮 bridge 缺席（BRIDGE_UNREACHABLE / CLIENT_BRIDGE_NOT_INSTALLED）：
+//     立即返回该错误信封（T06），不把环境问题误报成 WAIT_TIMEOUT
 //
 // 谓词对目标工具的 data 求值（目标工具失败时对错误信封求值），因此不绑定
-// 特定工具；后续 snapshot 工具就位后天然适用。
+// 特定工具；raid.* 工具就位后天然适用。
 // =============================================================================
 
 import { z } from "zod";
@@ -24,6 +26,21 @@ export const DEFAULT_WAIT_TIMEOUT_MS = 30_000;
 export const DEFAULT_WAIT_INTERVAL_MS = 500;
 /** 允许的最大超时上限：5min（可经工厂选项覆盖） */
 export const MAX_WAIT_TIMEOUT_MS = 300_000;
+
+/**
+ * 首轮观察命中这些错误码时立即返回该错误信封（T06）。
+ *
+ * 语义：bridge 缺席属于环境问题，不是「条件尚未满足」，继续轮询到超时会把它
+ * 误报成 WAIT_TIMEOUT，掩盖真实排障路径。故首次观测即短路。
+ *
+ * `NOT_IN_RAID` 明确不在其中：「等进 raid / 等 bot 生成」是合法用法，必须继续轮询。
+ */
+export const WAIT_FAST_FAIL_ERROR_CODES: readonly string[] = [
+  RUNTIME_ERROR_CODES.BRIDGE_UNREACHABLE,
+  RUNTIME_ERROR_CODES.CLIENT_BRIDGE_NOT_INSTALLED,
+];
+
+const FAST_FAIL_CODES = new Set<string>(WAIT_FAST_FAIL_ERROR_CODES);
 
 export const WaitForInput = z
   .object({
@@ -111,6 +128,12 @@ export function createWaitForTool(
       attempts += 1;
       const envelope = await callTool(input.tool, targetArgs);
       lastObservation = envelope;
+
+      // T06：首轮 bridge 缺席类错误立即返回，不误报超时。
+      // NOT_IN_RAID 不在快速失败集合内（等进 raid 是合法用法）。
+      if (attempts === 1 && !envelope.ok && FAST_FAIL_CODES.has(envelope.code)) {
+        return envelope;
+      }
 
       const evaluation = evaluatePredicate(predicate, observationPayload(envelope));
       lastValue = evaluation.actual ?? null;

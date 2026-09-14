@@ -187,7 +187,7 @@ export class SptClient {
           "hideout",
           "inventory",
         ],
-        bridge: "not_installed",
+        bridge: "supported",
       },
     };
   }

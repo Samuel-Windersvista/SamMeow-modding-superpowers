@@ -112,13 +112,23 @@ describe("tarkov_server_status.mods", () => {
     expect(result.ok).toBe(true);
     if (!result.ok) return;
     const data = result.data as {
-      capabilities: { tools: string[]; sections: string[]; bridge: string };
+      capabilities: {
+        tools: string[];
+        sections: string[];
+        bridge: string;
+      };
     };
     expect(data.capabilities.tools).toEqual(
-      expect.arrayContaining(["tarkov_server_status", "tarkov_instances"]),
+      expect.arrayContaining([
+        "tarkov_server_status",
+        "tarkov_instances",
+        "raid_status",
+        "raid_player",
+        "raid_bots",
+      ]),
     );
     expect(data.capabilities.sections).toEqual(expect.arrayContaining(["mods"]));
-    expect(data.capabilities.bridge).toBe("not_installed");
+    expect(data.capabilities.bridge).toBe("supported");
   });
 
   it("能力自报：sections 覆盖全部已实现快照 section（traders/quests/hideout/inventory）", async () => {

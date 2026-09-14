@@ -1,0 +1,193 @@
+// 测试辅助：fake BridgeConnection（Phase 2 唯一新接缝）
+//
+// 与 fake-connection.ts 同构：工具层测试以可编程 fake 驱动，不触网。
+// 每个端点可配置为「静态值 / Error / 序号驱动的 responder」；缺省为合法空态
+// （info 协议版本匹配、各 raid 端点 inRaid:false），便于按需覆盖单个路径。
+
+import {
+  BridgeUnreachableError,
+  EXPECTED_BRIDGE_PROTOCOL_VERSION,
+  type BridgeConnection,
+  type BridgeInfo,
+  type BridgeRaidBotsResult,
+  type BridgeRaidPlayerResult,
+  type BridgeRaidStatusResult,
+} from "../../src/bridge/connection.js";
+
+export type FakeResponder<T> = (call: number) => T | Error | Promise<T | Error>;
+export type FakeSource<T> = T | Error | FakeResponder<T>;
+
+export interface FakeBridgeOptions {
+  info?: FakeSource<BridgeInfo>;
+  status?: FakeSource<BridgeRaidStatusResult>;
+  player?: FakeSource<BridgeRaidPlayerResult>;
+  bots?: FakeSource<BridgeRaidBotsResult>;
+}
+
+export class FakeBridgeConnection implements BridgeConnection {
+  /** 各端点的调用次数（可观测性） */
+  readonly callCounts = { info: 0, status: 0, player: 0, bots: 0 };
+  /** 最近一次 getRaidBots 的 detail 入参（校验工具层透传） */
+  lastBotsDetail: boolean | null = null;
+
+  constructor(private readonly options: FakeBridgeOptions = {}) {}
+
+  async getInfo(): Promise<BridgeInfo> {
+    this.callCounts.info += 1;
+    return resolve(this.options.info, defaultBridgeInfo(), this.callCounts.info);
+  }
+
+  async getRaidStatus(): Promise<BridgeRaidStatusResult> {
+    this.callCounts.status += 1;
+    return resolve(this.options.status, { inRaid: false }, this.callCounts.status);
+  }
+
+  async getRaidPlayer(): Promise<BridgeRaidPlayerResult> {
+    this.callCounts.player += 1;
+    return resolve(this.options.player, { inRaid: false }, this.callCounts.player);
+  }
+
+  async getRaidBots(detail: boolean): Promise<BridgeRaidBotsResult> {
+    this.callCounts.bots += 1;
+    this.lastBotsDetail = detail;
+    const fallback: BridgeRaidBotsResult = detail
+      ? {
+          inRaid: true,
+          detail: true,
+          bots: [],
+          truncated: false,
+          total: 0,
+          alive: 0,
+          byCategory: { pmc: 0, scav: 0, boss: 0, other: 0 },
+          spawner: { aliveAndLoading: 0, delayed: 0, allWithDelayed: 0 },
+          sampleAgeMs: 0,
+        }
+      : {
+          inRaid: true,
+          detail: false,
+          total: 0,
+          alive: 0,
+          byCategory: { pmc: 0, scav: 0, boss: 0, other: 0 },
+          spawner: { aliveAndLoading: 0, delayed: 0, allWithDelayed: 0 },
+          sampleAgeMs: 0,
+        };
+    return resolve(this.options.bots, fallback, this.callCounts.bots);
+  }
+}
+
+async function resolve<T>(
+  source: FakeSource<T> | undefined,
+  fallback: T,
+  call: number,
+): Promise<T> {
+  const value = source === undefined ? fallback : source;
+  const resolved = typeof value === "function" ? await (value as FakeResponder<T>)(call) : value;
+  if (resolved instanceof Error) {
+    throw resolved;
+  }
+  return resolved;
+}
+
+export function fakeBridge(options: FakeBridgeOptions = {}): FakeBridgeConnection {
+  return new FakeBridgeConnection(options);
+}
+
+/** 构造不可达错误（连接类失败） */
+export function unreachable(message = "bridge 不可达"): BridgeUnreachableError {
+  return new BridgeUnreachableError(message);
+}
+
+// -----------------------------------------------------------------------------
+// 工厂：合法默认与 in-raid 采样结果
+// -----------------------------------------------------------------------------
+
+export function defaultBridgeInfo(overrides: Partial<BridgeInfo> = {}): BridgeInfo {
+  return {
+    pluginVersion: "0.1.0",
+    protocolVersion: EXPECTED_BRIDGE_PROTOCOL_VERSION,
+    capabilities: {
+      endpoints: ["/bridge/info", "/raid/status", "/raid/player", "/raid/bots"],
+      sections: ["status", "player", "bots"],
+    },
+    sampling: { intervalMs: 1000 },
+    network: { host: "127.0.0.1", port: 49777 },
+    ...overrides,
+  };
+}
+
+export function inRaidStatus(
+  overrides: Partial<Omit<Extract<BridgeRaidStatusResult, { inRaid: true }>, "inRaid">> = {},
+): BridgeRaidStatusResult {
+  return {
+    inRaid: true,
+    map: "Woods",
+    status: "running",
+    remainingSeconds: 1234,
+    raidId: "raid-abc",
+    sampleAgeMs: 100,
+    ...overrides,
+  };
+}
+
+export function inRaidPlayer(
+  overrides: Partial<Omit<Extract<BridgeRaidPlayerResult, { inRaid: true }>, "inRaid">> = {},
+): BridgeRaidPlayerResult {
+  return {
+    inRaid: true,
+    position: { x: 1, y: 2, z: 3 },
+    rotation: { x: 90, y: 45 },
+    pose: "stand",
+    health: {
+      alive: true,
+      total: 440,
+      parts: {
+        Head: 35,
+        Chest: 85,
+        Stomach: 70,
+        LeftArm: 60,
+        RightArm: 60,
+        LeftLeg: 65,
+        RightLeg: 65,
+      },
+    },
+    sampleAgeMs: 100,
+    ...overrides,
+  };
+}
+
+export function inRaidBotsSummary(
+  overrides: Partial<Omit<Extract<BridgeRaidBotsResult, { detail: false }>, "inRaid" | "detail">> = {},
+): BridgeRaidBotsResult {
+  return {
+    inRaid: true,
+    detail: false,
+    total: 10,
+    alive: 8,
+    byCategory: { pmc: 4, scav: 5, boss: 1, other: 0 },
+    spawner: { aliveAndLoading: 9, delayed: 1, allWithDelayed: 10 },
+    sampleAgeMs: 100,
+    ...overrides,
+  };
+}
+
+export function inRaidBotsDetail(
+  overrides: Partial<
+    Omit<Extract<BridgeRaidBotsResult, { detail: true }>, "inRaid" | "detail">
+  > = {},
+): BridgeRaidBotsResult {
+  return {
+    inRaid: true,
+    detail: true,
+    total: 2,
+    alive: 1,
+    byCategory: { pmc: 1, scav: 1, boss: 0, other: 0 },
+    spawner: { aliveAndLoading: 2, delayed: 0, allWithDelayed: 2 },
+    sampleAgeMs: 100,
+    bots: [
+      { x: 10, y: 0, z: 20, role: "pmc", side: "Bear", alive: true },
+      { x: 30, y: 0, z: 40, role: "scav", side: "Savage", alive: false },
+    ],
+    truncated: false,
+    ...overrides,
+  };
+}

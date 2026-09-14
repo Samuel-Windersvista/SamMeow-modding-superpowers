@@ -21,7 +21,7 @@ describe("tarkov_server_status", () => {
       version: { core: "5.0.0", channel: "BEM", commit: "ff0bf32" },
       anchor: ANCHOR,
       gate: { passed: true, anchor: ANCHOR },
-      capabilities: { bridge: "not_installed" },
+      capabilities: { bridge: "supported" },
     });
   });
 
