@@ -1,6 +1,10 @@
 # Layout invariant: the repository carries the SPT-only tree and none of the
-# dead BGS/harness shape (materialized plugin tree, hooks, non-OpenCode
-# manifests, BGS knowledge base, vendored SPT archive).
+# dead BGS/harness shape (materialized BGS plugin tree, empty harness dirs,
+# BGS-era MCP manifest, BGS knowledge base).
+# Recalibrated 2026-09-14: external/spt-archive was dropped from the absent
+# list -- it is a gitignored, locally cloned vendored corpus backing the
+# knowledge base (see .gitignore and the clonedeps skill). Its on-disk
+# presence is a machine-local workflow matter, not a layout regression.
 
 $ErrorActionPreference = "Stop"
 
@@ -30,8 +34,7 @@ $absentPaths = @(
     ".codex-plugin",
     ".agents",
     ".mcp.json",
-    "knowledge/bgs-kb",
-    "external/spt-archive"
+    "knowledge/bgs-kb"
 )
 
 foreach ($relative in $absentPaths) {
