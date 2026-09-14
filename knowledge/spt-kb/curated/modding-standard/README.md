@@ -9,7 +9,7 @@ source: curated
 
 > 定位：**工程化默认值**。模板按规范生成、技能引用规则 ID；本文档是载体而非本体。
 > 形态决策：`docs/adr/0005-modding-standard-shape.md` · Spec：`.scratch/modding-standard/spec.md`
-> 证据来源：[evidence-index.md](evidence-index.md)（全部 `EV-*` 锚点）· 版本对照：`version-matrix.md`（ticket 07 交付后可用）
+> 证据来源：[evidence-index.md](evidence-index.md)（全部 `EV-*` 锚点）· 版本对照：[version-matrix.md](version-matrix.md)
 
 ## 这是什么
 
@@ -44,7 +44,7 @@ modding-standard/
 ├── 12-bundle-assets.md          # 维度 ⑫ bundle/资产（BND）
 ├── 13-perf-security.md          # 维度 ⑬ 性能与安全（PERF）
 ├── evidence-index.md            # 统一证据索引（EV-* 锚点）
-└── version-matrix.md            # 4.1.5 ↔ 5.0 对照表（待交付：ticket 07）
+└── version-matrix.md            # 4.1.5 ↔ 5.0 对照表
 ```
 
 ## Rule ID 规则
@@ -123,7 +123,7 @@ mod README / dev-log 中的记录示例：
 | 12 | [12-bundle-assets.md](12-bundle-assets.md) | `BND` | bundle/资产 | 资源替换与数据库覆盖约定、升级兼容陷阱 |
 | 13 | [13-perf-security.md](13-perf-security.md) | `PERF` | 性能与安全 | 已知热点模式、路径遍历与输入校验 |
 
-配套文件：[evidence-index.md](evidence-index.md)（证据索引）；`version-matrix.md`（4.1.5 ↔ 5.0 对照表，待交付：ticket 07）。
+配套文件：[evidence-index.md](evidence-index.md)（证据索引）；[version-matrix.md](version-matrix.md)（4.1.5 ↔ 5.0 对照表）。
 
 ## 版本标签与证据形态
 
@@ -161,4 +161,4 @@ mod README / dev-log 中的记录示例：
 
 ---
 
-> 状态：规则已填充（ticket 02–06，2026-09-14）。`version-matrix.md` 待交付（ticket 07）。
+> 状态：规则已填充（ticket 02–06，2026-09-14）；版本对照表已交付（ticket 07）。

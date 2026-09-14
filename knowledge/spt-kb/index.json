@@ -361,6 +361,17 @@
    "source": "curated"
   },
   {
+   "path": "curated/modding-standard/version-matrix.md",
+   "title": "编写规范：4.1.5 ↔ 5.0 版本差异对照表",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "modding-standard",
+   "source": "curated"
+  },
+  {
    "path": "curated/recipes/01-add-custom-trader.md",
    "title": "配方：添加自定义商人 [4.1]",
    "version": [
