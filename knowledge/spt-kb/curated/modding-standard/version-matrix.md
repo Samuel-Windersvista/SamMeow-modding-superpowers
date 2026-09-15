@@ -32,7 +32,7 @@ source: curated
 | 客户端程序集引用路径 | `$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\*.dll` | `$(SPT5Path)\BepInEx\interop\*.dll`（Il2CppInterop 代理）与 `$(SPT5Path)\BepInEx\core\*.dll` | STD-BUILD-003 | [03-build.md](03-build.md)；`mods/SPT5-NoStaminaDrain/SPT5NoStaminaDrain.csproj:40-47` |
 | 客户端插件入口 | `BaseUnityPlugin` + `Awake()` | `BepInEx.Unity.IL2CPP.BasePlugin` + `Load()` | STD-CLI-001 | [05-client.md](05-client.md)；`mods/SPT5-NoStaminaDrain/src/Plugin.cs:9-19` |
 | 客户端日志源 | `BaseUnityPlugin.Logger` | `BasePlugin.Log`（`ManualLogSource`） | STD-CLI-006、STD-LOG-003 | [05-client.md](05-client.md)、[07-logging.md](07-logging.md) |
-| 补丁撤销时机 | `Awake` 应用、`OnDestroy` 撤销 | `Load()` 应用、`Dispose()` 撤销 | STD-CLI-007 | [05-client.md](05-client.md)；`mods/SPT5-NoStaminaDrain/src/Plugin.cs:18-23` |
+| 补丁撤销时机 | `Awake` 应用、`OnDestroy` 撤销 | `Load()` 应用、`Unload()`（`BasePlugin`）或 `Dispose()`（组件）撤销（`BasePlugin` 无 `IDisposable.Dispose()`） | STD-CLI-007 | [05-client.md](05-client.md)；`external/references/bepinex-mcp/plugins/BepInExMCP.IL2CPP/Plugin.cs:121-126`、`tools/tarkov-runtime-bridge/src/Plugin.cs`（`Unload()`，当前 99-130） |
 | 客户端补丁目标类型 | 4.1 反混淆后的真实类型名 | EFT 1.1.5 类名需重新核对 | STD-CLI-004、STD-VER-004 | [../migration/client-mod-311-to-41.md](../migration/client-mod-311-to-41.md)；`docs/eft-1.1.5-类名映射重建报告.md` |
 | 安装路径属性名 | `SPTInstallPath`（`Condition` 可覆盖） | 可版本化自定义：`SPT5Path`、`SPT5Runtime`（仍须可覆盖） | STD-BUILD-006 | [03-build.md](03-build.md)；`mods/SPT5-NoStaminaDrain/SPT5NoStaminaDrain.csproj:19-20`、`tools/tarkov-active-probe/TarkovActiveProbe.csproj:17,19` |
 

@@ -194,7 +194,7 @@ LICENSE
 ## 关键点（4.1）
 
 - **客户端目标框架是 `netstandard2.1`，服务端是 `net10.0`**：客户端在 Unity 的 Mono 运行时下加载，net10.0 程序集无法被 Mono 加载。
-- **5.0 形态（IL2CPP / BepInEx 6）不在本模板内实现**：需把客户端目标框架换成 `net6.0`、入口基类换成 `BepInEx.Unity.IL2CPP.BasePlugin`、入口方法换成 `Load()`（撤销路径 `Dispose()`）、日志属性换成 `Log`，并把引用路径改到 `BepInEx/interop/` 与 `BepInEx/core/`——参见 `STD-BUILD-002`、`STD-BUILD-003`、`STD-CLI-001`、`STD-CLI-006`、`STD-CLI-007`。
+- **5.0 形态（IL2CPP / BepInEx 6）不在本模板内实现**：需把客户端目标框架换成 `net6.0`、入口基类换成 `BepInEx.Unity.IL2CPP.BasePlugin`、入口方法换成 `Load()`（撤销路径 `Unload()`）、日志属性换成 `Log`，并把引用路径改到 `BepInEx/interop/` 与 `BepInEx/core/`——参见 `STD-BUILD-002`、`STD-BUILD-003`、`STD-CLI-001`、`STD-CLI-006`、`STD-CLI-007`。
 - **客户端改「表现」，服务端改「规则与数据」**；跨端同步的枚举数值、路由路径等必须一致——放 `Shared/` 避免漂移。
 - 不要为 enum 扩展写自研 prepatcher DLL：4.1 由服务端 mod 经 `ClientEnumDefinitions` 注册，客户端内建 prepatcher 拉取。
 - `BepInEx/plugins/spt/` 与 `BepInEx/patchers/spt-prepatch.dll` 是 SPT 官方文件，卸载 mod 时不要删。

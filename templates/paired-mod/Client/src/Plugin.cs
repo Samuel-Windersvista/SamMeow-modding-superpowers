@@ -45,7 +45,7 @@ public class {{MOD_CLASS_NAME}}ClientPlugin : BaseUnityPlugin
     private void OnDestroy()
     {
         // STD-CLI-007：在对应生命周期回调中 UnpatchSelf()，避免热重载/退出时残留补丁
-        // （5.0 对应撤销路径为 Dispose()）。
+        // （5.0 对应撤销路径为 Unload()（BasePlugin）/ Dispose()（组件））。
         _harmony?.UnpatchSelf();
     }
 }

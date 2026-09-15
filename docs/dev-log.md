@@ -94,3 +94,15 @@
 - **三假设实测结论**：① usvfs 客户端投送成立（A-1 扩展）；② IL2CPP 成员读数成立（`MainPlayer.Position`）；③ HttpListener 在游戏进程内可用（127.0.0.1 免 URL ACL；另经受限令牌预测试）
 - **架构落点**：ADR-0007（插件内嵌 HTTP + MCP 拉取）首刀验证；MCP 侧唯一新接缝 `BridgeConnection`
 - 遗留：T03（采样/错误模型加固）、T08（Modding Standard 机检与文档收尾）
+
+## 2026-09-15（晚）— tarkov-runtime 第二波：事件流 + 装备 + CLI-007 校准（live 验收进行中）
+
+- **交付（未提交）**：桥事件子系统（`RaidEventBuffer` 环形缓冲 / `KillAttribution` 归属映射 / `RaidEventCollector` / `LocalGameStopPatch`）+ `/raid/events` + `/raid/player` weapon/equipment + `BotClassifier`；MCP `raid_events` 工具 + `raid_player` 扩展 + `getInfo` 去缓存（每次调用拉取）；CLI-007 校准（`05-client.md` / `check-mod-standard.ps1` / `version-matrix.md` / 模板注释 / 桥豁免移除）
+- **测试**：桥 `dotnet test` **141/141**；MCP `npm test` **236/236** + typecheck + build（本次修复未触 MCP 侧）；机检 `-TargetSptVersion 5.0.0` **PASS=13 / FAIL=0 / WAIVED=1**（仅剩 CLI-006）
+- **live 验收（第一局 Interchange，阵亡）**：
+  - [OK] 撤离/停局事件：`LocalGame.Stop` postfix patch 实证生效（HarmonyX 对 IL2CPP 的 detour 成立）——阵亡落 `{type:"extraction", exitName:"", status:"Killed"}`，raidId 正确（`<profileId>@<会话起点>`）
+  - [FAIL] damage/death 事件 0 条——根因：Il2CppInterop 的 `DelegateSupport.ConvertDelegate` 拒绝 `Action<EBodyPart, float, DamageInfo>`（`DamageInfo` 非 blittable struct，封送被拒），异常被订阅 try 吞掉并**连带跳过**同块的 `DiedEvent` 订阅（日志重复 100+ 行实锤）
+  - [修复] 受伤改 Harmony patch `ActiveHealthController.ApplyDamage(EBodyPart, float, DamageInfo)`（prefix 记录归属 / postfix 输出事件；生态先例 Deminvincibility / Miyako-Carry-Service 等 6+ mod；方法 non-virtual、无子类覆盖）；`DiedEvent` 订阅独立 try/catch；Harmony 补丁改逐类独立应用（一类失败不影响另一类）；复跑构建 0 error + 141/141 + 机检 PASS=13；DLL（52,224 bytes）已部署覆盖层（旧版备份 `D:\Temp\opencode\TarkovRuntimeBridge-pre-fix-20260915.dll`）
+  - [偏差] `equipment`/`weapon` 的 `name` 字段 live 实测返回本地化键形态（`<tpl> Name`）而非本地化值；`tpl` 为权威标识（与 SPT 本地化数据交叉一致）；本地化名解析列 backlog
+  - [OK] 修复后复验（第二局 Sandbox，2026-09-15）：damage/death 事件 1900+ 条（seq 单调、raidId 一致）；本地玩家击杀 bot → `killer.isLocal=true`（seq 348 / 942，2 次）；本地受伤 `victimIsLocal=true`（seq 1796/1797）；增量语义实证（`since=676` → 仅回 677..686；缓冲淘汰后 `since=0` → `dropped=252`、从最旧 253 返回）；撤离 `{exitName:"Sniper_exit", status:"Survived"}`（seq 1936，赛后读取）——工单 05 全部验收项通过
+- **其他 live 读数**：装备 12 槽读取正常；bots 22（pmc 6 / scav 16 / boss 0），无分类回归；`getInfo` 每调用拉取生效

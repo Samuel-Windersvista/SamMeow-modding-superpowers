@@ -191,10 +191,10 @@ Log.LogError("目标方法签名不匹配，补丁未生效");
 
 - **Level:** SHOULD
 - **Applies:** both
-- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Awake` 内 `PatchAll`、`OnDestroy` 内 `UnpatchSelf`）；5.0 机制：`mods/SPT5-NoStaminaDrain/src/Plugin.cs:18-23`（`Load` 内 `PatchAll`，对应撤销路径为 `Dispose()`）；语料：无（机制推断，无语料先例，登记 EV-NOCORPUS；EV-CORPUS-MECH 计 `BaseUnityPlugin` 275，未覆盖生命周期用法）
+- **Evidence:** 机制：模板 `templates/client-mod/src/Plugin.cs`（`Awake` 内 `PatchAll`、`OnDestroy` 内 `UnpatchSelf`）；5.0 机制：`mods/SPT5-NoStaminaDrain/src/Plugin.cs:18-23`（`Load` 内 `PatchAll`）；5.0 撤销路径为 `BasePlugin.Unload()`（参考实现 `external/references/bepinex-mcp/plugins/BepInExMCP.IL2CPP/Plugin.cs:121-126`；本地桥 `tools/tarkov-runtime-bridge/src/Plugin.cs`（`Unload()`，当前 99-130）；BepInEx 6 IL2CPP `BasePlugin` 无 `IDisposable.Dispose()`，组件形态的 `Dispose()` 只作用于实现 `IDisposable` 的辅助类型）；语料：无（机制推断，无语料先例，登记 EV-NOCORPUS；EV-CORPUS-MECH 计 `BaseUnityPlugin` 275，未覆盖生命周期用法）
 - **Rule:** 在入口方法中创建 `Harmony` 实例并 `PatchAll()`，在对应生命周期回调中调用 `UnpatchSelf()`，避免热重载或退出时残留补丁。时机按版本分支：
   - 4.1.5（Mono / BepInEx 5）：`Awake` 应用、`OnDestroy` 撤销；
-  - 5.0（IL2CPP / BepInEx 6）：`Load()` 应用、`Dispose()` 撤销。
+  - 5.0（IL2CPP / BepInEx 6）：`Load()` 应用、`Unload()`（`BasePlugin`）或 `Dispose()`（组件）撤销。
 
 ```csharp
 // 4.1.5（Mono / BepInEx 5）
@@ -208,14 +208,19 @@ private void OnDestroy() => _harmony?.UnpatchSelf();
 ```
 
 ```csharp
-// 5.0（IL2CPP / BepInEx 6）：Load 应用、Dispose 撤销
+// 5.0（IL2CPP / BepInEx 6）：Load 应用、Unload 撤销
+// 注意：BepInEx 6 IL2CPP BasePlugin 无 IDisposable.Dispose()，撤销走 Unload()。
 public override void Load()
 {
     _harmony = new Harmony("com.author.mymod");
     _harmony.PatchAll();
 }
 
-public override void Dispose() => _harmony?.UnpatchSelf();
+public override bool Unload()
+{
+    _harmony?.UnpatchSelf();
+    return true;
+}
 ```
 
 > 深入：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)

@@ -259,10 +259,26 @@ if ($isClient) {
     # STD-CLI-003: [HarmonyPatch(typeof(T), "method")] annotations
     Resolve-Status "STD-CLI-003" ($src -match '\[HarmonyPatch\(\s*typeof\(')
 
-    # STD-CLI-007: Harmony lifecycle - create+PatchAll, unpatch on teardown
-    $hasPatch = ($src -match 'new Harmony\(') -and ($src -match '\.PatchAll\(\)')
-    $hasUnpatch = ($src -match 'UnpatchSelf|UnpatchAll|\.Dispose\(\)')
-    Resolve-Status "STD-CLI-007" ($hasPatch -and $hasUnpatch) ("patchAll=$hasPatch unpatch=$hasUnpatch")
+    # STD-CLI-007: Harmony lifecycle - conditional.
+    # N/A rationale: the rule governs the Harmony create/patch/undo lifecycle.
+    # A client mod that never instantiates Harmony has no such lifecycle to
+    # govern, so the rule's precondition is absent and it PASSes. Detection
+    # covers the common ways Harmony shows up (`new Harmony(`, the fully
+    # qualified `HarmonyLib.Harmony`, and a `PatchAll(` call) so that a mod
+    # that DOES use Harmony cannot slip through the N/A branch.
+    # With Harmony in use -> require a patch call plus a real teardown
+    # declaration: `UnpatchSelf` or an `override bool Unload(...)` method body
+    # (5.0 BasePlugin). Bare `Unload(` calls or unrelated `.Dispose()` are NOT
+    # accepted: they can be a method invocation or an unrelated component and
+    # would let the rule pass without any lifecycle teardown.
+    $usesHarmony = ($src -match 'new\s+Harmony\s*\(') -or ($src -match 'HarmonyLib\.Harmony') -or ($src -match '\bPatchAll\s*\(')
+    if (-not $usesHarmony) {
+        Resolve-Status "STD-CLI-007" $true "no Harmony usage; rule not applicable"
+    } else {
+        $hasPatch = $src -match '\.PatchAll\s*\('
+        $hasUnpatch = $src -match 'UnpatchSelf' -or $src -match 'override\s+bool\s+Unload\s*\('
+        Resolve-Status "STD-CLI-007" ($hasPatch -and $hasUnpatch) ("harmony=$usesHarmony patchAll=$hasPatch unpatch=$hasUnpatch")
+    }
 
     # STD-CLI-006: BepInEx log source (Logger.Log*)
     Resolve-Status "STD-CLI-006" ($src -match 'Logger\.Log(Info|Warning|Error|Debug|Message)')
