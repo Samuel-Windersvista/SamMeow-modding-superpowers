@@ -80,15 +80,68 @@ internal readonly struct HealthSnapshot
     internal float RightLeg { get; }
 }
 
-/// <summary>玩家域快照：位置 / 水平朝向 / 姿态 / 血量。</summary>
+/// <summary>
+/// 当前手持武器快照（仅持枪时非 null；近战 / 投掷 / 空手为 null）。
+/// 源：<c>Player.HandsController</c> → <c>IFirearmHandsController.Item</c>。
+/// </summary>
+internal sealed class WeaponSnapshot
+{
+    internal WeaponSnapshot(string templateId, string name, int ammoInMag, int ammoInChamber)
+    {
+        TemplateId = templateId;
+        Name = name;
+        AmmoInMag = ammoInMag;
+        AmmoInChamber = ammoInChamber;
+    }
+
+    /// <summary>tpl：<c>Item.StringTemplateId</c>（回退 <c>TemplateId.ToString()</c>）。</summary>
+    internal string TemplateId { get; }
+
+    /// <summary>展示名（<c>Item.Name</c>，回退 <c>ShortName</c>）。</summary>
+    internal string Name { get; }
+
+    /// <summary>弹匣内弹药数（<c>Weapon.GetCurrentMagazineCount()</c>）。</summary>
+    internal int AmmoInMag { get; }
+
+    /// <summary>枪膛内弹药数（<c>Weapon.ChamberAmmoCount</c>）。</summary>
+    internal int AmmoInChamber { get; }
+}
+
+/// <summary>单个已装备槽摘要（空槽不产出条目）。</summary>
+internal readonly struct EquipmentEntry
+{
+    internal EquipmentEntry(string slot, string templateId, string name)
+    {
+        Slot = slot;
+        TemplateId = templateId;
+        Name = name;
+    }
+
+    /// <summary>槽名（<c>Slot.Name</c>），如 Headwear / ArmorVest / Backpack。</summary>
+    internal string Slot { get; }
+
+    internal string TemplateId { get; }
+
+    internal string Name { get; }
+}
+
+/// <summary>玩家域快照：位置 / 水平朝向 / 姿态 / 血量 / 当前武器 / 已装备槽。</summary>
 internal readonly struct PlayerSnapshot
 {
-    internal PlayerSnapshot(Vector3Snapshot position, Vector2Snapshot rotation, string pose, HealthSnapshot health)
+    internal PlayerSnapshot(
+        Vector3Snapshot position,
+        Vector2Snapshot rotation,
+        string pose,
+        HealthSnapshot health,
+        WeaponSnapshot weapon,
+        EquipmentEntry[] equipment)
     {
         Position = position;
         Rotation = rotation;
         Pose = pose;
         Health = health;
+        Weapon = weapon;
+        Equipment = equipment;
     }
 
     internal Vector3Snapshot Position { get; }
@@ -99,6 +152,12 @@ internal readonly struct PlayerSnapshot
     internal string Pose { get; }
 
     internal HealthSnapshot Health { get; }
+
+    /// <summary>当前手持武器；非持枪为 null。</summary>
+    internal WeaponSnapshot Weapon { get; }
+
+    /// <summary>已装备槽摘要（仅含已占用槽；无装备时为空数组）。</summary>
+    internal EquipmentEntry[] Equipment { get; }
 }
 
 /// <summary>raid 元数据快照：地图 / 状态 / 剩余时间 / 组合 raidId。</summary>

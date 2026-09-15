@@ -15,8 +15,8 @@ public class BridgePayloadsTests
 
         Assert.Equal(
             "{\"pluginVersion\":\"0.1.0\",\"protocolVersion\":1," +
-            "\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\"]," +
-            "\"sections\":[\"player\",\"raid\",\"bots\"]}," +
+            "\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\"]," +
+            "\"sections\":[\"player\",\"raid\",\"bots\",\"events\"]}," +
             "\"sampling\":{\"intervalMs\":250}," +
             "\"network\":{\"host\":\"127.0.0.1\",\"port\":49777}}",
             body);
@@ -38,8 +38,48 @@ public class BridgePayloadsTests
             "\"pose\":\"Stand\"," +
             "\"health\":{\"alive\":true,\"total\":100," +
             "\"parts\":{\"Head\":35,\"Chest\":40,\"Stomach\":30,\"LeftArm\":25,\"RightArm\":25,\"LeftLeg\":30,\"RightLeg\":30}}," +
+            "\"weapon\":null,\"equipment\":[]," +
             "\"sampleAgeMs\":750}",
             body);
+    }
+
+    [Fact]
+    public void Player_payload_includes_weapon_and_equipment()
+    {
+        var state = TestStates.PlayerState(
+            weapon: new WeaponSnapshot("5447a9cd4bdc2dbd208b4567", "M4A1", 30, 1),
+            equipment: new[]
+            {
+                new EquipmentEntry("Headwear", "5aa7e276e5b5b000171d0647", "Altyn"),
+                new EquipmentEntry("ArmorVest", "545cdb794bdc2d3a198b456a", "6B13"),
+            });
+
+        var body = BridgePayloads.BuildPlayer(state, nowMs: 1000);
+
+        Assert.Contains(
+            "\"weapon\":{\"tpl\":\"5447a9cd4bdc2dbd208b4567\",\"name\":\"M4A1\"," +
+            "\"ammoInMag\":30,\"ammoInChamber\":1}",
+            body);
+        Assert.Contains(
+            "\"equipment\":[" +
+            "{\"slot\":\"Headwear\",\"tpl\":\"5aa7e276e5b5b000171d0647\",\"name\":\"Altyn\"}," +
+            "{\"slot\":\"ArmorVest\",\"tpl\":\"545cdb794bdc2d3a198b456a\",\"name\":\"6B13\"}]",
+            body);
+    }
+
+    [Fact]
+    public void Player_payload_escapes_weapon_and_equipment_strings()
+    {
+        var state = TestStates.PlayerState(
+            weapon: new WeaponSnapshot("tpl\"x", "a\\b", 0, 0),
+            equipment: new[] { new EquipmentEntry("Back\"pack", "tpl", "n\n") });
+
+        var body = BridgePayloads.BuildPlayer(state, nowMs: 1000);
+
+        Assert.Contains("\"tpl\":\"tpl\\\"x\"", body);
+        Assert.Contains("\"name\":\"a\\\\b\"", body);
+        Assert.Contains("\"slot\":\"Back\\\"pack\"", body);
+        Assert.Contains("\"name\":\"n\\n\"", body);
     }
 
     [Fact]
@@ -62,6 +102,7 @@ public class BridgePayloadsTests
             "\"pose\":\"Stand\"," +
             "\"health\":{\"alive\":true,\"total\":0," +
             "\"parts\":{\"Head\":35,\"Chest\":40,\"Stomach\":30,\"LeftArm\":25,\"RightArm\":25,\"LeftLeg\":30,\"RightLeg\":30}}," +
+            "\"weapon\":null,\"equipment\":[]," +
             "\"sampleAgeMs\":0}",
             body);
     }
@@ -104,7 +145,9 @@ public class BridgePayloadsTests
                 new Vector3Snapshot(0f, 0f, 0f),
                 new Vector2Snapshot(0f, 0f),
                 "Stand",
-                new HealthSnapshot(true, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f)),
+                new HealthSnapshot(true, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f),
+                null,
+                Array.Empty<EquipmentEntry>()),
             new RaidMetaSnapshot("map\"x", "Started", 0f, "id\\1@no-start"),
             new BotSummary(0, 0, 0, 0, 0, 0, 0, 0, 0),
             Array.Empty<BotEntry>(),
@@ -263,5 +306,125 @@ public class BridgePayloadsTests
     {
         Assert.Equal("true", BridgePayloads.FormatBool(true));
         Assert.Equal("false", BridgePayloads.FormatBool(false));
+    }
+
+    // ---------- /raid/events ----------
+
+    private static readonly long EventTicks =
+        new DateTime(2026, 9, 14, 0, 0, 0, DateTimeKind.Utc).Ticks;
+
+    [Fact]
+    public void Events_payload_is_empty_for_fresh_buffer()
+    {
+        var buffer = new RaidEventBuffer();
+
+        var body = BridgePayloads.BuildEvents(buffer, since: 0, limit: 100, inRaid: false);
+
+        Assert.Equal("{\"inRaid\":false,\"seq\":0,\"dropped\":0,\"events\":[]}", body);
+    }
+
+    [Fact]
+    public void Events_payload_matches_contract_for_damage_death_and_extraction()
+    {
+        var buffer = new RaidEventBuffer();
+        buffer.AppendDamage(
+            EventTicks,
+            "profile-1@start",
+            new DamagePayload("bot-1", false, "Head", 12.5f, "Bullet"));
+        buffer.AppendDeath(
+            EventTicks,
+            "profile-1@start",
+            new DeathPayload(
+                "bot-1",
+                false,
+                "Bullet",
+                hasKiller: true,
+                new KillerInfo("profile-1", "SamMeow", "Usec", "pmcUSEC", true)));
+        buffer.AppendExtraction(
+            EventTicks,
+            "profile-1@start",
+            new ExtractionPayload("Gate 3", "Survived"));
+
+        var body = BridgePayloads.BuildEvents(buffer, since: 0, limit: 100, inRaid: true);
+
+        Assert.Equal(
+            "{\"inRaid\":true,\"seq\":3,\"dropped\":0,\"events\":[" +
+            "{\"seq\":1,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"damage\",\"raidId\":\"profile-1@start\"," +
+            "\"payload\":{\"victimProfileId\":\"bot-1\",\"victimIsLocal\":false,\"part\":\"Head\",\"amount\":12.5,\"sourceType\":\"Bullet\"}}," +
+            "{\"seq\":2,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"death\",\"raidId\":\"profile-1@start\"," +
+            "\"payload\":{\"victimProfileId\":\"bot-1\",\"victimIsLocal\":false,\"damageType\":\"Bullet\"," +
+            "\"killer\":{\"profileId\":\"profile-1\",\"name\":\"SamMeow\",\"side\":\"Usec\",\"role\":\"pmcUSEC\",\"isLocal\":true}}}," +
+            "{\"seq\":3,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"extraction\",\"raidId\":\"profile-1@start\"," +
+            "\"payload\":{\"exitName\":\"Gate 3\",\"status\":\"Survived\"}}" +
+            "]}",
+            body);
+    }
+
+    [Theory]
+    [InlineData("Damage", "damage")]
+    [InlineData("Death", "death")]
+    [InlineData("Extraction", "extraction")]
+    public void TypeName_is_stable_literal(string kind, string expected)
+    {
+        Assert.Equal(expected, RaidEvent.TypeName(Enum.Parse<RaidEventKind>(kind)));
+    }
+
+    [Fact]
+    public void Unknown_kind_is_not_serialized_as_extraction()
+    {
+        // 未知 kind 不得伪装成 extraction。
+        Assert.Equal("unknown", RaidEvent.TypeName((RaidEventKind)999));
+    }
+
+    [Fact]
+    public void Serialized_type_matches_TypeName_for_each_kind()
+    {
+        var buffer = new RaidEventBuffer();
+        buffer.AppendDamage(EventTicks, "raid-1", new DamagePayload("bot-1", false, "Head", 1f, "Bullet"));
+        buffer.AppendDeath(EventTicks, "raid-1", new DeathPayload("bot-2", false, "Bullet", false, default));
+        buffer.AppendExtraction(EventTicks, "raid-1", new ExtractionPayload("Gate 3", "Survived"));
+
+        var body = BridgePayloads.BuildEvents(buffer, since: 0, limit: 100, inRaid: true);
+
+        Assert.Contains($"\"type\":\"{RaidEvent.TypeName(RaidEventKind.Damage)}\"", body);
+        Assert.Contains($"\"type\":\"{RaidEvent.TypeName(RaidEventKind.Death)}\"", body);
+        Assert.Contains($"\"type\":\"{RaidEvent.TypeName(RaidEventKind.Extraction)}\"", body);
+    }
+
+    [Fact]
+    public void Events_death_without_attribution_has_null_killer()
+    {
+        var buffer = new RaidEventBuffer();
+        buffer.AppendDeath(
+            EventTicks,
+            "raid-1",
+            new DeathPayload("bot-2", false, "Fall", hasKiller: false, default));
+
+        var body = BridgePayloads.BuildEvents(buffer, since: 0, limit: 100, inRaid: true);
+
+        Assert.Contains("\"damageType\":\"Fall\",\"killer\":null", body);
+    }
+
+    [Fact]
+    public void Events_payload_returns_only_newer_than_since_and_reports_latest_seq()
+    {
+        var buffer = new RaidEventBuffer();
+        buffer.AppendDamage(EventTicks, "raid-1", new DamagePayload("bot-1", false, "Chest", 1f, "Bullet"));
+        buffer.AppendDamage(EventTicks, "raid-1", new DamagePayload("bot-2", false, "Chest", 2f, "Bullet"));
+        buffer.AppendDamage(EventTicks, "raid-1", new DamagePayload("bot-3", false, "Chest", 3f, "Bullet"));
+
+        var body = BridgePayloads.BuildEvents(buffer, since: 1, limit: 100, inRaid: true);
+
+        Assert.StartsWith("{\"inRaid\":true,\"seq\":3,\"dropped\":0,\"events\":[", body);
+        Assert.DoesNotContain("\"seq\":1,", body);
+        Assert.Contains("\"seq\":2,", body);
+        Assert.Contains("\"seq\":3,", body);
+    }
+
+    [Fact]
+    public void Format_timestamp_is_utc_iso_8601()
+    {
+        Assert.Equal("2026-09-14T00:00:00.0000000Z", BridgePayloads.FormatTimestamp(EventTicks));
+        Assert.Equal(string.Empty, BridgePayloads.FormatTimestamp(0));
     }
 }

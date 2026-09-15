@@ -9,13 +9,14 @@ using BepInEx.Logging;
 namespace SamMeow.TarkovRuntimeBridge;
 
 /// <summary>
-/// 只读 HTTP 桥：仅绑 127.0.0.1，暴露 GET /bridge/info、/raid/player、/raid/status、/raid/bots。
+/// 只读 HTTP 桥：仅绑 127.0.0.1，暴露 GET /bridge/info、/raid/player、/raid/status、/raid/bots、/raid/events。
 ///
 /// 契约（字段顺序稳定，可逐字节 diff）：
 ///   /bridge/info：200 {"pluginVersion":..,"protocolVersion":1,"capabilities":{...},"sampling":{"intervalMs":..},"network":{"host":"127.0.0.1","port":..}}
-///   /raid/player：在 raid 200 {"inRaid":true,"position":{..},"rotation":{..},"pose":..,"health":{..},"sampleAgeMs":..}；不在 raid 200 {"inRaid":false}
+///   /raid/player：在 raid 200 {"inRaid":true,"position":{..},"rotation":{..},"pose":..,"health":{..},"weapon":..,"equipment":[..],"sampleAgeMs":..}；不在 raid 200 {"inRaid":false}
 ///   /raid/status：在 raid 200 {"inRaid":true,"map":..,"status":..,"remainingSeconds":..,"raidId":..,"sampleAgeMs":..}；不在 raid 200 {"inRaid":false}
 ///   /raid/bots：在 raid 200 摘要（total/alive/byCategory/spawner/sampleAgeMs）；?detail=1 另含 bots 明细（上限 200）与 truncated；不在 raid 200 {"inRaid":false}
+///   /raid/events：200 {"inRaid":..,"seq":..,"dropped":..,"events":[..]}（?since=&amp;limit= 增量；缓冲跨 raid 保留，不在 raid 也返回历史）
 ///   未知路径：404 {"error":"not_found"}
 ///   其他方法：405 {"error":"method_not_allowed"}
 ///
@@ -28,6 +29,7 @@ internal sealed class HttpBridgeServer : IDisposable
     private const string JsonContentType = "application/json; charset=utf-8";
 
     private readonly RaidStateStore store;
+    private readonly RaidEventBuffer events;
     private readonly ManualLogSource log;
     private readonly int port;
     private readonly int sampleIntervalMs;
@@ -36,9 +38,15 @@ internal sealed class HttpBridgeServer : IDisposable
     private Task serverTask;
     private bool listening;
 
-    internal HttpBridgeServer(RaidStateStore store, ManualLogSource log, int port, int sampleIntervalMs)
+    internal HttpBridgeServer(
+        RaidStateStore store,
+        RaidEventBuffer events,
+        ManualLogSource log,
+        int port,
+        int sampleIntervalMs)
     {
         this.store = store;
+        this.events = events;
         this.log = log;
         this.port = port;
         this.sampleIntervalMs = sampleIntervalMs;
@@ -244,6 +252,12 @@ internal sealed class HttpBridgeServer : IDisposable
                         BridgeRouter.IsDetailRequested(request.QueryString["detail"]),
                         Environment.TickCount64)
                     : BridgePayloads.NotInRaidBody;
+            case BridgeRouteKind.Events:
+                return BridgePayloads.BuildEvents(
+                    events,
+                    RaidEventsQuery.ParseSince(request.QueryString["since"]),
+                    RaidEventsQuery.ParseLimit(request.QueryString["limit"]),
+                    store.TryGet(out _));
             default:
                 return BridgePayloads.InternalErrorBody;
         }

@@ -10,9 +10,32 @@ public class BridgeRouterTests
     [InlineData("/raid/player", "Player")]
     [InlineData("/raid/status", "Status")]
     [InlineData("/raid/bots", "Bots")]
+    [InlineData("/raid/events", "Events")]
     public void Known_route_with_get_resolves_to_endpoint(string path, string expected)
     {
         Assert.Equal(expected, BridgeRouter.Resolve(path, "GET").ToString());
+    }
+
+    [Theory]
+    [InlineData("/bridge/info")]
+    [InlineData("/raid/player")]
+    [InlineData("/raid/status")]
+    [InlineData("/raid/bots")]
+    [InlineData("/raid/events")]
+    public void Every_known_route_resolves_to_an_explicit_endpoint(string path)
+    {
+        // 回归护栏：新路由若只加进 IsKnownRoute 而漏加级联分支，Resolve 会落到
+        // 兜底 NotFound，此断言即失败（不会静默返回 Events 负载）。
+        Assert.True(BridgeRouter.IsKnownRoute(path));
+        Assert.NotEqual(BridgeRouteKind.NotFound, BridgeRouter.Resolve(path, "GET"));
+    }
+
+    [Fact]
+    public void Unmatched_path_falls_back_to_not_found_not_events()
+    {
+        // 兜底必须是 NotFound：即使路径被 IsKnownRoute 放行却没有级联分支，
+        // 也不能静默落到 Events 端点负载。
+        Assert.Equal(BridgeRouteKind.NotFound, BridgeRouter.Resolve("/raid/events-typo", "GET"));
     }
 
     [Theory]
@@ -40,6 +63,7 @@ public class BridgeRouterTests
     [InlineData("/raid/player")]
     [InlineData("/raid/status")]
     [InlineData("/raid/bots")]
+    [InlineData("/raid/events")]
     [InlineData("/raid/bots/")]
     public void Known_route_with_non_get_is_method_not_allowed(string path)
     {
@@ -77,6 +101,7 @@ public class BridgeRouterTests
     [InlineData("Player", 200)]
     [InlineData("Status", 200)]
     [InlineData("Bots", 200)]
+    [InlineData("Events", 200)]
     public void Status_code_mapping(string route, int expected)
     {
         Assert.Equal(expected, BridgeRouter.StatusCodeFor(Enum.Parse<BridgeRouteKind>(route)));

@@ -22,6 +22,7 @@ public sealed class PositionSampler : MonoBehaviour
     internal const int BotDetailLimit = 200;
 
     private RaidStateStore store;
+    private RaidEventCollector events;
     private ManualLogSource log;
     private float intervalSeconds = 1f;
     private float elapsed;
@@ -43,9 +44,14 @@ public sealed class PositionSampler : MonoBehaviour
     /// 含托管类型参数，须标 [HideFromIl2Cpp]，避免 il2cpp 尝试封送。
     /// </summary>
     [HideFromIl2Cpp]
-    internal void Initialize(RaidStateStore stateStore, int sampleIntervalMs, ManualLogSource logger)
+    internal void Initialize(
+        RaidStateStore stateStore,
+        RaidEventCollector eventCollector,
+        int sampleIntervalMs,
+        ManualLogSource logger)
     {
         store = stateStore;
+        events = eventCollector;
         log = logger;
         intervalSeconds = Math.Max(0.05f, sampleIntervalMs / 1000f);
         // 首帧立即采样一次，避免进 raid 后等待一个完整间隔。
@@ -80,6 +86,7 @@ public sealed class PositionSampler : MonoBehaviour
             {
                 sessionStartUtcTicks = 0;
                 store.Clear();
+                events?.LeaveRaid();
                 return;
             }
 
@@ -88,6 +95,7 @@ public sealed class PositionSampler : MonoBehaviour
             {
                 sessionStartUtcTicks = 0;
                 store.Clear();
+                events?.LeaveRaid();
                 return;
             }
 
@@ -100,6 +108,9 @@ public sealed class PositionSampler : MonoBehaviour
             var playerSnapshot = SamplePlayer(player);
             var raidMeta = SampleRaid(world, player, sessionStartUtcTicks);
             var bots = SampleBots(world, out var botDetails);
+
+            // 事件订阅：新玩家经 OnPersonAdd 挂载，既有玩家在此批量补齐（幂等）。
+            events?.Observe(world, player, raidMeta.RaidId);
 
             store.Publish(new RaidState(
                 playerSnapshot,
@@ -116,7 +127,7 @@ public sealed class PositionSampler : MonoBehaviour
     }
 
     [HideFromIl2Cpp]
-    private static PlayerSnapshot SamplePlayer(Player player)
+    private PlayerSnapshot SamplePlayer(Player player)
     {
         var position = player.Position;
         var rotation = player.Rotation;
@@ -146,11 +157,135 @@ public sealed class PositionSampler : MonoBehaviour
             rightLeg = healthController.GetBodyPartHealth(EBodyPart.RightLeg).Current;
         }
 
+        // 武器 / 装备读取失败不得连带丢弃位置与血量：各自降级为空。
+        WeaponSnapshot weapon = null;
+        var equipment = Array.Empty<EquipmentEntry>();
+        try
+        {
+            weapon = SampleWeapon(player);
+            equipment = SampleEquipment(player);
+        }
+        catch (Exception exception)
+        {
+            log.LogWarning($"Weapon/equipment sample failed: {exception.Message}");
+        }
+
         return new PlayerSnapshot(
             new Vector3Snapshot(position.x, position.y, position.z),
             new Vector2Snapshot(rotation.x, rotation.y),
             pose,
-            new HealthSnapshot(alive, total, head, chest, stomach, leftArm, rightArm, leftLeg, rightLeg));
+            new HealthSnapshot(alive, total, head, chest, stomach, leftArm, rightArm, leftLeg, rightLeg),
+            weapon,
+            equipment);
+    }
+
+    /// <summary>
+    /// 当前手持武器：<c>Player.HandsController</c> → <c>IFirearmHandsController.Item</c>。
+    /// 非持枪（近战 / 投掷 / 空手）返回 null。
+    /// </summary>
+    [HideFromIl2Cpp]
+    private WeaponSnapshot SampleWeapon(Player player)
+    {
+        var hands = player.HandsController;
+        if (hands == null)
+        {
+            return null;
+        }
+
+        var firearm = hands.TryCast<IFirearmHandsController>();
+        if (firearm == null)
+        {
+            return null;
+        }
+
+        var weapon = firearm.Item;
+        if (weapon == null)
+        {
+            return null;
+        }
+
+        var templateId = !string.IsNullOrEmpty(weapon.StringTemplateId)
+            ? weapon.StringTemplateId
+            : weapon.TemplateId.ToString();
+        var name = !string.IsNullOrEmpty(weapon.Name) ? weapon.Name : weapon.ShortName;
+
+        var ammoInMag = 0;
+        var ammoInChamber = 0;
+        try
+        {
+            ammoInMag = weapon.GetCurrentMagazineCount();
+        }
+        catch (Exception exception)
+        {
+            log.LogDebug($"Magazine count read failed: {exception.Message}");
+        }
+
+        try
+        {
+            ammoInChamber = weapon.ChamberAmmoCount;
+        }
+        catch (Exception exception)
+        {
+            log.LogDebug($"Chamber ammo read failed: {exception.Message}");
+        }
+
+        return new WeaponSnapshot(templateId, name, ammoInMag, ammoInChamber);
+    }
+
+    /// <summary>
+    /// 已装备槽摘要：<c>Player.Profile.Inventory.Equipment.Slots</c>，仅含已占用槽
+    /// （空槽不产出条目；非持枪 / 空背包等一律为空数组）。
+    /// </summary>
+    [HideFromIl2Cpp]
+    private static EquipmentEntry[] SampleEquipment(Player player)
+    {
+        var profile = player.Profile;
+        if (profile == null)
+        {
+            return Array.Empty<EquipmentEntry>();
+        }
+
+        var inventory = profile.Inventory;
+        if (inventory == null)
+        {
+            return Array.Empty<EquipmentEntry>();
+        }
+
+        var equipment = inventory.Equipment;
+        if (equipment == null)
+        {
+            return Array.Empty<EquipmentEntry>();
+        }
+
+        var slots = equipment.Slots;
+        if (slots == null)
+        {
+            return Array.Empty<EquipmentEntry>();
+        }
+
+        var entries = new List<EquipmentEntry>(slots.Length);
+        for (var i = 0; i < slots.Length; i++)
+        {
+            var slot = slots[i];
+            if (slot == null)
+            {
+                continue;
+            }
+
+            var item = slot.ContainedItem;
+            if (item == null)
+            {
+                continue;
+            }
+
+            var templateId = !string.IsNullOrEmpty(item.StringTemplateId)
+                ? item.StringTemplateId
+                : item.TemplateId.ToString();
+            var name = !string.IsNullOrEmpty(item.Name) ? item.Name : item.ShortName;
+            entries.Add(new EquipmentEntry(slot.Name, templateId, name));
+        }
+
+        return entries.ToArray();
     }
 
     [HideFromIl2Cpp]
@@ -226,24 +361,24 @@ public sealed class PositionSampler : MonoBehaviour
                     }
                 }
 
-                // 分类优先级（role 优先）：boss（role 含 "boss"）> pmc（role 以 "pmc" 开头）
+                // 分类优先级（role 优先）：boss（role 含 "boss" 或命中显式表）> pmc（role 以 "pmc" 开头）
                 // > scav（Savage）> other。SPT 的 pmcUSEC/pmcBEAR 阵营为 Savage，
                 // 仅凭 side 会把 PMC 误判为 scav（live 实测），故先看 role。
-                if (role.IndexOf("boss", StringComparison.OrdinalIgnoreCase) >= 0)
+                // 分类表为单点常量（BotClassifier），单测覆盖。
+                switch (BotClassifier.Classify(role, side.ToString()))
                 {
-                    boss++;
-                }
-                else if (role.StartsWith("pmc", StringComparison.OrdinalIgnoreCase))
-                {
-                    pmc++;
-                }
-                else if (side == EPlayerSide.Savage)
-                {
-                    scav++;
-                }
-                else
-                {
-                    other++;
+                    case BotClassifier.Boss:
+                        boss++;
+                        break;
+                    case BotClassifier.Pmc:
+                        pmc++;
+                        break;
+                    case BotClassifier.Scav:
+                        scav++;
+                        break;
+                    default:
+                        other++;
+                        break;
                 }
 
                 if (collected.Count < BotDetailLimit)

@@ -5,7 +5,7 @@ namespace SamMeow.TarkovRuntimeBridge.Tests;
 /// <summary>构造纯逻辑测试所需的快照（不触碰任何游戏程序集）。</summary>
 internal static class TestStates
 {
-    /// <summary>默认玩家快照：位置 (1,2,3)、朝向 (0,90)、Stand、满血。</summary>
+    /// <summary>默认玩家快照：位置 (1,2,3)、朝向 (0,90)、Stand、满血、无武器、无装备。</summary>
     internal static RaidState PlayerState(
         float x = 1f,
         float y = 2f,
@@ -15,14 +15,18 @@ internal static class TestStates
         string pose = "Stand",
         bool alive = true,
         float total = 100f,
-        long sampledAtMs = 1000)
+        long sampledAtMs = 1000,
+        WeaponSnapshot weapon = null,
+        EquipmentEntry[] equipment = null)
     {
         return new RaidState(
             new PlayerSnapshot(
                 new Vector3Snapshot(x, y, z),
                 new Vector2Snapshot(rotationX, rotationY),
                 pose,
-                new HealthSnapshot(alive, total, 35f, 40f, 30f, 25f, 25f, 30f, 30f)),
+                new HealthSnapshot(alive, total, 35f, 40f, 30f, 25f, 25f, 30f, 30f),
+                weapon,
+                equipment ?? Array.Empty<EquipmentEntry>()),
             new RaidMetaSnapshot(
                 "factory4_day",
                 "Started",
@@ -41,7 +45,9 @@ internal static class TestStates
                 new Vector3Snapshot(1f, 2f, 3f),
                 new Vector2Snapshot(0f, 90f),
                 "Stand",
-                new HealthSnapshot(true, 100f, 35f, 40f, 30f, 25f, 25f, 30f, 30f)),
+                new HealthSnapshot(true, 100f, 35f, 40f, 30f, 25f, 25f, 30f, 30f),
+                null,
+                Array.Empty<EquipmentEntry>()),
             new RaidMetaSnapshot("factory4_day", "Started", 120.5f, "profile-1@2026-09-14T00:00:00.0000000Z"),
             new BotSummary(total, total, 2, 1, 1, 0, 3, 1, 4),
             details,

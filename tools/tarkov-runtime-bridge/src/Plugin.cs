@@ -1,5 +1,7 @@
+using System;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
+using HarmonyLib;
 using Il2CppInterop.Runtime.Injection;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -9,18 +11,23 @@ namespace SamMeow.TarkovRuntimeBridge;
 /// <summary>
 /// Tarkov Runtime Bridge 插件入口（tarkov-runtime-MCP Phase 2）。
 /// 职责：建配置 -> 建持久 GameObject 并挂 <see cref="PositionSampler"/> 采样玩家/raid/bot 域
-/// -> 启动仅绑 127.0.0.1 的 <see cref="HttpBridgeServer"/> 暴露只读端点
-/// /bridge/info、/raid/player、/raid/status、/raid/bots。
+/// 与事件域（<see cref="RaidEventCollector"/>）-> 启动仅绑 127.0.0.1 的
+/// <see cref="HttpBridgeServer"/> 暴露只读端点
+/// /bridge/info、/raid/player、/raid/status、/raid/bots、/raid/events。
 ///
 /// STD-CLI-001：5.0（IL2CPP / BepInEx 6）继承 BepInEx.Unity.IL2CPP.BasePlugin，入口 Load()；
 ///              撤销路径为 Unload()（BepInEx 6 IL2CPP BasePlugin 无 IDisposable.Dispose()）。
 /// STD-CLI-002：GUID 用反向域名记法（com.&lt;author&gt;.&lt;mod&gt;），全局唯一。
+/// STD-CLI-003：撤离事件 patch <c>LocalGame.Stop</c>（<see cref="LocalGameStopPatch"/>）
+///              + 受伤事件 patch <c>ActiveHealthController.ApplyDamage</c>
+///              （<see cref="ApplyDamagePatch"/>），均为显式 [HarmonyPatch(typeof(...))]。
+/// STD-CLI-007：Harmony 生命周期在此管理（new Harmony + PatchAll + Unload 撤销）。
 /// STD-META-005：版本 semver 三段式（0.1.0），与 csproj &lt;Version&gt; 一致。
 /// STD-META-006：BepInPlugin 三参数齐备（GUID、显示名、版本）。
 /// STD-LOG-003：客户端日志用 BepInEx 日志源（BasePlugin.Log）。
 /// 部署形态：MO2 overlay，mod 根 = 游戏根，DLL 落在 BepInEx/plugins/。
 /// </summary>
-// STD-CLI-001 / STD-CLI-002 / STD-META-005 / STD-META-006
+// STD-CLI-001 / STD-CLI-002 / STD-CLI-003 / STD-CLI-007 / STD-META-005 / STD-META-006
 [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
 public sealed class Plugin : BasePlugin
 {
@@ -35,8 +42,11 @@ public sealed class Plugin : BasePlugin
     internal const int ProtocolVersion = 1;
 
     private RaidStateStore store;
+    private RaidEventBuffer events;
+    private RaidEventCollector collector;
     private HttpBridgeServer httpServer;
     private GameObject samplerObject;
+    private Harmony harmony;
 
     public override void Load()
     {
@@ -47,6 +57,11 @@ public sealed class Plugin : BasePlugin
         var sampleIntervalMs = config.SampleIntervalMs.Value;
 
         store = new RaidStateStore();
+        events = new RaidEventBuffer();
+        collector = new RaidEventCollector(events, Log);
+
+        // 撤离事件依赖 LocalGame.Stop 补丁；补丁失败不影响其余端点，仅记 error。
+        TryApplyHarmonyPatches();
 
         // IL2CPP 下注入的 MonoBehaviour 类型必须先注册，再挂到 GameObject 上。
         ClassInjector.RegisterTypeInIl2Cpp<PositionSampler>();
@@ -56,10 +71,10 @@ public sealed class Plugin : BasePlugin
         };
         Object.DontDestroyOnLoad(samplerObject);
         var sampler = samplerObject.AddComponent<PositionSampler>();
-        sampler.Initialize(store, sampleIntervalMs, Log);
+        sampler.Initialize(store, collector, sampleIntervalMs, Log);
 
         // 启动失败（端口占用 / URL ACL 拒绝等）只记 error，不影响游戏运行。
-        httpServer = new HttpBridgeServer(store, Log, port, sampleIntervalMs);
+        httpServer = new HttpBridgeServer(store, events, Log, port, sampleIntervalMs);
         if (httpServer.Start())
         {
             Log.LogInfo(
@@ -79,10 +94,28 @@ public sealed class Plugin : BasePlugin
 
     /// <summary>
     /// BepInEx 6 IL2CPP 的撤销路径（对应 4.1.5 的 OnDestroy）。
-    /// 停 HTTP 监听并销毁采样 GameObject。
+    /// 撤销 Harmony 补丁、解除事件订阅、停 HTTP 监听并销毁采样 GameObject。
     /// </summary>
     public override bool Unload()
     {
+        if (harmony != null)
+        {
+            try
+            {
+                harmony.UnpatchSelf();
+            }
+            catch (Exception exception)
+            {
+                Log.LogWarning($"Harmony unpatch failed: {exception.Message}");
+            }
+
+            harmony = null;
+        }
+
+        collector?.Dispose();
+        collector = null;
+        events = null;
+
         httpServer?.Dispose();
         httpServer = null;
 
@@ -94,5 +127,51 @@ public sealed class Plugin : BasePlugin
 
         Log.LogInfo($"{PluginName} unloaded.");
         return true;
+    }
+
+    private void TryApplyHarmonyPatches()
+    {
+        try
+        {
+            harmony = new Harmony(PluginGuid);
+        }
+        catch (Exception exception)
+        {
+            harmony = null;
+            Log.LogError(
+                $"Harmony init failed; extraction and damage events disabled: {exception.Message}");
+            return;
+        }
+
+        // 逐补丁类独立应用：一类失败不影响另一类（例如 ApplyDamage 签名漂移不应停掉撤离采集）。
+        var extractionApplied = TryApplyPatch(typeof(LocalGameStopPatch), "LocalGame.Stop extraction");
+        var damageApplied = TryApplyPatch(typeof(ApplyDamagePatch), "ActiveHealthController.ApplyDamage damage");
+
+        if (extractionApplied && damageApplied)
+        {
+            Log.LogInfo(
+                "Harmony patches applied (LocalGame.Stop extraction + " +
+                "ActiveHealthController.ApplyDamage hooks).");
+        }
+    }
+
+    /// <summary>
+    /// 应用单个补丁类；失败只记该类的 error，返回是否成功。
+    /// HarmonyX 的 <c>PatchAll(Type)</c> 等价于 <c>CreateClassProcessor(type).Patch()</c>
+    /// （已用参考程序集 IL 确认），故按类调用即可实现逐类隔离。
+    /// </summary>
+    private bool TryApplyPatch(Type patchType, string label)
+    {
+        try
+        {
+            harmony.PatchAll(patchType);
+            return true;
+        }
+        catch (Exception exception)
+        {
+            Log.LogError(
+                $"Harmony patch failed ({label}); corresponding events disabled: {exception.Message}");
+            return false;
+        }
     }
 }

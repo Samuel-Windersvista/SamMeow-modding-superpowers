@@ -24,6 +24,9 @@ internal enum BridgeRouteKind
 
     /// <summary>GET /raid/bots（?detail=1 时含明细）。</summary>
     Bots,
+
+    /// <summary>GET /raid/events（?since=&amp;limit= 增量拉取事件）。</summary>
+    Events,
 }
 
 /// <summary>
@@ -36,13 +39,15 @@ internal static class BridgeRouter
     internal const string PlayerPath = "/raid/player";
     internal const string StatusPath = "/raid/status";
     internal const string BotsPath = "/raid/bots";
+    internal const string EventsPath = "/raid/events";
 
     internal static bool IsKnownRoute(string path)
     {
         return string.Equals(path, InfoPath, StringComparison.OrdinalIgnoreCase)
             || string.Equals(path, PlayerPath, StringComparison.OrdinalIgnoreCase)
             || string.Equals(path, StatusPath, StringComparison.OrdinalIgnoreCase)
-            || string.Equals(path, BotsPath, StringComparison.OrdinalIgnoreCase);
+            || string.Equals(path, BotsPath, StringComparison.OrdinalIgnoreCase)
+            || string.Equals(path, EventsPath, StringComparison.OrdinalIgnoreCase);
     }
 
     internal static bool IsGet(string method)
@@ -81,7 +86,19 @@ internal static class BridgeRouter
             return BridgeRouteKind.Status;
         }
 
-        return BridgeRouteKind.Bots;
+        if (string.Equals(path, BotsPath, StringComparison.OrdinalIgnoreCase))
+        {
+            return BridgeRouteKind.Bots;
+        }
+
+        if (string.Equals(path, EventsPath, StringComparison.OrdinalIgnoreCase))
+        {
+            return BridgeRouteKind.Events;
+        }
+
+        // 防御性兜底：IsKnownRoute 已放行但无匹配分支（新路由只加进 IsKnownRoute
+        // 而漏加级联分支）时显式 NotFound，绝不静默落到某个端点负载。
+        return BridgeRouteKind.NotFound;
     }
 
     /// <summary>路由结果对应的 HTTP 状态码（200/404/405）。</summary>
