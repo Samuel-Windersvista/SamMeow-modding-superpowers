@@ -1,11 +1,12 @@
 // =============================================================================
 // raid_player
 //
-// 经 BridgeConnection 拉取玩家局内全字段（T04）：位置/朝向/姿态/血量（总+肢体）。
+// 经 BridgeConnection 拉取玩家局内全字段（T04）：位置/朝向/姿态/血量（总+肢体）
+// 以及当前武器与装备槽摘要（第二波）。
 // 行为：
 //   - 调用前 ensure `/bridge/info`（协议版本门禁）；
-//   - 在 raid：ok 信封，data = { position, rotation, pose, health, sampleAgeMs }
-//     （确定性字段序）；
+//   - 在 raid：ok 信封，data = { position, rotation, pose, health, weapon,
+//     equipment, sampleAgeMs }（确定性字段序）；
 //   - 不在 raid：err 信封 NOT_IN_RAID；
 //   - 桥不可达（拒绝/超时/非 2xx/响应非法）：err 信封 BRIDGE_UNREACHABLE；
 //   - 协议版本不一致：err 信封 BRIDGE_VERSION_MISMATCH。
@@ -45,9 +46,14 @@ export function createRaidPlayerTool(connection: BridgeConnection): ToolHandler 
     }
     const result = sample.result;
 
+    // 旧录制/旧桥可能缺字段：缺省 weapon -> null、equipment -> []（语义明确）
+    const weapon = result.weapon ?? null;
+    const equipment = result.equipment ?? [];
+    const summaryWeapon = weapon === null ? "无武器" : weapon.name || weapon.tpl;
+
     return okEnv(
       RAID_PLAYER_TOOL_NAME,
-      `raid 玩家状态已读取（姿态 ${result.pose}，血量 ${result.health.total}${result.health.alive ? "" : "（已阵亡）"}，新鲜度 ${result.sampleAgeMs}ms）`,
+      `raid 玩家状态已读取（姿态 ${result.pose}，血量 ${result.health.total}${result.health.alive ? "" : "（已阵亡）"}，武器 ${summaryWeapon}，装备 ${equipment.length} 件，新鲜度 ${result.sampleAgeMs}ms）`,
       {
         position: {
           x: result.position.x,
@@ -72,6 +78,21 @@ export function createRaidPlayerTool(connection: BridgeConnection): ToolHandler 
             RightLeg: result.health.parts.RightLeg,
           },
         },
+        // 旧录制/旧桥可能缺字段：缺省 weapon -> null、equipment -> []（语义明确）
+        weapon:
+          weapon === null
+            ? null
+            : {
+                tpl: weapon.tpl,
+                name: weapon.name,
+                ammoInMag: weapon.ammoInMag,
+                ammoInChamber: weapon.ammoInChamber,
+              },
+        equipment: equipment.map((slot) => ({
+          slot: slot.slot,
+          tpl: slot.tpl,
+          name: slot.name,
+        })),
         sampleAgeMs: result.sampleAgeMs,
       },
     );

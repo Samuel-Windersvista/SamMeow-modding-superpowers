@@ -1,9 +1,9 @@
 // =============================================================================
 // raid.* 工具共享逻辑
 //
-// 三个 raid 工具（raid_status / raid_player / raid_bots）在调用具体端点前
-// 统一 ensure bridge info：拉取 `/bridge/info`（HTTP 实现内部缓存）并校验
-// protocolVersion。任一环节失败转换为结构化错误信封：
+// raid 工具（raid_status / raid_player / raid_bots / raid_events）在调用具体
+// 端点前统一 ensure bridge info：拉取 `/bridge/info` 并校验 protocolVersion
+// （不缓存，每次调用都实际拉取）。任一环节失败转换为结构化错误信封：
 //   - 连接类失败        -> BRIDGE_UNREACHABLE（含「未安装/未运行/启动失败」提示）
 //   - 协议版本不一致    -> BRIDGE_VERSION_MISMATCH（details 含 expected/actual）
 //

@@ -10,6 +10,7 @@ import {
   type BridgeConnection,
   type BridgeInfo,
   type BridgeRaidBotsResult,
+  type BridgeRaidEventsResult,
   type BridgeRaidPlayerResult,
   type BridgeRaidStatusResult,
 } from "../../src/bridge/connection.js";
@@ -22,13 +23,16 @@ export interface FakeBridgeOptions {
   status?: FakeSource<BridgeRaidStatusResult>;
   player?: FakeSource<BridgeRaidPlayerResult>;
   bots?: FakeSource<BridgeRaidBotsResult>;
+  events?: FakeSource<BridgeRaidEventsResult>;
 }
 
 export class FakeBridgeConnection implements BridgeConnection {
   /** 各端点的调用次数（可观测性） */
-  readonly callCounts = { info: 0, status: 0, player: 0, bots: 0 };
+  readonly callCounts = { info: 0, status: 0, player: 0, bots: 0, events: 0 };
   /** 最近一次 getRaidBots 的 detail 入参（校验工具层透传） */
   lastBotsDetail: boolean | null = null;
+  /** 最近一次 getRaidEvents 的入参（校验工具层透传） */
+  lastEventsArgs: { since?: number; limit?: number } | null = null;
 
   constructor(private readonly options: FakeBridgeOptions = {}) {}
 
@@ -45,6 +49,16 @@ export class FakeBridgeConnection implements BridgeConnection {
   async getRaidPlayer(): Promise<BridgeRaidPlayerResult> {
     this.callCounts.player += 1;
     return resolve(this.options.player, { inRaid: false }, this.callCounts.player);
+  }
+
+  async getRaidEvents(since?: number, limit?: number): Promise<BridgeRaidEventsResult> {
+    this.callCounts.events += 1;
+    this.lastEventsArgs = { since, limit };
+    return resolve(
+      this.options.events,
+      { inRaid: true, seq: 0, dropped: 0, events: [] },
+      this.callCounts.events,
+    );
   }
 
   async getRaidBots(detail: boolean): Promise<BridgeRaidBotsResult> {
@@ -150,7 +164,69 @@ export function inRaidPlayer(
         RightLeg: 65,
       },
     },
+    weapon: {
+      tpl: "5447a9cd4bdc2dbd208b4567",
+      name: "Colt M4A1",
+      ammoInMag: 30,
+      ammoInChamber: 1,
+    },
+    equipment: [
+      { slot: "Headwear", tpl: "5aa7e276e5b5b000171d0647", name: "Altyn helmet" },
+      { slot: "Armor", tpl: "545cdb794bdc2d3a198b456a", name: "6B43 Zabralo" },
+    ],
     sampleAgeMs: 100,
+    ...overrides,
+  };
+}
+
+/** 事件时间线（默认：一条 damage + 一条带击杀者的 death + 一条撤离） */
+export function inRaidEvents(
+  overrides: Partial<Omit<BridgeRaidEventsResult, "inRaid">> = {},
+): BridgeRaidEventsResult {
+  return {
+    inRaid: true,
+    seq: 3,
+    dropped: 0,
+    events: [
+      {
+        seq: 1,
+        ts: "2026-09-15T10:00:00.000Z",
+        type: "damage",
+        raidId: "raid-abc",
+        payload: {
+          victimProfileId: "pmc-local",
+          victimIsLocal: true,
+          part: "LeftLeg",
+          amount: 12.5,
+          sourceType: "Bullet",
+        },
+      },
+      {
+        seq: 2,
+        ts: "2026-09-15T10:00:05.000Z",
+        type: "death",
+        raidId: "raid-abc",
+        payload: {
+          victimProfileId: "bot-1",
+          victimIsLocal: false,
+          damageType: "Bullet",
+          killer: {
+            profileId: "pmc-local",
+            name: "LocalPMC",
+            side: "Bear",
+            role: "pmc",
+            isLocal: true,
+          },
+        },
+      },
+      {
+        seq: 3,
+        ts: "2026-09-15T10:05:00.000Z",
+        type: "extraction",
+        raidId: "raid-abc",
+        payload: { exitName: "Crossroads", status: "Success" },
+      },
+    ],
     ...overrides,
   };
 }

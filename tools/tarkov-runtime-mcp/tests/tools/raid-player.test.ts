@@ -10,7 +10,7 @@ import {
 } from "../helpers/fake-bridge.js";
 
 describe("raid_player（BridgeConnection 驱动）", () => {
-  it("在 raid：返回 ok 信封，data 含 position/rotation/pose/health/sampleAgeMs", async () => {
+  it("在 raid：返回 ok 信封，data 含 position/rotation/pose/health/weapon/equipment/sampleAgeMs", async () => {
     const tool = createRaidPlayerTool(
       fakeBridge({
         player: inRaidPlayer({
@@ -44,8 +44,30 @@ describe("raid_player（BridgeConnection 驱动）", () => {
           RightLeg: 65,
         },
       },
+      weapon: {
+        tpl: "5447a9cd4bdc2dbd208b4567",
+        name: "Colt M4A1",
+        ammoInMag: 30,
+        ammoInChamber: 1,
+      },
+      equipment: [
+        { slot: "Headwear", tpl: "5aa7e276e5b5b000171d0647", name: "Altyn helmet" },
+        { slot: "Armor", tpl: "545cdb794bdc2d3a198b456a", name: "6B43 Zabralo" },
+      ],
       sampleAgeMs: 123,
     });
+  });
+
+  it("无武器：weapon 输出 null；无装备：equipment 输出空数组", async () => {
+    const tool = createRaidPlayerTool(
+      fakeBridge({ player: inRaidPlayer({ weapon: null, equipment: [] }) }),
+    );
+
+    const result = await tool({});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({ weapon: null, equipment: [] });
   });
 
   it("不在 raid：返回 NOT_IN_RAID 错误信封", async () => {
@@ -110,6 +132,8 @@ describe("raid_player（BridgeConnection 驱动）", () => {
       "rotation",
       "pose",
       "health",
+      "weapon",
+      "equipment",
       "sampleAgeMs",
     ]);
     const health = (first.data as { health: object }).health;
@@ -123,6 +147,9 @@ describe("raid_player（BridgeConnection 驱动）", () => {
       "LeftLeg",
       "RightLeg",
     ]);
+    const data = first.data as { weapon: object; equipment: object[] };
+    expect(Object.keys(data.weapon)).toEqual(["tpl", "name", "ammoInMag", "ammoInChamber"]);
+    expect(Object.keys(data.equipment[0])).toEqual(["slot", "tpl", "name"]);
   });
 
   it("非法输入：返回 INVALID_INPUT", async () => {

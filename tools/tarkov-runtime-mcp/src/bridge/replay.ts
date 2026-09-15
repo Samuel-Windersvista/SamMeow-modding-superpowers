@@ -13,21 +13,17 @@
 import { readFileSync } from "node:fs";
 
 import {
+  BRIDGE_METHODS,
   BridgeUnreachableError,
   type BridgeConnection,
   type BridgeInfo,
+  type BridgeMethod,
   type BridgeRaidBotsResult,
+  type BridgeRaidEventsResult,
   type BridgeRaidPlayerResult,
   type BridgeRaidStatusResult,
 } from "./connection.js";
-import type { RecordingEntry, RecordingMethod } from "./recording.js";
-
-const RECORDING_METHODS: readonly RecordingMethod[] = [
-  "getInfo",
-  "getRaidStatus",
-  "getRaidPlayer",
-  "getRaidBots",
-];
+import type { RecordingEntry } from "./recording.js";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -53,7 +49,7 @@ export function parseRecordingLine(line: string, lineNumber: number): RecordingE
   if (typeof ts !== "string") {
     throw new Error(`录制文件第 ${lineNumber} 行缺少合法的 ts 字段`);
   }
-  if (typeof method !== "string" || !RECORDING_METHODS.includes(method as RecordingMethod)) {
+  if (typeof method !== "string" || !BRIDGE_METHODS.includes(method as BridgeMethod)) {
     throw new Error(`录制文件第 ${lineNumber} 行 method 非法：${String(method)}`);
   }
   if (typeof ok !== "boolean") {
@@ -64,7 +60,7 @@ export function parseRecordingLine(line: string, lineNumber: number): RecordingE
   }
   return {
     ts,
-    method: method as RecordingMethod,
+    method: method as BridgeMethod,
     args: args ?? null,
     ok,
     result,
@@ -105,7 +101,15 @@ class ReplayBridgeConnection implements BridgeConnection {
     return this.next<BridgeRaidBotsResult>("getRaidBots", { detail });
   }
 
-  private next<T>(method: RecordingMethod, args: unknown): T {
+  async getRaidEvents(since?: number, limit?: number): Promise<BridgeRaidEventsResult> {
+    // 事件按 method 分桶顺序消费（since/limit 不入桶键：增量语义由录制顺序表达）
+    return this.next<BridgeRaidEventsResult>("getRaidEvents", {
+      since: since ?? null,
+      limit: limit ?? null,
+    });
+  }
+
+  private next<T>(method: BridgeMethod, args: unknown): T {
     const matching = this.entries.filter((entry) => {
       if (entry.method !== method) return false;
       if (method !== "getRaidBots") return true;

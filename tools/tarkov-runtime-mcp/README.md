@@ -1,7 +1,7 @@
 # tarkov-runtime-mcp
 
 SPT 5.x 运行时状态 MCP server。Phase 1 提供 server 握手/版本门禁与局外快照；
-Phase 2 经本地 BepInEx Client Bridge 提供局内（in-raid）状态。
+Phase 2 经本地 BepInEx Client Bridge 提供局内（in-raid）状态与事件时间线（受伤/死亡/撤离）。
 
 ## 工具面
 
@@ -12,12 +12,18 @@ Phase 2 经本地 BepInEx Client Bridge 提供局内（in-raid）状态。
 | `tarkov_snapshot` | 局外状态确定性快照（profile / traders / quests / hideout / inventory） |
 | `tarkov_wait_for` | 对任意工具结果轮询求值谓词，超时返回结构化 `WAIT_TIMEOUT` |
 | `raid_status` | raid 元数据 + 桥自报（经 BridgeConnection） |
-| `raid_player` | 玩家局内全字段（位置/朝向/姿态/血量/新鲜度） |
+| `raid_player` | 玩家局内全字段（位置/朝向/姿态/血量/武器/装备/新鲜度） |
 | `raid_bots` | bot 摘要 / `detail=true` 明细 |
+| `raid_events` | raid 事件时间线（damage/death/extraction；`since`/`limit` 增量拉取，非 raid 也返回缓冲） |
 
 `tarkov_wait_for` 的谓词可直接作用于 raid 工具（如 `raid_bots` 的 `alive > 5`）。
 若首轮观察即遇 `BRIDGE_UNREACHABLE` / `CLIENT_BRIDGE_NOT_INSTALLED`，立即返回该错误
 信封，不把「桥没装」误报成 `WAIT_TIMEOUT`；`NOT_IN_RAID` **不**短路（等进 raid 是合法用法）。
+
+`raid_events` 返回 `{inRaid, seq, dropped, events}`：`seq` 字段是桥进程内最新序号（仅用于判断是否有新事件）；
+`since` = 已消费的最后一条事件的 `seq`（只回 `seq > since` 的新事件）；`limit` 截断时用最后一条已返回事件的 `seq` 续拉；`since` 过旧时 `dropped>0`。
+**非 raid 不返回 `NOT_IN_RAID`**——桥侧缓冲跨 raid 保留，赛后时间线（含撤离事件）仍可读；仅桥不可达 / 协议不符为错误。
+事件语义：击杀 = `death` 且 `killer != null`；`damage` 载荷含 `part` / `amount` / `sourceType`；`wait_for` 可对其求值（如 `seq > N`）。
 
 ## 配置（环境变量）
 
@@ -30,6 +36,8 @@ Phase 2 经本地 BepInEx Client Bridge 提供局内（in-raid）状态。
 | `TARKOV_RUNTIME_MCP_BRIDGE_HOST` | `127.0.0.1` | Client Bridge 地址 |
 | `TARKOV_RUNTIME_MCP_BRIDGE_PORT` | `49777` | Client Bridge 端口 |
 | `TARKOV_RUNTIME_MCP_BRIDGE_RECORD` | 无 | 录制输出 JSONL 路径；**缺省不录制** |
+
+本波（`raid_events` + `raid_player` 扩展）未新增环境变量。
 
 ## 录制/回放（T07）
 
@@ -48,8 +56,8 @@ Phase 2 经本地 BepInEx Client Bridge 提供局内（in-raid）状态。
 {"ts":"2026-09-14T12:00:00.000Z","method":"getRaidStatus","args":null,"ok":true,"result":{"inRaid":true,"map":"Woods","status":"running","remainingSeconds":1234,"raidId":"raid-abc","sampleAgeMs":100}}
 ```
 
-- `method` ∈ `getInfo | getRaidStatus | getRaidPlayer | getRaidBots`；
-- `args`：`getRaidBots` 为 `{"detail":true|false}`，其余为 `null`；
+- `method` ∈ `getInfo | getRaidStatus | getRaidPlayer | getRaidBots | getRaidEvents`；
+- `args`：`getRaidBots` 为 `{"detail":true|false}`，`getRaidEvents` 为 `{"since":<n>|null,"limit":<n>|null}`，其余为 `null`；
 - `ok:false` 时 `result` 为 `{"error":"<信息>"}`。
 
 ### 回放

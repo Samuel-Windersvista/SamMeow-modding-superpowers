@@ -111,6 +111,13 @@ const PLAYER_PAYLOAD = {
       RightLeg: 65,
     },
   },
+  weapon: {
+    tpl: "5447a9cd4bdc2dbd208b4567",
+    name: "Colt M4A1",
+    ammoInMag: 30,
+    ammoInChamber: 1,
+  },
+  equipment: [{ slot: "Headwear", tpl: "5aa7e276e5b5b000171d0647", name: "Altyn helmet" }],
   sampleAgeMs: 42,
 };
 
@@ -123,12 +130,59 @@ const BOTS_SUMMARY_PAYLOAD = {
   sampleAgeMs: 42,
 };
 
+const EVENTS_PAYLOAD = {
+  inRaid: true,
+  seq: 3,
+  dropped: 1,
+  events: [
+    {
+      seq: 1,
+      ts: "2026-09-15T10:00:00.000Z",
+      type: "damage",
+      raidId: "raid-abc",
+      payload: {
+        victimProfileId: "pmc-local",
+        victimIsLocal: true,
+        part: "LeftLeg",
+        amount: 12.5,
+        sourceType: "Bullet",
+        unknownExtra: "ignored",
+      },
+    },
+    {
+      seq: 2,
+      ts: "2026-09-15T10:00:05.000Z",
+      type: "death",
+      raidId: "raid-abc",
+      payload: {
+        victimProfileId: "bot-1",
+        victimIsLocal: false,
+        damageType: "Bullet",
+        killer: {
+          profileId: "pmc-local",
+          name: "LocalPMC",
+          side: "Bear",
+          role: "pmc",
+          isLocal: true,
+        },
+      },
+    },
+    {
+      seq: 3,
+      ts: "2026-09-15T10:05:00.000Z",
+      type: "extraction",
+      raidId: "raid-abc",
+      payload: { exitName: "Crossroads", status: "Success", extra: 1 },
+    },
+  ],
+};
+
 afterEach(async () => {
   await Promise.all(servers.splice(0).map((stub) => stub.close()));
 });
 
 describe("HttpBridgeConnection（node:http stub server）", () => {
-  it("/bridge/info 200：解析全字段并缓存（第二次不再请求）", async () => {
+  it("/bridge/info 200：每次调用都实际请求（不缓存）", async () => {
     const { stub, hits } = await routeStub({ "/bridge/info": INFO_PAYLOAD });
     const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
 
@@ -137,7 +191,7 @@ describe("HttpBridgeConnection（node:http stub server）", () => {
 
     expect(first).toEqual(INFO_PAYLOAD);
     expect(second).toEqual(INFO_PAYLOAD);
-    expect(hits["/bridge/info"]).toBe(1);
+    expect(hits["/bridge/info"]).toBe(2);
   });
 
   it("/bridge/info 404：抛 BridgeUnreachableError 且提示可能为旧版桥", async () => {
@@ -253,6 +307,156 @@ describe("HttpBridgeConnection（node:http stub server）", () => {
     const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
 
     await expect(bridge.getRaidBots(true)).rejects.toBeInstanceOf(BridgeUnreachableError);
+  });
+
+  it("/raid/player 缺 weapon/equipment：归一为 null 与空数组（缺省语义明确）", async () => {
+    const stub = await startStubServer(
+      jsonServer({ ...PLAYER_PAYLOAD, weapon: undefined, equipment: undefined }),
+    );
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    const result = await bridge.getRaidPlayer();
+    expect(result).toMatchObject({ inRaid: true, weapon: null, equipment: [] });
+  });
+
+  it("/raid/events 200：解析 seq/dropped/events 并忽略未知字段", async () => {
+    const { stub, hits } = await routeStub({ "/raid/events": EVENTS_PAYLOAD });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    expect(await bridge.getRaidEvents()).toEqual({
+      inRaid: true,
+      seq: 3,
+      dropped: 1,
+      events: [
+        {
+          seq: 1,
+          ts: "2026-09-15T10:00:00.000Z",
+          type: "damage",
+          raidId: "raid-abc",
+          payload: {
+            victimProfileId: "pmc-local",
+            victimIsLocal: true,
+            part: "LeftLeg",
+            amount: 12.5,
+            sourceType: "Bullet",
+          },
+        },
+        {
+          seq: 2,
+          ts: "2026-09-15T10:00:05.000Z",
+          type: "death",
+          raidId: "raid-abc",
+          payload: {
+            victimProfileId: "bot-1",
+            victimIsLocal: false,
+            damageType: "Bullet",
+            killer: {
+              profileId: "pmc-local",
+              name: "LocalPMC",
+              side: "Bear",
+              role: "pmc",
+              isLocal: true,
+            },
+          },
+        },
+        {
+          seq: 3,
+          ts: "2026-09-15T10:05:00.000Z",
+          type: "extraction",
+          raidId: "raid-abc",
+          payload: { exitName: "Crossroads", status: "Success" },
+        },
+      ],
+    });
+    expect(hits["/raid/events"]).toBe(1);
+  });
+
+  it("/raid/events 带 since/limit：查询参数按固定顺序透传", async () => {
+    const seen: string[] = [];
+    const stub = await startStubServer((req, res) => {
+      seen.push(req.url ?? "");
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(EVENTS_PAYLOAD));
+    });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await bridge.getRaidEvents(7, 25);
+
+    expect(seen).toEqual(["/raid/events?since=7&limit=25"]);
+  });
+
+  it("/raid/events 200 not-in-raid：仍解析 seq/dropped/events（缓冲保留）", async () => {
+    const stub = await startStubServer(
+      jsonServer({
+        inRaid: false,
+        seq: 5,
+        dropped: 1,
+        events: [
+          {
+            seq: 5,
+            ts: "2026-09-15T10:05:00.000Z",
+            type: "extraction",
+            raidId: "raid-abc",
+            payload: { exitName: "Crossroads", status: "Success" },
+          },
+        ],
+      }),
+    );
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    expect(await bridge.getRaidEvents()).toEqual({
+      inRaid: false,
+      seq: 5,
+      dropped: 1,
+      events: [
+        {
+          seq: 5,
+          ts: "2026-09-15T10:05:00.000Z",
+          type: "extraction",
+          raidId: "raid-abc",
+          payload: { exitName: "Crossroads", status: "Success" },
+        },
+      ],
+    });
+  });
+
+  it("/raid/events extraction 字段缺失/非字符串：宽容归一为 ''（不抛错）", async () => {
+    const stub = await startStubServer(
+      jsonServer({
+        inRaid: true,
+        seq: 2,
+        dropped: 0,
+        events: [
+          { seq: 1, ts: "t1", type: "extraction", raidId: "r", payload: {} },
+          { seq: 2, ts: "t2", type: "extraction", raidId: "r", payload: { exitName: 42, status: null } },
+        ],
+      }),
+    );
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    expect(await bridge.getRaidEvents()).toEqual({
+      inRaid: true,
+      seq: 2,
+      dropped: 0,
+      events: [
+        { seq: 1, ts: "t1", type: "extraction", raidId: "r", payload: { exitName: "", status: "" } },
+        { seq: 2, ts: "t2", type: "extraction", raidId: "r", payload: { exitName: "", status: "" } },
+      ],
+    });
+  });
+
+  it("/raid/events 事件类型非法：抛 BridgeUnreachableError", async () => {
+    const stub = await startStubServer(
+      jsonServer({
+        inRaid: true,
+        seq: 1,
+        dropped: 0,
+        events: [{ seq: 1, ts: "t", type: "teleport", raidId: "r", payload: {} }],
+      }),
+    );
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getRaidEvents()).rejects.toBeInstanceOf(BridgeUnreachableError);
   });
 
   it("非 JSON 响应：抛 BridgeUnreachableError", async () => {

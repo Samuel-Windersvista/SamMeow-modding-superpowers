@@ -8,6 +8,7 @@ import {
   defaultBridgeInfo,
   fakeBridge,
   inRaidBotsSummary,
+  inRaidEvents,
   inRaidPlayer,
   inRaidStatus,
   unreachable,
@@ -18,6 +19,7 @@ function dispatcher(
     status: inRaidStatus(),
     player: inRaidPlayer(),
     bots: inRaidBotsSummary(),
+    events: inRaidEvents(),
   }),
 ) {
   return createDispatcher(
@@ -66,6 +68,23 @@ describe("raid.* 命名空间（Phase 2 全部真实化）", () => {
     expect(result.ok).toBe(true);
     if (!result.ok) return;
     expect(result.data).toMatchObject({ total: 10, alive: 8 });
+  });
+
+  it("raid_events 经 bridge 返回事件时间线", async () => {
+    const result = await dispatcher()("raid_events", {});
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.data).toMatchObject({ seq: 3, dropped: 0 });
+    expect((result.data as { events: unknown[] }).events).toHaveLength(3);
+  });
+
+  it("raid_events since 透传到 bridge", async () => {
+    const bridge = fakeBridge({ events: inRaidEvents() });
+    const result = await dispatcher(bridge)("raid_events", { since: 2, limit: 5 });
+
+    expect(result.ok).toBe(true);
+    expect(bridge.lastEventsArgs).toEqual({ since: 2, limit: 5 });
   });
 
   it("raid_bots detail=true 经 dispatcher 透传明细", async () => {

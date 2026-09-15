@@ -7,8 +7,9 @@
 //   tarkov_snapshot       语义化状态快照（首版 profile section）
 //   tarkov_wait_for       谓词轮询原语（任意工具结果，超时返回 WAIT_TIMEOUT）
 //   raid_status           raid 元数据 + 桥自报（经 BridgeConnection）
-//   raid_player           玩家局内全字段（经 BridgeConnection）
+//   raid_player           玩家局内全字段 + 武器/装备（经 BridgeConnection）
 //   raid_bots             bot 摘要 / 明细（经 BridgeConnection）
+//   raid_events           事件时间线增量拉取（经 BridgeConnection）
 //
 // 传输层（zlib / PHPSESSID / 5.0 shuffle）封装在 SptConnection 之后（S1 接缝）。
 // 局内状态经 BridgeConnection 抽象拉取（Phase 2 唯一新接缝）。
@@ -39,6 +40,11 @@ import {
   RaidBotsInput,
   createRaidBotsTool,
 } from "./tools/raid-bots.js";
+import {
+  RAID_EVENTS_TOOL_NAME,
+  RaidEventsInput,
+  createRaidEventsTool,
+} from "./tools/raid-events.js";
 import {
   RAID_PLAYER_TOOL_NAME,
   RaidPlayerInput,
@@ -98,7 +104,7 @@ export const TOOL_DEFINITIONS = [
   {
     name: RAID_PLAYER_TOOL_NAME,
     description:
-      "读取当前 raid 中玩家的实时状态（经本地 BepInEx Client Bridge 拉取）：position（x/y/z）、rotation（x/y）、pose（站/蹲/趴）、health（alive/total/各肢体）、数据新鲜度 sampleAgeMs。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
+      "读取当前 raid 中玩家的实时状态（经本地 BepInEx Client Bridge 拉取）：position（x/y/z）、rotation（x/y）、pose（站/蹲/趴）、health（alive/total/各肢体）、weapon（tpl/name/ammoInMag/ammoInChamber，无武器为 null）、equipment（[{slot,tpl,name}]，无装备为空数组）、数据新鲜度 sampleAgeMs。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
     inputSchema: schemaFor(RaidPlayerInput),
   },
   {
@@ -106,6 +112,12 @@ export const TOOL_DEFINITIONS = [
     description:
       "读取当前 raid 的 bot 状态（经本地 BepInEx Client Bridge 拉取）。默认返回摘要（total/alive/PMC-Scav-Boss-其他分类计数/生成器计数/sampleAgeMs）；detail=true 追加每个 bot 的明细（x/y/z/role/side/alive）与 truncated 截断标记。不在 raid 返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
     inputSchema: schemaFor(RaidBotsInput),
+  },
+  {
+    name: RAID_EVENTS_TOOL_NAME,
+    description:
+      "增量拉取 raid 事件时间线（经本地 BepInEx Client Bridge 拉取）：damage（部位/伤害量/来源）、death（致死类型 + 击杀者归属，不可得为 null）、extraction（撤离点/状态）。入参 since（只返回 seq > since，缺省从最旧）与 limit（截断条数）；输出 { inRaid, seq, dropped, events }，dropped>0 表示 since 过旧已丢失事件。非 raid 时仍返回缓冲（inRaid:false，赛后时间线含撤离事件可读），故不返回 NOT_IN_RAID；桥不可达返回 BRIDGE_UNREACHABLE；协议版本不一致返回 BRIDGE_VERSION_MISMATCH。",
+    inputSchema: schemaFor(RaidEventsInput),
   },
 ];
 
@@ -128,6 +140,7 @@ export function createDispatcher(
     [RAID_STATUS_TOOL_NAME]: createRaidStatusTool(bridge),
     [RAID_PLAYER_TOOL_NAME]: createRaidPlayerTool(bridge),
     [RAID_BOTS_TOOL_NAME]: createRaidBotsTool(bridge),
+    [RAID_EVENTS_TOOL_NAME]: createRaidEventsTool(bridge),
   };
 
   const invoke = async function invoke(

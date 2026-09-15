@@ -1,8 +1,8 @@
 // =============================================================================
 // raid.* 命名空间元数据
 //
-// Phase 2 起三个 raid 工具（raid_status / raid_player / raid_bots）全部真实化，
-// 占位集合清空。本模块仅保留：
+// 已注册的 raid 工具（raid_status / raid_player / raid_bots / raid_events）全部
+// 真实化，占位集合清空。本模块仅保留：
 //   - RAID_TOOL_NAMES：已注册的 raid.* 工具名；
 //   - isRaidToolName：raid.* 前缀判定（含未注册调用的兜底）；
 //   - raidPlaceholderEnvelope：未注册 raid.* 调用的 CLIENT_BRIDGE_NOT_INSTALLED
@@ -11,8 +11,8 @@
 
 import { RUNTIME_ERROR_CODES, errEnv, type ErrEnvelope } from "../types.js";
 
-/** 已注册的 raid.* 工具名（Phase 2 全部真实化，无占位） */
-export const RAID_TOOL_NAMES = ["raid_status", "raid_player", "raid_bots"] as const;
+/** 已注册的 raid.* 工具名（全部真实化，无占位） */
+export const RAID_TOOL_NAMES = ["raid_status", "raid_player", "raid_bots", "raid_events"] as const;
 
 /** 判断是否为 raid.* 命名空间的工具名（含未注册的前缀调用兜底） */
 export function isRaidToolName(name: string): boolean {

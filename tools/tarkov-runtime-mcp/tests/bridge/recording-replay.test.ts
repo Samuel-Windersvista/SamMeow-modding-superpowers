@@ -14,7 +14,7 @@ import { RecordingBridgeConnection } from "../../src/bridge/recording.js";
 import { loadReplayConnection, parseRecordingLine } from "../../src/bridge/replay.js";
 import { loadConfig } from "../../src/config.js";
 import { createDispatcher, createRuntime } from "../../src/index.js";
-import { defaultBridgeInfo, fakeBridge, inRaidPlayer, inRaidStatus, unreachable } from "../helpers/fake-bridge.js";
+import { defaultBridgeInfo, fakeBridge, inRaidEvents, inRaidPlayer, inRaidStatus, unreachable } from "../helpers/fake-bridge.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 
 const RECORDED_TS = "2026-09-14T12:00:00.000Z";
@@ -105,6 +105,31 @@ describe("录制（RecordingBridgeConnection）", () => {
     expect(info.protocolVersion).toBe(EXPECTED_BRIDGE_PROTOCOL_VERSION);
     expect(readEntries(path)).toHaveLength(1);
   });
+
+  it("getRaidEvents 录制入参 { since, limit }（缺省为 null）", async () => {
+    const path = tempPath();
+    const recorder = new RecordingBridgeConnection(
+      fakeBridge({ events: inRaidEvents() }),
+      path,
+      { now: () => new Date(RECORDED_TS) },
+    );
+
+    await recorder.getRaidEvents(4, 10);
+    await recorder.getRaidEvents();
+
+    const entries = readEntries(path);
+    expect(entries).toHaveLength(2);
+    expect(entries[0]).toMatchObject({
+      method: "getRaidEvents",
+      args: { since: 4, limit: 10 },
+      ok: true,
+    });
+    expect(entries[1]).toMatchObject({
+      method: "getRaidEvents",
+      args: { since: null, limit: null },
+      ok: true,
+    });
+  });
 });
 
 describe("回放（loadReplayConnection）", () => {
@@ -164,6 +189,46 @@ describe("回放（loadReplayConnection）", () => {
     // 确定性：重复调用（getInfo 复用最后一条记录）逐字节稳定
     const statusAgain = await invoke("raid_status", {});
     expect(JSON.stringify(statusAgain)).toBe(JSON.stringify(status));
+  });
+
+  it("以录制驱动 raid_events：按 method 顺序消费且确定性", async () => {
+    const path = tempPath();
+    writeRecording(path, [
+      {
+        ts: RECORDED_TS,
+        method: "getInfo",
+        args: null,
+        ok: true,
+        result: defaultBridgeInfo(),
+      },
+      {
+        ts: RECORDED_TS,
+        method: "getRaidEvents",
+        args: { since: 1, limit: 10 },
+        ok: true,
+        result: inRaidEvents({ seq: 3 }),
+      },
+      {
+        ts: RECORDED_TS,
+        method: "getRaidEvents",
+        args: { since: 3, limit: 10 },
+        ok: true,
+        result: { inRaid: true, seq: 4, dropped: 0, events: [] },
+      },
+    ]);
+
+    const invoke = serverDispatcher(loadReplayConnection(path));
+
+    const first = await invoke("raid_events", { since: 1, limit: 10 });
+    const second = await invoke("raid_events", { since: 3, limit: 10 });
+
+    expect(first.ok).toBe(true);
+    expect(second.ok).toBe(true);
+    if (!first.ok || !second.ok) return;
+    expect((first.data as { seq: number }).seq).toBe(3);
+    expect(first.data).toMatchObject({ inRaid: true, dropped: 0 });
+    expect((first.data as { events: unknown[] }).events).toHaveLength(3);
+    expect(second.data).toEqual({ inRaid: true, seq: 4, dropped: 0, events: [] });
   });
 
   it("录制中缺某 method 条目：抛 BridgeUnreachableError", async () => {

@@ -2,12 +2,12 @@
 // BridgeConnection 的 HTTP 实现
 //
 // 拉取本地 BepInEx Client Bridge（默认 127.0.0.1:49777）的
-// `/bridge/info`、`/raid/status`、`/raid/player`、`/raid/bots`。
+// `/bridge/info`、`/raid/status`、`/raid/player`、`/raid/bots`、`/raid/events`。
 // 使用 Node 22 全局 fetch + AbortSignal.timeout；连接拒绝 / 超时 / 非 2xx /
 // JSON 解析失败 / schema 非法一律抛 BridgeUnreachableError。
 //
-// `/bridge/info` 成功后缓存（桥生命周期内版本/能力不变）；404 视为不可达并在
-// 消息提示可能为旧版桥（不支持 /bridge/info）。
+// `/bridge/info` 不缓存：每次调用都实际请求，桥升级后协议校验即时生效
+// （本地 HTTP 成本可忽略）；404 视为不可达并在消息提示可能为旧版桥。
 // =============================================================================
 
 import {
@@ -17,16 +17,21 @@ import {
   type BridgeInfo,
   type BridgeNetwork,
   type BridgeRaidBotsResult,
+  type BridgeRaidEventsResult,
   type BridgeRaidPlayerResult,
   type BridgeRaidStatusResult,
   type BridgeSampling,
   type RaidBotDetail,
   type RaidBotsByCategory,
   type RaidBotsSpawner,
+  type RaidEvent,
+  type RaidEventKiller,
+  type RaidPlayerEquipmentSlot,
   type RaidPlayerHealth,
   type RaidPlayerHealthParts,
   type RaidPlayerPosition,
   type RaidPlayerRotation,
+  type RaidPlayerWeapon,
 } from "./connection.js";
 
 /** 单次 bridge 请求默认超时（ms） */
@@ -57,6 +62,14 @@ function requireString(record: Record<string, unknown>, key: string, label: stri
     throw new BridgeUnreachableError(`bridge ${label} 响应字段 ${key} 非法`);
   }
   return value;
+}
+
+/**
+ * 宽容归一字符串字段：缺失 / 非字符串一律归一为 ""（不抛错）。
+ * 用于 spike 阶段字段可能缺失的载荷（如 extraction），不因桥侧字段差异判不可达。
+ */
+function normalizeString(value: unknown): string {
+  return typeof value === "string" ? value : "";
 }
 
 function requireFiniteNumber(record: Record<string, unknown>, key: string, label: string): number {
@@ -193,8 +206,48 @@ function parseHealth(value: unknown, label: string): RaidPlayerHealth {
 }
 
 /**
+ * 解析玩家武器；缺省（字段不存在）或显式 null 均归一为 null（无武器语义）。
+ * 字段存在但非法抛 BridgeUnreachableError。
+ */
+function parseWeapon(value: unknown, label: string): RaidPlayerWeapon | null {
+  if (value === undefined || value === null) {
+    return null;
+  }
+  if (!isRecord(value)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应 weapon 非法`);
+  }
+  return {
+    tpl: requireString(value, "tpl", `${label} weapon`),
+    name: requireString(value, "name", `${label} weapon`),
+    ammoInMag: requireFiniteNumber(value, "ammoInMag", `${label} weapon`),
+    ammoInChamber: requireFiniteNumber(value, "ammoInChamber", `${label} weapon`),
+  };
+}
+
+/** 解析装备槽摘要；缺省归一为空数组（无装备语义） */
+function parseEquipment(value: unknown, label: string): RaidPlayerEquipmentSlot[] {
+  if (value === undefined || value === null) {
+    return [];
+  }
+  if (!Array.isArray(value)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应 equipment 非法`);
+  }
+  return value.map((entry) => {
+    if (!isRecord(entry)) {
+      throw new BridgeUnreachableError(`bridge ${label} 响应 equipment[] 条目非法`);
+    }
+    return {
+      slot: requireString(entry, "slot", `${label} equipment[]`),
+      tpl: requireString(entry, "tpl", `${label} equipment[]`),
+      name: requireString(entry, "name", `${label} equipment[]`),
+    };
+  });
+}
+
+/**
  * 校验并归一 `/raid/player` 响应体；非法抛 BridgeUnreachableError。
- * 归一保持确定性字段序（position/rotation/pose/health/sampleAgeMs），便于测试 diff。
+ * 归一保持确定性字段序（position/rotation/pose/health/weapon/equipment/sampleAgeMs），
+ * 便于测试 diff。
  */
 export function parseRaidPlayerPayload(body: unknown): BridgeRaidPlayerResult {
   const label = "/raid/player";
@@ -208,6 +261,8 @@ export function parseRaidPlayerPayload(body: unknown): BridgeRaidPlayerResult {
     rotation: parseRotation(record.rotation, label),
     pose: requireString(record, "pose", label),
     health: parseHealth(record.health, label),
+    weapon: parseWeapon(record.weapon, label),
+    equipment: parseEquipment(record.equipment, label),
     sampleAgeMs: requireFiniteNumber(record, "sampleAgeMs", label),
   };
 }
@@ -284,6 +339,110 @@ export function parseRaidBotsPayload(body: unknown, expectDetail: boolean): Brid
 }
 
 // -----------------------------------------------------------------------------
+// /raid/events
+// -----------------------------------------------------------------------------
+
+/** 解析 death 事件的击杀者；缺省或显式 null 归一为 null（归属不可得，不猜） */
+function parseKiller(value: unknown, label: string): RaidEventKiller | null {
+  if (value === undefined || value === null) {
+    return null;
+  }
+  if (!isRecord(value)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应 killer 非法`);
+  }
+  return {
+    profileId: requireString(value, "profileId", `${label} killer`),
+    name: requireString(value, "name", `${label} killer`),
+    side: requireString(value, "side", `${label} killer`),
+    role: requireString(value, "role", `${label} killer`),
+    isLocal: requireBoolean(value, "isLocal", `${label} killer`),
+  };
+}
+
+/**
+ * 解析单个事件（判别联合，字段序稳定：seq/ts/type/raidId/payload）。
+ * 只读取已知字段，未知字段忽略（桥侧新增字段不炸）。
+ */
+function parseRaidEvent(value: unknown, label: string): RaidEvent {
+  const eventLabel = `${label} events[]`;
+  if (!isRecord(value)) {
+    throw new BridgeUnreachableError(`bridge ${eventLabel} 条目非法`);
+  }
+  const seq = requireFiniteNumber(value, "seq", eventLabel);
+  const ts = requireString(value, "ts", eventLabel);
+  const type = requireString(value, "type", eventLabel);
+  const raidId = requireString(value, "raidId", eventLabel);
+  const payload = value.payload;
+  if (!isRecord(payload)) {
+    throw new BridgeUnreachableError(`bridge ${eventLabel} payload 非法`);
+  }
+  switch (type) {
+    case "damage":
+      return {
+        seq,
+        ts,
+        type,
+        raidId,
+        payload: {
+          victimProfileId: requireString(payload, "victimProfileId", `${eventLabel} payload`),
+          victimIsLocal: requireBoolean(payload, "victimIsLocal", `${eventLabel} payload`),
+          part: requireString(payload, "part", `${eventLabel} payload`),
+          amount: requireFiniteNumber(payload, "amount", `${eventLabel} payload`),
+          sourceType: requireString(payload, "sourceType", `${eventLabel} payload`),
+        },
+      };
+    case "death":
+      return {
+        seq,
+        ts,
+        type,
+        raidId,
+        payload: {
+          victimProfileId: requireString(payload, "victimProfileId", `${eventLabel} payload`),
+          victimIsLocal: requireBoolean(payload, "victimIsLocal", `${eventLabel} payload`),
+          damageType: requireString(payload, "damageType", `${eventLabel} payload`),
+          killer: parseKiller(payload.killer, `${eventLabel} payload`),
+        },
+      };
+    case "extraction":
+      return {
+        seq,
+        ts,
+        type,
+        raidId,
+        payload: {
+          // 宽容归一：spike 字段差异（缺失/非字符串）不视为响应非法。
+          exitName: normalizeString(payload.exitName),
+          status: normalizeString(payload.status),
+        },
+      };
+    default:
+      throw new BridgeUnreachableError(`bridge ${eventLabel} 事件类型非法：${type}`);
+  }
+}
+
+/**
+ * 校验并归一 `/raid/events` 响应体；非法抛 BridgeUnreachableError。
+ * 桥侧路由始终返回 `{inRaid, seq, dropped, events}`（非 raid 时缓冲仍有效），
+ * 故 `inRaid:false` 也照常解析，不丢弃字段。归一保持确定性字段序
+ * （inRaid/seq/dropped/events）。
+ */
+export function parseRaidEventsPayload(body: unknown): BridgeRaidEventsResult {
+  const label = "/raid/events";
+  const { inRaid, record } = parseInRaid(body, label);
+  const eventsRaw = record.events;
+  if (!Array.isArray(eventsRaw)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应缺少 events 数组`);
+  }
+  return {
+    inRaid,
+    seq: requireFiniteNumber(record, "seq", label),
+    dropped: requireFiniteNumber(record, "dropped", label),
+    events: eventsRaw.map((entry) => parseRaidEvent(entry, label)),
+  };
+}
+
+// -----------------------------------------------------------------------------
 // HTTP 连接
 // -----------------------------------------------------------------------------
 
@@ -294,7 +453,6 @@ export class HttpBridgeConnection implements BridgeConnection {
 
   private readonly timeoutMs: number;
   private readonly fetchImpl: typeof fetch;
-  private cachedInfo: BridgeInfo | null = null;
 
   constructor(host: string, port: number, options: HttpBridgeConnectionOptions = {}) {
     this.host = host;
@@ -336,13 +494,9 @@ export class HttpBridgeConnection implements BridgeConnection {
   }
 
   async getInfo(): Promise<BridgeInfo> {
-    if (this.cachedInfo) {
-      return this.cachedInfo;
-    }
+    // 不缓存：每次工具调用都实际拉取，桥升级后协议校验即时生效。
     const body = await this.requestJson("/bridge/info", true);
-    const info = parseBridgeInfoPayload(body);
-    this.cachedInfo = info;
-    return info;
+    return parseBridgeInfoPayload(body);
   }
 
   async getRaidStatus(): Promise<BridgeRaidStatusResult> {
@@ -356,5 +510,18 @@ export class HttpBridgeConnection implements BridgeConnection {
   async getRaidBots(detail: boolean): Promise<BridgeRaidBotsResult> {
     const path = detail ? "/raid/bots?detail=1" : "/raid/bots";
     return parseRaidBotsPayload(await this.requestJson(path), detail);
+  }
+
+  async getRaidEvents(since?: number, limit?: number): Promise<BridgeRaidEventsResult> {
+    // 查询参数顺序固定（since -> limit），便于录制/回放与断言。
+    const params: string[] = [];
+    if (since !== undefined) {
+      params.push(`since=${since}`);
+    }
+    if (limit !== undefined) {
+      params.push(`limit=${limit}`);
+    }
+    const suffix = params.length > 0 ? `?${params.join("&")}` : "";
+    return parseRaidEventsPayload(await this.requestJson(`/raid/events${suffix}`));
   }
 }
