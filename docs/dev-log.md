@@ -106,3 +106,4 @@
   - [偏差] `equipment`/`weapon` 的 `name` 字段 live 实测返回本地化键形态（`<tpl> Name`）而非本地化值；`tpl` 为权威标识（与 SPT 本地化数据交叉一致）；本地化名解析列 backlog
   - [OK] 修复后复验（第二局 Sandbox，2026-09-15）：damage/death 事件 1900+ 条（seq 单调、raidId 一致）；本地玩家击杀 bot → `killer.isLocal=true`（seq 348 / 942，2 次）；本地受伤 `victimIsLocal=true`（seq 1796/1797）；增量语义实证（`since=676` → 仅回 677..686；缓冲淘汰后 `since=0` → `dropped=252`、从最旧 253 返回）；撤离 `{exitName:"Sniper_exit", status:"Survived"}`（seq 1936，赛后读取）——工单 05 全部验收项通过
 - **其他 live 读数**：装备 12 槽读取正常；bots 22（pmc 6 / scav 16 / boss 0），无分类回归；`getInfo` 每调用拉取生效
+- **收尾（2026-09-15）**：双轴评审（Standards 9 项 / Spec 10 项）+ 修复两 lane 完成；三笔提交 `f2d069b1`（桥）/ `3a6ab667`（MCP）/ `c4380039`（文档+标准台账）；评审修复版 DLL（52,736 bytes）已部署覆盖层（游戏退出时）；工单 01–06 全部核销。
