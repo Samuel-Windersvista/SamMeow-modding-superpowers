@@ -14,7 +14,7 @@ import { RecordingBridgeConnection } from "../../src/bridge/recording.js";
 import { loadReplayConnection, parseRecordingLine } from "../../src/bridge/replay.js";
 import { loadConfig } from "../../src/config.js";
 import { createDispatcher, createRuntime } from "../../src/index.js";
-import { defaultBridgeInfo, fakeBridge, inRaidEvents, inRaidPlayer, inRaidStatus, unreachable } from "../helpers/fake-bridge.js";
+import { defaultBridgeInfo, fakeBridge, inRaidEvents, inRaidPlayer, inRaidStatus, logsRecent, logsSummary, unreachable } from "../helpers/fake-bridge.js";
 import { FakeConnection, fakeClient, versionResponse } from "../helpers/fake-connection.js";
 
 const RECORDED_TS = "2026-09-14T12:00:00.000Z";
@@ -229,6 +229,64 @@ describe("回放（loadReplayConnection）", () => {
     expect(first.data).toMatchObject({ inRaid: true, dropped: 0 });
     expect((first.data as { events: unknown[] }).events).toHaveLength(3);
     expect(second.data).toEqual({ inRaid: true, seq: 4, dropped: 0, events: [] });
+  });
+
+  it("getLogsRecent / getLogsSummary 录制入参（缺省为 null）", async () => {
+    const path = tempPath();
+    const recorder = new RecordingBridgeConnection(
+      fakeBridge({ logsRecent: logsRecent(), logsSummary: logsSummary() }),
+      path,
+      { now: () => new Date(RECORDED_TS) },
+    );
+
+    await recorder.getLogsRecent(5, "warning", 10);
+    await recorder.getLogsSummary("2026-09-15T10:00:02.000Z");
+
+    const entries = readEntries(path);
+    expect(entries).toHaveLength(2);
+    expect(entries[0]).toMatchObject({
+      method: "getLogsRecent",
+      args: { since: 5, level: "warning", limit: 10 },
+      ok: true,
+    });
+    expect(entries[1]).toMatchObject({
+      method: "getLogsSummary",
+      args: { since: "2026-09-15T10:00:02.000Z" },
+      ok: true,
+    });
+  });
+
+  it("以录制驱动 logs_recent / logs_summary：输出与录制一致且确定性", async () => {
+    const path = tempPath();
+    writeRecording(path, [
+      { ts: RECORDED_TS, method: "getInfo", args: null, ok: true, result: defaultBridgeInfo() },
+      {
+        ts: RECORDED_TS,
+        method: "getLogsRecent",
+        args: { since: null, level: null, limit: null },
+        ok: true,
+        result: logsRecent({ seq: 4, dropped: 1 }),
+      },
+      {
+        ts: RECORDED_TS,
+        method: "getLogsSummary",
+        args: { since: null },
+        ok: true,
+        result: logsSummary({ overflowDropped: 2 }),
+      },
+    ]);
+
+    const invoke = serverDispatcher(loadReplayConnection(path));
+
+    const recent = await invoke("logs_recent", {});
+    const summary = await invoke("logs_summary", {});
+
+    expect(recent.ok).toBe(true);
+    expect(summary.ok).toBe(true);
+    if (!recent.ok || !summary.ok) return;
+    expect(recent.data).toMatchObject({ seq: 4, dropped: 1 });
+    expect((recent.data as { entries: unknown[] }).entries).toHaveLength(3);
+    expect(summary.data).toMatchObject({ overflowDropped: 2 });
   });
 
   it("录制中缺某 method 条目：抛 BridgeUnreachableError", async () => {

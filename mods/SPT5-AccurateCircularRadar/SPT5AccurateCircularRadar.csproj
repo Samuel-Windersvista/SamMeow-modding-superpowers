@@ -1,0 +1,149 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      Accurate Circular Radar (Tyrian-Radar) — SPT 5.0 / EFT 1.1.5 客户端插件。
+      上游为 SPT 4.1.3（Mono / BepInEx 5 / net48），本工程为 IL2CPP 移植（BepInEx 6 / net6.0）。
+      AssemblyName 保持上游 DLL 名 "Tyrian-Radar"，RootNamespace 保持 "Radar"，
+      以便内嵌资源名继续是 Radar.bundle.*（见 AssetFileManager.ResourcePrefix）。
+    -->
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+
+    <RootNamespace>Radar</RootNamespace>
+    <AssemblyName>Tyrian-Radar</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- 移植版本（STD-META-005）：上游 1.3.4 + SPT5 移植修订号；运行时身份以 PluginMetadata.cs 为准。
+         csproj 的自动版本属性已关闭，避免与 PluginMetadata 的 assembly 特性重复。 -->
+    <Version>1.3.4-spt5.1</Version>
+    <Authors>SamMeow (port); original mod by Leonana69</Authors>
+    <Description>Accurate Circular Radar (Tyrian-Radar) SPT 5.0 port — SamMeow's port of Leonana69's SPT 4.1.3 mod.</Description>
+
+    <!-- 版本属性由 PluginMetadata.cs 提供（保持上游单一版本来源）。 -->
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+
+    <!--
+      安装根。标准名 SPTInstallPath 与 5.0 惯例别名 SPT5Path 互为别名，二者都可命令行覆盖：
+        dotnet build -p:SPTInstallPath="..."   或   dotnet build -p:SPT5Path="..."
+    -->
+    <SPT5Path Condition="'$(SPT5Path)' == '' AND '$(SPTInstallPath)' != ''">$(SPTInstallPath)</SPT5Path>
+    <SPT5Path Condition="'$(SPT5Path)' == ''">E:\Game\EFT_Offline\SPT_5xx</SPT5Path>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SPT5Path)</SPTInstallPath>
+    <BepInExCore>$(SPT5Path)\BepInEx\core</BepInExCore>
+    <Interop>$(SPT5Path)\BepInEx\interop</Interop>
+    <SptUshonka>$(SPT5Path)\BepInEx\plugins\sptushonka</SptUshonka>
+
+    <!--
+      CS0618：BepInEx.Configuration.KeyboardShortcut 被标为过时（建议改用
+      BepInEx.Unity.IL2CPP.Configuration.KeyboardShortcut）。本移植刻意保留前者：
+      它与随包分发的 ConfigurationManager（F12 菜单的按键绑定 UI）是同一份类型，
+      配置键位格式与 F12 交互行为一致；后者不被 ConfigurationManager 识别。
+    -->
+    <NoWarn>$(NoWarn);CS0618</NoWarn>
+  </PropertyGroup>
+
+  <!-- BepInEx 6 / IL2CPP 运行时（直接从本地 SPT 安装引用，Private=false，不分发游戏程序集）。 -->
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(BepInExCore)\BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(BepInExCore)\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(BepInExCore)\Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Il2Cpp interop 代理程序集。 -->
+  <ItemGroup>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(Interop)\Il2Cppmscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>$(Interop)\Il2CppSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(Interop)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>$(Interop)\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PlayerEnums">
+      <HintPath>$(Interop)\PlayerEnums.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(Interop)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(Interop)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(Interop)\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(Interop)\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(Interop)\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(Interop)\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(Interop)\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- SPTushonka：SPT 5.0 的 SPT.Reflection / SPT.Common 继任者。 -->
+  <ItemGroup>
+    <Reference Include="SPTushonka.Reflection">
+      <HintPath>$(SptUshonka)\SPTushonka.Reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTushonka.Common">
+      <HintPath>$(SptUshonka)\SPTushonka.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- BepInEx.Configuration.KeyboardShortcut：BepInEx 6 已从 Core 拆出；
+         其静态构造注册 TomlTypeConverter 的 KeyboardShortcut 转换器（ConfigEntry<KeyboardShortcut> 必需）。 -->
+    <Reference Include="BepInEx.KeyboardShortcut">
+      <HintPath>$(SptUshonka)\ConfigurationManager\BepInEx.KeyboardShortcut.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 内嵌资源：RootNamespace=Radar + bundle\ 路径 → 资源名 Radar.bundle.<file>。 -->
+  <ItemGroup>
+    <None Remove="bundle\radarhud.bundle" />
+    <EmbeddedResource Include="bundle\radarhud.bundle" />
+    <None Remove="bundle\**\*.png" />
+    <EmbeddedResource Include="bundle\**\*.png" />
+  </ItemGroup>
+
+</Project>

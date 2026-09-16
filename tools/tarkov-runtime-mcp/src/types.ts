@@ -21,6 +21,11 @@ export const RUNTIME_ERROR_CODES = {
   BRIDGE_VERSION_MISMATCH: "BRIDGE_VERSION_MISMATCH",
   /** raid 工具：桥在线但当前不在 raid 中 */
   NOT_IN_RAID: "NOT_IN_RAID",
+  /**
+   * logs 工具：桥在线且协议版本通过，但端点返回 404（桥 DLL 为旧版，未实现 /logs/*）。
+   * 与 BRIDGE_VERSION_MISMATCH 刻意区分——端点缺失不是协议门禁失败。
+   */
+  LOGS_ENDPOINT_UNAVAILABLE: "LOGS_ENDPOINT_UNAVAILABLE",
   /** wait_for 谓词超时（Phase 2 工具使用） */
   WAIT_TIMEOUT: "WAIT_TIMEOUT",
   /** session 受限工具未配置 username（无法获取 PHPSESSID 会话） */

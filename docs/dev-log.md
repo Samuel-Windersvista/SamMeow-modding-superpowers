@@ -107,3 +107,37 @@
   - [OK] 修复后复验（第二局 Sandbox，2026-09-15）：damage/death 事件 1900+ 条（seq 单调、raidId 一致）；本地玩家击杀 bot → `killer.isLocal=true`（seq 348 / 942，2 次）；本地受伤 `victimIsLocal=true`（seq 1796/1797）；增量语义实证（`since=676` → 仅回 677..686；缓冲淘汰后 `since=0` → `dropped=252`、从最旧 253 返回）；撤离 `{exitName:"Sniper_exit", status:"Survived"}`（seq 1936，赛后读取）——工单 05 全部验收项通过
 - **其他 live 读数**：装备 12 槽读取正常；bots 22（pmc 6 / scav 16 / boss 0），无分类回归；`getInfo` 每调用拉取生效
 - **收尾（2026-09-15）**：双轴评审（Standards 9 项 / Spec 10 项）+ 修复两 lane 完成；三笔提交 `f2d069b1`（桥）/ `3a6ab667`（MCP）/ `c4380039`（文档+标准台账）；评审修复版 DLL（52,736 bytes）已部署覆盖层（游戏退出时）；工单 01–06 全部核销。
+
+## 2026-09-16（凌晨）— Accurate Circular Radar（Tyrian-Radar）4.1.3 → 5.0 移植：部署 + 六轮实机修复闭环
+
+- **交付**：`mods/SPT5-AccurateCircularRadar/`（v1.3.4-spt5.1，移植作者 SamMeow / 原作者 Leonana69）；MO2 覆盖层 `界面-AccurateCircularRadar-1.3.4-spt5.1`（实例 `Inescapable Tarkov`）。**实机验证通过**：HUD / scav 绿 + boss 红 / 尸体 / 战利品（`tracked=58`，maxPrice 139k）/ PMC 黄橙 / F12 中文 / 无闪退。
+- **流程**：@fixer 全量移植（21 文件 + 25 内嵌资源，0 error）→ 部署 → 实机多轮复验（6 轮修复闭环）；期间用桥 HTTP 端点读局内状态（raid/player/bots/events）+ BepInEx `ErrorLog.log` / Windows 事件日志做进程级崩溃取证。
+- **实机修复（7 项，逐条见 mod README「实战修复记录」）**：① bundle 生命周期静态持有 ② 失败路径 `Destroy(this)`（上游 `Destroy(gameObject)` 会摧毁 GameWorld 对象 → 局内连锁崩坏）③ 补丁体异常护栏（KeyNotFound 闪退）④ `TrackableTransform` AV（virtual 属性 interop → 非虚替代；**AV 不可 try/catch**）⑤ F12 ComboBox 规避（被剥离方法刷屏 6.5k 条）⑥ prices.json 本地价格表直读 + `StringTemplateId` 取法（战利品命中的关键）⑦ SPT PMC `side=Savage` 颜色修正。
+- **知识沉淀**：新技能 `porting-spt-mod-to-spt5`（六阶段 + API 映射表 + IL2CPP 模式 + 致命坑位清单）；KB 归档 `archive/ported-src/RadarStandalone_1100_spt5_port/`（+ 修复上游残缺克隆 `RadarStandalone_1100_source` 并补建 ported-src MANIFEST）。
+- **新 spec**：`.scratch/tarkov-runtime-logwatch/spec.md`（错误/告警即时捕获：桥内 `ILogListener` 环形缓冲 + MCP 侧 5–10s 日志 tail + `ErrorLog.log` fatal 通道；待排期）。
+- **未提交**（按 Overseer 规则）。
+
+## 2026-09-16 — tarkov-runtime logwatch（错误/告警即时捕获）
+
+- **交付（未提交）**：
+  - **桥侧**（`tools/tarkov-runtime-bridge/`，工单 01/02；本会话未改动）：BepInEx `ILogListener` 捕获（回调只写内存、零 I/O、有界）+ 日志环形缓冲（默认 1000 条，`dropped` 计淘汰）+ 归一化去重聚合（500 组上限、`overflowDropped`）+ 端点 `GET /logs/recent`（游标增量）与 `GET /logs/summary`（聚合视图）；配置 `[LogWatch] Enabled`（默认 true）/ `MinLevel`（默认 `Warning`）/ `RingSize`（默认 1000）。
+  - **MCP 侧**（`tools/tarkov-runtime-mcp/`，工单 03/04）：工具 `logs_recent`（`since` 独占 / `level` / `limit` 透传，输出 `{seq, dropped, entries}`）与 `logs_summary`（三通道合并视图 `{groups, overflowDropped, bridge, server, fatal}`）；服务器日志**字节游标** tail（`spt` / `kestrel` / `requests`，半行不推进、文件变短重置、新文件自动纳入、目录缺失静默降级，`source=server:<文件名>`）；fatal 通道监视 `BepInEx/ErrorLog.log`（`source=fatal`，不过滤级别）；惰性刷新（默认 5000ms，钳制 5000–10000）。
+  - 新增 `LogWatchSource` 接缝（MCP 侧唯一新增抽象；桥侧接缝仍为 `BridgeConnection`，未新增 MCP-桥接缝）。
+- **测试**：桥 `dotnet test` **295/295**（评审修复后复跑，0 error）；MCP `npx vitest run` **395/395**（36 文件，较上波 279 增 116）+ `npm run typecheck` + `npm run build` 通过。
+- **评审修复（同日）**：① `logs_summary` 增 `server` / `fatal` 通道可用性元数据（`{available:true}` 或 `{available:false, reason}`，reason ∈ `logs_root_missing` / `no_log_dirs` / `path_unresolved` / `file_missing`），不可用通道的组恒为空——**静默降级不再不可见**；② `logs_recent` 的 `level` 改严格值域校验（只认 BepInEx 六级别名 `fatal`/`error`/`warning`/`message`/`info`/`debug`，大小写不敏感，归一为小写透传），未知取值（如 `Information`）返回 `INVALID_INPUT` 并列出合法值，消除「桥侧不识别 → 静默不过滤」footgun；③ 归一化两侧同构（24hex 右边界放宽，桥侧随本轮同步；改一侧须同步另一侧）；④ 桥侧：`/logs/recent` 级别过滤先于 limit 截窗（消除 starvation）、死成员清理、移除监听器失败改 `Warning`（STD-LOG-002）、`[LogWatch]` 配置键去冗余；⑤ 双 README 同步。
+- **关键决策**：
+  - 采集阈值默认 **Warning 及以上**（Info/Debug 不入缓冲）；查询侧 `level` 为叠加过滤，受采集阈值约束。
+  - **fatal 通道在桥死亡场景仍可用（本通道存在的根本理由）**：进程级崩溃会杀死桥进程，故 `logs_summary` 遇桥故障时**不返回错误信封**，而是 ok 信封 + `bridge:{available:false, reason}`（`unreachable` / `version_mismatch` / `endpoint_missing`），服务器组与 fatal 组照常返回；`logs_recent` 保持严格门禁不变。
+  - 归一化 **24hex 右边界放宽**（真实样本驱动）：SPT 打印 `Fixed item: <24hex>s undefined StackObjectsCount value, now set to 1`，id 紧贴字面量 `s`，`\b[0-9a-fA-F]{24}\b` 在该处不成立 → 同错误不同实例无法合并；两侧统一为「恰好 24 位连续 hex 段」（左边界非词字符、右边界其后不得再有 hex 字符），25/32 位 hex 串与内嵌片段仍不匹配（保守性保留）。
+  - 服务器日志行内时间戳无时区标记 → 按本机本地时间解释后转 UTC ISO，使三通道 `ts` 同域可比（排序 / `since` 过滤一致）。
+  - `since` 策略：桥侧原样透传（桥自行过滤）+ MCP 组同语义本地过滤（`lastTs > since` 独占）。
+- **状态（2026-09-16 实机）**：live 验收**全部通过**——`/bridge/info` 新端点上线；告警可见性实测 age=1–4s（≤10s 要求）；字体刷屏组 count=5610 与日志文件逐字吻合；`since` 增量 `5625..5649`→`5650..5674` 无缝 0 重复；level 过滤、三通道合并、桥故障降级均实机验证；fatal 通道 fixture 文件级验证（真实 ErrorLog 空，无崩溃样本）。雷达复测见下段；全部改动**未提交**（按 Overseer 规则）。
+- **参考**：`.scratch/tarkov-runtime-logwatch/`（spec + 工单 01–06）。
+
+## 2026-09-16 — Accurate Circular Radar 复测（价格源隔离 + 商人价熔断）
+
+- **复测通过**（Sandbox 局，MO2 覆盖层 `界面-AccurateCircularRadar-1.3.4-spt5.1`，v1.3.4-spt5.1）：战利品
+  `Loot scan: owners=1067, tracked=69, maxPrice=139000, threshold=30000`（修复前 `tracked=0`）；`Local flea price table loaded: 4719 entries.`；商人价首次失败即熔断（Warning，本地价格表继续供价）；ragfair 回调 5.0 已知拒绝形态（1 条 Warning）。
+- **F12 阈值即时性**：阈值 30000 → 55634 / 54718 / … / 52887 连续改动，`tracked` 69 → 17，每次改动触发 Rebuild。
+- **稳定性**：无闪退；F12 无异常刷屏（唯一 ConfigurationManager 匹配为 Il2CppInterop Info 注册行）。
+- **归档刷新**：`knowledge/spt-kb/archive/ported-src/RadarStandalone_1100_spt5_port/` 镜像 src/bundle/bin/Release（DLL 244,736 bytes / `76D8C6E3…`，与 MO2 覆盖层部署副本一致）；PROVENANCE 补复验行；mod README「实战修复记录」补第 11 项 + §6 复测证据。未提交。

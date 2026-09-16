@@ -1,7 +1,7 @@
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
 import { afterEach, describe, expect, it } from "vitest";
 
-import { BridgeUnreachableError } from "../../src/bridge/connection.js";
+import { BridgeEndpointUnavailableError, BridgeUnreachableError } from "../../src/bridge/connection.js";
 import { HttpBridgeConnection } from "../../src/bridge/http-bridge-connection.js";
 
 interface StubServer {
@@ -175,6 +175,37 @@ const EVENTS_PAYLOAD = {
       payload: { exitName: "Crossroads", status: "Success", extra: 1 },
     },
   ],
+};
+
+const LOGS_RECENT_PAYLOAD = {
+  seq: 7,
+  dropped: 2,
+  entries: [
+    {
+      seq: 6,
+      ts: "2026-09-15T10:00:00.000Z",
+      level: "warning",
+      source: "Unity",
+      text: "ComboBox: value is null",
+      unknownExtra: "ignored",
+    },
+  ],
+};
+
+const LOGS_SUMMARY_PAYLOAD = {
+  groups: [
+    {
+      key: "ComboBox: value is null",
+      level: "error",
+      source: "Unity",
+      count: 6477,
+      firstTs: "2026-09-15T10:00:00.000Z",
+      lastTs: "2026-09-15T10:00:02.000Z",
+      sampleText: "ComboBox: value is null",
+      unknownExtra: "ignored",
+    },
+  ],
+  overflowDropped: 3,
 };
 
 afterEach(async () => {
@@ -457,6 +488,121 @@ describe("HttpBridgeConnection（node:http stub server）", () => {
     const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
 
     await expect(bridge.getRaidEvents()).rejects.toBeInstanceOf(BridgeUnreachableError);
+  });
+
+  it("/logs/recent 200：解析 seq/dropped/entries 并忽略未知字段", async () => {
+    const { stub, hits } = await routeStub({ "/logs/recent": LOGS_RECENT_PAYLOAD });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    expect(await bridge.getLogsRecent()).toEqual({
+      seq: 7,
+      dropped: 2,
+      entries: [
+        {
+          seq: 6,
+          ts: "2026-09-15T10:00:00.000Z",
+          level: "warning",
+          source: "Unity",
+          text: "ComboBox: value is null",
+        },
+      ],
+    });
+    expect(hits["/logs/recent"]).toBe(1);
+  });
+
+  it("/logs/recent 带 level/since/limit：查询参数按固定顺序透传（level 不做大小写改写）", async () => {
+    const seen: string[] = [];
+    const stub = await startStubServer((req, res) => {
+      seen.push(req.url ?? "");
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(LOGS_RECENT_PAYLOAD));
+    });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await bridge.getLogsRecent(5, "Warning", 10);
+    await bridge.getLogsRecent(undefined, "a&b");
+
+    expect(seen).toEqual(["/logs/recent?level=Warning&since=5&limit=10", "/logs/recent?level=a%26b"]);
+  });
+
+  it("/logs/summary 200：解析 groups/overflowDropped", async () => {
+    const { stub, hits } = await routeStub({ "/logs/summary": LOGS_SUMMARY_PAYLOAD });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    expect(await bridge.getLogsSummary()).toEqual({
+      groups: [
+        {
+          key: "ComboBox: value is null",
+          level: "error",
+          source: "Unity",
+          count: 6477,
+          firstTs: "2026-09-15T10:00:00.000Z",
+          lastTs: "2026-09-15T10:00:02.000Z",
+          sampleText: "ComboBox: value is null",
+        },
+      ],
+      overflowDropped: 3,
+    });
+    expect(hits["/logs/summary"]).toBe(1);
+  });
+
+  it("/logs/summary 带 since：ISO 8601 与整数 UTC Ticks 均转义后透传", async () => {
+    const seen: string[] = [];
+    const stub = await startStubServer((req, res) => {
+      seen.push(req.url ?? "");
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(LOGS_SUMMARY_PAYLOAD));
+    });
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await bridge.getLogsSummary("2026-09-15T10:00:02.000Z");
+    await bridge.getLogsSummary(638000000000000000);
+
+    expect(seen).toEqual([
+      "/logs/summary?since=2026-09-15T10%3A00%3A02.000Z",
+      "/logs/summary?since=638000000000000000",
+    ]);
+  });
+
+  it("/logs/recent 404：抛 BridgeEndpointUnavailableError（提示更新桥 DLL），非 BridgeUnreachableError", async () => {
+    const stub = await startStubServer(jsonServer({ error: "not_found" }, 404));
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getLogsRecent()).rejects.toBeInstanceOf(BridgeEndpointUnavailableError);
+    await expect(bridge.getLogsRecent()).rejects.toThrow(/更新桥 DLL/);
+    await expect(bridge.getLogsRecent()).rejects.not.toBeInstanceOf(BridgeUnreachableError);
+  });
+
+  it("/logs/summary 404：抛 BridgeEndpointUnavailableError（携带端点路径）", async () => {
+    const stub = await startStubServer(jsonServer({ error: "not_found" }, 404));
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getLogsSummary()).rejects.toBeInstanceOf(BridgeEndpointUnavailableError);
+    await expect(bridge.getLogsSummary()).rejects.toMatchObject({ endpoint: "/logs/summary" });
+  });
+
+  it("/logs/recent 500：抛 BridgeUnreachableError（非端点缺失）", async () => {
+    const stub = await startStubServer(jsonServer({ error: "boom" }, 500));
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getLogsRecent()).rejects.toBeInstanceOf(BridgeUnreachableError);
+    await expect(bridge.getLogsRecent()).rejects.not.toBeInstanceOf(
+      BridgeEndpointUnavailableError,
+    );
+  });
+
+  it("/logs/recent schema 非法（缺 entries）：抛 BridgeUnreachableError", async () => {
+    const stub = await startStubServer(jsonServer({ seq: 1, dropped: 0 }));
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getLogsRecent()).rejects.toBeInstanceOf(BridgeUnreachableError);
+  });
+
+  it("/logs/summary schema 非法（缺 groups）：抛 BridgeUnreachableError", async () => {
+    const stub = await startStubServer(jsonServer({ overflowDropped: 0 }));
+    const bridge = new HttpBridgeConnection("127.0.0.1", stub.port);
+
+    await expect(bridge.getLogsSummary()).rejects.toBeInstanceOf(BridgeUnreachableError);
   });
 
   it("非 JSON 响应：抛 BridgeUnreachableError", async () => {

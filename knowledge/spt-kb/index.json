@@ -1074,9 +1074,10 @@
   },
   {
    "path": "archive/ported-src/MANIFEST.md",
-   "title": "SPT 4.1 移植源码归档 MANIFEST（9 个已移植 mod 源码持久化）",
+   "title": "SPT 移植源码归档 MANIFEST（3.11→4.1 早期批次 + 4.1→5.0 移植）",
    "version": [
-    "4.1"
+    "4.1",
+    "5.0"
    ],
    "domain": "both",
    "topic": "archive-index",

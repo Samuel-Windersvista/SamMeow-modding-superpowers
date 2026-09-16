@@ -17,6 +17,8 @@ import {
   BridgeUnreachableError,
   type BridgeConnection,
   type BridgeInfo,
+  type BridgeLogsRecentResult,
+  type BridgeLogsSummaryResult,
   type BridgeMethod,
   type BridgeRaidBotsResult,
   type BridgeRaidEventsResult,
@@ -107,6 +109,23 @@ class ReplayBridgeConnection implements BridgeConnection {
       since: since ?? null,
       limit: limit ?? null,
     });
+  }
+
+  async getLogsRecent(
+    since?: number,
+    level?: string,
+    limit?: number,
+  ): Promise<BridgeLogsRecentResult> {
+    // 同 getRaidEvents：按 method 分桶顺序消费（since/level/limit 不入桶键）
+    return this.next<BridgeLogsRecentResult>("getLogsRecent", {
+      since: since ?? null,
+      level: level ?? null,
+      limit: limit ?? null,
+    });
+  }
+
+  async getLogsSummary(since?: string | number): Promise<BridgeLogsSummaryResult> {
+    return this.next<BridgeLogsSummaryResult>("getLogsSummary", { since: since ?? null });
   }
 
   private next<T>(method: BridgeMethod, args: unknown): T {

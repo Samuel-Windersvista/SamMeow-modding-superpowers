@@ -11,10 +11,15 @@
 // =============================================================================
 
 import {
+  BridgeEndpointUnavailableError,
   BridgeUnreachableError,
   type BridgeCapabilities,
   type BridgeConnection,
   type BridgeInfo,
+  type BridgeLogEntry,
+  type BridgeLogsRecentResult,
+  type BridgeLogsSummaryResult,
+  type BridgeLogSummaryGroup,
   type BridgeNetwork,
   type BridgeRaidBotsResult,
   type BridgeRaidEventsResult,
@@ -443,8 +448,94 @@ export function parseRaidEventsPayload(body: unknown): BridgeRaidEventsResult {
 }
 
 // -----------------------------------------------------------------------------
+// /logs/recent 与 /logs/summary
+// -----------------------------------------------------------------------------
+
+/**
+ * 解析单条日志条目（字段序稳定：seq/ts/level/source/text）。
+ * 只读取已知字段，未知字段忽略（桥侧新增字段不炸）。
+ */
+function parseLogEntry(value: unknown, label: string): BridgeLogEntry {
+  const entryLabel = `${label} entries[]`;
+  if (!isRecord(value)) {
+    throw new BridgeUnreachableError(`bridge ${entryLabel} 条目非法`);
+  }
+  return {
+    seq: requireFiniteNumber(value, "seq", entryLabel),
+    ts: requireString(value, "ts", entryLabel),
+    level: requireString(value, "level", entryLabel),
+    source: requireString(value, "source", entryLabel),
+    text: requireString(value, "text", entryLabel),
+  };
+}
+
+/**
+ * 校验并归一 `/logs/recent` 响应体；非法抛 BridgeUnreachableError。
+ * 归一保持确定性字段序（seq/dropped/entries）。
+ */
+export function parseLogsRecentPayload(body: unknown): BridgeLogsRecentResult {
+  const label = "/logs/recent";
+  if (!isRecord(body)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应不是对象`);
+  }
+  const entriesRaw = body.entries;
+  if (!Array.isArray(entriesRaw)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应缺少 entries 数组`);
+  }
+  return {
+    seq: requireFiniteNumber(body, "seq", label),
+    dropped: requireFiniteNumber(body, "dropped", label),
+    entries: entriesRaw.map((entry) => parseLogEntry(entry, label)),
+  };
+}
+
+/** 解析单个聚合组（字段序稳定：key/level/source/count/firstTs/lastTs/sampleText） */
+function parseLogSummaryGroup(value: unknown, label: string): BridgeLogSummaryGroup {
+  const groupLabel = `${label} groups[]`;
+  if (!isRecord(value)) {
+    throw new BridgeUnreachableError(`bridge ${groupLabel} 条目非法`);
+  }
+  return {
+    key: requireString(value, "key", groupLabel),
+    level: requireString(value, "level", groupLabel),
+    source: requireString(value, "source", groupLabel),
+    count: requireFiniteNumber(value, "count", groupLabel),
+    firstTs: requireString(value, "firstTs", groupLabel),
+    lastTs: requireString(value, "lastTs", groupLabel),
+    sampleText: requireString(value, "sampleText", groupLabel),
+  };
+}
+
+/**
+ * 校验并归一 `/logs/summary` 响应体；非法抛 BridgeUnreachableError。
+ * 归一保持确定性字段序（groups/overflowDropped），组内字段序固定，组序沿用桥侧。
+ */
+export function parseLogsSummaryPayload(body: unknown): BridgeLogsSummaryResult {
+  const label = "/logs/summary";
+  if (!isRecord(body)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应不是对象`);
+  }
+  const groupsRaw = body.groups;
+  if (!Array.isArray(groupsRaw)) {
+    throw new BridgeUnreachableError(`bridge ${label} 响应缺少 groups 数组`);
+  }
+  return {
+    groups: groupsRaw.map((group) => parseLogSummaryGroup(group, label)),
+    overflowDropped: requireFiniteNumber(body, "overflowDropped", label),
+  };
+}
+
+// -----------------------------------------------------------------------------
 // HTTP 连接
 // -----------------------------------------------------------------------------
+
+/**
+ * 404 语义策略（保持既有端点行为不变，仅 /logs/* 走结构化端点缺失）：
+ *   - `hint`：/bridge/info —— 404 视为不可达，消息提示可能为旧版桥；
+ *   - `endpoint_missing`：/logs/* —— 404 抛 BridgeEndpointUnavailableError；
+ *   - `plain`：其余端点 —— 404 按普通非 2xx 处理。
+ */
+type NotFoundPolicy = "hint" | "endpoint_missing" | "plain";
 
 export class HttpBridgeConnection implements BridgeConnection {
   readonly host: string;
@@ -462,8 +553,11 @@ export class HttpBridgeConnection implements BridgeConnection {
     this.fetchImpl = options.fetchImpl ?? fetch;
   }
 
-  /** 单次 GET + JSON 解析；连接拒绝/超时/非 2xx/非 JSON 抛 BridgeUnreachableError */
-  private async requestJson(path: string, allow404Hint = false): Promise<unknown> {
+  /**
+   * 单次 GET + JSON 解析；连接拒绝/超时/非 2xx/非 JSON 抛 BridgeUnreachableError
+   * （`endpoint_missing` 策略下 404 例外：抛 BridgeEndpointUnavailableError）。
+   */
+  private async requestJson(path: string, notFound: NotFoundPolicy = "plain"): Promise<unknown> {
     const url = `${this.baseUrl}${path}`;
 
     let response: Response;
@@ -476,9 +570,15 @@ export class HttpBridgeConnection implements BridgeConnection {
     }
 
     if (!response.ok) {
-      if (allow404Hint && response.status === 404) {
+      if (response.status === 404 && notFound === "hint") {
         throw new BridgeUnreachableError(
           `bridge 返回 404（${url}）：可能为旧版桥，不支持 ${path}；请更新 bridge 插件`,
+        );
+      }
+      if (response.status === 404 && notFound === "endpoint_missing") {
+        throw new BridgeEndpointUnavailableError(
+          `bridge 端点缺失（404 ${url}）：当前桥 DLL 为旧版，不支持 ${path}；请更新桥 DLL（BepInEx/plugins/TarkovRuntimeBridge.dll）后重试`,
+          path,
         );
       }
       throw new BridgeUnreachableError(`bridge 返回非 2xx 状态：${response.status}（${url}）`);
@@ -495,7 +595,7 @@ export class HttpBridgeConnection implements BridgeConnection {
 
   async getInfo(): Promise<BridgeInfo> {
     // 不缓存：每次工具调用都实际拉取，桥升级后协议校验即时生效。
-    const body = await this.requestJson("/bridge/info", true);
+    const body = await this.requestJson("/bridge/info", "hint");
     return parseBridgeInfoPayload(body);
   }
 
@@ -523,5 +623,36 @@ export class HttpBridgeConnection implements BridgeConnection {
     }
     const suffix = params.length > 0 ? `?${params.join("&")}` : "";
     return parseRaidEventsPayload(await this.requestJson(`/raid/events${suffix}`));
+  }
+
+  async getLogsRecent(
+    since?: number,
+    level?: string,
+    limit?: number,
+  ): Promise<BridgeLogsRecentResult> {
+    // 查询参数顺序固定（level -> since -> limit，与桥 README 契约同序）；
+    // level 为自由字符串（桥侧大小写不敏感、未知即不过滤），做 URL 转义以防特殊字符。
+    const params: string[] = [];
+    if (level !== undefined) {
+      params.push(`level=${encodeURIComponent(level)}`);
+    }
+    if (since !== undefined) {
+      params.push(`since=${since}`);
+    }
+    if (limit !== undefined) {
+      params.push(`limit=${limit}`);
+    }
+    const suffix = params.length > 0 ? `?${params.join("&")}` : "";
+    return parseLogsRecentPayload(
+      await this.requestJson(`/logs/recent${suffix}`, "endpoint_missing"),
+    );
+  }
+
+  async getLogsSummary(since?: string | number): Promise<BridgeLogsSummaryResult> {
+    // since 为时间游标（ISO 8601 原样回填 / 整数 UTC Ticks），转义后透传。
+    const suffix = since === undefined ? "" : `?since=${encodeURIComponent(String(since))}`;
+    return parseLogsSummaryPayload(
+      await this.requestJson(`/logs/summary${suffix}`, "endpoint_missing"),
+    );
   }
 }

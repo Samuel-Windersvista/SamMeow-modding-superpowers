@@ -2,7 +2,7 @@
 // T07 录制：RecordingBridgeConnection
 //
 // 装饰任意 BridgeConnection，把每次调用写一行 JSONL（追加写、逐行 flush）：
-//   {"ts":"<ISO>","method":"getInfo|getRaidStatus|getRaidPlayer|getRaidBots|getRaidEvents",
+//   {"ts":"<ISO>","method":"getInfo|getRaidStatus|getRaidPlayer|getRaidBots|getRaidEvents|getLogsRecent|getLogsSummary",
 //    "args":<入参|null>,"ok":<bool>,"result":<响应或错误信息>}
 //
 // 默认关：仅当配置提供路径（env TARKOV_RUNTIME_MCP_BRIDGE_RECORD）时由
@@ -16,6 +16,8 @@ import { dirname } from "node:path";
 import type {
   BridgeConnection,
   BridgeInfo,
+  BridgeLogsRecentResult,
+  BridgeLogsSummaryResult,
   BridgeMethod,
   BridgeRaidBotsResult,
   BridgeRaidEventsResult,
@@ -28,7 +30,10 @@ export interface RecordingEntry {
   /** ISO 时间戳 */
   ts: string;
   method: BridgeMethod;
-  /** 入参（getRaidBots 为 { detail }；getRaidEvents 为 { since, limit }；其余为 null） */
+  /**
+   * 入参（getRaidBots 为 { detail }；getRaidEvents 为 { since, limit }；
+   * getLogsRecent 为 { since, level, limit }；getLogsSummary 为 { since }；其余为 null）
+   */
   args: unknown;
   /** 调用是否成功 */
   ok: boolean;
@@ -76,6 +81,24 @@ export class RecordingBridgeConnection implements BridgeConnection {
   async getRaidEvents(since?: number, limit?: number): Promise<BridgeRaidEventsResult> {
     return this.record("getRaidEvents", { since: since ?? null, limit: limit ?? null }, () =>
       this.inner.getRaidEvents(since, limit),
+    );
+  }
+
+  async getLogsRecent(
+    since?: number,
+    level?: string,
+    limit?: number,
+  ): Promise<BridgeLogsRecentResult> {
+    return this.record(
+      "getLogsRecent",
+      { since: since ?? null, level: level ?? null, limit: limit ?? null },
+      () => this.inner.getLogsRecent(since, level, limit),
+    );
+  }
+
+  async getLogsSummary(since?: string | number): Promise<BridgeLogsSummaryResult> {
+    return this.record("getLogsSummary", { since: since ?? null }, () =>
+      this.inner.getLogsSummary(since),
     );
   }
 

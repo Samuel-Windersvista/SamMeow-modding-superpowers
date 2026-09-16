@@ -24,7 +24,7 @@ SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档�
 
 ## 技能集（`skills/`）
 
-15 个 skill，覆盖整合包全生命周期：
+16 个 skill，覆盖整合包全生命周期：
 
 | Skill | 用途 |
 |-------|------|
@@ -40,6 +40,7 @@ SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档�
 | `testing-spt-modpack` | 安装后主动验证（Level B/C 标准） |
 | `diagnosing-spt-problems` | 症状优先的崩溃 / 掉帧 / 加载失败诊断 |
 | `writing-spt-mod` | 从模板写新 mod（服务端 C# 或客户端 BepInEx/Harmony，遵循 Modding Standard） |
+| `porting-spt-mod-to-spt5` | 将现有 4.x mod（有源码）移植到 SPT 5.0（IL2CPP 适配 + MO2 部署 + 日志验证） |
 | `using-spt-translator` | 翻译 SPT mod 文本（汉化/本地化） |
 | `writing-spt-modpack-devlog` | 维护项目 dev-log |
 | `writing-spt-modpack-changelog` | 维护发布 changelog |
@@ -95,7 +96,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 **架构决策已锁定**（wayfinder，2026-08-02，见 `docs/wayfinder/MAP.md`）：
 
 - **6 阶段管线**：意图理解 -> mod 匹配/开发 -> 冲突分析 -> 人工审查 -> 构建 -> 验证
-- **14 个 SPT skills**：覆盖策展、构建、评估、安装解读、冲突审计、测试、诊断、mod 编写、dev-log/changelog（见 `skills/using-spt-modding-superpowers/`）
+- **15 个 SPT skills**：覆盖策展、构建、评估、安装解读、冲突审计、测试、诊断、mod 编写、mod 移植、dev-log/changelog（见 `skills/using-spt-modding-superpowers/`）
 - **冲突分类学**：20 类冲突，元数据级可检测大部分服务端冲突（见 `docs/wayfinder/findings/`）
 - **Mod 模板**：`templates/server-mod/` + `templates/client-mod/` + `templates/paired-mod/`（paired = 同仓库 Client/Server/Shared，根级 `Directory.Build.props` 版本联动 + `pack.ps1` 单 zip 双端打包）
 - **开发规范**：Modding Standard 统一约束模板与 skill 输出（见上文「Modding Standard」专节）

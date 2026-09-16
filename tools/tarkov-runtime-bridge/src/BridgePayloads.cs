@@ -24,10 +24,91 @@ internal static class BridgePayloads
         var ci = CultureInfo.InvariantCulture;
         return "{\"pluginVersion\":" + FormatString(pluginVersion)
             + ",\"protocolVersion\":" + protocolVersion.ToString(ci)
-            + ",\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\"]"
-            + ",\"sections\":[\"player\",\"raid\",\"bots\",\"events\"]}"
+            + ",\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\",\"/logs/recent\",\"/logs/summary\"]"
+            + ",\"sections\":[\"player\",\"raid\",\"bots\",\"events\",\"logs\"]}"
             + ",\"sampling\":{\"intervalMs\":" + sampleIntervalMs.ToString(ci) + "}"
             + ",\"network\":{\"host\":\"127.0.0.1\",\"port\":" + port.ToString(ci) + "}}";
+    }
+
+    /// <summary>
+    /// /logs/recent 负载：<c>{seq, dropped, entries:[...]}</c>（不含 inRaid——日志与 raid 无关）。
+    /// <paramref name="minLevel"/> 为查询侧最小级别（空 / 未知 = 不过滤）。
+    /// **级别过滤先于 limit 截窗**：先取 <c>seq &gt; since</c> 的全部条目做级别过滤，
+    /// 再取前 <paramref name="limit"/> 条——若先截窗再过滤，窗口内无匹配时会返回空且游标无法推进
+    /// （starvation）；因此「空 entries」严格等价于「环内确实无匹配条目」。
+    /// 截断方向与 /raid/events 一致（从 <c>since</c> 之后最旧一侧起算），
+    /// 调用方据返回条目的 seq 推进游标续拉。
+    /// </summary>
+    internal static string BuildLogs(LogRingBuffer buffer, long since, int limit, string minLevel)
+    {
+        // 取全窗口（Snapshot 内部把 limit 钳到环容量），过滤与截断在下方按序执行。
+        var page = buffer.Snapshot(since, int.MaxValue);
+        var effectiveLimit = limit <= 0 ? LogRingBuffer.DefaultLimit : limit;
+        var ci = CultureInfo.InvariantCulture;
+        var builder = new StringBuilder(256);
+        builder.Append("{\"seq\":").Append(page.Seq.ToString(ci))
+            .Append(",\"dropped\":").Append(page.Dropped.ToString(ci))
+            .Append(",\"entries\":[");
+
+        var written = 0;
+        for (var i = 0; i < page.Entries.Length && written < effectiveLimit; i++)
+        {
+            var entry = page.Entries[i];
+            if (!LogWatchLevel.IsAtLeast(entry.Level, minLevel))
+            {
+                continue;
+            }
+
+            if (written > 0)
+            {
+                builder.Append(',');
+            }
+
+            builder.Append("{\"seq\":").Append(entry.Seq.ToString(ci))
+                .Append(",\"ts\":").Append(FormatString(FormatTimestamp(entry.TimestampUtcTicks)))
+                .Append(",\"level\":").Append(FormatString(entry.Level))
+                .Append(",\"source\":").Append(FormatString(entry.Source))
+                .Append(",\"text\":").Append(FormatString(entry.Text))
+                .Append('}');
+            written++;
+        }
+
+        builder.Append("]}");
+        return builder.ToString();
+    }
+
+    /// <summary>
+    /// /logs/summary 负载：<c>{groups:[{key, level, source, count, firstTs, lastTs, sampleText}], overflowDropped}</c>
+    /// （不含 inRaid——日志与 raid 无关）。<paramref name="sinceTicks"/> ≤ 0 表示不过滤；
+    /// 组序由 <see cref="LogSummaryStore.Snapshot"/> 固定（count 降序 → lastTs 降序 → key 序升序）。
+    /// </summary>
+    internal static string BuildLogSummary(LogSummaryStore store, long sinceTicks)
+    {
+        var page = store.Snapshot(sinceTicks);
+        var ci = CultureInfo.InvariantCulture;
+        var builder = new StringBuilder(256);
+        builder.Append("{\"groups\":[");
+
+        for (var i = 0; i < page.Groups.Length; i++)
+        {
+            if (i > 0)
+            {
+                builder.Append(',');
+            }
+
+            var group = page.Groups[i];
+            builder.Append("{\"key\":").Append(FormatString(group.Key))
+                .Append(",\"level\":").Append(FormatString(group.Level))
+                .Append(",\"source\":").Append(FormatString(group.Source))
+                .Append(",\"count\":").Append(group.Count.ToString(ci))
+                .Append(",\"firstTs\":").Append(FormatString(FormatTimestamp(group.FirstTimestampUtcTicks)))
+                .Append(",\"lastTs\":").Append(FormatString(FormatTimestamp(group.LastTimestampUtcTicks)))
+                .Append(",\"sampleText\":").Append(FormatString(group.SampleText))
+                .Append('}');
+        }
+
+        builder.Append("],\"overflowDropped\":").Append(page.OverflowDropped.ToString(ci)).Append('}');
+        return builder.ToString();
     }
 
     /// <summary>/raid/player 在 raid 负载（含当前武器与已装备槽摘要）。</summary>

@@ -13,7 +13,7 @@ namespace SamMeow.TarkovRuntimeBridge;
 /// 职责：建配置 -> 建持久 GameObject 并挂 <see cref="PositionSampler"/> 采样玩家/raid/bot 域
 /// 与事件域（<see cref="RaidEventCollector"/>）-> 启动仅绑 127.0.0.1 的
 /// <see cref="HttpBridgeServer"/> 暴露只读端点
-/// /bridge/info、/raid/player、/raid/status、/raid/bots、/raid/events。
+/// /bridge/info、/raid/player、/raid/status、/raid/bots、/raid/events、/logs/recent。
 ///
 /// STD-CLI-001：5.0（IL2CPP / BepInEx 6）继承 BepInEx.Unity.IL2CPP.BasePlugin，入口 Load()；
 ///              撤销路径为 Unload()（BepInEx 6 IL2CPP BasePlugin 无 IDisposable.Dispose()）。
@@ -43,6 +43,9 @@ public sealed class Plugin : BasePlugin
 
     private RaidStateStore store;
     private RaidEventBuffer events;
+    private LogRingBuffer logs;
+    private LogSummaryStore summaries;
+    private LogWatchListener logListener;
     private RaidEventCollector collector;
     private HttpBridgeServer httpServer;
     private GameObject samplerObject;
@@ -58,7 +61,17 @@ public sealed class Plugin : BasePlugin
 
         store = new RaidStateStore();
         events = new RaidEventBuffer();
+        logs = new LogRingBuffer(config.LogWatchRingSize.Value);
+        summaries = new LogSummaryStore();
         collector = new RaidEventCollector(events, Log);
+
+        // 日志捕获：仅在启用时注册监听器（注册即全局生效；阈值低于 Info 会捕获大量
+        // Unity 转发日志，故默认 Warning）。监听器回调只写内存，见 LogWatchListener。
+        if (config.LogWatchEnabled.Value)
+        {
+            logListener = new LogWatchListener(logs, summaries, config.LogWatchMinLevel.Value);
+            BepInEx.Logging.Logger.Listeners.Add(logListener);
+        }
 
         // 撤离事件依赖 LocalGame.Stop 补丁；补丁失败不影响其余端点，仅记 error。
         TryApplyHarmonyPatches();
@@ -74,7 +87,7 @@ public sealed class Plugin : BasePlugin
         sampler.Initialize(store, collector, sampleIntervalMs, Log);
 
         // 启动失败（端口占用 / URL ACL 拒绝等）只记 error，不影响游戏运行。
-        httpServer = new HttpBridgeServer(store, events, Log, port, sampleIntervalMs);
+        httpServer = new HttpBridgeServer(store, events, logs, summaries, Log, port, sampleIntervalMs);
         if (httpServer.Start())
         {
             Log.LogInfo(
@@ -89,15 +102,38 @@ public sealed class Plugin : BasePlugin
                 "sampling continues without HTTP.");
         }
 
-        Log.LogInfo($"{PluginName} {PluginVersion} loaded.");
+        Log.LogInfo(
+            $"{PluginName} {PluginVersion} loaded" +
+            (logListener != null
+                ? $" (log watch: min level {config.LogWatchMinLevel.Value}, ring {logs.Capacity})."
+                : " (log watch disabled)."));
     }
 
     /// <summary>
     /// BepInEx 6 IL2CPP 的撤销路径（对应 4.1.5 的 OnDestroy）。
-    /// 撤销 Harmony 补丁、解除事件订阅、停 HTTP 监听并销毁采样 GameObject。
+    /// 解除日志监听注册、撤销 Harmony 补丁、解除事件订阅、停 HTTP 监听并销毁采样 GameObject。
     /// </summary>
     public override bool Unload()
     {
+        // 先摘监听器：本方法后续的收尾日志不应再进入（即将失效的）日志缓冲。
+        if (logListener != null)
+        {
+            try
+            {
+                BepInEx.Logging.Logger.Listeners.Remove(logListener);
+            }
+            catch (Exception exception)
+            {
+                Log.LogWarning($"Log listener remove failed: {exception.Message}");
+            }
+
+            logListener.Dispose();
+            logListener = null;
+        }
+
+        logs = null;
+        summaries = null;
+
         if (harmony != null)
         {
             try

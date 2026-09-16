@@ -27,6 +27,12 @@ internal enum BridgeRouteKind
 
     /// <summary>GET /raid/events（?since=&amp;limit= 增量拉取事件）。</summary>
     Events,
+
+    /// <summary>GET /logs/recent（?level=&amp;since=&amp;limit= 增量拉取日志）。</summary>
+    LogsRecent,
+
+    /// <summary>GET /logs/summary（?since= 归一化聚合视图）。</summary>
+    LogsSummary,
 }
 
 /// <summary>
@@ -40,6 +46,8 @@ internal static class BridgeRouter
     internal const string StatusPath = "/raid/status";
     internal const string BotsPath = "/raid/bots";
     internal const string EventsPath = "/raid/events";
+    internal const string LogsRecentPath = "/logs/recent";
+    internal const string LogsSummaryPath = "/logs/summary";
 
     internal static bool IsKnownRoute(string path)
     {
@@ -47,7 +55,9 @@ internal static class BridgeRouter
             || string.Equals(path, PlayerPath, StringComparison.OrdinalIgnoreCase)
             || string.Equals(path, StatusPath, StringComparison.OrdinalIgnoreCase)
             || string.Equals(path, BotsPath, StringComparison.OrdinalIgnoreCase)
-            || string.Equals(path, EventsPath, StringComparison.OrdinalIgnoreCase);
+            || string.Equals(path, EventsPath, StringComparison.OrdinalIgnoreCase)
+            || string.Equals(path, LogsRecentPath, StringComparison.OrdinalIgnoreCase)
+            || string.Equals(path, LogsSummaryPath, StringComparison.OrdinalIgnoreCase);
     }
 
     internal static bool IsGet(string method)
@@ -94,6 +104,16 @@ internal static class BridgeRouter
         if (string.Equals(path, EventsPath, StringComparison.OrdinalIgnoreCase))
         {
             return BridgeRouteKind.Events;
+        }
+
+        if (string.Equals(path, LogsRecentPath, StringComparison.OrdinalIgnoreCase))
+        {
+            return BridgeRouteKind.LogsRecent;
+        }
+
+        if (string.Equals(path, LogsSummaryPath, StringComparison.OrdinalIgnoreCase))
+        {
+            return BridgeRouteKind.LogsSummary;
         }
 
         // 防御性兜底：IsKnownRoute 已放行但无匹配分支（新路由只加进 IsKnownRoute

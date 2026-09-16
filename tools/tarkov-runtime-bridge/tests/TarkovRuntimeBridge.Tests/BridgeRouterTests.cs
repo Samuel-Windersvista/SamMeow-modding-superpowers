@@ -11,6 +11,8 @@ public class BridgeRouterTests
     [InlineData("/raid/status", "Status")]
     [InlineData("/raid/bots", "Bots")]
     [InlineData("/raid/events", "Events")]
+    [InlineData("/logs/recent", "LogsRecent")]
+    [InlineData("/logs/summary", "LogsSummary")]
     public void Known_route_with_get_resolves_to_endpoint(string path, string expected)
     {
         Assert.Equal(expected, BridgeRouter.Resolve(path, "GET").ToString());
@@ -22,6 +24,8 @@ public class BridgeRouterTests
     [InlineData("/raid/status")]
     [InlineData("/raid/bots")]
     [InlineData("/raid/events")]
+    [InlineData("/logs/recent")]
+    [InlineData("/logs/summary")]
     public void Every_known_route_resolves_to_an_explicit_endpoint(string path)
     {
         // 回归护栏：新路由若只加进 IsKnownRoute 而漏加级联分支，Resolve 会落到
@@ -64,6 +68,8 @@ public class BridgeRouterTests
     [InlineData("/raid/status")]
     [InlineData("/raid/bots")]
     [InlineData("/raid/events")]
+    [InlineData("/logs/recent")]
+    [InlineData("/logs/summary")]
     [InlineData("/raid/bots/")]
     public void Known_route_with_non_get_is_method_not_allowed(string path)
     {
@@ -102,6 +108,8 @@ public class BridgeRouterTests
     [InlineData("Status", 200)]
     [InlineData("Bots", 200)]
     [InlineData("Events", 200)]
+    [InlineData("LogsRecent", 200)]
+    [InlineData("LogsSummary", 200)]
     public void Status_code_mapping(string route, int expected)
     {
         Assert.Equal(expected, BridgeRouter.StatusCodeFor(Enum.Parse<BridgeRouteKind>(route)));

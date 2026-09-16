@@ -5,10 +5,13 @@
 // （info 协议版本匹配、各 raid 端点 inRaid:false），便于按需覆盖单个路径。
 
 import {
+  BridgeEndpointUnavailableError,
   BridgeUnreachableError,
   EXPECTED_BRIDGE_PROTOCOL_VERSION,
   type BridgeConnection,
   type BridgeInfo,
+  type BridgeLogsRecentResult,
+  type BridgeLogsSummaryResult,
   type BridgeRaidBotsResult,
   type BridgeRaidEventsResult,
   type BridgeRaidPlayerResult,
@@ -24,15 +27,29 @@ export interface FakeBridgeOptions {
   player?: FakeSource<BridgeRaidPlayerResult>;
   bots?: FakeSource<BridgeRaidBotsResult>;
   events?: FakeSource<BridgeRaidEventsResult>;
+  logsRecent?: FakeSource<BridgeLogsRecentResult>;
+  logsSummary?: FakeSource<BridgeLogsSummaryResult>;
 }
 
 export class FakeBridgeConnection implements BridgeConnection {
   /** 各端点的调用次数（可观测性） */
-  readonly callCounts = { info: 0, status: 0, player: 0, bots: 0, events: 0 };
+  readonly callCounts = {
+    info: 0,
+    status: 0,
+    player: 0,
+    bots: 0,
+    events: 0,
+    logsRecent: 0,
+    logsSummary: 0,
+  };
   /** 最近一次 getRaidBots 的 detail 入参（校验工具层透传） */
   lastBotsDetail: boolean | null = null;
   /** 最近一次 getRaidEvents 的入参（校验工具层透传） */
   lastEventsArgs: { since?: number; limit?: number } | null = null;
+  /** 最近一次 getLogsRecent 的入参（校验工具层透传） */
+  lastLogsRecentArgs: { since?: number; level?: string; limit?: number } | null = null;
+  /** 最近一次 getLogsSummary 的入参（校验工具层透传） */
+  lastLogsSummaryArgs: { since?: string | number } | null = null;
 
   constructor(private readonly options: FakeBridgeOptions = {}) {}
 
@@ -87,6 +104,30 @@ export class FakeBridgeConnection implements BridgeConnection {
         };
     return resolve(this.options.bots, fallback, this.callCounts.bots);
   }
+
+  async getLogsRecent(
+    since?: number,
+    level?: string,
+    limit?: number,
+  ): Promise<BridgeLogsRecentResult> {
+    this.callCounts.logsRecent += 1;
+    this.lastLogsRecentArgs = { since, level, limit };
+    return resolve(
+      this.options.logsRecent,
+      { seq: 0, dropped: 0, entries: [] },
+      this.callCounts.logsRecent,
+    );
+  }
+
+  async getLogsSummary(since?: string | number): Promise<BridgeLogsSummaryResult> {
+    this.callCounts.logsSummary += 1;
+    this.lastLogsSummaryArgs = { since };
+    return resolve(
+      this.options.logsSummary,
+      { groups: [], overflowDropped: 0 },
+      this.callCounts.logsSummary,
+    );
+  }
 }
 
 async function resolve<T>(
@@ -109,6 +150,14 @@ export function fakeBridge(options: FakeBridgeOptions = {}): FakeBridgeConnectio
 /** 构造不可达错误（连接类失败） */
 export function unreachable(message = "bridge 不可达"): BridgeUnreachableError {
   return new BridgeUnreachableError(message);
+}
+
+/** 构造端点缺失错误（旧版桥 404：可达且协议通过，但不支持该端点） */
+export function endpointMissing(endpoint = "/logs/recent"): BridgeEndpointUnavailableError {
+  return new BridgeEndpointUnavailableError(
+    `bridge 端点缺失（404 http://127.0.0.1:49777${endpoint}）：当前桥 DLL 为旧版，不支持 ${endpoint}；请更新桥 DLL（BepInEx/plugins/TarkovRuntimeBridge.dll）后重试`,
+    endpoint,
+  );
 }
 
 // -----------------------------------------------------------------------------
@@ -242,6 +291,70 @@ export function inRaidBotsSummary(
     byCategory: { pmc: 4, scav: 5, boss: 1, other: 0 },
     spawner: { aliveAndLoading: 9, delayed: 1, allWithDelayed: 10 },
     sampleAgeMs: 100,
+    ...overrides,
+  };
+}
+
+/** 日志条目环（默认：warning / error / fatal 三条，seq 单调） */
+export function logsRecent(
+  overrides: Partial<BridgeLogsRecentResult> = {},
+): BridgeLogsRecentResult {
+  return {
+    seq: 3,
+    dropped: 0,
+    entries: [
+      {
+        seq: 1,
+        ts: "2026-09-15T10:00:00.000Z",
+        level: "warning",
+        source: "Unity",
+        text: "ComboBox: value is null",
+      },
+      {
+        seq: 2,
+        ts: "2026-09-15T10:00:01.000Z",
+        level: "error",
+        source: "Assembly-CSharp",
+        text: "KeyNotFoundException: loot patch",
+      },
+      {
+        seq: 3,
+        ts: "2026-09-15T10:00:02.000Z",
+        level: "fatal",
+        source: "BepInEx",
+        text: "AccessViolationException: TrackableTransform",
+      },
+    ],
+    ...overrides,
+  };
+}
+
+/** 日志聚合视图（默认：一条刷屏 error 组 + 一条 warning 组） */
+export function logsSummary(
+  overrides: Partial<BridgeLogsSummaryResult> = {},
+): BridgeLogsSummaryResult {
+  return {
+    groups: [
+      {
+        key: "KeyNotFoundException: loot patch <n>",
+        level: "error",
+        source: "Assembly-CSharp",
+        count: 6477,
+        firstTs: "2026-09-15T10:00:00.000Z",
+        lastTs: "2026-09-15T10:00:02.000Z",
+        sampleText: "KeyNotFoundException: loot patch 42",
+      },
+      {
+        key: "ComboBox: value is null",
+        level: "warning",
+        source: "Unity",
+        count: 1,
+        firstTs: "2026-09-15T09:59:00.000Z",
+        lastTs: "2026-09-15T09:59:00.000Z",
+        sampleText: "ComboBox: value is null",
+      },
+    ],
+    overflowDropped: 0,
     ...overrides,
   };
 }

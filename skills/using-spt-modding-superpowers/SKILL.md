@@ -36,6 +36,7 @@ SPT 3.11 materials are reference-only.
 | `spt-conflict-audit` | "Why is this mod not working", "which mods conflict", "冲突", "为什么这个mod没生效" |
 | `using-spt-translator` | Translate SPT mod text to another language; "translate this mod", "汉化这个mod", "localize", "翻译" |
 | `writing-spt-mod` | Write a new SPT mod from scratch; "write a mod", "create a mod", "add a trader", "add an item", "写个mod", "加个商人", "加个物品" |
+| `porting-spt-mod-to-spt5` | Port an existing 4.x mod (source available) to SPT 5.0 (IL2CPP/BepInEx 6); "port to SPT5", "port this mod to 5.0", "移植到5", "移植到SPT5", "update this mod for 5.0" |
 | `building-spt-modpack` | Assemble/build the modpack; "build the pack", "assemble", "generate profile", "构建整合包", "打包" |
 | `writing-spt-modpack-devlog` | "Log this", "record", "note this", "记录一下" |
 | `writing-spt-modpack-changelog` | "Cut a release", "release notes", "changelog", "发版" |
@@ -104,6 +105,8 @@ file. Do not guess directory locations.
 - When answering SPT modding-domain questions, prefer local KB retrieval before
   web search.
 - When the user wants to write a new SPT mod, route to `writing-spt-mod`.
+- When the user wants to port an existing 4.x mod to SPT 5.0 ("移植到5", "port to SPT5",
+  "update this mod for 5.0"), route to `porting-spt-mod-to-spt5`.
 - When the user is deciding whether to add or keep a mod ("should I install X",
   "is this good", "评估"), route to `evaluating-spt-mods` BEFORE any
   install/download action.
@@ -140,6 +143,8 @@ file. Do not guess directory locations.
 - `spt-conflict-audit` -- conflict analysis using the 20-type taxonomy.
 - `using-spt-translator` -- SPT mod text translation workflow.
 - `writing-spt-mod` -- new mod development from templates.
+- `porting-spt-mod-to-spt5` -- porting existing 4.x mods to SPT 5.0: API mapping,
+  IL2CPP adaptation, MO2 overlay deployment, BepInEx log verification.
 - `building-spt-modpack` -- modpack assembly and build pipeline.
 - `writing-spt-modpack-devlog`, `writing-spt-modpack-changelog` -- runtime asset
   skills for project documentation.

@@ -265,6 +265,66 @@ export interface BridgeRaidEventsResult {
 }
 
 // -----------------------------------------------------------------------------
+// /logs/recent
+// -----------------------------------------------------------------------------
+
+/** 单条日志条目（字段序稳定：seq/ts/level/source/text） */
+export interface BridgeLogEntry {
+  /** 桥进程内单调序号（增量游标） */
+  seq: number;
+  /** 采集时刻（UTC ISO 8601） */
+  ts: string;
+  /** 归一化小写级别名（fatal/error/warning/message/info/debug） */
+  level: string;
+  /** 日志来源（如 Unity / Assembly-CSharp） */
+  source: string;
+  /** 原始日志文本 */
+  text: string;
+}
+
+/**
+ * `/logs/recent` 的增量拉取结果（字段序稳定）。
+ * 与 raid 状态无关（非 raid 时照常可用）；`dropped>0` 表示 since 过旧已被
+ * 环形缓冲淘汰（桥侧容量由 `LogWatchRingSize` 决定）。
+ */
+export interface BridgeLogsRecentResult {
+  /** 桥进程内当前最新日志序号（仅用于判断是否有新条目） */
+  seq: number;
+  /** since 过旧被环形缓冲淘汰的条数 */
+  dropped: number;
+  entries: BridgeLogEntry[];
+}
+
+// -----------------------------------------------------------------------------
+// /logs/summary
+// -----------------------------------------------------------------------------
+
+/** 归一化去重聚合组（字段序稳定：key/level/source/count/firstTs/lastTs/sampleText） */
+export interface BridgeLogSummaryGroup {
+  /** 归一化文本（易变 token 已替换为占位符；保守策略，仅剥离形状明确的 token） */
+  key: string;
+  /** 组内最高严重度级别名 */
+  level: string;
+  /** 首个来源 */
+  source: string;
+  /** 全部观测条数（不受 `/logs/recent` 环形缓冲容量影响） */
+  count: number;
+  /** 组内最早时刻（UTC ISO 8601） */
+  firstTs: string;
+  /** 组内最新时刻（UTC ISO 8601；`since` 时间游标即比对它） */
+  lastTs: string;
+  /** 首个原始文本样本 */
+  sampleText: string;
+}
+
+/** `/logs/summary` 的归一化聚合视图（字段序稳定） */
+export interface BridgeLogsSummaryResult {
+  groups: BridgeLogSummaryGroup[];
+  /** 聚合组数超上限（桥侧 500）被淘汰的组数（只增不减） */
+  overflowDropped: number;
+}
+
+// -----------------------------------------------------------------------------
 // 连接抽象
 // -----------------------------------------------------------------------------
 
@@ -279,6 +339,22 @@ export class BridgeUnreachableError extends Error {
   }
 }
 
+/**
+ * 桥端点缺失：桥可达且协议版本通过，但目标端点返回 404（旧版桥 DLL 未实现该端点）。
+ * 与连接类失败（BridgeUnreachableError）刻意区分：工具层映射为结构化
+ * LOGS_ENDPOINT_UNAVAILABLE 并提示更新桥 DLL，不误报协议版本门禁失败。
+ */
+export class BridgeEndpointUnavailableError extends Error {
+  /** 缺失的端点路径（如 /logs/recent） */
+  readonly endpoint: string;
+
+  constructor(message: string, endpoint: string) {
+    super(message);
+    this.name = "BridgeEndpointUnavailableError";
+    this.endpoint = endpoint;
+  }
+}
+
 /** BridgeConnection 面方法名（录制/回放共用的单一来源） */
 export const BRIDGE_METHODS = [
   "getInfo",
@@ -286,6 +362,8 @@ export const BRIDGE_METHODS = [
   "getRaidPlayer",
   "getRaidBots",
   "getRaidEvents",
+  "getLogsRecent",
+  "getLogsSummary",
 ] as const;
 
 /** BridgeConnection 方法名（由 BRIDGE_METHODS 派生） */
@@ -310,4 +388,19 @@ export interface BridgeConnection {
    * 事件的 seq 续拉）。连接类失败抛 BridgeUnreachableError。
    */
   getRaidEvents(since?: number, limit?: number): Promise<BridgeRaidEventsResult>;
+  /**
+   * 增量拉取桥进程内日志条目（`since` = 已消费的最后一条条目的 seq，缺省从最旧
+   * 开始；`level` 为查询侧最小级别（大小写不敏感，缺省/非法即不过滤）；`limit`
+   * 截断条数（桥侧缺省 100、上限 1000，从 since 之后最旧一侧截断））。
+   * 与 raid 状态无关。连接类失败抛 BridgeUnreachableError；
+   * 桥为旧版（端点 404）抛 BridgeEndpointUnavailableError。
+   */
+  getLogsRecent(since?: number, level?: string, limit?: number): Promise<BridgeLogsRecentResult>;
+  /**
+   * 拉取日志归一化聚合视图（`since` 为时间游标：只回 lastTs 晚于它的组；接受
+   * 端点自己输出的 ISO 8601 或整数 UTC Ticks，缺省/非法即不过滤）。
+   * 与 raid 状态无关。连接类失败抛 BridgeUnreachableError；
+   * 桥为旧版（端点 404）抛 BridgeEndpointUnavailableError。
+   */
+  getLogsSummary(since?: string | number): Promise<BridgeLogsSummaryResult>;
 }

@@ -15,8 +15,8 @@ public class BridgePayloadsTests
 
         Assert.Equal(
             "{\"pluginVersion\":\"0.1.0\",\"protocolVersion\":1," +
-            "\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\"]," +
-            "\"sections\":[\"player\",\"raid\",\"bots\",\"events\"]}," +
+            "\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\",\"/logs/recent\",\"/logs/summary\"]," +
+            "\"sections\":[\"player\",\"raid\",\"bots\",\"events\",\"logs\"]}," +
             "\"sampling\":{\"intervalMs\":250}," +
             "\"network\":{\"host\":\"127.0.0.1\",\"port\":49777}}",
             body);
@@ -426,5 +426,245 @@ public class BridgePayloadsTests
     {
         Assert.Equal("2026-09-14T00:00:00.0000000Z", BridgePayloads.FormatTimestamp(EventTicks));
         Assert.Equal(string.Empty, BridgePayloads.FormatTimestamp(0));
+    }
+
+    // ---------- /logs/recent ----------
+
+    [Fact]
+    public void Logs_payload_is_empty_for_fresh_buffer()
+    {
+        var buffer = new LogRingBuffer();
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: null);
+
+        Assert.Equal("{\"seq\":0,\"dropped\":0,\"entries\":[]}", body);
+    }
+
+    [Fact]
+    public void Logs_payload_matches_contract_with_stable_field_order()
+    {
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "warning", "Unity", "line1\nline2");
+        buffer.Append(EventTicks, "error", "Assembly-CSharp", "boom");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: null);
+
+        Assert.Equal(
+            "{\"seq\":2,\"dropped\":0,\"entries\":[" +
+            "{\"seq\":1,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"warning\",\"source\":\"Unity\",\"text\":\"line1\\nline2\"}," +
+            "{\"seq\":2,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"error\",\"source\":\"Assembly-CSharp\",\"text\":\"boom\"}" +
+            "]}",
+            body);
+    }
+
+    [Fact]
+    public void Logs_payload_escapes_source_and_text()
+    {
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "warning", "a\"b", "c\\d");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: null);
+
+        Assert.Contains("\"source\":\"a\\\"b\"", body);
+        Assert.Contains("\"text\":\"c\\\\d\"", body);
+    }
+
+    [Theory]
+    [InlineData(null, 2)]
+    [InlineData("", 2)]
+    [InlineData("debug", 2)]
+    [InlineData("info", 2)]
+    [InlineData("warning", 2)]
+    [InlineData("error", 1)]
+    [InlineData("fatal", 0)]
+    public void Logs_payload_level_is_a_query_side_minimum(string minLevel, int expectedCount)
+    {
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "warning", "src", "w");
+        buffer.Append(EventTicks, "error", "src", "e");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: minLevel);
+
+        var entries = body.Substring(body.IndexOf("\"entries\":[", StringComparison.Ordinal));
+        var count = entries.Split(new[] { "\"seq\":" }, StringSplitOptions.None).Length - 1;
+        Assert.Equal(expectedCount, count);
+    }
+
+    [Fact]
+    public void Logs_payload_level_filter_keeps_seq_and_dropped_untouched()
+    {
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "warning", "src", "w");
+        buffer.Append(EventTicks, "error", "src", "e");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 1, limit: 100, minLevel: "error");
+
+        Assert.StartsWith("{\"seq\":2,\"dropped\":0,\"entries\":[", body);
+        Assert.DoesNotContain("\"seq\":1,", body);
+        Assert.Contains("\"seq\":2,", body);
+    }
+
+    [Fact]
+    public void Logs_payload_reports_dropped_when_since_is_stale()
+    {
+        var buffer = new LogRingBuffer(capacity: 2);
+        buffer.Append(EventTicks, "warning", "src", "a");
+        buffer.Append(EventTicks, "warning", "src", "b");
+        buffer.Append(EventTicks, "warning", "src", "c");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: null);
+
+        Assert.StartsWith("{\"seq\":3,\"dropped\":1,\"entries\":[", body);
+    }
+
+    [Fact]
+    public void Logs_payload_filters_before_applying_limit()
+    {
+        // 回归（starvation）：先截窗后过滤会在窗口内无匹配时返回空、游标无法推进。
+        var buffer = new LogRingBuffer(capacity: 10);
+        for (var i = 0; i < 5; i++)
+        {
+            buffer.Append(EventTicks, "warning", "src", "w" + i);
+        }
+
+        for (var i = 0; i < 3; i++)
+        {
+            buffer.Append(EventTicks, "error", "src", "e" + i);
+        }
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 2, minLevel: "error");
+
+        // 3 条 error 先通过级别过滤，再取前 2 条（而不是「前 2 条全是 warning → 空」）。
+        Assert.StartsWith("{\"seq\":8,\"dropped\":0,\"entries\":[", body);
+        Assert.Contains("\"seq\":6,", body);
+        Assert.Contains("\"seq\":7,", body);
+        Assert.DoesNotContain("\"seq\":5,", body);
+    }
+
+    [Fact]
+    public void Logs_payload_empty_result_means_no_match_in_the_window()
+    {
+        var buffer = new LogRingBuffer(capacity: 10);
+        for (var i = 0; i < 5; i++)
+        {
+            buffer.Append(EventTicks, "warning", "src", "w" + i);
+        }
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 2, minLevel: "fatal");
+
+        Assert.Equal("{\"seq\":5,\"dropped\":0,\"entries\":[]}", body);
+    }
+
+    [Fact]
+    public void Logs_payload_limit_truncates_from_the_oldest_side_like_raid_events()
+    {
+        // 与 /raid/events 一致：limit 约束的是「since 之后最早的 limit 条」，
+        // 调用方据 seq 推进游标继续拉取，而不是取最新窗口。
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "warning", "src", "a");
+        buffer.Append(EventTicks, "warning", "src", "b");
+        buffer.Append(EventTicks, "warning", "src", "c");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 2, minLevel: null);
+
+        Assert.Equal(
+            "{\"seq\":3,\"dropped\":0,\"entries\":[" +
+            "{\"seq\":1,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"warning\",\"source\":\"src\",\"text\":\"a\"}," +
+            "{\"seq\":2,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"warning\",\"source\":\"src\",\"text\":\"b\"}" +
+            "]}",
+            body);
+    }
+
+    [Fact]
+    public void Logs_payload_is_independent_of_raid_state()
+    {
+        // 契约：/logs/recent 负载不含 inRaid 字段（日志与 raid 无关）。
+        var buffer = new LogRingBuffer();
+        buffer.Append(EventTicks, "fatal", "src", "crash");
+
+        var body = BridgePayloads.BuildLogs(buffer, since: 0, limit: 100, minLevel: null);
+
+        Assert.DoesNotContain("inRaid", body);
+        Assert.Contains("\"level\":\"fatal\"", body);
+    }
+
+    // ---------- /logs/summary ----------
+
+    [Fact]
+    public void Log_summary_payload_is_empty_for_fresh_store()
+    {
+        var store = new LogSummaryStore();
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: 0);
+
+        Assert.Equal("{\"groups\":[],\"overflowDropped\":0}", body);
+    }
+
+    [Fact]
+    public void Log_summary_payload_matches_contract_with_stable_field_order()
+    {
+        var store = new LogSummaryStore();
+        store.Observe(EventTicks, "error", "Assembly-CSharp", "Failed to load asset 12");
+        store.Observe(EventTicks + 10, "error", "Assembly-CSharp", "Failed to load asset 345");
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: 0);
+
+        Assert.Equal(
+            "{\"groups\":[{\"key\":\"Failed to load asset <n>\",\"level\":\"error\"," +
+            "\"source\":\"Assembly-CSharp\",\"count\":2," +
+            "\"firstTs\":\"2026-09-14T00:00:00.0000000Z\"," +
+            "\"lastTs\":\"2026-09-14T00:00:00.0000010Z\"," +
+            "\"sampleText\":\"Failed to load asset 12\"}]," +
+            "\"overflowDropped\":0}",
+            body);
+    }
+
+    [Fact]
+    public void Log_summary_payload_escapes_key_and_sample_text()
+    {
+        var store = new LogSummaryStore();
+        store.Observe(EventTicks, "warning", "a\"b", "c\\d");
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: 0);
+
+        Assert.Contains("\"source\":\"a\\\"b\"", body);
+        Assert.Contains("\"sampleText\":\"c\\\\d\"", body);
+    }
+
+    [Fact]
+    public void Log_summary_payload_reports_overflow_dropped()
+    {
+        var store = new LogSummaryStore(maxGroups: 1);
+        store.Observe(EventTicks, "warning", "src", "alpha");
+        store.Observe(EventTicks + 1, "warning", "src", "bravo");
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: 0);
+
+        Assert.StartsWith("{\"groups\":[", body);
+        Assert.EndsWith("],\"overflowDropped\":1}", body);
+    }
+
+    [Fact]
+    public void Log_summary_payload_applies_since_filter()
+    {
+        var store = new LogSummaryStore();
+        store.Observe(EventTicks, "warning", "src", "alpha");
+        store.Observe(EventTicks + 100, "warning", "src", "bravo");
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: EventTicks + 50);
+
+        Assert.Contains("\"key\":\"bravo\"", body);
+        Assert.DoesNotContain("\"key\":\"alpha\"", body);
+    }
+
+    [Fact]
+    public void Log_summary_payload_is_independent_of_raid_state()
+    {
+        var store = new LogSummaryStore();
+        store.Observe(EventTicks, "fatal", "src", "crash");
+
+        var body = BridgePayloads.BuildLogSummary(store, sinceTicks: 0);
+
+        Assert.DoesNotContain("inRaid", body);
     }
 }
