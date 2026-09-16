@@ -1,0 +1,4 @@
+{
+  // STD-CFG-002：config/config.jsonc 约定
+  "enabled": true
+}

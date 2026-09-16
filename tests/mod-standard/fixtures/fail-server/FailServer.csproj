@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- 故意用 net9.0：触发 STD-BUILD-001 -->
+    <TargetFramework>net9.0</TargetFramework>
+    <!-- 故意用两段式版本：触发 STD-META-005 -->
+    <Version>1.0</Version>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">C:\SPT\Server</SPTInstallPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <!-- 故意不引用 SPTarkov.Server.*：触发 STD-BUILD-004 -->
+
+</Project>

@@ -1,0 +1,26 @@
+[PASS] STD-STRUCT-002  --  forbidden JS/TS files: 0
+[PASS] STD-STRUCT-005
+[PASS] STD-STRUCT-006
+[SKIP] STD-META-005  --  placeholder version '{{MOD_VERSION}}' (csproj), instantiate then re-check
+[PASS] STD-BUILD-005
+[PASS] STD-BUILD-006
+[PASS] STD-LOG-001
+[PASS] STD-BUILD-001  --  TargetFramework='net10.0' (csproj)
+[PASS] STD-BUILD-004  --  core refs ok
+[PASS] STD-META-001  --  IModMetadata implementations=1
+[PASS] STD-META-002
+[SKIP] STD-META-003  --  placeholder guid, instantiate then re-check
+[PASS] STD-META-004  --  range ~4.1.0
+[PASS] STD-VER-001  --  target=4.1.5 vs range ~4.1.0
+[SKIP] STD-VER-002  --  placeholder version, instantiate then re-check
+[PASS] STD-SRV-001
+[PASS] STD-SRV-002
+[PASS] STD-SRV-003
+[PASS] STD-SRV-008
+[PASS] STD-CFG-003
+[PASS] STD-CFG-004  --  config classes clean
+[PASS] STD-CFG-002
+[PASS] STD-CFG-005
+
+mod: E:\云文件\GitHub\SamMeow-modding-superpowers\templates\server-mod | kind: server | target: 4.1.5
+checks: PASS=20 FAIL=0 SKIP=3 WAIVED=0 (waivers from E:\云文件\GitHub\SamMeow-modding-superpowers\templates\server-mod\MODDING-STD-WAIVER.md)

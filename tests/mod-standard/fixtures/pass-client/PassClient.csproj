@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- STD-BUILD-002：4.1 客户端以 netstandard2.1 构建 -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <!-- STD-META-005：三段式 semver -->
+    <Version>1.0.0</Version>
+    <!-- STD-BUILD-006：可覆盖的安装路径属性 -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">C:\SPT</SPTInstallPath>
+    <!-- STD-BUILD-005：扁平化构建输出 -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx" />
+    <Reference Include="0Harmony" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="UnityEngine" />
+  </ItemGroup>
+
+</Project>

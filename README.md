@@ -77,8 +77,11 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 84 条可审计规则，13 维度（结构 / 元数据 / 构建 / 服务端 / 客户端 / 配置 / 日志 / 依赖 / 打包 / 验证 / 版本差异 / 资源包 / 性能与安全），覆盖 4.1.5 与 5.0 双轨（每条规则 `Applies` 标注）。每条规则双源留证（机制 + 语料），证据索引 21 个 `EV-*` 锚点。
 
 - 规则集入口：[`knowledge/spt-kb/curated/modding-standard/README.md`](knowledge/spt-kb/curated/modding-standard/README.md)
-- 机械检查器：`scripts/check-mod-standard.ps1`（约 25 条机检规则子集；monorepo 感知；模板占位符报 SKIP；豁免约定 `Waiver: STD-XXX-NNN: <reason>`，默认读 `<mod>/MODDING-STD-WAIVER.md`）
-- 质量门：`tests/bootstrap/verify-standard-compliance.ps1` —— 三套模板四套目标（含 paired 两端）全量过检
+- 机读注册表：`knowledge/spt-kb/curated/modding-standard/rules.json`（84 条规则元数据 + 29 条可检规格；检查器与校验器共读的单一源）
+- 机械检查器：`scripts/check-mod-standard.ps1`（读注册表驱动；monorepo 感知；模板占位符报 SKIP；豁免约定 `Waiver: STD-XXX-NNN: <reason>`，默认读 `<mod>/MODDING-STD-WAIVER.md`）
+- 一致性校验：`scripts/validate-mod-standard.ps1`（registry ↔ 13 章 prose 双向逐字校验，exit 0 即一致）
+- 夹具回归：`tests/mod-standard/run-fixtures.ps1`（合成夹具锁定检查器的 exit 码 / FAIL 集合 / 逐条状态）
+- 质量门：`tests/bootstrap/verify-standard-compliance.ps1` —— 三段（validator + 三套模板四套目标（含 paired 两端）机检 + 夹具回归）全量过检
 
 ### 本地关联资产（仓库之外）
 

@@ -7,6 +7,11 @@
 
 $ErrorActionPreference = "Continue"
 
+# Sub-check output is decoded with the console output encoding; PS 5.1 defaults
+# to the ANSI code page, which mangles the CJK emitted by scripts/validate-mod-standard.ps1
+# (via verify-standard-compliance.ps1). Pin it to UTF-8 so aggregated output stays readable.
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 
 $checks = @(

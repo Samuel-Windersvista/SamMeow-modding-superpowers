@@ -101,7 +101,7 @@ public Range SptVersion { get; init; } = new("~4.1.0"); // >=4.1.0 且 <4.2.0
 - **Level:** MUST
 - **Applies:** both
 - **Evidence:** 机制：`api-notes-4.1/mod-loading.md`（`new Version("1.0.0")` 合法，四段式 `"1.0.0.0"` 非法）、`templates/server-mod/src/ModMetadata.cs`；语料：本次普查 509 个 csproj 中 291 个含显式 `<Version>`，其中 214 个三段式、仅 5 个四段式，72 个为 MSBuild 属性插值（如 `$(AssemblyVersion)`）（EV-CORPUS-CSPROJ）。
-- **Rule:** `Version`（以及 csproj 的 `<Version>`）必须使用三段式语义化版本 `major.minor.patch`，不得使用四段式或非 semver 字符串。
+- **Rule:** `Version`（以及 csproj 的 `<Version>`）必须以三段式核心 `major.minor.patch` 声明，允许 semver 预发布/构建后缀（如 `1.3.4-spt5.1`、`1.0.0+build.5`），不得使用四段式（如 `1.0.0.0`）或非 semver 字符串。
 
 ```csharp
 public Version Version { get; init; } = new("1.0.0"); // 三段式；"1.0.0.0" 非法

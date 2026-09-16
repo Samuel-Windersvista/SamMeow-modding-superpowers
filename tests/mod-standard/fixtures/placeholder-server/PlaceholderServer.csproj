@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- 脚手架占位符未替换：META-005 应报 SKIP -->
+    <Version>{{MOD_VERSION}}</Version>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">C:\SPT\Server</SPTInstallPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SPTarkov.Server.Core" />
+    <Reference Include="SPTarkov.DI" />
+    <Reference Include="SPTarkov.Common" />
+  </ItemGroup>
+
+</Project>

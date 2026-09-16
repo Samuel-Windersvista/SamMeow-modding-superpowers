@@ -1,0 +1,17 @@
+[PASS] STD-STRUCT-002  --  forbidden JS/TS files: 0
+[PASS] STD-STRUCT-005
+[PASS] STD-STRUCT-006
+[SKIP] STD-META-005  --  placeholder version '{{MOD_VERSION}}' (csproj), instantiate then re-check
+[PASS] STD-BUILD-005
+[PASS] STD-BUILD-006
+[PASS] STD-LOG-001
+[PASS] STD-BUILD-002  --  TargetFramework='netstandard2.1' (csproj)
+[PASS] STD-CLI-001  --  BaseUnityPlugin (BepInEx 5 / 4.1.5)
+[PASS] STD-META-006
+[PASS] STD-CLI-003
+[PASS] STD-CLI-007  --  harmony=True patchAll=True unpatch=True
+[PASS] STD-CLI-006
+[PASS] STD-CFG-006
+
+mod: E:\云文件\GitHub\SamMeow-modding-superpowers\templates\client-mod | kind: client | target: 4.1.5
+checks: PASS=13 FAIL=0 SKIP=1 WAIVED=0 (waivers from E:\云文件\GitHub\SamMeow-modding-superpowers\templates\client-mod\MODDING-STD-WAIVER.md)

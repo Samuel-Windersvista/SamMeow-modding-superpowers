@@ -185,3 +185,18 @@
 - **双轴评审 + 修复轮**：oracle ×2 无 BLOCKER；修复轮落地 11 项（S1 `--write` 退出码统一 / F1 非法条目报告可定位 / 防御加固 / 统计派生修正 / CLI 规范 / shebang+parseArgs 对齐 / 死代码清理等）。
 - **记录项（不修）**：sync `--write` 入库测试化（后续工单）；dry-run 在非法数据时 exit 1（语义统一，已披露）；便携 helper 预构建告警（既有）。
 - 全部变更未提交；**重启后复核**：`spt_kb_query({version:...})` live 返回（当前会话 spt 进程为旧 dist）。
+
+## 2026-09-16 — C8 Modding Standard 规则机读化（P1 第三项）
+
+- **机读注册表（已交付，未提交）**：`knowledge/spt-kb/curated/modding-standard/rules.json`——全量 **84 条**（13 domain）元数据 + 可检子集 **29 条**检查规格（18 handler = 11 声明式 + 7 命名；规则常量全量入册，handler 内零硬编码）；顺序=旧检查器输出顺序（golden 保真）。
+- **检查器 registry 驱动重构**：`scripts/check-mod-standard.ps1`（300→456 行）读注册表；CLI/输出/退出码/waiver/占位符/monorepo 语义逐字保持——**5/6 目标 golden 字节级一致**（模板×4 + bridge 5.0.0），radar 仅 3 行已声明 delta。
+- **META-005 假阳性修复（活体案例）**：`mods/SPT5-AccurateCircularRadar` 的 `<Version>1.3.4-spt5.1</Version>` 原 `[FAIL]`（检查器正则比散文严格）→ 放宽为「三段核心 + 可选 semver 预发布/构建后缀」+ prose 一行措辞同步；radar 现 12/0/0 WAIVED=2 exit 0；夹具双向锁定（prerelease PASS / 四段式 FAIL）。
+- **validator（新）**：`scripts/validate-mod-standard.ps1`——registry↔prose 双向校验（ID 集合/标题/Level/Applies/域/形状/发射登记）+ MUST 双源标记 28/28 + 重复 ID/块级解析/发射双护栏/handler 必需键映射；S3 不变量常驻化。
+- **夹具回归（新）**：`tests/mod-standard/`（7 夹具 + runner，含负向对照自证）；`verify-standard-compliance.ps1` 三段接线（validator + 4 模板 + 夹具）；bootstrap 保持 **10/10**。
+- **评审 + 修复轮**：oracle 双轴无 BLOCKER；修复轮 10 项落地，新检查 **7/7 负向对照命中**（真会报错）。
+- **登记台账（4 条，维持登记）**：① `STD-VER-001` 检查器专用发射 ID（prose 无对应；白名单 + README + dev-log 三处显式登记，validator 防新增）；② `STD-STRUCT-002` prose=禁 bin/obj vs 检查器=禁 TS/JS；③ `STD-VER-002` prose=复用 4.1 骨架 vs 检查器=版本同源；④ `LOG-001` 部分覆盖。均落 `rules.json` note 字段，待后续 prose 侧决策。
+- **环境事件**：BGS 幽灵物化在重启窗口（22:24-22:32）复活（6 路径：`.mcp.json` + `plugins/` + `hooks`/`.claude-plugin`/`.codex-plugin`/`.agents` 空目录；在场期间树 24→78 文件增长）→ 按用户裁决清理（备份 `D:\Temp\opencode\bgs-reappearance-20260916`，79 文件）+ `verify-layout` 恢复绿；**若下次重启再现需深挖来源**（OMO / Claude 插件物化 / 云同步）。
+- **校准**：双重包裹修复实际为 27× `return (New-Result ...)` + 2× `return $results`（29 = 可检规则数，原报告口径误差记录在案）。
+- **记录项（不修）**：N4 夹具负分支扩展（后续）；N10 scratch 捕获器引号启发式；便携树不自带夹具（设计边界）。
+- **提交口径**：`tests/bootstrap/verify-all.ps1` 混含 C7（verify-kb-index 第 10 项）与 C8（UTF-8 行）——C7/C8 建议同批提交，或剔除该行后修正 C8 验证记录。
+- 全部变更未提交。

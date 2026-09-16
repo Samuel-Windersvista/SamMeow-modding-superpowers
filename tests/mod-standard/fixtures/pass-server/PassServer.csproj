@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- STD-BUILD-001：4.1 服务端以 net10.0 构建 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- STD-META-005：三段式 semver -->
+    <Version>1.0.0</Version>
+    <!-- STD-BUILD-006：可覆盖的安装路径属性 -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">C:\SPT\Server</SPTInstallPath>
+    <!-- STD-BUILD-005：扁平化构建输出 -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- STD-BUILD-004：SPTarkov.Server.* 核心引用 -->
+    <Reference Include="SPTarkov.Server.Core" />
+    <Reference Include="SPTarkov.DI" />
+    <Reference Include="SPTarkov.Common" />
+  </ItemGroup>
+
+</Project>

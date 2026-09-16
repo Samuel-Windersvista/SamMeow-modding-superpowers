@@ -1,0 +1,4 @@
+{
+  // STD-CFG-005：随附 defaultConfig.jsonc，首启复制为 config.jsonc
+  "enabled": true
+}

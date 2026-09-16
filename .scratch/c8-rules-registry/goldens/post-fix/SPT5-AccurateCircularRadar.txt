@@ -1,0 +1,17 @@
+[PASS] STD-STRUCT-002  --  forbidden JS/TS files: 0
+[PASS] STD-STRUCT-005
+[PASS] STD-STRUCT-006
+[PASS] STD-META-005  --  version='1.3.4-spt5.1' (csproj)
+[PASS] STD-BUILD-005
+[PASS] STD-BUILD-006
+[PASS] STD-LOG-001
+[PASS] STD-BUILD-002  --  TargetFramework='net6.0' (csproj)
+[PASS] STD-CLI-001  --  IL2CPP BasePlugin (BepInEx 6 / 5.0)
+[PASS] STD-META-006
+[WAIV] STD-CLI-003  --  waived: 补丁刻意沿用上游与 SPT 客户端的惯用写法 SPTushonka.Reflection.Patching.ModulePatch（每类显式 GetTargetMethod，等价于 [HarmonyPatch(typeof(T), "method")] 的显式目标声明），而非 HarmonyPatch 注解 + PatchAll。移植任务书要求「补丁仅把 using 换成 SPTushonka.Reflection.Patching，其余不动」，且 ModulePatch 是 SPT 5.0 自带客户端 mod 的一致写法。规则意图（显式声明补丁目标、补丁集中放 Patches/、不用盲扫 PatchAll）已满足。
+[PASS] STD-CLI-007  --  no Harmony usage; rule not applicable
+[WAIV] STD-CLI-006  --  waived: 客户端日志确实统一走 BepInEx 日志源（BasePlugin.Log / ManualLogSource，与 version-matrix 对 5.0 的规定一致）。机检正则要求源码中出现字面量 `Logger.Log*`，而本插件按上游命名使用静态字段 `Log`（`RadarPlugin.Log`，即 `internal static new ManualLogSource Log`），故启发式未命中。规则实质合规，仅标识符名不匹配。
+[PASS] STD-CFG-006
+
+mod: E:\云文件\GitHub\SamMeow-modding-superpowers\mods\SPT5-AccurateCircularRadar | kind: client | target: 4.1.5
+checks: PASS=12 FAIL=0 SKIP=0 WAIVED=2 (waivers from E:\云文件\GitHub\SamMeow-modding-superpowers\mods\SPT5-AccurateCircularRadar\MODDING-STD-WAIVER.md)

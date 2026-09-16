@@ -450,7 +450,8 @@ if ($EmitMarketplace) {
 # shared resolver and the KB index. Fail the build loudly instead.
 $requiredPortablePaths = @(
   "shared/runtime-layout.mjs",
-  "knowledge/spt-kb/index.json"
+  "knowledge/spt-kb/index.json",
+  "knowledge/spt-kb/curated/modding-standard/rules.json"
 )
 foreach ($rel in $requiredPortablePaths) {
   if (-not (Test-Path -LiteralPath (Join-Path $PluginRoot $rel))) {

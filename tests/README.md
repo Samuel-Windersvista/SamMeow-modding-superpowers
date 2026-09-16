@@ -35,5 +35,8 @@ That is expected while the SPT-only cleanup is in progress.
 
 ## Other suites
 
+- `tests/mod-standard/` is the fixture regression suite for the Modding Standard
+  checker (`scripts/check-mod-standard.ps1`); it is also invoked by
+  `tests/bootstrap/verify-standard-compliance.ps1`.
 - `tests/mo2-control-plane/` and `tests/mo2-vfs-launcher/` cover the shared MO2
   infrastructure and are not part of the bootstrap suite.

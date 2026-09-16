@@ -1,0 +1,4 @@
+{
+  // STD-CFG-002：服务端配置采用 config/config.jsonc 子目录与 .jsonc 扩展名
+  "enabled": true
+}

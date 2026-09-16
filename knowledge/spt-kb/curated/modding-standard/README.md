@@ -30,6 +30,7 @@ source: curated
 ```
 modding-standard/
 ├── README.md                    # 本文件：使用说明 + 索引 + 豁免流程
+├── rules.json                   # 机读注册表（单一源）：84 条规则元数据 + 29 条可检规格
 ├── 01-structure.md              # 维度 ① 仓库与目录结构（STRUCT）
 ├── 02-metadata.md               # 维度 ② 元数据与版本声明（META）
 ├── 03-build.md                  # 维度 ③ 构建与目标框架（BUILD）
@@ -143,21 +144,38 @@ mod README / dev-log 中的记录示例：
 
 **新增维度**：需要一次形态决策（更新或新增 ADR，见 `docs/adr/0005-modding-standard-shape.md`）→ 定义新 domain slug → 维度文件编号顺延（`14-...`）→ 更新本 README 索引与 `index.json`。
 
-## 二期检查器接口约定
+## 机读注册表与检查器（单一源）
 
-本规范以固定文本约定支持后续机械检查（本期不实现）：
+规则集的机读单一源是 `rules.json`（检查器与校验器都读它）；13 章 prose 仍是权威文本，两者由校验器双向锁定：
 
-- 规则 ID：以 `### STD-<DOMAIN>-<nnn> —` 形式出现在规则标题行首。
-- 豁免标记：mod 侧以 `Waiver: STD-XXX-nnn` 记录（`XXX` 为 domain slug、`nnn` 为规则编号）。
-- 证据锚点：[evidence-index.md](evidence-index.md) 中的 `EV-*` 标题锚点（`##` / `###` 级）供规则引用。
+- `rules.json`：84 条规则元数据（`id` / `domain` / `level` / `applies` / `title`）+ 29 条可检规则的检查规格（`check.kind` / `check.handler` / `check.params`）。**规则常量（正则 / 取值 / 消息模板）只落在注册表**，检查器 handler 不内嵌任何规则常量。
+- `scripts/validate-mod-standard.ps1`：双向校验（registry ↔ prose）——ID 集合一致（无孤儿、无缺失）、`title` / `Level` / `Applies` / `domain` 逐字一致、可检规则必有 `check` 规格、发射 ID 归属登记。exit 0 即一致。
+- `scripts/check-mod-standard.ps1`：按注册表顺序对一个 mod 源码目录执行可检子集，逐条输出 `[PASS] STD-XXX-NNN  --  <detail>`，存在未豁免 FAIL 时 exit 1；豁免标记 `Waiver: STD-XXX-nnn: <reason>`（缺省读 `<mod>/MODDING-STD-WAIVER.md`）。
+- 夹具回归：`tests/mod-standard/run-fixtures.ps1`（合成夹具锁定 exit 码、FAIL 集合与逐条状态）。
+
+改一条规则的顺序：先改 prose（权威文本）→ 再改 `rules.json` → 跑 `validate-mod-standard.ps1` 与 `run-fixtures.ps1`。
+
+保留的文本约定：证据锚点——[evidence-index.md](evidence-index.md) 中的 `EV-*` 标题锚点（`##` / `###` 级）供规则 `Evidence` 栏引用。
 
 ## 机械自检（S3）
 
-规则集自身的不变量，供自检（ticket 12）与人工核对：
+规则集自身的不变量由 `scripts/validate-mod-standard.ps1` 常驻执行（原为一次性脚本，现已入库）；exit 0 即下列**机检项**全部成立：
 
-- Rule ID 全局唯一，且符合 `STD-<DOMAIN>-<nnn>`。
-- 每条规则 Level / Applies 齐全；MUST 具备机制+语料双源；无语料先例的规则已标注「机制推断，无语料先例」并登记 `EV-NOCORPUS`。
-- 本 README 索引与目录实际文件一致；`index.json` 全量登记。
+- **ID 唯一性（两侧各查）**：registry 内不重复；prose 内同一 `### STD-...` 标题出现两次即报错（重复标题会让逐字比对覆盖式合并、静默吞掉一条规则）。
+- **ID 集合一致**：registry ↔ prose 无孤儿、无缺失；ID 格式为 `STD-<DOMAIN>-<nnn>`；维度章节数 = 13。
+- **逐字一致**：每条规则的 `title` / `Level` / `Applies` / `domain` 与 prose 完全一致。`Level` / `Applies` / `Evidence` 按**规则块作用域**解析（本规则标题 -> 下一条 `###`），缺行不会被下一条的值顶替。
+- **形状**：可检规则必有 `check` 规格（kind / handler / params），非可检规则的 `check` 必须为 null；11 个声明式 handler 的必需 `params` 键齐备（键名拼错 = 缺键即报错，避免取值类检查静默退化为恒 PASS）。
+- **发射 ID**：缺省为规则自身，可经 `params.emits` 声明多条；必须落在 registry 内，或在「检查器专用」白名单中显式登记（当前 1 条：`STD-VER-001`，prose 无对应规则）；同一 ID 不得被跨规则重复发射；白名单不得出现死条目（登记了却没有任何检查发射它）。
+- **MUST 双源标记**：`Level: MUST` 的规则，其 `Evidence` 行须同时出现「机制」与「语料」标记（无语料先例的规则按单源判 SHOULD，不应标 MUST）。
+
+**人工核对项（机检不覆盖，不得据上文推断已验）**：
+
+- 无语料先例规则的 `EV-NOCORPUS` 在 [evidence-index.md](evidence-index.md) 的全文登记核对。
+- 本 README 的索引/链接与目录实际文件、`index.json` 登记的一致性。
+- 证据的**实质**充分性：标记存在 ≠ 证据成立（机检只核标记，不核内容）。
+
+检查器的**行为**由 `tests/mod-standard/run-fixtures.ps1` 的夹具回归锁定（exit 码 / FAIL 集合 / 逐条状态 / 发射序列）。
+上述三段（validator + 模板机检 + 夹具）都由 `tests/bootstrap/verify-standard-compliance.ps1` 纳入 bootstrap。
 
 ---
 

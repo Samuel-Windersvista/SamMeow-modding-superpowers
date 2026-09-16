@@ -1,0 +1,674 @@
+[
+  {
+    "id": "STD-STRUCT-001",
+    "domain": "STRUCT",
+    "level": "MUST",
+    "applies": "both",
+    "title": "在仓库根提供 `.gitignore` 排除构建产物与 IDE 文件",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-002",
+    "domain": "STRUCT",
+    "level": "MUST",
+    "applies": "both",
+    "title": "禁止提交 `bin/`、`obj/` 构建产物",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-003",
+    "domain": "STRUCT",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "用 `src/` 或功能子目录组织源码，避免平铺仓库根",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-004",
+    "domain": "STRUCT",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "paired mod 使用单仓库并按 `Client/`、`Server/` 分层",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-005",
+    "domain": "STRUCT",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "在仓库根提供 `README.md` 说明安装与使用",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-006",
+    "domain": "STRUCT",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "在仓库根提供 `LICENSE` 声明授权",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-STRUCT-007",
+    "domain": "STRUCT",
+    "level": "MAY",
+    "applies": "both",
+    "title": "在仓库根提供 `.editorconfig` 统一代码风格",
+    "chapter": "01-structure.md"
+  },
+  {
+    "id": "STD-META-001",
+    "domain": "META",
+    "level": "MUST",
+    "applies": "both",
+    "title": "实现 `IModMetadata` 且每个 mod 目录恰好一个实现",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-002",
+    "domain": "META",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "将元数据实现放入 `ModMetadata.cs`",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-003",
+    "domain": "META",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用反向域名式全局唯一 `ModGuid`",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-004",
+    "domain": "META",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 tilde 范围声明 `SptVersion`",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-005",
+    "domain": "META",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用三段式 semver 声明 `Version`",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-006",
+    "domain": "META",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 `[BepInPlugin]` 声明客户端插件 GUID、名称与版本",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-META-007",
+    "domain": "META",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "让 paired mod 两端共用同一版本号",
+    "chapter": "02-metadata.md"
+  },
+  {
+    "id": "STD-BUILD-001",
+    "domain": "BUILD",
+    "level": "MUST",
+    "applies": "both",
+    "title": "以 `net10.0` 构建服务端 mod",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-BUILD-002",
+    "domain": "BUILD",
+    "level": "MUST",
+    "applies": "both",
+    "title": "客户端使用与目标版本运行时兼容的目标框架",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-BUILD-003",
+    "domain": "BUILD",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 `<HintPath>` 引用客户端运行时程序集并设 `<Private>false</Private>`",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-BUILD-004",
+    "domain": "BUILD",
+    "level": "MUST",
+    "applies": "both",
+    "title": "以匹配版本的 `SPTarkov.Server.*` 引用构建服务端 mod",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-BUILD-005",
+    "domain": "BUILD",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "设置 `AppendTargetFrameworkToOutputPath=false` 扁平化构建输出",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-BUILD-006",
+    "domain": "BUILD",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "用可覆盖的安装路径属性定位安装目录",
+    "chapter": "03-build.md"
+  },
+  {
+    "id": "STD-SRV-001",
+    "domain": "SRV",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 `[Injectable]` 标注服务端类，交由 DI 容器构造",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-002",
+    "domain": "SRV",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "用 `OnLoadOrder.X + n` 表达 `TypePriority`，禁止裸数字",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-003",
+    "domain": "SRV",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "生命周期方法用 async 签名并传播 `CancellationToken`",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-004",
+    "domain": "SRV",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "周期性任务实现 `IOnUpdate`，返回 `true` 表示本周期已处理",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-005",
+    "domain": "SRV",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 `StaticRouter` / `DynamicRouter` 注册游戏路由",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-006",
+    "domain": "SRV",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "Router action 签名必须包含 `CancellationToken`",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-007",
+    "domain": "SRV",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "Router 只声明路由，业务逻辑放入可注入的 Callbacks 类",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-SRV-008",
+    "domain": "SRV",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用注入的 `ISptLogger<T>` 记录服务端日志",
+    "chapter": "04-server.md"
+  },
+  {
+    "id": "STD-CLI-001",
+    "domain": "CLI",
+    "level": "MUST",
+    "applies": "both",
+    "title": "客户端入口类继承版本对应的插件基类并标 `[BepInPlugin]`",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-002",
+    "domain": "CLI",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "客户端插件 GUID 用反向域名记法",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-003",
+    "domain": "CLI",
+    "level": "MUST",
+    "applies": "both",
+    "title": "Harmony 补丁用 `[HarmonyPatch]` 标注",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-004",
+    "domain": "CLI",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "Harmony 目标使用目标版本程序集的真实类型名",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-005",
+    "domain": "CLI",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 `[BepInDependency]` 声明对其它 BepInEx 插件的依赖",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-006",
+    "domain": "CLI",
+    "level": "MUST",
+    "applies": "both",
+    "title": "客户端日志使用 BepInEx 日志源（`Logger` / `Log`）",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CLI-007",
+    "domain": "CLI",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "在入口方法中应用补丁，在生命周期回调中撤销",
+    "chapter": "05-client.md"
+  },
+  {
+    "id": "STD-CFG-001",
+    "domain": "CFG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "服务端配置置于 mod 自身目录内并用 ModHelper 解析绝对路径",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-CFG-002",
+    "domain": "CFG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "采用 config/config.jsonc 子目录与 .jsonc 扩展名约定",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-CFG-003",
+    "domain": "CFG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "用 IOnDIConstruct 与 AddSingleton 注册配置并构造注入消费",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-CFG-004",
+    "domain": "CFG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "禁止给配置类标注 [Injectable]",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-CFG-005",
+    "domain": "CFG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "随附 defaultConfig.jsonc 并在首启复制为 config.jsonc",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-CFG-006",
+    "domain": "CFG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "客户端配置使用 BepInEx Config.Bind",
+    "chapter": "06-config.md"
+  },
+  {
+    "id": "STD-LOG-001",
+    "domain": "LOG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "服务端通过构造函数注入 ISptLogger<T> 记录日志",
+    "chapter": "07-logging.md"
+  },
+  {
+    "id": "STD-LOG-002",
+    "domain": "LOG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "按语义选择日志级别而非一律 Info",
+    "chapter": "07-logging.md"
+  },
+  {
+    "id": "STD-LOG-003",
+    "domain": "LOG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "客户端使用 BepInEx BaseUnityPlugin.Logger 记录日志",
+    "chapter": "07-logging.md"
+  },
+  {
+    "id": "STD-LOG-004",
+    "domain": "LOG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "捕获异常必须记录并降级，不得静默吞异常",
+    "chapter": "07-logging.md"
+  },
+  {
+    "id": "STD-LOG-005",
+    "domain": "LOG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "取消不是错误：让 OperationCanceledException 正常传播",
+    "chapter": "07-logging.md"
+  },
+  {
+    "id": "STD-DEP-001",
+    "domain": "DEP",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "用 ModDependencies 声明服务端硬依赖（key=ModGuid，value=SemVer Range）",
+    "chapter": "08-dependencies.md"
+  },
+  {
+    "id": "STD-DEP-002",
+    "domain": "DEP",
+    "level": "MUST",
+    "applies": "both",
+    "title": "无硬依赖时保持 ModDependencies 为空，不声明可选依赖",
+    "chapter": "08-dependencies.md"
+  },
+  {
+    "id": "STD-DEP-003",
+    "domain": "DEP",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "需要可选依赖语义时在 IOnLoad 中自判并降级",
+    "chapter": "08-dependencies.md"
+  },
+  {
+    "id": "STD-DEP-004",
+    "domain": "DEP",
+    "level": "MUST",
+    "applies": "both",
+    "title": "客户端必需依赖用 [BepInDependency] 声明",
+    "chapter": "08-dependencies.md"
+  },
+  {
+    "id": "STD-DEP-005",
+    "domain": "DEP",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "客户端可选依赖用 SoftDependency 标志并判空降级",
+    "chapter": "08-dependencies.md"
+  },
+  {
+    "id": "STD-PKG-001",
+    "domain": "PKG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "以游戏根相对路径组织发布归档",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-002",
+    "domain": "PKG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "为每个 mod 建立独立 MO2 overlay 并填写 meta.ini `comments`/`notes`",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-003",
+    "domain": "PKG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "将 paired mod 的两端置于同一归档与同一服务端目录",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-004",
+    "domain": "PKG",
+    "level": "MUST",
+    "applies": "both",
+    "title": "服务端 mod 目录内仅保留一个 `IModMetadata` 实现",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-005",
+    "domain": "PKG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "paired mod 两端使用同一版本号",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-006",
+    "domain": "PKG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "随仓库提供 README 与 LICENSE",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-PKG-007",
+    "domain": "PKG",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "组装多来源 mod 时重命名冲突的运行时文件并迁移旧目录",
+    "chapter": "09-packaging.md"
+  },
+  {
+    "id": "STD-VERIFY-001",
+    "domain": "VERIFY",
+    "level": "MUST",
+    "applies": "both",
+    "title": "以 Release 构建作为验证的第一步",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-002",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "经 MO2 走完 Level B 冒烟链",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-003",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "断言每个服务端 mod 的加载日志",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-004",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "断言每个客户端插件的加载日志",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-005",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "5.0",
+    "title": "用 tarkov-runtime MCP 做结构化状态断言",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-006",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "启动冒烟前用 spt-mcp 做离线预检",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-007",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "验证失败即移交 diagnosing-spt-problems",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-008",
+    "domain": "VERIFY",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "在主进度之外的 profile/save 边界验证",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VERIFY-009",
+    "domain": "VERIFY",
+    "level": "MAY",
+    "applies": "both",
+    "title": "以 raid 冒烟作为可选深验（Level C）",
+    "chapter": "10-verification.md"
+  },
+  {
+    "id": "STD-VER-002",
+    "domain": "VER",
+    "level": "SHOULD",
+    "applies": "5.0",
+    "title": "复用 4.1 的 mod 骨架，而非重写未被破坏的契约",
+    "chapter": "11-version-differences.md"
+  },
+  {
+    "id": "STD-VER-003",
+    "domain": "VER",
+    "level": "MAY",
+    "applies": "5.0",
+    "title": "仅在需要 5.0 新系统时引用新表与新扩展点",
+    "chapter": "11-version-differences.md"
+  },
+  {
+    "id": "STD-VER-004",
+    "domain": "VER",
+    "level": "SHOULD",
+    "applies": "5.0",
+    "title": "面向 5.0 的客户端与服务端按新 EFT 版本重新迁移绑定",
+    "chapter": "11-version-differences.md"
+  },
+  {
+    "id": "STD-BND-001",
+    "domain": "BND",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "把服务端 bundle 放在 `bundles/` 下并用 `bundles.json` 注册",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-BND-002",
+    "domain": "BND",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "保持 `bundles.json` 的 `key` 与文件路径一一对应",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-BND-003",
+    "domain": "BND",
+    "level": "MAY",
+    "applies": "both",
+    "title": "客户端私有 bundle 用 `AssetBundle.LoadFromFile` 随插件分发",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-BND-004",
+    "domain": "BND",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "升级 bundle 时先核对脚本绑定键，再实机验证 shader/材质",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-BND-005",
+    "domain": "BND",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "不以 Unity 版本头判定兼容性",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-BND-006",
+    "domain": "BND",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "由 mod 代码显式加载数据库覆盖，不依赖服务器自动合并",
+    "chapter": "12-bundle-assets.md"
+  },
+  {
+    "id": "STD-PERF-001",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "不在 tick 路径做无修剪的多部位射线扫描与逐帧物理查询",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-002",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "对每帧遍历的 AI 子系统做分帧或降频",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-003",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "把同步寻路等昂贵计算移出每帧主线程或加缓存",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-004",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "客户端补丁用 Prefix/Postfix 并满足独立开关与 fail-open",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-005",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "服务端避免在请求/启动热路径做阻塞式全量操作",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-006",
+    "domain": "PERF",
+    "level": "MAY",
+    "applies": "both",
+    "title": "高频路径用索引/缓存替代 O(n²) 与逐次反射",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-007",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "校验外部输入路径，禁止路径遍历",
+    "chapter": "13-perf-security.md"
+  },
+  {
+    "id": "STD-PERF-008",
+    "domain": "PERF",
+    "level": "SHOULD",
+    "applies": "both",
+    "title": "输入校验 fail-closed，不 log-then-continue",
+    "chapter": "13-perf-security.md"
+  }
+]

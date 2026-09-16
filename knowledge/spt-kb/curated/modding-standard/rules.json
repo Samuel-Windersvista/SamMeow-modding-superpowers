@@ -1,0 +1,1067 @@
+{
+  "schema_version": 1,
+  "generated": "2026-09-16",
+  "source": "knowledge/spt-kb/curated/modding-standard/*.md",
+  "domains": {
+    "STRUCT": "01-structure.md",
+    "META": "02-metadata.md",
+    "BUILD": "03-build.md",
+    "SRV": "04-server.md",
+    "CLI": "05-client.md",
+    "CFG": "06-config.md",
+    "LOG": "07-logging.md",
+    "DEP": "08-dependencies.md",
+    "PKG": "09-packaging.md",
+    "VERIFY": "10-verification.md",
+    "VER": "11-version-differences.md",
+    "BND": "12-bundle-assets.md",
+    "PERF": "13-perf-security.md"
+  },
+  "rules": [
+    {
+      "id": "STD-STRUCT-002",
+      "domain": "STRUCT",
+      "level": "MUST",
+      "applies": "both",
+      "title": "禁止提交 `bin/`、`obj/` 构建产物",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "no-files-by-extension",
+        "params": {
+          "extensions": [
+            ".ts",
+            ".js",
+            ".tsx",
+            ".jsx"
+          ],
+          "messages": {
+            "detail": "forbidden JS/TS files: {count}"
+          }
+        },
+        "note": "prose↔检查器语义不一致：prose STD-STRUCT-002 = 禁止提交 bin/obj；检查器实现的是「禁 TS/JS 源文件」。为保持 wire ID/顺序不变而沿用该 ID，待 prose 侧决策（补规则或改检查器编号）。"
+      }
+    },
+    {
+      "id": "STD-STRUCT-005",
+      "domain": "STRUCT",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在仓库根提供 `README.md` 说明安装与使用",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "repo-file-exists",
+        "params": {
+          "names": [
+            "README.md"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-STRUCT-006",
+      "domain": "STRUCT",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在仓库根提供 `LICENSE` 声明授权",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "repo-file-exists",
+        "params": {
+          "names": [
+            "LICENSE",
+            "LICENSE.md"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-META-005",
+      "domain": "META",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用三段式 semver 声明 `Version`",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "meta-005-version-semver",
+        "params": {
+          "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?(\\+[0-9A-Za-z.-]+)?$",
+          "messages": {
+            "missing": "no <Version> in csproj or Directory.Build.props",
+            "placeholder": "placeholder version '{value}' ({source}), instantiate then re-check",
+            "detail": "version='{value}' ({source})"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-BUILD-005",
+      "domain": "BUILD",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "设置 `AppendTargetFrameworkToOutputPath=false` 扁平化构建输出",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "proj-regex-present",
+        "params": {
+          "patterns": [
+            "<AppendTargetFrameworkToOutputPath>\\s*false\\s*<"
+          ],
+          "sources": [
+            "proj"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-BUILD-006",
+      "domain": "BUILD",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "用可覆盖的安装路径属性定位安装目录",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "proj-regex-present",
+        "params": {
+          "patterns": [
+            "<SPTInstallPath\\s+Condition="
+          ],
+          "sources": [
+            "proj",
+            "props"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-LOG-001",
+      "domain": "LOG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "服务端通过构造函数注入 ISptLogger<T> 记录日志",
+      "checkable": true,
+      "check": {
+        "kind": "both",
+        "handler": "src-regex-absent",
+        "params": {
+          "pattern": "Console\\.Write"
+        },
+        "note": "部分覆盖：prose STD-LOG-001 的肯定半段（构造函数注入 ISptLogger<T>）由 STD-SRV-008 承担；本检查只覆盖「不得 Console.Write」半段。"
+      }
+    },
+    {
+      "id": "STD-BUILD-001",
+      "domain": "BUILD",
+      "level": "MUST",
+      "applies": "both",
+      "title": "以 `net10.0` 构建服务端 mod",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "proj-value-equals",
+        "params": {
+          "name": "TargetFramework",
+          "value": "net10.0",
+          "messages": {
+            "detail": "TargetFramework='{value}' ({source})"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-BUILD-004",
+      "domain": "BUILD",
+      "level": "MUST",
+      "applies": "both",
+      "title": "以匹配版本的 `SPTarkov.Server.*` 引用构建服务端 mod",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "proj-refs-present",
+        "params": {
+          "refs": [
+            "SPTarkov.Server.Core",
+            "SPTarkov.DI",
+            "SPTarkov.Common"
+          ],
+          "messages": {
+            "missing": "missing: {list}",
+            "ok": "core refs ok"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-META-001",
+      "domain": "META",
+      "level": "MUST",
+      "applies": "both",
+      "title": "实现 `IModMetadata` 且每个 mod 目录恰好一个实现",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-count-equals",
+        "params": {
+          "pattern": ":\\s*IModMetadata",
+          "count": 1,
+          "messages": {
+            "detail": "IModMetadata implementations={count}"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-META-002",
+      "domain": "META",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "将元数据实现放入 `ModMetadata.cs`",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "meta-file-contains",
+        "params": {
+          "fileName": "ModMetadata.cs",
+          "pattern": "IModMetadata"
+        }
+      }
+    },
+    {
+      "id": "STD-META-003",
+      "domain": "META",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用反向域名式全局唯一 `ModGuid`",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "meta-003-guid",
+        "params": {
+          "pattern": "ModGuid\\s*\\{[^}]*\\}\\s*=\\s*\"([^\"]+)\"",
+          "guidPattern": "^[a-z0-9][a-z0-9-]*(\\.[a-z0-9][a-z0-9-]*)+$",
+          "messages": {
+            "missing": "ModGuid default not found",
+            "placeholder": "placeholder guid, instantiate then re-check",
+            "detail": "guid='{value}'"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-META-004",
+      "domain": "META",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 tilde 范围声明 `SptVersion`",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "sptversion-range",
+        "params": {
+          "pattern": "SptVersion[\\s\\S]{0,300}?new\\s*(?:Range)?\\s*\\(\"~(\\d+)\\.(\\d+)\\.(\\d+)\"\\)",
+          "targetPattern": "^(\\d+)\\.(\\d+)\\.(\\d+)$",
+          "emits": [
+            "STD-META-004",
+            "STD-VER-001"
+          ],
+          "messages": {
+            "missing": "no tilde Range(\"~x.y.z\") SptVersion found",
+            "detail": "range ~{major}.{minor}.{patch}",
+            "verMissing": "no SptVersion range to compare",
+            "verUnparseable": "unparseable -TargetSptVersion '{target}'",
+            "verDetail": "target={target} vs range ~{major}.{minor}.{patch}"
+          }
+        },
+        "note": "STD-VER-001 为检查器专用 ID：prose 无对应规则（11-version-differences.md 注：tilde 区间声明见 STD-META-004，本维度自 VER-002 起）。已登记为待决，未在 prose 侧静默补齐。"
+      }
+    },
+    {
+      "id": "STD-VER-002",
+      "domain": "VER",
+      "level": "SHOULD",
+      "applies": "5.0",
+      "title": "复用 4.1 的 mod 骨架，而非重写未被破坏的契约",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "ver-002-version-single-source",
+        "params": {
+          "metadataVersionPattern": "Version Version\\s*\\{[^}]*\\}\\s*=\\s*new\\(\"([^\"]+)\"\\)",
+          "singleSourcePattern": "ModVersion\\.Value",
+          "messages": {
+            "placeholder": "placeholder version, instantiate then re-check",
+            "detail": "csproj='{csproj}' metadata='{metadata}'",
+            "singleSource": "single-source version via generated ModVersion.Value (paired linkage)",
+            "missing": "csproj or ModMetadata version not found"
+          }
+        },
+        "note": "prose↔检查器语义不一致：prose STD-VER-002 = 复用 4.1 骨架；检查器实现的是「csproj <Version> 与 ModMetadata 版本同源」。prose 无同源规则（META-007 只覆盖 paired 两端同版本）。为保持 wire ID/顺序沿用，待 prose 侧决策。"
+      }
+    },
+    {
+      "id": "STD-SRV-001",
+      "domain": "SRV",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 `[Injectable]` 标注服务端类，交由 DI 容器构造",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "\\[Injectable"
+        }
+      }
+    },
+    {
+      "id": "STD-SRV-002",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "用 `OnLoadOrder.X + n` 表达 `TypePriority`，禁止裸数字",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "TypePriority\\s*=\\s*OnLoadOrder\\."
+        }
+      }
+    },
+    {
+      "id": "STD-SRV-003",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "生命周期方法用 async 签名并传播 `CancellationToken`",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "Task OnLoadAsync\\(\\s*CancellationToken"
+        }
+      }
+    },
+    {
+      "id": "STD-SRV-008",
+      "domain": "SRV",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用注入的 `ISptLogger<T>` 记录服务端日志",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "ISptLogger<"
+        }
+      }
+    },
+    {
+      "id": "STD-CFG-003",
+      "domain": "CFG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 IOnDIConstruct 与 AddSingleton 注册配置并构造注入消费",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "IOnDIConstruct"
+        }
+      }
+    },
+    {
+      "id": "STD-CFG-004",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "禁止给配置类标注 [Injectable]",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "cfg-004-injectable-config",
+        "params": {
+          "pattern": "(?ms)\\[Injectable[^\\]]*\\]\\s*(?:public\\s+)?(?:sealed\\s+)?(?:class|record)\\s+(\\w+)",
+          "namePattern": "(Config|Configuration)$",
+          "messages": {
+            "bad": "[Injectable] on config class: {list}",
+            "ok": "config classes clean"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-CFG-002",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "采用 config/config.jsonc 子目录与 .jsonc 扩展名约定",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "mod-file-exists",
+        "params": {
+          "names": [
+            "config/config.jsonc"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-CFG-005",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "随附 defaultConfig.jsonc 并在首启复制为 config.jsonc",
+      "checkable": true,
+      "check": {
+        "kind": "server",
+        "handler": "mod-file-exists",
+        "params": {
+          "names": [
+            "config/defaultConfig.jsonc"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STD-BUILD-002",
+      "domain": "BUILD",
+      "level": "MUST",
+      "applies": "both",
+      "title": "客户端使用与目标版本运行时兼容的目标框架",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "proj-value-in",
+        "params": {
+          "name": "TargetFramework",
+          "allowed": [
+            "netstandard2.1",
+            "net472",
+            "net471",
+            "net46",
+            "net461",
+            "net462",
+            "net6.0"
+          ],
+          "messages": {
+            "detail": "TargetFramework='{value}' ({source})"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-CLI-001",
+      "domain": "CLI",
+      "level": "MUST",
+      "applies": "both",
+      "title": "客户端入口类继承版本对应的插件基类并标 `[BepInPlugin]`",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "cli-001-plugin-base",
+        "params": {
+          "primaryPattern": ": BaseUnityPlugin",
+          "secondaryPattern": "BasePlugin",
+          "messages": {
+            "primary": "BaseUnityPlugin (BepInEx 5 / 4.1.5)",
+            "secondary": "IL2CPP BasePlugin (BepInEx 6 / 5.0)",
+            "missing": "no BaseUnityPlugin/BasePlugin inheritance found"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-META-006",
+      "domain": "META",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 `[BepInPlugin]` 声明客户端插件 GUID、名称与版本",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "\\[BepInPlugin\\([^)]*,[^)]*,[^)]*\\)"
+        }
+      }
+    },
+    {
+      "id": "STD-CLI-003",
+      "domain": "CLI",
+      "level": "MUST",
+      "applies": "both",
+      "title": "Harmony 补丁用 `[HarmonyPatch]` 标注",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "\\[HarmonyPatch\\(\\s*typeof\\("
+        }
+      }
+    },
+    {
+      "id": "STD-CLI-007",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在入口方法中应用补丁，在生命周期回调中撤销",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "cli-007-harmony-lifecycle",
+        "params": {
+          "usagePatterns": [
+            "new\\s+Harmony\\s*\\(",
+            "HarmonyLib\\.Harmony",
+            "\\bPatchAll\\s*\\("
+          ],
+          "patchPattern": "\\.PatchAll\\s*\\(",
+          "unpatchPatterns": [
+            "UnpatchSelf",
+            "override\\s+bool\\s+Unload\\s*\\("
+          ],
+          "messages": {
+            "na": "no Harmony usage; rule not applicable",
+            "detail": "harmony={harmony} patchAll={patch} unpatch={unpatch}"
+          }
+        }
+      }
+    },
+    {
+      "id": "STD-CLI-006",
+      "domain": "CLI",
+      "level": "MUST",
+      "applies": "both",
+      "title": "客户端日志使用 BepInEx 日志源（`Logger` / `Log`）",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "Logger\\.Log(Info|Warning|Error|Debug|Message)"
+        }
+      }
+    },
+    {
+      "id": "STD-CFG-006",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "客户端配置使用 BepInEx Config.Bind",
+      "checkable": true,
+      "check": {
+        "kind": "client",
+        "handler": "src-regex-present",
+        "params": {
+          "pattern": "\\.Bind\\s*\\("
+        }
+      }
+    },
+    {
+      "id": "STD-STRUCT-001",
+      "domain": "STRUCT",
+      "level": "MUST",
+      "applies": "both",
+      "title": "在仓库根提供 `.gitignore` 排除构建产物与 IDE 文件",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-STRUCT-003",
+      "domain": "STRUCT",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "用 `src/` 或功能子目录组织源码，避免平铺仓库根",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-STRUCT-004",
+      "domain": "STRUCT",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "paired mod 使用单仓库并按 `Client/`、`Server/` 分层",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-STRUCT-007",
+      "domain": "STRUCT",
+      "level": "MAY",
+      "applies": "both",
+      "title": "在仓库根提供 `.editorconfig` 统一代码风格",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-META-007",
+      "domain": "META",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "让 paired mod 两端共用同一版本号",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BUILD-003",
+      "domain": "BUILD",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 `<HintPath>` 引用客户端运行时程序集并设 `<Private>false</Private>`",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-SRV-004",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "周期性任务实现 `IOnUpdate`，返回 `true` 表示本周期已处理",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-SRV-005",
+      "domain": "SRV",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 `StaticRouter` / `DynamicRouter` 注册游戏路由",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-SRV-006",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "Router action 签名必须包含 `CancellationToken`",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-SRV-007",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "Router 只声明路由，业务逻辑放入可注入的 Callbacks 类",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-002",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "客户端插件 GUID 用反向域名记法",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-004",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "Harmony 目标使用目标版本程序集的真实类型名",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-005",
+      "domain": "CLI",
+      "level": "MUST",
+      "applies": "both",
+      "title": "用 `[BepInDependency]` 声明对其它 BepInEx 插件的依赖",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CFG-001",
+      "domain": "CFG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "服务端配置置于 mod 自身目录内并用 ModHelper 解析绝对路径",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-002",
+      "domain": "LOG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "按语义选择日志级别而非一律 Info",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-003",
+      "domain": "LOG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "客户端使用 BepInEx BaseUnityPlugin.Logger 记录日志",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-004",
+      "domain": "LOG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "捕获异常必须记录并降级，不得静默吞异常",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-005",
+      "domain": "LOG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "取消不是错误：让 OperationCanceledException 正常传播",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-DEP-001",
+      "domain": "DEP",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "用 ModDependencies 声明服务端硬依赖（key=ModGuid，value=SemVer Range）",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-DEP-002",
+      "domain": "DEP",
+      "level": "MUST",
+      "applies": "both",
+      "title": "无硬依赖时保持 ModDependencies 为空，不声明可选依赖",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-DEP-003",
+      "domain": "DEP",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "需要可选依赖语义时在 IOnLoad 中自判并降级",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-DEP-004",
+      "domain": "DEP",
+      "level": "MUST",
+      "applies": "both",
+      "title": "客户端必需依赖用 [BepInDependency] 声明",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-DEP-005",
+      "domain": "DEP",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "客户端可选依赖用 SoftDependency 标志并判空降级",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-001",
+      "domain": "PKG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "以游戏根相对路径组织发布归档",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-002",
+      "domain": "PKG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "为每个 mod 建立独立 MO2 overlay 并填写 meta.ini `comments`/`notes`",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-003",
+      "domain": "PKG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "将 paired mod 的两端置于同一归档与同一服务端目录",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-004",
+      "domain": "PKG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "服务端 mod 目录内仅保留一个 `IModMetadata` 实现",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-005",
+      "domain": "PKG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "paired mod 两端使用同一版本号",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-006",
+      "domain": "PKG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "随仓库提供 README 与 LICENSE",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-007",
+      "domain": "PKG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "组装多来源 mod 时重命名冲突的运行时文件并迁移旧目录",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-001",
+      "domain": "VERIFY",
+      "level": "MUST",
+      "applies": "both",
+      "title": "以 Release 构建作为验证的第一步",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-002",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "经 MO2 走完 Level B 冒烟链",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-003",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "断言每个服务端 mod 的加载日志",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-004",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "断言每个客户端插件的加载日志",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-005",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "5.0",
+      "title": "用 tarkov-runtime MCP 做结构化状态断言",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-006",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "启动冒烟前用 spt-mcp 做离线预检",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-007",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "验证失败即移交 diagnosing-spt-problems",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-008",
+      "domain": "VERIFY",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在主进度之外的 profile/save 边界验证",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VERIFY-009",
+      "domain": "VERIFY",
+      "level": "MAY",
+      "applies": "both",
+      "title": "以 raid 冒烟作为可选深验（Level C）",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VER-003",
+      "domain": "VER",
+      "level": "MAY",
+      "applies": "5.0",
+      "title": "仅在需要 5.0 新系统时引用新表与新扩展点",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VER-004",
+      "domain": "VER",
+      "level": "SHOULD",
+      "applies": "5.0",
+      "title": "面向 5.0 的客户端与服务端按新 EFT 版本重新迁移绑定",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-001",
+      "domain": "BND",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "把服务端 bundle 放在 `bundles/` 下并用 `bundles.json` 注册",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-002",
+      "domain": "BND",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "保持 `bundles.json` 的 `key` 与文件路径一一对应",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-003",
+      "domain": "BND",
+      "level": "MAY",
+      "applies": "both",
+      "title": "客户端私有 bundle 用 `AssetBundle.LoadFromFile` 随插件分发",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-004",
+      "domain": "BND",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "升级 bundle 时先核对脚本绑定键，再实机验证 shader/材质",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-005",
+      "domain": "BND",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "不以 Unity 版本头判定兼容性",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-BND-006",
+      "domain": "BND",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "由 mod 代码显式加载数据库覆盖，不依赖服务器自动合并",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-001",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "不在 tick 路径做无修剪的多部位射线扫描与逐帧物理查询",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-002",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "对每帧遍历的 AI 子系统做分帧或降频",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-003",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "把同步寻路等昂贵计算移出每帧主线程或加缓存",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-004",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "客户端补丁用 Prefix/Postfix 并满足独立开关与 fail-open",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-005",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "服务端避免在请求/启动热路径做阻塞式全量操作",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-006",
+      "domain": "PERF",
+      "level": "MAY",
+      "applies": "both",
+      "title": "高频路径用索引/缓存替代 O(n²) 与逐次反射",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-007",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "校验外部输入路径，禁止路径遍历",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-008",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "输入校验 fail-closed，不 log-then-continue",
+      "checkable": false,
+      "check": null
+    }
+  ]
+}
