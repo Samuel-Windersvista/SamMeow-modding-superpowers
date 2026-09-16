@@ -1,12 +1,85 @@
-# scripts/spt-kb —— sp-mod.com 源码归档工具
+# scripts/spt-kb —— sp-mod.com 源码归档工具 + KB 索引管线
 
-把 [sp-mod.com](https://sp-mod.com) 上按 SPT 版本 + 更新时间窗口筛选出的 mod 源码，
-批量浅克隆进知识库归档目录 `knowledge/spt-kb/archive/forge/mods/`，并生成 provenance MANIFEST。
+本目录有两组工具：
 
-本目录脚本源自 2026-09 一次手工采集（271 mod / 297 条源码链接）跑通的临时脚本，
+1. **Forge 源码归档**（`fetch → clone → finalize`）：把 [sp-mod.com](https://sp-mod.com)
+   上按 SPT 版本 + 更新时间窗口筛选出的 mod 源码，批量浅克隆进知识库归档目录
+   `knowledge/spt-kb/archive/forge/mods/`，并生成 provenance MANIFEST。
+2. **KB 索引管线**（`sync-index` / `validate-index`）：维护并校验
+   `knowledge/spt-kb/index.json`（schema_version 2 契约）。
+
+归档脚本源自 2026-09 一次手工采集（271 mod / 297 条源码链接）跑通的临时脚本，
 现固化为可重复使用的仓库工具。算法照搬，仅做参数化与合并。
 
-## 三步工作流
+## 零步：KB 索引管线（schema_version 2）
+
+索引契约实现在 `tools/spt-mcp/src/kb/`（`validateIndex` / `parseIndexForQuery`），
+两个脚本都**经 dist 相对导入**复用同一份契约，因此需要先构建：
+
+```powershell
+npm --prefix tools/spt-mcp run build
+```
+
+### sync-index —— upsert 生成器 + drift 报告
+
+```powershell
+# 只看漂移（默认 dry-run，不落盘）
+node scripts/spt-kb/sync-index.mjs
+
+# 只应用「新增条目」+ 刷新 generated
+node scripts/spt-kb/sync-index.mjs --write
+```
+
+- 扫描 `knowledge/spt-kb/` 下 `wiki/` + `wiki-tushonka/` + `curated/` 的 `*.md`
+  （`archive/` **不在扫描范围**，因此不为其推导 `source`）。
+- **已有条目绝不改写**：`title` / `keywords` / `summary` 是手工资产，且源文件
+  没有 `title` 字段（`wiki/` 与 `wiki-tushonka/` 同页标题不同），全量重建会丢数据。
+- 新文件生成候选条目：`title` = frontmatter.title → 首个 H1 → 文件名；
+  `version` / `domain` / `topic` / `source` 来自 frontmatter；缺省分别为
+  `["通用"]` / `both` / `uncategorized`，`source` 按路径前缀推导
+  （`curated/`→curated、`wiki*/`→wiki）。
+- drift 报告：新增（文件缺条目）/ 孤儿（条目缺文件，**仅报告不删除**）/ 非法条目 / 统计。
+  非法条目逐条带 path 前缀（`! <path>: <error>`）以便定位；索引未通过契约校验时
+  **省略统计行**（避免对非法数据（如 string `version`）产出乱码统计）。
+- `--write` 仅在确有新增时落盘（无新增即 no-op，`generated` 不变，保持幂等）。
+- frontmatter 解析为手写 YAML 子集，**刻意只支持** `key: value`（含引号字符串）
+  与 `key: [a, b]` 行内 flow 数组；**不支持**引号内含逗号的数组、块序列（多行
+  `- item`）、行内注释（`value # comment`）、嵌套映射 / 多行标量——出现时按字面量
+  处理或忽略，不会抛错。零依赖。
+
+参数（均可选，支持 `--k v` 与 `--k=v`）：
+
+| 参数 | 说明 | 默认 |
+|------|------|------|
+| `--write` | 落盘（缺省 dry-run） | 关闭 |
+| `--kb` | KB 根目录 | `../../knowledge/spt-kb/`（相对本脚本） |
+| `--index` | 索引文件路径 | `<kb>/index.json` |
+
+退出码（dry-run 与 `--write` 语义一致）：
+
+| 码 | 含义 |
+|----|------|
+| 0 | 无契约问题（dry-run 正常结束；或写盘成功且无非法条目） |
+| 1 | 索引存在非法条目（无论是否写盘；有新增时仍先写入，再以 1 提示待修复） |
+| 2 | 用法错误，或索引不可解析（坏 JSON / 根非对象 / `entries` 非数组） |
+
+### validate-index —— 契约校验
+
+```powershell
+node scripts/spt-kb/validate-index.mjs
+node scripts/spt-kb/validate-index.mjs --index D:\Temp\opencode\index.json
+```
+
+- 读索引 → 调 dist 的 `validateIndex` → 打印 stats（`bySource` / `byDomain` /
+  `byVersion` / `byTopic` / `withKeywords` / `withSummary`）与全部错误。
+- 严格规则：`schema_version === 2`；`entries` 数组；`path` 非空且唯一；
+  `title`/`topic`/`source` 非空；`version` 为 `string[]`（strict，不归一）；
+  `domain ∈ {server, client, both}`；`keywords?: string[]`；`summary?: string`。
+- dist 缺失时给出构建提示。bootstrap 检查 `tests/bootstrap/verify-kb-index.ps1` 调用本脚本。
+- 退出码：0 = 契约通过；1 = 契约失败 / 索引不可读 / dist 缺失；2 = 用法错误
+  （未知参数 / `--index` 缺少取值）。
+
+## 三步工作流（Forge 源码归档）
 
 ```
 fetch  →  clone  →  finalize

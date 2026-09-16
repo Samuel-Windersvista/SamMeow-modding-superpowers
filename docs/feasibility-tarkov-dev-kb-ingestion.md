@@ -61,7 +61,7 @@ knowledge/spt-kb/
 │   ├── tasks.md
 │   └── ...
 ├── sources/third-party.md            # 追加 tarkov.dev 条目
-└── index.json                        # 重建登记新条目（schema_version 1）
+└── index.json                        # 重建登记新条目（schema_version 2）
 ```
 
 **仓库体积权衡**：5312 物品全量 dump 约数十 MB。推荐方案：抓取脚本入库 + 筛选后快照入库；全量原始 dump 放 `D:\Temp\opencode` 或本地归档，不入 git。若 Overseer 希望全量入库 git，亦可（需确认）。

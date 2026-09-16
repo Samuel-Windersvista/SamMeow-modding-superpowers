@@ -50,7 +50,7 @@ there is no remote pack distribution and no versioned cache root. Its layout:
 
 | Path | Role | Rule |
 |------|------|------|
-| `index.json` | Machine-readable index (schema_version 1) | Keep in sync with actual files |
+| `index.json` | Machine-readable index (schema_version 2) | Keep in sync with actual files; machine-checked by `scripts/spt-kb/validate-index.mjs` |
 | `wiki/` | Official wiki vendor copy (read-only) | Never edit in place; write corrections to `curated/` |
 | `curated/` | Refined layer: modding guide, API notes, recipes | Every doc carries version tags |
 | `sources/` | Source registry (`repositories.md`, `third-party.md`) | Record provenance for every external asset |
@@ -79,20 +79,43 @@ do not write untagged SPT facts into `curated/`.
 
 ## Rebuilding the index
 
-The index build is a mechanical step:
+The index is a **machine-checked contract** (`schema_version: 2`, implemented in
+`tools/spt-mcp/src/kb/`), maintained by an **upsert generator** — never
+hand-rebuild it wholesale. Source files carry no `title` (it is a hand-curated
+asset), and `wiki/` vs `wiki-tushonka/` title the same page differently, so a
+full rebuild would lose data.
 
 ```powershell
-# Regenerate index.json from the current wiki/ + curated/ + archive/ trees.
-# (Repo tooling; see tools/ for the exact script if one exists.)
-# Fallback: hand-maintain index.json entries for any added/removed file,
-# keeping the schema_version: 1 shape (path/title/version/domain/topic/source).
+# 1. Drift report (dry-run; writes nothing). Reports:
+#      new files with no entry / orphan entries with no file / invalid entries
+node scripts/spt-kb/sync-index.mjs
+
+# 2. Apply ONLY the new entries (existing entries are never rewritten;
+#    orphans are reported, never deleted). Refreshes `generated`.
+node scripts/spt-kb/sync-index.mjs --write
+
+# 3. Validate against the v2 contract (exit 0 = green).
+node scripts/spt-kb/validate-index.mjs
+```
+
+`schema_version: 2` shape — required `path` / `title` / `version[]` / `domain`
+(`server` | `client` | `both`) / `topic` / `source`; optional `keywords` /
+`summary`. `version` is always a `string[]` (v1 permitted a bare string, which
+broke the `version` filter at query time with `entry.version.map is not a
+function`).
+
+Both scripts import the contract from the **built spt-mcp dist**, so build first
+when `tools/spt-mcp/dist/kb/` is missing:
+
+```powershell
+npm --prefix tools/spt-mcp run build
 ```
 
 After any change, smoke-check:
 
 ```text
 read knowledge/spt-kb/index.json
--> entries have version/domain/topic fields
+-> schema_version is 2; entries have version/domain/topic fields
 -> a 4.1 curated doc (e.g. curated/api-notes-4.1/mod-loading.md) is listed and opens
 ```
 
@@ -166,7 +189,14 @@ To add a custom knowledge record to the spt-kb:
    existing curated docs).
 2. Tag the version per `VERSIONS.md` (`[4.1]` etc.) and state the provenance
    (which source file under `sources/` or which archive entry it derives from).
-3. Add an entry to `index.json` matching the schema.
+3. Register it in the index with the generator (never hand-edit an existing
+   entry's `title`/`keywords`/`summary` — those are curated assets):
+
+   ```powershell
+   node scripts/spt-kb/sync-index.mjs          # drift report (dry-run)
+   node scripts/spt-kb/sync-index.mjs --write  # append the new entry
+   node scripts/spt-kb/validate-index.mjs      # contract check (exit 0)
+   ```
 4. If the content came from an external source not yet registered, add it to
    `knowledge/spt-kb/sources/repositories.md` (or `third-party.md`) first.
 

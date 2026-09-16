@@ -1,0 +1,556 @@
+{
+  "isError": false,
+  "envelope": {
+    "ok": true,
+    "tool": "spt_kb_query",
+    "summary": "知识库匹配 47 条",
+    "data": {
+      "matches": [
+        {
+          "path": "archive/3114-sources/MANIFEST.md",
+          "title": "3114 整合包 Mod 源码归档 MANIFEST（51 个 mod）",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "curated"
+        },
+        {
+          "path": "archive/forge/c-bucket/MANIFEST.md",
+          "title": "C 桶 Forge 下载归档 MANIFEST（旧版本 mod 留档）",
+          "version": [
+            "3.11",
+            "4.0",
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "archive",
+          "keywords": [
+            "C桶",
+            "c-bucket",
+            "归档",
+            "Forge下载",
+            "黑盒DLL",
+            "SPTarkov版本"
+          ],
+          "summary": "C 桶 12 个 mod 的 Forge 下载留档：版本/SPTarkov 编译目标（4.0.3/4.0.4）/zip 归档状态/部署状态。旧版本 mod 黑盒 DLL 无源码，DLL 引用版本可判断 4.1 兼容性"
+        },
+        {
+          "path": "archive/forge/mods/MANIFEST-sp-mod-2026-09.md",
+          "title": "sp-mod.com 源码归档 MANIFEST（近一月 4.1.5，297 仓库）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "curated",
+          "keywords": [
+            "sp-mod",
+            "Forge",
+            "源码归档",
+            "4.1.5",
+            "批量克隆",
+            "MANIFEST"
+          ],
+          "summary": "sp-mod.com API v0 抓取（filter[spt_version]=4.1.5 & updated_between 近一月）：271 mod / 297 唯一仓库浅克隆归档至 archive/forge/mods/<Name>_<id>_source/；含 provenance 表与 URL 规范化补克隆记录（297/297 就位）"
+        },
+        {
+          "path": "curated/api-notes-3.11/mod-loading.md",
+          "title": "Mod 加载流程笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/mod-loading.md",
+          "title": "Mod 加载流程笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/server-mod-metadata-dll.md",
+          "title": "4.1 Server Mod 元数据读取（DLL / IModMetadata）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "mod-metadata",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/mod-loading.md",
+          "title": "Mod 加载流程笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/modding-api.md",
+          "title": "Mod 能力面 API 笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "modding-api",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/client-mod-311-to-41.md",
+          "title": "3.11 -> 4.1 客户端 mod 迁移指南",
+          "version": [
+            "3.11",
+            "4.1"
+          ],
+          "domain": "client",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-kmytarkovapi.md",
+          "title": "客户端混淆名映射（KmyTarkovApi 实战：库类 mod 移植 + 静态类转枚举）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "client",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-secure-mapbook.md",
+          "title": "迁移流水线实战经验（SecureMapbookMod bundle 试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-warsaw-trader.md",
+          "title": "从零写商人 mod 实战经验（WarsawTrader 试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/server-mod-311-to-41.md",
+          "title": "服务端 mod 迁移知识：SPT 3.11 -> 4.1.2（SPTarkov C#）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated",
+          "keywords": [
+            "SPTarkov",
+            "服务端",
+            "server mod",
+            "IModMetadata",
+            "TS重写",
+            "net10",
+            "Injectable",
+            "OnLoadAsync"
+          ],
+          "summary": "4.0→4.1 SPTarkov C# 服务端迁移全知识：AbstractModMetadata断链、表模型注入、TS→C#重写模板（AKResonant实战4轮修复）、Router生命周期、WTT依赖区间、IModMetadata接口。2026-08-11新增第8章TS→C#迁移"
+        },
+        {
+          "path": "curated/modding-guide/02-server-mod-anatomy.md",
+          "title": "Server Mod 解剖 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "server-anatomy",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/03-client-mod-anatomy.md",
+          "title": "Client Mod 解剖 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "client-anatomy",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/README.md",
+          "title": "SPT Mod 开发指南（重组版）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "index",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/README.md",
+          "title": "SPT Mod 编写规范（Modding Standard）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/3114-client-mod-build-gotchas.md",
+          "title": "SPT 3.11.4 反编译与客户端 mod 构建坑",
+          "version": [
+            "3.11"
+          ],
+          "domain": "client",
+          "topic": "tooling",
+          "source": "curated",
+          "keywords": [
+            "ilspycmd",
+            "反编译",
+            "net471",
+            "Comfort.dll",
+            "Paths",
+            "构建",
+            "BepInEx",
+            "验证"
+          ],
+          "summary": "ilspycmd 10.1 崩溃需升 11.0；EFT 0.16 命名空间分布（AI 类全局/BotOwner 在 EFT）；net471 构建坑（Comfort.dll 引用、全局 Paths 遮蔽 BepInEx.Paths、FieldRefAccess 返回类型）；不进战局的补丁加载验证捷径（-token/-config 直启 + LogOutput.log）"
+        },
+        {
+          "path": "curated/operations/client-mod-compat-audit-playbook.md",
+          "title": "客户端 mod Harmony 冲突审计 playbook（9 仓源码实证）",
+          "version": [
+            "3.11"
+          ],
+          "domain": "client",
+          "topic": "conflict-analysis",
+          "source": "curated",
+          "keywords": [
+            "Harmony",
+            "冲突",
+            "审计",
+            "SAIN",
+            "QuestingBots",
+            "LootingBots",
+            "Realism",
+            "ThatsLit",
+            "Donuts",
+            "优先级",
+            "Transpiler"
+          ],
+          "summary": "有源码时的冲突审计流程（双通道 grep + 语义判定规则）+ 9 仓实证事实：SAIN 只 patch 感知参数级方法、QB 的 CheckLookEnemy prefix 顺序敏感、ThatsLit 走 addSensorDistance 不改 VisibleDist、Donuts 局末绕过 UnregisterPlayer、spt-singleplayer 对 UpdateManual 的固定索引 Transpiler 等"
+        },
+        {
+          "path": "curated/operations/conflict-analysis-input-model.md",
+          "title": "Mod 冲突分析的正确输入模型（modlist 过滤 + 嵌套路径 + hash）",
+          "version": [
+            "3.11",
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "conflict-analysis",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/pilot-experience-performancetweaks.md",
+          "title": "PerformanceTweaks 制作经验（客户端性能 mod 全流程试点）",
+          "version": [
+            "3.11"
+          ],
+          "domain": "client",
+          "topic": "operations",
+          "source": "curated",
+          "keywords": [
+            "性能",
+            "试点",
+            "反编译",
+            "Harmony",
+            "实测",
+            "Adrenalin",
+            "配置文案",
+            "经验"
+          ],
+          "summary": "客户端性能 mod 全流程管线（反编译→侦察→证据表→补丁→审计→实测）；三次侦察误判的读码修正（SAIN 感知链假设/GClass1828 伪热点/目录归档引用爆炸）；补丁四原则；实测教训（1% low 不为所动、AMD CSV 是零成本 A/B 源）；配置文案人话化；mods/ 产出约定"
+        },
+        {
+          "path": "curated/recipes/10-mod-communication.md",
+          "title": "配方：Mod 间通信 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/11-mod-web-config-ui.md",
+          "title": "配方：Mod 配置界面（Mod Web Pages / 浏览器编辑器）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/README.md",
+          "title": "SPT 4.1 Mod 任务配方集",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "wiki-tushonka/Archived_Pending_Deletion/Recommended_Mods_311.md",
+          "title": "Recommended Mods for SPT 3.11 [for potential deletion]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding.html",
+          "title": "modding",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding.md",
+          "title": "Creating Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/Modding_Resources.md",
+          "title": "Modding Resources",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding.md",
+          "title": "SPT 4.1 Modding",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/414_Changes.md",
+          "title": "Mod Changes - 4.1.4 onwards",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Client_40_to_41.md",
+          "title": "Client Mod Migration - 4.0 to 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Server_40_to_41.md",
+          "title": "Server Mod Migration - 4.0 to 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Server_413_Changes.md",
+          "title": "Server Mod Changes - 4.1.3 onwards",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/server/Mod_Web_Pages.md",
+          "title": "Mod Web Pages",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/tutorials/Client_Modding_Quick_Guide.md",
+          "title": "Client Modding Quick Guide",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40/Known_Mod_Issues_40.md",
+          "title": "Known Mod Issues for SPT 4.0",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/Known_Mod_Issues_41.md",
+          "title": "Known Mod Issues for SPT 4.1",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Installing_Mods.md",
+          "title": "Installing Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Mod_Types.md",
+          "title": "Mod Types",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Uninstalling_Mods.md",
+          "title": "Uninstalling Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Installing_Mods.md",
+          "title": "Before installing your mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Known_Mod_Issues_40.md",
+          "title": "Infinite loading after installing mods",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Mod_Types.md",
+          "title": "Server mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/Modding_Resources.md",
+          "title": "SPT Discord server mod development channels",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Recommended_Mods_40.md",
+          "title": "Mods for better AI",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "mod-recommendations",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_311/Recommended_Mods_311.md",
+          "title": "Mods for better AI",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "mod-recommendations",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Uninstalling_Mods.md",
+          "title": "Uninstalling mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        }
+      ],
+      "matchCount": 47,
+      "filters": {
+        "keyword": "mod"
+      }
+    }
+  }
+}

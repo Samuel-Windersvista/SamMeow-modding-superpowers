@@ -110,6 +110,65 @@ describe("spt_kb_query: 布局降级", () => {
   });
 });
 
+// C7 / D4：v1 遗留的 string 形态 version 曾让 version 过滤 100% 崩溃
+// （entry.version.map is not a function -> internal_error）。现由
+// parseIndexForQuery 防御归一为 [string]，过滤正常命中。
+describe("spt_kb_query: 契约归一（D4）", () => {
+  it("version 为 string 的条目 -> 归一后 version 过滤命中", () => {
+    const kbRoot = join(tmp, "kb-string-version");
+    writeFile(
+      join(kbRoot, "index.json"),
+      JSON.stringify({
+        entries: [
+          {
+            path: "curated/migration/legacy.md",
+            title: "Legacy",
+            version: "4.1",
+            domain: "server",
+            topic: "migration",
+            source: "curated",
+          },
+          {
+            path: "curated/recipes/other.md",
+            title: "Other",
+            version: ["5.0"],
+            domain: "server",
+            topic: "recipe",
+            source: "curated",
+          },
+        ],
+      }),
+    );
+    process.env.SPT_KB_ROOT = kbRoot;
+    resetLayoutForTest();
+
+    const res = runKbQuery({ version: "4.1" });
+    expect(res.ok).toBe(true);
+    if (!res.ok) return;
+
+    const data = res.data as { matchCount: number; matches: Array<{ path: string }> };
+    expect(data.matchCount).toBe(1);
+    expect(data.matches[0].path).toBe("curated/migration/legacy.md");
+  });
+});
+
+// 结构非法（entries 非数组）-> 响亮 kb_unavailable，而不是静默 0 匹配
+describe("spt_kb_query: 索引结构失败（响亮）", () => {
+  it("索引结构非法 -> errEnv + code kb_unavailable", () => {
+    const kbRoot = join(tmp, "kb-malformed");
+    writeFile(join(kbRoot, "index.json"), JSON.stringify({ entries: { nope: true } }));
+    process.env.SPT_KB_ROOT = kbRoot;
+    resetLayoutForTest();
+
+    const res = runKbQuery({});
+    expect(res.ok).toBe(false);
+    if (res.ok) return;
+
+    expect(res.code).toBe("kb_unavailable");
+    expect(res.message).toContain("结构非法");
+  });
+});
+
 describe("spt_forge_search: 布局降级（同类）", () => {
   it("归档缺失 -> errEnv + code kb_unavailable", () => {
     // 有效 KB 根但无 archive/forge 目录（便携包形态）

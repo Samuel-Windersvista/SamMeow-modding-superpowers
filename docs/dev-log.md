@@ -174,3 +174,14 @@
 - **文档**：README / CONTRIBUTING / INSTALL 修正（三台计数、kit 先构建顺序、dist 非跟踪事实、技能数 14→15）；`session-wiring-contract.md` 补共享内核先构建。
 - **记录项（不修）**：N5（kit 冻结维持 ToolResult workaround）；N7（dist 陈旧性护栏，已知限制）；N8（`using-spt-translator` 幽灵路由——C6 尾账）；SDK 1.x 传递依赖瘦身（后续批次）。
 - 全部变更未提交；**重启后复核**：三台 MCP 加载 + mo2 工具 schema 接受。
+
+## 2026-09-16 — C7 KB 索引接口归一 + 管线闭环（P1 第二项）
+
+- **契约模块（已交付，未提交）**：`tools/spt-mcp/src/kb/`（`contract.ts`：类型 + `KB_SCHEMA_VERSION=2` + `validateIndex` 严格 + `parseIndexForQuery` 结构校验 + version 防御归一 + `collectStats`；`query.ts` 纯函数查询；`index.ts` 导出面）；`kb-query.ts` 改薄；`types.ts` 死 facade 移除。
+- **现役 bug 修复（活体实测）**：`spt_kb_query({version:"4.1"})` 原为 `internal_error: entry.version.map is not a function`（2 条 string 型 version 条目让整条过滤路径崩溃）→ 修复后 **169 命中**（= 71×4.1 + 98×通用，语义正确）。
+- **数据迁移 v1→v2**：2 条 version string→array、3 条 source 补齐（2×curated + 1×archive）、schema_version→2；文件 diff **+13/−6**，条目集合与文件键序未动；备份于 `.scratch/c7-kb-index/goldens/index-pre-migration.json`（与 HEAD blob LF 归一后逐字节相等）。
+- **管线闭环**：`scripts/spt-kb/validate-index.mjs`（薄包装调 dist，exit 0/1/2）+ `sync-index.mjs`（upsert 生成器 + drift 报告：已有条目绝不改写、孤儿仅报告不删、`--write` 幂等、非法数据 exit 1、坏 JSON/entries 非数组 exit 2）；bootstrap 第 10 项 `verify-kb-index`（**9→10 全绿**）。
+- **验证**：spt **98**（+26：23 契约 + 3 查询）/ validate exit 0（221 条 stats 与基线逐项一致）/ sync 幂等（0 新增 · 4 archive 孤儿 · 0 非法）/ 对抗性 **24/24** / bootstrap **10/10** / 便携 validate exit 0；kb_query golden pre/post = version 修复 + 已声明数据迁移（值级 5 处）+ 输出键序归一（canonical 重建，31/32 form-B 条目重排）。
+- **双轴评审 + 修复轮**：oracle ×2 无 BLOCKER；修复轮落地 11 项（S1 `--write` 退出码统一 / F1 非法条目报告可定位 / 防御加固 / 统计派生修正 / CLI 规范 / shebang+parseArgs 对齐 / 死代码清理等）。
+- **记录项（不修）**：sync `--write` 入库测试化（后续工单）；dry-run 在非法数据时 exit 1（语义统一，已披露）；便携 helper 预构建告警（既有）。
+- 全部变更未提交；**重启后复核**：`spt_kb_query({version:...})` live 返回（当前会话 spt 进程为旧 dist）。

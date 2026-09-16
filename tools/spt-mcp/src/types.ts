@@ -131,15 +131,6 @@ export interface ForgeModSummary {
   teaser: string;
 }
 
-export interface KbEntry {
-  path: string;
-  title: string;
-  version: string[];
-  domain: string;
-  topic: string;
-  source: string;
-}
-
 // -----------------------------------------------------------------------------
 // 信封（canonical 实现已抽到共享内核 tools/mcp-kit）
 //

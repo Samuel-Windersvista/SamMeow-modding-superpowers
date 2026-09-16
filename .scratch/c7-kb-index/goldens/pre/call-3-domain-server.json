@@ -1,0 +1,2366 @@
+{
+  "isError": false,
+  "envelope": {
+    "ok": true,
+    "tool": "spt_kb_query",
+    "summary": "知识库匹配 204 条",
+    "data": {
+      "matches": [
+        {
+          "path": "archive/3114-sources/MANIFEST.md",
+          "title": "3114 整合包 Mod 源码归档 MANIFEST（51 个 mod）",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "curated"
+        },
+        {
+          "title": "C 桶 Forge 下载归档 MANIFEST（旧版本 mod 留档）",
+          "topic": "archive-index",
+          "domain": "both",
+          "version": [
+            "3.11",
+            "4.0",
+            "4.1"
+          ],
+          "path": "archive/forge/c-bucket/MANIFEST.md",
+          "keywords": [
+            "C桶",
+            "c-bucket",
+            "归档",
+            "Forge下载",
+            "黑盒DLL",
+            "SPTarkov版本"
+          ],
+          "summary": "C 桶 12 个 mod 的 Forge 下载留档：版本/SPTarkov 编译目标（4.0.3/4.0.4）/zip 归档状态/部署状态。旧版本 mod 黑盒 DLL 无源码，DLL 引用版本可判断 4.1 兼容性"
+        },
+        {
+          "path": "archive/forge/mods/MANIFEST-sp-mod-2026-09.md",
+          "title": "sp-mod.com 源码归档 MANIFEST（近一月 4.1.5，297 仓库）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "curated",
+          "keywords": [
+            "sp-mod",
+            "Forge",
+            "源码归档",
+            "4.1.5",
+            "批量克隆",
+            "MANIFEST"
+          ],
+          "summary": "sp-mod.com API v0 抓取（filter[spt_version]=4.1.5 & updated_between 近一月）：271 mod / 297 唯一仓库浅克隆归档至 archive/forge/mods/<Name>_<id>_source/；含 provenance 表与 URL 规范化补克隆记录（297/297 就位）"
+        },
+        {
+          "path": "archive/ported-src/MANIFEST.md",
+          "title": "SPT 移植源码归档 MANIFEST（3.11→4.1 早期批次 + 4.1→5.0 移植）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "source": "curated"
+        },
+        {
+          "path": "archive/tarkov-dev/README.md",
+          "title": "tarkov.dev 数据源归档 README（live 参考快照）[live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "archive-index",
+          "keywords": [
+            "tarkov.dev",
+            "live",
+            "json.tarkov.dev",
+            "快照",
+            "provenance"
+          ],
+          "summary": "tarkov.dev live 数据快照归档说明：抓取时间/源端点/live 版本 1.1.0.1.46911 对应/许可/已知缺口（#474 GraphQL 故障、#481 商人报价缺失）/排除项（prices/status/pve 模式）",
+          "source": "curated"
+        },
+        {
+          "path": "archive/tarkov-dev/snapshot-2026-09-02/IMAGE-REPORT.md",
+          "title": "tarkov.dev 数据画像与 SPT 对照报告（2026-09-02）[live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "画像",
+            "对照",
+            "弹药",
+            "一致率",
+            "items",
+            "tasks",
+            "maps"
+          ],
+          "summary": "批次 0 数据画像：items 5312/tasks 517/barters 789/maps 17 计数与类型分布、properties 覆盖 78.4%、_zh 字典映射验证、SPT 弹药抽样对照 100 字段 100% 一致、live 212 vs SPT 208 弹药差异、SPT 特有地图（develop/privatearea/suburbs/town）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/architecture-map.md",
+          "title": "SPT 3.11 服务端架构图（源码提炼）[3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "architecture",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/config-system.md",
+          "title": "配置系统笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/database-structure.md",
+          "title": "数据库结构笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "database",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/di-container.md",
+          "title": "DI 容器笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "di",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/http-routing.md",
+          "title": "HTTP 路由笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "routes",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/mod-loading.md",
+          "title": "Mod 加载流程笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/README.md",
+          "title": "SPT 3.11 服务端 API 笔记（源码提炼）",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "index",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-3.11/save-profile.md",
+          "title": "存档（Profile）笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "save-profile",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/architecture-map.md",
+          "title": "SPT 4.1.5 服务端架构图（Codemap 提炼）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "architecture",
+          "keywords": [
+            "架构",
+            "architecture",
+            "启动链",
+            "请求链",
+            "DI",
+            "SPTarkov",
+            "SPTushonka",
+            "codemap",
+            "模块地图"
+          ],
+          "summary": "4.1.5 fork 源码实读提炼：整体式架构 + 自研反射 DI；启动链（ConfigLoader→ModLoader→DatabaseImporter→HostBuilder）；请求链（Kestrel→HttpServer→Router→Callbacks→Controller→Service）；DatabaseTables 十张表；关键接口（Injectable/IOnLoad/Router/ISerializer）；目录 vs 命名空间（SPTushonka.* 目录 / SPTarkov.* 命名空间）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/config-system.md",
+          "title": "配置系统笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/database-structure.md",
+          "title": "数据库结构笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "database",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/di-container.md",
+          "title": "DI 容器笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "di",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/http-routing.md",
+          "title": "HTTP 路由笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "routes",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/mod-loading.md",
+          "title": "Mod 加载流程笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/README.md",
+          "title": "SPT 4.1 服务端 API 笔记（源码提炼）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "index",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/save-profile.md",
+          "title": "存档（Profile）笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "save-profile",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/server-mod-metadata-dll.md",
+          "title": "4.1 Server Mod 元数据读取（DLL / IModMetadata）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "mod-metadata",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/architecture-map.md",
+          "title": "SPT 5.0 服务端架构图 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "architecture",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/config-system.md",
+          "title": "配置系统笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/database-structure.md",
+          "title": "数据库结构笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "database",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/di-container.md",
+          "title": "DI 容器笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "di",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/http-routing.md",
+          "title": "HTTP 路由笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "routes",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/mod-loading.md",
+          "title": "Mod 加载流程笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "mod-loading",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/modding-api.md",
+          "title": "Mod 能力面 API 笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "modding-api",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/README.md",
+          "title": "SPT 5.0 服务端 API 笔记（源码提炼）",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "index",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/save-profile.md",
+          "title": "存档（Profile）笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "save-profile",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/ammo.md",
+          "title": "弹药数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "弹药",
+            "ammo",
+            "穿透",
+            "初速",
+            "口径",
+            "tracer"
+          ],
+          "summary": "tarkov.dev 快照提炼：212 种弹药全量表（按 32 口径分组，含中文名/id/肉伤/穿透/甲伤/初速/碎弹率/跳弹率/重量/叠放）+ 26 tracer 清单；SPT 对照 100 字段 100% 一致；live 212 vs SPT 208 覆盖差异",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/armor.md",
+          "title": "护甲与头盔数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "护甲",
+            "头盔",
+            "armor",
+            "插板",
+            "class",
+            "zones"
+          ],
+          "summary": "tarkov.dev 快照提炼：138 护甲/背心 + 109 头盔全量表（class/耐久/防护部位/插板槽/隔音/跳弹）+ 插板系统结构；SPT 4.1 对照关键发现：护甲数值已迁移到 Slots→Plate 插板体系（顶层 armorClass 清零，插板槽级一致率 97.7%）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/barters-crafts-hideout.md",
+          "title": "易物/制作/藏身处数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "易物",
+            "barter",
+            "制作",
+            "craft",
+            "藏身处",
+            "hideout"
+          ],
+          "summary": "tarkov.dev 快照提炼：789 易物全量表（按商人分组）+ 214 制作全量表（按工作站分组）+ 26 藏身处站总览；物品中文名 join 100% 命中；SPT 对照：28 区域 vs 26 站、production 226 vs 214",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/maps.md",
+          "title": "地图点位数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "地图",
+            "点位",
+            "loot",
+            "撤离点",
+            "boss",
+            "spawn"
+          ],
+          "summary": "tarkov.dev 快照提炼：17 图总览 + 点位统计（spawns/extracts/lootContainers/lootLoose）+ 撤离点/Boss 刷新结构；SPT 对照：14 图一一对应、SPT 特有 5 空壳、静态容器几乎一致、loose loot 模型差异（SPT 概率候选池）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/tasks.md",
+          "title": "任务体系数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "任务",
+            "quest",
+            "目标类型",
+            "reward",
+            "商人"
+          ],
+          "summary": "tarkov.dev 快照提炼：517 任务全量总览（按 11 商人分组）+ 20 种目标类型逐类字段说明与示例 + 10 种奖励类型；SPT 558 vs live 517（id 交集 463），抽样揭示 3 处真实差异（HandoverItem 阶段/目标枚举/1.0 重新编号）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/game-data-ref/traders.md",
+          "title": "商人库存数据参考 [live-ref]",
+          "version": [
+            "live-ref"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "keywords": [
+            "商人",
+            "trader",
+            "库存",
+            "报价",
+            "assort"
+          ],
+          "summary": "tarkov.dev 快照提炼：商人总览（16 条目 = 11 SPT 同 id + 5 live 特有）+ 等级/报价结构；dump 无报价数据（N/A 标注，改用 SPT assort 统计 8 商人）；已知缺口 #481；SPT 12 vs live 16 id 对应",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫世界观总览",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/01-world-overview.md",
+          "keywords": [
+            "Norvinsk",
+            "特别经济区",
+            "SEZ",
+            "Russia-2028",
+            "Contract Wars",
+            "冲突起因",
+            "地理"
+          ],
+          "summary": "Norvinsk SEZ 设定、塔科夫/诺文斯克两城、TerraGroup 丑闻→冲突→封锁链条、Contract Wars 前传（化工厂16号/旧锯木厂）、对 mod 开发的意义",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫时间线",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/02-timeline.md",
+          "keywords": [
+            "时间线",
+            "timeline",
+            "删档",
+            "Wipe",
+            "赛季",
+            "版本史",
+            "PVP",
+            "PVE"
+          ],
+          "summary": "世界线（2004-封锁后）+ 1.0 主线章节顺序 + PVP 删档赛季全表（2017-2026）+ PVE 无删档 + 现实版本演化对照 SPT 4.1",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫派系志",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/03-factions.md",
+          "keywords": [
+            "派系",
+            "USEC",
+            "BEAR",
+            "Scav",
+            "Rogues",
+            "Cultists",
+            "邪教徒",
+            "UNTAR",
+            "Black Division",
+            "karma"
+          ],
+          "summary": "USEC/BEAR 成立史与任务、Scav 构成与 karma 体系、Scav Raiders/Rogues/Cultists（降临的见证者）/UNTAR/黑师、派系关系图与 SPT bot 映射",
+          "source": "curated"
+        },
+        {
+          "title": "TerraGroup 与阴谋主线",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/04-terragroup.md",
+          "keywords": [
+            "TerraGroup",
+            "实验室",
+            "The Lab",
+            "迷宫",
+            "净化",
+            "无名者",
+            "Kerman",
+            "罪证"
+          ],
+          "summary": "TerraGroup 集团架构与 Labs PLC、四大设施（总部/实验室/迷宫/化工厂16号）、净化与无名者设定、门票线重大罪证 9 选 8 清单",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫地图设定（13 图）",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/05-locations.md",
+          "keywords": [
+            "地图",
+            "locations",
+            "Ground Zero",
+            "中心区",
+            "街区",
+            "海关",
+            "森林",
+            "灯塔",
+            "迷宫",
+            "破冰船",
+            "码头",
+            "转场"
+          ],
+          "summary": "13 张地图总览表（定位/控制势力/剧情意义）+ 各图 lore 要点（Boss、帮派、转场、剧情关联）+ Transit 机制 + SPT locations 映射",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫商人志",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/06-traders.md",
+          "keywords": [
+            "商人",
+            "traders",
+            "Prapor",
+            "Therapist",
+            "Fence",
+            "Skier",
+            "Peacekeeper",
+            "Mechanic",
+            "Ragman",
+            "Jaeger",
+            "Lightkeeper",
+            "BTR司机"
+          ],
+          "summary": "11 位商人本名/背景/驻地/立场（含 Lightkeeper 战局内交易与 BTR 司机破冰船线）、与 SPT traders 数据库及商人 mod 设计的映射",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫主线剧情章节（1.0）",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/07-story-chapters.md",
+          "keywords": [
+            "剧情",
+            "主线",
+            "章节",
+            "Story Chapters",
+            "Tour",
+            "Boreas",
+            "门票",
+            "The Ticket",
+            "结局",
+            "Kerman"
+          ],
+          "summary": "九章主线（塔科夫之旅→Boreas）逐章剧情与抉择点、门票四结局×双分支体系、重大罪证 9 选 8、破冰船支线与成就、SPT 章节系统复用",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫术语表",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/08-glossary.md",
+          "keywords": [
+            "术语",
+            "glossary",
+            "Raid",
+            "PMC",
+            "Scav",
+            "karma",
+            "Kappa",
+            "删档",
+            "藏身处",
+            "跳蚤",
+            "转场"
+          ],
+          "summary": "机制术语（Raid/PMC/Scav/karma/Boss/保险/BTR…）+ 世界观术语（TerraGroup/无名者/Kerman/Zryachiy…）+ 物品简称，与 SPT 数据库对象对照",
+          "source": "curated"
+        },
+        {
+          "title": "塔科夫游戏史",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/09-game-history.md",
+          "keywords": [
+            "游戏史",
+            "开发史",
+            "1.0",
+            "Arena",
+            "发布",
+            "Steam",
+            "版本线",
+            "地图史"
+          ],
+          "summary": "2012 开发启动→2025-11-15 1.0 发布（Steam）、Arena 竞技模式、删档赛季摘要、地图版本发展线（工厂→破冰船 13 图）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/lore/10-map-landmarks.md",
+          "title": "地图地标方位参考 [通用]",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "lore",
+          "keywords": [
+            "地图",
+            "地标",
+            "方位",
+            "Boss领地",
+            "任务点",
+            "Woods"
+          ],
+          "summary": "12 图地标方位表（Woods/Customs/Shoreline/Streets/Factory 等）：Boss 领地/任务点/撤离点按八方位+相对描述定位；坐标推断方法可复现；Woods 的 Goons=Scav Base 最西北角（玩家实测修正，坐标推断 ZoneScavBase2 存疑已标注）",
+          "source": "curated"
+        },
+        {
+          "path": "curated/lore/11-trader-questlines.md",
+          "title": "商人支线任务线梳理 [通用]",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "lore",
+          "keywords": [
+            "任务线",
+            "支线",
+            "Prapor",
+            "Therapist",
+            "Skier",
+            "Mechanic",
+            "Jaeger",
+            "任务主题"
+          ],
+          "summary": "按 11 位商人的 517 任务重组叙事主题线：Prapor=新兵/惩罚者猎杀/军需/老兵回忆；Therapist=医疗隐私/人道/失踪调查；Skier=Chemical 走私/洗白；Mechanic=Gunsmith/灯塔接触/Introduction；Jaeger=猎人之路/生存者之路/神射手；附跨商人链与小说弧线用途",
+          "source": "curated"
+        },
+        {
+          "path": "curated/lore/12-map-relations.md",
+          "title": "塔科夫地图间地理关系 [通用]",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "lore",
+          "keywords": [
+            "地图关系",
+            "图间通路",
+            "转场",
+            "开放世界",
+            "地理",
+            "商人据点"
+          ],
+          "summary": "玩家合成图（NICK'S OPEN WORLD）提炼：11 图整体布局（城区北-东北/野外在西-南/海在西-南）+ 18 对图间通路表 + 共享城镇标签 + 商人据点标注（Jaeger=森林ZB-014 等，与 lore/06 有分歧已注明）+ 写作与开放世界 mod 用途",
+          "source": "curated"
+        },
+        {
+          "title": "EFT 世界观与背景知识分区（lore README）",
+          "topic": "lore",
+          "domain": "both",
+          "version": [
+            "通用"
+          ],
+          "path": "curated/lore/README.md",
+          "keywords": [
+            "世界观",
+            "lore",
+            "背景",
+            "剧情",
+            "塔科夫",
+            "索引"
+          ],
+          "summary": "lore 分区索引与阅读顺序：9 篇 EFT 世界观文档（世界观/时间线/派系/TerraGroup/地图/商人/剧情/术语/游戏史），2026-08-16 建立",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/api-mapping-311-to-41.md",
+          "title": "3.11 -> 4.1 API 映射表",
+          "version": [
+            "3.11",
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/bundle-311-to-41.md",
+          "title": "3.11 -> 4.1 Bundle 迁移指南",
+          "version": [
+            "3.11",
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "title": "Bundle 兼容性知识：SPT 3.11 -> 4.1.2",
+          "topic": "migration",
+          "domain": "both",
+          "version": "4.1",
+          "path": "curated/migration/bundle-compat-311-to-41.md",
+          "keywords": [
+            "bundle",
+            "AssetBundle",
+            "UnityPy",
+            "Unity版本",
+            "shader",
+            "MonoScript",
+            "兼容性"
+          ],
+          "summary": "Unity 2022.3.43f1 向后兼容加载 2019.4 bundle（原包验证）；真正风险点是 bundle 内 MonoBehaviour 对重编译 DLL 的脚本引用（程序集名+命名空间+类名）；检查方法 + 决策树 + 19 个 bundle 实测结论"
+        },
+        {
+          "path": "curated/migration/pilot-experience-ett.md",
+          "title": "迁移流水线实战经验（ETT 试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-secure-mapbook.md",
+          "title": "迁移流水线实战经验（SecureMapbookMod bundle 试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-skills-extended.md",
+          "title": "迁移流水线实战经验（SkillsExtended 三合一试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "path": "curated/migration/pilot-experience-warsaw-trader.md",
+          "title": "从零写商人 mod 实战经验（WarsawTrader 试点）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "curated"
+        },
+        {
+          "title": "服务端 mod 迁移知识：SPT 3.11 -> 4.1.2（SPTarkov C#）",
+          "topic": "migration",
+          "domain": "server",
+          "version": "4.1",
+          "path": "curated/migration/server-mod-311-to-41.md",
+          "keywords": [
+            "SPTarkov",
+            "服务端",
+            "server mod",
+            "IModMetadata",
+            "TS重写",
+            "net10",
+            "Injectable",
+            "OnLoadAsync"
+          ],
+          "summary": "4.0→4.1 SPTarkov C# 服务端迁移全知识：AbstractModMetadata断链、表模型注入、TS→C#重写模板（AKResonant实战4轮修复）、Router生命周期、WTT依赖区间、IModMetadata接口。2026-08-11新增第8章TS→C#迁移"
+        },
+        {
+          "path": "curated/modding-guide/01-environment-toolchain.md",
+          "title": "环境与工具链 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "environment",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/02-server-mod-anatomy.md",
+          "title": "Server Mod 解剖 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "server-anatomy",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/03-client-mod-anatomy.md",
+          "title": "Client Mod 解剖 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "client-anatomy",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/04-example-walkthroughs.md",
+          "title": "官方示例逐例解读（4.0 → 4.1 迁移对照）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "examples",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-guide/README.md",
+          "title": "SPT Mod 开发指南（重组版）",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "index",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/01-structure.md",
+          "title": "编写规范 01：仓库与目录结构（STRUCT）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/02-metadata.md",
+          "title": "编写规范 02：元数据与版本声明（META）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/03-build.md",
+          "title": "编写规范 03：构建与目标框架（BUILD）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/04-server.md",
+          "title": "编写规范 04：服务端机制（SRV）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/06-config.md",
+          "title": "编写规范 06：配置系统（CFG）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/07-logging.md",
+          "title": "编写规范 07：日志与错误处理（LOG）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/08-dependencies.md",
+          "title": "编写规范 08：依赖管理（DEP）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/09-packaging.md",
+          "title": "编写规范 09：打包与发布（PKG）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/10-verification.md",
+          "title": "编写规范 10：验证流程（VERIFY）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/11-version-differences.md",
+          "title": "编写规范 11：版本差异（VER）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/12-bundle-assets.md",
+          "title": "编写规范 12：bundle/资产（BND）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/13-perf-security.md",
+          "title": "编写规范 13：性能与安全（PERF）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/evidence-index.md",
+          "title": "编写规范：证据索引（Evidence Index）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/README.md",
+          "title": "SPT Mod 编写规范（Modding Standard）",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/modding-standard/version-matrix.md",
+          "title": "编写规范：4.1.5 ↔ 5.0 版本差异对照表",
+          "version": [
+            "4.1",
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "modding-standard",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/413-fork-transition.md",
+          "title": "SPT 4.1.3 与官方归档/fork 迁移",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "migration",
+          "keywords": [
+            "4.1.3",
+            "SP-Tushonka",
+            "fork",
+            "归档",
+            "sp-tarkov",
+            "二进制兼容",
+            "重命名"
+          ],
+          "summary": "官方 sp-tarkov 2026-08-11 归档全部仓库（4.1.2 为最后官方版）；SP-Tushonka fork 2026-08-20 发布 4.1.3。47 commits/2059 文件中约 2025 个是重命名噪声；程序集名/命名空间/IModMetadata/客户端版本要求全部不变 → mod 二进制兼容。冲击在源码仓库层面不在运行时层面。08-22 补充：客户端源码家=modules 仓库（已同步 4.1.3）、4.1 无性能补丁目录、PrePatch/patcher 预补丁路径、SP-Tushonka 组织 14 仓全景",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/415-source-review-report.md",
+          "title": "SPT 4.1.5 服务端源码审查报告（bug/优化）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "operations",
+          "keywords": [
+            "源码审查",
+            "review",
+            "bug",
+            "优化",
+            "移植语义失真",
+            "NOTIFY",
+            "string.Intern",
+            "ForwardedHeaders",
+            "路径遍历",
+            "死循环",
+            "并发"
+          ],
+          "summary": "4.1.5 fork 全库（989 文件/10.7 万行）8 路并行只读审查：Critical 含黑名单反转/谓词反转/string.Intern 未判空/NOTIFY 通道失效/AirdropService 编译错误/ForwardedHeaders 认证绕过/路径遍历；Major 含无锁共享状态/死循环/坏档拖垮启动/枚举序列化策略混乱；附最值得修的 10 件事与 S.P.E.C.I.A.L. 评级",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/5xx-source-verification.md",
+          "title": "SPT 5.x 源码核实与进展（5.0x-dev）[5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "operations",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/conflict-analysis-input-model.md",
+          "title": "Mod 冲突分析的正确输入模型（modlist 过滤 + 嵌套路径 + hash）",
+          "version": [
+            "3.11",
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "conflict-analysis",
+          "source": "curated"
+        },
+        {
+          "path": "curated/operations/destructive-operation-guardrails.md",
+          "title": "破坏性操作护栏（Forge release 误删教训）",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "operations",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/01-add-custom-trader.md",
+          "title": "配方：添加自定义商人 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/02-edit-database-values.md",
+          "title": "配方：修改数据库数值（globals / bot / hideout / 地图）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/03-add-custom-item.md",
+          "title": "配方：添加自定义物品 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/04-edit-item-properties.md",
+          "title": "配方：修改现有物品属性 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/05-loot-tweaks.md",
+          "title": "配方：修改战利品刷新（Loot）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/06-add-custom-quest.md",
+          "title": "配方：添加自定义任务（Quest）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/07-bot-difficulty-tweaks.md",
+          "title": "配方：修改 Bot 难度与行为参数 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/08-trader-restock.md",
+          "title": "配方：修改商人补货逻辑 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/09-custom-http-routes.md",
+          "title": "配方：挂自定义 HTTP 路由 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/10-mod-communication.md",
+          "title": "配方：Mod 间通信 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/11-mod-web-config-ui.md",
+          "title": "配方：Mod 配置界面（Mod Web Pages / 浏览器编辑器）[4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/12-weapon-preset-assort.md",
+          "title": "配方：商人上货武器 preset [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "curated/recipes/README.md",
+          "title": "SPT 4.1 Mod 任务配方集",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "recipe",
+          "source": "curated"
+        },
+        {
+          "path": "wiki-tushonka/Archived_Pending_Deletion/FAQs_311.md",
+          "title": "FAQs for SPT 3.11 [for potential deletion]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/Archived_Pending_Deletion/Manual-Installation-Instructions_311.md",
+          "title": "Manual Installation Instructions for SPT 3.11 [for potential deletion]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/Archived_Pending_Deletion/Recommended_Mods_311.md",
+          "title": "Recommended Mods for SPT 3.11 [for potential deletion]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/Beginners_Guide.md",
+          "title": "Beginner's Guide",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/home.md",
+          "title": "Home",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/how_to_contribute.md",
+          "title": "How to Contribute",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding.html",
+          "title": "modding",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding.md",
+          "title": "Creating Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/Modding_Resources.md",
+          "title": "Modding Resources",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/quest-value-references.html",
+          "title": "quest-value-references",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/body-part-reference.md",
+          "title": "Body Part Reference",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/bot-types.md",
+          "title": "Bot Information Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/location-information.md",
+          "title": "Location Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/map-scenes.md",
+          "title": "Map Scenes Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/quest-values.md",
+          "title": "Quest Value Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/skills-reference.md",
+          "title": "Skills Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/references/trader-information.md",
+          "title": "Trader Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding.md",
+          "title": "SPT 4.1 Modding",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/414_Changes.md",
+          "title": "Mod Changes - 4.1.4 onwards",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Client_40_to_41.md",
+          "title": "Client Mod Migration - 4.0 to 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/client/Class_Name_Mappings.md",
+          "title": "Client Class Name Mappings - 4.0 to 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/EnumExtensions.md",
+          "title": "Enum Extensions",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Server_40_to_41.md",
+          "title": "Server Mod Migration - 4.0 to 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/Server_413_Changes.md",
+          "title": "Server Mod Changes - 4.1.3 onwards",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/SPT_41_Modding/server/Mod_Web_Pages.md",
+          "title": "Mod Web Pages",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/tutorials/Client_Modding_Quick_Guide.md",
+          "title": "Client Modding Quick Guide",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/tutorials/debug_dnSpy.md",
+          "title": "debug_dnSpy",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/modding/tutorials/WTT_Vol1.md",
+          "title": "WTT_Vol1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/Reporting_Issues.md",
+          "title": "Reporting Issues [WIP]",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40.html",
+          "title": "SPT_40",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40.md",
+          "title": "SPT 4.0",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40/FAQs_40.md",
+          "title": "FAQs for SPT 4.0",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40/Known_Live_Issues_40.md",
+          "title": "Known Live Issues for SPT 4.0",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40/Known_Mod_Issues_40.md",
+          "title": "Known Mod Issues for SPT 4.0",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_40/Known_SPT_Issues_40.md",
+          "title": "Known SPT 4.0 Issues",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41.html",
+          "title": "SPT_41",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41.md",
+          "title": "SPT 4.1",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/bleeding-edge-install-instructions.md",
+          "title": "Bleeding Edge Install Instructions for SPT 4.1",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/FAQs_41.md",
+          "title": "FAQs for SPT 4.1",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/Known_Live_Issues_41.md",
+          "title": "Known Live Issues for SPT 4.1",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/Known_Mod_Issues_41.md",
+          "title": "Known Mod Issues for SPT 4.1",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_41/Known_SPT_Issues_41.md",
+          "title": "Known SPT 4.1 Issues",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x.html",
+          "title": "SPT_4x",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x.md",
+          "title": "SPT 4.X",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/5050-method.md",
+          "title": "50/50 Method",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Bot_Difficulties.md",
+          "title": "Bot Difficulties",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/console-commands.md",
+          "title": "Console Commands",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/How_SPT_Works.md",
+          "title": "How SPT Works",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Installation_Guide.md",
+          "title": "Installation Guide",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Installing_Mods.md",
+          "title": "Installing Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Manual-Installation-Instructions_4x.md",
+          "title": "Maunal Installation Instructions for SPT",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Mod_Types.md",
+          "title": "Mod Types",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Performance_Tuning.md",
+          "title": "Performance Tuning",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Profiles.md",
+          "title": "Profiles",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/SPT_and_Commando_Bots.md",
+          "title": "SPT & Commando Bots",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/system-requirements.md",
+          "title": "System Requirements",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Uninstalling_Mods.md",
+          "title": "Uninstalling Mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_4x/Updating_SPT.md",
+          "title": "Updating SPT",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_50.md",
+          "title": "SPT 5.0",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/SPT_50/bleeding-edge-install-instructions.md",
+          "title": "Bleeding Edge Install Instructions for SPT 5.0",
+          "version": [
+            "5.0"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/Style_Guide.md",
+          "title": "Style Guide",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/thank-you.md",
+          "title": "thank-you",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/tools/assemblytool.html",
+          "title": "assemblytool",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki-tushonka/UPSTREAM.md",
+          "title": "Tushonka Wiki Vendor 副本 — 上游坐标",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/5050-method.md",
+          "title": "What is the 50/50 Method?",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Beginners_Guide.md",
+          "title": "Welcome to SPT!",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "getting-started",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/bleeding-edge-install-instructions.md",
+          "title": "Testing Only",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Bot_Difficulties.md",
+          "title": "EFT Pre-Raid Difficulty Settings",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/FAQs_40.md",
+          "title": "Why are there so many files in the new \\SPT folder?",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/guides-and-advanced-topics/console-commands.md",
+          "title": "console-commands",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/home.md",
+          "title": "Single Player Tarkov Wiki",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "index",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/How_SPT_Works.md",
+          "title": "Installation",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "architecture",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/how_to_contribute.md",
+          "title": "Wiki.js",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "contributing",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Installation_Guide.md",
+          "title": "What you need to do before you install Single Player Tarkov",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Installing_Mods.md",
+          "title": "Before installing your mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Known_EFT_Issues_40.md",
+          "title": "Github tracked issues",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Known_Mod_Issues_40.md",
+          "title": "Infinite loading after installing mods",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Known_SPT_Issues_40.md",
+          "title": "Github tracked issues",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Manual-Install-Instructions.md",
+          "title": "What you need to do before you manually install Single Player Tarkov",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Mod_Types.md",
+          "title": "Server mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/Modding_Resources.md",
+          "title": "SPT Discord server mod development channels",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/body-part-reference.md",
+          "title": "Body Part Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/bot-types.md",
+          "title": "Bot Information Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/location-information.md",
+          "title": "Location Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/map-scenes.md",
+          "title": "Map Scenes Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/quest-values.md",
+          "title": "Quest Value Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/skills-reference.md",
+          "title": "Skill Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/references/trader-information.md",
+          "title": "Trader Reference Sheet",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "reference-data",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/modding/tutorials/WTT_Vol1.md",
+          "title": "Prerequisites",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "tutorial",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Performance_Tuning.md",
+          "title": "Optimisations",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "performance",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Profiles.md",
+          "title": "What are profiles?",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "profiles",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Recommended_Mods_40.md",
+          "title": "Mods for better AI",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "mod-recommendations",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Reporting_Issues.md",
+          "title": "Common Pitfalls",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_311/FAQs_311.md",
+          "title": "SPT 3.11",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "troubleshooting",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_311/Manual-Installation-Instructions_311.md",
+          "title": "What you need to do before you install Single Player Tarkov",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_311/Recommended_Mods_311.md",
+          "title": "Mods for better AI",
+          "version": [
+            "3.11"
+          ],
+          "domain": "both",
+          "topic": "mod-recommendations",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_40/Manual-Installation-Instructions_40.md",
+          "title": "What you need to do before you manually install SPT",
+          "version": [
+            "4.0"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_41/modding/EnumExtensions.md",
+          "title": "Do you actually need one?",
+          "version": [
+            "4.1"
+          ],
+          "domain": "both",
+          "topic": "modding-general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_41/modding/server/Mod_Web_Pages.md",
+          "title": "Opting in",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "tutorial",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_41/Server_40_to_41.md",
+          "title": "Metadata",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "migration",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/SPT_and_Commando_Bots.md",
+          "title": "SPT",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Style_Guide.md",
+          "title": "Markdown",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "contributing",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/system-requirements.md",
+          "title": "System Requirements",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "requirements",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/thank-you.md",
+          "title": "A thank you from me to everyone",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "general",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Uninstalling_Mods.md",
+          "title": "Uninstalling mods",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "installation",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/Updating_SPT.md",
+          "title": "Replacing files",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "updating",
+          "source": "wiki"
+        },
+        {
+          "path": "wiki/UPSTREAM.md",
+          "title": "Wiki Vendor 副本 — 上游坐标",
+          "version": [
+            "通用"
+          ],
+          "domain": "both",
+          "topic": "meta",
+          "source": "wiki"
+        }
+      ],
+      "matchCount": 204,
+      "filters": {
+        "domain": "server"
+      }
+    }
+  }
+}

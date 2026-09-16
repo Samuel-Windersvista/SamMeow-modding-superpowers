@@ -1,0 +1,9 @@
+{
+  "isError": true,
+  "envelope": {
+    "ok": false,
+    "tool": "spt_kb_query",
+    "code": "internal_error",
+    "message": "查询失败：entry.version.map is not a function"
+  }
+}

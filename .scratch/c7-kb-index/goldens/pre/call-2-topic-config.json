@@ -1,0 +1,46 @@
+{
+  "isError": false,
+  "envelope": {
+    "ok": true,
+    "tool": "spt_kb_query",
+    "summary": "知识库匹配 3 条",
+    "data": {
+      "matches": [
+        {
+          "path": "curated/api-notes-3.11/config-system.md",
+          "title": "配置系统笔记 [3.11]",
+          "version": [
+            "3.11"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-4.1/config-system.md",
+          "title": "配置系统笔记 [4.1]",
+          "version": [
+            "4.1"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        },
+        {
+          "path": "curated/api-notes-5.0/config-system.md",
+          "title": "配置系统笔记 [5.0]",
+          "version": [
+            "5.0"
+          ],
+          "domain": "server",
+          "topic": "config",
+          "source": "curated"
+        }
+      ],
+      "matchCount": 3,
+      "filters": {
+        "topic": "config"
+      }
+    }
+  }
+}

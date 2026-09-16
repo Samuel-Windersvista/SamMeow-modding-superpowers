@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-14",
- "schema_version": 2,
+ "schema_version": 1,
  "entries": [
   {
    "path": "curated/api-notes-4.1/config-system.md",
@@ -1087,9 +1087,7 @@
    "title": "Bundle 兼容性知识：SPT 3.11 -> 4.1.2",
    "topic": "migration",
    "domain": "both",
-   "version": [
-    "4.1"
-   ],
+   "version": "4.1",
    "path": "curated/migration/bundle-compat-311-to-41.md",
    "keywords": [
     "bundle",
@@ -1100,16 +1098,13 @@
     "MonoScript",
     "兼容性"
    ],
-   "summary": "Unity 2022.3.43f1 向后兼容加载 2019.4 bundle（原包验证）；真正风险点是 bundle 内 MonoBehaviour 对重编译 DLL 的脚本引用（程序集名+命名空间+类名）；检查方法 + 决策树 + 19 个 bundle 实测结论",
-   "source": "curated"
+   "summary": "Unity 2022.3.43f1 向后兼容加载 2019.4 bundle（原包验证）；真正风险点是 bundle 内 MonoBehaviour 对重编译 DLL 的脚本引用（程序集名+命名空间+类名）；检查方法 + 决策树 + 19 个 bundle 实测结论"
   },
   {
    "title": "服务端 mod 迁移知识：SPT 3.11 -> 4.1.2（SPTarkov C#）",
    "topic": "migration",
    "domain": "server",
-   "version": [
-    "4.1"
-   ],
+   "version": "4.1",
    "path": "curated/migration/server-mod-311-to-41.md",
    "keywords": [
     "SPTarkov",
@@ -1121,8 +1116,7 @@
     "Injectable",
     "OnLoadAsync"
    ],
-   "summary": "4.0→4.1 SPTarkov C# 服务端迁移全知识：AbstractModMetadata断链、表模型注入、TS→C#重写模板（AKResonant实战4轮修复）、Router生命周期、WTT依赖区间、IModMetadata接口。2026-08-11新增第8章TS→C#迁移",
-   "source": "curated"
+   "summary": "4.0→4.1 SPTarkov C# 服务端迁移全知识：AbstractModMetadata断链、表模型注入、TS→C#重写模板（AKResonant实战4轮修复）、Router生命周期、WTT依赖区间、IModMetadata接口。2026-08-11新增第8章TS→C#迁移"
   },
   {
    "title": "C 桶 Forge 下载归档 MANIFEST（旧版本 mod 留档）",
@@ -1142,8 +1136,7 @@
     "黑盒DLL",
     "SPTarkov版本"
    ],
-   "summary": "C 桶 12 个 mod 的 Forge 下载留档：版本/SPTarkov 编译目标（4.0.3/4.0.4）/zip 归档状态/部署状态。旧版本 mod 黑盒 DLL 无源码，DLL 引用版本可判断 4.1 兼容性",
-   "source": "archive"
+   "summary": "C 桶 12 个 mod 的 Forge 下载留档：版本/SPTarkov 编译目标（4.0.3/4.0.4）/zip 归档状态/部署状态。旧版本 mod 黑盒 DLL 无源码，DLL 引用版本可判断 4.1 兼容性"
   },
   {
    "title": "EFT 世界观与背景知识分区（lore README）",
