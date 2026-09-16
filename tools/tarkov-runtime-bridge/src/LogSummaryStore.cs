@@ -76,7 +76,11 @@ internal readonly struct LogSummaryPage
 /// </summary>
 internal sealed class LogSummaryStore
 {
-    internal const int DefaultMaxGroups = 500;
+    /// <summary>
+    /// 默认组数上限（C10 起由 <see cref="BridgeContract"/> 从
+    /// <c>shared/bridge-contract/contract.json</c> 派生，源码不再保留字面量）。
+    /// </summary>
+    internal static int DefaultMaxGroups => BridgeContract.MaxGroups;
 
     private readonly object gate = new object();
     private readonly Dictionary<string, GroupState> groups =
@@ -85,9 +89,14 @@ internal sealed class LogSummaryStore
     private readonly int maxGroups;
     private int overflowDropped;
 
-    internal LogSummaryStore(int maxGroups = DefaultMaxGroups)
+    /// <summary>
+    /// <paramref name="maxGroups"/> 为 null 时取契约默认值（<see cref="DefaultMaxGroups"/>）；
+    /// 小于 1 一律钳到 1。
+    /// </summary>
+    internal LogSummaryStore(int? maxGroups = null)
     {
-        this.maxGroups = maxGroups < 1 ? 1 : maxGroups;
+        var effective = maxGroups ?? BridgeContract.MaxGroups;
+        this.maxGroups = effective < 1 ? 1 : effective;
     }
 
     /// <summary>

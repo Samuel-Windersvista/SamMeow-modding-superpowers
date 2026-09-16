@@ -1,0 +1,237 @@
+{
+  "cases": [
+    {
+      "name": "merge-same-key",
+      "groups": [
+        {
+          "key": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>",
+          "level": "warning",
+          "source": "server:spt20260914.log",
+          "count": 2,
+          "firstTs": "2026-09-14T05:58:00.1590000Z",
+          "lastTs": "2026-09-14T05:58:01.0000000Z",
+          "sampleText": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "distinct-keys",
+      "groups": [
+        {
+          "key": "KeyNotFoundException: loot patch",
+          "level": "error",
+          "source": "server:spt20260914.log",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:02.0000000Z",
+          "lastTs": "2026-09-14T05:58:02.0000000Z",
+          "sampleText": "KeyNotFoundException: loot patch"
+        },
+        {
+          "key": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>",
+          "level": "warning",
+          "source": "server:spt20260914.log",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:00.1590000Z",
+          "lastTs": "2026-09-14T05:58:00.1590000Z",
+          "sampleText": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "level-upgrade",
+      "groups": [
+        {
+          "key": "boom",
+          "level": "error",
+          "source": "s",
+          "count": 3,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:02.0000000Z",
+          "sampleText": "boom"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "ts-extremes",
+      "groups": [
+        {
+          "key": "boom",
+          "level": "warning",
+          "source": "s",
+          "count": 3,
+          "firstTs": "2026-09-14T05:58:01.0000000Z",
+          "lastTs": "2026-09-14T05:58:09.0000000Z",
+          "sampleText": "boom"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "source-first",
+      "groups": [
+        {
+          "key": "boom",
+          "level": "warning",
+          "source": "server:a.log",
+          "count": 2,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:01.0000000Z",
+          "sampleText": "boom"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "order-count-lastts-key",
+      "groups": [
+        {
+          "key": "many",
+          "level": "warning",
+          "source": "s",
+          "count": 2,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:01.0000000Z",
+          "sampleText": "many"
+        },
+        {
+          "key": "few-later",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:59:00.0000000Z",
+          "lastTs": "2026-09-14T05:59:00.0000000Z",
+          "sampleText": "few-later"
+        },
+        {
+          "key": "aaa",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:30.0000000Z",
+          "lastTs": "2026-09-14T05:58:30.0000000Z",
+          "sampleText": "aaa"
+        },
+        {
+          "key": "few-earlier",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:30.0000000Z",
+          "lastTs": "2026-09-14T05:58:30.0000000Z",
+          "sampleText": "few-earlier"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "since-exclusive",
+      "groups": [
+        {
+          "key": "new",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:10.0000000Z",
+          "lastTs": "2026-09-14T05:58:10.0000000Z",
+          "sampleText": "new"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "eviction-lru",
+      "groups": [
+        {
+          "key": "one",
+          "level": "warning",
+          "source": "s",
+          "count": 2,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:05.0000000Z",
+          "sampleText": "one"
+        },
+        {
+          "key": "three",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:06.0000000Z",
+          "lastTs": "2026-09-14T05:58:06.0000000Z",
+          "sampleText": "three"
+        }
+      ],
+      "overflowDropped": 1
+    },
+    {
+      "name": "eviction-tie-key",
+      "groups": [
+        {
+          "key": "ccc",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:07.0000000Z",
+          "lastTs": "2026-09-14T05:58:07.0000000Z",
+          "sampleText": "ccc"
+        },
+        {
+          "key": "bbb",
+          "level": "warning",
+          "source": "s",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:00.0000000Z",
+          "sampleText": "bbb"
+        }
+      ],
+      "overflowDropped": 1
+    },
+    {
+      "name": "count-not-capped",
+      "groups": [
+        {
+          "key": "boom <n>",
+          "level": "warning",
+          "source": "s",
+          "count": 3,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:02.0000000Z",
+          "sampleText": "boom 1"
+        }
+      ],
+      "overflowDropped": 0
+    },
+    {
+      "name": "empty",
+      "groups": [],
+      "overflowDropped": 0
+    },
+    {
+      "name": "live-raid-derived",
+      "groups": [
+        {
+          "key": "remaining <n> seconds",
+          "level": "warning",
+          "source": "server:spt20260914.log",
+          "count": 2,
+          "firstTs": "2026-09-14T05:58:00.0000000Z",
+          "lastTs": "2026-09-14T05:58:01.0000000Z",
+          "sampleText": "remaining 1700.794 seconds"
+        },
+        {
+          "key": "bot role pmcUSEC alive at x <n> z -<n>",
+          "level": "info",
+          "source": "server:spt20260914.log",
+          "count": 1,
+          "firstTs": "2026-09-14T05:58:02.0000000Z",
+          "lastTs": "2026-09-14T05:58:02.0000000Z",
+          "sampleText": "bot role pmcUSEC alive at x 158.95705 z -81.0829"
+        }
+      ],
+      "overflowDropped": 0
+    }
+  ]
+}

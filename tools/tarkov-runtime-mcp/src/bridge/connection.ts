@@ -14,8 +14,14 @@
 //   - 未注册的 raid.* 前缀仍回落 CLIENT_BRIDGE_NOT_INSTALLED。
 // =============================================================================
 
-/** MCP 期望的桥协议版本（握手门禁；与桥侧 `protocolVersion` 比对） */
-export const EXPECTED_BRIDGE_PROTOCOL_VERSION = 1;
+import { loadBridgeContract } from "./contract.js";
+
+/**
+ * MCP 期望的桥协议版本（握手门禁；与桥侧 `protocolVersion` 比对）。
+ * C10 起由 `shared/bridge-contract/contract.json` 单一源派生（值仍为 1），
+ * 源码不再保留字面量；导出名保持稳定，消费点不变。
+ */
+export const EXPECTED_BRIDGE_PROTOCOL_VERSION = loadBridgeContract().protocolVersion;
 
 // -----------------------------------------------------------------------------
 // /bridge/info

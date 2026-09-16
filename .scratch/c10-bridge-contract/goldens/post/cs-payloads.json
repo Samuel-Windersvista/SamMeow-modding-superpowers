@@ -1,0 +1,58 @@
+{
+  "bodies": [
+    {
+      "name": "bridge-info",
+      "body": "{\"pluginVersion\":\"0.2.0\",\"protocolVersion\":1,\"capabilities\":{\"endpoints\":[\"/bridge/info\",\"/raid/player\",\"/raid/status\",\"/raid/bots\",\"/raid/events\",\"/logs/recent\",\"/logs/summary\"],\"sections\":[\"player\",\"raid\",\"bots\",\"events\",\"logs\"]},\"sampling\":{\"intervalMs\":250},\"network\":{\"host\":\"127.0.0.1\",\"port\":49777}}"
+    },
+    {
+      "name": "raid-status",
+      "body": "{\"inRaid\":true,\"map\":\"factory4_day\",\"status\":\"Started\",\"remainingSeconds\":120.5,\"raidId\":\"profile-1@2026-09-14T00:00:00.0000000Z\",\"sampleAgeMs\":750}"
+    },
+    {
+      "name": "raid-player",
+      "body": "{\"inRaid\":true,\"position\":{\"x\":1,\"y\":2,\"z\":3},\"rotation\":{\"x\":0,\"y\":90},\"pose\":\"Stand\",\"health\":{\"alive\":true,\"total\":100,\"parts\":{\"Head\":35,\"Chest\":40,\"Stomach\":30,\"LeftArm\":25,\"RightArm\":25,\"LeftLeg\":30,\"RightLeg\":30}},\"weapon\":null,\"equipment\":[],\"sampleAgeMs\":750}"
+    },
+    {
+      "name": "raid-player-equipped",
+      "body": "{\"inRaid\":true,\"position\":{\"x\":1,\"y\":2,\"z\":3},\"rotation\":{\"x\":0,\"y\":90},\"pose\":\"Stand\",\"health\":{\"alive\":true,\"total\":100,\"parts\":{\"Head\":35,\"Chest\":40,\"Stomach\":30,\"LeftArm\":25,\"RightArm\":25,\"LeftLeg\":30,\"RightLeg\":30}},\"weapon\":{\"tpl\":\"5447a9cd4bdc2dbd208b4567\",\"name\":\"M4A1\",\"ammoInMag\":30,\"ammoInChamber\":1},\"equipment\":[{\"slot\":\"Headwear\",\"tpl\":\"5aa7e276e5b5b000171d0647\",\"name\":\"Altyn\"},{\"slot\":\"ArmorVest\",\"tpl\":\"545cdb794bdc2d3a198b456a\",\"name\":\"6B13\"}],\"sampleAgeMs\":0}"
+    },
+    {
+      "name": "raid-bots",
+      "body": "{\"inRaid\":true,\"total\":4,\"alive\":4,\"byCategory\":{\"pmc\":2,\"scav\":1,\"boss\":1,\"other\":0},\"spawner\":{\"aliveAndLoading\":3,\"delayed\":1,\"allWithDelayed\":4},\"sampleAgeMs\":750}"
+    },
+    {
+      "name": "raid-bots-detail",
+      "body": "{\"inRaid\":true,\"total\":4,\"alive\":4,\"byCategory\":{\"pmc\":2,\"scav\":1,\"boss\":1,\"other\":0},\"spawner\":{\"aliveAndLoading\":3,\"delayed\":1,\"allWithDelayed\":4},\"bots\":[{\"x\":1,\"y\":2,\"z\":3,\"role\":\"pmcBot\",\"side\":\"Savage\",\"alive\":true},{\"x\":-4.5,\"y\":0,\"z\":0,\"role\":\"bossKilla\",\"side\":\"Savage\",\"alive\":false}],\"truncated\":true,\"sampleAgeMs\":750}"
+    },
+    {
+      "name": "raid-events",
+      "body": "{\"inRaid\":true,\"seq\":3,\"dropped\":0,\"events\":[{\"seq\":1,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"damage\",\"raidId\":\"profile-1@start\",\"payload\":{\"victimProfileId\":\"bot-1\",\"victimIsLocal\":false,\"part\":\"Head\",\"amount\":12.5,\"sourceType\":\"Bullet\"}},{\"seq\":2,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"death\",\"raidId\":\"profile-1@start\",\"payload\":{\"victimProfileId\":\"bot-1\",\"victimIsLocal\":false,\"damageType\":\"Bullet\",\"killer\":{\"profileId\":\"profile-1\",\"name\":\"SamMeow\",\"side\":\"Usec\",\"role\":\"pmcUSEC\",\"isLocal\":true}}},{\"seq\":3,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"type\":\"extraction\",\"raidId\":\"profile-1@start\",\"payload\":{\"exitName\":\"Gate 3\",\"status\":\"Survived\"}}]}"
+    },
+    {
+      "name": "logs-recent",
+      "body": "{\"seq\":2,\"dropped\":0,\"entries\":[{\"seq\":1,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"warning\",\"source\":\"Unity\",\"text\":\"line1\\nline2\"},{\"seq\":2,\"ts\":\"2026-09-14T00:00:00.0000000Z\",\"level\":\"error\",\"source\":\"Assembly-CSharp\",\"text\":\"boom\"}]}"
+    },
+    {
+      "name": "logs-summary",
+      "body": "{\"groups\":[{\"key\":\"Failed to load asset <n>\",\"level\":\"error\",\"source\":\"Assembly-CSharp\",\"count\":2,\"firstTs\":\"2026-09-14T00:00:00.0000000Z\",\"lastTs\":\"2026-09-14T00:00:00.0000010Z\",\"sampleText\":\"Failed to load asset 12\"}],\"overflowDropped\":0}"
+    }
+  ],
+  "errors": [
+    {
+      "name": "not_found",
+      "body": "{\"error\":\"not_found\"}"
+    },
+    {
+      "name": "method_not_allowed",
+      "body": "{\"error\":\"method_not_allowed\"}"
+    },
+    {
+      "name": "internal_error",
+      "body": "{\"error\":\"internal_error\"}"
+    },
+    {
+      "name": "not_in_raid",
+      "body": "{\"inRaid\":false}"
+    }
+  ]
+}

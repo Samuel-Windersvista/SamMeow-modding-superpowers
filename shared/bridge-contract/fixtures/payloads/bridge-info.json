@@ -1,0 +1,1 @@
+{"pluginVersion":"0.2.0","protocolVersion":1,"capabilities":{"endpoints":["/bridge/info","/raid/player","/raid/status","/raid/bots","/raid/events","/logs/recent","/logs/summary"],"sections":["player","raid","bots","events","logs"]},"sampling":{"intervalMs":250},"network":{"host":"127.0.0.1","port":49777}}

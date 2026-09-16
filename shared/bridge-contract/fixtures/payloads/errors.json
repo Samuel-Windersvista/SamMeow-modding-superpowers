@@ -1,0 +1,6 @@
+{
+  "not_found": "{\"error\":\"not_found\"}",
+  "method_not_allowed": "{\"error\":\"method_not_allowed\"}",
+  "internal_error": "{\"error\":\"internal_error\"}",
+  "not_in_raid": "{\"inRaid\":false}"
+}

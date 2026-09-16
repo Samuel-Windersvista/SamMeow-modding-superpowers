@@ -14,9 +14,13 @@ import type { LogEntry } from "./log-entry.js";
 import { logLevelRank } from "./log-level.js";
 import { isoToEpochMs } from "./log-since.js";
 import { normalizeLogText } from "./log-normalizer.js";
+import { loadBridgeContract } from "../bridge/contract.js";
 
-/** 聚合组数上限（与桥侧 `LogSummaryStore.DefaultMaxGroups` 一致） */
-export const MAX_LOG_GROUPS = 500;
+/**
+ * 聚合组数上限（C10 起由共享契约 `shared/bridge-contract/contract.json` 的
+ * `logAggregation.maxGroups` 单一源派生，与桥侧 `LogSummaryStore` 同值）。
+ */
+export const MAX_LOG_GROUPS = loadBridgeContract().logAggregation.maxGroups;
 
 /** 聚合组（字段序稳定，与桥侧 /logs/summary 的 groups[] 同构） */
 export interface AggregatedLogGroup {

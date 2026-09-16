@@ -1,0 +1,1 @@
+{"inRaid":true,"total":4,"alive":4,"byCategory":{"pmc":2,"scav":1,"boss":1,"other":0},"spawner":{"aliveAndLoading":3,"delayed":1,"allWithDelayed":4},"bots":[{"x":1,"y":2,"z":3,"role":"pmcBot","side":"Savage","alive":true},{"x":-4.5,"y":0,"z":0,"role":"bossKilla","side":"Savage","alive":false}],"truncated":true,"sampleAgeMs":750}

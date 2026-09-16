@@ -25,6 +25,7 @@ $checks = @(
     "tests/bootstrap/verify-templates.ps1",
     "tests/bootstrap/verify-standard-compliance.ps1",
     "tests/bootstrap/verify-version-identity.ps1",
+    "tests/bootstrap/verify-bridge-contract.ps1",
     "scripts/verify-doc-stats.ps1"
 )
 

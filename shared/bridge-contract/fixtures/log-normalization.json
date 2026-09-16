@@ -1,0 +1,280 @@
+{
+  "$comment": "C10 共享夹具：日志归一化向量。前段期望值来自 pre 捕获（两端交叉核对一致），尾段为对抗向量（空白集合 / ECMAScript 词类对齐，见 fixtures/adversarial-normalization.json），由 .scratch/c10-bridge-contract/tools/build-fixtures.mjs 生成；请勿手工编辑。",
+  "cases": [
+    {
+      "name": "guid-lowercase",
+      "input": "Profile 9f2c1e5a-1b2c-4d5e-8f90-123456789abc loaded",
+      "expected": "Profile <guid> loaded"
+    },
+    {
+      "name": "guid-uppercase",
+      "input": "ID 8F3A1B2C-4D5E-6F70-8192-A3B4C5D6E7F8 missing",
+      "expected": "ID <guid> missing"
+    },
+    {
+      "name": "guid-pair-merge-a",
+      "input": "Profile 8f3a1b2c-4d5e-6f70-8192-a3b4c5d6e7f8 not found",
+      "expected": "Profile <guid> not found"
+    },
+    {
+      "name": "guid-pair-merge-b",
+      "input": "Profile 11111111-2222-3333-4444-555555555555 not found",
+      "expected": "Profile <guid> not found"
+    },
+    {
+      "name": "id24-bare",
+      "input": "Fixed item: 6aa409923c427c1424103c2b undefined",
+      "expected": "Fixed item: <id> undefined"
+    },
+    {
+      "name": "id24-glued-word-char",
+      "input": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1",
+      "expected": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>"
+    },
+    {
+      "name": "id24-at-start",
+      "input": "6aa409923c427c1424103c2b failed",
+      "expected": "<id> failed"
+    },
+    {
+      "name": "id24-uppercase",
+      "input": "tpl 5AC66D9B5ACFC4001633997A",
+      "expected": "tpl <id>"
+    },
+    {
+      "name": "id24-25hex-not-id",
+      "input": "id 6aa409923c427c1424103c2bcd end",
+      "expected": "id 6aa409923c427c1424103c2bcd end"
+    },
+    {
+      "name": "id24-32hex-not-id",
+      "input": "hash 6aa409923c427c1424103c2b6aa409923c427c1 end",
+      "expected": "hash 6aa409923c427c1424103c2b6aa409923c427c1 end"
+    },
+    {
+      "name": "id24-embedded-in-word",
+      "input": "prefix6aa409923c427c1424103c2b suffix",
+      "expected": "prefix6aa409923c427c1424103c2b suffix"
+    },
+    {
+      "name": "id24-embedded-snake-case",
+      "input": "path_5ac66d9b5acfc4001633997a_bak",
+      "expected": "path_5ac66d9b5acfc4001633997a_bak"
+    },
+    {
+      "name": "hex-literal-mixed-case",
+      "input": "crash at 0xc0000005 in module 0X1A2B",
+      "expected": "crash at <hex> in module <hex>"
+    },
+    {
+      "name": "hex-literal-il-offset",
+      "input": "at Foo.Bar() [0x00012] in <abc>:0",
+      "expected": "at Foo.Bar() [<hex>] in <abc>:<n>"
+    },
+    {
+      "name": "hex-literal-bare-0x-not-hex",
+      "input": "mask 0x not hex",
+      "expected": "mask 0x not hex"
+    },
+    {
+      "name": "number-integer-pair-a",
+      "input": "Failed to load asset 12",
+      "expected": "Failed to load asset <n>"
+    },
+    {
+      "name": "number-integer-pair-b",
+      "input": "Failed to load asset 345",
+      "expected": "Failed to load asset <n>"
+    },
+    {
+      "name": "number-decimal",
+      "input": "took 12.5 ms over 300 frames",
+      "expected": "took <n> ms over <n> frames"
+    },
+    {
+      "name": "number-in-index-message",
+      "input": "Index 5 out of range of length 9",
+      "expected": "Index <n> out of range of length <n>"
+    },
+    {
+      "name": "number-in-word-not-number",
+      "input": "foo123bar baz",
+      "expected": "foo123bar baz"
+    },
+    {
+      "name": "whitespace-collapse",
+      "input": "  boom\t\t at\nline  ",
+      "expected": "boom at line"
+    },
+    {
+      "name": "whitespace-crlf",
+      "input": "line1\r\nline2",
+      "expected": "line1 line2"
+    },
+    {
+      "name": "whitespace-only",
+      "input": "   \n\t ",
+      "expected": ""
+    },
+    {
+      "name": "empty",
+      "input": "",
+      "expected": ""
+    },
+    {
+      "name": "no-token-trim",
+      "input": "  Object reference not set to an instance of an object  ",
+      "expected": "Object reference not set to an instance of an object"
+    },
+    {
+      "name": "case-preserved-upper",
+      "input": "Error: boom",
+      "expected": "Error: boom"
+    },
+    {
+      "name": "case-preserved-lower",
+      "input": "error: boom",
+      "expected": "error: boom"
+    },
+    {
+      "name": "placeholders-stable",
+      "input": "Item 5ac66d9b5acfc4001633997a at 0x1a4 count 42 id 8f3a1b2c-4d5e-6f70-8192-a3b4c5d6e7f8",
+      "expected": "Item <id> at <hex> count <n> id <guid>"
+    },
+    {
+      "name": "idempotent-already-normalized",
+      "input": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>",
+      "expected": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>"
+    },
+    {
+      "name": "live-raid-raidid",
+      "input": "raid 000000000000000000000000@2026-09-14T15:47:07.5431365Z started",
+      "expected": "raid <id>@<n>-<n>-14T15:<n>:<n>.5431365Z started"
+    },
+    {
+      "name": "live-raid-bot-position",
+      "input": "bot role pmcUSEC alive at x 158.95705 z -81.0829",
+      "expected": "bot role pmcUSEC alive at x <n> z -<n>"
+    },
+    {
+      "name": "live-raid-remaining-seconds",
+      "input": "remaining 1700.794 seconds",
+      "expected": "remaining <n> seconds"
+    },
+    {
+      "name": "live-raid-sample-age",
+      "input": "sampleAgeMs 109",
+      "expected": "sampleAgeMs <n>"
+    },
+    {
+      "name": "live-raid-equipment-id",
+      "input": "equipment Headwear 5aa7e276e5b5b000171d0647 Altyn",
+      "expected": "equipment Headwear <id> Altyn"
+    },
+    {
+      "name": "non-merge-different-word",
+      "input": "Error at Map 1",
+      "expected": "Error at Map <n>"
+    },
+    {
+      "name": "non-merge-different-word-2",
+      "input": "Error at Maps 1",
+      "expected": "Error at Maps <n>"
+    },
+    {
+      "name": "non-merge-keynotfound",
+      "input": "KeyNotFoundException: 5ac66d9b5acfc4001633997a",
+      "expected": "KeyNotFoundException: <id>"
+    },
+    {
+      "name": "non-merge-nullref",
+      "input": "NullReferenceException: 5ac66d9b5acfc4001633997a",
+      "expected": "NullReferenceException: <id>"
+    },
+    {
+      "name": "ws-nbsp-mid",
+      "input": "a\u00a0b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-nbsp-edge",
+      "input": "\u00a0a\u00a0",
+      "expected": "a"
+    },
+    {
+      "name": "ws-ideographic-space-mid",
+      "input": "a\u3000b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-ideographic-space-edge",
+      "input": "\u3000a\u3000",
+      "expected": "a"
+    },
+    {
+      "name": "ws-narrow-nbsp-mid",
+      "input": "a\u202fb",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-narrow-nbsp-edge",
+      "input": "\u202fa\u202f",
+      "expected": "a"
+    },
+    {
+      "name": "ws-thin-space-mid",
+      "input": "a\u2009b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-thin-space-edge",
+      "input": "\u2009a\u2009",
+      "expected": "a"
+    },
+    {
+      "name": "ws-line-separator-mid",
+      "input": "a\u2028b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-line-separator-edge",
+      "input": "\u2028a\u2028",
+      "expected": "a"
+    },
+    {
+      "name": "ws-bom-mid",
+      "input": "a\ufeffb",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-bom-edge",
+      "input": "\ufeffa\ufeff",
+      "expected": "a"
+    },
+    {
+      "name": "ws-nel-mid-preserved",
+      "input": "a\u0085b",
+      "expected": "a\u0085b"
+    },
+    {
+      "name": "ws-nel-edge-preserved",
+      "input": "\u0085a\u0085",
+      "expected": "\u0085a\u0085"
+    },
+    {
+      "name": "ecma-word-boundary-e-acute",
+      "input": "é5ac66d9b5acfc4001633997a",
+      "expected": "é<id>"
+    },
+    {
+      "name": "ecma-digit-arabic-indic",
+      "input": "٣٤٥ items",
+      "expected": "٣٤٥ items"
+    },
+    {
+      "name": "ecma-word-boundary-sharp-s",
+      "input": "ß0x1F600",
+      "expected": "ß<hex>"
+    }
+  ]
+}

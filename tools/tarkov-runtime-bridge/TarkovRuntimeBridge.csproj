@@ -17,4 +17,14 @@
     <InternalsVisibleTo Include="TarkovRuntimeBridge.Tests" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!--
+      C10：桥接跨语言契约（单一源）编译期嵌入。协议版本 / 归一化规则 / 聚合上限
+      全部由 src/BridgeContract.cs 从该资源读取，源码不再保留字面量。
+      LogicalName 必须与 BridgeContract.ResourceName 一致。
+    -->
+    <EmbeddedResource Include="..\..\shared\bridge-contract\contract.json"
+                      LogicalName="TarkovRuntimeBridge.bridge-contract.json" />
+  </ItemGroup>
+
 </Project>

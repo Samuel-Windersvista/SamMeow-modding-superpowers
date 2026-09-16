@@ -1,0 +1,194 @@
+{
+  "cases": [
+    {
+      "name": "guid-lowercase",
+      "input": "Profile 9f2c1e5a-1b2c-4d5e-8f90-123456789abc loaded",
+      "output": "Profile <guid> loaded"
+    },
+    {
+      "name": "guid-uppercase",
+      "input": "ID 8F3A1B2C-4D5E-6F70-8192-A3B4C5D6E7F8 missing",
+      "output": "ID <guid> missing"
+    },
+    {
+      "name": "guid-pair-merge-a",
+      "input": "Profile 8f3a1b2c-4d5e-6f70-8192-a3b4c5d6e7f8 not found",
+      "output": "Profile <guid> not found"
+    },
+    {
+      "name": "guid-pair-merge-b",
+      "input": "Profile 11111111-2222-3333-4444-555555555555 not found",
+      "output": "Profile <guid> not found"
+    },
+    {
+      "name": "id24-bare",
+      "input": "Fixed item: 6aa409923c427c1424103c2b undefined",
+      "output": "Fixed item: <id> undefined"
+    },
+    {
+      "name": "id24-glued-word-char",
+      "input": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1",
+      "output": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>"
+    },
+    {
+      "name": "id24-at-start",
+      "input": "6aa409923c427c1424103c2b failed",
+      "output": "<id> failed"
+    },
+    {
+      "name": "id24-uppercase",
+      "input": "tpl 5AC66D9B5ACFC4001633997A",
+      "output": "tpl <id>"
+    },
+    {
+      "name": "id24-25hex-not-id",
+      "input": "id 6aa409923c427c1424103c2bcd end",
+      "output": "id 6aa409923c427c1424103c2bcd end"
+    },
+    {
+      "name": "id24-32hex-not-id",
+      "input": "hash 6aa409923c427c1424103c2b6aa409923c427c1 end",
+      "output": "hash 6aa409923c427c1424103c2b6aa409923c427c1 end"
+    },
+    {
+      "name": "id24-embedded-in-word",
+      "input": "prefix6aa409923c427c1424103c2b suffix",
+      "output": "prefix6aa409923c427c1424103c2b suffix"
+    },
+    {
+      "name": "id24-embedded-snake-case",
+      "input": "path_5ac66d9b5acfc4001633997a_bak",
+      "output": "path_5ac66d9b5acfc4001633997a_bak"
+    },
+    {
+      "name": "hex-literal-mixed-case",
+      "input": "crash at 0xc0000005 in module 0X1A2B",
+      "output": "crash at <hex> in module <hex>"
+    },
+    {
+      "name": "hex-literal-il-offset",
+      "input": "at Foo.Bar() [0x00012] in <abc>:0",
+      "output": "at Foo.Bar() [<hex>] in <abc>:<n>"
+    },
+    {
+      "name": "hex-literal-bare-0x-not-hex",
+      "input": "mask 0x not hex",
+      "output": "mask 0x not hex"
+    },
+    {
+      "name": "number-integer-pair-a",
+      "input": "Failed to load asset 12",
+      "output": "Failed to load asset <n>"
+    },
+    {
+      "name": "number-integer-pair-b",
+      "input": "Failed to load asset 345",
+      "output": "Failed to load asset <n>"
+    },
+    {
+      "name": "number-decimal",
+      "input": "took 12.5 ms over 300 frames",
+      "output": "took <n> ms over <n> frames"
+    },
+    {
+      "name": "number-in-index-message",
+      "input": "Index 5 out of range of length 9",
+      "output": "Index <n> out of range of length <n>"
+    },
+    {
+      "name": "number-in-word-not-number",
+      "input": "foo123bar baz",
+      "output": "foo123bar baz"
+    },
+    {
+      "name": "whitespace-collapse",
+      "input": "  boom\t\t at\nline  ",
+      "output": "boom at line"
+    },
+    {
+      "name": "whitespace-crlf",
+      "input": "line1\r\nline2",
+      "output": "line1 line2"
+    },
+    {
+      "name": "whitespace-only",
+      "input": "   \n\t ",
+      "output": ""
+    },
+    {
+      "name": "empty",
+      "input": "",
+      "output": ""
+    },
+    {
+      "name": "no-token-trim",
+      "input": "  Object reference not set to an instance of an object  ",
+      "output": "Object reference not set to an instance of an object"
+    },
+    {
+      "name": "case-preserved-upper",
+      "input": "Error: boom",
+      "output": "Error: boom"
+    },
+    {
+      "name": "case-preserved-lower",
+      "input": "error: boom",
+      "output": "error: boom"
+    },
+    {
+      "name": "placeholders-stable",
+      "input": "Item 5ac66d9b5acfc4001633997a at 0x1a4 count 42 id 8f3a1b2c-4d5e-6f70-8192-a3b4c5d6e7f8",
+      "output": "Item <id> at <hex> count <n> id <guid>"
+    },
+    {
+      "name": "idempotent-already-normalized",
+      "input": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>",
+      "output": "Fixed item: <id>s undefined StackObjectsCount value, now set to <n>"
+    },
+    {
+      "name": "live-raid-raidid",
+      "input": "raid 000000000000000000000000@2026-09-14T15:47:07.5431365Z started",
+      "output": "raid <id>@<n>-<n>-14T15:<n>:<n>.5431365Z started"
+    },
+    {
+      "name": "live-raid-bot-position",
+      "input": "bot role pmcUSEC alive at x 158.95705 z -81.0829",
+      "output": "bot role pmcUSEC alive at x <n> z -<n>"
+    },
+    {
+      "name": "live-raid-remaining-seconds",
+      "input": "remaining 1700.794 seconds",
+      "output": "remaining <n> seconds"
+    },
+    {
+      "name": "live-raid-sample-age",
+      "input": "sampleAgeMs 109",
+      "output": "sampleAgeMs <n>"
+    },
+    {
+      "name": "live-raid-equipment-id",
+      "input": "equipment Headwear 5aa7e276e5b5b000171d0647 Altyn",
+      "output": "equipment Headwear <id> Altyn"
+    },
+    {
+      "name": "non-merge-different-word",
+      "input": "Error at Map 1",
+      "output": "Error at Map <n>"
+    },
+    {
+      "name": "non-merge-different-word-2",
+      "input": "Error at Maps 1",
+      "output": "Error at Maps <n>"
+    },
+    {
+      "name": "non-merge-keynotfound",
+      "input": "KeyNotFoundException: 5ac66d9b5acfc4001633997a",
+      "output": "KeyNotFoundException: <id>"
+    },
+    {
+      "name": "non-merge-nullref",
+      "input": "NullReferenceException: 5ac66d9b5acfc4001633997a",
+      "output": "NullReferenceException: <id>"
+    }
+  ]
+}

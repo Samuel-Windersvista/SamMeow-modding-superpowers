@@ -1,0 +1,90 @@
+{
+  "$comment": "C10 共享夹具对抗向量（修复轮 F1/F2）：空白集合跨语言收敛 + ECMAScript 词类对齐。本文件是 build-fixtures.mjs 的输入之一，被合并进 log-normalization.json 的 cases；与 .scratch 语料无关（pre/post 证明语料保持冻结）。期望值 = 契约 whitespacePattern（显式字符类）与 ECMAScript 规则在两端的一致输出。",
+  "cases": [
+    {
+      "name": "ws-nbsp-mid",
+      "input": "a\u00a0b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-nbsp-edge",
+      "input": "\u00a0a\u00a0",
+      "expected": "a"
+    },
+    {
+      "name": "ws-ideographic-space-mid",
+      "input": "a\u3000b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-ideographic-space-edge",
+      "input": "\u3000a\u3000",
+      "expected": "a"
+    },
+    {
+      "name": "ws-narrow-nbsp-mid",
+      "input": "a\u202fb",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-narrow-nbsp-edge",
+      "input": "\u202fa\u202f",
+      "expected": "a"
+    },
+    {
+      "name": "ws-thin-space-mid",
+      "input": "a\u2009b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-thin-space-edge",
+      "input": "\u2009a\u2009",
+      "expected": "a"
+    },
+    {
+      "name": "ws-line-separator-mid",
+      "input": "a\u2028b",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-line-separator-edge",
+      "input": "\u2028a\u2028",
+      "expected": "a"
+    },
+    {
+      "name": "ws-bom-mid",
+      "input": "a\ufeffb",
+      "expected": "a b"
+    },
+    {
+      "name": "ws-bom-edge",
+      "input": "\ufeffa\ufeff",
+      "expected": "a"
+    },
+    {
+      "name": "ws-nel-mid-preserved",
+      "input": "a\u0085b",
+      "expected": "a\u0085b"
+    },
+    {
+      "name": "ws-nel-edge-preserved",
+      "input": "\u0085a\u0085",
+      "expected": "\u0085a\u0085"
+    },
+    {
+      "name": "ecma-word-boundary-e-acute",
+      "input": "\u00e95ac66d9b5acfc4001633997a",
+      "expected": "\u00e9<id>"
+    },
+    {
+      "name": "ecma-digit-arabic-indic",
+      "input": "\u0663\u0664\u0665 items",
+      "expected": "\u0663\u0664\u0665 items"
+    },
+    {
+      "name": "ecma-word-boundary-sharp-s",
+      "input": "\u00df0x1F600",
+      "expected": "\u00df<hex>"
+    }
+  ]
+}

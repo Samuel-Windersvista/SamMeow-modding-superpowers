@@ -6,6 +6,11 @@ namespace SamMeow.TarkovRuntimeBridge;
 /// 日志文本归一化（纯逻辑，可独立单测）：剥离易变 token 得到聚合键，
 /// 使「同一错误的数千个实例」塌缩为一组。
 ///
+/// C10 起规则集**不再硬编码**：从 <see cref="BridgeContract"/> 读取
+/// <c>shared/bridge-contract/contract.json</c> 的 <c>logNormalization</c>，
+/// 顺序应用替换 → 按 <c>whitespacePattern</c> 折叠空白 → 按 <c>trim</c> 去首尾（同一空白集合）。
+/// 契约是两端（C# / TS）唯一规则源，改规则须改契约（见 ADR-0009）。
+///
 /// 保守策略（宁可少合并，不可误合并——误合并会把不同错误藏进同一组）：
 /// 1. 只替换**形状明确**的 token：GUID、恰好 24 位 hex（EFT tpl / MongoId 形态）、
 ///    <c>0x…</c> 十六进制字面量（文件 / IL 偏移）、十进制数字；
@@ -18,36 +23,30 @@ namespace SamMeow.TarkovRuntimeBridge;
 ///    （日志前缀的空格差异属噪声，折叠不引入跨错误合并）。
 ///
 /// 与 TS 侧 <c>tools/tarkov-runtime-mcp/src/logs/log-normalizer.ts</c> **同构**：
-/// 两侧的 5 条规则、边界语义、占位符与替换顺序必须一致（该文件亦已注明互为移植）。
+/// 规则、边界语义、占位符与替换顺序全部来自同一契约（该文件亦已注明互为移植）。
 ///
 /// 占位符：<c>&lt;guid&gt;</c> / <c>&lt;id&gt;</c> / <c>&lt;hex&gt;</c> / <c>&lt;n&gt;</c>。
 /// 替换顺序固定（GUID → 24-hex → 0x-hex → 数字），保证幂等。
 /// </summary>
 internal static class LogSummaryNormalizer
 {
-    private static readonly Regex GuidPattern = new Regex(
-        @"\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\b",
-        RegexOptions.Compiled | RegexOptions.CultureInvariant);
+    /// <summary>
+    /// 连续空白折叠模式：直接编译契约的 <c>whitespacePattern</c>（显式字符类，**不含 <c>\s</c>**）。
+    /// 显式类使 .NET 与 JS 的空白集合逐码点一致——ECMAScript 模式下 .NET 的 <c>\s</c>
+    /// 仅匹配 ASCII 空白，与 JS 的 25 码点集合不同，故不能依赖 <c>\s</c>。
+    /// </summary>
+    private static readonly Regex WhitespacePattern = new Regex(
+        BridgeContract.WhitespacePattern,
+        RegexOptions.Compiled | RegexOptions.ECMAScript);
 
     /// <summary>
-    /// 恰好 24 位连续 hex 段：左边界非词字符（等价 <c>\b</c> 左侧），
-    /// 右边界其后不得再有 hex 字符（镜像 TS 侧 <c>(?&lt;!\w)[0-9a-fA-F]{24}(?![0-9a-fA-F])</c>）。
+    /// 首尾空白去除模式：同一契约空白集合，<c>^(?:ws)|(?:ws)$</c> → 空串。
+    /// 不使用 <c>string.Trim()</c>——其 <c>char.IsWhiteSpace</c> 集合与契约集合不同
+    /// （U+0085 / U+FEFF 两处会漂移，见 ADR-0009）。
     /// </summary>
-    private static readonly Regex HexIdPattern = new Regex(
-        @"(?<!\w)[0-9a-fA-F]{24}(?![0-9a-fA-F])",
-        RegexOptions.Compiled | RegexOptions.CultureInvariant);
-
-    private static readonly Regex HexLiteralPattern = new Regex(
-        @"\b0[xX][0-9a-fA-F]+\b",
-        RegexOptions.Compiled | RegexOptions.CultureInvariant);
-
-    private static readonly Regex NumberPattern = new Regex(
-        @"\b\d+(?:\.\d+)?\b",
-        RegexOptions.Compiled | RegexOptions.CultureInvariant);
-
-    private static readonly Regex WhitespacePattern = new Regex(
-        @"\s+",
-        RegexOptions.Compiled | RegexOptions.CultureInvariant);
+    private static readonly Regex TrimPattern = new Regex(
+        "^(?:" + BridgeContract.WhitespacePattern + ")|(?:" + BridgeContract.WhitespacePattern + ")$",
+        RegexOptions.Compiled | RegexOptions.ECMAScript);
 
     /// <summary>
     /// 文本 → 聚合键。null / 空 / 纯空白 → <c>""</c>。
@@ -60,11 +59,14 @@ internal static class LogSummaryNormalizer
             return string.Empty;
         }
 
-        var normalized = GuidPattern.Replace(text, "<guid>");
-        normalized = HexIdPattern.Replace(normalized, "<id>");
-        normalized = HexLiteralPattern.Replace(normalized, "<hex>");
-        normalized = NumberPattern.Replace(normalized, "<n>");
+        var normalized = text;
+        foreach (var rule in BridgeContract.NormalizationRules)
+        {
+            normalized = rule.Pattern.Replace(normalized, rule.Replacement);
+        }
+
         normalized = WhitespacePattern.Replace(normalized, " ");
-        return normalized.Trim();
+
+        return BridgeContract.Trim ? TrimPattern.Replace(normalized, string.Empty) : normalized;
     }
 }

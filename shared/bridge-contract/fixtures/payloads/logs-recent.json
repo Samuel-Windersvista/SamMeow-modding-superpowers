@@ -1,0 +1,1 @@
+{"seq":2,"dropped":0,"entries":[{"seq":1,"ts":"2026-09-14T00:00:00.0000000Z","level":"warning","source":"Unity","text":"line1\nline2"},{"seq":2,"ts":"2026-09-14T00:00:00.0000000Z","level":"error","source":"Assembly-CSharp","text":"boom"}]}

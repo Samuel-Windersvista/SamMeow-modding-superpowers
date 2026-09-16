@@ -171,9 +171,10 @@ public class LogSummaryStoreTests
     }
 
     [Fact]
-    public void Default_max_groups_is_500()
+    public void Default_max_groups_comes_from_the_contract()
     {
-        Assert.Equal(500, LogSummaryStore.DefaultMaxGroups);
+        // F6：上限不再硬编码 500——唯一源是契约 logAggregation.maxGroups。
+        Assert.Equal(BridgeContract.MaxGroups, LogSummaryStore.DefaultMaxGroups);
     }
 
     [Fact]

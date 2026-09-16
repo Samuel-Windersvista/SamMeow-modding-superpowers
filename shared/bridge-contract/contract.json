@@ -1,0 +1,33 @@
+{
+  "$comment": "C10 桥接跨语言契约（单一源）。两端消费同一数据：C# 经 EmbeddedResource 编译期嵌入，TS 经运行时读取（仓库布局与便携树布局同镜像）。不得在两端源码另留协议版本 / 归一化规则 / 聚合上限字面量。规则 pattern 限定 JS/.NET 共通子集：C# 以 RegexOptions.ECMAScript 编译，使 \\b / \\w / \\d 与 JS 语义一致。**\\s 不在共通子集内**：.NET 的 ECMAScript \\s 仅含 ASCII 空白（[ \\t\\n\\v\\f\\r]），与 JS 的 \\s 集合（25 个码点）不同——故空白收敛不用 \\s，改由显式字符类 whitespacePattern 承担（类内不得含 \\s / \\d / \\w，消除引擎语义依赖）。规则数组顺序即应用顺序；随后按 whitespacePattern 折叠空白、按 trim 去首尾空白（trim 使用同一空白集合）。protocolVersion 仅 wire 不兼容变更时 +1（组件版本与 wire 协议版本双轴分离，见 ADR-0009）。",
+  "protocolVersion": 1,
+  "logNormalization": {
+    "rules": [
+      {
+        "id": "guid",
+        "pattern": "\\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\\b",
+        "replacement": "<guid>"
+      },
+      {
+        "id": "id24hex",
+        "pattern": "(?<!\\w)[0-9a-fA-F]{24}(?![0-9a-fA-F])",
+        "replacement": "<id>"
+      },
+      {
+        "id": "hex",
+        "pattern": "\\b0[xX][0-9a-fA-F]+\\b",
+        "replacement": "<hex>"
+      },
+      {
+        "id": "number",
+        "pattern": "\\b\\d+(?:\\.\\d+)?\\b",
+        "replacement": "<n>"
+      }
+    ],
+    "whitespacePattern": "[ \\t\\n\\v\\f\\r\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff]+",
+    "trim": true
+  },
+  "logAggregation": {
+    "maxGroups": 500
+  }
+}

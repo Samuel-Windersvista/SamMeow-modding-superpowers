@@ -1,0 +1,100 @@
+{
+  "_comment": "C10 pre/post 捕获固定语料：聚合输入。ts 采用 C# 往返格式（7 位小数）以保证双端输出逐字节可比。期望值由捕获产出（goldens/）。",
+  "cases": [
+    {
+      "name": "merge-same-key",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.1590000Z", "level": "warning", "source": "server:spt20260914.log", "text": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "server:spt20260914.log", "text": "Fixed item: 5b1c0d7e9f3a2b4c6d8e0f1as undefined StackObjectsCount value, now set to 1" }
+      ]
+    },
+    {
+      "name": "distinct-keys",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.1590000Z", "level": "warning", "source": "server:spt20260914.log", "text": "Fixed item: 6aa409923c427c1424103c2bs undefined StackObjectsCount value, now set to 1" },
+        { "ts": "2026-09-14T05:58:02.0000000Z", "level": "error", "source": "server:spt20260914.log", "text": "KeyNotFoundException: loot patch" }
+      ]
+    },
+    {
+      "name": "level-upgrade",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "boom" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "error", "source": "s", "text": "boom" },
+        { "ts": "2026-09-14T05:58:02.0000000Z", "level": "info", "source": "s", "text": "boom" }
+      ]
+    },
+    {
+      "name": "ts-extremes",
+      "entries": [
+        { "ts": "2026-09-14T05:58:05.0000000Z", "level": "warning", "source": "s", "text": "boom" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "s", "text": "boom" },
+        { "ts": "2026-09-14T05:58:09.0000000Z", "level": "warning", "source": "s", "text": "boom" }
+      ]
+    },
+    {
+      "name": "source-first",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "server:a.log", "text": "boom" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "server:b.log", "text": "boom" }
+      ]
+    },
+    {
+      "name": "order-count-lastts-key",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "many" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "s", "text": "many" },
+        { "ts": "2026-09-14T05:59:00.0000000Z", "level": "warning", "source": "s", "text": "few-later" },
+        { "ts": "2026-09-14T05:58:30.0000000Z", "level": "warning", "source": "s", "text": "few-earlier" },
+        { "ts": "2026-09-14T05:58:30.0000000Z", "level": "warning", "source": "s", "text": "aaa" }
+      ]
+    },
+    {
+      "name": "since-exclusive",
+      "since": "2026-09-14T05:58:00.0000000Z",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "old" },
+        { "ts": "2026-09-14T05:58:10.0000000Z", "level": "warning", "source": "s", "text": "new" }
+      ]
+    },
+    {
+      "name": "eviction-lru",
+      "maxGroups": 2,
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "one" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "s", "text": "two" },
+        { "ts": "2026-09-14T05:58:05.0000000Z", "level": "warning", "source": "s", "text": "one" },
+        { "ts": "2026-09-14T05:58:06.0000000Z", "level": "warning", "source": "s", "text": "three" }
+      ]
+    },
+    {
+      "name": "eviction-tie-key",
+      "maxGroups": 2,
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "bbb" },
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "aaa" },
+        { "ts": "2026-09-14T05:58:07.0000000Z", "level": "warning", "source": "s", "text": "ccc" }
+      ]
+    },
+    {
+      "name": "count-not-capped",
+      "maxGroups": 1,
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "s", "text": "boom 1" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "s", "text": "boom 2" },
+        { "ts": "2026-09-14T05:58:02.0000000Z", "level": "warning", "source": "s", "text": "boom 3" }
+      ]
+    },
+    {
+      "name": "empty",
+      "entries": []
+    },
+    {
+      "name": "live-raid-derived",
+      "entries": [
+        { "ts": "2026-09-14T05:58:00.0000000Z", "level": "warning", "source": "server:spt20260914.log", "text": "remaining 1700.794 seconds" },
+        { "ts": "2026-09-14T05:58:01.0000000Z", "level": "warning", "source": "server:spt20260914.log", "text": "remaining 1699.794 seconds" },
+        { "ts": "2026-09-14T05:58:02.0000000Z", "level": "info", "source": "server:spt20260914.log", "text": "bot role pmcUSEC alive at x 158.95705 z -81.0829" }
+      ]
+    }
+  ]
+}

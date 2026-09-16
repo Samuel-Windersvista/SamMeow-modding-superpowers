@@ -214,3 +214,17 @@
 - 规格：`.scratch/c5-release-identity/spec.md`（CLOSED）。
 - **提交口径**：C5 单批提交（建议 `feat(release-identity): single-source versioning + identity gate + docs normalization (C5)`）。
 - 全部变更未提交。
+
+## 2026-09-17 — C10 Bridge 跨语言契约工件化（P2 首项）
+
+- **契约工件（已交付，未提交）**：`shared/bridge-contract/contract.json`（protocolVersion + 日志归一化规则表 + 聚合常量 + 空白字符类）；C# 经 EmbeddedResource 编译期嵌入（`src/BridgeContract.cs`），TS 运行时读取（`src/bridge/contract.ts`，仓库/便携树同相对路径）；两端三处消费点全部契约派生（无残留字面量）。
+- **共享 golden 夹具**：`fixtures/`（归一化 55 例含对抗向量 / 聚合 12 例 / payload 10 份 + errors）；两端测试读同一批文件；pre/post 捕获 5/5 + CS↔TS 2/2 逐字节 MATCH（捕获语料冻结）。
+- **ADR-0009**：单一源范围 / 双轴版本语义（组件 0.2.0 ≠ wire 1；仅不兼容变更 +1）/ 夹具机制 / 非目标（payload codegen、协议 v2、传输改动）。
+- **bootstrap 第 12 项**：`verify-bridge-contract.ps1`（工件与夹具可解析 + 消费点断言：EmbeddedResource LogicalName / TS 契约模块 / `Plugin.cs` 派生 / 便携清单）。
+- **双轴评审 + 修复轮**：oracle ×2 判 1 BLOCKER（`\s` ECMAScript 反向对齐——ECMAScript 下 .NET `\s` 仅 ASCII；对抗向量分叉 5/18→8/18）+ 6 SUGGESTION + 3 NIT；修复轮 F1-F6 全落地（空白字符类升为契约数据 + trim 收敛 + 对齐向量 + 校验对齐 + #12 加固）。
+- **验证**：bootstrap **11→12 全绿**；C# **316**/0（基线 295）；TS **414**/0（基线 395）；post 捕获零漂移；便携重建 + 树内对拍（nbsp→space / nel preserved / bom trimmed）；Node `\s` 全码点枚举 25 个 SET-EQUAL。
+- **已声明 delta**：C# 空白/词类向 JS 对齐（U+FEFF/U+0085 边缘 trim、é/ß0x/阿拉伯数字边界）；U+0130 残余记录（ADR-0009）。
+- **环境事件**：BGS 幽灵物化**二次复发**（2026-09-17 01:06:07，`.mcp.json` + `plugins/`；与未注册 `ticket-07` 工作树逐字节同源）→ 备份（`D:\Temp\opencode\bgs-reappearance-20260917`）+ 清理 + verify-layout 恢复绿；来源深挖调查进行中（配置侧物化者 / `plugins/` 幽灵来源）。
+- 规格：`.scratch/c10-bridge-contract/spec.md`（CLOSED）。
+- **提交口径**：C10 单批提交（建议 `feat(bridge-contract): single-source cross-language contract + shared golden fixtures (C10)`）。
+- 全部变更未提交。

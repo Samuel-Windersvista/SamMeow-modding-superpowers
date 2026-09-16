@@ -36,10 +36,11 @@ public sealed class Plugin : BasePlugin
     internal const string PluginVersion = "0.2.0";
 
     /// <summary>
-    /// 桥 HTTP 协议版本（单点定义，MCP 握手校验用）。
-    /// /bridge/info 与启动日志均引用此常量；破坏性契约变更时递增。
+    /// 桥 HTTP 协议版本（C10 起由 <c>shared/bridge-contract/contract.json</c> 单一源派生，
+    /// 源码不再保留字面量）。/bridge/info 与启动日志均引用此属性；
+    /// wire 不兼容变更时改契约并递增（组件版本与 wire 协议版本双轴分离，见 ADR-0009）。
     /// </summary>
-    internal const int ProtocolVersion = 1;
+    internal static int ProtocolVersion => BridgeContract.ProtocolVersion;
 
     private RaidStateStore store;
     private RaidEventBuffer events;

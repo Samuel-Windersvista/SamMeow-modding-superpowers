@@ -14,7 +14,8 @@
     .opencode/plugins/      (OpenCode plugin entrypoint)
     scripts/                (operator scripts)
     skills/                 (every shipped SKILL.md tree)
-    shared/                 (runtime-layout.mjs + .d.mts: plugin + spt-mcp resolver)
+    shared/                 (runtime-layout.mjs + .d.mts: plugin + spt-mcp resolver;
+                             bridge-contract/: 跨语言契约 contract.json + fixtures)
     knowledge/spt-kb/       (index + curated + wiki + sources; archive/ NEVER ships)
     tools/mo2-mcp/          (dist/ + src/ + package.json + README.md)
     tools/spt-mcp/          (dist/ + src/ + package.json + README.md)
@@ -294,11 +295,14 @@ Copy-Tree -From "scripts" -To "scripts" -ExcludeNames "dev-*"
 # ---- 3. Skills (entire shipped surface) ------------------------------------
 Copy-Tree -From "skills" -To "skills"
 
-# ---- 3a. Shared runtime-layout resolver ------------------------------------
+# ---- 3a. Shared runtime-layout resolver + bridge contract ------------------
 # Single source of path resolution for BOTH the OpenCode plugin and spt-mcp
 # (relative imports: ../../shared/... from .opencode/plugins, ../../../shared/...
 # from tools/spt-mcp/{src,dist}). Required: without it the plugin skips its
 # health check and the MCP cannot resolve KB/helper paths.
+# 同一 shared/ 树复制同时携带 shared/bridge-contract/（C10 契约工件 + 夹具）：
+# tarkov-runtime-mcp 运行时按相对路径读取 contract.json，便携树必须镜像该布局。
+# 整树复制已覆盖，无需单独再复制（重复复制会在目标下嵌套出二级目录）。
 Copy-Tree -From "shared" -To "shared"
 
 # ---- 3b. Knowledge layer (index + curated + wiki + sources) ----------------
@@ -468,6 +472,7 @@ if ($EmitMarketplace) {
 # shared resolver and the KB index. Fail the build loudly instead.
 $requiredPortablePaths = @(
   "shared/runtime-layout.mjs",
+  "shared/bridge-contract/contract.json",
   "knowledge/spt-kb/index.json",
   "knowledge/spt-kb/curated/modding-standard/rules.json",
   ".version-bump.json",
