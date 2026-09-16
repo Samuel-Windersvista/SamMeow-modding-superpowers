@@ -18,6 +18,16 @@ _Avoid_: 运行时 MCP、live MCP、tarkov-MCP
 安装进游戏侧、为 tarkov-runtime-MCP 暴露状态的组件。按 ADR-0003 采用混合策略：局外状态零桥（MCP 直连 `/client/*` 路由），局内状态用 Client Bridge（BepInEx 插件，Phase 2，MO2 overlay 交付；Phase 2 起为唯一游戏侧组件）。
 _Avoid_: 插件、适配器（adapter 指别的东西）、shim
 
+### 分发与布局
+
+**Portable Package（便携包）**:
+由打包脚本物化的自包含分发形态：目录布局与仓库同构（`.opencode/plugins`、`tools/`、`skills/`、`knowledge/` 子集），但不含开发资产与 archive。运行时布局解析对仓库与便携包同规则。
+_Avoid_: 发布包、安装包
+
+**Runtime Layout（运行时布局）**:
+包根到运行时资源的路径契约：知识库根、forge 归档、.NET helper 产物。由唯一解析器统一解析并逐资源校验；显式设置的路径无效即报错，不做静默回退。
+_Avoid_: 路径配置、环境变量表
+
 ### 状态域
 
 **Out-of-Raid State（局外状态）**:

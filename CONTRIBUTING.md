@@ -7,9 +7,12 @@ Thanks for the interest. This doc is for contributors opening pull requests agai
 ```powershell
 git clone https://github.com/<owner>/SamMeow-modding-superpowers.git
 cd SamMeow-modding-superpowers
+# Build the shared kernel first — the servers import it from tools/mcp-kit/dist
+npm --prefix tools/mcp-kit install; npm --prefix tools/mcp-kit run build
 # Build the MCP servers
 npm --prefix tools/mo2-mcp install; npm --prefix tools/mo2-mcp run build
 npm --prefix tools/spt-mcp install; npm --prefix tools/spt-mcp run build
+npm --prefix tools/tarkov-runtime-mcp install; npm --prefix tools/tarkov-runtime-mcp run build
 ```
 
 The repo carries a dedicated MO2 sandbox under `.artifacts/mo2/` (gitignored — bring your own for now). The development plan and roadmap live in `docs/internal/`.
@@ -23,8 +26,10 @@ The repo carries a dedicated MO2 sandbox under `.artifacts/mo2/` (gitignored —
 
 ## Test commands
 
+- `tools/mcp-kit/` — `npm test` (vitest: schema pipeline, envelope, stdio bootstrap seam).
 - `tools/mo2-mcp/` — `npm test` (vitest unit tests). The live acceptance suite is gated behind `MO2_MCP_ACCEPTANCE=1` and requires a running MO2.
 - `tools/spt-mcp/` — `npm test` (vitest unit tests).
+- `tools/tarkov-runtime-mcp/` — `npm test` (vitest unit tests, bridge replay fixtures included).
 - `tests/` (top-level) — PowerShell suites for the shared MO2 infrastructure plus the SPT-only bootstrap invariants. Run the bootstrap suite with `powershell -NoProfile -File tests/bootstrap/verify-all.ps1`.
 
 ## Where things live
@@ -32,8 +37,10 @@ The repo carries a dedicated MO2 sandbox under `.artifacts/mo2/` (gitignored —
 | Path | Purpose |
 |---|---|
 | `skills/` | Shippable agent skills (Superpowers convention). Each dir has a `SKILL.md` with YAML frontmatter. |
-| `tools/mo2-mcp/` | TypeScript MCP server for the MO2 control plane. Pre-built `dist/` is tracked; `prepare` rebuilds on install. |
-| `tools/spt-mcp/` | TypeScript MCP server for file-based SPT mod analysis. Pre-built `dist/` is tracked. |
+| `tools/mcp-kit/` | Shared MCP kernel (stdio bootstrap, tool envelope, schema pipeline). All three servers import it from `dist/` — build it first. |
+| `tools/mo2-mcp/` | TypeScript MCP server for the MO2 control plane. `dist/` is build output (untracked); `prepare` builds it on install. |
+| `tools/spt-mcp/` | TypeScript MCP server for file-based SPT mod analysis. `dist/` is build output (untracked). |
+| `tools/tarkov-runtime-mcp/` | TypeScript MCP server for SPT 5.x runtime state (server handshake, in-raid bridge, log watch). `dist/` is build output (untracked). |
 | `tools/mo2-vfs-launcher/` | PowerShell launcher surface for MO2. Runtime dependency. |
 | `tools/mo2-control-plane/` | C++ MO2 plugin DLL source, Python loader, broker. |
 | `tools/mo2-mcp-sidecar/` | Python JSON-RPC sidecar used by the MO2 MCP. |

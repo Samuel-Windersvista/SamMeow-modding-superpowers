@@ -1,5 +1,7 @@
 # tarkov-runtime-MCP — Spec
 
+> **进展（Work Status）**: CLOSED — 2026-09-13（8 票完成，live 验证）
+
 Status: ready-for-agent
 
 ## Problem Statement

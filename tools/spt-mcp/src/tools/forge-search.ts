@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { searchForge } from "../forge-reader.js";
+import { getLayout } from "../runtime-layout.js";
 import { errEnv, okEnv, SPT_ERROR_CODES, type Envelope } from "../types.js";
 
 export const ForgeSearchInput = z
@@ -19,10 +20,21 @@ export function runForgeSearch(args: unknown): Envelope {
       "spt_forge_search",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   try {
+    // 布局检查：便携包不携带 archive/forge（约 2GB），缺失时显式降级
+    const layout = getLayout();
+    if (!layout.kb.archive.ok) {
+      return errEnv(
+        "spt_forge_search",
+        "Forge 归档不可用",
+        SPT_ERROR_CODES.KB_UNAVAILABLE,
+        { hint: layout.kb.archive.reason },
+      );
+    }
+
     const result = searchForge({
       query: parsed.data.query,
       category: parsed.data.category,

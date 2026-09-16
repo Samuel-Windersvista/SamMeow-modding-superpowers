@@ -1,5 +1,7 @@
 # tarkov-runtime 错误/告警即时捕获（logwatch）Spec
 
+> **进展（Work Status）**: CLOSED — 2026-09-16（live 验收全过；桥 295/295 + MCP 395/395）
+
 Status: ready-for-agent
 
 ## Problem Statement

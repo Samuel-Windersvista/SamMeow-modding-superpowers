@@ -26,7 +26,7 @@ export function runPredictLoadOrder(args: unknown): Envelope {
       "spt_predict_load_order",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   const { modPaths } = parsed.data;

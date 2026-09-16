@@ -1,0 +1,1345 @@
+{
+  "tools": [
+    {
+      "name": "mo2_session",
+      "description": "Inspect or change the MO2 MCP lazy binding. Call with no args to inspect, {mo2Root, profile?} to bind/rebind, or {unbind:true} to unbind.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mo2Root": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "string"
+          },
+          "unbind": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_status",
+      "description": "Report MO2 instance state: paths, game, active profile, MO2-running detection (3-tier ladder), mod/plugin counts, MCP permission ceiling, broker+sidecar connectivity.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_machine_contract",
+      "description": "Paths-only snapshot (charrdge pattern): returns absolute paths the agent can read natively without further MCP calls. Saves token budget on large modpacks.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "only_enabled": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_modlist",
+      "description": "Read modlist.txt. Returns mods with name/priority/enabled/is_separator. Native TS read (offline-fast). If enrich=true and MO2 is live, adds live_priority via broker.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "enrich": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_pluginlist",
+      "description": "Read plugins.txt. Returns plugins with name + enabled (* = enabled per MO2/FO4 convention). Optional broker enrich adds masters/load_order/origin/flags.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "enrich": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_mod_info",
+      "description": "Single mod detail: meta.ini parsed sections, file count, archive count (BA2/BSA), absolute path.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_profile_ini_get",
+      "description": "Read profile-local game INI (<game>.ini, <game>Prefs.ini, or <game>Custom.ini). Returns sections, a specific section, or a specific key. Falls back to %DOCUMENTS% if profile-local INIs absent.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "ini_name": {
+            "type": "string",
+            "enum": [
+              "game",
+              "prefs",
+              "custom"
+            ]
+          },
+          "section": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ini_name"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_assets_summary",
+      "description": "Summary counts (mod_count, enabled_mod_count, game) via Python sidecar (mo2_assets_engine).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_assets_conflicts",
+      "description": "List file conflicts via Python sidecar. Bounded output (max_results, default 10000). Returns conflicts array + total_count + truncated flag.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "max_results": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50000,
+            "default": 10000
+          },
+          "path_prefix": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_assets_resolve",
+      "description": "Resolve a virtual path (e.g. 'Data/textures/foo.dds') to winner mod + provider chain via sidecar.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "virtual_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "virtual_path"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_search_files",
+      "description": "Glob/regex file search across enabled mod trees. Bounded by max_results (default 1000). pattern='**/*.esp' for glob, 'regex:^foo' for regex. Returns mod-prefixed paths + truncated flag.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "pattern": {
+            "type": "string",
+            "minLength": 1
+          },
+          "max_results": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000,
+            "default": 1000
+          }
+        },
+        "required": [
+          "pattern"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_list_executables",
+      "description": "List configured customExecutables from ModOrganizer.ini (title, binary, arguments, workingDirectory, steamAppID, ownicon, hide, ...).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_audit_query",
+      "description": "Query MCP audit log. Filters: date_from/date_to (YYYY-MM-DD), tool, decision, plan_id. Bounded by max_results (default 500). Returns records array + count + truncated.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "date_from": {
+            "type": "string"
+          },
+          "date_to": {
+            "type": "string"
+          },
+          "tool": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "refused",
+              "plan_generated",
+              "applied",
+              "lease_violation",
+              "rolled_back"
+            ]
+          },
+          "plan_id": {
+            "type": "string"
+          },
+          "max_results": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 500
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "mo2_set_mod_notes",
+      "description": "Set mod notes (meta.ini [General] notes=, QSettings-escaped: quotes/backslashes/newlines are safely encoded). Plan returns diff; apply atomically writes via temp+rename or broker mods.meta_write.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_edit_meta",
+      "description": "Edit arbitrary meta.ini fields. updates = {section: {key: value}}. Plan returns diff; apply atomically merges.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "updates": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_profile_ini_set",
+      "description": "Set profile-local INI key. Refuses if MO2 holds profile files. Atomic temp+rename.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "ini_name": {
+            "type": "string",
+            "enum": [
+              "game",
+              "prefs",
+              "custom"
+            ]
+          },
+          "section": {
+            "type": "string",
+            "minLength": 1
+          },
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_backup_mod",
+      "description": "Create file-level mod backup (<name>backupN naming; MO2 auto-tags FLAG_BACKUP). Plan returns backup path; apply does the recursive copy.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_backup_profile",
+      "description": "Explicit full-profile backup (all .txt + .ini under profile). Saved to .mo2-mcp/profile-backups/<profile>_<label>/. Default label = timestamp.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "label": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string"
+          },
+          "lease_token": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_toggle_mod",
+      "description": "Enable or disable a mod. Plan/apply with lease on modlist.txt content hash. Live: broker pipe; offline: atomic file rewrite.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_toggle_plugin",
+      "description": "Enable/disable plugin. Optional also_hide_file=true renames the .esp to .mohidden for Optional-ESP semantics (live-mode only).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "also_hide_file": {
+            "type": "boolean",
+            "default": false
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "plan_id": {
+            "type": "string"
+          },
+          "lease_token": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_send_mod_to",
+      "description": "Reposition a mod by mode: top/bottom/priority/above_separator/above_first_conflict/below_last_conflict.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_mode": {
+            "type": "string",
+            "enum": [
+              "top",
+              "bottom",
+              "priority",
+              "above_separator",
+              "above_first_conflict",
+              "below_last_conflict"
+            ]
+          },
+          "target_priority": {
+            "type": "integer"
+          },
+          "target_separator": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_rollback",
+      "description": "Restore files from a snapshot_id created by an earlier T2/T3 apply. Plan returns manifest summary; apply does the cp.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "snapshot_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_restore_profile",
+      "description": "Restore profile state from a mo2_backup_profile label. Plan returns file count; apply copies all backed-up files back over profile.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_install",
+      "description": "Install mod from archive (.zip/.7z/.rar). FOMOD non-interactive via fomod_choices. Pattern A: sidecar parse/extract → broker createMod → move → meta.ini → register modlist.txt. Name the overlay per the convention '<category>-<mod-name>-<version>' (e.g. '工具-MCP活跃探针-0.1.0'); comments (required — short summary shown in MO2's list) and notes (optional — longer install record for the Notes tab) are written to meta.ini so every overlay is self-documenting.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "archive_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mod_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "target_priority": {
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "top"
+              },
+              {
+                "type": "string",
+                "const": "bottom"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "default": "bottom"
+          },
+          "fomod_choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "page_name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "selected_options": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "group_name": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "option_name": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "group_name",
+                      "option_name"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "page_name",
+                "selected_options"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "nexus_mod_id": {
+            "type": "integer"
+          },
+          "version": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "comments": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_run_tool",
+      "description": "Run a configured customExecutable via MO2 VFS. Live: organizer.start_application. Offline: ModOrganizer run -e.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "wait": {
+            "type": "boolean",
+            "default": false
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_switch_profile",
+      "description": "Cold-restart MO2 with a different profile. Shutdown → wait_dead → relaunch → wait_ready → sidecar_invalidate. Refuses profiles outside allowedProfiles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "new_profile": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_configure_executable",
+      "description": "Add/edit/remove a customExecutables entry. Refuses if MO2 running. Atomic INI rewrite preserves other sections.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "add",
+              "edit",
+              "remove"
+            ]
+          },
+          "entry": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "binary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "arguments": {
+                "type": "string",
+                "default": ""
+              },
+              "workingDirectory": {
+                "type": "string",
+                "default": ""
+              },
+              "steamAppID": {
+                "type": "string",
+                "default": ""
+              },
+              "ownicon": {
+                "type": "boolean",
+                "default": false
+              },
+              "hide": {
+                "type": "boolean",
+                "default": false
+              },
+              "toolbar": {
+                "type": "boolean"
+              },
+              "minimizeToSystemTray": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "title",
+              "binary"
+            ],
+            "additionalProperties": false
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "updates": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "binary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "arguments": {
+                "type": "string"
+              },
+              "workingDirectory": {
+                "type": "string"
+              },
+              "steamAppID": {
+                "type": "string"
+              },
+              "ownicon": {
+                "type": "boolean"
+              },
+              "hide": {
+                "type": "boolean"
+              },
+              "toolbar": {
+                "type": "boolean"
+              },
+              "minimizeToSystemTray": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_create_mod",
+      "description": "Create empty mod via broker mods.create. Optional 'above' positions it above a named mod. comments (required — short summary shown in MO2's list) + notes (optional — longer install record) are written to meta.ini; name per '<category>-<mod-name>-<version>'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "above": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "comments": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_create_separator",
+      "description": "Create a separator (_separator suffix triggers FLAG_SEPARATOR). Optional color written to meta.ini.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "above": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "profile": {
+            "type": "string",
+            "default": "Default"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_rename_mod",
+      "description": "Rename mod across ALL profiles + mod folder. Live: broker mods.rename. Offline: fs rename + per-profile modlist.txt rewrite.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "old_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "new_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_reinstall_mod",
+      "description": "Reinstall mod from its meta.ini[installationFile]. Requires file in downloads/. FOMOD requires fomod_choices.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fomod_choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "page_name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "selected_options": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "group_name": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "option_name": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "group_name",
+                      "option_name"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "page_name",
+                "selected_options"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_remove_mod",
+      "description": "Remove a mod (physical delete + remove from all profile modlists). DEFAULT backup_first=true: creates <name>backupN before delete.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "backup_first": {
+            "type": "boolean",
+            "default": true
+          },
+          "plan_id": {
+            "type": "string"
+          },
+          "lease_token": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_set_file_hidden",
+      "description": "Hide or unhide a VFS file via .mohidden rename (USVFS skipFileSuffixes convention). Only works on loose files (not archive entries).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "virtual_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hidden": {
+            "type": "boolean"
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_create_profile",
+      "description": "Create a new profile. Online: broker calls IPluginGame.initializeProfile. Offline: filesystem-only create (no game INI defaults). Optional from_profile clones modlist+plugins from existing profile.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_profile": {
+            "type": "string"
+          },
+          "settings": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "MODS",
+                "SAVEGAMES",
+                "CONFIGURATION",
+                "PREFER_DEFAULTS"
+              ]
+            }
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_clone_profile",
+      "description": "Clone a profile (MO2 must be closed). Skips saves/logs/crashDumps by default. include_saves=true to copy saves too.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "include_saves": {
+            "type": "boolean",
+            "default": false
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    },
+    {
+      "name": "mo2_rename_profile",
+      "description": "Rename a profile (MO2 must be closed). Updates ModOrganizer.ini selected_profile if it matched old name.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan",
+              "apply"
+            ]
+          },
+          "old_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "new_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease_token": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "mode"
+        ]
+      }
+    }
+  ]
+}

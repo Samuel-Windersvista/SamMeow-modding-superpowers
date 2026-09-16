@@ -35,7 +35,7 @@ export function createRaidBotsTool(connection: BridgeConnection): ToolHandler {
         RAID_BOTS_TOOL_NAME,
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     const detail = parsed.data.detail === true;

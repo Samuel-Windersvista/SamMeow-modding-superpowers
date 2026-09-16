@@ -11,23 +11,15 @@
 // =============================================================================
 
 import { readFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 
 import { isCompatibleWithTarget } from "./conflict-engine.js";
+import { getLayout } from "./runtime-layout.js";
 import type { ForgeModSummary } from "./types.js";
 
 export const FORGE_CATALOG_REL = "archive/forge/api/mods-catalog.json";
 export const FORGE_HOT_INDEX_REL = "archive/forge/hot-index.json";
 export const KB_INDEX_REL = "index.json";
-
-/** 知识库根目录：默认按 dist/src 文件位置回退到仓库 knowledge/spt-kb */
-export function resolveKbRoot(): string {
-  const env = process.env.SPT_KB_ROOT;
-  if (env && env.length > 0) return env;
-  const here = dirname(fileURLToPath(import.meta.url));
-  return resolve(here, "..", "..", "..", "knowledge", "spt-kb");
-}
 
 /** 读取 JSON 文件（兼容 UTF-8 BOM），失败返回 null */
 export function loadJson<T>(kbRoot: string, relPath: string): T | null {
@@ -66,7 +58,7 @@ export interface HotIndexEntry {
 const catalogCache = new Map<string, CatalogEntry[]>();
 const hotIndexCache = new Map<string, HotIndexEntry[]>();
 
-export function loadCatalog(kbRoot: string = resolveKbRoot()): CatalogEntry[] {
+export function loadCatalog(kbRoot: string = getLayout().kb.root.path): CatalogEntry[] {
   const cached = catalogCache.get(kbRoot);
   if (cached) return cached;
   const data = loadJson<CatalogEntry[]>(kbRoot, FORGE_CATALOG_REL);
@@ -75,7 +67,7 @@ export function loadCatalog(kbRoot: string = resolveKbRoot()): CatalogEntry[] {
   return entries;
 }
 
-export function loadHotIndex(kbRoot: string = resolveKbRoot()): HotIndexEntry[] {
+export function loadHotIndex(kbRoot: string = getLayout().kb.root.path): HotIndexEntry[] {
   const cached = hotIndexCache.get(kbRoot);
   if (cached) return cached;
   const data = loadJson<HotIndexEntry[]>(kbRoot, FORGE_HOT_INDEX_REL);
@@ -85,7 +77,7 @@ export function loadHotIndex(kbRoot: string = resolveKbRoot()): HotIndexEntry[] 
 }
 
 /** id -> best_spt 映射（来自 hot-index） */
-export function bestSptMap(kbRoot: string = resolveKbRoot()): Map<number, string | null> {
+export function bestSptMap(kbRoot: string = getLayout().kb.root.path): Map<number, string | null> {
   const map = new Map<number, string | null>();
   for (const entry of loadHotIndex(kbRoot)) {
     map.set(entry.id, entry.best_spt ?? null);
@@ -118,7 +110,7 @@ export interface ForgeSearchResult {
 
 export function searchForge(
   opts: ForgeSearchOptions,
-  kbRoot: string = resolveKbRoot(),
+  kbRoot: string = getLayout().kb.root.path,
 ): ForgeSearchResult {
   const catalog = loadCatalog(kbRoot);
   const sptMap = bestSptMap(kbRoot);

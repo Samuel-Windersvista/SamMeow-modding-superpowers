@@ -4,7 +4,7 @@ import {
   analyzeConflicts,
   type ConfigFileKeys,
 } from "../conflict-engine.js";
-import { readIlPatches } from "../il-reader.js";
+import { ilHelperUnavailableReason, readIlPatches } from "../il-reader.js";
 import {
   isDirectory,
   readConfigKeys,
@@ -58,7 +58,7 @@ export function runAnalyzeConflicts(args: unknown): Envelope {
       "spt_analyze_conflicts",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   const { modPaths, sptPath, targetSptVersion } = parsed.data;
@@ -93,6 +93,13 @@ export function runAnalyzeConflicts(args: unknown): Envelope {
       .filter((m): m is ClientModMetadata => m.type === "client")
       .map((m) => m.path);
     const ilPatches = readIlPatches(clientDllPaths);
+
+    // IL helper 不可用时显式降级：空 ilPatches 无法区分「helper 缺失」与「无 patch」，
+    // 故把 reason 带进 warnings（仅当确有 client DLL 参与分析时才提示）。
+    const ilHelperReason = ilHelperUnavailableReason();
+    if (ilHelperReason && clientDllPaths.length > 0) {
+      warnings.push(`IL 级检测已降级（Harmony patch 未参与冲突分析）：${ilHelperReason}`);
+    }
 
     const report = analyzeConflicts({
       mods,

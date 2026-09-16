@@ -37,7 +37,7 @@ export function createSnapshotTool(client: SptClient): ToolHandler {
         SNAPSHOT_TOOL_NAME,
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
 
@@ -53,7 +53,7 @@ export function createSnapshotTool(client: SptClient): ToolHandler {
         SNAPSHOT_TOOL_NAME,
         `不支持的 section：${unsupported.join(", ")}`,
         RUNTIME_ERROR_CODES.UNSUPPORTED_SECTION,
-        { unsupported, supported: [...SUPPORTED_SECTIONS] },
+        { details: { unsupported, supported: [...SUPPORTED_SECTIONS] } },
       );
     }
 

@@ -4,6 +4,9 @@
 > Created: 2026-08-02
 > Tracker: local-markdown (GitHub Issues pending enablement)
 
+> **[HISTORICAL] 本图 2026-08-02 锁定、8 票已关闭，不再更新。** 后续工作状态见 `docs/dev-log.md`；
+> 在办工作见 `.scratch/`；文档地图见 `docs/README.md`。
+
 ## Destination
 
 Build a dual-purpose SPT 4.1 toolchain on the bgs-modding-superpowers skeleton:

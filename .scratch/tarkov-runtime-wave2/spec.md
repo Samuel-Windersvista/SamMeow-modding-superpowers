@@ -1,5 +1,7 @@
 # tarkov-runtime-MCP 第二波 — 事件流 + 装备状态 + 小项 Spec
 
+> **进展（Work Status）**: CLOSED — 2026-09-15（closeout 提交 86af8535；工单 01–06 核销）
+
 Status: ready-for-agent
 
 ## Problem Statement

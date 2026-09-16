@@ -1,0 +1,195 @@
+{
+  "tools": [
+    {
+      "name": "spt_list_mods",
+      "description": "扫描目录列出 SPT mod。server = 遍历子目录读每个 package.json；client = 递归扫 .dll 文件（BepInEx/plugins）。返回 [{ name, version?, guid?, dependencies, path, type }].",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "description": "要扫描的目录绝对路径"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "server",
+              "client"
+            ],
+            "description": "server = 扫描含 package.json 的子目录；client = 递归扫描 .dll 文件"
+          }
+        },
+        "required": [
+          "path",
+          "type"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_read_mod_metadata",
+      "description": "读单个 SPT mod 的完整元数据。server = 返回 package.json 内容与提取字段；client = 返回 DLL 文件名派生元数据（程序集级 GUID/版本需 .NET helper，本期延后）。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modPath": {
+            "type": "string",
+            "minLength": 1,
+            "description": "mod 目录绝对路径（server）或 DLL 路径（client）；client 传目录时取第一个 DLL"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "server",
+              "client"
+            ],
+            "description": "server = 读 package.json；client = DLL 文件名派生"
+          }
+        },
+        "required": [
+          "modPath",
+          "type"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_scan_mod_files",
+      "description": "递归列出 mod 目录内全部文件，返回 [{ relativePath, sizeBytes }]（正斜杠相对路径）。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modPath": {
+            "type": "string",
+            "minLength": 1,
+            "description": "mod 目录绝对路径"
+          }
+        },
+        "required": [
+          "modPath"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_analyze_conflicts",
+      "description": "分析一组 SPT mod 的冲突（核心工具）。检测：B = ModGuid 重复、SPT 版本失配（对比目标 4.1）；O = 同路径文件覆盖、JSON 配置 key 碰撞。同时给出预测加载顺序（TypePriority 升序 + GUID 字母序）。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modPaths": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "description": "要分析的 mod 路径数组（目录或 DLL 路径）"
+          },
+          "sptPath": {
+            "type": "string",
+            "minLength": 1,
+            "description": "SPT 安装根目录绝对路径，用于推断每个 mod 的类型（BepInEx/plugins -> client，user/mods -> server）"
+          },
+          "targetSptVersion": {
+            "type": "string",
+            "description": "目标 SPT 版本（如 3.11 / 4.1），用于版本兼容性检测。默认 4.1；分析 3.11 整合包时传 3.11"
+          }
+        },
+        "required": [
+          "modPaths",
+          "sptPath"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_predict_load_order",
+      "description": "预测 server mod 加载顺序：TypePriority 升序，同优先级按 ModGuid 字母序（SPT 4.1 ModLoader tiebreaker）。返回有序列表 [position, name, guid, typePriority, path]。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modPaths": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "description": "server mod 目录数组（含 package.json）"
+          }
+        },
+        "required": [
+          "modPaths"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_forge_search",
+      "description": "搜索 Forge 归档目录（knowledge/spt-kb/archive/forge/）。支持 query（标题/简介子串）、category（slug/标题）、sptVersion（hot-index best_spt 兼容性匹配）、modType（快照无该字段，当前无匹配）。按下载量降序。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "在标题/简介中做不区分大小写的子串匹配"
+          },
+          "category": {
+            "type": "string",
+            "description": "Forge 分类（slug 或标题，如 'weapons'、'Bots'）"
+          },
+          "sptVersion": {
+            "type": "string",
+            "description": "目标 SPT 版本（如 '4.1'），与 hot-index 的 best_spt 兼容性匹配"
+          },
+          "modType": {
+            "type": "string",
+            "enum": [
+              "server",
+              "client"
+            ],
+            "description": "mod 类型过滤（归档快照无 mod_type 字段，当前无匹配项）"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_kb_query",
+      "description": "查询 SPT 知识库（knowledge/spt-kb/index.json）。支持 topic / domain / version 过滤与 keyword 标题匹配；domain='both' 与 version='通用' 的条目始终包含。知识库不可用时返回 kb_unavailable。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "条目 topic 精确匹配（如 'config'、'recipe'、'migration'）"
+          },
+          "domain": {
+            "type": "string",
+            "description": "领域过滤：server / client / both（'both' 条目始终包含）"
+          },
+          "version": {
+            "type": "string",
+            "description": "版本过滤（如 '4.1'；条目 version 含 '通用' 时始终包含）"
+          },
+          "keyword": {
+            "type": "string",
+            "description": "对标题做不区分大小写的子串匹配"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "spt_health",
+      "description": "运行时布局只读自查：返回 mode（repo/portable）、pluginRoot，以及知识库根/索引/forge 归档与 metadata/IL helper 的 path、source（env/default）、ok、reason。用于定位知识层或 helper 缺失。",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ]
+}

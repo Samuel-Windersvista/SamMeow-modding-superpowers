@@ -27,7 +27,7 @@ export function bridgeUnreachableEnvelope(tool: string, error: unknown): ErrEnve
     tool,
     `无法连接本地 bridge（可能原因：未安装 / 未运行 / 启动失败）：${errorMessage(error)}。请检查 BepInEx 日志（BepInEx/LogOutput.log）确认桥加载状态`,
     RUNTIME_ERROR_CODES.BRIDGE_UNREACHABLE,
-    { reason: "bridge_unreachable" },
+    { details: { reason: "bridge_unreachable" } },
   );
 }
 
@@ -37,7 +37,7 @@ export function bridgeVersionMismatchEnvelope(tool: string, actual: number): Err
     tool,
     `bridge 协议版本不匹配：MCP 期望 ${EXPECTED_BRIDGE_PROTOCOL_VERSION}，桥自报 ${actual}；请更新 bridge 插件或 MCP`,
     RUNTIME_ERROR_CODES.BRIDGE_VERSION_MISMATCH,
-    { expected: EXPECTED_BRIDGE_PROTOCOL_VERSION, actual },
+    { details: { expected: EXPECTED_BRIDGE_PROTOCOL_VERSION, actual } },
   );
 }
 
@@ -47,7 +47,7 @@ export function bridgeVersionMismatchEnvelope(tool: string, actual: number): Err
  * 即可诊断「桥活着吗」（US23）；其余 raid 工具不传，行为不变。
  */
 export function notInRaidEnvelope(tool: string, message: string, details?: unknown): ErrEnvelope {
-  return errEnv(tool, message, RUNTIME_ERROR_CODES.NOT_IN_RAID, details);
+  return errEnv(tool, message, RUNTIME_ERROR_CODES.NOT_IN_RAID, { details });
 }
 
 /** ensureBridgeInfo 结果：成功携带 info，失败携带待返回的错误信封 */

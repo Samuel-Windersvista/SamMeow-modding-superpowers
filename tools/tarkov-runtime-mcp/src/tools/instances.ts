@@ -21,7 +21,7 @@ export function createInstancesTool(client: SptClient): ToolHandler {
         "tarkov_instances",
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     try {

@@ -1,7 +1,7 @@
 #requires -Version 5.1
 <#
 .SYNOPSIS
-  Materialize a portable plugins/<name>/ tree for downstream packaging.
+  Materialize a portable <OutputDir>/<PluginName>/ tree for downstream packaging.
 
 .DESCRIPTION
   Builds a self-contained, hand-distributable copy of the plugin into
@@ -14,8 +14,16 @@
     .opencode/plugins/      (OpenCode plugin entrypoint)
     scripts/                (operator scripts)
     skills/                 (every shipped SKILL.md tree)
+    shared/                 (runtime-layout.mjs + .d.mts: plugin + spt-mcp resolver)
+    knowledge/spt-kb/       (index + curated + wiki + sources; archive/ NEVER ships)
     tools/mo2-mcp/          (dist/ + src/ + package.json + README.md)
     tools/spt-mcp/          (dist/ + src/ + package.json + README.md)
+    tools/tarkov-runtime-mcp/       (dist/ + src/ + package.json + README.md)
+    tools/mcp-kit/          (dist/ + src/ + package.json + tsconfig.json;
+                             shared kernel, NOT an MCP server -- the three
+                             servers above import it via ../../mcp-kit/dist)
+    tools/spt-mcp/helper/bin/Release/     (metadata reader, optional prebuild)
+    tools/spt-mcp/il-helper/bin/Release/  (IL reader, optional prebuild)
     tools/mo2-vfs-launcher/         (PowerShell launcher surface)
     tools/mo2-control-plane/        (broker + live-bridge Python plugin)
     tools/mo2-assets-engine/        (offline archive/loose-file engine)
@@ -27,7 +35,8 @@
     - bundle dev dependencies into the output (runtime dependency closures are
       copied from each source MCP package's node_modules; package.json files
       still have build/test scripts and devDependencies stripped)
-    - mutate the live repo-root plugins/ workaround tree
+    - mutate the live repo tree (the retired repo-root plugins/ workaround
+      tree is gone; all output is written under OutputDir only)
 
 .PARAMETER OutputDir
   Where the portable tree is written. Default: "dist/portable-plugin".
@@ -52,6 +61,15 @@
   Inputs that MUST exist before running:
     tools/mo2-mcp/dist/index.js  (run `npm run build` inside tools/mo2-mcp/ first)
     tools/spt-mcp/dist/index.js  (run `npm run build` inside tools/spt-mcp/ first)
+    tools/tarkov-runtime-mcp/dist/index.js  (run `npm run build` inside tools/tarkov-runtime-mcp/ first)
+    tools/mcp-kit/dist/index.js  (run `npm run build` inside tools/mcp-kit/ first;
+                                  the three servers import this path relatively,
+                                  so build the kit BEFORE the servers)
+
+  Optional prebuilds (bundled when present, loud warning when missing; the
+  portable tree degrades to "metadata helper unavailable" rather than failing):
+    tools/spt-mcp/helper/bin/Release/     (dotnet build tools/spt-mcp/helper -c Release)
+    tools/spt-mcp/il-helper/bin/Release/  (dotnet build tools/spt-mcp/il-helper -c Release)
 #>
 
 [CmdletBinding()]
@@ -83,13 +101,16 @@ Write-Host "[build-portable-plugin] plugin:     $PluginName"
 # ---- Preflight: required prebuilt artifacts --------------------------------
 $RequiredArtifacts = @(
   "tools/mo2-mcp/dist/index.js",
-  "tools/spt-mcp/dist/index.js"
+  "tools/spt-mcp/dist/index.js",
+  "tools/tarkov-runtime-mcp/dist/index.js",
+  "tools/mcp-kit/dist/index.js"
 )
 foreach ($rel in $RequiredArtifacts) {
   $full = Join-Path $RepoRoot $rel
   if (-not (Test-Path -LiteralPath $full)) {
     throw "Required artifact missing: $rel. " +
-          "If this is an MCP dist, run `npm run build` inside that tools/<mcp>/ package first."
+          "Run `npm run build` inside that tools/<package>/ directory first " +
+          "(mcp-kit is the shared kernel the three MCP servers import relatively)."
   }
 }
 
@@ -150,6 +171,32 @@ function Copy-FileOnly {
   Copy-Item -LiteralPath $srcFull -Destination $dstFull -Force
 }
 
+function Copy-OptionalTree {
+  param(
+    [Parameter(Mandatory)][string]$From,
+    [Parameter(Mandatory)][string]$To
+  )
+  $srcFull = Join-Path $RepoRoot $From
+  if (-not (Test-Path -LiteralPath $srcFull)) {
+    Write-Warning "[build-portable-plugin] optional source missing, skipped: $From"
+    return
+  }
+  Copy-Tree -From $From -To $To
+}
+
+function Copy-OptionalFile {
+  param(
+    [Parameter(Mandatory)][string]$From,
+    [Parameter(Mandatory)][string]$To
+  )
+  $srcFull = Join-Path $RepoRoot $From
+  if (-not (Test-Path -LiteralPath $srcFull)) {
+    Write-Warning "[build-portable-plugin] optional file missing, skipped: $From"
+    return
+  }
+  Copy-FileOnly -From $From -To $To
+}
+
 function Strip-PortableMcpPackageJson {
   param(
     [Parameter(Mandatory)][string]$PackageJsonPath
@@ -157,8 +204,11 @@ function Strip-PortableMcpPackageJson {
 
   $pkg = Get-Content -LiteralPath $PackageJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
   if ($pkg.scripts) {
-    foreach ($scriptKey in @("prepare", "build", "test", "test:watch", "test:integration", "typecheck")) {
-      if ($pkg.scripts.PSObject.Properties.Name -contains $scriptKey) {
+    # 用索引器探测键存在性：Set-StrictMode Latest 下，对「剥空后的空集合」取
+    # .PSObject.Properties.Name 会抛 PropertyNotFoundStrict（mo2 的 scripts 剥到
+    # 空即触发），索引器返回 $null 则安全。
+    foreach ($scriptKey in @("prepare", "build", "test", "test:watch", "test:integration", "pretest", "lint", "typecheck")) {
+      if ($null -ne $pkg.scripts.PSObject.Properties[$scriptKey]) {
         $pkg.scripts.PSObject.Properties.Remove($scriptKey)
       }
     }
@@ -201,13 +251,21 @@ function Copy-McpRuntimeDependencies {
     throw "Source runtime dependencies missing for tools/$PackageName. Run npm install inside tools/$PackageName before building the portable tree."
   }
 
+  # npm writes UTF-8 to stdout, but Windows PowerShell 5.1 decodes native-command
+  # output using the console OEM code page (CP936/GB2312 on zh-CN hosts). When the
+  # repo path contains CJK characters every decoded line is mojibake, so the
+  # StartsWith($srcNodeModules) prefix check below never matches and node_modules
+  # silently ships empty. Force UTF-8 for the call (restored in `finally`).
+  $prevOutputEncoding = [Console]::OutputEncoding
   Push-Location $srcPkgRoot
   try {
+    [Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
     $depRoots = @(& npm ls --omit=dev --parseable --all --silent)
     if ($LASTEXITCODE -ne 0) {
       throw "npm ls --omit=dev failed for tools/$PackageName with exit code $LASTEXITCODE"
     }
   } finally {
+    [Console]::OutputEncoding = $prevOutputEncoding
     Pop-Location
   }
 
@@ -236,13 +294,52 @@ Copy-Tree -From "scripts" -To "scripts" -ExcludeNames "dev-*"
 # ---- 3. Skills (entire shipped surface) ------------------------------------
 Copy-Tree -From "skills" -To "skills"
 
+# ---- 3a. Shared runtime-layout resolver ------------------------------------
+# Single source of path resolution for BOTH the OpenCode plugin and spt-mcp
+# (relative imports: ../../shared/... from .opencode/plugins, ../../../shared/...
+# from tools/spt-mcp/{src,dist}). Required: without it the plugin skips its
+# health check and the MCP cannot resolve KB/helper paths.
+Copy-Tree -From "shared" -To "shared"
+
+# ---- 3b. Knowledge layer (index + curated + wiki + sources) ----------------
+# Ships with the portable tree so KB queries work offline. archive/ NEVER
+# ships (hundreds of MB of Forge snapshots + source clones); spt_forge_search
+# therefore degrades to kb_unavailable in the portable build by design.
+Copy-OptionalFile -From "knowledge/spt-kb/index.json"   -To "knowledge/spt-kb/index.json"
+Copy-OptionalFile -From "knowledge/spt-kb/INDEX.md"     -To "knowledge/spt-kb/INDEX.md"
+Copy-OptionalFile -From "knowledge/spt-kb/VERSIONS.md"  -To "knowledge/spt-kb/VERSIONS.md"
+Copy-OptionalTree -From "knowledge/spt-kb/curated"      -To "knowledge/spt-kb/curated"
+Copy-OptionalTree -From "knowledge/spt-kb/wiki"         -To "knowledge/spt-kb/wiki"
+Copy-OptionalTree -From "knowledge/spt-kb/wiki-tushonka" -To "knowledge/spt-kb/wiki-tushonka"
+Copy-OptionalTree -From "knowledge/spt-kb/sources"      -To "knowledge/spt-kb/sources"
+
 # ---- 4. MCP packages (dist + src + package.json + README + tsconfig) --------
 #       Exclude tests/ and .gitignore. Copy production node_modules closure so
 #       the materialized MCP stdio entries can smoke-run without a network step.
 #       Dev package.json files have `prepare: npm run build`; portable trees
 #       already ship dist/ pre-built, so strip build/test scripts + dev deps.
+#       All three servers the OpenCode plugin declares (mo2 / spt / tarkov) must
+#       ship here, or the portable tree declares an MCP whose entry is missing.
+#       tools/mcp-kit ships as a fourth package: it is NOT an MCP server, it is
+#       the shared kernel the three servers import via ../../mcp-kit/dist/index.js,
+#       so a portable tree without it loses all three servers at startup.
 Copy-McpPackage -PackageName "mo2-mcp"
 Copy-McpPackage -PackageName "spt-mcp"
+Copy-McpPackage -PackageName "tarkov-runtime-mcp"
+Copy-McpPackage -PackageName "mcp-kit"
+
+# ---- 4a. .NET helper prebuilds (optional packaging precondition) ------------
+# This script never runs dotnet. When the Release output exists it ships with
+# the tree; when it does not, warn loudly: the portable MCP still starts, but
+# spt_health reports "helper 产物未构建" and DLL-metadata reads degrade.
+foreach ($helperPkg in @("helper", "il-helper")) {
+  $helperRel = "tools/spt-mcp/$helperPkg/bin/Release"
+  if (Test-Path -LiteralPath (Join-Path $RepoRoot $helperRel)) {
+    Copy-Tree -From $helperRel -To $helperRel
+  } else {
+    Write-Warning ("[build-portable-plugin] helper prebuild missing: {0} -- portable tree will report 'helper 产物未构建'. Build it with: dotnet build tools/spt-mcp/{1} -c Release" -f $helperRel, $helperPkg)
+  }
+}
 
 # ---- 5. tools/mo2-vfs-launcher + tools/mo2-control-plane -------------------
 Copy-Tree -From "tools/mo2-vfs-launcher"  -To "tools/mo2-vfs-launcher"
@@ -346,6 +443,19 @@ if ($EmitMarketplace) {
   $mpPath = Join-Path $OutputDir "marketplace.json"
   [IO.File]::WriteAllText($mpPath, $mpJson + "`n", [Text.UTF8Encoding]::new($false))
   Write-Host "[build-portable-plugin] wrote marketplace: $mpPath"
+}
+
+# ---- 7a. Portable-content assertions ---------------------------------------
+# The portable tree is unusable (silent knowledge-layer death) without the
+# shared resolver and the KB index. Fail the build loudly instead.
+$requiredPortablePaths = @(
+  "shared/runtime-layout.mjs",
+  "knowledge/spt-kb/index.json"
+)
+foreach ($rel in $requiredPortablePaths) {
+  if (-not (Test-Path -LiteralPath (Join-Path $PluginRoot $rel))) {
+    Write-Error "[build-portable-plugin] portable tree is missing required path: $rel"
+  }
 }
 
 # ---- 8. Summary ------------------------------------------------------------

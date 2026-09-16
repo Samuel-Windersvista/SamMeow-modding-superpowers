@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { dirname, resolve } from "node:path";
@@ -10,14 +10,32 @@ import {
   loadCatalog,
   loadHotIndex,
   resetForgeCache,
-  resolveKbRoot,
   searchForge,
 } from "../../src/forge-reader.js";
+import { getLayout, resetLayoutForTest } from "../../src/runtime-layout.js";
 
 /** 仓库内真实知识库根（与 src 同级的 ../../../knowledge/spt-kb） */
 function repoKbRoot(): string {
   const here = dirname(fileURLToPath(import.meta.url));
   return resolve(here, "..", "..", "..", "..", "knowledge", "spt-kb");
+}
+
+// -----------------------------------------------------------------------------
+// 真实 Forge 快照可用性门（条件跳过）
+//
+// archive/forge 是 gitignored 的本机快照，按 scripts/spt-kb 流程填充。API 快照
+// 文件缺失时（目录可能仍在，但只有源码克隆），依赖真实快照的断言**条件跳过**
+// 而不是红：无快照机器 npm test 全绿，有快照机器全量断言。
+// -----------------------------------------------------------------------------
+const realCatalogPath = join(repoKbRoot(), "archive", "forge", "api", "mods-catalog.json");
+const realHotIndexPath = join(repoKbRoot(), "archive", "forge", "hot-index.json");
+const hasRealForgeSnapshot = existsSync(realCatalogPath) && existsSync(realHotIndexPath);
+const skipNote =
+  "[forge-reader.test] 本机缺少 Forge API 快照（gitignored），依赖真实快照的断言已跳过。" +
+  "刷新流程见 scripts/spt-kb/（fetch -> clone -> finalize MANIFEST）。";
+
+if (!hasRealForgeSnapshot) {
+  console.warn(skipNote);
 }
 
 let fixtureRoot: string;
@@ -76,22 +94,31 @@ afterAll(() => {
 // -----------------------------------------------------------------------------
 
 describe("forge-reader: 目录加载", () => {
-  it("真实 mods-catalog.json 加载 1822 个 mod（含 BOM 兼容）", () => {
+  // 需要本机 archive/forge API 快照；缺失则跳过（见文件头 skipNote）
+  it.skipIf(!hasRealForgeSnapshot)("真实 mods-catalog.json 加载 1822 个 mod（含 BOM 兼容）", () => {
     const kbRoot = repoKbRoot();
     const catalog = loadCatalog(kbRoot);
     expect(catalog.length).toBe(1822);
     expect(catalog[0].name).toBe("All In Weapon: Unslotted");
   });
 
-  it("真实 hot-index.json 加载 95 条（含 BOM 兼容）", () => {
+  it.skipIf(!hasRealForgeSnapshot)("真实 hot-index.json 加载 95 条（含 BOM 兼容）", () => {
     const kbRoot = repoKbRoot();
     const hot = loadHotIndex(kbRoot);
     expect(hot.length).toBe(95);
     expect(hot[0].best_spt).toBeTruthy();
   });
 
-  it("resolveKbRoot 指向仓库 knowledge/spt-kb", () => {
-    expect(resolveKbRoot()).toBe(repoKbRoot());
+  it("默认 KB 根（env 未设）指向仓库 knowledge/spt-kb", () => {
+    const saved = process.env.SPT_KB_ROOT;
+    delete process.env.SPT_KB_ROOT;
+    resetLayoutForTest();
+    try {
+      expect(getLayout().kb.root.path).toBe(repoKbRoot());
+    } finally {
+      if (saved !== undefined) process.env.SPT_KB_ROOT = saved;
+      resetLayoutForTest();
+    }
   });
 });
 
@@ -157,10 +184,10 @@ describe("forge-reader: 搜索过滤（fixture）", () => {
 });
 
 // -----------------------------------------------------------------------------
-// 真实知识库搜索冒烟
+// 真实知识库搜索冒烟（需要本机 archive/forge API 快照；缺失则整组跳过）
 // -----------------------------------------------------------------------------
 
-describe("forge-reader: 真实知识库搜索冒烟", () => {
+describe.skipIf(!hasRealForgeSnapshot)("forge-reader: 真实知识库搜索冒烟", () => {
   it("真实目录 query 搜索返回非空且字段完整", () => {
     const kbRoot = repoKbRoot();
     const result = searchForge({ query: "weapon" }, kbRoot);

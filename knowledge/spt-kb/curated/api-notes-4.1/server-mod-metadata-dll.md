@@ -67,7 +67,7 @@ stfld <Version>k__BackingField
 - 完整实现：`tools/spt-mcp/helper/src/Program.cs`（.NET CLI `spt-metadata-reader`）
 - 构建：`dotnet build tools/spt-mcp/helper -c Release`
 - 调用：`spt-metadata-reader.exe <dll1> <dll2> ...` -> stdout JSON 数组
-- spt-mcp 通过子进程同步调用（`SPT_MCP_HELPER` 环境变量定位 helper）
+- spt-mcp 通过子进程同步调用；helper 位置由共享运行时布局解析器（`shared/runtime-layout.mjs`）解析：默认 `<包根>/tools/spt-mcp/helper/bin/Release/spt-metadata-reader.exe`，可用 `SPT_MCP_HELPER` 覆盖（显式设置却无效即报错，不回退；缺失时用 `spt_health` 查看 reason）
 
 ## 坑
 

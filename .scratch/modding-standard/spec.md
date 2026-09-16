@@ -1,5 +1,7 @@
 # SPT Mod 编写规范（Modding Standard）— Spec
 
+> **进展（Work Status）**: CLOSED — 2026-09-14（12 票全绿，commits d71f27f6 … 2e69d920）
+
 Status: ready-for-agent
 
 ## Problem Statement

@@ -1,6 +1,11 @@
-# MCP declaration invariant: the declared MCP servers are exactly mo2 and spt.
-# The OpenCode plugin's config.mcp hook is the canonical surface; a static
-# .mcp.json, if it still exists, must agree. xedit and bgs_kb must be absent.
+# MCP declaration invariant: the declared MCP servers are exactly mo2, spt and
+# tarkov. The OpenCode plugin's config.mcp hook is the canonical surface; a
+# static .mcp.json, if one is ever re-introduced and tracked, must agree.
+# xedit and bgs_kb must be absent.
+#
+# Each declared server must also have a built stdio entrypoint on disk -- a
+# declared-but-missing entry is a silent MCP outage (same failure mode as
+# verify-mcp-entrypoints.ps1, which covers the mo2/spt dist trees).
 
 $ErrorActionPreference = "Stop"
 
@@ -10,8 +15,14 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $pluginRelative = ".opencode/plugins/spt-modding-superpowers.js"
 $pluginPath = Join-Path $repoRoot $pluginRelative
 
-$requiredServers = @("mo2", "spt")
+$requiredServers = @("mo2", "spt", "tarkov")
 $forbiddenServers = @("xedit", "bgs_kb")
+
+$serverEntries = @{
+    "mo2"    = "tools/mo2-mcp/dist/index.js"
+    "spt"    = "tools/spt-mcp/dist/index.js"
+    "tarkov" = "tools/tarkov-runtime-mcp/dist/index.js"
+}
 
 function Assert-McpServerSet {
     param(
@@ -53,12 +64,21 @@ if (-not (Test-Path -LiteralPath $pluginPath)) {
     )
 
     Assert-McpServerSet -Declared $declared -Label "OpenCode plugin config.mcp hook"
+
+    foreach ($server in $requiredServers) {
+        $entry = $serverEntries[$server]
+        $entryPath = Join-Path $repoRoot $entry
+        if (-not (Test-Path -LiteralPath $entryPath)) {
+            $serverDir = Split-Path -Parent (Split-Path -Parent $entry)
+            Add-BootstrapFailure "MCP server '$server' is declared but its entrypoint is missing: $entry (run 'npm install' in $serverDir)"
+        }
+    }
 }
 
-# .mcp.json is harness-runtime state: the OpenCode plugin regenerates it at
-# the repo root on every session start (from a stale template, as of
-# 2026-09-14). Only enforce its contents when it is actually tracked by git;
-# the canonical declaration surface is the plugin's config.mcp hook.
+# .mcp.json is retired harness state: the OpenCode-only session-wiring contract
+# materializes nothing at the repo root, and verify-layout.ps1 asserts this path
+# absent. If one is ever re-introduced AND tracked by git, it must agree with
+# the plugin's config.mcp hook (the canonical declaration surface).
 $staticMcpPath = Join-Path $repoRoot ".mcp.json"
 $staticTracked = @(git -C $repoRoot ls-files -- ".mcp.json")
 if ((Test-Path -LiteralPath $staticMcpPath) -and $staticTracked.Count -gt 0) {
@@ -74,4 +94,4 @@ if ((Test-Path -LiteralPath $staticMcpPath) -and $staticTracked.Count -gt 0) {
     }
 }
 
-Complete-BootstrapCheck -SuccessMessage "MCP declaration surface is exactly mo2 + spt."
+Complete-BootstrapCheck -SuccessMessage "MCP declaration surface is exactly mo2 + spt + tarkov, with all entrypoints present."

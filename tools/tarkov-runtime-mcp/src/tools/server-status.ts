@@ -132,7 +132,7 @@ export function createServerStatusTool(
         "tarkov_server_status",
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     try {

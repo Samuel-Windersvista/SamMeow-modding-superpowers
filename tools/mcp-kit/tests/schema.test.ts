@@ -2,6 +2,9 @@
  * Tests for normalizeMcpInputSchema — BUG-13 Lane A + Anthropic top-level
  * union ban (recurrence guard).
  *
+ * 来源：自 tools/mo2-mcp/tests/normalize-mcp-input-schema.test.ts 逐字搬移
+ * （C2 共享内核），仅 import 路径改为 ../src/schema.js。
+ *
  * Background: Zod discriminatedUnion produces top-level {anyOf:[...]}; the
  * MCP wire contract needs {type:"object", ...}. Two earlier shapes were
  * tried and BOTH failed:
@@ -31,7 +34,7 @@
 import { describe, it, expect } from "vitest";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { normalizeMcpInputSchema } from "../src/index.js";
+import { normalizeMcpInputSchema, schemaFor } from "../src/schema.js";
 
 describe("normalizeMcpInputSchema", () => {
   it("passes through schemas that already have type=object unchanged", () => {
@@ -410,12 +413,11 @@ describe("normalizeMcpInputSchema", () => {
   });
 
   it("BUG-27: mo2_configure_executable Zod-derived shape produces complete top-level properties", () => {
-    // This is the real bug shape: z.union([z.discriminatedUnion(...), applyShape]).
-    // zodToJsonSchema with target:'openApi3' (the same target index.ts uses)
-    // emits {anyOf:[{oneOf:[v1,v2,v3]}, applyShape]} (or similar nested form).
-    // After our fix, every per-branch field surfaces at top level so the
-    // LLM can construct any of the four legal call shapes through the
-    // OpenCode tool-calling wire schema.
+    // producer-diversity 用例：normalize 需同时吃 openApi3 与 jsonSchema7
+    // 两种 literal 编码（本用例手工走 openApi3；生产管道 schemaFor 走 jsonSchema7）。
+    // 该形状是 z.union([z.discriminatedUnion(...), applyShape]) 的真实产物：
+    // normalize 后每个分支字段都必须浮到顶层，LLM 才能经 OpenCode 工具调用
+    // wire schema 构造任一合法调用形状。
     const entrySchema = z.object({
       title: z.string().min(1),
       binary: z.string().min(1),
@@ -477,5 +479,89 @@ describe("normalizeMcpInputSchema", () => {
     expect((out as any).anyOf).toBeUndefined();
     expect((out as any).oneOf).toBeUndefined();
     expect((out as any).allOf).toBeUndefined();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// C2 追加：canonical schema 管道（jsonSchema7 + 去 $schema + normalize）
+// ---------------------------------------------------------------------------
+
+describe("schemaFor", () => {
+  it("普通 object schema -> jsonSchema7 对象，且剥离顶层 $schema", () => {
+    const out = schemaFor(
+      z
+        .object({
+          name: z.string().min(1).describe("名称"),
+          enabled: z.boolean().optional(),
+        })
+        .strict(),
+    );
+    expect(out.type).toBe("object");
+    expect((out as Record<string, unknown>).$schema).toBeUndefined();
+    const props = out.properties as Record<string, unknown>;
+    expect(props.name).toBeDefined();
+    expect(props.enabled).toBeDefined();
+  });
+
+  it("无顶层 union 时 normalize 为恒等 pass（对象形状不变）", () => {
+    const zodSchema = z.object({ path: z.string().min(1) }).strict();
+    const raw = zodToJsonSchema(zodSchema, { target: "jsonSchema7" }) as Record<string, unknown>;
+    delete raw.$schema;
+    expect(schemaFor(zodSchema)).toEqual(raw);
+  });
+
+  it("顶层 discriminatedUnion -> 无 union 关键字，判别式提升为 enum", () => {
+    const out = schemaFor(
+      z.discriminatedUnion("mode", [
+        z.object({ mode: z.literal("plan"), name: z.string().min(1) }),
+        z.object({ mode: z.literal("apply"), plan_id: z.string().min(1) }),
+      ]),
+    );
+    expect(out.type).toBe("object");
+    expect((out as Record<string, unknown>).anyOf).toBeUndefined();
+    expect((out as Record<string, unknown>).oneOf).toBeUndefined();
+    expect((out as Record<string, unknown>).allOf).toBeUndefined();
+    const props = out.properties as Record<string, unknown>;
+    const mode = props.mode as Record<string, unknown>;
+    expect(mode.enum).toEqual(["plan", "apply"]);
+    // 每个分支都要求 mode -> 提升后进入 required
+    expect(out.required).toEqual(["mode"]);
+    // 各分支的非判别字段在顶层可见
+    expect(props.name).toBeDefined();
+    expect(props.plan_id).toBeDefined();
+  });
+
+  it("嵌套 union（BUG-27 形状）-> 展平后所有分支字段可见", () => {
+    const planSchema = z.discriminatedUnion("action", [
+      z.object({
+        mode: z.literal("plan"),
+        action: z.literal("add"),
+        entry: z.object({ title: z.string().min(1) }),
+      }),
+      z.object({
+        mode: z.literal("plan"),
+        action: z.literal("remove"),
+        title: z.string().min(1),
+      }),
+    ]);
+    const out = schemaFor(
+      z.union([
+        planSchema,
+        z.object({
+          mode: z.literal("apply"),
+          plan_id: z.string().min(1),
+        }),
+      ]),
+    );
+    expect(out.type).toBe("object");
+    expect((out as Record<string, unknown>).anyOf).toBeUndefined();
+    expect((out as Record<string, unknown>).oneOf).toBeUndefined();
+    expect((out as Record<string, unknown>).allOf).toBeUndefined();
+    const props = out.properties as Record<string, unknown>;
+    expect(props.entry).toBeDefined();
+    expect(props.title).toBeDefined();
+    expect(props.plan_id).toBeDefined();
+    const action = props.action as Record<string, unknown>;
+    expect(action.enum).toEqual(["add", "remove"]);
   });
 });

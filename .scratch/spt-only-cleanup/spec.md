@@ -1,5 +1,7 @@
 # Spec: SPT-only cleanup + Matt skills integration
 
+> **进展（Work Status）**: CLOSED — 2026-09-13（11 票完成）
+
 Status: ready-for-agent
 Type: task
 

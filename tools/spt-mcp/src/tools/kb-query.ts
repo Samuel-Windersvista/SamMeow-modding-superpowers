@@ -1,6 +1,7 @@
 import { z } from "zod";
 
-import { KB_INDEX_REL, loadJson, resolveKbRoot } from "../forge-reader.js";
+import { KB_INDEX_REL, loadJson } from "../forge-reader.js";
+import { getLayout } from "../runtime-layout.js";
 import { errEnv, okEnv, SPT_ERROR_CODES, type Envelope, type KbEntry } from "../types.js";
 
 export const KbQueryInput = z
@@ -19,13 +20,24 @@ export function runKbQuery(args: unknown): Envelope {
       "spt_kb_query",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   const { topic, domain, version, keyword } = parsed.data;
 
   try {
-    const kbRoot = resolveKbRoot();
+    // 布局检查：知识库索引不可用时显式降级（不再静默返回 0 条匹配）
+    const layout = getLayout();
+    if (!layout.kb.index.ok) {
+      return errEnv(
+        "spt_kb_query",
+        "知识库不可用",
+        SPT_ERROR_CODES.KB_UNAVAILABLE,
+        { hint: layout.kb.index.reason },
+      );
+    }
+
+    const kbRoot = layout.kb.root.path;
     const index = loadJson<{ entries?: KbEntry[] }>(kbRoot, KB_INDEX_REL);
     const entries = index?.entries ?? [];
 

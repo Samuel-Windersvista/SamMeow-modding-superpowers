@@ -90,7 +90,7 @@ export function createWaitForTool(
         "tarkov_wait_for",
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     const input = parsed.data;
@@ -101,7 +101,7 @@ export function createWaitForTool(
         "tarkov_wait_for",
         `非法谓词：${parsedPredicate.reason}`,
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        { predicate: input.predicate, reason: parsedPredicate.reason },
+        { details: { predicate: input.predicate, reason: parsedPredicate.reason } },
       );
     }
     const predicate = parsedPredicate.predicate;
@@ -112,7 +112,7 @@ export function createWaitForTool(
         "tarkov_wait_for",
         `超时上限超出允许范围（最大 ${maxTimeoutMs}ms）`,
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        { timeoutMs, maxTimeoutMs },
+        { details: { timeoutMs, maxTimeoutMs } },
       );
     }
     const intervalMs = input.intervalMs ?? defaultIntervalMs;
@@ -160,13 +160,15 @@ export function createWaitForTool(
           `谓词在 ${timeoutMs}ms 内未满足（已轮询 ${attempts} 次）`,
           RUNTIME_ERROR_CODES.WAIT_TIMEOUT,
           {
-            tool: input.tool,
-            predicate: input.predicate,
-            attempts,
-            elapsedMs,
-            lastValue,
-            pathFound: lastPathFound,
-            lastObservation,
+            details: {
+              tool: input.tool,
+              predicate: input.predicate,
+              attempts,
+              elapsedMs,
+              lastValue,
+              pathFound: lastPathFound,
+              lastObservation,
+            },
           },
         );
       }

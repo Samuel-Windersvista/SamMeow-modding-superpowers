@@ -53,17 +53,18 @@
   - `wiki/SPT_41/Client_40_to_41.md` — 客户端迁移
   - `wiki/SPT_41/modding/` — 4.1 专属 modding 变更（EnumExtensions、类名映射、Mod Web Pages）
 
-## 本项目环境状态（2026-08-07 核实）
+## 本项目环境状态（2026-09-16 核实）
 
 | 组件 | 版本 | 验证方式 |
 |------|------|---------|
-| 服务器（`E:\Game\EFT_Offline\SPT_410\SPT_Runtime`） | **4.1.2**-RELEASE+cf04a11 | `SPTarkov.Server.Core.dll` FileVersion=4.1.2，ProductVersion 含 commit `cf04a112`（与 fork 4.1.2 tag 一致）；启动日志 `Server version: SPT 4.1.2 - cf04a1` |
-| 客户端二进制 | EFT 0.16.9.5.40743（4.1.1/4.1.2 相同） | 4.1.2 与 4.1.1 客户端未变（VERSIONS 发布线） |
-| 客户端 mods（BepInEx） | BigBrain 1.4+、Waypoints、SAIN、LootingBots 1.7.0（移植）、spt 模块 | 4.1.2 无 API 破坏（6 文件 diff 确认），插件无需重编译；启动日志 `Enabled N patches` |
-| server mods（`user\mods`） | 无 | 目录为空 |
-| 安装包 | `SPT-4.1.2-40743-cf04a11.7z`（147MB）保留在根目录 | 8/6 解压安装完成，包可删可留 |
+| 服务器 4.1 线（`E:\Game\EFT_Offline\SPT_41x\SPT_Runtime`） | **4.1.5**-RELEASE+7d7add5 | `SPTarkov.Server.Core.dll` FileVersion=4.1.5，ProductVersion `4.1.5-RELEASE+7d7add5.20260905`（2026-09-05 构建） |
+| 客户端二进制 4.1 线 | EFT `0.16.9.5-40743-f137e819` | `EscapeFromTarkov.exe` FileVersion 0.16.9.40743 |
+| 服务器 5.0 线（`E:\Game\EFT_Offline\SPT_5xx\SPT_Runtime`） | **5.0.0**-BLEEDINGEDGEMODS+ec15a40 | `SPTarkov.Server.Core.dll` FileVersion=5.0.0，ProductVersion `5.0.0-BLEEDINGEDGEMODS+ec15a40.20260914`（2026-09-14 构建；**BE 通道产物，非正式 release tag——正式 tag 待复核**） |
+| 客户端二进制 5.0 线 | EFT `1.1.5.0-47242-bca02170` | `EscapeFromTarkov.exe` FileVersion 1.1.5.47242；IL2CPP（`tushonka.log` PrePatch `build: 1.1.5.0-47242-bca02170`） |
+| server mods（两线 `SPT_Runtime\user\mods`） | 无 | 两条线目录均为空 |
+| 客户端插件 | 4.1 线：`BepInEx\plugins\spt`；5.0 线：`BepInEx\plugins\sptushonka` | 目录清单（早期记录的 BigBrain / Waypoints / SAIN / LootingBots 已不在本机插件目录） |
 
-**结论**：4.1.2 环境升级于 2026-08-06 解压安装时完成，2026-08-07 复核确认全链路 4.1.2。无需额外操作。
+**结论**：本机双轨环境就位——4.1 线为 4.1.5 RELEASE（2026-09-05 构建），5.0 线为 5.0.0 BLEEDINGEDGEMODS（2026-09-14 构建，属预发布/BE 通道）。两线 server mods 目录均空，客户端侧只保留 SPT 官方模块（4.1 的 BepInEx 5 `spt` / 5.0 的 IL2CPP `sptushonka`）。
 
 ## 版本标签约定
 

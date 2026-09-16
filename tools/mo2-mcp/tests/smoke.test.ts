@@ -29,12 +29,21 @@ describe("mo2-mcp smoke", () => {
       cwd: process.cwd(),
     });
 
-    // Wait for stderr "ready" signal or stdout JSON-RPC handshake initiation
-    const ready = new Promise<void>((resolve) => {
+    // Wait for the onConnected ready log: "mo2-mcp ready (session ...".
+    // Matching the full prefix (not a bare "ready") keeps this deterministic:
+    // the eager-bind line can itself contain the binding state "ready".
+    let stderrBuffer = "";
+    const ready = new Promise<string>((resolve) => {
       const onStderr = (chunk: Buffer): void => {
-        if (chunk.toString("utf8").includes("ready")) {
-          proc.stderr.off("data", onStderr);
-          resolve();
+        stderrBuffer += chunk.toString("utf8");
+        let newlineIndex: number;
+        while ((newlineIndex = stderrBuffer.indexOf("\n")) >= 0) {
+          const line = stderrBuffer.slice(0, newlineIndex);
+          stderrBuffer = stderrBuffer.slice(newlineIndex + 1);
+          if (line.includes("mo2-mcp ready (session ")) {
+            proc.stderr.off("data", onStderr);
+            resolve(line);
+          }
         }
       };
       proc.stderr.on("data", onStderr);
@@ -117,8 +126,17 @@ describe("mo2-mcp smoke", () => {
       for (const tool of required) {
         expect(names).toContain(tool);
       }
+
+      // onConnected 副作用：连接建立后写入 ready 行（session ...），
+      // 客户端据此把 ready 视作「工具面可用」。带超时 await，避免静默跳过。
+      const readyLine = await Promise.race([
+        ready,
+        new Promise<string>((_, reject) =>
+          setTimeout(() => reject(new Error("mo2-mcp ready 行超时")), 10000),
+        ),
+      ]);
+      expect(readyLine).toContain("mo2-mcp ready (session ");
     } finally {
-      void ready;
       proc.stdin.end();
       proc.kill();
     }

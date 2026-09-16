@@ -7,7 +7,7 @@ description: "Use when performing any SPT mod analysis via the spt MCP server --
 
 Hub skill for all `spt` MCP server operations. The spt MCP provides file-based SPT mod analysis -- no daemon, no lifecycle management, all tools return synchronously.
 
-## Available MCP tools (7)
+## Available MCP tools (8)
 
 ### Mod inventory (3)
 
@@ -28,20 +28,26 @@ Hub skill for all `spt` MCP server operations. The spt MCP provides file-based S
 
 | Tool | Use |
 |---|---|
-| `spt_forge_search` | Search archived Forge mods. `{ query?, category?, sptVersion?, modType? }` -> matching mod list (downloads desc). |
+| `spt_forge_search` | Search archived Forge mods. `{ query?, category?, sptVersion?, modType? }` -> matching mod list (downloads desc). Returns `kb_unavailable` when the local archive lacks its API snapshot (the portable build never ships `archive/`). |
 
 ### Knowledge base (1)
 
 | Tool | Use |
 |---|---|
-| `spt_kb_query` | Query the spt-kb. `{ topic?, domain?, version?, keyword? }` -> matching KB entries (title match). |
+| `spt_kb_query` | Query the spt-kb. `{ topic?, domain?, version?, keyword? }` -> matching KB entries (title match). Returns `kb_unavailable` when `index.json` cannot be resolved. |
+
+### Runtime health (1)
+
+| Tool | Use |
+|---|---|
+| `spt_health` | Report the resolved runtime layout. `{}` -> mode (`repo`/`portable`), pluginRoot, and per-resource path / source (`env`/`default`) / ok / reason for the KB root, KB index, Forge archive, and the metadata + IL helpers. Use it to diagnose "0 matches" or helper-unavailable errors. |
 
 ## Server mod metadata source (4.1)
 
 SPT 4.1 server mods are DLLs in `user/mods/<mod>/`; metadata (ModGuid/Name/Author/Version/SptVersion) is read from the DLL's `IModMetadata` implementation via the `.NET helper` (`tools/spt-mcp/helper`, AsmResolver reads the parameterless ctor IL constants). The `package.json` path is legacy/fallback only.
 
-- Helper auto-located via `SPT_MCP_HELPER` env (set by the OpenCode plugin). Rebuild after helper changes: `dotnet build tools/spt-mcp/helper -c Release`.
-- If `spt_list_mods` returns 0 server mods or `read_mod_metadata` errors with "helper not found", the helper is missing -- rebuild it or set `SPT_MCP_HELPER`.
+- Helper located by the shared runtime-layout resolver (`shared/runtime-layout.mjs`), the single path-resolution point used by both the OpenCode plugin and spt-mcp. Override with `SPT_MCP_HELPER` / `SPT_IL_HELPER`; an explicitly-set but invalid path is reported as an error (never silently falls back). Rebuild after helper changes: `dotnet build tools/spt-mcp/helper -c Release`.
+- If `spt_list_mods` returns 0 server mods or `read_mod_metadata` reports the helper unavailable, call `spt_health` for the resolved path plus reason -- the helper is unbuilt (rebuild it) or the env override points nowhere.
 
 ## Routing doctrine
 
@@ -50,6 +56,7 @@ SPT 4.1 server mods are DLLs in `user/mods/<mod>/`; metadata (ModGuid/Name/Autho
 - **"Tell me about this mod"** -> `spt_read_mod_metadata` or `spt_forge_search`
 - **"Find a mod that does X"** -> `spt_forge_search`
 - **"How do I do X in SPT modding?"** -> `spt_kb_query`
+- **"0 matches" / helper missing / which paths is the MCP using?** -> `spt_health`
 
 ## Anti-patterns
 

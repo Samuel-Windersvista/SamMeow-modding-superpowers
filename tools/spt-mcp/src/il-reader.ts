@@ -6,8 +6,8 @@
 // =============================================================================
 
 import { execFileSync } from "node:child_process";
-import { statSync } from "node:fs";
 
+import { getLayout } from "./runtime-layout.js";
 import type { ClientPatchInfo, PatchBehavior } from "./types.js";
 
 /** il-helper 输出结构（与 il-helper/src/Program.cs 的 JSON 对应） */
@@ -32,28 +32,29 @@ interface IlHelperOutput {
   }[];
 }
 
+/** IL helper 定位：唯一解析点在 shared/runtime-layout.mjs（env 显式无效即报错，不回退） */
 function ilHelperPath(): string | null {
-  const env = process.env.SPT_IL_HELPER;
-  if (env && env.length > 0) return env;
-  // 尝试常见相对位置（从 dist/ 或 src/ 上溯到 il-helper/bin/Release）
-  const candidates = [
-    new URL("../il-helper/bin/Release/spt-il-reader.exe", import.meta.url).pathname,
-    new URL("../../il-helper/bin/Release/spt-il-reader.exe", import.meta.url).pathname,
-  ];
-  for (const c of candidates) {
-    const p = c.replace(/^\/([A-Za-z]:)/, "$1");
-    try {
-      if (statSync(p).isFile()) return p;
-    } catch {
-      // continue
-    }
-  }
-  return null;
+  const status = getLayout().helpers.il;
+  return status.ok ? status.path : null;
+}
+
+/**
+ * IL helper 不可用时的 reason（可用时 undefined）。
+ *
+ * `readIlPatches` 无法用返回值区分「helper 缺失」与「DLL 里没有 patch」，
+ * 调用方（spt_analyze_conflicts）必须用本函数把降级显式暴露到结果里。
+ */
+export function ilHelperUnavailableReason(): string | undefined {
+  const status = getLayout().helpers.il;
+  return status.ok ? undefined : status.reason;
 }
 
 /**
  * 用 il-helper 批量读客户端 DLL 的 Harmony patch 信息。
  * 返回 ClientPatchInfo[]（每 patch 一条），失败返回空数组（不抛异常）。
+ *
+ * 注意：空数组也可能是「helper 不可用」——调用方用 `ilHelperUnavailableReason()`
+ * 区分这两种情形，并在结果里携带警告。
  */
 export function readIlPatches(dllPaths: string[]): ClientPatchInfo[] {
   if (dllPaths.length === 0) return [];

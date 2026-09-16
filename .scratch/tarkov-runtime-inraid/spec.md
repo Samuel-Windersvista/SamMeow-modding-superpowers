@@ -1,5 +1,7 @@
 # tarkov-runtime-MCP Phase 2 — 局内状态（In-Raid State）Spec
 
+> **进展（Work Status）**: 主体已交付并 live 验证（T01 首刀 2026-09-14 + 二波 2026-09-15）；残余收尾项见 dev-log
+
 Status: ready-for-agent
 
 ## Problem Statement

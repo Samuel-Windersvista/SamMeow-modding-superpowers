@@ -46,38 +46,20 @@ export const RUNTIME_ERROR_CODES = {
 
 export type RuntimeErrorCode = (typeof RUNTIME_ERROR_CODES)[keyof typeof RUNTIME_ERROR_CODES];
 
-export interface OkEnvelope {
-  ok: true;
-  tool: string;
-  summary: string;
-  data?: unknown;
-}
+// -----------------------------------------------------------------------------
+// 信封（canonical 实现已抽到共享内核 tools/mcp-kit）
+//
+// C2 迁移：信封类型与构造器改为从 kit re-export（facade），使工具文件的
+// `import ... from "../types.js"` 路径保持不变；tarkov 专有的
+// RUNTIME_ERROR_CODES / RuntimeErrorCode 仍在本模块定义。
+//
+// 字段名本就是 canonical（err = {message, details}），故本台无字段级 wire delta；
+// 唯一形状差异是 hint/details 未提供时不落键（JSON.stringify 下与显式 undefined
+// 等价，不影响任何断言）。
+// -----------------------------------------------------------------------------
 
-export interface ErrEnvelope {
-  ok: false;
-  tool: string;
-  /** 机器可读错误码（RUNTIME_ERROR_CODES） */
-  code: string;
-  /** 人类可读错误说明 */
-  message: string;
-  /** 结构化细节，例如 VERSION_MISMATCH 的 { expected, actual } */
-  details?: unknown;
-}
-
-export type Envelope = OkEnvelope | ErrEnvelope;
-
-export function okEnv(tool: string, summary: string, data?: unknown): OkEnvelope {
-  return { ok: true, tool, summary, data };
-}
-
-export function errEnv(
-  tool: string,
-  message: string,
-  code: string,
-  details?: unknown,
-): ErrEnvelope {
-  return { ok: false, tool, code, message, details };
-}
+export { errEnv, okEnv } from "../../mcp-kit/dist/index.js";
+export type { Envelope, ErrEnvelope, OkEnvelope } from "../../mcp-kit/dist/index.js";
 
 // -----------------------------------------------------------------------------
 // 版本与握手

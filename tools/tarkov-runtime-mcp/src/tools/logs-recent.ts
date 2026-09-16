@@ -63,7 +63,7 @@ export function createLogsRecentTool(connection: BridgeConnection): ToolHandler 
         LOGS_RECENT_TOOL_NAME,
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     const { since, level, limit } = parsed.data;
@@ -78,7 +78,7 @@ export function createLogsRecentTool(connection: BridgeConnection): ToolHandler 
           LOGS_RECENT_TOOL_NAME,
           `无效输入：level 必须为以下之一（大小写不敏感）：${LOG_LEVEL_NAMES_TEXT}`,
           RUNTIME_ERROR_CODES.INVALID_INPUT,
-          { level },
+          { details: { level } },
         );
       }
       normalizedLevel = parsedLevel;

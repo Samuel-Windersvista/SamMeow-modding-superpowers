@@ -25,7 +25,7 @@ export function isSptRuntimeError(error: unknown): error is SptRuntimeError {
 /** 把任意异常转为工具层错误信封（保留结构化错误码与 details） */
 export function toErrorEnvelope(tool: string, error: unknown): ErrEnvelope {
   if (isSptRuntimeError(error)) {
-    return errEnv(tool, error.message, error.code, error.details);
+    return errEnv(tool, error.message, error.code, { details: error.details });
   }
   const message = error instanceof Error ? error.message : String(error);
   return errEnv(tool, `内部错误：${message}`, RUNTIME_ERROR_CODES.INTERNAL_ERROR);

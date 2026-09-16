@@ -11,6 +11,7 @@ import { createHash } from "node:crypto";
 import { closeSync, openSync, readSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { basename, dirname, extname, join, relative, sep } from "node:path";
 
+import { getLayout } from "./runtime-layout.js";
 import type {
   ClientModMetadata,
   ModFileEntry,
@@ -21,27 +22,19 @@ import type {
 } from "./types.js";
 
 // -----------------------------------------------------------------------------
-// helper 定位：优先用环境变量 SPT_MCP_HELPER，其次相对本模块的 helper 构建产物
+// helper 定位：唯一解析点在 shared/runtime-layout.mjs（env 显式无效即报错，
+// 不回退）；缺失时 error 文案带上 reason（含构建提示）。
 // -----------------------------------------------------------------------------
 
 function helperPath(): string | null {
-  const env = process.env.SPT_MCP_HELPER;
-  if (env && env.length > 0) return env;
-  // 尝试常见相对位置（从 dist/ 或 src/ 上溯到 helper/bin/Release）
-  const candidates = [
-    new URL("../helper/bin/Release/spt-metadata-reader.exe", import.meta.url).pathname,
-    new URL("../../helper/bin/Release/spt-metadata-reader.exe", import.meta.url).pathname,
-  ];
-  for (const c of candidates) {
-    // pathname 在 Windows 下是 /E:/... 形式
-    const p = c.replace(/^\/([A-Za-z]:)/, "$1");
-    try {
-      if (statSync(p).isFile()) return p;
-    } catch {
-      // continue
-    }
-  }
-  return null;
+  const status = getLayout().helpers.metadata;
+  return status.ok ? status.path : null;
+}
+
+/** helper 不可用时的 reason（布局契约保证 !ok 必带 reason），供工具结果显式暴露 */
+function helperUnavailableReason(): string {
+  const status = getLayout().helpers.metadata;
+  return status.ok ? "" : status.reason;
 }
 
 export interface DllMetadata {
@@ -62,7 +55,8 @@ export function readDllMetadata(dllPaths: string[]): DllMetadata[] {
   if (dllPaths.length === 0) return [];
   const helper = helperPath();
   if (!helper) {
-    return dllPaths.map((p) => ({ path: p, ok: false, error: "helper not found (set SPT_MCP_HELPER)" }));
+    const reason = helperUnavailableReason();
+    return dllPaths.map((p) => ({ path: p, ok: false, error: `metadata helper 不可用：${reason}` }));
   }
   try {
     const stdout = execFileSync(helper, dllPaths, {

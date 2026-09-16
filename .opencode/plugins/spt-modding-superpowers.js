@@ -2,7 +2,7 @@
 //
 // Wires three things:
 //   1. config.skills.paths: append <plugin>/skills so OpenCode discovers our SKILL.md files
-//   2. config.mcp.mo2 + config.mcp.spt:
+//   2. config.mcp.mo2 + config.mcp.spt + config.mcp.tarkov:
 //                           register the bundled MCP stdio servers
 //                           (node tools/<server>/dist/index.js)
 //   3. first-user-message bootstrap: inject the using-spt-modding-superpowers SKILL body
@@ -25,6 +25,7 @@ const PLUGIN_ROOT = path.resolve(__dirname, '..', '..');
 const SKILLS_DIR = path.join(PLUGIN_ROOT, 'skills');
 const MO2_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'mo2-mcp', 'dist', 'index.js');
 const SPT_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'dist', 'index.js');
+const TARKOV_MCP_ENTRY = path.join(PLUGIN_ROOT, 'tools', 'tarkov-runtime-mcp', 'dist', 'index.js');
 const BOOTSTRAP_SKILL = path.join(SKILLS_DIR, 'using-spt-modding-superpowers', 'SKILL.md');
 
 // Sentinel used to detect already-injected bootstrap so we don't double-inject across reloads.
@@ -42,6 +43,25 @@ function readBootstrap() {
 
 export const SptModdingSuperpowersPlugin = async () => {
   const bootstrap = readBootstrap();
+
+  // Runtime-layout health check. The single source of truth for KB-root /
+  // archive / helper paths is shared/runtime-layout.mjs, imported by both this
+  // plugin and spt-mcp; the plugin no longer sets SPT_KB_ROOT / SPT_MCP_HELPER /
+  // SPT_IL_HELPER (the parent env passes through and the resolver validates it).
+  // Dynamic import keeps a missing module from breaking plugin loading.
+  try {
+    const layoutModule = await import('../../shared/runtime-layout.mjs').catch(() => null);
+    if (layoutModule) {
+      const layout = layoutModule.resolveRuntimeLayout(PLUGIN_ROOT);
+      if (layout.warnings.length > 0) {
+        console.error(layoutModule.formatLayoutWarnings(layout));
+      }
+    } else {
+      console.error('[spt-modding-superpowers] runtime-layout 模块缺失，跳过健康检查');
+    }
+  } catch (err) {
+    console.error(`[spt-modding-superpowers] 运行时布局检查失败：${err?.message ?? err}`);
+  }
 
   return {
     // NOTE: `mcp:` on the plugin return is NOT a documented Hook key in
@@ -78,24 +98,32 @@ export const SptModdingSuperpowersPlugin = async () => {
         timeout: 240000,
       };
       // spt-mcp: file-based MCP server (no daemon, all tools synchronous).
-      // The KB-root env var points at the repo-root knowledge/spt-kb (two
-      // levels up from the plugin root) so the MCP can find the Forge archive
-      // and index.json.
-      // SPT_MCP_HELPER: .NET helper CLI that reads SPT 4.1 server mod DLL
-      // metadata (IModMetadata via AsmResolver). Rebuilt with
-      // `dotnet build tools/spt-mcp/helper -c Release`.
-      // SPT_IL_HELPER: .NET helper CLI that reads SPT client mod DLL Harmony
-      // patch targets + IL behavior (Mono.Cecil). Rebuilt with
-      // `dotnet build tools/spt-mcp/il-helper -c Release`.
-      const SPT_KB_ROOT = path.resolve(PLUGIN_ROOT, '..', '..', 'knowledge', 'spt-kb');
-      const SPT_MCP_HELPER = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'helper', 'bin', 'Release', 'spt-metadata-reader.exe');
-      const SPT_IL_HELPER = path.join(PLUGIN_ROOT, 'tools', 'spt-mcp', 'il-helper', 'bin', 'Release', 'spt-il-reader.exe');
+      // No path env vars are injected here: spt-mcp resolves KB root, Forge
+      // archive, and the .NET helper artifacts through the shared resolver
+      // (shared/runtime-layout.mjs) and validates each one. `environment: {}`
+      // passes the parent env through transparently, so a user-supplied
+      // SPT_KB_ROOT / SPT_MCP_HELPER / SPT_IL_HELPER still wins — and an
+      // explicitly-set-but-invalid value now surfaces as an error instead of
+      // silently falling back.
       config.mcp.spt ??= {
         type: 'local',
         command: ['node', SPT_MCP_ENTRY],
         enabled: true,
-        environment: { SPT_KB_ROOT: SPT_KB_ROOT, SPT_MCP_HELPER: SPT_MCP_HELPER, SPT_IL_HELPER: SPT_IL_HELPER },
+        environment: {},
         timeout: 60000,
+      };
+      // tarkov-mcp: runtime-state MCP server for a live SPT 5.x server
+      // (handshake/version gate + in-raid tools). timeout is 360000 because the
+      // server's wait_for tool caps at MAX_WAIT_TIMEOUT_MS = 300_000; the extra
+      // 60s is handshake + transport margin, otherwise the client aborts a
+      // legitimately long wait. `environment: {}` passes the parent env through
+      // transparently (same override semantics as mo2/spt above).
+      config.mcp.tarkov ??= {
+        type: 'local',
+        command: ['node', TARKOV_MCP_ENTRY],
+        enabled: true,
+        environment: {},
+        timeout: 360000,
       };
     },
 

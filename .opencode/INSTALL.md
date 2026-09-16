@@ -21,29 +21,38 @@ Or install straight from git once the package is published:
 Restart OpenCode. OpenCode reads the package's `main` entry
 (`.opencode/plugins/spt-modding-superpowers.js`), which:
 
-- appends the repo-root `skills/` directory to `config.skills.paths`, so all 14
+- appends the repo-root `skills/` directory to `config.skills.paths`, so all 15
   SPT skills (including the per-session bootstrap) are discovered;
-- registers two local stdio MCP servers via the `config.mcp` hook:
+- registers three local stdio MCP servers via the `config.mcp` hook:
   - `mo2` (`tools/mo2-mcp/dist/index.js`) — MO2 control plane;
   - `spt` (`tools/spt-mcp/dist/index.js`) — file-based SPT mod analysis;
+  - `tarkov` (`tools/tarkov-runtime-mcp/dist/index.js`) — SPT 5.x runtime
+    state: server handshake/version gate, in-raid bridge, log aggregation;
 - injects the `using-spt-modding-superpowers` bootstrap into the first user
   message of every session.
 
-The `spt` server resolves the knowledge base from the repo-root
-`knowledge/spt-kb/` and expects the optional .NET helper CLIs under
-`tools/spt-mcp/helper/` and `tools/spt-mcp/il-helper/`.
+The `spt` server and the plugin resolve the knowledge base and the optional
+.NET helper CLIs through the single resolver in `shared/runtime-layout.mjs`
+(`SPT_KB_ROOT` / `SPT_MCP_HELPER` / `SPT_IL_HELPER` override the defaults; a
+portable tree derives them from its package root). An explicitly-set but invalid
+path is reported as an error and never silently falls back -- KB lookups then
+return `kb_unavailable`. The helpers default to `tools/spt-mcp/helper/` and
+`tools/spt-mcp/il-helper/`.
 
 ## Prerequisites
 
 - Windows (the MO2 control plane is Windows-only).
-- Node 22+ for the two MCP servers.
+- Node 22+ for the three MCP servers.
 
-The MCP `dist/` bundles are tracked in-repo, so a plain clone runs without a
-build step. Rebuild them only if you edit the TypeScript sources:
+The MCP `dist/` bundles are build output (not tracked). After cloning, run
+`npm install` in each package — `prepare` builds `dist/` automatically. Build
+the shared kernel first; the three servers import it from `tools/mcp-kit/dist`:
 
 ```powershell
+npm --prefix tools/mcp-kit install; npm --prefix tools/mcp-kit run build
 npm --prefix tools/mo2-mcp install; npm --prefix tools/mo2-mcp run build
 npm --prefix tools/spt-mcp install; npm --prefix tools/spt-mcp run build
+npm --prefix tools/tarkov-runtime-mcp install; npm --prefix tools/tarkov-runtime-mcp run build
 ```
 
 Optional .NET helper CLIs (server DLL metadata + client IL analysis):
@@ -96,9 +105,10 @@ If you cloned this repo and want to run the plugin from your local checkout, poi
 ```
 
 The plugin resolves its skills and MCP entries relative to the repo root, so a
-plain clone is enough. After editing the TypeScript sources under
-`tools/mo2-mcp/src/` or `tools/spt-mcp/src/`, rebuild the affected MCP and, if
-you want a hand-distributable copy, materialize a portable tree:
+plain clone plus the per-package `npm install` step (see Prerequisites) is
+enough. After editing the TypeScript sources under `tools/<package>/src/`,
+rebuild the affected package — if you edited `tools/mcp-kit/`, rebuild it first
+and then the affected servers. To materialize a hand-distributable copy:
 
 ```powershell
 pwsh scripts/build-portable-plugin.ps1 -Force

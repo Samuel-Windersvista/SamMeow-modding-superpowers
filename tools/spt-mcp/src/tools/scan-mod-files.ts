@@ -16,7 +16,7 @@ export function runScanModFiles(args: unknown): Envelope {
       "spt_scan_mod_files",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   const { modPath } = parsed.data;

@@ -141,42 +141,24 @@ export interface KbEntry {
 }
 
 // -----------------------------------------------------------------------------
-// 信封（轻量版，无 daemon 无状态机）
+// 信封（canonical 实现已抽到共享内核 tools/mcp-kit）
+//
+// C2 迁移：信封类型与构造器改为从 kit re-export（facade），使工具文件的
+// `import ... from "../types.js"` 路径保持不变；spt 专有的 SPT_ERROR_CODES
+// 仍在本模块定义。
+//
+// 字段级 delta（已在 C2 spec 登记）：错误信封 `summary` → `message`；
+// 可选 `hint` / `details`。OK 信封仍使用 `summary`。
 // -----------------------------------------------------------------------------
 
-export interface OkEnvelope {
-  ok: true;
-  tool: string;
-  summary: string;
-  data?: unknown;
-}
-
-export interface ErrEnvelope {
-  ok: false;
-  tool: string;
-  summary: string;
-  code: string;
-  hint?: string;
-}
-
-export type Envelope = OkEnvelope | ErrEnvelope;
+export { errEnv, okEnv } from "../../mcp-kit/dist/index.js";
+export type { Envelope, ErrEnvelope, OkEnvelope } from "../../mcp-kit/dist/index.js";
 
 export const SPT_ERROR_CODES = {
   INVALID_INPUT: "invalid_input",
   NOT_FOUND: "not_found",
   INTERNAL_ERROR: "internal_error",
   INVALID_REQUEST: "invalid_request",
+  /** 运行时布局资源（知识库 / Forge 归档）不可用：显式降级，不再静默 0 匹配 */
+  KB_UNAVAILABLE: "kb_unavailable",
 } as const;
-
-export function okEnv(tool: string, summary: string, data?: unknown): OkEnvelope {
-  return { ok: true, tool, summary, data };
-}
-
-export function errEnv(
-  tool: string,
-  summary: string,
-  code: string,
-  hint?: string,
-): ErrEnvelope {
-  return { ok: false, tool, summary, code, hint };
-}

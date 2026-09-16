@@ -1,4 +1,7 @@
 /** Central MCP tool-call dispatch: lookup -> schema validation -> rules -> handler. */
+import { jsonText } from "../../mcp-kit/dist/index.js";
+import type { ToolResult } from "../../mcp-kit/dist/index.js";
+
 import { getTool } from "./tool-registry.js";
 import { hashArgs } from "./audit.js";
 import { runRules, hasBlocking } from "./pipeline/rules.js";
@@ -13,15 +16,6 @@ export interface DispatchToolCallInput {
   rawArgs: unknown;
   ctx: ToolContext;
   rules: Rule[];
-}
-
-export interface DispatchToolCallResult {
-  content: Array<{ type: "text"; text: string }>;
-  isError?: boolean;
-}
-
-function jsonText(value: unknown): { type: "text"; text: string } {
-  return { type: "text", text: JSON.stringify(value) };
 }
 
 function isBindingExemptTool(toolName: string): boolean {
@@ -45,7 +39,7 @@ export async function dispatchToolCall({
   rawArgs,
   ctx,
   rules,
-}: DispatchToolCallInput): Promise<DispatchToolCallResult> {
+}: DispatchToolCallInput): Promise<ToolResult> {
   const t0 = Date.now();
   const tool = getTool(toolName);
   if (!tool) {

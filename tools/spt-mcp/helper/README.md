@@ -29,6 +29,9 @@ stdout 输出 JSON 数组，每元素一个 DLL：
 
 ## 与 spt-mcp 集成
 
-- spt-mcp 通过 `SPT_MCP_HELPER` 环境变量定位 helper（OpenCode 插件已设置）
-- 找不到时 `spt_list_mods` 对 DLL mod 回退目录名兜底，`readDllMetadata` 返回 error 标记（不抛异常）
+- spt-mcp 通过共享运行时布局解析器（`shared/runtime-layout.mjs`）定位 helper：
+  默认 `<包根>/tools/spt-mcp/helper/bin/Release/spt-metadata-reader.exe`；可用
+  `SPT_MCP_HELPER` 覆盖，但**显式设置却无效即报错（不回退）**；OpenCode 插件不再设置该变量。
+- 找不到时 `spt_list_mods` 对 DLL mod 回退目录名兜底，`readDllMetadata` 返回 error 标记
+  （不抛异常，文案带上 `spt_health` 中的 reason 与构建提示）
 - 知识背景：`knowledge/spt-kb/curated/api-notes-4.1/server-mod-metadata-dll.md`

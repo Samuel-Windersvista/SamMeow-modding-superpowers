@@ -24,7 +24,7 @@ SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档�
 
 ## 技能集（`skills/`）
 
-16 个 skill，覆盖整合包全生命周期：
+15 个 skill，覆盖整合包全生命周期：
 
 | Skill | 用途 |
 |-------|------|
@@ -41,18 +41,18 @@ SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档�
 | `diagnosing-spt-problems` | 症状优先的崩溃 / 掉帧 / 加载失败诊断 |
 | `writing-spt-mod` | 从模板写新 mod（服务端 C# 或客户端 BepInEx/Harmony，遵循 Modding Standard） |
 | `porting-spt-mod-to-spt5` | 将现有 4.x mod（有源码）移植到 SPT 5.0（IL2CPP 适配 + MO2 部署 + 日志验证） |
-| `using-spt-translator` | 翻译 SPT mod 文本（汉化/本地化） |
 | `writing-spt-modpack-devlog` | 维护项目 dev-log |
 | `writing-spt-modpack-changelog` | 维护发布 changelog |
 
 ## MCP 表面
 
-OpenCode 插件通过 `config.mcp` 钩子声明两个本地 stdio MCP 服务器：
+OpenCode 插件通过 `config.mcp` 钩子声明三个本地 stdio MCP 服务器（三台共享内核 `tools/mcp-kit`，以相对 dist 导入，非独立 server）：
 
 | Server | 入口 | 能力 |
 |--------|------|------|
 | `mo2` | `tools/mo2-mcp/dist/index.js` | MO2 控制面：会话绑定、profile/mod/plugin 读写、FOMOD 安装、资产冲突、备份/回滚、审计日志（约 40 个 `mo2_*` 工具） |
 | `spt` | `tools/spt-mcp/dist/index.js` | 纯文件系统 SPT mod 分析（无守护进程）：mod 清点、元数据读取、文件扫描、冲突分析、加载顺序预测、Forge 归档检索、知识库查询 |
+| `tarkov` | `tools/tarkov-runtime-mcp/dist/index.js` | SPT 5.x 运行时状态：server 握手与版本门禁、局内 bridge（玩家/bot/事件）、日志聚合与 fatal 通道 |
 
 MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成，用 `scripts/install-mo2-control-plane.ps1` 部署。
 
@@ -62,15 +62,15 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 
 | 目录 | 内容 | 规模 |
 |------|------|------|
-| [`knowledge/spt-kb/wiki/`](knowledge/spt-kb/wiki/) | 官方 wiki 全站 Markdown vendor 副本 | 47 文件（锁定上游 commit） |
+| [`knowledge/spt-kb/wiki/`](knowledge/spt-kb/wiki/) | 官方 wiki 全站 Markdown vendor 副本 | 全站 vendor 副本（锁定上游 commit） |
 | [`knowledge/spt-kb/curated/modding-guide/`](knowledge/spt-kb/curated/modding-guide/) | 4.1 mod 开发指南（服务端/客户端解剖、25 示例迁移对照） | 4 章 |
-| [`knowledge/spt-kb/curated/api-notes-4.1/`](knowledge/spt-kb/curated/api-notes-4.1/) | 4.1 源码 API 笔记（DI/加载/配置/数据库/路由/存档，多数已源码实读核销） | 7 篇 |
-| [`knowledge/spt-kb/curated/recipes/`](knowledge/spt-kb/curated/recipes/) | 任务配方：加商人/自定义物品/自定义任务/路由/mod 通信等 | 12 份 |
-| [`knowledge/spt-kb/curated/modding-standard/`](knowledge/spt-kb/curated/modding-standard/) | SPT mod 开发规范（Modding Standard）：84 条可审计规则 / 13 维度 + 语料证据索引 + 4.1.5↔5.0 版本矩阵 | 16 文件 |
-| [`knowledge/spt-kb/archive/forge/`](knowledge/spt-kb/archive/forge/) | Forge 模组站归档：全站目录 + 热门详情 + 成品 zip + 源码 clone + 抓取脚本 | 1822 mod / 398MB |
-| [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案（2026-08 历史备案） | 2 文件 |
+| [`knowledge/spt-kb/curated/api-notes-4.1/`](knowledge/spt-kb/curated/api-notes-4.1/) | 4.1 源码 API 笔记（DI/加载/配置/数据库/路由/存档，多数已源码实读核销） | 源码实读笔记 |
+| [`knowledge/spt-kb/curated/recipes/`](knowledge/spt-kb/curated/recipes/) | 任务配方：加商人/自定义物品/自定义任务/路由/mod 通信等 | 任务配方集 |
+| [`knowledge/spt-kb/curated/modding-standard/`](knowledge/spt-kb/curated/modding-standard/) | SPT mod 开发规范（Modding Standard）：84 条可审计规则 / 13 维度 + 语料证据索引 + 4.1.5↔5.0 版本矩阵 | 规范 + 证据索引 + 版本矩阵 |
+| [`knowledge/spt-kb/archive/forge/`](knowledge/spt-kb/archive/forge/) | Forge 模组站归档：全站目录 + 热门详情 + 成品 zip + 源码 clone + 抓取脚本 | 全站目录 + 热门详情 + 成品 zip + 源码 clone |
+| [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案（2026-08 历史备案） | 登记册 + 应急预案 |
 
-入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。
+入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。计数以事实源为准：机读索引 `index.json`（221 条，可按 version/domain/topic 过滤），目录规模以 `scripts/verify-doc-stats.ps1` 的机检锚点与文件系统为准。
 
 ### Modding Standard（mod 开发规范）
 
@@ -111,7 +111,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 
 - 纯 OpenCode 插件，无其他 harness 依赖。
 - Windows（MO2 控制面仅限 Windows）。
-- Node 22+（两个 MCP 服务器运行于 Node）。
+- Node 22+（三个 MCP 服务器运行于 Node）。
 
 ### 贡献与许可
 

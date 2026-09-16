@@ -31,7 +31,7 @@ export function createRaidPlayerTool(connection: BridgeConnection): ToolHandler 
         RAID_PLAYER_TOOL_NAME,
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
 

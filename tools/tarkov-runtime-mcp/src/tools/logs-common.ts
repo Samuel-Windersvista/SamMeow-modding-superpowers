@@ -25,8 +25,10 @@ export function logsEndpointUnavailableEnvelope(
   error: BridgeEndpointUnavailableError,
 ): ErrEnvelope {
   return errEnv(tool, error.message, RUNTIME_ERROR_CODES.LOGS_ENDPOINT_UNAVAILABLE, {
-    reason: "logs_endpoint_unavailable",
-    endpoint: error.endpoint,
+    details: {
+      reason: "logs_endpoint_unavailable",
+      endpoint: error.endpoint,
+    },
   });
 }
 

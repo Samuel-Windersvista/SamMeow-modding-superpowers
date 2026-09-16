@@ -16,13 +16,13 @@
 // 传输层（zlib / PHPSESSID / 5.0 shuffle）封装在 SptConnection 之后（S1 接缝）。
 // 局内状态经 BridgeConnection 抽象拉取（Phase 2 唯一新接缝）。
 // MCP 侧日志观测（服务器 tail + fatal 通道）经 LogWatchSource 接缝（logwatch 波次）。
+//
+// C2 迁移（2026-09-16）：schema 管道（schemaFor）/ 结果包装（jsonResult）/
+// stdio 引导（runStdioServer、runMain）已抽到共享内核 tools/mcp-kit；
+// 本文件只保留工具定义表、dispatch 与运行时装配。接线为相对 dist 导入（决策 D1）。
 // =============================================================================
 
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
-import { pathToFileURL } from "node:url";
-import { zodToJsonSchema } from "zod-to-json-schema";
+import { jsonResult, runMain, runStdioServer, schemaFor } from "../../mcp-kit/dist/index.js";
 
 import { SptClient } from "./client/client.js";
 import {
@@ -85,13 +85,6 @@ import { RUNTIME_ERROR_CODES, errEnv, type Envelope } from "./types.js";
 
 const SERVER_NAME = "tarkov-runtime-mcp";
 const SERVER_VERSION = "0.1.0";
-
-/** zod schema -> JSON Schema（剥离 $schema 顶层键，兼容严格 schema 后端） */
-function schemaFor(schema: Parameters<typeof zodToJsonSchema>[0]): Record<string, unknown> {
-  const json = zodToJsonSchema(schema, { target: "jsonSchema7" }) as Record<string, unknown>;
-  delete json.$schema;
-  return json;
-}
 
 export const TOOL_DEFINITIONS = [
   {
@@ -195,7 +188,7 @@ export function createDispatcher(
         name,
         `未知工具：${name}`,
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        `可用工具：${AVAILABLE_TOOLS}`,
+        { details: `可用工具：${AVAILABLE_TOOLS}` },
       );
     }
     try {
@@ -253,56 +246,18 @@ export function createRuntime(options: RuntimeOptions = {}) {
   return { client, bridge, logWatch, invoke: createDispatcher(client, bridge, logWatch), config };
 }
 
-function jsonResult(body: unknown, isError = false) {
-  return {
-    content: [{ type: "text" as const, text: JSON.stringify(body) }],
-    isError,
-  };
-}
-
 export async function main(): Promise<void> {
   const { invoke } = createRuntime();
 
-  const server = new Server(
-    { name: SERVER_NAME, version: SERVER_VERSION },
-    { capabilities: { tools: {} } },
-  );
-
-  server.setRequestHandler(ListToolsRequestSchema, async () => ({
-    tools: TOOL_DEFINITIONS,
-  }));
-
-  server.setRequestHandler(CallToolRequestSchema, async (req) => {
-    const name = req.params.name;
-    const args = (req.params.arguments ?? {}) as Record<string, unknown>;
-    const envelope = await invoke(name, args);
-    return jsonResult(envelope, !envelope.ok);
-  });
-
-  const shutdown = (signal: string) => {
-    process.stderr.write(`${SERVER_NAME} 收到 ${signal}，正在关闭...\n`);
-    process.exit(0);
-  };
-  process.on("SIGINT", () => shutdown("SIGINT"));
-  process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-  await server.connect(new StdioServerTransport());
-}
-
-const invokedAsMain = (() => {
-  const argv = process.argv[1];
-  if (!argv) return false;
-  try {
-    return import.meta.url === pathToFileURL(argv).href;
-  } catch {
-    return false;
-  }
-})();
-
-if (invokedAsMain) {
-  main().catch((error) => {
-    const message = error instanceof Error ? error.message : String(error);
-    process.stderr.write(`${SERVER_NAME} 启动失败：${message}\n`);
-    process.exit(1);
+  await runStdioServer({
+    name: SERVER_NAME,
+    version: SERVER_VERSION,
+    listTools: () => TOOL_DEFINITIONS,
+    callTool: async (name, args) => {
+      const envelope = await invoke(name, args);
+      return jsonResult(envelope, !envelope.ok);
+    },
   });
 }
+
+runMain(import.meta.url, main, SERVER_NAME);

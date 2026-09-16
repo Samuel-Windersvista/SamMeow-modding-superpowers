@@ -17,7 +17,7 @@ export function runListMods(args: unknown): Envelope {
       "spt_list_mods",
       "无效输入",
       SPT_ERROR_CODES.INVALID_INPUT,
-      parsed.error.message,
+      { hint: parsed.error.message },
     );
   }
   const { path, type } = parsed.data;

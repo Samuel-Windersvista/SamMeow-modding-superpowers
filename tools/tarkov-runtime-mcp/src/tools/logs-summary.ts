@@ -144,7 +144,7 @@ export function createLogsSummaryTool(
         LOGS_SUMMARY_TOOL_NAME,
         "无效输入",
         RUNTIME_ERROR_CODES.INVALID_INPUT,
-        parsed.error.message,
+        { details: parsed.error.message },
       );
     }
     const { since } = parsed.data;

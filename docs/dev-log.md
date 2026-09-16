@@ -141,3 +141,36 @@
 - **F12 阈值即时性**：阈值 30000 → 55634 / 54718 / … / 52887 连续改动，`tracked` 69 → 17，每次改动触发 Rebuild。
 - **稳定性**：无闪退；F12 无异常刷屏（唯一 ConfigurationManager 匹配为 Il2CppInterop Info 注册行）。
 - **归档刷新**：`knowledge/spt-kb/archive/ported-src/RadarStandalone_1100_spt5_port/` 镜像 src/bundle/bin/Release（DLL 244,736 bytes / `76D8C6E3…`，与 MO2 覆盖层部署副本一致）；PROVENANCE 补复验行；mod README「实战修复记录」补第 11 项 + §6 复测证据。未提交。
+
+## 2026-09-16 — 架构审查（improve-codebase-architecture）：10 候选 + C1 运行时布局契约 + C6 状态权威
+
+- **架构审查**：4 路只读勘探（MCP 工具链 / 游戏侧 mod 与模板 / 技能与打包管线 / KB 与文档追踪）+ 主线活体核验 → 10 项深化候选 + P0-P3 路线图，HTML 报告 `D:\Temp\architecture-review-20260916-1337.html`（10 卡 / 6 图）。头号发现：**知识层静默死亡**——插件把 `SPT_KB_ROOT` 指到仓库上两级不存在路径 + spt-mcp 无条件信任 env 且吞错 → KB/Forge 工具静默空集（本会话实测 kb_query 0 条；服务器进程正常）。
+- **C1 运行时布局契约（已交付，未提交）**：`shared/runtime-layout.mjs` 唯一解析点（插件与 spt-mcp 双端导入；env 显式无效即报错、不回退；逐资源 path/source/ok/reason）；spt-mcp 新增 `spt_health`（8 工具面）+ `kb_unavailable` 结构化降级（含 forge 文件级校验）+ IL 降级 warnings；插件不再注入路径 env（仅启动健康检查，动态导入防炸）；便携包携带知识层（index+curated+wiki ≈5MB，archive 永不进包）。**验收三项全过**：kb_query 0→50 条、伪造 env → 响亮报错、spt_health 完整报告。双轴审查：Standards 无硬违规（8 判断项 → 修复 4 / 记 backlog 4）；Spec 1 实质缺口（il-reader 静默空返回）已修 + 复核。测试：72 绿 + 5 条件跳过。
+- **C6 状态权威（已交付，未提交）**：新建 `docs/README.md` 总索引（26 项状态标签）+ 权威分工表（dev-log=状态时间线 / .scratch=在办工作 / wayfinder=已决决策 / RELEASE-NOTES=发布摘要）；wayfinder MAP 与全局路线报告加 HISTORICAL 横幅；8 个 .scratch slug 进展状态行；新增 `scripts/verify-doc-stats.ps1` 数字锚点机检（skills 15 / index.json 221 实测断言；锚点缺失则跳过）接入 bootstrap（**9/9 全绿**）；README / RELEASE-NOTES / 使用指南 / VERSIONS 漂移修正（幽灵技能行移除、106→定性化、VERSIONS 环境段实测更新：4.1 线 `4.1.5-RELEASE+7d7add5`（2026-09-05 构建）/ 5.0 线 `5.0.0-BLEEDINGEDGEMODS+ec15a40`（2026-09-14 构建，BE 通道非正式 tag））。
+- **已知遗留**：C1+C6 全部变更未提交（按 Overseer 规则）；`build-portable-plugin.ps1` 的 `Copy-McpRuntimeDependencies` 路径分隔符缺陷（便携树 node_modules 为空 → 物化 MCP 无法直启，建议单独立项）；本机 Forge API 快照缺失（5 条 forge-reader 断言条件跳过，按 `scripts/spt-kb` 刷新后自动恢复）；两个 .NET helper 未构建（`spt_health` 给出构建命令提示）。
+
+## 2026-09-16 — C4 会话接线契约：tarkov 挂载 + 幽灵物化契约退役 + 便携包自包含
+
+- **tarkov-runtime-MCP 挂载**：插件 `config.mcp` 2 台 → **3 台**（mo2 / spt / tarkov；timeout 360000 覆盖 `wait_for` 300s 上限；env 透传）。此前唯一注册处是 OpenCode 不消费的陈旧 `.mcp.json` → 会话内实际未挂载。
+- **幽灵物化契约退役**：证实插件（135 行）零物化、OMO 源码无物化、残留 mtime 冻结 09-14 12:03（多次重启未再生）；备份（`D:\Temp\opencode\bgs-leftover-backup-20260916.zip`，27.4MB）后清理 6 路径（`plugins/bgs-modding-superpowers` 94.8MB、陈旧 `.mcp.json`、4 个空目录）；`verify-layout.ps1` 恢复 absent 断言（含红-绿证明）；`.gitignore` 幽灵规则删除；契约文档 `docs/internal/specs/session-wiring-contract.md`（单一权威）。
+- **便携包自包含修复（既有缺陷，根因实锤）**：`Copy-McpRuntimeDependencies` 的 npm stdout 解码缺陷——Windows PowerShell 5.1 以 OEM 代码页（CP936）解码 UTF-8 输出，CJK 仓库路径下前缀匹配恒 0 → node_modules 静默不入包（三台全缺）。修复后便携树 7.24MB → **40.57MB**（三台运行时依赖 33.33MB），仓库外端到端冒烟三台 MCP `serverInfo` 均返回、无 `ERR_MODULE_NOT_FOUND`。
+- **验证**：bootstrap **9/9**（含更新后的 `verify-mcp-surface` 3 台断言 / `verify-layout` absent / `verify-mcp-entrypoints`）；全部变更未提交。
+- 待办（重启后复核）：OpenCode 重启后确认会话内 tarkov 工具面可见（配置在重启时加载）。
+
+## 2026-09-16 — C3 mo2-mcp schema 归一化抽离（P0 批次收官）
+
+- **纯搬移重构**：`normalizeMcpInputSchema` + `HoistedDiscriminants` + `extractDiscriminants` + `_flattenUnionBranches` + 全部文档注释从 `index.ts:180-456` 搬移至新建 `src/schema-normalizer.ts`（289 行逐行 byte-for-byte 一致 + 34 行模块头注释）；`index.ts` 456 → **167 行**（只留接线 + `schemaFor` 胶水），新增一行 import；测试 import 改指新模块，index 无 re-export。
+- **验证**：`tsc --noEmit` exit 0；mo2-mcp 全量测试 **510 passed / 19 skipped**（含 normalize 专项 11/11）；build 通过；bootstrap **9/9**；`git diff --stat` 仅 2 文件（2 insertions / 291 deletions）。
+- **P0 批次收官**：C1（运行时布局契约）+ C6（状态权威）+ C4（会话接线契约）+ C3（schema 归一化）全部交付；全部变更未提交。
+- 备注：mo2-mcp 的 package.json 缺 `typecheck` script（spt-mcp 有）——小一致性项，可并入后续批次。
+
+## 2026-09-16 — C2 MCP 共享内核（tools/mcp-kit）：三台收敛 + SDK 统一 + 便携接线（P1 首项）
+
+- **共享内核抽取（已交付，未提交）**：新建 `tools/mcp-kit`（schema 管道 / envelope / result / stdio 引导 + `runMain`；24→25 测试）；spt/tarkov/mo2 三台迁移为薄适配器——接线为**相对 dist 导入**（`../../mcp-kit/dist/index.js`，零 npm 链接；沿用 `shared/runtime-layout.mjs` 先例），便携包以第四包接入现有 `Copy-McpPackage` 机制（含独立 node_modules vendor）。
+- **grilling 四决策**：D1 相对 dist 导入；D2 SDK 收敛（mo2 `^0.6.0`→`^1.0.0`，实装 1.30.0，**零源码适配**——0.6↔1.0 所用 API 面逐字节相同经源码比对证实）；D3 canonical schema 管道（jsonSchema7 → 去 `$schema` → normalize）；D4 spt+tarkov 统一 canonical envelope（`{message, hint?, details?}`），mo2 错误方言本轮保留（另议）。
+- **wire 审计（golden pre/post/portable 三态）**：spt/tarkov 逐字节零 diff；mo2 仅 2 处转换（`mo2_install.target_priority` 的 `enum:["top"|"bottom"]`→`const`，openApi3→jsonSchema7 编码差异，已声明）；无未声明输出变化；spt 唯一字段级 delta = err 信封 `summary`→`message`。
+- **验证**：kit 25 / spt 73（+5 条件跳过）/ tarkov 395 / mo2 499（normalize 11 项搬 kit）全绿；bootstrap **9/9**；便携重建 + 三台 stdio 冒烟（portable2 vs portable 三台 SHA256 全等）。
+- **双轴评审 + 修复轮**：oracle ×2 无 BLOCKER（Spec 轴判「可提交」）；修复轮落地 7 项——S1 引导钩子时序断言（fixture 标志锁 + mo2 smoke await ready）、S2 便携悬空脚本（剥离列表补 pretest/lint；顺带修复 `Strip-PortableMcpPackageJson` 的 StrictMode 剥空缺陷——mo2 scripts 剥至空即抛错）、N1 三台死依赖 `zod-to-json-schema` 清理、NIT-2 spt 级 err 字段断言、kit 导出面快照测试等。
+- **文档**：README / CONTRIBUTING / INSTALL 修正（三台计数、kit 先构建顺序、dist 非跟踪事实、技能数 14→15）；`session-wiring-contract.md` 补共享内核先构建。
+- **记录项（不修）**：N5（kit 冻结维持 ToolResult workaround）；N7（dist 陈旧性护栏，已知限制）；N8（`using-spt-translator` 幽灵路由——C6 尾账）；SDK 1.x 传递依赖瘦身（后续批次）。
+- 全部变更未提交；**重启后复核**：三台 MCP 加载 + mo2 工具 schema 接受。

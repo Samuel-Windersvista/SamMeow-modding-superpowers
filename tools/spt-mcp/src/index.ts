@@ -4,7 +4,7 @@
 // 对比需要常驻 daemon + named pipe + 生命周期管理的分析型 harness（如 xEdit）：
 // SPT mod 分析是纯文件操作 + 纯计算，所有工具同步返回，无需异步状态。
 //
-// 工具面（7 个）：
+// 工具面（8 个）：
 //   spt_list_mods            扫描目录列出 mod（server = package.json 子目录，client = .dll）
 //   spt_read_mod_metadata    读单个 mod 完整元数据
 //   spt_scan_mod_files       列出 mod 目录全部文件
@@ -12,14 +12,19 @@
 //   spt_predict_load_order   预测服务端 mod 加载顺序（TypePriority 升序 + GUID 字母序）
 //   spt_forge_search         搜索 Forge 归档（mods-catalog.json + hot-index.json）
 //   spt_kb_query             查询 SPT 知识库（index.json）
+//   spt_health               运行时布局只读自查（KB / archive / helper 可用性）
+//
+// 运行时布局（KB 根 / 归档 / helper 产物）由 shared/runtime-layout.mjs 统一解析：
+// 启动时把不可用资源写到 stderr，KB/Forge 工具在资源缺失时返回 kb_unavailable。
+//
+// C2 迁移（2026-09-16）：schema 管道（schemaFor）/ 结果包装（jsonResult）/
+// stdio 引导（runStdioServer、runMain）已抽到共享内核 tools/mcp-kit；
+// 本文件只保留工具定义表与 dispatch 逻辑。接线方式为相对 dist 导入（决策 D1）。
 // =============================================================================
 
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
-import { pathToFileURL } from "node:url";
-import { zodToJsonSchema } from "zod-to-json-schema";
+import { jsonResult, runMain, runStdioServer, schemaFor } from "../../mcp-kit/dist/index.js";
 
+import { formatLayoutWarnings, getLayout } from "./runtime-layout.js";
 import {
   errEnv,
   SPT_ERROR_CODES,
@@ -27,6 +32,7 @@ import {
 } from "./types.js";
 import { AnalyzeConflictsInput, runAnalyzeConflicts } from "./tools/analyze-conflicts.js";
 import { ForgeSearchInput, runForgeSearch } from "./tools/forge-search.js";
+import { HealthInput, runHealth } from "./tools/health.js";
 import { KbQueryInput, runKbQuery } from "./tools/kb-query.js";
 import { ListModsInput, runListMods } from "./tools/list-mods.js";
 import { PredictLoadOrderInput, runPredictLoadOrder } from "./tools/predict-load-order.js";
@@ -37,13 +43,6 @@ const SERVER_NAME = "spt-mcp";
 const SERVER_VERSION = "0.1.0";
 
 type ToolHandler = (args: Record<string, unknown>) => Envelope;
-
-/** zod schema -> JSON Schema（剥离 $schema 顶层键，兼容严格 schema 后端） */
-function schemaFor(schema: Parameters<typeof zodToJsonSchema>[0]): Record<string, unknown> {
-  const json = zodToJsonSchema(schema, { target: "jsonSchema7" }) as Record<string, unknown>;
-  delete json.$schema;
-  return json;
-}
 
 export const TOOL_DEFINITIONS = [
   {
@@ -85,8 +84,14 @@ export const TOOL_DEFINITIONS = [
   {
     name: "spt_kb_query",
     description:
-      "查询 SPT 知识库（knowledge/spt-kb/index.json，71 条目）。支持 topic / domain / version 过滤与 keyword 标题匹配；domain='both' 与 version='通用' 的条目始终包含。",
+      "查询 SPT 知识库（knowledge/spt-kb/index.json）。支持 topic / domain / version 过滤与 keyword 标题匹配；domain='both' 与 version='通用' 的条目始终包含。知识库不可用时返回 kb_unavailable。",
     inputSchema: schemaFor(KbQueryInput),
+  },
+  {
+    name: "spt_health",
+    description:
+      "运行时布局只读自查：返回 mode（repo/portable）、pluginRoot，以及知识库根/索引/forge 归档与 metadata/IL helper 的 path、source（env/default）、ok、reason。用于定位知识层或 helper 缺失。",
+    inputSchema: schemaFor(HealthInput),
   },
 ];
 
@@ -98,14 +103,8 @@ const HANDLERS: Record<string, ToolHandler> = {
   spt_predict_load_order: (args) => runPredictLoadOrder(args),
   spt_forge_search: (args) => runForgeSearch(args),
   spt_kb_query: (args) => runKbQuery(args),
+  spt_health: () => runHealth(),
 };
-
-function jsonResult(body: unknown, isError = false) {
-  return {
-    content: [{ type: "text" as const, text: JSON.stringify(body) }],
-    isError,
-  };
-}
 
 function invoke(name: string, args: Record<string, unknown>): Envelope {
   const handler = HANDLERS[name];
@@ -114,58 +113,37 @@ function invoke(name: string, args: Record<string, unknown>): Envelope {
       name,
       `未知工具：${name}`,
       SPT_ERROR_CODES.INVALID_REQUEST,
-      "可用工具：spt_list_mods, spt_read_mod_metadata, spt_scan_mod_files, spt_analyze_conflicts, spt_predict_load_order, spt_forge_search, spt_kb_query",
+      {
+        hint: "可用工具：spt_list_mods, spt_read_mod_metadata, spt_scan_mod_files, spt_analyze_conflicts, spt_predict_load_order, spt_forge_search, spt_kb_query, spt_health",
+      },
     );
   }
   try {
     return handler(args);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    return errEnv(name, `内部错误：${message}`, SPT_ERROR_CODES.INTERNAL_ERROR, message);
+    return errEnv(name, `内部错误：${message}`, SPT_ERROR_CODES.INTERNAL_ERROR, {
+      hint: message,
+    });
   }
 }
 
 export async function main(): Promise<void> {
-  const server = new Server(
-    { name: SERVER_NAME, version: SERVER_VERSION },
-    { capabilities: { tools: {} } },
-  );
-
-  server.setRequestHandler(ListToolsRequestSchema, async () => ({
-    tools: TOOL_DEFINITIONS,
-  }));
-
-  server.setRequestHandler(CallToolRequestSchema, async (req) => {
-    const name = req.params.name;
-    const args = (req.params.arguments ?? {}) as Record<string, unknown>;
-    const envelope = invoke(name, args);
-    return jsonResult(envelope, !envelope.ok);
-  });
-
-  const shutdown = (signal: string) => {
-    process.stderr.write(`${SERVER_NAME} 收到 ${signal}，正在关闭...\n`);
-    process.exit(0);
-  };
-  process.on("SIGINT", () => shutdown("SIGINT"));
-  process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-  await server.connect(new StdioServerTransport());
-}
-
-const invokedAsMain = (() => {
-  const argv = process.argv[1];
-  if (!argv) return false;
-  try {
-    return import.meta.url === pathToFileURL(argv).href;
-  } catch {
-    return false;
+  // 启动健康检查：布局不可用写 stderr（不退出进程，纯文件系统工具不受影响）
+  const layout = getLayout();
+  if (layout.warnings.length > 0) {
+    process.stderr.write(formatLayoutWarnings(layout) + "\n");
   }
-})();
 
-if (invokedAsMain) {
-  main().catch((error) => {
-    const message = error instanceof Error ? error.message : String(error);
-    process.stderr.write(`${SERVER_NAME} 启动失败：${message}\n`);
-    process.exit(1);
+  await runStdioServer({
+    name: SERVER_NAME,
+    version: SERVER_VERSION,
+    listTools: () => TOOL_DEFINITIONS,
+    callTool: (name, args) => {
+      const envelope = invoke(name, args);
+      return jsonResult(envelope, !envelope.ok);
+    },
   });
 }
+
+runMain(import.meta.url, main, SERVER_NAME);
