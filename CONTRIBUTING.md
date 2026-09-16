@@ -5,7 +5,7 @@ Thanks for the interest. This doc is for contributors opening pull requests agai
 ## Clone + bootstrap
 
 ```powershell
-git clone https://github.com/<owner>/SamMeow-modding-superpowers.git
+git clone https://github.com/Samuel-Windersvista/SamMeow-modding-superpowers.git
 cd SamMeow-modding-superpowers
 # Build the shared kernel first — the servers import it from tools/mcp-kit/dist
 npm --prefix tools/mcp-kit install; npm --prefix tools/mcp-kit run build
@@ -59,13 +59,25 @@ The repo carries a dedicated MO2 sandbox under `.artifacts/mo2/` (gitignored —
 
 ## Version bumping
 
-Versions are tracked in `package.json` and bumped by `scripts/bump-version.sh` driven by `.version-bump.json`:
+The root `package.json` `version` is the single source of truth. `.version-bump.json`
+is the registry of every plugin-component target (package manifests, lockfiles,
+Python project metadata, C# project files, and source constants). A Node tool keeps
+them in sync — no `jq` required:
 
 ```powershell
-bash scripts/bump-version.sh 0.2.0
+# check: report drift against the source version (exit 1 if any target disagrees)
+node scripts/version/sync-version.mjs
+
+# propagate the source version to every registered target (idempotent)
+node scripts/version/sync-version.mjs --write
+
+# bump the source first, then propagate
+node scripts/version/sync-version.mjs --write --set 0.3.0
 ```
 
-(Requires `jq` available on PATH.)
+`tests/bootstrap/verify-version-identity.ps1` pins this invariant in the bootstrap
+suite. Add new plugin-component targets to `.version-bump.json` rather than editing
+version strings by hand.
 
 ## Code of conduct
 

@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>TarkovActiveProbe</RootNamespace>
     <AssemblyName>TarkovActiveProbe</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
 
     <!--
       tarkov-runtime-MCP 的可选活跃探针（ADR-0004，ticket 08 B 部分）。

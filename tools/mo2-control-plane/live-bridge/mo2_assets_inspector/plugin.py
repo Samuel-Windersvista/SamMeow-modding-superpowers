@@ -1,4 +1,4 @@
-"""IPluginTool implementation for the BGS Assets Inspector.
+"""IPluginTool implementation for the MO2 Assets Inspector.
 
 Lifecycle (per https://www.modorganizer.org/python-plugins-doc/):
     1. MO2 imports the plugin module and calls `createPlugin()`.
@@ -19,8 +19,8 @@ from .bridge import UnsupportedGameError, bundle_paths_from_organizer
 from .localization import Locale, get_strings
 
 
-class BgsAssetsInspectorPlugin(mobase.IPluginTool):
-    NAME = "BgsAssetsInspector"
+class Mo2AssetsInspectorPlugin(mobase.IPluginTool):
+    NAME = "Mo2AssetsInspector"
     VERSION = mobase.VersionInfo(0, 1, 0, mobase.ReleaseType.PRE_ALPHA)
     AUTHOR = "BB-84C"
     DESCRIPTION = (
@@ -58,7 +58,7 @@ class BgsAssetsInspectorPlugin(mobase.IPluginTool):
         return [
             mobase.PluginSetting(
                 "enabled",
-                "Enable the BGS Assets Inspector tool.",
+                "Enable the MO2 Assets Inspector tool.",
                 True,
             ),
             mobase.PluginSetting(
@@ -131,5 +131,5 @@ class BgsAssetsInspectorPlugin(mobase.IPluginTool):
             return Locale.ZH_HANS
 
 
-def create_plugin() -> BgsAssetsInspectorPlugin:
-    return BgsAssetsInspectorPlugin()
+def create_plugin() -> Mo2AssetsInspectorPlugin:
+    return Mo2AssetsInspectorPlugin()

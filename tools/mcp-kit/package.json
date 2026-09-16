@@ -1,6 +1,6 @@
 {
   "name": "mcp-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SPT 模组工具链的 MCP 共享内核：schema 规范化 / 统一信封 / 结果包装 / stdio 引导。",
   "type": "module",
   "private": true,

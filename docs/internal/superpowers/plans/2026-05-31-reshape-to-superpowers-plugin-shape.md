@@ -246,8 +246,8 @@ Goal: per-harness MCP declarations actually reach `tools/xedit-mcp/dist/index.js
 
 - [ ] P4.1 In `tools/xedit-mcp/package.json`, add `scripts.prepare`: `"prepare": "npm run build"` and ensure `scripts.build` compiles `src/` → `dist/`. Add `"files": ["dist", "src", "README.md", "package.json"]` if not present.
 - [ ] P4.2 Build `tools/xedit-mcp/dist/` locally and verify `node tools/xedit-mcp/dist/index.js --help` (or stdio handshake) responds. Commit the built `dist/` to git on this branch.
-- [ ] P4.3 Smoke-test OpenCode wiring: run `opencode` from `.artifacts/mo2/` with `opencode.json` pointing at the local plugin checkout (`"plugin": ["file:D:/awesome-bgs-mod-master"]` or git ref). Confirm `xedit_list_capabilities` tool appears.
-- [ ] P4.4 Smoke-test Claude Code wiring: load the plugin via `/plugin install file:///D:/awesome-bgs-mod-master` (or marketplace ref). Confirm MCP `xedit` server registers via `.mcp.json`.
+- [ ] P4.3 Smoke-test OpenCode wiring: run `opencode` from `.artifacts/mo2/` with `opencode.json` pointing at the local plugin checkout (`"plugin": ["file:E:/云文件/GitHub/SamMeow-modding-superpowers"]` or git ref). Confirm `xedit_list_capabilities` tool appears.
+- [ ] P4.4 Smoke-test Claude Code wiring: load the plugin via `/plugin install file:///E:/云文件/GitHub/SamMeow-modding-superpowers` (or marketplace ref). Confirm MCP `xedit` server registers via `.mcp.json`.
 - [ ] P4.5 Smoke-test Codex wiring: install plugin via Codex CLI. Confirm `.mcp.json` is honored; if `${CLAUDE_PLUGIN_ROOT}` substitution fails on Codex, fall back to relative `./tools/xedit-mcp/dist/index.js` and document the limitation.
 - [ ] P4.6 Commit P4: `feat(reshape): verify MCP wiring on OC/CC/Codex (P4)`.
 
@@ -287,7 +287,7 @@ Goal: `setting-up-bgs-modding-environment` skill has real backing scripts that w
 - [ ] P6.4 Test both scripts against a clean MO2 install (the user's `.artifacts/mo2/` sandbox can be used, but the scripts must accept an arbitrary `-MO2Root` and not hardcode any path).
 - [ ] P6.5 Commit P6: `feat(reshape): MO2 control-plane installer + xEdit fetch scripts (P6)`.
 
-**P6 acceptance:** running both scripts with `-MO2Root D:\awesome-bgs-mod-master\.artifacts\mo2` cleanly deploys the control plane and (if invoked) fetches xEdit into `<MO2>/tools/xEdit/`. No paths are hardcoded.
+**P6 acceptance:** running both scripts with `-MO2Root E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2` cleanly deploys the control plane and (if invoked) fetches xEdit into `<MO2>/tools/xEdit/`. No paths are hardcoded.
 
 ---
 
@@ -318,7 +318,7 @@ Goal: ship the hook-bridge DLL from THIS repo as a tracked artifact (we own it).
 Goal: prove the reshape works on all three harnesses against a clean MO2.
 
 - [ ] P8.1 Run `scripts/bump-version.sh 0.1.0-rc.1` and confirm all manifests sync.
-- [ ] P8.2 **Acceptance run — OpenCode**: start `opencode` from `D:\awesome-bgs-mod-master\.artifacts\mo2`. In a clean session, ask "tell me about your superpowers". Bootstrap skill should load. Then ask the agent to invoke `xedit-conflict-audit` on a known fixture (LOAD001 case). Verify the audit succeeds, audit log written to `.opencode/artifacts/xedit-mcp/audit/<date>.jsonl`.
+- [ ] P8.2 **Acceptance run — OpenCode**: start `opencode` from `E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2`. In a clean session, ask "tell me about your superpowers". Bootstrap skill should load. Then ask the agent to invoke `xedit-conflict-audit` on a known fixture (LOAD001 case). Verify the audit succeeds, audit log written to `.opencode/artifacts/xedit-mcp/audit/<date>.jsonl`.
 - [ ] P8.3 **Acceptance run — Claude Code**: install the plugin via local marketplace. Same session test. Verify `.mcp.json` resolution worked.
 - [ ] P8.4 **Acceptance run — Codex**: install the plugin via Codex CLI. Same session test. Verify `.mcp.json` resolution worked OR fall back to relative paths and document.
 - [ ] P8.5 **First-run bootstrap acceptance**: from a fresh OpenCode profile without MO2 detected, invoke `setting-up-bgs-modding-environment` skill. Verify:

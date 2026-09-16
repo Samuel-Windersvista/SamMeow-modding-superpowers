@@ -71,7 +71,7 @@ import "./tools/mo2-rename-profile.js"; // side-effect: register mo2_rename_prof
 import type { ToolContext } from "./types.js";
 
 const SERVER_NAME = "mo2-mcp";
-const SERVER_VERSION = "0.1.0";
+const SERVER_VERSION = "0.2.0";
 
 async function main(): Promise<void> {
   const sessionId = randomUUID();

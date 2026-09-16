@@ -602,7 +602,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
-$liveMo2Root = 'D:\awesome-bgs-mod-master\.artifacts\mo2'
+$liveMo2Root = 'E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2'
 $mo2ExecutablePath = Join-Path $liveMo2Root 'ModOrganizer.exe'
 $runtimeRoot = Join-Path $liveMo2Root 'plugins\Mo2AgentControl\bootstrap\runtime'
 $blockerEventsPath = Join-Path $runtimeRoot 'blocker-events.jsonl'
@@ -611,7 +611,7 @@ $deployScriptPath = Join-Path $repoRoot 'tools/mo2-control-plane/live-bridge/dep
 . (Join-Path $PSScriptRoot 'live-sandbox.ps1')
 
 if (-not $AllowLiveSandbox) {
-    throw 'This real harness touches D:\awesome-bgs-mod-master\.artifacts\mo2. Re-run with -AllowLiveSandbox to opt in.'
+    throw 'This real harness touches E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2. Re-run with -AllowLiveSandbox to opt in.'
 }
 
 $sandboxHarnessMutex = Enter-SandboxHarnessLock -Path $mo2ExecutablePath -TimeoutSeconds $TimeoutSeconds
@@ -758,7 +758,7 @@ Expected:
 Run the original user-facing command once as a final manual smoke check:
 
 ```powershell
-& "D:\awesome-bgs-mod-master\.artifacts\mo2\ModOrganizer.exe" -p Default run -e "OpenCode xEdit Automation Serve"
+& "E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2\ModOrganizer.exe" -p Default run -e "OpenCode xEdit Automation Serve"
 ```
 
 Expected: the command should no longer hang behind the known MO2 blockers, and any auto-handled blocker should appear in `blocker-events.jsonl`.

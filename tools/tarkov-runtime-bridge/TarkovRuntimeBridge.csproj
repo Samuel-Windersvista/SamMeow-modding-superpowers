@@ -5,7 +5,7 @@
     <RootNamespace>SamMeow.TarkovRuntimeBridge</RootNamespace>
     <OutputType>Library</OutputType>
     <!-- STD-META-005：三段式 semver，与 [BepInPlugin] 版本一致。 -->
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <!-- STD-BUILD-002：TargetFramework=net6.0 定义于 Directory.Build.props（5.0 IL2CPP / BepInEx 6）。 -->
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <!-- 测试工程位于 tests/ 子目录；从本工程的默认 glob 中排除，避免重复编译与产物污染。 -->

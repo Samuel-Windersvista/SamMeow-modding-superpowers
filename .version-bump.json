@@ -1,6 +1,48 @@
 {
+  "source": { "path": "package.json", "field": "version" },
   "files": [
-    { "path": "package.json", "field": "version" }
+    { "path": "tools/mcp-kit/package.json", "kind": "json", "field": "version" },
+    { "path": "tools/mcp-kit/package-lock.json", "kind": "npm-lock" },
+    { "path": "tools/spt-mcp/package.json", "kind": "json", "field": "version" },
+    { "path": "tools/spt-mcp/package-lock.json", "kind": "npm-lock" },
+    { "path": "tools/mo2-mcp/package.json", "kind": "json", "field": "version" },
+    { "path": "tools/mo2-mcp/package-lock.json", "kind": "npm-lock" },
+    { "path": "tools/tarkov-runtime-mcp/package.json", "kind": "json", "field": "version" },
+    { "path": "tools/tarkov-runtime-mcp/package-lock.json", "kind": "npm-lock" },
+    { "path": "tools/mo2-mcp-sidecar/pyproject.toml", "kind": "toml" },
+    { "path": "tools/mo2-assets-engine/pyproject.toml", "kind": "toml" },
+    {
+      "path": "tools/mo2-assets-engine/src/mo2_assets_engine/__init__.py",
+      "kind": "code",
+      "pattern": "__version__\\s*=\\s*\"([^\"]+)\""
+    },
+    { "path": "tools/tarkov-runtime-bridge/TarkovRuntimeBridge.csproj", "kind": "xml" },
+    {
+      "path": "tools/tarkov-runtime-bridge/src/Plugin.cs",
+      "kind": "code",
+      "pattern": "PluginVersion\\s*=\\s*\"([^\"]+)\""
+    },
+    { "path": "tools/tarkov-active-probe/TarkovActiveProbe.csproj", "kind": "xml" },
+    {
+      "path": "tools/tarkov-active-probe/src/ModMetadata.cs",
+      "kind": "code",
+      "pattern": "Version Version \\{ get; init; \\} = new\\(\"([^\"]+)\"\\)"
+    },
+    {
+      "path": "tools/spt-mcp/src/index.ts",
+      "kind": "code",
+      "pattern": "SERVER_VERSION\\s*=\\s*\"([^\"]+)\""
+    },
+    {
+      "path": "tools/mo2-mcp/src/index.ts",
+      "kind": "code",
+      "pattern": "SERVER_VERSION\\s*=\\s*\"([^\"]+)\""
+    },
+    {
+      "path": "tools/tarkov-runtime-mcp/src/index.ts",
+      "kind": "code",
+      "pattern": "SERVER_VERSION\\s*=\\s*\"([^\"]+)\""
+    }
   ],
   "audit": {
     "exclude": [

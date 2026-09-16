@@ -110,7 +110,7 @@ The xEdit fork at `D:\TES5Edit-contrib` is the single owner of:
 
 ### This repo owns
 
-`D:\awesome-bgs-mod-master` remains the single owner of:
+`E:\云文件\GitHub\SamMeow-modding-superpowers` remains the single owner of:
 
 - MO2 runtime harness state under `.artifacts/mo2`,
 - control-plane and launcher integration,

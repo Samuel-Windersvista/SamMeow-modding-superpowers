@@ -14,7 +14,7 @@ Or install straight from git once the package is published:
 
 ```json
 {
-  "plugin": ["spt-modding-superpowers@git+https://github.com/<owner>/SamMeow-modding-superpowers.git"]
+  "plugin": ["spt-modding-superpowers@git+https://github.com/Samuel-Windersvista/SamMeow-modding-superpowers.git"]
 }
 ```
 
@@ -74,7 +74,7 @@ The agent should reference the `using-spt-modding-superpowers` skill and offer t
 
 ```json
 {
-  "plugin": ["spt-modding-superpowers@git+https://github.com/<owner>/SamMeow-modding-superpowers.git#v0.2.0"]
+  "plugin": ["spt-modding-superpowers@git+https://github.com/Samuel-Windersvista/SamMeow-modding-superpowers.git#v0.2.0"]
 }
 ```
 
@@ -83,7 +83,7 @@ The agent should reference the `using-spt-modding-superpowers` skill and offer t
 If the direct git install path is slow or unreliable on Windows, install into your global OpenCode tree first:
 
 ```powershell
-npm install spt-modding-superpowers@git+https://github.com/<owner>/SamMeow-modding-superpowers.git --prefix "$HOME\.config\opencode"
+npm install spt-modding-superpowers@git+https://github.com/Samuel-Windersvista/SamMeow-modding-superpowers.git --prefix "$HOME\.config\opencode"
 ```
 
 Then point `opencode.json` at the local path:

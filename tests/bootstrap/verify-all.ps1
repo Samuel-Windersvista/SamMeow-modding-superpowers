@@ -24,6 +24,7 @@ $checks = @(
     "tests/bootstrap/verify-kb-index.ps1",
     "tests/bootstrap/verify-templates.ps1",
     "tests/bootstrap/verify-standard-compliance.ps1",
+    "tests/bootstrap/verify-version-identity.ps1",
     "scripts/verify-doc-stats.ps1"
 )
 

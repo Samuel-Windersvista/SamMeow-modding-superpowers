@@ -84,7 +84,7 @@ import { WaitForInput, createWaitForTool } from "./tools/wait-for.js";
 import { RUNTIME_ERROR_CODES, errEnv, type Envelope } from "./types.js";
 
 const SERVER_NAME = "tarkov-runtime-mcp";
-const SERVER_VERSION = "0.1.0";
+const SERVER_VERSION = "0.2.0";
 
 export const TOOL_DEFINITIONS = [
   {

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mo2-assets-engine"
-version = "0.1.0-dev0"
+version = "0.2.0"
 description = "Offline analyzer for MO2 profile state, loose files, and BA2/BSA archives. Computes loose-vs-archive conflict winners."
 authors = [{ name = "BB-84C" }]
 readme = "README.md"

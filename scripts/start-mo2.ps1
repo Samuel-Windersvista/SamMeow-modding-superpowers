@@ -1,9 +1,9 @@
-<#
+﻿<#
 .SYNOPSIS
 Starts MO2 with a visible GUI window so the user can see and interact with it.
 
 .DESCRIPTION
-The bgs-modding-superpowers agent harness assumes MO2 is running with the
+The spt-modding-superpowers agent harness assumes MO2 is running with the
 Mo2AgentControl Python plugin loaded. This script launches MO2 the way a
 human would: a normal window, taskbar entry, optional profile activation.
 
@@ -29,7 +29,7 @@ Defaults to 30. Set to 0 to skip the wait.
 .\scripts\start-mo2.ps1 -MO2Root "D:\ModOrganizer2"
 
 .EXAMPLE
-.\scripts\start-mo2.ps1 -MO2Root "D:\awesome-bgs-mod-master\.artifacts\mo2" -Profile "Default" -KillStale
+.\scripts\start-mo2.ps1 -MO2Root "E:\云文件\GitHub\SamMeow-modding-superpowers\.artifacts\mo2" -Profile "Default" -KillStale
 #>
 param(
     [Parameter(Mandatory = $true)]
@@ -61,7 +61,7 @@ $visibleProcs = @($existingProcs | Where-Object { $_.MainWindowHandle -ne [IntPt
 $zombieProcs = @($existingProcs | Where-Object { $_.MainWindowHandle -eq [IntPtr]::Zero })
 
 Write-Host ""
-Write-Host "bgs-modding-superpowers: start MO2"
+Write-Host "spt-modding-superpowers: start MO2"
 Write-Host "  MO2 root:  $resolvedRoot"
 Write-Host "  Profile:   $Profile"
 Write-Host ""

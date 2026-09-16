@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mo2-mcp-sidecar"
-version = "0.1.0"
+version = "0.2.0"
 description = "Long-lived JSON-RPC sidecar for MO2 MCP TS server. Wraps mo2_assets_engine + pyfomod."
 requires-python = ">=3.11"
 dependencies = [

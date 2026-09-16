@@ -22,7 +22,7 @@ namespace SamMeow.TarkovRuntimeBridge;
 ///              + 受伤事件 patch <c>ActiveHealthController.ApplyDamage</c>
 ///              （<see cref="ApplyDamagePatch"/>），均为显式 [HarmonyPatch(typeof(...))]。
 /// STD-CLI-007：Harmony 生命周期在此管理（new Harmony + PatchAll + Unload 撤销）。
-/// STD-META-005：版本 semver 三段式（0.1.0），与 csproj &lt;Version&gt; 一致。
+/// STD-META-005：版本 semver 三段式，与 csproj &lt;Version&gt; 一致。
 /// STD-META-006：BepInPlugin 三参数齐备（GUID、显示名、版本）。
 /// STD-LOG-003：客户端日志用 BepInEx 日志源（BasePlugin.Log）。
 /// 部署形态：MO2 overlay，mod 根 = 游戏根，DLL 落在 BepInEx/plugins/。
@@ -33,7 +33,7 @@ public sealed class Plugin : BasePlugin
 {
     internal const string PluginGuid = "com.sammeow.tarkov-runtime-bridge";
     internal const string PluginName = "Tarkov Runtime Bridge";
-    internal const string PluginVersion = "0.1.0";
+    internal const string PluginVersion = "0.2.0";
 
     /// <summary>
     /// 桥 HTTP 协议版本（单点定义，MCP 握手校验用）。

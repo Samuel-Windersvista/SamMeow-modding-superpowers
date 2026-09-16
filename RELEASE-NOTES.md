@@ -1,6 +1,6 @@
 # 发布说明
 
-## v0.2.0-spt（未发布）
+## v0.2.0（未发布）
 
 SamMeow SPT modding 工具包的纯 SPT 版本——面向 SPT 4.1 mod 开发与整合包自动化的 OpenCode 插件。
 

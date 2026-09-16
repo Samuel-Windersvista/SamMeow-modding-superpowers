@@ -38,7 +38,7 @@ class Strings:
 
 _ZH_HANS = Strings(
     locale=Locale.ZH_HANS,
-    window_title="BGS 资源审计器",
+    window_title="MO2 资源审计器",
     refresh_button="刷新",
     section_kept="冲突中被保留的文件",
     section_overwritten="冲突中被覆盖的文件",
@@ -60,7 +60,7 @@ _ZH_HANS = Strings(
 
 _EN = Strings(
     locale=Locale.EN,
-    window_title="BGS Assets Inspector",
+    window_title="MO2 Assets Inspector",
     refresh_button="Refresh",
     section_kept="Files kept (this mod wins)",
     section_overwritten="Files overwritten (this mod loses)",

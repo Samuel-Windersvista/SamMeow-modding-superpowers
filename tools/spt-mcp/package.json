@@ -1,6 +1,6 @@
 {
   "name": "spt-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "File-based MCP server for SPT 4.1 mod analysis: mod inventory, conflict analysis, Forge archive search, and SPT knowledge-base query.",
   "type": "module",
   "private": true,

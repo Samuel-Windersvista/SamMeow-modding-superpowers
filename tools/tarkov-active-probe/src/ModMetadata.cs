@@ -13,7 +13,7 @@ public record TarkovActiveProbeMetadata : IModMetadata
     public string Name { get; init; } = "TarkovActiveProbe";
     public string Author { get; init; } = "SamMeow";
     public List<string>? Contributors { get; init; }
-    public Version Version { get; init; } = new("0.1.0");
+    public Version Version { get; init; } = new("0.2.0");
     public Range SptVersion { get; init; } = new("~5.0.0");
     public bool HasPrepatcher { get; init; } = false;
     public List<string>? Incompatibilities { get; init; }

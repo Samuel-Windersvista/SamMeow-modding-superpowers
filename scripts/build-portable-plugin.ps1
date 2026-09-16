@@ -1,4 +1,4 @@
-#requires -Version 5.1
+﻿#requires -Version 5.1
 <#
 .SYNOPSIS
   Materialize a portable <OutputDir>/<PluginName>/ tree for downstream packaging.
@@ -400,6 +400,24 @@ $global:LASTEXITCODE = 0
 
 # ---- 6. Top-level public surface -------------------------------------------
 Copy-FileOnly -From "package.json"      -To "package.json"
+# 版本注册表：scripts/version/sync-version.mjs 从树根读取它，缺了则树内
+# `node scripts/version/sync-version.mjs` 直接 exit 2（无法自校验版本一致性）。
+# 便携树按设计不携带 npm lockfile，也不携带 tarkov-runtime-bridge /
+# tarkov-active-probe 源码（二者以预构建 DLL 形式经 tools/spt-mcp/helper 提供）；
+# 原样复制会让注册表指向树内不存在的目标，sync 的 fail-loud 语义使树内自校验
+# 恒 exit 2。故按「树内实际存在的目标」裁剪后写入，注册表与分发内容保持一致。
+$registrySrc = Join-Path $RepoRoot ".version-bump.json"
+$registry = Get-Content -LiteralPath $registrySrc -Raw -Encoding UTF8 | ConvertFrom-Json
+$registryTotalTargets = @($registry.files).Count
+$portableTargets = @(
+  foreach ($target in $registry.files) {
+    if (Test-Path -LiteralPath (Join-Path $PluginRoot $target.path)) { $target }
+  }
+)
+$registry.files = $portableTargets
+$registryOut = ($registry | ConvertTo-Json -Depth 10).Replace("`r`n", "`n")
+[IO.File]::WriteAllText((Join-Path $PluginRoot ".version-bump.json"), $registryOut + "`n", [Text.UTF8Encoding]::new($false))
+Write-Host ("[build-portable-plugin] version registry: {0}/{1} targets shipped" -f $portableTargets.Count, $registryTotalTargets)
 
 # The repo-root package.json `main` points at the OpenCode plugin entrypoint
 # (`.opencode/plugins/spt-modding-superpowers.js`). The materialized subtree
@@ -451,7 +469,9 @@ if ($EmitMarketplace) {
 $requiredPortablePaths = @(
   "shared/runtime-layout.mjs",
   "knowledge/spt-kb/index.json",
-  "knowledge/spt-kb/curated/modding-standard/rules.json"
+  "knowledge/spt-kb/curated/modding-standard/rules.json",
+  ".version-bump.json",
+  "scripts/version/sync-version.mjs"
 )
 foreach ($rel in $requiredPortablePaths) {
   if (-not (Test-Path -LiteralPath (Join-Path $PluginRoot $rel))) {

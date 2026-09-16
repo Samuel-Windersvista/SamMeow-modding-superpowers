@@ -200,3 +200,17 @@
 - **记录项（不修）**：N4 夹具负分支扩展（后续）；N10 scratch 捕获器引号启发式；便携树不自带夹具（设计边界）。
 - **提交口径**：`tests/bootstrap/verify-all.ps1` 混含 C7（verify-kb-index 第 10 项）与 C8（UTF-8 行）——C7/C8 建议同批提交，或剔除该行后修正 C8 验证记录。
 - 全部变更未提交。
+
+## 2026-09-17 — C5 发版身份契约归一（P1 末项）
+
+- **版本单一源（已交付，未提交）**：`scripts/version/sync-version.mjs`（check / `--write` / `--set`；kind = json / npm-lock / toml / xml / code；exit 0/1/2；BOM/行尾字节保真）+ `.version-bump.json` 扩展为注册表（source + 18 目标）；插件组件 0.1.0（含 -dev0）→ 0.2.0 一次性传播；`bump-version.sh` 退役（jq 依赖消失）；CONTRIBUTING 版本节改写。
+- **bootstrap 第 11 项（新）**：`verify-version-identity.ps1`（① sync check；② 身份禁入扫描：操作性表面 5 处 × 三模式 `git grep -in -E`）；正/负对照实测（植入违规被捕获 / 干净绿）。
+- **身份归一**：`start-mo2.ps1` ×3、`install-mo2-control-plane.ps1` ×2、MO2 资源审计器改名（`Mo2AssetsInspectorPlugin` / `NAME = "Mo2AssetsInspector"` / "MO2 资源审计器"）、`xedit-client.launch.ps1` 注释指针；根 `package.json` 元数据 → origin（repository/homepage/bugs）；LICENSE ×2 追加 fork 行（上游行保留）。
+- **文档规范化（D5 口径，含历史档案）**：INSTALL `<owner>` ×3、RELEASE-NOTES 标题 `v0.2.0`、全局路线报告 :13/:51/:52/:105（现状陈述归一；日期口径 09-14 首清 / 09-16 复清）、05-31 计划 4 行命令示例指针、05-13/04-23 旧路径；事件记录/署名保留——逐条分类表落盘 `.scratch/c5-release-identity/identity-classification.md`（62 命中：4 已归一 / 54 保留 / 8 超范围）。
+- **双轴评审 + 修复轮**：oracle ×2 无 BLOCKER；修复轮 6 项落地（S1a/S1b/S3/S4/S5/N4p）；S3 根因 = UTF-8 无 BOM 在 PS 5.1 下吞换行（守卫失效）→ BOM 修复；S5 = 便携树按树内实际目标裁剪注册表（18→10）后自校验 exit 0；编码卫生对齐 3 个 C5 触及文件 BOM。
+- **验证**：bootstrap **10→11 全绿**；sync 18/18 = 0.2.0（幂等 + `--set` 往返 + 退出码路径实测）；工具套件 kit 25 / spt 98 / tarkov 395 / mo2 499 全绿；便携重建（14440 文件）+ 树内 sync + 树内 validate ×2 全 exit 0；py_compile OK（pytest 环境缺失，声明跳过）。
+- **事故记录**：`fix-2` 会话在修复轮两度调度后进入 `error (unconfirmed) / no live status entry`（会话级故障，工作区零落盘）→ 改道全新会话 `fix-3` 幂等推进完成。
+- **记录项（不修）**：N1 死 catch / N2 `audit.exclude` 消费者 / N3 semver 前缀匹配 / N4 快照文补注 / N5 扫描盲区（设计内）/ N6 `mo2-install.ts` 示例串 / F4 计数硬化 / F5 MO2 控制面版本口径（S2 豁免：MO2 插件版本体系独立，冻结 0.1.0）；`templates/paired-mod/scripts/pack.ps1` 与 `verify-mcp-entrypoints.ps1` 编码观察项；tools 测试旧沙箱夹具路径（超范围）。
+- 规格：`.scratch/c5-release-identity/spec.md`（CLOSED）。
+- **提交口径**：C5 单批提交（建议 `feat(release-identity): single-source versioning + identity gate + docs normalization (C5)`）。
+- 全部变更未提交。

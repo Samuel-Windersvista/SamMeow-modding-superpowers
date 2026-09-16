@@ -40,7 +40,7 @@ import { ReadModMetadataInput, runReadModMetadata } from "./tools/read-mod-metad
 import { ScanModFilesInput, runScanModFiles } from "./tools/scan-mod-files.js";
 
 const SERVER_NAME = "spt-mcp";
-const SERVER_VERSION = "0.1.0";
+const SERVER_VERSION = "0.2.0";
 
 type ToolHandler = (args: Record<string, unknown>) => Envelope;
 

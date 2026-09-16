@@ -26,8 +26,18 @@ if (-not (Test-Path -LiteralPath $contractEntry)) {
 } elseif (-not (Get-Command node -ErrorAction SilentlyContinue)) {
     Add-BootstrapFailure "node is not on PATH; scripts/spt-kb/validate-index.mjs cannot run"
 } else {
-    $output = @(& node $validateScript 2>&1)
-    $exitCode = $LASTEXITCODE
+    # Under EAP=Stop any node stderr byte raises NativeCommandError and aborts
+    # the script, so a validation failure (non-zero exit) never reaches
+    # Add-BootstrapFailure. Downgrade locally to Continue and let $LASTEXITCODE
+    # decide; restore immediately after the call.
+    $previousErrorActionPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $output = @(& node $validateScript 2>&1)
+        $exitCode = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $previousErrorActionPreference
+    }
 
     foreach ($line in $output) {
         Write-Host ("    {0}" -f $line)

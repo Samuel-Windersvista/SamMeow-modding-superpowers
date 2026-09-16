@@ -1,6 +1,6 @@
 {
   "name": "tarkov-runtime-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Runtime-state MCP server for SPT 5.x: handshake/version-gate against a live SPT server, plus (Phase 2) in-raid tools.",
   "type": "module",
   "private": true,

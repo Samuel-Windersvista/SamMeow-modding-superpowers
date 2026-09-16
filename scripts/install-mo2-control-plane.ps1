@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Deploys the bgs-modding-superpowers MO2 control plane into the user's MO2 install.
+Deploys the spt-modding-superpowers MO2 control plane into the user's MO2 install.
 
 .DESCRIPTION
 The control plane is a Python MO2 plugin plus a PowerShell broker. There is NO
@@ -55,7 +55,7 @@ if (-not (Test-Path $mo2Exe -PathType Leaf)) {
 $pluginRoot = (Resolve-Path -Path (Join-Path $PSScriptRoot "..")).Path
 
 Write-Host ""
-Write-Host "bgs-modding-superpowers MO2 control plane install"
+Write-Host "spt-modding-superpowers MO2 control plane install"
 Write-Host "  Plugin root: $pluginRoot"
 Write-Host "  MO2 root:    $resolvedRoot"
 Write-Host ""

@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 . (Join-Path $scriptDir 'xedit-client.common.ps1')
@@ -17,7 +17,7 @@ function Get-XeditClientProjectRoot {
 function Get-XeditClientDefaultMo2SandboxRoot {
     # Resolution priority for the MO2 root the launcher should drive:
     #   1. $env:MO2_ROOT  — end-user install path (set by the harness MCP
-    #      server config, or by the setting-up-bgs-modding-environment skill
+    #      server config, or by the setting-up-spt-modding-environment skill
     #      once MO2 is detected).
     #   2. <project-root>\.artifacts\mo2  — dev sandbox; only used when it
     #      actually exists. End-user clones do not carry this tree.
