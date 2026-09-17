@@ -15,9 +15,10 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Configuration>Release</Configuration>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <!-- STD-BUILD-006：可覆盖的安装路径（SPTInstallPath 标准名；GameDir 为兼容别名）。 -->
+    <!-- STD-BUILD-006：可覆盖的安装路径（SptRoot 为机器根；SPTInstallPath 标准名；GameDir 为兼容别名）。 -->
+    <SptRoot Condition="'$(SptRoot)' == ''">E:/Game/EFT_Offline</SptRoot>
     <SPTInstallPath Condition="'$(SPTInstallPath)' == '' AND '$(GameDir)' != ''">$(GameDir)</SPTInstallPath>
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:/Game/EFT_Offline/SPT_5xx</SPTInstallPath>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)/SPT_5xx</SPTInstallPath>
     <GameDir Condition="'$(GameDir)' == ''">$(SPTInstallPath)</GameDir>
     <BepInExCore>$(SPTInstallPath)/BepInEx/core</BepInExCore>
     <Interop>$(SPTInstallPath)/BepInEx/interop</Interop>

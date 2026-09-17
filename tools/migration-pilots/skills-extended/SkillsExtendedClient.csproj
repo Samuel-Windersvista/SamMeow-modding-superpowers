@@ -14,8 +14,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <!-- 4.1 游戏根目录 -->
-    <TarkovDir Condition=" '$(TarkovDir)' == '' ">E:\Game\EFT_Offline\SPT_410\</TarkovDir>
+    <!-- 4.1 游戏根目录。SptRoot 由 tools/migration-pilots/Directory.Build.props 集中提供；
+         可覆盖：-p:TarkovDir=... 或 -p:SptRoot=... -->
+    <TarkovDir Condition=" '$(TarkovDir)' == '' ">$(SptRoot)\SPT_41x\</TarkovDir>
     <TarkovPluginsSPTDir>$(TarkovDir)BepInEx\plugins\spt\</TarkovPluginsSPTDir>
     <TarkovManagedDir>$(TarkovDir)EscapeFromTarkov_Data\Managed\</TarkovManagedDir>
     <TarkovBepInExCoreDir>$(TarkovDir)BepInEx\core\</TarkovBepInExCoreDir>

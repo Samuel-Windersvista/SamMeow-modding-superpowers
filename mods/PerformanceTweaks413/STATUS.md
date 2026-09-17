@@ -6,7 +6,8 @@
 > 对本项目**零影响**：4.1.3 客户端版本要求不变（EFT 0.16.9.40743），Assembly-CSharp 未动，
 > 补丁目标全部有效。server 侧变化（命名空间/程序集名保留）也不影响本客户端 mod。
 > 依据：`knowledge/spt-kb/curated/operations/413-fork-transition.md`。
-> 后续若迁移到 4.1.3 安装目录，仅需改 csproj 的 SPTInstallPath。
+> 后续若迁移到 4.1.3 安装目录，仅需改 `SptRoot`（`mods/Directory.Build.props` 集中提供，
+> 亦可用 `-p:SptRoot=...` / 环境变量覆盖，见 C9 决策 D2）。
 >
 > **2026-09-01 复查**：fork 活跃开发在 `4.1x-dev` 分支（4.1.3 后 +12 commits 至 08-27，
 > 全是服务端修复/行为调整；IModMetadata/ModLoader/客户端版本要求零改动）。
@@ -29,8 +30,10 @@ SPT 4.1.2（EFT 0.16.9.5）客户端性能优化 mod，3.11 版 PerformanceTweak
 - [x] 工程骨架：csproj（netstandard2.1）+ Plugin.cs 骨架，**编译 0 错误已验证**
 - [x] 4.x 生态兼容性审计（2026-08-21）：SAIN 4.x 零真冲突、QB 4.x 仍 patch CheckLookEnemy
       （P1 已用 Priority.Low）、P5 因 SAIN 登记链路默认关闭
-- [x] 第一批实施（12 项 = 10 默认开 + P2/P5 默认关），v0.2.0 编译通过并已部署到 SPT_410
+- [x] 第一批实施（12 项 = 10 默认开 + P2/P5 默认关），v0.2.0 编译通过
       （详见 CHANGELOG.md；映射表修正 1 处：P12 参数实为 IBallisticsCalculator）
+- [ ] 部署验证：**2026-09-17 核实 413 DLL 尚未部署到 `SPT_41x\BepInEx\plugins\`**
+      （原文档"已部署到 SPT_410"为误记；SPT_410 目录本机不存在，实际安装根为 SPT_41x）
 - [ ] 加载验证（下次启动游戏查 LogOutput.log 的 12/12）
 
 ## 开工顺序（照计划批次）
@@ -50,7 +53,8 @@ SPT 4.1.2（EFT 0.16.9.5）客户端性能优化 mod，3.11 版 PerformanceTweak
 - 验证：每批编译 → 免战局加载验证（-token 直启 + LogOutput.log）→ Level B 战局冒烟
 - 实测基线：AMD Adrenalin CSV 对比法（同图 A/B），验收看平均帧 + 1% low（carving 项）
 - 版本号：v0.1.0-alpha 起步，第一批落地升 v0.2.0，全部四批完成升 v1.0.0
-- 部署目标：`E:\Game\EFT_Offline\SPT_410\BepInEx\plugins\`（骨架 DLL 已可部署验证加载，但建议第一批落地后再装）
+- 部署目标：`E:\Game\EFT_Offline\SPT_41x\BepInEx\plugins\`（**待部署验证**，2026-09-17 核实尚未部署；
+  v0.3.0 全部四批已落地，可直接装）
 
 ## 文件地图
 

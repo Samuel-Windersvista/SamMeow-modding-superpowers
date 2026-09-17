@@ -10,8 +10,13 @@
     <AssemblyName>SkillsExtended</AssemblyName>
     <Version>1.6.0</Version>
 
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410\SPT_Runtime</SPTInstallPath>
+    <!-- SptRoot 由 tools/migration-pilots/Directory.Build.props 集中提供；可覆盖：-p:SPTInstallPath=... 或 -p:SptRoot=... -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SPTInstallPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- 服务端工程仅编译 src/**；client-src 由 SkillsExtendedClient.csproj 独立编译。
+         C9 复验修复：默认 glob 曾把 net472 客户端源码扫入 net10.0 服务端编译（534 错）。 -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);client-src\**;bin\**;obj\**</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>

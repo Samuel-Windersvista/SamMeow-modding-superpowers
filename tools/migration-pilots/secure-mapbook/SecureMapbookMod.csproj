@@ -10,7 +10,8 @@
     <AssemblyName>SecureMapbookMod</AssemblyName>
     <Version>1.0.0</Version>
 
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410\SPT_Runtime</SPTInstallPath>
+    <!-- SptRoot 由 tools/migration-pilots/Directory.Build.props 集中提供；可覆盖：-p:SPTInstallPath=... 或 -p:SptRoot=... -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SPTInstallPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 

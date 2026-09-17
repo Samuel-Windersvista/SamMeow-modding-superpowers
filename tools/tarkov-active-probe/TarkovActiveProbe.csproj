@@ -16,7 +16,8 @@
       返回 ProfileActivityService 跟踪的近期活跃 profileId 列表。
       SPT 5.0 runtime 根目录，命令行覆盖：dotnet build -p:SPT5Runtime="..."
     -->
-    <SPT5Runtime Condition="'$(SPT5Runtime)' == ''">E:\Game\EFT_Offline\SPT_5xx\SPT_Runtime</SPT5Runtime>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+    <SPT5Runtime Condition="'$(SPT5Runtime)' == ''">$(SptRoot)\SPT_5xx\SPT_Runtime</SPT5Runtime>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 

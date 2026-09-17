@@ -15,8 +15,9 @@
     <AssemblyName>SamMeow.PerformanceTweaks413</AssemblyName>
     <Version>0.3.0</Version>
 
-    <!-- SPT 4.1.5 安装根目录（含 EscapeFromTarkov.exe）。可命令行覆盖：-p:SPTInstallPath="..." -->
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_41x</SPTInstallPath>
+    <!-- SPT 4.1.5 安装根目录（含 EscapeFromTarkov.exe）。
+         SptRoot 由 mods/Directory.Build.props 集中提供；可覆盖：-p:SPTInstallPath="..." 或 -p:SptRoot="..." -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x</SPTInstallPath>
 
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
@@ -59,8 +60,9 @@
     </Reference>
   </ItemGroup>
 
-  <!-- 构建后把 DLL 复制到 release/，方便直接拿取部署到 BepInEx/plugins/ -->
-  <Target Name="CopyToRelease" AfterTargets="Build">
+  <!-- 构建后把 DLL 复制到 release/，方便直接拿取部署到 BepInEx/plugins/。
+       验证脚本以 -p:SkipCopyToRelease=true 关闭本步骤，避免污染已入仓 DLL（C9 D3）。 -->
+  <Target Name="CopyToRelease" AfterTargets="Build" Condition="'$(SkipCopyToRelease)' != 'true'">
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)release" />
   </Target>
 

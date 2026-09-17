@@ -44,7 +44,7 @@
 
 ## 续接建议
 
-- 实机验证路径：`E:\Game\EFT_Offline\SPT_410\` 启动 SPT，BepInEx 控制台确认 SkillsExtended 加载 + Harmony patch 绑定
+- 实机验证路径：`E:\Game\EFT_Offline\SPT_41x\` 启动 SPT，BepInEx 控制台确认 SkillsExtended 加载 + Harmony patch 绑定
 - 高优先级实机点：DoorActionPatch 目标方法名（GetAvailableActions 有 20+ 重载，AccessTools.Method 按参数类型精确匹配已过编译，运行时需确认绑定成功）
 - 原 3.11 源码：`E:\云文件\GitHub\SamMeow-Skills-Extended\Plugin\`
 - 混淆名映射方法论文档：`knowledge/spt-kb/curated/migration/client-obfuscation-mapping-skills-extended.md`

@@ -15,7 +15,8 @@
       用于 3.11->4.1 迁移的数据库状态 diff（干净 4.1 vs 带 mod 4.1）。
       SPT 安装根目录，命令行覆盖：dotnet build -p:SPTInstallPath="..."
     -->
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410\SPT_Runtime</SPTInstallPath>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SPTInstallPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 

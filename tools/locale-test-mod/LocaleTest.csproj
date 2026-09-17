@@ -11,7 +11,8 @@
     <Version>0.1.0</Version>
 
     <!-- locale 阻断器验证 mod：用 AddTransformer 修改 locale，验证是否生效 -->
-    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">E:\Game\EFT_Offline\SPT_410\SPT_Runtime</SPTInstallPath>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SPTInstallPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 

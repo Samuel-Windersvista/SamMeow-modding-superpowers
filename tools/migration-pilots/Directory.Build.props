@@ -1,0 +1,17 @@
+<Project>
+
+  <!--
+    SPT 安装根目录集中配置（C9 安全子集 · 决策 D2）。
+    仅作用于 tools/migration-pilots/ 子树，避免根级 props 干扰 tools/ 下其他工程。
+    默认值按本机实际布局校正；下列任一方式均可覆盖：
+      - 命令行：dotnet build -p:SptRoot="D:\SPT"
+      - 环境变量：set SptRoot=D:\SPT
+    各 csproj 以 $(SptRoot)\<子目录> 派生自身引用路径
+    （服务端运行时：$(SptRoot)\SPT_41x\SPT_Runtime；客户端根：$(SptRoot)\SPT_41x\）。
+    路径缺失时引用解析失败 → 构建响亮失败（不静默降级）。
+  -->
+  <PropertyGroup>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+  </PropertyGroup>
+
+</Project>

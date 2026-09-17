@@ -31,9 +31,10 @@
     <!--
       安装根。标准名 SPTInstallPath 与 5.0 惯例别名 SPT5Path 互为别名，二者都可命令行覆盖：
         dotnet build -p:SPTInstallPath="..."   或   dotnet build -p:SPT5Path="..."
+      默认根 SptRoot 由 mods/Directory.Build.props 集中提供，亦可 -p:SptRoot="..." 覆盖。
     -->
     <SPT5Path Condition="'$(SPT5Path)' == '' AND '$(SPTInstallPath)' != ''">$(SPTInstallPath)</SPT5Path>
-    <SPT5Path Condition="'$(SPT5Path)' == ''">E:\Game\EFT_Offline\SPT_5xx</SPT5Path>
+    <SPT5Path Condition="'$(SPT5Path)' == ''">$(SptRoot)\SPT_5xx</SPT5Path>
     <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SPT5Path)</SPTInstallPath>
     <BepInExCore>$(SPT5Path)\BepInEx\core</BepInExCore>
     <Interop>$(SPT5Path)\BepInEx\interop</Interop>

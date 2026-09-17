@@ -16,8 +16,9 @@
     <Version>1.0.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 
-    <!-- SPT 5.0 客户端安装根（含 EscapeFromTarkov.exe）。可覆盖：-p:SPT5Path=... -->
-    <SPT5Path Condition="'$(SPT5Path)' == ''">E:\Game\EFT_Offline\SPT_5xx</SPT5Path>
+    <!-- SPT 5.0 客户端安装根（含 EscapeFromTarkov.exe）。
+         SptRoot 由 mods/Directory.Build.props 集中提供；可覆盖：-p:SPT5Path=... 或 -p:SptRoot=... -->
+    <SPT5Path Condition="'$(SPT5Path)' == ''">$(SptRoot)\SPT_5xx</SPT5Path>
   </PropertyGroup>
 
   <ItemGroup>

@@ -228,3 +228,24 @@
 - 规格：`.scratch/c10-bridge-contract/spec.md`（CLOSED）。
 - **提交口径**：C10 单批提交（建议 `feat(bridge-contract): single-source cross-language contract + shared golden fixtures (C10)`）。
 - 全部变更未提交。
+
+## 2026-09-17 — 环境事件：BGS 幽灵物化根因定位（WPS 云同步回写）
+
+- **根因（决定性证据）**：`E:\云文件\` 为 WPS Cloud 活跃同步文件夹（注册表 `HKCU:\Software\Kingsoft\wpscloud\usercenter\qingsyncfolderconfig\wpsoffice\plugins\qing\205625147\syncfolderinfodrive\E650A46D2396424CBFD12D844D49F213`：`originPath=E:\云文件`、`status=1`）；仓库位于同步范围内。本地清理 BGS 残余后，云端旧副本（`.mcp.json` + `plugins/bgs-modding-superpowers/`）被同步引擎回写本地 → 幽灵复发（09-16 22:24 / 09-17 01:06 / 深挖期间共三次）。**非** OpenCode / OMO / Claude 插件物化（已逐一排除）。
+- **同源链**：复发 `.mcp.json` SHA256 `034AE7B4…` 与 `.slim/worktrees/ticket-07/.mcp.json` 及旧备份 zip 逐字节一致。
+- **处置**：本轮再次清理（verify-layout 恢复绿）；**根治在云端侧**——(a) 仓库移出 WPS 同步范围（推荐；兼防 .git 被云同步扰动的数据完整性风险）或 (b) WPS Cloud 网页端删除 BGS 残余云端副本后再本地清理。**未根治前预期周期性复发**。
+- **附带发现**：`C:\Users\Winde\.config\opencode` 亦在 WPS 同步范围（旧配置同样可能被云端恢复）。
+- **历史澄清**：`47144a12`（Sep 14）曾将现象归因"OpenCode 插件每次会话启动物化"（不变量放宽为"不得入库"）；C4（Sep 16）恢复"必须缺席"不变量——根因现更正为外部云同步服务行为。
+- **后续（同日）**：用户已自行处置 WPS 云同步问题；编排者复核——无幽灵、verify-layout 绿。观察期：若复发（WPS 注册表中 `E:\云文件` 仍为同步条目）则按上述选项再处置并报告。
+
+## 2026-09-17 — C9 游戏侧路径可移植化 + pilots 退出机制（P3 安全子集）
+
+- **路径可移植化（已交付，未提交）**：`mods/Directory.Build.props` + `tools/migration-pilots/Directory.Build.props` 集中 `SptRoot`（`-p:`/env 可覆盖 + 缺失响亮失败）；11 个 csproj 改造 + 修复轮延伸（3 tools csproj 内联 + `tarkov-active-probe` csproj + `tarkov-runtime-bridge` props）；`SPT_410`（不存在）→ 实际 `SPT_41x`；413 CHANGELOG/STATUS/PROGRESS 部署陈述纠偏（"已部署"→"待部署验证"；实测 `SPT_41x\BepInEx\plugins` 为空）。
+- **pilots 退出机制**：`tools/migration-pilots/{ett,secure-mapbook,skills-extended}/STATUS.md`（状态/owner/验证状态/关闭条件/归档去向 `examples/`）；skills-extended 服务端 csproj glob 修复（client-src 排除；**534 错→0 错**，1 既有 CS9113 警告）。
+- **release DLL 可复现验证**：`scripts/verify-mod-release-dlls.ps1`（重建 + hash 对照 + 防污染断言）；实测 **DRIFT×2 = 元数据级**（311 `47E50BE3…` / 413 `F02BB894…`；签名集 diff=0、同尺寸、~0.6% 字节差、确定性重建）→ **裁决不替换**（签名级工具化 = 后续项）。
+- **双轴评审 + 修复轮**：oracle ×2 无 BLOCKER（F1-F6 / R1-R6）；修复轮全落地（体积转录、glob 修复、措辞、同类路径延伸）；CRLF 事故（12 文件误伤）经双轴复核闭环（XML 15/15、首字符完好、4 文件 LF 纯告警）。
+- **A5 分类依据（R2）**：`SPT_410` 29 命中全部为 Markdown——历史文档（wayfinder/分析报告/计划）与 KB curated 运行参考（game-data-ref×4 / migration×3 / sources×1）；`.scratch/c6-state-authority/spec.md:30` 已含"路径更正（不再写 SPT_410）"工单。
+- **验证**：bootstrap **12/12**；全部受影响工程构建 exit 0；覆盖链实测（`-p:SptRoot`/env）；release DLL 与 HEAD 逐字节一致（防污染成立）。
+- **记录项（不修）**：默认根定义点 6 处（漂移风险；后续可评估合并）；签名级 DLL 比较工具化；共享核心抽取（D5 延后，触发 = 实测期结束 + 需求）。
+- **提交口径**：C9 单批提交（建议 `chore(game-assets): portable SptRoot paths + pilot exit markers + release DLL verification (C9)`）；**注**：`docs/dev-log.md` 混含 WPS 环境条目（C9 前预存）与 C9 条目——可拆可合。
+- 全部变更未提交。
