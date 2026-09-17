@@ -1,0 +1,1280 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>项目现状说明 — SamMeow-modding-superpowers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "base",
+    securityLevel: "loose",
+    fontFamily: "'IBM Plex Mono','Cascadia Mono',Consolas,'Microsoft YaHei',monospace",
+    themeVariables: {
+      primaryColor: "#ffffff",
+      primaryTextColor: "#191817",
+      primaryBorderColor: "#cfc8bd",
+      lineColor: "#9a9187",
+      fontSize: "12.5px"
+    },
+    flowchart: { curve: "basis", htmlLabels: true, padding: 10, nodeSpacing: 28, rankSpacing: 34 }
+  });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f5f1; --card:#ffffff; --line:#e2ddd5; --line-soft:#eeeae4;
+    --ink:#191817; --muted:#6b6560;
+    --accent:#166534; --accent-soft:#ecfdf5;
+    --amber:#b45309; --amber-soft:#fffbeb;
+    --red:#b91c1c; --red-soft:#fef2f2;
+    --slate:#475569; --slate-soft:#f1f5f9;
+    --term:#0e1311; --term-fg:#86e0aa; --term-dim:#4d6b5b;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'IBM Plex Sans','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:'Noto Serif SC','Songti SC',Georgia,serif}
+  .mono{font-family:'IBM Plex Mono','Cascadia Mono',Consolas,monospace}
+  .lbl{font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9a9187}
+  .term-panel{background:var(--term);color:var(--term-fg);font-family:'IBM Plex Mono',Consolas,monospace}
+  .term-panel .dim{color:var(--term-dim)}
+
+  .badge{display:inline-flex;align-items:center;gap:.4rem;border-radius:9999px;padding:.14rem .62rem;font-size:11px;font-weight:600;border:1px solid;line-height:1.5}
+  .badge .op{font-family:'IBM Plex Mono',Consolas,monospace;font-weight:400;font-size:10px;opacity:.7}
+  .badge-strong{background:var(--accent-soft);border-color:#a7f3d0;color:#065f46}
+  .badge-explore{background:var(--amber-soft);border-color:#fde68a;color:#92400e}
+  .badge-spec{background:var(--slate-soft);border-color:#cbd5e1;color:#475569}
+  /* 新增：已交付徽章 —— 实心绿，报告核心状态 */
+  .badge-done{background:var(--accent);border-color:var(--accent);color:#ecfdf5}
+  .badge-done .op{color:#a7f3d0}
+  .badge-done-soft{background:var(--accent-soft);border-color:#6ee7b7;color:#065f46}
+  .tag{display:inline-flex;align-items:center;gap:.35rem;border-radius:4px;padding:.14rem .5rem;font-size:10.5px;font-family:'IBM Plex Mono',Consolas,monospace;background:#f5f3ef;border:1px solid var(--line);color:#6b6560}
+  .tag-term{background:var(--term);border-color:var(--term);color:var(--term-fg)}
+
+  .dot{width:9px;height:9px;border-radius:9999px;display:inline-block;flex:none}
+  .dot-ok{background:#059669} .dot-warn{background:#d97706} .dot-fail{background:#dc2626}
+
+  .filechip{font-family:'IBM Plex Mono',Consolas,monospace;font-size:10.5px;background:#f8f7f4;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:#4b5563;display:inline-block;word-break:break-all}
+  .filechip-ok{background:var(--accent-soft);border-color:#a7f3d0;color:#14532d}
+
+  /* before / after */
+  .ba{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:.65rem;overflow:hidden;background:#fff}
+  .ba>div{padding:14px 16px;min-height:230px;display:flex;flex-direction:column}
+  .ba>div:first-child{border-right:1px solid var(--line);background:#fbfaf7}
+  .ba-h{display:flex;align-items:center;gap:.5rem;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+  .ba-h .pill{border-radius:3px;padding:1px 5px;border:1px solid}
+  .ba-before .ba-h{color:#9a9187} .ba-before .ba-h .pill{border-color:#e2ddd5;background:#f3f1ec}
+  .ba-after .ba-h{color:#166534} .ba-after .ba-h .pill{border-color:#a7f3d0;background:#ecfdf5}
+  .ba-body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px}
+
+  .node{border:1px solid #d6d0c7;background:#fff;border-radius:5px;padding:4px 7px;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;line-height:1.45;color:#3f3a35}
+  .node-dim{background:#f4f2ee;color:#7a736c;border-color:#e5e0d8}
+  .node-bad{background:var(--red-soft);border-color:#fca5a5;color:#7f1d1d}
+  .node-warn{background:var(--amber-soft);border-color:#fcd34d;color:#78350f}
+  .node-ok{background:var(--accent-soft);border-color:#86efac;color:#14532d}
+  .node-deep{background:var(--term);border-color:var(--term);color:var(--term-fg)}
+  .node-thin{border-style:dashed;background:#fff}
+
+  .vline{width:1px;height:12px;background:#cfc8bd;margin:0 auto}
+  .tri-d{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:6px solid #cfc8bd;margin:0 auto}
+  .tri-d.bad{border-top-color:#dc2626} .tri-d.ok{border-top-color:#16a34a}
+  .hline{height:1px;background:#cfc8bd;flex:1}
+  .tri-r{width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #cfc8bd}
+
+  .stack{display:flex;flex-direction:column;gap:5px}
+  .row{display:flex;align-items:center;gap:6px}
+  .mini{font-family:'IBM Plex Mono',Consolas,monospace;font-size:9.5px;color:#9a9187;letter-spacing:.06em}
+  .note{font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;color:#8a8279}
+  .note-red{color:#b91c1c} .note-green{color:#15803d}
+
+  .wins li{position:relative;padding-left:14px;font-size:12.5px;color:#3f3a35;line-height:1.75}
+  .wins li:before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;background:#16a34a;border-radius:9999px}
+
+  /* 新增：交付证据行 */
+  .evid{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+  .evid .k{font-family:'IBM Plex Mono',Consolas,monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a9187;white-space:nowrap}
+
+  table.t{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.t th{text-align:left;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9a9187;font-weight:500;padding:8px 10px;border-bottom:1px solid var(--line)}
+  table.t td{padding:9px 10px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  table.t tr:last-child td{border-bottom:0}
+  table.t tbody tr:hover{background:#fbfaf7}
+
+  .mermaid-wrap{background:#fff;border:1px solid var(--line);border-radius:.65rem;padding:16px;overflow-x:auto}
+  .mermaid-slot{flex:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .mermaid{display:flex;justify-content:center}
+
+  .nav-pill{display:inline-block;padding:3px 9px;border-radius:9999px;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10.5px;color:#6b6560;border:1px solid transparent;white-space:nowrap}
+  .nav-pill:hover{background:#fff;border-color:var(--line);color:#166534}
+  .cand-nav{display:inline-block;padding:3px 8px;border-radius:4px;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10.5px;color:#6b6560;border:1px solid var(--line);background:#fff}
+  .cand-nav:hover{border-color:#86efac;color:#166534}
+  .grp-nav{font-family:'IBM Plex Mono',Consolas,monospace;font-size:9.5px;color:#b0a89f;letter-spacing:.14em;padding:0 4px}
+  ::selection{background:#bbf7d0}
+
+  @media (max-width:720px){
+    .ba{grid-template-columns:1fr}
+    .ba>div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  }
+</style>
+</head>
+<body id="top">
+
+<!-- ============ HEADER ============ -->
+<header class="term-panel">
+  <div class="max-w-6xl mx-auto px-6 py-8">
+    <div class="flex items-center justify-between text-[10.5px] tracking-widest dim border-b border-[#1d2a23] pb-3">
+      <span>ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL &nbsp;/&nbsp; PROJECT STATUS</span>
+      <span>SERIAL VTC-2077-OC-4111</span>
+    </div>
+
+    <div class="mt-7 flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <div class="text-[11px] tracking-[0.25em] dim">STATUS REPORT &nbsp;·&nbsp; P0-P3 全量交付</div>
+        <h1 class="serif text-4xl md:text-5xl text-[#e8f5ec] mt-3 leading-tight">SamMeow-modding-superpowers</h1>
+        <p class="mt-3 text-[13px] dim max-w-3xl leading-relaxed">
+          SPT 离线塔科夫 mod 开发与整合包策展 agent 工具包 &nbsp;·&nbsp; OpenCode 插件 + 3 台 MCP + 局内桥 + MO2 控制面 + 知识库 + Modding Standard
+        </p>
+      </div>
+      <div class="text-right text-[11px] leading-6 dim">
+        <div>DATE &nbsp;<span class="text-[#c9e8d5]">2026-09-17</span></div>
+        <div>STATUS &nbsp;<span class="text-[#c9e8d5]">C1-C10 全部已交付</span></div>
+        <div>BASELINE &nbsp;<span class="text-[#c9e8d5]">组件 0.2.0 · wire 协议 v1</span></div>
+      </div>
+    </div>
+
+    <div class="mt-7 flex flex-wrap items-center gap-x-7 gap-y-2 text-[10.5px] dim border-t border-[#1d2a23] pt-4">
+      <span class="tracking-widest">LEGEND</span>
+      <span class="flex items-center gap-2"><span class="inline-block h-3 w-6 rounded-[3px] border border-[#3c5348] bg-[#152019]"></span>深色块 = 交付后收敛核心</span>
+      <span class="flex items-center gap-2"><span class="inline-block h-3 w-6 rounded-[3px] border border-[#86efac] bg-[#ecfdf5]"></span>绿色块 = 已交付态</span>
+      <span class="flex items-center gap-2"><span class="inline-block h-3 w-6 rounded-[3px] border border-[#fca5a5] bg-[#fef2f2]"></span>红/黄块 = 交付前问题态（before 侧）</span>
+      <span class="flex items-center gap-2"><span class="inline-block h-3 w-6 rounded-[3px] border border-dashed border-[#e2ddd5] bg-white"></span>虚线 = 接缝（已闭合）</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NAV ============ -->
+<nav class="sticky top-0 z-40 border-b border-[var(--line)] bg-[#f7f5f1]/92 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center gap-x-2 gap-y-1.5">
+    <a href="#structure" class="nav-pill">&gt; §1 定位与结构</a>
+    <span class="text-[var(--line)]">|</span>
+    <a href="#ledger" class="nav-pill">&gt; §2 交付台账</a>
+    <span class="grp-nav">P0</span>
+    <a href="#c1" class="cand-nav">C1</a><a href="#c6" class="cand-nav">C6</a><a href="#c4" class="cand-nav">C4</a><a href="#c3" class="cand-nav">C3</a>
+    <span class="grp-nav">P1</span>
+    <a href="#c2" class="cand-nav">C2</a><a href="#c7" class="cand-nav">C7</a><a href="#c8" class="cand-nav">C8</a><a href="#c5" class="cand-nav">C5</a>
+    <span class="grp-nav">P2</span>
+    <a href="#c10" class="cand-nav">C10</a>
+    <span class="grp-nav">P3</span>
+    <a href="#c9" class="cand-nav">C9</a>
+    <span class="text-[var(--line)]">|</span>
+    <a href="#gates" class="nav-pill">&gt; §3 质量门</a>
+    <a href="#roadmap" class="nav-pill">&gt; §4 路线图</a>
+    <a href="#followups" class="nav-pill">&gt; §5 记录项</a>
+    <a href="#env" class="nav-pill">&gt; §6 环境</a>
+  </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+<!-- ============ §1 ============ -->
+<section id="structure" class="scroll-mt-20 space-y-8">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§1</span>
+    <h2 class="serif text-2xl">项目定位与结构</h2>
+  </div>
+
+  <p class="text-[15px] leading-8 text-[#332f2b] border-l-2 border-[#166534] pl-5 max-w-4xl">
+    面向 SPT（离线塔科夫）mod 开发与整合包自动化的 agent 插件工作区：OpenCode 插件 + 3 台 MCP + BepInEx 局内桥 + MO2 控制面 + 知识库 + Modding Standard。2026-09-16 架构审查提出的 C1-C10 十项深化候选已按 P0-P3 路线图全量交付，进入实测期。
+  </p>
+
+  <!-- component map -->
+  <div>
+    <div class="lbl mb-3">组件地图 &nbsp;/&nbsp; flowchart TB · 交付后结构</div>
+    <div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart TB
+  L1["L1 插件与技能 — .opencode/plugins/spt-modding-superpowers.js · skills/ ×15 · bootstrap 注入"]
+  L2["L2 MCP 表面 — mo2 · spt · tarkov-runtime · 3 台全挂载"]
+  L2K["L2a 共享内核 — tools/mcp-kit · 薄适配器 ×3"]
+  L2B["L2b 局内桥 — tarkov-runtime-bridge (C#) + shared/bridge-contract · wire v1"]
+  L2C["L2c MO2 控制面 — C++ 插件 + Python broker + sidecar + assets-engine"]
+  L3["L3 知识层 — knowledge/spt-kb · 221 条 · Forge 1822 mod · 4.1.5 + 5.0 双轨"]
+  L3T["L3a 模板与规范 — server / client / paired ×3 · Modding Standard 84 条 / 29 可检"]
+  L4["L4 质量门 — tests/bootstrap/verify-all.ps1 · 12 项常驻"]
+  L5["L5 游戏侧 — mods/ ×4 · tools/migration-pilots/ ×3"]
+  L1 --> L2
+  L2 --> L2K & L2B & L2C
+  L1 --> L3 --> L3T
+  L1 --> L4
+  L2B --> L5
+  L2C --> L5
+  classDef deep fill:#0e1311,stroke:#0e1311,color:#86e0aa;
+  classDef ok fill:#ecfdf5,stroke:#16a34a,color:#14532d;
+  class L1,L2,L3,L4,L5 deep
+  class L2K,L2B,L2C,L3T ok
+</pre>
+    </div>
+    <p class="note mt-2">&gt; 全部接缝已闭合：3 台 MCP 均经 mcp-kit 共享内核接线；桥与 TS 端共享契约工件；MO2 控制面独立成线。</p>
+  </div>
+
+  <!-- asset snapshot -->
+  <div>
+    <div class="lbl mb-3">组件快照 &nbsp;/&nbsp; 均为核验数字（2026-09-17）</div>
+    <div class="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <table class="t">
+        <thead><tr><th style="width:170px">维度</th><th style="width:230px">数字</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td class="mono text-[11.5px]">skills</td><td class="mono font-semibold text-[13px]">15</td><td class="text-[#5b554f]">技能数口径已归一（C6）；bootstrap 自动注入首条用户消息</td></tr>
+          <tr><td class="mono text-[11.5px]">插件入口</td><td class="mono font-semibold text-[13px]">149 行</td><td class="text-[#5b554f]">.opencode/plugins/spt-modding-superpowers.js；config.mcp 3 台（C4）</td></tr>
+          <tr><td class="mono text-[11.5px]">MCP 服务器</td><td class="mono font-semibold text-[13px]">3 台 + mcp-kit</td><td class="text-[#5b554f]">spt / mo2 / tarkov-runtime；共享内核 tools/mcp-kit（C2）</td></tr>
+          <tr><td class="mono text-[11.5px]">局内桥</td><td class="mono font-semibold text-[13px]">BepInEx C# + 契约工件</td><td class="text-[#5b554f]">shared/bridge-contract/；wire 协议 v1；127.0.0.1:49777（C10）</td></tr>
+          <tr><td class="mono text-[11.5px]">MO2 控制面</td><td class="mono font-semibold text-[13px]">C++ 插件 + broker + sidecar</td><td class="text-[#5b554f]">tools/mo2-control-plane；assets-engine 文件冲突解析</td></tr>
+          <tr><td class="mono text-[11.5px]">KB index</td><td class="mono font-semibold text-[13px]">221 条</td><td class="text-[#5b554f]">index.json 契约 v2（C7）；wiki 47 + curated + Forge 归档 1822 mod</td></tr>
+          <tr><td class="mono text-[11.5px]">模板</td><td class="mono font-semibold text-[13px]">3 族</td><td class="text-[#5b554f]">server / client / paired（含版本联动）</td></tr>
+          <tr><td class="mono text-[11.5px]">Modding Standard</td><td class="mono font-semibold text-[13px]">84 条 / 13 维度</td><td class="text-[#5b554f]">rules.json 机读注册表 · 29 条可检（C8）</td></tr>
+          <tr><td class="mono text-[11.5px]">质量门</td><td class="mono font-semibold text-[13px]">12 项</td><td class="text-[#5b554f]">tests/bootstrap/verify-all.ps1 常驻检查</td></tr>
+          <tr><td class="mono text-[11.5px]">游戏侧</td><td class="mono font-semibold text-[13px]">4 mod + 3 试点</td><td class="text-[#5b554f]">PerformanceTweaks（3.11 + 413）、SPT5 ×2；migration-pilots 带退出标记（C9）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 ============ -->
+<section id="ledger" class="scroll-mt-20 space-y-10">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§2</span>
+    <h2 class="serif text-2xl">交付台账</h2>
+    <span class="mono text-[11px] text-[#9a9187]">10 项 · 全部已交付 · 按 P0-P3 分组</span>
+  </div>
+
+  <!-- ===== P0 ===== -->
+  <div class="pt-2">
+    <div class="flex items-center gap-4 mb-5">
+      <span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P0</span>
+      <h3 class="serif text-lg">信任面修复</h3>
+      <div class="flex-1 border-t border-dashed border-[var(--line)]"></div>
+      <span class="mono text-[10.5px] text-[#9a9187]">C1 · C6 · C4 · C3</span>
+    </div>
+    <div class="space-y-6">
+
+    <!-- C1 -->
+    <article id="c1" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C1</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">知识层路径契约</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P0 · 信任面修复</span>
+            <span class="tag">outcome · kb_query 0 &rarr; 50 条</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">shared/runtime-layout.mjs</span>
+          <span class="filechip">tools/spt-mcp/src/index.ts</span>
+          <span class="filechip">.opencode/plugins/spt-modding-superpowers.js</span>
+          <span class="filechip">tests/bootstrap/verify-layout.ps1</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>链路逐级失真</span></div>
+            <div class="ba-body">
+              <div class="stack">
+                <div class="node node-bad text-center">插件 :90 设 SPT_KB_ROOT</div>
+                <div class="tri-d bad"></div>
+                <div class="node node-bad text-center">坏 env · 指向仓库上两级 · 路径不存在</div>
+                <div class="tri-d bad"></div>
+                <div class="node node-warn text-center">resolveKbRoot() 无条件信任 env</div>
+                <div class="tri-d bad"></div>
+                <div class="node node-warn text-center">loadJson() 吞异常 · 返回 null</div>
+                <div class="tri-d bad"></div>
+                <div class="node node-bad text-center">工具呈现「0 条匹配」· 无报错</div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">失败是静默的 —— 比崩溃更糟</span></div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>单一解析器 + 响亮失败</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-2">shared/runtime-layout.mjs · 唯一解析点<div class="text-[9.5px] opacity-80 mt-0.5">插件与 spt-mcp 双端导入 · 逐资源 path/source/ok/reason</div></div>
+              <div class="grid grid-cols-2 gap-3 mt-1">
+                <div class="stack">
+                  <div class="tri-d ok" style="transform:rotate(180deg)"></div>
+                  <div class="node node-ok text-center py-2">spt_health<div class="text-[9px] opacity-70">8 工具面 · 完整报告</div></div>
+                </div>
+                <div class="stack">
+                  <div class="tri-d ok" style="transform:rotate(180deg)"></div>
+                  <div class="node node-ok text-center py-2">kb_unavailable<div class="text-[9px] opacity-70">结构化降级</div></div>
+                </div>
+              </div>
+              <div class="node node-ok text-center">env 显式无效即报错 · 不回退；插件不再注入路径 env<div class="text-[9px] opacity-70">便携包携带知识层（index + curated + wiki）</div></div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">验收三项全过：kb_query 0→50 · 伪造 env 响亮报错 · spt_health 完整报告</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">e9ce84f3（P0 批次）</span>
+          <span class="k">SPEC</span><span class="filechip">docs/dev-log.md · C1 条目</span>
+          <span class="k">ADR</span><span class="filechip">docs/adr/0008-runtime-layout-resolution.md</span>
+          <span class="k">TEST</span><span class="filechip filechip-ok">72 绿 + 5 条件跳过</span>
+          <span class="k">LIVE</span><span class="filechip filechip-ok">kb_query 0 &rarr; 50 条</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C6 -->
+    <article id="c6" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C6</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">状态权威归一</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P0 · 信任面修复</span>
+            <span class="tag">outcome · docs/README.md 26 项状态标签</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">docs/README.md</span>
+          <span class="filechip filechip-ok">scripts/verify-doc-stats.ps1</span>
+          <span class="filechip">docs/wayfinder/MAP.md</span>
+          <span class="filechip">docs/全局路线与进度报告.md</span>
+          <span class="filechip">knowledge/spt-kb/VERSIONS.md</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>四套并行 + 漂移数字</span></div>
+            <div class="ba-body">
+              <div class="stack gap-0">
+                <div class="node node-dim" style="margin-left:0">wayfinder · docs/wayfinder/MAP.md（#9 停 2026-08-07）</div>
+                <div class="node node-dim" style="margin-left:24px;margin-top:-1px">.scratch/ · 6 slug、约 60 票（完成态未归档）</div>
+                <div class="node node-dim" style="margin-left:10px;margin-top:-1px">docs/dev-log.md · 事实权威（更新至 09-15）</div>
+                <div class="node node-dim" style="margin-left:34px;margin-top:-1px">RELEASE-NOTES.md</div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">权威重叠 —— agent 每次都要重新推导状态</span></div>
+              <div class="mt-1 grid grid-cols-2 gap-1.5">
+                <div class="node node-bad">KB 条目 106 <span class="opacity-60">vs</span> 221</div>
+                <div class="node node-bad">技能数 14 / 15 / 16</div>
+                <div class="node node-bad">工具描述 71 <span class="opacity-60">vs</span> 221</div>
+                <div class="node node-bad">VERSIONS 4.1.2 <span class="opacity-60">vs</span> README 4.1.5</div>
+              </div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>权威地图 + 机检不变量</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-2">docs/README.md · 总索引（26 项状态标签）<div class="text-[9.5px] opacity-80 mt-0.5">dev-log=状态时间线 · .scratch=在办工作 · wayfinder=已决决策 · RELEASE-NOTES=发布摘要</div></div>
+              <div class="row"><span class="hline"></span></div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-ok">HISTORICAL 横幅<div class="text-[9px] opacity-70">wayfinder MAP · 全局路线报告</div></div>
+                <div class="node node-ok">8 个 .scratch slug<div class="text-[9px] opacity-70">进展状态行</div></div>
+              </div>
+              <div class="node node-ok text-center">verify-doc-stats.ps1 · 数字锚点机检<div class="text-[9px] opacity-70">skills 15 / index.json 221 实测断言 · 接入 bootstrap</div></div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">9/9 全绿 · 漂移修正：幽灵技能行移除 · 106 定性化 · VERSIONS 环境段实测更新</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">e9ce84f3（P0 批次）</span>
+          <span class="k">SPEC</span><span class="filechip">docs/dev-log.md · C6 条目</span>
+          <span class="k">GATE</span><span class="filechip filechip-ok">verify-doc-stats 接入 bootstrap · 9/9</span>
+          <span class="k">OUTPUT</span><span class="filechip filechip-ok">docs/README.md 总索引 26 项标签</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C4 -->
+    <article id="c4" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C4</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">会话接线契约</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P0 · 信任面修复</span>
+            <span class="tag">outcome · config.mcp 2 &rarr; 3 台</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">docs/internal/specs/session-wiring-contract.md</span>
+          <span class="filechip">.opencode/plugins/spt-modding-superpowers.js</span>
+          <span class="filechip">tests/bootstrap/verify-layout.ps1</span>
+          <span class="filechip">tests/bootstrap/verify-mcp-surface.ps1</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>四份互斥声明</span></div>
+            <div class="ba-body">
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-thin"><div class="text-[9px] text-[#9a9187]">声明 1 · 插件实况</div>只注册 skills 路径<br>config.mcp = mo2 + spt<br>注入 bootstrap · 不物化文件</div>
+                <div class="node node-thin"><div class="text-[9px] text-[#9a9187]">声明 2 · .gitignore + verify-layout</div>断言 hooks/ · .mcp.json<br>.claude-plugin/ · .codex-plugin/<br>.agents/ 会话启动被物化</div>
+                <div class="node node-bad col-span-2"><div class="text-[9px] text-[#b91c1c]">声明 3 · 根目录 .mcp.json（BGS 时代残留）</div>注册 5 服务器全部指向旧树；tarkov 路径在旧树中不存在</div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">tarkov-runtime-MCP 唯一注册处是 OpenCode 不消费的陈旧文件 &rarr; 实际未挂载</span></div>
+              <div class="row justify-center"><span class="mono text-[10px] text-[#9a9187]">四个物化目录全为空；残留树含 12 个 BGS 时代工具</span></div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>一份契约 + 真实断言</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-2">session-wiring-contract.md · 单一权威<div class="text-[9.5px] opacity-80 mt-0.5">状态：现行 · 2026-09-16 建立</div></div>
+              <div class="grid grid-cols-2 gap-2 mt-1">
+                <div class="node node-ok">tarkov 挂载<div class="text-[9px] opacity-80">config.mcp 2 &rarr; 3 台 · timeout 360000</div></div>
+                <div class="node node-ok">6 路径清理<div class="text-[9px] opacity-80">陈旧 .mcp.json · bgs 树 94.8MB · 4 空目录</div></div>
+              </div>
+              <div class="node node-ok text-center">verify-layout 恢复 absent 断言（红-绿证明）· verify-mcp-surface 3 台断言<div class="text-[9px] opacity-70">便携包自包含修复：7.24 &rarr; 40.57MB · 三台 serverInfo 均返回</div></div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">运行面与声明面一致 · 新会话不再携带幻觉路径</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">e9ce84f3（P0 批次）</span>
+          <span class="k">SPEC</span><span class="filechip">docs/internal/specs/session-wiring-contract.md（现行）</span>
+          <span class="k">VERIFY</span><span class="filechip filechip-ok">bootstrap 9/9 · 便携端到端冒烟三台 serverInfo</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C3 -->
+    <article id="c3" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C3</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">mo2-mcp schema 归一化抽离</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P0 · 信任面修复</span>
+            <span class="tag">outcome · index.ts 456 &rarr; 167 行</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip">tools/mo2-mcp/src/index.ts</span>
+          <span class="filechip filechip-ok">tools/mo2-mcp/src/schema-normalizer.ts</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>一个入口承担三件事</span></div>
+            <div class="ba-body">
+              <div class="flex gap-3 items-stretch justify-center">
+                <div class="flex flex-col w-[46%]">
+                  <div class="mini mb-1">456 行入口文件</div>
+                  <div class="node node-dim text-center" style="flex:48;display:flex;flex-direction:column;justify-content:center">bootstrap + 接线<div class="text-[9px] opacity-70 mt-0.5">约 222 行</div></div>
+                  <div class="node node-bad text-center" style="flex:52;display:flex;flex-direction:column;justify-content:center;margin-top:4px">normalizeMcpInputSchema<div class="text-[9px] opacity-80 mt-0.5">234 行 · BUG-13 / BUG-27</div><div class="text-[9px] opacity-80">discriminated-union flatten</div></div>
+                </div>
+                <div class="flex flex-col justify-center w-[46%]">
+                  <div class="node node-bad text-center py-3">仓库中 bug 密度最高的逻辑<div class="text-[9px] opacity-80 mt-1">没有可测边界</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>接线 / 归一化分离</span></div>
+            <div class="ba-body">
+              <div class="flex gap-3 items-stretch justify-center">
+                <div class="flex flex-col w-[46%]">
+                  <div class="mini mb-1">入口只留接线</div>
+                  <div class="node node-dim text-center py-6">index.ts<div class="text-[9px] opacity-70 mt-0.5">456 &rarr; 167 行</div></div>
+                </div>
+                <div class="flex flex-col w-[46%]">
+                  <div class="mini mb-1">新模块</div>
+                  <div class="node node-deep text-center py-5">schema-normalizer.ts<div class="text-[9.5px] opacity-80 mt-1">289 行逐行 byte-for-byte 搬移</div></div>
+                </div>
+              </div>
+              <div class="row justify-center pt-2"><span class="mono text-[10px] text-[#15803d]">git diff 仅 2 文件（+2 / -291）· 510 passed / 19 skipped（normalize 专项 11/11）</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">e9ce84f3（P0 批次收官）</span>
+          <span class="k">SPEC</span><span class="filechip">docs/dev-log.md · C3 条目</span>
+          <span class="k">VERIFY</span><span class="filechip filechip-ok">tsc --noEmit 0 · mo2-mcp 510 passed / 19 skipped</span>
+        </div>
+      </footer>
+    </article>
+
+    </div>
+  </div>
+
+  <!-- ===== P1 ===== -->
+  <div class="pt-4">
+    <div class="flex items-center gap-4 mb-5">
+      <span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P1</span>
+      <h3 class="serif text-lg">杠杆</h3>
+      <div class="flex-1 border-t border-dashed border-[var(--line)]"></div>
+      <span class="mono text-[10.5px] text-[#9a9187]">C2 · C7 · C8 · C5</span>
+    </div>
+    <div class="space-y-6">
+
+    <!-- C2 -->
+    <article id="c2" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C2</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">三台 MCP 共享内核（mcp-kit）</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P1 · 杠杆</span>
+            <span class="tag">outcome · 三台薄适配器 · SDK 统一 ^1.0.0</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">tools/mcp-kit</span>
+          <span class="filechip">tools/spt-mcp/src/index.ts</span>
+          <span class="filechip">tools/tarkov-runtime-mcp/src/index.ts</span>
+          <span class="filechip">tools/mo2-mcp/src/index.ts</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>三座并行塔 · 重复块</span></div>
+            <div class="ba-body">
+              <div class="grid grid-cols-3 gap-2 items-start">
+                <div class="stack">
+                  <div class="node node-thin text-center">spt-mcp</div>
+                  <div class="node node-bad">Server</div>
+                  <div class="node node-bad">StdioTransport</div>
+                  <div class="node node-bad">schemaFor()</div>
+                  <div class="node node-bad">jsonResult()</div>
+                  <div class="node node-bad">invokedAsMain</div>
+                  <div class="node node-warn">SDK ^1.0.0</div>
+                </div>
+                <div class="stack">
+                  <div class="node node-thin text-center">tarkov-runtime-mcp</div>
+                  <div class="node node-bad">Server</div>
+                  <div class="node node-bad">StdioTransport</div>
+                  <div class="node node-bad">schemaFor()</div>
+                  <div class="node node-bad">jsonResult()</div>
+                  <div class="node node-bad">invokedAsMain</div>
+                  <div class="node node-warn">SDK ^1.0.0</div>
+                </div>
+                <div class="stack">
+                  <div class="node node-thin text-center">mo2-mcp</div>
+                  <div class="node node-bad">Server</div>
+                  <div class="node node-bad">StdioTransport</div>
+                  <div class="node node-bad">schemaFor()</div>
+                  <div class="node node-bad">jsonResult()</div>
+                  <div class="node node-bad">invokedAsMain</div>
+                  <div class="node node-warn">SDK ^0.6.0</div>
+                </div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">okEnv / errEnv / envelope 近同构三份 · SDK 版本分裂</span></div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>共享内核 + 薄适配器</span></div>
+            <div class="ba-body">
+              <div class="node node-deep py-3">
+                <div class="text-[11px]">tools/mcp-kit &nbsp;·&nbsp; 内部包</div>
+                <div class="text-[9.5px] opacity-80 mt-1">schema 管道 · envelope · result · stdio 引导 + runMain · 相对 dist 导入</div>
+              </div>
+              <div class="row"><span class="hline"></span></div>
+              <div class="grid grid-cols-3 gap-2">
+                <div class="node node-ok text-center py-2">spt-mcp<div class="text-[9px] opacity-70">薄适配器</div></div>
+                <div class="node node-ok text-center py-2">tarkov-runtime-mcp<div class="text-[9px] opacity-70">薄适配器</div></div>
+                <div class="node node-ok text-center py-2">mo2-mcp<div class="text-[9px] opacity-70">薄适配器</div></div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">SDK 统一 ^1.0.0（实装 1.30.0 · 零源码适配）· wire 审计三态逐字节零 diff</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">e9ce84f3</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c2-mcp-kit（CLOSED）</span>
+          <span class="k">TEST</span><span class="filechip filechip-ok">kit 25 · spt 73（+5 skip）· tarkov 395 · mo2 499</span>
+          <span class="k">WIRE</span><span class="filechip filechip-ok">golden pre/post/portable 三态 · 便携三台 SHA256 全等</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C7 -->
+    <article id="c7" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C7</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">KB 索引契约 v2 + 管线闭环</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P1 · 杠杆</span>
+            <span class="tag">outcome · version 过滤 169 命中</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">tools/spt-mcp/src/kb/</span>
+          <span class="filechip filechip-ok">scripts/spt-kb/validate-index.mjs</span>
+          <span class="filechip filechip-ok">scripts/spt-kb/sync-index.mjs</span>
+          <span class="filechip">knowledge/spt-kb/index.json</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>双形态 + 无校验 + 断链</span></div>
+            <div class="ba-body">
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-dim"><div class="text-[9px] text-[#9a9187]">条目形态 A · 早期</div>path / title / version / domain / topic / source</div>
+                <div class="node node-warn"><div class="text-[9px] text-[#92400e]">条目形态 B · 后期</div>上述字段 + keywords / summary</div>
+              </div>
+              <div class="node node-bad text-center">消费者必须兼容两种条目形态 —— 接口泄漏</div>
+              <div class="node node-bad text-center">version 字段字符串与数组混用 · 无 schema 校验</div>
+              <div class="row items-center gap-2">
+                <span class="node node-dim flex-1 text-center">finalize-manifest.mjs<div class="text-[9px] opacity-70">只产 Markdown MANIFEST，不写 index</div></span>
+                <span class="mono text-[14px] text-[#b91c1c]">&#10005;</span>
+                <span class="node node-dim flex-1 text-center">index.json<div class="text-[9px] opacity-70">新归档靠手工登记</div></span>
+              </div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>单形态 + validator + 闭环</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-2">契约模块 · KB_SCHEMA_VERSION = 2<div class="text-[9.5px] opacity-80 mt-0.5">validateIndex 严格 · parseIndexForQuery 结构校验 · version 防御归一</div></div>
+              <div class="tri-d ok"></div>
+              <div class="row items-center gap-2">
+                <span class="node node-ok flex-1 text-center">validate-index.mjs<div class="text-[9px] opacity-70">校验 exit 0/1/2</div></span>
+                <span class="mono text-[11px] text-[#15803d]">&rarr;</span>
+                <span class="node node-ok flex-1 text-center">sync-index.mjs<div class="text-[9px] opacity-70">upsert 幂等 + drift 报告</div></span>
+              </div>
+              <div class="node node-ok text-center">现役 bug 修复：version 过滤 internal_error &rarr; 169 命中<div class="text-[9px] opacity-70">数据迁移 v1&rarr;v2 +13/-6 · 条目集合未动</div></div>
+              <div class="row justify-center"><span class="mono text-[10px] text-[#15803d]">接口即测试面 · bootstrap 第 10 项 verify-kb-index 接入</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">9c8925d1</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c7-kb-index（CLOSED）</span>
+          <span class="k">TEST</span><span class="filechip filechip-ok">spt 98（+26）· 对抗性 24/24</span>
+          <span class="k">LIVE</span><span class="filechip filechip-ok">version 过滤 169 命中（= 71×4.1 + 98×通用）</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C8 -->
+    <article id="c8" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C8</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">Modding Standard 规则机读化</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P1 · 杠杆</span>
+            <span class="tag">outcome · 84 条全量入册 · 29 条可检</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">knowledge/spt-kb/curated/modding-standard/rules.json</span>
+          <span class="filechip">scripts/check-mod-standard.ps1</span>
+          <span class="filechip filechip-ok">scripts/validate-mod-standard.ps1</span>
+          <span class="filechip filechip-ok">tests/mod-standard/</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>双向漂移</span></div>
+            <div class="ba-body">
+              <div class="node node-dim py-3 text-center">散文规则<div class="text-[9.5px] opacity-70 mt-1">modding-standard/ · 84 条规则 + 证据索引</div></div>
+              <div class="flex items-center gap-2 justify-center">
+                <span class="mono text-[12px] text-[#b91c1c]">&darr;</span>
+                <span class="mono text-[10px] text-[#b91c1c]">真理在散文，检查器另写一份</span>
+                <span class="mono text-[12px] text-[#b91c1c]">&uarr;</span>
+              </div>
+              <div class="node node-bad py-3 text-center">check-mod-standard.ps1<div class="text-[9.5px] opacity-80 mt-1">约 25 条规则硬编码为正则</div></div>
+              <div class="node node-warn">案例：&lt;Version&gt;1.3.4-spt5.1&lt;/Version&gt; 与 STD-META-005 三段式 semver 正则冲突（假阳性）</div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>单一源 · 两侧读取</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-3">rules.json · 机读注册表<div class="text-[9.5px] opacity-80 mt-1">84 条 / 13 domain 全量入册 · 29 条可检（18 handler）· handler 内零硬编码</div></div>
+              <div class="row"><span class="hline"></span><span class="tri-d ok" style="transform:rotate(270deg);margin:0"></span></div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-ok text-center py-2">检查器<div class="text-[9px] opacity-70">registry 驱动 · golden 5/6 字节级一致</div></div>
+                <div class="node node-ok text-center py-2">validator<div class="text-[9px] opacity-70">registry &harr; prose 双向校验</div></div>
+              </div>
+              <div class="node node-ok text-center">META-005 假阳性修复：radar 现 12/0/0 exit 0<div class="text-[9px] opacity-70">夹具 7/7 · 负向对照真会报错</div></div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">规则改一处 · 检查器与文档同步</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">fa73f65c</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c8-rules-registry（CLOSED）</span>
+          <span class="k">VERIFY</span><span class="filechip filechip-ok">golden 5/6 字节级一致 · 夹具 7/7 · bootstrap 10/10</span>
+        </div>
+      </footer>
+    </article>
+
+    <!-- C5 -->
+    <article id="c5" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C5</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">发版身份契约归一</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P1 · 杠杆</span>
+            <span class="tag">outcome · 18 目标单一源 = 0.2.0</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">scripts/version/sync-version.mjs</span>
+          <span class="filechip filechip-ok">.version-bump.json</span>
+          <span class="filechip filechip-ok">tests/bootstrap/verify-version-identity.ps1</span>
+          <span class="filechip">package.json</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>版本与身份散落</span></div>
+            <div class="ba-body">
+              <div class="stack gap-1.5">
+                <div class="node node-dim" style="margin-left:0">package.json:3 &nbsp;<span class="text-[#b91c1c]">version 0.2.0</span> &nbsp;·&nbsp; repository / homepage 仍指向 BGS 上游</div>
+                <div class="node node-dim" style="margin-left:20px">.version-bump.json:3-4 &nbsp;只 bump 根 package.json</div>
+                <div class="node node-dim" style="margin-left:8px">tools/*/package.json &nbsp;<span class="text-[#b91c1c]">0.1.0 vs 根 0.2.0</span></div>
+                <div class="node node-dim" style="margin-left:28px">文档中多处写死 v0.2.0</div>
+                <div class="node node-bad" style="margin-left:4px">start-mo2.ps1 / install-mo2-control-plane.ps1 &nbsp;仍打印 bgs-modding-superpowers</div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">版本号散落 4+ 处 · 陈旧打包树名 bgs-* 与插件身份 spt-* 漂移</span></div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>单一版本源 + 身份断言</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-3">sync-version.mjs + .version-bump.json 注册表<div class="text-[9.5px] opacity-80 mt-1">check / --write / --set · 18 目标 · BOM/行尾字节保真</div></div>
+              <div class="tri-d ok"></div>
+              <div class="node node-ok text-center">全组件 0.2.0 一次性传播<div class="text-[9px] opacity-80 mt-0.5">插件组件 0.1.0（含 -dev0）&rarr; 0.2.0 · bump-version.sh 退役</div></div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-ok text-center">verify-version-identity.ps1<div class="text-[9px] opacity-70">sync check + 身份禁入扫描</div></div>
+                <div class="node node-ok text-center">身份归一<div class="text-[9px] opacity-70">root 元数据 origin · 脚本输出名修正</div></div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">sync 18/18 = 0.2.0 · bootstrap 10 &rarr; 11 全绿</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">d7a99db9</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c5-release-identity（CLOSED）</span>
+          <span class="k">VERIFY</span><span class="filechip filechip-ok">sync 18/18 = 0.2.0（幂等 + --set 往返）</span>
+        </div>
+      </footer>
+    </article>
+
+    </div>
+  </div>
+
+  <!-- ===== P2 ===== -->
+  <div class="pt-4">
+    <div class="flex items-center gap-4 mb-5">
+      <span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P2</span>
+      <h3 class="serif text-lg">结构</h3>
+      <div class="flex-1 border-t border-dashed border-[var(--line)]"></div>
+      <span class="mono text-[10.5px] text-[#9a9187]">C10</span>
+    </div>
+    <div class="space-y-6">
+
+    <!-- C10 -->
+    <article id="c10" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C10</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">Bridge 跨语言契约工件化</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P2 · 结构</span>
+            <span class="tag">outcome · pre/post 5/5 + CS&harr;TS 2/2 MATCH</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">shared/bridge-contract/contract.json</span>
+          <span class="filechip">tools/tarkov-runtime-bridge/src/BridgeContract.cs</span>
+          <span class="filechip">tools/tarkov-runtime-mcp/src/bridge/contract.ts</span>
+          <span class="filechip filechip-ok">shared/bridge-contract/fixtures/</span>
+          <span class="filechip">docs/adr/0009-bridge-cross-language-contract.md</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>两端各写一份</span></div>
+            <div class="ba-body">
+              <div class="grid grid-cols-2 gap-3 items-stretch">
+                <div class="stack">
+                  <div class="mini text-center">C# 端</div>
+                  <div class="node node-thin text-center">HttpBridgeServer.cs</div>
+                  <div class="node node-bad">协议版本常量</div>
+                  <div class="node node-bad">日志归一化</div>
+                </div>
+                <div class="stack">
+                  <div class="mini text-center">TS 端</div>
+                  <div class="node node-thin text-center">connection.ts:18</div>
+                  <div class="node node-bad">EXPECTED_BRIDGE_PROTOCOL_VERSION = 1</div>
+                  <div class="node node-bad">log-normalizer.ts</div>
+                </div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#b91c1c]">双向箭头 = 双语言同构逻辑 · 任一端改动即 BRIDGE_VERSION_MISMATCH 风险</span></div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>共享契约工件</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-2">contract.json<div class="text-[9.5px] opacity-80 mt-0.5">protocolVersion + 日志归一化规则表 + 聚合常量 + 空白字符类</div></div>
+              <div class="grid grid-cols-2 gap-3 mt-1">
+                <div class="stack">
+                  <div class="tri-d ok" style="transform:rotate(180deg)"></div>
+                  <div class="node node-ok text-center">C# 端<div class="text-[9px] opacity-70">EmbeddedResource 编译期嵌入</div></div>
+                </div>
+                <div class="stack">
+                  <div class="tri-d ok" style="transform:rotate(180deg)"></div>
+                  <div class="node node-ok text-center">TS 端<div class="text-[9px] opacity-70">运行时读取</div></div>
+                </div>
+              </div>
+              <div class="node node-ok text-center">共享 golden 夹具<div class="text-[9px] opacity-70">归一化 55 例含对抗向量 · 聚合 12 例 · 两端测试读同一批文件</div></div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">pre/post 5/5 + CS&harr;TS 2/2 逐字节 MATCH · wire 协议 v1 · 双轴语义 ADR-0009</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">8e9bec6f</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c10-bridge-contract（CLOSED）</span>
+          <span class="k">TEST</span><span class="filechip filechip-ok">C# 316 / 0 · TS 414 / 0</span>
+          <span class="k">WIRE</span><span class="filechip filechip-ok">pre/post 5/5 + CS&harr;TS 2/2 MATCH</span>
+        </div>
+      </footer>
+    </article>
+
+    </div>
+  </div>
+
+  <!-- ===== P3 ===== -->
+  <div class="pt-4">
+    <div class="flex items-center gap-4 mb-5">
+      <span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P3</span>
+      <h3 class="serif text-lg">观望（安全子集交付）</h3>
+      <div class="flex-1 border-t border-dashed border-[var(--line)]"></div>
+      <span class="mono text-[10.5px] text-[#9a9187]">C9</span>
+    </div>
+    <div class="space-y-6">
+
+    <!-- C9 -->
+    <article id="c9" class="scroll-mt-20 rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <header class="flex items-start gap-4 px-5 py-4 border-b border-[var(--line-soft)]">
+        <div class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md term-panel text-[11px]">C9</div>
+        <div class="flex-1">
+          <h4 class="serif text-[19px] leading-snug">游戏侧路径可移植化（安全子集）</h4>
+          <div class="mt-2 flex flex-wrap items-center gap-2">
+            <span class="badge badge-done">已交付 <span class="op">Delivered</span></span>
+            <span class="tag">P3 · 观望</span>
+            <span class="tag">outcome · 11 csproj 改造 · 534 错 &rarr; 0 错</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="px-5 pt-4">
+        <div class="lbl mb-2">Files</div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="filechip filechip-ok">mods/Directory.Build.props</span>
+          <span class="filechip filechip-ok">tools/migration-pilots/Directory.Build.props</span>
+          <span class="filechip">mods/*/*.csproj</span>
+          <span class="filechip filechip-ok">tools/migration-pilots/*/STATUS.md</span>
+        </div>
+      </div>
+
+      <div class="px-5 py-4">
+        <div class="ba">
+          <div class="ba-before">
+            <div class="ba-h"><span class="pill">BEFORE</span><span>复制分叉 + 硬编码</span></div>
+            <div class="ba-body">
+              <div class="flex flex-col items-center">
+                <div class="node node-dim w-40 text-center">PerformanceTweaks<div class="text-[9px] opacity-70">源码</div></div>
+                <div class="tri-d bad"></div>
+                <div class="row w-full items-start gap-3">
+                  <div class="node node-bad flex-1 text-center">PerformanceTweaks<div class="text-[9px] opacity-80">同名文件内容分叉</div></div>
+                  <div class="node node-bad flex-1 text-center">PerformanceTweaks413<div class="text-[9px] opacity-80">同名文件内容分叉</div></div>
+                </div>
+                <div class="row justify-center"><span class="mono text-[10px] text-[#b91c1c]">无共享工程 · 靠复制维护</span></div>
+              </div>
+              <div class="node node-warn">csproj 硬编码 E:\Game\EFT_Offline\SPT_* &nbsp;—— 换机器即断</div>
+              <div class="grid grid-cols-2 gap-1.5">
+                <div class="node node-bad text-center">release/*.dll 二进制入仓<div class="text-[9px] opacity-80">与源码可能漂移</div></div>
+                <div class="node node-warn text-center">migration-pilots/ 3 个试点<div class="text-[9px] opacity-80">无退出机制 · skills-extended 534 错</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div class="ba-h"><span class="pill">AFTER</span><span>路径可移植 + 退出机制</span></div>
+            <div class="ba-body">
+              <div class="node node-deep text-center py-3">Directory.Build.props 集中 SptRoot<div class="text-[9.5px] opacity-80 mt-1">-p:/env 可覆盖 + 缺失响亮失败 · SPT_410 &rarr; 实际 SPT_41x</div></div>
+              <div class="tri-d ok"></div>
+              <div class="node node-ok text-center">11 个 csproj 改造<div class="text-[9px] opacity-80 mt-0.5">3 tools csproj 内联 + tarkov-active-probe + tarkov-runtime-bridge props</div></div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="node node-ok text-center">pilots 退出机制<div class="text-[9px] opacity-70">STATUS.md · 关闭条件 · 归档 examples/</div></div>
+                <div class="node node-ok text-center">部署陈述纠偏<div class="text-[9px] opacity-70">「已部署」&rarr;「待部署验证」</div></div>
+              </div>
+              <div class="row justify-center pt-1"><span class="mono text-[10px] text-[#15803d]">skills-extended glob 修复：534 错 &rarr; 0 错 · 共享核心抽取延后（触发 = 实测期结束 + 需求）</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="note mt-3">&gt; 观望理由（原报告）：EFT API 差异限制复用空间；3.11 线处于用户实测期，冻结可能更合理。安全子集已交付，共享核心抽取按需触发。</p>
+      </div>
+
+      <footer class="px-5 py-3 bg-[#fbfaf7] border-t border-[var(--line-soft)]">
+        <div class="lbl mb-1.5">交付证据</div>
+        <div class="evid">
+          <span class="k">COMMIT</span><span class="filechip filechip-ok">668668dd</span>
+          <span class="k">SPEC</span><span class="filechip">.scratch/c9-game-assets（CLOSED）</span>
+          <span class="k">VERIFY</span><span class="filechip filechip-ok">skills-extended 534 错 &rarr; 0 错（1 既有 CS9113 警告）</span>
+        </div>
+      </footer>
+    </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 ============ -->
+<section id="gates" class="scroll-mt-20 space-y-8">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§3</span>
+    <h2 class="serif text-2xl">质量门与验证</h2>
+  </div>
+
+  <!-- bootstrap checklist -->
+  <div>
+    <div class="lbl mb-3">bootstrap verify-all &nbsp;/&nbsp; 12 项常驻检查 · 12/12</div>
+    <div class="rounded-xl border border-[var(--line)] bg-white p-5">
+      <div class="grid md:grid-cols-2 gap-2">
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-layout</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-skills</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-bootstrap-injection</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-mcp-surface</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-mcp-entrypoints</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-git-hygiene</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-kb-index</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-templates</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-standard-compliance</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-version-identity</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-bridge-contract</span></div>
+        <div class="flex items-center gap-2"><span class="dot dot-ok"></span><span class="filechip filechip-ok">verify-doc-stats</span></div>
+      </div>
+      <p class="note mt-3">&gt; 12/12 全绿。原报告时期为 8 项；C7 引入第 10 项（verify-kb-index）、C5 引入第 11 项（verify-version-identity）、C10 引入第 12 项（verify-bridge-contract）。</p>
+    </div>
+  </div>
+
+  <!-- suite counts -->
+  <div>
+    <div class="lbl mb-3">测试套件计数 &nbsp;/&nbsp; 实测</div>
+    <div class="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+      <table class="t">
+        <thead><tr><th style="width:260px">套件</th><th style="width:160px">计数</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td class="mono text-[11.5px]">tools/mcp-kit</td><td class="mono font-semibold text-[13px]">25</td><td class="text-[#5b554f]">C2 共享内核</td></tr>
+          <tr><td class="mono text-[11.5px]">tools/spt-mcp</td><td class="mono font-semibold text-[13px]">98（+5 skip）</td><td class="text-[#5b554f]">C7 契约 +23 后；5 条 forge-reader 条件跳过（本机 Forge 快照缺失，刷新后恢复）</td></tr>
+          <tr><td class="mono text-[11.5px]">tools/tarkov-runtime-mcp</td><td class="mono font-semibold text-[13px]">414</td><td class="text-[#5b554f]">C10 后基线 395 &rarr; 414</td></tr>
+          <tr><td class="mono text-[11.5px]">tools/mo2-mcp</td><td class="mono font-semibold text-[13px]">499（+19 skip）</td><td class="text-[#5b554f]">C3 normalize 专项 11/11</td></tr>
+          <tr><td class="mono text-[11.5px]">tools/tarkov-runtime-bridge（C#）</td><td class="mono font-semibold text-[13px]">316</td><td class="text-[#5b554f]">C10 后基线 295 &rarr; 316 · 0 失败</td></tr>
+          <tr><td class="mono text-[11.5px]">tests/mod-standard/</td><td class="mono font-semibold text-[13px]">7/7 fixtures</td><td class="text-[#5b554f]">C8 夹具含负向对照自证</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    <!-- portable tree -->
+    <div class="rounded-xl border border-[var(--line)] bg-white p-5">
+      <div class="lbl mb-3">便携树 &nbsp;/&nbsp; post-C10</div>
+      <div class="flex items-baseline gap-3">
+        <span class="serif text-5xl text-[#166534]">14457</span>
+        <span class="text-[12.5px] text-[#5b554f]">文件</span>
+      </div>
+      <p class="text-[12.5px] leading-7 text-[#4a443e] mt-3">
+        便携包自包含（C4：7.24 &rarr; 40.57MB，知识层 + 三台 MCP 运行时 vendored）；树内 validate / sync 全 exit 0；post-C10 树内对拍（nbsp &rarr; space / nel preserved / bom trimmed）。
+      </p>
+    </div>
+
+    <!-- version dual axis -->
+    <div class="rounded-xl overflow-hidden border border-[#0e1311] term-panel">
+      <div class="px-5 py-5">
+        <div class="text-[10.5px] tracking-[0.25em] dim">VERSION DUAL AXIS</div>
+        <div class="mt-4 grid grid-cols-2 gap-4">
+          <div>
+            <div class="mono text-[9.5px] tracking-widest dim mb-1">组件版本</div>
+            <div class="serif text-3xl text-[#e8f5ec]">0.2.0</div>
+            <div class="text-[11px] dim mt-1.5 leading-5">全组件单一源<br>C5 · 18 目标</div>
+          </div>
+          <div>
+            <div class="mono text-[9.5px] tracking-widest dim mb-1">WIRE 协议</div>
+            <div class="serif text-3xl text-[#e8f5ec]">v1</div>
+            <div class="text-[11px] dim mt-1.5 leading-5">仅不兼容变更 +1<br>C10 · ADR-0009</div>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-[#1d2a23] text-[10.5px] dim">&gt; 双轴语义独立：组件 0.2.0 不等于 wire 1（ADR-0009）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 ============ -->
+<section id="roadmap" class="scroll-mt-20 space-y-8">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§4</span>
+    <h2 class="serif text-2xl">路线图状态</h2>
+    <span class="mono text-[11px] text-[#9a9187]">P0-P3 全量交付</span>
+  </div>
+
+  <p class="text-[14px] leading-8 text-[#332f2b] border-l-2 border-[#166534] pl-5 max-w-4xl">
+    原则（承自架构审查）：先恢复可信度（信任面），再抽共享内核（杠杆），最后结构重组（需要时才做）。四阶段已全部交付，进入实测期。
+  </p>
+
+  <div class="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+    <table class="t">
+      <thead><tr><th style="width:150px">阶段</th><th style="width:120px">主题</th><th style="width:230px">候选</th><th style="width:150px">状态</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P0</span></td>
+          <td class="font-medium">信任面修复</td>
+          <td class="mono text-[12px]">C1 &rarr; C6 &rarr; C4 &rarr; C3</td>
+          <td><span class="badge badge-done">已交付 <span class="op">Done</span></span></td>
+          <td class="text-[#5b554f]">知识层复活 · 状态单一权威 · 接线契约真实 · 归一化抽离</td>
+        </tr>
+        <tr>
+          <td><span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P1</span></td>
+          <td class="font-medium">杠杆</td>
+          <td class="mono text-[12px]">C2 &rarr; C7 &rarr; C8 &rarr; C5</td>
+          <td><span class="badge badge-done">已交付 <span class="op">Done</span></span></td>
+          <td class="text-[#5b554f]">共享内核 · 索引闭环 · 规则机读 · 发版身份</td>
+        </tr>
+        <tr>
+          <td><span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P2</span></td>
+          <td class="font-medium">结构</td>
+          <td class="mono text-[12px]">C10</td>
+          <td><span class="badge badge-done">已交付 <span class="op">Done</span></span></td>
+          <td class="text-[#5b554f]">跨语言契约工件化 + 共享 golden 夹具</td>
+        </tr>
+        <tr>
+          <td><span class="mono text-[11px] px-2 py-0.5 rounded bg-[#0e1311] text-[#86e0aa]">P3</span></td>
+          <td class="font-medium">观望</td>
+          <td class="mono text-[12px]">C9（安全子集）</td>
+          <td><span class="badge badge-done-soft">安全子集已交付 <span class="op">Delivered</span></span></td>
+          <td class="text-[#5b554f]">共享核心抽取延后 · 触发 = 实测期结束 + 需求</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- commit chain -->
+  <div>
+    <div class="lbl mb-3">提交链 &nbsp;/&nbsp; 按时间升序</div>
+    <div class="rounded-xl border border-[var(--line)] bg-white p-5 overflow-x-auto">
+      <div class="flex flex-wrap items-center gap-y-2 mono text-[11.5px]">
+        <a href="#c2" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">e9ce84f3</span>
+          <span class="text-[#5b554f]">P0+C2</span>
+        </a>
+        <span class="text-[#b0a89f]">&rarr;</span>
+        <a href="#c7" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">9c8925d1</span>
+          <span class="text-[#5b554f]">C7</span>
+        </a>
+        <span class="text-[#b0a89f]">&rarr;</span>
+        <a href="#c8" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">fa73f65c</span>
+          <span class="text-[#5b554f]">C8</span>
+        </a>
+        <span class="text-[#b0a89f]">&rarr;</span>
+        <a href="#c5" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">d7a99db9</span>
+          <span class="text-[#5b554f]">C5</span>
+        </a>
+        <span class="text-[#b0a89f]">&rarr;</span>
+        <a href="#c10" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">8e9bec6f</span>
+          <span class="text-[#5b554f]">C10</span>
+        </a>
+        <span class="text-[#b0a89f]">&rarr;</span>
+        <a href="#c9" class="flex items-center gap-1.5">
+          <span class="filechip filechip-ok">668668dd</span>
+          <span class="text-[#5b554f]">C9</span>
+        </a>
+      </div>
+      <p class="note mt-3">&gt; 提交消息：`e9ce84f3` = "P0到P1前"（P0 批次 + C2）· 其余各批单主题（C7 / C8 / C5 / C10 / C9）。哈希与 git log 实测一致。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §5 ============ -->
+<section id="followups" class="scroll-mt-20 space-y-8">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§5</span>
+    <h2 class="serif text-2xl">记录项与后续</h2>
+    <span class="mono text-[11px] text-[#9a9187]">按需触发</span>
+  </div>
+
+  <div class="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
+    <table class="t">
+      <thead><tr><th style="width:200px">来源</th><th>记录项</th><th style="width:230px">触发条件</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="font-medium">C9</td>
+          <td class="text-[#4a443e]">共享核心抽取：<span class="mono text-[11.5px]">shared/PerformanceTweaks.Core</span> + 版本薄壳</td>
+          <td class="text-[#5b554f]">实测期结束 + 需求出现</td>
+        </tr>
+        <tr>
+          <td class="font-medium">C9</td>
+          <td class="text-[#4a443e]">签名级 DLL 比较工具化；默认根定义点 6 处合并评估</td>
+          <td class="text-[#5b554f]">release 校验扩展时</td>
+        </tr>
+        <tr>
+          <td class="font-medium">C5 / C10</td>
+          <td class="text-[#4a443e]">各 spec「记录项」段落：payload codegen · 协议 v2 · MO2 版本口径等</td>
+          <td class="text-[#5b554f]">对应演进需求出现时</td>
+        </tr>
+        <tr>
+          <td class="font-medium">环境</td>
+          <td class="text-[#4a443e]">WPS 云同步幽灵根因已定位并处置（观察期）；<span class="mono text-[11.5px]">verify-layout</span> 常驻守护</td>
+          <td class="text-[#5b554f]">若幽灵复发再处置</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">&gt; 以上均为「按需触发」项 —— 不阻塞当前状态；当前无 P0-P3 未闭环候选。</p>
+</section>
+
+<!-- ============ §6 ============ -->
+<section id="env" class="scroll-mt-20 space-y-8">
+  <div class="flex items-baseline gap-4 border-b border-[var(--line)] pb-3">
+    <span class="mono text-[11px] text-[#b0a89f]">§6</span>
+    <h2 class="serif text-2xl">环境说明</h2>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="rounded-xl border border-[var(--line)] bg-white p-5">
+      <div class="lbl mb-3">版本线</div>
+      <ul class="space-y-2 text-[12.5px] leading-6 text-[#4a443e]">
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>SPT <span class="mono text-[11.5px]">4.1.5</span> 稳定开发基线（Modding Standard）</span></li>
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>SPT <span class="mono text-[11.5px]">5.0</span> 已发布 · 双轨前进线（IL2CPP / BepInEx 6）</span></li>
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>SPT 3.11 材料仅作参考（用户实测期）</span></li>
+      </ul>
+    </div>
+    <div class="rounded-xl border border-[var(--line)] bg-white p-5">
+      <div class="lbl mb-3">工具链</div>
+      <ul class="space-y-2 text-[12.5px] leading-6 text-[#4a443e]">
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>MO2 特化版 + MO2 控制面（C++ 插件 + broker + sidecar）</span></li>
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>dotnet SDK <span class="mono text-[11.5px]">10.0.300</span> · Node <span class="mono text-[11.5px]">24</span></span></li>
+        <li class="flex gap-2"><span class="dot dot-ok mt-1.5"></span><span>仓库：<span class="mono text-[11.5px]">E:\云文件\GitHub\SamMeow-modding-superpowers</span>（单分支 main）</span></li>
+        <li class="flex gap-2"><span class="dot dot-warn mt-1.5"></span><span>仓库位于 WPS 云同步范围（幽灵物化根因，已处置 · 观察期）</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-[var(--line)] bg-[#f2efe9]">
+  <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap items-center justify-between gap-3">
+    <span class="mono text-[10.5px] text-[#9a9187]">PROJECT STATUS · SamMeow-modding-superpowers · 2026-09-17</span>
+    <span class="mono text-[10.5px] text-[#9a9187]">&gt; C1-C10 全量交付 / P0-P3 / 组件 0.2.0 · wire v1 &nbsp;·&nbsp; Vault-Tec -- Preparing for the Future!</span>
+  </div>
+</footer>
+
+</body>
+</html>
