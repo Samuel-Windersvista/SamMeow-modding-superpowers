@@ -95,17 +95,17 @@ afterAll(() => {
 
 describe("forge-reader: 目录加载", () => {
   // 需要本机 archive/forge API 快照；缺失则跳过（见文件头 skipNote）
-  it.skipIf(!hasRealForgeSnapshot)("真实 mods-catalog.json 加载 1822 个 mod（含 BOM 兼容）", () => {
+  it.skipIf(!hasRealForgeSnapshot)("真实 mods-catalog.json 加载 1830 个 mod（含 BOM 兼容）", () => {
     const kbRoot = repoKbRoot();
     const catalog = loadCatalog(kbRoot);
-    expect(catalog.length).toBe(1822);
-    expect(catalog[0].name).toBe("All In Weapon: Unslotted");
+    expect(catalog.length).toBe(1830);
+    expect(catalog[0].name).toBe("FikaSync");
   });
 
-  it.skipIf(!hasRealForgeSnapshot)("真实 hot-index.json 加载 95 条（含 BOM 兼容）", () => {
+  it.skipIf(!hasRealForgeSnapshot)("真实 hot-index.json 加载 94 条（含 BOM 兼容）", () => {
     const kbRoot = repoKbRoot();
     const hot = loadHotIndex(kbRoot);
-    expect(hot.length).toBe(95);
+    expect(hot.length).toBe(94);
     expect(hot[0].best_spt).toBeTruthy();
   });
 
@@ -211,7 +211,7 @@ describe.skipIf(!hasRealForgeSnapshot)("forge-reader: 真实知识库搜索冒�
 
   it("resetForgeCache 后可重新加载", () => {
     resetForgeCache();
-    expect(loadCatalog(repoKbRoot()).length).toBe(1822);
+    expect(loadCatalog(repoKbRoot()).length).toBe(1830);
     resetForgeCache();
   });
 });
