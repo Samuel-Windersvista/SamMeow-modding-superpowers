@@ -1,0 +1,57 @@
+<Project>
+
+  <!--
+    STD-META-007 / STD-PKG-005：paired mod 的 Client / Server / Shared 共用同一版本号。
+    版本号只在此处定义一次，三个 csproj 不再各自写 <Version>；改版本只改这一行。
+    三个工程都继承本文件（MSBuild 自动向上查找 Directory.Build.props）。
+  -->
+  <PropertyGroup>
+    <Version>{{MOD_VERSION}}</Version>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!--
+    STD-BUILD-006：用一个可覆盖的安装路径属性定位 SPT 5.0 安装目录。
+    paired mod 的客户端与服务端运行时不在同一层：
+      - 客户端运行时（BepInEx 6 core + IL2CPP interop 代理）在 SPT 根目录的 BepInEx\ 下；
+      - 服务端运行时（SPTarkov.*.dll / SemanticVersioning.dll）在 SPT 根目录的 SPT_Runtime\ 下。
+    SPT5Path 指 SPT 5.0 根目录（含 EscapeFromTarkov.exe、BepInEx\ 与 SPT_Runtime\），再派生
+    SPT5Runtime（服务端）与 BepInExCore / Interop（客户端）两个引用根。
+    属性必须可覆盖，禁止写成无法覆盖的硬编码：
+      dotnet build -c Release -p:SPT5Path="D:\Games\SPT_5xx"
+      dotnet build -c Release -p:SPTInstallPath="D:\Games\SPT_5xx"   （兼容别名）
+      dotnet build -c Release -p:SptRoot="E:\Game\EFT_Offline"      （机器根别名，自动派生 \SPT_5xx）
+  -->
+  <PropertyGroup>
+    <!-- 优先级：显式 SPT5Path > SPTInstallPath 兼容别名 > SptRoot\SPT_5xx > 占位符默认值 -->
+    <SPT5Path Condition="'$(SPT5Path)' == '' AND '$(SPTInstallPath)' != ''">$(SPTInstallPath)</SPT5Path>
+    <SPT5Path Condition="'$(SPT5Path)' == '' AND '$(SptRoot)' != ''">$(SptRoot)\SPT_5xx</SPT5Path>
+    <SPT5Path Condition="'$(SPT5Path)' == ''">{{SPT_INSTALL_PATH}}</SPT5Path>
+    <!-- 服务端运行时目录（SPTarkov.Server.Core.dll / SPTarkov.DI.dll / SPTarkov.Common.dll / SemanticVersioning.dll 所在） -->
+    <SPT5Runtime Condition="'$(SPT5Runtime)' == ''">$(SPT5Path)\SPT_Runtime</SPT5Runtime>
+    <!-- 客户端引用根：BepInEx 6 core（BepInEx.Core / BepInEx.Unity.IL2CPP / Il2CppInterop.Runtime / 0Harmony） -->
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(SPT5Path)\BepInEx\core</BepInExCore>
+    <!-- 客户端引用根：IL2CPP interop 代理程序集（Assembly-CSharp / Il2Cppmscorlib / UnityEngine.*） -->
+    <Interop Condition="'$(Interop)' == ''">$(SPT5Path)\BepInEx\interop</Interop>
+  </PropertyGroup>
+
+  <!--
+    STD-META-007 / STD-PKG-005（版本联动到代码）：把集中定义的 $(Version) 生成为编译期常量
+    ModVersion.Value，供客户端 [BepInPlugin] 与服务端 IModMetadata.Version 引用。
+    const 可作为特性实参，使版本号在代码里也只有一个来源（$(Version)），不会与 csproj 漂移。
+  -->
+  <Target Name="GenerateModVersionConstant" BeforeTargets="BeforeCompile;CoreCompile">
+    <PropertyGroup>
+      <ModVersionGeneratedFile>$(IntermediateOutputPath)ModVersion.g.cs</ModVersionGeneratedFile>
+    </PropertyGroup>
+    <MakeDir Directories="$(IntermediateOutputPath)" />
+    <WriteLinesToFile
+      File="$(ModVersionGeneratedFile)"
+      Overwrite="true"
+      Lines="internal static class ModVersion { public const string Value = &quot;$(Version)&quot;%3B }" />
+    <ItemGroup>
+      <Compile Include="$(ModVersionGeneratedFile)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

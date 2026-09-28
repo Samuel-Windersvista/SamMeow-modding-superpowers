@@ -1,0 +1,8 @@
+// {{MOD_NAME}} 运行时配置（玩家可改）——STD-CFG-002
+// 首次加载时若本文件不存在，会从 defaultConfig.jsonc 复制一份（STD-CFG-005）。
+// .jsonc 允许注释与尾随逗号（STD-CFG-002 / STD-CFG-003）。
+{
+  "enabled": true,
+  "exampleMultiplier": 1.0,
+  "exampleTags": ["example"]
+}

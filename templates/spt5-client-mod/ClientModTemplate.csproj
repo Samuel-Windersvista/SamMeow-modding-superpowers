@@ -1,0 +1,111 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      STD-BUILD-002：客户端 mod 必须使用与目标 SPT 版本运行时兼容的目标框架。
+      5.0（IL2CPP / BepInEx 6）：net6.0。本模板即 5.0 形态。
+      4.1.5（Mono / BepInEx 5）为 netstandard2.1，不在本模板内实现，参见 templates/client-mod/。
+
+      SPT 5.0 / EFT 1.1.5 是 IL2CPP + BepInEx 6，插件在 .NET 6 运行时（BepInEx 6 自带）下加载，
+      引用 BepInEx/interop/ 下的 Il2CppInterop 代理程序集（不是 EscapeFromTarkov_Data/Managed）。
+      不要改成 netstandard2.1 或 net10.0。
+    -->
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}</AssemblyName>
+    <!-- STD-META-005：三段式 semver -->
+    <Version>{{MOD_VERSION}}</Version>
+
+    <!--
+      STD-BUILD-006：SPT 5.0 客户端安装根目录（含 EscapeFromTarkov.exe 与 BepInEx/ 的目录）。
+      用 Condition 提供可覆盖默认值。两种命令行覆盖方式：
+        dotnet build -p:SPT5Path="D:\Games\SPT_5xx"
+        dotnet build -p:SPTInstallPath="D:\Games\SPT_5xx"   （兼容别名）
+      禁止写成无法覆盖的硬编码。
+    -->
+    <SPT5Path Condition="'$(SPT5Path)' == '' AND '$(SPTInstallPath)' != ''">$(SPTInstallPath)</SPT5Path>
+    <SPT5Path Condition="'$(SPT5Path)' == ''">{{SPT_INSTALL_PATH}}</SPT5Path>
+    <!-- 派生引用根：BepInEx 6 核心 + IL2CPP interop 代理 -->
+    <BepInExCore>$(SPT5Path)\BepInEx\core</BepInExCore>
+    <Interop>$(SPT5Path)\BepInEx\interop</Interop>
+
+    <!-- STD-BUILD-005：输出路径不带框架名，方便把 DLL 复制到 BepInEx/plugins/ -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      STD-BUILD-003：5.0 运行时程序集必须通过 <HintPath> 指向实际运行时 DLL，并设 <Private>false</Private>，
+      不得复制进构建输出。引用路径随版本而异：
+        core（BepInEx 6 与补丁库）：$(SPT5Path)\BepInEx\core\
+        interop（Il2CppInterop 代理游戏程序集）：$(SPT5Path)\BepInEx\interop\
+      core 与 interop 均按需扩展（见下方注释块）。
+    -->
+    <!-- core：BepInEx 6 核心（加载 BepInEx/plugins/ 下的插件） -->
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(BepInExCore)\BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- core：IL2CPP 插件基类 BasePlugin 所在（BepInEx.Unity.IL2CPP） -->
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(BepInExCore)\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- core：Il2CppInterop 运行时（TryCast / ClassInjector / Il2CppSystem 等） -->
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(BepInExCore)\Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- core：Harmony（HarmonyX 2.x），补丁库 -->
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- interop：IL2CPP 版基础类库（Il2CppSystem.*；Nullable<T> 桩、集合互操作） -->
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(Interop)\Il2Cppmscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- interop：游戏主程序集（Il2CppInterop 代理；补丁目标类在这里，如 EFT.Player） -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(Interop)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- interop：UnityEngine 核心（MonoBehaviour / GameObject / Object 等） -->
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(Interop)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!--
+      扩展引用清单（按需补充，全部 HintPath + Private=false）：
+        $(Interop)\Comfort.dll                      —— Comfort 框架（EFT UI/工具）
+        $(Interop)\PlayerEnums.dll                  —— EBodyPart 等枚举（声明在 PlayerEnums.dll）
+        $(Interop)\UnityEngine.UI.dll               —— UnityEngine.UI（UGUI）
+        $(Interop)\UnityEngine.UIModule.dll         —— Canvas / RectTransform 等
+        $(Interop)\UnityEngine.ImageConversionModule.dll —— Texture2D <-> PNG/JPEG
+        $(Interop)\UnityEngine.AssetBundleModule.dll     —— AssetBundle / LoadFromMemory
+        $(Interop)\UnityEngine.PhysicsModule.dll    —— Raycast / Collider
+        $(Interop)\Newtonsoft.Json.dll              —— JSON 序列化（若 interop 内含）
+        $(SPT5Path)\BepInEx\plugins\sptushonka\SPTushonka.Reflection.dll —— SPT 客户端补丁框架（SPTushonka.Reflection.Patching）
+        $(SPT5Path)\BepInEx\plugins\sptushonka\SPTushonka.Common.dll     —— SPT 客户端公共库
+      注意 CS0012：EFT.Player 等类型可能间接依赖 DissonanceVoip.dll / Unity.Postprocessing.Runtime.dll /
+      Sirenix.* / Unity.TextMeshPro.dll 等，编译报 CS0012 时按提示补对应 interop 引用。
+    -->
+  </ItemGroup>
+
+  <!--
+    站位护栏（取自社区 sample SPT5BEMGODMODE）：
+    interop 程序集由游戏首次启动时由 BepInEx 生成；缺失即说明 SPT5Path 配错或尚未启动过一次游戏。
+    在 ResolveReferences 之前报错，给出明确指引，胜过后续一堆 CS0246。
+  -->
+  <Target Name="CheckGameReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(Interop)\Assembly-CSharp.dll')"
+           Text="Set SPT5Path to an SPT 5 installation with generated IL2CPP interop assemblies." />
+  </Target>
+
+</Project>

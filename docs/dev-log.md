@@ -249,3 +249,24 @@
 - **记录项（不修）**：默认根定义点 6 处（漂移风险；后续可评估合并）；签名级 DLL 比较工具化；共享核心抽取（D5 延后，触发 = 实测期结束 + 需求）。
 - **提交口径**：C9 单批提交（建议 `chore(game-assets): portable SptRoot paths + pilot exit markers + release DLL verification (C9)`）；**注**：`docs/dev-log.md` 混含 WPS 环境条目（C9 前预存）与 C9 条目——可拆可合。
 - 全部变更未提交。
+
+## 2026-09-27 — SPT 5.0 mod 模板三件套（spt5-*）落地 + 联动修订
+
+- **前置研究（已交付，未提交）**：`docs/research/spt-5.0-mod-template-design.md`——内部素材侦察 + 外部一手资料 + 本地运行时实测裁定；含命名空间裁定（服务端命名空间 `SPTarkov.*`、包名/目录名 `SPTushonka.*`；客户端 `SPTushonka.*`）、发布状态修正（BEM 滚动快照通道）与 KB 勘误清单；`docs/README.md` 已登记索引。
+- **交付（已落地，未提交）**：
+  - `templates/spt5-client-mod/`（7 文件）：`net6.0` / BepInEx 6 IL2CPP / `BasePlugin` + `Load`/`Unload` / `Log` / `BepInEx/core+interop` 引用 / `CheckGameReferences` 构建护栏 / 逐类补丁隔离。
+  - `templates/spt5-server-mod/`（12 文件）：`net10.0` / `SPTarkov.*` / `IModMetadata` `SptVersion ~5.0.0` / 无 `package.json` / `IOnDIConstruct` 配置注册 / `StaticRouter` 示例路由（`/spt/…` 独立前缀）/ `CheckSpt5RuntimeReferences` 护栏。
+  - `templates/spt5-paired-mod/`（21 文件）：单 sln 双端 + `Directory.Build.props` 版本联动（`ModVersion.Value` 编译期常量）+ `SharedConstants.ExampleRoute` 真接线 + `pack.ps1` 单 zip。
+- **联动修订**：`tests/bootstrap/verify-templates.ps1`（+3 模板清单）；`skills/writing-spt-mod/SKILL.md` 5.0 版本线分支（frontmatter description / Step 2 检索过滤 / Step 3 模板分流 / Step 4 日志口径 / Step 5 构建属性全面条件化）；KB 勘误（`version-matrix.md:48/:57/:79`、`06-config.md:106`、`07-logging.md:40`，并补 STD-LOG-003 5.0 分支与模板落位说明）；4.1 三模板 README 交叉指引。
+- **验证（P3 终验 + 修复后复验，全部主会话直跑）**：`verify-templates.ps1` exit 0；paired sln 构建 0 警告/0 错误 + `pack.ps1` 实跑产 `SmokePaired-1.2.3.zip`（stage 与 zip 条目核对通过）；client/server 全新填充构建 0/0、无运行时 DLL 泄漏、占位符审计干净；`check-mod-standard -TargetSptVersion 5.0.0`：client PASS=12/FAIL=2、server PASS=22/FAIL=1——3 个 FAIL 全部裁定为 **checker 参数未覆盖 5.0 命名的已知假阳性**（STD-BUILD-006 硬编码 `SPTInstallPath`；STD-CLI-006 仅匹配 `Logger.Log*`；R8 在案、桥项目同因持豁免；模板符合 prose）。
+- **双轴评审 + 修复轮（oracle ×2）**：Standards 5 硬项 + 4 判断项、Spec 4 缺口 + 2 超范围 + 3 偏差；修复轮全落地（server README persona 残留清除 / skill 分支深化 / LOG-003 5.0 分支 / client+paired README 补 `StringTemplateId` 坑 / router 与 SharedConstants 注释纠偏 / version-matrix 落位说明）。
+- **已裁定披露项**：`pack.ps1` 采用 UTF-8 BOM（本机仅 PS 5.1，BOM-less 中文注释解析失败；4.1 母版为无 BOM）；server 附加护栏与 paired 额外可覆盖属性（超 Q6 两处新增，实测有益）；5.0 客户端 `Nullable=disable`（4.1 为 enable；按蓝图与桥先例保留）；standalone 未采用蓝图示意性 `SptRoot` 派生链（决策⑥「沿用既有约定」）。
+- **记录项（建议后续独立处理，未修）**：checker 参数修订（BUILD-006/CLI-006 5.0 命名 + `-TargetSptVersion 5.0` 输入归一；需同步 golden，R8 家族）；paired 双份源码漂移守卫（verify 脚本目前仅查存在性）；STD-CFG-001 静态注册取路径 / STD-CLI-003 逐类 `PatchAll(Type)` 的规则侧注记。
+- **提交口径**：单批提交（建议 `feat(templates): SPT 5.0 mod templates (client/server/paired) + linkage revisions`）；**全部变更未提交**。
+
+## 2026-09-28 — KB 追加：Harmony detour 结构体封送事故复盘（ITBS 来源）
+
+- **背景**：ITBS（Inescapable Tarkov's Bot System）P0 实机事故——bot 决策层 Harmony detour 在**未接管（纯放行 `return true`）**状态下静默损坏游戏侧决策数据（`Agent._lastResult.Reason` 全量置空 / node 名退化为数字 ID），第三方调试面板 `EnterBy` 恒空（bot 行为表面正常）。A/B（cfg 开关）+ 原始字段探针定位到 detour 对 `Il2CppSystem.Nullable<…>` 结构体返回的封送损坏；修复 = seam 迁至 void/无参入口（`AICoreAgent<T>.Update()`，零结构体往返），ON≈OFF 分布验收通过。
+- **交付（未提交）**：`knowledge/spt-kb/curated/operations/5xx-client-mod-dev-lessons.md` 追加 **§16「Harmony detour 的『结构体封送』陷阱：放行前缀也会损坏原版状态」**（现象 / 排查方法论 5 条 / 根因机制 / 修复模式 / 打补丁前自查清单 6 条）；文件标题与来源行同步（+ITBS 2026-09-28）。
+- **KB 索引体检**：`node scripts/spt-kb/sync-index.mjs`（dry-run）**exit 0**——新增 0 / 非法 0 / 孤儿 4（archive 预期项，不随包分发）；同文件内追加无需 `--write`。
+- **提交口径**：KB 条目 + dev-log 单批；**全部变更未提交**。

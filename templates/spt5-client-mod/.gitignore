@@ -1,0 +1,8 @@
+# 构建产物
+bin/
+obj/
+
+# IDE / 用户文件
+*.user
+.vs/
+.idea/

@@ -103,7 +103,7 @@ public class MyModConfigRegistration : IOnDIConstruct
 }
 ```
 
-> 5.0 差异：命名空间前缀为 `SPTushonka.*`（如 `SPTushonka.Server.Core.DI`），API 形态一致。
+> 5.0 差异：API 形态一致；服务端命名空间仍为 `SPTarkov.*`（如 `SPTarkov.DI`），`SPTushonka.DI` 是 NuGet 包名。
 > 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
 
 ### STD-CFG-004 — 禁止给配置类标注 [Injectable]

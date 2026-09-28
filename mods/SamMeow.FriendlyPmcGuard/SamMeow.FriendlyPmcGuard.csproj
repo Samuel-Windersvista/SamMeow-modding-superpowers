@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      SPT 3.11.4 (EFT 0.16, Norvinsk Edition) 客户端 Harmony 护栏 mod。
+      friendlyPMC 缺口补丁（P2 死跟班 Dismiss 清理 / P4 死尸招募拦截）。
+      目标 Assembly-CSharp.dll 以 netstandard2.1 编译；BepInEx 5 / Unity Mono。
+      friendlyPMC 类型/方法全部反射解析 —— 不引第三方程序集编译期依赖。
+      模板参照 mods/SamMeow.FollowerGuard。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.SPT.FriendlyPmcGuard</RootNamespace>
+    <AssemblyName>SamMeow.FriendlyPmcGuard</AssemblyName>
+    <Version>0.1.0</Version>
+
+    <!-- SPT 3.11.4 安装根目录（含 EscapeFromTarkov.exe）。
+         SptRoot 由 mods/Directory.Build.props 集中提供；可覆盖：-p:SptRoot="..." -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_3114</SPTInstallPath>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- EFT 0.16 主程序集：BotOwner / AIBossPlayer / EBotState（补丁仅用这些 vanilla 类型） -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 构建后把 DLL 复制到 release/，方便直接拿取部署到 BepInEx/plugins/。 -->
+  <Target Name="CopyToRelease" AfterTargets="Build" Condition="'$(SkipCopyToRelease)' != 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)release" />
+  </Target>
+
+</Project>

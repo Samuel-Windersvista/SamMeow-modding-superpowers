@@ -1,25 +1,38 @@
 ---
 name: writing-spt-mod
-description: "Use when the user wants to write a new SPT 4.1 mod from scratch -- server mod (C#/IModMetadata/DI) or client mod (BepInEx/Harmony). Triggers: 'write a mod', 'create a mod', 'add a trader', 'add an item', '写个mod', '加个商人', '加个物品', 'add a quest', 'add custom weapon'."
+description: "Use when the user wants to write a new SPT 4.1 or 5.0 mod from scratch -- server mod (C#/IModMetadata/DI) or client mod (BepInEx/Harmony). Triggers: 'write a mod', 'create a mod', 'add a trader', 'add an item', '写个mod', '加个商人', '加个物品', 'add a quest', 'add custom weapon'."
 ---
 
 # Writing SPT Mods
 
-Write a new SPT 4.1 mod from scratch. Three pipelines: server mod, client mod, and paired (server + client). Choose based on what the mod does.
+Write a new SPT 4.1 or 5.0 mod from scratch. Three pipelines: server mod, client mod, and paired (server + client). Choose based on what the mod does.
 
 所有产出对照 SPT mod 编写规范：`knowledge/spt-kb/curated/modding-standard/README.md`。实现时按规则 ID 引用（`STD-<DOMAIN>-<nnn>`），不要模糊说"写得规范点"；偏离 MUST 规则须走本文末尾的[豁免流程](#豁免流程waiver)。
+
+## 版本线判定
+
+先判定目标 SPT 版本线，再据此选择模板目录：
+
+| 目标版本线 | 运行时 | 模板目录 |
+|---|---|---|
+| SPT 4.1.5 | Mono / BepInEx 5 | `templates/{client,server,paired}-mod/` |
+| SPT 5.0 | IL2CPP / BepInEx 6 | `templates/spt5-{client,server,paired}-mod/` |
+
+5.0 各 pipeline 的差异要点见下；完整构建依据见 `docs/research/spt-5.0-mod-template-design.md`。
 
 ## Pipeline selection
 
 | Mod does what? | Pipeline | Template |
 |---|---|---|
-| Add/edit traders, items, quests, database values, routes, bot config | **Server** | `templates/server-mod/` |
-| Modify game behavior, UI, patches, client-side features | **Client** | `templates/client-mod/` |
-| Both (paired mod) | **Both** -- single repo, shared spec | `templates/paired-mod/` |
+| Add/edit traders, items, quests, database values, routes, bot config | **Server** | `templates/server-mod/`（4.1）· `templates/spt5-server-mod/`（5.0） |
+| Modify game behavior, UI, patches, client-side features | **Client** | `templates/client-mod/`（4.1）· `templates/spt5-client-mod/`（5.0） |
+| Both (paired mod) | **Both** -- single repo, shared spec | `templates/paired-mod/`（4.1）· `templates/spt5-paired-mod/`（5.0） |
 
 ## Server mod workflow
 
-Template: `templates/server-mod/`。
+Template: `templates/server-mod/`；5.0 用 `templates/spt5-server-mod/`。
+
+> **5.0 差异要点**：目标框架 `net10.0`（不变）；命名空间仍 `SPTarkov.*`；`IModMetadata` 的 `SptVersion` 用 `~5.0.0`；无 `package.json`（元数据在 DLL 内）；部署到 `SPT_Runtime/user/mods/<Mod>/`。构建：`dotnet build -c Release -p:SPT5Runtime="D:\SPT_5xx\SPT_Runtime"`（server 用 `SPT5Runtime`）。
 
 ### Step 1: Parse intent
 
@@ -32,14 +45,14 @@ Understand what the user wants in SPT terms:
 ### Step 2: Research the API surface
 
 Search the knowledge base for relevant references:
-1. Read `knowledge/spt-kb/index.json`, filter by `version: ["4.1"]`, `domain: "server"`, and relevant `topic`
+1. Read `knowledge/spt-kb/index.json`, filter by the selected version line — `version: ["4.1"]`（4.1.5）或 `version: ["5.0", "通用"]`（5.0）— plus `domain: "server"` and relevant `topic`
 2. Check `knowledge/spt-kb/curated/recipes/` for a matching recipe (add-trader, add-item, add-quest, etc.)
 3. If the recipe exists, follow it. If not, read the relevant API notes.
-4. For API details not in the KB, read the 4.1 source at the user's configured `SPT410SourcePath` (see project config or ask user).
+4. For API details not in the KB, read the source：4.1 用用户配置的 `SPT410SourcePath`；5.0 用 `SPTushonka.Server.Core` 本地克隆或 `curated/api-notes-5.0/`（see project config or ask the user）。
 
 ### Step 3: Scaffold from template
 
-1. Copy `templates/server-mod/` to the user's mod project directory
+1. Copy the version-line template：4.1.5 → `templates/server-mod/`；5.0 → `templates/spt5-server-mod/`（copy to the user's mod project directory）
 2. Replace all `{{PLACEHOLDER}}` values (see `templates/server-mod/README.md`):
    - `{{ROOT_NAMESPACE}}` -- root namespace
    - `{{MOD_CLASS_NAME}}` -- mod class/assembly name (PascalCase, no spaces)
@@ -49,7 +62,7 @@ Search the knowledge base for relevant references:
    - `{{MOD_DESCRIPTION}}` -- one-line description
    - `{{MOD_AUTHOR}}` -- author name
    - `{{MOD_LICENSE}}` -- license name
-   - `{{SPT_INSTALL_PATH}}` -- path to user's SPT 4.1 installation (for DLL references)
+   - `{{SPT_INSTALL_PATH}}` -- path to user's SPT installation (for DLL references)；5.0 模板用 `{{SPT5_RUNTIME_PATH}}`（指向 `SPT_Runtime`），其余占位符以 `templates/spt5-server-mod/README.md` 表为准
 3. Rename files: `ServerModTemplate.csproj` -> match mod name; `src/ModMetadata.cs` keeps its name (`STD-META-002`).
 4. Keep the template's repository layout: root `.gitignore` (`STD-STRUCT-001`), source under `src/` rather than flat at repo root (`STD-STRUCT-003`), root `README.md` (`STD-STRUCT-005`) and `LICENSE` (`STD-STRUCT-006`). Exactly one `IModMetadata` implementation per mod directory (`STD-META-001`).
 
@@ -78,7 +91,7 @@ Key references:
 dotnet build -c Release
 ```
 
-Release build is the first verification step (`STD-VERIFY-001`). Compilation references come from the user's installed SPT (`$(SPTInstallPath)` property in csproj, `STD-BUILD-006`). Do NOT reference the source fork for compilation -- it is read-only reference.
+Release build is the first verification step (`STD-VERIFY-001`). Compilation references come from the user's installed SPT (`$(SPTInstallPath)` for 4.1.5；`$(SPT5Runtime)` for 5.0；both `STD-BUILD-006`). Do NOT reference the source fork for compilation -- it is read-only reference.
 
 **Verification baseline (Level B):** (`STD-VERIFY-002`)
 1. Deploy DLL to `<SPT>/SPT_Runtime/user/mods/<ModName>/` (via MO2 or direct copy for dev)
@@ -93,7 +106,9 @@ Release build is the first verification step (`STD-VERIFY-001`). Compilation ref
 
 ## Client mod workflow
 
-Template: `templates/client-mod/`。
+Template: `templates/client-mod/`；5.0 用 `templates/spt5-client-mod/`。
+
+> **5.0 差异要点**：目标框架 `net6.0`；入口 `BepInEx.Unity.IL2CPP.BasePlugin` + `Load()` / `Unload()`；日志用 `Log`（`ManualLogSource`）；引用 `BepInEx/core` + `BepInEx/interop`；部署到 `BepInEx/plugins/<Mod>/`。构建：`dotnet build -c Release -p:SPT5Path="D:\SPT_5xx"`（client 用 `SPT5Path`）。
 
 ### Step 1: Parse intent
 
@@ -107,15 +122,16 @@ Template: `templates/client-mod/`。
 1. Read `knowledge/spt-kb/wiki/SPT_41/Client_40_to_41.md` for 4.1 changes
 2. Read `knowledge/spt-kb/wiki/SPT_41/modding/client/Class_Name_Mappings.md` for deobfuscated class names
 3. Check `external/spt-archive/modules/` for official client module source as reference
-4. For deeper analysis, the user may need dnSpy/ILSpy to inspect `Assembly-CSharp.dll`
+4. For deeper analysis, the user may need dnSpy/ILSpy to inspect `Assembly-CSharp.dll`（4.1）
+5. 5.0：目标类型查 `BepInEx/interop/Assembly-CSharp.dll`（`ilspycmd -l c ...`），离线类清单见 `knowledge/spt-kb/archive/eft-1.1.5/classes-1.1.5.txt`
 
 ### Step 3: Scaffold from template
 
-1. Copy `templates/client-mod/` to the user's mod project directory
+1. Copy the version-line template：4.1.5 → `templates/client-mod/`；5.0 → `templates/spt5-client-mod/`（copy to the user's mod project directory）
 2. Replace all `{{PLACEHOLDER}}` values (see `templates/client-mod/README.md`; same format as server mod)
 3. Rename files: `ClientModTemplate.csproj` -> match mod name
 4. Keep the repository layout: root `.gitignore` (`STD-STRUCT-001`), source under `src/` (`STD-STRUCT-003`), root `README.md` (`STD-STRUCT-005`) and `LICENSE` (`STD-STRUCT-006`).
-5. Build settings: client targets `netstandard2.1` for 4.1.5 (`STD-BUILD-002`), references runtime assemblies via `<HintPath>` + `<Private>false</Private>` (`STD-BUILD-003`), flat output (`STD-BUILD-005`), overridable install-path property (`STD-BUILD-006`).
+5. Build settings: client targets `netstandard2.1` for 4.1.5、`net6.0` for 5.0 (`STD-BUILD-002`), references runtime assemblies via `<HintPath>` + `<Private>false</Private>` (`STD-BUILD-003`；5.0 引用 `BepInEx/core` + `BepInEx/interop`), flat output (`STD-BUILD-005`), overridable install-path property (`STD-BUILD-006`；5.0 用 `SPT5Path`).
 
 ### Step 4: Write mod code
 
@@ -124,7 +140,7 @@ Follow BepInEx + Harmony patterns, anchored to the standard:
 - Patches: annotate with `[HarmonyPatch]` (`STD-CLI-003`) and use the target version's real type names (`STD-CLI-004`); apply patches in the entry method and undo them in the lifecycle callback (`STD-CLI-007`).
 - Patch strategy: prefer Prefix/Postfix with an independent toggle and fail-open behavior (`STD-PERF-004`).
 - Config: declare via `Config.Bind` (`STD-CFG-006`); do not hand-roll JSON config reading.
-- Logging: use the BepInEx log source (`Logger`) (`STD-CLI-006` / `STD-LOG-003`).
+- Logging: use the BepInEx log source (`Logger` for 4.1.5；`Log` (`ManualLogSource`) for 5.0) (`STD-CLI-006` / `STD-LOG-003`).
 - Dependencies: declare required client deps with `[BepInDependency]` (`STD-CLI-005` / `STD-DEP-004`); optional deps use the `SoftDependency` flag and null-check/degrade (`STD-DEP-005`).
 
 ### Step 5: Build and verify
@@ -135,10 +151,12 @@ Same as server mod, but deploy to `<SPT>/BepInEx/plugins/`.
 
 ## Paired mod (server + client)
 
-Template: `templates/paired-mod/` (single repo, single solution, single release zip).
+Template: `templates/paired-mod/` (single repo, single solution, single release zip)；5.0 用 `templates/spt5-paired-mod/`。
+
+> **5.0 差异要点**：结构不变（单 sln 双端）；Client 走 5.0 `net6.0` 形态、Server 走 5.0 形态；`Directory.Build.props` 做两端版本联动；`scripts/pack.ps1` 打包。
 
 Some mods need both a server component and a client component:
-1. Copy `templates/paired-mod/` and keep the single-repo `Client/` + `Server/` layering, with pure shared data in `Shared/` (`STD-STRUCT-004`)
+1. Copy the version-line paired template（4.1.5 → `templates/paired-mod/`；5.0 → `templates/spt5-paired-mod/`）and keep the single-repo `Client/` + `Server/` layering, with pure shared data in `Shared/` (`STD-STRUCT-004`)
 2. Server mod handles data/logic; client mod handles presentation/interaction -- server owns "rules and data", client owns "presentation" (`STD-STRUCT-004`)
 3. Both halves share one version number, defined once in `Directory.Build.props` (`STD-META-007` / `STD-PKG-005`)
 4. Communication via custom routes (`STD-SRV-005`/`STD-SRV-006`/`STD-SRV-007`); see `knowledge/spt-kb/curated/recipes/10-mod-communication.md`

@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- STD-BUILD-001：SPT 5.0 服务端目标框架必须是 net10.0，与服务器程序集保持一致 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>{{ROOT_NAMESPACE}}.Server</RootNamespace>
+    <AssemblyName>{{MOD_CLASS_NAME}}.Server</AssemblyName>
+
+    <!-- STD-BUILD-005：输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- 版本号不在此定义：由仓库根 Directory.Build.props 集中提供（STD-META-007 / STD-PKG-005） -->
+    <!-- 路径属性（SPT5Path / SPT5Runtime）同样由 Directory.Build.props 提供（STD-BUILD-006） -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- STD-STRUCT-004：两端共享的纯数据/常量放 Shared/，两端共同引用 -->
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      STD-BUILD-004：服务端必须引用 SPTarkov.Server.Core（及 SPTarkov.DI、SPTarkov.Common），
+      且引用的 SPTarkov.Server.* 版本不得高于目标运行时版本。此处用 HintPath 指向
+      $(SPT5Runtime)（= &lt;SPT 根&gt;\SPT_Runtime）的运行时 DLL，版本天然与运行时匹配。
+      5.0 命名空间提示：程序集名/命名空间为 SPTarkov.*；SPTushonka.* 是 NuGet 包名与源码目录名，
+      二者不可混用（包名 SPTushonka.DI → 程序集/命名空间 SPTarkov.DI）。
+      若改用 NuGet PackageReference，请锁定与目标 SPT 一致的 SPTushonka.* 版本号。
+    -->
+    <!-- 5.0 必需：核心库（IModMetadata / 表模型 / OnLoadOrder / IOnLoad） -->
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPT5Runtime)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 5.0 必需：DI 注解（[Injectable]） -->
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPT5Runtime)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 5.0 必需：公共库（ISptLogger） -->
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPT5Runtime)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 5.0 必需：SemanticVersioning（IModMetadata 的 Version/Range 类型） -->
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPT5Runtime)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 Mod Web Pages（IModBlazorMetadata），再引用 SPTarkov.Server.Web.dll 并把 SDK 换成 Microsoft.NET.Sdk.Web -->
+  </ItemGroup>
+
+  <!--
+    STD-CFG-003：IOnDIConstruct 的方法签名使用 IServiceCollection，该类型定义在
+    Microsoft.Extensions.DependencyInjection.Abstractions 中。SPT 5.0 服务端运行在
+    Microsoft.AspNetCore.App 共享框架上（与 4.1 相同），这里用 FrameworkReference 引用同一框架
+    即可拿到该类型；共享框架程序集不会被复制进输出目录。
+    （保留本引用；如改用 NuGet 的 Microsoft.Extensions.DependencyInjection.Abstractions 可去掉。）
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <!--
+    站位护栏：SPT5Runtime 配错时构建期即报错，避免产出静默缺引用的 DLL。
+    取自有实战先例的做法（tools/tarkov-active-probe、SPT5BEMGODMODE 的 CheckGameReferences）。
+  -->
+  <Target Name="CheckSpt5RuntimeReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(SPT5Runtime)\SPTarkov.Server.Core.dll')"
+           Text="SPT5Runtime 指向的目录不含 SPTarkov.Server.Core.dll。请用 -p:SPT5Path=&quot;...&quot;（或 -p:SPT5Runtime=&quot;...&quot;）指定 SPT 5 安装目录，或填写模板占位符 {{SPT_INSTALL_PATH}}。" />
+  </Target>
+
+</Project>

@@ -11,6 +11,7 @@ source: curated
 > 规则集为**单份规范 + 规则级版本标签**，不维护两份并行规范（ADR-0005）。
 > 证据来源以 KB 文档路径（相对本目录）与 `5.0x-dev` 源码路径（`SPTushonka.*`）为准。
 > 状态：ticket 07 交付（2026-09-14）。SPT 5.0 已由社区 fork 正式发布（2026-09-14 确认，ADR-0006）；本矩阵基于预发布快照 HEAD `ff0bf3281` 核实，5.0 正式版的差异需按 release tag 复核。
+> 模板落位：4.1.5 → `templates/{client,server,paired}-mod/`；5.0 → `templates/spt5-{client,server,paired}-mod/`（`skills/writing-spt-mod` 按版本线分流；构建依据见 `docs/research/spt-5.0-mod-template-design.md`）。
 
 ## 0. `Applies` 非 both 的规则清单
 
@@ -45,7 +46,7 @@ source: curated
 | 目标客户端 EFT 版本 | `compatibleTarkovVersion=0.16.9.40743` | `1.1.5.0.47242`（跨大版本线） | STD-VER-004 | [../operations/5xx-source-verification.md](../operations/5xx-source-verification.md) |
 | 服务端 mod 骨架 | `IModMetadata`（11 属性）、`[Injectable]`、`IOnLoad`、路由、配置注入 | 完全相同（`git diff` 对 `Models/Spt/Mod`、`Modding`、`DI` 无输出） | STD-VER-002（沿用 4.1 骨架） | [../api-notes-5.0/architecture-map.md](../api-notes-5.0/architecture-map.md)、[../api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md) |
 | 服务端程序集引用校验 | 引用 `SPTarkov.Server.Core` 版本高于运行时 → 抛异常 | 逻辑一致（先于其它校验、不可隔离） | STD-BUILD-004 | [../api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md) |
-| 命名空间前缀 | `SPTarkov.*`（如 `SPTarkov.Server.Core`、`SPTarkov.Common.Models.Logging`） | `SPTushonka.*`（如 `SPTushonka.Server.Core`、`SPTushonka.Common.Models.Logging`） | STD-BUILD-004、STD-CFG-003、STD-LOG-001 | [06-config.md](06-config.md)、[07-logging.md](07-logging.md)；[../api-notes-5.0/di-container.md](../api-notes-5.0/di-container.md) |
+| 命名空间前缀 | `SPTarkov.*`（如 `SPTarkov.Server.Core`、`SPTarkov.Common.Models.Logging`） | 服务端命名空间仍为 `SPTarkov.*`（如 `SPTarkov.Server.Core`、`SPTarkov.Common.Models.Logging`）；`SPTushonka.*` 为 NuGet 包名 / 源码目录名；客户端（modules 侧）命名空间才是 `SPTushonka.*` | STD-BUILD-004、STD-CFG-003、STD-LOG-001 | [06-config.md](06-config.md)、[07-logging.md](07-logging.md)；[../api-notes-5.0/di-container.md](../api-notes-5.0/di-container.md)；`docs/research/spt-5.0-mod-template-design.md` §C |
 
 ## 3. 服务端 DI / 生命周期 / 路由 / 配置 / 加载（SRV / CFG / DEP）
 
@@ -54,7 +55,7 @@ source: curated
 | DI 注解与容器 | `[Injectable(InjectionType, TypePriority)]`，默认 `Transient` / `int.MaxValue` | 完全相同 | STD-SRV-001、STD-SRV-002 | [../api-notes-5.0/di-container.md](../api-notes-5.0/di-container.md) |
 | 生命周期接口 | `IOnLoad` / `IOnUpdate` / `IOnDIConstruct` | 相同；`IOnLoad` 由两执行器按 `TypePriority` 分段（`GameCallbacks` 为界） | STD-SRV-003、STD-SRV-004 | [../api-notes-5.0/di-container.md](../api-notes-5.0/di-container.md)、[../api-notes-5.0/architecture-map.md](../api-notes-5.0/architecture-map.md) |
 | 路由基类与 action | `StaticRouter` / `DynamicRouter` / `RouteAction<T>` | 基类相同；新增 `StreamedRouteAction<T>`；删除 `GetClientDialogueRequestData`、`GetAchievementListRequest` | STD-SRV-005、STD-SRV-006、STD-SRV-007 | [../api-notes-5.0/http-routing.md](../api-notes-5.0/http-routing.md) |
-| 配置系统 | 无 `ConfigServer`；静态 `ConfigLoader` 读 `SPT_Data/configs`，按 CLR 类型注册 DI 单例；mod 配置走 `IOnDIConstruct` + `AddSingleton` | 形态一致；命名空间前缀改 `SPTushonka.*` | STD-CFG-001…STD-CFG-006 | [../api-notes-5.0/config-system.md](../api-notes-5.0/config-system.md) |
+| 配置系统 | 无 `ConfigServer`；静态 `ConfigLoader` 读 `SPT_Data/configs`，按 CLR 类型注册 DI 单例；mod 配置走 `IOnDIConstruct` + `AddSingleton` | 形态一致；服务端命名空间仍为 `SPTarkov.*`（`SPTushonka.*` 为包名） | STD-CFG-001…STD-CFG-006 | [../api-notes-5.0/config-system.md](../api-notes-5.0/config-system.md) |
 | mod 加载目录与元数据 | `./user/mods/` 一级子目录 = 一个 mod，顶层 `.dll`，不用 `package.json` | 逻辑一致；`IModMetadata` 11 属性完全相同 | STD-META-001、STD-PKG-004 | [../api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md) |
 | 加载顺序 | `TypePriority` 升序，同优先级按 `ModGuid` tiebreaker；无 `loadBefore`/`loadAfter` | 相同 | STD-SRV-002、STD-DEP-001 | [../api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md) |
 | 依赖声明语义 | `ModDependencies` 硬依赖，仅校验不参与排序 | 相同 | STD-DEP-001、STD-DEP-002、STD-DEP-003 | [../api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md) |
@@ -76,4 +77,4 @@ source: curated
 
 ---
 
-> 一致性核对（抽查）：本表行与各规则文件的 `Applies` / 版本分支文本一致——`STD-BUILD-002/003/006`、`STD-CLI-001/006/007` 的 5.0 分支见 [03-build.md](03-build.md)、[05-client.md](05-client.md)；`STD-CFG-003`、`STD-LOG-001` 的 `SPTushonka.*` 命名空间注记见 [06-config.md](06-config.md)、[07-logging.md](07-logging.md)；`STD-VER-002/003/004` 与 `STD-VERIFY-005` 的 `Applies: 5.0` 见 [11-version-differences.md](11-version-differences.md)、[10-verification.md](10-verification.md)。
+> 一致性核对（抽查）：本表行与各规则文件的 `Applies` / 版本分支文本一致——`STD-BUILD-002/003/006`、`STD-CLI-001/006/007` 的 5.0 分支见 [03-build.md](03-build.md)、[05-client.md](05-client.md)；`STD-CFG-003`、`STD-LOG-001` 的命名空间勘误注记（服务端 `SPTarkov.*`；`SPTushonka.*` 为包名）见 [06-config.md](06-config.md)、[07-logging.md](07-logging.md)；`STD-VER-002/003/004` 与 `STD-VERIFY-005` 的 `Applies: 5.0` 见 [11-version-differences.md](11-version-differences.md)、[10-verification.md](10-verification.md)。

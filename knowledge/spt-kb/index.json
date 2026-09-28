@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14",
+ "generated": "2026-09-28",
  "schema_version": 2,
  "entries": [
   {
@@ -2578,6 +2578,94 @@
     "MANIFEST"
    ],
    "summary": "sp-mod.com API v0 抓取（filter[spt_version]=4.1.5 & updated_between 近一月）：271 mod / 297 唯一仓库浅克隆归档至 archive/forge/mods/<Name>_<id>_source/；含 provenance 表与 URL 规范化补克隆记录（297/297 就位）"
+  },
+  {
+   "path": "curated/operations/5xx-client-mod-dev-lessons.md",
+   "title": "SPT 5.0 客户端 mod 开发实战经验（渲染捕获/射线扫描/配置体系/数据源事实/诊断方法论/interop 调用与健康数据源）",
+   "version": [
+    "5.0"
+   ],
+   "domain": "client",
+   "topic": "operations",
+   "keywords": [
+    "IL2CPP",
+    "剥离API",
+    "正交相机",
+    "ReadPixels",
+    "RaycastCommand",
+    "环境光覆盖",
+    "色调映射",
+    "配置迁移",
+    "缓存指纹",
+    "MO2 VFS",
+    "测试脚手架",
+    "Runtime Bridge",
+    "SetPixels32",
+    "纹理初始化",
+    "配置中文化",
+    "手册价",
+    "任务区域",
+    "诊断口径",
+    "Nullable 桩",
+    "SimpleTooltip",
+    "CustomDrawer",
+    "健康系统",
+    "BotDebugData",
+    "MO2 CLI"
+   ],
+   "summary": "SPT 5.0 客户端 mod 实战归纳：IL2CPP 被剥离 API 清单（动态字体/NavMesh.Triangulate/AsyncGPUReadback）与替代；正交相机实拍底图要点（行序/分块回读/渲染期环境光覆盖/色调映射不得叠加线性增益）；射线扫描（批量+硬上限+密度直方图范围判定+帧率约束）；配置体系（版本化迁移、通用 section 中文化迁移、实时化、零依赖 F12 中文化）；IL2CPP 内存与纹理铁律（SetPixels32 按数组长度 marshal 的 240MB/s 分配事故；新建纹理必须全量初始化）；SPT 5.0 客户端数据源事实（CreditsPrice 恒 0；手册价走服务端且按模板 ID 查表；QuestTemplate.LocationId 是 MongoID；LootItems/容器已搜刮/任务 zone 的真实成员）；服务端协同取数模式（/truemap/* 路由 + fail-open 降级）；诊断方法论（计数×Reset 口径、来源分解、失败 dump、多级过滤中间计数）；游戏内测试脚手架+Runtime Bridge+dump 诊断的验证闭环；单实现者串行纪律（2026-09-25 扩充：interop 可选 Nullable 参数陷阱——SimpleTooltip.Show 桩 NotNull→NRE，显式 new Il2CppSystem.Nullable<T> 修复；F12 CustomDrawer 单按钮选择器——ComboBox 崩溃的安全替代，已实机验证；健康/Bot 数据源事实——GetBotDebugData/DebugBotStruct、ApplyDamage/DestroyBodyPart 非虚、_bodyState、RemoveNegativeEffects、EDamageType.Fall=2、_fallSafeHeight；QuestListItemView 更名与手动 tooltip 显示链路；MO2 CLI run 转发/冷启动与 mo2-mcp 离线 bug 降级；ModulePatch 用 Harmony.UnpatchID 撤销；多 agent 文件域切分与幽灵会话纪律）",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-inescapable-softcore.md",
+   "title": "SPT5 整合 mod 实战经验：六组 3.11 TS 源 → 单一 C# 服务端 mod（Inescapable-Tarkovs-Softcore）",
+   "version": [
+    "5.0"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated",
+   "keywords": [
+    "SPT5",
+    "整合",
+    "consolidation",
+    "locale-key",
+    "实体变体",
+    "客户端与服务端",
+    "移植陷阱",
+    "Spec审查",
+    "worktree",
+    "部署保护"
+   ],
+   "summary": "Inescapable-Tarkovs-Softcore v0.1.0 实战沉淀：运行时真值（DLL>源码快照）、locale-key 实体名（按 id 匹配）、实体变体枚举（安全容器 15 员）、id 世代全扫、行为归属判定（客户端 IOF 案例）、读代码不读注释、部署期验证点（手册价缓存/DI 注入）、方向语义与错标；附工程模式（JSONC 容错配置/磁盘优先数据/部署保护）与工作流经验（Spec 轴独立审查三案例/worktree 车道/Windows 编码陷阱）"
+  },
+  {
+   "path": "curated/migration/pilot-experience-qol-consolidation.md",
+   "title": "SPT5 客户端 QoL 整合研究实战经验：1.1.5 符号核验 / 合并冲突面 / 部署基线陷阱",
+   "version": [
+    "5.0"
+   ],
+   "domain": "both",
+   "topic": "migration",
+   "source": "curated",
+   "keywords": [
+    "SPT5",
+    "客户端",
+    "IL2CPP",
+    "interop",
+    "ilspycmd",
+    "Harmony",
+    "transpiler",
+    "字段漂移",
+    "多前缀冲突",
+    "许可合规",
+    "分支基线",
+    "copy-if-missing",
+    "MO2部署",
+    "排序合并",
+    "弹药FiR"
+   ],
+   "summary": "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工作流（类清单 + ilspycmd；方法体=原生桩）与原生反汇编取证路径；字段/名称漂移实例集（dictionary_0→_slotViews、containedGridsView_0→containedGridsView、GameSettingsGroup 命名空间迁移、method_9/GClass 消失）；transpiler 的 IL2CPP 实际形态（代理桩、须改 prefix/postfix）；同方法多前缀冲突面（Ctrl+Click 三岔口：QMTC/CactusPie/UIFixes-MultiSelect 同挂 QuickFindAppropriatePlace）；「客户端行为≠原版」再证（原版 Sort 从不合并；弹药 SpawnedInSession 恒 false）；许可矩阵前置（GPL 传染、快照-页面矛盾）；部署基线陷阱（错误分支回退 master 修复）与 copy-if-missing 数据陈旧（臂章 22 vs 37、git hash-object 判定升级）；MO2 overlay 离线部署流程；探针残缺声明与主控台直研回退。"
   }
  ],
  "tarkov_dev": {

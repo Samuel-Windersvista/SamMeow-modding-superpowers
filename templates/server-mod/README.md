@@ -134,6 +134,8 @@ D:\SPT\Server\user\mods\MyMod\
 
 完整参考：`knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md` 与 `api-notes-4.1/di-container.md`。
 
+> **5.0 形态**：服务端命名空间与 `IModMetadata` 骨架不变，但 `SptVersion` 须改 `~5.0.0`、不用 `package.json`、部署到 `SPT_Runtime/user/mods/<Mod>/`。5.0 实体模板见 `templates/spt5-server-mod/`。
+
 ## 坑
 
 - 4.1 中 `IModMetadata` 是接口，不是 4.0 的抽象 record，**不要写 `override`**

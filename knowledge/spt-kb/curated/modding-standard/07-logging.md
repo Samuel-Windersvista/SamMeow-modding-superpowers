@@ -37,7 +37,7 @@ public class MyService(ISptLogger<MyService> logger)
 }
 ```
 
-> 5.0 差异：命名空间前缀为 `SPTushonka.*`（如 `SPTushonka.Common.Models.Logging`），接口形态一致。
+> 5.0 差异：接口形态一致；服务端日志命名空间仍为 `SPTarkov.Common.Models.Logging`，`SPTushonka.Common` 是 NuGet 包名。
 > 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
 
 ### STD-LOG-002 — 按语义选择日志级别而非一律 Info
@@ -67,6 +67,7 @@ logger.Error("写入失败", ex);
 - **Applies:** both
 - **Evidence:** 机制：`templates/client-mod/src/Plugin.cs`、`knowledge/spt-kb/curated/modding-guide/03-client-mod-anatomy.md`；语料：`Logger.` 调用 4968 处、`BaseUnityPlugin` 275 处（EV-CORPUS-MECH）
 - **Rule:** 客户端 mod 使用 `BaseUnityPlugin.Logger`（BepInEx）记录日志，不得引用服务端 `ISptLogger<T>`。
+- **5.0 差异：** 属性名改为 `BasePlugin.Log`（`ManualLogSource`），调用形式 `Log.LogInfo(...)` 不变（见 [version-matrix.md](version-matrix.md) 与 [05-client.md](05-client.md) 的 STD-CLI-006 分支）。
 
 ```csharp
 public class MyPlugin : BaseUnityPlugin

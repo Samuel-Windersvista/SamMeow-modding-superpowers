@@ -30,7 +30,7 @@
 |------|------|------|
 | `internal/` | 内部设计（`mcp-specs/`、`specs/`、`standards/`、`hook-specs/`；含 BGS 时代 `superpowers/` 遗留） | 现行（部分历史） |
 | `internal/specs/session-wiring-contract.md` | 会话接线契约（插件行为面 / config.mcp 清单 / 不物化声明） | 现行 · 权威 |
-| `research/` | 调研资料（`spt-runtime-state-export.md`） | 参考 |
+| `research/` | 调研资料（`spt-runtime-state-export.md`、`spt-5.0-mod-template-design.md`） | 参考 |
 
 ## 报告（审计 / 可行性 / 性能）
 
