@@ -1,8 +1,8 @@
-# SPT 5.0 客户端 mod 开发实战经验（渲染捕获 / 射线扫描 / 配置体系 / 数据源事实 / 诊断方法论 / interop 调用 / 健康与 Bot 数据源 / Harmony detour 封送）
+# SPT 5.0 客户端 mod 开发实战经验（渲染捕获 / 射线扫描 / 配置体系 / 数据源事实 / 诊断方法论 / interop 调用 / 健康与 Bot 数据源 / Harmony detour 封送 / 操作执行面与 await 桥）
 
-> 适用：[5.0] | 来源：TrueRealTimeMap 项目（SPT 5.0.0 BE / EFT 1.1.5.47242 / IL2CPP / BepInEx 6 / net6.0）实机开发与验证记录（2026-09-21）；**SamMeow.DebugToolkit 项目**实机开发与验证记录（2026-09-25；三源整合客户端 mod：DebugTooltip / BotDebug / DadGamerMode 功能移植）；**ITBS（Inescapable Tarkov's Bot System）**实机事故复盘与修复验证（2026-09-28）
-> 关联：`curated/api-notes-5.0/`、`curated/modding-standard/05-client.md`、`curated/operations/3114-client-mod-build-gotchas.md`、`skills/porting-spt-mod-to-spt5/`
-> 完整实现与证据：`E:\云文件\GitHub\SamMeow-TrueRealTime-Dynamic-Map`、`E:\云文件\GitHub\SamMeow-DebugToolkit`（spec / 工单 / 双轴审查与验证记录）
+> 适用：[5.0] | 来源：TrueRealTimeMap 项目（SPT 5.0.0 BE / EFT 1.1.5.47242 / IL2CPP / BepInEx 6 / net6.0）实机开发与验证记录（2026-09-21）；**SamMeow.DebugToolkit 项目**实机开发与验证记录（2026-09-25；三源整合客户端 mod：DebugTooltip / BotDebug / DadGamerMode 功能移植）；**ITBS（Inescapable Tarkov's Bot System）**实机事故复盘与修复验证（2026-09-28）；**Betters Norvinsk QoL M1**（UIFixes 物品管理五功能移植）工单 02/03 实机记录（2026-09-29/30：Swap 闪退三层根因 / 排序先合栈执行面与 await 桥）
+> 关联：`curated/api-notes-5.0/`、`curated/modding-standard/05-client.md`、`curated/operations/3114-client-mod-build-gotchas.md`、`skills/porting-spt-mod-to-spt5/`、`curated/migration/pilot-experience-qol-consolidation.md`（C8/C9）
+> 完整实现与证据：`E:\云文件\GitHub\SamMeow-TrueRealTime-Dynamic-Map`、`E:\云文件\GitHub\SamMeow-DebugToolkit`、`E:\云文件\GitHub\SamMeow-Inescapable-Tarkov-Betters-Norvinsk-QoL`（M1 spec / 工单 / 双轴审查与验证记录）
 
 ## 1. IL2CPP 运行时被剥离 API（实测清单）
 
@@ -184,3 +184,28 @@
 - [ ] 证据纪律：`LogOutput.log` **每次启动覆写**——里程碑时快照存档（本例快照 `D:\Temp\opencode\itbs-logs\session-20260928-*.log`）。
 
 **证据**：ITBS 仓 `.scratch/p0-foundation-proof/issues/02-poc-a-layer-injection.md`（Comments 全史：A/B 设计 → ON/OFF 分布 → 修复验收）；关键事件 `layer.detour_target` / `layer.seam_hit` / `diag.agent`。
+
+## 17. interop 类型检查与「交互态采样」（2026-09-29 UIFixes Swap 移植补充）
+
+- **接口/基类包装 = `Il2CppProxy`**：以接口（或宽泛基类）声明的 interop 成员，返回值被包装为通用代理（`GetType().Name == "Il2CppProxy"`）；此时 `is`/`as` 对具体类型**恒失败**（编译期通过、运行期无声失效）。**一律改用 `TryCast<T>()`**——其实现为原生判定（`Il2CppObjectBase.TryCast` → `il2cpp_class_is_assignable_from`）。
+- **「松开清除」时序**：拖拽型交互在结束前常有一次「清空当前目标」的同步回调（字段被置 null）；在回调 postfix 里读取并缓存会把有效状态覆盖为 null。**模式：交互进行期按帧采样**（如 `DraggedItemView.Update` + `Input.GetMouseButton(0)` 门控），结束时读缓存——松开后的残留帧不采样、不清除；交互中移出目标则在采样帧即时失效。
+- **合成交互上下文要补全「值状态」**：以 `new Ctx(source, rotation)` 合成拖拽上下文时，位置类状态（`CursorPosition` / `ItemPosition` / `ItemRotation`）默认零 → 依赖它的计算（如 `GridView.CalculateItemLocation`）全错且无声。**须 `SetPosition(...)` 回填交互期采样值**。
+- 与 §16 联动：含值类型参数/返回的方法禁打 detour → 接受/执行语义迁到**安全签名 seam**（本例：`ItemView.OnEndDrag` + `ItemManipulator.Swap`/`RunNetworkTransaction` 直调）。
+- **探针点杀法**：守卫级/相位级 `Probe` + 同帧同名抑制；3 轮内定位「前缀 OK → detour 调用原方法崩」「缓存被松开清除覆盖」「合成上下文缺位置」三层根因；`LogOutput.log` 每次启动覆写——崩溃后**先快照再重启**。
+
+## 18. 库存操作「执行面」：值类型 OperationResult 的直调链 + 原生自持序列化（2026-09-29/30 Betters Norvinsk QoL M1 实机验证）
+
+- **§16 的补集**：含值类型参数/返回的方法**禁打 detour**——但**直调链完整可用**（本组游戏内跑通：200 行事务日志成对、验收全过）。`Diz.LanguageExtensions.OperationResult`（非泛型）与 `OperationResult<T>` 在 interop 均为 `Il2CppSystem.ValueType` 派生代理；直调三件套：
+  1. **构造**：`ItemManipulator.Sort(...)` / `TransferOrMerge(...)` 等生成代码返回 `new OperationResult<T>(ptr)`（runtime_invoke 对值类型返回 = boxed 指针，与既有 `Swap` 用法同族）；
+  2. **泛型→非泛型**：Il2CppInterop 已生成 `implicit operator OperationResult(OperationResult<T>)`（unbox → 原生 op_Implicit → 新构代理）——**泛型路径无需手工拆包**；
+  3. **执行 + 等待**：`await ItemController.TryRunNetworkTransaction(op)`（`OperationResult` 参数由桩内 `il2cpp_object_unbox` 封送；返回 `Task<IResult>` **可直接 C# await**——Il2CppInterop 为托管 await 刻意打桥：`Task<T>.GetAwaiter()` + `TaskAwaiter<T>` 显式实现 **BCL** `INotifyCompletion`（`OnCompleted(System.Action)` 经 `DelegateSupport.ConvertDelegate` 转发 native））。
+- **原生自持序列化优先（不要自造轮子）**：「跑一笔并等待」不要自建 watcher/detour 机械——1.1.5 `TryRunNetworkTransaction` 内部即 `TaskCompletionSource<IResult> + 回调`（`<>c__DisplayClass148_0`），**游戏自身 `SortAsync` 就走它**（ISIL 实证：`ChangeProgress(true) → Sort(..., simulate=1) → 虚调 TryRun → ChangeProgress(false)`）。上游 Mono 时代的 `NetworkTransactionWatcher`（对 `RunNetworkTransaction` 打前缀包裹回调）在 5.0 无必要，且平添全局 detour 面。
+- **执行参数以「目标版本原身」为准**：上游 mod 源码存在版本债（本例 `ItemManipulator.Sort` 上游 `simulate:false` vs 1.1.5 原生 `simulate:true`——`true` 返回纯计划、内部自行 RollBack）。**方法论：把「游戏自己怎么做」当权威蓝图**（ISIL / 反编译 2–3 个版本对照，同构即定论），而不是照抄旧 mod 源码。
+- **配套纪律**：不自行 `CanExecute`/`RollBack`（TryRun 内部承担）；`await` 返回值 `IResult` 不作为控制流条件（其代理取值路径未验证，与游戏一致仅记录）；fire-and-forget 入口 `async Task` + 全 catch（异常不向游戏代码传播）+ `try/finally` 收尾 UI 态（进度指示等）。
+
+## 19. 验收取证与「陌生日志噪声」归因（2026-09-29/30 补充）
+
+- **owner 口头验收 → 日志证据链反查（三件套）**：① 功能域前缀扫描（本例 `[BNQ-STACK]`：序列成对性 + `done err=` 全绿）；② **插件域错误扫描**（按插件名/前缀过滤确认 0 Error/Warning）；③ **Windows 事件日志时间窗**（`Get-WinEvent` → Application Error / .NET Runtime，核对测试窗口内零崩溃；注意事件时间戳与测试时间的对齐，旧事件勿误归因——本例最近崩溃在投影前 2 小时）。
+- **陌生洪泛归因法**：对不明批量报错（本例 95× `[Error : Unity] Mesh.vertices is too small`）→ 查 Unity `Player.log`（`%USERPROFILE%\AppData\LocalLow\Battlestate Games\EscapeFromTarkov\Player.log`，**含托管堆栈**）→ 堆栈实锤归属（本例 = `TMPro.TextMeshProUGUI.GenerateTextMesh()` × `EFT.Hideout.ProduceView` 生产界面渲染，属游戏侧 TMP/字体面，与本 mod 无补丁面交集）→ 对照「同构建其它会话是否复现」（本例另一会话 0 条）→ 定性后**记录 + 挂观察项**，不臆断、不过度排查。
+- **探针节奏**：「首轮在、结项清」——首轮诊断探针（enter/resume 级）验收后聚合降噪（本例收敛为 `done merges=N err=…` 一行）；探针移除属日志级改动，随下一构建投影覆盖即可，不单开重验轮。
+- **Windows 路径细节**：MO2 暂存目录名含 `[序号]`（方括号 = PowerShell 通配符）→ 一切文件操作加 `-LiteralPath`（否则静默空结果/误匹配）。

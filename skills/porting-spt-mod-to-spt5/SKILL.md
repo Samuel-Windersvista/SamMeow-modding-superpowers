@@ -149,12 +149,14 @@ description: Use when porting an existing SPT 4.x mod (source available) to SPT 
 - **会话获取路径可能漂移**：`Singleton<ClientApplication<IEftSession>>` 运行期失败时 try/catch 降级（价格/数据类功能退化为空值，不崩溃、不阻塞主线程）。
 - **不要引用上游 `dependencies\*.dll`**（4.1 时代产物）——编译引用一律来自 SPT5 安装。
 - **行为等价优先**：无法直译的机制（事件、协程）改等价实现并在 README 记录偏差。
+- **[重要] 库存操作执行面：值类型 `OperationResult` 只调不 detour，直调链可用**：`Diz.LanguageExtensions.OperationResult`(`<T>`) 为 `Il2CppSystem.ValueType` 代理——含其参数/返回的方法禁打 Harmony detour（封送危害族）；但「构建（`ItemManipulator.*`）→ 泛型→非泛型隐式转换 → `await ItemController.TryRunNetworkTransaction(op)`」直调链实测可用（Il2CppInterop await 桥）。执行参数（`simulate` 等）**以目标版本游戏原身为准**（ISIL/反编译对照，如 `simulate:true` 的 Mono→5.0 修正），勿照抄上游旧源码；原生自持序列化优先（TryRun = TCS+回调，游戏自身 `SortAsync` 同路径），勿自造 watcher 机械。详见 `knowledge/spt-kb/curated/operations/5xx-client-mod-dev-lessons.md` §18。
 
 ## 5. 参考
 
 - 类名映射：`docs/eft-1.1.5-类名映射重建报告.md`；类型清单：`knowledge/spt-kb/archive/eft-1.1.5/classes-1.1.5.txt`
 - 客户端规范：`knowledge/spt-kb/curated/modding-standard/05-client.md` + `version-matrix.md`
 - IL2CPP 陷阱实录：`docs/dev-log.md`（2026-09-14/15 条目）
+- 客户端实战经验集：`knowledge/spt-kb/curated/operations/5xx-client-mod-dev-lessons.md`（§16 detour 封送 / §17 interop 类型检查 / §18 执行面与 await 桥 / §19 验收取证）+ `curated/migration/pilot-experience-qol-consolidation.md`（C8 Swap 三层根因 / C9 排序先合栈全链路）
 - 样板实现：`tools/tarkov-runtime-bridge/`（BasePlugin / ClassInjector / Harmony / Singleton 全部模式）
 - **完整工作示例（4.1→5.0 全流程）**：`mods/SPT5-AccurateCircularRadar/`（工程）+ `knowledge/spt-kb/archive/ported-src/RadarStandalone_1100_spt5_port/`（归档）+ `knowledge/spt-kb/archive/forge/mods/RadarStandalone_1100_source/`（上游 4.1.3）
 - 归档约定：`knowledge/spt-kb/archive/ported-src/MANIFEST.md`

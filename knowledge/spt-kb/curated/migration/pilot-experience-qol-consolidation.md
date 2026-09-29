@@ -3,13 +3,13 @@ version: [5.0]
 domain: both
 topic: migration
 title: "SPT5 客户端 QoL 整合研究实战经验：1.1.5 符号核验 / 合并冲突面 / 部署基线陷阱"
-keywords: [SPT5, 客户端, IL2CPP, interop, ilspycmd, Harmony, transpiler, 字段漂移, 多前缀冲突, 许可合规, 分支基线, copy-if-missing, MO2部署, 排序合并, 弹药FiR]
-summary: "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工作流（类清单 + ilspycmd；方法体=原生桩）与原生反汇编取证路径；字段/名称漂移实例集（dictionary_0→_slotViews、containedGridsView_0→containedGridsView、GameSettingsGroup 命名空间迁移、method_9/GClass 消失）；transpiler 的 IL2CPP 实际形态（代理桩、须改 prefix/postfix）；同方法多前缀冲突面（Ctrl+Click 三岔口：QMTC/CactusPie/UIFixes-MultiSelect 同挂 QuickFindAppropriatePlace）；「客户端行为≠原版」再证（原版 Sort 从不合并；弹药 SpawnedInSession 恒 false）；许可矩阵前置（GPL 传染、快照-页面矛盾）；部署基线陷阱（错误分支回退 master 修复）与 copy-if-missing 数据陈旧（臂章 22 vs 37、git hash-object 判定升级）；MO2 overlay 离线部署流程；探针残缺声明与主控台直研回退。"
+keywords: [SPT5, 客户端, IL2CPP, interop, ilspycmd, Harmony, transpiler, 字段漂移, 多前缀冲突, 许可合规, 分支基线, copy-if-missing, MO2部署, 排序合并, 弹药FiR, 排序先合栈, OperationResult直调, TryRunNetworkTransaction, await桥, simulate校准]
+summary: "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工作流（类清单 + ilspycmd；方法体=原生桩）与原生反汇编取证路径；字段/名称漂移实例集（dictionary_0→_slotViews、containedGridsView_0→containedGridsView、GameSettingsGroup 命名空间迁移、method_9/GClass 消失）；transpiler 的 IL2CPP 实际形态（代理桩、须改 prefix/postfix）；同方法多前缀冲突面（Ctrl+Click 三岔口：QMTC/CactusPie/UIFixes-MultiSelect 同挂 QuickFindAppropriatePlace）；「客户端行为≠原版」再证（原版 Sort 从不合并；弹药 SpawnedInSession 恒 false）；许可矩阵前置（GPL 传染、快照-页面矛盾）；部署基线陷阱（错误分支回退 master 修复）与 copy-if-missing 数据陈旧（臂章 22 vs 37、git hash-object 判定升级）；MO2 overlay 离线部署流程；探针残缺声明与主控台直研回退；排序先合栈（StackFirst）移植全链路（镜像游戏自身 SortAsync 路径：值类型 OperationResult 直调链 + TryRun/await 桥 + simulate 以目标版本原身为准；执行策略先裁决再实现）。"
 ---
 
 # SPT5 客户端 QoL 整合研究实战经验：1.1.5 符号核验 / 合并冲突面 / 部署基线陷阱
 
-> 来源：2026-09-27/28 会话（Inescapable-Tarkovs-Softcore 臂章槽功能交付 + Betters Norvinsk QoL 整合预研）。
+> 来源：2026-09-27/28 会话（Inescapable-Tarkovs-Softcore 臂章槽功能交付 + Betters Norvinsk QoL 整合预研）；2026-09-29/30 会话（Betters Norvinsk QoL M1：工单 02 Swap 全链路 + 工单 03 排序先合栈闭环，产物 `.scratch/m1-uifixes-subset/issues/03-sort-stack-first.md`）。
 > 报告产物（toolkit `docs/research/`）：`ui-fixes-1342-spt5-port-analysis.md`、`spt5-sort-ammo-merge-mechanism.md`、`qol-mod-consolidation-feasibility.md`。
 > 前置笔记：`pilot-experience-inescapable-softcore.md`（T1–T8 / W1–W4）。
 
@@ -52,6 +52,23 @@ summary: "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工�
 - 传染规则：GPL 代码并入 → 整包须 GPL 兼容发行；否则排除该件（独立插件共存或干净重写）。
 - 页面标注与快照 LICENSE 冲突时：以快照/上游仓库为准并**把矛盾记录下来**。
 
+### C8 UIFixes Swap 移植实战：CanAccept 危害族与 drop 侧重设计（三层根因，2026-09-29）
+
+- **现象**：移植后拖动物品必闪退（coreclr 0xc0000005 同偏移；MO2 禁用 mod 即不崩）。探针点杀：崩点在「原方法在 detour 包装下被调用」环节（前缀 `return true` 放行后、后缀前）。
+- **根因一（危害族）**：`OperationResult` 为非 blittable 值类型；对含其 **out 参数/返回值**的方法（`DragItemContext.CanAccept`、`GridView.CanAccept`、`Weapon.Apply`）打 Harmony detour → trampoline 结构体封送崩（`5xx-client-mod-dev-lessons.md` §16 同族实锤）。**修复：危害族不打 detour**；接受/执行语义改「drop 侧自执行」——`ItemView.OnEndDrag`（安全签名）+ 拖拽期采样的悬停目标 → `ItemManipulator.Swap` → `RollBack()` → `RunNetworkTransaction`。
+- **根因二（松开时序）**：`OnEndDrag` 前游戏会发一次「清除更新」（`_currentContainerUnderCursor/_currentTargetItemContext → null`）；postfix 同步缓存会被覆盖为 null。**修复：拖拽期帧采样**（`DraggedItemView.Update` + `Input.GetMouseButton(0)` 门控；松开后残留帧不采样、不清除）。
+- **根因三（合成上下文）**：`GridView.CalculateItemLocation(DragItemContext)` 依赖上下文的 `CursorPosition/ItemPosition/ItemRotation`；自建上下文未 `SetPosition` → 落点错 → 网格互换模拟必败（槽位路径无需落点故不显）。
+- **通用教训**：① 接口/基类声明字段的运行时包装为 `Il2CppProxy`，`is/as` 对具体类型**恒失败**——一律 `TryCast<T>()`（原生判定，见 `Il2CppObjectBase.TryCast`）；② 「守卫级/相位级探针 + 同帧抑制」点杀法为最高效收敛手段（本例 3 轮精准定位）；③ `LogOutput.log` 每次启动覆写——**未重启的崩溃现场是金矿**；④ 修复顺序纪律（一次只变一个因子 + 探针兜底）避免多变量混淆。
+
+### C9 排序先合栈（StackFirst）移植全链路：镜像游戏自身路径（2026-09-29/30）
+
+- **背景**：上游 v6.0.3 `SortPatches.StackFirstPatch`（Mono 时代）→ 1.1.5 IL2CPP；产物 `BettersNorvinskQoL.Client/Modules/Stacking/`（`SortPatches` / `Sorter` / `StackingSettings`）；全链路闭环 = 执行策略裁决 → 实现 → 双轴审查 → 投影 → 游戏内验收 → 结项（工单 03 含符号矩阵与验收证据）。
+- **决策法（本单最高价值经验）**：实现前**先裁决执行策略**，以「游戏自身怎么做」为权威蓝图——1.1.5 `GridSortPanel.SortAsync` ISIL 实证 = `ChangeProgress(true) → ItemManipulator.Sort(_item, _controller, simulate=1) → 虚调 TryRunNetworkTransaction → ChangeProgress(false)`（0.16 / 0.16.9.5 反编译同构）→ 定案「镜像」：合并与排序均 `simulate:true` → `Succeeded` → `await TryRun`。**上游的 `simulate:false` 系 Mono 时代债，修正为 `true`**。
+- **执行面形态**（通用化见 `5xx-client-mod-dev-lessons.md` §18）：值类型 `OperationResult<T>` **只调不 detour**；泛型→非泛型隐式转换 + `await` Il2Cpp `Task<IResult>`（Il2CppInterop await 桥）**实机验证可用**；「跑一笔并等待」收敛为单点 `Execute<T>`（为降级预案预留：`TryRun(op, 回调)` + BCL `TaskCompletionSource`）。
+- **替代方案裁剪**：不移植上游 `NetworkTransactionWatcher`（自建 detour 机械）与 `OperationQueuePatch`（范围外）；先求证「原生是否已有内建机制」——TryRun 即内建自持序列化（`<>c__DisplayClass148_0` = TCS + 回调）。
+- **验收取证**：owner 实测通过 → 反查日志证据链（序列成对 + 插件域 0 错误 + Windows 事件日志窗口零崩溃）；陌生日志噪声（TMP `GenerateTextMesh` × 藏身处生产界面）经 `Player.log` 堆栈归因后挂观察项（见 lessons §19）。
+- **流程沉淀**：① 高风险执行策略**先裁决再实现**（省一轮返工；oracle 会话复用效果佳）；② 每轮「构建门 → 投影（游戏关闭时）→ owner 验证」；③ 探针「首轮在、结项清」。
+
 ## 二、交付/部署域（Inescapable-Tarkovs-Softcore 延伸）
 
 ### D1 构建/部署前必须校验分支基线
@@ -66,6 +83,7 @@ summary: "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工�
 ### D3 MO2 overlay 离线部署流程（本会话已验证）
 进程预检（游戏/服务器/启动器关闭）→ 备份（旧 DLL / 数据 / meta）→ 覆盖 DLL + 新增插件目录 → 数据按需升级 → `mo2_set_mod_notes`（plan→apply，原子写 + 快照）→ `mo2_modlist` 读回确认启用 → 哈希与条目全量校验。
 - 基线切换技法：存量未提交改动先 `git stash`（tracked-only，untracked 随行），再 checkout 目标基线；stash 兼作回滚备份。
+- **路径陷阱**：暂存目录名含 `[序号]`（如 `[5]核心-…`）时 PowerShell 方括号 = 通配符 → 文件操作一律 `-LiteralPath`（否则静默空结果/误匹配）；DLL 覆盖须游戏关闭（运行中锁文件），MO2 可保持开启。
 
 ## 三、研究/协作域
 - **R1 探针模式**：explorer 本地考古 + **残缺快照显式声明**（QMTC 仅剩 bin/obj 的案例：声明 `[FAIL]`，主控台改从 GitHub 直取 `@039132f` 补全；不猜不编）。
