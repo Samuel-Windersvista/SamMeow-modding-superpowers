@@ -117,6 +117,6 @@ modpack 测试与 mod 验证目前只有局外状态读取（Phase 1）：SPT se
 - 决策记录：ADR-0007（传输选型）；关联 ADR-0001（独立 MCP）、ADR-0002（5.x only）、ADR-0003（混合桥）、ADR-0006（姿态）。
 - 研究：生态先例调研（Web Minimap / bepinex-mcp / SPT-RPC / TarkovMonitor 边界）、MO2 客户端投送链路侦察（`game_spt5.py` 映射规则）、EFT 1.1.5 类名映射重建报告。
 - 遗留假设：usvfs 对 Launcher→游戏子进程链的客户端投送（T01 实测）；IL2CPP 成员签名（T00 核验）。
-- 术语：CONTEXT.md（In-Raid State / Client Bridge / Snapshot / Bridge）。
+- 术语：GLOSSARY.md（In-Raid State / Client Bridge / Snapshot / Bridge）。
 - 参考源登记：`SP-Tushonka/modules@5.0x-dev`（本地 `SamMeow_SP-Tushonka_modules_source_code`，tip `b5513e6`）。
 - 环境基线：SPT 5.0 `BEM-20260914`（2026-09-14 起；客户端 modules 与 0910 同 commit，EFT `1.1.5.0.47242` 未变；server 侧 0910→0914 改动不触及本 spec 依赖的接口）。

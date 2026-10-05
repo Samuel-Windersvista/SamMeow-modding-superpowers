@@ -1,6 +1,6 @@
 # SPT 5.0 客户端 mod 开发实战经验（渲染捕获 / 射线扫描 / 配置体系 / 数据源事实 / 诊断方法论 / interop 调用 / 健康与 Bot 数据源 / Harmony detour 封送 / 操作执行面与 await 桥）
 
-> 适用：[5.0] | 来源：TrueRealTimeMap 项目（SPT 5.0.0 BE / EFT 1.1.5.47242 / IL2CPP / BepInEx 6 / net6.0）实机开发与验证记录（2026-09-21）；**SamMeow.DebugToolkit 项目**实机开发与验证记录（2026-09-25；三源整合客户端 mod：DebugTooltip / BotDebug / DadGamerMode 功能移植）；**ITBS（Inescapable Tarkov's Bot System）**实机事故复盘与修复验证（2026-09-28）；**Betters Norvinsk QoL M1**（UIFixes 物品管理五功能移植）工单 02/03 实机记录（2026-09-29/30：Swap 闪退三层根因 / 排序先合栈执行面与 await 桥）
+> 适用：[5.0] | 来源：TrueRealTimeMap 项目（SPT 5.0.0 BE / EFT 1.1.5.47242 / IL2CPP / BepInEx 6 / net6.0）实机开发与验证记录（2026-09-21）；**SamMeow.DebugToolkit 项目**实机开发与验证记录（2026-09-25；三源整合客户端 mod：DebugTooltip / BotDebug / DadGamerMode 功能移植）；**ITBS（Inescapable Tarkov's Bot System）**实机事故复盘与修复验证（2026-09-28）；**Betters Norvinsk QoL M1**（UIFixes 物品管理五功能移植）工单 02/03 实机记录（2026-09-29/30：Swap 闪退三层根因 / 排序先合栈执行面与 await 桥）；**ITBS 生成编排客户端段**（2026-10-02 两局实机 + 对照轮）与 **ITBS P0 深挖增量**（2026-09-28 复盘，spec-2 复验）
 > 关联：`curated/api-notes-5.0/`、`curated/modding-standard/05-client.md`、`curated/operations/3114-client-mod-build-gotchas.md`、`skills/porting-spt-mod-to-spt5/`、`curated/migration/pilot-experience-qol-consolidation.md`（C8/C9）
 > 完整实现与证据：`E:\云文件\GitHub\SamMeow-TrueRealTime-Dynamic-Map`、`E:\云文件\GitHub\SamMeow-DebugToolkit`、`E:\云文件\GitHub\SamMeow-Inescapable-Tarkov-Betters-Norvinsk-QoL`（M1 spec / 工单 / 双轴审查与验证记录）
 
@@ -270,4 +270,40 @@
 
 - **循环**：现场证据采集（LogOutput/ErrorLog/Player.log + WinEvent **先快照**）→ oracle 诊断（日志语义先校准：探针「装配时打」与「触发时打」含义不同）→ 修复交班包（精确到文件:行 + 代码骨架）→ fixer 落地（严格按包）→ **定点 diff 复核**（只审改动点，逐语句对照）→ 提交（新 commit，**勿 amend**）→ 重投影（游戏关闭；锁则等关）→ owner 最小复测（判定性动作复现）。
 - **要点**：① 诊断须带「日志时间线校正」（`start ×20 / done ×0` 的正确读法 = 装配 20 次零回调）；② 修复包要带**残留观察项与回退预案**（如 SlotView watcher 挂起 → 回退不等待）；③ 探针哲学「首轮在、结项清」贯穿全部修复；④ 每轮把**降级/偏离**写进工单记录，验收清单同步更新。
+
+## 27. 生成编排客户端段（ITBS.Spawn）：调用形态可达性 / 只读接入点 / 距离过滤（2026-10-02 实机 + 对照轮）
+
+> 来源：ITBS E+ 第一段（客户端子模块）——bot 刷点编排与 Scav 点距离过滤；证据 `.scratch/spawn-client-orchestration/`（票 01–04 + evidence）。
+
+- **调用形态可达性先于挂点设计（§21 同族）**：`BotSpawner.TryToSpawnInZoneAndDelay` 在 bigmap 的实测调用形态 = `null-points`（内部选点）主导 + 少量远距 `forcedSpawn` 单点；「非 forced + 带候选列表」形态两局 87 次拦截**零出现** → 修剪/拒绝分支自然玩法下不可达（仅能由单测锁定）。**先统计调用形态分布，再定挂点行为与实机验收项**。
+- **只读接入点先过封送筛查（§16）**：只读点位缓存 = `BotsController.Init` Postfix（13 参 / void / 全引用类型 → PASS），零状态写入（`SpawnPointCache`、`InteropSpawnZoneReader`）。
+- **interop 目标参数数基线（重载按参数数择一）**：`BotsController.Init`(13) / `BotsController.SetSettings`(3) / `BotSpawner.TryToSpawnInZoneAndDelay`(6) / `BotBossSpawn.TrySpawn`(6，5.0 新增尾参) / `BotOwner.Create`(6) / `BotsGroup.IsPlayerEnemy`(1) / `NonWavesSpawnScenario.Update`(0)——用 `ExpectedParameterCount` 消歧。
+- **距离过滤实现纪律**：近点修剪须**逆序 `List.RemoveAt`**（正序索引位移会错删）；修剪后为空 → `return false` 且**不改原列表**；`null` / Unknown / `forcedSpawn` 放行；阈值 ≤0 = 禁用；口径 = 3D 欧氏（逐次有界日志 `event=spawn.orch.filter`）。
+- **挂载证据先行**：行为启用前须先出 `filter.attach ok=true ptr=0x…`（bind/unbind 语义，`InteropMethodPointers`）；门全关时 `spawn.orch.*` 计数 = 0（零注册零注入），以对照轮实证。
+- **attach/unbind 对称性**：unbind 失败必须升级重试（同步重试 → 有界后台重试 → `Unload` 兜底）——防整局抑制原生逻辑（`result=critical` / `retry-ok|retry-failed`）。
+- **interop 懒加载假阴性**：单次运行全目标 `result=missing` 时优先怀疑 interop 懒加载——二次进局复采再判 degrade。
+- **cfg 预写**：BepInEx cfg 只绑定已声明键——升级旧实例时新节须**预写**（例：`[Poc]` 节后补 `[Orchestration]`），否则首启后才生成、升级窗口内配置面缺节。
+- **bot 同框上限（数据面事实）**：bigmap = `SPT_Runtime\SPT_Data\configs\bot.json` → `maxBotCap.bigmap=26`；实测同框 23–31（延迟峰值 36）；改后须重启服务器。
+- **战利品派发陷阱（P0 实验）**：bot 取件路径 = `BotOwner.Looting.LootItemsAsync(..., DeadBody, ...)`；实例 ID 匹配用 `ResolveInstanceId`（`LootScanResult.{ProfileId, InstanceId, TemplateId}`，勿用模板 ID 冒充实例 ID）；「每轮重扫最近 bot」会致同尸被多 bot 重复派发至清空（7 bot × 6+ 尸）——派发须去重（`Dispatched`）且「先扫后开」协议要求扫描标志每轮可复位（`ScanFound`；相位锁死属 review 硬违规）。
+
+## 28. detour 目标解析与 interop 零值/字段陷阱（P0 深挖增量，补 §12/§16；spec-2 复验）
+
+> 来源：ITBS P0（§16 同案深挖与修复后复验）+ spec-2 实机轮回填。
+
+- **私有字段经 interop 暴露为属性**：`Il2CppInterop` 把原生字段投影为**属性**，`GetField` 恒空（假阴性）——反射解析必须先查属性（本例 `BaseBrain._owner` 解析失败致 fail-closed 拒载，改属性解析后 guard 22 项全 PASS）。
+- **泛型值类型共享实例化 → detour 静默 no-op**：泛型定义 `AICoreStrategy.Update` 的 `RVA=-1`，真实代码仅 `AICoreStrategy<Int32Enum>.Update`；`Il2CppDetourMethodPatcher.DetourTo` 以装配期 `MethodPointer` 为目标，为 0 时 Dobby **静默 no-op**（「应用成功」但永不命中）。处置：优先 `MethodPointer`、为 0 回填 `VirtualMethodPointer`；两者皆 0 → **延迟重装**（本例 `RetryDeferredStrategyPatch` ≤600 次）。
+- **`__N` 零校验具体实例（§16 补例）**：prefix `__0` 声明为 `Nullable<…>` 而实际入参为非 Nullable → 接管语义静默破坏；须签名对齐 + `new Nullable(__0)` 包装透传。
+- **`CancellationToken` 默认值 = null 代理（§12 同族）**：`Il2CppSystem.Threading.CancellationToken` 是**引用类型投影**（`sealed class : ValueType`），`default` = null 代理；托管侧传 `default` → `Il2CppObjectBaseToPtrNotNull` 在原生调用前抛 NRE（本例 79 条 `dispatch-error:NullReferenceException` 全源于此）。**显式传 `CancellationToken.None`**。
+- **原生字段写回**：interop 代理**不导出 CLR 实例字段**（托管直写 `found=false`）；须走 native `il2cpp_field_set_value` + FieldInfo（静态 `NativeFieldInfoPtr_<name>` 指针存在 ≠ 可直写；本例 `_maxCount` 写-读回实测 `module-missing` 降级）。
+- **P0 视觉补丁面（已验证）**：`LookSensor.CalcVisibleDistance` Postfix 写 `VisibleDist`；夜门控 `HourServer`（night = `hour∈[0,6)`）；`base=0.0` 为无有效视距采样、非异常。
+- **透明度验收（§16 强化）**：独立 diag 探针（复用 world_tick 路径、不新增描述符、每 bot ≤3 条）直读 `LastResult().Action/Reason` 与 `GetActiveNodeReason()/Name`，做 ON/OFF **分布比对**——「没崩/没 AV」不构成透明性证据。
+- **原生异常归因**：detour 只会让原生异常**显性化**、不必然是肇因——多重证据链（官方符号 + global-metadata + 全 mod 源码零命中）才能归因（本例 `LootPatrolLayer` NRE 属 EFT 1.1.5 原生，detour 仅路径见证者；关态对照轮亦复现）。
+
+## 29. 帧基线探针方法（客户端性能测量，2026-10-02）
+
+- **固定帧容量滑窗（非固定秒数）**：`window=` 应按帧数标注（本例 `14400frames`），跨度随帧率变化——写「60s」即失实（60fps 下实为 ~240s）。
+- **采样源与时点**：`Time.unscaledDeltaTime` 由世界 `LateUpdateWorld` 驱动；菜单 / 切图不采样；统计 = avg + nearest-rank p95。
+- **零分配措辞精确化**：统计路径稳态零分配；发射路径每秒一次字符串分配应显式说明，勿笼统称「零分配」。
+- **触点纪律**：`Perf/` 只放纯托管逻辑，IL2CPP 触点（探针运行时）隔离在 `Interop/`（`FrameProbeRuntime` 从 `Perf/` 迁入）。
+- **噪声按实记录**：基线采于含原生 NRE 刷屏的 raid 时须标注扰动（本例 avg≈19.8ms / p95≈24.4ms，采于 NRE 刷屏局）。
 

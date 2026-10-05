@@ -75,6 +75,6 @@ Status: ready-for-agent
 
 ## Further Notes
 
-- 决策记录：`docs/adr/0001-separate-tarkov-runtime-mcp.md`、`0002-spt5-only-scope.md`、`0003-hybrid-zero-bridge-strategy.md`；术语：`CONTEXT.md`。
+- 决策记录：`docs/adr/0001-separate-tarkov-runtime-mcp.md`、`0002-spt5-only-scope.md`、`0003-hybrid-zero-bridge-strategy.md`；术语：`GLOSSARY.md`。
 - 可行性研究：`docs/research/spt-runtime-state-export.md`；跨版本事实调查（3.11/4.1/5.0 机制差异、版本自报端点、shuffle 加密位置）见本会话背景调查报告，关键结论已并入 ADR。
 - 遗留假设：A-1（MO2 VFS 投影 server mod 可靠性）推迟至 Phase 2 验证；A-3（BEM tag 锚定点）开工时复核。

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28",
+ "generated": "2026-10-05",
  "schema_version": 2,
  "entries": [
   {
@@ -2666,6 +2666,54 @@
     "弹药FiR"
    ],
    "summary": "SPT5 客户端 QoL 整合实战沉淀：1.1.5 interop 符号核验工作流（类清单 + ilspycmd；方法体=原生桩）与原生反汇编取证路径；字段/名称漂移实例集（dictionary_0→_slotViews、containedGridsView_0→containedGridsView、GameSettingsGroup 命名空间迁移、method_9/GClass 消失）；transpiler 的 IL2CPP 实际形态（代理桩、须改 prefix/postfix）；同方法多前缀冲突面（Ctrl+Click 三岔口：QMTC/CactusPie/UIFixes-MultiSelect 同挂 QuickFindAppropriatePlace）；「客户端行为≠原版」再证（原版 Sort 从不合并；弹药 SpawnedInSession 恒 false）；许可矩阵前置（GPL 传染、快照-页面矛盾）；部署基线陷阱（错误分支回退 master 修复）与 copy-if-missing 数据陈旧（臂章 22 vs 37、git hash-object 判定升级）；MO2 overlay 离线部署流程；探针残缺声明与主控台直研回退。"
+  },
+  {
+   "path": "curated/lore/13-quest-text-distillation.md",
+   "title": "塔科夫剧情统一蒸馏",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "lore",
+   "source": "curated",
+   "keywords": [
+    "任务",
+    "剧情",
+    "主线",
+    "支线",
+    "蒸馏",
+    "世界观",
+    "玩家线",
+    "引用"
+   ],
+   "summary": "SPT 5.x 本地数据任务文本全量蒸馏：786 任务（主线 192 / 支线 594）逐条目引用溯源、主线十章统一叙事（笔记/对话/音频/结局）、世界观背景与玩家线补充；另附引用体系与覆盖统计"
+  },
+  {
+   "path": "curated/operations/5xx-server-mod-dev-lessons.md",
+   "title": "SPT 5.0 服务端 mod 开发实战经验（Bot 生成管线 / 容器与 Upd / 耐久弹匣 / 数据库陷阱 / 契约配置 / Harmony / 日志运维 / 数据管线）",
+   "version": [
+    "5.0"
+   ],
+   "domain": "server",
+   "topic": "operations",
+   "source": "curated",
+   "keywords": [
+    "SPT5",
+    "服务端",
+    "Bot 生成",
+    "GenerateInventory",
+    "容器缓存",
+    "Upd",
+    "耐久",
+    "弹匣",
+    "items.json",
+    "契约",
+    "Harmony",
+    "日志接缝",
+    "确定性管线",
+    "ITBS"
+   ],
+   "summary": "ITBS（Inescapable Tarkov's Bot System）服务端三段实战沉淀（P0 基座 / spec-2 服务端平面 / Progression E+ 票 01–18）：GenerateInventory 分段覆写与 ClearBotContainerCacheAfterGeneration 缓存语义（Postfix 材料化头号陷阱）；Item.Upd 生成路径与裸插后果；耐久读取域（Default/Pmc/BotDurabilities）与 GetDurabilityRole 透传；弹匣/转轮/装填方法族与 ReloadMode 映射；items.json 命名陷阱（armorClass 假判据、甲片槽清单、mod_equipment 语义）；QuestStatus.QId 十六进制死链与名称解析；ExtensionData 双写与单源读取；1e400→+∞ 与 int? 缺字段；服务端 Harmony（protected 解析、__state、fail-closed/fail-soft 分层、委派保真）；Preload vs PostLoad 配置写入窗口；多 mod 拓扑与零依赖契约；确定性数据管线（SHA 三方守卫、解锁式 tier、价格带）；日志接缝（UTC 文件名、overwrite 树、最新文件判据）与审查/提交纪律"
   }
  ],
  "tarkov_dev": {

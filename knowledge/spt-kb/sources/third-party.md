@@ -1,6 +1,6 @@
 # 第三方资料登记与应急预案（2026-08 历史备案）
 
-最后更新：2026-08-02
+最后更新：2026-10-05（增补官方论坛通道与 13 号文档来源）
 
 ## 应急预案（2026-08 历史备案）：GitHub 仓库消失后的 wiki 抓取通道
 
@@ -68,3 +68,4 @@ archive/forge/
 | Wikipedia | https://en.wikipedia.org/wiki/Escape_from_Tarkov | 客观时间设定（2015-2026）、地图清单、Russia-2028 宇宙、开发史 | webfetch 直抓 |
 | IGN Wiki（Story Chapters） | https://www.ign.com/wikis/escape-from-tarkov/Story_Chapters | 1.0 九章主线触发条件核对 | webfetch 直抓 |
 | NamuWiki（Contract Wars/Storyline） | https://en.namu.wiki/w/Contract%20Wars/%EC%8A%A4%ED%86%A0%EB%A6%AC%20%EB%9D%BC%EC%9D%B8 | 前传剧情（Norvinsk SEZ 由来、冲突起因） | webfetch（参考级，非主源） |
+| Battlestate 官方论坛（patch notes） | https://forum.escapefromtarkov.com/ | 官方 patch notes 核对（Ground Zero 称谓、派系/Boss、章节系统） | webfetch / websearch（可达） |

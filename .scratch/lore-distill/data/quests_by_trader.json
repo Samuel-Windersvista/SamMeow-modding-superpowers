@@ -1,0 +1,7268 @@
+{
+  "54cb50c76803fa8b248b4571": {
+    "chCharCount": 27901,
+    "questCount": 89,
+    "quests": [
+      {
+        "chCharCount": 690,
+        "hasDescription": true,
+        "id": "6a7637fed31fb1191903fc07",
+        "isStoryQuest": false,
+        "name": "战争迷雾",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 674,
+        "hasDescription": true,
+        "id": "59ca2eb686f77445a80ed049",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 673,
+        "hasDescription": false,
+        "id": "679cdee4ce3a208fee0ad657",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 615,
+        "hasDescription": true,
+        "id": "60e71b62a0beca400d69efc4",
+        "isStoryQuest": false,
+        "name": "护送",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 607,
+        "hasDescription": true,
+        "id": "5ede567cfa6dc072ce15d6e3",
+        "isStoryQuest": false,
+        "name": "地堡 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 604,
+        "hasDescription": true,
+        "id": "5967530a86f77462ba22226b",
+        "isStoryQuest": false,
+        "name": "罪证",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 569,
+        "hasDescription": true,
+        "id": "66ab970848ddbe9d4a0c49a8",
+        "isStoryQuest": false,
+        "name": "特别联络",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 515,
+        "hasDescription": true,
+        "id": "5eda19f0edce541157209cee",
+        "isStoryQuest": false,
+        "name": "麻醉",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 490,
+        "hasDescription": false,
+        "id": "69b052349776545e5a02076a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 474,
+        "hasDescription": true,
+        "id": "59ca264786f77445a80ed044",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 472,
+        "hasDescription": true,
+        "id": "67b45467814ab0ffa000c7e7",
+        "isStoryQuest": false,
+        "name": "艺术就是爆炸",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 455,
+        "hasDescription": true,
+        "id": "59675d6c86f7740a842fc482",
+        "isStoryQuest": false,
+        "name": "蛋卷冰淇淋",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 446,
+        "hasDescription": true,
+        "id": "59674eb386f774539f14813a",
+        "isStoryQuest": false,
+        "name": "往事速递",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 437,
+        "hasDescription": true,
+        "id": "68ee1c18b4e5bc9a68018cd7",
+        "isStoryQuest": false,
+        "name": "特殊订单",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 429,
+        "hasDescription": true,
+        "id": "5967725e86f774601a446662",
+        "isStoryQuest": false,
+        "name": "探囊取物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 425,
+        "hasDescription": false,
+        "id": "679cdd71af268e67ff086be8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 420,
+        "hasDescription": true,
+        "id": "5ede55112c95834b583f052a",
+        "isStoryQuest": false,
+        "name": "地堡",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 417,
+        "hasDescription": true,
+        "id": "5fd9fad9c1ce6b1a3b486d00",
+        "isStoryQuest": false,
+        "name": "搜索任务",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 417,
+        "hasDescription": true,
+        "id": "666314bd920800278d0f6748",
+        "isStoryQuest": false,
+        "name": "忠实观众",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 417,
+        "hasDescription": false,
+        "id": "69b2b0cc0a7db6b331031267",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 410,
+        "hasDescription": true,
+        "id": "59c124d686f774189b3c843f",
+        "isStoryQuest": false,
+        "name": "油料快车",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 408,
+        "hasDescription": true,
+        "id": "5d4bec3486f7743cac246665",
+        "isStoryQuest": false,
+        "name": "管制材料",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 405,
+        "hasDescription": true,
+        "id": "69ce1de03e15cd80bd06f6c9",
+        "isStoryQuest": false,
+        "name": "油料交换",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 400,
+        "hasDescription": true,
+        "id": "6179ac7511973d018217d0b9",
+        "isStoryQuest": false,
+        "name": "小菜一碟",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 399,
+        "hasDescription": true,
+        "id": "64f5aac4b63b74469b6c14c2",
+        "isStoryQuest": false,
+        "name": "苏共之辉",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 399,
+        "hasDescription": false,
+        "id": "68e7e20801bd936405037bee",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 395,
+        "hasDescription": false,
+        "id": "678f6bd1e8d46e40ff021605",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 394,
+        "hasDescription": true,
+        "id": "59675ea386f77414b32bded2",
+        "isStoryQuest": false,
+        "name": "邮递员派特 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 385,
+        "hasDescription": true,
+        "id": "5c0bd94186f7747a727f09b2",
+        "isStoryQuest": false,
+        "name": "塔市进口货",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 381,
+        "hasDescription": true,
+        "id": "657315df034d76585f032e01",
+        "isStoryQuest": false,
+        "name": "打靶训练",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 377,
+        "hasDescription": true,
+        "id": "675c3507a06634b5110e3c18",
+        "isStoryQuest": false,
+        "name": "引路先驱",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 368,
+        "hasDescription": true,
+        "id": "59c512ad86f7741f0d09de9b",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 364,
+        "hasDescription": true,
+        "id": "5936da9e86f7742d65037edf",
+        "isStoryQuest": false,
+        "name": "背景调查",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 362,
+        "hasDescription": true,
+        "id": "657315e1dccd301f1301416a",
+        "isStoryQuest": false,
+        "name": "奢靡人生",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 350,
+        "hasDescription": true,
+        "id": "59674cd986f7744ab26e32f2",
+        "isStoryQuest": false,
+        "name": "硝烟野餐",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 348,
+        "hasDescription": true,
+        "id": "6740a2c17e3818d5bb0648b6",
+        "isStoryQuest": false,
+        "name": "半满半空",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 342,
+        "hasDescription": false,
+        "id": "6895bfd30cb3a157480db00a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 341,
+        "hasDescription": true,
+        "id": "60e71b9bbd90872cb85440f3",
+        "isStoryQuest": false,
+        "name": "掠地攻城",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 333,
+        "hasDescription": true,
+        "id": "597a171586f77405ba6887d3",
+        "isStoryQuest": false,
+        "name": "大客户",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 331,
+        "hasDescription": true,
+        "id": "5c12452c86f7744b83469073",
+        "isStoryQuest": false,
+        "name": "左右逢源",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 328,
+        "hasDescription": true,
+        "id": "639136d68ba6894d155e77cf",
+        "isStoryQuest": false,
+        "name": "绿色通道",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 324,
+        "hasDescription": true,
+        "id": "59ca29fb86f77445ab465c87",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 312,
+        "hasDescription": true,
+        "id": "673f348dd3346c21670217e7",
+        "isStoryQuest": false,
+        "name": "货运延误 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 310,
+        "hasDescription": true,
+        "id": "59ca1a6286f774509a270942",
+        "isStoryQuest": false,
+        "name": "铁证如山",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 303,
+        "hasDescription": true,
+        "id": "59c50c8886f7745fed3193bf",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": true,
+        "id": "626bd75c71bd851e971b82a5",
+        "isStoryQuest": false,
+        "name": "踩点行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": false,
+        "id": "678f9df57252f8f0ae02f2d6",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 294,
+        "hasDescription": true,
+        "id": "60896b7bfa70fc097863b8f5",
+        "isStoryQuest": false,
+        "name": "多鱼之漏",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 293,
+        "hasDescription": true,
+        "id": "6179b5b06e9dd54ac275e409",
+        "isStoryQuest": false,
+        "name": "我们的土地，我们的血",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 287,
+        "hasDescription": true,
+        "id": "6179acbdc760af5ad2053585",
+        "isStoryQuest": false,
+        "name": "小菜一碟 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 274,
+        "hasDescription": false,
+        "id": "69b1ba3074141c146c03f9af",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 268,
+        "hasDescription": true,
+        "id": "666314bafd5ca9577902e03a",
+        "isStoryQuest": false,
+        "name": "往昔时光 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 265,
+        "hasDescription": true,
+        "id": "639135b04ed9512be67647d7",
+        "isStoryQuest": false,
+        "name": "苏共之辉 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "669fa399033a3ce9870338a8",
+        "isStoryQuest": false,
+        "name": "占有者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 260,
+        "hasDescription": false,
+        "id": "678fa2fe2e048957490ce617",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 258,
+        "hasDescription": true,
+        "id": "675c1ff1a757ddd00404f0aa",
+        "isStoryQuest": false,
+        "name": "体验独一份",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 256,
+        "hasDescription": true,
+        "id": "6573397ef3f8344c4575cd87",
+        "isStoryQuest": false,
+        "name": "财不外露",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 248,
+        "hasDescription": true,
+        "id": "60e71bb4e456d449cd47ca75",
+        "isStoryQuest": false,
+        "name": "恐吓者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 239,
+        "hasDescription": false,
+        "id": "69f051ae0a5238af8b00e11c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 238,
+        "hasDescription": true,
+        "id": "64f5deac39e45b527a7c4232",
+        "isStoryQuest": false,
+        "name": "爱国者的使命",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 230,
+        "hasDescription": true,
+        "id": "63a5cf262964a7488f5243ce",
+        "isStoryQuest": false,
+        "name": "武力说服",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 229,
+        "hasDescription": true,
+        "id": "6740a3f4eca8acb2d2055159",
+        "isStoryQuest": false,
+        "name": "横插一杠",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 227,
+        "hasDescription": true,
+        "id": "669fa3a40c828825de06d6a1",
+        "isStoryQuest": false,
+        "name": "武装郊游",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 226,
+        "hasDescription": true,
+        "id": "5936d90786f7742b1420ba5b",
+        "isStoryQuest": false,
+        "name": "首秀",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 225,
+        "hasDescription": true,
+        "id": "64e7b99017ab941a6f7bf9d7",
+        "isStoryQuest": false,
+        "name": "出警 - 商场",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 216,
+        "hasDescription": true,
+        "id": "60896bca6ee58f38c417d4f2",
+        "isStoryQuest": false,
+        "name": "叛无所依",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 215,
+        "hasDescription": true,
+        "id": "666314b4d7f171c4c20226c3",
+        "isStoryQuest": false,
+        "name": "往昔时光 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 206,
+        "hasDescription": true,
+        "id": "5c0d190cd09282029f5390d8",
+        "isStoryQuest": false,
+        "name": "掷弹兵",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 206,
+        "hasDescription": true,
+        "id": "6740a15566e6a521aa051b15",
+        "isStoryQuest": false,
+        "name": "缔结友谊",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 205,
+        "hasDescription": true,
+        "id": "59c50a9e86f7745fef66f4ff",
+        "isStoryQuest": false,
+        "name": "惩罚者 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 199,
+        "hasDescription": false,
+        "id": "67bc9970a23671dbdd023d38",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 190,
+        "hasDescription": true,
+        "id": "666314b2a9290f9e0806cca3",
+        "isStoryQuest": false,
+        "name": "人间地狱 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 185,
+        "hasDescription": false,
+        "id": "67bc6acd21692c74e700bc66",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 183,
+        "hasDescription": true,
+        "id": "63a9ae24009ffc6a551631a5",
+        "isStoryQuest": false,
+        "name": "最好的差事",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 175,
+        "hasDescription": true,
+        "id": "64e7b9bffd30422ed03dad38",
+        "isStoryQuest": false,
+        "name": "地区巡逻",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 174,
+        "hasDescription": true,
+        "id": "6574e0dedc0d635f633a5805",
+        "isStoryQuest": false,
+        "name": "透透气",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 161,
+        "hasDescription": true,
+        "id": "666314b0acf8442f8b0531a1",
+        "isStoryQuest": false,
+        "name": "人间地狱 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 155,
+        "hasDescription": false,
+        "id": "67bca04f21692c74e700bc72",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 144,
+        "hasDescription": true,
+        "id": "6391359b9444fb141f4e6ee6",
+        "isStoryQuest": false,
+        "name": "一信之缘",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 138,
+        "hasDescription": false,
+        "id": "67bc9e3e7801bf5c41017b82",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 133,
+        "hasDescription": false,
+        "id": "68f3de9e6ca382c0d101a5ea",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 118,
+        "hasDescription": true,
+        "id": "639136f086e646067c176a8b",
+        "isStoryQuest": false,
+        "name": "屋顶战神",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 105,
+        "hasDescription": false,
+        "id": "67bdafa17c1ef7a64804319c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 105,
+        "hasDescription": false,
+        "id": "68e9156369a053d132045c56",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 85,
+        "hasDescription": false,
+        "id": "67bc9d70adb794ecb40f5755",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 39,
+        "hasDescription": false,
+        "id": "68cc07e96a6359b02109da18",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 28,
+        "hasDescription": false,
+        "id": "68e6a5b42a3fa47e9100c196",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 27,
+        "hasDescription": false,
+        "id": "68bdb3b00deb8afba70216bd",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 11,
+        "hasDescription": false,
+        "id": "68d5be85d12284307b08175e",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 66,
+    "storyCount": 23,
+    "traderId": "54cb50c76803fa8b248b4571",
+    "traderNameCn": "Prapor",
+    "traderNameEn": "Prapor",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "54cb57776803fa99248b456e": {
+    "chCharCount": 20369,
+    "questCount": 57,
+    "quests": [
+      {
+        "chCharCount": 818,
+        "hasDescription": true,
+        "id": "5edac34d0bb72a50635c2bfa",
+        "isStoryQuest": false,
+        "name": "艰难抉择",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 697,
+        "hasDescription": true,
+        "id": "675c03d1f7da9792a405549a",
+        "isStoryQuest": false,
+        "name": "无主货物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 666,
+        "hasDescription": true,
+        "id": "6a7ae35b2dbf91eb050af95a",
+        "isStoryQuest": false,
+        "name": "侵入性疗法",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 550,
+        "hasDescription": true,
+        "id": "5969f9e986f7741dde183a50",
+        "isStoryQuest": false,
+        "name": "药剂师",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 522,
+        "hasDescription": true,
+        "id": "5a68663e86f774501078f78a",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 520,
+        "hasDescription": true,
+        "id": "69ce204c8702b378f9091e4b",
+        "isStoryQuest": false,
+        "name": "战争从未改变",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 515,
+        "hasDescription": true,
+        "id": "67a0972e77dd677f600804bd",
+        "isStoryQuest": false,
+        "name": "这带子糟透了",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 506,
+        "hasDescription": true,
+        "id": "69ce213a298a6529b30d7134",
+        "isStoryQuest": false,
+        "name": "生化分析",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 505,
+        "hasDescription": true,
+        "id": "5a68669a86f774255929b4d4",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 505,
+        "hasDescription": true,
+        "id": "675c04f4db8807b75d0f38e8",
+        "isStoryQuest": false,
+        "name": "平易近人",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 482,
+        "hasDescription": true,
+        "id": "657315ddab5a49b71f098853",
+        "isStoryQuest": false,
+        "name": "新手上路",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 477,
+        "hasDescription": true,
+        "id": "64f731ab83cfca080a361e42",
+        "isStoryQuest": false,
+        "name": "兽医也是医",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 465,
+        "hasDescription": true,
+        "id": "67a09673972c11a3f507731d",
+        "isStoryQuest": false,
+        "name": "塔科夫屠夫",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 453,
+        "hasDescription": true,
+        "id": "59689ee586f7740d1570bbd5",
+        "isStoryQuest": false,
+        "name": "卫生标准",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 451,
+        "hasDescription": true,
+        "id": "597a160786f77477531d39d2",
+        "isStoryQuest": false,
+        "name": "出于好奇",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 449,
+        "hasDescription": true,
+        "id": "5969f90786f77420d2328015",
+        "isStoryQuest": false,
+        "name": "善良之针",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 447,
+        "hasDescription": true,
+        "id": "596a0e1686f7741ddf17dbee",
+        "isStoryQuest": false,
+        "name": "供给计划",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 434,
+        "hasDescription": true,
+        "id": "5a68661a86f774500f48afb0",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 430,
+        "hasDescription": true,
+        "id": "64f3176921045e77405d63b5",
+        "isStoryQuest": false,
+        "name": "急诊室的故事",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 423,
+        "hasDescription": true,
+        "id": "5edaba7c0c502106f869bc02",
+        "isStoryQuest": false,
+        "name": "塔科夫式手腕",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 404,
+        "hasDescription": true,
+        "id": "59689fbd86f7740d137ebfc4",
+        "isStoryQuest": false,
+        "name": "水瓶座行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 386,
+        "hasDescription": true,
+        "id": "6179ad56c760af5ad2053587",
+        "isStoryQuest": false,
+        "name": "海边假期",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 381,
+        "hasDescription": true,
+        "id": "5a68665c86f774255929b4c7",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 380,
+        "hasDescription": true,
+        "id": "66aba85403e0ee3101042877",
+        "isStoryQuest": false,
+        "name": "街区之下",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 379,
+        "hasDescription": true,
+        "id": "5c0d1c4cd0928202a02a6f5c",
+        "isStoryQuest": false,
+        "name": "灭虫服务",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 366,
+        "hasDescription": true,
+        "id": "639135d89444fb141f4e6eea",
+        "isStoryQuest": false,
+        "name": "人口普查",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 345,
+        "hasDescription": true,
+        "id": "596a1e6c86f7741ddc2d3206",
+        "isStoryQuest": false,
+        "name": "一般储备",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 343,
+        "hasDescription": true,
+        "id": "5edab736cc183c769d778bc2",
+        "isStoryQuest": false,
+        "name": "同事",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 335,
+        "hasDescription": true,
+        "id": "596a218586f77420d232807c",
+        "isStoryQuest": false,
+        "name": "汽车修理",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 330,
+        "hasDescription": true,
+        "id": "626bd75b05f287031503c7f6",
+        "isStoryQuest": false,
+        "name": "缉毒行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 326,
+        "hasDescription": true,
+        "id": "669fa3a3ad7f1eac2607ed48",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 320,
+        "hasDescription": true,
+        "id": "669fa3910c828825de06d69f",
+        "isStoryQuest": false,
+        "name": "健全替代",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 311,
+        "hasDescription": true,
+        "id": "60896e28e4a85c72ef3fa301",
+        "isStoryQuest": false,
+        "name": "病历",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 308,
+        "hasDescription": true,
+        "id": "5c0be5fc86f774467a116593",
+        "isStoryQuest": false,
+        "name": "私人诊所",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 303,
+        "hasDescription": true,
+        "id": "596a204686f774576d4c95de",
+        "isStoryQuest": false,
+        "name": "卫生标准 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": true,
+        "id": "5968eb3186f7741dde183a4d",
+        "isStoryQuest": false,
+        "name": "带血的水",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": true,
+        "id": "6179afd0bca27a099552e040",
+        "isStoryQuest": false,
+        "name": "消失的线人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 300,
+        "hasDescription": true,
+        "id": "6a5424ae135497b9df0c68be",
+        "isStoryQuest": false,
+        "name": "秋季综合征",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 298,
+        "hasDescription": true,
+        "id": "675c047fa46173572a0bd878",
+        "isStoryQuest": false,
+        "name": "货运追踪",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 294,
+        "hasDescription": true,
+        "id": "59c9392986f7742f6923add2",
+        "isStoryQuest": false,
+        "name": "救助站点",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 273,
+        "hasDescription": true,
+        "id": "639135e0fa894f0a866afde6",
+        "isStoryQuest": false,
+        "name": "城市的解药",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 267,
+        "hasDescription": true,
+        "id": "5967733e86f774602332fc84",
+        "isStoryQuest": false,
+        "name": "短缺",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 266,
+        "hasDescription": true,
+        "id": "666314b696a9349baa021bac",
+        "isStoryQuest": false,
+        "name": "质量标准",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 263,
+        "hasDescription": true,
+        "id": "60e71c48c1bfa3050473b8e5",
+        "isStoryQuest": false,
+        "name": "急单",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 260,
+        "hasDescription": true,
+        "id": "665eeca45d86b6c8aa03c79d",
+        "isStoryQuest": false,
+        "name": "口干舌燥 - 往日回响",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 259,
+        "hasDescription": true,
+        "id": "6573387d0b26ed4fde798de3",
+        "isStoryQuest": false,
+        "name": "兽医也是医 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 255,
+        "hasDescription": true,
+        "id": "5a68667486f7742607157d28",
+        "isStoryQuest": false,
+        "name": "医疗隐私 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 223,
+        "hasDescription": true,
+        "id": "63ab180c87413d64ae0ac20a",
+        "isStoryQuest": false,
+        "name": "危险之路",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 211,
+        "hasDescription": true,
+        "id": "665eeca92f7aedcc900b0437",
+        "isStoryQuest": false,
+        "name": "口干舌燥 - 秘密配方",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 183,
+        "hasDescription": false,
+        "id": "68b58c2745550ec0f408ee56",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 172,
+        "hasDescription": true,
+        "id": "669fa39ee749756c920d02c8",
+        "isStoryQuest": false,
+        "name": "刨根问底",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 165,
+        "hasDescription": false,
+        "id": "6895bed8e7dac53c7c08797d",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 157,
+        "hasDescription": true,
+        "id": "5d6fb2c086f77449da599c24",
+        "isStoryQuest": false,
+        "name": "一天一个苹果 - 医生远离我",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 138,
+        "hasDescription": true,
+        "id": "5c0d0d5086f774363760aef2",
+        "isStoryQuest": false,
+        "name": "运动员",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 113,
+        "hasDescription": false,
+        "id": "678fa1463977eb69290a3a06",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 111,
+        "hasDescription": true,
+        "id": "596760e186f7741e11214d58",
+        "isStoryQuest": false,
+        "name": "邮递员派特 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 25,
+        "hasDescription": false,
+        "id": "68c02056b4000f84a4026e06",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 53,
+    "storyCount": 4,
+    "traderId": "54cb57776803fa99248b456e",
+    "traderNameCn": "Therapist",
+    "traderNameEn": "Therapist",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "579dc571d53a0658a154fbec": {
+    "chCharCount": 6307,
+    "questCount": 19,
+    "quests": [
+      {
+        "chCharCount": 1899,
+        "hasDescription": true,
+        "id": "5c51aac186f77432ea65c552",
+        "isStoryQuest": false,
+        "name": "收藏家",
+        "nameSource": "ch",
+        "prereqCount": 4
+      },
+      {
+        "chCharCount": 969,
+        "hasDescription": true,
+        "id": "66d9cbb67b491f9d5304f6e6",
+        "isStoryQuest": false,
+        "name": "这是什么梗？",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 397,
+        "hasDescription": true,
+        "id": "6834233fecd5cf3a440d855b",
+        "isStoryQuest": false,
+        "name": "良心作祟 - 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 362,
+        "hasDescription": true,
+        "id": "683425dd8f5b18d29a05d9d1",
+        "isStoryQuest": false,
+        "name": "两害相权（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 317,
+        "hasDescription": true,
+        "id": "6663148ed7f171c4c20226c1",
+        "isStoryQuest": false,
+        "name": "小本生意 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 270,
+        "hasDescription": true,
+        "id": "66631489acf8442f8b05319f",
+        "isStoryQuest": false,
+        "name": "陌路相交",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 270,
+        "hasDescription": true,
+        "id": "6663149196a9349baa021baa",
+        "isStoryQuest": false,
+        "name": "小本生意 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 261,
+        "hasDescription": false,
+        "id": "67bdf2cecf0cc29475092199",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 246,
+        "hasDescription": true,
+        "id": "6663148ca9290f9e0806cca1",
+        "isStoryQuest": false,
+        "name": "免疫力",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 241,
+        "hasDescription": true,
+        "id": "66631493312343839d032d22",
+        "isStoryQuest": false,
+        "name": "小本生意 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 237,
+        "hasDescription": true,
+        "id": "686530ba9ed06113720e2c37",
+        "isStoryQuest": false,
+        "name": "外部利益",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 229,
+        "hasDescription": false,
+        "id": "68f03d79d0745b2b100be32c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 153,
+        "hasDescription": true,
+        "id": "60effd818b669d08a35bfad5",
+        "isStoryQuest": false,
+        "name": "抉择",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 112,
+        "hasDescription": true,
+        "id": "6672d9def1c88688a707d042",
+        "isStoryQuest": false,
+        "name": "建立联系",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 107,
+        "hasDescription": false,
+        "id": "68ea9b0b8bfb4ae0aa04ddf9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 98,
+        "hasDescription": false,
+        "id": "6924820dbf8cf5498b05dac0",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 60,
+        "hasDescription": false,
+        "id": "68e90a73a3d110355b03e3a2",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 59,
+        "hasDescription": false,
+        "id": "69247ccc803723e83c0439fd",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 20,
+        "hasDescription": false,
+        "id": "6902443b0d98240ccf07e8b4",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      }
+    ],
+    "sideCount": 13,
+    "storyCount": 6,
+    "traderId": "579dc571d53a0658a154fbec",
+    "traderNameCn": "Fence",
+    "traderNameEn": "Fence",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "58330581ace78e27b8b10cee": {
+    "chCharCount": 27981,
+    "questCount": 71,
+    "quests": [
+      {
+        "chCharCount": 831,
+        "hasDescription": true,
+        "id": "6572e876dc0d635f633a5714",
+        "isStoryQuest": false,
+        "name": "发财计划",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 763,
+        "hasDescription": true,
+        "id": "597a0f5686f774273b74f676",
+        "isStoryQuest": false,
+        "name": "化学品 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 697,
+        "hasDescription": true,
+        "id": "5c0bbaa886f7746941031d82",
+        "isStoryQuest": false,
+        "name": "一派胡言",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 696,
+        "hasDescription": true,
+        "id": "674600a366e6a521aa05eb66",
+        "isStoryQuest": false,
+        "name": "偏离路线",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 626,
+        "hasDescription": true,
+        "id": "5979f9ba86f7740f6c3fe9f2",
+        "isStoryQuest": false,
+        "name": "化学品 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 583,
+        "hasDescription": true,
+        "id": "6a7aef2360157cb5e3029a5f",
+        "isStoryQuest": false,
+        "name": "刺激需求",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 560,
+        "hasDescription": true,
+        "id": "6179b4f16e9dd54ac275e407",
+        "isStoryQuest": false,
+        "name": "失踪货物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 545,
+        "hasDescription": true,
+        "id": "67af4c1991ee75c6d7060a16",
+        "isStoryQuest": false,
+        "name": "站稳脚跟",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 543,
+        "hasDescription": true,
+        "id": "665eec4a4dfc83b0ed0a9dca",
+        "isStoryQuest": false,
+        "name": "口干舌燥 - 送货服务",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 539,
+        "hasDescription": true,
+        "id": "67460662d0fbbc74ca0f7229",
+        "isStoryQuest": false,
+        "name": "识时务者为俊杰",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 533,
+        "hasDescription": true,
+        "id": "67af4c169d95ad16e004fd86",
+        "isStoryQuest": false,
+        "name": "安全保障",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 529,
+        "hasDescription": true,
+        "id": "6764174c86addd02bc033d68",
+        "isStoryQuest": false,
+        "name": "北国新秀",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 526,
+        "hasDescription": true,
+        "id": "639135c3744e452011470807",
+        "isStoryQuest": false,
+        "name": "软禁",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 518,
+        "hasDescription": true,
+        "id": "5979eee086f774311955e614",
+        "isStoryQuest": false,
+        "name": "金色失物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 511,
+        "hasDescription": true,
+        "id": "67af4c1d8c9482eca103e477",
+        "isStoryQuest": false,
+        "name": "安慰奖",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 509,
+        "hasDescription": true,
+        "id": "596b43fb86f77457ca186186",
+        "isStoryQuest": false,
+        "name": "敲诈者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 502,
+        "hasDescription": true,
+        "id": "5979ed3886f77431307dc512",
+        "isStoryQuest": false,
+        "name": "U盘里有什么？",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 496,
+        "hasDescription": true,
+        "id": "5b478eca86f7744642012254",
+        "isStoryQuest": false,
+        "name": "维他命",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 491,
+        "hasDescription": true,
+        "id": "67af4c1405c58dc6f7056667",
+        "isStoryQuest": false,
+        "name": "有利可图的生意",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 486,
+        "hasDescription": true,
+        "id": "5c1234c286f77406fa13baeb",
+        "isStoryQuest": false,
+        "name": "借刀杀人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 470,
+        "hasDescription": true,
+        "id": "597a0e5786f77426d66c0636",
+        "isStoryQuest": false,
+        "name": "化学品 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 469,
+        "hasDescription": true,
+        "id": "5b478ff486f7744d184ecbbf",
+        "isStoryQuest": false,
+        "name": "供货",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 464,
+        "hasDescription": true,
+        "id": "67a097379f2068e74603c6ac",
+        "isStoryQuest": false,
+        "name": "绝对威信",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 459,
+        "hasDescription": true,
+        "id": "674602307e3818d5bb069489",
+        "isStoryQuest": false,
+        "name": "后知后觉",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 449,
+        "hasDescription": true,
+        "id": "67af4c17f4f1fb58a907f8f6",
+        "isStoryQuest": false,
+        "name": "学无止境",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 448,
+        "hasDescription": true,
+        "id": "596a101f86f7741ddb481582",
+        "isStoryQuest": false,
+        "name": "暗中破坏",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 445,
+        "hasDescription": true,
+        "id": "5b4795fb86f7745876267770",
+        "isStoryQuest": false,
+        "name": "愿者上钩",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 435,
+        "hasDescription": true,
+        "id": "5b47926a86f7747ccc057c15",
+        "isStoryQuest": false,
+        "name": "情报就是力量",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 433,
+        "hasDescription": true,
+        "id": "675c3582f6ddc329a90f9c6d",
+        "isStoryQuest": false,
+        "name": "私人俱乐部",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 430,
+        "hasDescription": true,
+        "id": "666314bf1cd52e3d040a2e78",
+        "isStoryQuest": false,
+        "name": "严词指控",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 430,
+        "hasDescription": true,
+        "id": "68400953506db3b4db0700e7",
+        "isStoryQuest": false,
+        "name": "公道价 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 419,
+        "hasDescription": true,
+        "id": "596b36c586f77450d6045ad2",
+        "isStoryQuest": false,
+        "name": "供应商",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 416,
+        "hasDescription": true,
+        "id": "5979f8bb86f7743ec214c7a6",
+        "isStoryQuest": false,
+        "name": "Polikhim流浪汉",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 408,
+        "hasDescription": false,
+        "id": "6895bf915bcf5c38e90b83d8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 406,
+        "hasDescription": true,
+        "id": "5a27d2af86f7744e1115b323",
+        "isStoryQuest": false,
+        "name": "西方来客 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 398,
+        "hasDescription": true,
+        "id": "5edabd13218d181e29451442",
+        "isStoryQuest": false,
+        "name": "肮脏游戏",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 398,
+        "hasDescription": true,
+        "id": "674605df60a98cad1b0ec799",
+        "isStoryQuest": false,
+        "name": "致命论据",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 391,
+        "hasDescription": true,
+        "id": "666314c3acf8442f8b0531a3",
+        "isStoryQuest": false,
+        "name": "一报还一报",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 388,
+        "hasDescription": true,
+        "id": "626bd75d5bef5d7d590bd415",
+        "isStoryQuest": false,
+        "name": "头号机密",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 375,
+        "hasDescription": true,
+        "id": "6745fae369a58fceba10343d",
+        "isStoryQuest": false,
+        "name": "人往高处走",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 374,
+        "hasDescription": true,
+        "id": "6746053b5b555b53460d9896",
+        "isStoryQuest": false,
+        "name": "关键伙伴",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 373,
+        "hasDescription": true,
+        "id": "68400926706e0a55e90b0007",
+        "isStoryQuest": false,
+        "name": "公道价 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 360,
+        "hasDescription": true,
+        "id": "5c0bc91486f7746ab41857a2",
+        "isStoryQuest": false,
+        "name": "大音希声",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 352,
+        "hasDescription": true,
+        "id": "67af4c1cc0e59d55e2010b97",
+        "isStoryQuest": false,
+        "name": "人生之课",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 350,
+        "hasDescription": true,
+        "id": "639dbaf17c898a131e1cffff",
+        "isStoryQuest": false,
+        "name": "老赖",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 345,
+        "hasDescription": true,
+        "id": "597a0b2986f77426d66c0633",
+        "isStoryQuest": false,
+        "name": "化学品 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 340,
+        "hasDescription": true,
+        "id": "64f6aafd67e11a7c6206e0d0",
+        "isStoryQuest": false,
+        "name": "秘制食谱",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 317,
+        "hasDescription": true,
+        "id": "5c0d0f1886f77457b8210226",
+        "isStoryQuest": false,
+        "name": "转口贸易",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 311,
+        "hasDescription": true,
+        "id": "657315e270bb0b8dba00cc48",
+        "isStoryQuest": false,
+        "name": "快车初体验",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 304,
+        "hasDescription": true,
+        "id": "6089743983426423753cd58a",
+        "isStoryQuest": false,
+        "name": "安全通道",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 300,
+        "hasDescription": true,
+        "id": "60e71c11d54b755a3b53eb65",
+        "isStoryQuest": false,
+        "name": "夜间扫荡",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 296,
+        "hasDescription": false,
+        "id": "6895bf1ecfb48128340d5a89",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 286,
+        "hasDescription": true,
+        "id": "596b455186f77457cb50eccb",
+        "isStoryQuest": false,
+        "name": "风波",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 286,
+        "hasDescription": true,
+        "id": "658027799634223183395339",
+        "isStoryQuest": false,
+        "name": "禁止打劫",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 281,
+        "hasDescription": true,
+        "id": "639135cd8ba6894d155e77cb",
+        "isStoryQuest": false,
+        "name": "软禁 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 279,
+        "hasDescription": true,
+        "id": "67af4c1a6c3ebfd8e6034916",
+        "isStoryQuest": false,
+        "name": "利润保留",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 275,
+        "hasDescription": true,
+        "id": "6834145ebc1f443d7603c8a7",
+        "isStoryQuest": false,
+        "name": "赚点快钱 - 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 258,
+        "hasDescription": true,
+        "id": "671a49f77d49aea42c029b5f",
+        "isStoryQuest": false,
+        "name": "诱人新货",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 252,
+        "hasDescription": true,
+        "id": "665eec1f5e47a79f8605565a",
+        "isStoryQuest": false,
+        "name": "口干舌燥 - 养家糊口",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 236,
+        "hasDescription": true,
+        "id": "669fa395c4c5c04798002497",
+        "isStoryQuest": false,
+        "name": "出口在此",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 224,
+        "hasDescription": true,
+        "id": "64f5e20652fc01298e2c61e3",
+        "isStoryQuest": false,
+        "name": "好吃到上瘾",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 222,
+        "hasDescription": true,
+        "id": "6193850f60b34236ee0483de",
+        "isStoryQuest": false,
+        "name": "长路漫漫",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 219,
+        "hasDescription": true,
+        "id": "671a59e43d73dac1360765cc",
+        "isStoryQuest": false,
+        "name": "致命道具",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 205,
+        "hasDescription": true,
+        "id": "60896888e4a85c72ef3fa300",
+        "isStoryQuest": false,
+        "name": "绝密技术",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 198,
+        "hasDescription": true,
+        "id": "669fa39c64ea11e84c0642a6",
+        "isStoryQuest": false,
+        "name": "隔墙有“眼”",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 197,
+        "hasDescription": true,
+        "id": "59c93e8e86f7742a406989c4",
+        "isStoryQuest": false,
+        "name": "收买人心",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 184,
+        "hasDescription": true,
+        "id": "5a27c99a86f7747d2c6bdd8e",
+        "isStoryQuest": false,
+        "name": "西方来客",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 170,
+        "hasDescription": true,
+        "id": "5c0bdb5286f774166e38eed4",
+        "isStoryQuest": false,
+        "name": "坚如燧石",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 152,
+        "hasDescription": true,
+        "id": "666314bc1d3ec95634095e77",
+        "isStoryQuest": false,
+        "name": "高光时刻",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 10,
+        "hasDescription": false,
+        "id": "68f0f55328dbd5787907a2b9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 10,
+        "hasDescription": false,
+        "id": "68f0f55917a7f61dc70e7353",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 67,
+    "storyCount": 4,
+    "traderId": "58330581ace78e27b8b10cee",
+    "traderNameCn": "Skier",
+    "traderNameEn": "Skier",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "5935c25fb3acc3127c3d8cd9": {
+    "chCharCount": 17797,
+    "questCount": 51,
+    "quests": [
+      {
+        "chCharCount": 674,
+        "hasDescription": true,
+        "id": "5c0d4c12d09282029f539173",
+        "isStoryQuest": false,
+        "name": "维和任务",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 588,
+        "hasDescription": true,
+        "id": "5a27b87686f77460de0252a8",
+        "isStoryQuest": false,
+        "name": "人道主义援助",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 570,
+        "hasDescription": true,
+        "id": "5edac020218d181e29451446",
+        "isStoryQuest": false,
+        "name": "样品",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 559,
+        "hasDescription": true,
+        "id": "69e5583240c3e6c8ba0edbd5",
+        "isStoryQuest": false,
+        "name": "窃听风暴",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 540,
+        "hasDescription": true,
+        "id": "5c0d4e61d09282029f53920e",
+        "isStoryQuest": false,
+        "name": "向导",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 512,
+        "hasDescription": true,
+        "id": "5a27bc8586f7741b543d8ea4",
+        "isStoryQuest": false,
+        "name": "湿活 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 512,
+        "hasDescription": true,
+        "id": "5edac63b930f5454f51e128b",
+        "isStoryQuest": false,
+        "name": "TerraGroup 雇员",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 492,
+        "hasDescription": true,
+        "id": "6086c852c945025d41566124",
+        "isStoryQuest": false,
+        "name": "无中生有 - 储备站",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 475,
+        "hasDescription": true,
+        "id": "69ce1f84ebbdbf36a200627c",
+        "isStoryQuest": false,
+        "name": "和平原子",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 444,
+        "hasDescription": true,
+        "id": "5a27bc1586f7741f6d40fa2f",
+        "isStoryQuest": false,
+        "name": "湿活 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 428,
+        "hasDescription": true,
+        "id": "5a27b7d686f77460d847e6a6",
+        "isStoryQuest": false,
+        "name": "破铜烂铁",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 421,
+        "hasDescription": true,
+        "id": "5a27bb1e86f7741f27621b7e",
+        "isStoryQuest": false,
+        "name": "神秘货物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 412,
+        "hasDescription": true,
+        "id": "66aa58245ab22944110db6e9",
+        "isStoryQuest": false,
+        "name": "新路线，新机遇",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 411,
+        "hasDescription": true,
+        "id": "5a27b80086f774429a5d7e20",
+        "isStoryQuest": false,
+        "name": "鹰眼",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 399,
+        "hasDescription": true,
+        "id": "67a09724972c11a3f5077324",
+        "isStoryQuest": false,
+        "name": "机密情报",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 391,
+        "hasDescription": true,
+        "id": "5a03296886f774569778596a",
+        "isStoryQuest": false,
+        "name": "你渴望电力吗",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 390,
+        "hasDescription": true,
+        "id": "5a0327ba86f77456b9154236",
+        "isStoryQuest": false,
+        "name": "燃料短缺",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 389,
+        "hasDescription": true,
+        "id": "5a27ba1c86f77461ea5a3c56",
+        "isStoryQuest": false,
+        "name": "武器流通",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 387,
+        "hasDescription": true,
+        "id": "6179aff8f57fb279792c60a1",
+        "isStoryQuest": false,
+        "name": "人口过剩",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 383,
+        "hasDescription": true,
+        "id": "61958c366726521dd96828ec",
+        "isStoryQuest": false,
+        "name": "来自塔科夫的礼物",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 382,
+        "hasDescription": true,
+        "id": "669fa38fad7f1eac2607ed46",
+        "isStoryQuest": false,
+        "name": "悬结已解",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 372,
+        "hasDescription": true,
+        "id": "5b4794cb86f774598100d5d4",
+        "isStoryQuest": false,
+        "name": "铁鸟坠落",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 371,
+        "hasDescription": true,
+        "id": "5a27b7a786f774579c3eb376",
+        "isStoryQuest": false,
+        "name": "猎虎行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 371,
+        "hasDescription": true,
+        "id": "6179b4d1bca27a099552e04e",
+        "isStoryQuest": false,
+        "name": "无中生有 - 灯塔",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 370,
+        "hasDescription": true,
+        "id": "5a27bb8386f7741c770d2d0a",
+        "isStoryQuest": false,
+        "name": "湿活 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 349,
+        "hasDescription": true,
+        "id": "5a27bc3686f7741c73584026",
+        "isStoryQuest": false,
+        "name": "湿活 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 340,
+        "hasDescription": true,
+        "id": "639135f286e646067c176a87",
+        "isStoryQuest": false,
+        "name": "无中生有 - 塔科夫街区",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 317,
+        "hasDescription": true,
+        "id": "5a27bb3d86f77411ea361a21",
+        "isStoryQuest": false,
+        "name": "定向追踪",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 305,
+        "hasDescription": true,
+        "id": "5a27bafb86f7741c73584017",
+        "isStoryQuest": false,
+        "name": "化学实验",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 304,
+        "hasDescription": true,
+        "id": "5a03153686f77442d90e2171",
+        "isStoryQuest": false,
+        "name": "单程票",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 296,
+        "hasDescription": true,
+        "id": "6179b5eabca27a099552e052",
+        "isStoryQuest": false,
+        "name": "反抗",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 283,
+        "hasDescription": true,
+        "id": "5a03173786f77451cb427172",
+        "isStoryQuest": false,
+        "name": "疗养之旅 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 278,
+        "hasDescription": true,
+        "id": "639135534b15ca31f76bc317",
+        "isStoryQuest": false,
+        "name": "你的车该洗了",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 274,
+        "hasDescription": true,
+        "id": "675c1d6d59b0575973008fc7",
+        "isStoryQuest": false,
+        "name": "先声夺人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 273,
+        "hasDescription": true,
+        "id": "5a27bbf886f774333a418eeb",
+        "isStoryQuest": false,
+        "name": "湿活 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 271,
+        "hasDescription": true,
+        "id": "63a9b229813bba58a50c9ee5",
+        "isStoryQuest": false,
+        "name": "最烂的差事",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 251,
+        "hasDescription": true,
+        "id": "5a0449d586f77474e66227b7",
+        "isStoryQuest": false,
+        "name": "主钥匙",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 251,
+        "hasDescription": true,
+        "id": "5a27ba9586f7741b543d8e85",
+        "isStoryQuest": false,
+        "name": "疗养之旅 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 247,
+        "hasDescription": true,
+        "id": "6a5cd2178fd7c2b201032f3f",
+        "isStoryQuest": false,
+        "name": "演示原型",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 246,
+        "hasDescription": true,
+        "id": "5a27b75b86f7742e97191958",
+        "isStoryQuest": false,
+        "name": "渔具",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 242,
+        "hasDescription": true,
+        "id": "5a27b9de86f77464e5044585",
+        "isStoryQuest": false,
+        "name": "邪教",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 236,
+        "hasDescription": true,
+        "id": "60e71ccb5688f6424c7bfec4",
+        "isStoryQuest": false,
+        "name": "战利品",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 236,
+        "hasDescription": true,
+        "id": "639282134ed9512be67647ed",
+        "isStoryQuest": false,
+        "name": "此路不通",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 224,
+        "hasDescription": true,
+        "id": "60e71c9ad54b755a3b53eb66",
+        "isStoryQuest": false,
+        "name": "清洁工",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 215,
+        "hasDescription": true,
+        "id": "6a5c1578f2689567c30eb0f3",
+        "isStoryQuest": false,
+        "name": "徒步旅行",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 212,
+        "hasDescription": true,
+        "id": "60e71ce009d7c801eb0c0ec6",
+        "isStoryQuest": false,
+        "name": "特殊装备",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 210,
+        "hasDescription": true,
+        "id": "6a5ccda873f06065630d61b0",
+        "isStoryQuest": false,
+        "name": "秘密消息",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 179,
+        "hasDescription": true,
+        "id": "5a27bb5986f7741dfb660900",
+        "isStoryQuest": false,
+        "name": "神秘货物 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 176,
+        "hasDescription": true,
+        "id": "5a27bc6986f7741c7358402b",
+        "isStoryQuest": false,
+        "name": "湿活 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 171,
+        "hasDescription": true,
+        "id": "5c0bd01e86f7747cdd799e56",
+        "isStoryQuest": false,
+        "name": "彻夜难眠",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 168,
+        "hasDescription": true,
+        "id": "5d6fbc2886f77449d825f9d3",
+        "isStoryQuest": false,
+        "name": "导师",
+        "nameSource": "ch",
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 51,
+    "storyCount": 0,
+    "traderId": "5935c25fb3acc3127c3d8cd9",
+    "traderNameCn": "Peacekeeper",
+    "traderNameEn": "Peacekeeper",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "5a7c2eca46aef81a7ca2145d": {
+    "chCharCount": 41533,
+    "questCount": 128,
+    "quests": [
+      {
+        "chCharCount": 1096,
+        "hasDescription": true,
+        "id": "684009026ceedc792c09b2a7",
+        "isStoryQuest": false,
+        "name": "同好俱乐部",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 1084,
+        "hasDescription": false,
+        "id": "67ced01df816f16d9a00d586",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 972,
+        "hasDescription": false,
+        "id": "69bbfae89ce356593c0e2f35",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 820,
+        "hasDescription": true,
+        "id": "625d700cc48e6c62a440fab5",
+        "isStoryQuest": false,
+        "name": "逐光而行 - 邂逅",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 815,
+        "hasDescription": true,
+        "id": "676529af9c90953d090882e7",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 12",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 611,
+        "hasDescription": true,
+        "id": "68db9c7557bc51a8c804c14b",
+        "isStoryQuest": false,
+        "name": "目标与手段",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 600,
+        "hasDescription": true,
+        "id": "6942b44f891369fc790e385a",
+        "isStoryQuest": false,
+        "name": "轻重缓急",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 563,
+        "hasDescription": true,
+        "id": "5b47825886f77468074618d3",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 9",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 545,
+        "hasDescription": true,
+        "id": "6179b3bdc7560e13d23eeb8d",
+        "isStoryQuest": false,
+        "name": "商业机密",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 541,
+        "hasDescription": true,
+        "id": "67a096577e86e067eb045733",
+        "isStoryQuest": false,
+        "name": "暗藏玄机",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 541,
+        "hasDescription": true,
+        "id": "67a0970f05d1611ed90be75d",
+        "isStoryQuest": false,
+        "name": "检验假说",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 517,
+        "hasDescription": true,
+        "id": "67a0970744893b9f3f0d9b68",
+        "isStoryQuest": false,
+        "name": "武装侦察",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 501,
+        "hasDescription": true,
+        "id": "625d7001c4874104f230c0c5",
+        "isStoryQuest": false,
+        "name": "试探 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 477,
+        "hasDescription": false,
+        "id": "69a05d3ae6778aebac085ca5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 467,
+        "hasDescription": true,
+        "id": "657315e4a6af4ab4b50f3459",
+        "isStoryQuest": false,
+        "name": "救援行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 461,
+        "hasDescription": false,
+        "id": "69aae3aa97c076d9b503bceb",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 454,
+        "hasDescription": true,
+        "id": "5ac346cf86f7741d63233a02",
+        "isStoryQuest": false,
+        "name": "信号 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 450,
+        "hasDescription": true,
+        "id": "67a09636b8725511260bc421",
+        "isStoryQuest": false,
+        "name": "影子雇员",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 449,
+        "hasDescription": false,
+        "id": "69c101ad6f858059840d7bb9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 444,
+        "hasDescription": true,
+        "id": "625d70031ed3bb5bcc5bd9e5",
+        "isStoryQuest": false,
+        "name": "灯塔之匙",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 439,
+        "hasDescription": false,
+        "id": "67ced014c43709665f0fbe46",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 438,
+        "hasDescription": false,
+        "id": "6895bf42a3de8e8f1d0426a8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 435,
+        "hasDescription": true,
+        "id": "5b47749f86f7746c5d6a5fd4",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 431,
+        "hasDescription": true,
+        "id": "5c0bde0986f77479cf22c2f8",
+        "isStoryQuest": false,
+        "name": "天神射手",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 426,
+        "hasDescription": true,
+        "id": "66aa74571e5e199ecd094f18",
+        "isStoryQuest": false,
+        "name": "化工厂的秘密",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 422,
+        "hasDescription": true,
+        "id": "5ac346a886f7744e1b083d67",
+        "isStoryQuest": false,
+        "name": "捕鼠计划",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 417,
+        "hasDescription": true,
+        "id": "64ee9df4496db64f9b7a4432",
+        "isStoryQuest": false,
+        "name": "神秘的门",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 412,
+        "hasDescription": true,
+        "id": "666314c10aa5c7436c00908c",
+        "isStoryQuest": false,
+        "name": "镜头就位，开拍！",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 412,
+        "hasDescription": false,
+        "id": "69bc1265402142259105e144",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 410,
+        "hasDescription": true,
+        "id": "6752f6d83038f7df520c83e8",
+        "isStoryQuest": false,
+        "name": "一臂之力",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 401,
+        "hasDescription": true,
+        "id": "5ac3460c86f7742880308185",
+        "isStoryQuest": false,
+        "name": "挖矿 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 396,
+        "hasDescription": true,
+        "id": "5b477b6f86f7747290681823",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 393,
+        "hasDescription": true,
+        "id": "6578ec473dbd035d04531a8d",
+        "isStoryQuest": false,
+        "name": "稳定信号",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 391,
+        "hasDescription": true,
+        "id": "625d6fff4149f1149b5b12c9",
+        "isStoryQuest": false,
+        "name": "试探 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 386,
+        "hasDescription": false,
+        "id": "67ced017029b9dbe190f3c77",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 380,
+        "hasDescription": false,
+        "id": "67bc9eda1d99d6ebe5014b65",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 379,
+        "hasDescription": false,
+        "id": "69c1329ccae583c8b503d4fa",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 377,
+        "hasDescription": true,
+        "id": "5b47799d86f7746c5d6a5fd8",
+        "isStoryQuest": false,
+        "name": "枪匠 - MPX",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 376,
+        "hasDescription": true,
+        "id": "5c0be13186f7746f016734aa",
+        "isStoryQuest": false,
+        "name": "狙击疯魔",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 375,
+        "hasDescription": true,
+        "id": "5ac244c486f77413e12cf945",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 374,
+        "hasDescription": true,
+        "id": "675c1570526ff496850895d9",
+        "isStoryQuest": false,
+        "name": "工欲善其事",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 367,
+        "hasDescription": true,
+        "id": "5ac3467986f7741d6224abc2",
+        "isStoryQuest": false,
+        "name": "恶意环伺",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 366,
+        "hasDescription": true,
+        "id": "5ac346e886f7741d6118b99b",
+        "isStoryQuest": false,
+        "name": "信号 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 366,
+        "hasDescription": true,
+        "id": "639872fe8871e1272b10ccf6",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 364,
+        "hasDescription": true,
+        "id": "5f04886a3937dc337a6b8238",
+        "isStoryQuest": false,
+        "name": "化学橱柜",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 363,
+        "hasDescription": true,
+        "id": "686531bc87eb213a8e078e99",
+        "isStoryQuest": false,
+        "name": "临门一脚 - 先行者",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 360,
+        "hasDescription": true,
+        "id": "65733403eefc2c312a759ddb",
+        "isStoryQuest": false,
+        "name": "公司福报",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 358,
+        "hasDescription": true,
+        "id": "686524fe9809a149400dd301",
+        "isStoryQuest": false,
+        "name": "进度受阻 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 354,
+        "hasDescription": true,
+        "id": "5ac3464c86f7741d651d6877",
+        "isStoryQuest": false,
+        "name": "半导体危机",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 346,
+        "hasDescription": true,
+        "id": "669fa394e0c9f9fafa082897",
+        "isStoryQuest": false,
+        "name": "叉车拼多多",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 344,
+        "hasDescription": true,
+        "id": "5ae3277186f7745973054106",
+        "isStoryQuest": false,
+        "name": "枪匠 - AKS-74N",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 340,
+        "hasDescription": true,
+        "id": "5ac345dc86f774288030817f",
+        "isStoryQuest": false,
+        "name": "投机第一步",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 337,
+        "hasDescription": true,
+        "id": "686404d348e7bb4146002cac",
+        "isStoryQuest": false,
+        "name": "诺文斯克旧友 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 336,
+        "hasDescription": true,
+        "id": "5b477f7686f7744d1b23c4d2",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 7",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 336,
+        "hasDescription": true,
+        "id": "625d7005a4eb80027c4f2e09",
+        "isStoryQuest": false,
+        "name": "咚咚咚",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 336,
+        "hasDescription": false,
+        "id": "6895bfa355ad4ab76001a1c9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 334,
+        "hasDescription": true,
+        "id": "625d6ffaf7308432be1d44c5",
+        "isStoryQuest": false,
+        "name": "网络供应商 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 333,
+        "hasDescription": false,
+        "id": "68588ee109509e9fa1045b38",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 331,
+        "hasDescription": true,
+        "id": "669fa39b91b0a8c9680fc467",
+        "isStoryQuest": false,
+        "name": "黑天鹅计划",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 330,
+        "hasDescription": true,
+        "id": "6261482fa4eb80027c4f2e11",
+        "isStoryQuest": false,
+        "name": "破镜重圆 - 装备",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 328,
+        "hasDescription": true,
+        "id": "626bd75e47ea7f506e5493c5",
+        "isStoryQuest": false,
+        "name": "直播 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 322,
+        "hasDescription": true,
+        "id": "5ac242ab86f77412464f68b4",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 320,
+        "hasDescription": false,
+        "id": "67ced018d1e611aa410235e5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 318,
+        "hasDescription": true,
+        "id": "6179b3a12153c15e937d52bc",
+        "isStoryQuest": false,
+        "name": "能源危机",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 315,
+        "hasDescription": true,
+        "id": "5ac3479086f7742880308199",
+        "isStoryQuest": false,
+        "name": "圈内人",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 314,
+        "hasDescription": true,
+        "id": "6089736efa70fc097863b8f6",
+        "isStoryQuest": false,
+        "name": "后门",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 311,
+        "hasDescription": true,
+        "id": "5c139eb686f7747878361a6f",
+        "isStoryQuest": false,
+        "name": "进口",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 311,
+        "hasDescription": false,
+        "id": "67bc86024e7dbc3aa202431b",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 309,
+        "hasDescription": true,
+        "id": "5ae3267986f7742a413592fe",
+        "isStoryQuest": false,
+        "name": "枪匠 - M870",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 308,
+        "hasDescription": true,
+        "id": "5ac3475486f7741d6224abd3",
+        "isStoryQuest": false,
+        "name": "不良嗜好",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 308,
+        "hasDescription": true,
+        "id": "639135e8c115f907b14700aa",
+        "isStoryQuest": false,
+        "name": "探望",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 305,
+        "hasDescription": true,
+        "id": "5ac23c6186f7741247042bad",
+        "isStoryQuest": false,
+        "name": "枪匠 - MP-133",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 303,
+        "hasDescription": true,
+        "id": "5ac3477486f7741d651d6885",
+        "isStoryQuest": false,
+        "name": "侦查",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 296,
+        "hasDescription": true,
+        "id": "63987301e11ec11ff5504036",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 8",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 295,
+        "hasDescription": true,
+        "id": "60e71d6d7fcf9c556f325055",
+        "isStoryQuest": false,
+        "name": "急先锋",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 291,
+        "hasDescription": true,
+        "id": "6573382e557ff128bf3da536",
+        "isStoryQuest": false,
+        "name": "高效秘诀",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 289,
+        "hasDescription": true,
+        "id": "5d2495a886f77425cd51e403",
+        "isStoryQuest": false,
+        "name": "介绍",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 286,
+        "hasDescription": true,
+        "id": "5ac244eb86f7741356335af1",
+        "isStoryQuest": false,
+        "name": "枪匠 - M4A1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 284,
+        "hasDescription": true,
+        "id": "5ac2428686f77412450b42bf",
+        "isStoryQuest": false,
+        "name": "枪匠 - HK MP5",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 272,
+        "hasDescription": true,
+        "id": "639872fc93ae507d5858c3a6",
+        "isStoryQuest": false,
+        "name": "枪匠 - Vector 9x19",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 271,
+        "hasDescription": true,
+        "id": "6864fcef9809a149400dd2ee",
+        "isStoryQuest": false,
+        "name": "喘息之机",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 270,
+        "hasDescription": true,
+        "id": "625d6ff5ddc94657c21a1625",
+        "isStoryQuest": false,
+        "name": "网络供应商 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 269,
+        "hasDescription": false,
+        "id": "67b892b338076c36e50abfb5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 265,
+        "hasDescription": true,
+        "id": "67a0964e972c11a3f507731b",
+        "isStoryQuest": false,
+        "name": "大海捞针",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 265,
+        "hasDescription": false,
+        "id": "69aaecdf174ff467ef0acc38",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "5ac2426c86f774138762edfe",
+        "isStoryQuest": false,
+        "name": "枪匠 - AKS-74U",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "5ae3280386f7742a41359364",
+        "isStoryQuest": false,
+        "name": "枪匠 - AS VAL",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "64f83bcdde58fc437700d8fa",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 11",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 261,
+        "hasDescription": true,
+        "id": "5ae327c886f7745c7b3f2f3f",
+        "isStoryQuest": false,
+        "name": "枪匠 - AK-105",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 258,
+        "hasDescription": true,
+        "id": "666314b8312343839d032d24",
+        "isStoryQuest": false,
+        "name": "航空包裹",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 253,
+        "hasDescription": true,
+        "id": "6089732b59b92115597ad789",
+        "isStoryQuest": false,
+        "name": "物尽其用",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 249,
+        "hasDescription": true,
+        "id": "669fa3a1c26f13bd04030f37",
+        "isStoryQuest": false,
+        "name": "设施维护",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 238,
+        "hasDescription": true,
+        "id": "639136fa9444fb141f4e6eee",
+        "isStoryQuest": false,
+        "name": "你被盯上了",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 235,
+        "hasDescription": true,
+        "id": "5c1128e386f7746565181106",
+        "isStoryQuest": false,
+        "name": "肥料",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 230,
+        "hasDescription": true,
+        "id": "639872f9decada40426d3447",
+        "isStoryQuest": false,
+        "name": "枪匠 - OP-SKS",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 228,
+        "hasDescription": true,
+        "id": "60e71d23c1bfa3050473b8e6",
+        "isStoryQuest": false,
+        "name": "致命校准",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 225,
+        "hasDescription": true,
+        "id": "5ae3270f86f77445ba41d4dd",
+        "isStoryQuest": false,
+        "name": "枪匠 - AKM",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 220,
+        "hasDescription": true,
+        "id": "63913715f8e5dd32bf4e3aaa",
+        "isStoryQuest": false,
+        "name": "直播 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 218,
+        "hasDescription": true,
+        "id": "5ac3462b86f7741d6118b983",
+        "isStoryQuest": false,
+        "name": "挖矿",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 213,
+        "hasDescription": true,
+        "id": "64f83bb69878a0569d6ecfbe",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 10",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 207,
+        "hasDescription": false,
+        "id": "67bc801c7801bf5c41017b6d",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 204,
+        "hasDescription": true,
+        "id": "639872fa9b4fb827b200d8e5",
+        "isStoryQuest": false,
+        "name": "枪匠 - P226R",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 204,
+        "hasDescription": true,
+        "id": "639873003693c63d86328f25",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 204,
+        "hasDescription": false,
+        "id": "67b892b4884d39aaea04ef26",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 202,
+        "hasDescription": true,
+        "id": "64f83bd983cfca080a362c82",
+        "isStoryQuest": false,
+        "name": "枪匠大师 - 13",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 196,
+        "hasDescription": false,
+        "id": "67ced012152372f12708b7b6",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 194,
+        "hasDescription": true,
+        "id": "68650d08a1f188f84d0f5993",
+        "isStoryQuest": false,
+        "name": "进度受阻 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 174,
+        "hasDescription": false,
+        "id": "67b892b832f50fb7ec084426",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 173,
+        "hasDescription": true,
+        "id": "625d6ffcaa168e51321d69d7",
+        "isStoryQuest": false,
+        "name": "试探 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 166,
+        "hasDescription": true,
+        "id": "626148251ed3bb5bcc5bd9ed",
+        "isStoryQuest": false,
+        "name": "破镜重圆 - 收买人心",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 160,
+        "hasDescription": false,
+        "id": "67b892bb1c013f0fcb058246",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 154,
+        "hasDescription": false,
+        "id": "67b892b6b4c09aae5309c275",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 131,
+        "hasDescription": false,
+        "id": "68588ed9f981006b1e0a7718",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 127,
+        "hasDescription": true,
+        "id": "6391d90f4ed9512be67647df",
+        "isStoryQuest": false,
+        "name": "破镜重圆",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 125,
+        "hasDescription": false,
+        "id": "69bbd63fcc93b653fd061f39",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 107,
+        "hasDescription": false,
+        "id": "67ced00fd47d32692302aca6",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 82,
+        "hasDescription": false,
+        "id": "69a9bc08babf5c053607fef7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 66,
+        "hasDescription": false,
+        "id": "67b892ba0e9aad30720bfc56",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 51,
+        "hasDescription": false,
+        "id": "68588edc157cc3165608f2b7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 35,
+        "hasDescription": false,
+        "id": "6915a36080bc8396530efe7f",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 30,
+        "hasDescription": false,
+        "id": "69baba34790f8452d305ae08",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 23,
+        "hasDescription": false,
+        "id": "69b2bb74ac1e735d5c0f9a57",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6894bc838bbdab4ab109929c",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "689610e431dc963a7205a121",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68973efb9e616ec3130d2c69",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6897401030d0c0235c051b2c",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68dbf539675bd8efd403ec10",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6a04b0b7d4b07b5ef1064e38",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 96,
+    "storyCount": 32,
+    "traderId": "5a7c2eca46aef81a7ca2145d",
+    "traderNameCn": "Mechanic",
+    "traderNameEn": "Mechanic",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "5ac3b934156ae10c4430e83c": {
+    "chCharCount": 19638,
+    "questCount": 65,
+    "quests": [
+      {
+        "chCharCount": 641,
+        "hasDescription": true,
+        "id": "6a7b0df31ea00c9a980e2742",
+        "isStoryQuest": false,
+        "name": "西西弗斯",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 609,
+        "hasDescription": true,
+        "id": "67a0967c003a9986cb0f5ac1",
+        "isStoryQuest": false,
+        "name": "感官分析 - 1",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 536,
+        "hasDescription": true,
+        "id": "675c085d59b0575973005f52",
+        "isStoryQuest": false,
+        "name": "浑水摸鱼",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 530,
+        "hasDescription": true,
+        "id": "5b478b1886f7744d1b23c57d",
+        "isStoryQuest": false,
+        "name": "火线速递",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 514,
+        "hasDescription": false,
+        "id": "68f0f556dae477041501acfe",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 490,
+        "hasDescription": true,
+        "id": "5ae4498786f7744bde357695",
+        "isStoryQuest": false,
+        "name": "成功的关键",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 490,
+        "hasDescription": true,
+        "id": "6a8b8266f47489e5720a63b7",
+        "isStoryQuest": false,
+        "name": "买票上船！",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 484,
+        "hasDescription": true,
+        "id": "5b47891f86f7744d1b23c571",
+        "isStoryQuest": false,
+        "name": "奢侈无罪",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 480,
+        "hasDescription": true,
+        "id": "6a7af2e48fddc3979d0510b8",
+        "isStoryQuest": false,
+        "name": "双手插袋",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 462,
+        "hasDescription": true,
+        "id": "5b478d0f86f7744d190d91b5",
+        "isStoryQuest": false,
+        "name": "微型客车",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 459,
+        "hasDescription": true,
+        "id": "5c1141f386f77430ff393792",
+        "isStoryQuest": false,
+        "name": "古董爱好者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 449,
+        "hasDescription": true,
+        "id": "639135bbc115f907b14700a6",
+        "isStoryQuest": false,
+        "name": "高保真",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 437,
+        "hasDescription": true,
+        "id": "5ae4495c86f7744e87761355",
+        "isStoryQuest": false,
+        "name": "临行密密缝 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 436,
+        "hasDescription": true,
+        "id": "5ae449d986f774453a54a7e1",
+        "isStoryQuest": false,
+        "name": "财务总监",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 427,
+        "hasDescription": true,
+        "id": "67d03be712fb5f8fd2096332",
+        "isStoryQuest": false,
+        "name": "清空外围",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 422,
+        "hasDescription": true,
+        "id": "639135a7e705511c8a4a1b78",
+        "isStoryQuest": false,
+        "name": "芭蕾舞者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 410,
+        "hasDescription": true,
+        "id": "5ae448bf86f7744d733e55ee",
+        "isStoryQuest": false,
+        "name": "Make ULTRA Great Again",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 409,
+        "hasDescription": true,
+        "id": "666314c5a9290f9e0806cca5",
+        "isStoryQuest": false,
+        "name": "城市之匙",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 394,
+        "hasDescription": true,
+        "id": "638fcd23dc65553116701d33",
+        "isStoryQuest": false,
+        "name": "审计",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 389,
+        "hasDescription": true,
+        "id": "5ae448f286f77448d73c0131",
+        "isStoryQuest": false,
+        "name": "燃油危机",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 389,
+        "hasDescription": true,
+        "id": "5e381b0286f77420e3417a74",
+        "isStoryQuest": false,
+        "name": "纺织业 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 387,
+        "hasDescription": true,
+        "id": "60e71dc67fcf9c556f325056",
+        "isStoryQuest": false,
+        "name": "酒瘾",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 374,
+        "hasDescription": true,
+        "id": "5ae449b386f77446d8741719",
+        "isStoryQuest": false,
+        "name": "感恩的心",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 374,
+        "hasDescription": true,
+        "id": "5e4d515e86f77438b2195244",
+        "isStoryQuest": false,
+        "name": "纺织业 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 370,
+        "hasDescription": true,
+        "id": "5c112d7e86f7740d6f647486",
+        "isStoryQuest": false,
+        "name": "垃圾佬",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 357,
+        "hasDescription": true,
+        "id": "5ae4493486f7744efa289417",
+        "isStoryQuest": false,
+        "name": "库存清单",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 352,
+        "hasDescription": true,
+        "id": "5ae4490786f7744ca822adcc",
+        "isStoryQuest": false,
+        "name": "盛装杀戮",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 351,
+        "hasDescription": true,
+        "id": "5ae448e586f7744dcf0c2a67",
+        "isStoryQuest": false,
+        "name": "大甩卖",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 342,
+        "hasDescription": true,
+        "id": "5e383a6386f77465910ce1f3",
+        "isStoryQuest": false,
+        "name": "纺织业 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 340,
+        "hasDescription": true,
+        "id": "69ce21e990144e437802b1e0",
+        "isStoryQuest": false,
+        "name": "新鲜到货",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 333,
+        "hasDescription": true,
+        "id": "5e4d4ac186f774264f758336",
+        "isStoryQuest": false,
+        "name": "纺织业 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 332,
+        "hasDescription": true,
+        "id": "666314a1920800278d0f6746",
+        "isStoryQuest": false,
+        "name": "特殊提议",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 331,
+        "hasDescription": false,
+        "id": "6895bf0872e2151e9e0a59fa",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 330,
+        "hasDescription": true,
+        "id": "5ae4496986f774459e77beb6",
+        "isStoryQuest": false,
+        "name": "临行密密缝 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 328,
+        "hasDescription": true,
+        "id": "5c10f94386f774227172c572",
+        "isStoryQuest": false,
+        "name": "小事大帮忙",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 320,
+        "hasDescription": true,
+        "id": "65734c186dc1e402c80dc19e",
+        "isStoryQuest": false,
+        "name": "花花公子",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 317,
+        "hasDescription": true,
+        "id": "66aa61663aa37705c5024277",
+        "isStoryQuest": false,
+        "name": "此路是我开！",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 309,
+        "hasDescription": true,
+        "id": "608974af4b05530f55550c21",
+        "isStoryQuest": false,
+        "name": "储备专家",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 288,
+        "hasDescription": true,
+        "id": "5ae4493d86f7744b8e15aa8f",
+        "isStoryQuest": false,
+        "name": "损失惨重",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 276,
+        "hasDescription": true,
+        "id": "5ae4497b86f7744cf402ed00",
+        "isStoryQuest": false,
+        "name": "临行密密缝 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 272,
+        "hasDescription": true,
+        "id": "5ae449c386f7744bde357697",
+        "isStoryQuest": false,
+        "name": "探路者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 271,
+        "hasDescription": true,
+        "id": "5b47876e86f7744d1c353205",
+        "isStoryQuest": false,
+        "name": "战争之血 - 2",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 261,
+        "hasDescription": true,
+        "id": "5ae4499a86f77449783815db",
+        "isStoryQuest": false,
+        "name": "风流倜傥",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 246,
+        "hasDescription": true,
+        "id": "5ae4495086f77443c122bc40",
+        "isStoryQuest": false,
+        "name": "临行密密缝 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 240,
+        "hasDescription": true,
+        "id": "608974d01a66564e74191fc0",
+        "isStoryQuest": false,
+        "name": "雪中送炭",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 219,
+        "hasDescription": true,
+        "id": "60e71dc0a94be721b065bbfc",
+        "isStoryQuest": false,
+        "name": "长期合作",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 214,
+        "hasDescription": true,
+        "id": "6613f3007f6666d56807c929",
+        "isStoryQuest": false,
+        "name": "人靠衣装 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 200,
+        "hasDescription": true,
+        "id": "666314a50aa5c7436c00908a",
+        "isStoryQuest": false,
+        "name": "旧情难却",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 197,
+        "hasDescription": true,
+        "id": "65802b627b44fa5e14638899",
+        "isStoryQuest": false,
+        "name": "绝不上当",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 192,
+        "hasDescription": true,
+        "id": "66151401efb0539ae10875ae",
+        "isStoryQuest": false,
+        "name": "人靠衣装 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 185,
+        "hasDescription": true,
+        "id": "666314a31cd52e3d040a2e76",
+        "isStoryQuest": false,
+        "name": "实战考验",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 165,
+        "hasDescription": true,
+        "id": "5ae449a586f7744bde357696",
+        "isStoryQuest": false,
+        "name": "暗度陈仓",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 160,
+        "hasDescription": true,
+        "id": "6613f307fca4f2f386029409",
+        "isStoryQuest": false,
+        "name": "人靠衣装 - 2",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 160,
+        "hasDescription": true,
+        "id": "6615141bfda04449120269a7",
+        "isStoryQuest": false,
+        "name": "人靠衣装 - 2",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 152,
+        "hasDescription": true,
+        "id": "5ae448a386f7744d3730fff0",
+        "isStoryQuest": false,
+        "name": "生意至上",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 137,
+        "hasDescription": true,
+        "id": "6663149cfd5ca9577902e037",
+        "isStoryQuest": false,
+        "name": "看不见的大手",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 99,
+        "hasDescription": true,
+        "id": "6663149f1d3ec95634095e75",
+        "isStoryQuest": false,
+        "name": "经济流动",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bd688f14c985e64208896a",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bd7d8753a07591760f8429",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bd7ddcd5e479cdc90915f7",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bd7e1bf862c2df6d014c37",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bd7f081dfd7ab723017cb7",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69c07eda4e4a455718064e9b",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69c0804347f588a3050c9d8b",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69c08283d2ffcc5e23016da1",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 63,
+    "storyCount": 2,
+    "traderId": "5ac3b934156ae10c4430e83c",
+    "traderNameCn": "Ragman",
+    "traderNameEn": "Ragman",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "5c0647fdd443bc2504c2d371": {
+    "chCharCount": 21168,
+    "questCount": 65,
+    "quests": [
+      {
+        "chCharCount": 1266,
+        "hasDescription": false,
+        "id": "68e3a3d2ff05916c250a898b",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 618,
+        "hasDescription": true,
+        "id": "69ce1cfb298a6529b30d712b",
+        "isStoryQuest": false,
+        "name": "如楔在侧",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 579,
+        "hasDescription": true,
+        "id": "5edab4b1218d181e29451435",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 虐待狂",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 487,
+        "hasDescription": true,
+        "id": "5d25e44f86f77443e625e385",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 蒸发密令",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 475,
+        "hasDescription": true,
+        "id": "5d25e4ad86f77443e625e387",
+        "isStoryQuest": false,
+        "name": "怀旧之情",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 441,
+        "hasDescription": true,
+        "id": "5bc4893c86f774626f5ebf3e",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 7",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 408,
+        "hasDescription": true,
+        "id": "60e71e8ed54b755a3b53eb67",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 无情杀手",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 407,
+        "hasDescription": true,
+        "id": "5d25e45e86f77408251c4bfa",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 解放",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 406,
+        "hasDescription": true,
+        "id": "6391372c8ba6894d155e77d7",
+        "isStoryQuest": false,
+        "name": "直播 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 402,
+        "hasDescription": true,
+        "id": "5d25e2ee86f77443e35162ea",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 森林管理员",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 399,
+        "hasDescription": true,
+        "id": "66b38c7bf85b8bf7250f9cb6",
+        "isStoryQuest": false,
+        "name": "危机四伏塔科夫",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 398,
+        "hasDescription": true,
+        "id": "5d25e2c386f77443e7549029",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 战利品",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 394,
+        "hasDescription": true,
+        "id": "60c0c018f7afb4354815096a",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 工厂头目",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 388,
+        "hasDescription": true,
+        "id": "64e7b971f9d6fa49d6769b44",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 大动作",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 387,
+        "hasDescription": true,
+        "id": "5d25b6be86f77444001e1b89",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 省吃俭用",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 381,
+        "hasDescription": true,
+        "id": "66b38e144f2ab7cc530c3fe7",
+        "isStoryQuest": false,
+        "name": "猎人必修课",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 378,
+        "hasDescription": true,
+        "id": "5eaaaa7c93afa0558f3b5a1c",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 瘾君子",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 371,
+        "hasDescription": true,
+        "id": "5bc4836986f7740c0152911c",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 368,
+        "hasDescription": true,
+        "id": "63a9b36cc31b00242d28a99f",
+        "isStoryQuest": false,
+        "name": "屠宰场",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 366,
+        "hasDescription": true,
+        "id": "5bc4776586f774512d07cf05",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 1",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 362,
+        "hasDescription": true,
+        "id": "5d25e4b786f77408251c4bfc",
+        "isStoryQuest": false,
+        "name": "鱼塘",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 361,
+        "hasDescription": true,
+        "id": "5bc479e586f7747f376c7da3",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 354,
+        "hasDescription": true,
+        "id": "626bdcc3a371ee3a7a3514c5",
+        "isStoryQuest": false,
+        "name": "流浪狗",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 353,
+        "hasDescription": true,
+        "id": "5d25e2e286f77444001e2e48",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 脱销",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 341,
+        "hasDescription": true,
+        "id": "675c1cf4a757ddd00404f0a3",
+        "isStoryQuest": false,
+        "name": "事倍功半",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 332,
+        "hasDescription": true,
+        "id": "5d24b81486f77439c92d6ba8",
+        "isStoryQuest": false,
+        "name": "熟人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 332,
+        "hasDescription": true,
+        "id": "669fa3a08b4a64b332041ff7",
+        "isStoryQuest": false,
+        "name": "妥善保管",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 329,
+        "hasDescription": true,
+        "id": "5d25e43786f7740a212217fa",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 正义",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 326,
+        "hasDescription": true,
+        "id": "5d25e48186f77443e625e386",
+        "isStoryQuest": false,
+        "name": "礼节性拜访",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 326,
+        "hasDescription": true,
+        "id": "5d25e48d86f77408251c4bfb",
+        "isStoryQuest": false,
+        "name": "黑幕交易",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 325,
+        "hasDescription": true,
+        "id": "608a768d82e40b3c727fd17d",
+        "isStoryQuest": false,
+        "name": "害虫防治",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 320,
+        "hasDescription": true,
+        "id": "5d25e2b486f77409de05bba0",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 周边安全",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 318,
+        "hasDescription": true,
+        "id": "5d25aed386f77442734d25d2",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 危险零距离",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 314,
+        "hasDescription": true,
+        "id": "66ab9da7eb102b9bcd08591c",
+        "isStoryQuest": false,
+        "name": "卑鄙的外乡人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 306,
+        "hasDescription": true,
+        "id": "61904daa7d0d857927447b9c",
+        "isStoryQuest": false,
+        "name": "隐士",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 304,
+        "hasDescription": true,
+        "id": "675c1ec7a46173572a0bf20a",
+        "isStoryQuest": false,
+        "name": "试炼之路",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 289,
+        "hasDescription": true,
+        "id": "6a45208043b8d7604d00b8d5",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 管理者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 283,
+        "hasDescription": true,
+        "id": "5d25e44386f77409453bce7b",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 愤怒守望者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 283,
+        "hasDescription": true,
+        "id": "63a511ea30d85e10e375b045",
+        "isStoryQuest": false,
+        "name": "直播 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 283,
+        "hasDescription": true,
+        "id": "64ee99639878a0569d6ec8c9",
+        "isStoryQuest": false,
+        "name": "直播 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 271,
+        "hasDescription": true,
+        "id": "5bc47dbf86f7741ee74e93b9",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 3",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 264,
+        "hasDescription": true,
+        "id": "5d25e4ca86f77409dd5cdf2c",
+        "isStoryQuest": false,
+        "name": "狩猎之旅",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "669fa3979b0ce3feae01a130",
+        "isStoryQuest": false,
+        "name": "幽闭恐惧症",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 262,
+        "hasDescription": true,
+        "id": "6a4532e48e82d8ffea0c3eae",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 控制",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 261,
+        "hasDescription": true,
+        "id": "63a88045abf76d719f42d715",
+        "isStoryQuest": false,
+        "name": "美味香肠",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 257,
+        "hasDescription": true,
+        "id": "5d25e29d86f7740a22516326",
+        "isStoryQuest": false,
+        "name": "生存者之路 -  雕鸮",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 244,
+        "hasDescription": true,
+        "id": "665eeacf5d86b6c8aa03c79b",
+        "isStoryQuest": false,
+        "name": "口干舌燥 - 猎犬行动",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 242,
+        "hasDescription": true,
+        "id": "639136df4b15ca31f76bc31f",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 管理者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 238,
+        "hasDescription": true,
+        "id": "5d25e2cc86f77443e47ae019",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 杀戮森林",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 234,
+        "hasDescription": true,
+        "id": "6578eb36e5020875d64645cd",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 坏警察",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 233,
+        "hasDescription": true,
+        "id": "5d25e4d586f77443e625e388",
+        "isStoryQuest": false,
+        "name": "储备",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 232,
+        "hasDescription": true,
+        "id": "5d25cf2686f77443e75488d4",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 硬汉",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 230,
+        "hasDescription": true,
+        "id": "5bc4826c86f774106d22d88b",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 5",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 230,
+        "hasDescription": true,
+        "id": "639136e84ed9512be67647db",
+        "isStoryQuest": false,
+        "name": "别开枪！",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 223,
+        "hasDescription": true,
+        "id": "5d25e46e86f77409453bce7c",
+        "isStoryQuest": false,
+        "name": "急救措施",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 216,
+        "hasDescription": true,
+        "id": "6179ad0a6e9dd54ac275e3f2",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 流浪汉",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 207,
+        "hasDescription": true,
+        "id": "5bc480a686f7741af0342e29",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 4",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 202,
+        "hasDescription": true,
+        "id": "5d25e2a986f77409dd5cdf2a",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 战地军医",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 173,
+        "hasDescription": true,
+        "id": "5d25e2d886f77442734d335e",
+        "isStoryQuest": false,
+        "name": "猎人之路 - 支配者",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 167,
+        "hasDescription": true,
+        "id": "60e729cf5698ee7b05057439",
+        "isStoryQuest": false,
+        "name": "快枪手",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 165,
+        "hasDescription": true,
+        "id": "5d25bfd086f77442734d3007",
+        "isStoryQuest": false,
+        "name": "生存者之路 - Zhivchik",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 162,
+        "hasDescription": true,
+        "id": "5d25c81b86f77443e625dd71",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 受伤的野兽",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 149,
+        "hasDescription": true,
+        "id": "600302d73b897b11364cd161",
+        "isStoryQuest": false,
+        "name": "污秽遍地……",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 146,
+        "hasDescription": true,
+        "id": "5bc4856986f77454c317bea7",
+        "isStoryQuest": false,
+        "name": "塔科夫神射手 - 6",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 138,
+        "hasDescription": true,
+        "id": "5d25d2c186f77443e35162e5",
+        "isStoryQuest": false,
+        "name": "生存者之路 - 冷血",
+        "nameSource": "ch",
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 64,
+    "storyCount": 1,
+    "traderId": "5c0647fdd443bc2504c2d371",
+    "traderNameCn": "Jaeger",
+    "traderNameEn": "Jaeger",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "638f541a29ffd1183d187f57": {
+    "chCharCount": 8961,
+    "questCount": 40,
+    "quests": [
+      {
+        "chCharCount": 621,
+        "hasDescription": false,
+        "id": "67c8846ac2ca1d06400680a0",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 594,
+        "hasDescription": false,
+        "id": "68caba2ae86db94cdc051418",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 559,
+        "hasDescription": false,
+        "id": "67c87ac69abbc3d84b085b7a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 538,
+        "hasDescription": true,
+        "id": "6396700fea19ac7ed845db32",
+        "isStoryQuest": false,
+        "name": "观察员",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 521,
+        "hasDescription": true,
+        "id": "63967028c4a91c5cb76abd81",
+        "isStoryQuest": false,
+        "name": "大都会之谜",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 491,
+        "hasDescription": true,
+        "id": "63966fccac6f8f3c677b9d89",
+        "isStoryQuest": false,
+        "name": "抢夺先机",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 487,
+        "hasDescription": true,
+        "id": "67a09761e720611a6a01f288",
+        "isStoryQuest": false,
+        "name": "守望者箴言",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 476,
+        "hasDescription": false,
+        "id": "68caba3985c14c12720e9287",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 463,
+        "hasDescription": true,
+        "id": "63966fe7ea74a47c2d3fc0e6",
+        "isStoryQuest": false,
+        "name": "归还人情",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 450,
+        "hasDescription": true,
+        "id": "63966faeea19ac7ed845db2c",
+        "isStoryQuest": false,
+        "name": "情报之源",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 378,
+        "hasDescription": true,
+        "id": "63966ff54c3ef01b6f3ffad8",
+        "isStoryQuest": false,
+        "name": "挑衅",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 370,
+        "hasDescription": false,
+        "id": "68fab1c73754850d130f5c61",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 343,
+        "hasDescription": false,
+        "id": "67c88292964e366a96023a40",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 326,
+        "hasDescription": false,
+        "id": "68faaab4615a04b8ee0be7ff",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 310,
+        "hasDescription": true,
+        "id": "63966fd9ea19ac7ed845db30",
+        "isStoryQuest": false,
+        "name": "以牙还牙",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 305,
+        "hasDescription": true,
+        "id": "63966fbeea19ac7ed845db2e",
+        "isStoryQuest": false,
+        "name": "失踪的线人",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 304,
+        "hasDescription": true,
+        "id": "6745fdddd3346c216702e0bf",
+        "isStoryQuest": false,
+        "name": "简单副业",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 281,
+        "hasDescription": true,
+        "id": "639670029113f06a7c3b2377",
+        "isStoryQuest": false,
+        "name": "按图索骥",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 268,
+        "hasDescription": true,
+        "id": "683427418f5b18d29a05d9e3",
+        "isStoryQuest": false,
+        "name": "天降大礼（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 256,
+        "hasDescription": true,
+        "id": "6396701b9113f06a7c3b2379",
+        "isStoryQuest": false,
+        "name": "大显身手",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 208,
+        "hasDescription": false,
+        "id": "67bc798e612537def10eac17",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 174,
+        "hasDescription": false,
+        "id": "68f4d98bd2016ca1a60461a4",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 150,
+        "hasDescription": false,
+        "id": "68dac755bf449210f60f0e6e",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 88,
+        "hasDescription": false,
+        "id": "67c87a7228d3adac2e09a16f",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2c8d32678e09a2909e1ec",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2cd02fd2f18f1e90d5b05",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2cd1cf2f730ce3808d4d7",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2cd700c263d5cf605502c",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2e2738926b2d0ec025b8e",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f2e289eb1fc89c530d1e35",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d992fa1bcd70ee0f4ecb",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d99acae3aff9900d2144",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc083c9586df0c2d000533",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc085cef27fb1d220085d7",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc0894c976e4105e0587b2",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc089d55f505875901b8bf",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc08a688ef1cb18e0ca60f",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc08c5d715af8c6b091498",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bae55c94e71dc3b103e629",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69bae69c01b9a201590f0bda",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 29,
+    "storyCount": 11,
+    "traderId": "638f541a29ffd1183d187f57",
+    "traderNameCn": "Lightkeeper",
+    "traderNameEn": "Lightkeeper",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "656f0f98d80a697f855d34b1": {
+    "chCharCount": 8527,
+    "questCount": 22,
+    "quests": [
+      {
+        "chCharCount": 1042,
+        "hasDescription": true,
+        "id": "6744af0969a58fceba101fed",
+        "isStoryQuest": false,
+        "name": "独立的代价",
+        "nameSource": "ch",
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 717,
+        "hasDescription": true,
+        "id": "67a096ed77dd677f600804ba",
+        "isStoryQuest": false,
+        "name": "感官分析 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 572,
+        "hasDescription": true,
+        "id": "6744aca8d3346c216702c583",
+        "isStoryQuest": false,
+        "name": "反将一军",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 567,
+        "hasDescription": false,
+        "id": "69c151fd9c9149a8dd01a29a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 539,
+        "hasDescription": true,
+        "id": "673f4e956f1b89c7bc0f56ef",
+        "isStoryQuest": false,
+        "name": "风火轮",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 484,
+        "hasDescription": true,
+        "id": "673f2cd5d3346c2167020484",
+        "isStoryQuest": false,
+        "name": "货运延误 - 2",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 467,
+        "hasDescription": true,
+        "id": "6a76457a80a94c0cbf0b07ae",
+        "isStoryQuest": false,
+        "name": "我即 BTR",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 431,
+        "hasDescription": true,
+        "id": "673f629c5b555b53460cf827",
+        "isStoryQuest": false,
+        "name": "奠定基石",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 427,
+        "hasDescription": false,
+        "id": "69b2c6beb8ae58006c084f73",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 384,
+        "hasDescription": true,
+        "id": "6744ab1def61d56e020b5c56",
+        "isStoryQuest": false,
+        "name": "对空遮断",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 381,
+        "hasDescription": true,
+        "id": "6744a728352b4da8e003eda9",
+        "isStoryQuest": false,
+        "name": "电池换新",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 336,
+        "hasDescription": true,
+        "id": "69c277f3ea6da9c23e07f8d2",
+        "isStoryQuest": false,
+        "name": "苦涩的胜利",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 333,
+        "hasDescription": true,
+        "id": "6a764077161e4b45b101566e",
+        "isStoryQuest": false,
+        "name": "真实评价",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 308,
+        "hasDescription": true,
+        "id": "6740a02a69a58fceba0ff399",
+        "isStoryQuest": false,
+        "name": "自然交换",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 294,
+        "hasDescription": true,
+        "id": "69c27158e350f01390049e77",
+        "isStoryQuest": false,
+        "name": "拯救大兵罗曼",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 276,
+        "hasDescription": false,
+        "id": "69b41843dc22acbf90051e3f",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 254,
+        "hasDescription": false,
+        "id": "69c267f6a27845a6970384fa",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 212,
+        "hasDescription": true,
+        "id": "69c26c07683c9831020018c7",
+        "isStoryQuest": false,
+        "name": "坚持到底",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 189,
+        "hasDescription": true,
+        "id": "6745fcded0fbbc74ca0f721d",
+        "isStoryQuest": false,
+        "name": "现世报",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 175,
+        "hasDescription": true,
+        "id": "69c2a2d004de49c8f0055a3d",
+        "isStoryQuest": false,
+        "name": "宿醉",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 139,
+        "hasDescription": false,
+        "id": "69b04c7ff4183ed66406e50c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69c2a3c017b6954e740821d7",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 17,
+    "storyCount": 5,
+    "traderId": "656f0f98d80a697f855d34b1",
+    "traderNameCn": "BTR司机",
+    "traderNameEn": "BTR Driver",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "6617beeaa9cfa777ca915b7c": {
+    "chCharCount": 6738,
+    "questCount": 20,
+    "quests": [
+      {
+        "chCharCount": 757,
+        "hasDescription": true,
+        "id": "6a91840a740be0cff50e0310",
+        "isStoryQuest": false,
+        "name": "Preliminary Survey",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 527,
+        "hasDescription": true,
+        "id": "68342265a8d674b5740b31f0",
+        "isStoryQuest": false,
+        "name": "再创新高！- 5（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 495,
+        "hasDescription": true,
+        "id": "675c15fbf7da9792a4059871",
+        "isStoryQuest": false,
+        "name": "收视灵药",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 417,
+        "hasDescription": true,
+        "id": "6834254f2f0e2a7eb90b62ef",
+        "isStoryQuest": false,
+        "name": "两难抉择（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 391,
+        "hasDescription": true,
+        "id": "683421515619c8e2a9031511",
+        "isStoryQuest": false,
+        "name": "再创新高！- 4（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 390,
+        "hasDescription": true,
+        "id": "68341c4babec72d95d0c1260",
+        "isStoryQuest": false,
+        "name": "声东击西 - 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 384,
+        "hasDescription": true,
+        "id": "68341d7d7559f4e6d50bc0db",
+        "isStoryQuest": false,
+        "name": "声东击西 - 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 370,
+        "hasDescription": true,
+        "id": "68341846186efa3c5b07f989",
+        "isStoryQuest": false,
+        "name": "平衡之力 - 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 315,
+        "hasDescription": true,
+        "id": "68341f6fe2e7ef70a3060a0a",
+        "isStoryQuest": false,
+        "name": "再创新高！- 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 305,
+        "hasDescription": true,
+        "id": "697895277d31587eab080266",
+        "isStoryQuest": false,
+        "name": "再创新高！- 6（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 292,
+        "hasDescription": true,
+        "id": "68341eb25619c8e2a9031501",
+        "isStoryQuest": false,
+        "name": "再创新高！- 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 289,
+        "hasDescription": true,
+        "id": "6834158f2f0e2a7eb90b62c8",
+        "isStoryQuest": false,
+        "name": "赚点快钱 - 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 278,
+        "hasDescription": true,
+        "id": "68341b407559f4e6d50bc0ce",
+        "isStoryQuest": false,
+        "name": "惊喜（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 263,
+        "hasDescription": true,
+        "id": "69789660b2187365e70bb94a",
+        "isStoryQuest": false,
+        "name": "保持领先（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 251,
+        "hasDescription": true,
+        "id": "6834202a186efa3c5b07f9a2",
+        "isStoryQuest": false,
+        "name": "再创新高！- 3（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 236,
+        "hasDescription": true,
+        "id": "68341a0b2f0e2a7eb90b62d4",
+        "isStoryQuest": false,
+        "name": "平衡之力 - 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 225,
+        "hasDescription": true,
+        "id": "68342446a8d674b5740b31fc",
+        "isStoryQuest": false,
+        "name": "良心作祟 - 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 200,
+        "hasDescription": true,
+        "id": "697878057aa1273126030fb0",
+        "isStoryQuest": false,
+        "name": "竞技场差事（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 194,
+        "hasDescription": true,
+        "id": "6978907718bd6d7cbd0e8b8e",
+        "isStoryQuest": false,
+        "name": "专业热身 - 2（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 159,
+        "hasDescription": true,
+        "id": "69788d4e963f08d9140bce19",
+        "isStoryQuest": false,
+        "name": "专业热身 - 1（PVE）",
+        "nameSource": "ch",
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 20,
+    "storyCount": 0,
+    "traderId": "6617beeaa9cfa777ca915b7c",
+    "traderNameCn": "竞技场裁判",
+    "traderNameEn": "Ref",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "67f7af56c117b6140af2a607": {
+    "chCharCount": 22954,
+    "questCount": 140,
+    "quests": [
+      {
+        "chCharCount": 1663,
+        "hasDescription": false,
+        "id": "67bdf8c066ca1d79a202463a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 1440,
+        "hasDescription": false,
+        "id": "67c9877aff0329206209cb67",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 852,
+        "hasDescription": false,
+        "id": "68c6aa0e2f0a1d31380ad618",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 842,
+        "hasDescription": false,
+        "id": "69ba8cd91c440c14bb09a955",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 709,
+        "hasDescription": false,
+        "id": "69baaaae8f45d6b3fa020ade",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 666,
+        "hasDescription": false,
+        "id": "68f0f5516871d33422038cd2",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 635,
+        "hasDescription": false,
+        "id": "68588ed4257202ddee073e07",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 536,
+        "hasDescription": false,
+        "id": "68f0f55b6310272fc402e2dc",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 524,
+        "hasDescription": false,
+        "id": "68588ed5c7a9b3b530005ec8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 507,
+        "hasDescription": false,
+        "id": "68588eca1d2ea426e9085c29",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 504,
+        "hasDescription": false,
+        "id": "68caba3fcc16a93b26096721",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 478,
+        "hasDescription": false,
+        "id": "67b892bd55eaf7b06d011436",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 446,
+        "hasDescription": false,
+        "id": "6895bbb0e7dac53c7c08797b",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 403,
+        "hasDescription": false,
+        "id": "67ced0157844ea90d80fd6a5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 402,
+        "hasDescription": false,
+        "id": "68f16d504a7305f74f0c746b",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 401,
+        "hasDescription": false,
+        "id": "68588edf975681ee130def28",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 2
+      },
+      {
+        "chCharCount": 394,
+        "hasDescription": false,
+        "id": "67bc93e6adb794ecb40f574d",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 378,
+        "hasDescription": false,
+        "id": "68588edb1dbd9790be0f5ee9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 377,
+        "hasDescription": false,
+        "id": "68e3a3bc02661eb2d30ce389",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 373,
+        "hasDescription": false,
+        "id": "67bdeeee884b40ea9d08b5c4",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 364,
+        "hasDescription": false,
+        "id": "68588ec88b0cb7b6f80f9339",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 363,
+        "hasDescription": false,
+        "id": "69aafbfa47e01d12cc087d0f",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 338,
+        "hasDescription": false,
+        "id": "68f0f55ea607c91a6006cebb",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 338,
+        "hasDescription": false,
+        "id": "6915bb41efc107ce960110d9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 323,
+        "hasDescription": false,
+        "id": "68f0f557ac6ab778470752ad",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 319,
+        "hasDescription": false,
+        "id": "67ced00eceefc356a10fd405",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 319,
+        "hasDescription": false,
+        "id": "68c6a4ece3e3d7f69d0a5bd9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 319,
+        "hasDescription": false,
+        "id": "68caba2f28ffeb58ad030255",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 312,
+        "hasDescription": false,
+        "id": "68caba2cc567ca20cc01c775",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 310,
+        "hasDescription": false,
+        "id": "68caba3da331c68e8209b55a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 310,
+        "hasDescription": false,
+        "id": "68e79a966656898e78015019",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 308,
+        "hasDescription": false,
+        "id": "68f0f54d0a378517c900226e",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": false,
+        "id": "68caba33f193c0b4fb01cc2d",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 302,
+        "hasDescription": false,
+        "id": "690413d50750895a590a3bbd",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 295,
+        "hasDescription": false,
+        "id": "69029e0aede95b6cf90c04f7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 282,
+        "hasDescription": false,
+        "id": "68e3a3e51edf1ca810009a99",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 277,
+        "hasDescription": false,
+        "id": "68caba3606c31ae60602980f",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 4
+      },
+      {
+        "chCharCount": 277,
+        "hasDescription": false,
+        "id": "68caba4119f13a8d1b0ad3ac",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 252,
+        "hasDescription": false,
+        "id": "67bc79321d99d6ebe5014b5a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 252,
+        "hasDescription": false,
+        "id": "67ced01bc23108bd9e031725",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 251,
+        "hasDescription": false,
+        "id": "68caba2d7d1e2d4df2032efe",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 244,
+        "hasDescription": false,
+        "id": "68e79a92aded99fd1a06023c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 227,
+        "hasDescription": false,
+        "id": "68588ecc10ea119db4095de7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 222,
+        "hasDescription": false,
+        "id": "68ec5137062b3169d009eaf9",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 213,
+        "hasDescription": false,
+        "id": "68ec5135459f4ca1d60c601d",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 192,
+        "hasDescription": false,
+        "id": "68f9ef8a1dbc7a9f81001a87",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 183,
+        "hasDescription": false,
+        "id": "67bc7abc7801bf5c41017b68",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 176,
+        "hasDescription": false,
+        "id": "6915bb52dff93d50490eaf54",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 172,
+        "hasDescription": false,
+        "id": "69009349b7d28358f80b942c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 169,
+        "hasDescription": false,
+        "id": "69ba91078fe4c6a8d400a1ab",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 161,
+        "hasDescription": false,
+        "id": "68f0f54bdae477041501acfc",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 150,
+        "hasDescription": false,
+        "id": "68c6a8551dfbf3fb78018562",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 150,
+        "hasDescription": false,
+        "id": "68ec64b49012da9779025825",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 146,
+        "hasDescription": false,
+        "id": "68e2d8d52a2449612b06ac9b",
+        "isStoryQuest": true,
+        "name": "“门票” - 目标：打开加固手提箱",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 133,
+        "hasDescription": false,
+        "id": "68588ed156fb54c7e00e4318",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 126,
+        "hasDescription": false,
+        "id": "68f9eed31dbc7a9f81001a3a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 120,
+        "hasDescription": false,
+        "id": "68e2ecfeb88d405a420774f5",
+        "isStoryQuest": true,
+        "name": "获得逃离塔科夫的门票",
+        "nameSource": "ch",
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 113,
+        "hasDescription": false,
+        "id": "68588ed2b2a45312020df028",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 107,
+        "hasDescription": false,
+        "id": "68caba3128f428794e0780fd",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 103,
+        "hasDescription": false,
+        "id": "6914d59b1bd36f988e0d95bc",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 95,
+        "hasDescription": false,
+        "id": "68d6894a05ab6c954c01f65e",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 91,
+        "hasDescription": false,
+        "id": "68dfa85efdedf14d640a6ee0",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 90,
+        "hasDescription": false,
+        "id": "68ee523e54da3fa9aa01af75",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 90,
+        "hasDescription": false,
+        "id": "6917c6efa59476a52c02e149",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 88,
+        "hasDescription": false,
+        "id": "6a05e47ec8c57a62940cd74a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 86,
+        "hasDescription": false,
+        "id": "68588ede90466842410d7bb8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 62,
+        "hasDescription": false,
+        "id": "6a05dc1ec12a1948c60a0968",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 56,
+        "hasDescription": false,
+        "id": "6a05dfd31681410e9e0b9afc",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 42,
+        "hasDescription": false,
+        "id": "69125a2fec72e1b67a0ace56",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 40,
+        "hasDescription": false,
+        "id": "68cd7d6d9510d63fdb05a76a",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 29,
+        "hasDescription": false,
+        "id": "68fbdbae729bd58bc80974f1",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 22,
+        "hasDescription": false,
+        "id": "68bdb25ad9e4342bb10c3449",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 22,
+        "hasDescription": false,
+        "id": "68caba2738519597bf0abeb4",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 18,
+        "hasDescription": false,
+        "id": "68c00c0ee726287ae60edd72",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 15,
+        "hasDescription": false,
+        "id": "68e4cf5136a9240a3704e777",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 13,
+        "hasDescription": false,
+        "id": "68f0f54ffdd0d2e55404aff6",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 6,
+        "hasDescription": false,
+        "id": "68e3a35002661eb2d30ce387",
+        "isStoryQuest": true,
+        "name": "探秘\"迷宫\"",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 6,
+        "hasDescription": false,
+        "id": "6903d779fdfc4078740a4bd0",
+        "isStoryQuest": true,
+        "name": "他们已经来了",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 6,
+        "hasDescription": false,
+        "id": "69d38381cea4b428690ea1d9",
+        "isStoryQuest": true,
+        "name": "Boreas",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 5,
+        "hasDescription": false,
+        "id": "68cbd33676fe74b1e80bfd91",
+        "isStoryQuest": true,
+        "name": "塔科夫之旅",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 5,
+        "hasDescription": false,
+        "id": "68da36cf7cff54fc6109874a",
+        "isStoryQuest": true,
+        "name": "Batya",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 4,
+        "hasDescription": false,
+        "id": "68cbcdc4c964ab83cc0c928e",
+        "isStoryQuest": true,
+        "name": "陨落星辰",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 4,
+        "hasDescription": false,
+        "id": "68e784b7fa3f1fa3770094ba",
+        "isStoryQuest": true,
+        "name": "神秘蓝焰",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 4,
+        "hasDescription": false,
+        "id": "69052e18e680c2d3e3034d3a",
+        "isStoryQuest": true,
+        "name": "意外证人",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 3,
+        "hasDescription": false,
+        "id": "6900927ab7d28358f80b9421",
+        "isStoryQuest": true,
+        "name": "无名者",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 2,
+        "hasDescription": false,
+        "id": "68da33fe00868edcb6025ac4",
+        "isStoryQuest": true,
+        "name": "门票",
+        "nameSource": "ch",
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68d68948fa5f24b696041a6d",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68d96e13ad43b0dd520c6cb8",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68e3a3abf1bccd83c50a5887",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68e79a6301bd936405037b5a",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68e79a90851650b3be000427",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f0f549e3f6be22030204a9",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f170a1f8b4707778060f50",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d9639daae872d508cf00",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d9739f8e86cffa043d9e",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d983469a22a0670b5c38",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68f4d9aaf50153689f033316",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc08009586df0c2d00052f",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc0828380751d8b20a57ce",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68fc085738c4a9e0060bddfc",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffdaf2853a782081039a16",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffe7f5955bb2fc200c6f5f",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffe7ff6120149f4f0f2d61",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffe808f4ec6f4d8d078232",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffe8149f98d8e00f0ce6a8",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "68ffe821841a7a1cac00dd05",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6904244bd56548751f04160c",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "690936935d66e27c220e8feb",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69095e244b1c72e4860a37ac",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6909e9db9ce51fc8cd014c6e",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "690b65b50bb26b80c40db801",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "690bcbc40fedd79ea70d643e",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6910f05a8618d8915f00106f",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6913d08bf1f922ac650cc9da",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6914f60df06f0ee753006191",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69152ae1af875c1a1b083434",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69152d020a086d181f00a0e9",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "691530ed4f8a7c75100a3887",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6915343638075d35a20d90dd",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "691536d636f1a31d7f0d4a51",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "692d64d15848ea322008ffd1",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "694a6c7b2ff4f21af6040103",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69a044d82c3521e14b023507",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69b04f2f4ec955a5f40828a3",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69ba68f4a50582c0b80e7659",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69d392247ad7670883046095",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69d3a645472b60329903b737",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69eb680847f27502e600de57",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69f1cd1c7a6f9bce6d093bda",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69f9d3a1380722e86208fce4",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fa1243426d4dd265031b36",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fb04933bca906c71052ddc",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fbd2a6abee5a6fcb03fac2",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fd0f3ddf3fd2bd5c0d3105",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fd18770cf10ab3ea096a1b",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fd20990edd2aeacb081867",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "69fe13048588099d740c1a7d",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6a0447bccc5a801e9d03825e",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6a0c95739d5c5d02fa026cc6",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 0,
+        "hasDescription": false,
+        "id": "6a11ba5a87da0c62ff0778ea",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 54,
+    "storyCount": 86,
+    "traderId": "67f7af56c117b6140af2a607",
+    "traderNameCn": null,
+    "traderNameEn": "Player Trader",
+    "traderNameSource": "database/traders/67f7af56c117b6140af2a607/base.json nickname（无 zh 本地化）"
+  },
+  "688246518448b05efd61d461": {
+    "chCharCount": 1966,
+    "questCount": 11,
+    "quests": [
+      {
+        "chCharCount": 352,
+        "hasDescription": false,
+        "id": "67ced01a39a6a1807f093ec5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 286,
+        "hasDescription": false,
+        "id": "67bc646c6e34475fea09d2a5",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 244,
+        "hasDescription": false,
+        "id": "68e19fee596a40531902e73c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 0
+      },
+      {
+        "chCharCount": 237,
+        "hasDescription": false,
+        "id": "67bc8c817801bf5c41017b73",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 210,
+        "hasDescription": false,
+        "id": "68d82d29d34befa7d30b8771",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 201,
+        "hasDescription": false,
+        "id": "68e1a9e8ac971c444c06fad7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 157,
+        "hasDescription": false,
+        "id": "68f4de9df50153689f033320",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 126,
+        "hasDescription": false,
+        "id": "690df1b479002377d704298b",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 76,
+        "hasDescription": false,
+        "id": "68d922a310451b42200b33bf",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 49,
+        "hasDescription": false,
+        "id": "69c13a003ee6585df2057a39",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 28,
+        "hasDescription": false,
+        "id": "690de79555141933e30d98e8",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 0,
+    "storyCount": 11,
+    "traderId": "688246518448b05efd61d461",
+    "traderNameCn": "Kerman",
+    "traderNameEn": "Mr. Kerman",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "688246958448b05efd61d462": {
+    "chCharCount": 346,
+    "questCount": 5,
+    "quests": [
+      {
+        "chCharCount": 185,
+        "hasDescription": false,
+        "id": "68caba3b09dc3189010e49cc",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 107,
+        "hasDescription": false,
+        "id": "68d9b9bb6f5ed3885f00e9e0",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 3
+      },
+      {
+        "chCharCount": 29,
+        "hasDescription": false,
+        "id": "68dbf867ff23e2cbe2014c02",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 15,
+        "hasDescription": false,
+        "id": "68d9b97c42007d9a0a0f901c",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 10,
+        "hasDescription": false,
+        "id": "68d9b97ef19ccd1e51002c80",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 0,
+    "storyCount": 5,
+    "traderId": "688246958448b05efd61d462",
+    "traderNameCn": "Voevoda",
+    "traderNameEn": "Voevoda",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "68fe15990f29ba3fdbba9d55": {
+    "chCharCount": 57,
+    "questCount": 1,
+    "quests": [
+      {
+        "chCharCount": 57,
+        "hasDescription": false,
+        "id": "69a961df27397b6c1e098689",
+        "isStoryQuest": false,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 1,
+    "storyCount": 0,
+    "traderId": "68fe15990f29ba3fdbba9d55",
+    "traderNameCn": "无线电台",
+    "traderNameEn": "Radio station",
+    "traderNameSource": "ch.json/en.json"
+  },
+  "69e0d6cc77b63940375b9173": {
+    "chCharCount": 282,
+    "questCount": 2,
+    "quests": [
+      {
+        "chCharCount": 177,
+        "hasDescription": false,
+        "id": "69c14feae2c5125aa504e9d7",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      },
+      {
+        "chCharCount": 105,
+        "hasDescription": false,
+        "id": "69c2612fb5663267790dd555",
+        "isStoryQuest": true,
+        "name": null,
+        "nameSource": null,
+        "prereqCount": 1
+      }
+    ],
+    "sideCount": 0,
+    "storyCount": 2,
+    "traderId": "69e0d6cc77b63940375b9173",
+    "traderNameCn": "幸存者",
+    "traderNameEn": "Survivor",
+    "traderNameSource": "ch.json/en.json"
+  }
+}

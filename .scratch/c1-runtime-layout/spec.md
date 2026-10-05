@@ -4,7 +4,7 @@
 
 > 来源：架构审查候选 C1（知识层静默死亡）+ grilling 三轮闭合决策（2026-09-16）。
 > 状态：已确认，进入实施。执行者：@fixer（tdd）。**不 commit**（用户偏好）。
-> 决策记录：`docs/adr/0008-runtime-layout-resolution.md`；术语：`CONTEXT.md`。
+> 决策记录：`docs/adr/0008-runtime-layout-resolution.md`；术语：`GLOSSARY.md`。
 
 ## 1. 背景（活体实证）
 

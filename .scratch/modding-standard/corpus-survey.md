@@ -274,10 +274,10 @@ Get-ChildItem -LiteralPath $modRoot -Filter '*.cfg' -Recurse
 
 ### `docs/agents/` 与 `AGENTS.md`
 
-- `docs/agents/domain.md` — 域文档使用约定（CONTEXT.md、ADR、术语表）。
+- `docs/agents/domain.md` — 域文档使用约定（GLOSSARY.md、ADR、术语表）。
 - `docs/agents/issue-tracker.md` — `.scratch/<feature-slug>/` 目录结构、spec/issues 文件、triage label 约定。
 - `docs/agents/triage-labels.md` — 五种 triage role。
-- `AGENTS.md` — 引用上述文件，强调单上下文 repo 的 `CONTEXT.md` + `docs/adr/` 结构；未直接涉及 mod 工程规范。
+- `AGENTS.md` — 引用上述文件，强调单上下文 repo 的 `GLOSSARY.md` + `docs/adr/` 结构；未直接涉及 mod 工程规范。
 
 ---
 

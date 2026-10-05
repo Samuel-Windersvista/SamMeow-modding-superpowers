@@ -22,7 +22,7 @@ modding plugin. It has grown bloated and disorganized:
   declarations, session hooks, build scripts, the materialized plugin tree), so
   it cannot simply be ignored.
 - The repository has not adopted the Matt Pocock engineering-skills conventions:
-  there is no `docs/agents/`, no `CONTEXT.md`, no `docs/adr/`, and no issue
+  there is no `docs/agents/`, no `GLOSSARY.md`, no `docs/adr/`, and no issue
   tracker.
 - The only verification suite (`tests/bootstrap/`) is rotten: it asserts a
   pre-reshape repo shape and fails immediately.
@@ -193,7 +193,7 @@ deletion (forward-delete, no history rewrite). The work lands on a
 - Renaming the GitHub repository.
 - Reworking the content of SPT skill bodies (removal and renaming only).
 - Building an actual modpack (the first production target is undecided).
-- `CONTEXT.md` and ADR content beyond the layout decision; those are created
+- `GLOSSARY.md` and ADR content beyond the layout decision; those are created
   lazily later.
 
 ## Further Notes
