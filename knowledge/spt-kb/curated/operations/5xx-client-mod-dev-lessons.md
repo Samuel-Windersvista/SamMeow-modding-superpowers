@@ -209,3 +209,65 @@
 - **陌生洪泛归因法**：对不明批量报错（本例 95× `[Error : Unity] Mesh.vertices is too small`）→ 查 Unity `Player.log`（`%USERPROFILE%\AppData\LocalLow\Battlestate Games\EscapeFromTarkov\Player.log`，**含托管堆栈**）→ 堆栈实锤归属（本例 = `TMPro.TextMeshProUGUI.GenerateTextMesh()` × `EFT.Hideout.ProduceView` 生产界面渲染，属游戏侧 TMP/字体面，与本 mod 无补丁面交集）→ 对照「同构建其它会话是否复现」（本例另一会话 0 条）→ 定性后**记录 + 挂观察项**，不臆断、不过度排查。
 - **探针节奏**：「首轮在、结项清」——首轮诊断探针（enter/resume 级）验收后聚合降噪（本例收敛为 `done merges=N err=…` 一行）；探针移除属日志级改动，随下一构建投影覆盖即可，不单开重验轮。
 - **Windows 路径细节**：MO2 暂存目录名含 `[序号]`（方括号 = PowerShell 通配符）→ 一切文件操作加 `-LiteralPath`（否则静默空结果/误匹配）。
+
+## 20. 值类型签名 detour 禁族的「签面普扫」形态（2026-10-04 Betters Norvinsk QoL 实机 AV 复盘）
+
+> 来源：UIFixes Multiselect 移植首验闪退——批 2 的 24 个补丁里 **11 个**目标带值类型封送；编译全绿、双轴审查全过，实机一次拖拽即 AV（coreclr `0xc0000005`，崩溃帧 `DMD<SlotView::CanAccept>`）。
+
+- **崩溃栈特征（记住这个形状）**：`DMD<X::Method>` → `Il2CppException.RaiseExceptionIfNecessary` → `BuildMessage` → `Il2CppSystem.Exception.ToString` → `il2cpp_runtime_invoke` → AV——即「异常本来要被构造/传播，在异常构造路径上二次崩溃」。这是 VT 封送族 detour 的典型死法（对比 §16 的静默损坏、§12 的 NotNull 桩）。
+- **禁族要件（签名扫描清单）**：目标方法包含 ① `out/ref` 值类型参数（典型：`out OperationResult`）；② 返 **`OperationResult<T>` 等值类型**；③ 参数含大结构体/`Nullable`（§16）。ilspycmd 看 interop 桩一眼可判；**移植前置门 = 每个新补丁目标过一遍签面扫描**，不要等实机。
+- **本次实锤清单（11 处，宁严勿宽）**：`GridView/SlotView/TradingTableGridView.CanAccept(..., out OperationResult)`；`QuickFindAppropriatePlace`/`g__CheckContainers|1 : OperationResult<IItemOperationResult>`；`ExecutePossibleAction(..., Item|ItemAddress, ...) : OperationResult`；`Move : OperationResult<MoveResult>`；`SetPinLockState : OperationResult<SetPinLockResult>`（含 `DeselectOnLock` 的挂点）；`TradingTableGridView.GetHighlightColor(..., OperationResult, ...) : Color`（16B 结构体）。反例确认：`FindPlaceToPut`/`FindSpotKeepRotation` 返回 `LocationInGrid`（**引用类型**）→ 保留可用。
+- **处置模式（已实机验证）**：禁族补丁**注释停用（保留类体）** + 统一标注「值类型签名 detour 禁族（KB §16/§18）」+ 产出**功能降级清单** + 「安全 seam 回补」另立工单。禁族停用后同会话零崩溃（安全修复生效）。
+- **与 §18 的关系**：§18「直调链可用」不受影响（`await TryRunNetworkTransaction(op)` 等照常）；本条只关 detour。
+
+## 21. 挂点「可达性」三连：内联死靶 / 非执行路径 / 闭包等价物（2026-10-04 双实例实证）
+
+> 来源：FiR 补丁（`FindInItemPass`）+ Multiselect watcher（`RunNetworkTransaction`）两次「打了但永不触发」的现场。
+
+- **① 内联死靶**：`ConditionsConnectorsManager.FindInItemPass`（64B 小方法）被编译器内联进调用者 → 全二进制 **0 直接调用点**（E8 rel32 扫描 + 目标体内 14B 片段在调用者中逐字节重现）+ `[CallerCount(0)]` + 无 `[CachedScanResults]` → detour 静默 no-op。修复 = 换复合谓词挂点（`IsItemValidForCondition`，2 真实调用点）+ **数据抑制形态**（临时置 `condition.onlyFoundInRaid=false`、Finalizer 恢复；不翻转复合 result 以免误伤其余校验）。
+- **② 非执行路径（死靶之二）**：`ItemController.RunNetworkTransaction`（非虚）**不在** GridView accept 路径上——GridView 走控制器**虚方法** + 自持 `TaskCompletionSource<IResult>`（ISIL 实证 `g__RunNetworkTransaction` 体），且原生自 await。watcher 的 `ref Callback` 前缀从未被调用（探针实锤 `watcher start ×20 / done ×0`——**装配时/触发时探针分开打**才能看出这一点）。
+- **③ 闭包等价物定位**：上游 Mono 的 `CG_QuickFindAppropriatePlace.method_1` 在 1.1.5 不存在该名；等价物 = 显示类 `ItemManipulator.__c__DisplayClass3_0` 的 `Method_Internal_OperationResult_1_IItemOperationResult_IEnumerable_1_IContainer_PDM_0`（= `g__CheckContainers|1`）。定位法：按「类名 `__c__DisplayClass*` + 显示类成员 `PDM_0` 后缀 + 参数签名扫描」双保险。
+- **前置纪律**：挂点前必做 **调用点扫描**（E8 rel32 + 阳性对照验证扫描器本身）；interop 名清洗规则（`Method_Internal_<ret>_<args>_PDM_0`）；「游戏自己怎么做」当权威蓝图（ISIL/反编译对照，§18 同源方法论）。
+
+## 22. 合成交互上下文「逐使用点回填」+ 逐项失败必须可见（2026-10-04 §17 同族再命中）
+
+> 来源：Multiselect 组拖动「只移动 1 件」——第 2 件起全部静默失败。
+
+- **根因**：`MultiSelectItemContext`（合成上下文）的位置状态**只在「被拖拽项」回填一次**（`SortedItemContexts` 里 `UpdateFromDrag(first)`），其余选择项从未回填 → 第 2 件起 accept 的落点计算（`CalculateItemLocation`）失效 → 操作失败；而失败被**序列化器 Wrapper 的静默 `catch { return false; }` 吞掉**（无日志）。
+- **纪律一（§17 升级版）**：合成上下文的值状态要**在每个使用点回填**（本例：每个选择项在 accept 前 `sel.UpdateFromDrag(itemContext)`），不能认为「装配时回填一次」就够。
+- **纪律二**：**逐项执行的 catch 必须日志化**（`item-error: {Type}: {Message}` 红线）——批量/序列器路径的任何静默 catch 都会让根因隐身数轮。
+- **纪律三**：长流程加**逐项探针**（`item {i}/{n}`），一眼判定「串行是否推进、卡在第几项」；与失败日志成对出现即可精确定位。
+
+## 23. 输入采样用「游戏输入真值」（2026-10-04 框选越界）
+
+> 来源：检视/改装页（`WeaponModdingScreen`/`EditBuildScreen`——`ItemObserveScreen<,>` 族，含 `DragTrigger` 旋转面）拖模型时多选框越界出现，且起框会清空已有多选。
+
+- **根因**：框选组件用「双 raycaster 近似采样」+ 固定拾取次序（上游时代的画布层级假设），1.1.5 的检视页层级下漏检 `DragTrigger` → 目标分类（`IsClickable`）误判 → 越界起框。
+- **修复（已落地）**：改用 **`EventSystem.current.RaycastAll(eventData, results)`（全 raycaster、全局深度排序，`results[0]`）= 与游戏输入分发同源**；页面级 `Block<TScreen>()` 兜底（`WeaponModdingScreen`/`EditBuildScreen`）；`_blockedTypes` 宜 **static 共享**（blocked 是全局页面属性，多挂载实例同步生效）。
+- **探针形态**：`box start target: {go.name} <- {parent...}`（≤6 级父链）——越界复现时一轮日志给出页面名链，追加 `Block<>` 有的放矢。
+- **通用原则**：交互判定优先取**游戏自己的真值源**（输入路由/原生自持状态），近似采样只在「层级假设成立」时有效——版本迁移首先要怀疑这类近似。
+
+## 24. ClassInjector 与托管组件注入：泛型基类链不可注册（2026-10-04 模块加载失败复盘）
+
+> 来源：Multiselect 模块 `[BNQ] Module failed: ... Type TaskSerializer`1[...] is generic and can't be used in il2cpp`。
+
+- **症状链**：`ClassInjector.RegisterTypeInIl2Cpp<具体类>()` 抛错（其**基类链含泛型** `TaskSerializer<T> : TaskSerializer<T,TaskT> : TaskSerializerBase`）→ `RegisterPatches` 抛出 → **模块整体不加载**（Settings/全部补丁/框选一起消失，但**不崩**——比崩溃更隐蔽，必须靠启动日志发现）。
+- **修复模式「摊平」**：具体类**直继承最浅非泛型祖先**（`TaskSerializerBase : MonoBehaviour`），原泛型链的特化逻辑**逐语句内联**；删除已无使用者的泛型中间类（防未来误注册）。行为等价通过「对照基线逐语句核 + 调用点全查」背书。
+- **配套要件**：**指针 ctor 链**（每一层 `public X(IntPtr pointer) : base(pointer) { }`——泛型层与具体层都要）；`[HideFromIl2Cpp]` 标**泛型托管方法**（如 `Block<T>()`）；注册顺序基类先行；注册后仍需游戏内确认（注入错误会指名成员）。
+- **排查提示**：日志 `Module failed: X` 是模块级 try/catch 的降级面——**每次加注册/组件必看启动日志**；「GenericType 不可注入」是一类错误不是个例（IL2CPP 无泛型代码生成）。
+
+## 25. F12 枚举设置（§13 补充）：CM 默认 ComboBox 在 1.1.5 被 strip + EnumCycle 实装（2026-10-04）
+
+> 来源：打开 F12 时 `[Error :Il2CppInterop] ... Method unstripping failed` 刷屏——栈：`SettingFieldDrawer.DrawCurrentDropdown → ComboBox → GUI.DoButtonGrid`。
+
+- **触发面**：**枚举类型**设置项的 CM 默认绘制（下拉 ComboBox）→ `GUI.DoButtonGrid` 在 1.1.5 被 strip、interop 不可 unstub → 每帧刷错（功能上不致命但洪泛日志）。
+- **修复（§13 路线的具体泛型实装）**：`ConfigurationManagerAttributes` 加 `public Action<ConfigEntryBase> CustomDrawer;`；新 `ConfigDrawers.EnumCycle<TEnum>(Func<TEnum,string> describe)`——`GUILayout.Button(describe(value))` 点击循环 `Enum.GetValues` + `cfg.Value = next`（setter 自动落盘）；try/catch 兜底为 Label。对每个枚举 ConfigEntry attach 即可（本例：多选摆放策略 + Swap 强制互换键）。
+- **判别**：设置项出现「按键/下拉类」绘制异常（或 F12 打开即刷 `unstripping`）→ 检查该设置类型（枚举/KeyboardShortcut）的默认绘制路径，优先 CustomDrawer。
+
+## 26. 现场缺陷快修循环（2026-10-04 五轮实战模板）
+
+> 来源：05 验收期连续 5 个现场缺陷（AV 崩溃 / 模块加载失败 / 组拖动只 1 件 / 框选越界 / 泛型注入）——每轮 30–90 分钟闭环。
+
+- **循环**：现场证据采集（LogOutput/ErrorLog/Player.log + WinEvent **先快照**）→ oracle 诊断（日志语义先校准：探针「装配时打」与「触发时打」含义不同）→ 修复交班包（精确到文件:行 + 代码骨架）→ fixer 落地（严格按包）→ **定点 diff 复核**（只审改动点，逐语句对照）→ 提交（新 commit，**勿 amend**）→ 重投影（游戏关闭；锁则等关）→ owner 最小复测（判定性动作复现）。
+- **要点**：① 诊断须带「日志时间线校正」（`start ×20 / done ×0` 的正确读法 = 装配 20 次零回调）；② 修复包要带**残留观察项与回退预案**（如 SlotView watcher 挂起 → 回退不等待）；③ 探针哲学「首轮在、结项清」贯穿全部修复；④ 每轮把**降级/偏离**写进工单记录，验收清单同步更新。
+
