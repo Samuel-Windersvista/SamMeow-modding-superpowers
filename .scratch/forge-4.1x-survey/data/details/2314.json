@@ -1,0 +1,39 @@
+{
+ "id": 2314,
+ "hub_id": 3030,
+ "guid": "com.turbodestroyer.seasonrotator",
+ "name": "Season Rotator",
+ "slug": "season-rotator",
+ "teaser": "Auto-rotate seasons at the pace you decide ",
+ "thumbnail": "https://files.sp-mod.com/mods/Q6cdWWZz218XBB4wGhXtyDDc7wPihWS6vUeGAwMc.jpg",
+ "downloads": 36826,
+ "favourites_count": 109,
+ "endorsements_count": 8,
+ "description": "<p>A very simple mod that automatically changes seasons.</p>\n<ul>\n<li>When first installed, the timer starts on the day of the first run.</li>\n<li>The first season will be whichever season comes next after your current one. For example, if you play vanilla SPT without season-changing mods and your current season is summer, the mod will switch to early autumn, then to late autumn, then to winter and so on</li>\n<li>In 2.0.0 (SPT 4.0) version, default setting is ~7 days for offseasons and ~14 days for winter and summer, you can change it in the config. The SPT 3.11 version is 7 days for each season.</li>\n<li>Not compatible with other season-changing mods (and not intended to be)</li>\n<li>Runs only when SPT server starts - so no season change in-game in edge cases</li>\n</ul>\n<hr />\n<p>This mod is meant to be simple. If you need more flexebility, you should probably use some of these mods:</p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2110/tarkov-weather-system\" rel=\"noreferrer noopener\">T***** Weather System</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2120/time-weather-changer-ng\" rel=\"noreferrer noopener\">Time &amp; Weather Changer NG</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1548/simple-season-selector\" rel=\"noreferrer noopener\">Simple Season Selector</a></li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/2314/season-rotator",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2025-09-17T07:36:00.000000Z",
+ "created_at": "2025-09-17T07:36:27.000000Z",
+ "updated_at": "2026-08-08T18:02:21.000000Z",
+ "owner": {
+  "id": 71742,
+  "name": "turbodestroyer",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/178242a5fa7130736a3b618c0581e9f6d2808e73_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/VilS13qPoHZRuiZKVAlakr4UW85QLoTVG2clvolt_1280w.webp",
+  "created_at": "2025-01-18T07:02:26.000000Z",
+  "updated_at": "2026-10-07T07:57:16.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 197,
+   "hub_id": 14680,
+   "version": "1.0.3",
+   "description": "<p>* Grenade arc assist: fixed mass handling (grenades have subtly different weights that I didn’t account for before)</p>\n<p>* Grenade arc assist: (hopefully) fixed fika compatibility issue</p>\n",
+   "link": "https://sp-mod.com/mod/download/2213/jankys-visual-assist/1.0.3",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 4235,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-07-27T11:51:21.000000Z",
+   "created_at": "2025-07-27T11:51:21.000000Z",
+   "updated_at": "2026-05-14T01:40:35.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11751,
+   "hub_id": null,
+   "version": "1.1.0",
+   "description": "<p>SPT4 Release</p>\n",
+   "link": "https://sp-mod.com/mod/download/2213/jankys-visual-assist/1.1.0",
+   "content_length": 7251,
+   "spt_version_constraint": "~4 <4.1.0",
+   "downloads": 13075,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-11T19:30:03.000000Z",
+   "created_at": "2025-10-11T08:45:39.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2213/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2213/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2213/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2213/versions",
+  "per_page": 50,
+  "to": 2,
+  "total": 2
+ }
+}

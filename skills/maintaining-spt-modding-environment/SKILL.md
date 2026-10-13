@@ -216,20 +216,19 @@ Never write custom content into `wiki/` (read-only vendor copy).
   4.0→4.1 migration docs (`wiki/SPT_41/Server_40_to_41.md`,
   `wiki/SPT_41/Client_40_to_41.md`).
 
-## meta.ini `comments=` vs `notes=` field distinction (MO2 retained)
+## meta.ini `comments=` vs `notes=` field layout (MO2 retained)
 
-MO2's `meta.ini` has TWO note-shaped fields with different semantics — this
-applies unchanged because MO2 is the mod management layer:
+MO2's `meta.ini` has TWO note-shaped fields, displayed in different places:
 
-- **`comments=`** is the SHORT preview shown in the MO2 GUI mod list's
-  "Comments" column. Use this for 1-2 sentence summaries, version status tags
-  (`[UPDATE→vX]`), etc.
-- **`notes=`** is the LONGER text shown only in the mod's Notes tab. Use this
-  for detailed install notes, config-file placement records, conflict
-  resolution memos, version history, etc.
+- **`comments=`** shows in the mod list's "Comments" column (at-a-glance).
+- **`notes=`** shows only in the mod's Notes tab (full detail).
 
-For automation that synthesizes per-mod summaries from Forge metadata, write
-to `comments=` by default.
+Content rules and writers are defined in `building-spt-modpack` (meta.ini
+content rules): `comments` = one sentence on what the mod does; `notes` =
+player-readable feature detail (≤10 lines, compressed from the mod's page
+description); `url` = full source link (Forge: `https://sp-mod.com/mod/<id>/<slug>`).
+Write multi-line `notes` with `mo2_set_mod_notes` (QSettings-escaped) --
+raw writers like `mo2_edit_meta` keep only the first line on MO2 read-back.
 
 ## Anti-patterns + warnings
 

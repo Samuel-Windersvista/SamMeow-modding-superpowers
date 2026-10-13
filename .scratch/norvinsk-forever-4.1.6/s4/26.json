@@ -1,0 +1,107 @@
+{
+ "idx": 26,
+ "entry": "[10]物品真实堆叠-True Items Redux",
+ "terms": [
+  "True Items Redone",
+  "-True Items Redux"
+ ],
+ "all": [
+  {
+   "term": "-True Items Redux",
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "slug": "lots-of-loot-redux",
+   "dl": 250073,
+   "sc": 20
+  },
+  {
+   "term": "True Items Redone",
+   "id": 1278,
+   "name": "WTT - Pack 'n' Strap",
+   "slug": "wtt-pack-n-strap",
+   "dl": 232976,
+   "sc": 0
+  },
+  {
+   "term": "True Items Redone",
+   "id": 2239,
+   "name": "Couturier - gear and clothing pack",
+   "slug": "couturier-gear-and-clothing-pack",
+   "dl": 49090,
+   "sc": 0
+  },
+  {
+   "term": "True Items Redone",
+   "id": 2394,
+   "name": "Instant Insurance",
+   "slug": "instant-insurance",
+   "dl": 36533,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 2069,
+   "name": "Loot Instant Search",
+   "slug": "loot-instant-search",
+   "dl": 36532,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "slug": "pit-fireteam",
+   "dl": 34424,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 875,
+   "name": "VAI: Non-Realistic Tapkov Project",
+   "slug": "vai-non-realistic-tapkov-project",
+   "dl": 15504,
+   "sc": 0
+  },
+  {
+   "term": "True Items Redone",
+   "id": 1362,
+   "name": "Repeatable Quest Config",
+   "slug": "repeatable-quest-config",
+   "dl": 8992,
+   "sc": 0
+  },
+  {
+   "term": "True Items Redone",
+   "id": 2898,
+   "name": "FIR Means FIR",
+   "slug": "fir-means-fir",
+   "dl": 3889,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 3059,
+   "name": "Strange Curios",
+   "slug": "strange-curios",
+   "dl": 1301,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 3066,
+   "name": "Loot Normalizer",
+   "slug": "loot-normalizer",
+   "dl": 1109,
+   "sc": 0
+  },
+  {
+   "term": "-True Items Redux",
+   "id": 3106,
+   "name": "Armor Expert",
+   "slug": "armor-expert",
+   "dl": 284,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

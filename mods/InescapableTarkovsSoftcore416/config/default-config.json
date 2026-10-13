@@ -1,0 +1,244 @@
+{
+  // Inescapable Tarkov's Softcore —— 默认配置
+  // 本文件支持 // 注释与尾随逗号；改动后需重启 SPT 服务器生效。
+  "general": {
+    // 总开关：false 时跳过全部功能模块
+    "enabled": true,
+    // 调试模式：输出更详细日志（各模块自行决定是否读取）
+    "debug": false
+  },
+
+  // 以下各功能组开关；具体参数随各自工单扩展
+  // 注：启动器背景（customBackground）为 v0.1.0 移除项，不随移植源
+  "samuelTweaks": {
+    // G1 总开关
+    "enabled": true,
+    // 护甲弹挂冲突修复：含 RigLayoutName 的弹挂甲 → BlocksArmorVest=false
+    "armorConflictFix": true,
+    // 可掠夺物品
+    "lootableItems": {
+      // 臂章（父类 5447e1d04bdc2dff2f8b4567）可掠夺
+      "armband": true,
+      // 近战武器（类目 5b3f15d486f77432d0509248）可掠夺
+      "meleeWeapons": true
+    },
+    // 扩展弹匣缩格：宽 1 且高 >2 且容量在 [minCapacity, maxCapacity] → 高 2、ExtraSizeDown−1
+    "magazineResize": {
+      "enabled": true,
+      "minCapacity": 10,
+      "maxCapacity": 50
+    }
+  },
+  "trueItems": {
+    "enabled": true,
+    // 逐物品/父类微调：id → 目标堆叠值（最后应用，覆盖内嵌查找表）
+    "overrides": {}
+  },
+  "noFirHideout": {
+    "enabled": true
+  },
+  "antigravArmbands": {
+    "enabled": true,
+    // 全部臂章的堆叠上限
+    "stackSize": 5,
+    // 单品覆盖：臂章 id → 重量（最后应用，覆盖内嵌查找表）
+    "overrides": {}
+  },
+  "backpacks": {
+    "enabled": true
+  },
+  "softcore": {
+    // Softcore 经济与制造系统大修（子结构对齐源 config.json5；数值为 SURV 终态）
+    "enabled": true,
+    "secureContainersOptions": {
+      // 渐进式安全容器：新档 2×2 腰包起步，逐级升级到 Kappa
+      "enabled": true,
+      "progressiveContainers": {
+        "enabled": true,
+        // 收藏家任务重做：20 级可接，仅需交 1 张 Gamma
+        "collectorQuestRedone": true
+      },
+      // 放宽容器尺寸：Alpha 3×3 / Beta 3×4 / Epsilon 3×5 / Gamma 4×5 / Kappa 5×5
+      "biggerContainers": true
+    },
+    "stashOptions": {
+      "enabled": true,
+      // 新档从 LVL1 仓库起步
+      "progressiveStash": true,
+      // 扩容至 56/100/150/200 行（标准仓 56 行以兼容 4.1.6 开局模板）
+      "biggerStash": true,
+      // 仓库建造现金需求 ÷10
+      "lessCurrencyForConstruction": true,
+      // 降低阶段建造忠诚度要求（SURV 关闭）
+      "easierLoyalty": false
+    },
+    "hideoutContainers": {
+      "enabled": true,
+      // 藏身处容器扩容（SURV 终态，cellsV×cellsH）：药品 10×10 / Holodilnick 10×10 /
+      // 弹匣 7×10 / 物品 6×6 / 武器 6×7 / 钥匙工具 5×5 / THICC 武器 6×14 / THICC 物品 6×14
+      "biggerHideoutContainers": true,
+      // SICC 增强：并入 Docs 允许清单并允许钥匙工具
+      "siccCaseBuff": true
+    },
+    "fasterCraftingTime": {
+      // 制造加速：全局基础倍率（配方时间 = ceil(原时间 / 倍率)）
+      "enabled": true,
+      "baseCraftingTimeMultiplier": 3,
+      "hideoutSkillExpFix": {
+        // 藏身处管理技能经验修复（hoursForSkillCrafting ÷10）
+        "enabled": true,
+        "hideoutSkillExpMultiplier": 10
+      },
+      // 月光酒制造时间倍率（÷0.3 ≈ 时间 ×3.33；名称 faster* 但时间变长，属源真实行为）
+      "fasterMoonshineProduction": {
+        "enabled": true,
+        "baseCraftingTimeMultiplier": 0.3
+      },
+      // 纯净水制造时间倍率（÷0.3 ≈ 时间 ×3.33；同属源真实行为）
+      "fasterPurifiedWaterProduction": {
+        "enabled": true,
+        "baseCraftingTimeMultiplier": 0.3
+      },
+      // 邪教徒圈制造时间倍率（÷0.5 = 时间 ×2；同属源真实行为）
+      "fasterCultistCircle": {
+        "enabled": true,
+        "baseCraftingTimeMultiplier": 0.5
+      }
+    },
+    "fasterHideoutConstruction": {
+      // 藏身处建设加速（阶段建造时间 = round(原时间 / 倍率)）
+      "enabled": true,
+      "hideoutConstructionTimeMultiplier": 50
+    },
+    "fuelConsumption": {
+      // 发电机燃料流量倍率
+      "enabled": true,
+      "fuelConsumptionMultiplier": 4
+    },
+    "fasterBitcoinFarming": {
+      // 比特币农场：GPU 效率 + 基础挖矿时间倍率
+      "enabled": true,
+      "setBitcoinPriceTo100k": false,
+      "baseBitcoinTimeMultiplier": 1.3,
+      "gpuEfficiency": 1.0
+    },
+    "scavCaseOptions": {
+      // ScavCase：奖励池过滤 + 价值区间/配方重做 + 启动速度
+      "enabled": true,
+      "betterRewards": true,
+      "fasterScavcase": {
+        "enabled": true,
+        // ÷0.5 = 时间 ×2（名称 faster* 但时间变长，属源真实行为）
+        "speedMultiplier": 0.5
+      },
+      "rebalance": true
+    },
+    // 允许在严重肌肉疼痛时以 75% 效率健身
+    "allowGymTrainingWithMusclePain": true,
+    "economyOptions": {
+      // 经济：和平主义跳蚤 + 以物易物 + 其他跳蚤改动（SURV 终态）
+      "enabled": true,
+      "disableFleaMarketCompletely": false,
+      "priceRebalance": {
+        // SURV 关闭（itemFixes 仅在启用时生效）
+        "enabled": false,
+        "itemFixes": true
+      },
+      "pacifistFleaMarket": {
+        "enabled": true,
+        // 白名单/任务钥匙/标记钥匙的价格倍率
+        "whitelist": { "enabled": true, "priceMultiplier": 2 },
+        "questKeys": { "enabled": true, "priceMultiplier": 3 },
+        "markedKeys": { "enabled": true, "priceMultiplier": 5 }
+      },
+      "barterEconomy": {
+        "enabled": true,
+        // 现金购买比例（%）；价差 30；报价 5–13；非堆叠 1–4；最多 4 换 1
+        "cashOffersPercentage": 5,
+        "barterPriceVariance": 30,
+        "offerItemCount": { "min": 5, "max": 13 },
+        "nonStackableCount": { "min": 1, "max": 4 },
+        "itemCountMax": 4
+      },
+      "otherFleaMarketChanges": {
+        "enabled": true,
+        // 1 级开放、仅全新品、价格 ×1.5
+        "sellingOnFlea": false,
+        "fleaMarketOpenAtLevel": 1,
+        "fleaPricesIncreased": 1.5,
+        "fleaPristineItems": true,
+        "onlyFoundInRaidItemsAllowedForBarters": false
+      }
+    },
+    "traderChanges": {
+      // 商人：收价上调 / 类别调整 / Fence 15 报价 / 欧元 / 上限 ×2
+      "enabled": true,
+      "betterSalesToTraders": true,
+      "alternativeCategories": true,
+      "pacifistFence": { "enabled": true, "numberOfFenceOffers": 15 },
+      "reasonablyPricedCases": true,
+      "skierUsesEuros": true,
+      "biggerLimits": { "enabled": true, "multiplier": 2.0 }
+    },
+    "insuranceChanges": {
+      // 保险：Prapor 70%/80%/240–360；Therapist 60%/50%/120–240
+      "enabled": true,
+      "praporInsuranceChanges": {
+        "enabled": true,
+        "returnChance": 70,
+        "returnTime": { "min": 240, "max": 360 },
+        "insuranceCostPercentage": 80
+      },
+      "therapistInsuranceChanges": {
+        "enabled": true,
+        "returnChance": 60,
+        "returnTime": { "min": 120, "max": 240 },
+        "insuranceCostPercentage": 50
+      }
+    },
+    "craftingChanges": {
+      // 制造：30+ 条配方重平衡 + 12 条新增配方（数据内嵌 crafting-rebalance.json / crafting-recipes.json）
+      "enabled": true,
+      // 配方重平衡（按 endProduct 定位；数据 = 源 productionAdjustments.ts）
+      "craftingRebalance": true,
+      // 新增配方（3-b-TG / 肾上腺素 / L1 / AHF1-M / CALOK-B / 检眼镜 / Zagustin / Obdolbos / OLOLO 等 12 条）
+      "additionalCraftingRecipes": true
+    },
+    "otherTweaks": {
+      // 杂项（SURV 终值）：弹药堆叠 / 弹挂与护甲不冲突 / 移除限制 / Reshala / 任务 / 信号枪 / 检视
+      "enabled": true,
+      // 技能经验增益（SURV 关闭）
+      "skillExpBuffs": false,
+      // 信号手枪可放入特殊槽
+      "signalPistolInSpecialSlots": true,
+      // 撤销「默认已检视」（SURV 关闭）
+      "unexaminedItemsAreBack": false,
+      // 检视时间固定 0.2s
+      "fasterExamineTime": true,
+      // 移除背包/容器过滤限制
+      "removeBackpackRestrictions": true,
+      // 移除丢弃限制
+      "removeDiscardLimit": true,
+      // Reshala 必带金色 TT
+      "reshalaAlwaysHasGoldenTT": true,
+      // 弹药堆叠 ×5（无重量/Boss 弹药补偿）
+      "biggerAmmoStacks": { "enabled": true, "stackMultiplier": 5 },
+      // 弹挂甲阻断护甲（false = 弹挂与护甲不冲突，与 G1 修复同向）
+      "vestsBlockArmor": false,
+      // 任务变更（仅 Crisis + Drip-Out）
+      "questChanges": true,
+      // 移除战局内物品限制
+      "removeRaidItemLimits": true,
+      // 货币堆叠（SURV 关闭）
+      "biggerCurrencyStacks": false,
+      // 小型容器可放入特殊槽（SURV 关闭）
+      "smallContainersInSpecialSlots": false
+    }
+  },
+
+  // 战局时长控制：multiplier 为全局倍率，1.0 = 原版时长
+  "raidDuration": {
+    "enabled": true,
+    "multiplier": 1.0
+  }
+}

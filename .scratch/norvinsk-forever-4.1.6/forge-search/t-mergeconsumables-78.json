@@ -1,0 +1,261 @@
+{
+ "term": "MergeConsumables",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1657,
+    "hub_id": 2262,
+    "guid": "com.lacyway.mc",
+    "name": "MergeConsumables",
+    "slug": "mergeconsumables",
+    "teaser": "Tired of not being able to merge your medical items or food? Now you can!",
+    "thumbnail": "https://files.sp-mod.com/mods/2262.png",
+    "downloads": 85792,
+    "favourites_count": 280,
+    "endorsements_count": 33,
+    "detail_url": "https://sp-mod.com/mod/1657/mergeconsumables",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-08-19T19:14:00.000000Z",
+    "created_at": "2024-08-19T14:30:23.000000Z",
+    "updated_at": "2026-09-21T10:30:06.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": []
+   },
+   {
+    "id": 2950,
+    "hub_id": null,
+    "guid": "com.corter.modsync",
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "teaser": "The OG ModSync mod by Corter ported to SPT4 versions",
+    "thumbnail": "https://files.sp-mod.com/mods/a9SItVDZXTrIlioc7LQiiTCiH609yCh4YiJp1fbn.png",
+    "downloads": 995,
+    "favourites_count": 14,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2950/corter-modsync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-22T09:44:00.000000Z",
+    "created_at": "2026-08-22T09:47:22.000000Z",
+    "updated_at": "2026-08-22T10:40:21.000000Z",
+    "owner": {
+     "id": 11050,
+     "name": "Dildz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/272c7e5adaac509abc6f6743e0717d4289b34dd0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-11-02T06:59:35.000000Z",
+     "updated_at": "2026-09-02T18:42:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2575,
+    "hub_id": null,
+    "guid": "com.gorecreek.fairequipmentrestoration",
+    "name": "Fair Equipment Restoration",
+    "slug": "fair-equipment-restoration",
+    "teaser": "A customizable equipment restoration mod that preserves item wear and consumption.",
+    "thumbnail": "https://files.sp-mod.com/mods/pmUsFMB5hY6cH4Eg1NYVkuW7N2DPu0oTy3TlWzEW.png",
+    "downloads": 1379,
+    "favourites_count": 6,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2575/fair-equipment-restoration",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-02-05T01:00:00.000000Z",
+    "created_at": "2026-02-04T23:41:16.000000Z",
+    "updated_at": "2026-09-12T23:17:39.000000Z",
+    "owner": {
+     "id": 104276,
+     "name": "gorecreek",
+     "profile_photo_url": "https://sp-mod.com/avatars/G.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-02-04T21:09:20.000000Z",
+     "updated_at": "2026-10-04T19:14:38.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2467,
+    "hub_id": null,
+    "guid": null,
+    "name": "First Aid",
+    "slug": "first-aid",
+    "teaser": "Fillable medkits and full body healing items",
+    "thumbnail": "https://files.sp-mod.com/mods/q2SegUzf5fNVOUzYjs2ePueOhGEAVYsnaVHfPEkL.png",
+    "downloads": 509,
+    "favourites_count": 0,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2467/first-aid",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2025-11-24T19:10:00.000000Z",
+    "created_at": "2025-11-25T00:45:38.000000Z",
+    "updated_at": "2026-07-07T16:59:13.000000Z",
+    "owner": {
+     "id": 73061,
+     "name": "Speenks",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/5d2f3b4432257f1a8f6235b06d5e04b52ec57f7f_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-07T08:53:45.000000Z",
+     "updated_at": "2026-08-30T22:24:10.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 19304,
+      "name": "kyoukopan",
+      "profile_photo_url": "https://sp-mod.com/avatars/K.svg",
+      "cover_photo_url": null,
+      "created_at": "2022-06-01T00:55:20.000000Z",
+      "updated_at": "2026-08-10T19:35:32.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2082,
+    "hub_id": 2767,
+    "guid": null,
+    "name": "Item Stacking Plus",
+    "slug": "item-stacking-plus",
+    "teaser": "Need inventory space? Here you go! Stack Items, change overpowered Armor/Weapon Repair Kits, stack stims or stim usages or simply a combination!",
+    "thumbnail": "https://files.sp-mod.com/mods/2767.png",
+    "downloads": 9991,
+    "favourites_count": 0,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2082/item-stacking-plus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-04-04T02:47:21.000000Z",
+    "created_at": "2025-04-04T02:47:21.000000Z",
+    "updated_at": "2026-07-07T16:59:06.000000Z",
+    "owner": {
+     "id": 59323,
+     "name": "ViP3R_76",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/WDOuzZlJqPColeZO9y593XfNcBU9xNNTIpNZBkGW_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-07-24T06:02:29.000000Z",
+     "updated_at": "2026-10-05T02:06:11.000000Z"
+    },
+    "additional_authors": [],
+    "category": null
+   },
+   {
+    "id": 2252,
+    "hub_id": 2960,
+    "guid": null,
+    "name": "You inSure About That?!",
+    "slug": "you-insure-about-that",
+    "teaser": "Insure anything. Insure Everything. Go ahead, give Prapor money to insure your money so you get your money when you lose your money, you kooky kid.",
+    "thumbnail": "https://files.sp-mod.com/mods/2960.png",
+    "downloads": 725,
+    "favourites_count": 0,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2252/you-insure-about-that",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-08-14T01:25:15.000000Z",
+    "created_at": "2025-08-14T01:25:15.000000Z",
+    "updated_at": "2026-07-07T16:59:09.000000Z",
+    "owner": {
+     "id": 50691,
+     "name": "Solid-Rhoads",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/78fe9827818f2a161c9120cf47f8f77233ed3768_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/c575c355a6d053ce2b5003f2a6e5ef24ed18b4a6_1280w.webp",
+     "created_at": "2024-05-04T02:18:26.000000Z",
+     "updated_at": "2026-08-10T19:45:57.000000Z"
+    },
+    "additional_authors": [],
+    "category": null
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 6,
+   "total": 6
+  }
+ }
+}

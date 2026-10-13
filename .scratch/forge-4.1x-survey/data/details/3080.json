@@ -1,0 +1,39 @@
+{
+ "id": 3080,
+ "hub_id": null,
+ "guid": "com.vektys.raidrecovery",
+ "name": "Raid Recovery",
+ "slug": "raid-recovery",
+ "teaser": "Resume your raid after a crash.",
+ "thumbnail": "https://files.sp-mod.com/mods/W8YSrL60WMYqoGV3UIc4Gifo4dn6InkMESSgXV6V.png",
+ "downloads": 959,
+ "favourites_count": 22,
+ "endorsements_count": 12,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><blockquote class=\"is-warning\">\n<p><strong>Tested on</strong> an installation without other mods. It has not been tried yet next to a large mod list. Back up your profile first.</p>\n</blockquote>\n<p>A mod for SPT 4.1 that lets you resume a raid after the game crashes.</p>\n<h3>What it does</h3>\n<p>SPT saves nothing until the raid ends. If the game crashes or freezes during a raid, the raid is lost: the\nloot you found, your kills and your quest progress are gone.</p>\n<p>With this mod, the next time you reach the main menu after a crash, the game shows its “Return to raid”\nscreen, the same as the live version:</p>\n<ul>\n<li><strong>Reconnect</strong> puts you back in the raid, where you were</li>\n<li><strong>Confirm leave</strong> gives you back the profile you had before the raid, gear included</li>\n</ul>\n<p>There is no penalty for leaving.</p>\n<h3>How it works</h3>\n<p>The mod saves the raid every 30 seconds while you play. Only the latest save is kept, plus the one before\nas a spare. When the raid ends normally (you extract, you die, you leave), the save is deleted. If the game\ncrashes, the save stays. You get it back at the menu.</p>\n<p>A resumed raid can be resumed again. If the game crashes a second time, even during the loading screen,\nthe raid is still there.</p>\n<p>A save older than 24 hours is deleted.</p>\n<p>Everything comes back as it was: your character, the raid, the loot, the bots and the bodies. Scav raids\nwork too. The few things that do not come back are listed in the “Known limits” tab.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Getting started</div>\n<div class=\"tab-content\"><p>Extract the archive into your SPT 4.1 folder, the one with <code>BepInEx</code> and <code>SPT_Runtime</code>. It adds two folders:</p>\n<pre><code>BepInEx/plugins/RaidRecovery/          the plugin of the game\nSPT_Runtime/user/mods/RaidRecovery/    the mod of the server\n</code></pre>\n<p>Both are needed. To remove the mod, delete those two folders.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Settings</div>\n<div class=\"tab-content\"><h3>In the game</h3>\n<p>Press F12 in the game and look for Raid Recovery.</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Enabled</td>\n<td>on</td>\n<td>Turns the saves on or off</td>\n</tr>\n<tr>\n<td>Interval (seconds)</td>\n<td>30</td>\n<td>Time between two saves, from 15 to 120</td>\n</tr>\n<tr>\n<td>Save now</td>\n<td></td>\n<td>Saves right away, and shows the time of the last save</td>\n</tr>\n<tr>\n<td>Save now (shortcut)</td>\n<td>none</td>\n<td>A key that does the same</td>\n</tr>\n<tr>\n<td>Relaunch the raid automatically</td>\n<td>on</td>\n<td>Off: you start the raid yourself after reconnecting</td>\n</tr>\n<tr>\n<td>Use the return-to-raid screen of the game</td>\n<td>on</td>\n<td>Off: you get a plain window instead</td>\n</tr>\n<tr>\n<td>Keep the loot as the game sees it</td>\n<td>on</td>\n<td>Off: only the items you carry are removed from the loot</td>\n</tr>\n<tr>\n<td>Keep bots and bodies</td>\n<td>on</td>\n<td>Off: the resumed raid spawns new bots</td>\n</tr>\n<tr>\n<td>Bots that were after you still are</td>\n<td>on</td>\n<td>Off: bots come back unaware of you</td>\n</tr>\n<tr>\n<td>Log measurements</td>\n<td>on</td>\n<td>Writes the cost and size of each save to the log</td>\n</tr>\n</tbody>\n</table>\n<p>If a resumed raid does something wrong, turn off one of the last four settings to find which part is the\ncause. The rest of the mod keeps working.</p>\n<h3>On the server</h3>\n<p>In <code>SPT_Runtime/user/mods/RaidRecovery/config.json</code>:</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>maxAgeHours</code></td>\n<td>24</td>\n<td>A save older than this is deleted</td>\n</tr>\n<tr>\n<td><code>maxResumesPerRaid</code></td>\n<td>0</td>\n<td>How many times one raid can be resumed. 0: no limit</td>\n</tr>\n<tr>\n<td><code>blockResumeUnderVitalHealthPercent</code></td>\n<td>0</td>\n<td>A raid cannot be resumed if your head or thorax was under this percent of health. 0: never blocked</td>\n</tr>\n</tbody>\n</table>\n<p>A raid refused by one of these rules ends like a raid you chose to leave: you go back to the profile you\nhad before it.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Mod compatibility</div>\n<div class=\"tab-content\"><h3>Incompatibility First :)</h3>\n<ul>\n<li>Anything that tempers with the bot spawn system (for now)</li>\n</ul>\n<h3>Compatible with :</h3>\n<h3>Fika</h3>\n<p>Raid Recovery works in co-op with its Fika add-on, <code>vek-raidrecovery-fika.zip</code>. When the host crashes, the\nhost resumes the raid and the other players rejoin it, PMC or scav.</p>\n<ul>\n<li><strong>Every player</strong> of the group needs the mod and the add-on, in the same versions</li>\n<li>The server mod goes once on the machine that runs the SPT server</li>\n<li><strong>Do not install the add-on without Fika.</strong> Without Fika, the game shows an error at every start</li>\n</ul>\n<p>The add-on was made and tested with Fika 2.4.3.</p>\n<h3>Teammate mods</h3>\n<p>A teammate brought by a mod is not saved: its mod brings it back. Before, it came back as a stranger who\nshot at you.</p>\n<table>\n<thead>\n<tr>\n<th>Mod</th>\n<th>What happens on a resume</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>PIT Fireteam</td>\n<td>Your squad comes back with the raid. Only the teammates alive at the save come back</td>\n</tr>\n<tr>\n<td>Miyako Carry Service</td>\n<td>Your squad comes back for the right side, PMC or scav</td>\n</tr>\n</tbody>\n</table>\n<p>Nothing of this runs when no teammate mod is installed.</p>\n<p>Using another mod and something goes wrong? Tell me which one, with your <code>BepInEx/LogOutput.log</code>.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Files and log</div>\n<div class=\"tab-content\"><p>Saves are written by the server in <code>SPT_Runtime/user/raid-recovery/</code>. They are deleted when the raid ends.\nNothing is sent anywhere else.</p>\n<p>The log is <code>BepInEx/LogOutput.log</code>. The lines that start with <code>Raid Recovery</code> say what was saved and what\nwas put back.</p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/3080/raid-recovery",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2026-09-29T11:53:00.000000Z",
+ "created_at": "2026-09-29T12:24:20.000000Z",
+ "updated_at": "2026-10-01T21:33:19.000000Z",
+ "owner": {
+  "id": 125163,
+  "name": "vektys",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/VRaFQPfwg1qyKCRZhVBLEjcOkhhMcgeJX0rUfTbD_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-09-28T14:50:17.000000Z",
+  "updated_at": "2026-10-10T23:01:09.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

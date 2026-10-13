@@ -1,0 +1,455 @@
+{
+ "term": "no-fir-hideout",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2500,
+    "hub_id": null,
+    "guid": "com.zgfuedkx.wishlistextended",
+    "name": "Wishlist Extended",
+    "slug": "wishlist-extended",
+    "teaser": "Extends EFT’s auto-wishlist system with advanced customization options. Automatically wishlist items for selected crafts, hideout upgrades, and barters. ",
+    "thumbnail": "https://files.sp-mod.com/mods/ZbMJC1Owde78GfkgW5rdh9n590gGmeXYb5uJUBcF.png",
+    "downloads": 7592,
+    "favourites_count": 67,
+    "endorsements_count": 16,
+    "detail_url": "https://sp-mod.com/mod/2500/wishlist-extended",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-12-15T17:19:00.000000Z",
+    "created_at": "2025-12-15T16:19:53.000000Z",
+    "updated_at": "2026-09-01T09:46:38.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2407,
+    "hub_id": null,
+    "guid": "com.lacyway.csf",
+    "name": "QuickSellFlea",
+    "slug": "quicksellflea",
+    "teaser": "Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now you can instantly place it with the average price - with just ONE click and no other mods needed!",
+    "thumbnail": "https://files.sp-mod.com/mods/DKD1Wl0DKh0VvDfyq0nyMHxCBwC3HhPhiOMirGIG.png",
+    "downloads": 42206,
+    "favourites_count": 157,
+    "endorsements_count": 21,
+    "detail_url": "https://sp-mod.com/mod/2407/quicksellflea",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-19T19:13:00.000000Z",
+    "created_at": "2025-10-29T12:15:33.000000Z",
+    "updated_at": "2026-09-06T11:59:04.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2960,
+    "hub_id": null,
+    "guid": "flir.iof",
+    "name": "IOF: Inventory Organizing Feature",
+    "slug": "iof-inventory-organizing-feature",
+    "teaser": "Automate organizing your stash",
+    "thumbnail": "https://files.sp-mod.com/mods/Rnr1JaUDGwBGECMxQqAk5pdsx9IN4YisrwlwrsBl.png",
+    "downloads": 1382,
+    "favourites_count": 22,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/2960/iof-inventory-organizing-feature",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-08-26T23:31:00.000000Z",
+    "created_at": "2026-08-26T18:31:38.000000Z",
+    "updated_at": "2026-08-26T23:36:36.000000Z",
+    "owner": {
+     "id": 69402,
+     "name": "flir",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/DKLerEnM8Sr3SaE9jjPwZdeDpm5UERbKUMqsS0s0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-12T12:24:24.000000Z",
+     "updated_at": "2026-09-16T12:46:00.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 3054,
+    "hub_id": null,
+    "guid": "com.viper.questcodex",
+    "name": "QuestCodex",
+    "slug": "questcodex",
+    "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths too.",
+    "thumbnail": "https://files.sp-mod.com/mods/EMcAnj2YIde22lAZJFACJMjsC50ieuyPwR4WI5Rn.png",
+    "downloads": 1127,
+    "favourites_count": 18,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/3054/questcodex",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-22T18:36:00.000000Z",
+    "created_at": "2026-09-22T18:59:25.000000Z",
+    "updated_at": "2026-10-03T09:19:32.000000Z",
+    "owner": {
+     "id": 120895,
+     "name": "Viper-9",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/DL6BM09JXStu7oSk05hFWOOTHt76Y4JRotBPpElR_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-08-16T10:33:42.000000Z",
+     "updated_at": "2026-10-05T15:29:07.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2025,
+    "hub_id": 2705,
+    "guid": "com.zgfuedkx.allquestscheckmarks",
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "teaser": "Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in future quests. It also works with Fika and shows items required by your friends!",
+    "thumbnail": "https://files.sp-mod.com/mods/2705.png",
+    "downloads": 61046,
+    "favourites_count": 190,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2025/all-quests-checkmarks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2025-03-06T23:43:00.000000Z",
+    "created_at": "2025-03-06T23:43:10.000000Z",
+    "updated_at": "2026-08-29T21:24:27.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32555,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2887,
+    "hub_id": null,
+    "guid": "com.shaneeexd.discord-raid-feed",
+    "name": "Discord Raid Feed",
+    "slug": "discord-raid-feed",
+    "teaser": "A mod that posts raid activity to Discord text channels through Discord Webhooks.",
+    "thumbnail": "https://files.sp-mod.com/mods/FLx7u6W4CeRfQgc1E5zZoDgCgvCGLHRjxohQAHKg.png",
+    "downloads": 557,
+    "favourites_count": 3,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2887/discord-raid-feed",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-07T02:06:00.000000Z",
+    "created_at": "2026-08-07T02:06:59.000000Z",
+    "updated_at": "2026-08-11T21:58:01.000000Z",
+    "owner": {
+     "id": 86008,
+     "name": "shaneeexd",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eINbDVg2kr9FAGInw6Gh07sdMW7MS4UrhkAvi56h_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/LoL77W5RmT8vOHIkKv04LwmtH0IZhX7JoAm1SlsP_1280w.webp",
+     "created_at": "2025-10-19T19:42:09.000000Z",
+     "updated_at": "2026-10-04T15:06:26.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 861,
+    "hub_id": 1159,
+    "guid": "vip.tommysoucy.morecheckmarks",
+    "name": "MoreCheckmarks",
+    "slug": "morecheckmarks",
+    "teaser": "A mod that adds checkmarks and more detailed tooltips to items to indicate if it is needed for hideout upgrades, quests, or if it is on your wishlist",
+    "thumbnail": "https://files.sp-mod.com/mods/1159.png",
+    "downloads": 491654,
+    "favourites_count": 243,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/861/morecheckmarks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2023-04-20T23:07:00.000000Z",
+    "created_at": "2023-04-20T23:07:02.000000Z",
+    "updated_at": "2026-07-28T09:21:56.000000Z",
+    "owner": {
+     "id": 22726,
+     "name": "VIPkiller17",
+     "profile_photo_url": "https://sp-mod.com/avatars/V.svg",
+     "cover_photo_url": null,
+     "created_at": "2022-09-27T17:53:43.000000Z",
+     "updated_at": "2026-08-10T19:40:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 61806,
+      "name": "Bewa",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/WVF4iWlojuCC533m3BCZ9yUlPjkg0Ye6HJzkzaNn.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-08-19T23:42:17.000000Z",
+      "updated_at": "2026-08-19T22:21:37.000000Z"
+     },
+     {
+      "id": 73498,
+      "name": "ScottieKnowz",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-02-15T01:29:31.000000Z",
+      "updated_at": "2026-08-10T19:49:32.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2088,
+    "hub_id": 2773,
+    "guid": "com.geko.gekosbetterprogression",
+    "name": "Geko's Better Progression",
+    "slug": "gekos-better-progression",
+    "teaser": "What if EFT's progression wasn’t built and balanced around pay-to-win? What if you could actually level up skills? This mod (gently) reworks the entire progression system for smoother, more meaningful growth—fully customizable down to the tiniest detail.",
+    "thumbnail": "https://files.sp-mod.com/mods/2773.png",
+    "downloads": 22330,
+    "favourites_count": 28,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2088/gekos-better-progression",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-02-09T19:10:00.000000Z",
+    "created_at": "2025-04-08T21:11:06.000000Z",
+    "updated_at": "2026-07-28T08:01:38.000000Z",
+    "owner": {
+     "id": 73639,
+     "name": "DrunkGeko",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8eb1bdb4b3bad1027fb904f1a4e49c4fb4cbb9e2_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-17T14:57:15.000000Z",
+     "updated_at": "2026-08-10T19:49:30.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 94774,
+      "name": "marbL-",
+      "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-12-06T16:37:09.000000Z",
+      "updated_at": "2026-08-10T19:51:29.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2226,
+    "hub_id": 2929,
+    "guid": "com.chazut.tarkovtradingcards",
+    "name": "[TTC] Tushonka Trading Cards",
+    "slug": "ttc-tushonka-trading-cards",
+    "teaser": "Collectible obsession? 300 unique cards, 340 quests, 300+ barters, a custom trader and booster packs — collect, trade, and grind your way through 20 themed collections.",
+    "thumbnail": "https://files.sp-mod.com/mods/VZqZbtsfrjMV5p8syDtUgYMAeSX7clprQq53je1M.png",
+    "downloads": 27373,
+    "favourites_count": 33,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2226/ttc-tushonka-trading-cards",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2025-07-23T16:19:00.000000Z",
+    "created_at": "2025-07-23T16:19:49.000000Z",
+    "updated_at": "2026-08-19T10:03:10.000000Z",
+    "owner": {
+     "id": 53567,
+     "name": "Chazut",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/wSrlHtBNN4ZSSdNHl7EIOJ2gdQg4SheCfvJRFJOb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-06-11T18:31:06.000000Z",
+     "updated_at": "2026-10-05T16:22:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

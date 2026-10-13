@@ -1,0 +1,481 @@
+{
+ "term": "-QuickMoveToContainer",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 164,
+    "hub_id": 279,
+    "guid": "com.terkoiz.freecam",
+    "name": "Freecam",
+    "slug": "freecam",
+    "teaser": "A flying free camera mode for EFT",
+    "thumbnail": "https://files.sp-mod.com/mods/279.png",
+    "downloads": 52990,
+    "favourites_count": 33,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/164/freecam",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2021-06-02T20:29:00.000000Z",
+    "created_at": "2021-06-02T20:29:12.000000Z",
+    "updated_at": "2026-08-02T06:02:13.000000Z",
+    "owner": {
+     "id": 4843,
+     "name": "Terkoiz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8ac461c503955b1142399451ed9ea40a98b249c2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/f8a971452d0197f3022defe4715119532fbca03c.jpg",
+     "created_at": "2021-05-11T08:06:10.000000Z",
+     "updated_at": "2026-10-05T13:18:21.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 48110,
+      "name": "acidphantasm",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-11T21:22:35.000000Z",
+      "updated_at": "2026-10-05T03:07:48.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 167,
+    "hub_id": 284,
+    "guid": "com.rairaitheraichu.ammostats",
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "teaser": "Now updated for 4.1.0+!",
+    "thumbnail": "",
+    "downloads": 212482,
+    "favourites_count": 117,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/167/ammo-stats",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 9,
+    "published_at": "2021-06-14T15:54:00.000000Z",
+    "created_at": "2021-06-14T15:54:02.000000Z",
+    "updated_at": "2026-08-14T00:21:04.000000Z",
+    "owner": {
+     "id": 3576,
+     "name": "RaiRaiTheRaichu",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b7b8eb01816280f8cac17bf8bcafd05c6ed66378_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-03-25T12:16:15.000000Z",
+     "updated_at": "2026-08-21T22:24:53.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 9,
+     "hub_id": 20,
+     "title": "Locales",
+     "slug": "locales",
+     "description": ""
+    }
+   },
+   {
+    "id": 236,
+    "hub_id": 379,
+    "guid": "fika.ghostfenixx.svm",
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "teaser": "Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a huge variety of options",
+    "thumbnail": "https://files.sp-mod.com/mods/379.png",
+    "downloads": 1327286,
+    "favourites_count": 766,
+    "endorsements_count": 91,
+    "detail_url": "https://sp-mod.com/mod/236/server-value-modifier-svm",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2021-09-26T22:01:00.000000Z",
+    "created_at": "2021-09-26T22:01:55.000000Z",
+    "updated_at": "2026-09-19T19:55:46.000000Z",
+    "owner": {
+     "id": 3972,
+     "name": "GhostFenixx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6b26056cefeb30ad605def9f0f3fa58feface48e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/ef9f3b10c1acbab9d013feb8d42a031300538e6d_1280w.webp",
+     "created_at": "2021-04-08T21:39:10.000000Z",
+     "updated_at": "2026-10-05T11:05:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 374,
+    "hub_id": 558,
+    "guid": "com.bluehead.aiotrader",
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "teaser": "Buy everything from one trader. Get all keys with one command.",
+    "thumbnail": "https://files.sp-mod.com/mods/558.png",
+    "downloads": 153482,
+    "favourites_count": 67,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/374/blueheads-aio-trader",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2022-02-16T05:21:00.000000Z",
+    "created_at": "2022-02-16T05:21:09.000000Z",
+    "updated_at": "2026-09-05T09:56:04.000000Z",
+    "owner": {
+     "id": 14715,
+     "name": "bluehead",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/169efa7218e6871ad2bca23a80daf3fc4ac5db86_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-02-16T05:05:12.000000Z",
+     "updated_at": "2026-09-08T01:44:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 505,
+    "hub_id": 713,
+    "guid": "com.jbs4bmx.mountolympus",
+    "name": "Olympus",
+    "slug": "olympus",
+    "teaser": "The clouds above Mt. Olympus crack with a thunderous roar. The gods beckon you to their battle.",
+    "thumbnail": "https://files.sp-mod.com/mods/713.png",
+    "downloads": 488,
+    "favourites_count": 13,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/505/olympus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2022-07-14T12:55:00.000000Z",
+    "created_at": "2022-07-14T12:55:31.000000Z",
+    "updated_at": "2026-09-13T17:15:04.000000Z",
+    "owner": {
+     "id": 354,
+     "name": "jbs4bmx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/adf92f32f6332d757c9e0babf7ddc6766956bd5e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/36a2281a3fb58425f8454799ae3982f162df8447_1280w.webp",
+     "created_at": "2020-11-28T13:48:21.000000Z",
+     "updated_at": "2026-10-05T10:57:11.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 36392,
+      "name": "FLIGHT_S4L",
+      "profile_photo_url": "https://sp-mod.com/avatars/F.svg",
+      "cover_photo_url": null,
+      "created_at": "2023-08-30T12:49:35.000000Z",
+      "updated_at": "2026-09-28T15:06:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 526,
+    "hub_id": 740,
+    "guid": "com.rairaitheraichu.alltheclothes",
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "teaser": "ALL THE CLOTHES FOREVER",
+    "thumbnail": "https://files.sp-mod.com/mods/740.png",
+    "downloads": 192572,
+    "favourites_count": 241,
+    "endorsements_count": 21,
+    "detail_url": "https://sp-mod.com/mod/526/all-the-clothes",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2026-06-03T19:44:00.000000Z",
+    "created_at": "2022-08-01T06:08:58.000000Z",
+    "updated_at": "2026-08-14T00:03:25.000000Z",
+    "owner": {
+     "id": 3576,
+     "name": "RaiRaiTheRaichu",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b7b8eb01816280f8cac17bf8bcafd05c6ed66378_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-03-25T12:16:15.000000Z",
+     "updated_at": "2026-08-21T22:24:53.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 535,
+    "hub_id": 755,
+    "guid": "com.andrudis.questmaniac",
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "teaser": "This is a reupload of Andrudis-QuestManiac for SPT-AKI's latest version (hopefully).",
+    "thumbnail": "https://files.sp-mod.com/mods/QCvSJnhBYdUhW4kDq2ctoR5u9v4s4KfZ2r37ZLIn.jpg",
+    "downloads": 10551,
+    "favourites_count": 27,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/535/andrudis-questmaniac",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2022-08-07T12:30:00.000000Z",
+    "created_at": "2022-08-07T12:30:29.000000Z",
+    "updated_at": "2026-08-15T01:29:06.000000Z",
+    "owner": {
+     "id": 21297,
+     "name": "LaurentMEKKA",
+     "profile_photo_url": "https://sp-mod.com/avatars/L.svg",
+     "cover_photo_url": null,
+     "created_at": "2022-08-02T10:26:27.000000Z",
+     "updated_at": "2026-09-06T22:47:33.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 608,
+      "name": "Andrudis",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/13E71X3qRtvgtVRjMkSkw04BiKkkVljnLpX5rrju_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2021-01-03T13:54:56.000000Z",
+      "updated_at": "2026-08-12T10:59:29.000000Z"
+     },
+     {
+      "id": 20485,
+      "name": "rgb192x3",
+      "profile_photo_url": "https://sp-mod.com/avatars/R.svg",
+      "cover_photo_url": null,
+      "created_at": "2022-07-09T22:12:31.000000Z",
+      "updated_at": "2026-08-10T19:37:37.000000Z"
+     },
+     {
+      "id": 20522,
+      "name": "Mighty_Condor",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/a4e7dd6eae205f0aeeae8deb649434d4ba9c22e2_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-07-10T21:15:21.000000Z",
+      "updated_at": "2026-09-21T23:19:16.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 179,
+    "hub_id": 303,
+    "guid": "com.deadwolf.spt.balancedmeds",
+    "name": "BALANCED MEDS",
+    "slug": "balanced-meds",
+    "teaser": "All the meds item are changed. Increased uses and better healing.",
+    "thumbnail": "https://files.sp-mod.com/mods/56VJVFLSsMfNvLNVLd7E7kPxRIjqRWrdC7eGKPO1.png",
+    "downloads": 40332,
+    "favourites_count": 67,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/179/balanced-meds",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2021-07-03T13:28:00.000000Z",
+    "created_at": "2021-07-03T13:28:42.000000Z",
+    "updated_at": "2026-09-16T09:43:04.000000Z",
+    "owner": {
+     "id": 5571,
+     "name": "DeadW0Lf",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8cd99d706c98328dc5354eb7e5b798660ebd84e2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/4O7AEAfVmvW3sw1e3ZHm9yOaqHOpdPwrvFjBgq0d_1280w.webp",
+     "created_at": "2021-06-11T06:40:13.000000Z",
+     "updated_at": "2026-10-05T16:50:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 180,
+    "hub_id": 304,
+    "guid": "com.deadwolf.spt.usefulfoodsanddrinks",
+    "name": "USEFUL FOODS AND DRINKS",
+    "slug": "useful-foods-and-drinks",
+    "teaser": "All the food/drink items are changed. Better and Handy.",
+    "thumbnail": "https://files.sp-mod.com/mods/PaTWftWbA0XTW7YbNdzDLEXYOGrIBW7XYv30U4BJ.png",
+    "downloads": 17319,
+    "favourites_count": 47,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/180/useful-foods-and-drinks",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2025-11-27T06:13:00.000000Z",
+    "created_at": "2021-07-03T13:31:11.000000Z",
+    "updated_at": "2026-09-16T09:46:04.000000Z",
+    "owner": {
+     "id": 5571,
+     "name": "DeadW0Lf",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8cd99d706c98328dc5354eb7e5b798660ebd84e2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/4O7AEAfVmvW3sw1e3ZHm9yOaqHOpdPwrvFjBgq0d_1280w.webp",
+     "created_at": "2021-06-11T06:40:13.000000Z",
+     "updated_at": "2026-10-05T16:50:02.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 10686,
+      "name": "aleves",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2108dd7525e5c88e144f9129202597c60b784399_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/23126c22394bc86ee6688a70a6bc090588664a08_1280w.webp",
+      "created_at": "2021-10-21T19:01:32.000000Z",
+      "updated_at": "2026-08-11T21:39:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 147,
+    "hub_id": 255,
+    "guid": "com.jbs4bmx.medicalattention",
+    "name": "Medical Attention",
+    "slug": "medical-attention",
+    "teaser": "\"He's dead, Jim!\" is no longer part of your vocabulary.",
+    "thumbnail": "https://files.sp-mod.com/mods/255.png",
+    "downloads": 6850,
+    "favourites_count": 26,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/147/medical-attention",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2021-05-12T10:49:00.000000Z",
+    "created_at": "2021-05-12T10:49:34.000000Z",
+    "updated_at": "2026-08-27T14:02:03.000000Z",
+    "owner": {
+     "id": 354,
+     "name": "jbs4bmx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/adf92f32f6332d757c9e0babf7ddc6766956bd5e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/36a2281a3fb58425f8454799ae3982f162df8447_1280w.webp",
+     "created_at": "2020-11-28T13:48:21.000000Z",
+     "updated_at": "2026-10-05T10:57:11.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

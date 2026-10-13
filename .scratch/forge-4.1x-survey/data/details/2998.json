@@ -1,0 +1,39 @@
+{
+ "id": 2998,
+ "hub_id": null,
+ "guid": "eft.hiddenhiragi.story",
+ "name": "Original Story",
+ "slug": "original-story",
+ "teaser": "Story line for SPT, from Journey to T***** to the Ending",
+ "thumbnail": "https://files.sp-mod.com/mods/M2mg3LLSxOOfmA0dYjW9jp08QCodcSTLylYuaibw.png",
+ "downloads": 4537,
+ "favourites_count": 41,
+ "endorsements_count": 10,
+ "description": "<p>This mod creates a story line through a series of quests.</p>\n<p>You can unlock traders during <strong>Journey to T</strong>*** and obtain tickets after <strong>Fallen Stars</strong>.</p>\n<p>This mod also adds a new trader who provides the Story Quests. After completing the <strong>Final</strong>, you will receive the corresponding ending reward. Because of this, the <code>ibeatthegameiswear</code> code will be banned.</p>\n<p>After completing the <strong>Final</strong>, you can convert the mod’s ticket items into the vanilla <strong>WTT-ContentBackPort</strong> items. If we get a Terminal mod in the future, these items may become useful.</p>\n<p>All quest have not any require for level or llr, but maybe you will wait for many hours to unlock next quest, this designed by B*G.</p>\n<h3>⚠️ About the Story</h3>\n<p><strong>This story is not a 1:1 recreation of the live version. It is my own adaptation and contains significant changes to the original story, settings, and events.</strong></p>\n<p>Please <strong>do not treat the story or lore presented in this mod as canon to the live version</strong>, and do not use this mod as a reference when discussing or interpreting the original story.</p>\n<p>The changes are intentional. This mod tells its own version of the story.</p>\n<p>for usage:</p>\n<p>unzip file and enter folder until you see <code>BepInEx</code> or <code>SPT_Runtime</code> or both of them, copy them into your game path(which include <code>EscapeFromTarkov.exe</code>)</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2998/original-story",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 7,
+ "published_at": "2026-09-06T05:49:00.000000Z",
+ "created_at": "2026-09-06T05:50:25.000000Z",
+ "updated_at": "2026-09-18T14:33:04.000000Z",
+ "owner": {
+  "id": 21463,
+  "name": "HiddenCirno",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/xXNkgFxfCKBqq3AAckNev9HvY3hZOFL5VEmTEPvC_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2022-08-07T06:48:02.000000Z",
+  "updated_at": "2026-10-10T10:02:23.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 7,
+  "hub_id": 24,
+  "title": "Quests",
+  "slug": "quests",
+  "description": ""
+ }
+}

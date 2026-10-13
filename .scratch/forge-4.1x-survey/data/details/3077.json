@@ -1,0 +1,39 @@
+{
+ "id": 3077,
+ "hub_id": null,
+ "guid": "com.eliteonetube.pityloot",
+ "name": "PityLoot",
+ "slug": "pityloot",
+ "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and Gunsmith parts.",
+ "thumbnail": "https://files.sp-mod.com/mods/3a45QiB4qfDluC9UsK8ffR9yIgN9ngLXsNk7seYE.png",
+ "downloads": 931,
+ "favourites_count": 10,
+ "endorsements_count": 7,
+ "description": "<p>This is a C# rewrite for SPT 4.1 of Bakahashi’s PityLoot for SPT 3.x, with the same features and config.</p>\n<p>By default only raids where you die or go MIA count. Set <code>onlyIncreaseOnFailedRaids</code> to <code>false</code> to count every raid. You can also switch to a time-based mode that grows per real-world hour instead of per raid.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3077/pityloot",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 4,
+ "published_at": "2026-09-28T20:07:00.000000Z",
+ "created_at": "2026-09-28T19:53:59.000000Z",
+ "updated_at": "2026-09-30T09:00:27.000000Z",
+ "owner": {
+  "id": 124842,
+  "name": "EliteOneTube",
+  "profile_photo_url": "https://sp-mod.com/avatars/E.svg",
+  "cover_photo_url": null,
+  "created_at": "2026-09-24T11:32:35.000000Z",
+  "updated_at": "2026-10-08T10:44:41.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 4,
+  "hub_id": 21,
+  "title": "Items",
+  "slug": "items",
+  "description": ""
+ }
+}

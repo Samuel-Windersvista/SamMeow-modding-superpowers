@@ -1,0 +1,48 @@
+{
+ "id": 1343,
+ "hub_id": 1861,
+ "guid": "com.terkoiz.skipper",
+ "name": "Skipper",
+ "slug": "skipper",
+ "teaser": "A small client mod for conveniently skipping quests",
+ "thumbnail": "https://files.sp-mod.com/mods/1861.png",
+ "downloads": 340337,
+ "favourites_count": 505,
+ "endorsements_count": 59,
+ "description": "<p>Simply adds a “Skip” button next to quest conditions <strong>in the trader quest screens</strong>, letting you easily autocomplete any task.</p>\n<p>The default hotkey to make the Skip buttons appear is Left Control!<br />\n(you need to hold the button down)</p>\n<p>The binding can be changed in the F12 menu.</p>\n<p>Huge thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/18717-amands2mello/\" rel=\"noreferrer noopener\">Amands2Mello</a> for the awesome mod icon</p>\n<p>Big thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/24144-devraccoon/\" rel=\"noreferrer noopener\">Hazel</a> for compiling the 3.9 and 3.10 releases of this mod</p>\n<p><strong>Known issues:</strong></p>\n<ul>\n<li>Toggling the mod via configuration manager requires you to navigate away and back to the quest task screen for changes to apply</li>\n<li>Quest condition completion status isn’t saved to profile for now. Please only autocomplete conditions when you’re ready to actually complete the quest, otherwise the skipped conditions will reset to previous values after a raid or game restart!</li>\n</ul>\n<p><em>Self-control not included</em></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1343/skipper",
+ "fika_compatibility": false,
+ "featured": true,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2024-04-19T15:27:00.000000Z",
+ "created_at": "2024-04-19T15:27:58.000000Z",
+ "updated_at": "2026-08-09T22:57:03.000000Z",
+ "owner": {
+  "id": 4843,
+  "name": "Terkoiz",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/8ac461c503955b1142399451ed9ea40a98b249c2_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/f8a971452d0197f3022defe4715119532fbca03c.jpg",
+  "created_at": "2021-05-11T08:06:10.000000Z",
+  "updated_at": "2026-10-05T22:26:42.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 48110,
+   "name": "acidphantasm",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2024-04-11T21:22:35.000000Z",
+   "updated_at": "2026-10-06T00:55:14.000000Z"
+  }
+ ],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

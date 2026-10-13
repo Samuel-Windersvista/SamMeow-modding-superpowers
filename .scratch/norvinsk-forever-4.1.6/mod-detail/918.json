@@ -1,0 +1,39 @@
+{
+ "id": 918,
+ "hub_id": 1242,
+ "guid": "xyz.drakia.botdebug",
+ "name": "BotDebug",
+ "slug": "botdebug",
+ "teaser": "A development utility for seeing what's going on with bots",
+ "thumbnail": "https://files.sp-mod.com/mods/1242.png",
+ "downloads": 13559,
+ "favourites_count": 8,
+ "endorsements_count": 2,
+ "description": "<p>This is a development utility for working with bots, allowing you to see some internal state variables of the bot in real time while in game.</p>\n<h3>This is a development tool, DO NOT LEAVE IT INSTALLED, it will cause crashes if used for extended periods of time</h3>\n<h3>Installation</h3>\n<p><strong>BotDebug depends on BigBrain to function:</strong> <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/902/bigbrain\" rel=\"noreferrer noopener\">BigBrain</a></p>\n<p>1) Open the downloaded zip file in 7-zip</p>\n<p>2) Select the folders in the zip file in 7-zip</p>\n<p>3) Drag the selected folders from 7-zip into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3>Usage</h3>\n<p>When enabled in the F12 menu, all bots active on the map will have a box drawn above them. This box will show internal bot information such as what brain and layer are active, whether the bot is friendly, etc.</p>\n<p>There are multiple panels that can be switched through using hot keys (Default F9 and F10)</p>\n<p>You can specify how close bots have to be for their label to draw in the F12 menu</p>\n<h3>Special Thanks</h3>\n<p>Thanks to Props for the original code this mod was based on, this was the kick start I needed to actually write this up</p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/918/botdebug",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 1,
+ "published_at": "2023-06-11T19:14:00.000000Z",
+ "created_at": "2023-06-11T19:14:31.000000Z",
+ "updated_at": "2026-08-03T06:02:26.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 1,
+  "hub_id": 17,
+  "title": "Tools",
+  "slug": "tools",
+  "description": "Various standalone tools and programs that aren't installed like normal mods"
+ }
+}

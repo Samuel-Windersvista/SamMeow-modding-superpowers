@@ -1,0 +1,519 @@
+{
+ "term": "RCTA - Synaptic Rig T1 (CODIW)",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1766,
+    "hub_id": 2401,
+    "guid": "com.rcta.synapticrig",
+    "name": "RCTA - Synaptic Rig [CODIW]",
+    "slug": "rcta-synaptic-rig-codiw",
+    "teaser": "[EARLY VERSION] The Synaptic Rig from Call of Duty : Infinite Warfare",
+    "thumbnail": "https://files.sp-mod.com/mods/2401.png",
+    "downloads": 3764,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1766/rcta-synaptic-rig-codiw",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-12T16:03:00.000000Z",
+    "created_at": "2024-10-12T16:03:25.000000Z",
+    "updated_at": "2026-08-08T18:03:54.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1768,
+    "hub_id": 2403,
+    "guid": "com.rcta.metalgear",
+    "name": "RCTA - Metal Gear [FORTNITE]",
+    "slug": "rcta-metal-gear-fortnite",
+    "teaser": "The Metal Gear collab outfits from Fortnite (but not cringe)",
+    "thumbnail": "https://files.sp-mod.com/mods/2403.png",
+    "downloads": 3865,
+    "favourites_count": 12,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1768/rcta-metal-gear-fortnite",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-14T17:09:00.000000Z",
+    "created_at": "2024-10-14T17:09:36.000000Z",
+    "updated_at": "2026-08-08T18:03:44.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1774,
+    "hub_id": 2411,
+    "guid": "com.rcta.callisto",
+    "name": "RCTA - Callisto Standard, Deluge [CODMW3]",
+    "slug": "rcta-callisto-standard-deluge-codmw3",
+    "teaser": "Callisto Standard and Deluge Operator Outfits from Call of Duty : Modern Warfare 3 (2023)",
+    "thumbnail": "https://files.sp-mod.com/mods/2411.png",
+    "downloads": 4828,
+    "favourites_count": 13,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1774/rcta-callisto-standard-deluge-codmw3",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-18T16:37:00.000000Z",
+    "created_at": "2024-10-18T16:37:51.000000Z",
+    "updated_at": "2026-08-08T18:03:40.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1777,
+    "hub_id": 2414,
+    "guid": "com.rcta.peely",
+    "name": "RCTA - Peely Default [FORTNITE]",
+    "slug": "rcta-peely-default-fortnite",
+    "teaser": "Default Peely from: Fortnite Battle Royale",
+    "thumbnail": "https://files.sp-mod.com/mods/2414.webp",
+    "downloads": 2784,
+    "favourites_count": 3,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1777/rcta-peely-default-fortnite",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-19T11:50:00.000000Z",
+    "created_at": "2024-10-19T11:50:50.000000Z",
+    "updated_at": "2026-08-08T18:03:35.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 62485,
+      "name": "WUVGAWORE",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+      "created_at": "2024-08-27T13:46:08.000000Z",
+      "updated_at": "2026-10-05T16:07:34.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1778,
+    "hub_id": 2415,
+    "guid": "com.rcta.gundam",
+    "name": "RCTA - Gundam [CODMW3]",
+    "slug": "rcta-gundam-codmw3",
+    "teaser": "Mobile Suit – XVX-016 Gundam from the Call of Duty X Gundam Collaboration from MW3",
+    "thumbnail": "https://files.sp-mod.com/mods/2415.png",
+    "downloads": 2645,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1778/rcta-gundam-codmw3",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-20T05:21:00.000000Z",
+    "created_at": "2024-10-20T05:21:00.000000Z",
+    "updated_at": "2026-08-08T18:03:33.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1788,
+    "hub_id": 2426,
+    "guid": "com.rcta.kleo",
+    "name": "RCTA - Kleo Hustle [CODMW2]",
+    "slug": "rcta-kleo-hustle-codmw2",
+    "teaser": "Kleo Hustle from cod mw2 blah blah u get it, dis my main ngl",
+    "thumbnail": "https://files.sp-mod.com/mods/2426.png",
+    "downloads": 2980,
+    "favourites_count": 8,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/1788/rcta-kleo-hustle-codmw2",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-25T12:29:00.000000Z",
+    "created_at": "2024-10-25T12:29:11.000000Z",
+    "updated_at": "2026-08-08T18:03:21.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1789,
+    "hub_id": 2427,
+    "guid": "com.rcta.fender",
+    "name": "RCTA - Fender Do You Even Lift [CODMW3]",
+    "slug": "rcta-fender-do-you-even-lift-codmw3",
+    "teaser": "warzone mw2 mw3 who cares just look at how buff",
+    "thumbnail": "https://files.sp-mod.com/mods/2427.png",
+    "downloads": 1563,
+    "favourites_count": 0,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1789/rcta-fender-do-you-even-lift-codmw3",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-25T12:36:00.000000Z",
+    "created_at": "2024-10-25T12:36:30.000000Z",
+    "updated_at": "2026-08-08T18:03:14.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1790,
+    "hub_id": 2428,
+    "guid": "com.rcta.rhea",
+    "name": "RCTA - Rhea Ripley Miami [CODMW3]",
+    "slug": "rcta-rhea-ripley-miami-codmw3",
+    "teaser": "I didn't want to open cod and grind for her, so I port her... no freaky",
+    "thumbnail": "https://files.sp-mod.com/mods/2428.png",
+    "downloads": 2566,
+    "favourites_count": 6,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/1790/rcta-rhea-ripley-miami-codmw3",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-25T12:51:00.000000Z",
+    "created_at": "2024-10-25T12:51:00.000000Z",
+    "updated_at": "2026-08-08T18:03:08.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1795,
+    "hub_id": 2436,
+    "guid": "com.rcta.doom",
+    "name": "RCTA - Doom Slayer Eternal [DOOME]",
+    "slug": "rcta-doom-slayer-eternal-doome",
+    "teaser": "DOOM DOOM DOOM",
+    "thumbnail": "https://files.sp-mod.com/mods/2436.png",
+    "downloads": 2835,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1795/rcta-doom-slayer-eternal-doome",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2024-10-26T22:04:00.000000Z",
+    "created_at": "2024-10-26T22:04:30.000000Z",
+    "updated_at": "2026-08-08T18:03:02.000000Z",
+    "owner": {
+     "id": 62485,
+     "name": "WUVGAWORE",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+     "created_at": "2024-08-27T13:46:08.000000Z",
+     "updated_at": "2026-10-05T16:07:34.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 2059,
+      "name": "Hj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+      "created_at": "2021-01-11T10:39:08.000000Z",
+      "updated_at": "2026-10-05T16:48:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1993,
+    "hub_id": 2673,
+    "guid": "com.rcta.adawong",
+    "name": "RCTA - Ada Wong [RE4R]",
+    "slug": "rcta-ada-wong-re4r",
+    "teaser": "Ada Wong from Resident Evil 4 Remake",
+    "thumbnail": "https://files.sp-mod.com/mods/2673.png",
+    "downloads": 10360,
+    "favourites_count": 20,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/1993/rcta-ada-wong-re4r",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2025-02-01T17:19:00.000000Z",
+    "created_at": "2025-02-01T17:19:18.000000Z",
+    "updated_at": "2026-08-08T18:02:57.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 62485,
+      "name": "WUVGAWORE",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+      "created_at": "2024-08-27T13:46:08.000000Z",
+      "updated_at": "2026-10-05T16:07:34.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 12
+  }
+ }
+}

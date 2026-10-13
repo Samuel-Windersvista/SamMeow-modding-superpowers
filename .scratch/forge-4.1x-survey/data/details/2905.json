@@ -1,0 +1,32 @@
+{
+ "id": 2905,
+ "hub_id": null,
+ "guid": "com.hysocs.ragdollkinetics",
+ "name": "Ragdoll Kinetics",
+ "slug": "ragdoll-kinetics",
+ "teaser": "Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions.",
+ "thumbnail": "https://files.sp-mod.com/mods/P6PIITVsZP58duQiQJvnGZn5Cm1IFxj1cGh2qjkO.png",
+ "downloads": 6554,
+ "favourites_count": 74,
+ "endorsements_count": 15,
+ "description": "<h1>Ragdoll Kinetics</h1>\n<hr />\n<blockquote>\n<p>This mod is still considered in development. Some ragdolls, particularly from crouched or unusual animations, may occasionally jitter, spazz out, or behave unpredictably. Expect some random jank for now.</p>\n<p>The current settings are tuned for a Vanilla+ experience. In the next update, I plan to add presets for users who want a different ragdoll feel.</p>\n</blockquote>\n<p>EFTs default ragdolls switch abruptly from animation to loose physics when a character dies. Their final pose, limb movement, balance, and muscle tension are immediately lost, while the fatal shot can apply excessive force. This often results in overly limp collapses, unnatural joint movement, exaggerated launches, and bodies that stop reacting too quickly.</p>\n<p>Ragdoll Kinetics creates a smoother and more believable transition from movement to death. It captures the character’s final pose, individual limb motion, direction, turning, and momentum, then carries them into the fall so moving, crouching, and off-balance characters collapse differently. Anatomically constrained joints reduce unnatural bending, while muscle tone fades gradually instead of disappearing instantly, giving the body weight and structure during the initial collapse.</p>\n<p>Reduced fatal-shot force prevents exaggerated launches while preserving the shot’s physical impact. Random stiff-arm, stiff-leg, and stiff-hip reactions introduce natural variation, with leg reactions accounting for whether the limb is supported by the ground. Corpses also remain physically reactive for a configurable period, allowing impacts, collisions, and the environment to continue affecting them before Eft freezes their physics for performance. The result is heavier, more varied, and more convincing deaths without scripted death animations.</p>\n<p>This mod originally started as a new feature for TraumaCore. While trying to fix a simple ragdoll issue, I ended up reworking the system from the ground up and building an entirely new ragdoll framework. It eventually grew far beyond the scope of TraumaCore, so I split it off and released it as this standalone mod.</p>\n<div class=\"youtube-lite\" data-video-id=\"kJ9c4XKkfqw\" data-embed-url=\"https://www.youtube-nocookie.com/embed/kJ9c4XKkfqw?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=kJ9c4XKkfqw\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h2><strong>Features</strong></h2>\n<hr />\n<ul>\n<li>Carries final animation and movement into death</li>\n<li>Anatomically constrained joint movement</li>\n<li>Gradual muscle-tone release</li>\n<li>Natural horizontal momentum and turning follow-through</li>\n<li>Random stiff-arm, stiff-leg, and stiff-hip reactions</li>\n<li>Ground-support-aware leg reactions</li>\n<li>Reduced exaggerated fatal-shot impulses</li>\n<li>Corpses remain physically reactive before freezing</li>\n<li>Optional AI hit-aim correction</li>\n<li>Fully configurable through BepInEx if you dont like the default feel</li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/2905/ragdoll-kinetics",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-08-13T10:28:00.000000Z",
+ "created_at": "2026-08-13T10:35:54.000000Z",
+ "updated_at": "2026-08-15T08:33:34.000000Z",
+ "owner": {
+  "id": 118937,
+  "name": "Hysocs",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/lAHgRO7c2a5ET6Cu2bCjFOI2s7dt8SukoSsjUgaC_1280w.webp",
+  "created_at": "2026-07-27T18:19:13.000000Z",
+  "updated_at": "2026-10-10T21:18:48.000000Z"
+ },
+ "additional_authors": []
+}

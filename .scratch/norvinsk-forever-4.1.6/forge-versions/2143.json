@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 271,
+   "hub_id": 14604,
+   "version": "1.0.4",
+   "description": "<p>DELETE OLD VERSION OF MOD IF PRESENT</p>\n<p>Echoes of Tarkov - Requisitions 1.0.4</p>\n<p>CHANGES</p>\n<p><strong>lots of code fixes</strong> (main focus of update)<br />\n<strong>Canted aiming</strong><br />\nMP5 flashlight handguard<br />\nMP5K stock<br />\nZenitco 1913 adapter<br />\nAK-74 Crew wide window magazine<br />\nSkull Crusher handguards<br />\nEotech EXPS3 Black<br />\nEotech EXPS3 Covers<br />\nBCM Keymod handguard<br />\nHEAT mask<br />\nKX3 muzzle break fix<br />\nM700 stocks fix</p>\n<p>1911 rmr slide fix</p>\n<p>M16 20“ barrel fix</p>\n<p>MP5 wood handguard fix</p>\n<p>Alphonse Harding’s Beanie</p>\n<p>Probably more im forgetting</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/ePdLba7.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ePdLba7.png\" alt=\"ePdLba7.png\" /></a></p>\n",
+   "link": "https://sp-mod.com/mod/download/2143/echoes-of-tarkov-requisitions/1.0.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 23773,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-07-11T20:40:12.000000Z",
+   "created_at": "2025-07-11T20:40:12.000000Z",
+   "updated_at": "2026-07-13T18:00:34.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2143/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2143/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2143/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2143/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

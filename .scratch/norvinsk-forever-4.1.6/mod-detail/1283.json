@@ -1,0 +1,48 @@
+{
+ "id": 1283,
+ "hub_id": 1795,
+ "guid": "com.choochoo.tradermodding",
+ "name": "Trader Modding And Improved Weapon Building",
+ "slug": "trader-modding-and-improved-weapon-building",
+ "teaser": "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds Button to detach items in use, Highlights mods attached to other guns or ready to use, Ability to zoom in/out.",
+ "thumbnail": "https://files.sp-mod.com/mods/1795.png",
+ "downloads": 111443,
+ "favourites_count": 195,
+ "endorsements_count": 28,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p><strong>Features</strong></p>\n<p><strong>Adds a new checkbox in the weapon preset screen to only show trader items, and your own items ofc.</strong></p>\n<p><strong>Shows item prices from current Traders (Supports custom traders)</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/hARimio.png\" alt=\"hARimio.png\" /></p>\n<p><strong>Quick Buy Button</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/b706b57c-bca2-4bbc-850c-9b84752c553f\" alt=\"\" /></p>\n<p>Also shows <strong>flea prices</strong> if the item is available there and the trader only checkbox is unticked:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/GRDBpzs.png\" alt=\"GRDBpzs.png\" /></p>\n<p><strong>Movable Build Cost Panel:</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ssVdgkJ.gif\" alt=\"ssVdgkJ.gif\" /></p>\n<p><strong>Button to detach items in use elsewhere (Doesn’t touch equipped guns by default):</strong></p>\n<p><strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ydLnvei.gif\" alt=\"ydLnvei.gif\" /></strong></p>\n<p><strong>Highlights parts (Colors customizable in F12):</strong></p>\n<ul>\n<li><strong>Directly usable (Loose in stash)</strong></li>\n<li>**Already present in the current gun build</li>\n<li><strong>Attached to other stuff (But purchasable from traders)</strong></li>\n<li><strong>Attached to other stuff (NOT purchasable)</strong></li>\n</ul>\n<p><strong>Colored borders while modding:</strong></p>\n<p><strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Cxs10j9.png\" alt=\"Cxs10j9.png\" /></strong></p>\n<p><strong>Shows items on PMC, as well as in Rigs etc.</strong></p>\n<p><strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/p8KWeB0.png\" alt=\"p8KWeB0.png\" /></strong></p>\n<p><strong>QoL change: Ability to zoom in/out with the mousewheel for those big chonkers</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/tgqEQfz.gif\" alt=\"tgqEQfz.gif\" /></p>\n<p><strong>Everything is configurable in the F12 menu:</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/X6FDRVS.png\" alt=\"X6FDRVS.png\" /></p>\n<p><strong>There is also the option to invert the Trader only view to show NO items from traders instead (Essentially flea and own items only):</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/oK8LqHV.png\" alt=\"oK8LqHV.png\" /></p>\n<p>If you have any issues, let me know<br />\nI tested everything thoroughly, without crashes and issues, but you never know</p>\n<h3><strong>Credit to</strong> <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/25757-wara/\" rel=\"noreferrer noopener\"><strong>wara</strong></a>for the awesome <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1038/trader-modding\" rel=\"noreferrer noopener\">original mod</a>,</h3>\n<p>giving me the inspiration to push it to the next level.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">How to Install</div>\n<div class=\"tab-content\"><p>Just extract the .zip file with BepInEx and user folder to your SPT folder.</p>\n<p>**If you are upgrading from a version before 1.7.0: Please delete the folder “user/mods/ChooChoo-TraderModding-1.2.0”</p>\n<p><strong>Should you have version 1.0.0 installed, before installing the latest version, remove:</strong></p>\n<p><strong>Wara-TraderModding.dll in BepInEx/plugins Wara-TraderModding-1.0.0 folder in user/mods</strong></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Custom Trader Support</div>\n<div class=\"tab-content\"><p>I changed the server mod to automatically get all custom traders that are installed.<br />\nShould work, but let me know if you notice any weird issues.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods</div>\n<div class=\"tab-content\"><p>To further improve the QoL when modding your guns, the modding stats helper from wara shows stat comparisons in a nice Tooltip</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1814-modding-stats-helper-by-wara-for-3-8-0/\" rel=\"noreferrer noopener\">Wara’s modding stats helper</a></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/1283/trader-modding-and-improved-weapon-building",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 13,
+ "published_at": "2024-04-05T19:57:00.000000Z",
+ "created_at": "2024-04-05T19:57:01.000000Z",
+ "updated_at": "2026-08-05T06:03:56.000000Z",
+ "owner": {
+  "id": 47646,
+  "name": "ChooChoo",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/319ec236ca25f48645b6698950be7d636cd6b12f_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/5d33f3c4ef095ffacd23d543d01376fda0e3cf9b_1280w.webp",
+  "created_at": "2024-04-05T19:27:45.000000Z",
+  "updated_at": "2026-09-23T19:51:01.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 22526,
+   "name": "wara",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/ecf9812cb20e2bcebc5a43d4c852be998efc1601_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2022-09-17T19:33:00.000000Z",
+   "updated_at": "2026-09-04T05:29:04.000000Z"
+  }
+ ],
+ "category": {
+  "id": 13,
+  "hub_id": 76,
+  "title": "Weapons",
+  "slug": "weapons",
+  "description": ""
+ }
+}

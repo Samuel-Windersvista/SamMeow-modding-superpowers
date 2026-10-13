@@ -1,0 +1,39 @@
+{
+ "id": 3073,
+ "hub_id": null,
+ "guid": "7bpencil.openworld",
+ "name": "Open World Map",
+ "slug": "open-world-map",
+ "teaser": "Bringing maps together",
+ "thumbnail": "https://files.sp-mod.com/mods/TgLPrBAxAJVvvVlfxizMW46XGp8OxNw5gO8X29dL.png",
+ "downloads": 168,
+ "favourites_count": 8,
+ "endorsements_count": 16,
+ "description": "<p>There’s no loot, no bots, no quests, it’s just an artpiece, don’t take it seriously. There’s no proper collision between some maps, use freecam to move around.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/0.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/1.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/2.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/3.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/4.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/5.png\" alt=\"\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/7Bpencil/SPT.OpenWorldMap/refs/heads/master/Previews/6.png\" alt=\"\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/3073/open-world-map",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-09-27T20:29:00.000000Z",
+ "created_at": "2026-09-27T20:31:43.000000Z",
+ "updated_at": "2026-09-27T20:43:04.000000Z",
+ "owner": {
+  "id": 106491,
+  "name": "7Bpencil",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/m0WMEpWmYMyvlzjGaDzw4yYFLyLfv9zZIlDFctM3_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/eYWJOQryIx6DpPTaprSWYBSfUe5t8xPiHaaXgYQp_1280w.webp",
+  "created_at": "2026-03-03T10:57:21.000000Z",
+  "updated_at": "2026-10-10T21:53:24.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

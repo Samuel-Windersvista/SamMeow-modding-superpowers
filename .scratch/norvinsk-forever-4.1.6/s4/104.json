@@ -1,0 +1,35 @@
+{
+ "idx": 104,
+ "entry": "[5]经济与制造系统大修-Softcore - 已AI优化",
+ "terms": [
+  "softcore",
+  "-Softcore - AI"
+ ],
+ "all": [
+  {
+   "term": "softcore",
+   "id": 2631,
+   "name": "Softcore Meds",
+   "slug": "softcore-meds",
+   "dl": 4185,
+   "sc": 82
+  },
+  {
+   "term": "softcore",
+   "id": 2575,
+   "name": "Fair Equipment Restoration",
+   "slug": "fair-equipment-restoration",
+   "dl": 1379,
+   "sc": 0
+  },
+  {
+   "term": "softcore",
+   "id": 3074,
+   "name": "Direct Reload & Painless Meds",
+   "slug": "direct-reload-painless-meds",
+   "dl": 532,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

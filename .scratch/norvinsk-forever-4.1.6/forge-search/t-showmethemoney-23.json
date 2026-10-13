@@ -1,0 +1,159 @@
+{
+ "term": "ShowMeTheMoney",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3011,
+    "hub_id": null,
+    "guid": "com.dark.spt.showmethemoney",
+    "name": "Show Me The Money (Item Pricing) (4.1.x)",
+    "slug": "show-me-the-money-item-pricing-41x",
+    "teaser": "Show Me The Money, updated for 4.1.x.",
+    "thumbnail": "https://files.sp-mod.com/mods/K65XPMTmqFDDnADksRboFVHxihsqVpySUB3FCd2G.png",
+    "downloads": 7695,
+    "favourites_count": 89,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-10T15:21:00.000000Z",
+    "created_at": "2026-09-10T15:29:52.000000Z",
+    "updated_at": "2026-09-10T15:57:44.000000Z",
+    "owner": {
+     "id": 68531,
+     "name": "Daark",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/tHAQntRAmvLXM3srdcxTzvTKeB99FjATP2QNgoSP_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-11-29T14:57:39.000000Z",
+     "updated_at": "2026-10-03T18:29:13.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84437,
+      "name": "swiftxp",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-09-09T13:48:33.000000Z",
+      "updated_at": "2026-08-10T19:50:33.000000Z"
+     }
+    ]
+   },
+   {
+    "id": 2736,
+    "hub_id": null,
+    "guid": "moe.trade.marker.server",
+    "name": "Moe-TradeMarker",
+    "slug": "moe-trademarker",
+    "teaser": "Shows NPC trader-bought items, can block flea resale, and now supports QuickSell.",
+    "thumbnail": "",
+    "downloads": 976,
+    "favourites_count": 1,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2736/moe-trademarker",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-06-11T18:15:00.000000Z",
+    "created_at": "2026-06-11T17:43:27.000000Z",
+    "updated_at": "2026-09-07T01:40:07.000000Z",
+    "owner": {
+     "id": 115215,
+     "name": "moucashi",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-06-11T16:10:00.000000Z",
+     "updated_at": "2026-09-23T08:42:19.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2299,
+    "hub_id": 3014,
+    "guid": "com.swiftxp.spt.showmethemoney",
+    "name": "Show Me The Money (Item Pricing)",
+    "slug": "show-me-the-money-item-pricing",
+    "teaser": "Snag the ultimate deal! The tooltip now shows the boldest trader offer and a flea-market price engineered for a perfectly inevitable sale.",
+    "thumbnail": "https://files.sp-mod.com/mods/yPa3Rvkdi3qKUN2pWd0JqVkHyAwz4DbCLV4YLMAV.png",
+    "downloads": 129105,
+    "favourites_count": 238,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/2299/show-me-the-money-item-pricing",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-09-09T15:40:00.000000Z",
+    "created_at": "2025-09-09T15:40:49.000000Z",
+    "updated_at": "2026-10-03T00:21:25.000000Z",
+    "owner": {
+     "id": 84437,
+     "name": "swiftxp",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-09-09T13:48:33.000000Z",
+     "updated_at": "2026-08-10T19:50:33.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 3,
+   "total": 3
+  }
+ }
+}

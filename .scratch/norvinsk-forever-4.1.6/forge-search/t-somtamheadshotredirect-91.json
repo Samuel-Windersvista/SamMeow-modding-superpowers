@@ -1,0 +1,237 @@
+{
+ "term": "somtam.HeadShotRedirect",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3002,
+    "hub_id": null,
+    "guid": "com.abcde.extralives",
+    "name": "Extra-Lives",
+    "slug": "extra-lives",
+    "teaser": "Allows players to gain extra lives in-raid.",
+    "thumbnail": "https://files.sp-mod.com/mods/4ucExgcZ0CXK8Hk14IYAZhBe2gpavfIIfnEsLQYb.png",
+    "downloads": 1119,
+    "favourites_count": 12,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/3002/extra-lives",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-07T03:03:00.000000Z",
+    "created_at": "2026-09-07T03:09:52.000000Z",
+    "updated_at": "2026-09-07T04:37:12.000000Z",
+    "owner": {
+     "id": 123500,
+     "name": "yuhuanghuang.",
+     "profile_photo_url": "https://sp-mod.com/avatars/Y.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-09-06T23:59:35.000000Z",
+     "updated_at": "2026-10-05T13:19:28.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2953,
+    "hub_id": null,
+    "guid": "com.antigravpilot.dmgredirect",
+    "name": "Headshot Damage Redirection",
+    "slug": "headshot-damage-redirection",
+    "teaser": "Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and RNG options. Stop getting one-tapped and fight back! Compatible with SPT 4.1.3 & FIKA",
+    "thumbnail": "https://files.sp-mod.com/mods/bA0nN0R9r6AQ8HScJ9KBrxEoRS8I9Wro8acTjGKg.png",
+    "downloads": 2873,
+    "favourites_count": 31,
+    "endorsements_count": 14,
+    "detail_url": "https://sp-mod.com/mod/2953/headshot-damage-redirection",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-08-23T17:00:00.000000Z",
+    "created_at": "2026-08-23T17:03:53.000000Z",
+    "updated_at": "2026-09-17T07:19:46.000000Z",
+    "owner": {
+     "id": 58571,
+     "name": "AntiGravPilot",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/MAlBbIkhMmioXwKW3ntfJRsmT1lGxp9rtZNj66ZY_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-07-18T19:50:07.000000Z",
+     "updated_at": "2026-09-17T07:21:17.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27463,
+      "name": "Solarint",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-23T17:11:59.000000Z",
+      "updated_at": "2026-08-10T19:41:43.000000Z"
+     },
+     {
+      "id": 76808,
+      "name": "somtam",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-04-13T14:33:36.000000Z",
+      "updated_at": "2026-08-12T11:39:37.000000Z"
+     },
+     {
+      "id": 90563,
+      "name": "Perfk_",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/JgDotdCs7mAm6LqGaIJHzF9UYVZl1IUiGnMhfsOx_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-11-20T20:58:25.000000Z",
+      "updated_at": "2026-08-10T19:51:10.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2237,
+    "hub_id": 2940,
+    "guid": "com.somtam.playerlives",
+    "name": "Player Lives",
+    "slug": "player-lives",
+    "teaser": "Die. Revive. Repeat.",
+    "thumbnail": "https://files.sp-mod.com/mods/2940.png",
+    "downloads": 7860,
+    "favourites_count": 16,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2237/player-lives",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-07-31T13:11:00.000000Z",
+    "created_at": "2025-07-31T13:11:47.000000Z",
+    "updated_at": "2026-07-28T09:57:33.000000Z",
+    "owner": {
+     "id": 76808,
+     "name": "somtam",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-04-13T14:33:36.000000Z",
+     "updated_at": "2026-08-12T11:39:37.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2489,
+    "hub_id": null,
+    "guid": "com.perfk.dmgredirect",
+    "name": "Headshot Damage Redirection",
+    "slug": "headshot-damage-redirection",
+    "teaser": "Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and RNG options. Stop getting one-tapped and fight back! Compatible with SPT 4.0.7 & FIKA",
+    "thumbnail": "https://files.sp-mod.com/mods/lfdT5biRpfFEWJ1QNvOzJmh8lmQ2Z3002Z4JgAdR.png",
+    "downloads": 9188,
+    "favourites_count": 22,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2489/headshot-damage-redirection",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-12-09T16:13:00.000000Z",
+    "created_at": "2025-12-09T16:16:50.000000Z",
+    "updated_at": "2026-07-28T07:03:03.000000Z",
+    "owner": {
+     "id": 90563,
+     "name": "Perfk_",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/JgDotdCs7mAm6LqGaIJHzF9UYVZl1IUiGnMhfsOx_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-11-20T20:58:25.000000Z",
+     "updated_at": "2026-08-10T19:51:10.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27463,
+      "name": "Solarint",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-23T17:11:59.000000Z",
+      "updated_at": "2026-08-10T19:41:43.000000Z"
+     },
+     {
+      "id": 76808,
+      "name": "somtam",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-04-13T14:33:36.000000Z",
+      "updated_at": "2026-08-12T11:39:37.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 4,
+   "total": 4
+  }
+ }
+}

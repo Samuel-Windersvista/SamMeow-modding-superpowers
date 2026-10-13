@@ -1,0 +1,35 @@
+{
+ "idx": 137,
+ "entry": "[2]新物品-竞技场赛季奖励-SPT Battlepass",
+ "terms": [
+  "Pluto! - SPT Battlepass",
+  "- -SPT Battlepass"
+ ],
+ "all": [
+  {
+   "term": "Pluto! - SPT Battlepass",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285013,
+   "sc": 0
+  },
+  {
+   "term": "Pluto! - SPT Battlepass",
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "slug": "croupier-loadout-generator-flea-quicksell",
+   "dl": 42122,
+   "sc": 0
+  },
+  {
+   "term": "Pluto! - SPT Battlepass",
+   "id": 2415,
+   "name": "Canted Aiming",
+   "slug": "canted-aiming",
+   "dl": 21502,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

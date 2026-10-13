@@ -1,0 +1,630 @@
+
+===== 类别 Overhauls (46) =====
+#236 Server Value Modifier [SVM] | dl=1332065 | fika=1 | 415=1 416=1 | Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a huge varie
+#2512 WTT - Content Backport | dl=554869 | fika=1 | 415=1 416=1 | The moment you've all been waiting for....
+#701 Fontaine's FOV Fix | dl=352379 | fika=1 | 415=1 416=1 | Removes the FOV change on aiming by default, and lets you customize the FOV change amount. Has options for mod
+#954 Borkel's Realistic Night Vision Goggles (NVGs and T-7) | dl=265838 | fika=1 | 415=1 416=1 | Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried t
+#1860 Classic Movement | dl=140145 | fika=1 | 415=1 416=1 | Completely removes any inertia and slowed down movement, and replaces it with the official much faster movemen
+#1775 WTT - Menu Overhaul | dl=126758 | fika=1 | 415=1 416=1 | Add a new menu layout to SPT and add your player to the menu screen.
+#2326 Project Fika | dl=98074 | fika=1 | 415=1 416=1 | Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progres
+#2540 Content Backport - Prestiges | dl=60440 | fika=1 | 415=1 416=1 | Already at prestige 4 and want to grind more? Then this mod is for you!
+#2383 Skills Extended | dl=57845 | fika=1 | 415=1 416=1 | Lack of skills is no longer a skill issue
+#1591 Better Rear Sights | dl=56191 | fika=0 | 415=1 416=1 | This mod attempts to make iron sights less crappy
+#2395 Lacy's PvE Tweaks | dl=41345 | fika=1 | 415=1 416=1 | Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now you can queu
+#2144 Skill Distribution | dl=39910 | fika=1 | 415=1 416=1 | Want to level your skills faster but also want to keep vanilla feel of progression? Give this mod a try, you m
+#1818 Make Meds Great Again! | dl=24226 | fika=0 | 415=0 416=1 | Move while performing surgery, sprint while healing and customize medkits' HP and painkiller uses.
+#2206 Item Preview QoL + screenshots | dl=18030 | fika=0 | 415=0 416=1 | Better item preview: zoom, pan, rotate lights, fullscreen, and alpha screenshots. UI Fixes compatible.
+#2780 No Barrel Shadow | dl=16289 | fika=1 | 415=1 416=1 | Removes the barrel shadow cast by flashlights and tactical devices on all weapons.
+#875 VAI: Non-Realistic Tapkov Project | dl=15526 | fika=0 | 415=1 416=1 | This mod aims to make SPT more fun experience by sacrificing its realistic nature.
+#784 Hardcore Rules | dl=12824 | fika=1 | 415=1 416=1 | Is SPT getting too easy? Too much nice gear collecting dust in your stash? Fix that problem with a hardcore pl
+#1171 Make PL-15 Great Again! | dl=12688 | fika=0 | 415=0 416=1 | The PL-15 is a great weapon, but it has some flaws. This mod aims to fix them
+#1175 Make VPO-101 Great Again! | dl=12615 | fika=0 | 415=0 416=1 | The VEPR-Hunter (Molot VPO-101) is a great weapon, but it has a flaw. This mod aims to fix it
+#2475 Restore The Old Number Of Medical Uses | dl=10256 | fika=0 | 415=1 416=1 | The number of uses of medicine is like in the good old days
+#2788 VisitAPI Framework | dl=9256 | fika=1 | 415=1 416=1 | Recreating Storyline and Dialog feature from the Offcial to SPT. Easy to apply to native or custom Trader with
+#2783 Fast Grenade Throw | dl=7516 | fika=0 | 415=1 416=1 | Brings back the classic instant grenade throw with dedicated key binds for overhand and underhand quick throws
+#2642 Vagabond | dl=7155 | fika=1 | 415=1 416=1 | Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to b
+#1851 VAI: Rogue-Lite Tapkov Project | dl=7050 | fika=0 | 415=1 416=1 | This mod is a Rogue-Lite conversion of the progression system.
+#2905 Ragdoll Kinetics | dl=6554 | fika=0 | 415=1 416=1 | Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint mo
+#2893 TraumaCore | dl=5299 | fika=0 | 415=1 416=1 | TraumaCore is a configurable damage and injury overhaul for SPT
+#2175 🛠️ Limitless – Unlimited or Multiply Buy Limits | dl=5207 | fika=0 | 415=1 416=1 | No more running out of ammo or gear due to stock restrictions — unless you want to keep a higher limit. It’s a
+#2646 Flexible Builds | dl=4835 | fika=1 | 415=1 416=1 | Weapon preset and build improvements for SPT
+#2147 MagTuning – Make Mags Better | dl=4711 | fika=0 | 415=1 416=1 | 🧲 MagTuning – Make Mags Better This mod tweaks mags in SPT so they don’t suck as much. Simple. Fast. Tunable.
+#2961 Weight Leveling | dl=3893 | fika=1 | 415=1 416=1 | Item Weights go down as you level
+#1623 Bronzemanmode by KcY >3.9 port | dl=3612 | fika=0 | 415=0 416=0 | For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. High
+#2844 Ultimate Flea | dl=3558 | fika=1 | 415=1 416=1 | Full flea control for SPT 4.1: manage the item pool, set prices, pull Tarkov.dev averages, and run a local sup
+#1936 No Unfair Trade System (NUTS) | dl=3278 | fika=0 | 415=1 416=1 | NUTS (No Unfair Trade System) removes access to the Flea Market (customizable), ensuring a fairer, more balanc
+#3033 Better Suppressors | dl=3233 | fika=1 | 415=1 416=0 | Makes suppressors useful and realistic.
+#2942 Tushonka Territories | dl=3050 | fika=1 | 415=1 416=1 | Adds territory warfare to the land of Tushonka where factions fight each other for control over each map.
+#2652 Fair Progression | dl=2456 | fika=1 | 415=0 416=1 | Automatically rebalances quest XP to preserve vanilla progression when modded quests are installed.
+#3014 Ref Rework | dl=2249 | fika=0 | 415=1 416=1 | Sell dogtags to Ref for GP coins!
+#2819 Pre 12.12 Recoil Patch | dl=2183 | fika=1 | 415=0 416=0 | Remember when recoil was something you actually enjoyed? When the gun kicked realistically, and landing the bu
+#2853 Universal Sensitivity | dl=1873 | fika=1 | 415=0 416=0 | T***** turns your mouse down every time you sprint, jump, crouch or go prone — and never tells you. One sensit
+#3047 Deploy Screen Overhaul | dl=1616 | fika=0 | 415=1 416=1 | You’ve spent enough time staring at the same loading screen. So have I.
+#3081 Advanced Modding Lights | dl=844 | fika=1 | 415=1 416=1 | Enhance the lighting in weapon modding and build screens for better visibility and aesthetics
+#3096 ebz7-BlackoutAddons | dl=589 | fika=0 | 415=1 416=1 | Turns Vultify's Blackout into a survival event: restart failing generators, fix breakers, repair a burnt contr
+#3016 ShitInTushonka | dl=450 | fika=1 | 415=1 416=1 | A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time s
+#2965 Ironman | dl=323 | fika=0 | 415=1 416=1 | Ironman Profiles to apply rules and modifiers to make the game scoped to "Ironman" adjacent. Similar to Ironma
+#3121 Broken Limbs Don't Heal | dl=175 | fika=0 | 415=1 416=1 | Broken limbs aren't supposed to heal instantly. This mod introduces a new health effect and mechanic for that.
+#3120 TrueHardcoreRules | dl=111 | fika=0 | 415=0 416=1 | No flea. No insurance. No mercy. Hardcore economy.
+
+===== 类别 Bots (29) =====
+#902 BigBrain | dl=1363232 | fika=0 | 415=1 416=1 | A library for adding extra logic layers to existing bot brains
+#791 SAIN - Solarint's AI Modifications - Full AI Combat System Replacement | dl=1321014 | fika=1 | 415=1 416=1 | Bots that don't suck.
+#812 Looting Bots | dl=749682 | fika=1 | 415=1 416=1 | Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!
+#1109 Questing Bots | dl=436826 | fika=1 | 415=1 416=1 | You're no longer the only PMC running around placing markers and collecting quest items. The bots have transce
+#1100 ACCURATE CIRCULAR RADAR | dl=311030 | fika=0 | 415=0 416=0 | A radar mod that displays enemy locations and identifies various enemy types.
+#1594 APBS - Acid's Progressive Bot System | dl=256235 | fika=1 | 415=1 416=1 | Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their
+#2097 ABPS - Acid's Bot Placement System | dl=191106 | fika=1 | 415=1 416=1 | Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will alwa
+#2426 MoreBotsAPI | dl=127761 | fika=1 | 415=1 416=1 | API for making the implementation of custom bots easier
+#2511 WTT - Black Division [REDACTED] Home | dl=117798 | fika=1 | 415=1 416=1 | [REDACTED]
+#1873 Bot Callsigns - Reloaded | dl=68843 | fika=1 | 415=1 416=1 | Adds a big (and sometimes funny) variety of bot names for flea and game.
+#1945 Ai Limit | dl=65132 | fika=0 | 415=1 416=1 | Temporarily disable far bots to reduce cpu load
+#2706 ORBIT 2.0 | dl=54598 | fika=1 | 415=1 416=1 | Bots play the raid like you do, and a "Ghost Mode" to run it all at high fps
+#1925 NerfBotGrenades | dl=43101 | fika=1 | 415=1 416=1 | Allows you to multiply bot inaccuracy with grenades.
+#2342 UNTAR Go Home! | dl=41938 | fika=1 | 415=1 416=1 | Yet they're still here in T*****... New UNTAR bot types patrol the region.
+#2427 RUAF Come Home! | dl=38626 | fika=1 | 415=1 416=1 | RUAF have finally returned to resolve the Norvinsk conflict.
+#1895 [SAIN] Twitch Players | dl=35535 | fika=1 | 415=1 416=1 | EFT was never forgiving. So are they.
+#2676 PIT Fireteam | dl=35070 | fika=0 | 415=1 416=1 | Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the bat
+#2011 Actually Found In Raid (UPDATED) | dl=26021 | fika=0 | 415=1 416=1 | Tired of killing a PMC and the loot isn't "Found In Raid", even though you literally just found it in the raid
+#2709 Miyako Carry Service | dl=13040 | fika=1 | 415=1 416=1 | MiyakoCarryService is a mod that generates AI teammates.
+#2594 Player Boss Scav | dl=10846 | fika=1 | 415=1 416=1 | Standalone component from APBS. Allows your scav to generate as a boss with a configurable chance.
+#2248 Separate Hostility | dl=10172 | fika=0 | 415=0 416=0 | Completely fixes the hostility issue in EFT 0.16 / SPT 3.11 where bots don't fight others as they should.
+#2776 Parmesan - Partizan Rework | dl=7198 | fika=0 | 415=0 416=0 | fixes partizan by makeing him hunt AI pmcs instead of you all the time
+#2617 Don't Shoot The Bus | dl=6438 | fika=1 | 415=1 416=1 | PMC bots keep picking fights with a 13-ton armored vehicle. This mod fixes that.
+#2821 Raiders Vs Rogues | dl=5668 | fika=1 | 415=0 416=0 | In a world of uncertainty, you can never be sure what you'll come across next. In true T***** fashion, Rogues 
+#2519 Armbands For All | dl=4780 | fika=0 | 415=1 416=1 | Nothing against people with no arms, but all bots have arms...why not armbands?
+#2210 Live Like Boss Spawn Chances | dl=4280 | fika=1 | 415=1 416=1 | Simulates boss spawn chances gradually increasing throughout a "wipe" based on your player level and in-raid h
+#2953 Headshot Damage Redirection | dl=3096 | fika=1 | 415=1 416=1 | Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and 
+#3064 Realistic PMC Names | dl=1888 | fika=0 | 415=1 416=1 | 8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal.
+#2568 Disable Headshot Protect | dl=1637 | fika=1 | 415=1 416=1 | Want to die from getting shot in the head? Time to fix another jank B** design decision
+
+===== 类别 Quests (22) =====
+#1232 Lotus | dl=188690 | fika=1 | 415=0 416=1 | Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite la
+#2025 All Quests Checkmarks | dl=62238 | fika=1 | 415=1 416=1 | Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for it
+#1537 sgtlaggy's Quest Tweaks | dl=24418 | fika=1 | 415=1 416=1 | Some QoL quest changes.
+#2093 Virtual's Custom Quests - Updated | dl=20043 | fika=0 | 415=0 416=0 | A set of custom lore-based quests to fill that deep desire for more content.
+#1866 Gunsmith Tweaks | dl=14349 | fika=1 | 415=1 416=1 | Makes Mechanic actually gives guns.
+#2686 Quest Presence Detector | dl=13111 | fika=1 | 415=1 416=1 | Detects when quest items are nearby by showing a progress bar with an optional arrow pointing towards it.
+#535 Andrudis QuestManiac | dl=10654 | fika=0 | 415=1 416=1 | This is a reupload of Andrudis-QuestManiac for SPT-AKI's latest version (hopefully).
+#1867 QCAdjustments | dl=6026 | fika=1 | 415=1 416=1 | Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip 
+#2909 Hj's Task Search | dl=5848 | fika=1 | 415=1 416=1 | Task Search from 1.0
+#3026 Quest Backport | dl=5489 | fika=0 | 415=1 416=1 | Rebuilding and porting select quests from the official EFT release for compatibility with SPT.
+#2998 Original Story | dl=4537 | fika=1 | 415=1 416=1 | Story line for SPT, from Journey to T***** to the Ending
+#2831 Transits Count | dl=3592 | fika=1 | 415=1 416=1 | Because B** does what B** does and doesn't update everything. Make transits count.
+#2810 Kill&Bill - Quest Condition Overhaul | dl=3482 | fika=0 | 415=1 416=1 | Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, 
+#2899 Start Collector Early | dl=3023 | fika=1 | 415=1 416=1 | TL;DR: Port of Mattdokn's StartCollectorEarly to SPT 4.1.2.
+#2397 Start Is This A Reference? Early | dl=2688 | fika=1 | 415=1 416=1 | Start Is This A Reference? at an early level.
+#2981 Kappa Tracker | dl=2181 | fika=0 | 415=1 416=1 | Your Kappa grind at a glance — quests, requirements, unlock chains.
+#2732 Quest Filter Mod | dl=2027 | fika=1 | 415=1 416=0 | A mod for changing quests and a random quest generator with rewards.
+#2892 Remove Single Raid Quest Requirements | dl=1844 | fika=1 | 415=1 416=1 | Removes the "single raid" completion requirement from all tasks in the game.
+#3054 Quest Codex | dl=1782 | fika=0 | 415=0 416=1 | Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too.
+#3071 Hj's Task Turn in Indicator | dl=1294 | fika=1 | 415=1 416=1 | Task Turn in Indicator from EFT 1.1.5
+#2653 Mission Control | dl=1277 | fika=1 | 415=1 416=1 | Limits visible quests to a configurable number of random slots. Reroll anytime at Prapor.
+#2766 Quest Experience Multiplier | dl=499 | fika=0 | 415=1 416=1 | Multiplies the experience amount given by quest by a factor.
+
+===== 类别 Traders (32) =====
+#1023 WTT- Artem | dl=318345 | fika=0 | 415=1 416=1 | In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts dead
+#1025 Painter | dl=315101 | fika=1 | 415=1 416=1 | Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons).
+#1538 Ref - SPT Friendly Quests | dl=309244 | fika=1 | 415=1 416=1 | Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an adde
+#374 bluehead's AIO Trader | dl=153895 | fika=0 | 415=1 416=1 | Buy everything from one trader. Get all keys with one command.
+#1348 Scorpion | dl=140671 | fika=1 | 415=1 416=1 | Scorpion has 122 quests available from the start of your T***** journey. Including time based event quests!
+#1303 HarryHideout | dl=68380 | fika=1 | 415=1 416=1 | Trader that sells all items for hideout construction/upgrades
+#1554 ALL AMMO TRADER - UPDATED BY TILTUSHKIN | dl=55021 | fika=1 | 415=1 416=1 | Need all the ammo? Here's a trader
+#1971 Croupier - loadout generator + flea quicksell | dl=42416 | fika=0 | 415=1 416=1 | Gear up for your next raid in just 20 seconds!
+#2394 Instant Insurance | dl=36907 | fika=1 | 415=1 416=1 | Keep your insured items equipped after death!
+#2445 Natalya Trader | dl=34264 | fika=0 | 415=0 416=0 | Trader that adds quests, sells ammo, cases, meds, weapons with quest unlock, upgraded meds, upgraded gear
+#2478 ISB Aishi | dl=33621 | fika=1 | 415=1 416=1 | Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.
+#2483 Boxes At Ref (BARF) - NG | dl=23338 | fika=1 | 415=1 416=1 | Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the 
+#2419 Amonya - Ammo Loving Trader & Quester | dl=17479 | fika=1 | 415=1 416=1 | Ammo-obsessed pony trader who rewards your effort with the best bullets in the game
+#2817 The Quartermaster | dl=13266 | fika=0 | 415=1 416=1 | A global, player-driven second-hand marketplace. Sell gear from your stash. Buy gear that other players have s
+#2371 FIR Fence Purchases | dl=11605 | fika=1 | 415=1 416=1 | Give Fence’s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid.
+#2749 TraderGen | dl=6466 | fika=0 | 415=1 416=1 | A dependency/framework mod that lets anyone, including non-programmers, create custom traders for SPTarkov usi
+#2999 Terminal Commander | dl=4717 | fika=1 | 415=1 416=1 | Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Gre
+#2434 500 Euro for Skier | dl=4345 | fika=1 | 415=1 416=1 | Skier should be trading in Euros, not Roubles!
+#3055 Rook | dl=4280 | fika=1 | 415=0 416=1 | Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-fo
+#2648 AllGoodsTrader | dl=3670 | fika=0 | 415=1 416=1 | This mod adds four bilingual traders. Traders buy most items; equipment trader offers repair & insurance. Auto
+#3030 NATO Quartermaster — Western Gear Trader, Presets & Quest Unlocks | dl=3315 | fika=1 | 415=1 416=1 | A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated 
+#2988 The Locksmith | dl=3180 | fika=0 | 415=0 416=0 | A trader who sells every map key — one by one, or bundled per map in a ready-to-open box.
+#2966 PresetTrader | dl=2922 | fika=0 | 415=1 416=1 | Your new favorite rip-off artist, selling saved builds and gear at brutal prices.
+#3091 Astral Divide | dl=1977 | fika=1 | 415=1 416=1 | Custom Trader with story chapter and unique mechanic and custom outfits with physics system.
+#3024 CaseTrader — Buy any case | dl=1590 | fika=0 | 415=0 416=1 | Adds a new trader — Case (Victor Barinov). He sells storage cases, key holders, wallets, med cases, ammo boxes
+#3085 Ledger | dl=1431 | fika=0 | 415=0 416=1 | Custom dogtag trader with 40+ quest story. Help him with his collection and see where it takes you.
+#3124 Gunsmith Task Trader | dl=529 | fika=1 | 415=1 416=1 | Adds Trader that sells the gun for every Gunsmith task (And a couple extras)
+#3032 Bookie - Casino Trader | dl=507 | fika=1 | 415=1 416=0 | Gamble roubles, Bitcoins, and high-stakes loot with Bookie.
+#3098 SPT Trader Restock Refresh | dl=437 | fika=0 | 415=1 416=1 | Refreshes the trader screen you have open when that trader restocks.
+#3128 Gunwright | dl=428 | fika=0 | 415=1 416=1 | Gunsmith Presets, Own Custom Weapon Builds, and Fully Configurable Pricing. Gear Up. Lock In. Deploy.
+#3005 Trader Level Requirements Editor | dl=375 | fika=0 | 415=1 416=1 | Let's you alter the level requirements for SPT's traders
+#2987 No Gear? | dl=225 | fika=1 | 415=1 416=1 | Remove weapons and gear offers from traders (configurable).
+
+===== 类别 Locations (14) =====
+#1619 Lots of Loot Redux | dl=252235 | fika=1 | 415=1 416=1 | Tired of having barely any loot in your raids? Lots of Loot Redux aims to bring back that old T***** feeling f
+#2866 MANIMAL'S ICEBREAKER BACKPORT | dl=70464 | fika=1 | 415=1 416=1 | A mod that backports the entire Icebreaker map and some of its related quests to SPT
+#2416 Enable Labyrinth | dl=60845 | fika=1 | 415=1 416=1 | Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as the non-secr
+#2843 Blackout | dl=27083 | fika=1 | 415=1 416=1 | Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract 
+#3025 Manimal's 1.0 Interchange Expansion Backport | dl=26286 | fika=0 | 415=1 416=1 | Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra.
+#2937 Manimal's 1.0 Labs Office Backport | dl=24171 | fika=1 | 415=1 416=1 | Backports the 1.0 Labs expansion to SPT 4.0.
+#3022 Manimal's 1.0 Lighthouse Rework Backport | dl=17459 | fika=0 | 415=1 416=1 | Backports the new Lighthouse rework to SPT 4.1.
+#2240 LET ME OUT | dl=11049 | fika=1 | 415=1 416=1 | Stops transit interaction from disabling all the other exfils. I want out, let me out!
+#2903 Raids Are Infinite | dl=7275 | fika=1 | 415=1 416=1 | TL;DR: Ever wished to just roam the map forever? Now you can!
+#2479 Weighted Season Randomizer | dl=7228 | fika=1 | 415=1 416=1 | Configure weighted random seasons - higher weight = more common!
+#3040 Map Variants | dl=5983 | fika=1 | 415=1 416=1 | Choose between the map SPT ships and a backported version of it
+#3041 Factory Classic | dl=1147 | fika=1 | 415=1 416=1 | The pre-rework Factory, playable on SPT 4.1
+#3129 Sage's Tutorial Backport | dl=578 | fika=0 | 415=1 416=1 | Backports the 1.0 Tutorial into SPT
+#3073 Open World Map | dl=168 | fika=0 | 415=0 416=1 | Bringing maps together
+
+===== 类别 Hideout (15) =====
+#1437 Simple Workout QTE | dl=68837 | fika=1 | 415=1 416=1 | Workout QTE in hideout is now much easier, and configurable!
+#2076 Hideout In Progress | dl=56616 | fika=1 | 415=1 416=1 | Turn in items for hideout construction as you get them!
+#2530 Vertical Hideout | dl=36289 | fika=1 | 415=1 416=1 | Replace the horizontal carousel with a sane vertical list
+#1861 Stash Management Helper | dl=27317 | fika=1 | 415=1 416=1 | Enhances stash management with extra sorting features. This can sort your stash long after the default sorting
+#2657 Cultist Circle Improvements | dl=13185 | fika=1 | 415=1 416=1 | Fine tune your Cultist Circle, change all the values and timers. Add new direct reward crafts! Also comes with
+#2908 Tarkin's Hideout Cat | dl=6017 | fika=1 | 415=1 416=1 | Hideout Cat, but for SPT 4.1!
+#2108 More Mannequin Pose | dl=4022 | fika=0 | 415=0 416=0 | Adds extra poses to make your mannequin more lively
+#2705 Hideout Shootout | dl=3927 | fika=1 | 415=1 416=1 | Enables use of your weapon in the Hideout outside of the shooting range
+#2129 Air Filter Warning | dl=3476 | fika=1 | 415=1 416=1 | Tired of forgetting about air filter when you exit the game? Maybe this mod will help you save your precious F
+#2982 Hideout Overhaul | dl=3233 | fika=0 | 415=1 416=1 | Replaces hideout construction recipes into something much more sensible. Because last time I checked, you don'
+#2915 Hideout Craft Modifier - HCM | dl=2159 | fika=0 | 415=1 416=1 | Modify your hideout recipes to your liking.
+#2696 Hideout Sky | dl=1752 | fika=1 | 415=1 416=1 | Finally some fresh air
+#2933 HideoutTV | dl=1637 | fika=0 | 415=0 416=0 | Custom videos for the hideout TV
+#2932 Target Dummies | dl=1628 | fika=1 | 415=1 416=1 | Replace shooting range targets with bots
+#3042 Super Scav Case | dl=1244 | fika=0 | 415=1 416=1 | Make the Scav Case useful again. It can now be built from the early game, and adds separate options for search
+
+===== 类别 Audio (17) =====
+#1831 Agony SFX | dl=35156 | fika=1 | 415=1 416=1 | Client mod that allows bots to play additional voice lines upon dying.
+#2264 Battle Ambience | dl=29979 | fika=1 | 415=1 416=1 | Because the world is bigger than your raid.
+#2635 Smooth Talker | dl=14671 | fika=1 | 415=1 416=1 | Today your PMC could be as dumb as yesterday but a little more talkative.
+#2550 Bring Back Concussion | dl=10839 | fika=1 | 415=1 416=1 | Revamp of EFT's lost brutality and headshots that've never been so brutal.
+#2710 female pmc voice (U***) | dl=6617 | fika=1 | 415=1 416=1 | ever wanted a female U*** voice in t*****? well now you do!
+#2528 Self Breath Volume | dl=6116 | fika=1 | 415=0 416=1 | Modify the breath volume & hurt vocal of yourself (Using mask, low stamina, get injured …)
+#1406 Dick Marcinko - Rogue Warrior Voice Pack | dl=5463 | fika=1 | 415=0 416=0 | The Rogue Warrior is on a classified mission.
+#2651 Environment Volume Control | dl=4968 | fika=1 | 415=1 416=1 | Old man yells at Cloud and BTR and Airplane and Wind
+#2625 VAI: SchizoPMC | dl=2629 | fika=0 | 415=1 416=1 | Давайте как то организованно, б%#$ть!
+#2962 Music Extender | dl=1987 | fika=1 | 415=1 416=1 | Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now.
+#2839 SoulPlayer | dl=1832 | fika=0 | 415=1 416=0 | Collect cassettes in raids and play your own music inside SPT.
+#2738 GFLVoices | dl=1784 | fika=0 | 415=1 416=1 | Just cover your manly face up or let everyone know you found a voice changer
+#2968 Quiet Weather | dl=1694 | fika=1 | 415=1 416=1 | A volume slider mod that let's you turn down the rain volume.
+#2825 S&M PRT - Portable Radio Transmitter | dl=1588 | fika=1 | 415=0 416=0 | Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed i
+#2845 Hj's Custom UI Sounds | dl=807 | fika=1 | 415=1 416=1 | Swapping the in-game UI Audio to a custom soundpack
+#3045 KAHADS - Kill And Hit And Death Sounds | dl=517 | fika=0 | 415=1 416=1 | Option to customize hit, kill, and death sounds
+#3001 Manimal's Quest Briefing API | dl=362 | fika=0 | 415=1 416=1 | An API that allows modders to create custom Briefing audio for quests.
+
+===== 类别 Equipment (28) =====
+#1278 WTT - Pack 'n' Strap | dl=234742 | fika=1 | 415=1 416=1 | Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, for all your
+#2386 Use Items Anywhere | dl=121552 | fika=1 | 415=1 416=1 | Use and bind items from anywhere in your inventory
+#1374 Player Encumbrance Bar | dl=100002 | fika=1 | 415=1 416=1 | Adds a progress bar to the inventory that shows total player encumbrance
+#2422 Foldables | dl=47350 | fika=1 | 415=1 416=1 | You can now fold backpacks and vests!
+#1569 Wolfik's Heavy Trooper Masks | dl=45852 | fika=1 | 415=1 416=1 | Adds 5 new heavy trooper masks: Tan, Black, Coyote, Wolf, and Cult that actually provide protection
+#1878 Unrestricted Armor Plate | dl=22867 | fika=0 | 415=1 416=1 | Allows to insert any Armor Plate into any Armored Chest Rig​ or Armor Vest​.
+#2369 Jero Backpack | dl=20811 | fika=0 | 415=0 416=1 | Increases backpack inventory space by resizing grids. Supports custom sizes and blacklist.
+#2380 Black Exfil Revision | dl=16221 | fika=1 | 415=1 416=1 | Bring back full protection! This mod lets you equip compatible face shields on the Black Exfil helmet once aga
+#1937 Dev Balaclava Fix | dl=13488 | fika=1 | 415=1 416=1 | Just makes you actually invincible while wearing the Dev Balaclava. Meant for mod developers. Immune to explos
+#2791 Tylevo's Tactical Service Control | dl=9923 | fika=1 | 415=1 416=0 | Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction
+#2556 Repair Skill Extension | dl=8559 | fika=1 | 415=0 416=1 | Custom higher buff chance for repairing armor & weapon. Repair skills work on all armor items. Fully repaired 
+#2814 LMSP - Let Me Switch Plates | dl=8555 | fika=1 | 415=1 416=1 | Switch plates without removing your equipped armor / rig in raid, FIKA compatible
+#2554 Change Helmet Visor | dl=7046 | fika=1 | 415=1 416=1 | A mod that lets you swap between how the face shield/face cover visor is rendered
+#1280 Warzone Cat Ears | dl=6411 | fika=1 | 415=1 416=1 | Nya Nya, Motherfuckers.
+#2711 Better OKP-7 | dl=3818 | fika=1 | 415=1 416=1 | New OKP-7 reticles for both the Dovetail and Picatinny varients!
+#2506 Funtar | dl=3147 | fika=1 | 415=1 416=1 | Make UNTAR Fun Again
+#2973 Restore Armor Plates | dl=2891 | fika=0 | 415=1 416=1 | Restore fully repaired detachable armor plates to their original maximum durability with a dedicated refurbish
+#2996 Backpack Resizer | dl=2868 | fika=0 | 415=1 416=1 | Change the height and width of backpacks that don't have a split pocket grid.
+#3084 Better Flashlights | dl=1931 | fika=0 | 415=1 416=1 | A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural
+#3105 SOMF - SitOnMyFace | dl=1927 | fika=1 | 415=0 416=1 | Face can't fit more than one chonky piece of gear? This mod lets you fit all the gear you want on your face at
+#566 ArmBandCore | dl=1630 | fika=0 | 415=0 416=0 | We wear our armor on our sleeves!
+#3109 Knight Mask Fix (4.1.3+) | dl=1592 | fika=1 | 415=1 416=1 | Fixes Death Knight's missing mask texture
+#2897 Equipment Is Eternal | dl=1541 | fika=1 | 415=1 416=1 | TL;DR: Do not lose equipment, specific slots configurable
+#3052 Black and Blue | dl=1505 | fika=0 | 415=0 416=1 | And when you've got nothing left to turn black and blue, you've still got Hell to look forward to.
+#2575 Fair Equipment Restoration | dl=1414 | fika=1 | 415=1 416=1 | A customizable equipment restoration mod that preserves item wear and consumption.
+#2715 RainCap | dl=1232 | fika=0 | 415=1 416=1 | A mod which lets you reduce/disable the rain drops on your screen when wearing a cap
+#2401 WTT Halloween Masks | dl=678 | fika=1 | 415=0 416=1 | Are you ready for some real masks?
+#3068 Grappendix | dl=246 | fika=1 | 415=1 416=1 | An additional external intestine for climbing and swinging.
+
+===== 类别 Items (59) =====
+#1125 Tactical Gear Component | dl=304709 | fika=1 | 415=1 416=1 | Adds a lot more unique gear and attachments for E*****************
+#755 The Blacklist - flea market enhancements | dl=169391 | fika=1 | 415=1 416=1 | Disables the B** blacklist in the flea market. Rebalances the prices of blacklisted ammo like Igolnik. Speeds 
+#1657 MergeConsumables | dl=87046 | fika=1 | 415=1 416=1 | Tired of not being able to merge your medical items or food? Now you can!
+#1688 More Energy Drinks | dl=73807 | fika=1 | 415=1 416=1 | Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy duri
+#2430 ODT's Item Info - SPT 4.0 | dl=50321 | fika=1 | 415=1 416=1 | Massive QOL Item Info mod for SPTarkov
+#179 BALANCED MEDS | dl=40673 | fika=0 | 415=1 416=0 | All the meds item are changed. Increased uses and better healing.
+#1305 Repair Max Durability | dl=38051 | fika=1 | 415=1 416=1 | Literally just adds an item that repairs the max durability of weapons
+#2864 Manimal's CS Gas | dl=35018 | fika=1 | 415=1 416=1 | A mod that adds the CS Gas grenade from 1.0
+#1939 BETTER ATTACHMENTS | dl=32705 | fika=0 | 415=1 416=0 | All gun attachments are better ergonomics and confgurable recoils. To deal with OP AIs you need OP guns.
+#2195 ECOT - Eukyre's Consortium of Things | dl=30692 | fika=1 | 415=1 416=1 | Home of the Blahaj and the FNX-45.
+#2415 Canted Aiming | dl=21844 | fika=1 | 415=1 416=1 | Allow the player to point shoot without a backup sight mount.
+#2681 Manimal's Ammo Loading Animations | dl=19233 | fika=1 | 415=1 416=1 | First person animations for loading bullets into a mag
+#180 USEFUL FOODS AND DRINKS | dl=17500 | fika=0 | 415=1 416=0 | All the food/drink items are changed. Better and Handy.
+#2344 Dynamic Item Weights | dl=14537 | fika=1 | 415=1 416=1 | Say bye to the empty 9kg jerry can! This mod adjusts the weight of items based on their current usage.
+#1237 Consumables Galore | dl=13666 | fika=1 | 415=1 416=1 | Easily create your stims and foods in-game. Tool that comes pre-packed with some new and old stims and foods.
+#2803 ItemGen | dl=12779 | fika=0 | 415=1 416=1 | A server-side framework for SPTarkov that lets anyone, including non-programmers, create custom items using si
+#2930 ECOTI - Enhanced Clip-On Thermal Imager | dl=12074 | fika=1 | 415=1 416=1 | A clip-on thermal imager for your night vision. It clamps to the objective and fuses heat into the tube's circ
+#2167 CNN - CONTAINERS - RE-UPLOAD | dl=11357 | fika=1 | 415=1 416=1 | Re-Upload of Cannuccia's CNN-Container mod, updated for SPT v3.11.X and a port for SPT 4.0.X
+#2779 Cooler Stims | dl=10700 | fika=1 | 415=1 416=1 | Five custom stims, each built for a different way to play — entry fragging, sustained healing, tanking, lootin
+#2934 Armor Class Icon | dl=10551 | fika=0 | 415=1 416=1 | Shows armor class icon on body armor, helmets, armored rigs, visors and face covers
+#2425 SamSWAT's Anime Rear Sights - 4.0 Port | dl=10290 | fika=1 | 415=1 416=1 | Adds 24 anime styled rear sights that are sold by Mechanic.
+#2448 SNACC Pack | dl=10271 | fika=1 | 415=0 416=0 | SNACC pack for all those treats
+#2459 Ammo Weight Modifier | dl=10135 | fika=1 | 415=0 416=0 | Modify the weight of ammo
+#2212 Unbreakable keys | dl=10121 | fika=1 | 415=1 416=1 | TL;DR: Makes keys and keycards unbreakable.
+#3011 Show Me The Money (Item Pricing) (4.1.x) | dl=9070 | fika=1 | 415=1 416=1 | Show Me The Money, updated for 4.1.x.
+#1229 LumurkFox - PINEAPPLE BLITZ GRENADE (RE-UPLOAD) | dl=7972 | fika=1 | 415=0 416=0 | Nade go boom.
+#1981 READABLE KEYS by DeadW0Lf | dl=7739 | fika=0 | 415=1 416=0 | Improved descriptions, tooltip and short names for Keys and Keycards. Also modifiable usage count in config.
+#2777 AmmoGen | dl=7035 | fika=1 | 415=1 416=1 | AmmoGen is a server-side framework for SPTarkov that lets anyone create custom ammo, ammo boxes, and loot inje
+#2616 Better (Picatinny) OKP | dl=6344 | fika=1 | 415=1 416=1 | No more gigantic red dot with the picatinny OKP optic!
+#2840 Cobra's Ammo Stack | dl=6158 | fika=1 | 415=1 416=1 | Configure ammunition stack sizes by caliber with support for vanilla and modded ammo.
+#2687 Sicc Case Fix | dl=5790 | fika=1 | 415=1 416=1 | Simple Fix for the Sicc Case not being able to hold Prestige 3 and 4 dog tags
+#2446 Handy Toolbox | dl=4779 | fika=1 | 415=0 416=0 | Handy Toolbox Updated
+#2631 Softcore Meds | dl=4248 | fika=0 | 415=1 416=1 | Fast-Paced Healing: Restore Black Limbs With Stim, Restore All Black Limbs With Surgical In One Go
+#2496 Specially Weightless | dl=4188 | fika=1 | 415=1 416=1 | Weightless Special Items
+#2946 More Cases Updated | dl=4081 | fika=0 | 415=0 416=0 | Expand your organizational possibilities with more cases added to your stash!
+#2898 FIR Means FIR | dl=4073 | fika=1 | 415=1 416=1 | TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR
+#2152 SJX Elite Stims Addon for Consumables Galore | dl=3847 | fika=0 | 415=1 416=1 | Welcome to SJX Elite Stims Addon, a powerful expansion to the Consumables Galore mod.
+#2943 Death Shadow Tweaks | dl=3189 | fika=1 | 415=1 416=1 | It's small enough to be worn with a helmet.
+#2924 Advanced Stash Sorting | dl=2865 | fika=0 | 415=1 416=1 | Adds configurable rules and additional options to the standard stash sorting system.
+#319 Holtzman Shield | dl=2627 | fika=0 | 415=0 416=0 | “My name is a killing word.” -Paul Atreides
+
+===== 类别 Weapons (37) =====
+#2246 WTT- Armory | dl=289257 | fika=1 | 415=1 416=1 | The official weapons pack forged by the WTT developers & friends... Arm yourself accordingly...
+#1263 Epic's All in One | dl=276797 | fika=1 | 415=1 416=1 | An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.
+#1950 Weapon Customizer | dl=132270 | fika=1 | 415=1 416=1 | Personalize your weapon! Adjust rails and attachment positioning.
+#1283 Trader Modding And Improved Weapon Building | dl=112083 | fika=0 | 415=1 416=1 | Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost,
+#1300 Modding Stats Helper - by wara | dl=66591 | fika=1 | 415=1 416=1 | Adds a tooltip when hovering parts in the weapon building screen that shows a quick overview of relevant stats
+#2658 Camo And Stickers | dl=50179 | fika=1 | 415=1 416=1 | New era of Drip
+#1453 Make Shotguns Great Again! | dl=49288 | fika=0 | 415=0 416=1 | New attachments, new guns, and key rebalances. Also introduces specialized cartridges to shotguns, including t
+#2423 C11 - True North | dl=44404 | fika=0 | 415=0 416=1 | New guns and parts from foreign lands
+#2010 Definitive Weapon Variants | dl=43271 | fika=1 | 415=1 416=1 | 600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, c
+#2516 .22lr Ammunition | dl=26854 | fika=0 | 415=0 416=1 | Adds the most popular round in the world to the end of the world.
+#2882 Eco's Attachment Emporium | dl=17282 | fika=1 | 415=0 416=0 | New gear. More builds.
+#2737 JSOC Service Weapon Replacment Program | dl=15710 | fika=1 | 415=0 416=1 | You've been chosen to select the next JSOC assault rifle and DMR. Choose wisely.
+#2373 Slimmer Magazines | dl=10122 | fika=1 | 415=1 416=1 | All your 2x2 magazines are now a 1x2.
+#2414 Peacemaker Continued | dl=9434 | fika=1 | 415=1 416=1 | It's so different from simply changing a clip!
+#2884 Eco's WW2 Pack | dl=8020 | fika=1 | 415=0 416=0 | Bring back the feeling of storming Normandy
+#3035 Russian Special Forces Pack | dl=7422 | fika=1 | 415=1 416=1 | Compilation of guns from the russian federation
+#2650 Holster Everything | dl=6931 | fika=0 | 415=1 416=1 | HolsterEverything is a server-side SPT mod that expands what can be equipped in the PMC holster slot.
+#2553 Chamber Ammo Info | dl=6598 | fika=1 | 415=1 416=1 | Know your next shot! This mod displays the ammo type loaded in your chamber when checking it.
+#2589 Mag Retention Reload | dl=6411 | fika=1 | 415=1 416=1 | No more feeding the floor with magazines! This mod makes every reload a proper mag-retention reload.
+#2774 Transparent Sights | dl=6140 | fika=1 | 415=1 416=1 | Keep both eyes open
+#2883 Franchi SPAS-12 | dl=5841 | fika=1 | 415=0 416=0 | Forget about Freeman
+#2170 Resonant AK from COD:MW2019 - ReUpload | dl=4920 | fika=0 | 415=1 416=1 | The very sci-fi looking AK blueprint from Call of Duty: Modern Warfare (2019)
+#2763 MeleeMultiplier | dl=4366 | fika=1 | 415=1 416=1 | Damage multiplier for melee weapons
+#2691 Fold That Stock | dl=4183 | fika=0 | 415=1 416=1 | FoldThatStock adds working fold behavior to non-vanilla folding stock.
+#1972 Full Automatic Guns | dl=3426 | fika=0 | 415=1 416=0 | Few SMGs, Assault Rifle, Carbines are now automatic
+#2669 Weapon Build Master | dl=2450 | fika=1 | 415=1 416=1 | share your weapon build with your friend or anyone just with a code
+#2917 Vanguard | dl=2346 | fika=1 | 415=1 416=1 | A mod requested by Vanguard, adds the WMLX light and Sandman X suppressor
+#3057 Beretta 93R Raffica Continued | dl=1538 | fika=0 | 415=0 416=1 | Choccy Milk's Beretta 93R Raffica, migrated and updated for SPT 4.0.13 and 4.1.6.
+#3056 China Lake Grenade Launcher Continued | dl=1451 | fika=0 | 415=0 416=1 | Restores Choccy Milk’s China Lake pump-action grenade launcher for SPT 4.0.13 and 4.1.6.
+#3063 Walther WA 2000 Sniper Rifle Continued | dl=1405 | fika=0 | 415=0 416=1 | Restores Choccy Milk’s Walther WA 2000 for SPT 4.0.13 and 4.1.6.
+#2948 Airburst | dl=1392 | fika=1 | 415=1 416=1 | Lase the cover, lob the round: 40mm airburst grenades that detonate right above the enemy behind it
+#3113 Sage's Incendiary Grenade | dl=1359 | fika=0 | 415=1 416=1 | Introducing "Incendiary Grenade"
+#3101 Magic Optic Mount | dl=894 | fika=1 | 415=0 416=1 | Optic + Thermal/Night Vision
+#3127 MassivesoftWeapons Updates for SPT 4.1.x | dl=873 | fika=0 | 415=1 416=0 | MassivesoftWeapons Update Patch for SPT 4.1.x
+#3118 ShrapnelFix | dl=854 | fika=0 | 415=0 416=1 | Grenade fragments now fly at body height. Deadly, configurable and FIKA-ready.
+#3019 Cobra's Durability Tweaks | dl=842 | fika=1 | 415=1 416=1 | Reduce or completely disable weapon durability burn and optionally eliminate weapon malfunctions with a simple
+#3125 Tylevo's Field Attachments | dl=352 | fika=0 | 415=0 416=1 | Allows for change of optics, muzzle devices, tactical devices and foregrips without opening your inventory in 
+
+===== 类别 Tools (62) =====
+#1090 Color Converter API | dl=111317 | fika=1 | 415=1 416=1 | Client-side mod to allow using hexcode colors for your items! Custom background colors for your items, or any 
+#2207 Fast Sell In Flea | dl=77947 | fika=1 | 415=1 416=1 | Quickly add items on the flea market with automatic fitting of the current price
+#1184 Open Sesame | dl=69249 | fika=0 | 415=1 416=1 | A tool for developers (and cheaters) to open locked doors, safes, etc. without requiring the key
+#1479 Raid Review | dl=56810 | fika=1 | 415=1 416=1 | A web-based post raid replay system of your SPT raids; detailed replay system with heatmap overlay, review kil
+#2543 BossNotifier | dl=55547 | fika=1 | 415=0 416=0 | v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations.
+#1853 StatTrack | dl=46527 | fika=1 | 415=1 416=1 | Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All weapons wil
+#1252 SPT Mods Installer | dl=43671 | fika=0 | 415=1 416=1 | A simple little application that allows drag-and-dropping mods in zip formats.
+#2021 Item Valuation | dl=29554 | fika=1 | 415=1 416=1 | Lightweight quick reference valuation tool. Items will be coloured based on configurable values (price, armour
+#2698 Loot In Vicinity | dl=15256 | fika=0 | 415=1 416=1 | See the loot all around you! Organize your loot during raids! And more!
+#2441 NARCONet - Mod Sync | dl=14919 | fika=1 | 415=1 416=1 | One Connection. Every Mod. Every Setting. More Reliable than your dealer.
+#2735 ScopeRangefinder | dl=14837 | fika=1 | 415=1 416=1 | In-scope rangefinder, meter-precise auto zero, and trajectory/dispersion preview while aiming
+#2730 AutoCorpseSearch | dl=13650 | fika=1 | 415=1 416=1 | Automatically starts searching a corpse's equipment slots when you open the loot screen - no more clicking Sea
+#918 BotDebug | dl=13623 | fika=0 | 415=1 416=1 | A development utility for seeing what's going on with bots
+#2621 T***** DLSS 4.5 | dl=12296 | fika=1 | 415=1 416=1 | This pre-patcher enables DLSS 4.5 support in SPT/Fika.
+#1551 Remove The Dead | dl=10904 | fika=0 | 415=0 416=0 | Remove the unnecessary scum from the map!
+#975 Quick Launcher | dl=10593 | fika=0 | 415=1 416=1 | A very simple one-click launcher designed as a lightweight alternative to my SPT Launcher.
+#2790 EasyMounting | dl=10271 | fika=1 | 415=1 416=1 | No more existential dreads while trying to mount your weapon
+#2879 WebOverlay | dl=9803 | fika=1 | 415=1 416=1 | Lets mods show HTML panels and click-through HUDs over the game
+#2733 RaidMenuCleanupFix | dl=9101 | fika=1 | 415=1 416=1 | Removes the brief freeze when opening the escape menu during a raid
+#757 SPT Mini-Launcher | dl=8467 | fika=0 | 415=1 416=1 | A comprehensive SPT-AKI launcher with third party app support and other cool features.
+#2955 Quick Sell | dl=8143 | fika=1 | 415=1 416=1 | Quick-sell to the best trader or the flea, with prices on item tooltips.
+#2494 Keycard Door Simplify Breach | dl=8080 | fika=0 | 415=0 416=1 | Simplify doors without card selection, optional 100% breach success to any doors.
+#2743 WeaponBuilderSearch | dl=6793 | fika=1 | 415=1 416=1 | Adds a live search field to the attachment dropdown in the Weapon Builder and Weapon Modding screens
+#2752 DualSideDoorBreach | dl=6107 | fika=1 | 415=1 416=1 | Don't tell me whether I should push or pull this door.
+#3097 DynamicMaps Extended | dl=5384 | fika=1 | 415=0 416=1 | Expands DynamicMaps with new maps, backports, and more visual options.
+#2784 AutoIFF | dl=5284 | fika=1 | 415=1 416=1 | Auto-identify Friend or Foe when aiming, plus Scav traitor alerts and friendly-fire protection
+#2739 UnloadAllMagazines | dl=5181 | fika=1 | 415=1 416=1 | Never again having to puzzle where the good ammunition went.
+#2824 TraderSearch | dl=4957 | fika=1 | 415=1 416=1 | The search bar the trader window always lacked - now also in the flea market's Add Offer window
+#2954 QuestMarker | dl=4952 | fika=1 | 415=1 416=1 | Quest objectives and your extracts as markers in the world, with name and distance, on one key
+#2860 CraftQueue | dl=4946 | fika=1 | 415=1 416=1 | Queue hideout crafts across all stations and manage them from a web UI - even while you raid
+#2785 ReceiveAllChats | dl=4885 | fika=1 | 415=1 416=1 | Makes the "Receive all" button actually receive all attachments from all chats
+#2967 Quick Meds | dl=3543 | fika=1 | 415=1 416=1 | Healing that changes with how you move.
+#2731 LinkedSearchInStash | dl=3106 | fika=1 | 415=1 416=1 | Extends Tushonka's Linked Search to your own stash. Adds a separate context-menu action that opens the stash s
+#2740 DefaultAutoFireMode | dl=3035 | fika=1 | 415=1 416=1 | Automatically switches weapons to full-auto whenever you draw them into your hands.
+#2921 SPTChecker | dl=2939 | fika=1 | 415=1 416=1 | Check SPT Forge religiously? Me too.
+#2951 CookingGrenades 4.1 | dl=2873 | fika=1 | 415=1 416=1 | CookingGrenades: enables grenade cooking, grenade parabolic tra jectory, grenade selection wheel, and medicine
+#2713 Career Log | dl=2578 | fika=1 | 415=1 416=1 | Your T***** career in one place — every raid mapped and logged, lifetime stats, and stash history.
+#2952 ModProfiler | dl=2264 | fika=1 | 415=1 416=1 | Find the mod eating your frames: live CPU time per installed mod, without disabling any
+#2812 MoreQuickSlots | dl=1986 | fika=1 | 415=1 416=1 | When you simply can't decide - Increases the number of freely assignable quick slots by up to 6 additional slo
+#3061 Extra Special Slots | dl=1945 | fika=1 | 415=0 416=1 | Adds Special Slots 4, 5 and 6 with SVM, SpecialSlots, TSC and Fika compatibility.
+
+===== 类别 Scripting (34) =====
+#1089 Kaeno-TraderScrolling | dl=320569 | fika=1 | 415=1 416=1 | Allows for side scrolling of the traders
+#1298 HandsAreNotBusy | dl=164045 | fika=1 | 415=1 416=1 | Annoyed by the ancient "Hands are busy" bug? HandsAreNotBusy (HANB) is a mod that can fix certain scenarios of
+#1884 Continuous Healing | dl=142009 | fika=1 | 415=1 416=1 | Tired of having to heal every limb one by one? Now you can heal them all in one go until done or manually canc
+#2112 Continuous Load Ammo | dl=95709 | fika=1 | 415=1 416=1 | You are now able to continuously load or unload ammo outside your inventory!
+#1117 Deminvincibility | dl=61069 | fika=1 | 415=1 416=1 | A standalone version of DadGamerMode's Keep 1 Health section with extended settings.
+#2531 Better Thermal & Night Vision | dl=26457 | fika=1 | 415=0 416=1 | Solve FPS, Pixel, Noise, Blur, Scanline, Mask of Thermals & NV. Use Red-Hot T7 with Optic Scope
+#2329 BushWhacker - Standalone | dl=20713 | fika=0 | 415=1 416=1 | Disables the slowdown effect of bushes and swamps
+#2643 Magazine Check Interrupt | dl=17873 | fika=1 | 415=1 416=1 | Seamlessly transition from a magazine check to a reload!
+#2162 Skill Multiplier | dl=15227 | fika=1 | 415=1 416=1 | Adds sliders for individual skill EXP multipliers.
+#2789 NVG Sight Dimmer | dl=14012 | fika=1 | 415=1 416=1 | Automatically dims sight and scope brightness when your NVGs are on — no more blinding reticles.
+#2070 VCO - Viewmodel Camera Offset | dl=13880 | fika=1 | 415=1 416=1 | A simple client mod that allows you to offset the player camera for cosmetic purposes.
+#2037 Colored Tracers | dl=13027 | fika=1 | 415=1 416=1 | Bullets now have tracers colored by their penetration value!
+#2639 Auto Shoulder Swap | dl=10817 | fika=1 | 415=1 416=1 | A simple mod that enables syncing leaning and shoulder swapping.
+#2786 Auto Ranging | dl=10552 | fika=0 | 415=1 416=1 | Your scope zeroes itself to whatever you're aiming at. Aim, and the sight snaps to the closest zeroing distanc
+#2458 Bela.s.Speedloader | dl=9758 | fika=0 | 415=1 416=1 | Faster ammo loading speed. Extended raid time. Larger ammo stacks.
+#2888 Task Item Indicator | dl=8649 | fika=1 | 415=1 416=1 | This is a recreation of the task indicator from Live EFT, not a 1:1 backport, although it is pretty spot on.
+#2881 AutoKeycard for Labs | dl=8278 | fika=1 | 415=1 416=1 | Automatically uses the correct keycard when interacting with doors on Labs.
+#2576 All In Weapon: Unslotted | dl=7685 | fika=1 | 415=1 416=1 | "Unslot" your weapons. Slot your mistakes. No filters. No rules. Only cursed weapons
+#2618 Tripwire Improvement | dl=5030 | fika=1 | 415=0 416=1 | Infinite tripwire kit, customize count down (instant explosion grenade), longer and freer placement
+#2816 Trash Talk | dl=4528 | fika=0 | 415=1 416=1 | The PMC that killed you just texted. Now you can text back. TrashTalk gives every PMC killer/victim message a 
+#2719 No Aim Swing | dl=3739 | fika=1 | 415=0 416=1 | Reduce crosshair's overswing of start-aim. Less shaking when hold-breath
+#2623 Refined Flea Offer List | dl=3130 | fika=1 | 415=0 416=1 | Only show cheapest offers for each item in flea category page. Smarter display Ruble, Full-state, different we
+#2969 Manimal's Quick Cancel | dl=2591 | fika=0 | 415=1 416=1 | Allows you to quick cancel a consumable animation using your quick reload key, dropping the item in the proces
+#1978 Configurable End Raid Status | dl=2354 | fika=0 | 415=1 416=1 | A simple mod that allows you to change the raid exit statuses to something else (e.g MIA to survived)
+#3082 Hj's Task Item Indicator | dl=2033 | fika=1 | 415=1 416=1 | 1:1 Task Item Indicator Ring from EFT 1.0.5
+#2460 Bela.s.VersionLabel | dl=1966 | fika=0 | 415=1 416=1 | Show, hide, or customize the in-game version label
+#3027 Exfil Rewards | dl=1743 | fika=0 | 415=1 416=1 | Earn bonus money for extracting from raids.
+#2583 Fika Discord Presence | dl=1405 | fika=1 | 415=1 416=1 | Discord integration for all !
+#2989 Ammo Stats In Names | dl=1026 | fika=1 | 415=1 416=1 | OMG! There are stats in my ammo names!
+#3075 BodyCamera | dl=960 | fika=0 | 415=0 416=1 | A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake.
+#3067 Deadzone | dl=680 | fika=0 | 415=0 416=1 | Adds insurgency style deadzone/free aim, allowing your weapon to drift from the center of the screen.
+#3065 MagicBullet | dl=420 | fika=0 | 415=0 416=1 | Outgoing bullet and melee damage multiplier for the local player only. Bots keep vanilla damage.
+#3000 Moe Flea Refresh | dl=330 | fika=1 | 415=1 416=1 | Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。
+#3028 FIR Flea only | dl=253 | fika=1 | 415=1 416=1 | Is the flea market a breeze? Install this mod.
+
+===== 类别 Other (167) =====
+#827 Waypoints - Expanded Navmesh | dl=1335662 | fika=0 | 415=1 416=1 | Expand where bots can explore with full map navmesh coverage!
+#1431 Dynamic Maps | dl=810374 | fika=1 | 415=1 416=1 | Replaces the in-game map screen with actually useful maps with dynamic information!
+#1342 UI Fixes | dl=457363 | fika=1 | 415=1 416=1 | Quality of life improvements and fixes for SPT
+#2310 WTT - CommonLib | dl=438789 | fika=1 | 415=1 416=1 | A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more t
+#1343 Skipper | dl=342868 | fika=0 | 415=1 416=1 | A small client mod for conveniently skipping quests
+#1131 Live Flea Prices | dl=295125 | fika=0 | 415=1 416=1 | Keep your flea prices up to date with data processed from Tarkov.dev
+#1426 UnityToolkit | dl=278396 | fika=1 | 415=1 416=0 | A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.
+#2003 HollywoodFX | dl=221469 | fika=1 | 415=1 416=1 | Make battles look cinematic and immersive by rebuilding almost every single impact and special effect from scr
+#1539 Bosses Have Lega Medals | dl=215298 | fika=1 | 415=1 416=1 | Bosses have a configurable chance to have Lega Medals in their pockets.
+#934 Search Open Containers | dl=187567 | fika=0 | 415=1 416=1 | Allow searching open containers without needing to close them first
+#865 Gilded Key Storage | dl=174871 | fika=1 | 415=1 416=1 | A balanced progression based approach to convenient all in one key storage!
+#1140 Quest Tracker | dl=162516 | fika=0 | 415=1 416=1 | Track quests while in-raid with a handy toggleable overlay!
+#1341 Quick Move To Containers | dl=140498 | fika=0 | 415=1 416=1 | Quickly move items between your inventory or stash, and any open container(s)
+#1575 Increase Climb Height | dl=124842 | fika=1 | 415=1 416=1 | Increases the height at which you can perform a climb.
+#933 Use Loose Loot | dl=111145 | fika=0 | 415=1 416=1 | Use meds and food direct from the world instead of only your pockets. ;)
+#1265 Rai's Hidden Caches | dl=109087 | fika=1 | 415=1 416=1 | Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from al
+#2173 VRAM Cleaner | dl=92781 | fika=1 | 415=0 416=1 | Clears up unused assets after raid start timer finishes
+#1277 WTT - Head and Voice Selector | dl=92177 | fika=1 | 415=1 416=1 | Customize your character's voice and head appearance post-creation using new dropdown boxes in the Overall pan
+#1274 Healing Autocancel | dl=90095 | fika=1 | 415=0 416=1 | Healing Autocancel
+#824 Task List Fixes | dl=88556 | fika=0 | 415=1 416=1 | Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you'll get it a
+#2521 Amands' Sense - Updated | dl=86159 | fika=0 | 415=1 416=1 | Interactable icons for items, containers, bodies and extracts.
+#2649 Climbable Ladders | dl=80411 | fika=1 | 415=1 416=1 | Ladders
+#1621 Shadow Flicker Fix | dl=77033 | fika=1 | 415=1 416=1 | Fixes distant shadow flickering which was most noticeable with anti-aliasing disabled.
+#2613 Brighter Interiors | dl=66943 | fika=1 | 415=1 416=1 | Tweak darkness of interior shadows to your taste
+#1888 Better Keys NG | dl=61346 | fika=1 | 415=1 416=1 | Get some useful info about each key. Is it required for a quest? What is behind the lock? Is it used to exit/t
+#1387 Simple Crosshair | dl=59513 | fika=0 | 415=1 416=1 | A pointfire/hipfire crosshair for all the non-purists among us.
+#1760 Audio Accessibility Indicators | dl=58836 | fika=1 | 415=1 416=1 | Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each shot, sprint
+#164 Freecam | dl=53166 | fika=0 | 415=1 416=1 | A flying free camera mode for EFT
+#1582 Headshot Darkness | dl=53151 | fika=1 | 415=1 416=1 | Instant feedback for when you get head, eyes'd.
+#820 Door Randomizer | dl=49463 | fika=1 | 415=1 416=1 | Getting tired of doors always being in the same state at raid start? Randomize them instead!
+#814 Late to the Party | dl=47467 | fika=1 | 415=1 416=1 | Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on
+#1706 Health Per Level | dl=46972 | fika=0 | 415=1 416=1 | Increase health depending on player level
+#2357 Project Fika - Server | dl=44882 | fika=1 | 415=1 416=1 | Server component for the Fika mod.
+#2523 Bosses Have Gp Coins | dl=44842 | fika=1 | 415=1 416=1 | From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. Amazing.
+#2407 QuickSellFlea | dl=42760 | fika=1 | 415=1 416=1 | Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now you can ins
+#1249 Exfil Flare Notification | dl=41064 | fika=1 | 415=1 416=1 | A small QoL mod for folks that are paranoid if their exfil flare was used correctly
+#1136 Equip From Weapon Rack | dl=37622 | fika=0 | 415=1 416=1 | Allow equipping weapons directly from your weapon rack
+#2069 Loot Instant Search | dl=36950 | fika=0 | 415=1 416=1 | Instant search items in containers and dead bots
+#2314 Season Rotator | dl=36826 | fika=1 | 415=1 416=1 | Auto-rotate seasons at the pace you decide
+#2190 Recoil Rework (Legacy) | dl=34959 | fika=0 | 415=1 416=1 | Or.. tweaks? Doesn't matter. Vanilla recoil sucks anyway.
+#2221 BALL - Better Ammo Loading List | dl=32530 | fika=1 | 415=1 416=1 | Choosing ammo shouldn’t feel like defusing a bomb...
+#2120 Time & Weather Changer NG | dl=30800 | fika=1 | 415=1 416=1 | Time & Weather changer
+#2851 SPT Mod Manager | dl=30577 | fika=1 | 415=1 416=1 | Open-source mod manager for SPT featuring easy installation, management and Forge integration.
+#2679 LootNET | dl=29656 | fika=1 | 415=1 416=1 | a mod adding a summary of the total loot value of the raid
+#2667 Picture in Picture Disabler | dl=27875 | fika=1 | 415=1 416=1 | FPS maxxxing and PiP scopes begone
+#2200 Dynamic External Resolution Patch (DERP) | dl=27035 | fika=0 | 415=1 416=1 | Dynamically change the resolution of the external image rendering when we enter the optical sight, which gives
+#2125 DeHazardifier - Updated by Tetris | dl=26769 | fika=1 | 415=1 416=1 | Dislike being sniped because you walked into an open area sniper zone on streets? Hate randomly blowing up bec
+#2121 Increase Look Direction | dl=26066 | fika=1 | 415=1 416=1 | Tired of having neck injuries, go see the chiropractor and enjoy turning your head normally again !
+#1533 More Tag Colours | dl=25095 | fika=1 | 415=1 416=1 | Tired of not having enough tag colours to identify your 15 ammo cases? No more! This mod adds additional colou
+#2405 LetMeRightClick | dl=25002 | fika=1 | 415=1 416=1 | Why can't I right-click when searching? Well - now I can.
+#1986 GTFO NG | dl=24164 | fika=1 | 415=1 416=1 | Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and 
+#1858 Enemy Markers | dl=22831 | fika=1 | 415=1 416=1 | Simply a Marker that shows the enemies with a "v" shaped marker. Can also display the distance from the enemy.
+#2634 Escape From Low Frames | dl=22323 | fika=1 | 415=1 416=1 | A way to escape that disturbingly low framerate
+#2586 Caliber Under Ammo Name | dl=21753 | fika=1 | 415=1 416=1 | Adds a caliber label below the short name for ammo & ammo boxes.
+#2567 CloudSix - Volumetric Clouds | dl=19756 | fika=1 | 415=0 416=1 | Replaces base game clouds with volumetric clouds using a custom shader built from the ground up
+#2235 Sharper Tushonka Better Life | dl=19300 | fika=1 | 415=1 416=1 | A simple and lightweight ReShade preset that improves visibility and enhances the overall look of EFT by makin
+#2524 Item Limits Begone! | dl=18592 | fika=1 | 415=1 416=1 | Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42.
+#2481 Crates In Airdrop | dl=18574 | fika=1 | 415=1 416=1 | Ref's Locked Cases in Airdrops
+#2601 Smajlec's Lights | dl=18496 | fika=1 | 415=1 416=1 | Changes the default greyish-brown color grading to a more natural one
+#2214 DoorDash | dl=17548 | fika=0 | 415=1 416=1 | Blow open doors without stopping
+
+===== 类别 Clothing (16) =====
+#526 All The Clothes | dl=193810 | fika=1 | 415=1 416=1 | ALL THE CLOTHES FOREVER
+#1519 WTT - W.A.A.C. (Women's Advanced Assault Corps) | dl=54199 | fika=1 | 415=0 416=1 | Did you know? There are HOT, SINGLE women in your AO that are ready for INTENSE tactical ops?
+#2239 Couturier - gear and clothing pack | dl=49627 | fika=0 | 415=1 416=1 | Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing
+#1994 DLC - Vanilla Fem Clothing | dl=28793 | fika=1 | 415=1 416=1 | 112 Feminine Proportion Reshaped Vanilla Clothing (Non-Replacing)
+#1993 RCTA - Ada Wong [RE4R] | dl=10441 | fika=1 | 415=1 416=1 | Ada Wong from Resident Evil 4 Remake
+#1774 RCTA - Callisto Standard, Deluge [CODMW3] | dl=4848 | fika=1 | 415=1 416=1 | Callisto Standard and Deluge Operator Outfits from Call of Duty : Modern Warfare 3 (2023)
+#1768 RCTA - Metal Gear [FORTNITE] | dl=3890 | fika=1 | 415=1 416=1 | The Metal Gear collab outfits from Fortnite (but not cringe)
+#1766 RCTA - Synaptic Rig [CODIW] | dl=3776 | fika=1 | 415=1 416=1 | [EARLY VERSION] The Synaptic Rig from Call of Duty : Infinite Warfare
+#2835 RCTA - Ghost [WARZONE 1] | dl=3066 | fika=1 | 415=1 416=1 | Simon "Ghost" Riley from Call of Duty: Warzone 1
+#1788 RCTA - Kleo Hustle [CODMW2] | dl=2988 | fika=1 | 415=1 416=1 | Kleo Hustle from cod mw2 blah blah u get it, dis my main ngl
+#1795 RCTA - Doom Slayer Eternal [DOOME] | dl=2844 | fika=1 | 415=1 416=1 | DOOM DOOM DOOM
+#1777 RCTA - Peely Default [FORTNITE] | dl=2793 | fika=1 | 415=1 416=1 | Default Peely from: Fortnite Battle Royale
+#1778 RCTA - Gundam [CODMW3] | dl=2659 | fika=1 | 415=1 416=1 | Mobile Suit – XVX-016 Gundam from the Call of Duty X Gundam Collaboration from MW3
+#1790 RCTA - Rhea Ripley Miami [CODMW3] | dl=2572 | fika=1 | 415=1 416=1 | I didn't want to open cod and grind for her, so I port her... no freaky
+#2889 Ashley Schaeffers Gear and Clothing | dl=2512 | fika=0 | 415=1 416=0 | B*** and U*** Gear and Clothing
+#1789 RCTA - Fender Do You Even Lift [CODMW3] | dl=1566 | fika=1 | 415=1 416=1 | warzone mw2 mw3 who cares just look at how buff
+
+===== 类别 Models (8) =====
+#1340 WTT - The Long Lost Heads of Yojenkz | dl=30598 | fika=1 | 415=0 416=1 | This mod adds 10 new options for the player head. Wait... Head? Aye lmao?
+#2734 Better Night Skies | dl=9471 | fika=1 | 415=1 416=1 | What's that giant star ? Could it be yo mama ?
+#2745 Manimal's Watch Animations | dl=6281 | fika=0 | 415=1 416=1 | Left hand animation when checking remaining time in raid
+#982 Reisen Inaba | dl=4014 | fika=1 | 415=1 416=1 | Lunatic Rabbit in Tushonka
+#1796 Fujiwara Mokou (Touhou) | dl=1921 | fika=1 | 415=1 416=1 | Immortal Being in SPT, now you can RP not dying to anything.
+#2220 Junko. | dl=888 | fika=1 | 415=1 416=1 | CHANG"E!!!!
+#2223 Watatsuki No Yorihime | dl=707 | fika=1 | 415=1 416=1 | "The Marshall Of the Moon"
+#2993 Hispanic PMC (Harry) - Custom Head | dl=513 | fika=1 | 415=1 416=1 | New Custom PMC Head for 4.1.X.
+
+===== 类别 Retextures (2) =====
+#592 Amands's Graphics | dl=870498 | fika=1 | 415=1 416=1 | Lighting and postprocessing overhaul
+#1358 BrightLasers | dl=128767 | fika=1 | 415=1 416=1 | Brighter lasers for your guns. No more blue laser, best laser. (It's still the best)
+
+===== 类别 Locales (4) =====
+#167 Ammo Stats | dl=212979 | fika=1 | 415=1 416=1 | Now updated for 4.1.0+!
+#1262 Easy Ammo Names | dl=30022 | fika=0 | 415=1 416=1 | A simple mod that renames ammunition in SPT so that it's easier to identiy.
+#2153 Expanded Task Text (ETT) | dl=18445 | fika=1 | 415=1 416=1 | Knowledge is power, unfortunately Nikita doesn't see it that way.
+#1629 SPT Korean Project - Locale Patcher | dl=14956 | fika=1 | 415=1 416=1 | SPT Korean Translation Project. Updated and improved missing Korean localization.
+
+===== 支持 4.1.5 + 下载前 150 =====
+#902 BigBrain | dl=1363232 | fika=0 | 415=1 416=1 | A library for adding extra logic layers to existing bot brains
+#827 Waypoints - Expanded Navmesh | dl=1335662 | fika=0 | 415=1 416=1 | Expand where bots can explore with full map navmesh coverage!
+#236 Server Value Modifier [SVM] | dl=1332065 | fika=1 | 415=1 416=1 | Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a 
+#791 SAIN - Solarint's AI Modifications - Full AI Combat System Replacement | dl=1321014 | fika=1 | 415=1 416=1 | Bots that don't suck.
+#592 Amands's Graphics | dl=870498 | fika=1 | 415=1 416=1 | Lighting and postprocessing overhaul
+#1431 Dynamic Maps | dl=810374 | fika=1 | 415=1 416=1 | Replaces the in-game map screen with actually useful maps with dynamic information!
+#812 Looting Bots | dl=749682 | fika=1 | 415=1 416=1 | Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and co
+#2512 WTT - Content Backport | dl=554869 | fika=1 | 415=1 416=1 | The moment you've all been waiting for....
+#1342 UI Fixes | dl=457363 | fika=1 | 415=1 416=1 | Quality of life improvements and fixes for SPT
+#2310 WTT - CommonLib | dl=438789 | fika=1 | 415=1 416=1 | A modding utility library that eliminates boilerplate when adding custom items, quests, characters, 
+#1109 Questing Bots | dl=436826 | fika=1 | 415=1 416=1 | You're no longer the only PMC running around placing markers and collecting quest items. The bots ha
+#701 Fontaine's FOV Fix | dl=352379 | fika=1 | 415=1 416=1 | Removes the FOV change on aiming by default, and lets you customize the FOV change amount. Has optio
+#1343 Skipper | dl=342868 | fika=0 | 415=1 416=1 | A small client mod for conveniently skipping quests
+#1089 Kaeno-TraderScrolling | dl=320569 | fika=1 | 415=1 416=1 | Allows for side scrolling of the traders
+#1023 WTT- Artem | dl=318345 | fika=0 | 415=1 416=1 | In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and c
+#1025 Painter | dl=315101 | fika=1 | 415=1 416=1 | Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole we
+#1538 Ref - SPT Friendly Quests | dl=309244 | fika=1 | 415=1 416=1 | Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, wi
+#1125 Tactical Gear Component | dl=304709 | fika=1 | 415=1 416=1 | Adds a lot more unique gear and attachments for E*****************
+#1131 Live Flea Prices | dl=295125 | fika=0 | 415=1 416=1 | Keep your flea prices up to date with data processed from Tarkov.dev
+#2246 WTT- Armory | dl=289257 | fika=1 | 415=1 416=1 | The official weapons pack forged by the WTT developers & friends... Arm yourself accordingly...
+#1426 UnityToolkit | dl=278396 | fika=1 | 415=1 416=0 | A collection of Unity libraries for client modders to make writing efficient, allocation-free code e
+#1263 Epic's All in One | dl=276797 | fika=1 | 415=1 416=1 | An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.
+#954 Borkel's Realistic Night Vision Goggles (NVGs and T-7) | dl=265838 | fika=1 | 415=1 416=1 | Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and
+#1594 APBS - Acid's Progressive Bot System | dl=256235 | fika=1 | 415=1 416=1 | Fully customizable progression system. By default, all AI will level with you, have appropriate gear
+#1619 Lots of Loot Redux | dl=252235 | fika=1 | 415=1 416=1 | Tired of having barely any loot in your raids? Lots of Loot Redux aims to bring back that old T*****
+#1278 WTT - Pack 'n' Strap | dl=234742 | fika=1 | 415=1 416=1 | Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, fo
+#2003 HollywoodFX | dl=221469 | fika=1 | 415=1 416=1 | Make battles look cinematic and immersive by rebuilding almost every single impact and special effec
+#1539 Bosses Have Lega Medals | dl=215298 | fika=1 | 415=1 416=1 | Bosses have a configurable chance to have Lega Medals in their pockets.
+#167 Ammo Stats | dl=212979 | fika=1 | 415=1 416=1 | Now updated for 4.1.0+!
+#526 All The Clothes | dl=193810 | fika=1 | 415=1 416=1 | ALL THE CLOTHES FOREVER
+#2097 ABPS - Acid's Bot Placement System | dl=191106 | fika=1 | 415=1 416=1 | Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS
+#934 Search Open Containers | dl=187567 | fika=0 | 415=1 416=1 | Allow searching open containers without needing to close them first
+#865 Gilded Key Storage | dl=174871 | fika=1 | 415=1 416=1 | A balanced progression based approach to convenient all in one key storage!
+#755 The Blacklist - flea market enhancements | dl=169391 | fika=1 | 415=1 416=1 | Disables the B** blacklist in the flea market. Rebalances the prices of blacklisted ammo like Igolni
+#1298 HandsAreNotBusy | dl=164045 | fika=1 | 415=1 416=1 | Annoyed by the ancient "Hands are busy" bug? HandsAreNotBusy (HANB) is a mod that can fix certain sc
+#1140 Quest Tracker | dl=162516 | fika=0 | 415=1 416=1 | Track quests while in-raid with a handy toggleable overlay!
+#374 bluehead's AIO Trader | dl=153895 | fika=0 | 415=1 416=1 | Buy everything from one trader. Get all keys with one command.
+#1884 Continuous Healing | dl=142009 | fika=1 | 415=1 416=1 | Tired of having to heal every limb one by one? Now you can heal them all in one go until done or man
+#1348 Scorpion | dl=140671 | fika=1 | 415=1 416=1 | Scorpion has 122 quests available from the start of your T***** journey. Including time based event 
+#1341 Quick Move To Containers | dl=140498 | fika=0 | 415=1 416=1 | Quickly move items between your inventory or stash, and any open container(s)
+#1860 Classic Movement | dl=140145 | fika=1 | 415=1 416=1 | Completely removes any inertia and slowed down movement, and replaces it with the official much fast
+#1950 Weapon Customizer | dl=132270 | fika=1 | 415=1 416=1 | Personalize your weapon! Adjust rails and attachment positioning.
+#1358 BrightLasers | dl=128767 | fika=1 | 415=1 416=1 | Brighter lasers for your guns. No more blue laser, best laser. (It's still the best)
+#2426 MoreBotsAPI | dl=127761 | fika=1 | 415=1 416=1 | API for making the implementation of custom bots easier
+#1775 WTT - Menu Overhaul | dl=126758 | fika=1 | 415=1 416=1 | Add a new menu layout to SPT and add your player to the menu screen.
+#1575 Increase Climb Height | dl=124842 | fika=1 | 415=1 416=1 | Increases the height at which you can perform a climb.
+#2386 Use Items Anywhere | dl=121552 | fika=1 | 415=1 416=1 | Use and bind items from anywhere in your inventory
+#2511 WTT - Black Division [REDACTED] Home | dl=117798 | fika=1 | 415=1 416=1 | [REDACTED]
+#1283 Trader Modding And Improved Weapon Building | dl=112083 | fika=0 | 415=1 416=1 | Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/B
+#1090 Color Converter API | dl=111317 | fika=1 | 415=1 416=1 | Client-side mod to allow using hexcode colors for your items! Custom background colors for your item
+#933 Use Loose Loot | dl=111145 | fika=0 | 415=1 416=1 | Use meds and food direct from the world instead of only your pockets. ;)
+#1265 Rai's Hidden Caches | dl=109087 | fika=1 | 415=1 416=1 | Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will em
+#1469 AutoDeposit | dl=104966 | fika=1 | 415=1 416=1 | Transfer items into stash containers with matching items, inspired by Terraria's Quick Stack.
+#1374 Player Encumbrance Bar | dl=100002 | fika=1 | 415=1 416=1 | Adds a progress bar to the inventory that shows total player encumbrance
+#2326 Project Fika | dl=98074 | fika=1 | 415=1 416=1 | Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You c
+#2112 Continuous Load Ammo | dl=95709 | fika=1 | 415=1 416=1 | You are now able to continuously load or unload ammo outside your inventory!
+#1277 WTT - Head and Voice Selector | dl=92177 | fika=1 | 415=1 416=1 | Customize your character's voice and head appearance post-creation using new dropdown boxes in the O
+#824 Task List Fixes | dl=88556 | fika=0 | 415=1 416=1 | Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you'l
+#1657 MergeConsumables | dl=87046 | fika=1 | 415=1 416=1 | Tired of not being able to merge your medical items or food? Now you can!
+#2521 Amands' Sense - Updated | dl=86159 | fika=0 | 415=1 416=1 | Interactable icons for items, containers, bodies and extracts.
+#2649 Climbable Ladders | dl=80411 | fika=1 | 415=1 416=1 | Ladders
+#2207 Fast Sell In Flea | dl=77947 | fika=1 | 415=1 416=1 | Quickly add items on the flea market with automatic fitting of the current price
+#1621 Shadow Flicker Fix | dl=77033 | fika=1 | 415=1 416=1 | Fixes distant shadow flickering which was most noticeable with anti-aliasing disabled.
+#1688 More Energy Drinks | dl=73807 | fika=1 | 415=1 416=1 | Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can 
+#1617 give-ui | dl=71858 | fika=1 | 415=1 416=1 | Simple UI for the give, trader and profile commands
+#2866 MANIMAL'S ICEBREAKER BACKPORT | dl=70464 | fika=1 | 415=1 416=1 | A mod that backports the entire Icebreaker map and some of its related quests to SPT
+#1184 Open Sesame | dl=69249 | fika=0 | 415=1 416=1 | A tool for developers (and cheaters) to open locked doors, safes, etc. without requiring the key
+#1873 Bot Callsigns - Reloaded | dl=68843 | fika=1 | 415=1 416=1 | Adds a big (and sometimes funny) variety of bot names for flea and game.
+#1437 Simple Workout QTE | dl=68837 | fika=1 | 415=1 416=1 | Workout QTE in hideout is now much easier, and configurable!
+#1303 HarryHideout | dl=68380 | fika=1 | 415=1 416=1 | Trader that sells all items for hideout construction/upgrades
+#2613 Brighter Interiors | dl=66943 | fika=1 | 415=1 416=1 | Tweak darkness of interior shadows to your taste
+#1300 Modding Stats Helper - by wara | dl=66591 | fika=1 | 415=1 416=1 | Adds a tooltip when hovering parts in the weapon building screen that shows a quick overview of rele
+#1945 Ai Limit | dl=65132 | fika=0 | 415=1 416=1 | Temporarily disable far bots to reduce cpu load
+#2025 All Quests Checkmarks | dl=62238 | fika=1 | 415=1 416=1 | Tired of having to remember what items you have to keep for future quests? This mod adds new checkma
+#1888 Better Keys NG | dl=61346 | fika=1 | 415=1 416=1 | Get some useful info about each key. Is it required for a quest? What is behind the lock? Is it used
+#1117 Deminvincibility | dl=61069 | fika=1 | 415=1 416=1 | A standalone version of DadGamerMode's Keep 1 Health section with extended settings.
+#2416 Enable Labyrinth | dl=60845 | fika=1 | 415=1 416=1 | Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as th
+#2540 Content Backport - Prestiges | dl=60440 | fika=1 | 415=1 416=1 | Already at prestige 4 and want to grind more? Then this mod is for you!
+#1387 Simple Crosshair | dl=59513 | fika=0 | 415=1 416=1 | A pointfire/hipfire crosshair for all the non-purists among us.
+#1760 Audio Accessibility Indicators | dl=58836 | fika=1 | 415=1 416=1 | Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each sh
+#2383 Skills Extended | dl=57845 | fika=1 | 415=1 416=1 | Lack of skills is no longer a skill issue
+#1479 Raid Review | dl=56810 | fika=1 | 415=1 416=1 | A web-based post raid replay system of your SPT raids; detailed replay system with heatmap overlay, 
+#2076 Hideout In Progress | dl=56616 | fika=1 | 415=1 416=1 | Turn in items for hideout construction as you get them!
+#1591 Better Rear Sights | dl=56191 | fika=0 | 415=1 416=1 | This mod attempts to make iron sights less crappy
+#1554 ALL AMMO TRADER - UPDATED BY TILTUSHKIN | dl=55021 | fika=1 | 415=1 416=1 | Need all the ammo? Here's a trader
+#2480 BarterItemsStacks | dl=54837 | fika=0 | 415=1 416=1 | A mod that changes the stack size for barter items.. And a little more…
+#2706 ORBIT 2.0 | dl=54598 | fika=1 | 415=1 416=1 | Bots play the raid like you do, and a "Ghost Mode" to run it all at high fps
+#164 Freecam | dl=53166 | fika=0 | 415=1 416=1 | A flying free camera mode for EFT
+#1582 Headshot Darkness | dl=53151 | fika=1 | 415=1 416=1 | Instant feedback for when you get head, eyes'd.
+#2430 ODT's Item Info - SPT 4.0 | dl=50321 | fika=1 | 415=1 416=1 | Massive QOL Item Info mod for SPTarkov
+#2658 Camo And Stickers | dl=50179 | fika=1 | 415=1 416=1 | New era of Drip
+#2239 Couturier - gear and clothing pack | dl=49627 | fika=0 | 415=1 416=1 | Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing
+#820 Door Randomizer | dl=49463 | fika=1 | 415=1 416=1 | Getting tired of doors always being in the same state at raid start? Randomize them instead!
+#814 Late to the Party | dl=47467 | fika=1 | 415=1 416=1 | Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being
+#2422 Foldables | dl=47350 | fika=1 | 415=1 416=1 | You can now fold backpacks and vests!
+#1706 Health Per Level | dl=46972 | fika=0 | 415=1 416=1 | Increase health depending on player level
+#1853 StatTrack | dl=46527 | fika=1 | 415=1 416=1 | Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All w
+#1569 Wolfik's Heavy Trooper Masks | dl=45852 | fika=1 | 415=1 416=1 | Adds 5 new heavy trooper masks: Tan, Black, Coyote, Wolf, and Cult that actually provide protection
+#2357 Project Fika - Server | dl=44882 | fika=1 | 415=1 416=1 | Server component for the Fika mod.
+#2523 Bosses Have Gp Coins | dl=44842 | fika=1 | 415=1 416=1 | From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. A
+#1252 SPT Mods Installer | dl=43671 | fika=0 | 415=1 416=1 | A simple little application that allows drag-and-dropping mods in zip formats.
+#2010 Definitive Weapon Variants | dl=43271 | fika=1 | 415=1 416=1 | 600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite
+#1925 NerfBotGrenades | dl=43101 | fika=1 | 415=1 416=1 | Allows you to multiply bot inaccuracy with grenades.
+#2407 QuickSellFlea | dl=42760 | fika=1 | 415=1 416=1 | Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now y
+#1971 Croupier - loadout generator + flea quicksell | dl=42416 | fika=0 | 415=1 416=1 | Gear up for your next raid in just 20 seconds!
+#2342 UNTAR Go Home! | dl=41938 | fika=1 | 415=1 416=1 | Yet they're still here in T*****... New UNTAR bot types patrol the region.
+#2395 Lacy's PvE Tweaks | dl=41345 | fika=1 | 415=1 416=1 | Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now yo
+#1249 Exfil Flare Notification | dl=41064 | fika=1 | 415=1 416=1 | A small QoL mod for folks that are paranoid if their exfil flare was used correctly
+#179 BALANCED MEDS | dl=40673 | fika=0 | 415=1 416=0 | All the meds item are changed. Increased uses and better healing.
+#2144 Skill Distribution | dl=39910 | fika=1 | 415=1 416=1 | Want to level your skills faster but also want to keep vanilla feel of progression? Give this mod a 
+#2427 RUAF Come Home! | dl=38626 | fika=1 | 415=1 416=1 | RUAF have finally returned to resolve the Norvinsk conflict.
+#1305 Repair Max Durability | dl=38051 | fika=1 | 415=1 416=1 | Literally just adds an item that repairs the max durability of weapons
+#1136 Equip From Weapon Rack | dl=37622 | fika=0 | 415=1 416=1 | Allow equipping weapons directly from your weapon rack
+#2069 Loot Instant Search | dl=36950 | fika=0 | 415=1 416=1 | Instant search items in containers and dead bots
+#2394 Instant Insurance | dl=36907 | fika=1 | 415=1 416=1 | Keep your insured items equipped after death!
+#2314 Season Rotator | dl=36826 | fika=1 | 415=1 416=1 | Auto-rotate seasons at the pace you decide
+#2530 Vertical Hideout | dl=36289 | fika=1 | 415=1 416=1 | Replace the horizontal carousel with a sane vertical list
+#1895 [SAIN] Twitch Players | dl=35535 | fika=1 | 415=1 416=1 | EFT was never forgiving. So are they.
+#1831 Agony SFX | dl=35156 | fika=1 | 415=1 416=1 | Client mod that allows bots to play additional voice lines upon dying.
+#2676 PIT Fireteam | dl=35070 | fika=0 | 415=1 416=1 | Spawn with a squad on your side, customize them, recruit others while in the raid, and command them 
+#2864 Manimal's CS Gas | dl=35018 | fika=1 | 415=1 416=1 | A mod that adds the CS Gas grenade from 1.0
+#2190 Recoil Rework (Legacy) | dl=34959 | fika=0 | 415=1 416=1 | Or.. tweaks? Doesn't matter. Vanilla recoil sucks anyway.
+#2478 ISB Aishi | dl=33621 | fika=1 | 415=1 416=1 | Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.
+#1939 BETTER ATTACHMENTS | dl=32705 | fika=0 | 415=1 416=0 | All gun attachments are better ergonomics and confgurable recoils. To deal with OP AIs you need OP g
+#2221 BALL - Better Ammo Loading List | dl=32530 | fika=1 | 415=1 416=1 | Choosing ammo shouldn’t feel like defusing a bomb...
+#2120 Time & Weather Changer NG | dl=30800 | fika=1 | 415=1 416=1 | Time & Weather changer
+#2195 ECOT - Eukyre's Consortium of Things | dl=30692 | fika=1 | 415=1 416=1 | Home of the Blahaj and the FNX-45.
+#2851 SPT Mod Manager | dl=30577 | fika=1 | 415=1 416=1 | Open-source mod manager for SPT featuring easy installation, management and Forge integration.
+#1262 Easy Ammo Names | dl=30022 | fika=0 | 415=1 416=1 | A simple mod that renames ammunition in SPT so that it's easier to identiy.
+#2264 Battle Ambience | dl=29979 | fika=1 | 415=1 416=1 | Because the world is bigger than your raid.
+#2679 LootNET | dl=29656 | fika=1 | 415=1 416=1 | a mod adding a summary of the total loot value of the raid
+#2021 Item Valuation | dl=29554 | fika=1 | 415=1 416=1 | Lightweight quick reference valuation tool. Items will be coloured based on configurable values (pri
+#1994 DLC - Vanilla Fem Clothing | dl=28793 | fika=1 | 415=1 416=1 | 112 Feminine Proportion Reshaped Vanilla Clothing (Non-Replacing)
+#2667 Picture in Picture Disabler | dl=27875 | fika=1 | 415=1 416=1 | FPS maxxxing and PiP scopes begone
+#1861 Stash Management Helper | dl=27317 | fika=1 | 415=1 416=1 | Enhances stash management with extra sorting features. This can sort your stash long after the defau
+#2843 Blackout | dl=27083 | fika=1 | 415=1 416=1 | Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness
+#2200 Dynamic External Resolution Patch (DERP) | dl=27035 | fika=0 | 415=1 416=1 | Dynamically change the resolution of the external image rendering when we enter the optical sight, w
+#2125 DeHazardifier - Updated by Tetris | dl=26769 | fika=1 | 415=1 416=1 | Dislike being sniped because you walked into an open area sniper zone on streets? Hate randomly blow
+#3025 Manimal's 1.0 Interchange Expansion Backport | dl=26286 | fika=0 | 415=1 416=1 | Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra.
+#2121 Increase Look Direction | dl=26066 | fika=1 | 415=1 416=1 | Tired of having neck injuries, go see the chiropractor and enjoy turning your head normally again !
+#2011 Actually Found In Raid (UPDATED) | dl=26021 | fika=0 | 415=1 416=1 | Tired of killing a PMC and the loot isn't "Found In Raid", even though you literally just found it i
+#1533 More Tag Colours | dl=25095 | fika=1 | 415=1 416=1 | Tired of not having enough tag colours to identify your 15 ammo cases? No more! This mod adds additi
+#2405 LetMeRightClick | dl=25002 | fika=1 | 415=1 416=1 | Why can't I right-click when searching? Well - now I can.
+#1537 sgtlaggy's Quest Tweaks | dl=24418 | fika=1 | 415=1 416=1 | Some QoL quest changes.
+#2937 Manimal's 1.0 Labs Office Backport | dl=24171 | fika=1 | 415=1 416=1 | Backports the 1.0 Labs expansion to SPT 4.0.
+#1986 GTFO NG | dl=24164 | fika=1 | 415=1 416=1 | Want to learn maps visually for quests or extracts? Use this visual learning tool that will show ext
+#2483 Boxes At Ref (BARF) - NG | dl=23338 | fika=1 | 415=1 416=1 | Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Are
+#1878 Unrestricted Armor Plate | dl=22867 | fika=0 | 415=1 416=1 | Allows to insert any Armor Plate into any Armored Chest Rig​ or Armor Vest​.
+#1858 Enemy Markers | dl=22831 | fika=1 | 415=1 416=1 | Simply a Marker that shows the enemies with a "v" shaped marker. Can also display the distance from 
+#2634 Escape From Low Frames | dl=22323 | fika=1 | 415=1 416=1 | A way to escape that disturbingly low framerate

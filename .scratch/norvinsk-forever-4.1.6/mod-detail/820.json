@@ -1,0 +1,39 @@
+{
+ "id": 820,
+ "hub_id": 1107,
+ "guid": "xyz.drakia.doorrandomizer",
+ "name": "Door Randomizer",
+ "slug": "door-randomizer",
+ "teaser": "Getting tired of doors always being in the same state at raid start? Randomize them instead!",
+ "thumbnail": "https://files.sp-mod.com/mods/1107.png",
+ "downloads": 49184,
+ "favourites_count": 76,
+ "endorsements_count": 18,
+ "description": "<p>Super simple client mod that will randomize the open state of every non-locked door on raid start.</p>\n<p>At the start of every raid, for each compatible door on the map, there is a 50% chance it will be swapped to its non-initial state.</p>\n<h3>Install Instructions</h3>\n<p>1) Open the downloaded zip file in 7-zip</p>\n<p>2) Select the folders in the zip file in 7-zip</p>\n<p>3) Drag the selected folders from 7-zip into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n<p><strong>NOTE: Any requests for assistance MUST be accompanied by the “BepInEx/LogOutput.log” file. Any support request without this file provided will be met with a request for this file, then ignored. Log content can be uploaded to: <a target=\"_blank\" class=\"external-link\" href=\"https://pastebin.com/\" rel=\"noreferrer noopener\">https://pastebin.com/</a></strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/820/door-randomizer",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-03-30T17:30:00.000000Z",
+ "created_at": "2023-03-30T17:30:04.000000Z",
+ "updated_at": "2026-08-19T16:38:23.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

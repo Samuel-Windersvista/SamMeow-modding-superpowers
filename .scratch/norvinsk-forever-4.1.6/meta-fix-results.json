@@ -1,0 +1,623 @@
+[
+ {
+  "id": 1542,
+  "name": "[13]战局外检修标签-DebugTooltip",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 918,
+  "name": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 827,
+  "name": "[6]AI路径扩展-Waypoints",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 902,
+  "name": "[6]AI拟人MOD的前置框架-BigBrain",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 2310,
+  "name": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2676,
+  "name": "[6]友方AI系统-PITFireteam",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 8
+ },
+ {
+  "id": 791,
+  "name": "[6]AI增强-SAIN",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 812,
+  "name": "[6]AI自动搜索物品-LootingBots",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 1594,
+  "name": "[6]Acid的AI装备管理系统-progressivebotsystem",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2097,
+  "name": "[6]Acid的AI生成系统-botplacementsystem",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 1089,
+  "name": "[12]商人列表滚动-TraderScrolling",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 3
+ },
+ {
+  "id": 824,
+  "name": "[12]任务列表修复-TaskListFixes",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 3109,
+  "name": "[7]面具修复-KnightMaskFix(4.1.3+)",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1298,
+  "name": "[12]防卡手-HandsAreNotBusy",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 2955,
+  "name": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 3011,
+  "name": "[10]显示价格-showmethemoney",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 1341,
+  "name": "[10]物品容器间快速移动-QuickMoveToContainer",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1469,
+  "name": "[10]自动存放-AutoDeposit",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1136,
+  "name": "[10]从武器架装备武器-EquipFromWeaponRack",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 3023,
+  "name": "[10]拾取时快速放入容器-ContainerQuickLoot",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1342,
+  "name": "[10]UI大修-UIFixes",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 8
+ },
+ {
+  "id": 2339,
+  "name": "[9]预览窗口尺寸调整-previewsizer",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 2521,
+  "name": "[11]物品感应-AmandsSense",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1343,
+  "name": "[11]任务跳过功能-Skipper",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1431,
+  "name": "[11]内置动态地图-DynamicMaps",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1760,
+  "name": "[11]声音可视化-accessibilityindicators",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 3006,
+  "name": "[9]子弹专家-MunitionsExpert",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1437,
+  "name": "[9]简单的锻炼QTE-simpleworkoutqte",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1775,
+  "name": "[9]主菜单大修-MenuOverhaul",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 2112,
+  "name": "[8]边走边装子弹-ContinuousLoadAmmo",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 1140,
+  "name": "[8]任务跟踪显示-QuestTracker",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 934,
+  "name": "[8]直接搜索已打开容器-SearchOpenContainers",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 3
+ },
+ {
+  "id": 933,
+  "name": "[8]直接使用未捡物品-UseLooseLoot",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 820,
+  "name": "[8]门的状态随机化-DoorRandomizer",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 3
+ },
+ {
+  "id": 2386,
+  "name": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 2383,
+  "name": "[8]人物技能扩展和撬锁-SkillsExtended",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 2162,
+  "name": "[8]技能速度调节器-SkillMultiplier",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1575,
+  "name": "[8]可以攀爬更高的地方-Increase Climb Height",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1539,
+  "name": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 3
+ },
+ {
+  "id": 1657,
+  "name": "[7]可以合并消耗品-MergeConsumables",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1971,
+  "name": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1303,
+  "name": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1348,
+  "name": "[4]新商人-毒蝎-acidphantasm-scorpion",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1023,
+  "name": "[4]新商人-Artem",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1025,
+  "name": "[4]新商人-油漆匠-Painter",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2483,
+  "name": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1538,
+  "name": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1768,
+  "name": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1766,
+  "name": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 1125,
+  "name": "[2]新装备、衣服-TacticalGearComponent",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1278,
+  "name": "[2]腰包-WTT-PackNStrap",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1688,
+  "name": "[2]新酒水-MoreEnergyDrinks(近似替代)",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 865,
+  "name": "[2]新物品-镀金钥匙容器-GildedKeyStorage",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2908,
+  "name": "[2]新物品-藏身处猫咪-Tarkin'sHideoutCat",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 2264,
+  "name": "[8]战场环境临场感增强-SPTBattleAmbience",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 2003,
+  "name": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 9
+ },
+ {
+  "id": 1283,
+  "name": "[7]更好的枪匠界面-Tradermodding",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 8
+ },
+ {
+  "id": 1358,
+  "name": "[7]更亮的镭射线-brightlasers",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1950,
+  "name": "[7]武器配件位置自定义-WeaponCustomizer",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 1591,
+  "name": "[7]更好的机瞄-BetterRearSights",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ },
+ {
+  "id": 701,
+  "name": "[7]瞄准视野大修-FOV-Fix",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 2195,
+  "name": "[3]新配件-ConsortiumOfThings",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1263,
+  "name": "[3]武器整合-Epic's All in One",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 2170,
+  "name": "[3]新武器-AKResonant",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2246,
+  "name": "[3]新武器-WTT武器库-WTT - Armory客户端",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 1100,
+  "name": "[11]扫敌雷达-RadarStandalone",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 6
+ },
+ {
+  "id": 2543,
+  "name": "[8]boss刷新通知-BossNotifier",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 8
+ },
+ {
+  "id": 2248,
+  "name": "[6]分离敌意-SeparateHostility",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 2882,
+  "name": "[3]新配件-Eco-Attachment Emporium",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "noteLines": 4
+ }
+]

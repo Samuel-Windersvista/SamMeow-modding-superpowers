@@ -1,0 +1,48 @@
+{
+ "id": 1936,
+ "hub_id": 2608,
+ "guid": "com.vinihns.nuts",
+ "name": "No Unfair Trade System (NUTS)",
+ "slug": "no-unfair-trade-system-nuts",
+ "teaser": "NUTS (No Unfair Trade System) removes access to the Flea Market (customizable), ensuring a fairer, more balanced gameplay experience!",
+ "thumbnail": "https://files.sp-mod.com/mods/2608.png",
+ "downloads": 3278,
+ "favourites_count": 4,
+ "endorsements_count": 1,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Basics</div>\n<div class=\"tab-content\"><p>NUTS (No Unfair Trade System) disables access to the Flea Market and removes the button, ensuring fairer and more challenging gameplay. Get ready for a more balanced experience!</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><p>Each option is self-explanatory; simply hover your mouse over it for a description.</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">How To Install</div>\n<div class=\"tab-content\"><ol>\n<li>Download the <code>nuts-1.5.0.zip</code>.</li>\n<li>Drag and drop the <code>.zip</code> file directly into the root folder of your SPT installation.</li>\n<li>Right-click the <code>.zip</code> file and select <strong>“Extract Here”</strong>.</li>\n<li>The folders should merge automatically. If you get a prompt to overwrite files, say yes.</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>If you find any bugs, please report them</li>\n</ul></div></div></div>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/Q5Q116JYQN\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"ko-fi\" /></a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1936/no-unfair-trade-system-nuts",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": true,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-09-11T11:17:00.000000Z",
+ "created_at": "2025-01-03T18:26:13.000000Z",
+ "updated_at": "2026-09-11T11:28:04.000000Z",
+ "owner": {
+  "id": 24845,
+  "name": "viniHNS",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/84101c224775f3cd8ee04dcdc31158d6280cc336_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/fd12e19d8bfff462fbccc46bfeb6bb2eebf04094_1280w.webp",
+  "created_at": "2023-01-05T00:28:21.000000Z",
+  "updated_at": "2026-10-10T14:17:55.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 78370,
+   "name": "DragonX86",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/0Uuj02TCHDzkqVxqVRF3plazX5SDlSgwtuoPYsit_256w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/dwNLJGOYXsoZub6qTe0DN1vqQUCCPij05WMVgsc4.jpg",
+   "created_at": "2025-05-03T18:39:05.000000Z",
+   "updated_at": "2026-09-22T15:50:14.000000Z"
+  }
+ ],
+ "category": {
+  "id": 2,
+  "hub_id": 79,
+  "title": "Overhauls",
+  "slug": "overhauls",
+  "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+ }
+}

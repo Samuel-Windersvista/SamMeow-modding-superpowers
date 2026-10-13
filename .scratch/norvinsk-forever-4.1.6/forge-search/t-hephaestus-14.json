@@ -1,0 +1,166 @@
+{
+ "term": "Hephaestus",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 505,
+    "hub_id": 713,
+    "guid": "com.jbs4bmx.mountolympus",
+    "name": "Olympus",
+    "slug": "olympus",
+    "teaser": "The clouds above Mt. Olympus crack with a thunderous roar. The gods beckon you to their battle.",
+    "thumbnail": "https://files.sp-mod.com/mods/713.png",
+    "downloads": 488,
+    "favourites_count": 13,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/505/olympus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2022-07-14T12:55:00.000000Z",
+    "created_at": "2022-07-14T12:55:31.000000Z",
+    "updated_at": "2026-09-13T17:15:04.000000Z",
+    "owner": {
+     "id": 354,
+     "name": "jbs4bmx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/adf92f32f6332d757c9e0babf7ddc6766956bd5e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/36a2281a3fb58425f8454799ae3982f162df8447_1280w.webp",
+     "created_at": "2020-11-28T13:48:21.000000Z",
+     "updated_at": "2026-10-05T10:57:11.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 36392,
+      "name": "FLIGHT_S4L",
+      "profile_photo_url": "https://sp-mod.com/avatars/F.svg",
+      "cover_photo_url": null,
+      "created_at": "2023-08-30T12:49:35.000000Z",
+      "updated_at": "2026-09-28T15:06:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 650,
+    "hub_id": 886,
+    "guid": "com.alexkarpen.hephaestus",
+    "name": "Hephaestus",
+    "slug": "hephaestus",
+    "teaser": "It creates a trader that sells your preset weapon builds.",
+    "thumbnail": "https://files.sp-mod.com/mods/886.jpg",
+    "downloads": 97502,
+    "favourites_count": 48,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/650/hephaestus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2022-12-11T22:15:00.000000Z",
+    "created_at": "2022-12-11T22:15:36.000000Z",
+    "updated_at": "2026-07-28T06:48:38.000000Z",
+    "owner": {
+     "id": 12499,
+     "name": "alexkarpen",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/806720389df0ee2551e513a3984ed67bcd3008bb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-12-23T10:19:11.000000Z",
+     "updated_at": "2026-10-05T00:06:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2193,
+    "hub_id": 2896,
+    "guid": "com.noidontwanna.hephaestuspresets",
+    "name": "Set of Gun Presets for Hephaestus",
+    "slug": "set-of-gun-presets-for-hephaestus",
+    "teaser": "Buying a finished weapon from the preset merchant and just handing it over is much more convenient.",
+    "thumbnail": "https://files.sp-mod.com/mods/2896.png",
+    "downloads": 10168,
+    "favourites_count": 12,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2193/set-of-gun-presets-for-hephaestus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-06-21T14:45:00.000000Z",
+    "created_at": "2025-06-21T14:45:04.000000Z",
+    "updated_at": "2026-07-28T06:14:36.000000Z",
+    "owner": {
+     "id": 76562,
+     "name": "noidontwanna",
+     "profile_photo_url": "https://sp-mod.com/avatars/N.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-04-10T14:55:48.000000Z",
+     "updated_at": "2026-10-04T11:35:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 3,
+   "total": 3
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": 1539,
+ "hub_id": 2109,
+ "guid": "com.acidphantasm.bosseshavelegamedals",
+ "name": "Bosses Have Lega Medals",
+ "slug": "bosses-have-lega-medals",
+ "teaser": "Bosses have a configurable chance to have Lega Medals in their pockets.",
+ "thumbnail": "https://files.sp-mod.com/mods/2109.png",
+ "downloads": 213647,
+ "favourites_count": 467,
+ "endorsements_count": 39,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download Bosses Have Lega Medals</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol start=\"2\">\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-bosseshavelegamedals</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">RECOMMENDED MODS</div>\n<div class=\"tab-content\"><p>Recommended Mods:</p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2523/bosses-have-gp-coins/\" rel=\"noreferrer noopener\">Bosses Have GP Coins</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1538/ref-spt-friendly-quests/\" rel=\"noreferrer noopener\">Ref - SPT Friendly Quests</a></li>\n</ul></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1539/bosses-have-lega-medals",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2024-07-09T10:03:00.000000Z",
+ "created_at": "2024-07-09T10:03:37.000000Z",
+ "updated_at": "2026-08-07T18:02:18.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

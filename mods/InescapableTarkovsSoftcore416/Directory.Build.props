@@ -1,0 +1,63 @@
+<Project>
+
+  <!--
+    本项目自包含构建配置（SPT 4.1.6 线）。
+
+    本项目级 Directory.Build.props 会遮蔽仓库 mods\ 根的同名文件，故 SptRoot 与
+    SptRuntimeDir 必须在此自包含地声明（不依赖父级文件）。两者均可经命令行覆盖：
+      dotnet build -c Release -p:SptRoot="D:\SPT"
+      dotnet build -c Release -p:SptRuntimeDir="D:\Other\SPT_Runtime"
+
+    SptRuntimeDir 指向 SPT 4.1.6 运行时目录（含服务端引用程序集）。
+  -->
+  <PropertyGroup>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+    <SptRuntimeDir Condition="'$(SptRuntimeDir)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SptRuntimeDir>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!--
+    SPT 引用程序集。Private=false：mod 程序集由 SPT 服务器加载，运行时已提供这些程序集，
+    不应复制进 overlay 输出。测试工程会对所需子集覆盖为 Private=true。
+    清单与 5.0 线保持一致。
+  -->
+  <ItemGroup>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SptRuntimeDir)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Reflection">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Assets">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Server.Assets.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Web">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Server.Web.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>$(SptRuntimeDir)\ZLinq.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ZLogger">
+      <HintPath>$(SptRuntimeDir)\ZLogger.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

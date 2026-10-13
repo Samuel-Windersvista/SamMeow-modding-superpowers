@@ -1,0 +1,39 @@
+{
+ "id": 2112,
+ "hub_id": 2798,
+ "guid": "com.ozen.continuousloadammo",
+ "name": "Continuous Load Ammo",
+ "slug": "continuous-load-ammo",
+ "teaser": "You are now able to continuously load or unload ammo outside your inventory!",
+ "thumbnail": "https://files.sp-mod.com/mods/2798.png",
+ "downloads": 93507,
+ "favourites_count": 380,
+ "endorsements_count": 53,
+ "description": "<p><strong>Continuous Load Ammo</strong> introduces the ability to load or unload your magazine <em>outside</em> your inventory. Gone are the days of staring at the inventory screen while topping up!</p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><h4>Features</h4>\n<ul>\n<li>Freedom: Walk freely while waiting for your magazines to top up or unload</li>\n<li>Realism and balancing: The ammo and magazine should only be in reachable places, this includes your vest, pockets, and secure container. Your walking speed will be limited while loading ammo outside the inventory and pulling your weapon out will <em>cancel</em> loading</li>\n<li>Controls: You can cancel loading by clicking the <code>left/right mouse buttons</code>. You can quickly load a magazine using a hotkey.</li>\n<li>Magazine Presets: You can load magazine presets in-raid using the context menu or by using the quick load hotkey. Smart loading process for partially loaded magazines, following the preset from where it left off. Be aware that loading through the inventory screen then closing might cancel loading if the ammo or magazine is not in a reachable place.</li>\n<li>Quick loading: You can quickly load ammo from outside the inventory by using the hotkey <code>K</code>. By default, this loads  the best penetrating ammo for your current weapon. While holding this hotkey, <code>mouse scrollwheel up/down</code> to choose which ammo to load into a magazine</li>\n<li>Configurable: Configuration is available in the BepInEx configuration manager</li>\n</ul>\n<h4>Reachable Places</h4>\n<ul>\n<li>When loading through the inventory (drag and drop or context menu), reachable places include magazines and ammo in vests, pockets, and secure containers, and also in any <em><strong>nested containers</strong></em> found inside them</li>\n<li>When using quick load, reachable places include <em><strong>only</strong></em> magazines and ammo inside vests, pockets, and secure containers,  <em><strong>NOT</strong></em>  including <em>nested containers</em></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><h4>Installation</h4>\n<ul>\n<li>Extract the contents of the .7z archive into your SPT directory.</li>\n</ul>\n<h4>Recommended Mods</h4>\n<ul>\n<li>Mods that alter loading speed, to balance at your own preference.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1342/ui-fixes\" rel=\"noreferrer noopener\">UIFixes</a> by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/46005/tyfon\" rel=\"noreferrer noopener\">Tyfon</a>. Load or unload multiple magazines!</li>\n</ul>\n<h4>Demonstration</h4>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"Installation\" />\nThank you <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a> for the gif</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Configuration</div>\n<div class=\"tab-content\"><h4>Configuration</h4>\n<p>In the configuration manager (<code>F12</code>)</p>\n<ul>\n<li>The speed limit, as a percentage of the walk speed, set to the player while un/loading ammo. Default is <code>45%</code></li>\n<li>Allow un/loading ammo outside the inventory only when Magazine and Ammo is in reachable places. This includes your Vest, Pockets, or Secure Container. Default is <code>true</code></li>\n<li>Do not interrupt un/loading ammo when switching inventory tabs (maps tab, tasks tab, etc.) Default is <code>true</code></li>\n<li>Key used to load ammo outside the inventory. Default is <code>K</code></li>\n<li>Quick Load Modes:\n<ul>\n<li>Highest Penetration Available - choose ammo that has the highest penetration power.</li>\n<li>Last Bullet in Magazine - prioritize the last ammo of the current weapon’s magazine.</li>\n<li>Last Used Magazine Preset - load the last used magazine preset. If no preset has been selected yet, the best penetrating ammo for your current weapon.</li>\n<li>Default is <code>Highest Penetration Available</code></li>\n</ul>\n</li>\n<li>When using Quick Load, notify the player of the ammo being loaded. Default is <code>true</code></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><h4>Known Issues</h4>\n<ul>\n<li>Touching a barbed wire while loading can conflict with the speed limits set by this mod</li>\n</ul>\n<h4>Support</h4>\n<p>If you find any issues or have feature suggestions, feel free to post them under my thread in the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1374428464999829555\" rel=\"noreferrer noopener\">SPT Discord</a>. Attach logs for issues found.</p></div></div></div>\n<hr />\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/ozenm\" rel=\"noreferrer noopener\">buy me a coffee</a> ☕</p>\n<p><em><strong>Disclaimer:</strong> I will not be held responsible for any injuries that may occur, including but not limited to - tripping over obstacles, bumping into walls, falling into a pit, dying from a scav, etc., whilst loading ammo. Please proceed with caution and watch your step.</em></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2112/continuous-load-ammo",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 3,
+ "published_at": "2025-04-23T15:22:00.000000Z",
+ "created_at": "2025-04-23T15:22:52.000000Z",
+ "updated_at": "2026-09-20T03:03:57.000000Z",
+ "owner": {
+  "id": 77756,
+  "name": "ozen",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2025-04-23T14:40:25.000000Z",
+  "updated_at": "2026-10-05T18:21:33.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 3,
+  "hub_id": 19,
+  "title": "Scripting",
+  "slug": "scripting",
+  "description": ""
+ }
+}

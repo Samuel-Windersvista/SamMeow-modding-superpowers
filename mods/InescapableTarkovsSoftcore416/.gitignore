@@ -1,0 +1,19 @@
+# C# build
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# 构建产物
+build/
+
+# 发行归档（保留约定文件）
+release/*
+!release/.gitkeep
+!release/README.md
+
+# 本地 / 临时
+*.log
+Thumbs.db
+desktop.ini

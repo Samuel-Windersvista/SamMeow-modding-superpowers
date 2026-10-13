@@ -1,0 +1,41 @@
+{
+ "id": 1775,
+ "hub_id": 2412,
+ "guid": "com.moxopixel.menuoverhaul",
+ "name": "WTT - Menu Overhaul",
+ "slug": "wtt-menu-overhaul",
+ "teaser": "Add a new menu layout to SPT and add your player to the menu screen.",
+ "thumbnail": "https://files.sp-mod.com/mods/2412.jpg",
+ "downloads": 125544,
+ "favourites_count": 311,
+ "endorsements_count": 27,
+ "description": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/NZJPKny.jpeg\" alt=\"EFT/SPT Menu Overhaul\" /></p>\n<p>󠁟</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Q0Kc08Y.png\" alt=\"What is Menu Overhaul\" /></p>\n<p>Menu Overhaul replace the extremely uninspiring main menu that’s in the game by default. Your player is added to the first menu screen. It comes packed with a lot of options in the F12 menu to place things where you want (including advanced options). You can rotate the player by clicking and dragging the mouse (like in raid loading screen).</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/OXpIVqP.png\" alt=\"Support\" /></p>\n<p>For feature requests and reporting bugs, please use the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/emilanderss0n/SPT-Menu-Overhaul\" rel=\"noreferrer noopener\">GitHub repo</a> for this mod. Do not share logs in the comments on Forge. I will not answer those here. It’s much easier to track on Github.</p>\n<p>󠁟</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/VfISiTq.png\" alt=\"warning\" /></p>\n<blockquote>\n<p>This mod only officially supports the Factory theme. Using any other theme is considered an unsupported configuration. Errors and warnings in the logs are expected when running this mod with non-Factory themes. Do not report these errors to the Discord support channels or the SPT support team. Support will only be provided for issues that occur while using the Factory theme. You are welcome to experiment with other themes, but you do so entirely at your own risk.</p>\n</blockquote>\n<p>󠁟</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Install</div>\n<div class=\"tab-content\"><p>Install the mod by dragging the first folder in the zip into your SPT install directory:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install GIF\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Uninstall</div>\n<div class=\"tab-content\"><p>Uninstall by removing “MoxoPixel.MenuOverhaul” folder inside BepInEx/plugins/</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Previews</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/MGdFVX4.gif\" alt=\"Hover Effects\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Gncjc69.gif\" alt=\"Spin 360\" /></p>\n<div class=\"youtube-lite\" data-video-id=\"AzcTRCgWmD4\" data-embed-url=\"https://www.youtube-nocookie.com/embed/AzcTRCgWmD4?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=AzcTRCgWmD4\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Known Issues</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>When extracting from a raid while wearing NVGs, the avatar on the main menu has NVGs in both the on and off position (I would need help fixing this)</p>\n</li>\n<li>\n<p>When changing language to anything except English, the first menu item looks displaced. You can change the position of that menu item in the F12 menu (Activate “Advanced Settings” in F12 menu)</p>\n</li>\n<li>\n<p>On SPT 4.1 there is a 3 second freeze when navigating back to main menu from another menu screen. This may be fixed soon.</p>\n</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">WTT</div>\n<div class=\"tab-content\"><h4>What is Welcome To T*****?</h4>\n<p>Welcome To T***** (WTT) is a mod for SPT AKI that has been in development for over a year. What started as a small passion project has grown in size to incorporate 15+ core members as well as contributions from other well-known mod authors and friends of WTT alike.</p>\n<h4>How does Welcome To T***** change the game?</h4>\n<p>As a mod, WTT overhauls SPT AKI, touching on almost every vanilla game system, as well as adding completely new systems to the game and its core mechanics. Inspired by open-world hardcore survival projects like STALKER: Anomaly and STALKER: GAMMA, WTT takes SPT’s artificial multiplayer MMO difficulty adders and replaces them with a challenging world economy, loot scarcity rebalancing, a lore friendly quest overhaul, and a map-traveling system built from rewritten portions of the Traveler mod allowing seamless travel between maps. Aside from its changes to the game’s core properties, WTT also adds to the world’s variety of traders, NPC’s, characters, items, and quests:</p>\n<ul>\n<li>Over 1,000 custom bundles adding new weapons, attachments, wearables, containers, food, medical, and barter items.</li>\n<li>New bosses with their own custom gear that will be properly incorporated into WTT’s quest lines.</li>\n<li>New, meaningful traders with their own lore-friendly quests and narrative elements to help the player progress through the story-line of WTT.</li>\n<li>New playable characters and outfits that will add to the player’s customization abilities.</li>\n<li>New quest types incorporating brand new map extraction points, putting the player’s knowledge and familiarization of SPT’s maps to the test.</li>\n<li>Welcome To T***** stands as one of the largest mods created for SPT thus far.</li>\n</ul>\n<h4>Want to follow our progress?</h4>\n<p>You can follow the project through its development in our discord here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/WelcomeToTarkov\" rel=\"noreferrer noopener\">https://discord.gg/WelcomeToTarkov</a></p></div></div></div>\n<p>󠁟</p>\n<p>🎗️ If you like my mods, consider leaving a small donation: <strong><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/moxopixel\" rel=\"noreferrer noopener\">Ko-Fi</a></strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1775/wtt-menu-overhaul",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2024-10-19T01:53:00.000000Z",
+ "created_at": "2024-10-19T01:53:57.000000Z",
+ "updated_at": "2026-08-17T00:02:52.000000Z",
+ "owner": {
+  "id": 29835,
+  "name": "MoxoPixel",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+  "created_at": "2023-04-08T03:49:17.000000Z",
+  "updated_at": "2026-10-05T17:21:12.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 30890,
+   "name": "GrooveypenguinX",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2023-05-07T19:55:52.000000Z",
+   "updated_at": "2026-10-04T21:13:58.000000Z"
+  }
+ ]
+}

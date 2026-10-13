@@ -1,0 +1,39 @@
+{
+ "id": 2097,
+ "hub_id": 2782,
+ "guid": "com.acidphantasm.botplacementsystem",
+ "name": "ABPS - Acid's Bot Placement System",
+ "slug": "abps-acids-bot-placement-system",
+ "teaser": "Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will always try to keep your raids full and different each time.",
+ "thumbnail": "https://files.sp-mod.com/mods/2782.png",
+ "downloads": 189454,
+ "favourites_count": 448,
+ "endorsements_count": 62,
+ "description": "<p>Please review the configuration app, as the default configuration is built the way it is because I enjoy it like this. All options in the configuration app have tooltips, please read them. You can adjust it freely to your liking. The configuration comes with starting PMCs only, and no additional PMC spawns - all bosses are set the same as vanilla defaults in SPT. The default Scav configuration will attempt to keep the map at near caps for the map at all times.</p>\n<p>Both PMC &amp; Scav spawning has been built to only spawn a specific distance from players, and any other bots to spread them around the map a bit. The distance values for this are configurable in F12 - but be careful not to go overboard making them as high as you can as that may delay spawns.</p>\n<p>Support for Legion/Punisher is automatic, but ABPS allows those mods to control their bosses. There is no special configuration for them in this mod.</p>\n<p>ABPS is also Fika compatible as far as I have tested, only the hosts settings will be used.</p>\n<p>Do not use this with another spawn mod.</p>\n<p><em>This mod is still in active development. It may be missing features or configuration options you may want.</em></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Download Acid’s Bot Placement System</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the SPT &amp; BepInEx folders in the zip file in 7-zip</li>\n<li>Drag the SPT &amp; BepInEx folders from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"3N6gTe2.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-botplacementsystem</code></li>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-botplacementsystem</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Config App is gone, to edit the configuration run your server after installing and go to:</p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://127.0.0.1:6969/botplacementsystem/\" rel=\"noreferrer noopener\">https://127.0.0.1:6969/botplacementsystem/</a></li>\n</ul>\n<p>All configs can be updated and edited while the server is running - provided nobody is in raid.\n<strong>If you are using Fika then put the appropriate IP and port instead.</strong></p>\n<p>Additionally, there are some settings in-game via the F12 menu.</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">RECOMMENDED MODS</div>\n<div class=\"tab-content\"><p><strong>Recommended Mods</strong></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2180-apbs-acid-s-progressive-bot-system\" rel=\"noreferrer noopener\">APBS</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2095/no-boss-pmcs\" rel=\"noreferrer noopener\">No Boss PMCs</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/827/waypoints-expanded-navmesh\" rel=\"noreferrer noopener\">Waypoints</a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">Looting Bots</a></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">KNOWN ISSUES</div>\n<div class=\"tab-content\"><p><strong>Known Issues</strong></p>\n<ul>\n<li>None at this moment</li>\n</ul></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2097/abps-acids-bot-placement-system",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 5,
+ "published_at": "2025-04-13T19:05:00.000000Z",
+ "created_at": "2025-04-13T19:05:25.000000Z",
+ "updated_at": "2026-08-14T20:58:05.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 5,
+  "hub_id": 22,
+  "title": "Bots",
+  "slug": "bots",
+  "description": ""
+ }
+}

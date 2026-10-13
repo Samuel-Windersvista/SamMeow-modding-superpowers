@@ -1,0 +1,818 @@
+{
+ "backup": {
+  "ok": true,
+  "result": {
+   "mode": "apply",
+   "plan_id": "9534817e-36aa-44a7-b5e3-e7a01e94fd24",
+   "snapshot_id": "404d3267-c43b-4445-a7d5-0f95da830362",
+   "backup_label": "pre-B8",
+   "backup_dir": "E:\\Game\\EFT_Offline\\Norvinsk_Forever\\.mo2-mcp\\profile-backups\\Default_pre-B8",
+   "files_backed_up": 5,
+   "files": [
+    "archives.txt",
+    "initweaks.ini",
+    "lockedorder.txt",
+    "modlist.txt",
+    "settings.ini"
+   ]
+  }
+ },
+ "installs": [
+  {
+   "id": 2642,
+   "name": "[5]开放世界大修-Vagabond",
+   "status": "ok"
+  },
+  {
+   "id": 2942,
+   "name": "[5]派系领土战争-TushonkaTerritories",
+   "status": "ok"
+  },
+  {
+   "id": 2706,
+   "name": "[6]AI目标驱动行为-ORBIT2.0",
+   "status": "ok"
+  },
+  {
+   "id": 2903,
+   "name": "[8]无限战局时间-RaidsAreInfinite",
+   "status": "ok"
+  }
+ ],
+ "moves": [
+  {
+   "name": "[5]开放世界大修-Vagabond",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "506b850e-2e2b-470f-9dcf-4555fe39387b",
+    "snapshot_id": "a7076f49-f24f-4f14-bed8-7381675c64d8",
+    "name": "[5]开放世界大修-Vagabond",
+    "new_priority": 29,
+    "target_mode": "above_separator",
+    "source": "offline_modlist_reorder"
+   }
+  },
+  {
+   "name": "[5]派系领土战争-TushonkaTerritories",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "317d527e-89ad-4403-b34e-810391c11913",
+    "snapshot_id": "df5854ec-27e8-42d3-8f0d-e6bad0a1691f",
+    "name": "[5]派系领土战争-TushonkaTerritories",
+    "new_priority": 28,
+    "target_mode": "above_separator",
+    "source": "offline_modlist_reorder"
+   }
+  },
+  {
+   "name": "[6]AI目标驱动行为-ORBIT2.0",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "da8649ce-b570-4415-a590-deaf3db0b817",
+    "snapshot_id": "3c82f696-1fac-450d-b26b-b94488147091",
+    "name": "[6]AI目标驱动行为-ORBIT2.0",
+    "new_priority": 28,
+    "target_mode": "above_separator",
+    "source": "offline_modlist_reorder"
+   }
+  },
+  {
+   "name": "[8]无限战局时间-RaidsAreInfinite",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "33ab043e-3e21-42d7-a3f2-8c7357ed9b29",
+    "snapshot_id": "61203591-a2a7-4670-8912-37ae3a829018",
+    "name": "[8]无限战局时间-RaidsAreInfinite",
+    "new_priority": 49,
+    "target_mode": "above_separator",
+    "source": "offline_modlist_reorder"
+   }
+  }
+ ],
+ "toggles": [
+  {
+   "name": "[6]AI自动搜索物品-LootingBots",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "0133b041-d2e1-4627-91d4-0da29adf02e2",
+    "snapshot_id": "9ef5cbfc-7d66-4761-969b-147c3d80f93e",
+    "name": "[6]AI自动搜索物品-LootingBots",
+    "enabled": false,
+    "source": "offline_modlist_rewrite"
+   }
+  },
+  {
+   "name": "[6]分离敌意-SeparateHostility",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "8a73e2fa-b04d-4506-8fe7-a93763eb83d5",
+    "snapshot_id": "5a5b67d9-e986-4b87-830a-88765493e318",
+    "name": "[6]分离敌意-SeparateHostility",
+    "enabled": false,
+    "source": "offline_modlist_rewrite"
+   }
+  }
+ ],
+ "urls": [
+  {
+   "name": "[5]开放世界大修-Vagabond",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "ed79ba21-c0ee-4070-8f31-882a1e8c857d",
+    "snapshot_id": "503c54cf-96b5-4988-9881-98db997e5b6e",
+    "name": "[5]开放世界大修-Vagabond",
+    "sections_updated": [
+     "General"
+    ],
+    "source": "offline"
+   }
+  },
+  {
+   "name": "[5]派系领土战争-TushonkaTerritories",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "4ee7dc20-e908-4a4c-85a5-6306fd7aa6e7",
+    "snapshot_id": "f62e9edf-1d5c-4753-883d-88d888f95361",
+    "name": "[5]派系领土战争-TushonkaTerritories",
+    "sections_updated": [
+     "General"
+    ],
+    "source": "offline"
+   }
+  },
+  {
+   "name": "[6]AI目标驱动行为-ORBIT2.0",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "d0eef8dd-0ad8-40a9-a8c8-c9de5d156ff8",
+    "snapshot_id": "ec4b1e23-e3fe-4f7d-ba97-79f77d4115c2",
+    "name": "[6]AI目标驱动行为-ORBIT2.0",
+    "sections_updated": [
+     "General"
+    ],
+    "source": "offline"
+   }
+  },
+  {
+   "name": "[8]无限战局时间-RaidsAreInfinite",
+   "status": "ok",
+   "detail": {
+    "mode": "apply",
+    "plan_id": "7928c718-d136-4afe-a1ab-9230f6980ee6",
+    "snapshot_id": "c085db98-e749-4bb1-8a57-b2c33537d63c",
+    "name": "[8]无限战局时间-RaidsAreInfinite",
+    "sections_updated": [
+     "General"
+    ],
+    "source": "offline"
+   }
+  }
+ ],
+ "modlist": {
+  "profile": "Default",
+  "mods": [
+   {
+    "name": "[15]《现实化诺文斯克》数值、沉浸感再平衡_separator",
+    "priority": 90,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[14]汉化模组_separator",
+    "priority": 89,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[13]战局外检修标签-DebugTooltip",
+    "priority": 88,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+    "priority": 87,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[13]MOD工具_separator",
+    "priority": 86,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[12]商人列表滚动-TraderScrolling",
+    "priority": 85,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[12]任务列表修复-TaskListFixes",
+    "priority": 84,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[12]防卡手-HandsAreNotBusy",
+    "priority": 83,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[12]修复、优化_separator",
+    "priority": 82,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[11]物品感应-AmandsSense",
+    "priority": 81,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[11]任务跳过功能-Skipper",
+    "priority": 80,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[11]内置动态地图-DynamicMaps",
+    "priority": 79,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[11]声音可视化-accessibilityindicators",
+    "priority": 78,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[11]扫敌雷达-RadarStandalone",
+    "priority": 77,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[11]破坏沉浸感MOD_separator",
+    "priority": 76,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+    "priority": 75,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]显示价格-showmethemoney",
+    "priority": 74,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]物品容器间快速移动-QuickMoveToContainer",
+    "priority": 73,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]自动存放-AutoDeposit",
+    "priority": 72,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]从武器架装备武器-EquipFromWeaponRack",
+    "priority": 71,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]拾取时快速放入容器-ContainerQuickLoot",
+    "priority": 70,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]UI大修-UIFixes",
+    "priority": 69,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]物品自动分类功能-IOF",
+    "priority": 68,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[10]物品高效整理（告别华容道）_separator",
+    "priority": 67,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[9]子弹专家-MunitionsExpert",
+    "priority": 66,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[9]简单的锻炼QTE-simpleworkoutqte",
+    "priority": 65,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[9]主菜单大修-MenuOverhaul",
+    "priority": 64,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[9]预览窗口尺寸调整-previewsizer",
+    "priority": 63,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[9]全局功能大修_separator",
+    "priority": 62,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[8]边走边装子弹-ContinuousLoadAmmo",
+    "priority": 61,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]任务跟踪显示-QuestTracker",
+    "priority": 60,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]直接搜索已打开容器-SearchOpenContainers",
+    "priority": 59,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]直接使用未捡物品-UseLooseLoot",
+    "priority": 58,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]门的状态随机化-DoorRandomizer",
+    "priority": 57,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+    "priority": 56,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]人物技能扩展和撬锁-SkillsExtended",
+    "priority": 55,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]技能速度调节器-SkillMultiplier",
+    "priority": 54,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]可以攀爬更高的地方-Increase Climb Height",
+    "priority": 53,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+    "priority": 52,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]战场环境临场感增强-SPTBattleAmbience",
+    "priority": 51,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics",
+    "priority": 50,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]无限战局时间-RaidsAreInfinite",
+    "priority": 49,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]boss刷新通知-BossNotifier",
+    "priority": 48,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[8]战局内功能大修_separator",
+    "priority": 47,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[7]平衡的夜视装备视效-BRNVG",
+    "priority": 46,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]更好的枪匠界面-Tradermodding",
+    "priority": 45,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]更亮的镭射线-brightlasers",
+    "priority": 44,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]武器配件位置自定义-WeaponCustomizer",
+    "priority": 43,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]更好的机瞄-BetterRearSights",
+    "priority": 42,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]瞄准视野大修-FOV-Fix",
+    "priority": 41,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]面具修复-KnightMaskFix(4.1.3+)",
+    "priority": 40,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]可以合并消耗品-MergeConsumables",
+    "priority": 39,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[7]装备、物品功能大修_separator",
+    "priority": 38,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[6]AI锁头重定向-HeadshotDamageRedirection",
+    "priority": 37,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]友方AI系统-PITFireteam",
+    "priority": 36,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]分离敌意-SeparateHostility",
+    "priority": 35,
+    "enabled": false,
+    "is_separator": false
+   },
+   {
+    "name": "[6]Acid的AI装备管理系统-progressivebotsystem",
+    "priority": 34,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]Acid的AI生成系统-botplacementsystem",
+    "priority": 33,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI自动搜索物品-LootingBots",
+    "priority": 32,
+    "enabled": false,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI增强-SAIN",
+    "priority": 31,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI路径扩展-Waypoints",
+    "priority": 30,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI拟人MOD的前置框架-BigBrain",
+    "priority": 29,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[5]开放世界大修-Vagabond",
+    "priority": 28,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI目标驱动行为-ORBIT2.0",
+    "priority": 27,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[5]派系领土战争-TushonkaTerritories",
+    "priority": 26,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator",
+    "priority": 25,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator",
+    "priority": 24,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+    "priority": 23,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+    "priority": 22,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]新商人-毒蝎-acidphantasm-scorpion",
+    "priority": 21,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]新商人-油漆匠-Painter",
+    "priority": 20,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+    "priority": 19,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+    "priority": 18,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]新商人-Artem",
+    "priority": 17,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[4]自定义商人、任务_separator",
+    "priority": 16,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[3]新配件-ConsortiumOfThings",
+    "priority": 15,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[3]武器整合-Epic's All in One",
+    "priority": 14,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[3]新武器-AKResonant",
+    "priority": 13,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[3]新武器-WTT武器库-WTT - Armory客户端",
+    "priority": 12,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[3]新配件-Eco-Attachment Emporium",
+    "priority": 11,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[3.1]新配件_separator",
+    "priority": 10,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+    "priority": 9,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+    "priority": 8,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新装备、衣服-TacticalGearComponent",
+    "priority": 7,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]腰包-WTT-PackNStrap",
+    "priority": 6,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新酒水-MoreEnergyDrinks(近似替代)",
+    "priority": 5,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新物品-镀金钥匙容器-GildedKeyStorage",
+    "priority": 4,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新物品-藏身处猫咪-Tarkin'sHideoutCat",
+    "priority": 3,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[2]新内容_separator",
+    "priority": 2,
+    "enabled": false,
+    "is_separator": true
+   },
+   {
+    "name": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+    "priority": 1,
+    "enabled": true,
+    "is_separator": false
+   },
+   {
+    "name": "[1]前置MOD（不要关）_separator",
+    "priority": 0,
+    "enabled": false,
+    "is_separator": true
+   }
+  ],
+  "mod_count": 91
+ },
+ "infos": {
+  "[5]开放世界大修-Vagabond": {
+   "name": "[5]开放世界大修-Vagabond",
+   "absolute_path": "E:\\Game\\EFT_Offline\\Norvinsk_Forever\\mods\\[5]开放世界大修-Vagabond",
+   "meta": {
+    "General": {
+     "url": "https://sp-mod.com/mod/2642/vagabond",
+     "gameName": "SPT4",
+     "modid": "0",
+     "version": "",
+     "installationFile": "2642-vagabond-0.8.3.zip",
+     "nexusFileStatus": "1",
+     "repository": "Nexus",
+     "category": "\"B8\"",
+     "comments": "\"把塔科夫改造成开放世界：靠过境点在地图间移动、以专属撤离点接触商人。\"",
+     "notes": "\"- 开局只有有限卢布，从 Fence 购置基础装备后自行求生\\n- 仅能靠过境点在地图间移动；普通撤离点变为商人 / 藏身处入口\\n- 每个商人有专属撤离点，抵达后解锁其商店（会话内有效）\\n- 藏身处入口可在战局中按 CTRL+P 自主放置\\n- 重复刷同一地图会逐次降低该图战利品（可配置）\\n- 默认禁用跳蚤市场（等级锁 99）与节日事件，可在 config 调整\\n- 需要新档案启用流浪者模式；旧档案不受影响\\n- 与改动撤离 / 过境 / 玩家生成的 mod 冲突（本包已核对无撞项）\"",
+     "validated": "true"
+    }
+   },
+   "file_count": 28,
+   "archive_count": 0
+  },
+  "[5]派系领土战争-TushonkaTerritories": {
+   "name": "[5]派系领土战争-TushonkaTerritories",
+   "absolute_path": "E:\\Game\\EFT_Offline\\Norvinsk_Forever\\mods\\[5]派系领土战争-TushonkaTerritories",
+   "meta": {
+    "General": {
+     "url": "https://sp-mod.com/mod/2942/tushonka-territories",
+     "gameName": "SPT4",
+     "modid": "0",
+     "version": "",
+     "installationFile": "2942-tushonka-territories-2.0.1.zip",
+     "nexusFileStatus": "1",
+     "repository": "Nexus",
+     "category": "\"B8\"",
+     "comments": "\"为战局加入派系领土战争：Scav、流氓与掠夺者争夺各地图控制权，玩家可用声望与战果影响战局。\"",
+     "notes": "\"- 默认三大派系（Scav / 流氓 / 掠夺者）互相攻守，并携带各自 Boss 出战\\n- 每次撤离后后台模拟战局，逐场改变地图控制权归属\\n- 与派系刷声望可停战甚至获得支援；屠杀其成员则会结仇\\n- 击杀（尤其 Boss 击杀）会削弱对应派系战力，可协助心仪派系征服全图\\n- 可选将 Fence 声望替换为 Scav 派系声望（默认关闭）\\n- 与 APBS 兼容；与 ABPS（生成系统）默认配置有刷怪位竞争；与 Separate Hostility 不兼容\\n- 配置在 mod 目录 Config 下，改后需重启服务器；亦可通过启动器 SIC 编辑\"",
+     "validated": "true"
+    }
+   },
+   "file_count": 18,
+   "archive_count": 0
+  },
+  "[6]AI目标驱动行为-ORBIT2.0": {
+   "name": "[6]AI目标驱动行为-ORBIT2.0",
+   "absolute_path": "E:\\Game\\EFT_Offline\\Norvinsk_Forever\\mods\\[6]AI目标驱动行为-ORBIT2.0",
+   "meta": {
+    "General": {
+     "url": "https://sp-mod.com/mod/2706/orbit-20",
+     "gameName": "SPT4",
+     "modid": "0",
+     "version": "",
+     "installationFile": "2706-orbit-20-2.1.1.zip",
+     "nexusFileStatus": "1",
+     "repository": "Nexus",
+     "category": "\"B8\"",
+     "comments": "\"让 Bot 带着目标打战局：分头搜刮、追猎热点、实时撤离，附带省 CPU 的幽灵模式。\"",
+     "notes": "\"- Bot 小队出生即带 1-5 个目标（高价值区域 / 击杀热点 / 任务点），完成后各自撤离\\n- 自带战利品引擎：按人格判断价值、真实搜索动作、局中换枪升级装备\\n- 幽灵模式：远处 Bot 仅休眠身体、行为照常模拟，显著提升帧率（默认开启）\\n- 幽灵交火有真实枪声与伤亡；靠近或瞄准时转为真实战斗\\n- 服务器 Web UI：F12 → Open web config UI，或访问服务端 /orbit；含区域编辑器\\n- 依赖 SAIN / BigBrain / Waypoints（包内已装）；不可与 Looting Bots、Questing Bots、AI 限流类同用\\n- 与 ContainerQuickLoot 存在轻微已知问题（Bot 拾取可能落入自己标记的容器）\"",
+     "validated": "true"
+    }
+   },
+   "file_count": 3,
+   "archive_count": 0
+  },
+  "[8]无限战局时间-RaidsAreInfinite": {
+   "name": "[8]无限战局时间-RaidsAreInfinite",
+   "absolute_path": "E:\\Game\\EFT_Offline\\Norvinsk_Forever\\mods\\[8]无限战局时间-RaidsAreInfinite",
+   "meta": {
+    "General": {
+     "url": "https://sp-mod.com/mod/2903/raids-are-infinite",
+     "gameName": "SPT4",
+     "modid": "0",
+     "version": "",
+     "installationFile": "2903-raids-are-infinite-1.1.0.zip",
+     "nexusFileStatus": "1",
+     "repository": "Nexus",
+     "category": "\"B8\"",
+     "comments": "\"取消所有地图的战局倒计时：时间改为与真实时间同步的墙钟，逗留多久都可以。\"",
+     "notes": "\"- 常规地图战局时限全部改为 99999 分钟（隐藏处等原本无时限的除外）\\n- 局内计时改为显示当前墙钟时间；撤离 / 过境的倒计时不受影响\\n- 服务器端运行时内存覆写，磁盘数据库保持原样，不触发完整性检查\\n- 服务器 + 客户端双端安装（本包单机使用，无 Fika 依赖）\\n- 与 ORBIT 搭配时留意「延长战局」类问题，装机后进战局观察\"",
+     "validated": "true"
+    }
+   },
+   "file_count": 3,
+   "archive_count": 0
+  }
+ }
+}

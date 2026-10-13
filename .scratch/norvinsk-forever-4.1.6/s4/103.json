@@ -1,0 +1,164 @@
+{
+ "idx": 103,
+ "entry": "[5]现实主义大修-Realism - 已AI优化",
+ "terms": [
+  "SPT Realism Mod",
+  "-Realism - AI",
+  "RealismMod"
+ ],
+ "all": [
+  {
+   "term": "-Realism - AI",
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "dl": 1315192,
+   "sc": 30
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 1945,
+   "name": "Ai Limit",
+   "slug": "ai-limit",
+   "dl": 64613,
+   "sc": 30
+  },
+  {
+   "term": "RealismMod",
+   "id": 1025,
+   "name": "Painter",
+   "slug": "painter",
+   "dl": 313555,
+   "sc": 0
+  },
+  {
+   "term": "SPT Realism Mod",
+   "id": 954,
+   "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+   "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+   "dl": 263916,
+   "sc": 0
+  },
+  {
+   "term": "SPT Realism Mod",
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "slug": "apbs-acids-progressive-bot-system",
+   "dl": 254163,
+   "sc": 0
+  },
+  {
+   "term": "RealismMod",
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "slug": "apbs-acids-progressive-bot-system",
+   "dl": 254163,
+   "sc": 0
+  },
+  {
+   "term": "SPT Realism Mod",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "SPT Realism Mod",
+   "id": 1232,
+   "name": "Lotus",
+   "slug": "lotus",
+   "dl": 187202,
+   "sc": 0
+  },
+  {
+   "term": "RealismMod",
+   "id": 1232,
+   "name": "Lotus",
+   "slug": "lotus",
+   "dl": 187202,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32563,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2415,
+   "name": "Canted Aiming",
+   "slug": "canted-aiming",
+   "dl": 21502,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2481,
+   "name": "Crates In Airdrop",
+   "slug": "crates-in-airdrop",
+   "dl": 18295,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2874,
+   "name": "Adaptive Bot Culling",
+   "slug": "adaptive-bot-culling",
+   "dl": 6351,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2129,
+   "name": "Air Filter Warning",
+   "slug": "air-filter-warning",
+   "dl": 3400,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2948,
+   "name": "Airburst",
+   "slug": "airburst",
+   "dl": 1320,
+   "sc": 0
+  },
+  {
+   "term": "-Realism - AI",
+   "id": 2985,
+   "name": "Quick Aim",
+   "slug": "quick-aim",
+   "dl": 1293,
+   "sc": 0
+  },
+  {
+   "term": "SPT Realism Mod",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  },
+  {
+   "term": "RealismMod",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

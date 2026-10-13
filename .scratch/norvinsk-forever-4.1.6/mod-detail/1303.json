@@ -1,0 +1,39 @@
+{
+ "id": 1303,
+ "hub_id": 1817,
+ "guid": "com.acidphantasm.harryhideout",
+ "name": "HarryHideout",
+ "slug": "harryhideout",
+ "teaser": "Trader that sells all items for hideout construction/upgrades",
+ "thumbnail": "https://files.sp-mod.com/mods/1817.jpg",
+ "downloads": 67916,
+ "favourites_count": 92,
+ "endorsements_count": 3,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"wMIskD3.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><p>NOTE: Deletion may not be possible because it is a trader. You may need to start a new profile.\nIf you insist on removing it, you can do the following.</p>\n<ol>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-harryhideout</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p>Config settings (\\config\\config.json)</p>\n<ul>\n<li><strong>priceMultiplier</strong> (Default: 1, Adjust this to increase or lower the prices of items in Harry’s Assort (0.5 = 1/2 price, 2 = 2x price, etc))</li>\n<li><strong>traderRefreshMin</strong> (Default: 1800, Adjust this to change minimum time in seconds for a trader refresh)</li>\n<li><strong>traderRefreshMax</strong> (Default: 3600, Adjust this to change maximum time in seconds for a trader refresh)</li>\n<li><strong>addTraderToFlea</strong> (Default: true, Change this to false to remove offers from flea)</li>\n<li><strong>If realism is installed, the following 3 settings will automatically disable.</strong>\n<ul>\n<li><strong>randomizeBuyRestriction</strong> (Default: false, Change this to true to randomize your buy restriction counts. Will never be lower than 1)</li>\n<li><strong>randomizeStockAvailable</strong> (Default: false, Change this to true to randomize the available stock of each item, will also roll for <strong>outOfStockChance</strong>)</li>\n<li><strong>outOfStockChance</strong> (Default: 25, Percent chance an item will roll “out of stock” when <strong>randomizeStockAvailable</strong> set to true)</li>\n</ul>\n</li>\n<li><strong>debugLogging</strong> (Default: false, Change this to true if you want to be spammed debug information on server launch)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">RECOMMENDED MODS</div>\n<div class=\"tab-content\"><p>Recommended Mods:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1089/kaeno-traderscrolling\" rel=\"noreferrer noopener\">Kaeno-TraderScrolling</a></p></div></div></div>\n<p>Special thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30839-drakiaxyz/\" rel=\"noreferrer noopener\">DrakiaXYZ</a>, their source code gives great inspiration and their mods are top tier.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1303/harryhideout",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 16,
+ "published_at": "2024-04-11T22:10:00.000000Z",
+ "created_at": "2024-04-11T22:10:45.000000Z",
+ "updated_at": "2026-08-19T02:38:04.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 16,
+  "hub_id": 29,
+  "title": "Traders",
+  "slug": "traders",
+  "description": ""
+ }
+}

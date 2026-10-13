@@ -1,0 +1,91 @@
+{
+ "idx": 51,
+ "entry": "[8]禁用Scav模式-DisableScavMode",
+ "terms": [
+  "Scav -DisableScavMode",
+  "DisableScavMode"
+ ],
+ "all": [
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 2594,
+   "name": "Player Boss Scav",
+   "slug": "player-boss-scav",
+   "dl": 10704,
+   "sc": 30
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 3042,
+   "name": "Super Scav Case",
+   "slug": "super-scav-case",
+   "dl": 1069,
+   "sc": 30
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 1341,
+   "name": "Quick Move To Containers",
+   "slug": "quick-move-to-containers",
+   "dl": 139694,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 2416,
+   "name": "Enable Labyrinth",
+   "slug": "enable-labyrinth",
+   "dl": 59800,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 1858,
+   "name": "Enemy Markers",
+   "slug": "enemy-markers",
+   "dl": 22568,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 3025,
+   "name": "Manimal's 1.0 Interchange Expansion Backport ",
+   "slug": "manimals-10-interchange-expansion-backport",
+   "dl": 22551,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 1755,
+   "name": "Scavs 4 All",
+   "slug": "scavs-4-all",
+   "dl": 14065,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 2049,
+   "name": "Add Secret Exfil Notes to Caches",
+   "slug": "add-secret-exfil-notes-to-caches",
+   "dl": 10830,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 1656,
+   "name": "SPT Discord Rich Presence",
+   "slug": "spt-discord-rich-presence",
+   "dl": 9503,
+   "sc": 0
+  },
+  {
+   "term": "Scav -DisableScavMode",
+   "id": 3027,
+   "name": "Exfil Rewards",
+   "slug": "exfil-rewards",
+   "dl": 1534,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

@@ -1,0 +1,39 @@
+{
+ "id": 1136,
+ "hub_id": 1567,
+ "guid": "xyz.drakia.equipfromweaponrack",
+ "name": "Equip From Weapon Rack",
+ "slug": "equip-from-weapon-rack",
+ "teaser": "Allow equipping weapons directly from your weapon rack",
+ "thumbnail": "https://files.sp-mod.com/mods/1567.png",
+ "downloads": 37340,
+ "favourites_count": 73,
+ "endorsements_count": 10,
+ "description": "<p>Tired of having to load your hideout just to get access to one of your guns that you’ve put on display?</p>\n<p>No more! Now you can use the quick equip selector to pick guns from your weapon rack alongside those in your stash!</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YbD8mae.png\" alt=\"YbD8mae.png\" /></p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in 7-zip</p>\n<p>2) Select the folder in the zip file in 7-zip</p>\n<p>3) Drag the selected folder from 7-zip into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3>Configuration</h3>\n<p>That’s the neat part, there isn’t any. The plugin is drag and drop, and starts working the next time you load the game. Zero configuration, zero fuss.</p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1136/equip-from-weapon-rack",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-10-28T17:54:00.000000Z",
+ "created_at": "2023-10-28T17:54:07.000000Z",
+ "updated_at": "2026-08-03T06:02:26.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

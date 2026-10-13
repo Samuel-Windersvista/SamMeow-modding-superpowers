@@ -1,0 +1,83 @@
+1	[14]本体缺失翻译				
+2	[14]客户端ModF12通用翻译器及菜单汉化文本				
+3	[13]好莱坞第三人称镜头-HollywoodCam	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+6	[13]存档编辑器-SPT-AKI Profile Editor				
+9	[12]尸体可删除-SPTCorpseCleaner	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+12	[12]白色方块bug修复-WhiteBoxFix	1298	HandsAreNotBusy	0	1298|HandsAreNotBusy|0 ;; 1263|Epic's All in One|0 ;; 1477|AutoRun|0 ;; 1657|MergeConsumables|0
+13	[11]我就是爹作弊工具-DadGamerMode	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+14	[11]新商人-可购买自己创建的预设枪械-Hephaestus	505	Olympus	0	505|Olympus|0 ;; 164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0
+15	[11]好莱坞投掷武器视觉辅助-VisualAssist	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+16	[11]扫敌雷达-RadarStandalone	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+21	[11]更多界面信息-GamePanelHUD	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+26	[10]物品真实堆叠-True Items Redux	1619	Lots of Loot Redux	20	2898|FIR Means FIR|0 ;; 2239|Couturier - gear and clothing pack|0 ;; 1278|WTT - Pack 'n' Strap|0 ;; 2394|Instant Insurance|0
+27	[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES	2167	CNN - CONTAINERS - RE-UPLOAD	0	2167|CNN - CONTAINERS - RE-UPLOAD|0
+30	[10]小火山的仓库搜索框修复和扩展-SearchBarExtended	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+31	[10]仓库搜索框-StashSearch	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+33	[9]解锁所有藏身处装饰-UnlockHideoutCustomization	2076	Hideout In Progress	20	2865|WTT - DoomArcade|0 ;; 2512|WTT - Content Backport|0 ;; 2500|Wishlist Extended|0 ;; 2310|WTT - CommonLib|0
+35	[9]项目上下文菜单扩展-ItemContextMenuExt	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+36	[9]子弹专家-MunitionsExpert	3006	Munitions Expert - Reloaded	82	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+38	[9]物品打勾标记提供更多信息-MoreCheckmarks	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+39	[9]任务交接自动化-TaskAutomation	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+40	[9]藏身处不用打勾-nofirhideout	2500	Wishlist Extended	0	2500|Wishlist Extended|0 ;; 2407|QuickSellFlea|0 ;; 2960|IOF: Inventory Organizing Feature|0 ;; 3054|QuestCodex|0
+41	[9]腰带槽-BeltSlot	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+42	[9]动态物品重量-DynamicItemWeights	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+43	[9]小火山的全界面中文字体切换				
+45	[8]沉浸感时间循环-ImmersiveDaylightCycle	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+47	[8]可拾取穿墙物品-ReachExtender	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+48	[8]boss刷新通知-BossNotifier	2594	Player Boss Scav	30	2594|Player Boss Scav|30 ;; 2210|Live Like Boss Spawn Chances|30 ;; 1453|Make Shotguns Great Again!|0 ;; 2246|WTT- Armory|0
+49	[8]塔科夫天气系统-Tarkov-Weather-System	2120	Time & Weather Changer NG	20	2314|Season Rotator|0 ;; 2120|Time & Weather Changer NG|20 ;; 3062|Tushonka Rare Collectibles|0 ;; 2025|All Quests Checkmarks|0
+50	[8]坠落的补给直升机-HeliCrash.ArysReloaded				
+51	[8]禁用Scav模式-DisableScavMode	3042	Super Scav Case	30	3042|Super Scav Case|30 ;; 2594|Player Boss Scav|30 ;; 1341|Quick Move To Containers|0 ;; 2416|Enable Labyrinth|0
+52	[8]武器破门-BackdoorBandit客户端文件	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+53	[8]武器破门-BackdoorBandit服务器文件	3007	Breakout Outlines	0	3007|Breakout Outlines|0 ;; 918|BotDebug|0 ;; 236|Server Value Modifier [SVM]|0 ;; 954|Borkel's Realistic Night Vision Goggles (NVGs and T-7)|0
+55	[8]增加拾取距离-LootRadius	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+60	[8]更有意义的武器精通-MeaningfulWeaponMasteries	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+61	[8]超重也能练耐力-Always-Level-Endurance	3005	Trader Level Requirements Editor	20	2144|Skill Distribution|0 ;; 1437|Simple Workout QTE|0 ;; 2383|Skills Extended|0 ;; 1688|More Energy Drinks|0
+68	[8]门可以锁-LockableDoors	814	Late to the Party	0	814|Late to the Party|0 ;; 164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0
+69	[8]火山家的实时字幕-Volcano-subtitle	2709	Miyako Carry Service	0	2709|Miyako Carry Service|0 ;; 2709|Miyako Carry Service|0
+72	[7]真实的热成像-realisticThermalScopes	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+74	[7]反重力臂章-AntigravArmbands	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+75	[7]更大的背包-BetterBackpacks	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+76	[7]反射镜视野重做-ReflexSightsRework客户端文件	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+77	[7]反射镜视野重做-ReflexSightsRework服务器文件	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+79	[7]平衡的夜视装备视效-BRNVG客户端文件	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+80	[7]平衡的夜视装备视效-BRNVG服务器文件	954	Borkel's Realistic Night Vision Goggles (NVGs and T-7)	0	954|Borkel's Realistic Night Vision Goggles (NVGs and T-7)|0 ;; 164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0
+83	[7]弹匣优化管理系统-MagazineManagementSystem	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+84	[7]面具修复-mask-fix	3109	Knight Mask Fix (4.1.3+)	82	3109|Knight Mask Fix (4.1.3+)|82 ;; 3090|DaCard|0 ;; 1263|Epic's All in One|0 ;; 954|Borkel's Realistic Night Vision Goggles (NVGs and T-7)|0
+85	[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化				
+86	[7]武器动画更新-P90弹匣动画-transparentp90mag	2774	Transparent Sights	20	2774|Transparent Sights|20 ;; 2206|Item Preview QoL + screenshots|0 ;; 2879|WebOverlay|0 ;; 2101|SPT Leaderboard|0
+87	[7]武器动画更新器-AnimatorUpdater	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+89	[6]分离敌意-SeparateHostility	164	Freecam	0	164|Freecam|0 ;; 167|Ammo Stats|0 ;; 236|Server Value Modifier [SVM]|0 ;; 374|bluehead's AIO Trader|0
+91	[6]AI锁头重定向-Headshot Damage Redirection				
+92	[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化				
+99	[5]舒适家园系统-HomeComforts - 已AI优化				
+100	[5]战局内存储-LeaveItThere - 已AI优化				
+101	[5]以物易物经济系统-barter_economy-已AI优化				
+102	[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化				
+103	[5]现实主义大修-Realism - 已AI优化				
+104	[5]经济与制造系统大修-Softcore - 已AI优化				
+105	[5]全地图间移动套装-IEAPI+PTT - AI优化版				
+106	[5]战局大修-RaidOverhaul - 已AI增强版本				
+107	[5]新增5个开局角色-CustomProfiles				
+108	[4]新商人-AES				
+109	[4]新商人-VolkovTrader				
+110	[4]新商人-Epakim1-1				
+111	[4]新商人-不明生还者-UnknownSurvivor				
+120	[3]新配件-Eco-Attachment Emporium				
+121	[3]新配件-Echoes.of.Tarkov.-.Requisitions				
+123	[3]新配件-BlackCore				
+124	[3]新配件-MagTape				
+125	[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst				
+127	[3]新武器-国产武器-1SD-QBZ191				
+129	[3]新武器-AK50				
+130	[3]新武器-SIG_MCX_VIRTUS				
+133	[2]高清材质-TarkovHDRework				
+134	[2]自定义配方-tarkovcraft				
+137	[2]新物品-竞技场赛季奖励-SPT Battlepass				
+142	[2]新酒水-WTT - CornerStore				
+143	[2]新物品-地图容器-SecureMapbookMod				
+146	[2]新物品-藏身处猫咪-hideoutcat				
+148	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件				
+149	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件				
+150	[1]前置框架-自定义交互-CustomInteractions				
+151	[1]前置框架-KmyTarkovApi				

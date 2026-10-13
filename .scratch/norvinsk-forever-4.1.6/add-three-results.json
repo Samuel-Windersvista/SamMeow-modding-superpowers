@@ -1,0 +1,35 @@
+[
+ {
+  "id": 954,
+  "name": "[7]平衡的夜视装备视效-BRNVG",
+  "status": "ok",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "commentOk": true,
+  "noteLines": 7
+ },
+ {
+  "id": 2960,
+  "name": "[10]物品自动分类功能-IOF",
+  "status": "ok",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "commentOk": true,
+  "noteLines": 5
+ },
+ {
+  "id": 2953,
+  "name": "[6]AI锁头重定向-HeadshotDamageRedirection",
+  "status": "ok",
+  "notes": true,
+  "url": true,
+  "fmtOk": true,
+  "urlOk": true,
+  "commentOk": true,
+  "noteLines": 5
+ }
+]

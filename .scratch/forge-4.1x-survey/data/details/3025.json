@@ -1,0 +1,39 @@
+{
+ "id": 3025,
+ "hub_id": null,
+ "guid": "com.manimal.interchange",
+ "name": "Manimal's 1.0 Interchange Expansion Backport ",
+ "slug": "manimals-10-interchange-expansion-backport",
+ "teaser": "Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra.",
+ "thumbnail": "https://files.sp-mod.com/mods/KyLLW8JR79TsTVFozeVeF40eKtTluhkLiMxaMZF3.png",
+ "downloads": 26288,
+ "favourites_count": 181,
+ "endorsements_count": 48,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>This mod backports and implements the new Interchange expansion.\nIt contains all loot and the new scav/b*** camps. It also includes Tagilla’s hideout and new extracts..</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/28tuESa.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag it into the folder baby.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">WTT Discord Channel</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">My EVIL Discord Server….</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/3025/manimals-10-interchange-expansion-backport",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-09-14T09:34:00.000000Z",
+ "created_at": "2026-09-14T08:29:23.000000Z",
+ "updated_at": "2026-09-28T04:39:04.000000Z",
+ "owner": {
+  "id": 119111,
+  "name": "Manimal1920",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-07-30T21:56:19.000000Z",
+  "updated_at": "2026-10-07T23:48:29.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

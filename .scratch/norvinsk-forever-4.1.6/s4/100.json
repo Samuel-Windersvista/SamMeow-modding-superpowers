@@ -1,0 +1,93 @@
+{
+ "idx": 100,
+ "entry": "[5]战局内存储-LeaveItThere - 已AI优化",
+ "terms": [
+  "LeaveItThere-Server",
+  "-LeaveItThere - AI",
+  "LeaveItThere-FikaModule",
+  "LeaveItThere"
+ ],
+ "all": [
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "dl": 1315192,
+   "sc": 30
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 1945,
+   "name": "Ai Limit",
+   "slug": "ai-limit",
+   "dl": 64613,
+   "sc": 30
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32563,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2415,
+   "name": "Canted Aiming",
+   "slug": "canted-aiming",
+   "dl": 21502,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2481,
+   "name": "Crates In Airdrop",
+   "slug": "crates-in-airdrop",
+   "dl": 18295,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2129,
+   "name": "Air Filter Warning",
+   "slug": "air-filter-warning",
+   "dl": 3400,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2948,
+   "name": "Airburst",
+   "slug": "airburst",
+   "dl": 1320,
+   "sc": 0
+  },
+  {
+   "term": "-LeaveItThere - AI",
+   "id": 2985,
+   "name": "Quick Aim",
+   "slug": "quick-aim",
+   "dl": 1293,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

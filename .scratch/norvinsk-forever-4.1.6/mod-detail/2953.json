@@ -1,0 +1,64 @@
+{
+ "id": 2953,
+ "hub_id": null,
+ "guid": "com.antigravpilot.dmgredirect",
+ "name": "Headshot Damage Redirection",
+ "slug": "headshot-damage-redirection",
+ "teaser": "Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and RNG options. Stop getting one-tapped and fight back! Compatible with SPT 4.1.3 & FIKA",
+ "thumbnail": "https://files.sp-mod.com/mods/bA0nN0R9r6AQ8HScJ9KBrxEoRS8I9Wro8acTjGKg.png",
+ "downloads": 2892,
+ "favourites_count": 31,
+ "endorsements_count": 14,
+ "description": "<p><strong>A New Scav Touches the Tushonka</strong>: <em>Credit to Solarint for the original mod, Somtam for enhancements, and Perfk_ for prior upgrades. This patch updates the mod to SPT 4.1.3!</em></p>\n<h1>Headshot Damage Redirect</h1>\n<p>A BepInEx mod for Single Player T***** that redirects headshot and chest damage to other body parts, giving you a chance to survive those instant-death moments.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Damage Redirection</strong>: Splits headshot/chest damage between multiple body parts</li>\n<li><strong>Fully Configurable</strong>: Adjust redirect percentage, thresholds, and target body parts</li>\n<li><strong>Smart Options</strong>: Minimum damage threshold, maximum damage cap, chance-based activation</li>\n<li><strong>Dad Gamer Mode</strong>: Global damage reduction for casual play</li>\n<li><strong>In-Game Config</strong>: Press F12 to configure all settings</li>\n<li><strong>FIKA Compatible</strong>: Works in multiplayer</li>\n</ul>\n<h2>Installation</h2>\n<ol>\n<li>Download the latest <code>AntiGravPilot.HeadShotRedirect.dll</code> from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/AntiGravPilot/Solarint-HeadshotDamageRedirect/releases\" rel=\"noreferrer noopener\">Releases</a></li>\n<li>Place it in <code>SPT/BepInEx/plugins/</code></li>\n<li>Launch the game</li>\n<li>Press F12 to configure settings</li>\n</ol>\n<h2>How It Works</h2>\n<p>The mod splits incoming damage proportionally:</p>\n<p><strong>Example (60% redirect on 100 damage headshot):</strong></p>\n<ul>\n<li>Head takes: 40 damage</li>\n<li>Other body parts: 60 damage (distributed)</li>\n</ul>\n<h2>Configuration</h2>\n<p>Press <strong>F12</strong> in-game to access all settings:</p>\n<ul>\n<li>Redirect percentage (0-100%)</li>\n<li>Minimum damage threshold</li>\n<li>Maximum damage cap</li>\n<li>Chance to redirect</li>\n<li>Body part selection</li>\n<li>Global damage scaling</li>\n</ul>\n<p>Config file: <code>BepInEx/config/com.AntiGravPilot.dmgRedirect.cfg</code></p>\n<h2>Compatibility</h2>\n<ul>\n<li>SPT 4.1.3</li>\n<li>FIKA</li>\n</ul>\n<h2>Credits</h2>\n<ul>\n<li><strong>Original</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Solarint/Solarint-HeadshotDamageRedirect\" rel=\"noreferrer noopener\">Solarint</a></li>\n<li><strong>Updated for 3.11.4</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/gitTerebi/Solarint-HeadshotDamageRedirect\" rel=\"noreferrer noopener\">Somtam</a></li>\n<li><strong>Updated for 4.0.7</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/perfk/Solarint-HeadshotDamageRedirect\" rel=\"noreferrer noopener\">Perfk</a></li>\n<li><strong>Updated for 4.1.3</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/AntiGravPilot/Solarint-HeadshotDamageRedirect\" rel=\"noreferrer noopener\">AntiGravPilot</a> (You are here!)</li>\n</ul>\n<p>This is a maintenance patch given evident abandonment by prior maintainers - If any of the prior maintainers update their own mods and re-presume ownership, this one will be removed.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2953/headshot-damage-redirection",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 5,
+ "published_at": "2026-08-23T17:00:00.000000Z",
+ "created_at": "2026-08-23T17:03:53.000000Z",
+ "updated_at": "2026-09-17T07:19:46.000000Z",
+ "owner": {
+  "id": 58571,
+  "name": "AntiGravPilot",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/MAlBbIkhMmioXwKW3ntfJRsmT1lGxp9rtZNj66ZY_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-07-18T19:50:07.000000Z",
+  "updated_at": "2026-09-17T07:21:17.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 27463,
+   "name": "Solarint",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2023-02-23T17:11:59.000000Z",
+   "updated_at": "2026-08-10T19:41:43.000000Z"
+  },
+  {
+   "id": 76808,
+   "name": "somtam",
+   "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+   "cover_photo_url": null,
+   "created_at": "2025-04-13T14:33:36.000000Z",
+   "updated_at": "2026-08-12T11:39:37.000000Z"
+  },
+  {
+   "id": 90563,
+   "name": "Perfk_",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/JgDotdCs7mAm6LqGaIJHzF9UYVZl1IUiGnMhfsOx_256w.webp",
+   "cover_photo_url": null,
+   "created_at": "2025-11-20T20:58:25.000000Z",
+   "updated_at": "2026-08-10T19:51:10.000000Z"
+  }
+ ],
+ "category": {
+  "id": 5,
+  "hub_id": 22,
+  "title": "Bots",
+  "slug": "bots",
+  "description": ""
+ }
+}

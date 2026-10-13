@@ -1,0 +1,115 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15371,
+   "hub_id": null,
+   "version": "2.0.0",
+   "description": "<p>Updated to SPT 4.1.5\nServer mod rewritten in C#, setup is the same. edit config.json in server mod folder to adjust the multiplier values of hideout management and crafting skills.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.0.0",
+   "content_length": 13398,
+   "spt_version_constraint": "~4.1.5",
+   "downloads": 1556,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-18T11:56:00.000000Z",
+   "created_at": "2026-09-12T22:22:56.000000Z",
+   "updated_at": "2026-09-18T11:57:00.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15467,
+   "hub_id": null,
+   "version": "2.0.0+4.0.13",
+   "description": "<p>2.0.0 Backported to SPT 4.0.13</p>\n<p>Source for this version can be found here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/tree/backport/4.0.13\" rel=\"noreferrer noopener\">https://github.com/Dazzuh/SkillMultiplier/tree/backport/4.0.13</a></p>\n",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.0.0+4.0.13",
+   "content_length": 11442,
+   "spt_version_constraint": "~4.0.13",
+   "downloads": 87,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-18T11:56:00.000000Z",
+   "created_at": "2026-09-18T11:55:55.000000Z",
+   "updated_at": "2026-09-18T12:20:02.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15702,
+   "hub_id": null,
+   "version": "2.1.0",
+   "description": "<h2>What’s Changed</h2>\n<h1>Full mod rewrite</h1>\n<p>Server-side web config, sent to all clients and applied in real time.</p>\n<p>The math behind the multipliers have changed a bit - I recommend playing with your multipliers again.</p>\n<p>After installing and launching the spt.server, launch your client too. The client sends skills to the server before they can be adjusted.</p>\n<p>The mod is now baked into Tarkov’s exp system on nearly every level, every skill and action is configurable and should apply the exp multipliers wherever tarkov needs them. This also fixes an issue with the old version where the green bars on the skills page weren’t accurate to the amount of exp you actually got, and the gym didn’t scale exp even with the multipliers. ALL Skill experience sources should now be covered.</p>\n<p>A migration from the previous config is included, when you launch a server or client with the old mod config the new config page will prompt you to migrate over your old settings or delete them.</p>\n<p>Disclaimer: Most of this update was done with the help of an LLM.</p>\n<p><strong>Full Changelog</strong>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/compare/2.0.0...2.1.0\" rel=\"noreferrer noopener\">https://github.com/Dazzuh/SkillMultiplier/compare/2.0.0...2.1.0</a></p>\n",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.1.0",
+   "content_length": 79823,
+   "spt_version_constraint": "~4.1.5",
+   "downloads": 263,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-30T22:18:00.000000Z",
+   "created_at": "2026-09-30T22:18:48.000000Z",
+   "updated_at": "2026-09-30T22:22:45.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15721,
+   "hub_id": null,
+   "version": "2.1.1",
+   "description": "<p>Everything that did nothing in 2.1.0 does now.</p>\n<h2>Changes</h2>\n<p><strong>Action rows apply in raids.</strong> 2.1.0 matched them by the action object, so they only worked in the hideout.</p>\n<p><strong>Server-paid XP is scaled.</strong> Repairs, crafting and hideout XP. Their rows did nothing before.</p>\n<p><strong>The hideout gym has a row.</strong> Random strength or endurance per rep. Its popup tells the truth now.</p>\n<p><strong>The crafting cycle row</strong> no longer misdescribes itself.</p>\n<h2>Worth knowing</h2>\n<p>A 10x row reads as about 4x on the skill page above level 9. It is still a real 10x against vanilla.</p>\n<p>Row changes land immediately, even mid-raid. <code>Settings.*</code> rows want a game relaunch.</p>\n<h2>Installing</h2>\n<p>Unzip into your SPT root so the plugin lands in <code>BepInEx/plugins/</code> and the module in\n<code>SPT_Runtime/user/mods/dazzuh-skillmultiplier/</code>, then restart <code>SPT.Server.exe</code>. Saved multipliers and keys are\nunchanged.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.1.1",
+   "content_length": 83699,
+   "spt_version_constraint": "~4.1.5",
+   "downloads": 557,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-01T21:01:00.000000Z",
+   "created_at": "2026-10-01T21:01:04.000000Z",
+   "updated_at": "2026-10-01T22:18:44.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 397,
+   "hub_id": 14474,
+   "version": "1.1.1",
+   "description": "<p>Fixed issue with build script causing an error when launching the server, Apologies.</p>\n<p><em>Full Changelog</em>: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Dazzuh/SkillMultiplier/compare/1.1.0...1.1.1\" rel=\"noreferrer noopener\">1.1.0…1.1.1</a></p>\n",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/1.1.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 8844,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-06-16T11:20:50.000000Z",
+   "created_at": "2025-06-16T11:20:50.000000Z",
+   "updated_at": "2026-05-14T01:47:28.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2162/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2162/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2162/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2162/versions",
+  "per_page": 50,
+  "to": 5,
+  "total": 5
+ }
+}

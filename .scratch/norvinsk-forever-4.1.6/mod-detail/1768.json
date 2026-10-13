@@ -1,0 +1,48 @@
+{
+ "id": 1768,
+ "hub_id": 2403,
+ "guid": "com.rcta.metalgear",
+ "name": "RCTA - Metal Gear [FORTNITE]",
+ "slug": "rcta-metal-gear-fortnite",
+ "teaser": "The Metal Gear collab outfits from Fortnite (but not cringe)",
+ "thumbnail": "https://files.sp-mod.com/mods/2403.png",
+ "downloads": 3868,
+ "favourites_count": 12,
+ "endorsements_count": 2,
+ "description": "<h3>**RCTA - Metal Gear [FORTNITE]</h3>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/ESpm0Ic.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/ESpm0Ic.gif\" alt=\"ESpm0Ic.gif\" /></a>**</p>\n<p><strong>Mod Description</strong></p>\n<ul>\n<li>Basically every outfit (excluding the masks) from the Metal Gear Fortnite collab, I know “fortnite” leaves a bad taste but don’t let it scare you away, they’re modeled beautifully and I made sure the proportions fit perfectly to the T***** body. The textures left untouched fit perfectly fine too! METAL GEAR!!!</li>\n</ul>\n<p><strong>Mod Includes</strong></p>\n<ul>\n<li><strong>RCTA Old Snake [Top] (B</strong>*/U***) (RAGMAN)**</li>\n<li><strong>RCTA Old Snake [Bottom] (B</strong>*/U***) (RAGMAN)**</li>\n<li><strong>RCTA Raiden [Top] (B</strong>*/U***) (RAGMAN)**</li>\n<li><strong>RCTA Raiden [Bottom] (B</strong>*/U***) (RAGMAN)**</li>\n<li><strong>RCTA Snake Top [Top] (B</strong>*/U***) (RAGMAN)**</li>\n<li><strong>RCTA Snake Top [Bottom] (B</strong>*/U***) (RAGMAN)**</li>\n</ul>\n<p><strong>Support</strong></p>\n<ul>\n<li>Check out my other work on my <a target=\"_blank\" class=\"external-link\" href=\"https://www.patreon.com/TRAPPUSSY\" rel=\"noreferrer noopener\">https://www.patreon.com/TRAPPUSSY</a></li>\n<li>Donate or maybe look into commissions on my <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/trappucci\" rel=\"noreferrer noopener\">https://ko-fi.com/trappucci</a></li>\n</ul>\n<p><strong>Credits</strong></p>\n<ul>\n<li>Fortnite, Epic Games, People Can Fly</li>\n<li>GrooveypenguinX for framework</li>\n</ul>\n<p><strong>Media</strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1768/rcta-metal-gear-fortnite",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 14,
+ "published_at": "2024-10-14T17:09:00.000000Z",
+ "created_at": "2024-10-14T17:09:36.000000Z",
+ "updated_at": "2026-08-08T18:03:44.000000Z",
+ "owner": {
+  "id": 62485,
+  "name": "WUVGAWORE",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/7f1563ee210219f20aa5856121fd12fa45d24fa9_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/a865b0efca8ade9a3faaf6398f65dbc19179c351.png",
+  "created_at": "2024-08-27T13:46:08.000000Z",
+  "updated_at": "2026-10-06T01:01:22.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 2059,
+   "name": "Hj",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+   "created_at": "2021-01-11T10:39:08.000000Z",
+   "updated_at": "2026-10-05T23:38:43.000000Z"
+  }
+ ],
+ "category": {
+  "id": 14,
+  "hub_id": 77,
+  "title": "Clothing",
+  "slug": "clothing",
+  "description": ""
+ }
+}

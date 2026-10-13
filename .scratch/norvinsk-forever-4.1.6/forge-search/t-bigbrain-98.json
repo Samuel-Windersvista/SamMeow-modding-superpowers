@@ -1,0 +1,514 @@
+{
+ "term": "BigBrain",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 902,
+    "hub_id": 1219,
+    "guid": "xyz.drakia.bigbrain",
+    "name": "BigBrain",
+    "slug": "bigbrain",
+    "teaser": "A library for adding extra logic layers to existing bot brains",
+    "thumbnail": "",
+    "downloads": 1356986,
+    "favourites_count": 1199,
+    "endorsements_count": 69,
+    "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-05-31T03:20:00.000000Z",
+    "created_at": "2023-05-31T03:20:55.000000Z",
+    "updated_at": "2026-08-03T06:02:26.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:45:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 812,
+    "hub_id": 1096,
+    "guid": "me.skwizzy.lootingbots",
+    "name": "Looting Bots",
+    "slug": "looting-bots",
+    "teaser": "Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!",
+    "thumbnail": "https://files.sp-mod.com/mods/1096.png",
+    "downloads": 747672,
+    "favourites_count": 280,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/812/looting-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-03-22T04:38:00.000000Z",
+    "created_at": "2023-03-22T04:38:33.000000Z",
+    "updated_at": "2026-09-21T03:01:44.000000Z",
+    "owner": {
+     "id": 28069,
+     "name": "Skwizzy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/0c9720b3b2edc0812c51df40e1350fecd1fe8917_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-03-06T14:46:41.000000Z",
+     "updated_at": "2026-08-10T19:41:54.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 52282,
+      "name": "ArchangelWTF",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-20T14:55:34.000000Z",
+      "updated_at": "2026-10-05T14:23:46.000000Z"
+     },
+     {
+      "id": 77756,
+      "name": "ozen",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-04-23T14:40:25.000000Z",
+      "updated_at": "2026-10-05T12:18:36.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 918,
+    "hub_id": 1242,
+    "guid": "xyz.drakia.botdebug",
+    "name": "BotDebug",
+    "slug": "botdebug",
+    "teaser": "A development utility for seeing what's going on with bots",
+    "thumbnail": "https://files.sp-mod.com/mods/1242.png",
+    "downloads": 13548,
+    "favourites_count": 8,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/918/botdebug",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2023-06-11T19:14:00.000000Z",
+    "created_at": "2023-06-11T19:14:31.000000Z",
+    "updated_at": "2026-08-03T06:02:26.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:45:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 1109,
+    "hub_id": 1534,
+    "guid": "com.danw.questingbots",
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...",
+    "thumbnail": "https://files.sp-mod.com/mods/1534.jpg",
+    "downloads": 434815,
+    "favourites_count": 161,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/1109/questing-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-10-14T21:05:00.000000Z",
+    "created_at": "2023-10-14T21:05:26.000000Z",
+    "updated_at": "2026-09-19T03:57:50.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2511,
+    "hub_id": null,
+    "guid": "com.blackdiv.tacticaltoaster",
+    "name": "WTT - Black Division [REDACTED] Home",
+    "slug": "wtt-black-division-redacted-home",
+    "teaser": "[REDACTED]",
+    "thumbnail": "https://files.sp-mod.com/mods/ZFIiCkmETKFUGGbnyR522ogkJMyEpZdJylpwllq2.png",
+    "downloads": 114437,
+    "favourites_count": 490,
+    "endorsements_count": 46,
+    "detail_url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-12-26T01:46:00.000000Z",
+    "created_at": "2025-12-24T05:41:17.000000Z",
+    "updated_at": "2026-09-06T14:39:03.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2342,
+    "hub_id": null,
+    "guid": "com.untargh.tacticaltoaster",
+    "name": "UNTAR Go Home!",
+    "slug": "untar-go-home",
+    "teaser": "Yet they're still here in T*****... New UNTAR bot types patrol the region.",
+    "thumbnail": "https://files.sp-mod.com/mods/VNaKN1GqxSIjIbbS8an0ESaicQV3wCU9pQgO3uIu.png",
+    "downloads": 41272,
+    "favourites_count": 127,
+    "endorsements_count": 17,
+    "detail_url": "https://sp-mod.com/mod/2342/untar-go-home",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-10-07T21:30:00.000000Z",
+    "created_at": "2025-10-08T01:59:38.000000Z",
+    "updated_at": "2026-09-06T14:33:05.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2426,
+    "hub_id": null,
+    "guid": "com.morebotsapi.tacticaltoaster",
+    "name": "MoreBotsAPI",
+    "slug": "morebotsapi",
+    "teaser": "API for making the implementation of custom bots easier",
+    "thumbnail": "https://files.sp-mod.com/mods/6Wb2mnMw9FZ5UICdern1nYkwGy7oyIWTtAouIN97.png",
+    "downloads": 124353,
+    "favourites_count": 555,
+    "endorsements_count": 28,
+    "detail_url": "https://sp-mod.com/mod/2426/morebotsapi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-11-06T06:48:00.000000Z",
+    "created_at": "2025-11-06T06:36:01.000000Z",
+    "updated_at": "2026-09-06T14:28:03.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2427,
+    "hub_id": null,
+    "guid": "com.ruafcomehome.tacticaltoaster",
+    "name": "RUAF Come Home!",
+    "slug": "ruaf-come-home",
+    "teaser": "RUAF have finally returned to resolve the Norvinsk conflict.",
+    "thumbnail": "https://files.sp-mod.com/mods/vifowGCRSKh1792c40DqCcJsqAbyhrwSJFlLAaLU.png",
+    "downloads": 37915,
+    "favourites_count": 126,
+    "endorsements_count": 20,
+    "detail_url": "https://sp-mod.com/mod/2427/ruaf-come-home",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-11-06T01:02:00.000000Z",
+    "created_at": "2025-11-06T06:46:28.000000Z",
+    "updated_at": "2026-09-06T15:55:05.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2950,
+    "hub_id": null,
+    "guid": "com.corter.modsync",
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "teaser": "The OG ModSync mod by Corter ported to SPT4 versions",
+    "thumbnail": "https://files.sp-mod.com/mods/a9SItVDZXTrIlioc7LQiiTCiH609yCh4YiJp1fbn.png",
+    "downloads": 995,
+    "favourites_count": 14,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2950/corter-modsync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-22T09:44:00.000000Z",
+    "created_at": "2026-08-22T09:47:22.000000Z",
+    "updated_at": "2026-08-22T10:40:21.000000Z",
+    "owner": {
+     "id": 11050,
+     "name": "Dildz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/272c7e5adaac509abc6f6743e0717d4289b34dd0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-11-02T06:59:35.000000Z",
+     "updated_at": "2026-09-02T18:42:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3038,
+    "hub_id": null,
+    "guid": "com.blacksite.modmanager",
+    "name": "Blacksite Mod Manager",
+    "slug": "blacksite-mod-manager",
+    "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.",
+    "thumbnail": "https://files.sp-mod.com/mods/8Tizzrnaf31eOvwPbU0CBDYfYe6HYa6XgZDECuvF.jpg",
+    "downloads": 1306,
+    "favourites_count": 9,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/3038/blacksite-mod-manager",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-18T07:29:00.000000Z",
+    "created_at": "2026-09-18T07:23:35.000000Z",
+    "updated_at": "2026-09-22T07:40:34.000000Z",
+    "owner": {
+     "id": 55880,
+     "name": "Manpig03",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/lSatWwDKOJMz8GPYns9OdI7IDmEaQDmD7KXRFLGb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-07-07T05:39:27.000000Z",
+     "updated_at": "2026-10-04T21:43:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

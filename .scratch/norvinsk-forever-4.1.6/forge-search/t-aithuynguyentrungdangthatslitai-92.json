@@ -1,0 +1,463 @@
+{
+ "term": "AI -thuynguyentrungdang That.s.Lit - AI",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 954,
+    "hub_id": 1303,
+    "guid": "com.borkel.nvgmasks",
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "teaser": "Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customizable ingame (colors and everything).",
+    "thumbnail": "https://files.sp-mod.com/mods/1303.png",
+    "downloads": 263907,
+    "favourites_count": 351,
+    "endorsements_count": 76,
+    "detail_url": "https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2023-06-30T20:48:00.000000Z",
+    "created_at": "2023-06-30T20:48:45.000000Z",
+    "updated_at": "2026-10-03T16:45:16.000000Z",
+    "owner": {
+     "id": 28436,
+     "name": "Borkel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6aef9d279c1868359776de260a42b3f9c54499c4_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a779512b58096f6f543f05646588329fbba37f5c_1280w.webp",
+     "created_at": "2023-03-10T18:10:13.000000Z",
+     "updated_at": "2026-10-03T21:58:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 12179,
+      "name": "pein",
+      "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+      "created_at": "2021-12-14T17:06:03.000000Z",
+      "updated_at": "2026-09-20T09:07:35.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1594,
+    "hub_id": 2180,
+    "guid": "com.acidphantasm.progressivebotsystem",
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad more dangerous due to their progression. Everyone has something worth stealing or scavenging!",
+    "thumbnail": "https://files.sp-mod.com/mods/2180.png",
+    "downloads": 254151,
+    "favourites_count": 499,
+    "endorsements_count": 58,
+    "detail_url": "https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2024-07-26T20:03:00.000000Z",
+    "created_at": "2024-07-26T20:03:35.000000Z",
+    "updated_at": "2026-09-20T22:00:56.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T16:52:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 3064,
+    "hub_id": null,
+    "guid": "com.zantetsukenar3.realisticpmcnames",
+    "name": "Realistic PMC Names",
+    "slug": "realistic-pmc-names",
+    "teaser": "8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal.",
+    "thumbnail": "https://files.sp-mod.com/mods/XXCqOOobM1aV7Aej3JjfX239gsaWMCJXyx7MDKX5.png",
+    "downloads": 1537,
+    "favourites_count": 23,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3064/realistic-pmc-names",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-09-25T07:56:00.000000Z",
+    "created_at": "2026-09-25T08:09:38.000000Z",
+    "updated_at": "2026-10-04T12:14:52.000000Z",
+    "owner": {
+     "id": 122278,
+     "name": "ZantetsukenAR3",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9YJLL9SL4yjtsrceGk9YLKTLDM8QU5eDk6pbgAhw_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-08-25T14:06:43.000000Z",
+     "updated_at": "2026-10-05T15:33:40.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32555,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2945,
+    "hub_id": null,
+    "guid": "com.tcf.tcfmodmanager",
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "teaser": "Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.",
+    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
+    "downloads": 6051,
+    "favourites_count": 38,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-21T16:52:00.000000Z",
+    "created_at": "2026-08-20T20:11:12.000000Z",
+    "updated_at": "2026-10-04T09:33:37.000000Z",
+    "owner": {
+     "id": 96898,
+     "name": "the.crimson.fuckr",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/q6W4ELDHFO4coicwMm4IWNhUClQ4AB5ecquG30AK_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-12-16T08:54:31.000000Z",
+     "updated_at": "2026-10-05T16:31:56.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2101,
+    "hub_id": 2787,
+    "guid": "harmonyzt.sptleaderboard",
+    "name": "SPT Leaderboard",
+    "slug": "spt-leaderboard",
+    "teaser": "The Ultimate Leaderboard for SPT. Connect and explore along other SPT players worldwide.",
+    "thumbnail": "https://files.sp-mod.com/mods/LNced5UKQwaVDpwz42y2gfllI310mIJmE2nGH6fK.png",
+    "downloads": 6901,
+    "favourites_count": 7,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2101/spt-leaderboard",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-04-16T17:01:00.000000Z",
+    "created_at": "2025-04-16T17:01:03.000000Z",
+    "updated_at": "2026-09-22T22:17:35.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 13632,
+      "name": "RuKira",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/HGcQlS8eu0WYX2W5AATPBli1aWVGsTXQd79WE4l5_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-01-18T06:31:54.000000Z",
+      "updated_at": "2026-10-05T13:30:09.000000Z"
+     },
+     {
+      "id": 65345,
+      "name": "yuyui.moe",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/690689ea1ac9a0eaadce8c01f2abaf25147c43b1_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/WvU2OUJlNTqWgxJweWYm1CQb3DU2ajCciDfFqsEH_1280w.webp",
+      "created_at": "2024-10-12T21:27:05.000000Z",
+      "updated_at": "2026-10-01T18:57:41.000000Z"
+     },
+     {
+      "id": 80313,
+      "name": "Katrin0522",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/b74b866bad43739616963992bc7d8187ea01f5c2_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/4aeb3bda77bd76170f24227d63d761ea8871defe.jpg",
+      "created_at": "2025-06-13T13:44:23.000000Z",
+      "updated_at": "2026-09-25T07:36:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2691,
+    "hub_id": null,
+    "guid": "com.foldthatstock",
+    "name": "Fold That Stock",
+    "slug": "fold-that-stock",
+    "teaser": "FoldThatStock adds working fold behavior to non-vanilla folding stock.",
+    "thumbnail": "https://files.sp-mod.com/mods/dVUFAOTQxK6gK765H1ltCHwulSFYzi7dhEchhOPm.png",
+    "downloads": 4000,
+    "favourites_count": 51,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2691/fold-that-stock",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-05-14T16:10:00.000000Z",
+    "created_at": "2026-05-14T16:07:25.000000Z",
+    "updated_at": "2026-09-08T06:39:32.000000Z",
+    "owner": {
+     "id": 89944,
+     "name": "yung_.",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CRp3IFN3jJ7V1v3u3hLtreXShQ25u3XleMiULTL3_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-11-18T01:44:43.000000Z",
+     "updated_at": "2026-10-05T04:47:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1109,
+    "hub_id": 1534,
+    "guid": "com.danw.questingbots",
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...",
+    "thumbnail": "https://files.sp-mod.com/mods/1534.jpg",
+    "downloads": 434815,
+    "favourites_count": 161,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/1109/questing-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-10-14T21:05:00.000000Z",
+    "created_at": "2023-10-14T21:05:26.000000Z",
+    "updated_at": "2026-09-19T03:57:50.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2821,
+    "hub_id": null,
+    "guid": "com.sipto.roguesvraiders",
+    "name": "Raiders Vs Rogues",
+    "slug": "raiders-vs-rogues",
+    "teaser": "In a world of uncertainty, you can never be sure what you'll come across next. In true T***** fashion, Rogues and Raiders are now roaming the entire region. New brains",
+    "thumbnail": "https://files.sp-mod.com/mods/hCuQTC0CeInaUNUXCClzcekPFaI6nHIrYCrtSJc9.png",
+    "downloads": 5524,
+    "favourites_count": 47,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2821/raiders-vs-rogues",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-07-16T00:40:00.000000Z",
+    "created_at": "2026-07-16T01:21:26.000000Z",
+    "updated_at": "2026-08-29T18:53:06.000000Z",
+    "owner": {
+     "id": 117959,
+     "name": "Sipto",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-07-13T07:04:33.000000Z",
+     "updated_at": "2026-09-22T02:31:12.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2832,
+    "hub_id": null,
+    "guid": "com.sherrifpowpow.veilsight",
+    "name": "VEILSIGHT",
+    "slug": "veilsight",
+    "teaser": "Darkness should matter.  VeilSight makes T*****'s lighting affect how quickly enemies confirm you as a target.",
+    "thumbnail": "https://files.sp-mod.com/mods/MZeibyZhk0NldCjUrHFT10ND0NiabdOYMT3WAfds.png",
+    "downloads": 4303,
+    "favourites_count": 56,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2832/veilsight",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-07-20T01:30:00.000000Z",
+    "created_at": "2026-07-20T01:41:05.000000Z",
+    "updated_at": "2026-07-28T09:42:55.000000Z",
+    "owner": {
+     "id": 113281,
+     "name": "sheriffpowpow_",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/O2uiPTV3LdjKqamAS0VwOtm7PAHIpkgfdgsoJmj4_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-22T03:36:26.000000Z",
+     "updated_at": "2026-08-17T11:52:44.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

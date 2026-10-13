@@ -1,0 +1,91 @@
+{
+ "idx": 142,
+ "entry": "[2]新酒水-WTT - CornerStore",
+ "terms": [
+  "WTT-Corner Store",
+  "-WTT - CornerStore"
+ ],
+ "all": [
+  {
+   "term": "WTT-Corner Store",
+   "id": 2512,
+   "name": "WTT - Content Backport",
+   "slug": "wtt-content-backport",
+   "dl": 541009,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 2310,
+   "name": "WTT - CommonLib",
+   "slug": "wtt-commonlib",
+   "dl": 431802,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 1023,
+   "name": "WTT- Artem",
+   "slug": "wtt-artem",
+   "dl": 316652,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285013,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 1278,
+   "name": "WTT - Pack 'n' Strap",
+   "slug": "wtt-pack-n-strap",
+   "dl": 232978,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 1277,
+   "name": "WTT - Head and Voice Selector",
+   "slug": "wtt-head-and-voice-selector",
+   "dl": 91340,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 1519,
+   "name": "WTT - W.A.A.C. (Women's Advanced Assault Corps)",
+   "slug": "wtt-waac-womens-advanced-assault-corps",
+   "dl": 53801,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 1340,
+   "name": "WTT - The Long Lost Heads of Yojenkz",
+   "slug": "wtt-the-long-lost-heads-of-yojenkz",
+   "dl": 30374,
+   "sc": 20
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 2709,
+   "name": "Miyako Carry Service",
+   "slug": "miyako-carry-service",
+   "dl": 12854,
+   "sc": 0
+  },
+  {
+   "term": "WTT-Corner Store",
+   "id": 2950,
+   "name": "Corter-ModSync",
+   "slug": "corter-modsync",
+   "dl": 995,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

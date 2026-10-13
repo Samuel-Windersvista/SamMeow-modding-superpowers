@@ -1,0 +1,48 @@
+{
+ "id": 2264,
+ "hub_id": 2973,
+ "guid": "com.pein.battleambience",
+ "name": "Battle Ambience",
+ "slug": "battle-ambience",
+ "teaser": "Because the world is bigger than your raid.",
+ "thumbnail": "https://files.sp-mod.com/mods/2973.png",
+ "downloads": 29653,
+ "favourites_count": 105,
+ "endorsements_count": 17,
+ "description": "<h3>Introduction</h3>\n<p>This mod attempts to enhance T*****‘s atmosphere with sounds of distant warfare - sporadic gunfire, bursts from automatic weapons, artillery and vehicles in the background. These events occur dynamically during raids and try to simulate battles and events taking place beyond the playable area. The end goal is to create more immersive raids where the conflict feels larger than the player’s immediate surroundings.</p>\n<p>Like most of my projects, this mod is <strong>ever so slightly experimental.</strong> This means that things may break, behave oddly or not work as expected. If you spot any oddities - let me know!</p>\n<p>Project board can be found <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/users/peinwastaken/projects/2\" rel=\"noreferrer noopener\">HERE</a>.</p>\n<h3>Preview</h3>\n<div class=\"youtube-lite\" data-video-id=\"TOhqXTjaTKk\" data-embed-url=\"https://www.youtube-nocookie.com/embed/TOhqXTjaTKk?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=TOhqXTjaTKk\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<p>This is just a preview, which means that the events will not play as often in-game as they do here.</p>\n<h3>Installation</h3>\n<p>Drag and drop, my friend.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/wByb5Ln.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wByb5Ln.gif\" alt=\"wByb5Ln.gif\" /></a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2264/battle-ambience",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 12,
+ "published_at": "2025-08-23T19:10:00.000000Z",
+ "created_at": "2025-08-23T19:10:35.000000Z",
+ "updated_at": "2026-08-24T12:02:05.000000Z",
+ "owner": {
+  "id": 12179,
+  "name": "pein",
+  "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+  "created_at": "2021-12-14T17:06:03.000000Z",
+  "updated_at": "2026-10-06T00:48:44.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 119111,
+   "name": "Manimal1920",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+   "cover_photo_url": null,
+   "created_at": "2026-07-30T21:56:19.000000Z",
+   "updated_at": "2026-10-05T16:46:55.000000Z"
+  }
+ ],
+ "category": {
+  "id": 12,
+  "hub_id": 75,
+  "title": "Audio",
+  "slug": "audio",
+  "description": ""
+ }
+}

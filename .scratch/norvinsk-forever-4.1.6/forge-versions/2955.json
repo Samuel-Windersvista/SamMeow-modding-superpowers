@@ -1,0 +1,160 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 14984,
+   "hub_id": null,
+   "version": "3.2.0",
+   "description": "<p>SPT 4.1.3 port. All credit to the original author, <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TadMaj/Tarkov-QuickSell\" rel=\"noreferrer noopener\">TadMaj</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Right-click any stash item for <strong>QuickSell (Flea)</strong> and <strong>QuickSell (Trader)</strong></li>\n<li>Keybinds: <code>N</code> flea, <code>M</code> traders</li>\n<li><strong>Price tooltips</strong> — best trader price and flea price on hover, colour-coded by value</li>\n<li><strong>Multi-select</strong> — with UI Fixes, sell many items in one confirmation</li>\n<li>Flea prices work in raid (needs the included server mod)</li>\n</ul>\n<h2>Installation</h2>\n<p>Extract into your <strong>SPT root folder</strong> (the one containing <code>BepInEx\\</code> and <code>EscapeFromTarkov_Data\\</code>).\nClient goes to <code>BepInEx\\plugins\\QuickSell\\</code>, server to <code>SPT_Runtime\\user\\mods\\QuickSell\\</code>.</p>\n<p>The server mod is optional — without it, flea prices aren’t available in raid.</p>\n<h2>Configuration</h2>\n<p>F12 menu under QuickSell. Tier colours in <code>BepInEx\\plugins\\QuickSell\\config.json</code>.</p>\n<hr />\n<p>If you’d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/its_blackhawk\" rel=\"noreferrer noopener\">buy me a coffee</a> ☕</p>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.0",
+   "content_length": 32363,
+   "spt_version_constraint": "4.1.3",
+   "downloads": 376,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-25T16:10:00.000000Z",
+   "created_at": "2026-08-25T16:11:48.000000Z",
+   "updated_at": "2026-08-25T21:22:29.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14988,
+   "hub_id": null,
+   "version": "3.2.1",
+   "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>Selling stopped working after a raid</strong> — the mod cached the trader list, but\nthe game rebuilds its trader objects after every raid. It was holding the old\nones, so all prices came back empty and you’d get “No items can be sold to\ntraders” until restarting the game.</li>\n</ul>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/78923/fxh3d\" rel=\"noreferrer noopener\">fxh3d</a> for the report.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.1",
+   "content_length": 32674,
+   "spt_version_constraint": "4.1.3",
+   "downloads": 95,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-26T02:28:00.000000Z",
+   "created_at": "2026-08-26T02:29:03.000000Z",
+   "updated_at": "2026-08-26T02:29:06.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14991,
+   "hub_id": null,
+   "version": "3.2.2",
+   "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>Trader price sometimes missing from tooltips</strong> — the first tooltip after\ntraders loaded asked for prices before the game had finished fetching them\nfrom the server, got nothing back, and cached that empty result. It stayed\nmissing until something cleared the cache, which is why the “Refresh flea\nprices” button appeared to fix it. Incomplete results are no longer cached,\nso the next hover fills them in.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.2",
+   "content_length": 32789,
+   "spt_version_constraint": "4.1.3",
+   "downloads": 201,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-26T04:11:00.000000Z",
+   "created_at": "2026-08-26T04:11:58.000000Z",
+   "updated_at": "2026-08-26T04:12:05.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14995,
+   "hub_id": null,
+   "version": "3.2.3",
+   "description": "<h2>Fixed</h2>\n<ul>\n<li><strong>“Item not found in inventory” when listing on the flea</strong> — the confirmation\nflow ran twice once flea prices were cached, so the second pass tried to list\nitems the first had already listed. The offer went up, but you got an error.\nFixed by <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/925316\" rel=\"noreferrer noopener\">925316</a> in #1.</li>\n<li><strong>Sale could silently do nothing</strong> if a price lookup for the same item was\nalready in progress (started by a tooltip). The confirmation window never\nappeared. Callbacks now queue behind an in-flight request instead of being\ndropped.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.2.3",
+   "content_length": 33200,
+   "spt_version_constraint": "4.1.3",
+   "downloads": 774,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-26T12:26:00.000000Z",
+   "created_at": "2026-08-26T12:26:47.000000Z",
+   "updated_at": "2026-08-26T12:27:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15054,
+   "hub_id": null,
+   "version": "3.3.0",
+   "description": "<h2>New</h2>\n<ul>\n<li><strong>Sell from backpack, rig and pockets</strong> — sell loot without moving it to the stash first. On by default.</li>\n<li><strong>Sell from secure container</strong> — off by default.</li>\n</ul>\n<p>Both are in the F12 menu under Selling.</p>\n<h2>Fixed</h2>\n<ul>\n<li>The keybinds used a separate copy of the location check from the context menu, so the two could disagree. Both now use the same one.</li>\n<li>Removed the old UI Fixes dependency GUID, which was producing a warning in the log on every launch.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.3.0",
+   "content_length": 33700,
+   "spt_version_constraint": ">=4.1.3 <4.2.0",
+   "downloads": 1146,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-29T02:05:00.000000Z",
+   "created_at": "2026-08-29T02:06:12.000000Z",
+   "updated_at": "2026-09-04T22:08:13.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15168,
+   "hub_id": null,
+   "version": "3.4.0",
+   "description": "<h2>Changed</h2>\n<ul>\n<li><strong>One sell sound per batch.</strong> Selling many items at once played the confirmation\nsound for every item. It now plays once for the whole sale.</li>\n</ul>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Elmer-Glue\" rel=\"noreferrer noopener\">Elmer-Glue</a> for the fix in #2.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/3.4.0",
+   "content_length": 33915,
+   "spt_version_constraint": ">=4.1.3 <4.2.0",
+   "downloads": 2782,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-03T06:13:00.000000Z",
+   "created_at": "2026-09-03T06:13:42.000000Z",
+   "updated_at": "2026-09-04T22:07:57.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15578,
+   "hub_id": null,
+   "version": "4.0.1",
+   "description": "<h2>QuickSell v4.0.1 — changes since v3.4.0</h2>\n<ul>\n<li><strong>Trader prices include attachments.</strong> QuickSell’s trader tooltip and sale confirmation now account for attached weapon parts. Prices recalculate when attachments or stack counts change.</li>\n<li><strong>Flea prices include attachments</strong>, including nested parts, in tooltips and sale confirmations.</li>\n<li><strong>New F12 setting: Allow flea market selling.</strong> Turning it off blocks both QuickSell flea sales and listings from the normal flea page. Flea buying remains available.</li>\n<li><strong>New flea price refresh hotkey.</strong> You can assign a key in F12 to trigger the existing manual refresh.</li>\n<li><strong>New sell sound option.</strong> Choose whether the sound plays once per batch or once for each item sold.</li>\n<li>Fixed QuickSell price tooltips appearing on trader-owned items and causing console overflow errors.</li>\n</ul>\n<p><strong>Installation:</strong> Extract the ZIP into your SPT root folder.</p>\n<p>Requires <strong>SPT 4.1.3</strong>.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.0.1",
+   "content_length": 41640,
+   "spt_version_constraint": ">4.1.3",
+   "downloads": 1431,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-24T02:15:00.000000Z",
+   "created_at": "2026-09-24T02:15:25.000000Z",
+   "updated_at": "2026-09-24T02:16:06.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15745,
+   "hub_id": null,
+   "version": "4.2.0",
+   "description": "<h2>QuickSell v4.2.0</h2>\n<ul>\n<li>Optimized price tooltips to eliminate lag and stutter.</li>\n<li>Improved performance for backpacks, containers and nested items.</li>\n<li>Improved price cache updates when moving items.</li>\n<li>Added extra stability fixes.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.2.0",
+   "content_length": 48175,
+   "spt_version_constraint": ">=4.1.5",
+   "downloads": 665,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-02T22:00:00.000000Z",
+   "created_at": "2026-10-02T22:02:36.000000Z",
+   "updated_at": "2026-10-02T22:03:05.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2955/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2955/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2955/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2955/versions",
+  "per_page": 50,
+  "to": 8,
+  "total": 8
+ }
+}

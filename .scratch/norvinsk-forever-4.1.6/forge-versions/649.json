@@ -1,0 +1,145 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 6016,
+   "hub_id": 7667,
+   "version": "1.4.2",
+   "description": "<p>Updated package</p>\n<p>SPT-AKI 3.7.x</p>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/1.4.2",
+   "content_length": null,
+   "spt_version_constraint": "~3.7.0",
+   "downloads": 2960,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-10-10T14:00:16.000000Z",
+   "created_at": "2023-10-10T14:00:16.000000Z",
+   "updated_at": "2023-10-10T14:00:16.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 5504,
+   "hub_id": 8332,
+   "version": "1.4.3",
+   "description": "<p>Added support for side specific quests.</p>\n<p>Quests can have the “side” value set to either “Pmc”, “Bear” or “Usec”.</p>\n<p>EDIT: THIS FEATURE WILL CHANGE FOR 3.8.0, SEE MAIN PAGE.</p>\n<p>SPT-AKI 3.7.x</p>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/1.4.3",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 14993,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-11-22T09:49:16.000000Z",
+   "created_at": "2023-11-22T09:49:16.000000Z",
+   "updated_at": "2023-11-22T09:49:16.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4939,
+   "hub_id": 9052,
+   "version": "2.0.0",
+   "description": "<p><strong>SPT-AKI 3.8.0</strong></p>\n<p><strong>Additions</strong></p>\n<ul>\n<li>The biggest one - VCQL now includes a client mod. This is for custom zones, with an included GUI tool for zone creation. Mod authors can now create / visualize custom zones for quests like ‘place item’, ‘exploration’, ‘kill in area’, ‘launch flare’ etc.</li>\n<li>Added zone importing.</li>\n<li>Added assort importing.</li>\n<li>Added trader image importing.</li>\n<li>Added quest date ranges (Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/45087-shibdib/?highlight=shibdib\" rel=\"noreferrer noopener\">shibdib</a> for the pr).</li>\n<li>Added Korean locale support.</li>\n<li>Added a config option to allow all quests, even with a sideExclusive property, to be available to the user.</li>\n</ul>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Changed the side exclusive property away from ‘side’ to ‘sideExclusive’ as it was causing issues with outdated versions.</li>\n</ul>\n<p><strong>Massive thanks to the SPT community for helping with this update and a special thanks to the following people in particular:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/37201-dirtbikercj\" rel=\"noreferrer noopener\">CJ</a> - Supplying the client zone loading code, updated from Boop’s API (Boop goated).</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/12589-boop\" rel=\"noreferrer noopener\">Boop</a> - Original author of the Quest Zones API.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/34125-grooveypenguinx/\" rel=\"noreferrer noopener\">Groovey</a> - Submitting a PR with the flare zone loading code.</li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/34222-timberoo/\" rel=\"noreferrer noopener\">Timber</a> - Helping with materials / transparency / collision of unity objects for the tool.</li>\n<li><strong>And a special thanks to the mod authors who use VCQL and give me feedback!</strong></li>\n</ul>\n<p><em>For a more in-depth view of the update, view the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/VirtualAE/Virtuals-Custom-Quest-Loader\" rel=\"noreferrer noopener\">repository</a> where I have more documentation.</em></p>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/2.0.0",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 24992,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-01T23:53:46.000000Z",
+   "created_at": "2024-04-01T23:53:46.000000Z",
+   "updated_at": "2026-07-13T18:06:02.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4333,
+   "hub_id": 9763,
+   "version": "2.0.1",
+   "description": "<p><strong>SPT-AKI 3.8.1, 3.8.2, 3.8.3</strong></p>\n<p><strong>Additions</strong></p>\n<ul>\n<li>Added a new option to the GUI Zone creation tool - Any Zones added by the loader can now be loaded back into the creation tool. This should assist modders with altering, fixing or viewing their already existing zones.</li>\n</ul>\n<p><em>(If you downloaded this and it had issues extracting, it’s because it was compressed with 7zip and the windows extraction tool doesn’t like it. I have fixed the download zip to counter this)</em></p>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/2.0.1",
+   "content_length": null,
+   "spt_version_constraint": "3.8.3",
+   "downloads": 34857,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-05-05T09:43:02.000000Z",
+   "created_at": "2024-05-05T09:43:02.000000Z",
+   "updated_at": "2026-07-13T18:05:30.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3731,
+   "hub_id": 10523,
+   "version": "2.0.2",
+   "description": "<p><strong>SPT 3.9.x</strong></p>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Changed the way rotations are stored. They are now actually used when zones are created. Any zone with existing rotation values will need to be added back into the GUI editor and redone.</li>\n<li>Updated to 3.9.x</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/2.0.2",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 85764,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-07T02:25:13.000000Z",
+   "created_at": "2024-07-07T02:25:13.000000Z",
+   "updated_at": "2026-07-13T18:04:36.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2260,
+   "hub_id": 12359,
+   "version": "2.0.3",
+   "description": "<p><strong>SPT 3.10</strong></p>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Updated to 3.10</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/2.0.3",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 76241,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-28T05:00:22.000000Z",
+   "created_at": "2024-11-28T05:00:22.000000Z",
+   "updated_at": "2026-07-13T18:02:56.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1169,
+   "hub_id": 13607,
+   "version": "2.0.4",
+   "description": "<p><strong>SPT 3.11</strong></p>\n<p><strong>Changes</strong></p>\n<ul>\n<li>Updated to 3.11</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/649/virtuals-custom-quest-loader/2.0.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 132425,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-16T09:39:52.000000Z",
+   "created_at": "2025-03-16T09:39:52.000000Z",
+   "updated_at": "2026-05-14T02:06:19.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/649/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/649/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/649/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/649/versions",
+  "per_page": 50,
+  "to": 7,
+  "total": 7
+ }
+}

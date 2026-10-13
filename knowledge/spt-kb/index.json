@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-10-13",
  "schema_version": 2,
  "entries": [
   {
@@ -2714,6 +2714,16 @@
     "ITBS"
    ],
    "summary": "ITBS（Inescapable Tarkov's Bot System）服务端三段实战沉淀（P0 基座 / spec-2 服务端平面 / Progression E+ 票 01–18）：GenerateInventory 分段覆写与 ClearBotContainerCacheAfterGeneration 缓存语义（Postfix 材料化头号陷阱）；Item.Upd 生成路径与裸插后果；耐久读取域（Default/Pmc/BotDurabilities）与 GetDurabilityRole 透传；弹匣/转轮/装填方法族与 ReloadMode 映射；items.json 命名陷阱（armorClass 假判据、甲片槽清单、mod_equipment 语义）；QuestStatus.QId 十六进制死链与名称解析；ExtensionData 双写与单源读取；1e400→+∞ 与 int? 缺字段；服务端 Harmony（protected 解析、__state、fail-closed/fail-soft 分层、委派保真）；Preload vs PostLoad 配置写入窗口；多 mod 拓扑与零依赖契约；确定性数据管线（SHA 三方守卫、解锁式 tier、价格带）；日志接缝（UTC 文件名、overwrite 树、最新文件判据）与审查/提交纪律"
+  },
+  {
+   "path": "curated/operations/usvfs-long-path-silent-missing.md",
+   "title": "USVFS 物理路径 >260 字符导致 overlay 文件静默缺失（2026-10-13 实证）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "curated"
   }
  ],
  "tarkov_dev": {

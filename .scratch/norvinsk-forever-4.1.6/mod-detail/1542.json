@@ -1,0 +1,33 @@
+{
+ "id": 1542,
+ "hub_id": 2112,
+ "guid": "com.tyfon.debugtooltip",
+ "name": "Debug Tooltip",
+ "slug": "debug-tooltip",
+ "teaser": "Adds debug information to tooltips for mod developers",
+ "thumbnail": "https://files.sp-mod.com/mods/2112.png",
+ "downloads": 3932,
+ "favourites_count": 10,
+ "endorsements_count": 3,
+ "description": "<h3>Features</h3>\n<ul>\n<li>Adds item and item address information to tooltips</li>\n<li>Adds tooltips to trader icons and to quest rows that show those object’s IDs</li>\n<li>Adds tooltip to <em>empty</em> slots to show slot ID</li>\n<li>Copy to clipboard:\n<ul>\n<li>Ctrl-C: Copy the ID of the item/trader/quest under the cursor</li>\n<li>Ctrl-Alt-C: Copy the template ID (tpl) of items, or parent ID of empty slots</li>\n<li>Ctrl-Shift-C: Copy the whole debug tooltip</li>\n</ul>\n</li>\n<li>Debug info and additional tooltips are enabled/disabled through the F12 menu or by pressing F9 (configurable)</li>\n</ul>\n<h3>Installation</h3>\n<ul>\n<li>You’ll figure it out, I’m sure.</li>\n</ul>\n<h3>Some previews</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3yDpYah.png\" alt=\"3yDpYah.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/xNvZN2z.png\" alt=\"xNvZN2z.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/0nHihB8.png\" alt=\"0nHihB8.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/wpAwNa8.png\" alt=\"wpAwNa8.png\" /></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/E95GAHg.png\" alt=\"E95GAHg.png\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1542/debug-tooltip",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": null,
+ "published_at": "2024-07-10T04:26:59.000000Z",
+ "created_at": "2024-07-10T04:26:59.000000Z",
+ "updated_at": "2026-08-12T22:44:03.000000Z",
+ "owner": {
+  "id": 46005,
+  "name": "Tyfon",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-02-27T23:21:18.000000Z",
+  "updated_at": "2026-09-30T00:12:22.000000Z"
+ },
+ "additional_authors": [],
+ "category": null
+}

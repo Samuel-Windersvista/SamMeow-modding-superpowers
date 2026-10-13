@@ -1,0 +1,39 @@
+{
+ "id": 827,
+ "hub_id": 1119,
+ "guid": "xyz.drakia.waypoints",
+ "name": "Waypoints - Expanded Navmesh",
+ "slug": "waypoints-expanded-navmesh",
+ "teaser": "Expand where bots can explore with full map navmesh coverage!",
+ "thumbnail": "https://files.sp-mod.com/mods/1119.png",
+ "downloads": 1330003,
+ "favourites_count": 1111,
+ "endorsements_count": 65,
+ "description": "<p>Expand the area that bots can roam using Waypoints!</p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folder in the zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folder from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3>Features</h3>\n<ul>\n<li>Full map navmesh coverage. Mods can now be created that allow bots to explore more areas of the map than ever before</li>\n<li>Dynamic door blockers. Tired of bots getting stuck on locked doors, or “fake” doors? No more, now they’re all blocked off to bots!</li>\n</ul>\n<h3>Recommended Mods</h3>\n<p>I have had to remove the list of recommended mods, as some users appear to be unable to validate that mods are compatible with their version of SPT before installing them, and I can’t be bothered constantly updating this list as mods update.</p>\n<h3>Compatibility</h3>\n<p>This mod should be compatible with other bot-adjusting mods.</p>\n<p>If your T***** stops loading after installing Waypoints, no it is not Waypoints breaking your install, you have installed another out of date mod that depends on Waypoints, and installing Waypoints has caused that mod to actually load and break things.</p>\n<h3>Limitations</h3>\n<p>I’ve created custom navmeshes for every map, so bots are now capable of getting almost anywhere that a player can walk to. Bots however are not capable of complex actions such as jumping, or crouching, so there are still some areas of maps that bots won’t be able to traverse.</p>\n<p>The newest iteration of the navmesh is based around the same settings B** has used for creating their meshes, but expanded to the full map. This does limit bot navigation in certain areas, but ensures there is less likely to be issues created by trying to force bots into places they can’t actually navigate.</p>\n<h3>Special Thanks</h3>\n<p>I want to give special thanks to Solarint for his assistance in making the collection of waypoints provided with the original version of the plugin, as well as being a sounding board for ideas and issues encountered during development. And for his work on SAIN to make Waypoints even better!</p>\n<p>Thank you to TINYTEETH for testing the mod before release, and making sure I didn’t destroy the world by accident! And for all the feedback on the custom nav meshes so I could make sure they were ready for release.</p>\n<p>Thanks to Skwizzy for making Looting Bots, which makes great use of the custom nav meshes, and has resulted in many jump scares due to bots being nowhere near where bots generally wander.</p>\n<p>Thanks to DanW for making Questing Bots, the added behaviour for bots due to that mod are amazing, and you will almost always encounter bots while running around doing your quests.</p>\n<p>A huge shoutout to the SPT Discord’s #mods-development channel as well, for their help in testing out the mod during development, and generally being an amazing resource for getting this mod developed.</p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n<p><strong>NOTE: Any requests for assistance MUST be accompanied by the “BepInEx/LogOutput.log” file. Any support request without this file provided will be met with a request for this file, then ignored. Log content can be uploaded to: <a target=\"_blank\" class=\"external-link\" href=\"https://pastebin.com/\" rel=\"noreferrer noopener\">https://pastebin.com/</a></strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-04-03T04:38:00.000000Z",
+ "created_at": "2023-04-03T04:38:28.000000Z",
+ "updated_at": "2026-08-03T06:02:27.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

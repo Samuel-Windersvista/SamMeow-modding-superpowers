@@ -80,14 +80,34 @@ function sanitize(name) {
     .slice(0, 80);
 }
 
-// GitHub 网页 URL → 可 clone 的仓库 + 分支/标签
+// GitHub / Codeberg 网页 URL → 可 clone 的仓库 + 分支/标签
 function normalize(url) {
-  const m = url.match(
+  // 1) GitHub tree/<ref> 或 releases/tag/<ref>（带 ref，既有行为）
+  const ghRef = url.match(
     /^https:\/\/github\.com\/([^/]+)\/([^/]+)\/(?:tree|releases\/tag)\/(.+)$/,
   );
-  if (!m) return { cloneUrl: url, branch: null };
-  const [, owner, repo, ref] = m;
-  return { cloneUrl: `https://github.com/${owner}/${repo.replace(/\.git$/, "")}`, branch: ref };
+  if (ghRef) {
+    const [, owner, repo, ref] = ghRef;
+    return { cloneUrl: `https://github.com/${owner}/${repo.replace(/\.git$/, "")}`, branch: ref };
+  }
+  // 2) Codeberg src/branch/<ref> 或 src/tag/<ref>（带 ref）
+  const cbRef = url.match(
+    /^https:\/\/codeberg\.org\/([^/]+)\/([^/]+)\/src\/(?:branch|tag)\/(.+)$/,
+  );
+  if (cbRef) {
+    const [, owner, repo, ref] = cbRef;
+    return { cloneUrl: `https://codeberg.org/${owner}/${repo.replace(/\.git$/, "")}`, branch: ref };
+  }
+  // 3) GitHub 裸 releases / upload 页（无 ref）→ 克隆默认分支
+  const ghBare = url.match(
+    /^https:\/\/github\.com\/([^/]+)\/([^/]+)\/(?:releases|upload)\/?$/,
+  );
+  if (ghBare) {
+    const [, owner, repo] = ghBare;
+    return { cloneUrl: `https://github.com/${owner}/${repo.replace(/\.git$/, "")}`, branch: null };
+  }
+  // 兜底：原样返回
+  return { cloneUrl: url, branch: null };
 }
 
 // 按 URL 去重（跨 mod 复用同一仓库时只克隆一次）

@@ -1,0 +1,580 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 12280,
+   "hub_id": null,
+   "version": "2.3.3",
+   "description": "<ul>\n<li>Fixed the mod breaking after the first raid</li>\n<li>Empty/disabled buttons are no longer highlighted when hovering the mouse over them in the Fire Support call-in UI</li>\n<li>Fixed errors when clicking on empty/disabled buttons in the Fire Support call-in UI</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.3.3",
+   "content_length": 23238568,
+   "spt_version_constraint": "~4.0.3",
+   "downloads": 297,
+   "fika_compatibility": "incompatible",
+   "published_at": "2025-11-11T14:20:00.000000Z",
+   "created_at": "2025-11-11T14:20:10.000000Z",
+   "updated_at": "2026-07-28T06:20:49.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      },
+      {
+       "id": 11979,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h1>WARNING</h1>\n<p>There is an issue with this release which causes the game to fail to load into the main menu with certain mods installed.</p>\n<p><strong>Please remove the “FixPluginTypeSerialization” folder inside the “BepInEx/patchers” folder!</strong></p>\n<p>After discussion with Tarkin, this patcher will be removed in the next update of UnityToolkit and he will provide a fixed version of that patcher in his upcoming mod.</p>\n<h2>In this release</h2>\n<ul>\n<li>Removed all APIs and extension methods\n<ul>\n<li>They were not up to par and were probably only used by myself</li>\n</ul>\n</li>\n<li>Added VContainer\n<ul>\n<li>A fast dependency injection container designed for Unity, so it also works on injecting into Unity Objects</li>\n</ul>\n</li>\n<li>Added ZLinq\n<ul>\n<li>Adds high performance, zero-allocation LINQ by using <code>ValueEnumerable</code></li>\n</ul>\n</li>\n<li>Added FixPluginTypesSerialization\n<ul>\n<li>Fixes a bug that affects all Unity Engine versions where references to custom <code>[System.Serializable]</code> classes/structs would not be deserialized correctly in Unity Objects added by client mods</li>\n<li>Thanks to Tarkin for finding this fix</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.0",
+       "content_length": 532468,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 527,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-10-22T18:53:00.000000Z",
+       "created_at": "2025-10-22T18:54:03.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 12286,
+   "hub_id": null,
+   "version": "2.3.4",
+   "description": "<ul>\n<li>Completely fixed the mod breaking after the first raid (I really made sure this time!!! &gt;:c )</li>\n<li>Halved the number of fragments spawned per bullet from 15 to 8\n<ul>\n<li>Should perform better on lower end PCs and if you’re using HollywoodFX</li>\n</ul>\n</li>\n</ul>\n<p>I’m sorry for the inconvenience!</p>\n<p>Will be the last update for some time while I work on other projects</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.3.4",
+   "content_length": 23238729,
+   "spt_version_constraint": "~4.0.3",
+   "downloads": 16789,
+   "fika_compatibility": "incompatible",
+   "published_at": "2025-11-11T21:31:00.000000Z",
+   "created_at": "2025-11-11T21:31:31.000000Z",
+   "updated_at": "2026-07-28T06:21:01.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      },
+      {
+       "id": 11979,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h1>WARNING</h1>\n<p>There is an issue with this release which causes the game to fail to load into the main menu with certain mods installed.</p>\n<p><strong>Please remove the “FixPluginTypeSerialization” folder inside the “BepInEx/patchers” folder!</strong></p>\n<p>After discussion with Tarkin, this patcher will be removed in the next update of UnityToolkit and he will provide a fixed version of that patcher in his upcoming mod.</p>\n<h2>In this release</h2>\n<ul>\n<li>Removed all APIs and extension methods\n<ul>\n<li>They were not up to par and were probably only used by myself</li>\n</ul>\n</li>\n<li>Added VContainer\n<ul>\n<li>A fast dependency injection container designed for Unity, so it also works on injecting into Unity Objects</li>\n</ul>\n</li>\n<li>Added ZLinq\n<ul>\n<li>Adds high performance, zero-allocation LINQ by using <code>ValueEnumerable</code></li>\n</ul>\n</li>\n<li>Added FixPluginTypesSerialization\n<ul>\n<li>Fixes a bug that affects all Unity Engine versions where references to custom <code>[System.Serializable]</code> classes/structs would not be deserialized correctly in Unity Objects added by client mods</li>\n<li>Thanks to Tarkin for finding this fix</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.0",
+       "content_length": 532468,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 527,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-10-22T18:53:00.000000Z",
+       "created_at": "2025-10-22T18:54:03.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 5427,
+   "hub_id": 8431,
+   "version": "2.2.1",
+   "description": "<p>Fixes the mod breaking after the first raid you run, hopefully for real this time lol</p>\n<p>If you downloaded 2.2.0, please update to this version otherwise you will experience the problem mentioned.</p>\n<p>This has been tested on 3.7.4, but should still work on 3.7.1+</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.2.1",
+   "content_length": null,
+   "spt_version_constraint": "3.7.4",
+   "downloads": 718,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-12-07T05:07:44.000000Z",
+   "created_at": "2023-12-07T05:07:44.000000Z",
+   "updated_at": "2026-07-13T18:06:15.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 5418,
+   "hub_id": 8440,
+   "version": "2.2.2",
+   "description": "<ul>\n<li><strong>Improvement:</strong> if you have selected a support request but have not confirmed it with LMB, either pressing ALT + RMB, or switching from the rangefinder to another weapon or item will cancel the support request</li>\n<li>Bugfix: Fixed missing Black Hawk helicopter rotors (the old ones went for some cigarettes and never came back )</li>\n<li>Bugfix: Fixed the direction that the A-10 approaches in; it now actually follows the path shown with the marker</li>\n<li>Bugfix: Fixed an audio bug with the A-10 strafe on its first use in every raid, where its engine sound was loud and immediately played after confirming the strafe request</li>\n<li>Bugfix: Resolved a NullObjectReference exception when extracting with the Black Hawk helicopter</li>\n<li>Misc: Some code refactors/improvements</li>\n</ul>\n<p>I highly recommend updating to this version as the fixes will improve your immersion and has a nice new improvement</p>\n<p>Tested on 3.7.4, should work on 3.7.1+</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.2.2",
+   "content_length": null,
+   "spt_version_constraint": "3.7.4",
+   "downloads": 667,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-12-08T04:56:17.000000Z",
+   "created_at": "2023-12-08T04:56:17.000000Z",
+   "updated_at": "2026-07-13T18:06:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 5412,
+   "hub_id": 8447,
+   "version": "2.2.2+hotfix",
+   "description": "<p>Bugfix: Fixed A-10 audio desync</p>\n<p>Tested on 3.7.4, should work for 3.7.1+</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.2.2+hotfix",
+   "content_length": null,
+   "spt_version_constraint": "3.7.4",
+   "downloads": 6240,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-12-08T22:58:59.000000Z",
+   "created_at": "2023-12-08T22:58:59.000000Z",
+   "updated_at": "2026-07-13T18:06:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4944,
+   "hub_id": 9045,
+   "version": "2.2.3",
+   "description": "<p>Updated for SPT-AKI 3.8.0</p>\n<p>Apache and other features will be coming in a future update.</p>\n<p>When? When it’s ready.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.2.3",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 1237,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-01T23:06:47.000000Z",
+   "created_at": "2024-04-01T23:06:47.000000Z",
+   "updated_at": "2026-07-13T18:06:02.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3418,
+   "hub_id": 10906,
+   "version": "2.2.4",
+   "description": "<p>Updated for SPT 3.9.x</p>\n<p>Currently broken, please wait for an update</p>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.2.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 15812,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-17T21:34:48.000000Z",
+   "created_at": "2024-07-17T21:34:48.000000Z",
+   "updated_at": "2026-07-13T18:04:19.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 12232,
+   "hub_id": null,
+   "version": "2.3.0",
+   "description": "<ul>\n<li>Updated for SPT 4.0.3+</li>\n<li>Tweaked GAU8 ammo stats</li>\n<li>Code improvements and refactoring</li>\n<li>Migrated custom item loading logic to a server mod\n<ul>\n<li>This will make development for Fika support easier</li>\n</ul>\n</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.3.0",
+   "content_length": 23235982,
+   "spt_version_constraint": "~4.0.3",
+   "downloads": 647,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-11-08T14:31:00.000000Z",
+   "created_at": "2025-11-08T14:32:18.000000Z",
+   "updated_at": "2026-07-28T06:18:07.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      },
+      {
+       "id": 11979,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h1>WARNING</h1>\n<p>There is an issue with this release which causes the game to fail to load into the main menu with certain mods installed.</p>\n<p><strong>Please remove the “FixPluginTypeSerialization” folder inside the “BepInEx/patchers” folder!</strong></p>\n<p>After discussion with Tarkin, this patcher will be removed in the next update of UnityToolkit and he will provide a fixed version of that patcher in his upcoming mod.</p>\n<h2>In this release</h2>\n<ul>\n<li>Removed all APIs and extension methods\n<ul>\n<li>They were not up to par and were probably only used by myself</li>\n</ul>\n</li>\n<li>Added VContainer\n<ul>\n<li>A fast dependency injection container designed for Unity, so it also works on injecting into Unity Objects</li>\n</ul>\n</li>\n<li>Added ZLinq\n<ul>\n<li>Adds high performance, zero-allocation LINQ by using <code>ValueEnumerable</code></li>\n</ul>\n</li>\n<li>Added FixPluginTypesSerialization\n<ul>\n<li>Fixes a bug that affects all Unity Engine versions where references to custom <code>[System.Serializable]</code> classes/structs would not be deserialized correctly in Unity Objects added by client mods</li>\n<li>Thanks to Tarkin for finding this fix</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.0",
+       "content_length": 532468,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 527,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-10-22T18:53:00.000000Z",
+       "created_at": "2025-10-22T18:54:03.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 12250,
+   "hub_id": null,
+   "version": "2.3.1",
+   "description": "<ul>\n<li>Added the A-10’s weapon and ammo to all blacklists so it shouldn’t be lootable or sold via Fence or Flea</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.3.1",
+   "content_length": 23237130,
+   "spt_version_constraint": "~4.0.3",
+   "downloads": 288,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-11-09T10:47:00.000000Z",
+   "created_at": "2025-11-09T10:45:18.000000Z",
+   "updated_at": "2026-07-28T06:19:20.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      },
+      {
+       "id": 11979,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h1>WARNING</h1>\n<p>There is an issue with this release which causes the game to fail to load into the main menu with certain mods installed.</p>\n<p><strong>Please remove the “FixPluginTypeSerialization” folder inside the “BepInEx/patchers” folder!</strong></p>\n<p>After discussion with Tarkin, this patcher will be removed in the next update of UnityToolkit and he will provide a fixed version of that patcher in his upcoming mod.</p>\n<h2>In this release</h2>\n<ul>\n<li>Removed all APIs and extension methods\n<ul>\n<li>They were not up to par and were probably only used by myself</li>\n</ul>\n</li>\n<li>Added VContainer\n<ul>\n<li>A fast dependency injection container designed for Unity, so it also works on injecting into Unity Objects</li>\n</ul>\n</li>\n<li>Added ZLinq\n<ul>\n<li>Adds high performance, zero-allocation LINQ by using <code>ValueEnumerable</code></li>\n</ul>\n</li>\n<li>Added FixPluginTypesSerialization\n<ul>\n<li>Fixes a bug that affects all Unity Engine versions where references to custom <code>[System.Serializable]</code> classes/structs would not be deserialized correctly in Unity Objects added by client mods</li>\n<li>Thanks to Tarkin for finding this fix</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.0",
+       "content_length": 532468,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 527,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-10-22T18:53:00.000000Z",
+       "created_at": "2025-10-22T18:54:03.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 12255,
+   "hub_id": null,
+   "version": "2.3.2",
+   "description": "<ul>\n<li>Fixed Fire Support’s UI breaking (has white boxes) after dying/leaving raid and entering another raid</li>\n<li>Fixed being able to call in a different support when one is already on cooldown</li>\n<li>Fixed server error during generating flea offers when some other mods are installed (like Andern)</li>\n<li>Removed an invalid property in a custom item</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1180/samswats-fire-support-arys-reloaded/2.3.2",
+   "content_length": 23238002,
+   "spt_version_constraint": "~4.0.3",
+   "downloads": 639,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-11-09T16:50:00.000000Z",
+   "created_at": "2025-11-09T16:50:19.000000Z",
+   "updated_at": "2026-07-28T06:20:09.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      },
+      {
+       "id": 11979,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h1>WARNING</h1>\n<p>There is an issue with this release which causes the game to fail to load into the main menu with certain mods installed.</p>\n<p><strong>Please remove the “FixPluginTypeSerialization” folder inside the “BepInEx/patchers” folder!</strong></p>\n<p>After discussion with Tarkin, this patcher will be removed in the next update of UnityToolkit and he will provide a fixed version of that patcher in his upcoming mod.</p>\n<h2>In this release</h2>\n<ul>\n<li>Removed all APIs and extension methods\n<ul>\n<li>They were not up to par and were probably only used by myself</li>\n</ul>\n</li>\n<li>Added VContainer\n<ul>\n<li>A fast dependency injection container designed for Unity, so it also works on injecting into Unity Objects</li>\n</ul>\n</li>\n<li>Added ZLinq\n<ul>\n<li>Adds high performance, zero-allocation LINQ by using <code>ValueEnumerable</code></li>\n</ul>\n</li>\n<li>Added FixPluginTypesSerialization\n<ul>\n<li>Fixes a bug that affects all Unity Engine versions where references to custom <code>[System.Serializable]</code> classes/structs would not be deserialized correctly in Unity Objects added by client mods</li>\n<li>Thanks to Tarkin for finding this fix</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.0",
+       "content_length": 532468,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 527,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-10-22T18:53:00.000000Z",
+       "created_at": "2025-10-22T18:54:03.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1180/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1180/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1180/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1180/versions",
+  "per_page": 50,
+  "to": 10,
+  "total": 10
+ }
+}

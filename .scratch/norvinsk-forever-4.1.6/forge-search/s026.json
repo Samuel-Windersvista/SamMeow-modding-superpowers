@@ -1,0 +1,474 @@
+{
+ "entry": "[10]物品真实堆叠-True Items Redux",
+ "term": "True Items Redone",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2898,
+    "hub_id": null,
+    "guid": "eu.thescrewcollab.firmeansfir",
+    "name": "FIR Means FIR",
+    "slug": "fir-means-fir",
+    "teaser": "TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR",
+    "thumbnail": "https://files.sp-mod.com/mods/hmVn7DqjNxBveQwDPGcnapO70LzoVvOIu04YPaci.jpg",
+    "downloads": 3888,
+    "favourites_count": 50,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2898/fir-means-fir",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-08-12T08:00:00.000000Z",
+    "created_at": "2026-08-12T08:14:15.000000Z",
+    "updated_at": "2026-08-15T20:30:07.000000Z",
+    "owner": {
+     "id": 34185,
+     "name": "ScrewTSW",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-07-19T08:23:15.000000Z",
+     "updated_at": "2026-10-04T11:55:27.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2239,
+    "hub_id": 2943,
+    "guid": "com.turbodestroyer.couturier",
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "teaser": "Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing",
+    "thumbnail": "https://files.sp-mod.com/mods/eEfD1LSVG1ZleGGq90e91iDfCzxt8Kezg6YV28MY.jpg",
+    "downloads": 49085,
+    "favourites_count": 99,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2239/couturier-gear-and-clothing-pack",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2025-08-01T13:36:00.000000Z",
+    "created_at": "2025-08-01T13:36:51.000000Z",
+    "updated_at": "2026-08-19T04:13:18.000000Z",
+    "owner": {
+     "id": 71742,
+     "name": "turbodestroyer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/178242a5fa7130736a3b618c0581e9f6d2808e73_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/VilS13qPoHZRuiZKVAlakr4UW85QLoTVG2clvolt_1280w.webp",
+     "created_at": "2025-01-18T07:02:26.000000Z",
+     "updated_at": "2026-10-05T13:29:20.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 77629,
+      "name": "Kojimbo0_0",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/Di4ztJQCSua2zbytC8CE7ycXTeCGCapGfPFSAhXa_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/ZBpdduK9iP9vypwCDkR7E1CDjTFBgRAg3gomJrug_2560w.webp",
+      "created_at": "2025-04-22T10:25:27.000000Z",
+      "updated_at": "2026-10-05T16:48:05.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1278,
+    "hub_id": 1790,
+    "guid": "com.wtt.packnstrap",
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "teaser": "Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, for all your early-game adventures.",
+    "thumbnail": "https://files.sp-mod.com/mods/1790.png",
+    "downloads": 232971,
+    "favourites_count": 304,
+    "endorsements_count": 35,
+    "detail_url": "https://sp-mod.com/mod/1278/wtt-pack-n-strap",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2024-04-05T03:35:00.000000Z",
+    "created_at": "2024-04-05T03:35:19.000000Z",
+    "updated_at": "2026-09-07T18:48:06.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2394,
+    "hub_id": null,
+    "guid": "com.ozen.instantinsurance",
+    "name": "Instant Insurance",
+    "slug": "instant-insurance",
+    "teaser": "Keep your insured items equipped after death!",
+    "thumbnail": "https://files.sp-mod.com/mods/R9be2kXENr7Znt6JtoEaWNzJAQvrIfpQxucNy9uP.png",
+    "downloads": 36533,
+    "favourites_count": 88,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/2394/instant-insurance",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2025-10-22T16:09:00.000000Z",
+    "created_at": "2025-10-22T15:22:17.000000Z",
+    "updated_at": "2026-09-20T03:04:00.000000Z",
+    "owner": {
+     "id": 77756,
+     "name": "ozen",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-04-23T14:40:25.000000Z",
+     "updated_at": "2026-10-05T12:18:36.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 143,
+      "name": "JustNU",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/D5tNSm3yCNbPfd5BMVNPidrAQz50gKCjc7jE9qiU_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/1d1cb2b8cd2eff5cb4cf47bbe5d919c16736cfd5.png",
+      "created_at": "2020-08-07T00:23:14.000000Z",
+      "updated_at": "2026-10-05T07:09:39.000000Z"
+     },
+     {
+      "id": 41131,
+      "name": "Mattdokn",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/89604c57f05fe3a50ae9cee0fb450fe70fa1a8c1_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/1adc5c0f9967a60f96e9eab432644a0329932c81_1280w.webp",
+      "created_at": "2023-11-25T01:52:38.000000Z",
+      "updated_at": "2026-09-03T23:39:28.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1362,
+    "hub_id": 1885,
+    "guid": "com.acidphantasm.repeatablequestconfig",
+    "name": "Repeatable Quest Config",
+    "slug": "repeatable-quest-config",
+    "teaser": "Disable certain types of Repeatable Quests and/or set multipliers for XP/Money/Rep/Skill gain rewards from Repeatable Quests. Allows instantly receiving new repeatables! Do all things repeatable!",
+    "thumbnail": "https://files.sp-mod.com/mods/1885.png",
+    "downloads": 8992,
+    "favourites_count": 13,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/1362/repeatable-quest-config",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-04-27T06:16:00.000000Z",
+    "created_at": "2024-04-27T06:16:44.000000Z",
+    "updated_at": "2026-08-10T07:31:04.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1623,
+    "hub_id": 2216,
+    "guid": "com.randek.bronzemanmode",
+    "name": "Bronzemanmode by KcY   >3.9 port",
+    "slug": "bronzemanmode-by-kcy-39-port",
+    "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable.",
+    "thumbnail": "https://files.sp-mod.com/mods/2216.jpg",
+    "downloads": 3608,
+    "favourites_count": 1,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1623/bronzemanmode-by-kcy-39-port",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2024-08-04T21:37:00.000000Z",
+    "created_at": "2024-08-04T21:37:10.000000Z",
+    "updated_at": "2026-08-21T20:15:05.000000Z",
+    "owner": {
+     "id": 38503,
+     "name": "Randek",
+     "profile_photo_url": "https://sp-mod.com/avatars/R.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-10-11T19:34:01.000000Z",
+     "updated_at": "2026-09-24T18:13:33.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2637,
+    "hub_id": null,
+    "guid": "com.rz.essentials",
+    "name": "RZEssentials",
+    "slug": "rzessentials",
+    "teaser": "Your server, your rules. Every system optional, every detail configurable.",
+    "thumbnail": "https://files.sp-mod.com/mods/dqRygmH5LFcamujGgkd0vxBEI2BDekcobfFI8GXE.png",
+    "downloads": 2462,
+    "favourites_count": 11,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2637/rzessentials",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-04-12T23:07:00.000000Z",
+    "created_at": "2026-03-22T21:52:00.000000Z",
+    "updated_at": "2026-07-28T08:25:55.000000Z",
+    "owner": {
+     "id": 105867,
+     "name": "RemzDNB",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/SILVz01a0uIhADQ4hPlz624eOhWll3wkPf8DlRZx_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-02-23T05:15:38.000000Z",
+     "updated_at": "2026-08-10T19:52:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2620,
+    "hub_id": null,
+    "guid": "com.rz.customitemtiers",
+    "name": "RZCustomItemTiers",
+    "slug": "rzcustomitemtiers",
+    "teaser": "A cleaner approach to inventory color coding. Configurable, extensible.",
+    "thumbnail": "https://files.sp-mod.com/mods/J8DqJ8333y5FqrHaYn6x0Yx3TEFvJKglkmz4ouOX.png",
+    "downloads": 4361,
+    "favourites_count": 7,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2620/rzcustomitemtiers",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-03-08T06:06:00.000000Z",
+    "created_at": "2026-03-07T04:50:45.000000Z",
+    "updated_at": "2026-07-28T08:16:00.000000Z",
+    "owner": {
+     "id": 105867,
+     "name": "RemzDNB",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/SILVz01a0uIhADQ4hPlz624eOhWll3wkPf8DlRZx_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-02-23T05:15:38.000000Z",
+     "updated_at": "2026-08-10T19:52:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2088,
+    "hub_id": 2773,
+    "guid": "com.geko.gekosbetterprogression",
+    "name": "Geko's Better Progression",
+    "slug": "gekos-better-progression",
+    "teaser": "What if EFT's progression wasn’t built and balanced around pay-to-win? What if you could actually level up skills? This mod (gently) reworks the entire progression system for smoother, more meaningful growth—fully customizable down to the tiniest detail.",
+    "thumbnail": "https://files.sp-mod.com/mods/2773.png",
+    "downloads": 22330,
+    "favourites_count": 28,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2088/gekos-better-progression",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-02-09T19:10:00.000000Z",
+    "created_at": "2025-04-08T21:11:06.000000Z",
+    "updated_at": "2026-07-28T08:01:38.000000Z",
+    "owner": {
+     "id": 73639,
+     "name": "DrunkGeko",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8eb1bdb4b3bad1027fb904f1a4e49c4fb4cbb9e2_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-17T14:57:15.000000Z",
+     "updated_at": "2026-08-10T19:49:30.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 94774,
+      "name": "marbL-",
+      "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-12-06T16:37:09.000000Z",
+      "updated_at": "2026-08-10T19:51:29.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2607,
+    "hub_id": null,
+    "guid": "com.suntion.easygame",
+    "name": "Easy Game",
+    "slug": "easy-game",
+    "teaser": "Adjust character stats, raid duration, item carry limits, magazine times, ammo stacks, stimulator usage, access card uses, flea market restrictions/offers, default item examination, and Labyrinth map visibility. ",
+    "thumbnail": "",
+    "downloads": 3187,
+    "favourites_count": 7,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2607/easy-game",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-02-26T15:24:00.000000Z",
+    "created_at": "2026-02-26T15:24:33.000000Z",
+    "updated_at": "2026-07-28T08:06:34.000000Z",
+    "owner": {
+     "id": 85431,
+     "name": "Suntion",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d6vhXoA8jhwPGu9NUDbg5zL69o4eTcqiXMYR14th_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-10-06T15:34:17.000000Z",
+     "updated_at": "2026-10-04T04:59:27.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

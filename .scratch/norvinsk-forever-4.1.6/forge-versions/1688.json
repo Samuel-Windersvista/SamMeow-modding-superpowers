@@ -1,0 +1,190 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 12794,
+   "hub_id": null,
+   "version": "1.1.0",
+   "description": "<h3>New Energy Drinks</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/JITVGN3.png\" alt=\"4.0EnergyDrinks\" /></p>\n<ul>\n<li>Updated to SPT 4.0.x</li>\n<li>Added 10 new energy drinks &amp; 3 Arizona drinks.</li>\n<li>Reworked energy drink buff effects to use a new tiered system: Common, Uncommon, Rare, Ultra-Rare.</li>\n<li>Higher tiered energy drinks offer larger energy gains, longer lasting buff effects, and stronger energy crashes after buffs subside.</li>\n<li>Loose loot and static loot spawn rates have been lowered drastically.</li>\n<li>C4 energy drinks and a few ultra-rare drinks now have a small chance to cause “heart failure” (death) after a period of time in-raid.</li>\n<li>Fixed issue with ground meshes like snow from appearing on energy drinks during drink animation.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.1.0",
+   "content_length": 138834891,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 2256,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-01-04T21:16:00.000000Z",
+   "created_at": "2026-01-05T05:15:11.000000Z",
+   "updated_at": "2026-07-28T07:48:35.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 12868,
+   "hub_id": null,
+   "version": "1.1.1",
+   "description": "<p>I recommend using the ‘clean temp files’ option in the SPT Launcher settings to reset the cache so the energy drinks refresh.</p>\n<ul>\n<li>Updated all energy drink animation textures to look more realistic.\n<ul>\n<li>I mainly recolored the lids of most cans and made them less bright and slightly more metallic.</li>\n</ul>\n</li>\n<li>Added config option to make energy and hydration gains instant (like most vanilla tarkov consumables) instead of over 30 seconds.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.1.1",
+   "content_length": 141791300,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 11691,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-01-17T05:29:00.000000Z",
+   "created_at": "2026-01-17T06:30:00.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13709,
+   "hub_id": null,
+   "version": "1.2.0",
+   "description": "<h3>New Energy Drinks</h3>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mIOBpRS.png\" alt=\"1.2.0EnergyDrinks\" /></p>\n<ul>\n<li>Added 8 new energy drinks.</li>\n<li>Rebalanced stamina generation, skill buffs, debuffs, and prices for many energy drinks. The mod page has been updated to show the new updated changes.</li>\n<li>Heavily reduced poly count of energy drink model to reduce mod size and save fps.</li>\n<li>Added config option to enable alternative buff effects to all energy drinks so that they are more like regular Tarkov energy drinks with less powerful buffs and cheaper prices.</li>\n<li>Reduced spawn rate of all energy drinks (around 20% less)</li>\n<li>Increased ‘hands tremor’ debuff effect for rarer energy drinks.</li>\n<li>Fixed crash that occurred with Linux systems.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.2.0",
+   "content_length": 117228379,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 8856,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-06-05T23:54:00.000000Z",
+   "created_at": "2026-06-05T23:55:10.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14613,
+   "hub_id": null,
+   "version": "1.2.1",
+   "description": "<p>Compatible with SPT versions 4.0.x Only\n(Probably the last 4.0.x version unless there is a mod breaking issue)</p>\n<ul>\n<li>Fixed issue with energy &amp; hydration gains not applying when energy drinks are consumed in hideout by making values instant instead of over time.</li>\n<li>Increased spawn rate of all energy drinks:\n<ul>\n<li>Common drinks: 0.04 (Old) -&gt; 0.08 (New)</li>\n<li>Uncommon Drinks: 0.03 (Old) -&gt; 0.05 (New)</li>\n<li>Rare Drinks: 0.012 (Old) -&gt; 0.02 (New)</li>\n<li>Ultra-Rare Drinks: 0.004 (Old) -&gt; 0.008 (New)</li>\n</ul>\n</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.2.1",
+   "content_length": 117228345,
+   "spt_version_constraint": "4.0.x",
+   "downloads": 1708,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-10T02:17:00.000000Z",
+   "created_at": "2026-08-10T02:19:12.000000Z",
+   "updated_at": "2026-08-10T08:19:38.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14615,
+   "hub_id": null,
+   "version": "1.3.0",
+   "description": "<p>Compatible with SPT versions 4.1.x Only</p>\n<ul>\n<li>Added ability to edit the config through the SPT web config editor</li>\n<li>Includes the latest changes from version 1.2.1</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.0",
+   "content_length": 117232656,
+   "spt_version_constraint": "4.1.x",
+   "downloads": 7616,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-10T02:25:00.000000Z",
+   "created_at": "2026-08-10T02:26:28.000000Z",
+   "updated_at": "2026-08-10T06:02:26.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2928,
+   "hub_id": 11550,
+   "version": "1.0.2",
+   "description": "<p><strong>SPT 3.9.x</strong></p>\n<ul>\n<li>Added ability to store energy drinks in hall of fame room\n<ul>\n<li>(they aren’t currently facing the right direction, something I’ll look into in the future)</li>\n</ul>\n</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.2",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 12885,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-28T21:43:55.000000Z",
+   "created_at": "2024-08-28T21:43:55.000000Z",
+   "updated_at": "2026-05-14T03:42:49.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2124,
+   "hub_id": 12527,
+   "version": "1.0.3",
+   "description": "<p><strong>SPT 3.10.x</strong></p>\n<ul>\n<li>Added three new energy drinks\n<ul>\n<li>\n<p>Rockstar Original Energy Drink</p>\n</li>\n<li>\n<p>C4 Starburst Energy Drink</p>\n</li>\n<li>\n<p>Starbucks Double Shot Energy Drink</p>\n</li>\n</ul>\n</li>\n<li>Lowered carry weight of all energy drinks</li>\n<li>Lowered spawn chances of many energy drinks</li>\n<li>Slight balancing adjustments for a few drinks</li>\n<li>energy and hydration now increases overtime instead of all at once when drinking energy drinks</li>\n<li>Fixed label texture clipping that occured on the top and bottom edges of can labels</li>\n<li>Fixed incorrect can rotation during drinking animation</li>\n<li>Replaced red bull can model with a higher quality model</li>\n<li>Slightly slowed down animation speed when drinking energy drinks</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.3",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 9898,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-07T05:23:20.000000Z",
+   "created_at": "2024-12-07T05:23:20.000000Z",
+   "updated_at": "2026-05-14T03:14:16.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 552,
+   "hub_id": 14303,
+   "version": "1.0.4",
+   "description": "<p><strong>There is a slight bug where energy drinks are failing to spawn in loot containers, I’m looking into the problem and will have a release out soon</strong></p>\n<p><strong>SPT 3.11.x</strong></p>\n<ul>\n<li>Updated to SPT 3.11.x</li>\n<li>Added 4 new energy drinks:</li>\n<li>Original S.T.A.L.K.E.R. Energy Drink, Monster Pacific Punch, Ghost Swedish Fish, Ghost Peaches</li>\n<li>Reworked buff effects, trader unlock progression, prices, and spawn rates of all energy drinks.</li>\n<li>Added enable_alternate_buffs config option which replaces all buffs and prices of all energy drinks with a less effective and much cheaper variant.</li>\n<li>Added config option to flea market ban energy drinks, some extremely rare and powerful energy drinks are now flea market banned by default.</li>\n<li>Removed both redbulls as I had problems porting the animations to 2022 unity. idk if they will come back.</li>\n<li>Replaced static loot container weights of each energy drink with a new multiplier system in the config file, this will help normalize energy drink spawns on all maps.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 738,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-05-21T05:28:12.000000Z",
+   "created_at": "2025-05-21T05:28:12.000000Z",
+   "updated_at": "2026-05-14T01:50:32.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 547,
+   "hub_id": 14308,
+   "version": "1.0.5",
+   "description": "<p><strong>SPT 3.11.x</strong></p>\n<ul>\n<li>Fixed bug where energy drinks were not spawning in lootable containers</li>\n<li>Minor balancing changes</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.5",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 5007,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-05-22T00:51:43.000000Z",
+   "created_at": "2025-05-22T00:51:43.000000Z",
+   "updated_at": "2026-05-14T01:50:27.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 311,
+   "hub_id": 14561,
+   "version": "1.0.6",
+   "description": "<p>**SPT 3.11.x</p>\n<ul>\n<li>Fixed an error that occurred on startup with Fika headless clients</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.0.6",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 10502,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-07-03T01:26:00.000000Z",
+   "created_at": "2025-07-03T01:26:00.000000Z",
+   "updated_at": "2026-05-14T01:42:59.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1688/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1688/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1688/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1688/versions",
+  "per_page": 50,
+  "to": 10,
+  "total": 10
+ }
+}

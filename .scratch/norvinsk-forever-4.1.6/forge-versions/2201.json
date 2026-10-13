@@ -1,0 +1,100 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 198,
+   "hub_id": 14679,
+   "version": "1.1.4",
+   "description": "<p>* Grenade arc assist: fixed mass handling (grenade have subtly different weights resulting in odd inaccuracies)</p>\n<p>* Grenade arc assist: (hopefully) fixed fika compatibility issue</p>\n",
+   "link": "https://sp-mod.com/mod/download/2201/hollywoodcam/1.1.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 2855,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-07-27T11:49:46.000000Z",
+   "created_at": "2025-07-27T11:49:46.000000Z",
+   "updated_at": "2026-05-14T01:40:44.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11619,
+   "hub_id": 15021,
+   "version": "1.1.5",
+   "description": "<p>* Fixed aiming sensitivities not resetting sometimes</p>\n<p>* Added a toggle for the ADS aiming mode switch memory</p>\n<p>Thanks to Efec99 for reporting the issues and helping with reproduction</p>\n",
+   "link": "https://sp-mod.com/mod/download/2201/hollywoodcam/1.1.5",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 818,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-09-17T17:57:19.000000Z",
+   "created_at": "2025-09-17T17:57:19.000000Z",
+   "updated_at": "2026-05-14T05:58:51.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11697,
+   "hub_id": null,
+   "version": "1.1.6",
+   "description": "<p>Gun stance resets automatically when synced to lean.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2201/hollywoodcam/1.1.6",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 1474,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-01T12:12:00.000000Z",
+   "created_at": "2025-10-01T12:18:27.000000Z",
+   "updated_at": "2026-05-14T06:13:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11750,
+   "hub_id": null,
+   "version": "1.2.0",
+   "description": "<p>SPT4 Release</p>\n",
+   "link": "https://sp-mod.com/mod/download/2201/hollywoodcam/1.2.0",
+   "content_length": 18416,
+   "spt_version_constraint": "~4 <4.1.0",
+   "downloads": 11847,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-11T19:30:03.000000Z",
+   "created_at": "2025-10-11T08:42:48.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2201/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2201/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2201/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2201/versions",
+  "per_page": 50,
+  "to": 4,
+  "total": 4
+ }
+}

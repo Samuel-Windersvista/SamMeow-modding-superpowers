@@ -1,0 +1,175 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 2925,
+   "hub_id": 11557,
+   "version": "1.2.0",
+   "description": "<p><strong>Working on 3.10~. Doesn’t seem to interact with Transit exfils in any way.</strong></p>\n<p>Code cleanup and refactor.</p>\n<p>End user experience is largely unchanged, but I did add this:</p>\n<ul>\n<li>Added option to display a disabled interaction prompt that says “Extract Unavailable” when in an exfil that is not available to the player (including exfils that will never be available, like scav extracts when you’re on a PMC run). The setting is defaulted to false, enable it in F12 menu if desired.</li>\n</ul>\n<p>API stuff:</p>\n<ul>\n<li>API now properly utilizes itself to add the interactions it adds, instead of hardcoding them in weird places.</li>\n<li>ALL extracts can now have interactions added to them, not only the ones that are available to the player during that raid.</li>\n<li>CustomExfilTrigger is now passed into the event so that it’s methods can be used if desired.</li>\n<li>Player Side is no longer passed through event, fetch it via Singleton&lt;GameWorld&gt;.Instance.MainPlayer.Side if you need it.</li>\n<li>Interactions are fetched every single time the interaction menu is refreshed (entering the zone for the first time, when looking at something else and looking back, etc.). This means they can be modified mid raid, and are generally just more powerful.</li>\n<li>API users can no longer disable the extract toggle. Having that option in felt weird and out of scope, so I removed it. If another mod wants to make an extract unavailable, it should do so via requirements or other methods.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 1949,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-29T03:15:56.000000Z",
+   "created_at": "2024-08-29T03:15:56.000000Z",
+   "updated_at": "2026-05-14T03:42:45.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2010,
+   "hub_id": 12661,
+   "version": "1.3.0",
+   "description": "<p><strong>for 3.10.X SPT versions</strong></p>\n<p>Sorry guys.. I didn’t realize I needed to recompile. Should now work for 3.10.X.</p>\n<p>See <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/InteractableExfilsAPI/releases/tag/v1.3.0\" rel=\"noreferrer noopener\">https://github.com/Jehree/InteractableExfilsAPI/releases/tag/v1.3.0</a> for patch notes</p>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 385,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-15T02:41:30.000000Z",
+   "created_at": "2024-12-15T02:41:30.000000Z",
+   "updated_at": "2026-05-14T02:52:46.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1997,
+   "hub_id": 12679,
+   "version": "1.3.1",
+   "description": "<p><strong>for 3.10.X SPT versions</strong></p>\n<p>Very small update. Mostly a code cleanup with a couple new API user things. Average users will see 0 difference.</p>\n<p>See <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/InteractableExfilsAPI/releases/tag/v1.3.1\" rel=\"noreferrer noopener\">https://github.com/Jehree/InteractableExfilsAPI/releases/tag/v1.3.1</a> for patch notes</p>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.3.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 885,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-16T02:16:56.000000Z",
+   "created_at": "2024-12-16T02:16:56.000000Z",
+   "updated_at": "2026-05-14T02:52:07.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1797,
+   "hub_id": 12916,
+   "version": "1.4.1",
+   "description": "<h3><strong>for 3.10.X SPT versions</strong></h3>\n<ul>\n<li>The default extract prompt was broken in the previous 1.4.0 version (sorry for the inconveniance)</li>\n<li>I also re-used existing EFT locales in order to translate the mod for all languages.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.4.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 623,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-01-01T16:24:12.000000Z",
+   "created_at": "2025-01-01T16:24:12.000000Z",
+   "updated_at": "2026-05-14T02:35:45.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1744,
+   "hub_id": 12974,
+   "version": "1.5.0",
+   "description": "<h3><strong>for 3.10.X SPT versions</strong></h3>\n<h3>For players</h3>\n<p>USE THE NEXT 1.5.1 instead of this version</p>\n<p>no real change here but you’ll need at least this version for the final release of Path To Tarkov (v6)</p>\n<h3>For modders</h3>\n<p>Check on github to see the full changelog -&gt; <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/SPT-InteractableExfilsAPI/releases/tag/v1.5.0\" rel=\"noreferrer noopener\">https://github.com/Jehree/SPT-InteractableExfilsAPI/releases/tag/v1.5.0</a></p>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.5.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 715,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-01-05T19:44:00.000000Z",
+   "created_at": "2025-01-05T19:44:00.000000Z",
+   "updated_at": "2026-05-14T02:35:01.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1647,
+   "hub_id": 13088,
+   "version": "1.5.1",
+   "description": "<h3><strong>for 3.10.X SPT versions</strong></h3>\n<h1>Changelog</h1>\n<h2>Fixes</h2>\n<ul>\n<li>Cancellation of car exfils is not possible anymore (fix of issue <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/SPT-InteractableExfilsAPI/issues/8\" rel=\"noreferrer noopener\">#8</a>)</li>\n<li>Crashes when the prompt is refreshed without any actions (fix of issues <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/SPT-InteractableExfilsAPI/issues/6\" rel=\"noreferrer noopener\">#6</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Jehree/SPT-InteractableExfilsAPI/issues/9\" rel=\"noreferrer noopener\">#9</a>)</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/1.5.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 725,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-01-12T22:37:40.000000Z",
+   "created_at": "2025-01-12T22:37:40.000000Z",
+   "updated_at": "2026-05-14T02:31:55.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1604,
+   "hub_id": 13141,
+   "version": "2.0.0",
+   "description": "<h3><strong>for 3.10.X SPT versions</strong></h3>\n<h1>Changelog</h1>\n<h2>Fixes for players</h2>\n<ul>\n<li>Fix broken Saferoom exfiltration on Interchange (players were trapped in the saferoom 😂)</li>\n<li>Fix train exfils will always extract player automatically regardless of config (because if you don’t trigger the extract on time the train just kills you)</li>\n<li>Fix broken lab elevator exfils when user cancel (so this is not cancellable anymore)</li>\n<li>Fix exfil with shared timers that should not be cancellable</li>\n</ul>\n<h2>New feature for modders</h2>\n<ul>\n<li>Helpers.Settings is now public: This will allow to react to Interactable Exfils API Settings, or even change of them (.e.g. put it in readonly mode)</li>\n</ul>\n<h2>⚠️ Breaking changes for modders (this is why the v2)</h2>\n<p>It should not be a real problem since these features have not been used.</p>\n<ul>\n<li>Removed InteractableExfilsService.ExfilHasRequirement</li>\n<li>Removed InteractableExfilsService.ExfilIsCar</li>\n<li>Removed InteractableExfilsService.ExfilIsElevator</li>\n<li>Removed InteractableExfilsServiceAddPlayerToPlayersMetAllRequirements</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/2.0.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 3978,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-01-17T13:46:17.000000Z",
+   "created_at": "2025-01-17T13:46:17.000000Z",
+   "updated_at": "2026-05-14T02:31:23.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 992,
+   "hub_id": 13797,
+   "version": "2.0.1",
+   "description": "<h3><strong>for 3.11.X SPT versions</strong></h3>\n<p>SPT 3.11 update</p>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/2.0.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 8231,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-25T19:17:50.000000Z",
+   "created_at": "2025-03-25T19:17:50.000000Z",
+   "updated_at": "2026-05-14T02:02:53.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 12825,
+   "hub_id": null,
+   "version": "2.1.0",
+   "description": "<p>For SPT 4.0.11+ only</p>\n<p>Recompiled for 4.0. No other changes.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1676/interactable-exfils-api/2.1.0",
+   "content_length": 15515,
+   "spt_version_constraint": "~4.0.11",
+   "downloads": 5892,
+   "fika_compatibility": "unknown",
+   "published_at": "2026-01-10T15:01:00.000000Z",
+   "created_at": "2026-01-10T21:02:05.000000Z",
+   "updated_at": "2026-07-28T07:50:34.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1676/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1676/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1676/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1676/versions",
+  "per_page": 50,
+  "to": 9,
+  "total": 9
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": 1348,
+ "hub_id": 1869,
+ "guid": "com.acidphantasm.scorpion",
+ "name": "Scorpion",
+ "slug": "scorpion",
+ "teaser": "Scorpion has 122 quests available from the start of your T***** journey. Including time based event quests!",
+ "thumbnail": "https://files.sp-mod.com/mods/1869.jpg",
+ "downloads": 139837,
+ "favourites_count": 225,
+ "endorsements_count": 17,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><hr />\n<ol>\n<li><strong>Download and Install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2310/wtt-commonlib\" rel=\"noreferrer noopener\">CommonLib</a> FIRST THIS IS REQUIRED</strong></li>\n<li>Download Scorpion</li>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the user folder in the 7z file in 7-zip</li>\n<li>Drag the user folder from 7-zip into your SPT folder</li>\n</ol>\n<hr />\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"34vXXDj.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Quests</div>\n<div class=\"tab-content\"><hr />\n<p>Quest Guide (May not be current)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://acidphantasm.github.io/scorpion-guide/quests/1-15.html\" rel=\"noreferrer noopener\">https://acidphantasm.github.io/scorpion-guide/quests/1-15.html</a></p>\n<p>Quest Map</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/XFISuuv.png\" alt=\"Chart\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Recommended Mods:</div>\n<div class=\"tab-content\"><hr />\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1089/kaeno-traderscrolling\" rel=\"noreferrer noopener\">Kaeno-TraderScrolling</a></p></div></div></div>\n<p>Special thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a>, their source code gives great inspiration and their mods are top tier.</p>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1348/scorpion",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 16,
+ "published_at": "2024-04-22T04:51:00.000000Z",
+ "created_at": "2024-04-22T04:51:33.000000Z",
+ "updated_at": "2026-08-10T06:02:26.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 16,
+  "hub_id": 29,
+  "title": "Traders",
+  "slug": "traders",
+  "description": ""
+ }
+}

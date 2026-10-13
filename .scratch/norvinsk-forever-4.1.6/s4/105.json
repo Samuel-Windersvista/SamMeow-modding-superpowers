@@ -1,0 +1,101 @@
+{
+ "idx": 105,
+ "entry": "[5]全地图间移动套装-IEAPI+PTT - AI优化版",
+ "terms": [
+  "path-to-tarkov",
+  "-IEAPI+PTT - AI",
+  "InteractableExfilsAPI",
+  "PTT-Fika"
+ ],
+ "all": [
+  {
+   "term": "path-to-tarkov",
+   "id": 1109,
+   "name": "Questing Bots",
+   "slug": "questing-bots",
+   "dl": 434821,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "slug": "gilded-key-storage",
+   "dl": 173910,
+   "sc": 0
+  },
+  {
+   "term": "-IEAPI+PTT - AI",
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "slug": "gilded-key-storage",
+   "dl": 173910,
+   "sc": 0
+  },
+  {
+   "term": "PTT-Fika",
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "slug": "gilded-key-storage",
+   "dl": 173910,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 2706,
+   "name": "ORBIT 2.0",
+   "slug": "orbit-20",
+   "dl": 51883,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 2010,
+   "name": "Definitive Weapon Variants",
+   "slug": "definitive-weapon-variants",
+   "dl": 42994,
+   "sc": 0
+  },
+  {
+   "term": "-IEAPI+PTT - AI",
+   "id": 2642,
+   "name": "Vagabond",
+   "slug": "vagabond",
+   "dl": 7049,
+   "sc": 0
+  },
+  {
+   "term": "PTT-Fika",
+   "id": 2642,
+   "name": "Vagabond",
+   "slug": "vagabond",
+   "dl": 7049,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 2921,
+   "name": "SPTChecker",
+   "slug": "sptchecker",
+   "dl": 2857,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 3054,
+   "name": "QuestCodex",
+   "slug": "questcodex",
+   "dl": 1130,
+   "sc": 0
+  },
+  {
+   "term": "path-to-tarkov",
+   "id": 2950,
+   "name": "Corter-ModSync",
+   "slug": "corter-modsync",
+   "dl": 995,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

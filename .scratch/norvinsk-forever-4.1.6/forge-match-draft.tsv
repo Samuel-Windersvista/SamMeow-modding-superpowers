@@ -1,0 +1,151 @@
+1	[14]本体缺失翻译		MANUAL				
+2	[14]客户端ModF12通用翻译器及菜单汉化文本		MANUAL				566|ArmBandCore|1620
+3	[13]好莱坞第三人称镜头-HollywoodCam		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+4	[13]战局外检修标签-DebugTooltip		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+5	[13]MOD工具-AI刷新和行为检修-BotDebug	BotDebug	AUTO	918	BotDebug	100	2851|SPT Mod Manager|28569 ;; 2431|FPV Drone Mod|26365 ;; 2441|NARCONet - Mod Sync|14732
+6	[13]存档编辑器-SPT-AKI Profile Editor		MANUAL				1261|Barter Economy|7723 ;; 544|No Barter Trade|6812 ;; 1077|Light's Automatic Armband Assistant|3000
+7	[12]商人列表滚动-TraderScrolling	Kaeno-TraderScrolling	AUTO	1089	Kaeno-TraderScrolling	100	236|Server Value Modifier [SVM]|1327286 ;; 592|Amands's Graphics|868052 ;; 167|Ammo Stats|212482
+8	[12]任务列表修复-TaskListFixes		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+9	[12]尸体可删除-SPTCorpseCleaner		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+10	[12]骑士面具修复-FacetheKnight-MaskFix	Face the Knight - Mask Fix	MANUAL	2685	Knight Mask Fix (4.0+)	36	2685|Knight Mask Fix (4.0+)|9460 ;; 3109|Knight Mask Fix (4.1.3+)|568 ;; 1232|Lotus|187195
+11	[12]防卡手-HandsAreNotBusy		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+12	[12]白色方块bug修复-WhiteBoxFix		MANUAL				106|SPT-AKI Profile Editor|742156 ;; 1263|Epic's All in One|274736 ;; 1298|HandsAreNotBusy|162306
+13	[11]我就是爹作弊工具-DadGamerMode		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+14	[11]新商人-可购买自己创建的预设枪械-Hephaestus	Hephaestus	AUTO	650	Hephaestus	100	650|Hephaestus|97502 ;; 2193|Set of Gun Presets for Hephaestus|10168 ;; 505|Olympus|488
+15	[11]好莱坞投掷武器视觉辅助-VisualAssist		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+16	[11]扫敌雷达-RadarStandalone	Radar	AUTO	1100	ACCURATE CIRCULAR RADAR	82	236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+17	[11]物品感应-AmandsSense		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+18	[11]任务跳过功能-Skipper		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+19	[11]内置动态地图-DynamicMaps	SPT-DynamicMaps	AUTO	1431	Dynamic Maps	82	1431|Dynamic Maps|804823 ;; 1232|Lotus|187196 ;; 2478|ISB Aishi|32554
+20	[11]声音可视化-accessibilityindicators		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+21	[11]更多界面信息-GamePanelHUD	GamePanelHUDCore	AUTO	456	Game Panel HUD	82	236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+22	[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）	-showmethemoney-quick-sell Q+ Q+	AUTO	2955	Quick Sell	82	2955|Quick Sell|7468 ;; 975|Quick Launcher|10565 ;; 2597|Nested Quick Move|4400
+23	[10]显示价格-showmethemoney	ShowMeTheMoney	AUTO	2299	Show Me The Money (Item Pricing)	82	2299|Show Me The Money (Item Pricing)|129105 ;; 3011|Show Me The Money (Item Pricing) (4.1.x)|7695 ;; 2736|Moe-TradeMarker|976
+24	[10]物品容器间快速移动-QuickMoveToContainer		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+25	[10]自动存放-AutoDeposit - 已AI优化	AutoDeposit	AUTO	1469	AutoDeposit	100	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315163 ;; 1945|Ai Limit|64612 ;; 1263|Epic's All in One|274736
+26	[10]物品真实堆叠-True Items Redux	-True Items Redux	MANUAL	1619	Lots of Loot Redux	20	1278|WTT - Pack 'n' Strap|232971 ;; 2239|Couturier - gear and clothing pack|49085 ;; 2394|Instant Insurance|36533
+27	[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES		MANUAL				2167|CNN - CONTAINERS - RE-UPLOAD|11207 ;; 2825|S&M PRT - Portable Radio Transmitter|1565
+28	[10]从武器架装备武器-EquipFromWeaponRack		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+29	[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化	-ContainerQuickLoot - AI	MANUAL	791	SAIN - Solarint's AI Modifications - Full AI Combat System Replacement	30	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315163 ;; 1945|Ai Limit|64612 ;; 1263|Epic's All in One|274736
+30	[10]小火山的仓库搜索框修复和扩展-SearchBarExtended		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+31	[10]仓库搜索框-StashSearch		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+32	[10]UI大修-UIFixes	uifixes	AUTO	1342	UI Fixes	100	1342|UI Fixes|453448 ;; 2112|Continuous Load Ammo|93335 ;; 2207|Fast Sell In Flea|77015
+33	[9]解锁所有藏身处装饰-UnlockHideoutCustomization	Hideout Customization Unlocker	MANUAL	2076	Hideout In Progress	20	2076|Hideout In Progress|55849 ;; 2705|Hideout Shootout|3845 ;; 2915|Hideout Craft Modifier - HCM|1998
+34	[9]预览窗口尺寸调整-previewsizer		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+35	[9]项目上下文菜单扩展-ItemContextMenuExt		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+36	[9]子弹专家-MunitionsExpert		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+37	[9]简单的锻炼QTE-simpleworkoutqte	SimpleWorkoutQTE	AUTO	1437	Simple Workout QTE	100	1437|Simple Workout QTE|68064
+38	[9]物品打勾标记提供更多信息-MoreCheckmarks	MoreCheckmarksBackend	AUTO	861	MoreCheckmarks	82	861|MoreCheckmarks|491654
+39	[9]任务交接自动化-TaskAutomation		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+40	[9]藏身处不用打勾-nofirhideout		MANUAL				861|MoreCheckmarks|491654 ;; 2025|All Quests Checkmarks|61046 ;; 2407|QuickSellFlea|42206
+41	[9]腰带槽-BeltSlot		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+42	[9]动态物品重量-DynamicItemWeights		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+43	[9]小火山的全界面中文字体切换		MANUAL				
+44	[9]主菜单大修-MenuOverhaul		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+45	[8]沉浸感时间循环-ImmersiveDaylightCycle		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+46	[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化	ContinuousLoadAmmo	AUTO	2112	Continuous Load Ammo	100	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315163 ;; 1945|Ai Limit|64612 ;; 1263|Epic's All in One|274736
+47	[8]可拾取穿墙物品-ReachExtender		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+48	[8]boss刷新通知-BossNotifier	BossNotifier	AUTO	1247	Boss Notifier	100	2594|Player Boss Scav|10702 ;; 2210|Live Like Boss Spawn Chances|4171 ;; 1100|ACCURATE CIRCULAR RADAR|310311
+49	[8]塔科夫天气系统-Tarkov-Weather-System	Tarkov Weather System	MANUAL	2120	Time & Weather Changer NG	20	2120|Time & Weather Changer NG|30446 ;; 2025|All Quests Checkmarks|61046 ;; 2318|T***** Rare Collectibles|37839
+50	[8]坠落的补给直升机-HeliCrash.ArysReloaded		MANUAL				1180|SamSWAT's Fire Support - Arys Reloaded|56804 ;; 2791|Tylevo's Tactical Service Control|9548 ;; 1180|SamSWAT's Fire Support - Arys Reloaded|56804
+51	[8]禁用Scav模式-DisableScavMode	DisableScavMode	AUTO	1301	DisableScavMode egboggied	82	2594|Player Boss Scav|10702 ;; 3042|Super Scav Case|1068 ;; 1341|Quick Move To Containers|139692
+52	[8]武器破门-BackdoorBandit客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+53	[8]武器破门-BackdoorBandit服务器文件	props-doorbreacher	MANUAL	2726	Miyuki Props Dealer	30	2726|Miyuki Props Dealer|969 ;; 236|Server Value Modifier [SVM]|1327286 ;; 1431|Dynamic Maps|804827
+54	[8]任务跟踪显示-QuestTracker		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+55	[8]增加拾取距离-LootRadius		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+56	[8]直接搜索已打开容器-SearchOpenContainers		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+57	[8]直接使用未捡物品-UseLooseLoot		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+58	[8]门的状态随机化-DoorRandomizer		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+59	[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+60	[8]更有意义的武器精通-MeaningfulWeaponMasteries		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+61	[8]超重也能练耐力-Always-Level-Endurance	Endurance	AUTO	2438	Level Endurance and Strength	82	1706|Health Per Level|46536 ;; 3005|Trader Level Requirements Editor|336 ;; 1688|More Energy Drinks|73241
+62	[8]人物技能扩展和撬锁-SkillsExtended-已AI优化	Skills Extended	AUTO	2383	Skills Extended	100	2383|Skills Extended|55500 ;; 236|Server Value Modifier [SVM]|1327286 ;; 2246|WTT- Armory|284993
+63	[8]技能速度调节器-SkillMultiplier	skillmultiplier	AUTO	2162	Skill Multiplier	100	2162|Skill Multiplier|14658 ;; 2144|Skill Distribution|39248 ;; 2088|Geko's Better Progression|22330
+64	[8]可以攀爬更高的地方-Increase Climb Height	Increase Climb Height	AUTO	1575	Increase Climb Height	100	1575|Increase Climb Height|123966 ;; 2121|Increase Look Direction|25710 ;; 416|SPT Realism Mod|452193
+65	[8]Boss身上有lega徽章-bosseshavelegamedals	Bosses Have Lega Medals	AUTO	1539	Bosses Have Lega Medals	100	1539|Bosses Have Lega Medals|213508 ;; 2523|Bosses Have Gp Coins|43800 ;; 1431|Dynamic Maps|804827
+66	[8]战场环境临场感增强-SPTBattleAmbience		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+67	[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化	HollywoodFX	AUTO	2003	HollywoodFX	100	1782|SPT-VR|35028 ;; 2569|AOSix|9011 ;; 2950|Corter-ModSync|995
+68	[8]门可以锁-LockableDoors	LockableDoors-Server	AUTO	1923	Lockable Doors	82	1923|Lockable Doors|13668 ;; 814|Late to the Party|47321 ;; 2027|Home Comforts|4819
+69	[8]火山家的实时字幕-Volcano-subtitle		MANUAL				2709|Miyako Carry Service|12854 ;; 2709|Miyako Carry Service|12854
+70	[7]更好的枪匠界面-Tradermodding客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+71	[7]更好的枪匠界面-Tradermodding服务器文件	TraderModding	AUTO	1283	Trader Modding And Improved Weapon Building	82	1283|Trader Modding And Improved Weapon Building|111390 ;; 1431|Dynamic Maps|804827 ;; 1232|Lotus|187196
+72	[7]真实的热成像-realisticThermalScopes	realisticThermalScopes	AUTO	2056	Realistic Thermal Scopes	100	2056|Realistic Thermal Scopes|61028
+73	[7]更亮的镭射线-brightlasers	BrightLasers	AUTO	1358	BrightLasers	100	1358|BrightLasers|127871 ;; 431|RGBLasers|9669
+74	[7]反重力臂章-AntigravArmbands		MANUAL				
+75	[7]更大的背包-BetterBackpacks		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+76	[7]反射镜视野重做-ReflexSightsRework客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+77	[7]反射镜视野重做-ReflexSightsRework服务器文件		MANUAL				
+78	[7]可以合并消耗品-MergeConsumables	MergeConsumables	AUTO	1657	MergeConsumables	100	1657|MergeConsumables|85792 ;; 2082|Item Stacking Plus|9991 ;; 2575|Fair Equipment Restoration|1379
+79	[7]平衡的夜视装备视效-BRNVG客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+80	[7]平衡的夜视装备视效-BRNVG服务器文件		MANUAL				954|Borkel's Realistic Night Vision Goggles (NVGs and T-7)|263907 ;; 236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482
+81	[7]武器配件位置自定义-WeaponCustomizer	weapon-customizer	AUTO	1950	Weapon Customizer	100	1950|Weapon Customizer|130989 ;; 2010|Definitive Weapon Variants|42992 ;; 2833|Modern Weapon Mods (MWM)|12028
+82	[7]更好的机瞄-BetterRearSights	better-rear-sights	AUTO	1591	Better Rear Sights	100	1591|Better Rear Sights|55820 ;; 1888|Better Keys NG|60530 ;; 1939|BETTER ATTACHMENTS|32359
+83	[7]弹匣优化管理系统-MagazineManagementSystem		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+84	[7]面具修复-mask-fix	mask-fix	AUTO	3109	Knight Mask Fix (4.1.3+)	82	3109|Knight Mask Fix (4.1.3+)|570 ;; 1125|Tactical Gear Component|302904 ;; 1263|Epic's All in One|274736
+85	[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化	MOD -autocompatframework- AI	MANUAL	791	SAIN - Solarint's AI Modifications - Full AI Combat System Replacement	20	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315165 ;; 1945|Ai Limit|64612 ;; 2945|TCF Mod Manager|6051
+86	[7]武器动画更新-P90弹匣动画-transparentp90mag	Transparent P90 Mag	MANUAL	2774	Transparent Sights	20	2774|Transparent Sights|5940 ;; 1125|Tactical Gear Component|302904 ;; 2246|WTT- Armory|284993
+87	[7]武器动画更新器-AnimatorUpdater		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+88	[7]瞄准视野大修-FOV-Fix	-FOV-Fix	MANUAL	1621	Shadow Flicker Fix	30	1621|Shadow Flicker Fix|76357 ;; 910|Item Attribute Fix|22699 ;; 1937|Dev Balaclava Fix|13384
+89	[6]分离敌意-SeparateHostility		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192572
+90	[6]友方AI系统-friendlypmc与PITFireTeam合并版本	AI -friendlypmc PITFireTeam	AUTO	2676	PIT Fireteam	82	649|Virtual's Custom Quest Loader|388834 ;; 1760|Audio Accessibility Indicators|58513 ;; 1459|TarkovIRL - Weapons Handling Mod|18915
+91	[6]AI锁头重定向-Headshot Damage Redirection		MANUAL				236|Server Value Modifier [SVM]|1327286 ;; 2706|ORBIT 2.0|51861 ;; 2676|PIT Fireteam|34424
+92	[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化	AI -thuynguyentrungdang That.s.Lit - AI	MANUAL	2691	Fold That Stock	15	2691|Fold That Stock|4000 ;; 1109|Questing Bots|434815 ;; 954|Borkel's Realistic Night Vision Goggles (NVGs and T-7)|263907
+93	[6]AI增强-SAIN-Moew-v4.4.0增强版	SAIN	AUTO	791	SAIN - Solarint's AI Modifications - Full AI Combat System Replacement	82	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315165 ;; 1895|[SAIN] Twitch Players|35017 ;; 2590|SaintDeerWeapons|16273
+94	[6]AI自动搜索物品-LootingBots - 已AI优化	LootingBots-ServerMod	AUTO	812	Looting Bots	82	812|Looting Bots|747672 ;; 827|Waypoints - Expanded Navmesh|1329608 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315165
+95	[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化	Acids Progressive Bot System	AUTO	1594	APBS - Acid's Progressive Bot System	82	1594|APBS - Acid's Progressive Bot System|254151 ;; 2097|ABPS - Acid's Bot Placement System|189298 ;; 2706|ORBIT 2.0|51861
+96	[6]Acid的AI生成系统-botplacementsystem - 已AI优化	Acids Bot Placement System	AUTO	2097	ABPS - Acid's Bot Placement System	82	2097|ABPS - Acid's Bot Placement System|189298 ;; 1594|APBS - Acid's Progressive Bot System|254151 ;; 1109|Questing Bots|434815
+97	[6]AI路径扩展-Waypoints - 已AI优化	Waypoints	AUTO	827	Waypoints - Expanded Navmesh	82	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|1315165 ;; 1945|Ai Limit|64612 ;; 1594|APBS - Acid's Progressive Bot System|254151
+98	[6]AI拟人MOD的前置框架-BigBrain - 已AI优化	BigBrain	AUTO	902	BigBrain	100	1945|Ai Limit|64612 ;; 2945|TCF Mod Manager|6051 ;; 1706|Health Per Level|46536
+99	[5]舒适家园系统-HomeComforts - 已AI优化	HomeComforts-Server	AUTO	2027	Home Comforts	82	2027|Home Comforts|4819 ;; 2091|Entry Point Selector|14842
+100	[5]战局内存储-LeaveItThere - 已AI优化	LeaveItThere-Server	AUTO	1907	Leave It There	82	1907|Leave It There|27628
+101	[5]以物易物经济系统-barter_economy-已AI优化		MANUAL				2512|WTT - Content Backport|540934 ;; 2310|WTT - CommonLib|431779 ;; 1023|WTT- Artem|316641
+102	[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化	TarkovIRL	AUTO	1459	TarkovIRL - Weapons Handling Mod	82	2512|WTT - Content Backport|540935 ;; 2310|WTT - CommonLib|431779 ;; 2246|WTT- Armory|284993
+103	[5]现实主义大修-Realism - 已AI优化	SPT Realism Mod	AUTO	416	SPT Realism Mod	100	416|SPT Realism Mod|452193 ;; 2468|Realism Mod Compatibility|731 ;; 2632|SPT Realism Value Range Generator|300
+104	[5]经济与制造系统大修-Softcore - 已AI优化	softcore	AUTO	2546	Softcore Hideout	82	2546|Softcore Hideout|5801 ;; 2631|Softcore Meds|4185 ;; 2913|Configurable Softcore|209
+105	[5]全地图间移动套装-IEAPI+PTT - AI优化版	InteractableExfilsAPI	AUTO	1676	Interactable Exfils API	100	1109|Questing Bots|434815 ;; 865|Gilded Key Storage|173906 ;; 1219|SP-EFT Manager|125432
+106	[5]战局大修-RaidOverhaul - 已AI增强版本	Raid Overhaul	AUTO	1192	Raid Overhaul	100	1192|Raid Overhaul|31775 ;; 1775|WTT - Menu Overhaul|125459 ;; 2810|Kill&Bill - Quest Condition Overhaul|3444
+107	[5]新增5个开局角色-CustomProfiles		MANUAL				740|Welcome Gifts|45254 ;; 1232|Lotus|187196 ;; 2621|T***** DLSS 4.5|12059
+108	[4]新商人-AES	AES	AUTO	874	AES	100	874|AES|147262 ;; 1950|Weapon Customizer|130989 ;; 740|Welcome Gifts|45254
+109	[4]新商人-VolkovTrader	VolkovTrader	AUTO	2009	Volkov Trader	100	2009|Volkov Trader|11298
+110	[4]新商人-Epakim1-1	EpaKim1	AUTO	2119	EPAKIM1 Trader Mod	82	2119|EPAKIM1 Trader Mod|11479 ;; 2249|Slunk's Central City (SCC for PTT)|1976
+111	[4]新商人-不明生还者-UnknownSurvivor		MANUAL				649|Virtual's Custom Quest Loader|388834 ;; 2246|WTT- Armory|284993 ;; 1971|Croupier - loadout generator + flea quicksell|42120
+112	[4]新商人-荷官-Croupier (random loadouts + flea quicksell)	croupier	AUTO	1971	Croupier - loadout generator + flea quicksell	82	1971|Croupier - loadout generator + flea quicksell|42120 ;; 2239|Couturier - gear and clothing pack|49087 ;; 2724|Vanilla Traders Rework|3319
+113	[4]新商人-藏身处物资商人-acidphantasm-harryhideout	HarryHideout	AUTO	1303	HarryHideout	100	1303|HarryHideout|67875 ;; 1765|The Cat Burglar|9391 ;; 2064|TARK - Tactical Arms Racketeer: Kaliber|8947
+114	[4]新商人-毒蝎-acidphantasm-scorpion	Scorpion	AUTO	1348	Scorpion	100	1348|Scorpion|139763 ;; 649|Virtual's Custom Quest Loader|388834 ;; 2246|WTT- Armory|284993
+115	[4]新商人-Artem	Artem	AUTO	1023	WTT- Artem	82	1023|WTT- Artem|316642 ;; 1591|Better Rear Sights|55820 ;; 2264|Battle Ambience|29618
+116	[4]新商人-油漆匠-Painter	Painter	AUTO	1025	Painter	100	1025|Painter|313547 ;; 2878|Painter - All in one|6790 ;; 1125|Tactical Gear Component|302905
+117	[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)		MANUAL				
+118	[4]新商人-竞技场商人-ref-sptfriendly-quests		MANUAL				
+119	[3]新配件-ConsortiumOfThings		MANUAL				
+120	[3]新配件-Eco-Attachment Emporium	Eco-Attachment-Emporium	LIKELY	2882	Eco's Attachment Emporium	60	2882|Eco's Attachment Emporium|16177 ;; 2884|Eco's WW2 Pack|7686 ;; 2512|WTT - Content Backport|540935
+121	[3]新配件-Echoes.of.Tarkov.-.Requisitions	Echoes of Tarkov - Requisitions	AUTO	2143	Echoes of T***** - Requisitions	100	2143|Echoes of T***** - Requisitions|36705 ;; 2451|Echoes of T***** - Requisitions - NG|16038 ;; 2296|Echoes-of-T*****---Requisitions's Realism compatibility patch|2193
+122	[3]新配件-EpicRangeTime-Weapons		MANUAL				1023|WTT- Artem|316642 ;; 1263|Epic's All in One|274736 ;; 1853|StatTrack|46207
+123	[3]新配件-BlackCore	Black Core	MANUAL	2511	WTT - Black Division [REDACTED] Home	30	2511|WTT - Black Division [REDACTED] Home|114439 ;; 1125|Tactical Gear Component|302905 ;; 2246|WTT- Armory|284993
+124	[3]新配件-MagTape	Mag Tape	AUTO	1018	Mag Tape	100	1018|Mag Tape|118994 ;; 1025|Painter|313547 ;; 740|Welcome Gifts|45254
+125	[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst	Ak-105-Hyperburst	MANUAL	2455	AK Rail Extension - NG	20	2455|AK Rail Extension - NG|7455 ;; 2170|Resonant AK from COD:MW2019 - ReUpload|4830 ;; 1263|Epic's All in One|274736
+126	[3]新武器-AKResonant		MANUAL				2170|Resonant AK from COD:MW2019 - ReUpload|4830 ;; 2170|Resonant AK from COD:MW2019 - ReUpload|4830
+127	[3]新武器-国产武器-1SD-QBZ191		MANUAL				
+128	[3].50BMG重制-Epics 50 BMG Remaster-Expansion		MANUAL				2246|WTT- Armory|284993 ;; 2658|Camo And Stickers|49216 ;; 820|Door Randomizer|49167
+129	[3]新武器-AK50	AK50	AUTO	2215	Eukyre's AK-50 backport	82	2215|Eukyre's AK-50 backport|19719 ;; 2658|Camo And Stickers|49216 ;; 2403|Trader Jeronimo|9487
+130	[3]新武器-SIG_MCX_VIRTUS		MANUAL				1125|Tactical Gear Component|302905 ;; 1263|Epic's All in One|274736 ;; 2658|Camo And Stickers|49216
+131	[3]新武器-WTT武器库-WTT - Armory客户端	WTT-Armory	AUTO	2246	WTT- Armory	100	1453|Make Shotguns Great Again!|48406 ;; 1878|Unrestricted Armor Plate|22632 ;; 1946|Arse Scratching Service (ASS)|11652
+132	[3]新武器-WTT武器库-WTT - Armory服务端	WTT-Armory	AUTO	2246	WTT- Armory	100	2246|WTT- Armory|284993 ;; 2512|WTT - Content Backport|540936 ;; 2310|WTT - CommonLib|431779
+133	[2]高清材质-TarkovHDRework		MANUAL				
+134	[2]自定义配方-tarkovcraft	TarkovCraft	AUTO	1979	T***** Craft	100	1979|T***** Craft|4735 ;; 2628|T***** Craft Loader|871 ;; 2469|Custom Recipes|1349
+135	[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]	RCTA - Metal Gear [FORTNITE]	AUTO	1768	RCTA - Metal Gear [FORTNITE]	100	1768|RCTA - Metal Gear [FORTNITE]|3865 ;; 1777|RCTA - Peely Default [FORTNITE]|2784 ;; 1993|RCTA - Ada Wong [RE4R]|10360
+136	[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)	RCTA - Synaptic Rig T1 (CODIW)	MANUAL	1766	RCTA - Synaptic Rig [CODIW]	48	1766|RCTA - Synaptic Rig [CODIW]|3764 ;; 1993|RCTA - Ada Wong [RE4R]|10360 ;; 1774|RCTA - Callisto Standard, Deluge [CODMW3]|4828
+137	[2]新物品-竞技场赛季奖励-SPT Battlepass	Pluto! - SPT Battlepass	AUTO	2098	SPT Battlepass	82	2098|SPT Battlepass|22971 ;; 2246|WTT- Armory|284993 ;; 1971|Croupier - loadout generator + flea quicksell|42120
+138	[2]新装备、衣服-TacticalGearComponent	Tactical Gear Component (TGC)	AUTO	1125	Tactical Gear Component	82	1125|Tactical Gear Component|302905 ;; 1025|Painter|313547 ;; 1456|Gambler - Trader|49269
+139	[2]腰包-WTT-PackNStrap客户端文件		MANUAL				
+140	[2]腰包-WTT-PackNStrap服务器端文件	WTT-PackNStrap	AUTO	1278	WTT - Pack 'n' Strap	100	1278|WTT - Pack 'n' Strap|232972 ;; 2512|WTT - Content Backport|540936 ;; 2310|WTT - CommonLib|431779
+141	[2]新酒水-HoodsEnergyDrinks	Hoods Energy Drinks	MANUAL	1688	More Energy Drinks	40	1688|More Energy Drinks|73241 ;; 865|Gilded Key Storage|173906 ;; 1569|Wolfik's Heavy Trooper Masks|45379
+142	[2]新酒水-WTT - CornerStore	-WTT - CornerStore	MANUAL	2512	WTT - Content Backport	30	2512|WTT - Content Backport|540936 ;; 2310|WTT - CommonLib|431779 ;; 1023|WTT- Artem|316642
+143	[2]新物品-地图容器-SecureMapbookMod	MrVibesRSA-SecureMapbookMod	AUTO	2060	Secure Mapbook	82	2060|Secure Mapbook|9175 ;; 2167|CNN - CONTAINERS - RE-UPLOAD|11207
+144	[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327288 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192573
+145	[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件	Gilded Key Storage	AUTO	865	Gilded Key Storage	100	865|Gilded Key Storage|173906 ;; 2178|Key Case|9254 ;; 1248|Keys In Loot (KIL)|76390
+146	[2]新物品-藏身处猫咪-hideoutcat		MANUAL				236|Server Value Modifier [SVM]|1327288 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192573
+147	[1]前置框架-WTT公共库-WTT-ClientCommonLib	WTT-ClientCommonLib	MANUAL	2310	WTT - CommonLib	30	2310|WTT - CommonLib|431779 ;; 1023|WTT- Artem|316642 ;; 2246|WTT- Armory|284993
+148	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件		MANUAL				236|Server Value Modifier [SVM]|1327288 ;; 2706|ORBIT 2.0|51862 ;; 2010|Definitive Weapon Variants|42992
+149	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件	- -Virtual's Custom Quest Loader	MANUAL	2093	Virtual's Custom Quests - Updated	30	1537|sgtlaggy's Quest Tweaks|23926 ;; 2093|Virtual's Custom Quests - Updated|19931 ;; 1023|WTT- Artem|316642
+150	[1]前置框架-自定义交互-CustomInteractions		MANUAL				236|Server Value Modifier [SVM]|1327288 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192573
+151	[1]前置框架-KmyTarkovApi	Crc32.NET	MANUAL	2563	LoadBundleFaster (Crc32 Patch)	30	236|Server Value Modifier [SVM]|1327288 ;; 167|Ammo Stats|212482 ;; 526|All The Clothes|192573

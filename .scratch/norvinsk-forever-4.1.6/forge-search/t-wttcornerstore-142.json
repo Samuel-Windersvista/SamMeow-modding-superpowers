@@ -1,0 +1,565 @@
+{
+ "term": "WTT-Corner Store",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2310,
+    "hub_id": 3025,
+    "guid": "com.wtt.commonlib",
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+    "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+    "downloads": 431779,
+    "favourites_count": 1302,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-09-15T02:44:00.000000Z",
+    "created_at": "2025-09-15T02:44:54.000000Z",
+    "updated_at": "2026-08-23T15:19:33.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2246,
+    "hub_id": 2952,
+    "guid": "com.wtt.armory",
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "teaser": "The official weapons pack forged by the WTT developers & friends...  Arm yourself accordingly...",
+    "thumbnail": "https://files.sp-mod.com/mods/RrLPvL3Yfib2hl8Dvh9Q0PIC45xpy6AOai6bW5aN.png",
+    "downloads": 284993,
+    "favourites_count": 510,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2246/wtt-armory",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-08-08T03:08:00.000000Z",
+    "created_at": "2025-08-08T03:08:00.000000Z",
+    "updated_at": "2026-09-21T03:34:24.000000Z",
+    "owner": {
+     "id": 22121,
+     "name": "Tron",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+     "created_at": "2022-08-31T05:49:04.000000Z",
+     "updated_at": "2026-10-05T16:42:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 44,
+      "name": "Choccy Milk",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2020-07-03T04:06:15.000000Z",
+      "updated_at": "2026-09-26T04:16:33.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     },
+     {
+      "id": 58981,
+      "name": "probablyEukyre",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+      "created_at": "2024-07-21T15:22:59.000000Z",
+      "updated_at": "2026-10-03T18:38:44.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2512,
+    "hub_id": null,
+    "guid": "com.wtt.contentbackport",
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "teaser": "The moment you've all been waiting for....",
+    "thumbnail": "https://files.sp-mod.com/mods/55TZW6CnHJHPtEYdFvuJWmHazdFuhlCiMLfsbagQ.jpg",
+    "downloads": 540936,
+    "favourites_count": 1059,
+    "endorsements_count": 138,
+    "detail_url": "https://sp-mod.com/mod/2512/wtt-content-backport",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2025-12-26T03:52:00.000000Z",
+    "created_at": "2025-12-26T03:52:16.000000Z",
+    "updated_at": "2026-10-04T20:25:05.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2709,
+    "hub_id": null,
+    "guid": "top.himesamanoyume.miyakocarryservice",
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "teaser": "MiyakoCarryService is a mod that generates AI teammates.",
+    "thumbnail": "https://files.sp-mod.com/mods/YsN4dkG0emHuWLR671Ur5ZX1mgpEOSvRiB7msMix.jpg",
+    "downloads": 12854,
+    "favourites_count": 70,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2709/miyako-carry-service",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-06-01T00:00:00.000000Z",
+    "created_at": "2026-05-31T09:07:20.000000Z",
+    "updated_at": "2026-09-20T02:56:50.000000Z",
+    "owner": {
+     "id": 66245,
+     "name": "Himesamanoyume",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/99c24ff8d1440b72a6aa02f4eb50e2a658ca3a3e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/wnhGXDPqnEbu43A96QIG7OqR1SZcaKrCtBecelUZ_1280w.webp",
+     "created_at": "2024-10-29T03:58:24.000000Z",
+     "updated_at": "2026-10-02T04:07:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2950,
+    "hub_id": null,
+    "guid": "com.corter.modsync",
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "teaser": "The OG ModSync mod by Corter ported to SPT4 versions",
+    "thumbnail": "https://files.sp-mod.com/mods/a9SItVDZXTrIlioc7LQiiTCiH609yCh4YiJp1fbn.png",
+    "downloads": 995,
+    "favourites_count": 14,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2950/corter-modsync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-22T09:44:00.000000Z",
+    "created_at": "2026-08-22T09:47:22.000000Z",
+    "updated_at": "2026-08-22T10:40:21.000000Z",
+    "owner": {
+     "id": 11050,
+     "name": "Dildz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/272c7e5adaac509abc6f6743e0717d4289b34dd0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-11-02T06:59:35.000000Z",
+     "updated_at": "2026-09-02T18:42:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 1023,
+    "hub_id": 1410,
+    "guid": "com.crackbone.artem-wtt",
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "teaser": "In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons.",
+    "thumbnail": "https://files.sp-mod.com/mods/1410.jpg",
+    "downloads": 316642,
+    "favourites_count": 252,
+    "endorsements_count": 36,
+    "detail_url": "https://sp-mod.com/mod/1023/wtt-artem",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-08-21T10:52:00.000000Z",
+    "created_at": "2023-08-21T10:52:05.000000Z",
+    "updated_at": "2026-09-19T03:42:10.000000Z",
+    "owner": {
+     "id": 33851,
+     "name": "Crackbone",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/5ca8b11c81ad8d8e18ed5cd29c4d56049e03a1b8_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a9860bc04369ac21c1a12b052ea1a2ed3b15aebf.jpg",
+     "created_at": "2023-07-11T20:34:59.000000Z",
+     "updated_at": "2026-08-10T19:43:16.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 28568,
+      "name": "Dsnyder",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/16888b74799ea0f079dc1d5b0469b0907ae557f5_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-12T03:57:07.000000Z",
+      "updated_at": "2026-10-05T13:45:03.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1277,
+    "hub_id": 1788,
+    "guid": "com.headvoiceselector.core",
+    "name": "WTT - Head and Voice Selector",
+    "slug": "wtt-head-and-voice-selector",
+    "teaser": "Customize your character's voice and head appearance post-creation using new dropdown boxes in the Overall panel.",
+    "thumbnail": "https://files.sp-mod.com/mods/1788.png",
+    "downloads": 91336,
+    "favourites_count": 188,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/1277/wtt-head-and-voice-selector",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-04-04T18:09:00.000000Z",
+    "created_at": "2024-04-04T18:09:59.000000Z",
+    "updated_at": "2026-08-03T06:02:26.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 50076,
+      "name": "sgtlaggy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-30T05:20:41.000000Z",
+      "updated_at": "2026-10-05T05:47:54.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1278,
+    "hub_id": 1790,
+    "guid": "com.wtt.packnstrap",
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "teaser": "Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, for all your early-game adventures.",
+    "thumbnail": "https://files.sp-mod.com/mods/1790.png",
+    "downloads": 232972,
+    "favourites_count": 304,
+    "endorsements_count": 35,
+    "detail_url": "https://sp-mod.com/mod/1278/wtt-pack-n-strap",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2024-04-05T03:35:00.000000Z",
+    "created_at": "2024-04-05T03:35:19.000000Z",
+    "updated_at": "2026-09-07T18:48:06.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 1340,
+    "hub_id": 1858,
+    "guid": "com.wtt.yojenkzheads",
+    "name": "WTT - The Long Lost Heads of Yojenkz",
+    "slug": "wtt-the-long-lost-heads-of-yojenkz",
+    "teaser": "This mod adds 10 new options for the player head.\r\nWait...\r\nHead? Aye lmao?",
+    "thumbnail": "https://files.sp-mod.com/mods/1858.png",
+    "downloads": 30374,
+    "favourites_count": 46,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/1340/wtt-the-long-lost-heads-of-yojenkz",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 11,
+    "published_at": "2024-04-19T00:42:00.000000Z",
+    "created_at": "2024-04-19T00:42:50.000000Z",
+    "updated_at": "2026-09-30T19:46:27.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 8484,
+      "name": "Yojenkz",
+      "profile_photo_url": "https://sp-mod.com/avatars/Y.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-09-05T06:17:43.000000Z",
+      "updated_at": "2026-08-10T19:21:12.000000Z"
+     },
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 22399,
+      "name": "rockahorse",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/e850a20cfb508505078ade9562b4bd7d048d6cf2_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/6c669a7384fc5cfe46f45cbac996653e7cc37bb0_1280w.webp",
+      "created_at": "2022-09-13T02:16:42.000000Z",
+      "updated_at": "2026-09-16T05:24:11.000000Z"
+     }
+    ],
+    "category": {
+     "id": 11,
+     "hub_id": 27,
+     "title": "Models",
+     "slug": "models",
+     "description": ""
+    }
+   },
+   {
+    "id": 1519,
+    "hub_id": 2085,
+    "guid": "com.wtt.waac",
+    "name": "WTT - W.A.A.C. (Women's Advanced Assault Corps)",
+    "slug": "wtt-waac-womens-advanced-assault-corps",
+    "teaser": "Did you know? There are HOT, SINGLE women in your AO that are ready for INTENSE tactical ops?",
+    "thumbnail": "https://files.sp-mod.com/mods/2085.png",
+    "downloads": 53800,
+    "favourites_count": 52,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/1519/wtt-waac-womens-advanced-assault-corps",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2025-11-07T01:04:00.000000Z",
+    "created_at": "2024-07-04T04:35:19.000000Z",
+    "updated_at": "2026-09-30T19:51:03.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

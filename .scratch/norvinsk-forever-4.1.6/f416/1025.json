@@ -1,0 +1,182 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15301,
+   "hub_id": null,
+   "version": "3.0.0",
+   "description": "<h3><strong>Changelogs</strong></h3>\n<ul>\n<li>Updated to 4.1</li>\n</ul>\n<p>Maintainer: Kobe Thuy</p>\n",
+   "link": "https://sp-mod.com/mod/download/1025/painter/3.0.0",
+   "content_length": 22220369,
+   "spt_version_constraint": "~4.1.5",
+   "downloads": 6008,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-19T15:57:00.000000Z",
+   "created_at": "2026-09-09T05:39:31.000000Z",
+   "updated_at": "2026-09-19T15:57:10.000000Z",
+   "dependencies": [
+    {
+     "id": 1125,
+     "hub_id": 1555,
+     "guid": "com.emilanderss0n.tgc",
+     "name": "Tactical Gear Component",
+     "slug": "tactical-gear-component",
+     "teaser": "Adds a lot more unique gear and attachments for E*****************",
+     "thumbnail": "https://files.sp-mod.com/mods/1555.jpg",
+     "downloads": 302915,
+     "favourites_count": 158,
+     "endorsements_count": 23,
+     "detail_url": "https://sp-mod.com/mod/1125/tactical-gear-component",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": true,
+     "cheat_notice": false,
+     "category_id": 4,
+     "published_at": "2023-10-22T03:19:00.000000Z",
+     "created_at": "2023-10-22T03:19:58.000000Z",
+     "updated_at": "2026-09-19T16:17:11.000000Z",
+     "owner": {
+      "id": 29835,
+      "name": "MoxoPixel",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+      "created_at": "2023-04-08T03:49:17.000000Z",
+      "updated_at": "2026-10-05T17:21:12.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 78428,
+       "name": "kobethuy",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2025-05-04T22:32:08.000000Z",
+       "updated_at": "2026-10-05T13:13:57.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 14177,
+       "hub_id": null,
+       "version": "2.0.0",
+       "description": "<h3><strong>Changelog</strong></h3>\n<ul>\n<li>Updated to 4.0</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1125/tactical-gear-component/2.0.0",
+       "content_length": 656654715,
+       "spt_version_constraint": "~4.0.0",
+       "downloads": 13516,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-07-21T11:39:00.000000Z",
+       "created_at": "2026-07-21T11:39:22.000000Z",
+       "updated_at": "2026-07-28T09:46:04.000000Z"
+      }
+     ],
+     "category": {
+      "id": 4,
+      "hub_id": 21,
+      "title": "Items",
+      "slug": "items",
+      "description": ""
+     }
+    },
+    {
+     "id": 2310,
+     "hub_id": 3025,
+     "guid": "com.wtt.commonlib",
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+     "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+     "downloads": 431808,
+     "favourites_count": 1302,
+     "endorsements_count": 73,
+     "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": true,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2025-09-15T02:44:00.000000Z",
+     "created_at": "2025-09-15T02:44:54.000000Z",
+     "updated_at": "2026-08-23T15:19:33.000000Z",
+     "owner": {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 22121,
+       "name": "Tron",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+       "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+       "created_at": "2022-08-31T05:49:04.000000Z",
+       "updated_at": "2026-10-05T16:42:55.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 14931,
+       "hub_id": null,
+       "version": "3.0.6",
+       "description": "<p>This update is ONLY NEEDED for 4.1.3</p>\n<ul>\n<li>fixed imagemanager for 4.1.3</li>\n<li>updated packages to sptushonka boiii</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/3.0.6",
+       "content_length": 248445,
+       "spt_version_constraint": "~4.1.3",
+       "downloads": 50682,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-08-23T14:15:00.000000Z",
+       "created_at": "2026-08-23T14:16:55.000000Z",
+       "updated_at": "2026-08-23T14:17:14.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    }
+   ]
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1025/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1025/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1025/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1025/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

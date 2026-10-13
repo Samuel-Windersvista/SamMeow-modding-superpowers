@@ -1,0 +1,48 @@
+{
+ "id": 933,
+ "hub_id": 1264,
+ "guid": "com.gaylatea.uselooseloot",
+ "name": "Use Loose Loot",
+ "slug": "use-loose-loot",
+ "teaser": "Use meds and food direct from the world instead of only your pockets. ;)",
+ "thumbnail": "https://files.sp-mod.com/mods/1264.png",
+ "downloads": 110457,
+ "favourites_count": 224,
+ "endorsements_count": 26,
+ "description": "<p>Are you tired of having to drag that Alyonka into your inventory in order to taste its chocolatey delight? Are you tired of bleeding out because you have to shuffle your pockets to fit that Car medkit you just found? Look no further, friend, than this mod.</p>\n<p>Food items will be entirely eaten with the “Use” prompt; meds will be used as if you had done so from your inventory screen. If med resources are left after usage, the loose item will remain where it is so you can use it again.</p>\n<h3>Install Instructions</h3>\n<p>1) Open the downloaded zip file in 7-zip</p>\n<p>2) Select the folders in the zip file in 7-zip</p>\n<p>3) Drag the selected folders from 7-zip into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/933/use-loose-loot",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-06-20T00:15:00.000000Z",
+ "created_at": "2023-06-20T00:15:06.000000Z",
+ "updated_at": "2026-08-03T06:02:27.000000Z",
+ "owner": {
+  "id": 27174,
+  "name": "gaylatea",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/36ff2ea60e32966b4406be6a6ceefb6f16324d45_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-17T21:52:37.000000Z",
+  "updated_at": "2026-08-17T06:32:00.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 27605,
+   "name": "DrakiaXYZ",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+   "cover_photo_url": null,
+   "created_at": "2023-02-26T18:51:50.000000Z",
+   "updated_at": "2026-10-05T23:57:19.000000Z"
+  }
+ ],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

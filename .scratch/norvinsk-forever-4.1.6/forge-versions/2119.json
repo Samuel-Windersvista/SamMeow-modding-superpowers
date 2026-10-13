@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 51,
+   "hub_id": 14850,
+   "version": "1.0.5",
+   "description": "<p>New Quest Added: Hemicrania</p>\n<p>Russian Translation Added for Questline!</p>\n",
+   "link": "https://sp-mod.com/mod/download/2119/epakim1-trader-mod/1.0.5",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 2563,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-08-23T01:33:15.000000Z",
+   "created_at": "2025-08-23T01:33:15.000000Z",
+   "updated_at": "2026-05-14T01:38:06.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2119/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2119/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2119/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2119/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

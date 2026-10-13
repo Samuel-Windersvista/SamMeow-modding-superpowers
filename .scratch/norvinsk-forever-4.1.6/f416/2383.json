@@ -1,0 +1,160 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15630,
+   "hub_id": null,
+   "version": "3.0.0",
+   "description": "<p>Update for 4.1.x with a bunch of bug fixes and revamped web config.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.0",
+   "content_length": 5087190,
+   "spt_version_constraint": "~4.1",
+   "downloads": 779,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-27T15:09:00.000000Z",
+   "created_at": "2026-09-27T15:11:23.000000Z",
+   "updated_at": "2026-09-27T15:33:23.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15640,
+   "hub_id": null,
+   "version": "3.0.1",
+   "description": "<ul>\n<li>New Skill and mini-game: Hacking (Wasn’t quite done for the initial 4.1.x version and wanted some bug reports from testers before turning it on)\n<ul>\n<li>Hack your way into any key card door</li>\n<li>Craft the device at workbench level 2</li>\n<li>Volume knob in the F12 panel if needed</li>\n</ul>\n</li>\n<li>Fixed lock picking /bonk (Forge issue 1)</li>\n<li>Added auth to web pages (Forge issue 2)</li>\n</ul>\n<div class=\"youtube-lite\" data-video-id=\"71C2lFuWYRQ\" data-embed-url=\"https://www.youtube-nocookie.com/embed/71C2lFuWYRQ?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=71C2lFuWYRQ\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.1",
+   "content_length": 30624292,
+   "spt_version_constraint": "~4.1",
+   "downloads": 508,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-28T08:48:00.000000Z",
+   "created_at": "2026-09-28T08:51:49.000000Z",
+   "updated_at": "2026-09-28T08:58:33.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15643,
+   "hub_id": null,
+   "version": "3.0.2",
+   "description": "<ul>\n<li>Fix end of raid json error</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.2",
+   "content_length": 30640915,
+   "spt_version_constraint": "~4.1",
+   "downloads": 529,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-28T17:09:00.000000Z",
+   "created_at": "2026-09-28T17:10:07.000000Z",
+   "updated_at": "2026-09-28T17:11:21.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15655,
+   "hub_id": null,
+   "version": "3.0.3",
+   "description": "<ul>\n<li>Add server side Enum patcher</li>\n<li>Fix compatibility with mods like Give-Ui\n<ul>\n<li>As a result of this fix, you may/will lose progress you had in <code>Hacking</code>, I recommend taking a note of your current skill level before updating. You can use the mods web page to get back any progress lost with the profile skill editor. This is the first skill that didn’t piggy back off of existing unused skills so there were some problems. I apologize for the inconvenience.</li>\n</ul>\n</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.0.3",
+   "content_length": 30636972,
+   "spt_version_constraint": "~4.1",
+   "downloads": 1043,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-29T03:12:00.000000Z",
+   "created_at": "2026-09-29T03:16:20.000000Z",
+   "updated_at": "2026-09-29T03:23:41.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15692,
+   "hub_id": null,
+   "version": "3.1.0",
+   "description": "<p>3.1.0 Needs Sync version ~1.2.0 for Fika. Open issues with feedback on the new skill or any issues that you come across for this version. Do not open issues unless you’re on the most recent version, thank you</p>\n<h1>New Skill: Signals Intelligence</h1>\n<ul>\n<li>Use your <code>Modified PDA</code> to hunt down signal caches in raid. (Right click it from your inventory, or <code>left alt+p</code> by default)</li>\n<li>Signal caches contain anywhere from 250-500K Roubles worth of loot.</li>\n<li>You can only find 1 per raid.</li>\n<li>They’re currently only available on Woods and Customs.</li>\n<li>You cannot find them naturally, they do not spawn until tracked down.</li>\n<li>Take signal recordings at positions on the map to triangulate the position of the cache.</li>\n<li>You must have at least 2 intersecting points in order to mark the circle. The uncertainty bands count, while decreasing accuracy. More intersections decrease the circle size, giving it more accuracy. Recordings can be taken, not closer than 125 meters from each other.</li>\n<li>Once you triangulate a rough position that will be marked with a yellow circle, you will hear a continuous beeping sound when in the zone. It increases in pitch when you’re facing the cache, and occurs faster the closer you get. You can use these to search for and locate the cache.</li>\n<li>Unlocking the cache requires you to match the oscillation phase of the container in order to upload the password to it and unlock it.</li>\n</ul>\n<p>Some tuning may be required in future releases if it turns out its too easy or hard.</p>\n<div class=\"youtube-lite\" data-video-id=\"3XpkocvH4dg\" data-embed-url=\"https://www.youtube-nocookie.com/embed/3XpkocvH4dg?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=3XpkocvH4dg\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h1>Revamped Skill: Lock Picking (2.0)</h1>\n<p>The end of an era. The mini-game while simple, was often times confusing for people because of lack of visual feedback or cues. It didn’t scale well with difficulty and was often times able to be cheesed with ease. This never sat right with me and broke balance in a lot of situations. This new game provides a skill based (not guess based) way to unlock doors and can’t be brute forced with luck because of randomization. It provides you with the information needed on screen to unlock the lock, check out the attached video to see me picking a lock with the new system.  The same lock pick kit that has always existed is the same one you need to carry. Go unlock some doors.</p>\n<p>Some tuning may be required in future releases if it turns out its too easy or hard.</p>\n<div class=\"youtube-lite\" data-video-id=\"U0NbbG17g10\" data-embed-url=\"https://www.youtube-nocookie.com/embed/U0NbbG17g10?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=U0NbbG17g10\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n<h1>Improvements</h1>\n<ul>\n<li>New shared border for all PDA related activities.</li>\n<li>Added supported doors from Manimals interchange backport and Vultify’s Blackout mods to lock picking. - Thanks PRXPHET</li>\n<li>Hacking config page layout improvements.</li>\n<li>Max configurable hacking attempts are now much higher.</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed “Skill Manager is null” spam on the Fika headless.</li>\n<li>Maybe fixed ultra-wide scaling issues. (untested)</li>\n<li>Russian and English localization fixes - Thanks PRXPHET</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.0",
+   "content_length": 109231453,
+   "spt_version_constraint": "~4.1",
+   "downloads": 1036,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-30T17:10:00.000000Z",
+   "created_at": "2026-09-30T17:19:32.000000Z",
+   "updated_at": "2026-10-01T07:37:12.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15733,
+   "hub_id": null,
+   "version": "3.1.1",
+   "description": "<h1>New</h1>\n<ul>\n<li>In raid config companion interface for doors and signal caches.\n<ul>\n<li>Check the F12 menu to enable it and see the key bind to open it.</li>\n<li>Modify door levels in raid.</li>\n<li>Create signal cache locations in raid.\n<ul>\n<li>I recommend using a search distance of 0 for placement, this forces the cache to use the placed location and rotation, search randomization can sometimes fail still.</li>\n</ul>\n</li>\n<li>Saved changes take effect on your next raid, no need to restart the client.</li>\n<li>Fika servers must explicitly allow editor use to a profile via the web config.</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Signal caches are now enabled on all maps except factory.</li>\n<li>Replaced all existing caches on woods and customs with better accuracy with the use of the editor.</li>\n<li>Placed caches on Ground Zero.</li>\n<li>Placed caches on Interchange.</li>\n<li>Placed caches on Shoreline.</li>\n<li>Reserve, Lighthouse and Streets still have no placed caches.</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixed excessive raid loading times when using the headless client, caused by the new signals skill. (With addon update)</li>\n<li>Fixed exception spam when using the headless client, caused by invalid access to the players skills. (With addon update)</li>\n<li>Misc config page layout fixes.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.1",
+   "content_length": 109594837,
+   "spt_version_constraint": "~4.1",
+   "downloads": 902,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-02T08:05:00.000000Z",
+   "created_at": "2026-10-02T08:07:08.000000Z",
+   "updated_at": "2026-10-02T08:08:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15756,
+   "hub_id": null,
+   "version": "3.1.2",
+   "description": "<p>Fika requires sync version 1.2.2</p>\n<h1>Lock Picking</h1>\n<ul>\n<li>New mouse wheel tension mechanic.\n<ul>\n<li>Adjust the mouse wheel up and down to increase or decrease tension.</li>\n</ul>\n</li>\n<li>2 new security pins.\n<ul>\n<li>Spool: These pins have a waist that can create a false set, requiring you to ease tension to allow counter rotation.</li>\n<li>Serrated: These have grooves that can have multiple “clicks” that can create a false set.</li>\n</ul>\n</li>\n<li>Over set: Lifting a pin too far can spoil an already set pin by allowing the cylinder to move unexpectedly.</li>\n<li>Too little tension or counter rotation can drop pins that have already been set</li>\n</ul>\n<p>Higher tier locks have more security pins. Remember, slow is smooth and smooth is fast.</p>\n<h1>New</h1>\n<ul>\n<li>Mini-game guides on the mods web page.</li>\n<li>Config pages for the rest of the games skills to adjust their bonuses.\n<ul>\n<li>No guard rails here, if something breaks from cranking it to some stupid amount let me know so I can cap it.</li>\n</ul>\n</li>\n<li>Skill leveling speed config, a global modifier and a per skill modifier.\n<ul>\n<li>They are multiplicative allowing you to set an overall higher leveling speed while also decreasing metabolism leveling speed.</li>\n<li>Only edit leveling speed with one mod. Do not use multiple mods to do this, it can and will lead to undesirable behavior. Example is SVM or similar mods.</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Added ~50 signal cache locations to reserve.</li>\n<li>Added F12 option to use toggle/hold behavior for lock pick tension key bind.</li>\n<li>Forgot to mention in previous patch notes that WTT Armory weapons are now included and categorized by nation in the default mod config. Adding almost 100 usable weapons(with variants) to the respective skills if you have WTT Armory.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.2",
+   "content_length": 114900611,
+   "spt_version_constraint": "~4.1",
+   "downloads": 980,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-03T05:45:00.000000Z",
+   "created_at": "2026-10-03T05:45:55.000000Z",
+   "updated_at": "2026-10-03T05:49:48.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15768,
+   "hub_id": null,
+   "version": "3.1.3",
+   "description": "<p>I understand that some of you are not happy with the changes to lock picking, mainly the security pins. Tushonka is a hardcore game and requires hardcore mechanics. That said, I do understand the frustration of not understanding how something works. So I’m aiming to hopefully improve that with the following changes. Fika requires sync version 1.2.4.</p>\n<h1>Practice Modes</h1>\n<ul>\n<li>Mini-game practices are now available to access from the skill panel while not in-raid.</li>\n<li>It includes practice modes for all 3 mini-games.</li>\n<li>They were previously available, but hidden behind obscure console commands.</li>\n<li>They have buttons next to their respective skills to enter practice mode.</li>\n<li>You don’t need the prerequisite items to use practice mode.</li>\n</ul>\n<h1>Lock picking</h1>\n<ul>\n<li>Lock picking practice coaching will now show you a fully interactive guide including;\n<ul>\n<li>What pin to work on</li>\n<li>Tension ranges</li>\n<li>Lift range</li>\n<li>Hold duration in lift range</li>\n</ul>\n</li>\n<li>Coaching mode is now available in-raid from lock picking levels 1-10, on lock levels up to and including level 3.\n<ul>\n<li>Once you are lock picking level 11, you will no longer have access to in-raid coaching.</li>\n</ul>\n</li>\n<li>Fixes Lock Picking having no audio after the first raid</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.3",
+   "content_length": 114911151,
+   "spt_version_constraint": "~4.1",
+   "downloads": 1193,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-04T05:01:00.000000Z",
+   "created_at": "2026-10-04T05:03:32.000000Z",
+   "updated_at": "2026-10-04T05:06:14.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2383/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2383/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2383/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2383/versions",
+  "per_page": 50,
+  "to": 8,
+  "total": 8
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": 1358,
+ "hub_id": 1880,
+ "guid": "com.acidphantasm.brightlasers",
+ "name": "BrightLasers",
+ "slug": "brightlasers",
+ "teaser": "Brighter lasers for your guns. No more blue laser, best laser. (It's still the best)",
+ "thumbnail": "https://files.sp-mod.com/mods/1880.png",
+ "downloads": 127945,
+ "favourites_count": 231,
+ "endorsements_count": 32,
+ "description": "<p>Not entirely accurate preview anymore since you can set your own settings. Press F12 to configure the mod.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/IctaBLR.gif\" alt=\"A8q0NLy.png\" /></p>\n<hr />\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download BrightLasers</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the SPT &amp; BepInEx folders in the zip file in 7-zip</li>\n<li>Drag the SPT &amp; BepInEx folders from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"3N6gTe2.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-brightlasers</code></li>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-brightlasers</code></li>\n<li>Done</li>\n</ol></div></div></div>\n<hr />\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1358/brightlasers",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 10,
+ "published_at": "2024-04-23T23:25:00.000000Z",
+ "created_at": "2024-04-23T23:25:40.000000Z",
+ "updated_at": "2026-08-13T06:18:34.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 10,
+  "hub_id": 26,
+  "title": "Retextures",
+  "slug": "retextures",
+  "description": ""
+ }
+}

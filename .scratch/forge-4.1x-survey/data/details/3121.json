@@ -1,0 +1,32 @@
+{
+ "id": 3121,
+ "hub_id": null,
+ "guid": "com.harmonyzt.brokenlimbsdontheal",
+ "name": "Broken Limbs Don't Heal",
+ "slug": "broken-limbs-dont-heal",
+ "teaser": "Broken limbs aren't supposed to heal instantly. This mod introduces a new health effect and mechanic for that.",
+ "thumbnail": "https://files.sp-mod.com/mods/iUoZOploCqBLXn7UzcLjkCyZF2RGgIOJJHFEUOi6.png",
+ "downloads": 175,
+ "favourites_count": 1,
+ "endorsements_count": 1,
+ "description": "<p>A simple mod that will make healing fractures act a bit differently (more in a realistic way, some sort).</p>\n<p>Once you break your leg/arm and heal it with a splint, or a surgery kit, you’ll get a “Healed Fracture” - an effect that’d still give you slight debuffs for movement speed, and ergonomics.</p>\n<p>Penalties also stack with each healed arm/leg, effectively doubling the penalties.\nBoth penalties % and time are configurable inside F12!</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/harmonyzt/BrokenLimbsDontHeal/blob/main/Preview/1.png?raw=true\" alt=\"\" /></p>\n<h3>Powered by <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3123/eft-effects-manager\" rel=\"noreferrer noopener\">EFT Effects Manager</a></h3>\n<p>And is more of a showcase mod of what’s possible to add into the game using this API. However, suggestions and bug reports are always welcome.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3121/broken-limbs-dont-heal",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-10-07T15:56:00.000000Z",
+ "created_at": "2026-10-07T15:56:17.000000Z",
+ "updated_at": "2026-10-10T12:33:21.000000Z",
+ "owner": {
+  "id": 30878,
+  "name": "harmony",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+  "created_at": "2023-05-07T14:52:19.000000Z",
+  "updated_at": "2026-10-11T01:02:24.000000Z"
+ },
+ "additional_authors": []
+}

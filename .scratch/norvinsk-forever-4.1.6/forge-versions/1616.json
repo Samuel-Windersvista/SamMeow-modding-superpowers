@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 3210,
+   "hub_id": 11169,
+   "version": "1.2.1",
+   "description": "",
+   "link": "https://sp-mod.com/mod/download/1616/true-items-redux/1.2.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 1894,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-01T17:39:15.000000Z",
+   "created_at": "2024-08-01T17:39:15.000000Z",
+   "updated_at": "2026-07-03T18:04:13.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1616/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1616/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1616/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1616/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

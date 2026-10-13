@@ -1,0 +1,450 @@
+{
+ "term": "Raid Overhaul",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3047,
+    "hub_id": null,
+    "guid": "com.mybutthasarash.deployscreen",
+    "name": "Deploy Screen Overhaul",
+    "slug": "deploy-screen-overhaul",
+    "teaser": "You’ve spent enough time staring at the same loading screen. So have I.",
+    "thumbnail": "https://files.sp-mod.com/mods/WOcvcgHJuBCvnr7MCmli19kB5BVKQvapiKTbiWcU.png",
+    "downloads": 1371,
+    "favourites_count": 17,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/3047/deploy-screen-overhaul",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-09-20T19:57:00.000000Z",
+    "created_at": "2026-09-20T19:50:09.000000Z",
+    "updated_at": "2026-09-20T20:47:36.000000Z",
+    "owner": {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-06T13:15:58.000000Z",
+     "updated_at": "2026-10-05T15:26:58.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1775,
+    "hub_id": 2412,
+    "guid": "com.moxopixel.menuoverhaul",
+    "name": "WTT - Menu Overhaul",
+    "slug": "wtt-menu-overhaul",
+    "teaser": "Add a new menu layout to SPT and add your player to the menu screen.",
+    "thumbnail": "https://files.sp-mod.com/mods/2412.jpg",
+    "downloads": 125459,
+    "favourites_count": 311,
+    "endorsements_count": 27,
+    "detail_url": "https://sp-mod.com/mod/1775/wtt-menu-overhaul",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2024-10-19T01:53:00.000000Z",
+    "created_at": "2024-10-19T01:53:57.000000Z",
+    "updated_at": "2026-08-17T00:02:52.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2810,
+    "hub_id": null,
+    "guid": "com.kazusa.questconditionoverhaul",
+    "name": "Kill&Bill - Quest Condition Overhaul",
+    "slug": "killbill-quest-condition-overhaul",
+    "teaser": "Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, and rewards.",
+    "thumbnail": "https://files.sp-mod.com/mods/YO5A98UUbSdEfy6h2tbjyclUL9Sm02w812DD3ftn.png",
+    "downloads": 3444,
+    "favourites_count": 20,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2810/killbill-quest-condition-overhaul",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-07-17T06:28:00.000000Z",
+    "created_at": "2026-07-08T18:47:18.000000Z",
+    "updated_at": "2026-08-13T10:07:38.000000Z",
+    "owner": {
+     "id": 111990,
+     "name": "Kazusa",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/QJqpTon6j4tYc53KzIDAPRyVCGAKcjaxQQ1O7Ekn_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-07T04:03:52.000000Z",
+     "updated_at": "2026-09-28T08:53:42.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2642,
+    "hub_id": null,
+    "guid": "dev.oogabooga.spt-vagabond",
+    "name": "Vagabond",
+    "slug": "vagabond",
+    "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your challenge is now to survive using only transits and access traders via their own extracts.",
+    "thumbnail": "https://files.sp-mod.com/mods/izW0lUid47l1eul4fCSblOyWhrzy8H5tLs40A71Y.png",
+    "downloads": 7049,
+    "favourites_count": 72,
+    "endorsements_count": 13,
+    "detail_url": "https://sp-mod.com/mod/2642/vagabond",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-03-26T14:14:00.000000Z",
+    "created_at": "2026-03-26T13:51:10.000000Z",
+    "updated_at": "2026-09-27T18:10:23.000000Z",
+    "owner": {
+     "id": 85960,
+     "name": "Oogabooga",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6yiCwpf5mgGBgUSsdjnYgu2EJ0uccWz2bAqQT3VP_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/Pgxl5yffuEsHGQA7DSlDlAxR3sf3zyaF5HcMPpOO.png",
+     "created_at": "2025-10-19T10:46:08.000000Z",
+     "updated_at": "2026-10-03T16:56:32.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2025,
+    "hub_id": 2705,
+    "guid": "com.zgfuedkx.allquestscheckmarks",
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "teaser": "Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in future quests. It also works with Fika and shows items required by your friends!",
+    "thumbnail": "https://files.sp-mod.com/mods/2705.png",
+    "downloads": 61047,
+    "favourites_count": 190,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2025/all-quests-checkmarks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2025-03-06T23:43:00.000000Z",
+    "created_at": "2025-03-06T23:43:10.000000Z",
+    "updated_at": "2026-08-29T21:24:27.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2893,
+    "hub_id": null,
+    "guid": "com.hysocs.traumacore",
+    "name": "TraumaCore",
+    "slug": "traumacore",
+    "teaser": "TraumaCore is a configurable damage and injury overhaul for SPT",
+    "thumbnail": "https://files.sp-mod.com/mods/jmXNvUYj2Mh7dlpoDw8nQLCQS6PEzr9RkKLeLvDH.png",
+    "downloads": 5062,
+    "favourites_count": 60,
+    "endorsements_count": 28,
+    "detail_url": "https://sp-mod.com/mod/2893/traumacore",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-08-10T01:25:00.000000Z",
+    "created_at": "2026-08-10T01:25:49.000000Z",
+    "updated_at": "2026-09-23T22:29:04.000000Z",
+    "owner": {
+     "id": 118937,
+     "name": "Hysocs",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/lAHgRO7c2a5ET6Cu2bCjFOI2s7dt8SukoSsjUgaC_1280w.webp",
+     "created_at": "2026-07-27T18:19:13.000000Z",
+     "updated_at": "2026-10-05T11:20:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 3084,
+    "hub_id": null,
+    "guid": "com.custom.flashlightmodifier",
+    "name": "Better Flashlights",
+    "slug": "better-flashlights",
+    "teaser": "A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams",
+    "thumbnail": "https://files.sp-mod.com/mods/QZiC1tunsf7P5tSiRfunb6JnKMUtp5PtKv7OVgwl.png",
+    "downloads": 1387,
+    "favourites_count": 25,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/3084/better-flashlights",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-09-30T19:06:00.000000Z",
+    "created_at": "2026-09-30T01:30:45.000000Z",
+    "updated_at": "2026-10-05T05:56:58.000000Z",
+    "owner": {
+     "id": 36725,
+     "name": "ThanashsK",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/iNJLEanYXhS3HEyeSZGWrDpxbtKBHqtJoBqHjqOw_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-09-07T08:12:05.000000Z",
+     "updated_at": "2026-10-05T16:25:11.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 1192,
+    "hub_id": 1673,
+    "guid": "nameless.raidoverhaul",
+    "name": "Raid Overhaul",
+    "slug": "raid-overhaul",
+    "teaser": "An overhaul to how raids function including raid timer being tied to your system time with an (almost) endless raid length, random events occurring throughout your raids, and a new themed trader to help you make your way through T*****.",
+    "thumbnail": "https://files.sp-mod.com/mods/8E3El1l9JDJiEc3tydl0FYIVdHtPvMpzJZZL2RdX.jpg",
+    "downloads": 31775,
+    "favourites_count": 48,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1192/raid-overhaul",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-04-10T07:37:00.000000Z",
+    "created_at": "2023-12-20T21:01:35.000000Z",
+    "updated_at": "2026-07-28T08:21:17.000000Z",
+    "owner": {
+     "id": 37025,
+     "name": "nameless♥",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/0883084a142f94ac0f0d618f89c64666f23b8eaf_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/2ab3dbb21db5a094bafddcfcdabfa1f5e2237ef8_1280w.webp",
+     "created_at": "2023-09-14T14:15:06.000000Z",
+     "updated_at": "2026-09-30T04:39:38.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 33963,
+      "name": "Cj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+      "created_at": "2023-07-14T19:01:21.000000Z",
+      "updated_at": "2026-10-05T16:52:37.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2046,
+    "hub_id": 2729,
+    "guid": "com.netvnum.pause",
+    "name": "PAUSE",
+    "slug": "pause",
+    "teaser": "This mod allows you to PAUSE the raid in progress, giving you time to take care of real life!",
+    "thumbnail": "https://files.sp-mod.com/mods/2729.jpeg",
+    "downloads": 66916,
+    "favourites_count": 133,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2046/pause",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-03-21T15:56:05.000000Z",
+    "created_at": "2025-03-21T15:56:05.000000Z",
+    "updated_at": "2026-07-28T06:04:44.000000Z",
+    "owner": {
+     "id": 74904,
+     "name": "netVnum",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b68be39e6843ad710a55abd84b558947f1225475_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/78cb218cc38e5b93331c9aa78d8e5fec08002427.jpeg",
+     "created_at": "2025-03-16T11:59:03.000000Z",
+     "updated_at": "2026-09-15T19:11:07.000000Z"
+    },
+    "additional_authors": [],
+    "category": null
+   },
+   {
+    "id": 2088,
+    "hub_id": 2773,
+    "guid": "com.geko.gekosbetterprogression",
+    "name": "Geko's Better Progression",
+    "slug": "gekos-better-progression",
+    "teaser": "What if EFT's progression wasn’t built and balanced around pay-to-win? What if you could actually level up skills? This mod (gently) reworks the entire progression system for smoother, more meaningful growth—fully customizable down to the tiniest detail.",
+    "thumbnail": "https://files.sp-mod.com/mods/2773.png",
+    "downloads": 22330,
+    "favourites_count": 28,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2088/gekos-better-progression",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-02-09T19:10:00.000000Z",
+    "created_at": "2025-04-08T21:11:06.000000Z",
+    "updated_at": "2026-07-28T08:01:38.000000Z",
+    "owner": {
+     "id": 73639,
+     "name": "DrunkGeko",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8eb1bdb4b3bad1027fb904f1a4e49c4fb4cbb9e2_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-17T14:57:15.000000Z",
+     "updated_at": "2026-08-10T19:49:30.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 94774,
+      "name": "marbL-",
+      "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-12-06T16:37:09.000000Z",
+      "updated_at": "2026-08-10T19:51:29.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

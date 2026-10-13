@@ -1,0 +1,85 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 3628,
+   "hub_id": 10647,
+   "version": "1.3.0",
+   "description": "<p>Update for SPT 3.9.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1373/sig-sauer-mcx-virtus-multi-carlibre-rifle/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 4417,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-09T00:02:07.000000Z",
+   "created_at": "2024-07-09T00:02:07.000000Z",
+   "updated_at": "2024-07-09T00:02:07.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2025,
+   "hub_id": 12645,
+   "version": "1.4.0",
+   "description": "<p>Available for SPT 3.10</p>\n<p>- All item IDs updated to MongoIDs;</p>\n<p>- Splited virtus into 2 verisons, 5.56 virtus (in grey) &amp; .300 blk virtus (in black) , attachments also has black varieties;</p>\n<p>- Shaders updated;</p>\n<p>- Remade and added attachments, MI handguard (11inch remesh), collapsible stock (added slot), SIG M400 pistol grip (rescaled), MIAD pistol grip (has diffrence from EFT legacy), PT stock (remade)</p>\n",
+   "link": "https://sp-mod.com/mod/download/1373/sig-sauer-mcx-virtus-multi-carlibre-rifle/1.4.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 562,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-14T12:15:54.000000Z",
+   "created_at": "2024-12-14T12:15:54.000000Z",
+   "updated_at": "2026-07-13T18:02:46.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 470,
+   "hub_id": 14392,
+   "version": "1.5.0",
+   "description": "<p>Updated for SPT 3.11 with updated texture and shader.</p>\n<p>Code now also updated.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1373/sig-sauer-mcx-virtus-multi-carlibre-rifle/1.5.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 4633,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-06-04T13:15:10.000000Z",
+   "created_at": "2025-06-04T13:15:10.000000Z",
+   "updated_at": "2026-07-13T18:00:59.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1373/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1373/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1373/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1373/versions",
+  "per_page": 50,
+  "to": 3,
+  "total": 3
+ }
+}

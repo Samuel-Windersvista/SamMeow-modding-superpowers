@@ -249,7 +249,7 @@ registerTool({
   name: "mo2_install",
   tier: "T3",
   description:
-    "Install mod from archive (.zip/.7z/.rar). FOMOD non-interactive via fomod_choices. Pattern A: sidecar parse/extract → broker createMod → move → meta.ini → register modlist.txt. Name the overlay per the convention '<category>-<mod-name>-<version>' (e.g. '工具-MCP活跃探针-0.1.0'); comments (required — short summary shown in MO2's list) and notes (optional — longer install record for the Notes tab) are written to meta.ini so every overlay is self-documenting.",
+    "Install mod from archive (.zip/.7z/.rar). FOMOD non-interactive via fomod_choices. Pattern A: sidecar parse/extract → broker createMod → move → meta.ini → register modlist.txt. Name the overlay to match the target pack's existing mod naming scheme (user's packs: '[N]<系列/分类>-<中文功能名>-<英文mod名>', e.g. '[13]MOD工具-综合调试工具包-SamMeow.DebugToolkit'; fallback '<category>-<mod-name>-<version>'); comments (required — short summary shown in MO2's list) and notes (optional — longer install record for the Notes tab) are written to meta.ini so every overlay is self-documenting.",
   inputSchema,
   handler: (args, ctx) =>
     routeToPlanApply(handler, args, ctx, ctx.plans, ctx.snapshots) as Promise<unknown>,

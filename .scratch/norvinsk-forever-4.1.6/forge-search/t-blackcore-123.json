@@ -1,0 +1,530 @@
+{
+ "term": "Black Core",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2195,
+    "hub_id": 2898,
+    "guid": "com.eukyre.ecot",
+    "name": "ECOT - Eukyre's Consortium of Things",
+    "slug": "ecot-eukyres-consortium-of-things",
+    "teaser": "Home of the Blahaj and the FNX-45.",
+    "thumbnail": "https://files.sp-mod.com/mods/0qwE9Z9oW2nxCHC9KfobyHvEYedAa9E9p8EwuE2i.png",
+    "downloads": 29624,
+    "favourites_count": 95,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/2195/ecot-eukyres-consortium-of-things",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2025-06-22T05:47:00.000000Z",
+    "created_at": "2025-06-22T05:47:17.000000Z",
+    "updated_at": "2026-09-30T23:46:03.000000Z",
+    "owner": {
+     "id": 58981,
+     "name": "probablyEukyre",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+     "created_at": "2024-07-21T15:22:59.000000Z",
+     "updated_at": "2026-10-03T18:38:44.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2511,
+    "hub_id": null,
+    "guid": "com.blackdiv.tacticaltoaster",
+    "name": "WTT - Black Division [REDACTED] Home",
+    "slug": "wtt-black-division-redacted-home",
+    "teaser": "[REDACTED]",
+    "thumbnail": "https://files.sp-mod.com/mods/ZFIiCkmETKFUGGbnyR522ogkJMyEpZdJylpwllq2.png",
+    "downloads": 114439,
+    "favourites_count": 490,
+    "endorsements_count": 46,
+    "detail_url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-12-26T01:46:00.000000Z",
+    "created_at": "2025-12-24T05:41:17.000000Z",
+    "updated_at": "2026-09-06T14:39:03.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1125,
+    "hub_id": 1555,
+    "guid": "com.emilanderss0n.tgc",
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "teaser": "Adds a lot more unique gear and attachments for E*****************",
+    "thumbnail": "https://files.sp-mod.com/mods/1555.jpg",
+    "downloads": 302905,
+    "favourites_count": 158,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/1125/tactical-gear-component",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2023-10-22T03:19:00.000000Z",
+    "created_at": "2023-10-22T03:19:58.000000Z",
+    "updated_at": "2026-09-19T16:17:11.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 78428,
+      "name": "kobethuy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-05-04T22:32:08.000000Z",
+      "updated_at": "2026-10-05T13:13:57.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2423,
+    "hub_id": null,
+    "guid": "com.c11.truenorth4",
+    "name": "C11 - True North",
+    "slug": "c11-true-north",
+    "teaser": "New guns and parts from foreign lands",
+    "thumbnail": "https://files.sp-mod.com/mods/CP9Y8wRWygHYoM19o2cqO6vbdgfwl7b7HDLyO21I.png",
+    "downloads": 43736,
+    "favourites_count": 77,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2423/c11-true-north",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-11-05T15:20:00.000000Z",
+    "created_at": "2025-11-05T15:44:15.000000Z",
+    "updated_at": "2026-09-27T04:48:47.000000Z",
+    "owner": {
+     "id": 84418,
+     "name": "bobinstien",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/57f4a22c37774255c5ffb84b42e031fc0aaf831b_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/7BxfWR8ojvpMHscIdCJ9pQMSCCRuEJOsqEXyblrT_2560w.webp",
+     "created_at": "2025-09-09T03:44:35.000000Z",
+     "updated_at": "2026-10-05T02:16:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1263,
+    "hub_id": 1764,
+    "guid": "com.epicrangetime.aio",
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.",
+    "thumbnail": "https://files.sp-mod.com/mods/1764.jpg",
+    "downloads": 274736,
+    "favourites_count": 347,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1263/epics-all-in-one",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2024-03-24T23:38:00.000000Z",
+    "created_at": "2024-03-24T23:38:18.000000Z",
+    "updated_at": "2026-09-21T21:02:35.000000Z",
+    "owner": {
+     "id": 36153,
+     "name": "EpicRangeTime",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+     "created_at": "2023-08-26T03:19:00.000000Z",
+     "updated_at": "2026-10-03T02:57:01.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2246,
+    "hub_id": 2952,
+    "guid": "com.wtt.armory",
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "teaser": "The official weapons pack forged by the WTT developers & friends...  Arm yourself accordingly...",
+    "thumbnail": "https://files.sp-mod.com/mods/RrLPvL3Yfib2hl8Dvh9Q0PIC45xpy6AOai6bW5aN.png",
+    "downloads": 284993,
+    "favourites_count": 510,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2246/wtt-armory",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-08-08T03:08:00.000000Z",
+    "created_at": "2025-08-08T03:08:00.000000Z",
+    "updated_at": "2026-09-21T03:34:24.000000Z",
+    "owner": {
+     "id": 22121,
+     "name": "Tron",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+     "created_at": "2022-08-31T05:49:04.000000Z",
+     "updated_at": "2026-10-05T16:42:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 44,
+      "name": "Choccy Milk",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2020-07-03T04:06:15.000000Z",
+      "updated_at": "2026-09-26T04:16:33.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     },
+     {
+      "id": 58981,
+      "name": "probablyEukyre",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+      "created_at": "2024-07-21T15:22:59.000000Z",
+      "updated_at": "2026-10-03T18:38:44.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2326,
+    "hub_id": null,
+    "guid": "com.fika.core",
+    "name": "Project Fika",
+    "slug": "project-fika",
+    "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items and quest progression, fight AI bots (PMCs, SCAVs, and bosses) together and much more.",
+    "thumbnail": "https://files.sp-mod.com/mods/RhGQs4svMQ3MWGiEwn8WUQXxP3GUdVhLorptQcXA.png",
+    "downloads": 96144,
+    "favourites_count": 219,
+    "endorsements_count": 26,
+    "detail_url": "https://sp-mod.com/mod/2326/project-fika",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2025-09-26T20:43:00.000000Z",
+    "created_at": "2025-09-26T20:14:55.000000Z",
+    "updated_at": "2026-09-15T08:13:03.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 52282,
+      "name": "ArchangelWTF",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-20T14:55:34.000000Z",
+      "updated_at": "2026-10-05T14:23:46.000000Z"
+     },
+     {
+      "id": 85060,
+      "name": "trippyone",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/gloYnvKsCxIr4hzbMtfeGisaXi1jgGOJp8ifmVpj_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-09-26T20:56:18.000000Z",
+      "updated_at": "2026-08-10T19:50:34.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2383,
+    "hub_id": null,
+    "guid": "com.cj.skillsextended",
+    "name": "Skills Extended",
+    "slug": "skills-extended",
+    "teaser": "Lack of skills is no longer a skill issue",
+    "thumbnail": "https://files.sp-mod.com/mods/vZ9rU0OUgvAY9yI8PA7GficoQHCECfylvWOq5rkA.png",
+    "downloads": 55502,
+    "favourites_count": 266,
+    "endorsements_count": 50,
+    "detail_url": "https://sp-mod.com/mod/2383/skills-extended",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-08-28T15:57:00.000000Z",
+    "created_at": "2025-10-19T06:45:51.000000Z",
+    "updated_at": "2026-10-04T05:31:35.000000Z",
+    "owner": {
+     "id": 33963,
+     "name": "Cj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+     "created_at": "2023-07-14T19:01:21.000000Z",
+     "updated_at": "2026-10-05T16:52:37.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1340,
+    "hub_id": 1858,
+    "guid": "com.wtt.yojenkzheads",
+    "name": "WTT - The Long Lost Heads of Yojenkz",
+    "slug": "wtt-the-long-lost-heads-of-yojenkz",
+    "teaser": "This mod adds 10 new options for the player head.\r\nWait...\r\nHead? Aye lmao?",
+    "thumbnail": "https://files.sp-mod.com/mods/1858.png",
+    "downloads": 30374,
+    "favourites_count": 46,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/1340/wtt-the-long-lost-heads-of-yojenkz",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 11,
+    "published_at": "2024-04-19T00:42:00.000000Z",
+    "created_at": "2024-04-19T00:42:50.000000Z",
+    "updated_at": "2026-09-30T19:46:27.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 8484,
+      "name": "Yojenkz",
+      "profile_photo_url": "https://sp-mod.com/avatars/Y.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-09-05T06:17:43.000000Z",
+      "updated_at": "2026-08-10T19:21:12.000000Z"
+     },
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 22399,
+      "name": "rockahorse",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/e850a20cfb508505078ade9562b4bd7d048d6cf2_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/6c669a7384fc5cfe46f45cbac996653e7cc37bb0_1280w.webp",
+      "created_at": "2022-09-13T02:16:42.000000Z",
+      "updated_at": "2026-09-16T05:24:11.000000Z"
+     }
+    ],
+    "category": {
+     "id": 11,
+     "hub_id": 27,
+     "title": "Models",
+     "slug": "models",
+     "description": ""
+    }
+   },
+   {
+    "id": 2010,
+    "hub_id": 2690,
+    "guid": "com.szonszczyk.definitiveweaponvariants",
+    "name": "Definitive Weapon Variants",
+    "slug": "definitive-weapon-variants",
+    "teaser": "600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, click scavs to death, tap bosses with anti-materiel rifles, or simply collect unique variants, this mod has it all!",
+    "thumbnail": "https://files.sp-mod.com/mods/2690.png",
+    "downloads": 42992,
+    "favourites_count": 69,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2010/definitive-weapon-variants",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-02-16T15:53:00.000000Z",
+    "created_at": "2025-02-16T15:53:53.000000Z",
+    "updated_at": "2026-09-20T01:56:33.000000Z",
+    "owner": {
+     "id": 51472,
+     "name": "Szonszczyk",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/17fdeb88404a598631a42329eecdeea4b737799b_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/02e2d36d391a69035df0b185dfa6749689212bf7_1280w.webp",
+     "created_at": "2024-05-10T21:35:56.000000Z",
+     "updated_at": "2026-10-05T16:29:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

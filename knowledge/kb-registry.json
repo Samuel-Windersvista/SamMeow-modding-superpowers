@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-13",
+  "_README": [
+    "知识库注册表 —— 单一真相源。加新库 = 这里加一条 + 跑一次 builder（scripts/kb/build-index.mjs），",
+    "不在任何提示词/skill 里写死路径，也不要给新库加新 MCP 工具（统一走 spt_kb_list / spt_kb_query）。",
+    "字段：id / title（一句话用途，供 kb_list 展示）/ authority（它权威覆盖什么，冲突时据此取舍）/",
+    "root（绝对路径，或相对仓库根）/ index（绝对；'./x' 相对 root；否则相对仓库根）/ envKey（可选根覆盖，",
+    "显式设置但无效即报错、不回退）/ enabled / scan（builder 与过期检测共用的白名单目录 + exclude 通配）/",
+    "sections（目录 -> topic/source 映射）/ versionDefaults + versionPatterns（无 frontmatter 的库靠这个标版本）。",
+    "准入标准：能明确切出有用部分（scan 写得出来）、有可判定的权威边界、有稳定结构。三条不满足的库别注册。"
+  ],
+  "defaults": {
+    "indexDir": "knowledge/indexes"
+  },
+  "kbs": [
+    {
+      "id": "spt-kb",
+      "title": "SPT mod 开发 / API / 版本 / 冲突（modder 向）",
+      "authority": "SPT 接口事实：API 签名、版本差异、mod 加载与冲突机制、服务端结构",
+      "root": "knowledge/spt-kb",
+      "index": "./index.json",
+      "envKey": "SPT_KB_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["wiki", "wiki-tushonka", "curated"],
+        "exclude": ["archive/", "node_modules/"]
+      },
+      "builder": "scripts/spt-kb/sync-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "norvinsk-notes",
+      "title": "整合包本体（作者一手）：下载 / 安装 / 玩法 / 剧情 / 更新日志 / 包内 MOD 运维",
+      "authority": "整合包自身行为：版本特性与更新日志、安装步骤与报错、玩法与背景设定、包内 MOD 的数值与机制",
+      "root": "E:/云文件/GitHub/NorvinskStalker_knowledgeBase/笔记",
+      "index": "knowledge/indexes/norvinsk-notes.json",
+      "envKey": "KB_NORVINSK_NOTES_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": [
+          "{0}ModPack Download",
+          "①整合包更新计划",
+          "②安装和技术指南",
+          "③游戏指南",
+          "④塔科夫故事背景",
+          "⑤整合包和MOD运维"
+        ],
+        "exclude": [
+          "**/assets/**",
+          "**/.obsidian/**",
+          "**/.uploads/**",
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.webp",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.zip",
+          "**/*.7z",
+          "**/*.rar",
+          "**/*.canvas",
+          "**/*.base"
+        ]
+      },
+      "sections": [
+        { "dir": "{0}ModPack Download", "topic": "download" },
+        { "dir": "①整合包更新计划", "topic": "changelog" },
+        { "dir": "②安装和技术指南", "topic": "install" },
+        { "dir": "③游戏指南", "topic": "gameplay" },
+        { "dir": "④塔科夫故事背景", "topic": "lore" },
+        { "dir": "⑤整合包和MOD运维", "topic": "mods-ops" }
+      ],
+      "versionDefaults": ["3.11"],
+      "versionPatterns": [
+        "\\bv(\\d+\\.\\d+(?:\\.\\d+)?)\\b",
+        "(?<![\\d.])3\\.\\d+(?:\\.\\d+)?\\b"
+      ],
+      "domainDefault": "both",
+      "extract": {
+        "keywords": ["h2", "dirs"],
+        "keywordsMax": 12,
+        "summary": "firstParagraph",
+        "summaryMaxChars": 220
+      },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    }
+  ]
+}

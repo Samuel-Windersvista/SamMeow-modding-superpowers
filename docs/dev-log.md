@@ -270,3 +270,18 @@
 - **交付（未提交）**：`knowledge/spt-kb/curated/operations/5xx-client-mod-dev-lessons.md` 追加 **§16「Harmony detour 的『结构体封送』陷阱：放行前缀也会损坏原版状态」**（现象 / 排查方法论 5 条 / 根因机制 / 修复模式 / 打补丁前自查清单 6 条）；文件标题与来源行同步（+ITBS 2026-09-28）。
 - **KB 索引体检**：`node scripts/spt-kb/sync-index.mjs`（dry-run）**exit 0**——新增 0 / 非法 0 / 孤儿 4（archive 预期项，不随包分发）；同文件内追加无需 `--write`。
 - **提交口径**：KB 条目 + dev-log 单批；**全部变更未提交**。
+
+## 2026-10-05 — 报告：SPT5 mod 开发问题与新旧对比（人话版）
+
+- **交付**：`docs/SPT5-mod开发问题与新旧对比报告.md`——面向普通读者的阶段性总结：①实际遇到的问题与难点（interop 代理静默失败 / Harmony 挂钩三重陷阱 / 进程级崩溃与取证 / MO2 部署弯绕 / F12 配置碎玻璃 / 数据服务端兜底 / 服务端无大变化 / 逆向工具链）；②与 SPT4 等旧版本的差别（客户端 Mono→IL2CPP 换代；服务端断层在 3.11→4.x 而非 4.1→5.0）；③常见误解澄清 + 沉淀的硬规矩 + 术语速查表 + 素材来源清单。
+- **素材**：两路只读侦察汇总（dev-log 全量 + SPT5 实战 mod 记录：桥 / 雷达 / NoStaminaDrain + 移植技能 + KB 5xx lessons）。
+- **索引**：`docs/README.md` 报告表登记（参考）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-11 — Forge 扫描刷新（元数据 + 源码库）与 4.1.x mod 生态报告
+
+- **元数据刷新**：新增 `scripts/spt-kb/fetch-metadata.mjs`——`api/mods-catalog.json` 全量重刷（1830 → **1969**）；新增 `api/compat-4.1x.json`（4.1.x 兼容 **600**，服务端 SemVer 求值；补丁分布：4.1.5=502 / 4.1.6=547 / 仅 4.1.6=61 / 仅 4.1.5=16）。抓取中定位并修复一个**假阳性 bug**：节流检测用 `/slow down/i` 扫全文，撞上 mod 简介（"Low Budget Bullet Time" teaser 含 "slow down time"）→ 改为先 `JSON.parse` 再判节流（教训入脚本注释与 README）；限速默认 2s。
+- **源码库**：窗口 2026-09-14 → 10-11（`filter[spt_version]=~4.1.0`）→ 272 mod / 296 源码条目；新增克隆 **172** 个仓库；`mods/MANIFEST-sp-mod-2026-10.md`（total=296 ok=291 missing=5——缺失 5 条为非仓库形态链接：Google Drive / GitHub 组织页 / 网站 / release zip / 失效 ref）；抓取页（6 页）移存 `.incoming-2026-10/`（`.incoming` 留给下次刷新）。
+- **工具修复**：`clone-sources.mjs` URL 规范化扩展（GitHub 裸 `/releases`、`/upload`；Codeberg `/src/branch|tag/<ref>`）——捞回 5 个 mod / 8 条源码（Choccy Milk 的 93R / WA2000 / China Lake 迁移仓库 + ShrapnelFix + Moar Supplies）。
+- **报告**：`docs/forge-4.1x-mod-survey-2026-10.md`（生态速览 + 颠覆潜力清单：Fika 联机 / 内容大回移 / 开放世界实验 / 硬核 Ironman / ORBIT 2.0 等）；分析数据与脚本在 `.scratch/forge-4.1x-survey/`；`docs/README.md` 已登记。
+- 全部变更未提交（按 Overseer 规则）。

@@ -1,0 +1,39 @@
+{
+ "id": 814,
+ "hub_id": 1099,
+ "guid": "com.danw.latetotheparty",
+ "name": "Late to the Party",
+ "slug": "late-to-the-party",
+ "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving throughout the raid. Bosses will also be less likely to spawn during Scav raids.",
+ "thumbnail": "https://files.sp-mod.com/mods/1099.jpg",
+ "downloads": 47467,
+ "favourites_count": 24,
+ "endorsements_count": 3,
+ "description": "<h2>Mod Compatibility</h2>\n<p><strong>REQUIRES:</strong></p>\n<ul>\n<li><strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-bot-patrols-and-navmesh/\" rel=\"noreferrer noopener\">Waypoints</a> (1.9.0 or later)</strong></li>\n<li>If you use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2326/project-fika\" rel=\"noreferrer noopener\">Fika</a>, an additional plugin is required: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/addon/102/late-to-the-party-fika-sync-add-on\" rel=\"noreferrer noopener\">Late to the Party - Fika Sync Add-on</a></li>\n</ul>\n<p><strong>Partially compatible with:</strong></p>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1923/lockable-doors\" rel=\"noreferrer noopener\">Lockable Doors</a> (loot may despawn behind doors you lock during the raid)</li>\n</ul>\n<p>If you use both <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1109/questing-bots\" rel=\"noreferrer noopener\">Questing Bots</a> and <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/812/looting-bots\" rel=\"noreferrer noopener\">Looting Bots</a>, setting <code>only_make_changes_just_after_spawning.enabled=true</code> in <em>config.json</em> is highly recommended. This change is also recommended if you use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2706/orbit\" rel=\"noreferrer noopener\">ORBIT</a>.</p>\n<h2>Mod Overview</h2>\n<p>This mod makes the the following changes to your SPT experience:</p>\n<ul>\n<li>Loot (including on dead bots) will be gradually removed throughout the raid to simulate other players taking it.</li>\n<li>Doors will randomly open and close throughout the raid to simulate players moving through the map (thanks to help from <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/user/27605/drakiaxyz\" rel=\"noreferrer noopener\">DrakiaXYZ</a>!). If you’re lucky, locked doors may be opened for you…</li>\n<li>Switches will be toggled throughout the raid to simulate players turning on power switches, using extracts, etc.</li>\n<li>The car extract may leave at some point during the raid</li>\n<li>If you spawn into the map late as a Scav, bosses are less likely to spawn.</li>\n</ul>\n<h2>Mod Configuration Options</h2>\n<p>This mod is highly customizable by modifying the <em>config.json</em> file. Please see descriptions of all configuration options here: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dwesterwick/SPTLateToTheParty\" rel=\"noreferrer noopener\">Late to the Party Github Repo</a></p>\n<p>If you’re using this mod along with <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/642/immersive-raids\" rel=\"noreferrer noopener\">Kobrakon’s Immersive Raids</a> or similar mods that significantly increase raid times, please change the following in <em>config.json</em>:</p>\n<ul>\n<li><code>destroy\\_loot\\_during\\_raid.max\\_time\\_without\\_destroying\\_any\\_loot</code> to any value you want. This is the frequency (in seconds) at which an item is removed from the map. If this value is small and you stay in the raid for a long time, you’ll eventually have no more loot on the map.</li>\n</ul>\n<h2>Known Issues</h2>\n<ul>\n<li>Any locked door on the map is equally likely to be opened, including those locked with rare keys and those nobody ever really opens/closes in live T*****.</li>\n<li>Some doors and switches will be toggled in an illogical (or impossible) order, especially in the starting areas on Labyrinth.</li>\n<li>If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=false</code>, loot can be despawned behind locked doors or in locked containers. If <code>destroy\\_loot\\_during\\_raid.check\\_loot\\_accessibility.enabled=true</code>, some loot is falsely considered inaccessible and will never be despawned.</li>\n<li>If you approach the car extract without taking it and this mod instructs it to leave later in the raid, you’ll see the countdown timer when you check your extracts.</li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/814/late-to-the-party",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-03-27T02:30:00.000000Z",
+ "created_at": "2023-03-27T02:30:16.000000Z",
+ "updated_at": "2026-09-23T03:06:26.000000Z",
+ "owner": {
+  "id": 27632,
+  "name": "DanW",
+  "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+  "cover_photo_url": null,
+  "created_at": "2023-02-27T02:34:15.000000Z",
+  "updated_at": "2026-10-11T05:55:13.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

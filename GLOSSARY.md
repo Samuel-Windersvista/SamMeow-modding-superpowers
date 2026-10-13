@@ -52,6 +52,10 @@ _Avoid_: 版本（过于宽泛）、分支
 SPT 5.0 已正式发布（2026-09-14 确认；此前 `5.0x-dev`/BEM 阶段 API 漂移剧烈），5.x 线内仍可能存在 API 与内容漂移。版本线内的漂移靠 capability 自报与版本门禁吸收。
 _Avoid_: 不稳定版本
 
+**Identity-Shared Version Lines（同身份版本线）**:
+同一 mod 在两条 Version Line 上并行维护的形态：各自独立源码与构建、安装于互不相通的游戏实例，但共享 AssemblyName 与 BepInPlugin GUID 身份（cfg 键面、日志前缀、README 语言保持可互认）。
+_Avoid_: 兼容版、backport、分支
+
 ### 规范
 
 **Modding Standard（mod 编写规范）**:

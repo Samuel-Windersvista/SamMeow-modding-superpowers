@@ -1,0 +1,115 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 5810,
+   "hub_id": 7928,
+   "version": "1.3.0",
+   "description": "<h3><strong>Fontaine’s ALE v1.3.0 for SPT AKI 3.7.1</strong></h3>\n<h3><strong>NOT compatible with earlier versions of SPT.</strong></h3>\n",
+   "link": "https://sp-mod.com/mod/download/697/fontaines-always-level-endurance-ale/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "3.7.1",
+   "downloads": 12917,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-10-18T11:11:07.000000Z",
+   "created_at": "2023-10-18T11:11:07.000000Z",
+   "updated_at": "2026-05-14T04:29:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4541,
+   "hub_id": 9513,
+   "version": "1.4.0",
+   "description": "<h3><strong>Fontaine’s ALE v1.4.0 for SPT AKI 3.8.0</strong></h3>\n<h3><strong>NOT compatible with earlier versions of SPT.</strong></h3>\n",
+   "link": "https://sp-mod.com/mod/download/697/fontaines-always-level-endurance-ale/1.4.0",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 11030,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-18T13:52:16.000000Z",
+   "created_at": "2024-04-18T13:52:16.000000Z",
+   "updated_at": "2026-05-14T04:10:36.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3528,
+   "hub_id": 10777,
+   "version": "1.5.0",
+   "description": "<h3><strong>Fontaine’s ALE v1.5.0 for SPT AKI 3.9.0</strong></h3>\n<h3><strong>NOT compatible with earlier versions of SPT.</strong> Thanks to Lacey for updating the mod for me.</h3>\n",
+   "link": "https://sp-mod.com/mod/download/697/fontaines-always-level-endurance-ale/1.5.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 19016,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-12T12:57:01.000000Z",
+   "created_at": "2024-07-12T12:57:01.000000Z",
+   "updated_at": "2026-05-14T03:52:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2143,
+   "hub_id": 12505,
+   "version": "1.6.0",
+   "description": "<h3><strong>Fontaine’s ALE v1.6.0 for SPT AKI 3.10.0</strong></h3>\n<h3><strong>NOT compatible with earlier versions of SPT.</strong></h3>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArchangelWTF\" rel=\"noreferrer noopener\">ArchangelWTF</a> for updating to 3.10 (blame them if it doesn’t work)</p>\n",
+   "link": "https://sp-mod.com/mod/download/697/fontaines-always-level-endurance-ale/1.6.0",
+   "content_length": null,
+   "spt_version_constraint": "3.10.0",
+   "downloads": 19338,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-06T12:24:40.000000Z",
+   "created_at": "2024-12-06T12:24:40.000000Z",
+   "updated_at": "2026-07-13T18:02:52.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 113,
+   "hub_id": 14781,
+   "version": "1.7.0",
+   "description": "<h3><strong>Fontaine’s ALE v1.7.0 for SPT AKI 3.11.x</strong></h3>\n<h3><strong>NOT compatible with earlier versions of SPT.</strong></h3>\n<p>Thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/dounai2333\" rel=\"noreferrer noopener\">dounai2333</a> for updating to 3.11.x (blame them if it doesn’t work)</p>\n",
+   "link": "https://sp-mod.com/mod/download/697/fontaines-always-level-endurance-ale/1.7.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 8989,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-08-10T10:42:03.000000Z",
+   "created_at": "2025-08-10T10:42:03.000000Z",
+   "updated_at": "2026-07-13T18:00:19.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/697/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/697/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/697/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/697/versions",
+  "per_page": 50,
+  "to": 5,
+  "total": 5
+ }
+}

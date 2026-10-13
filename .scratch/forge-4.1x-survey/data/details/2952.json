@@ -1,0 +1,39 @@
+{
+ "id": 2952,
+ "hub_id": null,
+ "guid": "com.maschine.modprofiler",
+ "name": "ModProfiler",
+ "slug": "modprofiler",
+ "teaser": "Find the mod eating your frames: live CPU time per installed mod, without disabling any",
+ "thumbnail": "https://files.sp-mod.com/mods/ZVivw4fEyLCdLWg4XXM0TsKgA27Q80UweJlFoU6M.png",
+ "downloads": 2264,
+ "favourites_count": 36,
+ "endorsements_count": 16,
+ "description": "<p>When the game stutters, the usual answer is to disable half your mods and bisect. This\none answers directly: it stopwatches every mod’s own code - Harmony patches, frame\nmethods, coroutines - and shows live what each costs per frame. Like <strong>Dubs Performance\nAnalyzer</strong> in RimWorld, the numbers rank your mods usefully; they are not a frame-exact\ntruth. See at a glance whether the garbage collector is on and how fast your raid is\nreally allocating - and how much of a slow frame is your mod versus the game itself.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>One row per mod:</strong> average and peak ms, calls per frame, share of the frame, total.\nSort by any column, expand a mod for its priciest methods.</li>\n<li>A <strong>GC &amp; heap panel</strong> in both UIs’ headers: the collector’s live on/off state\n(EFT turns it off for the whole raid above ~25 GB RAM - the heap then only ever\ngrows, which is expected, not a leak), the managed heap size and its peak, and the\nallocation rate.</li>\n<li>A curated <strong><code>EFT (vanilla)</code></strong> row measures seven of the game’s own per-frame methods\n<ul>\n<li>world tick, bot AI, player update, ballistics, the interaction prompt - next to\nyour mods, honestly labeled as inclusive of any mod patch on the same method.</li>\n</ul>\n</li>\n<li>Pause, rescan and <strong>CSV export</strong> with per-frame values, deltas since the last\nexport, and a sidecar carrying spikes, patch failures and machine context.</li>\n<li>With the optional <strong>Anvil-WebOverlay</strong> library it opens as its own window and adds\n<strong>µs per call</strong> (which exposes rows that are mostly measurement overhead), a <strong>spike\nlog</strong> for stuttering frames, amber GC ticks on the frame graph, trend graphs, a\nfilter and tooltips.</li>\n<li>A <strong>▲</strong> growth marker flags a mod or method whose live instance count keeps\nclimbing for minutes without falling back, and CSV exports can write\nthemselves on a timer.</li>\n</ul>\n<h2>Installation and first use</h2>\n<p>Extract the ZIP into your SPT folder and press <strong>F11</strong> in game. The first activation\ninstruments all mod code and freezes the game for a few seconds - normal, once per\nsession. In a raid press <strong>Rescan</strong> once: some mods only patch at raid start.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.1.x, built and tested there. Client-side only, no server component.</li>\n<li>Required: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2879/weboverlay\" rel=\"noreferrer noopener\">Anvil-WebOverlay</a> 1.8.8+ for the window (needs the WebView2 runtime and windowed/borderless mode). Without it a built-in overlay shows the core table.</li>\n</ul>\n<h2>Limits</h2>\n<ul>\n<li>Measuring carries a small fixed cost, measured on your machine at every scan,\nthat partly lands inside every measured value, so no row can read below that\nfloor - for a very frequently called mod that floor can be most of its row\n(<code>µs/Call</code> shows where).</li>\n<li>Times are inclusive, so the percentages can add up past 100.</li>\n<li>Indirect load is only partly visible: a mod that spawns more bots costs time\ninside the engine, not in its own code - the <code>EFT (vanilla)</code> row gives a partial\nanswer for bot AI and world tick, the GC &amp; heap panel one for the collector.\nRendering, culling and physics outside those seven curated methods stay invisible.</li>\n</ul>\n<h2>Support</h2>\n<p>Open a GitHub issue with your ModProfiler and SPT versions, short repro steps and your\ncomplete <code>BepInEx/LogOutput.log</code> - plus a CSV export if it is about the numbers.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/ModProfiler/blob/main/assets/preview.png?raw=true\" alt=\"example\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2952/modprofiler",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 1,
+ "published_at": "2026-08-23T12:03:00.000000Z",
+ "created_at": "2026-08-23T11:58:38.000000Z",
+ "updated_at": "2026-09-20T19:41:45.000000Z",
+ "owner": {
+  "id": 109459,
+  "name": "maschine",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/2xAHR3ttkN7Su6wHEefYq1aNQJLqsN3CqsMwuBpH_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-04-10T00:02:34.000000Z",
+  "updated_at": "2026-10-09T20:03:36.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 1,
+  "hub_id": 17,
+  "title": "Tools",
+  "slug": "tools",
+  "description": "Various standalone tools and programs that aren't installed like normal mods"
+ }
+}

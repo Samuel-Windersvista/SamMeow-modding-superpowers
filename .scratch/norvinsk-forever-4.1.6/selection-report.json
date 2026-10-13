@@ -1,0 +1,2799 @@
+[
+ {
+  "idx": 1,
+  "entry": "[14]本体缺失翻译",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 2,
+  "entry": "[14]客户端ModF12通用翻译器及菜单汉化文本",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 3,
+  "entry": "[13]好莱坞第三人称镜头-HollywoodCam",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2201,
+    "name": "HollywoodCam",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.4(~3.11.0)",
+     "1.1.5(~3.11.0)",
+     "1.1.6(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 4,
+  "entry": "[13]战局外检修标签-DebugTooltip",
+  "flag": null,
+  "selected": {
+   "id": 1542,
+   "name": "Debug Tooltip",
+   "version": "5.0.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1542/debug-tooltip/5.0.0",
+   "size": 10371,
+   "published": "2026-08-12",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 5,
+  "entry": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+  "flag": null,
+  "selected": {
+   "id": 918,
+   "name": "BotDebug",
+   "version": "1.8.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/918/botdebug/1.8.0",
+   "size": 11044,
+   "published": "2026-08-03",
+   "deps": [
+    "BigBrain"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 6,
+  "entry": "[13]存档编辑器-SPT-AKI Profile Editor",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 106,
+    "name": "SPT-AKI Profile Editor",
+    "reason": "no-4.1.6",
+    "near": [
+     "4.0.1(~4.0.0)",
+     "2.9.0(3.8.0)",
+     "3.0.0(3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 7,
+  "entry": "[12]商人列表滚动-TraderScrolling",
+  "flag": null,
+  "selected": {
+   "id": 1089,
+   "name": "Kaeno-TraderScrolling",
+   "version": "4.1.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1089/kaeno-traderscrolling/4.1.0",
+   "size": 4347,
+   "published": "2026-08-19",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 8,
+  "entry": "[12]任务列表修复-TaskListFixes",
+  "flag": null,
+  "selected": {
+   "id": 824,
+   "name": "Task List Fixes",
+   "version": "1.8.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/824/task-list-fixes/1.8.0",
+   "size": 7329,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 9,
+  "entry": "[12]尸体可删除-SPTCorpseCleaner",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2058,
+    "name": "SPTCorpseCleaner",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.5(~4.0 <4.1.0)",
+     "1.0.4(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 10,
+  "entry": "[12]骑士面具修复-FacetheKnight-MaskFix",
+  "flag": null,
+  "selected": {
+   "id": 3109,
+   "name": "Knight Mask Fix (4.1.3+)",
+   "version": "1.0.0",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/3109/knight-mask-fix-413/1.0.0",
+   "size": 2078639,
+   "published": "2026-10-05",
+   "deps": []
+  },
+  "rejected": [
+   {
+    "id": 2352,
+    "name": "Face the Knight - Mask Fix",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.11)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 11,
+  "entry": "[12]防卡手-HandsAreNotBusy",
+  "flag": null,
+  "selected": {
+   "id": 1298,
+   "name": "HandsAreNotBusy",
+   "version": "1.7.1",
+   "constraint": ">=4.1.3",
+   "link": "https://sp-mod.com/mod/download/1298/handsarenotbusy/1.7.1",
+   "size": 4984,
+   "published": "2026-08-21",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 12,
+  "entry": "[12]白色方块bug修复-WhiteBoxFix",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1401,
+    "name": "White Box Fix",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.8.0)"
+    ]
+   },
+   {
+    "id": 2109,
+    "name": "White Box Fix - Updated",
+    "reason": "no-4.1.6",
+    "near": [
+     "3.11.0(~3.11.0)"
+    ]
+   },
+   {
+    "id": 1767,
+    "name": "White Box Fix 1.0.1",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 13,
+  "entry": "[11]我就是爹作弊工具-DadGamerMode",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 686,
+    "name": "Dad Gamer Mode",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.7.1(3.7.1)",
+     "1.7.3(3.7.4)",
+     "1.7.4(3.7.6)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 14,
+  "entry": "[11]新商人-可购买自己创建的预设枪械-Hephaestus",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 650,
+    "name": "Hephaestus",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.3(3.8.0)",
+     "1.1.6(3.9.0)",
+     "1.1.10(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 15,
+  "entry": "[11]好莱坞投掷武器视觉辅助-VisualAssist",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2213,
+    "name": "Janky's Visual Assist",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.3(~3.11.0)",
+     "1.1.0(~4 <4.1.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 16,
+  "entry": "[11]扫敌雷达-RadarStandalone",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1100,
+    "name": "ACCURATE CIRCULAR RADAR",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.5(3.7.1)",
+     "1.0.6(3.7.1)",
+     "1.0.9(3.7.5)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 17,
+  "entry": "[11]物品感应-AmandsSense",
+  "flag": null,
+  "selected": {
+   "id": 2521,
+   "name": "Amands' Sense - Updated",
+   "version": "3.1.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/2521/amands-sense-updated/3.1.0",
+   "size": 217647,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 18,
+  "entry": "[11]任务跳过功能-Skipper",
+  "flag": null,
+  "selected": {
+   "id": 1343,
+   "name": "Skipper",
+   "version": "1.1.5",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1343/skipper/1.1.5",
+   "size": 5511,
+   "published": "2026-08-09",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 19,
+  "entry": "[11]内置动态地图-DynamicMaps",
+  "flag": null,
+  "selected": {
+   "id": 1431,
+   "name": "Dynamic Maps",
+   "version": "1.2.1",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1431/dynamic-maps/1.2.1",
+   "size": 1330991,
+   "published": "2026-08-08",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 20,
+  "entry": "[11]声音可视化-accessibilityindicators",
+  "flag": null,
+  "selected": {
+   "id": 1760,
+   "name": "Audio Accessibility Indicators",
+   "version": "2.1.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1760/audio-accessibility-indicators/2.1.0",
+   "size": 53362,
+   "published": "2026-08-07",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 21,
+  "entry": "[11]更多界面信息-GamePanelHUD",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 456,
+    "name": "Game Panel HUD",
+    "reason": "no-4.1.6",
+    "near": [
+     "3.1.1(3.9.0)",
+     "3.2.0(3.10.0)",
+     "3.3.0(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 22,
+  "entry": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+  "flag": "verify",
+  "selected": {
+   "id": 2955,
+   "name": "Quick Sell",
+   "version": "4.2.0",
+   "constraint": ">=4.1.5",
+   "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.2.0",
+   "size": 48175,
+   "published": "2026-10-02",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 23,
+  "entry": "[10]显示价格-showmethemoney",
+  "flag": null,
+  "selected": {
+   "id": 3011,
+   "name": "Show Me The Money (Item Pricing) (4.1.x)",
+   "version": "3.0.2",
+   "constraint": ">=4.1.3",
+   "link": "https://sp-mod.com/mod/download/3011/show-me-the-money-item-pricing-41x/3.0.2",
+   "size": 41475,
+   "published": "2026-09-10",
+   "deps": [
+    "UI Fixes"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 24,
+  "entry": "[10]物品容器间快速移动-QuickMoveToContainer",
+  "flag": null,
+  "selected": {
+   "id": 1341,
+   "name": "Quick Move To Containers",
+   "version": "1.5.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1341/quick-move-to-containers/1.5.0",
+   "size": 6103,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 25,
+  "entry": "[10]自动存放-AutoDeposit - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 1469,
+   "name": "AutoDeposit",
+   "version": "6.0.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/6.0.0",
+   "size": 9804,
+   "published": "2026-08-12",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 26,
+  "entry": "[10]物品真实堆叠-True Items Redux",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1616,
+    "name": "True Items Redux",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.1(~3.9.0)"
+    ]
+   },
+   {
+    "id": 1179,
+    "name": "True Items",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.2(3.7.4)",
+     "1.1.0(~3.8.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 27,
+  "entry": "[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2399,
+    "name": "Inventory Organizing Features (Ported to 4.0.x)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.5.1(~4.0 <4.1.0)"
+    ]
+   },
+   {
+    "id": 856,
+    "name": "Inventory Organizing Features",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.0(~3.7.0)",
+     "1.1.0+spt371(3.7.1)"
+    ]
+   },
+   {
+    "id": 1550,
+    "name": "INVENTORY ORGANIZING FEATURES",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.2(3.10.0)",
+     "1.0.3(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 28,
+  "entry": "[10]从武器架装备武器-EquipFromWeaponRack",
+  "flag": null,
+  "selected": {
+   "id": 1136,
+   "name": "Equip From Weapon Rack",
+   "version": "1.6.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1136/equip-from-weapon-rack/1.6.0",
+   "size": 4125,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 29,
+  "entry": "[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化",
+  "flag": "verify",
+  "selected": {
+   "id": 3023,
+   "name": "CactusPie's Transfer Loot Into Container Automatically",
+   "version": "1.9.1",
+   "constraint": "4.1.6",
+   "link": "https://sp-mod.com/mod/download/3023/cactuspies-transfer-loot-into-container-automatically/1.9.1",
+   "size": 6639,
+   "published": "2026-09-14",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 30,
+  "entry": "[10]小火山的仓库搜索框修复和扩展-SearchBarExtended",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 31,
+  "entry": "[10]仓库搜索框-StashSearch",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2148,
+    "name": "Stash Search",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.4.2(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 32,
+  "entry": "[10]UI大修-UIFixes",
+  "flag": null,
+  "selected": {
+   "id": 1342,
+   "name": "UI Fixes",
+   "version": "6.0.4",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.4",
+   "size": 184465,
+   "published": "2026-09-29",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 33,
+  "entry": "[9]解锁所有藏身处装饰-UnlockHideoutCustomization",
+  "flag": "verify",
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2053,
+    "name": "Unlock All Hideout Customization",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 34,
+  "entry": "[9]预览窗口尺寸调整-previewsizer",
+  "flag": null,
+  "selected": {
+   "id": 2339,
+   "name": "Preview Sizer",
+   "version": "1.1.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2339/preview-sizer/1.1.0",
+   "size": 6459,
+   "published": "2026-08-06",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 35,
+  "entry": "[9]项目上下文菜单扩展-ItemContextMenuExt",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 940,
+    "name": "Item Context Menu Extended",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.6.0(~3.10.0)",
+     "1.7.0(~3.11.0)",
+     "1.8.0(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 36,
+  "entry": "[9]子弹专家-MunitionsExpert",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 972,
+    "name": "Munitions Expert (Reboot)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.5.0(~3.10.0)",
+     "1.6.0(~3.11.0)",
+     "1.7.0(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 37,
+  "entry": "[9]简单的锻炼QTE-simpleworkoutqte",
+  "flag": null,
+  "selected": {
+   "id": 1437,
+   "name": "Simple Workout QTE",
+   "version": "2.2.2",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.2.2",
+   "size": 13031,
+   "published": "2026-08-30",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 38,
+  "entry": "[9]物品打勾标记提供更多信息-MoreCheckmarks",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 861,
+    "name": "MoreCheckmarks",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.0.0(~4.0 <4.1.0)",
+     "2.0.1(4.0.7)",
+     "2.2.0(~4.0 <4.1.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 39,
+  "entry": "[9]任务交接自动化-TaskAutomation",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2238,
+    "name": "Task Automation",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.1(~4.0.0)",
+     "1.2.2(~4.0.0)",
+     "1.2.3(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 40,
+  "entry": "[9]藏身处不用打勾-nofirhideout",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2050,
+    "name": "No FIR Hideout",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 41,
+  "entry": "[9]腰带槽-BeltSlot",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2181,
+    "name": "Belt Slot",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 42,
+  "entry": "[9]动态物品重量-DynamicItemWeights",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2344,
+    "name": "Dynamic Item Weights",
+    "reason": "no-data"
+   }
+  ],
+  "manual": "fetch-missing"
+ },
+ {
+  "idx": 43,
+  "entry": "[9]小火山的全界面中文字体切换",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 44,
+  "entry": "[9]主菜单大修-MenuOverhaul",
+  "flag": null,
+  "selected": {
+   "id": 1775,
+   "name": "WTT - Menu Overhaul",
+   "version": "1.3.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.3.0",
+   "size": 779102,
+   "published": "2026-08-15",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 45,
+  "entry": "[8]沉浸感时间循环-ImmersiveDaylightCycle",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1462,
+    "name": "Immersive Daylight Cycle",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(3.9.0)",
+     "2.0.0(~3.9.0)",
+     "2.1.0(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 46,
+  "entry": "[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 2112,
+   "name": "Continuous Load Ammo",
+   "version": "1.2.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/2112/continuous-load-ammo/1.2.0",
+   "size": 39646,
+   "published": "2026-08-22",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 47,
+  "entry": "[8]可拾取穿墙物品-ReachExtender",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1260,
+    "name": "Reach Extender",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(3.8.0)",
+     "1.1.0(~3.9.0)",
+     "1.3.1(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 48,
+  "entry": "[8]boss刷新通知-BossNotifier",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2543,
+    "name": "BossNotifier ",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~4.0.8)",
+     "1.1.0(~4.0.11)",
+     "1.1.1(~4.0.11)"
+    ]
+   },
+   {
+    "id": 1247,
+    "name": "Boss Notifier",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.3.4(3.8.0)",
+     "1.5.0(~3.9.0)",
+     "1.6.0(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 49,
+  "entry": "[8]塔科夫天气系统-Tarkov-Weather-System",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2110,
+    "name": "Tarkov Weather System",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.9.5(3.10.5)",
+     "0.9.5+311(~3.11.0)",
+     "1.0.0+3105(3.10.5)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 50,
+  "entry": "[8]坠落的补给直升机-HeliCrash.ArysReloaded",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1292,
+    "name": "SamSWAT's Helicopter Crash Sites - Arys Reloaded",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.5.0(~4.0.3)",
+     "2.5.1(~4.0.3)",
+     "2.5.2(~4.0.3)"
+    ]
+   },
+   {
+    "id": 1180,
+    "name": "SamSWAT's Fire Support - Arys Reloaded",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.3.3(~4.0.3)",
+     "2.3.4(~4.0.3)",
+     "2.2.1(3.7.4)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 51,
+  "entry": "[8]禁用Scav模式-DisableScavMode",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 977,
+    "name": "DisableScavMode",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.0(~3.7.0)"
+    ]
+   },
+   {
+    "id": 1301,
+    "name": "DisableScavMode egboggied",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(3.8.3)",
+     "1.0.2(~3.10.0)",
+     "1.0.3(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 52,
+  "entry": "[8]武器破门-BackdoorBandit客户端文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 858,
+    "name": "Backdoor Bandit (BB)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.7.1(3.7.1)",
+     "1.7.2(3.7.4)",
+     "1.8.0(3.8.0)"
+    ]
+   },
+   {
+    "id": 1909,
+    "name": "Backdoor Bandit (BB) (Updated)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.11.0(~3.11.0)",
+     "1.11.2(~3.11.0)"
+    ]
+   },
+   {
+    "id": 2443,
+    "name": "Backdoor Bandit - NG",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.0.0(4.0.4)",
+     "2.0.1(4.0.4)",
+     "2.0.2(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 53,
+  "entry": "[8]武器破门-BackdoorBandit服务器文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 858,
+    "name": "Backdoor Bandit (BB)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.7.1(3.7.1)",
+     "1.7.2(3.7.4)",
+     "1.8.0(3.8.0)"
+    ]
+   },
+   {
+    "id": 1909,
+    "name": "Backdoor Bandit (BB) (Updated)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.11.0(~3.11.0)",
+     "1.11.2(~3.11.0)"
+    ]
+   },
+   {
+    "id": 2443,
+    "name": "Backdoor Bandit - NG",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.0.0(4.0.4)",
+     "2.0.1(4.0.4)",
+     "2.0.2(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 54,
+  "entry": "[8]任务跟踪显示-QuestTracker",
+  "flag": null,
+  "selected": {
+   "id": 1140,
+   "name": "Quest Tracker",
+   "version": "1.7.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.7.0",
+   "size": 22840,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 55,
+  "entry": "[8]增加拾取距离-LootRadius",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1349,
+    "name": "Loot Radius",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(3.8.0)",
+     "1.0.1(3.8.0)",
+     "1.1.0(3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 56,
+  "entry": "[8]直接搜索已打开容器-SearchOpenContainers",
+  "flag": null,
+  "selected": {
+   "id": 934,
+   "name": "Search Open Containers",
+   "version": "1.5.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/934/search-open-containers/1.5.0",
+   "size": 3307,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 57,
+  "entry": "[8]直接使用未捡物品-UseLooseLoot",
+  "flag": null,
+  "selected": {
+   "id": 933,
+   "name": "Use Loose Loot",
+   "version": "1.6.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/933/use-loose-loot/1.6.0",
+   "size": 2783,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 58,
+  "entry": "[8]门的状态随机化-DoorRandomizer",
+  "flag": null,
+  "selected": {
+   "id": 820,
+   "name": "Door Randomizer",
+   "version": "1.8.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/820/door-randomizer/1.8.0",
+   "size": 5112,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 59,
+  "entry": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+  "flag": null,
+  "selected": {
+   "id": 2386,
+   "name": "Use Items Anywhere",
+   "version": "2.1.5",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.5",
+   "size": 1213638,
+   "published": "2026-09-15",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 60,
+  "entry": "[8]更有意义的武器精通-MeaningfulWeaponMasteries",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1989,
+    "name": "Meaningful Weapon Masteries",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.11.0)",
+     "1.0.2(~3.11.0)",
+     "1.0.5(3.11)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 61,
+  "entry": "[8]超重也能练耐力-Always-Level-Endurance",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 697,
+    "name": "Fontaine's Always Level Endurance (ALE)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.3.0(3.7.1)",
+     "1.4.0(3.8.0)",
+     "1.5.0(3.9.0)"
+    ]
+   },
+   {
+    "id": 2438,
+    "name": "Level Endurance and Strength",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~4.0.0)",
+     "1.0.1(~4.0.13)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 62,
+  "entry": "[8]人物技能扩展和撬锁-SkillsExtended-已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 2383,
+   "name": "Skills Extended",
+   "version": "3.1.3",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.3",
+   "size": 114911151,
+   "published": "2026-10-04",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 63,
+  "entry": "[8]技能速度调节器-SkillMultiplier",
+  "flag": null,
+  "selected": {
+   "id": 2162,
+   "name": "Skill Multiplier",
+   "version": "2.1.1",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.1.1",
+   "size": 83699,
+   "published": "2026-10-01",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 64,
+  "entry": "[8]可以攀爬更高的地方-Increase Climb Height",
+  "flag": null,
+  "selected": {
+   "id": 1575,
+   "name": "Increase Climb Height",
+   "version": "2.1.1",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1575/increase-climb-height/2.1.1",
+   "size": 7884,
+   "published": "2026-09-07",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 65,
+  "entry": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+  "flag": null,
+  "selected": {
+   "id": 1539,
+   "name": "Bosses Have Lega Medals",
+   "version": "2.1.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/2.1.0",
+   "size": 8333,
+   "published": "2026-08-07",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 66,
+  "entry": "[8]战场环境临场感增强-SPTBattleAmbience",
+  "flag": null,
+  "selected": {
+   "id": 2264,
+   "name": "Battle Ambience",
+   "version": "2.4.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2264/battle-ambience/2.4.0",
+   "size": 12050875,
+   "published": "2026-08-24",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 67,
+  "entry": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 2003,
+   "name": "HollywoodFX",
+   "version": "3.0.0",
+   "constraint": "~4",
+   "link": "https://sp-mod.com/mod/download/2003/hollywoodfx/3.0.0",
+   "size": 270826931,
+   "published": "2026-09-17",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 68,
+  "entry": "[8]门可以锁-LockableDoors",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1923,
+    "name": "Lockable Doors",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.0.0(~4.0.8)",
+     "1.0.0(~3.10.0)",
+     "1.0.1(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 69,
+  "entry": "[8]火山家的实时字幕-Volcano-subtitle",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 70,
+  "entry": "[7]更好的枪匠界面-Tradermodding客户端文件",
+  "flag": null,
+  "selected": {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "version": "2.1.2",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1283/trader-modding-and-improved-weapon-building/2.1.2",
+   "size": 30477,
+   "published": "2026-08-05",
+   "deps": []
+  },
+  "rejected": [
+   {
+    "id": 1038,
+    "name": "Trader Modding",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.3(~3.7.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 71,
+  "entry": "[7]更好的枪匠界面-Tradermodding服务器文件",
+  "flag": null,
+  "selected": {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "version": "2.1.2",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1283/trader-modding-and-improved-weapon-building/2.1.2",
+   "size": 30477,
+   "published": "2026-08-05",
+   "deps": []
+  },
+  "rejected": [
+   {
+    "id": 1038,
+    "name": "Trader Modding",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.3(~3.7.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 72,
+  "entry": "[7]真实的热成像-realisticThermalScopes",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2056,
+    "name": "Realistic Thermal Scopes",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.4.0(~3.11.0)",
+     "2.0.0(~4.0.0)"
+    ]
+   },
+   {
+    "id": 2000,
+    "name": "Realistic Thermal Scopes",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.0(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 73,
+  "entry": "[7]更亮的镭射线-brightlasers",
+  "flag": null,
+  "selected": {
+   "id": 1358,
+   "name": "BrightLasers",
+   "version": "3.0.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1358/brightlasers/3.0.0",
+   "size": 12646,
+   "published": "2026-08-13",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 74,
+  "entry": "[7]反重力臂章-AntigravArmbands",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 75,
+  "entry": "[7]更大的背包-BetterBackpacks",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 552,
+    "name": "Josh Mate's Better Backpacks",
+    "reason": "no-4.1.6",
+    "near": [
+     "16.0.0(3.7.1)",
+     "17.0.0(3.7.1)",
+     "18.0.0(3.7.1)"
+    ]
+   },
+   {
+    "id": 2079,
+    "name": "Josh Mate's Better Backpacks (Ported to 3.11)",
+    "reason": "no-4.1.6",
+    "near": [
+     "28.0.0(~3.11.0)",
+     "28.1.0(~3.11.0)"
+    ]
+   },
+   {
+    "id": 1552,
+    "name": "JOSH MATE'S BETTER BACKPACKS - ReLoaded",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.5.3(~3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 76,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework客户端文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 77,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework服务器文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 78,
+  "entry": "[7]可以合并消耗品-MergeConsumables",
+  "flag": null,
+  "selected": {
+   "id": 1657,
+   "name": "MergeConsumables",
+   "version": "1.6.3",
+   "constraint": ">=4.1.3",
+   "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.3",
+   "size": 20653,
+   "published": "2026-09-21",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 79,
+  "entry": "[7]平衡的夜视装备视效-BRNVG客户端文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 80,
+  "entry": "[7]平衡的夜视装备视效-BRNVG服务器文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 81,
+  "entry": "[7]武器配件位置自定义-WeaponCustomizer",
+  "flag": null,
+  "selected": {
+   "id": 1950,
+   "name": "Weapon Customizer",
+   "version": "4.0.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1950/weapon-customizer/4.0.0",
+   "size": 34426,
+   "published": "2026-08-09",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 82,
+  "entry": "[7]更好的机瞄-BetterRearSights",
+  "flag": null,
+  "selected": {
+   "id": 1591,
+   "name": "Better Rear Sights",
+   "version": "1.8.0",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/1591/better-rear-sights/1.8.0",
+   "size": 54074476,
+   "published": "2026-09-17",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 83,
+  "entry": "[7]弹匣优化管理系统-MagazineManagementSystem",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2047,
+    "name": "Magazine Management System",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.11.0)",
+     "1.0.2(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 84,
+  "entry": "[7]面具修复-mask-fix",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1532,
+    "name": "Mask Fix",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.1.0(~3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 85,
+  "entry": "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化",
+  "flag": "verify",
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2251,
+    "name": "AutoCompatibility Framework",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.3.2(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 86,
+  "entry": "[7]武器动画更新-P90弹匣动画-transparentp90mag",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2007,
+    "name": "Transparent P90 Mag",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.2(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 87,
+  "entry": "[7]武器动画更新器-AnimatorUpdater",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2006,
+    "name": "Animator Updater",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.2(~3.11.0)",
+     "1.0.3(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 88,
+  "entry": "[7]瞄准视野大修-FOV-Fix",
+  "flag": null,
+  "selected": {
+   "id": 701,
+   "name": "Fontaine's FOV Fix",
+   "version": "4.1.0",
+   "constraint": "4.1.x",
+   "link": "https://sp-mod.com/mod/download/701/fontaines-fov-fix/4.1.0",
+   "size": 19980,
+   "published": "2026-10-01",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 89,
+  "entry": "[6]分离敌意-SeparateHostility",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2248,
+    "name": "Separate Hostility",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.11.0)",
+     "2.0.0(4.0.13)",
+     "3.0.0(4.1.3)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 90,
+  "entry": "[6]友方AI系统-friendlypmc与PITFireTeam合并版本",
+  "flag": "verify",
+  "selected": {
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "version": "0.10.3",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.3",
+   "size": 1494383,
+   "published": "2026-09-07",
+   "deps": [
+    "Waypoints - Expanded Navmesh",
+    "BigBrain"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 91,
+  "entry": "[6]AI锁头重定向-Headshot Damage Redirection",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1297,
+    "name": "Headshot Damage Redirection - HDR",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(3.8.0)",
+     "1.1.1(~3.8.0)",
+     "1.2.0(3.9.0)"
+    ]
+   },
+   {
+    "id": 2489,
+    "name": "Headshot Damage Redirection",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.7.0(4.0.7)"
+    ]
+   },
+   {
+    "id": 2115,
+    "name": "Headshot Damage Redirection",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.4.0(~3.10.0)",
+     "1.5.1(~3.11.0)",
+     "1.6.0(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 92,
+  "entry": "[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1055,
+    "name": "That's Lit - Logical AI Vision",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.3(3.7.1)",
+     "1.373.2(3.7.5)",
+     "1.380.3(3.8.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 93,
+  "entry": "[6]AI增强-SAIN-Moew-v4.4.0增强版",
+  "flag": null,
+  "selected": {
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "version": "4.5.1",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.5.1",
+   "size": 541623,
+   "published": "2026-09-04",
+   "deps": [
+    "Waypoints - Expanded Navmesh",
+    "BigBrain"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 94,
+  "entry": "[6]AI自动搜索物品-LootingBots - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 812,
+   "name": "Looting Bots",
+   "version": "1.8.0",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/812/looting-bots/1.8.0",
+   "size": 85484,
+   "published": "2026-09-18",
+   "deps": [
+    "BigBrain",
+    "Waypoints - Expanded Navmesh"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 95,
+  "entry": "[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "version": "2.4.1",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1594/apbs-acids-progressive-bot-system/2.4.1",
+   "size": 1036711,
+   "published": "2026-09-08",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 96,
+  "entry": "[6]Acid的AI生成系统-botplacementsystem - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 2097,
+   "name": "ABPS - Acid's Bot Placement System",
+   "version": "2.1.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2097/abps-acids-bot-placement-system/2.1.0",
+   "size": 1182402,
+   "published": "2026-08-14",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 97,
+  "entry": "[6]AI路径扩展-Waypoints - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 827,
+   "name": "Waypoints - Expanded Navmesh",
+   "version": "1.9.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+   "size": 50349566,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 98,
+  "entry": "[6]AI拟人MOD的前置框架-BigBrain - 已AI优化",
+  "flag": null,
+  "selected": {
+   "id": 902,
+   "name": "BigBrain",
+   "version": "1.5.0",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+   "size": 16790,
+   "published": "2026-08-03",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 99,
+  "entry": "[5]舒适家园系统-HomeComforts - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2027,
+    "name": "Home Comforts",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.10.0)",
+     "1.0.1(~3.10.0)",
+     "1.0.2(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 100,
+  "entry": "[5]战局内存储-LeaveItThere - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1907,
+    "name": "Leave It There",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(~3.10.0)",
+     "1.1.0(~3.10.0)",
+     "1.2.0(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 101,
+  "entry": "[5]以物易物经济系统-barter_economy-已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1261,
+    "name": "Barter Economy",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.0(3.8.0)",
+     "1.1.0(3.9.0)",
+     "1.1.2(3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 102,
+  "entry": "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.9.9(3.11)",
+     "0.3.3(~3.9.0)",
+     "0.3.3+1hotfix(3.9.3)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 103,
+  "entry": "[5]现实主义大修-Realism - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 416,
+    "name": "SPT Realism Mod",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.14.0(3.7.1)",
+     "0.14.1(3.7.1)",
+     "0.14.2(3.7.1)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 104,
+  "entry": "[5]经济与制造系统大修-Softcore - 已AI优化",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 742,
+    "name": "Softcore (Proper Singleplayer Experience for SPT)",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.5.0(3.7.6)",
+     "1.8.0(~3.8.0)",
+     "2.1.1(~3.8.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 105,
+  "entry": "[5]全地图间移动套装-IEAPI+PTT - AI优化版",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 382,
+    "name": "Path To Tarkov",
+    "reason": "no-4.1.6",
+    "near": [
+     "5.0.1(~3.9.0)",
+     "5.0.3(~3.9.0)",
+     "5.0.4(~3.9.0)"
+    ]
+   },
+   {
+    "id": 1676,
+    "name": "Interactable Exfils API",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.0(~3.10.0)",
+     "1.3.0(~3.10.0)",
+     "1.3.1(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 106,
+  "entry": "[5]战局大修-RaidOverhaul - 已AI增强版本",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1192,
+    "name": "Raid Overhaul",
+    "reason": "no-4.1.6",
+    "near": [
+     "3.0.2(4.0.13)",
+     "3.0.3(4.0.13)",
+     "2.7.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 107,
+  "entry": "[5]新增5个开局角色-CustomProfiles",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 108,
+  "entry": "[4]新商人-AES",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 874,
+    "name": "AES",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.3.3(~3.7.0)",
+     "0.4.0(~3.7.0)",
+     "0.4.5(3.9.4)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 109,
+  "entry": "[4]新商人-VolkovTrader",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2009,
+    "name": "Volkov Trader",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 110,
+  "entry": "[4]新商人-Epakim1-1",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2119,
+    "name": "EPAKIM1 Trader Mod",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.5(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 111,
+  "entry": "[4]新商人-不明生还者-UnknownSurvivor",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 112,
+  "entry": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+  "flag": null,
+  "selected": {
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "version": "2.0.7",
+   "constraint": "~4.1.2",
+   "link": "https://sp-mod.com/mod/download/1971/croupier-loadout-generator-flea-quicksell/2.0.7",
+   "size": 21629825,
+   "published": "2026-08-19",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 113,
+  "entry": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+  "flag": null,
+  "selected": {
+   "id": 1303,
+   "name": "HarryHideout",
+   "version": "3.1.2",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1303/harryhideout/3.1.2",
+   "size": 22794,
+   "published": "2026-08-19",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 114,
+  "entry": "[4]新商人-毒蝎-acidphantasm-scorpion",
+  "flag": null,
+  "selected": {
+   "id": 1348,
+   "name": "Scorpion",
+   "version": "1.1.1",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1348/scorpion/1.1.1",
+   "size": 357758,
+   "published": "2026-08-10",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 115,
+  "entry": "[4]新商人-Artem",
+  "flag": null,
+  "selected": {
+   "id": 1023,
+   "name": "WTT- Artem",
+   "version": "3.0.2",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1023/wtt-artem/3.0.2",
+   "size": 1622167511,
+   "published": "2026-09-19",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 116,
+  "entry": "[4]新商人-油漆匠-Painter",
+  "flag": null,
+  "selected": {
+   "id": 1025,
+   "name": "Painter",
+   "version": "3.0.0",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/1025/painter/3.0.0",
+   "size": 22220369,
+   "published": "2026-09-19",
+   "deps": [
+    "Tactical Gear Component",
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 117,
+  "entry": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+  "flag": null,
+  "selected": {
+   "id": 2483,
+   "name": "Boxes At Ref (BARF) - NG",
+   "version": "3.0.0",
+   "constraint": "~4.1.2",
+   "link": "https://sp-mod.com/mod/download/2483/boxes-at-ref-barf-ng/3.0.0",
+   "size": 8787,
+   "published": "2026-08-12",
+   "deps": []
+  },
+  "rejected": [
+   {
+    "id": 1560,
+    "name": "Boxes at ReF (BARF)",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.3.1(~3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 118,
+  "entry": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+  "flag": null,
+  "selected": {
+   "id": 1538,
+   "name": "Ref - SPT Friendly Quests",
+   "version": "2.1.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1538/ref-spt-friendly-quests/2.1.0",
+   "size": 14391,
+   "published": "2026-08-08",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 119,
+  "entry": "[3]新配件-ConsortiumOfThings",
+  "flag": null,
+  "selected": {
+   "id": 2195,
+   "name": "ECOT - Eukyre's Consortium of Things",
+   "version": "2.0.1",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/2.0.1",
+   "size": 1217404252,
+   "published": "2026-09-30",
+   "deps": [
+    "Epic's All in One",
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 120,
+  "entry": "[3]新配件-Eco-Attachment Emporium",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2882,
+    "name": "Eco's Attachment Emporium",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.1.1(4.0.13)",
+     "3.0.0(4.1.1)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 121,
+  "entry": "[3]新配件-Echoes.of.Tarkov.-.Requisitions",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2143,
+    "name": "Echoes of Tarkov - Requisitions",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.4(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 122,
+  "entry": "[3]新配件-EpicRangeTime-Weapons",
+  "flag": "verify",
+  "selected": {
+   "id": 1263,
+   "name": "Epic's All in One",
+   "version": "5.0.1",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1263/epics-all-in-one/5.0.1",
+   "size": 1491253654,
+   "published": "2026-08-20",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 123,
+  "entry": "[3]新配件-BlackCore",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 985,
+    "name": "BlackCore",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.7(3.8.0)",
+     "1.1.1(3.9.0)",
+     "1.1.3(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 124,
+  "entry": "[3]新配件-MagTape",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1018,
+    "name": "Mag Tape",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.4(3.8.0)",
+     "1.0.6(3.9.0)",
+     "1.0.7(~3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 125,
+  "entry": "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst",
+  "flag": "verify",
+  "selected": null,
+  "rejected": [
+   {
+    "id": 496,
+    "name": "Baba Yaga",
+    "reason": "no-4.1.6",
+    "near": [
+     "2.2.0(~3.9.0)",
+     "2.2.1(~3.9.0)",
+     "2.2.2(~3.9.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 126,
+  "entry": "[3]新武器-AKResonant",
+  "flag": "verify",
+  "selected": {
+   "id": 2170,
+   "name": "Resonant AK from COD:MW2019 - ReUpload",
+   "version": "3.0.0",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/2170/resonant-ak-from-codmw2019-reupload/3.0.0",
+   "size": 40091937,
+   "published": "2026-09-20",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 127,
+  "entry": "[3]新武器-国产武器-1SD-QBZ191",
+  "flag": null,
+  "selected": null,
+  "rejected": [],
+  "manual": true
+ },
+ {
+  "idx": 128,
+  "entry": "[3].50BMG重制-Epics 50 BMG Remaster-Expansion",
+  "flag": "verify",
+  "selected": {
+   "id": 1263,
+   "name": "Epic's All in One",
+   "version": "5.0.1",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/1263/epics-all-in-one/5.0.1",
+   "size": 1491253654,
+   "published": "2026-08-20",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 129,
+  "entry": "[3]新武器-AK50",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2215,
+    "name": "Eukyre's AK-50 backport",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.5(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 130,
+  "entry": "[3]新武器-SIG_MCX_VIRTUS",
+  "flag": "verify",
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1373,
+    "name": "Sig Sauer MCX VIRTUS multi carlibre rifle",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.3.0(3.9.0)",
+     "1.4.0(~3.10.0)",
+     "1.5.0(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 131,
+  "entry": "[3]新武器-WTT武器库-WTT - Armory客户端",
+  "flag": null,
+  "selected": {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "version": "3.0.0",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/2246/wtt-armory/3.0.0",
+   "size": 4866137251,
+   "published": "2026-09-06",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 132,
+  "entry": "[3]新武器-WTT武器库-WTT - Armory服务端",
+  "flag": null,
+  "selected": {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "version": "3.0.0",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/2246/wtt-armory/3.0.0",
+   "size": 4866137251,
+   "published": "2026-09-06",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 133,
+  "entry": "[2]高清材质-TarkovHDRework",
+  "flag": "verify",
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1896,
+    "name": "Tarkov HD Item Rework Project",
+    "reason": "no-4.1.6",
+    "near": [
+     "0.43.0(~3.11.0)",
+     "0.43.1(3.11.4)",
+     "0.43.4(~4.0 <4.1.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 134,
+  "entry": "[2]自定义配方-tarkovcraft",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 1979,
+    "name": "Tarkov Craft",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.4(~3.11.0)",
+     "2.0.0(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 135,
+  "entry": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+  "flag": null,
+  "selected": {
+   "id": 1768,
+   "name": "RCTA - Metal Gear [FORTNITE]",
+   "version": "1.0.4",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1768/rcta-metal-gear-fortnite/1.0.4",
+   "size": 49544438,
+   "published": "2026-08-08",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 136,
+  "entry": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+  "flag": null,
+  "selected": {
+   "id": 1766,
+   "name": "RCTA - Synaptic Rig [CODIW]",
+   "version": "1.0.8",
+   "constraint": "~4.1",
+   "link": "https://sp-mod.com/mod/download/1766/rcta-synaptic-rig-codiw/1.0.8",
+   "size": 247481427,
+   "published": "2026-08-08",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 137,
+  "entry": "[2]新物品-竞技场赛季奖励-SPT Battlepass",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2098,
+    "name": "SPT Battlepass",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 138,
+  "entry": "[2]新装备、衣服-TacticalGearComponent",
+  "flag": null,
+  "selected": {
+   "id": 1125,
+   "name": "Tactical Gear Component",
+   "version": "3.0.0",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/1125/tactical-gear-component/3.0.0",
+   "size": 656654851,
+   "published": "2026-09-19",
+   "deps": [
+    "Painter",
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 139,
+  "entry": "[2]腰包-WTT-PackNStrap客户端文件",
+  "flag": null,
+  "selected": {
+   "id": 1278,
+   "name": "WTT - Pack 'n' Strap",
+   "version": "2.1.1",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/1278/wtt-pack-n-strap/2.1.1",
+   "size": 316944826,
+   "published": "2026-09-07",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 140,
+  "entry": "[2]腰包-WTT-PackNStrap服务器端文件",
+  "flag": null,
+  "selected": {
+   "id": 1278,
+   "name": "WTT - Pack 'n' Strap",
+   "version": "2.1.1",
+   "constraint": "~4.1.5",
+   "link": "https://sp-mod.com/mod/download/1278/wtt-pack-n-strap/2.1.1",
+   "size": 316944826,
+   "published": "2026-09-07",
+   "deps": [
+    "WTT - CommonLib"
+   ]
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 141,
+  "entry": "[2]新酒水-HoodsEnergyDrinks",
+  "flag": "verify",
+  "selected": {
+   "id": 1688,
+   "name": "More Energy Drinks",
+   "version": "1.3.0",
+   "constraint": "4.1.x",
+   "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.0",
+   "size": 117232656,
+   "published": "2026-08-10",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 142,
+  "entry": "[2]新酒水-WTT - CornerStore",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2132,
+    "name": "WTT - Corner Store",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(4.0.12)",
+     "0.0.9(~3.11.0)",
+     "0.1.0+beta3(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 143,
+  "entry": "[2]新物品-地图容器-SecureMapbookMod",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2060,
+    "name": "Secure Mapbook",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.5.5(~4.0.0)",
+     "1.5.6(~4.0.0)",
+     "1.0.3(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 144,
+  "entry": "[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件",
+  "flag": null,
+  "selected": {
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "version": "2.1.1",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/865/gilded-key-storage/2.1.1",
+   "size": 6814359,
+   "published": "2026-08-31",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 145,
+  "entry": "[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件",
+  "flag": null,
+  "selected": {
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "version": "2.1.1",
+   "constraint": "~4.1.0",
+   "link": "https://sp-mod.com/mod/download/865/gilded-key-storage/2.1.1",
+   "size": 6814359,
+   "published": "2026-08-31",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 146,
+  "entry": "[2]新物品-藏身处猫咪-hideoutcat",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 2038,
+    "name": "Hideout Cat",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.0.1(~3.11.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 147,
+  "entry": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+  "flag": null,
+  "selected": {
+   "id": 2310,
+   "name": "WTT - CommonLib",
+   "version": "3.0.6",
+   "constraint": "~4.1.3",
+   "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/3.0.6",
+   "size": 248445,
+   "published": "2026-08-23",
+   "deps": []
+  },
+  "rejected": [],
+  "manual": false
+ },
+ {
+  "idx": 148,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.4.2(~3.7.0)",
+     "1.4.3(3.8.0)",
+     "2.0.0(3.8.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 149,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.4.2(~3.7.0)",
+     "1.4.3(3.8.0)",
+     "2.0.0(3.8.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 150,
+  "entry": "[1]前置框架-自定义交互-CustomInteractions",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 938,
+    "name": "Custom Interactions",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.6.0(~3.10.0)",
+     "1.7.0(~3.11.0)",
+     "1.8.0(~4.0.0)"
+    ]
+   }
+  ],
+  "manual": false
+ },
+ {
+  "idx": 151,
+  "entry": "[1]前置框架-KmyTarkovApi",
+  "flag": null,
+  "selected": null,
+  "rejected": [
+   {
+    "id": 898,
+    "name": "Kmy Tarkov Api",
+    "reason": "no-4.1.6",
+    "near": [
+     "1.2.0(3.8.0)",
+     "1.2.2(3.9.0)",
+     "1.3.0(3.10.0)"
+    ]
+   }
+  ],
+  "manual": false
+ }
+]

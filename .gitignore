@@ -33,6 +33,7 @@ Desktop.ini
 # Build artifacts — never source, never tracked, at any depth.
 **/obj/
 **/bin/
+**/dist/
 
 # Node dependency trees — installed per tool via `npm ci`, never tracked.
 **/node_modules/

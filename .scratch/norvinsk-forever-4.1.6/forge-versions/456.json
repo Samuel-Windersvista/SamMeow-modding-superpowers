@@ -1,0 +1,149 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 3715,
+   "hub_id": 10543,
+   "version": "3.1.1",
+   "description": "<p>Compatible SPT-Aki 3.9.0</p>\n<p>Please update your <strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-eft-api\" rel=\"noreferrer noopener\">EFTApi</a></strong> to 1.2.2</p>\n",
+   "link": "https://sp-mod.com/mod/download/456/game-panel-hud/3.1.1",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 72425,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-07T12:34:01.000000Z",
+   "created_at": "2024-07-07T12:34:01.000000Z",
+   "updated_at": "2026-05-14T03:55:37.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2304,
+   "hub_id": 12304,
+   "version": "3.2.0",
+   "description": "<p>Compatible SPT-Aki 3.10.0</p>\n<p>Add Immersive Compass Setting</p>\n<p>Please update your <strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1215-eft-api\" rel=\"noreferrer noopener\">EFTApi</a></strong> to 1.3.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/456/game-panel-hud/3.2.0",
+   "content_length": null,
+   "spt_version_constraint": "3.10.0",
+   "downloads": 47398,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-27T02:55:34.000000Z",
+   "created_at": "2024-11-27T02:55:34.000000Z",
+   "updated_at": "2026-05-14T03:19:23.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1035,
+   "hub_id": 13751,
+   "version": "3.3.0",
+   "description": "<p>Update EFTApi to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/898/kmy-tarkov-api\" rel=\"noreferrer noopener\">KmyTarkovApi</a> dependency</p>\n<p>Stop support for old versions (2.3.1-3.10.0)</p>\n<p>Start 3.11.0 + support</p>\n",
+   "link": "https://sp-mod.com/mod/download/456/game-panel-hud/3.3.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 67618,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-23T13:21:52.000000Z",
+   "created_at": "2025-03-23T13:21:52.000000Z",
+   "updated_at": "2026-05-14T02:03:20.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 12152,
+   "hub_id": null,
+   "version": "3.4.0",
+   "description": "<p>Compatible SPT-Aki 4.0.0</p>\n<p>Immersion Compass not working is not with GPH issue, BSG corrupted the MK2 compass again in an update. I don’t plan to fix this issue caused by BSG.</p>\n",
+   "link": "https://sp-mod.com/mod/download/456/game-panel-hud/3.4.0",
+   "content_length": 157240,
+   "spt_version_constraint": "4.0.x",
+   "downloads": 80641,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-11-03T10:43:00.000000Z",
+   "created_at": "2025-11-03T10:44:07.000000Z",
+   "updated_at": "2026-07-28T18:01:15.000000Z",
+   "dependencies": [
+    {
+     "id": 898,
+     "hub_id": 1215,
+     "guid": "com.kmyuhkyuk.kmytarkovapi",
+     "name": "Kmy T***** Api",
+     "slug": "kmy-tarkov-api",
+     "teaser": "Api Framework for Client Mods",
+     "thumbnail": "https://files.sp-mod.com/mods/1215.png",
+     "downloads": 399618,
+     "favourites_count": 225,
+     "endorsements_count": 4,
+     "detail_url": "https://sp-mod.com/mod/898/kmy-tarkov-api",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": true,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": null,
+     "published_at": "2023-05-29T12:11:15.000000Z",
+     "created_at": "2023-05-29T12:11:15.000000Z",
+     "updated_at": "2026-07-28T06:14:13.000000Z",
+     "owner": {
+      "id": 4974,
+      "name": "kmyuhkyuk",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/380f1a041b48c289ed4a4f686792a26d02977dfb_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2021-05-17T14:03:42.000000Z",
+      "updated_at": "2026-08-10T19:16:32.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 12151,
+       "hub_id": null,
+       "version": "1.5.0",
+       "description": "<p>Compatible SPT-Aki 4.0.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/898/kmy-tarkov-api/1.5.0",
+       "content_length": 178890,
+       "spt_version_constraint": "4.0.x",
+       "downloads": 79210,
+       "fika_compatibility": "unknown",
+       "published_at": "2025-11-03T10:41:00.000000Z",
+       "created_at": "2025-11-03T10:41:39.000000Z",
+       "updated_at": "2026-07-28T06:14:13.000000Z"
+      }
+     ],
+     "category": null
+    }
+   ]
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/456/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/456/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/456/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/456/versions",
+  "per_page": 50,
+  "to": 4,
+  "total": 4
+ }
+}

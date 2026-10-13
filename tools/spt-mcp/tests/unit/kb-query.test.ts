@@ -12,9 +12,11 @@ import { dirname, join } from "node:path";
 
 import { runKbQuery } from "../../src/tools/kb-query.js";
 import { runForgeSearch } from "../../src/tools/forge-search.js";
+import { resetRegistryForTest } from "../../src/kb/registry.js";
 import { resetLayoutForTest } from "../../src/runtime-layout.js";
 
 const ORIGINAL_KB_ROOT = process.env.SPT_KB_ROOT;
+const ORIGINAL_REGISTRY = process.env.KB_REGISTRY;
 
 let tmp: string;
 
@@ -26,6 +28,10 @@ function writeFile(fullPath: string, content: string): void {
 
 beforeEach(() => {
   tmp = mkdtempSync(join(tmpdir(), "spt-mcp-kbquery-"));
+  // 本组用例考察的是「注册表不可用时的传统单库行为」，故显式指向不存在的注册表；
+  // 多库行为见 kb-registry.test.ts
+  process.env.KB_REGISTRY = join(tmp, "no-such-registry.json");
+  resetRegistryForTest();
 });
 
 afterEach(() => {
@@ -34,7 +40,13 @@ afterEach(() => {
   } else {
     process.env.SPT_KB_ROOT = ORIGINAL_KB_ROOT;
   }
+  if (ORIGINAL_REGISTRY === undefined) {
+    delete process.env.KB_REGISTRY;
+  } else {
+    process.env.KB_REGISTRY = ORIGINAL_REGISTRY;
+  }
   resetLayoutForTest();
+  resetRegistryForTest();
   rmSync(tmp, { recursive: true, force: true });
 });
 
@@ -99,14 +111,19 @@ describe("spt_kb_query: 布局降级", () => {
     const data = res.data as {
       matchCount: number;
       filters: Record<string, unknown>;
+      results: Array<{ matchCount: number; matches: Array<{ path: string }> }>;
     };
     expect(data.matchCount).toBe(1);
     expect(data.filters).toEqual({
+      kb: undefined,
       topic: undefined,
       domain: undefined,
       version: undefined,
       keyword: undefined,
+      limit: 30,
     });
+    expect(data.results).toHaveLength(1);
+    expect(data.results[0].matches[0].path).toBe("curated/recipes/demo.md");
   });
 });
 
@@ -146,9 +163,12 @@ describe("spt_kb_query: 契约归一（D4）", () => {
     expect(res.ok).toBe(true);
     if (!res.ok) return;
 
-    const data = res.data as { matchCount: number; matches: Array<{ path: string }> };
+    const data = res.data as {
+      matchCount: number;
+      results: Array<{ matches: Array<{ path: string }> }>;
+    };
     expect(data.matchCount).toBe(1);
-    expect(data.matches[0].path).toBe("curated/migration/legacy.md");
+    expect(data.results[0].matches[0].path).toBe("curated/migration/legacy.md");
   });
 });
 

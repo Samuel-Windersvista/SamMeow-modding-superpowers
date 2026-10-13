@@ -1,0 +1,115 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 14690,
+   "hub_id": null,
+   "version": "6.0.0",
+   "description": "<p>Updated for SPT 4.1 🚀</p>\n",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/6.0.0",
+   "content_length": 9804,
+   "spt_version_constraint": "~4.1",
+   "downloads": 6234,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-12T22:52:00.000000Z",
+   "created_at": "2026-08-12T22:52:21.000000Z",
+   "updated_at": "2026-08-12T22:53:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3725,
+   "hub_id": 10530,
+   "version": "2.0.0",
+   "description": "<p>Updated for 3.9.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/2.0.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 21401,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-07T05:11:46.000000Z",
+   "created_at": "2024-07-07T05:11:46.000000Z",
+   "updated_at": "2026-05-14T03:55:41.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2317,
+   "hub_id": 12290,
+   "version": "3.0.0",
+   "description": "<p>Updated for 3.10</p>\n",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/3.0.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 3090,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-26T19:45:33.000000Z",
+   "created_at": "2024-11-26T19:45:33.000000Z",
+   "updated_at": "2026-05-14T03:19:42.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1181,
+   "hub_id": 13595,
+   "version": "4.0.0",
+   "description": "<p>Updated for SPT 3.11 🚀</p>\n",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/4.0.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 23951,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-16T04:04:15.000000Z",
+   "created_at": "2025-03-16T04:04:15.000000Z",
+   "updated_at": "2026-05-14T02:07:26.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11882,
+   "hub_id": null,
+   "version": "5.0.0",
+   "description": "<p>Updated for SPT 4.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1469/autodeposit/5.0.0",
+   "content_length": 10405,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 27419,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-17T09:02:00.000000Z",
+   "created_at": "2025-10-17T18:02:53.000000Z",
+   "updated_at": "2026-07-28T06:04:39.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1469/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1469/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1469/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1469/versions",
+  "per_page": 50,
+  "to": 5,
+  "total": 5
+ }
+}

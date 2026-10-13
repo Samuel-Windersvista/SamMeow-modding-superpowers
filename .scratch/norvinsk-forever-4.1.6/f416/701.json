@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15708,
+   "hub_id": null,
+   "version": "4.1.0",
+   "description": "<h2>Fontaine’s FOV Fix v4.1.0 for SPT 4.1.x</h2>\n<h3>Tweaks &amp; Changes</h3>\n<ul>\n<li>Added config option to modify max freelook rotation (thanks to <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Elmer-Glue\" rel=\"noreferrer noopener\">Elmer-Glue</a>)</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>Fixed camera recoil being modified by this mod inadvertently</li>\n<li>Fixed the FOV Scale option being reset every raid</li>\n</ul>\n<h3>Known Issues:</h3>\n<ul>\n<li>Thermals are no longer variable due to BSG’s changes.</li>\n<li>FOV/zoom between scopes of the same magnification is not consistent due to BSG.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/701/fontaines-fov-fix/4.1.0",
+   "content_length": 19980,
+   "spt_version_constraint": "4.1.x",
+   "downloads": 2074,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-01T11:02:00.000000Z",
+   "created_at": "2026-10-01T11:01:30.000000Z",
+   "updated_at": "2026-10-01T11:03:04.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/701/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/701/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/701/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/701/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

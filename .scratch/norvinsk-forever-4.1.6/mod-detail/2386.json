@@ -1,0 +1,32 @@
+{
+ "id": 2386,
+ "hub_id": null,
+ "guid": "com.cj.usefromanywhere",
+ "name": "Use Items Anywhere",
+ "slug": "use-items-anywhere",
+ "teaser": "Use and bind items from anywhere in your inventory",
+ "thumbnail": "https://files.sp-mod.com/mods/q2bhZHOXYTCH5G2YAYP1rWFZ0dz8ucChpemUiyX6.png",
+ "downloads": 119540,
+ "favourites_count": 425,
+ "endorsements_count": 65,
+ "description": "<p>Last updated for 2.1.3</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">About</div>\n<div class=\"tab-content\"><p>This mod allows you to access any item from anywhere in a highly configurable way. You can allow yourself to pull water from backpacks but not meds, etc. It also features a use delay system to simulate getting items out of a rig or backpack, and an additional nesting delay for items inside of nested backpacks. Finally this mod features a smart quick use item wheel that will automatically show you items you can then pick to use straight from the wheel. This is highly configurable as-well.</p>\n<p>As of 2.0.0, this mod is not Fika compatible, and I’m in no rush to work on it. Use at your own risk and don’t report any issues to me with Fika installed.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Slot Filters</div>\n<div class=\"tab-content\"><p>This configuration allows you to select which slots you can use and bind specific item types from, it is highly flexible. Hover over each one for more information. These filters work with regular key binds as well as the Quick Use Wheel.</p>\n<p>NOTE: Weapon slots are always included by default in the weapon slots selection even though they are not shown. You cannot disable them.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/WxbU8IV.png\" alt=\"SlotFilters\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Slot Access Delays</div>\n<div class=\"tab-content\"><p>Slot access delays allow you to simulate the time it would take to access an item from a given slot. This system is reinforced by a custom UI. You can set a key bind to stop the access so the item isn’t used. You can also set an additional delay for additional nesting. These are all configurable per slot with the exception of the additional backpack nesting delay, that is backpacks only.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/MEAcl3d.png\" alt=\"SlotAccessDelays\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/kGziUY3.png\" alt=\"SlotAccessDelays2\" /></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Quick Use Wheel</div>\n<div class=\"tab-content\"><p>The quick use wheel allows you to quickly access items in your inventory without having to bind them to a specific key. The default key to show it is <code>H</code>. You can configure what items will appear here and it respects the Slot Filters set in the above config in the mod. So if you don’t have the mod set to look for meds in backpacks it wont show them in the wheel. The wheel pages and you can use your scroll wheel to move between pages if you have more items than appears on one page.</p>\n<p>The following sub features are fully configurable</p>\n<ul>\n<li>Item grouping\n<ul>\n<li>Groups matching meds, grenades, food/drink and flares</li>\n</ul>\n</li>\n<li>Tap for last item\n<ul>\n<li>Tapping the wheel key will use the last item selected from the wheel</li>\n</ul>\n</li>\n<li>Favorites\n<ul>\n<li>Using MMB on an item in the wheel will pin it to the top of the wheel</li>\n</ul>\n</li>\n<li>Tactical weapon wheel\n<ul>\n<li>using <code>left alt + h</code> by default will open a tactical weapon wheel allowing you to change fire-modes, and operate tactical devices independently from each other</li>\n</ul>\n</li>\n<li>Pending item behaviour\n<ul>\n<li>If <code>Slot Access Delay</code> is active, you can change what happens when you selected an item from the wheel while one is being accessed</li>\n<li>Ignore: Ignores the request entirely</li>\n<li>Cancel and use: Cancels and uses the newly selected item</li>\n<li>Queue one: Queues the next selected item to be used after completing the previous item</li>\n</ul>\n</li>\n</ul>\n<p>Currently the order in which it shows items in the wheel is not configurable, however it follows this rule and fills clockwise per page. The order in which it fills item types is currently at random based on grid position. This will be improved in the future.</p>\n<p>FirstPrimaryWeapon &gt; SecondPrimaryWeapon &gt; Holster &gt; Scabbard &gt;Pockets &gt;TacticalVest &gt;Armband &gt; Backpack &gt; SecuredContainer</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YcP6pHM.png\" alt=\"QuickUseWheel\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/6reBVP6.png\" alt=\"QuickUseWheel2\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Extract to the root of your SPT install as shown below.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"InstallGif\" /></p></div></div></div>\n<p>See what im working on! <a target=\"_blank\" class=\"external-link\" href=\"https://www.youtube.com/@CJ-SPT\" rel=\"noreferrer noopener\">youtube</a></p>\n<p>Buy me coffee <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/dirtbikercj\" rel=\"noreferrer noopener\">here</a>!</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2386/use-items-anywhere",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": true,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 15,
+ "published_at": "2025-10-20T23:50:00.000000Z",
+ "created_at": "2025-10-20T23:52:15.000000Z",
+ "updated_at": "2026-09-20T02:59:33.000000Z",
+ "owner": {
+  "id": 33963,
+  "name": "Cj",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+  "created_at": "2023-07-14T19:01:21.000000Z",
+  "updated_at": "2026-10-06T02:37:07.000000Z"
+ },
+ "additional_authors": []
+}

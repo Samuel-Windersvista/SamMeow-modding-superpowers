@@ -1,0 +1,55 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15783,
+   "hub_id": null,
+   "version": "1.0.0",
+   "description": "<p>Initial release - likely to stay eternal on this version as no reason to make changes for future base game version releases as it was actually bothered to be fixed properly.</p>\n",
+   "link": "https://sp-mod.com/mod/download/3109/knight-mask-fix-413/1.0.0",
+   "content_length": 2078639,
+   "spt_version_constraint": "~4.1.3",
+   "downloads": 574,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-10-05T00:36:00.000000Z",
+   "created_at": "2026-10-05T00:35:23.000000Z",
+   "updated_at": "2026-10-05T00:37:03.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/3109/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/3109/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/3109/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/3109/versions",
+  "per_page": 50,
+  "to": 1,
+  "total": 1
+ }
+}

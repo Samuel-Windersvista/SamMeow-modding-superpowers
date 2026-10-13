@@ -1,0 +1,83 @@
+{
+ "idx": 16,
+ "entry": "[11]扫敌雷达-RadarStandalone",
+ "terms": [
+  "-RadarStandalone",
+  "Radar"
+ ],
+ "all": [
+  {
+   "term": "-RadarStandalone",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327302,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192577,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "Radar",
+   "id": 2101,
+   "name": "SPT Leaderboard",
+   "slug": "spt-leaderboard",
+   "dl": 6901,
+   "sc": 0
+  },
+  {
+   "term": "Radar",
+   "id": 2583,
+   "name": "Fika Discord Presence",
+   "slug": "fika-discord-presence",
+   "dl": 1344,
+   "sc": 0
+  },
+  {
+   "term": "-RadarStandalone",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

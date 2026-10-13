@@ -1,0 +1,147 @@
+{
+ "idx": 123,
+ "entry": "[3]新配件-BlackCore",
+ "terms": [
+  "Black Core",
+  "-BlackCore"
+ ],
+ "all": [
+  {
+   "term": "Black Core",
+   "id": 2511,
+   "name": "WTT - Black Division [REDACTED] Home",
+   "slug": "wtt-black-division-redacted-home",
+   "dl": 114460,
+   "sc": 30
+  },
+  {
+   "term": "-BlackCore",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327306,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 1125,
+   "name": "Tactical Gear Component",
+   "slug": "tactical-gear-component",
+   "dl": 302914,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285013,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192578,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2326,
+   "name": "Project Fika",
+   "slug": "project-fika",
+   "dl": 96148,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2383,
+   "name": "Skills Extended",
+   "slug": "skills-extended",
+   "dl": 55513,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2423,
+   "name": "C11 - True North",
+   "slug": "c11-true-north",
+   "dl": 43743,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2010,
+   "name": "Definitive Weapon Variants",
+   "slug": "definitive-weapon-variants",
+   "dl": 42994,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 1340,
+   "name": "WTT - The Long Lost Heads of Yojenkz",
+   "slug": "wtt-the-long-lost-heads-of-yojenkz",
+   "dl": 30374,
+   "sc": 0
+  },
+  {
+   "term": "Black Core",
+   "id": 2195,
+   "name": "ECOT - Eukyre's Consortium of Things",
+   "slug": "ecot-eukyres-consortium-of-things",
+   "dl": 29627,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "-BlackCore",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

@@ -1,0 +1,464 @@
+{
+ "term": "Tarkov Weather System",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2314,
+    "hub_id": 3030,
+    "guid": "com.turbodestroyer.seasonrotator",
+    "name": "Season Rotator",
+    "slug": "season-rotator",
+    "teaser": "Auto-rotate seasons at the pace you decide ",
+    "thumbnail": "https://files.sp-mod.com/mods/Q6cdWWZz218XBB4wGhXtyDDc7wPihWS6vUeGAwMc.jpg",
+    "downloads": 36320,
+    "favourites_count": 106,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/2314/season-rotator",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-09-17T07:36:00.000000Z",
+    "created_at": "2025-09-17T07:36:27.000000Z",
+    "updated_at": "2026-08-08T18:02:21.000000Z",
+    "owner": {
+     "id": 71742,
+     "name": "turbodestroyer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/178242a5fa7130736a3b618c0581e9f6d2808e73_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/VilS13qPoHZRuiZKVAlakr4UW85QLoTVG2clvolt_1280w.webp",
+     "created_at": "2025-01-18T07:02:26.000000Z",
+     "updated_at": "2026-10-05T13:29:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2120,
+    "hub_id": 2807,
+    "guid": "com.samswat.timeweatherchanger",
+    "name": "Time & Weather Changer NG",
+    "slug": "time-weather-changer-ng",
+    "teaser": "Time & Weather changer",
+    "thumbnail": "https://files.sp-mod.com/mods/2807.png",
+    "downloads": 30446,
+    "favourites_count": 96,
+    "endorsements_count": 14,
+    "detail_url": "https://sp-mod.com/mod/2120/time-weather-changer-ng",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-05-01T10:56:00.000000Z",
+    "created_at": "2025-05-01T10:56:38.000000Z",
+    "updated_at": "2026-08-17T22:25:56.000000Z",
+    "owner": {
+     "id": 69402,
+     "name": "flir",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/DKLerEnM8Sr3SaE9jjPwZdeDpm5UERbKUMqsS0s0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-12T12:24:24.000000Z",
+     "updated_at": "2026-09-16T12:46:00.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 200,
+      "name": "SamSWAT",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/1b5bf15f78035540327b8515a5dfa83a4c339b32_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2020-08-15T19:53:17.000000Z",
+      "updated_at": "2026-08-10T19:10:35.000000Z"
+     },
+     {
+      "id": 33963,
+      "name": "Cj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+      "created_at": "2023-07-14T19:01:21.000000Z",
+      "updated_at": "2026-10-05T16:17:34.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3062,
+    "hub_id": null,
+    "guid": "com.binkobunko.tarkovrarecollectibles",
+    "name": "Tushonka Rare Collectibles",
+    "slug": "tushonka-rare-collectibles",
+    "teaser": "Make Loot Valuable Again! Adds 15 highly valuable and rare collectible items.",
+    "thumbnail": "https://files.sp-mod.com/mods/jjQvJtW3ZQ5DwEjGVcGiD7A1go1GHzMzTBRxoSfw.jpg",
+    "downloads": 2106,
+    "favourites_count": 23,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3062/tushonka-rare-collectibles",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-25T00:30:00.000000Z",
+    "created_at": "2026-09-25T00:31:49.000000Z",
+    "updated_at": "2026-09-26T14:05:44.000000Z",
+    "owner": {
+     "id": 10793,
+     "name": "BinkoBunko",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/IA3gCReDytWpNutORK4rvUkiifiNuaIPyW2rezTK_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/SF2r0IcoGmYHELUH1uqkYXyUTnAEUMBFxITTD9zb.png",
+     "created_at": "2021-10-24T20:54:06.000000Z",
+     "updated_at": "2026-10-05T03:11:29.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84701,
+      "name": "YellowDoge",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/b545285eabee29891614e9e9bdfd54313232b3af_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-09-16T14:15:36.000000Z",
+      "updated_at": "2026-08-10T19:50:45.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2025,
+    "hub_id": 2705,
+    "guid": "com.zgfuedkx.allquestscheckmarks",
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "teaser": "Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in future quests. It also works with Fika and shows items required by your friends!",
+    "thumbnail": "https://files.sp-mod.com/mods/2705.png",
+    "downloads": 61046,
+    "favourites_count": 190,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2025/all-quests-checkmarks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2025-03-06T23:43:00.000000Z",
+    "created_at": "2025-03-06T23:43:10.000000Z",
+    "updated_at": "2026-08-29T21:24:27.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2621,
+    "hub_id": null,
+    "guid": "com.lacyway.tdlss",
+    "name": "T***** DLSS 4.5",
+    "slug": "tarkov-dlss-45",
+    "teaser": "This pre-patcher enables DLSS 4.5 support in SPT/Fika.",
+    "thumbnail": "https://files.sp-mod.com/mods/SE6rDg7mibDNHSSAvn530cP6nn7aXBssVY6YaWQ9.png",
+    "downloads": 12059,
+    "favourites_count": 66,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/2621/tarkov-dlss-45",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-19T19:13:00.000000Z",
+    "created_at": "2026-03-08T18:46:13.000000Z",
+    "updated_at": "2026-08-19T19:13:35.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2637,
+    "hub_id": null,
+    "guid": "com.rz.essentials",
+    "name": "RZEssentials",
+    "slug": "rzessentials",
+    "teaser": "Your server, your rules. Every system optional, every detail configurable.",
+    "thumbnail": "https://files.sp-mod.com/mods/dqRygmH5LFcamujGgkd0vxBEI2BDekcobfFI8GXE.png",
+    "downloads": 2462,
+    "favourites_count": 11,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2637/rzessentials",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-04-12T23:07:00.000000Z",
+    "created_at": "2026-03-22T21:52:00.000000Z",
+    "updated_at": "2026-07-28T08:25:55.000000Z",
+    "owner": {
+     "id": 105867,
+     "name": "RemzDNB",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/SILVz01a0uIhADQ4hPlz624eOhWll3wkPf8DlRZx_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-02-23T05:15:38.000000Z",
+     "updated_at": "2026-08-10T19:52:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1192,
+    "hub_id": 1673,
+    "guid": "nameless.raidoverhaul",
+    "name": "Raid Overhaul",
+    "slug": "raid-overhaul",
+    "teaser": "An overhaul to how raids function including raid timer being tied to your system time with an (almost) endless raid length, random events occurring throughout your raids, and a new themed trader to help you make your way through T*****.",
+    "thumbnail": "https://files.sp-mod.com/mods/8E3El1l9JDJiEc3tydl0FYIVdHtPvMpzJZZL2RdX.jpg",
+    "downloads": 31775,
+    "favourites_count": 48,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1192/raid-overhaul",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-04-10T07:37:00.000000Z",
+    "created_at": "2023-12-20T21:01:35.000000Z",
+    "updated_at": "2026-07-28T08:21:17.000000Z",
+    "owner": {
+     "id": 37025,
+     "name": "nameless♥",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/0883084a142f94ac0f0d618f89c64666f23b8eaf_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/2ab3dbb21db5a094bafddcfcdabfa1f5e2237ef8_1280w.webp",
+     "created_at": "2023-09-14T14:15:06.000000Z",
+     "updated_at": "2026-09-30T04:39:38.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 33963,
+      "name": "Cj",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+      "created_at": "2023-07-14T19:01:21.000000Z",
+      "updated_at": "2026-10-05T16:17:34.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2485,
+    "hub_id": null,
+    "guid": "com.samc137.isbspecialforces",
+    "name": "ISB Special Forces",
+    "slug": "isb-special-forces",
+    "teaser": "Custom Bots introducing a dangerous special forces unit from a coalition formerly loyal to the U***.",
+    "thumbnail": "https://files.sp-mod.com/mods/l1hzs0J1YZoXsfk8zCj1XeHFXz75SWOUnp91hTde.png",
+    "downloads": 8391,
+    "favourites_count": 70,
+    "endorsements_count": 44,
+    "detail_url": "https://sp-mod.com/mod/2485/isb-special-forces",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-08-01T06:24:00.000000Z",
+    "created_at": "2025-12-06T23:38:23.000000Z",
+    "updated_at": "2026-09-22T15:11:57.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2318,
+    "hub_id": 3034,
+    "guid": "com.yellowdoge.tarkovrarecollectibles",
+    "name": "T***** Rare Collectibles",
+    "slug": "tarkov-rare-collectibles",
+    "teaser": "Make Loot Valuable Again! Adds 15 highly valuable and rare collectible items.",
+    "thumbnail": "https://files.sp-mod.com/mods/3034.jpg",
+    "downloads": 37839,
+    "favourites_count": 48,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2318/tarkov-rare-collectibles",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2025-10-13T19:36:00.000000Z",
+    "created_at": "2025-09-20T22:50:57.000000Z",
+    "updated_at": "2026-07-28T06:06:50.000000Z",
+    "owner": {
+     "id": 84701,
+     "name": "YellowDoge",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b545285eabee29891614e9e9bdfd54313232b3af_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-09-16T14:15:36.000000Z",
+     "updated_at": "2026-08-10T19:50:45.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1896,
+    "hub_id": 2558,
+    "guid": "tarkov.hd.rework",
+    "name": "T***** HD Item Rework Project",
+    "slug": "tarkov-hd-item-rework-project",
+    "teaser": "A mod to replace items in the game with higher quality assets. Starting with the barter items currently I have 43/203 barter folders done now (I'm just moving through the list)",
+    "thumbnail": "https://files.sp-mod.com/mods/2558.jpg",
+    "downloads": 26555,
+    "favourites_count": 15,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1896/tarkov-hd-item-rework-project",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 11,
+    "published_at": "2024-12-17T22:44:00.000000Z",
+    "created_at": "2024-12-17T22:44:55.000000Z",
+    "updated_at": "2026-07-28T06:07:22.000000Z",
+    "owner": {
+     "id": 51411,
+     "name": "PulledP0rk",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/1e701fbbc00274f14619bf1c521b0a6cecf4761b_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-10T08:55:37.000000Z",
+     "updated_at": "2026-10-02T02:20:00.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 11,
+     "hub_id": 27,
+     "title": "Models",
+     "slug": "models",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

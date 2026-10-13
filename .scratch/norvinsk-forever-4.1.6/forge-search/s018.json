@@ -1,0 +1,457 @@
+{
+ "entry": "[11]任务跳过功能-Skipper",
+ "term": "Skipper",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1343,
+    "hub_id": 1861,
+    "guid": "com.terkoiz.skipper",
+    "name": "Skipper",
+    "slug": "skipper",
+    "teaser": "A small client mod for conveniently skipping quests",
+    "thumbnail": "https://files.sp-mod.com/mods/1861.png",
+    "downloads": 340153,
+    "favourites_count": 506,
+    "endorsements_count": 58,
+    "detail_url": "https://sp-mod.com/mod/1343/skipper",
+    "fika_compatibility": false,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-04-19T15:27:00.000000Z",
+    "created_at": "2024-04-19T15:27:58.000000Z",
+    "updated_at": "2026-08-09T22:57:03.000000Z",
+    "owner": {
+     "id": 4843,
+     "name": "Terkoiz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8ac461c503955b1142399451ed9ea40a98b249c2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/f8a971452d0197f3022defe4715119532fbca03c.jpg",
+     "created_at": "2021-05-11T08:06:10.000000Z",
+     "updated_at": "2026-10-05T13:18:21.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 48110,
+      "name": "acidphantasm",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-11T21:22:35.000000Z",
+      "updated_at": "2026-10-05T03:07:48.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3051,
+    "hub_id": null,
+    "guid": "com.hj.achievementskipper",
+    "name": "Hj's Achievement Skipper",
+    "slug": "hjs-achievement-skipper",
+    "teaser": "Skip any achievement and receive the reward",
+    "thumbnail": "https://files.sp-mod.com/mods/1htwn5w9DgREKlaJvNcXSfvqewpBO6hVA6TybR2V.png",
+    "downloads": 1318,
+    "favourites_count": 21,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3051/hjs-achievement-skipper",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-21T13:29:00.000000Z",
+    "created_at": "2026-09-21T13:10:46.000000Z",
+    "updated_at": "2026-09-29T23:03:15.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T15:47:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2857,
+    "hub_id": null,
+    "guid": "com.awnova.raidsettingsskipper",
+    "name": "Raid Settings Skipper",
+    "slug": "raid-settings-skipper",
+    "teaser": "Skips the raid settings screen when fika server settings are disabled.",
+    "thumbnail": "https://files.sp-mod.com/mods/v49epH1pydb3Wyw5IeqlTvbrU6dQbmg2YbAETROJ.png",
+    "downloads": 2942,
+    "favourites_count": 38,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/2857/raid-settings-skipper",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-07-29T23:05:00.000000Z",
+    "created_at": "2026-07-29T04:16:57.000000Z",
+    "updated_at": "2026-09-28T16:34:36.000000Z",
+    "owner": {
+     "id": 106828,
+     "name": "awnova",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/s0fCSk1b9bQ9QfBd46npW4B2Y0QQl0Y91hnmdVzZ_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-03-07T18:31:57.000000Z",
+     "updated_at": "2026-10-05T15:50:52.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2689,
+    "hub_id": null,
+    "guid": "com.sgtlaggy.itempropertybackport",
+    "name": "Item Property Backport",
+    "slug": "item-property-backport",
+    "teaser": "Get live item stat/balance changes!",
+    "thumbnail": "",
+    "downloads": 11723,
+    "favourites_count": 101,
+    "endorsements_count": 20,
+    "detail_url": "https://sp-mod.com/mod/2689/item-property-backport",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-05-12T23:50:00.000000Z",
+    "created_at": "2026-05-12T23:40:58.000000Z",
+    "updated_at": "2026-08-23T22:44:04.000000Z",
+    "owner": {
+     "id": 50076,
+     "name": "sgtlaggy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-30T05:20:41.000000Z",
+     "updated_at": "2026-10-05T05:47:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187196,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32554,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 526,
+    "hub_id": 740,
+    "guid": "com.rairaitheraichu.alltheclothes",
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "teaser": "ALL THE CLOTHES FOREVER",
+    "thumbnail": "https://files.sp-mod.com/mods/740.png",
+    "downloads": 192572,
+    "favourites_count": 241,
+    "endorsements_count": 21,
+    "detail_url": "https://sp-mod.com/mod/526/all-the-clothes",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2026-06-03T19:44:00.000000Z",
+    "created_at": "2022-08-01T06:08:58.000000Z",
+    "updated_at": "2026-08-14T00:03:25.000000Z",
+    "owner": {
+     "id": 3576,
+     "name": "RaiRaiTheRaichu",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b7b8eb01816280f8cac17bf8bcafd05c6ed66378_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-03-25T12:16:15.000000Z",
+     "updated_at": "2026-08-21T22:24:53.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 1537,
+    "hub_id": 2107,
+    "guid": "com.sgtlaggy.questtweaks",
+    "name": "sgtlaggy's Quest Tweaks",
+    "slug": "sgtlaggys-quest-tweaks",
+    "teaser": "Some QoL quest changes.",
+    "thumbnail": "https://files.sp-mod.com/mods/2107.png",
+    "downloads": 23925,
+    "favourites_count": 47,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/1537/sgtlaggys-quest-tweaks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2024-07-08T22:09:00.000000Z",
+    "created_at": "2024-07-08T22:09:27.000000Z",
+    "updated_at": "2026-09-10T23:58:50.000000Z",
+    "owner": {
+     "id": 50076,
+     "name": "sgtlaggy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-30T05:20:41.000000Z",
+     "updated_at": "2026-10-05T05:47:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2441,
+    "hub_id": null,
+    "guid": "com.madmanbeavis.narconet",
+    "name": "NARCONet - Mod Sync",
+    "slug": "narconet-mod-sync",
+    "teaser": "One Connection. Every Mod. Every Setting. More Reliable than your dealer.",
+    "thumbnail": "https://files.sp-mod.com/mods/4NouoXA6ejwVZ8WpJra6nUljkYLdGCCVcHCHYUir.png",
+    "downloads": 14731,
+    "favourites_count": 48,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2441/narconet-mod-sync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-11-12T13:25:00.000000Z",
+    "created_at": "2025-11-12T18:22:49.000000Z",
+    "updated_at": "2026-09-15T22:22:24.000000Z",
+    "owner": {
+     "id": 63811,
+     "name": "madmanbeavis",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-09-14T08:26:21.000000Z",
+     "updated_at": "2026-08-10T19:48:16.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 69402,
+      "name": "flir",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/DKLerEnM8Sr3SaE9jjPwZdeDpm5UERbKUMqsS0s0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-12-12T12:24:24.000000Z",
+      "updated_at": "2026-09-16T12:46:00.000000Z"
+     }
+    ],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3024,
+    "hub_id": null,
+    "guid": "com.hayk4500.casetrader",
+    "name": "CaseTrader — Buy any case",
+    "slug": "casetrader-buy-any-case",
+    "teaser": "Adds a new trader — Case (Victor Barinov). He sells storage cases, key holders, wallets, med cases, ammo boxes and other ordinary containers.",
+    "thumbnail": "https://files.sp-mod.com/mods/1Z3BAQ65GTmcMrBr1aYSQC5W1E8GKr9AwUwc1AkD.jpg",
+    "downloads": 1390,
+    "favourites_count": 13,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/3024/casetrader-buy-any-case",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-09-13T23:00:00.000000Z",
+    "created_at": "2026-09-13T23:01:30.000000Z",
+    "updated_at": "2026-10-02T16:33:57.000000Z",
+    "owner": {
+     "id": 34606,
+     "name": "hayk4500",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d2dXOqZRvmovrap79FxUcCsJnokNO0TBOwiueqmy_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/d4f30a1e75c68f88b4980d379c2106138d932296_1280w.webp",
+     "created_at": "2023-07-29T13:32:55.000000Z",
+     "updated_at": "2026-10-05T10:14:25.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

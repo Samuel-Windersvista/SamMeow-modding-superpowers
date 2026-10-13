@@ -1,0 +1,466 @@
+{
+ "term": "mask-fix",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3109,
+    "hub_id": null,
+    "guid": "com.fums.knightmaskfix",
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "teaser": "Fixes Death Knight's missing mask texture for SP Tushonka 4.1.3+",
+    "thumbnail": "https://files.sp-mod.com/mods/g04BBKezC8VmfniMIPm3KM0mcZeELDiAsRkE6IHs.png",
+    "downloads": 570,
+    "favourites_count": 10,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/3109/knight-mask-fix-413",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-10-05T00:35:00.000000Z",
+    "created_at": "2026-10-05T00:26:27.000000Z",
+    "updated_at": "2026-10-05T00:59:36.000000Z",
+    "owner": {
+     "id": 70223,
+     "name": "Fums",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3989d352aff611adb499153d72909a0223390757_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-27T20:28:20.000000Z",
+     "updated_at": "2026-10-05T15:56:23.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 85395,
+      "name": "Umbigo Preto",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/csB3VP0jIdPM6GNDWCWDYzuWSa5hjLP3AMqiPNYn_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/DuVXtm3R4c27S1qDGVIK7GyTXcaoZxSx6AEhvzm3_2560w.webp",
+      "created_at": "2025-10-05T08:36:43.000000Z",
+      "updated_at": "2026-08-10T19:50:47.000000Z"
+     },
+     {
+      "id": 111932,
+      "name": "Flex Wayne",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bItTPQAeWa25KuYVzBAAriBAsefZjlW4YA7sK5Po_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-05-06T13:39:58.000000Z",
+      "updated_at": "2026-08-10T19:52:39.000000Z"
+     }
+    ]
+   },
+   {
+    "id": 3090,
+    "hub_id": null,
+    "guid": "com.guro.dacard",
+    "name": "DaCard",
+    "slug": "dacard",
+    "teaser": "Collectable Card Mod with in-depth custom card customization.",
+    "thumbnail": "https://files.sp-mod.com/mods/GNE2YEfZ7nSbDOY0If9sPoZQwfIq2bKB15GegEqn.png",
+    "downloads": 632,
+    "favourites_count": 7,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/3090/dacard",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-10-01T01:39:00.000000Z",
+    "created_at": "2026-10-01T01:32:14.000000Z",
+    "updated_at": "2026-10-02T15:17:25.000000Z",
+    "owner": {
+     "id": 125208,
+     "name": "Guro",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/BFY3maavwwA0Yo1mrPn70L2eGeNbKCUSe68XwgaD_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-09-29T00:38:44.000000Z",
+     "updated_at": "2026-10-05T02:15:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1263,
+    "hub_id": 1764,
+    "guid": "com.epicrangetime.aio",
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.",
+    "thumbnail": "https://files.sp-mod.com/mods/1764.jpg",
+    "downloads": 274736,
+    "favourites_count": 347,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1263/epics-all-in-one",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2024-03-24T23:38:00.000000Z",
+    "created_at": "2024-03-24T23:38:18.000000Z",
+    "updated_at": "2026-09-21T21:02:35.000000Z",
+    "owner": {
+     "id": 36153,
+     "name": "EpicRangeTime",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+     "created_at": "2023-08-26T03:19:00.000000Z",
+     "updated_at": "2026-10-03T02:57:01.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 954,
+    "hub_id": 1303,
+    "guid": "com.borkel.nvgmasks",
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "teaser": "Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customizable ingame (colors and everything).",
+    "thumbnail": "https://files.sp-mod.com/mods/1303.png",
+    "downloads": 263907,
+    "favourites_count": 351,
+    "endorsements_count": 76,
+    "detail_url": "https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2023-06-30T20:48:00.000000Z",
+    "created_at": "2023-06-30T20:48:45.000000Z",
+    "updated_at": "2026-10-03T16:45:16.000000Z",
+    "owner": {
+     "id": 28436,
+     "name": "Borkel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6aef9d279c1868359776de260a42b3f9c54499c4_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a779512b58096f6f543f05646588329fbba37f5c_1280w.webp",
+     "created_at": "2023-03-10T18:10:13.000000Z",
+     "updated_at": "2026-10-03T21:58:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 12179,
+      "name": "pein",
+      "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+      "created_at": "2021-12-14T17:06:03.000000Z",
+      "updated_at": "2026-09-20T09:07:35.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32555,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2864,
+    "hub_id": null,
+    "guid": "com.manimal.csgas",
+    "name": "Manimal's CS Gas",
+    "slug": "manimals-cs-gas",
+    "teaser": "A mod that adds the CS Gas grenade from 1.0",
+    "thumbnail": "https://files.sp-mod.com/mods/gtECGlPTyfZgKO8rPbsjGA2Li7g0ksSZVXgNSH0M.png",
+    "downloads": 32886,
+    "favourites_count": 275,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2864/manimals-cs-gas",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-08-01T01:44:00.000000Z",
+    "created_at": "2026-08-01T01:14:35.000000Z",
+    "updated_at": "2026-09-07T00:55:14.000000Z",
+    "owner": {
+     "id": 119111,
+     "name": "Manimal1920",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-07-30T21:56:19.000000Z",
+     "updated_at": "2026-10-05T16:46:55.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1569,
+    "hub_id": 2145,
+    "guid": "com.hood.wolfiksheavytroopers",
+    "name": "Wolfik's Heavy Trooper Masks",
+    "slug": "wolfiks-heavy-trooper-masks",
+    "teaser": "Adds 5 new heavy trooper masks: Tan, Black, Coyote, Wolf, and Cult that actually provide protection",
+    "thumbnail": "https://files.sp-mod.com/mods/2145.jpg",
+    "downloads": 45379,
+    "favourites_count": 78,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/1569/wolfiks-heavy-trooper-masks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2024-07-17T08:17:00.000000Z",
+    "created_at": "2024-07-17T08:17:43.000000Z",
+    "updated_at": "2026-09-26T21:33:36.000000Z",
+    "owner": {
+     "id": 52386,
+     "name": "Hood",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ApXnt8RHneQzgXZ5F36TSIqUAn6ZeVebkT6Q0br_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-21T21:49:53.000000Z",
+     "updated_at": "2026-10-05T11:49:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 3259,
+      "name": "SerWolfik",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0d969eb63d870f7d0f1de41925ab6fade36263c9_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/d51f043b510e749538bc006cf605d3eba529fbb6_1280w.webp",
+      "created_at": "2021-03-07T06:40:42.000000Z",
+      "updated_at": "2026-08-10T19:13:53.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2554,
+    "hub_id": null,
+    "guid": "com.trinagan.changehelmetvisor",
+    "name": "Change Helmet Visor",
+    "slug": "change-helmet-visor",
+    "teaser": "A mod that lets you swap between how the face shield/face cover visor is rendered",
+    "thumbnail": "https://files.sp-mod.com/mods/AzyGDhQEEzdMvSSol4Nx4VNFwC6B5mmpy6b4jyFR.png",
+    "downloads": 6903,
+    "favourites_count": 50,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2554/change-helmet-visor",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-02-02T19:10:00.000000Z",
+    "created_at": "2026-01-16T16:21:53.000000Z",
+    "updated_at": "2026-09-27T11:55:10.000000Z",
+    "owner": {
+     "id": 80238,
+     "name": "Trinagan",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/f5c8c2d67ac3c820b4247b25dc968b71a6f7c1ac_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-06-11T14:00:08.000000Z",
+     "updated_at": "2026-10-05T13:03:28.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 1125,
+    "hub_id": 1555,
+    "guid": "com.emilanderss0n.tgc",
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "teaser": "Adds a lot more unique gear and attachments for E*****************",
+    "thumbnail": "https://files.sp-mod.com/mods/1555.jpg",
+    "downloads": 302904,
+    "favourites_count": 158,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/1125/tactical-gear-component",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2023-10-22T03:19:00.000000Z",
+    "created_at": "2023-10-22T03:19:58.000000Z",
+    "updated_at": "2026-09-19T16:17:11.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 78428,
+      "name": "kobethuy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-05-04T22:32:08.000000Z",
+      "updated_at": "2026-10-05T13:13:57.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2658,
+    "hub_id": null,
+    "guid": "7bpencil.weaponcamoandstickers",
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "teaser": "New era of Drip",
+    "thumbnail": "https://files.sp-mod.com/mods/N0BlfVxbKixOJ4zdWgkksXG602dMNegT12HlUwnv.png",
+    "downloads": 49216,
+    "favourites_count": 222,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/2658/camo-and-stickers",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-04-08T00:45:00.000000Z",
+    "created_at": "2026-04-05T19:20:12.000000Z",
+    "updated_at": "2026-10-03T00:04:42.000000Z",
+    "owner": {
+     "id": 106491,
+     "name": "7Bpencil",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/m0WMEpWmYMyvlzjGaDzw4yYFLyLfv9zZIlDFctM3_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/eYWJOQryIx6DpPTaprSWYBSfUe5t8xPiHaaXgYQp_1280w.webp",
+     "created_at": "2026-03-03T10:57:21.000000Z",
+     "updated_at": "2026-10-05T04:16:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

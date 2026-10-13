@@ -1,0 +1,39 @@
+{
+ "id": 3129,
+ "hub_id": null,
+ "guid": "com.sage.tutorialbackport",
+ "name": "Sage's Tutorial Backport",
+ "slug": "sages-tutorial-backport",
+ "teaser": "Backports the 1.0 Tutorial into SPT",
+ "thumbnail": "https://files.sp-mod.com/mods/Pj2tt2ihJVx8krsY6Asz0lbVOGA5s5g6UV2nTewl.png",
+ "downloads": 579,
+ "favourites_count": 9,
+ "endorsements_count": 7,
+ "description": "<h1>Tutorial Backport</h1>\n<p><strong>The Ground Zero Tutorial for SPT.</strong></p>\n<p>Start a new character and you’ll load into the Tutorial</p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Information</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Counts as a real raid.</strong> XP, Skill XP and Loot carries over from the Tutorial. When you extract\nyou keep everything you wear and loot, and your “starter gear” is waiting in the stash.</li>\n<li>The Notes &amp; Tapes stay in <strong>Task items on character</strong> after the tutorial with no purpose unless another mod author takes use of them.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Not compatible</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Fika</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><ul>\n<li><strong>Those goes into “issues”</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Does it work?</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://media1.tenor.com/m/rkI1a8s2Z6QAAAAd/todd-howard-it-just-works.gif\" alt=\"gif\" /></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/3129/sages-tutorial-backport",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-10-09T10:05:30.000000Z",
+ "created_at": "2026-10-09T09:56:34.000000Z",
+ "updated_at": "2026-10-10T11:27:04.000000Z",
+ "owner": {
+  "id": 116307,
+  "name": "Sage",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/YiBIxvVDFwjvzFCuCsXgvpSMpLw0iwJdHmwd2eez_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-06-19T10:31:41.000000Z",
+  "updated_at": "2026-10-10T22:26:42.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

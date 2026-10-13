@@ -1,0 +1,3970 @@
+{
+ "coop": [
+  {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "downloads": 289257,
+   "teaser": "The official weapons pack forged by the WTT developers & friends... Arm yourself accordingly..."
+  },
+  {
+   "id": 2326,
+   "name": "Project Fika",
+   "downloads": 98074,
+   "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items "
+  },
+  {
+   "id": 2025,
+   "name": "All Quests Checkmarks",
+   "downloads": 62238,
+   "teaser": "Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in futur"
+  },
+  {
+   "id": 2357,
+   "name": "Project Fika - Server",
+   "downloads": 44882,
+   "teaser": "Server component for the Fika mod."
+  },
+  {
+   "id": 2621,
+   "name": "T***** DLSS 4.5",
+   "downloads": 12296,
+   "teaser": "This pre-patcher enables DLSS 4.5 support in SPT/Fika."
+  },
+  {
+   "id": 2791,
+   "name": "Tylevo's Tactical Service Control",
+   "downloads": 9923,
+   "teaser": "Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-con"
+  },
+  {
+   "id": 2814,
+   "name": "LMSP - Let Me Switch Plates",
+   "downloads": 8555,
+   "teaser": "Switch plates without removing your equipped armor / rig in raid, FIKA compatible"
+  },
+  {
+   "id": 2857,
+   "name": "Raid Settings Skipper",
+   "downloads": 3117,
+   "teaser": "Skips the raid settings screen when fika server settings are disabled."
+  },
+  {
+   "id": 2953,
+   "name": "Headshot Damage Redirection",
+   "downloads": 3096,
+   "teaser": "Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and RNG options. Stop getting one-"
+  },
+  {
+   "id": 3061,
+   "name": "Extra Special Slots",
+   "downloads": 1945,
+   "teaser": "Adds Special Slots 4, 5 and 6 with SVM, SpecialSlots, TSC and Fika compatibility."
+  },
+  {
+   "id": 2825,
+   "name": "S&M PRT - Portable Radio Transmitter",
+   "downloads": 1588,
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and rai"
+  },
+  {
+   "id": 2583,
+   "name": "Fika Discord Presence",
+   "downloads": 1405,
+   "teaser": "Discord integration for all !"
+  },
+  {
+   "id": 2971,
+   "name": "Universal Co-op Exfil",
+   "downloads": 918,
+   "teaser": "Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract"
+  },
+  {
+   "id": 3118,
+   "name": "ShrapnelFix",
+   "downloads": 854,
+   "teaser": "Grenade fragments now fly at body height. Deadly, configurable and FIKA-ready."
+  },
+  {
+   "id": 3050,
+   "name": "DebugTools",
+   "downloads": 683,
+   "teaser": "The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utili"
+  },
+  {
+   "id": 3122,
+   "name": "Fika Downed Spectator",
+   "downloads": 246,
+   "teaser": "Spectate your teammates while downed in Fika with a clean, native T***** tactical HUD banner."
+  }
+ ],
+ "botAI": [
+  {
+   "id": 902,
+   "name": "BigBrain",
+   "downloads": 1363232,
+   "teaser": "A library for adding extra logic layers to existing bot brains"
+  },
+  {
+   "id": 827,
+   "name": "Waypoints - Expanded Navmesh",
+   "downloads": 1335662,
+   "teaser": "Expand where bots can explore with full map navmesh coverage!"
+  },
+  {
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "downloads": 1321014,
+   "teaser": "Bots that don't suck."
+  },
+  {
+   "id": 812,
+   "name": "Looting Bots",
+   "downloads": 749682,
+   "teaser": "Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!"
+  },
+  {
+   "id": 1109,
+   "name": "Questing Bots",
+   "downloads": 436826,
+   "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you..."
+  },
+  {
+   "id": 1100,
+   "name": "ACCURATE CIRCULAR RADAR",
+   "downloads": 311030,
+   "teaser": "A radar mod that displays enemy locations and identifies various enemy types."
+  },
+  {
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "downloads": 256235,
+   "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad mor"
+  },
+  {
+   "id": 2097,
+   "name": "ABPS - Acid's Bot Placement System",
+   "downloads": 191106,
+   "teaser": "Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will always try to keep your raids full"
+  },
+  {
+   "id": 2426,
+   "name": "MoreBotsAPI",
+   "downloads": 127761,
+   "teaser": "API for making the implementation of custom bots easier"
+  },
+  {
+   "id": 2326,
+   "name": "Project Fika",
+   "downloads": 98074,
+   "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items "
+  },
+  {
+   "id": 1873,
+   "name": "Bot Callsigns - Reloaded",
+   "downloads": 68843,
+   "teaser": "Adds a big (and sometimes funny) variety of bot names for flea and game."
+  },
+  {
+   "id": 1945,
+   "name": "Ai Limit",
+   "downloads": 65132,
+   "teaser": "Temporarily disable far bots to reduce cpu load"
+  },
+  {
+   "id": 2706,
+   "name": "ORBIT 2.0",
+   "downloads": 54598,
+   "teaser": "Bots play the raid like you do, and a \"Ghost Mode\" to run it all at high fps"
+  },
+  {
+   "id": 1925,
+   "name": "NerfBotGrenades",
+   "downloads": 43101,
+   "teaser": "Allows you to multiply bot inaccuracy with grenades."
+  },
+  {
+   "id": 2342,
+   "name": "UNTAR Go Home!",
+   "downloads": 41938,
+   "teaser": "Yet they're still here in T*****... New UNTAR bot types patrol the region."
+  },
+  {
+   "id": 2069,
+   "name": "Loot Instant Search",
+   "downloads": 36950,
+   "teaser": "Instant search items in containers and dead bots"
+  },
+  {
+   "id": 1895,
+   "name": "[SAIN] Twitch Players",
+   "downloads": 35535,
+   "teaser": "EFT was never forgiving. So are they."
+  },
+  {
+   "id": 1831,
+   "name": "Agony SFX",
+   "downloads": 35156,
+   "teaser": "Client mod that allows bots to play additional voice lines upon dying."
+  },
+  {
+   "id": 2011,
+   "name": "Actually Found In Raid (UPDATED)",
+   "downloads": 26021,
+   "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will "
+  },
+  {
+   "id": 1858,
+   "name": "Enemy Markers",
+   "downloads": 22831,
+   "teaser": "Simply a Marker that shows the enemies with a \"v\" shaped marker. Can also display the distance from the enemy."
+  },
+  {
+   "id": 918,
+   "name": "BotDebug",
+   "downloads": 13623,
+   "teaser": "A development utility for seeing what's going on with bots"
+  },
+  {
+   "id": 2709,
+   "name": "Miyako Carry Service",
+   "downloads": 13040,
+   "teaser": "MiyakoCarryService is a mod that generates AI teammates."
+  },
+  {
+   "id": 2248,
+   "name": "Separate Hostility",
+   "downloads": 10172,
+   "teaser": "Completely fixes the hostility issue in EFT 0.16 / SPT 3.11 where bots don't fight others as they should."
+  },
+  {
+   "id": 1988,
+   "name": "Low Budget Bullet Time NG",
+   "downloads": 9514,
+   "teaser": "Want to slow down time to corner peak a bunch of AI? Now you can... with some limitations"
+  },
+  {
+   "id": 2776,
+   "name": "Parmesan - Partizan Rework",
+   "downloads": 7198,
+   "teaser": "fixes partizan by makeing him hunt AI pmcs instead of you all the time"
+  },
+  {
+   "id": 2874,
+   "name": "Adaptive Bot Culling",
+   "downloads": 6485,
+   "teaser": "Integrates AI brain and animation pausing into EFT’s native asset-culling and LOD system, reducing CPU usage when bots are far away"
+  },
+  {
+   "id": 2617,
+   "name": "Don't Shoot The Bus",
+   "downloads": 6438,
+   "teaser": "PMC bots keep picking fights with a 13-ton armored vehicle. This mod fixes that."
+  },
+  {
+   "id": 2830,
+   "name": "Bot Census",
+   "downloads": 4866,
+   "teaser": "Are you tired of going in to a raid blind? Do you want to know who Nikita is sending to prevent you from extracting? Well welcome Bot Census"
+  },
+  {
+   "id": 2519,
+   "name": "Armbands For All",
+   "downloads": 4780,
+   "teaser": "Nothing against people with no arms, but all bots have arms...why not armbands?"
+  },
+  {
+   "id": 2816,
+   "name": "Trash Talk",
+   "downloads": 4528,
+   "teaser": "The PMC that killed you just texted. Now you can text back. TrashTalk gives every PMC killer/victim message a real AI-generated voice — repl"
+  },
+  {
+   "id": 2691,
+   "name": "Fold That Stock",
+   "downloads": 4183,
+   "teaser": "FoldThatStock adds working fold behavior to non-vanilla folding stock."
+  },
+  {
+   "id": 2855,
+   "name": "Dev Tools",
+   "downloads": 2764,
+   "teaser": "A testing kit for mod work: stand in the fire while you read your logs, mag-dump without reloading, and watch every bot on the map through t"
+  },
+  {
+   "id": 2877,
+   "name": "WhereAreThePeople(WATP)",
+   "downloads": 1988,
+   "teaser": "A compact AI proximity tracker showing the nearest contacts by faction."
+  },
+  {
+   "id": 3084,
+   "name": "Better Flashlights",
+   "downloads": 1931,
+   "teaser": "A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams"
+  },
+  {
+   "id": 2932,
+   "name": "Target Dummies",
+   "downloads": 1628,
+   "teaser": "Replace shooting range targets with bots"
+  },
+  {
+   "id": 2948,
+   "name": "Airburst",
+   "downloads": 1392,
+   "teaser": "Lase the cover, lob the round: 40mm airburst grenades that detonate right above the enemy behind it"
+  },
+  {
+   "id": 3065,
+   "name": "MagicBullet",
+   "downloads": 420,
+   "teaser": "Outgoing bullet and melee damage multiplier for the local player only. Bots keep vanilla damage."
+  },
+  {
+   "id": 3072,
+   "name": "CombatLog",
+   "downloads": 397,
+   "teaser": "Understand each firefight with post-raid hit analysis, weapon statistics and combat history."
+  },
+  {
+   "id": 3000,
+   "name": "Moe Flea Refresh",
+   "downloads": 330,
+   "teaser": "Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。"
+  }
+ ],
+ "quests": [
+  {
+   "id": 2310,
+   "name": "WTT - CommonLib",
+   "downloads": 438789,
+   "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT"
+  },
+  {
+   "id": 1109,
+   "name": "Questing Bots",
+   "downloads": 436826,
+   "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you..."
+  },
+  {
+   "id": 1343,
+   "name": "Skipper",
+   "downloads": 342868,
+   "teaser": "A small client mod for conveniently skipping quests"
+  },
+  {
+   "id": 1538,
+   "name": "Ref - SPT Friendly Quests",
+   "downloads": 309244,
+   "teaser": "Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an added Lega Medal to each quest. In"
+  },
+  {
+   "id": 1232,
+   "name": "Lotus",
+   "downloads": 188690,
+   "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access."
+  },
+  {
+   "id": 1140,
+   "name": "Quest Tracker",
+   "downloads": 162516,
+   "teaser": "Track quests while in-raid with a handy toggleable overlay!"
+  },
+  {
+   "id": 1348,
+   "name": "Scorpion",
+   "downloads": 140671,
+   "teaser": "Scorpion has 122 quests available from the start of your T***** journey. Including time based event quests!"
+  },
+  {
+   "id": 2326,
+   "name": "Project Fika",
+   "downloads": 98074,
+   "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items "
+  },
+  {
+   "id": 824,
+   "name": "Task List Fixes",
+   "downloads": 88556,
+   "teaser": "Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you'll get it all in one simple DLL"
+  },
+  {
+   "id": 2866,
+   "name": "MANIMAL'S ICEBREAKER BACKPORT",
+   "downloads": 70464,
+   "teaser": "A mod that backports the entire Icebreaker map and some of its related quests to SPT"
+  },
+  {
+   "id": 2025,
+   "name": "All Quests Checkmarks",
+   "downloads": 62238,
+   "teaser": "Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in futur"
+  },
+  {
+   "id": 1888,
+   "name": "Better Keys NG",
+   "downloads": 61346,
+   "teaser": "Get some useful info about each key. Is it required for a quest? What is behind the lock? Is it used to exit/transit ?"
+  },
+  {
+   "id": 2395,
+   "name": "Lacy's PvE Tweaks",
+   "downloads": 41345,
+   "teaser": "Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now you can queue right into it! Want to make "
+  },
+  {
+   "id": 2445,
+   "name": "Natalya Trader",
+   "downloads": 34264,
+   "teaser": "Trader that adds quests, sells ammo, cases, meds, weapons with quest unlock, upgraded meds, upgraded gear"
+  },
+  {
+   "id": 2478,
+   "name": "ISB Aishi",
+   "downloads": 33621,
+   "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore."
+  },
+  {
+   "id": 1537,
+   "name": "sgtlaggy's Quest Tweaks",
+   "downloads": 24418,
+   "teaser": "Some QoL quest changes."
+  },
+  {
+   "id": 1986,
+   "name": "GTFO NG",
+   "downloads": 24164,
+   "teaser": "Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and quest objectives that are avai"
+  },
+  {
+   "id": 2093,
+   "name": "Virtual's Custom Quests - Updated",
+   "downloads": 20043,
+   "teaser": "A set of custom lore-based quests to fill that deep desire for more content."
+  },
+  {
+   "id": 2153,
+   "name": "Expanded Task Text (ETT)",
+   "downloads": 18445,
+   "teaser": "Knowledge is power, unfortunately Nikita doesn't see it that way."
+  },
+  {
+   "id": 2419,
+   "name": "Amonya - Ammo Loving Trader & Quester",
+   "downloads": 17479,
+   "teaser": "Ammo-obsessed pony trader who rewards your effort with the best bullets in the game"
+  },
+  {
+   "id": 1965,
+   "name": "Plant Time Modifier - Updated by CrocodileJonesy",
+   "downloads": 16564,
+   "teaser": "An update for the original plant time modifier mod that allows you to set the time it takes to plant items for certain quests, you can adjus"
+  },
+  {
+   "id": 1755,
+   "name": "Scavs 4 All",
+   "downloads": 14185,
+   "teaser": "A quick and simple way to make those pesky quests that require only scav kills to count pmc kills towards your progress as well."
+  },
+  {
+   "id": 2686,
+   "name": "Quest Presence Detector",
+   "downloads": 13111,
+   "teaser": "Detects when quest items are nearby by showing a progress bar with an optional arrow pointing towards it."
+  },
+  {
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "downloads": 10654,
+   "teaser": "This is a reupload of Andrudis-QuestManiac for SPT-AKI's latest version (hopefully)."
+  },
+  {
+   "id": 1362,
+   "name": "Repeatable Quest Config",
+   "downloads": 9035,
+   "teaser": "Disable certain types of Repeatable Quests and/or set multipliers for XP/Money/Rep/Skill gain rewards from Repeatable Quests. Allows instant"
+  },
+  {
+   "id": 2888,
+   "name": "Task Item Indicator",
+   "downloads": 8649,
+   "teaser": "This is a recreation of the task indicator from Live EFT, not a 1:1 backport, although it is pretty spot on."
+  },
+  {
+   "id": 1867,
+   "name": "QCAdjustments",
+   "downloads": 6026,
+   "teaser": "Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor ta"
+  },
+  {
+   "id": 2909,
+   "name": "Hj's Task Search",
+   "downloads": 5848,
+   "teaser": "Task Search from 1.0"
+  },
+  {
+   "id": 3026,
+   "name": "Quest Backport",
+   "downloads": 5489,
+   "teaser": "Rebuilding and porting select quests from the official EFT release for compatibility with SPT."
+  },
+  {
+   "id": 2954,
+   "name": "QuestMarker",
+   "downloads": 4952,
+   "teaser": "Quest objectives and your extracts as markers in the world, with name and distance, on one key"
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 2810,
+   "name": "Kill&Bill - Quest Condition Overhaul",
+   "downloads": 3482,
+   "teaser": "Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, and rewards."
+  },
+  {
+   "id": 3030,
+   "name": "NATO Quartermaster — Western Gear Trader, Presets & Quest Unlocks",
+   "downloads": 3315,
+   "teaser": "A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated high-end gear."
+  },
+  {
+   "id": 2652,
+   "name": "Fair Progression",
+   "downloads": 2456,
+   "teaser": "Automatically rebalances quest XP to preserve vanilla progression when modded quests are installed."
+  },
+  {
+   "id": 2894,
+   "name": "Task List Locations",
+   "downloads": 2350,
+   "teaser": "Increase location information in Task List"
+  },
+  {
+   "id": 2917,
+   "name": "Vanguard",
+   "downloads": 2346,
+   "teaser": "A mod requested by Vanguard, adds the WMLX light and Sandman X suppressor"
+  },
+  {
+   "id": 2981,
+   "name": "Kappa Tracker",
+   "downloads": 2181,
+   "teaser": "Your Kappa grind at a glance — quests, requirements, unlock chains."
+  },
+  {
+   "id": 3082,
+   "name": "Hj's Task Item Indicator",
+   "downloads": 2033,
+   "teaser": "1:1 Task Item Indicator Ring from EFT 1.0.5"
+  },
+  {
+   "id": 2732,
+   "name": "Quest Filter Mod",
+   "downloads": 2027,
+   "teaser": "A mod for changing quests and a random quest generator with rewards."
+  },
+  {
+   "id": 2892,
+   "name": "Remove Single Raid Quest Requirements",
+   "downloads": 1844,
+   "teaser": "Removes the \"single raid\" completion requirement from all tasks in the game."
+  },
+  {
+   "id": 3054,
+   "name": "Quest Codex",
+   "downloads": 1782,
+   "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too."
+  },
+  {
+   "id": 3085,
+   "name": "Ledger",
+   "downloads": 1431,
+   "teaser": "Custom dogtag trader with 40+ quest story. Help him with his collection and see where it takes you."
+  },
+  {
+   "id": 3071,
+   "name": "Hj's Task Turn in Indicator",
+   "downloads": 1294,
+   "teaser": "Task Turn in Indicator from EFT 1.1.5"
+  },
+  {
+   "id": 2653,
+   "name": "Mission Control",
+   "downloads": 1277,
+   "teaser": "Limits visible quests to a configurable number of random slots. Reroll anytime at Prapor."
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 3124,
+   "name": "Gunsmith Task Trader",
+   "downloads": 529,
+   "teaser": "Adds Trader that sells the gun for every Gunsmith task (And a couple extras)"
+  },
+  {
+   "id": 2766,
+   "name": "Quest Experience Multiplier",
+   "downloads": 499,
+   "teaser": "Multiplies the experience amount given by quest by a factor."
+  },
+  {
+   "id": 3039,
+   "name": "SPT Dev Kit",
+   "downloads": 475,
+   "teaser": "SPT Dev Kit for quests, assorts, items and etc."
+  },
+  {
+   "id": 3001,
+   "name": "Manimal's Quest Briefing API",
+   "downloads": 362,
+   "teaser": "An API that allows modders to create custom Briefing audio for quests."
+  },
+  {
+   "id": 3036,
+   "name": "Moe Need Marks",
+   "downloads": 285,
+   "teaser": "Quest and hideout requirement checkmarks, progress and inventory counts in native tooltips. / 任务与藏身处需求彩色勾、提交进度和库存统计。"
+  }
+ ],
+ "traders": [
+  {
+   "id": 1089,
+   "name": "Kaeno-TraderScrolling",
+   "downloads": 320569,
+   "teaser": "Allows for side scrolling of the traders"
+  },
+  {
+   "id": 1025,
+   "name": "Painter",
+   "downloads": 315101,
+   "teaser": "Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons)."
+  },
+  {
+   "id": 1263,
+   "name": "Epic's All in One",
+   "downloads": 276797,
+   "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader."
+  },
+  {
+   "id": 1232,
+   "name": "Lotus",
+   "downloads": 188690,
+   "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access."
+  },
+  {
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "downloads": 153895,
+   "teaser": "Buy everything from one trader. Get all keys with one command."
+  },
+  {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "downloads": 112083,
+   "teaser": "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds B"
+  },
+  {
+   "id": 1617,
+   "name": "give-ui",
+   "downloads": 71858,
+   "teaser": "Simple UI for the give, trader and profile commands"
+  },
+  {
+   "id": 1303,
+   "name": "HarryHideout",
+   "downloads": 68380,
+   "teaser": "Trader that sells all items for hideout construction/upgrades"
+  },
+  {
+   "id": 1554,
+   "name": "ALL AMMO TRADER - UPDATED BY TILTUSHKIN",
+   "downloads": 55021,
+   "teaser": "Need all the ammo? Here's a trader"
+  },
+  {
+   "id": 2239,
+   "name": "Couturier - gear and clothing pack",
+   "downloads": 49627,
+   "teaser": "Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing"
+  },
+  {
+   "id": 2445,
+   "name": "Natalya Trader",
+   "downloads": 34264,
+   "teaser": "Trader that adds quests, sells ammo, cases, meds, weapons with quest unlock, upgraded meds, upgraded gear"
+  },
+  {
+   "id": 2478,
+   "name": "ISB Aishi",
+   "downloads": 33621,
+   "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore."
+  },
+  {
+   "id": 2483,
+   "name": "Boxes At Ref (BARF) - NG",
+   "downloads": 23338,
+   "teaser": "Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the new trader Ref."
+  },
+  {
+   "id": 2419,
+   "name": "Amonya - Ammo Loving Trader & Quester",
+   "downloads": 17479,
+   "teaser": "Ammo-obsessed pony trader who rewards your effort with the best bullets in the game"
+  },
+  {
+   "id": 2371,
+   "name": "FIR Fence Purchases",
+   "downloads": 11605,
+   "teaser": "Give Fence’s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid."
+  },
+  {
+   "id": 2788,
+   "name": "VisitAPI Framework",
+   "downloads": 9256,
+   "teaser": "Recreating Storyline and Dialog feature from the Offcial to SPT. Easy to apply to native or custom Trader with a sign file."
+  },
+  {
+   "id": 1527,
+   "name": "Trader Namer",
+   "downloads": 8593,
+   "teaser": "Change your traders' names and avatars."
+  },
+  {
+   "id": 2955,
+   "name": "Quick Sell",
+   "downloads": 8143,
+   "teaser": "Quick-sell to the best trader or the flea, with prices on item tooltips."
+  },
+  {
+   "id": 2642,
+   "name": "Vagabond",
+   "downloads": 7155,
+   "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your "
+  },
+  {
+   "id": 2749,
+   "name": "TraderGen",
+   "downloads": 6466,
+   "teaser": "A dependency/framework mod that lets anyone, including non-programmers, create custom traders for SPTarkov using simple JSON files."
+  },
+  {
+   "id": 2824,
+   "name": "TraderSearch",
+   "downloads": 4957,
+   "teaser": "The search bar the trader window always lacked - now also in the flea market's Add Offer window"
+  },
+  {
+   "id": 2694,
+   "name": "TraderSpace",
+   "downloads": 4931,
+   "teaser": "Tired of scrolling your traders ? It's free real estate"
+  },
+  {
+   "id": 2999,
+   "name": "Terminal Commander",
+   "downloads": 4717,
+   "teaser": "Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Great for people who want a lot o"
+  },
+  {
+   "id": 3055,
+   "name": "Rook",
+   "downloads": 4280,
+   "teaser": "Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-focused trading."
+  },
+  {
+   "id": 2648,
+   "name": "AllGoodsTrader",
+   "downloads": 3670,
+   "teaser": "This mod adds four bilingual traders. Traders buy most items; equipment trader offers repair & insurance. Automatically handles rocket ammo "
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 2810,
+   "name": "Kill&Bill - Quest Condition Overhaul",
+   "downloads": 3482,
+   "teaser": "Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, and rewards."
+  },
+  {
+   "id": 3030,
+   "name": "NATO Quartermaster — Western Gear Trader, Presets & Quest Unlocks",
+   "downloads": 3315,
+   "teaser": "A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated high-end gear."
+  },
+  {
+   "id": 2988,
+   "name": "The Locksmith",
+   "downloads": 3180,
+   "teaser": "A trader who sells every map key — one by one, or bundled per map in a ready-to-open box."
+  },
+  {
+   "id": 2966,
+   "name": "PresetTrader",
+   "downloads": 2922,
+   "teaser": "Your new favorite rip-off artist, selling saved builds and gear at brutal prices."
+  },
+  {
+   "id": 3091,
+   "name": "Astral Divide",
+   "downloads": 1977,
+   "teaser": "Custom Trader with story chapter and unique mechanic and custom outfits with physics system."
+  },
+  {
+   "id": 2834,
+   "name": "Ultimate Trader Assort Editor",
+   "downloads": 1789,
+   "teaser": "An in depth trader assort editor"
+  },
+  {
+   "id": 3054,
+   "name": "Quest Codex",
+   "downloads": 1782,
+   "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too."
+  },
+  {
+   "id": 3086,
+   "name": "[Melx] Loot Value",
+   "downloads": 1659,
+   "teaser": "Pretty simple mod. Displays the current flea price, best trader price and price per slot on the tool tip of an item when hovered."
+  },
+  {
+   "id": 3024,
+   "name": "CaseTrader — Buy any case",
+   "downloads": 1590,
+   "teaser": "Adds a new trader — Case (Victor Barinov). He sells storage cases, key holders, wallets, med cases, ammo boxes and other ordinary containers"
+  },
+  {
+   "id": 3085,
+   "name": "Ledger",
+   "downloads": 1431,
+   "teaser": "Custom dogtag trader with 40+ quest story. Help him with his collection and see where it takes you."
+  },
+  {
+   "id": 2736,
+   "name": "Moe-TradeMarker",
+   "downloads": 981,
+   "teaser": "Shows NPC trader-bought items, can block flea resale, and now supports QuickSell."
+  },
+  {
+   "id": 3124,
+   "name": "Gunsmith Task Trader",
+   "downloads": 529,
+   "teaser": "Adds Trader that sells the gun for every Gunsmith task (And a couple extras)"
+  },
+  {
+   "id": 3032,
+   "name": "Bookie - Casino Trader",
+   "downloads": 507,
+   "teaser": "Gamble roubles, Bitcoins, and high-stakes loot with Bookie."
+  },
+  {
+   "id": 3098,
+   "name": "SPT Trader Restock Refresh",
+   "downloads": 437,
+   "teaser": "Refreshes the trader screen you have open when that trader restocks."
+  },
+  {
+   "id": 3005,
+   "name": "Trader Level Requirements Editor",
+   "downloads": 375,
+   "teaser": "Let's you alter the level requirements for SPT's traders"
+  },
+  {
+   "id": 2987,
+   "name": "No Gear?",
+   "downloads": 225,
+   "teaser": "Remove weapons and gear offers from traders (configurable)."
+  }
+ ],
+ "economy": [
+  {
+   "id": 812,
+   "name": "Looting Bots",
+   "downloads": 749682,
+   "teaser": "Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!"
+  },
+  {
+   "id": 1131,
+   "name": "Live Flea Prices",
+   "downloads": 295125,
+   "teaser": "Keep your flea prices up to date with data processed from Tarkov.dev"
+  },
+  {
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "downloads": 252235,
+   "teaser": "Tired of having barely any loot in your raids? Lots of Loot Redux aims to bring back that old T***** feeling from when loot wasn't so scarce"
+  },
+  {
+   "id": 755,
+   "name": "The Blacklist - flea market enhancements",
+   "downloads": 169391,
+   "teaser": "Disables the B** blacklist in the flea market. Rebalances the prices of blacklisted ammo like Igolnik. Speeds up sell times for offers. Addi"
+  },
+  {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "downloads": 112083,
+   "teaser": "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds B"
+  },
+  {
+   "id": 933,
+   "name": "Use Loose Loot",
+   "downloads": 111145,
+   "teaser": "Use meds and food direct from the world instead of only your pockets. ;)"
+  },
+  {
+   "id": 2207,
+   "name": "Fast Sell In Flea",
+   "downloads": 77947,
+   "teaser": "Quickly add items on the flea market with automatic fitting of the current price"
+  },
+  {
+   "id": 1873,
+   "name": "Bot Callsigns - Reloaded",
+   "downloads": 68843,
+   "teaser": "Adds a big (and sometimes funny) variety of bot names for flea and game."
+  },
+  {
+   "id": 1479,
+   "name": "Raid Review",
+   "downloads": 56810,
+   "teaser": "A web-based post raid replay system of your SPT raids; detailed replay system with heatmap overlay, review kills, lootings, positional data,"
+  },
+  {
+   "id": 814,
+   "name": "Late to the Party",
+   "downloads": 47467,
+   "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving thr"
+  },
+  {
+   "id": 2407,
+   "name": "QuickSellFlea",
+   "downloads": 42760,
+   "teaser": "Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now you can instantly place it with the avera"
+  },
+  {
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "downloads": 42416,
+   "teaser": "Gear up for your next raid in just 20 seconds!"
+  },
+  {
+   "id": 2069,
+   "name": "Loot Instant Search",
+   "downloads": 36950,
+   "teaser": "Instant search items in containers and dead bots"
+  },
+  {
+   "id": 2679,
+   "name": "LootNET",
+   "downloads": 29656,
+   "teaser": "a mod adding a summary of the total loot value of the raid"
+  },
+  {
+   "id": 2021,
+   "name": "Item Valuation",
+   "downloads": 29554,
+   "teaser": "Lightweight quick reference valuation tool. Items will be coloured based on configurable values (price, armour class, penetration, etc). Aut"
+  },
+  {
+   "id": 2011,
+   "name": "Actually Found In Raid (UPDATED)",
+   "downloads": 26021,
+   "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will "
+  },
+  {
+   "id": 2483,
+   "name": "Boxes At Ref (BARF) - NG",
+   "downloads": 23338,
+   "teaser": "Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the new trader Ref."
+  },
+  {
+   "id": 2524,
+   "name": "Item Limits Begone!",
+   "downloads": 18592,
+   "teaser": "Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42."
+  },
+  {
+   "id": 2698,
+   "name": "Loot In Vicinity",
+   "downloads": 15256,
+   "teaser": "See the loot all around you! Organize your loot during raids! And more!"
+  },
+  {
+   "id": 2730,
+   "name": "AutoCorpseSearch",
+   "downloads": 13650,
+   "teaser": "Automatically starts searching a corpse's equipment slots when you open the loot screen - no more clicking Search on each slot individually"
+  },
+  {
+   "id": 2817,
+   "name": "The Quartermaster",
+   "downloads": 13266,
+   "teaser": "A global, player-driven second-hand marketplace. Sell gear from your stash. Buy gear that other players have sold. Every item has a history."
+  },
+  {
+   "id": 2779,
+   "name": "Cooler Stims",
+   "downloads": 10700,
+   "teaser": "Five custom stims, each built for a different way to play — entry fragging, sustained healing, tanking, looting, limb repair. Now with their"
+  },
+  {
+   "id": 2655,
+   "name": "Stat Rewards",
+   "downloads": 10622,
+   "teaser": "Random rewards for hitting stat milestones — kills, damage, looting, and more. 48 repeatable milestones, fully configurable."
+  },
+  {
+   "id": 2526,
+   "name": "Advanced Flea Simulator",
+   "downloads": 9087,
+   "teaser": "Highly configurable simulator that aims to make using the flea market closer to how it feels to use in the live game."
+  },
+  {
+   "id": 3011,
+   "name": "Show Me The Money (Item Pricing) (4.1.x)",
+   "downloads": 9070,
+   "teaser": "Show Me The Money, updated for 4.1.x."
+  },
+  {
+   "id": 1362,
+   "name": "Repeatable Quest Config",
+   "downloads": 9035,
+   "teaser": "Disable certain types of Repeatable Quests and/or set multipliers for XP/Money/Rep/Skill gain rewards from Repeatable Quests. Allows instant"
+  },
+  {
+   "id": 2955,
+   "name": "Quick Sell",
+   "downloads": 8143,
+   "teaser": "Quick-sell to the best trader or the flea, with prices on item tooltips."
+  },
+  {
+   "id": 2642,
+   "name": "Vagabond",
+   "downloads": 7155,
+   "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your "
+  },
+  {
+   "id": 2777,
+   "name": "AmmoGen",
+   "downloads": 7035,
+   "teaser": "AmmoGen is a server-side framework for SPTarkov that lets anyone create custom ammo, ammo boxes, and loot injections using simple JSON packs"
+  },
+  {
+   "id": 3103,
+   "name": "Cabinet Looter",
+   "downloads": 6334,
+   "teaser": "Gone are the days of checking drawer by drawer."
+  },
+  {
+   "id": 2016,
+   "name": "Delayed Flea Sales",
+   "downloads": 5774,
+   "teaser": "If you are tired of having your flea offers being sold instantly, maybe you don't like money - I don't know, this mod is for you."
+  },
+  {
+   "id": 2994,
+   "name": "SPT Casino",
+   "downloads": 5015,
+   "teaser": "Take a break from dying in T****v. Lose your money another way."
+  },
+  {
+   "id": 2824,
+   "name": "TraderSearch",
+   "downloads": 4957,
+   "teaser": "The search bar the trader window always lacked - now also in the flea market's Add Offer window"
+  },
+  {
+   "id": 3007,
+   "name": "Breakout Outlines",
+   "downloads": 4713,
+   "teaser": "Highlight any loot, containers and dead bodies with Breakout-Like style."
+  },
+  {
+   "id": 2434,
+   "name": "500 Euro for Skier",
+   "downloads": 4345,
+   "teaser": "Skier should be trading in Euros, not Roubles!"
+  },
+  {
+   "id": 2539,
+   "name": "Progressive Flea",
+   "downloads": 4251,
+   "teaser": "Adds level locking to items on the flea market."
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 2844,
+   "name": "Ultimate Flea",
+   "downloads": 3558,
+   "teaser": "Full flea control for SPT 4.1: manage the item pool, set prices, pull Tarkov.dev averages, and run a local supply/demand economy with early-"
+  },
+  {
+   "id": 2810,
+   "name": "Kill&Bill - Quest Condition Overhaul",
+   "downloads": 3482,
+   "teaser": "Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, and rewards."
+  },
+  {
+   "id": 1936,
+   "name": "No Unfair Trade System (NUTS)",
+   "downloads": 3278,
+   "teaser": "NUTS (No Unfair Trade System) removes access to the Flea Market (customizable), ensuring a fairer, more balanced gameplay experience!"
+  },
+  {
+   "id": 2623,
+   "name": "Refined Flea Offer List",
+   "downloads": 3130,
+   "teaser": "Only show cheapest offers for each item in flea category page. Smarter display Ruble, Full-state, different weapon & armor builds."
+  },
+  {
+   "id": 2966,
+   "name": "PresetTrader",
+   "downloads": 2922,
+   "teaser": "Your new favorite rip-off artist, selling saved builds and gear at brutal prices."
+  },
+  {
+   "id": 3062,
+   "name": "Tushonka Rare Collectibles",
+   "downloads": 2522,
+   "teaser": "Make Loot Valuable Again! Adds 15 highly valuable and rare collectible items."
+  },
+  {
+   "id": 2947,
+   "name": "BringBackContainers",
+   "downloads": 2265,
+   "teaser": "Restores the abundance of Loot Containers from older versions of SPT."
+  },
+  {
+   "id": 3064,
+   "name": "Realistic PMC Names",
+   "downloads": 1888,
+   "teaser": "8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal."
+  },
+  {
+   "id": 2746,
+   "name": "Ultimate Loot Editor",
+   "downloads": 1764,
+   "teaser": "An in depth in raid loose loot editor"
+  },
+  {
+   "id": 3027,
+   "name": "Exfil Rewards",
+   "downloads": 1743,
+   "teaser": "Earn bonus money for extracting from raids."
+  },
+  {
+   "id": 3086,
+   "name": "[Melx] Loot Value",
+   "downloads": 1659,
+   "teaser": "Pretty simple mod. Displays the current flea price, best trader price and price per slot on the tool tip of an item when hovered."
+  },
+  {
+   "id": 3066,
+   "name": "Loot Normalizer",
+   "downloads": 1407,
+   "teaser": "Normalizes all loose loot relative probabilities to make rarer items more likely to appear."
+  },
+  {
+   "id": 3021,
+   "name": "Roubles Equivalent for Dollars and Euros",
+   "downloads": 1284,
+   "teaser": "Lets you see the equivalent for dollars and euros in roubles next to each instance of the currency ingame."
+  },
+  {
+   "id": 3023,
+   "name": "CactusPie's Transfer Loot Into Container Automatically",
+   "downloads": 1247,
+   "teaser": "Looting an item will now place it in a matching container, such as a dogtag case or a document case"
+  },
+  {
+   "id": 3042,
+   "name": "Super Scav Case",
+   "downloads": 1244,
+   "teaser": "Make the Scav Case useful again. It can now be built from the early game, and adds separate options for searching for ammunition, keys, and "
+  },
+  {
+   "id": 3108,
+   "name": "Infinite Everything",
+   "downloads": 1237,
+   "teaser": "18 switchable \"infinite\" options: ammo, magazines, grenades, meds, keys, money, health, stamina, turrets, hideout fuel and more."
+  },
+  {
+   "id": 2736,
+   "name": "Moe-TradeMarker",
+   "downloads": 981,
+   "teaser": "Shows NPC trader-bought items, can block flea resale, and now supports QuickSell."
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 3070,
+   "name": "Flea Price Progression",
+   "downloads": 829,
+   "teaser": "Realistic flea prices derived from live data that scale with player level"
+  },
+  {
+   "id": 3032,
+   "name": "Bookie - Casino Trader",
+   "downloads": 507,
+   "teaser": "Gamble roubles, Bitcoins, and high-stakes loot with Bookie."
+  },
+  {
+   "id": 3000,
+   "name": "Moe Flea Refresh",
+   "downloads": 330,
+   "teaser": "Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。"
+  },
+  {
+   "id": 3028,
+   "name": "FIR Flea only",
+   "downloads": 253,
+   "teaser": "Is the flea market a breeze? Install this mod."
+  },
+  {
+   "id": 3120,
+   "name": "TrueHardcoreRules",
+   "downloads": 111,
+   "teaser": "No flea. No insurance. No mercy. Hardcore economy."
+  }
+ ],
+ "maps": [
+  {
+   "id": 827,
+   "name": "Waypoints - Expanded Navmesh",
+   "downloads": 1335662,
+   "teaser": "Expand where bots can explore with full map navmesh coverage!"
+  },
+  {
+   "id": 1431,
+   "name": "Dynamic Maps",
+   "downloads": 810374,
+   "teaser": "Replaces the in-game map screen with actually useful maps with dynamic information!"
+  },
+  {
+   "id": 1100,
+   "name": "ACCURATE CIRCULAR RADAR",
+   "downloads": 311030,
+   "teaser": "A radar mod that displays enemy locations and identifies various enemy types."
+  },
+  {
+   "id": 1426,
+   "name": "UnityToolkit",
+   "downloads": 278396,
+   "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier."
+  },
+  {
+   "id": 1265,
+   "name": "Rai's Hidden Caches",
+   "downloads": 109087,
+   "teaser": "Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from all the random secret caches to "
+  },
+  {
+   "id": 2521,
+   "name": "Amands' Sense - Updated",
+   "downloads": 86159,
+   "teaser": "Interactable icons for items, containers, bodies and extracts."
+  },
+  {
+   "id": 2866,
+   "name": "MANIMAL'S ICEBREAKER BACKPORT",
+   "downloads": 70464,
+   "teaser": "A mod that backports the entire Icebreaker map and some of its related quests to SPT"
+  },
+  {
+   "id": 2416,
+   "name": "Enable Labyrinth",
+   "downloads": 60845,
+   "teaser": "Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as the non-secret exfil for PMCs. Requirement"
+  },
+  {
+   "id": 2543,
+   "name": "BossNotifier",
+   "downloads": 55547,
+   "teaser": "v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations."
+  },
+  {
+   "id": 814,
+   "name": "Late to the Party",
+   "downloads": 47467,
+   "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving thr"
+  },
+  {
+   "id": 2843,
+   "name": "Blackout",
+   "downloads": 27083,
+   "teaser": "Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors."
+  },
+  {
+   "id": 1986,
+   "name": "GTFO NG",
+   "downloads": 24164,
+   "teaser": "Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and quest objectives that are avai"
+  },
+  {
+   "id": 1551,
+   "name": "Remove The Dead",
+   "downloads": 10904,
+   "teaser": "Remove the unnecessary scum from the map!"
+  },
+  {
+   "id": 2791,
+   "name": "Tylevo's Tactical Service Control",
+   "downloads": 9923,
+   "teaser": "Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-con"
+  },
+  {
+   "id": 2903,
+   "name": "Raids Are Infinite",
+   "downloads": 7275,
+   "teaser": "TL;DR: Ever wished to just roam the map forever? Now you can!"
+  },
+  {
+   "id": 2642,
+   "name": "Vagabond",
+   "downloads": 7155,
+   "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your "
+  },
+  {
+   "id": 3040,
+   "name": "Map Variants",
+   "downloads": 5983,
+   "teaser": "Choose between the map SPT ships and a backported version of it"
+  },
+  {
+   "id": 2954,
+   "name": "QuestMarker",
+   "downloads": 4952,
+   "teaser": "Quest objectives and your extracts as markers in the world, with name and distance, on one key"
+  },
+  {
+   "id": 2830,
+   "name": "Bot Census",
+   "downloads": 4866,
+   "teaser": "Are you tired of going in to a raid blind? Do you want to know who Nikita is sending to prevent you from extracting? Well welcome Bot Census"
+  },
+  {
+   "id": 2805,
+   "name": "Map Editor Lite",
+   "downloads": 4193,
+   "teaser": "Map Editor Lite is a server-side framework for SPTarkov that lets anyone create and share custom map content - using an in-raid editor and s"
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 2988,
+   "name": "The Locksmith",
+   "downloads": 3180,
+   "teaser": "A trader who sells every map key — one by one, or bundled per map in a ready-to-open box."
+  },
+  {
+   "id": 2942,
+   "name": "Tushonka Territories",
+   "downloads": 3050,
+   "teaser": "Adds territory warfare to the land of Tushonka where factions fight each other for control over each map."
+  },
+  {
+   "id": 2855,
+   "name": "Dev Tools",
+   "downloads": 2764,
+   "teaser": "A testing kit for mod work: stand in the fire while you read your logs, mag-dump without reloading, and watch every bot on the map through t"
+  },
+  {
+   "id": 2894,
+   "name": "Task List Locations",
+   "downloads": 2350,
+   "teaser": "Increase location information in Task List"
+  },
+  {
+   "id": 3027,
+   "name": "Exfil Rewards",
+   "downloads": 1743,
+   "teaser": "Earn bonus money for extracting from raids."
+  },
+  {
+   "id": 3038,
+   "name": "Blacksite Mod Manager",
+   "downloads": 1606,
+   "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resoluti"
+  },
+  {
+   "id": 2971,
+   "name": "Universal Co-op Exfil",
+   "downloads": 918,
+   "teaser": "Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract"
+  },
+  {
+   "id": 2714,
+   "name": "Discord Raid Map",
+   "downloads": 671,
+   "teaser": "I wonder what the squad's up to..."
+  },
+  {
+   "id": 3073,
+   "name": "Open World Map",
+   "downloads": 168,
+   "teaser": "Bringing maps together"
+  }
+ ],
+ "hardcore": [
+  {
+   "id": 954,
+   "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+   "downloads": 265838,
+   "teaser": "Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customi"
+  },
+  {
+   "id": 2003,
+   "name": "HollywoodFX",
+   "downloads": 221469,
+   "teaser": "Make battles look cinematic and immersive by rebuilding almost every single impact and special effect from scratch. Realism is not the aim, "
+  },
+  {
+   "id": 875,
+   "name": "VAI: Non-Realistic Tapkov Project",
+   "downloads": 15526,
+   "teaser": "This mod aims to make SPT more fun experience by sacrificing its realistic nature."
+  },
+  {
+   "id": 784,
+   "name": "Hardcore Rules",
+   "downloads": 12824,
+   "teaser": "Is SPT getting too easy? Too much nice gear collecting dust in your stash? Fix that problem with a hardcore playthrough similar to DeadlySlo"
+  },
+  {
+   "id": 2642,
+   "name": "Vagabond",
+   "downloads": 7155,
+   "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your "
+  },
+  {
+   "id": 2905,
+   "name": "Ragdoll Kinetics",
+   "downloads": 6554,
+   "teaser": "Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions."
+  },
+  {
+   "id": 2339,
+   "name": "Preview Sizer",
+   "downloads": 4166,
+   "teaser": "Primarily required if you are using StatTrack or Realism, especially so if you use both. This will allow you to customize the preview icons "
+  },
+  {
+   "id": 3033,
+   "name": "Better Suppressors",
+   "downloads": 3233,
+   "teaser": "Makes suppressors useful and realistic."
+  },
+  {
+   "id": 2819,
+   "name": "Pre 12.12 Recoil Patch",
+   "downloads": 2183,
+   "teaser": "Remember when recoil was something you actually enjoyed? When the gun kicked realistically, and landing the burst meant you'd earned it? Pre"
+  },
+  {
+   "id": 3064,
+   "name": "Realistic PMC Names",
+   "downloads": 1888,
+   "teaser": "8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal."
+  },
+  {
+   "id": 2949,
+   "name": "Realistic Insurance",
+   "downloads": 1795,
+   "teaser": "Your killer decides what comes back. Prapor just does the paperwork."
+  },
+  {
+   "id": 2825,
+   "name": "S&M PRT - Portable Radio Transmitter",
+   "downloads": 1588,
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and rai"
+  },
+  {
+   "id": 3075,
+   "name": "BodyCamera",
+   "downloads": 960,
+   "teaser": "A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake."
+  },
+  {
+   "id": 3070,
+   "name": "Flea Price Progression",
+   "downloads": 829,
+   "teaser": "Realistic flea prices derived from live data that scale with player level"
+  },
+  {
+   "id": 3096,
+   "name": "ebz7-BlackoutAddons",
+   "downloads": 589,
+   "teaser": "Turns Vultify's Blackout into a survival event: restart failing generators, fix breakers, repair a burnt control, race a 3-minute emergency-"
+  },
+  {
+   "id": 3016,
+   "name": "ShitInTushonka",
+   "downloads": 450,
+   "teaser": "A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time surface impacts, custom positio"
+  },
+  {
+   "id": 3102,
+   "name": "Hardcore Standard Profile",
+   "downloads": 200,
+   "teaser": "S.T.A.L.K.E.R.-style start"
+  },
+  {
+   "id": 3120,
+   "name": "TrueHardcoreRules",
+   "downloads": 111,
+   "teaser": "No flea. No insurance. No mercy. Hardcore economy."
+  }
+ ],
+ "weapons": [
+  {
+   "id": 1023,
+   "name": "WTT- Artem",
+   "downloads": 318345,
+   "teaser": "In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons."
+  },
+  {
+   "id": 1025,
+   "name": "Painter",
+   "downloads": 315101,
+   "teaser": "Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons)."
+  },
+  {
+   "id": 1125,
+   "name": "Tactical Gear Component",
+   "downloads": 304709,
+   "teaser": "Adds a lot more unique gear and attachments for E*****************"
+  },
+  {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "downloads": 289257,
+   "teaser": "The official weapons pack forged by the WTT developers & friends... Arm yourself accordingly..."
+  },
+  {
+   "id": 1263,
+   "name": "Epic's All in One",
+   "downloads": 276797,
+   "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader."
+  },
+  {
+   "id": 167,
+   "name": "Ammo Stats",
+   "downloads": 212979,
+   "teaser": "Now updated for 4.1.0+!"
+  },
+  {
+   "id": 755,
+   "name": "The Blacklist - flea market enhancements",
+   "downloads": 169391,
+   "teaser": "Disables the B** blacklist in the flea market. Rebalances the prices of blacklisted ammo like Igolnik. Speeds up sell times for offers. Addi"
+  },
+  {
+   "id": 1950,
+   "name": "Weapon Customizer",
+   "downloads": 132270,
+   "teaser": "Personalize your weapon! Adjust rails and attachment positioning."
+  },
+  {
+   "id": 1358,
+   "name": "BrightLasers",
+   "downloads": 128767,
+   "teaser": "Brighter lasers for your guns. No more blue laser, best laser. (It's still the best)"
+  },
+  {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "downloads": 112083,
+   "teaser": "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds B"
+  },
+  {
+   "id": 2112,
+   "name": "Continuous Load Ammo",
+   "downloads": 95709,
+   "teaser": "You are now able to continuously load or unload ammo outside your inventory!"
+  },
+  {
+   "id": 1300,
+   "name": "Modding Stats Helper - by wara",
+   "downloads": 66591,
+   "teaser": "Adds a tooltip when hovering parts in the weapon building screen that shows a quick overview of relevant stats and comparisons."
+  },
+  {
+   "id": 1554,
+   "name": "ALL AMMO TRADER - UPDATED BY TILTUSHKIN",
+   "downloads": 55021,
+   "teaser": "Need all the ammo? Here's a trader"
+  },
+  {
+   "id": 1453,
+   "name": "Make Shotguns Great Again!",
+   "downloads": 49288,
+   "teaser": "New attachments, new guns, and key rebalances. Also introduces specialized cartridges to shotguns, including the Dragon's Breath and .700 Ni"
+  },
+  {
+   "id": 1853,
+   "name": "StatTrack",
+   "downloads": 46527,
+   "teaser": "Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All weapons will individually track their kil"
+  },
+  {
+   "id": 2423,
+   "name": "C11 - True North",
+   "downloads": 44404,
+   "teaser": "New guns and parts from foreign lands"
+  },
+  {
+   "id": 2010,
+   "name": "Definitive Weapon Variants",
+   "downloads": 43271,
+   "teaser": "600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, click scavs to death, tap bosse"
+  },
+  {
+   "id": 1305,
+   "name": "Repair Max Durability",
+   "downloads": 38051,
+   "teaser": "Literally just adds an item that repairs the max durability of weapons"
+  },
+  {
+   "id": 1136,
+   "name": "Equip From Weapon Rack",
+   "downloads": 37622,
+   "teaser": "Allow equipping weapons directly from your weapon rack"
+  },
+  {
+   "id": 2445,
+   "name": "Natalya Trader",
+   "downloads": 34264,
+   "teaser": "Trader that adds quests, sells ammo, cases, meds, weapons with quest unlock, upgraded meds, upgraded gear"
+  },
+  {
+   "id": 1939,
+   "name": "BETTER ATTACHMENTS",
+   "downloads": 32705,
+   "teaser": "All gun attachments are better ergonomics and confgurable recoils. To deal with OP AIs you need OP guns."
+  },
+  {
+   "id": 2221,
+   "name": "BALL - Better Ammo Loading List",
+   "downloads": 32530,
+   "teaser": "Choosing ammo shouldn’t feel like defusing a bomb..."
+  },
+  {
+   "id": 1262,
+   "name": "Easy Ammo Names",
+   "downloads": 30022,
+   "teaser": "A simple mod that renames ammunition in SPT so that it's easier to identiy."
+  },
+  {
+   "id": 2667,
+   "name": "Picture in Picture Disabler",
+   "downloads": 27875,
+   "teaser": "FPS maxxxing and PiP scopes begone"
+  },
+  {
+   "id": 2531,
+   "name": "Better Thermal & Night Vision",
+   "downloads": 26457,
+   "teaser": "Solve FPS, Pixel, Noise, Blur, Scanline, Mask of Thermals & NV. Use Red-Hot T7 with Optic Scope"
+  },
+  {
+   "id": 1533,
+   "name": "More Tag Colours",
+   "downloads": 25095,
+   "teaser": "Tired of not having enough tag colours to identify your 15 ammo cases? No more! This mod adds additional colours for you to use! 27 of them!"
+  },
+  {
+   "id": 2586,
+   "name": "Caliber Under Ammo Name",
+   "downloads": 21753,
+   "teaser": "Adds a caliber label below the short name for ammo & ammo boxes."
+  },
+  {
+   "id": 2681,
+   "name": "Manimal's Ammo Loading Animations",
+   "downloads": 19233,
+   "teaser": "First person animations for loading bullets into a mag"
+  },
+  {
+   "id": 2419,
+   "name": "Amonya - Ammo Loving Trader & Quester",
+   "downloads": 17479,
+   "teaser": "Ammo-obsessed pony trader who rewards your effort with the best bullets in the game"
+  },
+  {
+   "id": 2882,
+   "name": "Eco's Attachment Emporium",
+   "downloads": 17282,
+   "teaser": "New gear. More builds."
+  },
+  {
+   "id": 1416,
+   "name": "Default Fire Mode Fixer",
+   "downloads": 16768,
+   "teaser": "Fixes weapons to default to full auto instead of single fire. Shotguns default to double instead of single if available. SMGs default to Ful"
+  },
+  {
+   "id": 2780,
+   "name": "No Barrel Shadow",
+   "downloads": 16289,
+   "teaser": "Removes the barrel shadow cast by flashlights and tactical devices on all weapons."
+  },
+  {
+   "id": 2737,
+   "name": "JSOC Service Weapon Replacment Program",
+   "downloads": 15710,
+   "teaser": "You've been chosen to select the next JSOC assault rifle and DMR. Choose wisely."
+  },
+  {
+   "id": 2735,
+   "name": "ScopeRangefinder",
+   "downloads": 14837,
+   "teaser": "In-scope rangefinder, meter-precise auto zero, and trajectory/dispersion preview while aiming"
+  },
+  {
+   "id": 1866,
+   "name": "Gunsmith Tweaks",
+   "downloads": 14349,
+   "teaser": "Makes Mechanic actually gives guns."
+  },
+  {
+   "id": 2789,
+   "name": "NVG Sight Dimmer",
+   "downloads": 14012,
+   "teaser": "Automatically dims sight and scope brightness when your NVGs are on — no more blinding reticles."
+  },
+  {
+   "id": 2859,
+   "name": "Compatibility Highlighter",
+   "downloads": 13870,
+   "teaser": "Highlight compatible mags ammo and attachments."
+  },
+  {
+   "id": 1171,
+   "name": "Make PL-15 Great Again!",
+   "downloads": 12688,
+   "teaser": "The PL-15 is a great weapon, but it has some flaws. This mod aims to fix them"
+  },
+  {
+   "id": 1175,
+   "name": "Make VPO-101 Great Again!",
+   "downloads": 12615,
+   "teaser": "The VEPR-Hunter (Molot VPO-101) is a great weapon, but it has a flaw. This mod aims to fix it"
+  },
+  {
+   "id": 2677,
+   "name": "Scrollable Attachments",
+   "downloads": 12255,
+   "teaser": "because looking for attachments is :waytoodank:"
+  },
+  {
+   "id": 1946,
+   "name": "Arse Scratching Service (ASS)",
+   "downloads": 11789,
+   "teaser": "Restore armour and weapon durability after gunfights in raid over time."
+  },
+  {
+   "id": 2786,
+   "name": "Auto Ranging",
+   "downloads": 10552,
+   "teaser": "Your scope zeroes itself to whatever you're aiming at. Aim, and the sight snaps to the closest zeroing distance — no clicking through steps "
+  },
+  {
+   "id": 2790,
+   "name": "EasyMounting",
+   "downloads": 10271,
+   "teaser": "No more existential dreads while trying to mount your weapon"
+  },
+  {
+   "id": 2459,
+   "name": "Ammo Weight Modifier",
+   "downloads": 10135,
+   "teaser": "Modify the weight of ammo"
+  },
+  {
+   "id": 2458,
+   "name": "Bela.s.Speedloader",
+   "downloads": 9758,
+   "teaser": "Faster ammo loading speed. Extended raid time. Larger ammo stacks."
+  },
+  {
+   "id": 3029,
+   "name": "ImpactCue-UI-MOD",
+   "downloads": 9242,
+   "teaser": "Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons"
+  },
+  {
+   "id": 2556,
+   "name": "Repair Skill Extension",
+   "downloads": 8559,
+   "teaser": "Custom higher buff chance for repairing armor & weapon. Repair skills work on all armor items. Fully repaired at once."
+  },
+  {
+   "id": 2576,
+   "name": "All In Weapon: Unslotted",
+   "downloads": 7685,
+   "teaser": "\"Unslot\" your weapons. Slot your mistakes. No filters. No rules. Only cursed weapons"
+  },
+  {
+   "id": 3035,
+   "name": "Russian Special Forces Pack",
+   "downloads": 7422,
+   "teaser": "Compilation of guns from the russian federation"
+  },
+  {
+   "id": 2777,
+   "name": "AmmoGen",
+   "downloads": 7035,
+   "teaser": "AmmoGen is a server-side framework for SPTarkov that lets anyone create custom ammo, ammo boxes, and loot injections using simple JSON packs"
+  },
+  {
+   "id": 2743,
+   "name": "WeaponBuilderSearch",
+   "downloads": 6793,
+   "teaser": "Adds a live search field to the attachment dropdown in the Weapon Builder and Weapon Modding screens"
+  },
+  {
+   "id": 2553,
+   "name": "Chamber Ammo Info",
+   "downloads": 6598,
+   "teaser": "Know your next shot! This mod displays the ammo type loaded in your chamber when checking it."
+  },
+  {
+   "id": 2876,
+   "name": "Simple Raid HUD",
+   "downloads": 6244,
+   "teaser": "A clean and configurable raid HUD for health, hydration, energy and magazine ammo."
+  },
+  {
+   "id": 2840,
+   "name": "Cobra's Ammo Stack",
+   "downloads": 6158,
+   "teaser": "Configure ammunition stack sizes by caliber with support for vanilla and modded ammo."
+  },
+  {
+   "id": 1867,
+   "name": "QCAdjustments",
+   "downloads": 6026,
+   "teaser": "Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor ta"
+  },
+  {
+   "id": 2175,
+   "name": "🛠️ Limitless – Unlimited or Multiply Buy Limits",
+   "downloads": 5207,
+   "teaser": "No more running out of ammo or gear due to stock restrictions — unless you want to keep a higher limit. It’s all configurable."
+  },
+  {
+   "id": 2785,
+   "name": "ReceiveAllChats",
+   "downloads": 4885,
+   "teaser": "Makes the \"Receive all\" button actually receive all attachments from all chats"
+  },
+  {
+   "id": 2646,
+   "name": "Flexible Builds",
+   "downloads": 4835,
+   "teaser": "Weapon preset and build improvements for SPT"
+  },
+  {
+   "id": 2763,
+   "name": "MeleeMultiplier",
+   "downloads": 4366,
+   "teaser": "Damage multiplier for melee weapons"
+  },
+  {
+   "id": 3055,
+   "name": "Rook",
+   "downloads": 4280,
+   "teaser": "Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-focused trading."
+  },
+  {
+   "id": 2705,
+   "name": "Hideout Shootout",
+   "downloads": 3927,
+   "teaser": "Enables use of your weapon in the Hideout outside of the shooting range"
+  },
+  {
+   "id": 2648,
+   "name": "AllGoodsTrader",
+   "downloads": 3670,
+   "teaser": "This mod adds four bilingual traders. Traders buy most items; equipment trader offers repair & insurance. Automatically handles rocket ammo "
+  },
+  {
+   "id": 1972,
+   "name": "Full Automatic Guns",
+   "downloads": 3426,
+   "teaser": "Few SMGs, Assault Rifle, Carbines are now automatic"
+  },
+  {
+   "id": 3030,
+   "name": "NATO Quartermaster — Western Gear Trader, Presets & Quest Unlocks",
+   "downloads": 3315,
+   "teaser": "A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated high-end gear."
+  },
+  {
+   "id": 2623,
+   "name": "Refined Flea Offer List",
+   "downloads": 3130,
+   "teaser": "Only show cheapest offers for each item in flea category page. Smarter display Ruble, Full-state, different weapon & armor builds."
+  },
+  {
+   "id": 2740,
+   "name": "DefaultAutoFireMode",
+   "downloads": 3035,
+   "teaser": "Automatically switches weapons to full-auto whenever you draw them into your hands."
+  },
+  {
+   "id": 3006,
+   "name": "Munitions Expert - Reloaded",
+   "downloads": 2771,
+   "teaser": "View hidden attributes of ammo and explosives, with custom background colors based on penetration power values."
+  },
+  {
+   "id": 1778,
+   "name": "RCTA - Gundam [CODMW3]",
+   "downloads": 2659,
+   "teaser": "Mobile Suit – XVX-016 Gundam from the Call of Duty X Gundam Collaboration from MW3"
+  },
+  {
+   "id": 2669,
+   "name": "Weapon Build Master",
+   "downloads": 2450,
+   "teaser": "share your weapon build with your friend or anyone just with a code"
+  },
+  {
+   "id": 2819,
+   "name": "Pre 12.12 Recoil Patch",
+   "downloads": 2183,
+   "teaser": "Remember when recoil was something you actually enjoyed? When the gun kicked realistically, and landing the burst meant you'd earned it? Pre"
+  },
+  {
+   "id": 3024,
+   "name": "CaseTrader — Buy any case",
+   "downloads": 1590,
+   "teaser": "Adds a new trader — Case (Victor Barinov). He sells storage cases, key holders, wallets, med cases, ammo boxes and other ordinary containers"
+  },
+  {
+   "id": 3046,
+   "name": "LowAmmoCue",
+   "downloads": 1529,
+   "teaser": "Hear your ammo running low: metallic clicks grow louder with your final shots."
+  },
+  {
+   "id": 2985,
+   "name": "Quick Aim",
+   "downloads": 1459,
+   "teaser": "Hold your aim longer when crouched, prone, or with the weapon mounted on something."
+  },
+  {
+   "id": 2907,
+   "name": "StashFilter",
+   "downloads": 1266,
+   "teaser": "Extended filter and sort tabs for the stash search: weapons, armor, mags, ammo, meds and attachments"
+  },
+  {
+   "id": 3108,
+   "name": "Infinite Everything",
+   "downloads": 1237,
+   "teaser": "18 switchable \"infinite\" options: ammo, magazines, grenades, meds, keys, money, health, stamina, turrets, hideout fuel and more."
+  },
+  {
+   "id": 3076,
+   "name": "Performance Scope",
+   "downloads": 1140,
+   "teaser": "Adjust resolution in scope , make PiP sharper or increase FPS."
+  },
+  {
+   "id": 2989,
+   "name": "Ammo Stats In Names",
+   "downloads": 1026,
+   "teaser": "OMG! There are stats in my ammo names!"
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 3127,
+   "name": "MassivesoftWeapons Updates for SPT 4.1.x",
+   "downloads": 873,
+   "teaser": "MassivesoftWeapons Update Patch for SPT 4.1.x"
+  },
+  {
+   "id": 3081,
+   "name": "Advanced Modding Lights",
+   "downloads": 844,
+   "teaser": "Enhance the lighting in weapon modding and build screens for better visibility and aesthetics"
+  },
+  {
+   "id": 3019,
+   "name": "Cobra's Durability Tweaks",
+   "downloads": 842,
+   "teaser": "Reduce or completely disable weapon durability burn and optionally eliminate weapon malfunctions with a simple JSON configuration."
+  },
+  {
+   "id": 3074,
+   "name": "Direct Reload & Painless Meds",
+   "downloads": 722,
+   "teaser": "Reload directly from loose ammo — no more spare-mag juggling. Magazines stay on your weapon and define capacity. Surgery is faster, restores"
+  },
+  {
+   "id": 3067,
+   "name": "Deadzone",
+   "downloads": 680,
+   "teaser": "Adds insurgency style deadzone/free aim, allowing your weapon to drift from the center of the screen."
+  },
+  {
+   "id": 3124,
+   "name": "Gunsmith Task Trader",
+   "downloads": 529,
+   "teaser": "Adds Trader that sells the gun for every Gunsmith task (And a couple extras)"
+  },
+  {
+   "id": 3128,
+   "name": "Gunwright",
+   "downloads": 428,
+   "teaser": "Gunsmith Presets, Own Custom Weapon Builds, and Fully Configurable Pricing. Gear Up. Lock In. Deploy."
+  },
+  {
+   "id": 3072,
+   "name": "CombatLog",
+   "downloads": 397,
+   "teaser": "Understand each firefight with post-raid hit analysis, weapon statistics and combat history."
+  },
+  {
+   "id": 3125,
+   "name": "Tylevo's Field Attachments",
+   "downloads": 352,
+   "teaser": "Allows for change of optics, muzzle devices, tactical devices and foregrips without opening your inventory in a 3d weapon card view."
+  },
+  {
+   "id": 2965,
+   "name": "Ironman",
+   "downloads": 323,
+   "teaser": "Ironman Profiles to apply rules and modifiers to make the game scoped to \"Ironman\" adjacent. Similar to Ironman modes in other games."
+  },
+  {
+   "id": 2987,
+   "name": "No Gear?",
+   "downloads": 225,
+   "teaser": "Remove weapons and gear offers from traders (configurable)."
+  }
+ ],
+ "visuals": [
+  {
+   "id": 592,
+   "name": "Amands's Graphics",
+   "downloads": 870498,
+   "teaser": "Lighting and postprocessing overhaul"
+  },
+  {
+   "id": 954,
+   "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+   "downloads": 265838,
+   "teaser": "Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customi"
+  },
+  {
+   "id": 2003,
+   "name": "HollywoodFX",
+   "downloads": 221469,
+   "teaser": "Make battles look cinematic and immersive by rebuilding almost every single impact and special effect from scratch. Realism is not the aim, "
+  },
+  {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "downloads": 112083,
+   "teaser": "Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds B"
+  },
+  {
+   "id": 1265,
+   "name": "Rai's Hidden Caches",
+   "downloads": 109087,
+   "teaser": "Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from all the random secret caches to "
+  },
+  {
+   "id": 1688,
+   "name": "More Energy Drinks",
+   "downloads": 73807,
+   "teaser": "Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy during raids. Now you can share yo"
+  },
+  {
+   "id": 1831,
+   "name": "Agony SFX",
+   "downloads": 35156,
+   "teaser": "Client mod that allows bots to play additional voice lines upon dying."
+  },
+  {
+   "id": 2120,
+   "name": "Time & Weather Changer NG",
+   "downloads": 30800,
+   "teaser": "Time & Weather changer"
+  },
+  {
+   "id": 2021,
+   "name": "Item Valuation",
+   "downloads": 29554,
+   "teaser": "Lightweight quick reference valuation tool. Items will be coloured based on configurable values (price, armour class, penetration, etc). Aut"
+  },
+  {
+   "id": 2531,
+   "name": "Better Thermal & Night Vision",
+   "downloads": 26457,
+   "teaser": "Solve FPS, Pixel, Noise, Blur, Scanline, Mask of Thermals & NV. Use Red-Hot T7 with Optic Scope"
+  },
+  {
+   "id": 1986,
+   "name": "GTFO NG",
+   "downloads": 24164,
+   "teaser": "Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and quest objectives that are avai"
+  },
+  {
+   "id": 2329,
+   "name": "BushWhacker - Standalone",
+   "downloads": 20713,
+   "teaser": "Disables the slowdown effect of bushes and swamps"
+  },
+  {
+   "id": 2567,
+   "name": "CloudSix - Volumetric Clouds",
+   "downloads": 19756,
+   "teaser": "Replaces base game clouds with volumetric clouds using a custom shader built from the ground up"
+  },
+  {
+   "id": 2235,
+   "name": "Sharper Tushonka Better Life",
+   "downloads": 19300,
+   "teaser": "A simple and lightweight ReShade preset that improves visibility and enhances the overall look of EFT by making the game sharper without ove"
+  },
+  {
+   "id": 2601,
+   "name": "Smajlec's Lights",
+   "downloads": 18496,
+   "teaser": "Changes the default greyish-brown color grading to a more natural one"
+  },
+  {
+   "id": 2206,
+   "name": "Item Preview QoL + screenshots",
+   "downloads": 18030,
+   "teaser": "Better item preview: zoom, pan, rotate lights, fullscreen, and alpha screenshots. UI Fixes compatible."
+  },
+  {
+   "id": 3022,
+   "name": "Manimal's 1.0 Lighthouse Rework Backport",
+   "downloads": 17459,
+   "teaser": "Backports the new Lighthouse rework to SPT 4.1."
+  },
+  {
+   "id": 2780,
+   "name": "No Barrel Shadow",
+   "downloads": 16289,
+   "teaser": "Removes the barrel shadow cast by flashlights and tactical devices on all weapons."
+  },
+  {
+   "id": 2859,
+   "name": "Compatibility Highlighter",
+   "downloads": 13870,
+   "teaser": "Highlight compatible mags ammo and attachments."
+  },
+  {
+   "id": 2803,
+   "name": "ItemGen",
+   "downloads": 12779,
+   "teaser": "A server-side framework for SPTarkov that lets anyone, including non-programmers, create custom items using simple JSON packs. Includes a we"
+  },
+  {
+   "id": 2930,
+   "name": "ECOTI - Enhanced Clip-On Thermal Imager",
+   "downloads": 12074,
+   "teaser": "A clip-on thermal imager for your night vision. It clamps to the objective and fuses heat into the tube's circle, so hot shapes stand out wh"
+  },
+  {
+   "id": 975,
+   "name": "Quick Launcher",
+   "downloads": 10593,
+   "teaser": "A very simple one-click launcher designed as a lightweight alternative to my SPT Launcher."
+  },
+  {
+   "id": 2734,
+   "name": "Better Night Skies",
+   "downloads": 9471,
+   "teaser": "What's that giant star ? Could it be yo mama ?"
+  },
+  {
+   "id": 2503,
+   "name": "Nerf Frostbite",
+   "downloads": 7103,
+   "teaser": "Removes most negative effects from frostbite."
+  },
+  {
+   "id": 1425,
+   "name": "Un-flashbang Hideout",
+   "downloads": 6637,
+   "teaser": "Running Super Sampling and have just completed a few raids late at night? Went into your hideout to upgrade something or craft and just got "
+  },
+  {
+   "id": 3097,
+   "name": "DynamicMaps Extended",
+   "downloads": 5384,
+   "teaser": "Expands DynamicMaps with new maps, backports, and more visual options."
+  },
+  {
+   "id": 2507,
+   "name": "Remove Frostbite Overlay",
+   "downloads": 5281,
+   "teaser": "Removes the visual effect of frostbite."
+  },
+  {
+   "id": 3007,
+   "name": "Breakout Outlines",
+   "downloads": 4713,
+   "teaser": "Highlight any loot, containers and dead bodies with Breakout-Like style."
+  },
+  {
+   "id": 2997,
+   "name": "EternalCycle",
+   "downloads": 4427,
+   "teaser": "Modern, lightweight and scalable front-end libraries for my mod"
+  },
+  {
+   "id": 2917,
+   "name": "Vanguard",
+   "downloads": 2346,
+   "teaser": "A mod requested by Vanguard, adds the WMLX light and Sandman X suppressor"
+  },
+  {
+   "id": 3084,
+   "name": "Better Flashlights",
+   "downloads": 1931,
+   "teaser": "A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams"
+  },
+  {
+   "id": 2968,
+   "name": "Quiet Weather",
+   "downloads": 1694,
+   "teaser": "A volume slider mod that let's you turn down the rain volume."
+  },
+  {
+   "id": 3109,
+   "name": "Knight Mask Fix (4.1.3+)",
+   "downloads": 1592,
+   "teaser": "Fixes Death Knight's missing mask texture"
+  },
+  {
+   "id": 3101,
+   "name": "Magic Optic Mount",
+   "downloads": 894,
+   "teaser": "Optic + Thermal/Night Vision"
+  },
+  {
+   "id": 3081,
+   "name": "Advanced Modding Lights",
+   "downloads": 844,
+   "teaser": "Enhance the lighting in weapon modding and build screens for better visibility and aesthetics"
+  },
+  {
+   "id": 3110,
+   "name": "FogSix",
+   "downloads": 809,
+   "teaser": "Replaces base game fog with a custom volumetric froxel shader and comes packaged with a server side dynamic fog mod"
+  },
+  {
+   "id": 3048,
+   "name": "Moar Supplies",
+   "downloads": 451,
+   "teaser": "Configurable items that are simple to understand and easy to control. View what each item does, then add, remove, and tune effects without b"
+  },
+  {
+   "id": 3016,
+   "name": "ShitInTushonka",
+   "downloads": 450,
+   "teaser": "A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time surface impacts, custom positio"
+  },
+  {
+   "id": 3121,
+   "name": "Broken Limbs Don't Heal",
+   "downloads": 175,
+   "teaser": "Broken limbs aren't supposed to heal instantly. This mod introduces a new health effect and mechanic for that."
+  },
+  {
+   "id": 3123,
+   "name": "EFT Effects Manager",
+   "downloads": 70,
+   "teaser": "A modding toolkit for managing health controller effects and creating custom effects with your own logic."
+  }
+ ],
+ "audio": [
+  {
+   "id": 1265,
+   "name": "Rai's Hidden Caches",
+   "downloads": 109087,
+   "teaser": "Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from all the random secret caches to "
+  },
+  {
+   "id": 1277,
+   "name": "WTT - Head and Voice Selector",
+   "downloads": 92177,
+   "teaser": "Customize your character's voice and head appearance post-creation using new dropdown boxes in the Overall panel."
+  },
+  {
+   "id": 1760,
+   "name": "Audio Accessibility Indicators",
+   "downloads": 58836,
+   "teaser": "Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each shot, sprint, sneak, voiceline or run audi"
+  },
+  {
+   "id": 1831,
+   "name": "Agony SFX",
+   "downloads": 35156,
+   "teaser": "Client mod that allows bots to play additional voice lines upon dying."
+  },
+  {
+   "id": 2264,
+   "name": "Battle Ambience",
+   "downloads": 29979,
+   "teaser": "Because the world is bigger than your raid."
+  },
+  {
+   "id": 2569,
+   "name": "AOSix",
+   "downloads": 9314,
+   "teaser": "Replaces base games HBAO with GTAO, a more accurate ambient occlusion method"
+  },
+  {
+   "id": 3029,
+   "name": "ImpactCue-UI-MOD",
+   "downloads": 9242,
+   "teaser": "Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons"
+  },
+  {
+   "id": 2710,
+   "name": "female pmc voice (U***)",
+   "downloads": 6617,
+   "teaser": "ever wanted a female U*** voice in t*****? well now you do!"
+  },
+  {
+   "id": 1406,
+   "name": "Dick Marcinko - Rogue Warrior Voice Pack",
+   "downloads": 5463,
+   "teaser": "The Rogue Warrior is on a classified mission."
+  },
+  {
+   "id": 2999,
+   "name": "Terminal Commander",
+   "downloads": 4717,
+   "teaser": "Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Great for people who want a lot o"
+  },
+  {
+   "id": 2816,
+   "name": "Trash Talk",
+   "downloads": 4528,
+   "teaser": "The PMC that killed you just texted. Now you can text back. TrashTalk gives every PMC killer/victim message a real AI-generated voice — repl"
+  },
+  {
+   "id": 2962,
+   "name": "Music Extender",
+   "downloads": 1987,
+   "teaser": "Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now."
+  },
+  {
+   "id": 2839,
+   "name": "SoulPlayer",
+   "downloads": 1832,
+   "teaser": "Collect cassettes in raids and play your own music inside SPT."
+  },
+  {
+   "id": 2738,
+   "name": "GFLVoices",
+   "downloads": 1784,
+   "teaser": "Just cover your manly face up or let everyone know you found a voice changer"
+  },
+  {
+   "id": 2825,
+   "name": "S&M PRT - Portable Radio Transmitter",
+   "downloads": 1588,
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and rai"
+  },
+  {
+   "id": 2845,
+   "name": "Hj's Custom UI Sounds",
+   "downloads": 807,
+   "teaser": "Swapping the in-game UI Audio to a custom soundpack"
+  },
+  {
+   "id": 3045,
+   "name": "KAHADS - Kill And Hit And Death Sounds",
+   "downloads": 517,
+   "teaser": "Option to customize hit, kill, and death sounds"
+  },
+  {
+   "id": 3016,
+   "name": "ShitInTushonka",
+   "downloads": 450,
+   "teaser": "A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time surface impacts, custom positio"
+  },
+  {
+   "id": 3001,
+   "name": "Manimal's Quest Briefing API",
+   "downloads": 362,
+   "teaser": "An API that allows modders to create custom Briefing audio for quests."
+  }
+ ],
+ "ui": [
+  {
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "downloads": 1332065,
+   "teaser": "Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a huge variety of options"
+  },
+  {
+   "id": 1431,
+   "name": "Dynamic Maps",
+   "downloads": 810374,
+   "teaser": "Replaces the in-game map screen with actually useful maps with dynamic information!"
+  },
+  {
+   "id": 1342,
+   "name": "UI Fixes",
+   "downloads": 457363,
+   "teaser": "Quality of life improvements and fixes for SPT"
+  },
+  {
+   "id": 1100,
+   "name": "ACCURATE CIRCULAR RADAR",
+   "downloads": 311030,
+   "teaser": "A radar mod that displays enemy locations and identifies various enemy types."
+  },
+  {
+   "id": 1341,
+   "name": "Quick Move To Containers",
+   "downloads": 140498,
+   "teaser": "Quickly move items between your inventory or stash, and any open container(s)"
+  },
+  {
+   "id": 1775,
+   "name": "WTT - Menu Overhaul",
+   "downloads": 126758,
+   "teaser": "Add a new menu layout to SPT and add your player to the menu screen."
+  },
+  {
+   "id": 2386,
+   "name": "Use Items Anywhere",
+   "downloads": 121552,
+   "teaser": "Use and bind items from anywhere in your inventory"
+  },
+  {
+   "id": 1265,
+   "name": "Rai's Hidden Caches",
+   "downloads": 109087,
+   "teaser": "Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from all the random secret caches to "
+  },
+  {
+   "id": 1469,
+   "name": "AutoDeposit",
+   "downloads": 104966,
+   "teaser": "Transfer items into stash containers with matching items, inspired by Terraria's Quick Stack."
+  },
+  {
+   "id": 1374,
+   "name": "Player Encumbrance Bar",
+   "downloads": 100002,
+   "teaser": "Adds a progress bar to the inventory that shows total player encumbrance"
+  },
+  {
+   "id": 2112,
+   "name": "Continuous Load Ammo",
+   "downloads": 95709,
+   "teaser": "You are now able to continuously load or unload ammo outside your inventory!"
+  },
+  {
+   "id": 1617,
+   "name": "give-ui",
+   "downloads": 71858,
+   "teaser": "Simple UI for the give, trader and profile commands"
+  },
+  {
+   "id": 1300,
+   "name": "Modding Stats Helper - by wara",
+   "downloads": 66591,
+   "teaser": "Adds a tooltip when hovering parts in the weapon building screen that shows a quick overview of relevant stats and comparisons."
+  },
+  {
+   "id": 1760,
+   "name": "Audio Accessibility Indicators",
+   "downloads": 58836,
+   "teaser": "Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each shot, sprint, sneak, voiceline or run audi"
+  },
+  {
+   "id": 1853,
+   "name": "StatTrack",
+   "downloads": 46527,
+   "teaser": "Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All weapons will individually track their kil"
+  },
+  {
+   "id": 1861,
+   "name": "Stash Management Helper",
+   "downloads": 27317,
+   "teaser": "Enhances stash management with extra sorting features. This can sort your stash long after the default sorting fails."
+  },
+  {
+   "id": 1858,
+   "name": "Enemy Markers",
+   "downloads": 22831,
+   "teaser": "Simply a Marker that shows the enemies with a \"v\" shaped marker. Can also display the distance from the enemy."
+  },
+  {
+   "id": 2369,
+   "name": "Jero Backpack",
+   "downloads": 20811,
+   "teaser": "Increases backpack inventory space by resizing grids. Supports custom sizes and blacklist."
+  },
+  {
+   "id": 2235,
+   "name": "Sharper Tushonka Better Life",
+   "downloads": 19300,
+   "teaser": "A simple and lightweight ReShade preset that improves visibility and enhances the overall look of EFT by making the game sharper without ove"
+  },
+  {
+   "id": 2524,
+   "name": "Item Limits Begone!",
+   "downloads": 18592,
+   "teaser": "Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42."
+  },
+  {
+   "id": 2206,
+   "name": "Item Preview QoL + screenshots",
+   "downloads": 18030,
+   "teaser": "Better item preview: zoom, pan, rotate lights, fullscreen, and alpha screenshots. UI Fixes compatible."
+  },
+  {
+   "id": 1745,
+   "name": "Discarder",
+   "downloads": 17412,
+   "teaser": "Multi-select discard for UI Fixes"
+  },
+  {
+   "id": 2730,
+   "name": "AutoCorpseSearch",
+   "downloads": 13650,
+   "teaser": "Automatically starts searching a corpse's equipment slots when you open the loot screen - no more clicking Search on each slot individually"
+  },
+  {
+   "id": 2817,
+   "name": "The Quartermaster",
+   "downloads": 13266,
+   "teaser": "A global, player-driven second-hand marketplace. Sell gear from your stash. Buy gear that other players have sold. Every item has a history."
+  },
+  {
+   "id": 784,
+   "name": "Hardcore Rules",
+   "downloads": 12824,
+   "teaser": "Is SPT getting too easy? Too much nice gear collecting dust in your stash? Fix that problem with a hardcore playthrough similar to DeadlySlo"
+  },
+  {
+   "id": 2791,
+   "name": "Tylevo's Tactical Service Control",
+   "downloads": 9923,
+   "teaser": "Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-con"
+  },
+  {
+   "id": 2879,
+   "name": "WebOverlay",
+   "downloads": 9803,
+   "teaser": "Lets mods show HTML panels and click-through HUDs over the game"
+  },
+  {
+   "id": 1656,
+   "name": "SPT Discord Rich Presence",
+   "downloads": 9572,
+   "teaser": "Display basic game information on your Discord Activity!"
+  },
+  {
+   "id": 3029,
+   "name": "ImpactCue-UI-MOD",
+   "downloads": 9242,
+   "teaser": "Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons"
+  },
+  {
+   "id": 2733,
+   "name": "RaidMenuCleanupFix",
+   "downloads": 9101,
+   "teaser": "Removes the brief freeze when opening the escape menu during a raid"
+  },
+  {
+   "id": 2364,
+   "name": "NoMenuFPSLimit",
+   "downloads": 7176,
+   "teaser": "Removes the FPS limit of 60 in the main menu."
+  },
+  {
+   "id": 2743,
+   "name": "WeaponBuilderSearch",
+   "downloads": 6793,
+   "teaser": "Adds a live search field to the attachment dropdown in the Weapon Builder and Weapon Modding screens"
+  },
+  {
+   "id": 2553,
+   "name": "Chamber Ammo Info",
+   "downloads": 6598,
+   "teaser": "Know your next shot! This mod displays the ammo type loaded in your chamber when checking it."
+  },
+  {
+   "id": 2876,
+   "name": "Simple Raid HUD",
+   "downloads": 6244,
+   "teaser": "A clean and configurable raid HUD for health, hydration, energy and magazine ammo."
+  },
+  {
+   "id": 2552,
+   "name": "No Version Label in Raid",
+   "downloads": 5623,
+   "teaser": "Disables the version label in raid. It is enabled when in the menu."
+  },
+  {
+   "id": 2860,
+   "name": "CraftQueue",
+   "downloads": 4946,
+   "teaser": "Queue hideout crafts across all stations and manage them from a web UI - even while you raid"
+  },
+  {
+   "id": 2946,
+   "name": "More Cases Updated",
+   "downloads": 4081,
+   "teaser": "Expand your organizational possibilities with more cases added to your stash!"
+  },
+  {
+   "id": 2623,
+   "name": "Refined Flea Offer List",
+   "downloads": 3130,
+   "teaser": "Only show cheapest offers for each item in flea category page. Smarter display Ruble, Full-state, different weapon & armor builds."
+  },
+  {
+   "id": 2857,
+   "name": "Raid Settings Skipper",
+   "downloads": 3117,
+   "teaser": "Skips the raid settings screen when fika server settings are disabled."
+  },
+  {
+   "id": 2731,
+   "name": "LinkedSearchInStash",
+   "downloads": 3106,
+   "teaser": "Extends Tushonka's Linked Search to your own stash. Adds a separate context-menu action that opens the stash search window filtered to items"
+  },
+  {
+   "id": 2924,
+   "name": "Advanced Stash Sorting",
+   "downloads": 2865,
+   "teaser": "Adds configurable rules and additional options to the standard stash sorting system."
+  },
+  {
+   "id": 3069,
+   "name": "Hj's Improved Customization UI",
+   "downloads": 2837,
+   "teaser": "Customization Tab from 1.0 but Improved + Ragman's Cross-faction Clothing Toggle from 1.0 + Photo Mode in Customization Tab"
+  },
+  {
+   "id": 2406,
+   "name": "Remove The Irremovables",
+   "downloads": 2592,
+   "teaser": "A simple mod that lets you remove irremovable items from your inventory."
+  },
+  {
+   "id": 2713,
+   "name": "Career Log",
+   "downloads": 2578,
+   "teaser": "Your T***** career in one place — every raid mapped and logged, lifetime stats, and stash history."
+  },
+  {
+   "id": 2962,
+   "name": "Music Extender",
+   "downloads": 1987,
+   "teaser": "Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now."
+  },
+  {
+   "id": 2931,
+   "name": "ASBP - Acid's Scalable BepinEx Panel",
+   "downloads": 1730,
+   "teaser": "Makes the BepinEx F12 menu scalable and resizable"
+  },
+  {
+   "id": 3086,
+   "name": "[Melx] Loot Value",
+   "downloads": 1659,
+   "teaser": "Pretty simple mod. Displays the current flea price, best trader price and price per slot on the tool tip of an item when hovered."
+  },
+  {
+   "id": 3047,
+   "name": "Deploy Screen Overhaul",
+   "downloads": 1616,
+   "teaser": "You’ve spent enough time staring at the same loading screen. So have I."
+  },
+  {
+   "id": 2825,
+   "name": "S&M PRT - Portable Radio Transmitter",
+   "downloads": 1588,
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and rai"
+  },
+  {
+   "id": 2960,
+   "name": "IOF: Inventory Organizing Feature",
+   "downloads": 1526,
+   "teaser": "Automate organizing your stash"
+  },
+  {
+   "id": 2907,
+   "name": "StashFilter",
+   "downloads": 1266,
+   "teaser": "Extended filter and sort tabs for the stash search: weapons, armor, mags, ammo, meds and attachments"
+  },
+  {
+   "id": 2715,
+   "name": "RainCap",
+   "downloads": 1232,
+   "teaser": "A mod which lets you reduce/disable the rain drops on your screen when wearing a cap"
+  },
+  {
+   "id": 2990,
+   "name": "Caliber Split Storage Solutions",
+   "downloads": 973,
+   "teaser": "Resolving your stash problems, one caliber at a time"
+  },
+  {
+   "id": 3058,
+   "name": "Inventory Walker",
+   "downloads": 876,
+   "teaser": "Don't stop moving, ever."
+  },
+  {
+   "id": 3081,
+   "name": "Advanced Modding Lights",
+   "downloads": 844,
+   "teaser": "Enhance the lighting in weapon modding and build screens for better visibility and aesthetics"
+  },
+  {
+   "id": 2845,
+   "name": "Hj's Custom UI Sounds",
+   "downloads": 807,
+   "teaser": "Swapping the in-game UI Audio to a custom soundpack"
+  },
+  {
+   "id": 3053,
+   "name": "Ultrawide Stash",
+   "downloads": 797,
+   "teaser": "Stretch that stash baby."
+  },
+  {
+   "id": 2837,
+   "name": "Hj's Custom UI Fonts",
+   "downloads": 704,
+   "teaser": "Swapping the in-game UI font to a custom font"
+  },
+  {
+   "id": 3050,
+   "name": "DebugTools",
+   "downloads": 683,
+   "teaser": "The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utili"
+  },
+  {
+   "id": 3067,
+   "name": "Deadzone",
+   "downloads": 680,
+   "teaser": "Adds insurgency style deadzone/free aim, allowing your weapon to drift from the center of the screen."
+  },
+  {
+   "id": 3079,
+   "name": "Tag Over Name",
+   "downloads": 558,
+   "teaser": "Hide an item's name when it has a tag. Finally organize your stash properly!"
+  },
+  {
+   "id": 3098,
+   "name": "SPT Trader Restock Refresh",
+   "downloads": 437,
+   "teaser": "Refreshes the trader screen you have open when that trader restocks."
+  },
+  {
+   "id": 3125,
+   "name": "Tylevo's Field Attachments",
+   "downloads": 352,
+   "teaser": "Allows for change of optics, muzzle devices, tactical devices and foregrips without opening your inventory in a 3d weapon card view."
+  },
+  {
+   "id": 3049,
+   "name": "ArmorInfoPlus",
+   "downloads": 308,
+   "teaser": "Displays the 24-character template ID of all items in the game, including those added via backports. Displays hidden stats for armors in det"
+  },
+  {
+   "id": 3036,
+   "name": "Moe Need Marks",
+   "downloads": 285,
+   "teaser": "Quest and hideout requirement checkmarks, progress and inventory counts in native tooltips. / 任务与藏身处需求彩色勾、提交进度和库存统计。"
+  },
+  {
+   "id": 2957,
+   "name": "MIA-Lounge",
+   "downloads": 284,
+   "teaser": "adding minigames to play while spectating your friend inraid or waiting in the main menu for them"
+  },
+  {
+   "id": 3122,
+   "name": "Fika Downed Spectator",
+   "downloads": 246,
+   "teaser": "Spectate your teammates while downed in Fika with a clean, native T***** tactical HUD banner."
+  }
+ ],
+ "animation": [
+  {
+   "id": 701,
+   "name": "Fontaine's FOV Fix",
+   "downloads": 352379,
+   "teaser": "Removes the FOV change on aiming by default, and lets you customize the FOV change amount. Has options for modifying FOV scale, view model F"
+  },
+  {
+   "id": 1860,
+   "name": "Classic Movement",
+   "downloads": 140145,
+   "teaser": "Completely removes any inertia and slowed down movement, and replaces it with the official much faster movement from 12.10"
+  },
+  {
+   "id": 2681,
+   "name": "Manimal's Ammo Loading Animations",
+   "downloads": 19233,
+   "teaser": "First person animations for loading bullets into a mag"
+  },
+  {
+   "id": 2905,
+   "name": "Ragdoll Kinetics",
+   "downloads": 6554,
+   "teaser": "Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions."
+  },
+  {
+   "id": 2874,
+   "name": "Adaptive Bot Culling",
+   "downloads": 6485,
+   "teaser": "Integrates AI brain and animation pausing into EFT’s native asset-culling and LOD system, reducing CPU usage when bots are far away"
+  },
+  {
+   "id": 2745,
+   "name": "Manimal's Watch Animations",
+   "downloads": 6281,
+   "teaser": "Left hand animation when checking remaining time in raid"
+  },
+  {
+   "id": 2969,
+   "name": "Manimal's Quick Cancel",
+   "downloads": 2591,
+   "teaser": "Allows you to quick cancel a consumable animation using your quick reload key, dropping the item in the process."
+  },
+  {
+   "id": 2858,
+   "name": "CineKit - Freecam, Cinematic Camera, Point Path Editor & Follower",
+   "downloads": 1535,
+   "teaser": "an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T****"
+  },
+  {
+   "id": 3075,
+   "name": "BodyCamera",
+   "downloads": 960,
+   "teaser": "A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake."
+  }
+ ],
+ "hideout": [
+  {
+   "id": 1437,
+   "name": "Simple Workout QTE",
+   "downloads": 68837,
+   "teaser": "Workout QTE in hideout is now much easier, and configurable!"
+  },
+  {
+   "id": 1303,
+   "name": "HarryHideout",
+   "downloads": 68380,
+   "teaser": "Trader that sells all items for hideout construction/upgrades"
+  },
+  {
+   "id": 2076,
+   "name": "Hideout In Progress",
+   "downloads": 56616,
+   "teaser": "Turn in items for hideout construction as you get them!"
+  },
+  {
+   "id": 2530,
+   "name": "Vertical Hideout",
+   "downloads": 36289,
+   "teaser": "Replace the horizontal carousel with a sane vertical list"
+  },
+  {
+   "id": 2500,
+   "name": "Wishlist Extended",
+   "downloads": 7787,
+   "teaser": "Extends EFT’s auto-wishlist system with advanced customization options. Automatically wishlist items for selected crafts, hideout upgrades, "
+  },
+  {
+   "id": 1425,
+   "name": "Un-flashbang Hideout",
+   "downloads": 6637,
+   "teaser": "Running Super Sampling and have just completed a few raids late at night? Went into your hideout to upgrade something or craft and just got "
+  },
+  {
+   "id": 2908,
+   "name": "Tarkin's Hideout Cat",
+   "downloads": 6017,
+   "teaser": "Hideout Cat, but for SPT 4.1!"
+  },
+  {
+   "id": 2860,
+   "name": "CraftQueue",
+   "downloads": 4946,
+   "teaser": "Queue hideout crafts across all stations and manage them from a web UI - even while you raid"
+  },
+  {
+   "id": 2705,
+   "name": "Hideout Shootout",
+   "downloads": 3927,
+   "teaser": "Enables use of your weapon in the Hideout outside of the shooting range"
+  },
+  {
+   "id": 2982,
+   "name": "Hideout Overhaul",
+   "downloads": 3233,
+   "teaser": "Replaces hideout construction recipes into something much more sensible. Because last time I checked, you don't build a door with two bricks"
+  },
+  {
+   "id": 2865,
+   "name": "WTT - DoomArcade",
+   "downloads": 3086,
+   "teaser": "Experience hell on earth... in your hideout?"
+  },
+  {
+   "id": 2915,
+   "name": "Hideout Craft Modifier - HCM",
+   "downloads": 2159,
+   "teaser": "Modify your hideout recipes to your liking."
+  },
+  {
+   "id": 2696,
+   "name": "Hideout Sky",
+   "downloads": 1752,
+   "teaser": "Finally some fresh air"
+  },
+  {
+   "id": 2933,
+   "name": "HideoutTV",
+   "downloads": 1637,
+   "teaser": "Custom videos for the hideout TV"
+  },
+  {
+   "id": 3108,
+   "name": "Infinite Everything",
+   "downloads": 1237,
+   "teaser": "18 switchable \"infinite\" options: ammo, magazines, grenades, meds, keys, money, health, stamina, turrets, hideout fuel and more."
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 3036,
+   "name": "Moe Need Marks",
+   "downloads": 285,
+   "teaser": "Quest and hideout requirement checkmarks, progress and inventory counts in native tooltips. / 任务与藏身处需求彩色勾、提交进度和库存统计。"
+  }
+ ],
+ "skills": [
+  {
+   "id": 827,
+   "name": "Waypoints - Expanded Navmesh",
+   "downloads": 1335662,
+   "teaser": "Expand where bots can explore with full map navmesh coverage!"
+  },
+  {
+   "id": 1023,
+   "name": "WTT- Artem",
+   "downloads": 318345,
+   "teaser": "In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons."
+  },
+  {
+   "id": 1263,
+   "name": "Epic's All in One",
+   "downloads": 276797,
+   "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader."
+  },
+  {
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "downloads": 256235,
+   "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad mor"
+  },
+  {
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "downloads": 174871,
+   "teaser": "A balanced progression based approach to convenient all in one key storage!"
+  },
+  {
+   "id": 2326,
+   "name": "Project Fika",
+   "downloads": 98074,
+   "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items "
+  },
+  {
+   "id": 2383,
+   "name": "Skills Extended",
+   "downloads": 57845,
+   "teaser": "Lack of skills is no longer a skill issue"
+  },
+  {
+   "id": 814,
+   "name": "Late to the Party",
+   "downloads": 47467,
+   "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving thr"
+  },
+  {
+   "id": 1706,
+   "name": "Health Per Level",
+   "downloads": 46972,
+   "teaser": "Increase health depending on player level"
+  },
+  {
+   "id": 2144,
+   "name": "Skill Distribution",
+   "downloads": 39910,
+   "teaser": "Want to level your skills faster but also want to keep vanilla feel of progression? Give this mod a try, you might like it."
+  },
+  {
+   "id": 3025,
+   "name": "Manimal's 1.0 Interchange Expansion Backport",
+   "downloads": 26286,
+   "teaser": "Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra."
+  },
+  {
+   "id": 2937,
+   "name": "Manimal's 1.0 Labs Office Backport",
+   "downloads": 24171,
+   "teaser": "Backports the 1.0 Labs expansion to SPT 4.0."
+  },
+  {
+   "id": 2153,
+   "name": "Expanded Task Text (ETT)",
+   "downloads": 18445,
+   "teaser": "Knowledge is power, unfortunately Nikita doesn't see it that way."
+  },
+  {
+   "id": 875,
+   "name": "VAI: Non-Realistic Tapkov Project",
+   "downloads": 15526,
+   "teaser": "This mod aims to make SPT more fun experience by sacrificing its realistic nature."
+  },
+  {
+   "id": 2162,
+   "name": "Skill Multiplier",
+   "downloads": 15227,
+   "teaser": "Adds sliders for individual skill EXP multipliers."
+  },
+  {
+   "id": 1937,
+   "name": "Dev Balaclava Fix",
+   "downloads": 13488,
+   "teaser": "Just makes you actually invincible while wearing the Dev Balaclava. Meant for mod developers. Immune to explosions, border snipers, BTR runn"
+  },
+  {
+   "id": 2657,
+   "name": "Cultist Circle Improvements",
+   "downloads": 13185,
+   "teaser": "Fine tune your Cultist Circle, change all the values and timers. Add new direct reward crafts! Also comes with a web config, which at this p"
+  },
+  {
+   "id": 1362,
+   "name": "Repeatable Quest Config",
+   "downloads": 9035,
+   "teaser": "Disable certain types of Repeatable Quests and/or set multipliers for XP/Money/Rep/Skill gain rewards from Repeatable Quests. Allows instant"
+  },
+  {
+   "id": 2556,
+   "name": "Repair Skill Extension",
+   "downloads": 8559,
+   "teaser": "Custom higher buff chance for repairing armor & weapon. Repair skills work on all armor items. Fully repaired at once."
+  },
+  {
+   "id": 1851,
+   "name": "VAI: Rogue-Lite Tapkov Project",
+   "downloads": 7050,
+   "teaser": "This mod is a Rogue-Lite conversion of the progression system."
+  },
+  {
+   "id": 2650,
+   "name": "Holster Everything",
+   "downloads": 6931,
+   "teaser": "HolsterEverything is a server-side SPT mod that expands what can be equipped in the PMC holster slot."
+  },
+  {
+   "id": 2101,
+   "name": "SPT Leaderboard",
+   "downloads": 6923,
+   "teaser": "The Ultimate Leaderboard for SPT. Connect and explore along other SPT players worldwide."
+  },
+  {
+   "id": 2151,
+   "name": "SJX Stims Addon for Consumables Galore",
+   "downloads": 5779,
+   "teaser": "Welcome to SJX Stims Addon, a powerful expansion to the Consumables Galore mod."
+  },
+  {
+   "id": 3097,
+   "name": "DynamicMaps Extended",
+   "downloads": 5384,
+   "teaser": "Expands DynamicMaps with new maps, backports, and more visual options."
+  },
+  {
+   "id": 2618,
+   "name": "Tripwire Improvement",
+   "downloads": 5030,
+   "teaser": "Infinite tripwire kit, customize count down (instant explosion grenade), longer and freer placement"
+  },
+  {
+   "id": 2210,
+   "name": "Live Like Boss Spawn Chances",
+   "downloads": 4280,
+   "teaser": "Simulates boss spawn chances gradually increasing throughout a \"wipe\" based on your player level and in-raid hours"
+  },
+  {
+   "id": 2539,
+   "name": "Progressive Flea",
+   "downloads": 4251,
+   "teaser": "Adds level locking to items on the flea market."
+  },
+  {
+   "id": 2582,
+   "name": "Certified PMC",
+   "downloads": 4139,
+   "teaser": "Randomizes your PMC's skills and masteries at character creation, because not every 'trained operative' starts life the same way."
+  },
+  {
+   "id": 2946,
+   "name": "More Cases Updated",
+   "downloads": 4081,
+   "teaser": "Expand your organizational possibilities with more cases added to your stash!"
+  },
+  {
+   "id": 2961,
+   "name": "Weight Leveling",
+   "downloads": 3893,
+   "teaser": "Item Weights go down as you level"
+  },
+  {
+   "id": 2152,
+   "name": "SJX Elite Stims Addon for Consumables Galore",
+   "downloads": 3847,
+   "teaser": "Welcome to SJX Elite Stims Addon, a powerful expansion to the Consumables Galore mod."
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 1936,
+   "name": "No Unfair Trade System (NUTS)",
+   "downloads": 3278,
+   "teaser": "NUTS (No Unfair Trade System) removes access to the Flea Market (customizable), ensuring a fairer, more balanced gameplay experience!"
+  },
+  {
+   "id": 2865,
+   "name": "WTT - DoomArcade",
+   "downloads": 3086,
+   "teaser": "Experience hell on earth... in your hideout?"
+  },
+  {
+   "id": 3006,
+   "name": "Munitions Expert - Reloaded",
+   "downloads": 2771,
+   "teaser": "View hidden attributes of ammo and explosives, with custom background colors based on penetration power values."
+  },
+  {
+   "id": 2397,
+   "name": "Start Is This A Reference? Early",
+   "downloads": 2688,
+   "teaser": "Start Is This A Reference? at an early level."
+  },
+  {
+   "id": 2863,
+   "name": "Operator Registry",
+   "downloads": 2604,
+   "teaser": "A shared community identity system, dog tags use real player names and levels from other mod users."
+  },
+  {
+   "id": 2652,
+   "name": "Fair Progression",
+   "downloads": 2456,
+   "teaser": "Automatically rebalances quest XP to preserve vanilla progression when modded quests are installed."
+  },
+  {
+   "id": 2962,
+   "name": "Music Extender",
+   "downloads": 1987,
+   "teaser": "Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now."
+  },
+  {
+   "id": 2858,
+   "name": "CineKit - Freecam, Cinematic Camera, Point Path Editor & Follower",
+   "downloads": 1535,
+   "teaser": "an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T****"
+  },
+  {
+   "id": 3075,
+   "name": "BodyCamera",
+   "downloads": 960,
+   "teaser": "A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake."
+  },
+  {
+   "id": 3070,
+   "name": "Flea Price Progression",
+   "downloads": 829,
+   "teaser": "Realistic flea prices derived from live data that scale with player level"
+  },
+  {
+   "id": 3106,
+   "name": "Armor Expert",
+   "downloads": 789,
+   "teaser": "View hidden attributes of armored equipment and headsets."
+  },
+  {
+   "id": 2766,
+   "name": "Quest Experience Multiplier",
+   "downloads": 499,
+   "teaser": "Multiplies the experience amount given by quest by a factor."
+  },
+  {
+   "id": 3005,
+   "name": "Trader Level Requirements Editor",
+   "downloads": 375,
+   "teaser": "Let's you alter the level requirements for SPT's traders"
+  },
+  {
+   "id": 3009,
+   "name": "Cobra's SPT Explorer",
+   "downloads": 219,
+   "teaser": "A read-only SPT database explorer and in-raid helper for mod developers and players."
+  }
+ ],
+ "spawns": [
+  {
+   "id": 1109,
+   "name": "Questing Bots",
+   "downloads": 436826,
+   "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you..."
+  },
+  {
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "downloads": 256235,
+   "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad mor"
+  },
+  {
+   "id": 1539,
+   "name": "Bosses Have Lega Medals",
+   "downloads": 215298,
+   "teaser": "Bosses have a configurable chance to have Lega Medals in their pockets."
+  },
+  {
+   "id": 2097,
+   "name": "ABPS - Acid's Bot Placement System",
+   "downloads": 191106,
+   "teaser": "Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will always try to keep your raids full"
+  },
+  {
+   "id": 2326,
+   "name": "Project Fika",
+   "downloads": 98074,
+   "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items "
+  },
+  {
+   "id": 1688,
+   "name": "More Energy Drinks",
+   "downloads": 73807,
+   "teaser": "Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy during raids. Now you can share yo"
+  },
+  {
+   "id": 2416,
+   "name": "Enable Labyrinth",
+   "downloads": 60845,
+   "teaser": "Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as the non-secret exfil for PMCs. Requirement"
+  },
+  {
+   "id": 2543,
+   "name": "BossNotifier",
+   "downloads": 55547,
+   "teaser": "v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations."
+  },
+  {
+   "id": 814,
+   "name": "Late to the Party",
+   "downloads": 47467,
+   "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving thr"
+  },
+  {
+   "id": 2523,
+   "name": "Bosses Have Gp Coins",
+   "downloads": 44842,
+   "teaser": "From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. Amazing."
+  },
+  {
+   "id": 2010,
+   "name": "Definitive Weapon Variants",
+   "downloads": 43271,
+   "teaser": "600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, click scavs to death, tap bosse"
+  },
+  {
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "downloads": 35070,
+   "teaser": "Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the battlefield."
+  },
+  {
+   "id": 2011,
+   "name": "Actually Found In Raid (UPDATED)",
+   "downloads": 26021,
+   "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will "
+  },
+  {
+   "id": 2635,
+   "name": "Smooth Talker",
+   "downloads": 14671,
+   "teaser": "Today your PMC could be as dumb as yesterday but a little more talkative."
+  },
+  {
+   "id": 1755,
+   "name": "Scavs 4 All",
+   "downloads": 14185,
+   "teaser": "A quick and simple way to make those pesky quests that require only scav kills to count pmc kills towards your progress as well."
+  },
+  {
+   "id": 1474,
+   "name": "Disable Traitor Scavs",
+   "downloads": 12269,
+   "teaser": "Disables Traitor Scavs. You can also, alternatively, adjust the chance they do spawn instead of disabling them. Stop getting shot in the bac"
+  },
+  {
+   "id": 2049,
+   "name": "Add Secret Exfil Notes to Caches",
+   "downloads": 10957,
+   "teaser": "Simple mod that adds the Secret Exfil Code Notes to Barrel/Wood caches as well as dead PMC/SCAV bodies on maps that have Secret Exfils. At t"
+  },
+  {
+   "id": 2594,
+   "name": "Player Boss Scav",
+   "downloads": 10846,
+   "teaser": "Standalone component from APBS. Allows your scav to generate as a boss with a configurable chance."
+  },
+  {
+   "id": 2776,
+   "name": "Parmesan - Partizan Rework",
+   "downloads": 7198,
+   "teaser": "fixes partizan by makeing him hunt AI pmcs instead of you all the time"
+  },
+  {
+   "id": 2650,
+   "name": "Holster Everything",
+   "downloads": 6931,
+   "teaser": "HolsterEverything is a server-side SPT mod that expands what can be equipped in the PMC holster slot."
+  },
+  {
+   "id": 2710,
+   "name": "female pmc voice (U***)",
+   "downloads": 6617,
+   "teaser": "ever wanted a female U*** voice in t*****? well now you do!"
+  },
+  {
+   "id": 2617,
+   "name": "Don't Shoot The Bus",
+   "downloads": 6438,
+   "teaser": "PMC bots keep picking fights with a 13-ton armored vehicle. This mod fixes that."
+  },
+  {
+   "id": 2784,
+   "name": "AutoIFF",
+   "downloads": 5284,
+   "teaser": "Auto-identify Friend or Foe when aiming, plus Scav traitor alerts and friendly-fire protection"
+  },
+  {
+   "id": 2816,
+   "name": "Trash Talk",
+   "downloads": 4528,
+   "teaser": "The PMC that killed you just texted. Now you can text back. TrashTalk gives every PMC killer/victim message a real AI-generated voice — repl"
+  },
+  {
+   "id": 2210,
+   "name": "Live Like Boss Spawn Chances",
+   "downloads": 4280,
+   "teaser": "Simulates boss spawn chances gradually increasing throughout a \"wipe\" based on your player level and in-raid hours"
+  },
+  {
+   "id": 2582,
+   "name": "Certified PMC",
+   "downloads": 4139,
+   "teaser": "Randomizes your PMC's skills and masteries at character creation, because not every 'trained operative' starts life the same way."
+  },
+  {
+   "id": 2898,
+   "name": "FIR Means FIR",
+   "downloads": 4073,
+   "teaser": "TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR"
+  },
+  {
+   "id": 2625,
+   "name": "VAI: SchizoPMC",
+   "downloads": 2629,
+   "teaser": "Давайте как то организованно, б%#$ть!"
+  },
+  {
+   "id": 3064,
+   "name": "Realistic PMC Names",
+   "downloads": 1888,
+   "teaser": "8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal."
+  },
+  {
+   "id": 3042,
+   "name": "Super Scav Case",
+   "downloads": 1244,
+   "teaser": "Make the Scav Case useful again. It can now be built from the early game, and adds separate options for searching for ammunition, keys, and "
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 2971,
+   "name": "Universal Co-op Exfil",
+   "downloads": 918,
+   "teaser": "Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract"
+  },
+  {
+   "id": 3050,
+   "name": "DebugTools",
+   "downloads": 683,
+   "teaser": "The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utili"
+  },
+  {
+   "id": 2993,
+   "name": "Hispanic PMC (Harry) - Custom Head",
+   "downloads": 513,
+   "teaser": "New Custom PMC Head for 4.1.X."
+  }
+ ],
+ "raid": [
+  {
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "downloads": 252235,
+   "teaser": "Tired of having barely any loot in your raids? Lots of Loot Redux aims to bring back that old T***** feeling from when loot wasn't so scarce"
+  },
+  {
+   "id": 2097,
+   "name": "ABPS - Acid's Bot Placement System",
+   "downloads": 191106,
+   "teaser": "Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will always try to keep your raids full"
+  },
+  {
+   "id": 1140,
+   "name": "Quest Tracker",
+   "downloads": 162516,
+   "teaser": "Track quests while in-raid with a handy toggleable overlay!"
+  },
+  {
+   "id": 2173,
+   "name": "VRAM Cleaner",
+   "downloads": 92781,
+   "teaser": "Clears up unused assets after raid start timer finishes"
+  },
+  {
+   "id": 2521,
+   "name": "Amands' Sense - Updated",
+   "downloads": 86159,
+   "teaser": "Interactable icons for items, containers, bodies and extracts."
+  },
+  {
+   "id": 1688,
+   "name": "More Energy Drinks",
+   "downloads": 73807,
+   "teaser": "Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy during raids. Now you can share yo"
+  },
+  {
+   "id": 1479,
+   "name": "Raid Review",
+   "downloads": 56810,
+   "teaser": "A web-based post raid replay system of your SPT raids; detailed replay system with heatmap overlay, review kills, lootings, positional data,"
+  },
+  {
+   "id": 2543,
+   "name": "BossNotifier",
+   "downloads": 55547,
+   "teaser": "v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations."
+  },
+  {
+   "id": 2706,
+   "name": "ORBIT 2.0",
+   "downloads": 54598,
+   "teaser": "Bots play the raid like you do, and a \"Ghost Mode\" to run it all at high fps"
+  },
+  {
+   "id": 820,
+   "name": "Door Randomizer",
+   "downloads": 49463,
+   "teaser": "Getting tired of doors always being in the same state at raid start? Randomize them instead!"
+  },
+  {
+   "id": 814,
+   "name": "Late to the Party",
+   "downloads": 47467,
+   "teaser": "Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving thr"
+  },
+  {
+   "id": 2010,
+   "name": "Definitive Weapon Variants",
+   "downloads": 43271,
+   "teaser": "600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, click scavs to death, tap bosse"
+  },
+  {
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "downloads": 42416,
+   "teaser": "Gear up for your next raid in just 20 seconds!"
+  },
+  {
+   "id": 2394,
+   "name": "Instant Insurance",
+   "downloads": 36907,
+   "teaser": "Keep your insured items equipped after death!"
+  },
+  {
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "downloads": 35070,
+   "teaser": "Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the battlefield."
+  },
+  {
+   "id": 2264,
+   "name": "Battle Ambience",
+   "downloads": 29979,
+   "teaser": "Because the world is bigger than your raid."
+  },
+  {
+   "id": 2679,
+   "name": "LootNET",
+   "downloads": 29656,
+   "teaser": "a mod adding a summary of the total loot value of the raid"
+  },
+  {
+   "id": 2843,
+   "name": "Blackout",
+   "downloads": 27083,
+   "teaser": "Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors."
+  },
+  {
+   "id": 2011,
+   "name": "Actually Found In Raid (UPDATED)",
+   "downloads": 26021,
+   "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will "
+  },
+  {
+   "id": 1986,
+   "name": "GTFO NG",
+   "downloads": 24164,
+   "teaser": "Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and quest objectives that are avai"
+  },
+  {
+   "id": 2524,
+   "name": "Item Limits Begone!",
+   "downloads": 18592,
+   "teaser": "Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42."
+  },
+  {
+   "id": 2698,
+   "name": "Loot In Vicinity",
+   "downloads": 15256,
+   "teaser": "See the loot all around you! Organize your loot during raids! And more!"
+  },
+  {
+   "id": 1946,
+   "name": "Arse Scratching Service (ASS)",
+   "downloads": 11789,
+   "teaser": "Restore armour and weapon durability after gunfights in raid over time."
+  },
+  {
+   "id": 2371,
+   "name": "FIR Fence Purchases",
+   "downloads": 11605,
+   "teaser": "Give Fence’s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid."
+  },
+  {
+   "id": 2791,
+   "name": "Tylevo's Tactical Service Control",
+   "downloads": 9923,
+   "teaser": "Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-con"
+  },
+  {
+   "id": 2458,
+   "name": "Bela.s.Speedloader",
+   "downloads": 9758,
+   "teaser": "Faster ammo loading speed. Extended raid time. Larger ammo stacks."
+  },
+  {
+   "id": 3029,
+   "name": "ImpactCue-UI-MOD",
+   "downloads": 9242,
+   "teaser": "Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons"
+  },
+  {
+   "id": 2733,
+   "name": "RaidMenuCleanupFix",
+   "downloads": 9101,
+   "teaser": "Removes the brief freeze when opening the escape menu during a raid"
+  },
+  {
+   "id": 2814,
+   "name": "LMSP - Let Me Switch Plates",
+   "downloads": 8555,
+   "teaser": "Switch plates without removing your equipped armor / rig in raid, FIKA compatible"
+  },
+  {
+   "id": 2903,
+   "name": "Raids Are Infinite",
+   "downloads": 7275,
+   "teaser": "TL;DR: Ever wished to just roam the map forever? Now you can!"
+  },
+  {
+   "id": 2642,
+   "name": "Vagabond",
+   "downloads": 7155,
+   "teaser": "Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your "
+  },
+  {
+   "id": 1425,
+   "name": "Un-flashbang Hideout",
+   "downloads": 6637,
+   "teaser": "Running Super Sampling and have just completed a few raids late at night? Went into your hideout to upgrade something or craft and just got "
+  },
+  {
+   "id": 2905,
+   "name": "Ragdoll Kinetics",
+   "downloads": 6554,
+   "teaser": "Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions."
+  },
+  {
+   "id": 2745,
+   "name": "Manimal's Watch Animations",
+   "downloads": 6281,
+   "teaser": "Left hand animation when checking remaining time in raid"
+  },
+  {
+   "id": 2876,
+   "name": "Simple Raid HUD",
+   "downloads": 6244,
+   "teaser": "A clean and configurable raid HUD for health, hydration, energy and magazine ammo."
+  },
+  {
+   "id": 2821,
+   "name": "Raiders Vs Rogues",
+   "downloads": 5668,
+   "teaser": "In a world of uncertainty, you can never be sure what you'll come across next. In true T***** fashion, Rogues and Raiders are now roaming th"
+  },
+  {
+   "id": 2552,
+   "name": "No Version Label in Raid",
+   "downloads": 5623,
+   "teaser": "Disables the version label in raid. It is enabled when in the menu."
+  },
+  {
+   "id": 2757,
+   "name": "ImmersiveRaidTime",
+   "downloads": 5036,
+   "teaser": "Sync your in-game time with reality and custom timezone."
+  },
+  {
+   "id": 2954,
+   "name": "QuestMarker",
+   "downloads": 4952,
+   "teaser": "Quest objectives and your extracts as markers in the world, with name and distance, on one key"
+  },
+  {
+   "id": 2860,
+   "name": "CraftQueue",
+   "downloads": 4946,
+   "teaser": "Queue hideout crafts across all stations and manage them from a web UI - even while you raid"
+  },
+  {
+   "id": 2830,
+   "name": "Bot Census",
+   "downloads": 4866,
+   "teaser": "Are you tired of going in to a raid blind? Do you want to know who Nikita is sending to prevent you from extracting? Well welcome Bot Census"
+  },
+  {
+   "id": 2999,
+   "name": "Terminal Commander",
+   "downloads": 4717,
+   "teaser": "Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Great for people who want a lot o"
+  },
+  {
+   "id": 2210,
+   "name": "Live Like Boss Spawn Chances",
+   "downloads": 4280,
+   "teaser": "Simulates boss spawn chances gradually increasing throughout a \"wipe\" based on your player level and in-raid hours"
+  },
+  {
+   "id": 2805,
+   "name": "Map Editor Lite",
+   "downloads": 4193,
+   "teaser": "Map Editor Lite is a server-side framework for SPTarkov that lets anyone create and share custom map content - using an in-raid editor and s"
+  },
+  {
+   "id": 2898,
+   "name": "FIR Means FIR",
+   "downloads": 4073,
+   "teaser": "TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR"
+  },
+  {
+   "id": 2648,
+   "name": "AllGoodsTrader",
+   "downloads": 3670,
+   "teaser": "This mod adds four bilingual traders. Traders buy most items; equipment trader offers repair & insurance. Automatically handles rocket ammo "
+  },
+  {
+   "id": 1623,
+   "name": "Bronzemanmode by KcY >3.9 port",
+   "downloads": 3612,
+   "teaser": "For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable."
+  },
+  {
+   "id": 2943,
+   "name": "Death Shadow Tweaks",
+   "downloads": 3189,
+   "teaser": "It's small enough to be worn with a helmet."
+  },
+  {
+   "id": 2857,
+   "name": "Raid Settings Skipper",
+   "downloads": 3117,
+   "teaser": "Skips the raid settings screen when fika server settings are disabled."
+  },
+  {
+   "id": 2855,
+   "name": "Dev Tools",
+   "downloads": 2764,
+   "teaser": "A testing kit for mod work: stand in the fire while you read your logs, mag-dump without reloading, and watch every bot on the map through t"
+  },
+  {
+   "id": 2713,
+   "name": "Career Log",
+   "downloads": 2578,
+   "teaser": "Your T***** career in one place — every raid mapped and logged, lifetime stats, and stash history."
+  },
+  {
+   "id": 1978,
+   "name": "Configurable End Raid Status",
+   "downloads": 2354,
+   "teaser": "A simple mod that allows you to change the raid exit statuses to something else (e.g MIA to survived)"
+  },
+  {
+   "id": 1531,
+   "name": "Not So Secure Container",
+   "downloads": 1914,
+   "teaser": "Configurable chances of losing items in secure container on death."
+  },
+  {
+   "id": 2892,
+   "name": "Remove Single Raid Quest Requirements",
+   "downloads": 1844,
+   "teaser": "Removes the \"single raid\" completion requirement from all tasks in the game."
+  },
+  {
+   "id": 2839,
+   "name": "SoulPlayer",
+   "downloads": 1832,
+   "teaser": "Collect cassettes in raids and play your own music inside SPT."
+  },
+  {
+   "id": 2949,
+   "name": "Realistic Insurance",
+   "downloads": 1795,
+   "teaser": "Your killer decides what comes back. Prapor just does the paperwork."
+  },
+  {
+   "id": 3054,
+   "name": "Quest Codex",
+   "downloads": 1782,
+   "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too."
+  },
+  {
+   "id": 2746,
+   "name": "Ultimate Loot Editor",
+   "downloads": 1764,
+   "teaser": "An in depth in raid loose loot editor"
+  },
+  {
+   "id": 3027,
+   "name": "Exfil Rewards",
+   "downloads": 1743,
+   "teaser": "Earn bonus money for extracting from raids."
+  },
+  {
+   "id": 3038,
+   "name": "Blacksite Mod Manager",
+   "downloads": 1606,
+   "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resoluti"
+  },
+  {
+   "id": 3109,
+   "name": "Knight Mask Fix (4.1.3+)",
+   "downloads": 1592,
+   "teaser": "Fixes Death Knight's missing mask texture"
+  },
+  {
+   "id": 2825,
+   "name": "S&M PRT - Portable Radio Transmitter",
+   "downloads": 1588,
+   "teaser": "Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and rai"
+  },
+  {
+   "id": 2858,
+   "name": "CineKit - Freecam, Cinematic Camera, Point Path Editor & Follower",
+   "downloads": 1535,
+   "teaser": "an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T****"
+  },
+  {
+   "id": 3002,
+   "name": "Extra-Lives",
+   "downloads": 1386,
+   "teaser": "Allows players to gain extra lives in-raid."
+  },
+  {
+   "id": 2729,
+   "name": "NotificationFilter",
+   "downloads": 965,
+   "teaser": "Gives you full control over the notification popups that appear during raids."
+  },
+  {
+   "id": 3080,
+   "name": "Raid Recovery",
+   "downloads": 959,
+   "teaser": "Resume your raid after a crash."
+  },
+  {
+   "id": 3077,
+   "name": "PityLoot",
+   "downloads": 931,
+   "teaser": "Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and "
+  },
+  {
+   "id": 2971,
+   "name": "Universal Co-op Exfil",
+   "downloads": 918,
+   "teaser": "Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract"
+  },
+  {
+   "id": 3050,
+   "name": "DebugTools",
+   "downloads": 683,
+   "teaser": "The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utili"
+  },
+  {
+   "id": 2714,
+   "name": "Discord Raid Map",
+   "downloads": 671,
+   "teaser": "I wonder what the squad's up to..."
+  },
+  {
+   "id": 2887,
+   "name": "Discord Raid Feed",
+   "downloads": 568,
+   "teaser": "A mod that posts raid activity to Discord text channels through Discord Webhooks."
+  },
+  {
+   "id": 3045,
+   "name": "KAHADS - Kill And Hit And Death Sounds",
+   "downloads": 517,
+   "teaser": "Option to customize hit, kill, and death sounds"
+  },
+  {
+   "id": 3016,
+   "name": "ShitInTushonka",
+   "downloads": 450,
+   "teaser": "A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time surface impacts, custom positio"
+  },
+  {
+   "id": 3072,
+   "name": "CombatLog",
+   "downloads": 397,
+   "teaser": "Understand each firefight with post-raid hit analysis, weapon statistics and combat history."
+  },
+  {
+   "id": 3088,
+   "name": "Tarkova-cola",
+   "downloads": 383,
+   "teaser": "Black ops zombies perks on raid?...SIGN ME UP!"
+  },
+  {
+   "id": 3000,
+   "name": "Moe Flea Refresh",
+   "downloads": 330,
+   "teaser": "Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。"
+  },
+  {
+   "id": 2957,
+   "name": "MIA-Lounge",
+   "downloads": 284,
+   "teaser": "adding minigames to play while spectating your friend inraid or waiting in the main menu for them"
+  },
+  {
+   "id": 3028,
+   "name": "FIR Flea only",
+   "downloads": 253,
+   "teaser": "Is the flea market a breeze? Install this mod."
+  },
+  {
+   "id": 3009,
+   "name": "Cobra's SPT Explorer",
+   "downloads": 219,
+   "teaser": "A read-only SPT database explorer and in-raid helper for mod developers and players."
+  },
+  {
+   "id": 3120,
+   "name": "TrueHardcoreRules",
+   "downloads": 111,
+   "teaser": "No flea. No insurance. No mercy. Hardcore economy."
+  }
+ ]
+}

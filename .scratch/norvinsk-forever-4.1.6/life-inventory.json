@@ -1,0 +1,3854 @@
+{
+ "diffs": {
+  "onlyInActive": [],
+  "onlyInRecover": [
+   "[6]友方AI系统-friendlypmc - 已AI优化"
+  ],
+  "activeCount": 196,
+  "recoverCount": 197,
+  "defaultCount": 195,
+  "activeEnabledCount": 171
+ },
+ "mods": {
+  "[10]UI大修-UIFixes": {
+   "name": "[10]UI大修-UIFixes",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "tyfon-uifixes",
+     "name": "uifixes",
+     "version": "4.2.3",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "Tyfon.UIFixes.dll",
+    "Tyfon.UIFixes.Net.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[10]从武器架装备武器-EquipFromWeaponRack": {
+   "name": "[10]从武器架装备武器-EquipFromWeaponRack",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-EquipFromWeaponRack.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]仓库搜索框-StashSearch": {
+   "name": "[10]仓库搜索框-StashSearch",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "StashSearch/StashSearch.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]小火山的仓库搜索框修复-SearchBarFix": {
+   "name": "[10]小火山的仓库搜索框修复-SearchBarFix",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SearchBarFix/hyjiacan.py4n.dll",
+    "SearchBarFix/SearchBarFix.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]小火山的仓库搜索框修复和扩展-SearchBarExtended": {
+   "name": "[10]小火山的仓库搜索框修复和扩展-SearchBarExtended",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SearchBarExtended.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化": {
+   "name": "[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "CactusPie.ContainerQuickLoot.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]显示价格-showmethemoney": {
+   "name": "[10]显示价格-showmethemoney",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "swiftxp-showmethemoney",
+     "name": "ShowMeTheMoney",
+     "version": "1.7.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "SwiftXP.ShowMeTheMoney.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）": {
+   "name": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SwiftXP.SPT.ShowMeTheMoney.QuickSell.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]物品容器间快速移动-QuickMoveToContainer": {
+   "name": "[10]物品容器间快速移动-QuickMoveToContainer",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-QuickMoveToContainer.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]物品真实堆叠-True Items Redux": {
+   "name": "[10]物品真实堆叠-True Items Redux",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "True-Items-Redux-1.2.1",
+     "name": "True Items Redone",
+     "version": "1.3.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES": {
+   "name": "[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Seion.Iof.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[10]物品高效整理（告别华容道）_separator": {
+   "name": "[10]物品高效整理（告别华容道）_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[10]自动存放-AutoDeposit - 已AI优化": {
+   "name": "[10]自动存放-AutoDeposit - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "Tyfon.AutoDeposit.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]任务跳过功能-Skipper": {
+   "name": "[11]任务跳过功能-Skipper",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Terkoiz.Skipper.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]内置动态地图-DynamicMaps": {
+   "name": "[11]内置动态地图-DynamicMaps",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "SPTDynamicMaps",
+     "name": "SPT-DynamicMaps",
+     "version": "0.5.7",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "DynamicMaps/DynamicMaps.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[11]声音可视化-accessibilityindicators": {
+   "name": "[11]声音可视化-accessibilityindicators",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "acidphantasm-accessibilityindicators/acidphantasm-accessibilityindicators.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]多种可选准心-SimpleCrosshair": {
+   "name": "[11]多种可选准心-SimpleCrosshair",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SimpleCrosshair/SimpleCrosshair.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]好莱坞投掷武器视觉辅助-VisualAssist": {
+   "name": "[11]好莱坞投掷武器视觉辅助-VisualAssist",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "VisualAssist/VisualAssist.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]我就是爹作弊工具-DadGamerMode": {
+   "name": "[11]我就是爹作弊工具-DadGamerMode",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "dvize.DadGamerMode.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "Bepinex",
+    "meta.ini"
+   ]
+  },
+  "[11]扫敌雷达-RadarStandalone": {
+   "name": "[11]扫敌雷达-RadarStandalone",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Tyrian-Radar.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]新任务线-迎新礼物任务-EFCL-WelcomeGifts": {
+   "name": "[11]新任务线-迎新礼物任务-EFCL-WelcomeGifts",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[11]新商人-可购买自己创建的预设枪械-Hephaestus": {
+   "name": "[11]新商人-可购买自己创建的预设枪械-Hephaestus",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Hephaestus",
+     "name": "Hephaestus",
+     "version": "1.1.14",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[11]更多界面信息-GamePanelHUD": {
+   "name": "[11]更多界面信息-GamePanelHUD",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "kmyuhkyuk-GamePanelHUD/core/GamePanelHUDCore.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDCompass.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDGrenade.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDHealth.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDHit.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDKill.dll",
+    "kmyuhkyuk-GamePanelHUD/GamePanelHUDWeapon.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]物品感应-AmandsSense": {
+   "name": "[11]物品感应-AmandsSense",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "AmandsSense.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[11]破坏沉浸感MOD_separator": {
+   "name": "[11]破坏沉浸感MOD_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[12]任务列表修复-TaskListFixes": {
+   "name": "[12]任务列表修复-TaskListFixes",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-TaskListFixes.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[12]修复、优化_separator": {
+   "name": "[12]修复、优化_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[12]商人列表滚动-TraderScrolling": {
+   "name": "[12]商人列表滚动-TraderScrolling",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Kaeno-TraderScrolling.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[12]尸体可删除-SPTCorpseCleaner": {
+   "name": "[12]尸体可删除-SPTCorpseCleaner",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SPTCorpseCleaner/SPTCorpseCleaner.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[12]白色方块bug修复-WhiteBoxFix": {
+   "name": "[12]白色方块bug修复-WhiteBoxFix",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "MarsyApp-WhiteBoxFix.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[12]防卡手-HandsAreNotBusy": {
+   "name": "[12]防卡手-HandsAreNotBusy",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "HandsAreNotBusy.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[12]骑士面具修复-FacetheKnight-MaskFix": {
+   "name": "[12]骑士面具修复-FacetheKnight-MaskFix",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "UmbigoPreto-Face the Knight - Mask Fix",
+     "name": "Face the Knight - Mask Fix",
+     "version": "1.0.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[13]MOD工具-AI刷新和行为检修-BotDebug": {
+   "name": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-BotDebug.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[13]MOD工具_separator": {
+   "name": "[13]MOD工具_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[13]好莱坞第三人称镜头-HollywoodCam": {
+   "name": "[13]好莱坞第三人称镜头-HollywoodCam",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "HollywoodCam/HollywoodCam.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[13]存档编辑器-SPT-AKI Profile Editor": {
+   "name": "[13]存档编辑器-SPT-AKI Profile Editor",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "ProfileEditorHelper",
+     "name": "ProfileEditorHelper",
+     "version": "0.0.6",
+     "sptVersion": ">=3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "SPT-AKI Profile Editor",
+    "user"
+   ]
+  },
+  "[13]战局外检修标签-DebugTooltip": {
+   "name": "[13]战局外检修标签-DebugTooltip",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Tyfon.DebugTooltip.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[13]瞄准点坐标-AimPointCoordinates": {
+   "name": "[13]瞄准点坐标-AimPointCoordinates",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "AimPointCoordinates.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[14]客户端ModF12通用翻译器及菜单汉化文本": {
+   "name": "[14]客户端ModF12通用翻译器及菜单汉化文本",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "spt/ConfigurationManager.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[14]本体缺失翻译": {
+   "name": "[14]本体缺失翻译",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini",
+    "SPT_Data"
+   ]
+  },
+  "[14]汉化模组_separator": {
+   "name": "[14]汉化模组_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[15]《现实化诺文斯克》数值、沉浸感再平衡_separator": {
+   "name": "[15]《现实化诺文斯克》数值、沉浸感再平衡_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[1]前置-《生活在诺文斯克》修改本体及MOD排序文件和整合包说明文档": {
+   "name": "[1]前置-《生活在诺文斯克》修改本体及MOD排序文件和整合包说明文档",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "EscapeFromTarkov_Data",
+    "meta.ini",
+    "SPT_Data",
+    "STARTHeadless test.bat",
+    "STARTHeadless.bat",
+    "user"
+   ]
+  },
+  "[1]前置-《生活在诺文斯克》好奇猫自用游戏设置及按键": {
+   "name": "[1]前置-《生活在诺文斯克》好奇猫自用游戏设置及按键",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[1]前置MOD（不要关）_separator": {
+   "name": "[1]前置MOD（不要关）_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[1]前置框架-KmyTarkovApi": {
+   "name": "[1]前置框架-KmyTarkovApi",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "kmyuhkyuk-KmyTarkovApi/Crc32.NET.dll",
+    "kmyuhkyuk-KmyTarkovApi/HtmlAgilityPack.dll",
+    "kmyuhkyuk-KmyTarkovApi/KmyTarkovApi.dll",
+    "kmyuhkyuk-KmyTarkovApi/KmyTarkovConfiguration.dll",
+    "kmyuhkyuk-KmyTarkovApi/KmyTarkovReflection.dll",
+    "kmyuhkyuk-KmyTarkovApi/KmyTarkovUtils.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[1]前置框架-WTT公共库-WTT-ClientCommonLib": {
+   "name": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "WTT-ClientCommonLib/WTT-ClientCommonLib.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[1]前置框架-自定义交互-CustomInteractions": {
+   "name": "[1]前置框架-自定义交互-CustomInteractions",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "IcyClawz.CustomInteractions.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件": {
+   "name": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "VCQLQuestZones.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件": {
+   "name": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Virtual's Custom Quest Loader",
+     "name": "Virtuals Custom Quest Loader",
+     "version": "2.0.4",
+     "sptVersion": "3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新内容_separator": {
+   "name": "[2]新内容_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[2]新物品-地图容器-SecureMapbookMod": {
+   "name": "[2]新物品-地图容器-SecureMapbookMod",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MrVibesRSA-SecureMapbookMod",
+     "name": "MrVibesRSA-SecureMapbookMod",
+     "version": "1.0.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新物品-竞技场赛季奖励-SPT Battlepass": {
+   "name": "[2]新物品-竞技场赛季奖励-SPT Battlepass",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Pluto! - SPT Battlepass",
+     "name": "Pluto! - SPT Battlepass",
+     "version": "1.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新物品-藏身处猫咪-hideoutcat": {
+   "name": "[2]新物品-藏身处猫咪-hideoutcat",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "tarkin/AssetBundleLoader.dll",
+    "tarkin/hideoutcat.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件": {
+   "name": "[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-GildedKeyStorage.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件": {
+   "name": "[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Jehree-GildedKeyStorage",
+     "name": "Gilded Key Storage",
+     "version": "1.6.2",
+     "sptVersion": "~3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]": {
+   "name": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "RCTA - Metal Gear [FORTNITE]",
+     "name": "RCTA - Metal Gear [FORTNITE]",
+     "version": "1.0.2",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)": {
+   "name": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "RCTA - Synaptic Rig T1 [CODIW]",
+     "name": "RCTA - Synaptic Rig T1 (CODIW)",
+     "version": "1.0.6",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新装备、衣服-TacticalGearComponent": {
+   "name": "[2]新装备、衣服-TacticalGearComponent",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MoxoPixel-TacticalGearComponent",
+     "name": "Tactical Gear Component (TGC)",
+     "version": "1.2.5",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新酒水-HoodsEnergyDrinks": {
+   "name": "[2]新酒水-HoodsEnergyDrinks",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "HoodsEnergyDrinks",
+     "name": "Hoods Energy Drinks",
+     "version": "1.0.4",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]新酒水-WTT - CornerStore": {
+   "name": "[2]新酒水-WTT - CornerStore",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "WTT-CornerStore",
+     "name": "WTT-Corner Store",
+     "version": "0.1.0-beta.3",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[2]腰包-WTT-PackNStrap客户端文件": {
+   "name": "[2]腰包-WTT-PackNStrap客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "WTT-PackNStrap/WTT-PackNStrap.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[2]腰包-WTT-PackNStrap服务器端文件": {
+   "name": "[2]腰包-WTT-PackNStrap服务器端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "WTT-PackNStrap",
+     "name": "WTT-PackNStrap",
+     "version": "1.1.13",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]自定义配方-tarkovcraft": {
+   "name": "[2]自定义配方-tarkovcraft",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "vinihns-tarkovcraft",
+     "name": "TarkovCraft",
+     "version": "1.1.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[2]高清材质-TarkovHDRework": {
+   "name": "[2]高清材质-TarkovHDRework",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "TarkovHDRework",
+     "name": "TarkovHDRework",
+     "version": "0.1.0",
+     "sptVersion": "~3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3.1]新配件_separator": {
+   "name": "[3.1]新配件_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[3].50BMG重制-Epics 50 BMG Remaster-Expansion": {
+   "name": "[3].50BMG重制-Epics 50 BMG Remaster-Expansion",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "fEpic-50 BMG Remaster-Expansion",
+     "name": "50 BMG Remaster/Expansion",
+     "version": "1.0.0",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新武器-AK50": {
+   "name": "[3]新武器-AK50",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Eukyre-AK50",
+     "name": "AK50",
+     "version": "1.0.5",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新武器-AKResonant": {
+   "name": "[3]新武器-AKResonant",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MDZZWOC-AKResonant",
+     "name": "AKResonant",
+     "version": "1.1.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新武器-SIG_MCX_VIRTUS": {
+   "name": "[3]新武器-SIG_MCX_VIRTUS",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "SIG_MCX_VIRTUS",
+     "name": "sig_mcx_virtus",
+     "version": "1.5.0",
+     "sptVersion": "~3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[3]新武器-WTT武器库-WTT - Armory客户端": {
+   "name": "[3]新武器-WTT武器库-WTT - Armory客户端",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "WTT-Armory.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[3]新武器-WTT武器库-WTT - Armory服务端": {
+   "name": "[3]新武器-WTT武器库-WTT - Armory服务端",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "WTT-Armory",
+     "name": "WTT-Armory",
+     "version": "1.2.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新武器-国产武器-1SD-QBZ191": {
+   "name": "[3]新武器-国产武器-1SD-QBZ191",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "1SD-QBZ191",
+     "name": "1SD-QBZ191",
+     "version": "1.0.0",
+     "sptVersion": "~3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[3]新武器_separator": {
+   "name": "[3]新武器_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst": {
+   "name": "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "babayaga-ak105",
+     "name": "Ak-105-Hyperburst",
+     "version": "1.0.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "WttHyperburstWrapper/WttHyperburstWrapper.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新配件-BlackCore": {
+   "name": "[3]新配件-BlackCore",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MoxoPixel-BlackCore",
+     "name": "Black Core",
+     "version": "1.1.8",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新配件-ConsortiumOfThings": {
+   "name": "[3]新配件-ConsortiumOfThings",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Eukyre-Consortium",
+     "name": "ConsortiumOfThings",
+     "version": "1.1.0",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新配件-Echoes.of.Tarkov.-.Requisitions": {
+   "name": "[3]新配件-Echoes.of.Tarkov.-.Requisitions",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Echoes-of-Tarkov---Requisitions",
+     "name": "Echoes of Tarkov - Requisitions",
+     "version": "1.0.4",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新配件-Eco-Attachment Emporium": {
+   "name": "[3]新配件-Eco-Attachment Emporium",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Eco-Attachment Emporium",
+     "name": "Eco-Attachment-Emporium",
+     "version": "3.1.1",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[3]新配件-EpicRangeTime-Weapons": {
+   "name": "[3]新配件-EpicRangeTime-Weapons",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "EpicRangeTime-Weapons",
+     "name": "Weapons",
+     "version": "3.1.4",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[3]新配件-MagTape": {
+   "name": "[3]新配件-MagTape",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MoxoPixel-MagTape",
+     "name": "Mag Tape",
+     "version": "1.0.8",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-AES": {
+   "name": "[4]新商人-AES",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "AES",
+     "name": "AES",
+     "version": "0.6.0",
+     "sptVersion": "3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-Artem": {
+   "name": "[4]新商人-Artem",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "AAAArtem-WTT",
+     "name": "Artem",
+     "version": "2.1.1",
+     "sptVersion": "~3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-Epakim1-1": {
+   "name": "[4]新商人-Epakim1-1",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "EpaKim1",
+     "name": "EpaKim1",
+     "version": "1.0.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-VolkovTrader": {
+   "name": "[4]新商人-VolkovTrader",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "VolkovTrader",
+     "name": "VolkovTrader",
+     "version": "1.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[4]新商人-不明生还者-UnknownSurvivor": {
+   "name": "[4]新商人-不明生还者-UnknownSurvivor",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "UnknownSurvivor",
+     "name": "UnknownSurvivor",
+     "version": "1.1.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-毒蝎-acidphantasm-scorpion": {
+   "name": "[4]新商人-毒蝎-acidphantasm-scorpion",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-scorpion",
+     "name": "Scorpion",
+     "version": "0.13.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-油漆匠-Painter": {
+   "name": "[4]新商人-油漆匠-Painter",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "aMoxoPixel-Painter",
+     "name": "Painter",
+     "version": "1.1.7",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-竞技场商人-ref-sptfriendly-quests": {
+   "name": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-refsptfriendlyquests",
+     "name": "RefSPTFriendlyQuests",
+     "version": "1.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)": {
+   "name": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "croupier",
+     "name": "croupier",
+     "version": "1.2.7",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]新商人-藏身处物资商人-acidphantasm-harryhideout": {
+   "name": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-harryhideout",
+     "name": "HarryHideout",
+     "version": "2.2.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)": {
+   "name": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "BARF",
+     "name": "Adam's Boxes at Ref (BARF)",
+     "version": "0.3.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[4]自定义商人、任务_separator": {
+   "name": "[4]自定义商人、任务_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[5.5]整合包核心MOD-改变游戏玩法的大修（开关此类需重开档）_separator": {
+   "name": "[5.5]整合包核心MOD-改变游戏玩法的大修（开关此类需重开档）_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[5]丧尸模式开关": {
+   "name": "[5]丧尸模式开关",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini",
+    "SPT_Data"
+   ]
+  },
+  "[5]以物易物经济系统-barter_economy-已AI优化": {
+   "name": "[5]以物易物经济系统-barter_economy-已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "leaves-barter_economy",
+     "name": "barter_economy",
+     "version": "1.1.8",
+     "sptVersion": ">= 3.10.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]全地图间移动套装-IEAPI+PTT - AI优化版": {
+   "name": "[5]全地图间移动套装-IEAPI+PTT - AI优化版",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Trap-PathToTarkov",
+     "name": "path-to-tarkov",
+     "version": "6.2.0",
+     "sptVersion": "~3.11.3",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "InteractableExfilsAPI/InteractableExfilsAPI.dll",
+    "PathToTarkov/PTT-Fika.dll",
+    "Trap.PathToTarkov-Packets.dll",
+    "Trap.PathToTarkov.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]战局内存储-LeaveItThere - 已AI优化": {
+   "name": "[5]战局内存储-LeaveItThere - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "LeaveItThere-Server",
+     "name": "LeaveItThere-Server",
+     "version": "1.3.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "LeaveItThere/LeaveItThere-FikaModule.dll",
+    "LeaveItThere/LeaveItThere.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]战局大修-RaidOverhaul - 已AI增强版本": {
+   "name": "[5]战局大修-RaidOverhaul - 已AI增强版本",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "RaidOverhaul",
+     "name": "Raid Overhaul",
+     "version": "2.7.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "RaidOverhaul/RaidOverhaul.dll",
+    "RaidOverhaul/RaidOverhaulFika.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator": {
+   "name": "[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[5]新增5个开局角色-CustomProfiles": {
+   "name": "[5]新增5个开局角色-CustomProfiles",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "EFCL-CustomProfiles",
+     "name": "EFCL-CustomProfiles",
+     "version": "4.2.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化": {
+   "name": "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "TarkovIRL-WHM.dll",
+    "TarkovIRL.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[5]现实主义大修-Realism - 已AI优化": {
+   "name": "[5]现实主义大修-Realism - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "SPT-Realism",
+     "name": "SPT Realism Mod",
+     "version": "1.6.3",
+     "sptVersion": "3.11.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "RealismMod.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]经济与制造系统大修-Softcore - 已AI优化": {
+   "name": "[5]经济与制造系统大修-Softcore - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "odt-softcore",
+     "name": "softcore",
+     "version": "3.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[5]舒适家园系统-HomeComforts - 已AI优化": {
+   "name": "[5]舒适家园系统-HomeComforts - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "HomeComforts-Server",
+     "name": "HomeComforts-Server",
+     "version": "1.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "HomeComforts/HomeComforts-Packets.dll",
+    "HomeComforts/HomeComforts.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[6]Acid的AI生成系统-botplacementsystem - 已AI优化": {
+   "name": "[6]Acid的AI生成系统-botplacementsystem - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "acidphantasm-botplacementsystem",
+     "name": "Acids Bot Placement System",
+     "version": "1.1.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "acidphantasm-botplacementsystem/acidphantasm-botplacementsystem.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化": {
+   "name": "[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "acidphantasm-progressivebotsystem",
+     "name": "Acids Progressive Bot System",
+     "version": "1.9.4",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[6]AI修复-friendlyPMC护栏-FriendlyPmcGuard": {
+   "name": "[6]AI修复-friendlyPMC护栏-FriendlyPmcGuard",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SamMeow.FriendlyPmcGuard.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]AI修复-护卫NRE护栏-FollowerGuard": {
+   "name": "[6]AI修复-护卫NRE护栏-FollowerGuard",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SamMeow.FollowerGuard.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]AI增强-SAIN-Moew-v4.4.0增强版": {
+   "name": "[6]AI增强-SAIN-Moew-v4.4.0增强版",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "zSolarint-SAIN-ServerMod",
+     "name": "SAIN",
+     "version": "4.4.0",
+     "sptVersion": "~3.11.0",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "SAIN/SAIN.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[6]AI拟人MOD的前置框架-BigBrain - 已AI优化": {
+   "name": "[6]AI拟人MOD的前置框架-BigBrain - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-BigBrain.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]AI自动搜索物品-LootingBots - 已AI优化": {
+   "name": "[6]AI自动搜索物品-LootingBots - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "Skwizzy-LootingBots-ServerMod",
+     "name": "LootingBots-ServerMod",
+     "version": "1.6.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "skwizzy.LootingBots.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator": {
+   "name": "[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化": {
+   "name": "[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "ThatsLit/ThatsLit.Core.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]AI路径扩展-Waypoints - 已AI优化": {
+   "name": "[6]AI路径扩展-Waypoints - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-Waypoints/DrakiaXYZ-Waypoints.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]AI锁头重定向-Headshot Damage Redirection": {
+   "name": "[6]AI锁头重定向-Headshot Damage Redirection",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "somtam.HeadShotRedirect.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]分离敌意-SeparateHostility": {
+   "name": "[6]分离敌意-SeparateHostility",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "dk.SeparateHostility.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[6]友方AI系统-friendlypmc与PITFireTeam合并版本": {
+   "name": "[6]友方AI系统-friendlypmc与PITFireTeam合并版本",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "friendlyPMC",
+     "name": "friendlyPMC",
+     "version": "4.4.12",
+     "sptVersion": "3.11.*",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "FriendlyFireTeam.dll",
+    "FriendlyFireTeam.SAINAddon.dll",
+    "friendlyPMC/friendlyPMC.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "README.md",
+    "user"
+   ]
+  },
+  "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化": {
+   "name": "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "Ωutocompatframework",
+     "name": "AutoCompat Framework",
+     "version": "1.3.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]反射镜视野重做-ReflexSightsRework客户端文件": {
+   "name": "[7]反射镜视野重做-ReflexSightsRework客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SamSWAT.ReflexSightsRework.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[7]反射镜视野重做-ReflexSightsRework服务器文件": {
+   "name": "[7]反射镜视野重做-ReflexSightsRework服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "samswat-reflexsightsrework",
+     "name": "ReflexSightsRework",
+     "version": "1.0.0",
+     "sptVersion": ">= 3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]反重力臂章-AntigravArmbands": {
+   "name": "[7]反重力臂章-AntigravArmbands",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Kiki-AntigravArmbands",
+     "name": "antigravarmbands",
+     "version": "2.2.6",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[7]可以合并消耗品-MergeConsumables": {
+   "name": "[7]可以合并消耗品-MergeConsumables",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "lacyway-mergeconsumables",
+     "name": "MergeConsumables",
+     "version": "1.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "MergeConsumables.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]平衡的夜视装备视效-BRNVG客户端文件": {
+   "name": "[7]平衡的夜视装备视效-BRNVG客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "BorkelRNVG/BorkelRNVG.dll",
+    "BorkelRNVG/WindowsInput.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[7]平衡的夜视装备视效-BRNVG服务器文件": {
+   "name": "[7]平衡的夜视装备视效-BRNVG服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "BRNVG_N-15Adapter",
+     "name": "BRNVG - N-15 Adapter",
+     "version": "1.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]弹匣优化管理系统-MagazineManagementSystem": {
+   "name": "[7]弹匣优化管理系统-MagazineManagementSystem",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MagazineManagementSystem",
+     "name": "[MMS] Magazine Management System",
+     "version": "1.0.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]更亮的镭射线-brightlasers": {
+   "name": "[7]更亮的镭射线-brightlasers",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-brightlasers",
+     "name": "BrightLasers",
+     "version": "1.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]更大的背包-BetterBackpacks": {
+   "name": "[7]更大的背包-BetterBackpacks",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "JoshMate-BetterBackpacks",
+     "name": "JoshMateBetterBackPacks",
+     "version": "1.5.3",
+     "sptVersion": "3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]更好的机瞄-BetterRearSights": {
+   "name": "[7]更好的机瞄-BetterRearSights",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "BetterRearSights",
+     "name": "better-rear-sights",
+     "version": "1.6.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]更好的枪匠界面-Tradermodding客户端文件": {
+   "name": "[7]更好的枪匠界面-Tradermodding客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "ChooChoo-TraderModding.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[7]更好的枪匠界面-Tradermodding服务器文件": {
+   "name": "[7]更好的枪匠界面-Tradermodding服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "ChooChoo-TraderModding",
+     "name": "TraderModding",
+     "version": "1.10.0",
+     "sptVersion": "3.11.X",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]武器动画更新-P90弹匣动画-transparentp90mag": {
+   "name": "[7]武器动画更新-P90弹匣动画-transparentp90mag",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "choccy-transparentp90mag",
+     "name": "Transparent P90 Mag",
+     "version": "1.0.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]武器动画更新器-AnimatorUpdater": {
+   "name": "[7]武器动画更新器-AnimatorUpdater",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "UpdateHierarchy/UpdateHierarchy.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[7]武器配件位置自定义-WeaponCustomizer": {
+   "name": "[7]武器配件位置自定义-WeaponCustomizer",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "tyfon-weaponcustomizer",
+     "name": "weapon-customizer",
+     "version": "2.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "Tyfon.WeaponCustomizer.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]真实的热成像-realisticThermalScopes": {
+   "name": "[7]真实的热成像-realisticThermalScopes",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "FiveF-realisticThermalScopes",
+     "name": "realisticThermalScopes",
+     "version": "1.4.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[7]瞄准视野大修-FOV-Fix": {
+   "name": "[7]瞄准视野大修-FOV-Fix",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "FOVFix.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[7]装备、物品功能大修_separator": {
+   "name": "[7]装备、物品功能大修_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[7]面具修复-mask-fix": {
+   "name": "[7]面具修复-mask-fix",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "mask-fix",
+     "name": "mask-fix",
+     "version": "1.0.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "User"
+   ]
+  },
+  "[8]boss刷新通知-BossNotifier": {
+   "name": "[8]boss刷新通知-BossNotifier",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "BossNotifier.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]Boss身上有lega徽章-bosseshavelegamedals": {
+   "name": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-bosseshavelegamedals",
+     "name": "Bosses Have Lega Medals",
+     "version": "1.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]人物技能扩展和撬锁-SkillsExtended-已AI优化": {
+   "name": "[8]人物技能扩展和撬锁-SkillsExtended-已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [
+    {
+     "dir": "SkillsExtended",
+     "name": "Skills Extended",
+     "version": "1.6.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "SkillsExtended/SkillsExtended.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]任务跟踪显示-QuestTracker": {
+   "name": "[8]任务跟踪显示-QuestTracker",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-QuestTracker/DrakiaXYZ-QuestTracker.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]可以攀爬更高的地方-Increase Climb Height": {
+   "name": "[8]可以攀爬更高的地方-Increase Climb Height",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "redlaser42-Increase Climb Height",
+     "name": "Increase Climb Height",
+     "version": "1.2.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]可拾取穿墙物品-ReachExtender": {
+   "name": "[8]可拾取穿墙物品-ReachExtender",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "ReachExtender.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]坠落的补给直升机-HeliCrash.ArysReloaded": {
+   "name": "[8]坠落的补给直升机-HeliCrash.ArysReloaded",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]塔科夫天气系统-Tarkov-Weather-System": {
+   "name": "[8]塔科夫天气系统-Tarkov-Weather-System",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Tarkov Weather System",
+     "name": "Tarkov Weather System",
+     "version": "1.0.1",
+     "sptVersion": "^3.10.x",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]增加拾取距离-LootRadius": {
+   "name": "[8]增加拾取距离-LootRadius",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-LootRadius.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化": {
+   "name": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "HollywoodFX/HollywoodFX.dll",
+    "HollywoodGraphics/HollywoodGraphics.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]战场环境临场感增强-SPTBattleAmbience": {
+   "name": "[8]战场环境临场感增强-SPTBattleAmbience",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "SPTBattleAmbience/SPTBattleAmbience.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]战局内功能大修_separator": {
+   "name": "[8]战局内功能大修_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[8]技能速度调节器-SkillMultiplier": {
+   "name": "[8]技能速度调节器-SkillMultiplier",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "dazzuh-skillmultiplier",
+     "name": "skillmultiplier",
+     "version": "1.1.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "dazzuh.skillmultiplier.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]更有意义的武器精通-MeaningfulWeaponMasteries": {
+   "name": "[8]更有意义的武器精通-MeaningfulWeaponMasteries",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "MeaningfulWeaponMasteries/MeaningfulWeaponMasteries.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]武器破门-BackdoorBandit客户端文件": {
+   "name": "[8]武器破门-BackdoorBandit客户端文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "dvize.BackdoorBandit/dvize.BackdoorBandit.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]武器破门-BackdoorBandit服务器文件": {
+   "name": "[8]武器破门-BackdoorBandit服务器文件",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "DoorBreacher",
+     "name": "props-doorbreacher",
+     "version": "1.11.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]沉浸感时间循环-ImmersiveDaylightCycle": {
+   "name": "[8]沉浸感时间循环-ImmersiveDaylightCycle",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "ImmersiveDaylightCycle-Server",
+     "name": "ImmersiveDaylightCycle-Server",
+     "version": "1.0.2",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "ImmersiveDaylightCycle/ImmersiveDaylightCycle-FikaModule.dll",
+    "ImmersiveDaylightCycle/ImmersiveDaylightCycle.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]火山家的实时字幕-Volcano-subtitle": {
+   "name": "[8]火山家的实时字幕-Volcano-subtitle",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "subtitle/Subtitle.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]直接使用未捡物品-UseLooseLoot": {
+   "name": "[8]直接使用未捡物品-UseLooseLoot",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Gaylatea-UseLooseLoot.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]直接搜索已打开容器-SearchOpenContainers": {
+   "name": "[8]直接搜索已打开容器-SearchOpenContainers",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-SearchOpenContainers.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]禁用Scav模式-DisableScavMode": {
+   "name": "[8]禁用Scav模式-DisableScavMode",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DisableScavMode.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]自动奔跑-AutoRun-alt+W自动向前": {
+   "name": "[8]自动奔跑-AutoRun-alt+W自动向前",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Tyfon.AutoRun.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]超重也能练耐力-Always-Level-Endurance": {
+   "name": "[8]超重也能练耐力-Always-Level-Endurance",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Endurance.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere": {
+   "name": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "UseItemsFromAnywhere.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化": {
+   "name": "[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [
+    "ContinuousLoadAmmo.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[8]门可以锁-LockableDoors": {
+   "name": "[8]门可以锁-LockableDoors",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "LockableDoors-Server",
+     "name": "LockableDoors-Server",
+     "version": "1.1.1",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "LockableDoors/LockableDoors-FikaModule.dll",
+    "LockableDoors/LockableDoors.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[8]门的状态随机化-DoorRandomizer": {
+   "name": "[8]门的状态随机化-DoorRandomizer",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "DrakiaXYZ-DoorRandomizer.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]主菜单大修-MenuOverhaul": {
+   "name": "[9]主菜单大修-MenuOverhaul",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "MenuOverhaul/MoxoPixel-MenuOverhaul.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]任务交接自动化-TaskAutomation": {
+   "name": "[9]任务交接自动化-TaskAutomation",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "TaskAutomation.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]全局功能大修_separator": {
+   "name": "[9]全局功能大修_separator",
+   "enabled": true,
+   "separator": true,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": false,
+   "topEntries": [
+    "meta.ini"
+   ]
+  },
+  "[9]动态物品重量-DynamicItemWeights": {
+   "name": "[9]动态物品重量-DynamicItemWeights",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "Tosox.DynamicItemWeights.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]子弹专家-MunitionsExpert": {
+   "name": "[9]子弹专家-MunitionsExpert",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "IcyClawz.MunitionsExpert.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]小火山的全界面中文字体切换": {
+   "name": "[9]小火山的全界面中文字体切换",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "FontReplace/FontReplace.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]物品打勾标记提供更多信息-MoreCheckmarks": {
+   "name": "[9]物品打勾标记提供更多信息-MoreCheckmarks",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "MoreCheckmarksBackend",
+     "name": "MoreCheckmarksBackend",
+     "version": "1.5.16",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "MoreCheckmarks/MoreCheckmarks.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[9]简单的锻炼QTE-simpleworkoutqte": {
+   "name": "[9]简单的锻炼QTE-simpleworkoutqte",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "acidphantasm-simpleworkoutqte",
+     "name": "SimpleWorkoutQTE",
+     "version": "1.3.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[9]腰带槽-BeltSlot": {
+   "name": "[9]腰带槽-BeltSlot",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "BeltSlot/BeltSlot.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]藏身处不用打勾-nofirhideout": {
+   "name": "[9]藏身处不用打勾-nofirhideout",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "schkuromi-nofirhideout",
+     "name": "no-fir-hideout",
+     "version": "1.0.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[9]解锁所有藏身处装饰-UnlockHideoutCustomization": {
+   "name": "[9]解锁所有藏身处装饰-UnlockHideoutCustomization",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "desze-UnlockHideoutCustomization",
+     "name": "Hideout Customization Unlocker",
+     "version": "1.1.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "[9]项目上下文菜单扩展-ItemContextMenuExt": {
+   "name": "[9]项目上下文菜单扩展-ItemContextMenuExt",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "IcyClawz.ItemContextMenuExt.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "[9]预览窗口尺寸调整-previewsizer": {
+   "name": "[9]预览窗口尺寸调整-previewsizer",
+   "enabled": true,
+   "separator": false,
+   "custom": false,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [
+    "acidphantasm-previewsizer/acidphantasm-previewsizer.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "《生活在诺文斯克》-单独-商人以物易物-barter_economy-经济系统设置": {
+   "name": "《生活在诺文斯克》-单独-商人以物易物-barter_economy-经济系统设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》-单独-客户端MOD-F12设置cfg所在": {
+   "name": "《生活在诺文斯克》-单独-客户端MOD-F12设置cfg所在",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "《生活在诺文斯克》-单独-现实主义-Realism数值重制+小火山汉化+兼容补丁": {
+   "name": "《生活在诺文斯克》-单独-现实主义-Realism数值重制+小火山汉化+兼容补丁",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》-单独-软核-Softcore沉浸感增强设置": {
+   "name": "《生活在诺文斯克》-单独-软核-Softcore沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》AI生成-botplacementsystem沉浸感增强设置": {
+   "name": "《生活在诺文斯克》AI生成-botplacementsystem沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》SAIN增强版预设-Live in Norvinsk AI preset": {
+   "name": "《生活在诺文斯克》SAIN增强版预设-Live in Norvinsk AI preset",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": false,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini"
+   ]
+  },
+  "《生活在诺文斯克》Samuel's Tweaks": {
+   "name": "《生活在诺文斯克》Samuel's Tweaks",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [
+    {
+     "dir": "Samuel'sAIO",
+     "name": "Samuel's Tweaks",
+     "version": "1.0.0",
+     "sptVersion": "~3.11",
+     "guid": null
+    }
+   ],
+   "clientDlls": [
+    "SamMeow.PerformanceTweaks.dll"
+   ],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置": {
+   "name": "《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》战局大修-RaidOverhaul沉浸感增强设置": {
+   "name": "《生活在诺文斯克》战局大修-RaidOverhaul沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》技能扩展-SkillsExtended沉浸感增强设置-已AI优化": {
+   "name": "《生活在诺文斯克》技能扩展-SkillsExtended沉浸感增强设置-已AI优化",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": true,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》更多的酒水MOD-CornerStore+HoodsEnergyDrinks沉浸感增强设置": {
+   "name": "《生活在诺文斯克》更多的酒水MOD-CornerStore+HoodsEnergyDrinks沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》物品堆叠-True Items沉浸感增强设置": {
+   "name": "《生活在诺文斯克》物品堆叠-True Items沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置": {
+   "name": "《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》腰包小容器-WTT-PackNStrap沉浸感增强设置": {
+   "name": "《生活在诺文斯克》腰包小容器-WTT-PackNStrap沉浸感增强设置",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": false,
+   "hasUserMods": true,
+   "topEntries": [
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》难度：中等-主家：森林山间仓库": {
+   "name": "《生活在诺文斯克》难度：中等-主家：森林山间仓库",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》难度：困难-主家：海关17号仓库": {
+   "name": "《生活在诺文斯克》难度：困难-主家：海关17号仓库",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》难度：容易-主家：中心区Nakatani地下室楼梯": {
+   "name": "《生活在诺文斯克》难度：容易-主家：中心区Nakatani地下室楼梯",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  },
+  "《生活在诺文斯克》难度：生存-重生地：中心区-主家：立交桥安全屋": {
+   "name": "《生活在诺文斯克》难度：生存-重生地：中心区-主家：立交桥安全屋",
+   "enabled": true,
+   "separator": false,
+   "custom": true,
+   "aiOptimized": false,
+   "server": [],
+   "clientDlls": [],
+   "hasBepInEx": true,
+   "hasUserMods": true,
+   "topEntries": [
+    "BepInEx",
+    "meta.ini",
+    "user"
+   ]
+  }
+ },
+ "unreferencedDirs": [],
+ "referencedMissing": [
+  "[6]友方AI系统-friendlypmc - 已AI优化"
+ ]
+}

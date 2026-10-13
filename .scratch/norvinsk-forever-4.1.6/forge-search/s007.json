@@ -1,0 +1,490 @@
+{
+ "entry": "[12]商人列表滚动-TraderScrolling",
+ "term": "TraderScrolling",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1089,
+    "hub_id": 1508,
+    "guid": "com.kaeno.traderscrolling",
+    "name": "Kaeno-TraderScrolling",
+    "slug": "kaeno-traderscrolling",
+    "teaser": "Allows for side scrolling of the traders",
+    "thumbnail": "https://files.sp-mod.com/mods/1508.png",
+    "downloads": 318148,
+    "favourites_count": 410,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1089/kaeno-traderscrolling",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2023-10-08T21:33:00.000000Z",
+    "created_at": "2023-10-08T21:33:53.000000Z",
+    "updated_at": "2026-08-27T16:33:11.000000Z",
+    "owner": {
+     "id": 9668,
+     "name": "CWX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6c471bf012d488dbee6c4c67b5e81bbd404551f9_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-09-25T23:47:26.000000Z",
+     "updated_at": "2026-08-10T19:23:02.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 26188,
+      "name": "Kaeno",
+      "profile_photo_url": "https://sp-mod.com/avatars/K.svg",
+      "cover_photo_url": null,
+      "created_at": "2023-01-28T16:18:10.000000Z",
+      "updated_at": "2026-08-10T19:41:27.000000Z"
+     },
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:39:50.000000Z"
+     }
+    ],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 535,
+    "hub_id": 755,
+    "guid": "com.andrudis.questmaniac",
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "teaser": "This is a reupload of Andrudis-QuestManiac for SPT-AKI's latest version (hopefully).",
+    "thumbnail": "https://files.sp-mod.com/mods/QCvSJnhBYdUhW4kDq2ctoR5u9v4s4KfZ2r37ZLIn.jpg",
+    "downloads": 10551,
+    "favourites_count": 27,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/535/andrudis-questmaniac",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2022-08-07T12:30:00.000000Z",
+    "created_at": "2022-08-07T12:30:29.000000Z",
+    "updated_at": "2026-08-15T01:29:06.000000Z",
+    "owner": {
+     "id": 21297,
+     "name": "LaurentMEKKA",
+     "profile_photo_url": "https://sp-mod.com/avatars/L.svg",
+     "cover_photo_url": null,
+     "created_at": "2022-08-02T10:26:27.000000Z",
+     "updated_at": "2026-09-06T22:47:33.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 608,
+      "name": "Andrudis",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/13E71X3qRtvgtVRjMkSkw04BiKkkVljnLpX5rrju_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2021-01-03T13:54:56.000000Z",
+      "updated_at": "2026-08-12T10:59:29.000000Z"
+     },
+     {
+      "id": 20485,
+      "name": "rgb192x3",
+      "profile_photo_url": "https://sp-mod.com/avatars/R.svg",
+      "cover_photo_url": null,
+      "created_at": "2022-07-09T22:12:31.000000Z",
+      "updated_at": "2026-08-10T19:37:37.000000Z"
+     },
+     {
+      "id": 20522,
+      "name": "Mighty_Condor",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/a4e7dd6eae205f0aeeae8deb649434d4ba9c22e2_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-07-10T21:15:21.000000Z",
+      "updated_at": "2026-09-21T23:19:16.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 1348,
+    "hub_id": 1869,
+    "guid": "com.acidphantasm.scorpion",
+    "name": "Scorpion",
+    "slug": "scorpion",
+    "teaser": "Scorpion has 122 quests available from the start of your T***** journey. Including time based event quests!",
+    "thumbnail": "https://files.sp-mod.com/mods/1869.jpg",
+    "downloads": 139760,
+    "favourites_count": 225,
+    "endorsements_count": 17,
+    "detail_url": "https://sp-mod.com/mod/1348/scorpion",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-04-22T04:51:00.000000Z",
+    "created_at": "2024-04-22T04:51:33.000000Z",
+    "updated_at": "2026-08-10T06:02:26.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1538,
+    "hub_id": 2108,
+    "guid": "com.acidphantasm.reffriendlyquests",
+    "name": "Ref - SPT Friendly Quests",
+    "slug": "ref-spt-friendly-quests",
+    "teaser": "Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an added Lega Medal to each quest. Includes the sword unlock and secure container.",
+    "thumbnail": "https://files.sp-mod.com/mods/2108.png",
+    "downloads": 306787,
+    "favourites_count": 556,
+    "endorsements_count": 52,
+    "detail_url": "https://sp-mod.com/mod/1538/ref-spt-friendly-quests",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-07-09T08:04:00.000000Z",
+    "created_at": "2024-07-09T08:04:45.000000Z",
+    "updated_at": "2026-08-08T06:02:11.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187195,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 1303,
+    "hub_id": 1817,
+    "guid": "com.acidphantasm.harryhideout",
+    "name": "HarryHideout",
+    "slug": "harryhideout",
+    "teaser": "Trader that sells all items for hideout construction/upgrades",
+    "thumbnail": "https://files.sp-mod.com/mods/1817.jpg",
+    "downloads": 67874,
+    "favourites_count": 92,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/1303/harryhideout",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-04-11T22:10:00.000000Z",
+    "created_at": "2024-04-11T22:10:45.000000Z",
+    "updated_at": "2026-08-19T02:38:04.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32554,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 3053,
+    "hub_id": null,
+    "guid": "com.mybutthasarash.ultrawidestash",
+    "name": "Ultrawide Stash",
+    "slug": "ultrawide-stash",
+    "teaser": "Stretch that stash baby.",
+    "thumbnail": "https://files.sp-mod.com/mods/2xbx5p8RzWAY6gR725igRF3bTntUFFhRI3xbf7Sb.png",
+    "downloads": 678,
+    "favourites_count": 4,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/3053/ultrawide-stash",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-22T22:39:00.000000Z",
+    "created_at": "2026-09-22T14:36:11.000000Z",
+    "updated_at": "2026-10-02T00:07:29.000000Z",
+    "owner": {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-06T13:15:58.000000Z",
+     "updated_at": "2026-10-05T15:26:58.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2723,
+    "hub_id": null,
+    "guid": "com.justnu.adjustabletraderrows",
+    "name": "Adjustable Trader Rows REVIVED",
+    "slug": "adjustable-trader-rows-revived",
+    "teaser": "Get more than the vanilla 5 traders per row! Compatibility update of Adjustable Trader Rows for SPT 4.x. Original mod by JustNU.",
+    "thumbnail": "https://files.sp-mod.com/mods/5o7Q9UXlpA5JfAtkxUWhuFkCrxF8QdtCm0U3cKeB.jpg",
+    "downloads": 4109,
+    "favourites_count": 29,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2723/adjustable-trader-rows-revived",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-06-07T19:24:00.000000Z",
+    "created_at": "2026-06-07T19:01:47.000000Z",
+    "updated_at": "2026-07-28T09:06:36.000000Z",
+    "owner": {
+     "id": 71782,
+     "name": "Wrath_Jr",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/pOYeGdz16H7iwp82wvUz97AtUHS7rZcLXecQS6kW_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/O5y4tXAUdXSR09NTgYF3BfSkVHlbHm9s5uYtSPDQ.png",
+     "created_at": "2025-01-18T19:31:04.000000Z",
+     "updated_at": "2026-08-10T19:49:25.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 143,
+      "name": "JustNU",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/D5tNSm3yCNbPfd5BMVNPidrAQz50gKCjc7jE9qiU_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/1d1cb2b8cd2eff5cb4cf47bbe5d919c16736cfd5.png",
+      "created_at": "2020-08-07T00:23:14.000000Z",
+      "updated_at": "2026-10-05T07:09:39.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 650,
+    "hub_id": 886,
+    "guid": "com.alexkarpen.hephaestus",
+    "name": "Hephaestus",
+    "slug": "hephaestus",
+    "teaser": "It creates a trader that sells your preset weapon builds.",
+    "thumbnail": "https://files.sp-mod.com/mods/886.jpg",
+    "downloads": 97502,
+    "favourites_count": 48,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/650/hephaestus",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2022-12-11T22:15:00.000000Z",
+    "created_at": "2022-12-11T22:15:36.000000Z",
+    "updated_at": "2026-07-28T06:48:38.000000Z",
+    "owner": {
+     "id": 12499,
+     "name": "alexkarpen",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/806720389df0ee2551e513a3984ed67bcd3008bb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-12-23T10:19:11.000000Z",
+     "updated_at": "2026-10-05T00:06:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 16
+  }
+ }
+}

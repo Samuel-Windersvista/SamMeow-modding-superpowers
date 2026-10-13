@@ -1,0 +1,39 @@
+{
+ "id": 3038,
+ "hub_id": null,
+ "guid": "com.blacksite.modmanager",
+ "name": "Blacksite Mod Manager",
+ "slug": "blacksite-mod-manager",
+ "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.",
+ "thumbnail": "https://files.sp-mod.com/mods/Y0djiT6IsdOaO7qiWHjdsRCwxUQuLwBESZttdL5g.png",
+ "downloads": 1606,
+ "favourites_count": 12,
+ "endorsements_count": 6,
+ "description": "<h1>Blacksite Mod Manager (v2.0.0)</h1>\n<p>Welcome to <strong>Blacksite Mod Manager</strong>, a fast, clean, and modern desktop client built specifically for <strong>Single Player T</strong>*** (SPT)** and <strong>Fika</strong>. Blacksite hooks directly into <strong>The Forge API</strong> so you can find, install, update, and manage your entire mod library with a single click.</p>\n<p>Whether you’re grabbing a quick recoil tweak, setting up an overhaul pack, or coordinating a Fika co-op session, Blacksite handles all the heavy lifting in the background with zero lag, instant smart routing, and seamless server orchestration.</p>\n<hr />\n<h2>✨ Key Features</h2>\n<ul>\n<li><strong>Clean &amp; Consolidated UI</strong>: Features a high-contrast tactical dark layout that merges Server mods (<code>user/mods</code> / <code>SPT_Runtime/user/mods</code>) and Client plugins (<code>BepInEx/plugins</code>) into <strong>one single mod card</strong>. No duplicate cards cluttering your screen!</li>\n<li><strong>Direct Forge API Sync</strong>: Browse the full <strong>sp-mod.com</strong> mod catalog live inside the app. Filter by category, author (<code>@Author</code>), SPT version, download count, rating, and Fika co-op compatibility with zero browser tab juggling.</li>\n<li><strong>Drag-and-Drop Smart Router</strong>: Just drop any <code>.zip</code>, <code>.7z</code>, or <code>.rar</code> mod archive straight into the manager. The Smart Router automatically inspects the folder structure and routes server files, BepInEx client plugins, and patchers to their exact locations.</li>\n<li><strong>Auto-Links to The Forge</strong>: Manually dropped mods (and mods installed prior to using Blacksite) automatically match against The Forge API database, making them updateable right inside the client.</li>\n<li><strong>Fast, Non-Blocking Decompression</strong>: Powered by native Windows multi-threaded extraction engines. Decompresses large multi-gigabyte mods with live percentage progress and zero window freezes or UI stalls.</li>\n<li><strong>1-Click Batch Mod Updater</strong>: Automatically discovers updates across all installed mods and upgrades them in a single queued run with automatic <code>.json</code> and <code>.cfg</code> config preservation.</li>\n<li><strong>Real-Time Conflict Detection</strong>: Instantly alerts you to duplicate client DLLs, server package ID collisions, and overlapping file paths with one-click resolution actions.</li>\n<li><strong>Integrated Server Orchestrator</strong>: Starts your SPT local server, monitors console output in real-time, and automatically chains game client startup when the server is ready. Includes double-launch protection and server shutdown guards.</li>\n<li><strong>In-App Mod Config Editor</strong>: Live syntax-highlighted editor for <code>.json</code>, <code>.jsonc</code>, <code>.cfg</code>, and <code>.yaml</code> config files with automatic backup rotation and JSON syntax validation before saving.</li>\n<li><strong>Deep Disk Uninstall &amp; Purge</strong>: Cleanly uninstalls mods and BepInEx standalone DLLs without leaving orphan files, backed by strict protection for core SPT system files.</li>\n<li><strong>Profile Management</strong>: Switch between distinct mod profiles (e.g. Vanilla+, Hardcore Realism, Fika Co-op) with one click.</li>\n<li><strong>Custom Application Branding</strong>: Customize your manager emblem with drag-and-drop image upload that persists offline and updates your Windows taskbar icon live.</li>\n</ul>\n<hr />\n<h2>📦 Download &amp; Installation Options</h2>\n<p>Blacksite Mod Manager is available for <strong>Windows 10 &amp; 11 (64-bit)</strong> with three convenient download formats:</p>\n<table>\n<thead>\n<tr>\n<th align=\"left\">Package</th>\n<th align=\"left\">File</th>\n<th align=\"left\">Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\"><strong>Windows Setup Installer</strong> <em>(Recommended)</em></td>\n<td align=\"left\"><code>Blacksite-Mod-Manager-Setup-2.0.0.exe</code></td>\n<td align=\"left\">Standard Windows installer with desktop shortcut, Start Menu integration, and clean uninstaller.</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>Setup Installer (ZIP)</strong></td>\n<td align=\"left\"><code>Blacksite-Mod-Manager-Setup-2.0.0.zip</code></td>\n<td align=\"left\">Standalone ZIP archive containing solely the setup executable. Ideal for environments that restrict direct <code>.exe</code> downloads.</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>Portable Standalone</strong></td>\n<td align=\"left\"><code>Blacksite-Mod-Manager-Portable-2.0.0.exe</code></td>\n<td align=\"left\">Zero-install standalone binary. Run directly from any folder, USB drive, or drop right into your SPT root.</td>\n</tr>\n</tbody>\n</table>\n<h3>How to Install:</h3>\n<ol>\n<li>Download either the <strong>Setup Installer</strong> or the <strong>Portable Standalone</strong> from the releases section.</li>\n<li>Run the application and click <strong>Set SPT Directory</strong> in the top bar.</li>\n<li>Select your Single Player T***** root directory (the folder containing <code>EscapeFromTarkov.exe</code> and <code>BepInEx</code>).</li>\n<li>Blacksite will automatically scan and catalog all your existing mods!</li>\n</ol>\n<hr />\n<h2>💻 System Requirements &amp; Compatibility</h2>\n<ul>\n<li><strong>OS</strong>: Windows 10 / 11 (64-bit)</li>\n<li><strong>SPT Version</strong>: Single Player T***** 3.8.x through 4.1.x (supports both legacy <code>user/mods</code> and SPT 4.x <code>SPT_Runtime/user/mods</code> folder structures)</li>\n<li><strong>Fika Co-op</strong>: Native support for Fika Client and Fika Server headless plugins</li>\n<li><strong>Network</strong>: Internet connection required for Forge catalog browsing and automatic updates (all installed mod management, launching, and config editing work 100% offline)</li>\n</ul>\n<hr />\n",
+ "detail_url": "https://sp-mod.com/mod/3038/blacksite-mod-manager",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 1,
+ "published_at": "2026-10-10T05:30:00.000000Z",
+ "created_at": "2026-09-18T07:23:35.000000Z",
+ "updated_at": "2026-10-10T05:53:50.000000Z",
+ "owner": {
+  "id": 55880,
+  "name": "Manpig03",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/lSatWwDKOJMz8GPYns9OdI7IDmEaQDmD7KXRFLGb_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-07-07T05:39:27.000000Z",
+  "updated_at": "2026-10-10T21:27:29.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 1,
+  "hub_id": 17,
+  "title": "Tools",
+  "slug": "tools",
+  "description": "Various standalone tools and programs that aren't installed like normal mods"
+ }
+}

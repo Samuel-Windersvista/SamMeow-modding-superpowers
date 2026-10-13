@@ -1,0 +1,505 @@
+{
+ "term": "Virtuals Custom Quest Loader",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2246,
+    "hub_id": 2952,
+    "guid": "com.wtt.armory",
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "teaser": "The official weapons pack forged by the WTT developers & friends...  Arm yourself accordingly...",
+    "thumbnail": "https://files.sp-mod.com/mods/RrLPvL3Yfib2hl8Dvh9Q0PIC45xpy6AOai6bW5aN.png",
+    "downloads": 284993,
+    "favourites_count": 510,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2246/wtt-armory",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-08-08T03:08:00.000000Z",
+    "created_at": "2025-08-08T03:08:00.000000Z",
+    "updated_at": "2026-09-21T03:34:24.000000Z",
+    "owner": {
+     "id": 22121,
+     "name": "Tron",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+     "created_at": "2022-08-31T05:49:04.000000Z",
+     "updated_at": "2026-10-05T16:42:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 44,
+      "name": "Choccy Milk",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2020-07-03T04:06:15.000000Z",
+      "updated_at": "2026-09-26T04:16:33.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     },
+     {
+      "id": 58981,
+      "name": "probablyEukyre",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+      "created_at": "2024-07-21T15:22:59.000000Z",
+      "updated_at": "2026-10-03T18:38:44.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1537,
+    "hub_id": 2107,
+    "guid": "com.sgtlaggy.questtweaks",
+    "name": "sgtlaggy's Quest Tweaks",
+    "slug": "sgtlaggys-quest-tweaks",
+    "teaser": "Some QoL quest changes.",
+    "thumbnail": "https://files.sp-mod.com/mods/2107.png",
+    "downloads": 23926,
+    "favourites_count": 47,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/1537/sgtlaggys-quest-tweaks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2024-07-08T22:09:00.000000Z",
+    "created_at": "2024-07-08T22:09:27.000000Z",
+    "updated_at": "2026-09-10T23:58:50.000000Z",
+    "owner": {
+     "id": 50076,
+     "name": "sgtlaggy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/S7wTCtKyPp2VJq7EYaE6x5KjtGrn3DEwK1gmB5iu_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-30T05:20:41.000000Z",
+     "updated_at": "2026-10-05T05:47:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187196,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 1867,
+    "hub_id": 2521,
+    "guid": "com.rootsnine.qcadjustments",
+    "name": "QCAdjustments",
+    "slug": "qcadjustments",
+    "teaser": "Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor tasks to your gameplay style.",
+    "thumbnail": "https://files.sp-mod.com/mods/2521.png",
+    "downloads": 6006,
+    "favourites_count": 9,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1867/qcadjustments",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2024-12-03T21:40:00.000000Z",
+    "created_at": "2024-12-03T21:40:29.000000Z",
+    "updated_at": "2026-09-23T16:08:08.000000Z",
+    "owner": {
+     "id": 68245,
+     "name": "RootsNine",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3704bcc09c0f48794f8658db7548ebafb01223ea_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-11-26T16:12:18.000000Z",
+     "updated_at": "2026-10-05T12:45:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 1023,
+    "hub_id": 1410,
+    "guid": "com.crackbone.artem-wtt",
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "teaser": "In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons.",
+    "thumbnail": "https://files.sp-mod.com/mods/1410.jpg",
+    "downloads": 316642,
+    "favourites_count": 252,
+    "endorsements_count": 36,
+    "detail_url": "https://sp-mod.com/mod/1023/wtt-artem",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-08-21T10:52:00.000000Z",
+    "created_at": "2023-08-21T10:52:05.000000Z",
+    "updated_at": "2026-09-19T03:42:10.000000Z",
+    "owner": {
+     "id": 33851,
+     "name": "Crackbone",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/5ca8b11c81ad8d8e18ed5cd29c4d56049e03a1b8_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a9860bc04369ac21c1a12b052ea1a2ed3b15aebf.jpg",
+     "created_at": "2023-07-11T20:34:59.000000Z",
+     "updated_at": "2026-08-10T19:43:16.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 28568,
+      "name": "Dsnyder",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/16888b74799ea0f079dc1d5b0469b0907ae557f5_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-12T03:57:07.000000Z",
+      "updated_at": "2026-10-05T13:45:03.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2844,
+    "hub_id": null,
+    "guid": "com.zloymolodoy.ultimateflea",
+    "name": "Ultimate Flea",
+    "slug": "ultimate-flea",
+    "teaser": "Full flea control for SPT 4.1: manage the item pool, set prices, pull Tarkov.dev averages, and run a local supply/demand economy with early-wipe scaling.",
+    "thumbnail": "https://files.sp-mod.com/mods/RFwVjDza5Uyjlluo1e1VcAnjv0yZv9aLqZVmJr3U.png",
+    "downloads": 3495,
+    "favourites_count": 28,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2844/ultimate-flea",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-07-26T11:08:00.000000Z",
+    "created_at": "2026-07-26T10:54:12.000000Z",
+    "updated_at": "2026-09-27T00:52:05.000000Z",
+    "owner": {
+     "id": 114139,
+     "name": "ZloyMolodoy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/TeoZmzI3NaSeMgWsQlwmOuvJ96vS3sYWPPnUbTpN_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-31T22:08:51.000000Z",
+     "updated_at": "2026-10-05T11:55:45.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2974,
+    "hub_id": null,
+    "guid": "com.cj.configurationmanagerinputfix",
+    "name": "Configuration Manager Input Fix",
+    "slug": "configuration-manager-input-fix",
+    "teaser": "Fix virtual Configuration Manager F13 key presses such as from Nvidia's performance overlay",
+    "thumbnail": "https://files.sp-mod.com/mods/aeLbKaqMesaGpwIbvJcuD5OC4pGiE1voRKczJGjR.jpg",
+    "downloads": 293,
+    "favourites_count": 8,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2974/configuration-manager-input-fix",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-31T04:31:00.000000Z",
+    "created_at": "2026-08-31T04:36:02.000000Z",
+    "updated_at": "2026-09-12T14:50:43.000000Z",
+    "owner": {
+     "id": 33963,
+     "name": "Cj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d727d6bd8dc4933bd46485123affaace57e0a5dc_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/abb3c8031fdcdc84c3d7e7624209ec44a3b48a80.jpg",
+     "created_at": "2023-07-14T19:01:21.000000Z",
+     "updated_at": "2026-10-05T16:52:37.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2093,
+    "hub_id": 2778,
+    "guid": "com.colo.vcq",
+    "name": "Virtual's Custom Quests - Updated",
+    "slug": "virtuals-custom-quests-updated",
+    "teaser": "A set of custom lore-based quests to fill that deep desire for more content.",
+    "thumbnail": "",
+    "downloads": 19931,
+    "favourites_count": 39,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2093/virtuals-custom-quests-updated",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2025-11-05T09:49:00.000000Z",
+    "created_at": "2025-04-10T17:45:24.000000Z",
+    "updated_at": "2026-09-02T08:57:08.000000Z",
+    "owner": {
+     "id": 26490,
+     "name": "Colobos9mm",
+     "profile_photo_url": "https://sp-mod.com/avatars/C.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-02T20:28:26.000000Z",
+     "updated_at": "2026-10-03T15:53:57.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 23289,
+      "name": "Virtual",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/b9c7970ccfb616351e22eef6ef94245881a0cb7d_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/f5c1c99e79ccef80fa0d0ab9de241cc484348e9f_1280w.webp",
+      "created_at": "2022-10-27T04:28:41.000000Z",
+      "updated_at": "2026-09-25T08:10:45.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2747,
+    "hub_id": null,
+    "guid": "com.20fpsguy.weekenddrops",
+    "name": "Weekend Drops",
+    "slug": "weekend-drops",
+    "teaser": "Rotating weekend and daily challenges that give crates with loot and pay out GP coins",
+    "thumbnail": "https://files.sp-mod.com/mods/a7n7YT3Vnizy5JsMIhzP3OBJRr9bmobnEsicYmuh.jpg",
+    "downloads": 9769,
+    "favourites_count": 75,
+    "endorsements_count": 17,
+    "detail_url": "https://sp-mod.com/mod/2747/weekend-drops",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-25T12:07:00.000000Z",
+    "created_at": "2026-06-17T00:07:31.000000Z",
+    "updated_at": "2026-09-19T20:35:10.000000Z",
+    "owner": {
+     "id": 43600,
+     "name": "20fpsguy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/K5dcn99iSoBK3zKI9TdB8wljTr67c8Jrk2Ikd3bW_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/3XeLpx2NFpiWfauZEuOtSrIUrCPbzkOe7SFJwDFp_1280w.webp",
+     "created_at": "2024-01-11T12:46:02.000000Z",
+     "updated_at": "2026-10-05T13:17:50.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 874,
+    "hub_id": 1183,
+    "guid": "com.dono.aes",
+    "name": "AES",
+    "slug": "aes",
+    "teaser": "3 interactive Traders, offering a wide range of quests and interactions between them, with extensive lore. Lots of weapons and accessories to unlock (available in multiple languages).",
+    "thumbnail": "https://files.sp-mod.com/mods/1183.png",
+    "downloads": 147262,
+    "favourites_count": 79,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/874/aes",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-05-05T08:48:00.000000Z",
+    "created_at": "2023-05-05T08:48:51.000000Z",
+    "updated_at": "2026-09-10T17:37:25.000000Z",
+    "owner": {
+     "id": 19327,
+     "name": "Dono",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/a00de5702816baac6a97cb99bb765a15febb4122_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/306b38f01d4414e02fcaa171adf4e9a33f2744be_1280w.webp",
+     "created_at": "2022-06-02T07:52:40.000000Z",
+     "updated_at": "2026-09-11T13:41:13.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

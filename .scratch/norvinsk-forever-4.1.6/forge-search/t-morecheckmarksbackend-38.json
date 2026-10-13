@@ -1,0 +1,98 @@
+{
+ "term": "MoreCheckmarksBackend",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 861,
+    "hub_id": 1159,
+    "guid": "vip.tommysoucy.morecheckmarks",
+    "name": "MoreCheckmarks",
+    "slug": "morecheckmarks",
+    "teaser": "A mod that adds checkmarks and more detailed tooltips to items to indicate if it is needed for hideout upgrades, quests, or if it is on your wishlist",
+    "thumbnail": "https://files.sp-mod.com/mods/1159.png",
+    "downloads": 491654,
+    "favourites_count": 243,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/861/morecheckmarks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2023-04-20T23:07:00.000000Z",
+    "created_at": "2023-04-20T23:07:02.000000Z",
+    "updated_at": "2026-07-28T09:21:56.000000Z",
+    "owner": {
+     "id": 22726,
+     "name": "VIPkiller17",
+     "profile_photo_url": "https://sp-mod.com/avatars/V.svg",
+     "cover_photo_url": null,
+     "created_at": "2022-09-27T17:53:43.000000Z",
+     "updated_at": "2026-08-10T19:40:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 61806,
+      "name": "Bewa",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/WVF4iWlojuCC533m3BCZ9yUlPjkg0Ye6HJzkzaNn.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-08-19T23:42:17.000000Z",
+      "updated_at": "2026-08-19T22:21:37.000000Z"
+     },
+     {
+      "id": 73498,
+      "name": "ScottieKnowz",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-02-15T01:29:31.000000Z",
+      "updated_at": "2026-08-10T19:49:32.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 1,
+   "total": 1
+  }
+ }
+}

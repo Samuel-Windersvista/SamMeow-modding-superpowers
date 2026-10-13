@@ -1,0 +1,447 @@
+{
+ "term": "5 -CustomProfiles",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2621,
+    "hub_id": null,
+    "guid": "com.lacyway.tdlss",
+    "name": "T***** DLSS 4.5",
+    "slug": "tarkov-dlss-45",
+    "teaser": "This pre-patcher enables DLSS 4.5 support in SPT/Fika.",
+    "thumbnail": "https://files.sp-mod.com/mods/SE6rDg7mibDNHSSAvn530cP6nn7aXBssVY6YaWQ9.png",
+    "downloads": 12059,
+    "favourites_count": 66,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/2621/tarkov-dlss-45",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-19T19:13:00.000000Z",
+    "created_at": "2026-03-08T18:46:13.000000Z",
+    "updated_at": "2026-08-19T19:13:35.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3011,
+    "hub_id": null,
+    "guid": "com.dark.spt.showmethemoney",
+    "name": "Show Me The Money (Item Pricing) (4.1.x)",
+    "slug": "show-me-the-money-item-pricing-41x",
+    "teaser": "Show Me The Money, updated for 4.1.x.",
+    "thumbnail": "https://files.sp-mod.com/mods/K65XPMTmqFDDnADksRboFVHxihsqVpySUB3FCd2G.png",
+    "downloads": 7696,
+    "favourites_count": 89,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-10T15:21:00.000000Z",
+    "created_at": "2026-09-10T15:29:52.000000Z",
+    "updated_at": "2026-09-10T15:57:44.000000Z",
+    "owner": {
+     "id": 68531,
+     "name": "Daark",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/tHAQntRAmvLXM3srdcxTzvTKeB99FjATP2QNgoSP_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-11-29T14:57:39.000000Z",
+     "updated_at": "2026-10-03T18:29:13.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84437,
+      "name": "swiftxp",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-09-09T13:48:33.000000Z",
+      "updated_at": "2026-08-10T19:50:33.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187196,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 3071,
+    "hub_id": null,
+    "guid": "com.hj.taskturninindicator",
+    "name": "Hj's Task Turn in Indicator",
+    "slug": "hjs-task-turn-in-indicator",
+    "teaser": "Task Turn in Indicator from EFT 1.1.5",
+    "thumbnail": "https://files.sp-mod.com/mods/mKekuLZg6Gv9L6KANEqACLvELsgH8cYzGBW8KVHG.jpg",
+    "downloads": 946,
+    "favourites_count": 21,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/3071/hjs-task-turn-in-indicator",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-27T12:24:00.000000Z",
+    "created_at": "2026-09-27T12:19:59.000000Z",
+    "updated_at": "2026-09-29T23:03:42.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 3082,
+    "hub_id": null,
+    "guid": "com.hj.taskitemindicator",
+    "name": "Hj's Task Item Indicator",
+    "slug": "hjs-task-item-indicator",
+    "teaser": "1:1 Task Item Indicator Ring from EFT 1.0.5",
+    "thumbnail": "https://files.sp-mod.com/mods/1946QM5zEatL3eVE0Pp3nPGvasEUXQa12XGzf1xy.png",
+    "downloads": 1105,
+    "favourites_count": 25,
+    "endorsements_count": 13,
+    "detail_url": "https://sp-mod.com/mod/3082/hjs-task-item-indicator",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2026-09-29T22:16:00.000000Z",
+    "created_at": "2026-09-29T22:14:27.000000Z",
+    "updated_at": "2026-09-29T22:19:16.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 2594,
+    "hub_id": null,
+    "guid": "com.acidphantasm.playerbossscav",
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "teaser": "Standalone component from APBS. Allows your scav to generate as a boss with a configurable chance.",
+    "thumbnail": "https://files.sp-mod.com/mods/NPm1PUyeBnKs0nrJEqhxeQbJeMFMdUL4KnRNAPo5.png",
+    "downloads": 10702,
+    "favourites_count": 28,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2594/player-boss-scav",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-02-17T06:35:00.000000Z",
+    "created_at": "2026-02-17T06:35:23.000000Z",
+    "updated_at": "2026-08-05T06:03:56.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T16:52:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 3061,
+    "hub_id": null,
+    "guid": "com.blackhawk.extraspecialslots",
+    "name": "Extra Special Slots",
+    "slug": "extra-special-slots",
+    "teaser": "Adds Special Slots 4, 5 and 6 with SVM, SpecialSlots, TSC and Fika compatibility.",
+    "thumbnail": "https://files.sp-mod.com/mods/n0vF6HuFGJCgyKcKUIkkNzXiChtOojsrYCi6fSdr.png",
+    "downloads": 1531,
+    "favourites_count": 30,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/3061/extra-special-slots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-23T17:43:00.000000Z",
+    "created_at": "2026-09-23T17:33:23.000000Z",
+    "updated_at": "2026-10-02T22:21:56.000000Z",
+    "owner": {
+     "id": 85915,
+     "name": "BLACK HAWK",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/nhL30RWS9AcT5J4gcosWsoKk6dZ8UaPTQxtQYYU3_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-10-18T23:34:37.000000Z",
+     "updated_at": "2026-10-05T16:51:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 994,
+    "hub_id": 1364,
+    "guid": "xyz.drakia.setspeed",
+    "name": "Set Speed - Set Player Speed with Hotkeys",
+    "slug": "set-speed-set-player-speed-with-hotkeys",
+    "teaser": "Quickly change between pre-set walk speeds using hotkeys",
+    "thumbnail": "https://files.sp-mod.com/mods/1364.png",
+    "downloads": 5488,
+    "favourites_count": 7,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/994/set-speed-set-player-speed-with-hotkeys",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2023-08-03T03:37:00.000000Z",
+    "created_at": "2023-08-03T03:37:29.000000Z",
+    "updated_at": "2026-08-03T06:02:27.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:45:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3036,
+    "hub_id": null,
+    "guid": "moe.needmarks",
+    "name": "Moe Need Marks",
+    "slug": "moe-need-marks",
+    "teaser": "Quest and hideout requirement checkmarks, progress and inventory counts in native tooltips. / 任务与藏身处需求彩色勾、提交进度和库存统计。",
+    "thumbnail": "",
+    "downloads": 258,
+    "favourites_count": 3,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/3036/moe-need-marks",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-18T01:36:00.000000Z",
+    "created_at": "2026-09-18T01:37:22.000000Z",
+    "updated_at": "2026-09-18T01:42:05.000000Z",
+    "owner": {
+     "id": 115215,
+     "name": "moucashi",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-06-11T16:10:00.000000Z",
+     "updated_at": "2026-09-23T08:42:19.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2668,
+    "hub_id": null,
+    "guid": "com.rukira.attachmentbackport",
+    "name": "AttachmentBackport",
+    "slug": "attachmentbackport",
+    "teaser": "A mod that backports the recent Attachment changes to SPT",
+    "thumbnail": "",
+    "downloads": 4184,
+    "favourites_count": 23,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2668/attachmentbackport",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-04-21T11:39:00.000000Z",
+    "created_at": "2026-04-21T11:41:50.000000Z",
+    "updated_at": "2026-07-28T08:24:41.000000Z",
+    "owner": {
+     "id": 13632,
+     "name": "RuKira",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/HGcQlS8eu0WYX2W5AATPBli1aWVGsTXQd79WE4l5_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-01-18T06:31:54.000000Z",
+     "updated_at": "2026-10-05T13:30:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

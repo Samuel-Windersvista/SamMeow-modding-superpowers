@@ -1,0 +1,887 @@
+[
+ {
+  "term": "Volcano",
+  "rows": [
+   {
+    "id": 3002,
+    "name": "Extra-Lives",
+    "slug": "extra-lives",
+    "dl": 1119,
+    "upd": "2026-09-07T04:37:12.000000Z"
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327288,
+    "upd": "2026-09-19T19:55:46.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "FontReplace",
+  "rows": []
+ },
+ {
+  "term": "Subtitle",
+  "rows": [
+   {
+    "id": 2709,
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "dl": 12854,
+    "upd": "2026-09-20T02:56:50.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Antigrav",
+  "rows": [
+   {
+    "id": 2953,
+    "name": "Headshot Damage Redirection",
+    "slug": "headshot-damage-redirection",
+    "dl": 2873,
+    "upd": "2026-09-17T07:19:46.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Container Quick Loot",
+  "rows": [
+   {
+    "id": 2698,
+    "name": "Loot In Vicinity",
+    "slug": "loot-in-vicinity",
+    "dl": 14787,
+    "upd": "2026-09-21T14:02:04.000000Z"
+   },
+   {
+    "id": 1479,
+    "name": "Raid Review",
+    "slug": "raid-review",
+    "dl": 56339,
+    "upd": "2026-10-01T20:28:08.000000Z"
+   },
+   {
+    "id": 3059,
+    "name": "Strange Curios",
+    "slug": "strange-curios",
+    "dl": 1301,
+    "upd": "2026-09-29T06:00:09.000000Z"
+   },
+   {
+    "id": 2779,
+    "name": "Cooler Stims ",
+    "slug": "cooler-stims",
+    "dl": 10456,
+    "upd": "2026-09-20T21:05:54.000000Z"
+   },
+   {
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "dl": 804832,
+    "upd": "2026-08-26T04:22:33.000000Z"
+   },
+   {
+    "id": 3023,
+    "name": "CactusPie's Transfer Loot Into Container Automatically",
+    "slug": "cactuspies-transfer-loot-into-container-automatically",
+    "dl": 1107,
+    "upd": "2026-10-02T16:35:54.000000Z"
+   },
+   {
+    "id": 2597,
+    "name": "Nested Quick Move",
+    "slug": "nested-quick-move",
+    "dl": 4400,
+    "upd": "2026-08-05T06:03:56.000000Z"
+   },
+   {
+    "id": 1341,
+    "name": "Quick Move To Containers",
+    "slug": "quick-move-to-containers",
+    "dl": 139692,
+    "upd": "2026-08-03T06:02:26.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "QuickLoot",
+  "rows": []
+ },
+ {
+  "term": "SearchBar",
+  "rows": [
+   {
+    "id": 2909,
+    "name": "Hj's Task Search",
+    "slug": "hjs-task-search",
+    "dl": 5552,
+    "upd": "2026-09-29T23:02:55.000000Z"
+   },
+   {
+    "id": 2824,
+    "name": "TraderSearch",
+    "slug": "tradersearch",
+    "dl": 4780,
+    "upd": "2026-09-19T10:15:58.000000Z"
+   },
+   {
+    "id": 2743,
+    "name": "WeaponBuilderSearch",
+    "slug": "weaponbuildersearch",
+    "dl": 6652,
+    "upd": "2026-09-15T16:24:14.000000Z"
+   },
+   {
+    "id": 1342,
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "dl": 453451,
+    "upd": "2026-10-03T00:02:04.000000Z"
+   },
+   {
+    "id": 2777,
+    "name": "AmmoGen",
+    "slug": "ammogen",
+    "dl": 6913,
+    "upd": "2026-08-06T17:09:45.000000Z"
+   },
+   {
+    "id": 1479,
+    "name": "Raid Review",
+    "slug": "raid-review",
+    "dl": 56339,
+    "upd": "2026-10-01T20:28:08.000000Z"
+   },
+   {
+    "id": 2855,
+    "name": "Dev Tools",
+    "slug": "dev-tools",
+    "dl": 2612,
+    "upd": "2026-08-29T18:37:04.000000Z"
+   },
+   {
+    "id": 2674,
+    "name": "RealisticFrag",
+    "slug": "realisticfrag",
+    "dl": 3187,
+    "upd": "2026-07-28T08:25:41.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Reflex Sights",
+  "rows": [
+   {
+    "id": 2190,
+    "name": "Recoil Rework (Legacy)",
+    "slug": "recoil-rework-legacy",
+    "dl": 34674,
+    "upd": "2026-09-09T15:29:48.000000Z"
+   },
+   {
+    "id": 1950,
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "dl": 130990,
+    "upd": "2026-08-15T23:00:11.000000Z"
+   },
+   {
+    "id": 2735,
+    "name": "ScopeRangefinder",
+    "slug": "scoperangefinder",
+    "dl": 14410,
+    "upd": "2026-09-29T18:57:03.000000Z"
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "dl": 302905,
+    "upd": "2026-09-19T16:17:11.000000Z"
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "dl": 274736,
+    "upd": "2026-09-21T21:02:35.000000Z"
+   },
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "dl": 4830,
+    "upd": "2026-09-20T01:52:04.000000Z"
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 284995,
+    "upd": "2026-09-21T03:34:24.000000Z"
+   },
+   {
+    "id": 2513,
+    "name": "Batteries Not Included",
+    "slug": "batteries-not-included",
+    "dl": 3523,
+    "upd": "2026-07-28T08:09:35.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "RNVG",
+  "rows": []
+ },
+ {
+  "term": "EFCL",
+  "rows": [
+   {
+    "id": 740,
+    "name": "Welcome Gifts",
+    "slug": "welcome-gifts",
+    "dl": 45254,
+    "upd": "2026-07-28T08:02:12.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Custom Profiles",
+  "rows": [
+   {
+    "id": 3084,
+    "name": "Better Flashlights",
+    "slug": "better-flashlights",
+    "dl": 1387,
+    "upd": "2026-10-05T05:56:58.000000Z"
+   },
+   {
+    "id": 3085,
+    "name": "Ledger",
+    "slug": "ledger",
+    "dl": 1143,
+    "upd": "2026-10-02T07:08:07.000000Z"
+   },
+   {
+    "id": 2965,
+    "name": "Ironman",
+    "slug": "ironman",
+    "dl": 316,
+    "upd": "2026-09-20T22:01:41.000000Z"
+   },
+   {
+    "id": 3086,
+    "name": "[Melx] Loot Value",
+    "slug": "melx-loot-value",
+    "dl": 921,
+    "upd": "2026-10-01T19:00:07.000000Z"
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "dl": 431779,
+    "upd": "2026-08-23T15:19:33.000000Z"
+   },
+   {
+    "id": 1867,
+    "name": "QCAdjustments",
+    "slug": "qcadjustments",
+    "dl": 6006,
+    "upd": "2026-09-23T16:08:08.000000Z"
+   },
+   {
+    "id": 2653,
+    "name": "Mission Control",
+    "slug": "mission-control",
+    "dl": 1265,
+    "upd": "2026-09-13T15:36:22.000000Z"
+   },
+   {
+    "id": 3091,
+    "name": "Astral Divide",
+    "slug": "astral-divide",
+    "dl": 1040,
+    "upd": "2026-10-02T01:47:47.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Unknown Survivor",
+  "rows": [
+   {
+    "id": 1971,
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "dl": 42120,
+    "upd": "2026-08-21T03:03:52.000000Z"
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 284995,
+    "upd": "2026-09-21T03:34:24.000000Z"
+   },
+   {
+    "id": 1537,
+    "name": "sgtlaggy's Quest Tweaks",
+    "slug": "sgtlaggys-quest-tweaks",
+    "dl": 23926,
+    "upd": "2026-09-10T23:58:50.000000Z"
+   },
+   {
+    "id": 3083,
+    "name": "Hj's Mod Source",
+    "slug": "hjs-mod-source",
+    "dl": 783,
+    "upd": "2026-10-01T09:44:50.000000Z"
+   },
+   {
+    "id": 2425,
+    "name": "SamSWAT's Anime Rear Sights - 4.0 Port",
+    "slug": "samswats-anime-rear-sights-40-port",
+    "dl": 10195,
+    "upd": "2026-08-12T15:11:10.000000Z"
+   },
+   {
+    "id": 2010,
+    "name": "Definitive Weapon Variants",
+    "slug": "definitive-weapon-variants",
+    "dl": 42993,
+    "upd": "2026-09-20T01:56:33.000000Z"
+   },
+   {
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "dl": 32555,
+    "upd": "2026-09-22T15:11:45.000000Z"
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "dl": 49217,
+    "upd": "2026-10-03T00:04:42.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "EpicRangeTime",
+  "rows": [
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "dl": 274736,
+    "upd": "2026-09-21T21:02:35.000000Z"
+   },
+   {
+    "id": 2917,
+    "name": "Vanguard",
+    "slug": "vanguard",
+    "dl": 2186,
+    "upd": "2026-08-18T23:17:25.000000Z"
+   },
+   {
+    "id": 2423,
+    "name": "C11 - True North",
+    "slug": "c11-true-north",
+    "dl": 43736,
+    "upd": "2026-09-27T04:48:47.000000Z"
+   },
+   {
+    "id": 2487,
+    "name": "Ratshot of Unusual Size",
+    "slug": "ratshot-of-unusual-size",
+    "dl": 2467,
+    "upd": "2026-08-12T11:44:25.000000Z"
+   },
+   {
+    "id": 2003,
+    "name": "HollywoodFX",
+    "slug": "hollywoodfx",
+    "dl": 219652,
+    "upd": "2026-09-17T20:36:04.000000Z"
+   },
+   {
+    "id": 1590,
+    "name": "WTT - Taste the Rainbow",
+    "slug": "wtt-taste-the-rainbow",
+    "dl": 11437,
+    "upd": "2026-07-28T08:16:47.000000Z"
+   },
+   {
+    "id": 2522,
+    "name": "EpicShaderTime",
+    "slug": "epicshadertime",
+    "dl": 39124,
+    "upd": "2026-07-29T04:56:18.000000Z"
+   },
+   {
+    "id": 2536,
+    "name": "Danger Blicky",
+    "slug": "danger-blicky",
+    "dl": 1039,
+    "upd": "2026-07-28T07:48:46.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Hyperburst",
+  "rows": [
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 284995,
+    "upd": "2026-09-21T03:34:24.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "AKResonant",
+  "rows": [
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "dl": 4830,
+    "upd": "2026-09-20T01:52:04.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "MDZZWOC",
+  "rows": [
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "dl": 4830,
+    "upd": "2026-09-20T01:52:04.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "QBZ",
+  "rows": [
+   {
+    "id": 2590,
+    "name": "SaintDeerWeapons",
+    "slug": "saintdeerweapons",
+    "dl": 16273,
+    "upd": "2026-07-28T08:04:07.000000Z"
+   },
+   {
+    "id": 2588,
+    "name": "MassivesoftWeapons",
+    "slug": "massivesoftweapons",
+    "dl": 35679,
+    "upd": "2026-09-28T07:25:49.000000Z"
+   },
+   {
+    "id": 2485,
+    "name": "ISB Special Forces",
+    "slug": "isb-special-forces",
+    "dl": 8391,
+    "upd": "2026-09-22T15:11:57.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "50 BMG",
+  "rows": [
+   {
+    "id": 2487,
+    "name": "Ratshot of Unusual Size",
+    "slug": "ratshot-of-unusual-size",
+    "dl": 2467,
+    "upd": "2026-08-12T11:44:25.000000Z"
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "dl": 49217,
+    "upd": "2026-10-03T00:04:42.000000Z"
+   },
+   {
+    "id": 2239,
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "dl": 49087,
+    "upd": "2026-08-19T04:13:18.000000Z"
+   },
+   {
+    "id": 820,
+    "name": "Door Randomizer",
+    "slug": "door-randomizer",
+    "dl": 49167,
+    "upd": "2026-08-19T16:38:23.000000Z"
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 284996,
+    "upd": "2026-09-21T03:34:24.000000Z"
+   },
+   {
+    "id": 2738,
+    "name": "GFLVoices",
+    "slug": "gflvoices",
+    "dl": 1695,
+    "upd": "2026-09-29T08:58:30.000000Z"
+   },
+   {
+    "id": 179,
+    "name": "BALANCED MEDS",
+    "slug": "balanced-meds",
+    "dl": 40332,
+    "upd": "2026-09-16T09:43:04.000000Z"
+   },
+   {
+    "id": 2463,
+    "name": "VanillaAmmoCrafts",
+    "slug": "vanillaammocrafts",
+    "dl": 7619,
+    "upd": "2026-07-28T09:16:34.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "VIRTUS",
+  "rows": [
+   {
+    "id": 2974,
+    "name": "Configuration Manager Input Fix",
+    "slug": "configuration-manager-input-fix",
+    "dl": 293,
+    "upd": "2026-09-12T14:50:43.000000Z"
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "dl": 540951,
+    "upd": "2026-10-04T20:25:05.000000Z"
+   },
+   {
+    "id": 982,
+    "name": "Reisen Inaba",
+    "slug": "reisen-inaba",
+    "dl": 3937,
+    "upd": "2026-09-22T05:58:05.000000Z"
+   },
+   {
+    "id": 1867,
+    "name": "QCAdjustments",
+    "slug": "qcadjustments",
+    "dl": 6006,
+    "upd": "2026-09-23T16:08:08.000000Z"
+   },
+   {
+    "id": 2093,
+    "name": "Virtual's Custom Quests - Updated",
+    "slug": "virtuals-custom-quests-updated",
+    "dl": 19931,
+    "upd": "2026-09-02T08:57:08.000000Z"
+   },
+   {
+    "id": 2590,
+    "name": "SaintDeerWeapons",
+    "slug": "saintdeerweapons",
+    "dl": 16273,
+    "upd": "2026-07-28T08:04:07.000000Z"
+   },
+   {
+    "id": 2833,
+    "name": "Modern Weapon Mods (MWM)",
+    "slug": "modern-weapon-mods-mwm",
+    "dl": 12028,
+    "upd": "2026-07-28T09:43:40.000000Z"
+   },
+   {
+    "id": 2782,
+    "name": "Infinite stash",
+    "slug": "infinite-stash",
+    "dl": 6798,
+    "upd": "2026-07-28T09:21:36.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "TarkovHD",
+  "rows": [
+   {
+    "id": 2844,
+    "name": "Ultimate Flea",
+    "slug": "ultimate-flea",
+    "dl": 3495,
+    "upd": "2026-09-27T00:52:05.000000Z"
+   },
+   {
+    "id": 2950,
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "dl": 995,
+    "upd": "2026-08-22T10:40:21.000000Z"
+   },
+   {
+    "id": 1896,
+    "name": "T***** HD Item Rework Project",
+    "slug": "tarkov-hd-item-rework-project",
+    "dl": 26555,
+    "upd": "2026-07-28T06:07:22.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "HD Rework",
+  "rows": [
+   {
+    "id": 1896,
+    "name": "T***** HD Item Rework Project",
+    "slug": "tarkov-hd-item-rework-project",
+    "dl": 26555,
+    "upd": "2026-07-28T06:07:22.000000Z"
+   },
+   {
+    "id": 1502,
+    "name": "HD Vanilla Trader Pics",
+    "slug": "hd-vanilla-trader-pics",
+    "dl": 7156,
+    "upd": "2026-07-13T18:02:59.000000Z"
+   },
+   {
+    "id": 985,
+    "name": "BlackCore",
+    "slug": "blackcore",
+    "dl": 185690,
+    "upd": "2026-07-21T10:51:52.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Energy Drink",
+  "rows": [
+   {
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "dl": 73241,
+    "upd": "2026-08-17T05:57:56.000000Z"
+   },
+   {
+    "id": 1262,
+    "name": "Easy Ammo Names",
+    "slug": "easy-ammo-names",
+    "dl": 29627,
+    "upd": "2026-08-03T20:22:18.000000Z"
+   },
+   {
+    "id": 1237,
+    "name": "Consumables Galore",
+    "slug": "consumables-galore",
+    "dl": 13526,
+    "upd": "2026-08-03T06:02:26.000000Z"
+   },
+   {
+    "id": 3108,
+    "name": "Infinite Everything",
+    "slug": "infinite-everything",
+    "dl": 220,
+    "upd": "2026-10-05T15:31:04.000000Z"
+   },
+   {
+    "id": 2152,
+    "name": "SJX Elite Stims Addon for Consumables Galore",
+    "slug": "sjx-elite-stims-addon-for-consumables-galore",
+    "dl": 3785,
+    "upd": "2026-08-03T18:02:24.000000Z"
+   },
+   {
+    "id": 180,
+    "name": "USEFUL FOODS AND DRINKS",
+    "slug": "useful-foods-and-drinks",
+    "dl": 17319,
+    "upd": "2026-09-16T09:46:04.000000Z"
+   },
+   {
+    "id": 2876,
+    "name": "Simple Raid HUD",
+    "slug": "simple-raid-hud",
+    "dl": 6055,
+    "upd": "2026-08-02T06:02:14.000000Z"
+   },
+   {
+    "id": 1963,
+    "name": "Gunsmith Barters",
+    "slug": "gunsmith-barters",
+    "dl": 6136,
+    "upd": "2026-07-28T09:55:29.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Quick Sell",
+  "rows": [
+   {
+    "id": 2955,
+    "name": "Quick Sell",
+    "slug": "quick-sell",
+    "dl": 7469,
+    "upd": "2026-10-02T22:24:09.000000Z"
+   },
+   {
+    "id": 3011,
+    "name": "Show Me The Money (Item Pricing) (4.1.x)",
+    "slug": "show-me-the-money-item-pricing-41x",
+    "dl": 7699,
+    "upd": "2026-09-10T15:57:44.000000Z"
+   },
+   {
+    "id": 3086,
+    "name": "[Melx] Loot Value",
+    "slug": "melx-loot-value",
+    "dl": 921,
+    "upd": "2026-10-01T19:00:07.000000Z"
+   },
+   {
+    "id": 1342,
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "dl": 453451,
+    "upd": "2026-10-03T00:02:04.000000Z"
+   },
+   {
+    "id": 2844,
+    "name": "Ultimate Flea",
+    "slug": "ultimate-flea",
+    "dl": 3495,
+    "upd": "2026-09-27T00:52:05.000000Z"
+   },
+   {
+    "id": 3091,
+    "name": "Astral Divide",
+    "slug": "astral-divide",
+    "dl": 1040,
+    "upd": "2026-10-02T01:47:47.000000Z"
+   },
+   {
+    "id": 3088,
+    "name": "Tarkova-cola",
+    "slug": "tarkova-cola",
+    "dl": 208,
+    "upd": "2026-10-01T23:36:57.000000Z"
+   },
+   {
+    "id": 2779,
+    "name": "Cooler Stims ",
+    "slug": "cooler-stims",
+    "dl": 10456,
+    "upd": "2026-09-20T21:05:54.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "friendlyPMC",
+  "rows": [
+   {
+    "id": 1760,
+    "name": "Audio Accessibility Indicators",
+    "slug": "audio-accessibility-indicators",
+    "dl": 58513,
+    "upd": "2026-08-07T18:02:18.000000Z"
+   },
+   {
+    "id": 2348,
+    "name": "SameSideIsFriendly",
+    "slug": "samesideisfriendly",
+    "dl": 4669,
+    "upd": "2026-08-01T16:02:36.000000Z"
+   },
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "slug": "virtuals-custom-quest-loader",
+    "dl": 388834,
+    "upd": "2026-07-13T18:06:02.000000Z"
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "dl": 18915,
+    "upd": "2026-07-17T15:46:03.000000Z"
+   }
+  ]
+ },
+ {
+  "term": "Use Items Anywhere",
+  "rows": [
+   {
+    "id": 2386,
+    "name": "Use Items Anywhere",
+    "slug": "use-items-anywhere",
+    "dl": 119446,
+    "upd": "2026-09-20T02:59:33.000000Z"
+   },
+   {
+    "id": 1278,
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "dl": 232972,
+    "upd": "2026-09-07T18:48:06.000000Z"
+   },
+   {
+    "id": 2783,
+    "name": "Fast Grenade Throw",
+    "slug": "fast-grenade-throw",
+    "dl": 7356,
+    "upd": "2026-09-20T21:05:28.000000Z"
+   },
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "dl": 1315172,
+    "upd": "2026-09-04T18:41:43.000000Z"
+   },
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "dl": 434815,
+    "upd": "2026-09-19T03:57:50.000000Z"
+   },
+   {
+    "id": 3080,
+    "name": "Raid Recovery",
+    "slug": "raid-recovery",
+    "dl": 732,
+    "upd": "2026-10-01T21:33:19.000000Z"
+   },
+   {
+    "id": 2945,
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "dl": 6052,
+    "upd": "2026-10-04T09:33:37.000000Z"
+   },
+   {
+    "id": 1090,
+    "name": "Color Converter API",
+    "slug": "color-converter-api",
+    "dl": 110337,
+    "upd": "2026-08-21T22:24:24.000000Z"
+   }
+  ]
+ }
+]

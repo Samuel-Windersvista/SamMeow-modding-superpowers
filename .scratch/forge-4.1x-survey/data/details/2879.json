@@ -1,0 +1,48 @@
+{
+ "id": 2879,
+ "hub_id": null,
+ "guid": "com.anvil.weboverlay",
+ "name": "WebOverlay",
+ "slug": "weboverlay",
+ "teaser": "Lets mods show HTML panels and click-through HUDs over the game",
+ "thumbnail": "https://files.sp-mod.com/mods/km76RfiQDmlPoFjuOjMwaS4ZTe5u8NZDDOz8OAlp.png",
+ "downloads": 9803,
+ "favourites_count": 96,
+ "endorsements_count": 13,
+ "description": "<h1>Anvil-WebOverlay</h1>\n<p>A shared library that lets BepInEx mods show <strong>web pages in windows over Escape From Tushonka</strong> - interactive panels, and fully click-through transparent HUDs - written in plain HTML instead of an immediate-mode toolkit.</p>\n<p><strong>For players:</strong> you only need this installed when another mod lists it as a dependency. Extract the zip over your SPT folder, done. One installation serves every mod that uses it - a single shared browser, not one per mod.</p>\n<p><strong>For modders:</strong> reference <code>Anvil-WebOverlay.dll</code>, and a UI is this:</p>\n<pre><code>var overlay = WebOverlays.Create(\"My panel\");\nif (overlay == null) return;                   // known-unavailable: fall back\noverlay.Failed += () =&gt; { ... };               // async failure: dispose + fall back\noverlay.MessageReceived += text =&gt; { ... };    // page -&gt; mod\noverlay.LoadHtml(\"&lt;h1&gt;Hello&lt;/h1&gt;\");            // or Navigate(url)\noverlay.Post(\"live value\");                    // mod -&gt; page\n</code></pre>\n<h2>Features</h2>\n<ul>\n<li><strong>Panels</strong>: movable, resizable windows with a dark game-toned title bar (or frameless), closable by keys you choose.</li>\n<li><strong>Transparent HUDs</strong>: pixels your page does not paint show the game, with true per-pixel alpha on Windows 8+ - and by default the window ignores mouse and keyboard entirely, so the game stays fully playable.</li>\n<li><strong>Clickable glass</strong>: a HUD can take mouse input instead, and can be cut down to the rectangles it actually draws in, so it covers the screen while the game stays clickable around it.</li>\n<li><strong>Opacity</strong>: fade the whole window; combine with the HUD for a faded HUD.</li>\n<li><strong>Two-way messaging</strong> between page and mod: plain strings, or named channels where either side can ask the other a question and await the answer. Plus <code>ExecuteScript</code> with its result, inline HTML without any web server, and optional DevTools while building a page.</li>\n<li><strong>Pages with real files</strong>: a mod can serve its own folder under its own host name, so scripts, fonts and images load normally and the page gets working browser storage.</li>\n<li><strong>A real browser engine</strong>: WebGL2 works, so Three.js scenes can run inside a HUD - the demo includes a 3D compass cube coupled to the player camera.</li>\n<li><strong>Safe by default</strong>: navigation is locked to origins the mod itself asked for, popups are suppressed, permission prompts denied, password saving and autofill disabled.</li>\n<li><strong>One shared browser</strong> for all mods, on its own thread - nothing blocks the game, and failures report through a <code>Failed</code> event instead of crashing anything.</li>\n</ul>\n<h2>Requirements</h2>\n<ul>\n<li>Microsoft WebView2 runtime - current Windows 10/11 installations already include it.</li>\n<li>Borderless windowed or windowed mode. Exclusive fullscreen cannot show a window over the game.</li>\n</ul>\n<h2>Demo</h2>\n<p>The optional demo plugin shows the modes in game: <strong>F10</strong> an interactive panel that reads a value back out of its page, <strong>F11</strong> a transparent click-through glass HUD with live values, <strong>F8</strong> an interactive glass panel whose buttons talk to the game over named channels and ask it for the current frame rate, <strong>F7</strong> a Three.js WebGL compass cube that follows the player camera. Source included - it is the reference for how to use the library.</p>\n<p>Full API documentation and the technical write-up (why raw COM vtables, why a composed visual instead of a child window) are in the README on GitHub.</p>\n<h2>About the name</h2>\n<p>Anvil is the library branding of <strong>maschine</strong> (the author of CraftQueue and other mods): shared infrastructure gets a neutral name that other mods can depend on without carrying one modder’s personal tag. Same author, same source account, same support.</p>\n<h2>License</h2>\n<p>MIT. <code>WebView2Loader.dll</code> is part of the Microsoft WebView2 SDK, redistributed under BSD 3-Clause; the WebView2 runtime itself is not redistributed.</p>\n<h2>Demo</h2>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/maschine34675/WebOverlay/blob/main/assets/demo.gif?raw=true\" alt=\"example\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2879/weboverlay",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 1,
+ "published_at": "2026-08-02T13:23:00.000000Z",
+ "created_at": "2026-08-02T12:52:42.000000Z",
+ "updated_at": "2026-09-20T19:42:33.000000Z",
+ "owner": {
+  "id": 119256,
+  "name": "Anvil",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/BrtXN9TXb3F1hLedGGeheIITlDBqRh9U1ShNlR9S_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-08-01T18:07:45.000000Z",
+  "updated_at": "2026-08-12T08:37:06.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 109459,
+   "name": "maschine",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/2xAHR3ttkN7Su6wHEefYq1aNQJLqsN3CqsMwuBpH_256w.webp",
+   "cover_photo_url": null,
+   "created_at": "2026-04-10T00:02:34.000000Z",
+   "updated_at": "2026-10-09T20:03:36.000000Z"
+  }
+ ],
+ "category": {
+  "id": 1,
+  "hub_id": 17,
+  "title": "Tools",
+  "slug": "tools",
+  "description": "Various standalone tools and programs that aren't installed like normal mods"
+ }
+}

@@ -1,0 +1,456 @@
+{
+ "term": "Hoods Energy Drinks",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1688,
+    "hub_id": 2305,
+    "guid": "com.hood.moreenergydrinks",
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "teaser": "Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy during raids. Now you can share your caffeine addiction with your PMC!",
+    "thumbnail": "https://files.sp-mod.com/mods/2305.png",
+    "downloads": 73241,
+    "favourites_count": 143,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1688/more-energy-drinks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2024-08-27T00:01:00.000000Z",
+    "created_at": "2024-08-27T00:01:55.000000Z",
+    "updated_at": "2026-08-17T05:57:56.000000Z",
+    "owner": {
+     "id": 52386,
+     "name": "Hood",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ApXnt8RHneQzgXZ5F36TSIqUAn6ZeVebkT6Q0br_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-21T21:49:53.000000Z",
+     "updated_at": "2026-10-05T11:49:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2737,
+    "hub_id": null,
+    "guid": "com.c11.jsoc",
+    "name": "JSOC Service Weapon Replacment Program",
+    "slug": "jsoc-service-weapon-replacment-program",
+    "teaser": "You've been chosen to select the next JSOC assault rifle and DMR. Choose wisely.",
+    "thumbnail": "https://files.sp-mod.com/mods/7PLCHWosp1d64dHFBtyllNVCbk5Rthmr9imYYSph.png",
+    "downloads": 15157,
+    "favourites_count": 74,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/2737/jsoc-service-weapon-replacment-program",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-06-11T22:00:00.000000Z",
+    "created_at": "2026-06-12T02:03:48.000000Z",
+    "updated_at": "2026-09-25T20:20:05.000000Z",
+    "owner": {
+     "id": 104838,
+     "name": "spysbrother",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/pqaBfjq8SIrzxontUlgWmMtNVVgQocyTGdFVUpiW_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-02-10T23:16:45.000000Z",
+     "updated_at": "2026-08-10T19:52:09.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84418,
+      "name": "bobinstien",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/57f4a22c37774255c5ffb84b42e031fc0aaf831b_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/7BxfWR8ojvpMHscIdCJ9pQMSCCRuEJOsqEXyblrT_2560w.webp",
+      "created_at": "2025-09-09T03:44:35.000000Z",
+      "updated_at": "2026-10-05T02:16:20.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1569,
+    "hub_id": 2145,
+    "guid": "com.hood.wolfiksheavytroopers",
+    "name": "Wolfik's Heavy Trooper Masks",
+    "slug": "wolfiks-heavy-trooper-masks",
+    "teaser": "Adds 5 new heavy trooper masks: Tan, Black, Coyote, Wolf, and Cult that actually provide protection",
+    "thumbnail": "https://files.sp-mod.com/mods/2145.jpg",
+    "downloads": 45379,
+    "favourites_count": 78,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/1569/wolfiks-heavy-trooper-masks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2024-07-17T08:17:00.000000Z",
+    "created_at": "2024-07-17T08:17:43.000000Z",
+    "updated_at": "2026-09-26T21:33:36.000000Z",
+    "owner": {
+     "id": 52386,
+     "name": "Hood",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ApXnt8RHneQzgXZ5F36TSIqUAn6ZeVebkT6Q0br_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-21T21:49:53.000000Z",
+     "updated_at": "2026-10-05T11:49:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 3259,
+      "name": "SerWolfik",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0d969eb63d870f7d0f1de41925ab6fade36263c9_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/d51f043b510e749538bc006cf605d3eba529fbb6_1280w.webp",
+      "created_at": "2021-03-07T06:40:42.000000Z",
+      "updated_at": "2026-08-10T19:13:53.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2962,
+    "hub_id": null,
+    "guid": "com.harmonyzt.musicextender",
+    "name": "Music Extender",
+    "slug": "music-extender",
+    "teaser": "Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now.",
+    "thumbnail": "https://files.sp-mod.com/mods/AtuKCMR3Etj4hLLLiWTiYy9JNJxq0nYn4GmxafAd.png",
+    "downloads": 1795,
+    "favourites_count": 26,
+    "endorsements_count": 13,
+    "detail_url": "https://sp-mod.com/mod/2962/music-extender",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 12,
+    "published_at": "2026-08-27T00:00:00.000000Z",
+    "created_at": "2026-08-26T22:29:19.000000Z",
+    "updated_at": "2026-09-27T05:54:42.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 12,
+     "hub_id": 75,
+     "title": "Audio",
+     "slug": "audio",
+     "description": ""
+    }
+   },
+   {
+    "id": 2783,
+    "hub_id": null,
+    "guid": "com.vultify.fastgrenadethrow",
+    "name": "Fast Grenade Throw",
+    "slug": "fast-grenade-throw",
+    "teaser": "Brings back the classic instant grenade throw with dedicated key binds for overhand and underhand quick throws.",
+    "thumbnail": "https://files.sp-mod.com/mods/EodL3DCMnBkrjfkHRmGizPqFDnHv4EKhWFcclLrj.jpg",
+    "downloads": 7356,
+    "favourites_count": 63,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2783/fast-grenade-throw",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-06-27T17:10:00.000000Z",
+    "created_at": "2026-06-27T17:08:39.000000Z",
+    "updated_at": "2026-09-20T21:05:28.000000Z",
+    "owner": {
+     "id": 52241,
+     "name": "Vultify",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/4457233962ecb2b7d1e522ec0ad81c03210096ee_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-20T01:39:49.000000Z",
+     "updated_at": "2026-10-05T14:47:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2903,
+    "hub_id": null,
+    "guid": "eu.thescrewcollab.raidsareinfinite",
+    "name": "Raids Are Infinite",
+    "slug": "raids-are-infinite",
+    "teaser": "TL;DR: Ever wished to just roam the map forever? Now you can!",
+    "thumbnail": "https://files.sp-mod.com/mods/qWAPqeIXyrtholIgtnxG9eLEWOI6zm4p3xZHyjri.jpg",
+    "downloads": 6844,
+    "favourites_count": 57,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/2903/raids-are-infinite",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 8,
+    "published_at": "2026-08-12T21:32:00.000000Z",
+    "created_at": "2026-08-12T21:33:58.000000Z",
+    "updated_at": "2026-08-26T20:35:02.000000Z",
+    "owner": {
+     "id": 34185,
+     "name": "ScrewTSW",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-07-19T08:23:15.000000Z",
+     "updated_at": "2026-10-04T11:55:27.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 8,
+     "hub_id": 25,
+     "title": "Locations",
+     "slug": "locations",
+     "description": ""
+    }
+   },
+   {
+    "id": 2921,
+    "hub_id": null,
+    "guid": "com.mybutthasarash.sptchecker",
+    "name": "SPTChecker",
+    "slug": "sptchecker",
+    "teaser": "Check SPT Forge religiously? Me too.",
+    "thumbnail": "https://files.sp-mod.com/mods/dlxodBvplKowpsw2hxZWJ28kMlLiuNytqGm8ft5y.png",
+    "downloads": 2857,
+    "favourites_count": 37,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2921/sptchecker",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-15T13:14:00.000000Z",
+    "created_at": "2026-08-15T03:58:44.000000Z",
+    "updated_at": "2026-09-25T00:33:03.000000Z",
+    "owner": {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-06T13:15:58.000000Z",
+     "updated_at": "2026-10-05T15:26:58.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3038,
+    "hub_id": null,
+    "guid": "com.blacksite.modmanager",
+    "name": "Blacksite Mod Manager",
+    "slug": "blacksite-mod-manager",
+    "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.",
+    "thumbnail": "https://files.sp-mod.com/mods/8Tizzrnaf31eOvwPbU0CBDYfYe6HYa6XgZDECuvF.jpg",
+    "downloads": 1306,
+    "favourites_count": 9,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/3038/blacksite-mod-manager",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-18T07:29:00.000000Z",
+    "created_at": "2026-09-18T07:23:35.000000Z",
+    "updated_at": "2026-09-22T07:40:34.000000Z",
+    "owner": {
+     "id": 55880,
+     "name": "Manpig03",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/lSatWwDKOJMz8GPYns9OdI7IDmEaQDmD7KXRFLGb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-07-07T05:39:27.000000Z",
+     "updated_at": "2026-10-04T21:43:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3054,
+    "hub_id": null,
+    "guid": "com.viper.questcodex",
+    "name": "QuestCodex",
+    "slug": "questcodex",
+    "teaser": "Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths too.",
+    "thumbnail": "https://files.sp-mod.com/mods/EMcAnj2YIde22lAZJFACJMjsC50ieuyPwR4WI5Rn.png",
+    "downloads": 1127,
+    "favourites_count": 18,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/3054/questcodex",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-22T18:36:00.000000Z",
+    "created_at": "2026-09-22T18:59:25.000000Z",
+    "updated_at": "2026-10-03T09:19:32.000000Z",
+    "owner": {
+     "id": 120895,
+     "name": "Viper-9",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/DL6BM09JXStu7oSk05hFWOOTHt76Y4JRotBPpElR_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-08-16T10:33:42.000000Z",
+     "updated_at": "2026-10-05T15:29:07.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 865,
+    "hub_id": 1166,
+    "guid": "xyz.drakia.gildedkeystorage",
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "teaser": "A balanced progression based approach to convenient all in one key storage!",
+    "thumbnail": "https://files.sp-mod.com/mods/1166.png",
+    "downloads": 173906,
+    "favourites_count": 245,
+    "endorsements_count": 35,
+    "detail_url": "https://sp-mod.com/mod/865/gilded-key-storage",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2023-04-23T21:24:00.000000Z",
+    "created_at": "2023-04-23T21:24:19.000000Z",
+    "updated_at": "2026-08-31T04:02:05.000000Z",
+    "owner": {
+     "id": 29457,
+     "name": "Jehree",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/TY0O240oUNtLwxTVQ2pkCRAtUW8AqakeD1dyZKkj_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-03-30T17:43:41.000000Z",
+     "updated_at": "2026-10-02T23:47:09.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

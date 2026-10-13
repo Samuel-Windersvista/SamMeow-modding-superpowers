@@ -1,0 +1,48 @@
+{
+ "id": 1591,
+ "hub_id": 2176,
+ "guid": "com.pein.betterrearsights",
+ "name": "Better Rear Sights",
+ "slug": "better-rear-sights",
+ "teaser": "This mod attempts to make iron sights less crappy",
+ "thumbnail": "https://files.sp-mod.com/mods/2176.png",
+ "downloads": 55856,
+ "favourites_count": 91,
+ "endorsements_count": 10,
+ "description": "<h3>Introduction</h3>\n<p>T*****’s default iron sights suck. This mod attempts to make them slightly better.</p>\n<h3>Modified Items</h3>\n<p>Short version: a bunch.</p>\n<p>Long version:</p>\n<ul>\n<li>HK MP7 flip-up rear sight</li>\n<li>KAC Folding rear sight</li>\n<li>KAC Folding micro rear sight</li>\n<li>AK-12 rear sight</li>\n<li>M14 SA Enlarged Military Aperture sight</li>\n<li>AK-545 SAG rear sight</li>\n<li>ASh-12 rear sight carry handle</li>\n<li>HK 416A5 flip-up rear sight</li>\n<li>KRISS Defiance low profile flip-up rear sight</li>\n<li>SA-58 Holland Type rear sight</li>\n<li>HK G36 rear sight</li>\n<li>FN SCAR flip-up rear sight</li>\n<li>RPK-16 rear sight</li>\n<li>AR-15 Colt A2 rear sight</li>\n<li>AR-15 rear sight carry handle</li>\n<li>MP9 rear sight</li>\n<li>AK Taktika Tula TT01 rear sight rail</li>\n<li>AK RD Enhanced V2 Rear Sight</li>\n<li>AK-105 rear sight</li>\n<li>AK-74 rear sight</li>\n<li>AK-74M rear sight</li>\n<li>AKM rear sight</li>\n<li>AKMB system rear sight</li>\n<li>AKMP system rear sight</li>\n<li>Mosin Rifle carbine rear sight</li>\n<li>Mosin Rifle rear sight</li>\n<li>SVT-40 rear sight</li>\n<li>SVDS rear sight</li>\n<li>VPO-101 rear sight</li>\n<li>VPO-209 rear sight</li>\n<li>VSS rear sight</li>\n<li>PK rear sight</li>\n<li>RPD rear sight</li>\n<li>SKS rear sight</li>\n<li>VPO-215-02 .366TKM 600mm barrel</li>\n<li>AKS-74U dust cover</li>\n<li>AKS-74UB dust cover</li>\n<li>AKS-74U Legal Arsenal Pilgrim railed dust cover</li>\n</ul>\n<p><strong>If you think there’s a sight that should be included or changed then feel free to leave a suggestion.</strong></p>\n<h3>Preview</h3>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/SAzh06R.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/SAzh06R.gif\" alt=\"SAzh06R.gif\" /></a></p>\n<h3>Installation</h3>\n<p>As per usual for any mod, just drag and drop.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/2pgzyia.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/d1LD6lk.gif\" alt=\"d1LD6lk.gif\" /></a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1591/better-rear-sights",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2024-07-26T03:01:00.000000Z",
+ "created_at": "2024-07-26T03:01:07.000000Z",
+ "updated_at": "2026-09-17T16:03:05.000000Z",
+ "owner": {
+  "id": 12179,
+  "name": "pein",
+  "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+  "created_at": "2021-12-14T17:06:03.000000Z",
+  "updated_at": "2026-10-06T00:48:44.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 119111,
+   "name": "Manimal1920",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+   "cover_photo_url": null,
+   "created_at": "2026-07-30T21:56:19.000000Z",
+   "updated_at": "2026-10-05T16:46:55.000000Z"
+  }
+ ],
+ "category": {
+  "id": 2,
+  "hub_id": 79,
+  "title": "Overhauls",
+  "slug": "overhauls",
+  "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+ }
+}

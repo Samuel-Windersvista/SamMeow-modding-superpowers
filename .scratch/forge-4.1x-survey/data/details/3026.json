@@ -1,0 +1,39 @@
+{
+ "id": 3026,
+ "hub_id": null,
+ "guid": "com.viper.questbackport",
+ "name": "Quest Backport",
+ "slug": "quest-backport",
+ "teaser": "Rebuilding and porting select quests from the official EFT release for compatibility with SPT.",
+ "thumbnail": "https://files.sp-mod.com/mods/YMcME7vDCnd5xuEH1lxiWZyeQJ9vmHksCwOnyaCr.png",
+ "downloads": 5492,
+ "favourites_count": 65,
+ "endorsements_count": 22,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Purpose</div>\n<div class=\"tab-content\"><p>Overrides quests to match the latest version of EFT, on top of SPT.</p>\n<p>EFT has drastically changed its quest structure, quest chains, and trader reputation system since SPT 4.1.x was branched. Because of that, this mod does <strong>not</strong> apply EFT’s current EXP/rouble/reputation reward balance  it simply no longer fits SPT 4.1.x. Start conditions and quest-chain requirements are also mostly kept as-is from SPT.</p>\n<p>What it does change are the kill conditions, map conditions, issued gear, turn-in items, and some rewards across approximately 272 quests  including a few that need custom zones (e.g., Golden Swag, Pest Control, Spa Tour - Part 7).</p>\n<p>You can check the per-trader quest changes in the README. Quests not yet covered will be added in future releases.</p>\n<p>As a bonus, this mod can also remove the sales-volume requirement from trader loyalty level-ups, just like live EFT. See the <strong>Config flags</strong> tab for details.</p>\n<blockquote>\n<p><strong>Note:</strong> While developing this mod, I heard the news about SPT 5.0. Still, I stayed committed to finishing it for everyone playing on 4.1.x. This mod won’t be needed once 5.0 drops, but until then, think of it as an early sneak peek at the new quests on 4.1.x!</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Requirements</div>\n<div class=\"tab-content\"><ul>\n<li>[WTT-CommonLib] <code>&gt;=3.0.6</code>  <strong>required</strong></li>\n<li>[WTT-ContentBackport] <code>2.0.1</code> <strong>required</strong></li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ol>\n<li>Download <code>QuestBackport.zip</code> for the version you want from <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/releases\" rel=\"noreferrer noopener\">Releases</a>.</li>\n<li>Extract it and copy the <code>SPT_Runtime</code> and <code>BepInEx</code> folders into your SPT install root, overwriting when asked. The install root is the folder that <em>contains</em> <code>SPT_Runtime</code> (e.g. <code>C:\\SPT</code>), not <code>SPT_Runtime</code> itself.\n<ul>\n<li>Resulting layout: <code>SPT_Runtime/user/mods/QuestBackport/...</code> and <code>BepInEx/plugins/QuestBackport.Client/...</code></li>\n<li>The <code>BepInEx</code> folder is the client plugin that handles the UI side of the config flags. Just install it alongside the rest — it doesn’t affect anything else.</li>\n<li>If your server root <em>is</em> the <code>SPT_Runtime</code> folder (older SPT layout), copy just <code>SPT_Runtime\\user\\mods\\QuestBackport</code> from the zip into your server’s <code>user\\mods\\</code> instead.</li>\n</ul>\n</li>\n<li>Restart the server.</li>\n</ol>\n<blockquote>\n<p><strong>Upgrading from SptQuestLive (v1.0.4 or earlier):</strong> this mod was previously named SptQuestLive. Delete the <code>SPT_Runtime/user/mods/sptQuestLive</code> and <code>BepInEx/plugins/SptQuestLive.Client</code> folders before installing, otherwise both versions will load at the same time. If you changed any config flags, set them again in the new <code>QuestBackport</code> folder.</p>\n</blockquote></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Compatibility</div>\n<div class=\"tab-content\"><p>Works with mods that read quest data dynamically, such as Dynamic Maps and MoreChecks.</p>\n<p>With <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/3054/quest-codex\" rel=\"noreferrer noopener\">Quest Codex</a> installed, you can check the updated Kappa quest (<strong>Collector</strong>) details, including where to find each item and its drop chances, on its Kappa Tracker page.</p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Localization</div>\n<div class=\"tab-content\"><p>This mod ships with English (<code>en</code>), Korean (<code>kr</code>), and Russian (<code>ru</code>) locales. If your game language is anything else, the mod’s quest text falls back to English. Everything still works, just not in your language.</p>\n<p>Want to see it in your language? Contributions are welcome! Copy <code>db/locales/en.json</code>, translate the values (keep the keys as-is), save it as <code>db/locales/&lt;your-lang&gt;.json</code>, and open a pull request. The locale code must match the ones SPT uses (e.g. <code>fr</code>, <code>de</code>, <code>ch</code>).</p></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Scope</div>\n<div class=\"tab-content\"><p>Lightkeeper, Ref, and BTR trader quests are left untouched. Ref’s quests are mostly tied to Arena and don’t need changes, and Lightkeeper’s quests are end-game content that will be reviewed separately later.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Config flags</div>\n<div class=\"tab-content\"><p>Mod behavior can be adjusted in <code>db/Config.json</code>.</p>\n<ul>\n<li><code>questContentEnabled</code> (default <code>true</code>): toggles all of this mod’s quest/reward content as a whole quest overrides and removals, alternative conditions, trader assort unlocks/removals, bot/static loot additions, hideout fixes, locale changes, etc. Set to <code>false</code> to fall back to vanilla SPT behavior entirely.</li>\n<li><code>disableSalesVolumeRequirement</code> (default <code>true</code>, experimental): removes the sales-volume requirement from trader loyalty level-ups, so leveling up depends only on level and reputation. The sales-volume counter is also hidden from the trade UI. This works independently of <code>questContentEnabled</code>.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-8\" class=\"tab-panel\"><div class=\"tab-title\">Bug Reports</div>\n<div class=\"tab-content\"><p>Please report bugs on <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Viper-9/QuestBackport/issues\" rel=\"noreferrer noopener\">GitHub Issues</a> with as much detail as possible (SPT version, other mods installed, server log).</p></div></div>\n<div id=\"tabset-1-panel-9\" class=\"tab-panel\"><div class=\"tab-title\">Credits</div>\n<div class=\"tab-content\"><p>Special thanks to the <strong>Korean SPT Community</strong> and the <strong>WTT Team</strong> for kindly answering my questions and providing great support!</p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/3026/quest-backport",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 7,
+ "published_at": "2026-09-14T15:18:00.000000Z",
+ "created_at": "2026-09-14T15:41:59.000000Z",
+ "updated_at": "2026-10-09T12:58:32.000000Z",
+ "owner": {
+  "id": 120895,
+  "name": "Viper-9",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/DL6BM09JXStu7oSk05hFWOOTHt76Y4JRotBPpElR_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-08-16T10:33:42.000000Z",
+  "updated_at": "2026-10-11T07:54:41.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 7,
+  "hub_id": 24,
+  "title": "Quests",
+  "slug": "quests",
+  "description": ""
+ }
+}

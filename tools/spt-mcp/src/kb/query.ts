@@ -1,11 +1,13 @@
 // =============================================================================
 // kb/query.ts — 知识库条目过滤（自 tools/kb-query.ts 抽出，语义逐字保持）
 //
-// 过滤语义（与抽取前完全一致）：
+// 过滤语义：
 //   - topic   ：精确匹配，不区分大小写
 //   - domain  ：精确匹配，不区分大小写；条目 domain 为 "both" 时始终命中
 //   - version ：条目 version 数组包含目标值（不区分大小写），或含 "通用" 时始终命中
-//   - keyword ：对 title 做不区分大小写的子串匹配
+//   - keyword ：对 title **与 keywords** 做不区分大小写的子串匹配
+//               （keywords 扩展为 title ∪ keywords：无 frontmatter 的库靠 builder
+//                从 H2 标题/目录名生成 keywords，仅匹配 title 会让概念检索全落空）
 //   - 输出按 path 升序（localeCompare）
 // =============================================================================
 
@@ -44,7 +46,11 @@ export function queryIndex(
       if (!versions.includes(want) && !versions.includes("通用")) return false;
     }
     if (keywordLower) {
-      if (!entry.title.toLowerCase().includes(keywordLower)) return false;
+      const inTitle = entry.title.toLowerCase().includes(keywordLower);
+      const inKeywords =
+        entry.keywords !== undefined &&
+        entry.keywords.some((keyword) => keyword.toLowerCase().includes(keywordLower));
+      if (!inTitle && !inKeywords) return false;
     }
     return true;
   });

@@ -1,0 +1,39 @@
+{
+ "id": 2788,
+ "hub_id": null,
+ "guid": "com.sora.visitapi",
+ "name": "VisitAPI Framework",
+ "slug": "visitapi-framework",
+ "teaser": "Recreating Storyline and Dialog feature from the Offcial to SPT. Easy to apply to native or custom Trader with a sign file.",
+ "thumbnail": "https://files.sp-mod.com/mods/2PQExVPAvuRn0NYYR0EKCfKZAJ60kuWusaitdleN.png",
+ "downloads": 9257,
+ "favourites_count": 104,
+ "endorsements_count": 26,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">DESCRIPTION</div>\n<div class=\"tab-content\"><blockquote class=\"is-warning\">\n<p>⚠️ 1.1 STORYLINE AND QUEST NOT INCLUDED. BUT YOU CAN FOUND THEM IN ADDON.</p>\n</blockquote>\n<h3>What is this?</h3>\n<p><strong>VisitAPI</strong> is a Frameworks that brings EFT 1.0-Style Storyline and Trader Dialog featrue to SPT.\nWrite a simple <code>.DLG</code> script and apply the script to the trader that you want to have  <code>STORYLINE</code>, <code>DIALOG</code> features.</p>\n<p><strong>Trader</strong> that apply with the script will have the same perform as EFT 1.0-Style with custom made <code>3D Scence</code>/ <code>Picture</code>/ <code>Video</code>/ <code>BGM</code>/ <code>Vocal</code> as the background elements with custom made  <code>StoryChatper</code>. All these can be config or edit with the <strong>VisitAPI Editor</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI/blob/main/docs/Dialogue.png?raw=ture\" alt=\"VisitAPI showcase\" /></p>\n<h3>How to use?</h3>\n<p>The API doesn’t ship with any content. You will need to create your own <code>.DLG</code> script either by hand or stop surffing yourself with looking the doc example in Github wondering why is not working. instead using the <strong>VisitAPI Editor</strong> for Dialog, Quest, Storyline design.</p>\n<p>Once the <code>.DLG</code> file is place in the <code>BepInEx\\config\\VisitAPI</code> folder. The Trader will appear a <strong>VISIT</strong> Button and <strong>Story Chapter</strong> like official did.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI/blob/main/docs/Stroyline%20Backport.png?raw=ture\" alt=\"VisitAPI showcase\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/TricolourSky/VisitAPI-Editor/blob/main/VisitAPIShowcase.png?raw=ture\" alt=\"VisitAPI Editor showcase\" /></p>\n<h3>How to Install?</h3>\n<ol>\n<li>\n<p>Extract the archive into your <strong>SPT root</strong> (the folder with <code>SPT.Server.exe</code>).</p>\n</li>\n<li>\n<p>Put your scripts in <code>BepInEx\\config\\VisitAPI</code>.</p>\n<p>Backgrounds go in <code>BepInEx\\config\\VisitAPI\\backgrounds\\</code></p>\n<p>Vocal and music go in <code>BepInEx\\config\\VisitAPI\\audio\\</code>.</p>\n</li>\n<li>\n<p>Double-click <code>VisitAPI.Editor.exe</code> in the SPT root — it opens a web base app that allow you to edit your dlg file.</p>\n</li>\n<li>\n<p>Optional: <code>VisitAPI EFT11.zip</code> adds some official Stroyline. Can be found in addons.</p>\n</li>\n</ol>\n<h3>🙏 Credits</h3>\n<p><strong>VisitAPI</strong> and <strong>VisitAPI Editor</strong> — MIT licensed.</p>\n<p>Shout out Qwertyalex from WTT and 7Bpencil for the 1.1 storyline dump.</p>\n<p>Bug or contribution? Leave an Issue here or GitHub.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">KNOWING ISSUE</div>\n<div class=\"tab-content\"><h3>Lack some features from 1.0</h3>\n<p>The Plugin is not 100% cover all the feature that is in 1.0. Is still under develpment.</p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/2788/visitapi-framework",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-08-14T07:04:00.000000Z",
+ "created_at": "2026-06-29T05:19:28.000000Z",
+ "updated_at": "2026-10-06T15:37:04.000000Z",
+ "owner": {
+  "id": 101080,
+  "name": "TricolourLM7",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/TVwOwkK1SEaJxX9OJeqyILraJBosxBwldG4Qw1HL_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/YHGyEjhKsg7zM8frW6UKT8NAwz26JDtgaDHI9072_1280w.webp",
+  "created_at": "2026-01-09T08:50:45.000000Z",
+  "updated_at": "2026-10-11T05:39:22.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 2,
+  "hub_id": 79,
+  "title": "Overhauls",
+  "slug": "overhauls",
+  "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+ }
+}

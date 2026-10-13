@@ -1,0 +1,465 @@
+{
+ "term": "Painter",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1025,
+    "hub_id": 1412,
+    "guid": "com.emilanderss0n.painter",
+    "name": "Painter",
+    "slug": "painter",
+    "teaser": "Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons).",
+    "thumbnail": "https://files.sp-mod.com/mods/1412.jpg",
+    "downloads": 313547,
+    "favourites_count": 153,
+    "endorsements_count": 14,
+    "detail_url": "https://sp-mod.com/mod/1025/painter",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-08-22T17:18:00.000000Z",
+    "created_at": "2023-08-22T17:18:44.000000Z",
+    "updated_at": "2026-09-19T15:57:10.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 78428,
+      "name": "kobethuy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-05-04T22:32:08.000000Z",
+      "updated_at": "2026-10-05T13:13:57.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1125,
+    "hub_id": 1555,
+    "guid": "com.emilanderss0n.tgc",
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "teaser": "Adds a lot more unique gear and attachments for E*****************",
+    "thumbnail": "https://files.sp-mod.com/mods/1555.jpg",
+    "downloads": 302905,
+    "favourites_count": 158,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/1125/tactical-gear-component",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2023-10-22T03:19:00.000000Z",
+    "created_at": "2023-10-22T03:19:58.000000Z",
+    "updated_at": "2026-09-19T16:17:11.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 78428,
+      "name": "kobethuy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-05-04T22:32:08.000000Z",
+      "updated_at": "2026-10-05T13:13:57.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2003,
+    "hub_id": 2683,
+    "guid": "com.janky.hollywoodfx",
+    "name": "HollywoodFX",
+    "slug": "hollywoodfx",
+    "teaser": "Make battles look cinematic and immersive by rebuilding almost every single impact and special effect from scratch. Realism is not the aim, but the mod doesn't go overboard.",
+    "thumbnail": "https://files.sp-mod.com/mods/2683.png",
+    "downloads": 219650,
+    "favourites_count": 351,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2003/hollywoodfx",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-02-06T19:41:57.000000Z",
+    "created_at": "2025-02-06T19:41:57.000000Z",
+    "updated_at": "2026-09-17T20:36:04.000000Z",
+    "owner": {
+     "id": 72916,
+     "name": "JankyTheClown",
+     "profile_photo_url": "https://sp-mod.com/avatars/J.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-02-04T22:53:52.000000Z",
+     "updated_at": "2026-09-28T20:21:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2852,
+    "hub_id": null,
+    "guid": "com.sipto.truevalday",
+    "name": "True Valday",
+    "slug": "true-valday",
+    "teaser": "The Valday PS-320 used to be clean glass, then the optics rework filled it with a shadow that swims every time you move. True Valday hands the old sight picture back.",
+    "thumbnail": "https://files.sp-mod.com/mods/5ILzGCwksDuxJcGboBuwS3KgjzSvjXodRyCg0FzI.png",
+    "downloads": 2270,
+    "favourites_count": 20,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2852/true-valday",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-07-28T01:34:00.000000Z",
+    "created_at": "2026-07-28T01:35:47.000000Z",
+    "updated_at": "2026-08-29T18:49:04.000000Z",
+    "owner": {
+     "id": 117959,
+     "name": "Sipto",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-07-13T07:04:33.000000Z",
+     "updated_at": "2026-09-22T02:31:12.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2878,
+    "hub_id": null,
+    "guid": "jayoh99.painter.4.0",
+    "name": "Painter - All in one",
+    "slug": "painter-all-in-one",
+    "teaser": "Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons).",
+    "thumbnail": "https://files.sp-mod.com/mods/k4n40z5PSX28mp26ygjt1NlIgSDnhsqCEW1phMSg.png",
+    "downloads": 6790,
+    "favourites_count": 35,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2878/painter-all-in-one",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-02T20:08:00.000000Z",
+    "created_at": "2026-08-02T06:01:06.000000Z",
+    "updated_at": "2026-08-31T03:18:07.000000Z",
+    "owner": {
+     "id": 45001,
+     "name": "jayohh",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/UG4mAFG2jDDXoYRKtq9K0H0pfAXrn0MrmeILxXUR_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-04T20:06:29.000000Z",
+     "updated_at": "2026-09-28T22:52:42.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 29835,
+      "name": "MoxoPixel",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+      "created_at": "2023-04-08T03:49:17.000000Z",
+      "updated_at": "2026-10-02T10:37:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1486,
+    "hub_id": 2048,
+    "guid": "com.amturtle.sillycattradericons",
+    "name": "Silly Cat Trader Icons",
+    "slug": "silly-cat-trader-icons",
+    "teaser": "Replaces trader icons with silly cats",
+    "thumbnail": "https://files.sp-mod.com/mods/2048.jpg",
+    "downloads": 5547,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1486/silly-cat-trader-icons",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 10,
+    "published_at": "2024-06-17T04:05:00.000000Z",
+    "created_at": "2024-06-17T04:05:24.000000Z",
+    "updated_at": "2026-07-28T08:24:43.000000Z",
+    "owner": {
+     "id": 51755,
+     "name": "AmTurtle",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/55c6dc358b1582446e4b86c6191fced13c897a07_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-14T00:23:24.000000Z",
+     "updated_at": "2026-08-10T19:46:31.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 10,
+     "hub_id": 26,
+     "title": "Retextures",
+     "slug": "retextures",
+     "description": ""
+    }
+   },
+   {
+    "id": 2495,
+    "hub_id": null,
+    "guid": "com.c11.unpracticaltactical",
+    "name": "Impractical Tactical",
+    "slug": "impractical-tactical",
+    "teaser": "A scavs idea of what tactical is, along with old surplus gear",
+    "thumbnail": "https://files.sp-mod.com/mods/38C1lYxOZvGDyAos42U7gCbbnK7Upf0dJ9SrM4oB.png",
+    "downloads": 4285,
+    "favourites_count": 13,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2495/impractical-tactical",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2025-12-12T00:32:00.000000Z",
+    "created_at": "2025-12-12T00:39:56.000000Z",
+    "updated_at": "2026-09-18T18:09:03.000000Z",
+    "owner": {
+     "id": 84418,
+     "name": "bobinstien",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/57f4a22c37774255c5ffb84b42e031fc0aaf831b_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/7BxfWR8ojvpMHscIdCJ9pQMSCCRuEJOsqEXyblrT_2560w.webp",
+     "created_at": "2025-09-09T03:44:35.000000Z",
+     "updated_at": "2026-10-05T02:16:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2174,
+    "hub_id": 2877,
+    "guid": "com.eukyre.pridemags",
+    "name": "PrideMags",
+    "slug": "pridemags",
+    "teaser": "Retextured magazines for inclusivity. Trans rights are human rights <3",
+    "thumbnail": "https://files.sp-mod.com/mods/VvTqXg6extuuWZw7xefbUF6gnqpqkvPAYfqyd4lK.png",
+    "downloads": 2520,
+    "favourites_count": 8,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2174/pridemags",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2025-06-08T23:34:00.000000Z",
+    "created_at": "2025-06-08T23:34:14.000000Z",
+    "updated_at": "2026-07-28T09:03:55.000000Z",
+    "owner": {
+     "id": 58981,
+     "name": "probablyEukyre",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+     "created_at": "2024-07-21T15:22:59.000000Z",
+     "updated_at": "2026-10-03T18:38:44.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2330,
+    "hub_id": null,
+    "guid": "net.drexira.euphoria",
+    "name": "Dragon Den - Euphoria",
+    "slug": "dragon-den-euphoria",
+    "teaser": "Euphoria opens the Dragon Den with 120+ items and a 52 quest run. Jobs range from quick to tough. Stock includes backpacks, sights, silencers, containers, and more.",
+    "thumbnail": "https://files.sp-mod.com/mods/RprlMjcW7wDac4JNgYOGJCG3Ff81rFtsceIPRgJG.png",
+    "downloads": 31018,
+    "favourites_count": 48,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2330/dragon-den-euphoria",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2025-10-01T08:22:00.000000Z",
+    "created_at": "2025-10-01T05:45:11.000000Z",
+    "updated_at": "2026-07-28T06:20:02.000000Z",
+    "owner": {
+     "id": 69857,
+     "name": "Drexira",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/be2adb47cf8da54438dcfe03e43759f07dec40c1_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-21T00:39:25.000000Z",
+     "updated_at": "2026-08-10T19:49:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2753,
+    "hub_id": null,
+    "guid": "com.thablackunicorn.raidpad",
+    "name": "RaidPad",
+    "slug": "raidpad",
+    "teaser": "Controller working in 4.0.13",
+    "thumbnail": "https://files.sp-mod.com/mods/IBmIDposShyTZqYEb6Uuwhv5LpuQNIZzW9EWQ8tn.png",
+    "downloads": 1741,
+    "favourites_count": 17,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2753/raidpad",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-06-18T23:32:00.000000Z",
+    "created_at": "2026-06-18T23:38:14.000000Z",
+    "updated_at": "2026-07-28T09:19:21.000000Z",
+    "owner": {
+     "id": 116215,
+     "name": "thablackunicorn",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/kpHdjcvh1hpXu0SSO93q09IhJsKJIehKGRoOvw0I_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-06-18T18:33:39.000000Z",
+     "updated_at": "2026-08-10T19:52:59.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 15487,
+      "name": "Amands2Mello",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/97ec3be3b53f6769474e8ffddbf02f1d1ea005e5_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/7627ffd55590bb33ed5ac75c4172a1cdbb89872f_1280w.webp",
+      "created_at": "2022-03-08T11:05:05.000000Z",
+      "updated_at": "2026-08-10T19:31:45.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 16
+  }
+ }
+}

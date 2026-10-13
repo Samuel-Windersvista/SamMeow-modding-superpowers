@@ -1,0 +1,39 @@
+{
+ "id": 1437,
+ "hub_id": 1989,
+ "guid": "com.acidphantasm.simpleworkoutqte",
+ "name": "Simple Workout QTE",
+ "slug": "simple-workout-qte",
+ "teaser": "Workout QTE in hideout is now much easier, and configurable!",
+ "thumbnail": "https://files.sp-mod.com/mods/1989.png",
+ "downloads": 68124,
+ "favourites_count": 225,
+ "endorsements_count": 27,
+ "description": "<p>This mod was built to be extremely simple with as little impact as possible. The default configuration effectively halves the speed of the QTE, and doubles the size of the success window.</p>\n<p>Default config looks like this:</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Zp1MYuB.gif\" alt=\"Zp1MYuB.gif\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Open the downloaded 7z file in 7-zip</li>\n<li>Select the SPT folder in the 7z file in 7-zip</li>\n<li>Drag the SPT folder from 7-zip into your root SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"wMIskD3.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><hr />\n<ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-simpleworkoutqte</code></li>\n<li>Delete <code>/ROOTSPT/SPT/user/mods/acidphantasm-simpleworkoutqte</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><hr />\n<p>SPT/user/mods/acidphantasm-simpleworkoutqte/config/config.json</p>\n<p>Configuration Options</p>\n<hr />\n<p>EasyMode</p>\n<p><strong>Enable</strong></p>\n<p>Enables or disables Easy Mode.</p>\n<ul>\n<li>false = normal configurable system</li>\n<li>true = simplified easy training mode</li>\n</ul>\n<p><strong>NumberOfReps</strong></p>\n<p>Number of repetitions used when Easy Mode is enabled.</p>\n<hr />\n<p>NonEasyMode</p>\n<p><strong>NumberOfReps</strong></p>\n<p>Number of repetitions used in standard mode training.</p>\n<hr />\n<p><strong>StartSpeed</strong></p>\n<p>Initial speed of the QTE indicator.</p>\n<p><strong>EndSpeed</strong></p>\n<p>Final speed of the QTE indicator.</p>\n<ul>\n<li>Lower values = slower movement</li>\n<li>Higher values = faster movement over time</li>\n</ul>\n<hr />\n<p><strong>StartX</strong></p>\n<p>Starting X-axis value (controls QTE size/position scaling).</p>\n<p><strong>EndX</strong></p>\n<p>Ending X-axis value (controls QTE size/position scaling).</p>\n<ul>\n<li>Lower = smaller</li>\n<li>Higher = larger</li>\n</ul>\n<hr />\n<p><strong>StartY</strong></p>\n<p>Starting Y-axis value (controls success window size).</p>\n<p><strong>EndY</strong></p>\n<p>Ending Y-axis value (controls success window size).</p>\n<ul>\n<li>Lower = smaller window</li>\n<li>Higher = larger window</li>\n</ul>\n<hr />\n<p><strong>ProgressionType</strong></p>\n<p>Defines how difficulty scales over time.</p>\n<ul>\n<li>“Exponential” = accelerates over time</li>\n<li>“Linear” = constant rate progression</li>\n</ul>\n<hr />\n<p>MusclePainTime</p>\n<p>Duration of muscle pain after training.</p>\n<ul>\n<li>Value is in seconds</li>\n<li>Example: 43200 = 12 hours</li>\n</ul>\n<hr />\n<p>SuccessEnergyCost</p>\n<p>Energy lost on successful QTE completion.</p>\n<ul>\n<li>Negative values reduce energy</li>\n<li>Example: -2 = lose 2 energy</li>\n</ul>\n<hr />\n<p>SuccessHydrationCost</p>\n<p>Hydration lost on successful QTE completion.</p>\n<ul>\n<li>Negative values reduce hydration</li>\n<li>Example: -2 = lose 2 hydration</li>\n</ul>\n<hr />\n<p>FailureEnergyCost</p>\n<p>Energy lost on failed QTE completion.</p>\n<ul>\n<li>Negative values reduce energy</li>\n<li>Example: -4 = lose 4 energy</li>\n</ul>\n<hr />\n<p>FailureHydrationCost</p>\n<p>Hydration lost on failed QTE completion.</p>\n<ul>\n<li>Negative values reduce hydration</li>\n<li>Example: -4 = lose 4 hydration</li>\n</ul>\n<hr />\n<p>SkillLevel0ExpMultiplier</p>\n<p>XP multiplier at skill level 0+.</p>\n<hr />\n<p>SkillLevel10ExpMultiplier</p>\n<p>XP multiplier at skill level 10+.</p>\n<hr />\n<p>SkillLevel20ExpMultiplier</p>\n<p>XP multiplier at skill level 20+.</p>\n<hr />\n<p>SkillLevel30ExpMultiplier</p>\n<p>XP multiplier at skill level 30+.</p>\n<hr />\n<p>SkillLevel40ExpMultiplier</p>\n<p>XP multiplier at skill level 40+.</p>\n<hr />\n<p>SkillRewardWeights</p>\n<p>Defines probability weighting for skill gains.</p>\n<ul>\n<li>Higher value = more likely to be selected</li>\n<li>0 = disabled</li>\n</ul>\n<p>Example:</p>\n<p>Strength: 25<br />\nEndurance: 25<br />\nOthers: 0</p>\n<hr />\n<p>SkillReferenceSheet</p>\n<p>Reference list of valid skill enum values used in SkillRewardWeights.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://wiki.sp-tarkov.com/en/modding/references/skills-reference\" rel=\"noreferrer noopener\">https://wiki.sp-tarkov.com/en/modding/references/skills-reference</a></p></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1437/simple-workout-qte",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 6,
+ "published_at": "2024-05-26T01:50:00.000000Z",
+ "created_at": "2024-05-26T01:50:39.000000Z",
+ "updated_at": "2026-08-30T23:48:06.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 6,
+  "hub_id": 23,
+  "title": "Hideout",
+  "slug": "hideout",
+  "description": ""
+ }
+}

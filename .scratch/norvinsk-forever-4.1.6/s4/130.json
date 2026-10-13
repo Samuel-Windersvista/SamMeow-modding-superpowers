@@ -1,0 +1,51 @@
+{
+ "idx": 130,
+ "entry": "[3]新武器-SIG_MCX_VIRTUS",
+ "terms": [
+  "sig_mcx_virtus",
+  "-SIG_MCX_VIRTUS"
+ ],
+ "all": [
+  {
+   "term": "sig_mcx_virtus",
+   "id": 1125,
+   "name": "Tactical Gear Component",
+   "slug": "tactical-gear-component",
+   "dl": 302914,
+   "sc": 0
+  },
+  {
+   "term": "sig_mcx_virtus",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "sig_mcx_virtus",
+   "id": 2658,
+   "name": "Camo And Stickers",
+   "slug": "camo-and-stickers",
+   "dl": 49227,
+   "sc": 0
+  },
+  {
+   "term": "-SIG_MCX_VIRTUS",
+   "id": 2425,
+   "name": "SamSWAT's Anime Rear Sights - 4.0 Port",
+   "slug": "samswats-anime-rear-sights-40-port",
+   "dl": 10195,
+   "sc": 0
+  },
+  {
+   "term": "sig_mcx_virtus",
+   "id": 2691,
+   "name": "Fold That Stock",
+   "slug": "fold-that-stock",
+   "dl": 4002,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

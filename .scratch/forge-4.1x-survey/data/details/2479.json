@@ -1,0 +1,39 @@
+{
+ "id": 2479,
+ "hub_id": null,
+ "guid": "ca.bushtail.weightedseasonrandomizer",
+ "name": "Weighted Season Randomizer",
+ "slug": "weighted-season-randomizer",
+ "teaser": "Configure weighted random seasons - higher weight = more common!",
+ "thumbnail": "https://files.sp-mod.com/mods/5UR3NUA5Qi3WUgvxhCfTiR8OjlUf4kbO9OI5GaZt.png",
+ "downloads": 7228,
+ "favourites_count": 36,
+ "endorsements_count": 5,
+ "description": "<p>This mod allows you to set your own season’s weights and have a weighted random function select a new season EACH RAID!</p>\n<p>As with all my mods, the config file is created on first boot.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2479/weighted-season-randomizer",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2025-12-01T02:24:00.000000Z",
+ "created_at": "2025-12-01T02:24:03.000000Z",
+ "updated_at": "2026-09-28T00:03:03.000000Z",
+ "owner": {
+  "id": 33775,
+  "name": "bushtail",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/TdWzpvy2rqkXMd0ZgmhFFK4drV4CyIIonC6CpuXT_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/9kPkXgrFjtLcjpFyR4bUGOAc6Rr8PaFIl5GMCjnt.png",
+  "created_at": "2023-07-09T21:22:21.000000Z",
+  "updated_at": "2026-10-11T00:33:23.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

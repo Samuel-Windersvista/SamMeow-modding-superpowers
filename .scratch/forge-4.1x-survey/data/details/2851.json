@@ -1,0 +1,39 @@
+{
+ "id": 2851,
+ "hub_id": null,
+ "guid": "com.nevek20.sptmodmanager",
+ "name": "SPT Mod Manager",
+ "slug": "spt-mod-manager",
+ "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
+ "thumbnail": "https://files.sp-mod.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
+ "downloads": 30581,
+ "favourites_count": 151,
+ "endorsements_count": 35,
+ "description": "<h1>SPT Mod Manager</h1>\n<p>A mod manager built specifically for SPT.</p>\n<p>I got tired of hunting down files one by one just to uninstall a mod, so I built a tool that solves that for good.</p>\n<h2>Features</h2>\n<ul>\n<li><strong>Smart install.</strong> Handles .zip, .7z and .rar, and figures out on its own whether a mod is server, client or both, even when one archive ships several parts</li>\n<li><strong>Enable and disable without deleting.</strong> Turn a mod off to test something, turn it back on later. Prepatchers go along too, so a disabled mod is really disabled</li>\n<li><strong>Offline mod info.</strong> Reads name, author, version and target SPT version straight from the files, and flags anything that doesn’t match your install</li>\n<li><strong>Forge browser built in.</strong> Search the catalogue, pick a version and install with one click. Mods you already have show as installed</li>\n<li><strong>Dependency check.</strong> Finds missing dependencies before installing and offers to grab them, with sizes. If a shared library needs updating, it shows which installed mods use it</li>\n<li><strong>Bulk updates.</strong> Check every installed mod for updates at once and update from inside the app</li>\n<li><strong>Export and import mod lists.</strong> Share your setup with a friend or rebuild after a fresh SPT install with a single file. Missing mods get downloaded for you</li>\n<li><strong>Conflict detection.</strong> Catches two mods overwriting the same client file, or the same mod installed twice under different folder names</li>\n<li><strong>7 languages.</strong> English, Portuguese, Chinese, Russian, French, Japanese and German</li>\n</ul>\n<h2>Installation</h2>\n<p>Download the <code>.exe</code> and run it. It installs everything and creates a desktop shortcut.</p>\n<p>Windows will probably show a <strong>“Windows protected your PC”</strong> warning. That’s normal for unsigned indie software: click <strong>More info</strong>, then <strong>Run anyway</strong>.</p>\n<h2>Good to know</h2>\n<ul>\n<li><strong>SPT core files are never touched.</strong> The Manager refuses to overwrite them, even if a mod archive ships its own copy</li>\n<li><strong>Archives only, for now.</strong> Installing from an extracted folder isn’t supported yet</li>\n<li><strong>Reinstalling asks for the archive again.</strong> Keeping a copy of every mod would double disk usage (a 3 GB mod would take 6 GB)</li>\n<li><strong>Built for the latest SPT.</strong> Older versions should work, but aren’t guaranteed</li>\n<li><strong>Windows only, for now.</strong> Linux support is planned</li>\n</ul>\n<h2>Support the project</h2>\n<p>SPT Mod Manager is free and always will be. If it saved you some headache, you can buy me a coffee. It helps me keep updating it!!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tioemir\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://ko-fi.com/img/githubbutton_sm.svg\" alt=\"Support me on Ko-fi\" /></a></p>\n<h2>License</h2>\n<p>Open source under the MIT license.</p>\n<p>Personal project, not affiliated with the SPT team or Battlestate Games.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2851/spt-mod-manager",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2026-07-27T19:03:00.000000Z",
+ "created_at": "2026-07-27T19:09:50.000000Z",
+ "updated_at": "2026-09-30T15:25:28.000000Z",
+ "owner": {
+  "id": 117466,
+  "name": "TioEmir",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-07-03T21:30:01.000000Z",
+  "updated_at": "2026-10-09T03:22:55.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

@@ -1,0 +1,196 @@
+《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》物品堆叠-True Items沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》更多的酒水MOD-CornerStore+HoodsEnergyDrinks沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》技能扩展-SkillsExtended沉浸感增强设置-已AI优化	+|CUSTOM|AIOPT|SRV		
+《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》腰包小容器-WTT-PackNStrap沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》战局大修-RaidOverhaul沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》AI生成-botplacementsystem沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》难度：容易-主家：中心区Nakatani地下室楼梯	-|CUSTOM|CLI|SRV		
+《生活在诺文斯克》难度：中等-主家：森林山间仓库	-|CUSTOM|CLI|SRV		
+《生活在诺文斯克》难度：困难-主家：海关17号仓库	-|CUSTOM|CLI|SRV		
+《生活在诺文斯克》难度：生存-重生地：中心区-主家：立交桥安全屋	+|CUSTOM|CLI|SRV		
+《生活在诺文斯克》-单独-软核-Softcore沉浸感增强设置	+|CUSTOM|SRV		
+《生活在诺文斯克》-单独-现实主义-Realism数值重制+小火山汉化+兼容补丁	+|CUSTOM|SRV		
+《生活在诺文斯克》-单独-商人以物易物-barter_economy-经济系统设置	+|CUSTOM|SRV		
+《生活在诺文斯克》-单独-客户端MOD-F12设置cfg所在	+|CUSTOM|CLI		
+《生活在诺文斯克》SAIN增强版预设-Live in Norvinsk AI preset	+|CUSTOM|CLI		
+《生活在诺文斯克》Samuel's Tweaks	+|CUSTOM|CLI|SRV	Samuel's Tweaks@1.0.0	SamMeow.PerformanceTweaks.dll
+[15]《现实化诺文斯克》数值、沉浸感再平衡_separator	-|SEP		
+[14]本体缺失翻译	+		
+[14]客户端ModF12通用翻译器及菜单汉化文本	+|CLI		ConfigurationManager.dll
+[14]汉化模组_separator	+|SEP		
+[13]瞄准点坐标-AimPointCoordinates	-|CLI		AimPointCoordinates.dll
+[13]好莱坞第三人称镜头-HollywoodCam	+|CLI		HollywoodCam.dll
+[13]战局外检修标签-DebugTooltip	+|CLI		Tyfon.DebugTooltip.dll
+[13]MOD工具-AI刷新和行为检修-BotDebug	+|CLI		DrakiaXYZ-BotDebug.dll
+[13]存档编辑器-SPT-AKI Profile Editor	+|SRV	ProfileEditorHelper@0.0.6	
+[13]MOD工具_separator	-|SEP		
+[12]商人列表滚动-TraderScrolling	+|CLI		Kaeno-TraderScrolling.dll
+[12]任务列表修复-TaskListFixes	+|CLI		DrakiaXYZ-TaskListFixes.dll
+[12]尸体可删除-SPTCorpseCleaner	+|CLI		SPTCorpseCleaner.dll
+[12]骑士面具修复-FacetheKnight-MaskFix	+|SRV	Face the Knight - Mask Fix@1.0.0	
+[12]防卡手-HandsAreNotBusy	+|CLI		HandsAreNotBusy.dll
+[12]白色方块bug修复-WhiteBoxFix	+|CLI		MarsyApp-WhiteBoxFix.dll
+[12]修复、优化_separator	-|SEP		
+[11]新任务线-迎新礼物任务-EFCL-WelcomeGifts	-|SRV		
+[11]多种可选准心-SimpleCrosshair	-|CLI		SimpleCrosshair.dll
+[11]我就是爹作弊工具-DadGamerMode	+|CLI		dvize.DadGamerMode.dll
+[11]新商人-可购买自己创建的预设枪械-Hephaestus	+|SRV	Hephaestus@1.1.14	
+[11]好莱坞投掷武器视觉辅助-VisualAssist	+|CLI		VisualAssist.dll
+[11]扫敌雷达-RadarStandalone	+|CLI		Tyrian-Radar.dll
+[11]物品感应-AmandsSense	+|CLI		AmandsSense.dll
+[11]任务跳过功能-Skipper	+|CLI		Terkoiz.Skipper.dll
+[11]内置动态地图-DynamicMaps	+|CLI|SRV	SPT-DynamicMaps@0.5.7	DynamicMaps.dll
+[11]声音可视化-accessibilityindicators	+|CLI		acidphantasm-accessibilityindicators.dll
+[11]更多界面信息-GamePanelHUD	+|CLI		GamePanelHUDCore.dll,GamePanelHUDCompass.dll,GamePanelHUDGrenade.dll,GamePanelHUDHealth.dll,GamePanelHUDHit.dll,GamePanelHUDKill.dll,GamePanelHUDWeapon.dll
+[11]破坏沉浸感MOD_separator	-|SEP		
+[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）	+|CLI		SwiftXP.SPT.ShowMeTheMoney.QuickSell.dll
+[10]显示价格-showmethemoney	+|CLI|SRV	ShowMeTheMoney@1.7.0	SwiftXP.ShowMeTheMoney.dll
+[10]物品容器间快速移动-QuickMoveToContainer	+|CLI		DrakiaXYZ-QuickMoveToContainer.dll
+[10]自动存放-AutoDeposit - 已AI优化	+|AIOPT|CLI		Tyfon.AutoDeposit.dll
+[10]物品真实堆叠-True Items Redux	+|SRV	True Items Redone@1.3.1	
+[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES	+|CLI		Seion.Iof.dll
+[10]从武器架装备武器-EquipFromWeaponRack	+|CLI		DrakiaXYZ-EquipFromWeaponRack.dll
+[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化	+|AIOPT|CLI		CactusPie.ContainerQuickLoot.dll
+[10]小火山的仓库搜索框修复和扩展-SearchBarExtended	+|CLI		SearchBarExtended.dll
+[10]小火山的仓库搜索框修复-SearchBarFix	-|CLI		hyjiacan.py4n.dll,SearchBarFix.dll
+[10]仓库搜索框-StashSearch	+|CLI		StashSearch.dll
+[10]UI大修-UIFixes	+|CLI|SRV	uifixes@4.2.3	Tyfon.UIFixes.dll,Tyfon.UIFixes.Net.dll
+[10]物品高效整理（告别华容道）_separator	-|SEP		
+[9]解锁所有藏身处装饰-UnlockHideoutCustomization	+|SRV	Hideout Customization Unlocker@1.1.0	
+[9]预览窗口尺寸调整-previewsizer	+|CLI		acidphantasm-previewsizer.dll
+[9]项目上下文菜单扩展-ItemContextMenuExt	+|CLI		IcyClawz.ItemContextMenuExt.dll
+[9]子弹专家-MunitionsExpert	+|CLI		IcyClawz.MunitionsExpert.dll
+[9]简单的锻炼QTE-simpleworkoutqte	+|SRV	SimpleWorkoutQTE@1.3.0	
+[9]物品打勾标记提供更多信息-MoreCheckmarks	+|CLI|SRV	MoreCheckmarksBackend@1.5.16	MoreCheckmarks.dll
+[9]任务交接自动化-TaskAutomation	+|CLI		TaskAutomation.dll
+[9]藏身处不用打勾-nofirhideout	+|SRV	no-fir-hideout@1.0.0	
+[9]腰带槽-BeltSlot	+|CLI		BeltSlot.dll
+[9]动态物品重量-DynamicItemWeights	+|CLI		Tosox.DynamicItemWeights.dll
+[9]小火山的全界面中文字体切换	+|CLI		FontReplace.dll
+[9]主菜单大修-MenuOverhaul	+|CLI		MoxoPixel-MenuOverhaul.dll
+[9]全局功能大修_separator	-|SEP		
+[8]自动奔跑-AutoRun-alt+W自动向前	-|CLI		Tyfon.AutoRun.dll
+[8]沉浸感时间循环-ImmersiveDaylightCycle	+|CLI|SRV	ImmersiveDaylightCycle-Server@1.0.2	ImmersiveDaylightCycle-FikaModule.dll,ImmersiveDaylightCycle.dll
+[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化	+|AIOPT|CLI		ContinuousLoadAmmo.dll
+[8]可拾取穿墙物品-ReachExtender	+|CLI		ReachExtender.dll
+[8]boss刷新通知-BossNotifier	+|CLI		BossNotifier.dll
+[8]塔科夫天气系统-Tarkov-Weather-System	+|SRV	Tarkov Weather System@1.0.1	
+[8]坠落的补给直升机-HeliCrash.ArysReloaded	+|CLI		SamSWAT.HeliCrash.ArysReloaded.dll
+[8]禁用Scav模式-DisableScavMode	+|CLI		DisableScavMode.dll
+[8]武器破门-BackdoorBandit客户端文件	+|CLI		dvize.BackdoorBandit.dll
+[8]武器破门-BackdoorBandit服务器文件	+|SRV	props-doorbreacher@1.11.0	
+[8]任务跟踪显示-QuestTracker	+|CLI		DrakiaXYZ-QuestTracker.dll
+[8]增加拾取距离-LootRadius	+|CLI		DrakiaXYZ-LootRadius.dll
+[8]直接搜索已打开容器-SearchOpenContainers	+|CLI		DrakiaXYZ-SearchOpenContainers.dll
+[8]直接使用未捡物品-UseLooseLoot	+|CLI		Gaylatea-UseLooseLoot.dll
+[8]门的状态随机化-DoorRandomizer	+|CLI		DrakiaXYZ-DoorRandomizer.dll
+[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere	+|CLI		UseItemsFromAnywhere.dll
+[8]更有意义的武器精通-MeaningfulWeaponMasteries	+|CLI		MeaningfulWeaponMasteries.dll
+[8]超重也能练耐力-Always-Level-Endurance	+|CLI		Endurance.dll
+[8]人物技能扩展和撬锁-SkillsExtended-已AI优化	+|AIOPT|CLI|SRV	Skills Extended@1.6.0	SkillsExtended.dll
+[8]技能速度调节器-SkillMultiplier	+|CLI|SRV	skillmultiplier@1.1.1	dazzuh.skillmultiplier.dll
+[8]可以攀爬更高的地方-Increase Climb Height	+|SRV	Increase Climb Height@1.2.0	
+[8]Boss身上有lega徽章-bosseshavelegamedals	+|SRV	Bosses Have Lega Medals@1.3.0	
+[8]战场环境临场感增强-SPTBattleAmbience	+|CLI		SPTBattleAmbience.dll
+[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化	+|AIOPT|CLI		HollywoodFX.dll,HollywoodGraphics.dll
+[8]门可以锁-LockableDoors	+|CLI|SRV	LockableDoors-Server@1.1.1	LockableDoors-FikaModule.dll,LockableDoors.dll
+[8]火山家的实时字幕-Volcano-subtitle	+|CLI		Subtitle.dll
+[8]战局内功能大修_separator	-|SEP		
+[7]更好的枪匠界面-Tradermodding客户端文件	+|CLI		ChooChoo-TraderModding.dll
+[7]更好的枪匠界面-Tradermodding服务器文件	+|SRV	TraderModding@1.10.0	
+[7]真实的热成像-realisticThermalScopes	+|SRV	realisticThermalScopes@1.4.0	
+[7]更亮的镭射线-brightlasers	+|SRV	BrightLasers@1.3.0	
+[7]反重力臂章-AntigravArmbands	+|SRV	antigravarmbands@2.2.6	
+[7]更大的背包-BetterBackpacks	+|SRV	JoshMateBetterBackPacks@1.5.3	
+[7]反射镜视野重做-ReflexSightsRework客户端文件	+|CLI		SamSWAT.ReflexSightsRework.dll
+[7]反射镜视野重做-ReflexSightsRework服务器文件	+|SRV	ReflexSightsRework@1.0.0	
+[7]可以合并消耗品-MergeConsumables	+|CLI|SRV	MergeConsumables@1.3.0	MergeConsumables.dll
+[7]平衡的夜视装备视效-BRNVG客户端文件	+|CLI		BorkelRNVG.dll,WindowsInput.dll
+[7]平衡的夜视装备视效-BRNVG服务器文件	+|SRV	BRNVG - N-15 Adapter@1.0.1	
+[7]武器配件位置自定义-WeaponCustomizer	+|CLI|SRV	weapon-customizer@2.0.1	Tyfon.WeaponCustomizer.dll
+[7]更好的机瞄-BetterRearSights	+|SRV	better-rear-sights@1.6.2	
+[7]弹匣优化管理系统-MagazineManagementSystem	+|SRV	[MMS] Magazine Management System@1.0.2	
+[7]面具修复-mask-fix	+|SRV	mask-fix@1.0.1	
+[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化	+|AIOPT|SRV	AutoCompat Framework@1.3.2	
+[7]武器动画更新-P90弹匣动画-transparentp90mag	+|SRV	Transparent P90 Mag@1.0.2	
+[7]武器动画更新器-AnimatorUpdater	+|CLI		UpdateHierarchy.dll
+[7]瞄准视野大修-FOV-Fix	+|CLI		FOVFix.dll
+[7]装备、物品功能大修_separator	-|SEP		
+[6]分离敌意-SeparateHostility	+|CLI		dk.SeparateHostility.dll
+[6]AI修复-friendlyPMC护栏-FriendlyPmcGuard	+|CLI		SamMeow.FriendlyPmcGuard.dll
+[6]AI修复-护卫NRE护栏-FollowerGuard	+|CLI		SamMeow.FollowerGuard.dll
+[6]友方AI系统-friendlypmc与PITFireTeam合并版本	+|CLI|SRV	friendlyPMC@4.4.12	FriendlyFireTeam.dll,FriendlyFireTeam.SAINAddon.dll,friendlyPMC.dll
+[6]AI锁头重定向-Headshot Damage Redirection	+|CLI		somtam.HeadShotRedirect.dll
+[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化	+|AIOPT|CLI		ThatsLit.Core.dll
+[6]AI增强-SAIN-Moew-v4.4.0增强版	+|CLI|SRV	SAIN@4.4.0	SAIN.dll
+[6]AI自动搜索物品-LootingBots - 已AI优化	+|AIOPT|CLI|SRV	LootingBots-ServerMod@1.6.2	skwizzy.LootingBots.dll
+[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化	+|AIOPT|SRV	Acids Progressive Bot System@1.9.4	
+[6]Acid的AI生成系统-botplacementsystem - 已AI优化	+|AIOPT|CLI|SRV	Acids Bot Placement System@1.1.1	acidphantasm-botplacementsystem.dll
+[6]AI路径扩展-Waypoints - 已AI优化	+|AIOPT|CLI		DrakiaXYZ-Waypoints.dll
+[6]AI拟人MOD的前置框架-BigBrain - 已AI优化	+|AIOPT|CLI		DrakiaXYZ-BigBrain.dll
+[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator	-|SEP		
+[5]丧尸模式开关	-		
+[5]舒适家园系统-HomeComforts - 已AI优化	+|AIOPT|CLI|SRV	HomeComforts-Server@1.0.1	HomeComforts-Packets.dll,HomeComforts.dll
+[5]战局内存储-LeaveItThere - 已AI优化	+|AIOPT|CLI|SRV	LeaveItThere-Server@1.3.1	LeaveItThere-FikaModule.dll,LeaveItThere.dll
+[5]以物易物经济系统-barter_economy-已AI优化	+|AIOPT|SRV	barter_economy@1.1.8	
+[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化	+|AIOPT|CLI		TarkovIRL-WHM.dll,TarkovIRL.dll
+[5]现实主义大修-Realism - 已AI优化	+|AIOPT|CLI|SRV	SPT Realism Mod@1.6.3	RealismMod.dll
+[5.5]整合包核心MOD-改变游戏玩法的大修（开关此类需重开档）_separator	-|SEP		
+[5]经济与制造系统大修-Softcore - 已AI优化	+|AIOPT|SRV	softcore@3.3.0	
+[5]全地图间移动套装-IEAPI+PTT - AI优化版	+|CLI|SRV	path-to-tarkov@6.2.0	InteractableExfilsAPI.dll,PTT-Fika.dll,Trap.PathToTarkov-Packets.dll,Trap.PathToTarkov.dll
+[5]战局大修-RaidOverhaul - 已AI增强版本	+|CLI|SRV	Raid Overhaul@2.7.1	RaidOverhaul.dll,RaidOverhaulFika.dll
+[5]新增5个开局角色-CustomProfiles	+|SRV	EFCL-CustomProfiles@4.2.0	
+[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator	-|SEP		
+[4]新商人-AES	+|SRV	AES@0.6.0	
+[4]新商人-VolkovTrader	+|SRV	VolkovTrader@1.0.1	
+[4]新商人-Epakim1-1	+|SRV	EpaKim1@1.0.2	
+[4]新商人-不明生还者-UnknownSurvivor	+|SRV	UnknownSurvivor@1.1.0	
+[4]新商人-荷官-Croupier (random loadouts + flea quicksell)	+|SRV	croupier@1.2.7	
+[4]新商人-藏身处物资商人-acidphantasm-harryhideout	+|SRV	HarryHideout@2.2.1	
+[4]新商人-毒蝎-acidphantasm-scorpion	+|SRV	Scorpion@0.13.1	
+[4]新商人-Artem	+|SRV	Artem@2.1.1	
+[4]新商人-油漆匠-Painter	+|SRV	Painter@1.1.7	
+[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)	+|SRV	Adam's Boxes at Ref (BARF)@0.3.2	
+[4]新商人-竞技场商人-ref-sptfriendly-quests	+|SRV	RefSPTFriendlyQuests@1.3.0	
+[4]自定义商人、任务_separator	-|SEP		
+[3]新配件-ConsortiumOfThings	+|SRV	ConsortiumOfThings@1.1.0	
+[3]新配件-Eco-Attachment Emporium	+|SRV	Eco-Attachment-Emporium@3.1.1	
+[3]新配件-Echoes.of.Tarkov.-.Requisitions	+|SRV	Echoes of Tarkov - Requisitions@1.0.4	
+[3]新配件-EpicRangeTime-Weapons	+|SRV	Weapons@3.1.4	
+[3]新配件-BlackCore	+|SRV	Black Core@1.1.8	
+[3]新配件-MagTape	+|SRV	Mag Tape@1.0.8	
+[3.1]新配件_separator	-|SEP		
+[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst	+|CLI|SRV	Ak-105-Hyperburst@1.0.0	WttHyperburstWrapper.dll
+[3]新武器-AKResonant	+|SRV	AKResonant@1.1.2	
+[3]新武器-国产武器-1SD-QBZ191	+|SRV	1SD-QBZ191@1.0.0	
+[3].50BMG重制-Epics 50 BMG Remaster-Expansion	+|SRV	50 BMG Remaster/Expansion@1.0.0	
+[3]新武器-AK50	+|SRV	AK50@1.0.5	
+[3]新武器-SIG_MCX_VIRTUS	+|SRV	sig_mcx_virtus@1.5.0	
+[3]新武器-WTT武器库-WTT - Armory客户端	+|CLI		WTT-Armory.dll
+[3]新武器-WTT武器库-WTT - Armory服务端	+|SRV	WTT-Armory@1.2.1	
+[3]新武器_separator	-|SEP		
+[2]高清材质-TarkovHDRework	+|SRV	TarkovHDRework@0.1.0	
+[2]自定义配方-tarkovcraft	+|SRV	TarkovCraft@1.1.0	
+[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]	+|SRV	RCTA - Metal Gear [FORTNITE]@1.0.2	
+[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)	+|SRV	RCTA - Synaptic Rig T1 (CODIW)@1.0.6	
+[2]新物品-竞技场赛季奖励-SPT Battlepass	+|SRV	Pluto! - SPT Battlepass@1.0.1	
+[2]新装备、衣服-TacticalGearComponent	+|SRV	Tactical Gear Component (TGC)@1.2.5	
+[2]腰包-WTT-PackNStrap客户端文件	+|CLI		WTT-PackNStrap.dll
+[2]腰包-WTT-PackNStrap服务器端文件	+|SRV	WTT-PackNStrap@1.1.13	
+[2]新酒水-HoodsEnergyDrinks	+|SRV	Hoods Energy Drinks@1.0.4	
+[2]新酒水-WTT - CornerStore	+|SRV	WTT-Corner Store@0.1.0-beta.3	
+[2]新物品-地图容器-SecureMapbookMod	+|SRV	MrVibesRSA-SecureMapbookMod@1.0.0	
+[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件	+|CLI		DrakiaXYZ-GildedKeyStorage.dll
+[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件	+|SRV	Gilded Key Storage@1.6.2	
+[2]新物品-藏身处猫咪-hideoutcat	+|CLI		AssetBundleLoader.dll,hideoutcat.dll
+[2]新内容_separator	-|SEP		
+[1]前置框架-WTT公共库-WTT-ClientCommonLib	+|CLI		WTT-ClientCommonLib.dll
+[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件	+|CLI		VCQLQuestZones.dll
+[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件	+|SRV	Virtuals Custom Quest Loader@2.0.4	
+[1]前置框架-自定义交互-CustomInteractions	+|CLI		IcyClawz.CustomInteractions.dll
+[1]前置框架-KmyTarkovApi	+|CLI		Crc32.NET.dll,HtmlAgilityPack.dll,KmyTarkovApi.dll,KmyTarkovConfiguration.dll,KmyTarkovReflection.dll,KmyTarkovUtils.dll
+[1]前置-《生活在诺文斯克》修改本体及MOD排序文件和整合包说明文档	+|SRV		
+[1]前置-《生活在诺文斯克》好奇猫自用游戏设置及按键	+|CLI		
+[1]前置MOD（不要关）_separator	-|SEP		

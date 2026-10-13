@@ -1,0 +1,39 @@
+{
+ "id": 3102,
+ "hub_id": null,
+ "guid": "com.bbbbbilly.hardcorestandardprofile",
+ "name": "Hardcore Standard Profile",
+ "slug": "hardcore-standard-profile",
+ "teaser": "S.T.A.L.K.E.R.-style start",
+ "thumbnail": "https://files.sp-mod.com/mods/TVPaoSi2vGlQzkKdOCXiuPSXJVtjw2hsqhkLiyms.png",
+ "downloads": 200,
+ "favourites_count": 3,
+ "endorsements_count": 0,
+ "description": "<p>S.T.A.L.K.E.R.-style start.</p>\n<p>Replaces the Standard profile with a harsh, low-level beginning: one AKS-74U, one PM, basic gear, and barely enough supplies to survive your first raid.</p>\n<p>No free high-tier items. No handouts. Just you and whatever you can scavenge.</p>\n<p>If you don’t want something in the starting kit, you can drop it in about 30 seconds — keep 100,000 roubles instead of 500,000, or destroy all of it.</p>\n<p>Introducing a friend to SPT? This gives them a starting kit that feels like a real operator’s loadout — not a wall of free guns they didn’t earn.</p>\n<p>All other profile presets (EoD, Unheard, etc.) are removed - only Standard remains.</p>\n<p>Also included:</p>\n<p>VKBO army bag: 4x2 -&gt; 3x4</p>\n<p>Waist pouch: 2x2 -&gt; 1x2</p>\n<p>How to use? Place the folder here -&gt;\nX:\\Client.0.16.9.5.40743\\SPT_Runtime\\user\\mods</p>\n<p>Preview: <a target=\"_blank\" class=\"external-link\" href=\"https://i.postimg.cc/XJ2zHWmw/Hardcore-Standard-Profile.png\" rel=\"noreferrer noopener\">https://i.postimg.cc/XJ2zHWmw/Hardcore-Standard-Profile.png</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/3102/hardcore-standard-profile",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2026-10-03T16:00:00.000000Z",
+ "created_at": "2026-10-03T17:06:29.000000Z",
+ "updated_at": "2026-10-05T01:31:40.000000Z",
+ "owner": {
+  "id": 125618,
+  "name": "BBBBilly",
+  "profile_photo_url": "https://sp-mod.com/avatars/B.svg",
+  "cover_photo_url": null,
+  "created_at": "2026-10-03T13:21:40.000000Z",
+  "updated_at": "2026-10-09T07:59:57.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

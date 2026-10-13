@@ -1,0 +1,1814 @@
+{
+  "schema_version": 2,
+  "generated": "2026-10-13",
+  "kb": {
+    "id": "norvinsk-notes",
+    "title": "整合包本体（作者一手）：下载 / 安装 / 玩法 / 剧情 / 更新日志 / 包内 MOD 运维",
+    "root": "E:\\云文件\\GitHub\\NorvinskStalker_knowledgeBase\\笔记"
+  },
+  "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。",
+  "entries": [
+    {
+      "path": "{0}ModPack Download/0.版本选择向导.md",
+      "title": "版本选择向导",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "按需求快速定位",
+        "整合包速览",
+        "决策流程图",
+        "{0}ModPack Download"
+      ],
+      "summary": "第一次接触诺文斯克整合包系列，看到一排下载链接不知道从何下手？这篇向导帮你快速定位最适合你的那一款。"
+    },
+    {
+      "path": "{0}ModPack Download/1.Norvinsk Stalker Download.md",
+      "title": "《诺文斯克潜行者》Norvinsk Stalker.v.1.2.0版",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ],
+      "summary": "《诺文斯克潜行者》1.2.0版是本整合包最新的正式版本，基于SPT3.7.6。2025年6月29起停止维护。"
+    },
+    {
+      "path": "{0}ModPack Download/2.Norvinsk Stalker Previous versions Download.md",
+      "title": "《诺文斯克潜行者》Norvinsk Stalker以往版本下载",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ]
+    },
+    {
+      "path": "{0}ModPack Download/3.Realized Norvinsk Download.md",
+      "title": "《现实化诺文斯克》Realized Norvinsk.v.0.9.8.1版",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ],
+      "summary": "《现实化诺文斯克》基于SPT3.9.8，是SPT3时期最稳定优秀的一个版本，但缺少mod的支持，无法实现我心目中的塔科夫，但已经足够好玩，是《生活在诺文斯克》前的过渡整合包。 已经停止维护。"
+    },
+    {
+      "path": "{0}ModPack Download/4.Live in Norvinsk download.md",
+      "title": "《生活在诺文斯克》Live in Norvinsk下载链接",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ],
+      "summary": "本整合包较为硬核自虐，萌新请移步《独享的塔科夫》，链接：5.Exclusive Tarkov download SPT4续作《无法逃离的塔科夫》正在施工中，可能需要等到2026年下半年才能发。"
+    },
+    {
+      "path": "{0}ModPack Download/5.Exclusive Tarkov download.md",
+      "title": "《独享的塔科夫》Exclusive Tarkov下载链接",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ]
+    },
+    {
+      "path": "{0}ModPack Download/6.Inescapable Tarkov download.md",
+      "title": "《无法逃离的塔科夫》Inescapable Tarkov下载链接",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "{0}ModPack Download"
+      ]
+    },
+    {
+      "path": "{0}ModPack Download/ModPack Tools/Realism item-stat generator.md",
+      "title": "EFT 现实主义数值生成器使用指南（v2.1）",
+      "version": [
+        "3.11",
+        "2.1"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "当前状态",
+        "当前支持的输入情况",
+        "当前生成规则",
+        "目录说明",
+        "推荐使用方式",
+        "规则与例外物品",
+        "文档索引",
+        "发布说明",
+        "{0}ModPack Download",
+        "ModPack Tools"
+      ],
+      "summary": "等待更新"
+    },
+    {
+      "path": "{0}ModPack Download/ModPack Tools/WTTCommonLib-Trader generator.md",
+      "title": "基于WTT的商人/任务生成器",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "download",
+      "source": "{0}ModPack Download",
+      "keywords": [
+        "核心功能",
+        "环境要求",
+        "使用步骤",
+        "{0}ModPack Download",
+        "ModPack Tools"
+      ],
+      "summary": "(SPT4版开发中)"
+    },
+    {
+      "path": "①整合包更新计划/0.个人兴趣计划.md",
+      "title": "个人整体计划（饼）",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "changelog",
+      "source": "①整合包更新计划",
+      "keywords": [
+        "①整合包更新计划"
+      ]
+    },
+    {
+      "path": "①整合包更新计划/1.《生活在诺文斯克》Live in Norvinsk更新日志.md",
+      "title": "《生活在诺文斯克》Live in Norvinsk更新日志",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "changelog",
+      "source": "①整合包更新计划",
+      "keywords": [
+        "todo list",
+        "游玩须知",
+        "-09-04 更新0.3.3",
+        "-07-26 更新0.3.2.2补丁",
+        "-06-28 更新0.3.2.1补丁",
+        "-06-28 更新0.3.2",
+        "-06-21 更新0.3",
+        "-03-15 更新v0.2.3.1补丁",
+        "-03-12 更新v0.2.3",
+        "-03-01 更新v0.2.2（生化危机版）",
+        "-02-22 更新v0.2.1",
+        "-02-13更新v0.2.0"
+      ],
+      "summary": "可将SPT版本号更新到：==3.11.5-Live-In-Norvinsk特别优化版 版本更新主要方向：我尽力在一大堆无法改动的代码里找到了几个优化点"
+    },
+    {
+      "path": "①整合包更新计划/2.《独享的塔科夫》Exclusive Tarkov更新日志.md",
+      "title": "《独享的塔科夫》Exclusive Tarkov更新日志",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "changelog",
+      "source": "①整合包更新计划",
+      "keywords": [
+        "游玩须知",
+        "-09-03 更新1.2 AI-Enhanced",
+        "-06-16 更新1.0 AI-Enhanced",
+        "-01-31 更新v0.5",
+        "-11-12 更新v0.3",
+        "①整合包更新计划"
+      ],
+      "summary": "可将SPT版本号更新到：==3.11.5-Live-In-Norvinsk特别优化版 版本更新主要方向：我尽力在一大堆无法改动的代码里找到了几个优化点"
+    },
+    {
+      "path": "①整合包更新计划/3.《无法逃离的塔科夫》Inescapable Tarkov更新日志.md",
+      "title": "26-XX-XX",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "changelog",
+      "source": "①整合包更新计划",
+      "keywords": [
+        "todo list",
+        "游玩须知",
+        "①整合包更新计划"
+      ],
+      "summary": "版本号：Inescapable TarkovAlpha"
+    },
+    {
+      "path": "②安装和技术指南/1.所有整合包通用安装、技术手册.md",
+      "title": "Samuel是不是好奇猫整合包通用安装、技术手册",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "install",
+      "source": "②安装和技术指南",
+      "keywords": [
+        "安装前必读事项",
+        "整合包安装重要Q&A",
+        "如何更新",
+        "首次安装流程",
+        "特别鸣谢",
+        "②安装和技术指南"
+      ],
+      "summary": "我的整合包经常更新，那当看到更新公告后，大家应该怎么做呢？"
+    },
+    {
+      "path": "②安装和技术指南/2.Mod Organizer2如何额外安装MOD和为什么要用它？.md",
+      "title": "Mod Organizer 2 如何额外安装MOD和为什么要用它？",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "install",
+      "source": "②安装和技术指南",
+      "keywords": [
+        "②安装和技术指南"
+      ],
+      "summary": "Mod Organizer 2（MO2）的核心实现原理围绕虚拟化文件系统和分层管理模组展开，其设计目标是为用户提供非侵入式、灵活的模组管理方案。以下是其关键技术原理的详细分析："
+    },
+    {
+      "path": "②安装和技术指南/3.【诺文斯克潜行者】1.1.8版技术手册.md",
+      "title": "【诺文斯克潜行者】1.1.8 版安装/技术手册",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "install",
+      "source": "②安装和技术指南",
+      "keywords": [
+        "【诺文斯克潜行者】1.1.8 版安装/技术手册",
+        "安装教程",
+        "整合包技术问题解答集",
+        "②安装和技术指南"
+      ],
+      "summary": "本手册主要内容整合包的安装教程和技术说明，以及游玩过程中可能遇到的部分 BUG、程序问题的解决方案。"
+    },
+    {
+      "path": "③游戏指南/1.《生活在诺文斯克》Live in Norvinsk游戏手册.md",
+      "title": "《生活在诺文斯克》-Live in Norvinsk-游戏手册",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "可为我充电",
+        "特别鸣谢",
+        "③游戏指南"
+      ],
+      "summary": "⚠️注：这里仅涉及画面相关设置，是我自己用的画面设置，其他设置不在我的建议内。"
+    },
+    {
+      "path": "③游戏指南/2.《生活在诺文斯克》-Live in Norvinsk-地图间移动路径指引.md",
+      "title": "2.《生活在诺文斯克》-Live in Norvinsk-地图间移动路径指引",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南"
+      ]
+    },
+    {
+      "path": "③游戏指南/3.《生活在诺文斯克》Live in Norvinsk的四种专属角色简介.md",
+      "title": "《生活在诺文斯克》Live in Norvinsk专属账号类型（角色）",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南"
+      ],
+      "summary": "《生活在诺文斯克》在创建账号时，可以选择四个不同的自定义账号类型，我称之为“整合包专属角色”。"
+    },
+    {
+      "path": "③游戏指南/4.《诺文斯克潜行者》Norvinsk Stalker.v.1.1.8版游戏手册.md",
+      "title": "《诺文斯克潜行者》Norvinsk Stalker v.1.1.8 版游戏手册",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "【诺文斯克潜行者】1.1.8 版游戏手册",
+        "整合包游戏手册",
+        "③游戏指南"
+      ],
+      "summary": "本手册主要内容对整合包游玩方式的说明。"
+    },
+    {
+      "path": "③游戏指南/5.《生活在诺文斯克》—— 一个为硬核生存者打造的单机塔科夫世界.md",
+      "title": "什么是《生活在诺文斯克》？",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南"
+      ],
+      "summary": "《生活在诺文斯克》是一款基于 SPT-AKI 3.11.4 框架深度定制的《逃离塔科夫》单机整合包。它并非简单地将Mod堆砌在一起，而是一个经过系统性设计、旨在将在线塔科夫的竞技压力，转化为一个沉浸式、叙事驱动、高真实性的单人角色扮演生存体验。"
+    },
+    {
+      "path": "③游戏指南/现代单兵武器中不同零部件对武器的好坏影响.md",
+      "title": "现代单兵武器中不同零部件对武器的好坏影响",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南"
+      ],
+      "summary": "本整合包中的武器配件数值将根据以下部件的现实作用进行重新定制，这项工程不是一蹴而就的，但我会持续进行。"
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/公共资料：撤离点ID和对应详细信息.md",
+      "title": "All exfiltrations",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "Customs",
+        "Factory",
+        "Ground Zero",
+        "Interchange",
+        "Laboratory",
+        "Lighthouse",
+        "Military Reserve",
+        "Shoreline",
+        "Streets of Tarkov",
+        "Woods",
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ]
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/公开资料：基于ShadowXtrex-CustomProfiles-v394.0.1的自定义Profiles内容解读.md",
+      "title": "公开资料：基于ShadowXtrex-CustomProfiles-v394.0.1的自定义Profiles内容解读",
+      "version": [
+        "3.11",
+        "394.0.1"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "\"descriptionLocaleKey\": \"customprofile-zhTASBot\","
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/如何配置SAIN.md",
+      "title": "如何配置SAIN",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "总览",
+        "SAIN主页的功能说明翻译",
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "进入游戏后，按F6即可呼出SAIN的设置主界面："
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/现实主义“Realism”装备补丁制作说明.md",
+      "title": "装备补丁制作样例说明",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "背景与目的",
+        "补丁格式说明",
+        "注意事项",
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "现实主义mod大幅重构了原版塔科夫的武器系统，使数值体系更复杂。但原版数值存在问题（如“用脚填”导致不合理属性搭配），例如："
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/自定义配方-tarkovcraft的使用指南.md",
+      "title": "塔科夫工艺",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "这是什么？",
+        "使用方法",
+        "安装",
+        "许可证",
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "这是一个针对 SPT 的模组，您可以使用它来为游戏添加自定义配方。"
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/LOOTING BOTS 1.3.5 (SPT 3.9.0)的设置翻译.md",
+      "title": "LOOTING BOTS 1.3.5 (SPT 3.9.0) 设置翻译",
+      "version": [
+        "3.11",
+        "3.9.0"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "Loot Finder-寻找战利品",
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ]
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/Path to Tarkov（地图间移动）的Config解析.md",
+      "title": "Path to Tarkov（地图间移动）的Config解析",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "\"enabled\": true, //MOD的总开关 \"debug\": false, //是否开启Debug模式 \"initialoffraidposition\": \"PlayerHideout\", //设置玩家的主家位置 \"resetoffraidpositiononplayerdie\": true, //设置死亡后是否会主家 \"tradersaccessrestriction\": true, //商人访问受限，默认开 \"hideou…"
+    },
+    {
+      "path": "③游戏指南/主要的MOD使用、设置指南/RAID OVERHAUL STANDALONE 1.1.0的功能翻译.md",
+      "title": "RAID OVERHAUL STANDALONE 1.1.0的功能翻译",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "③游戏指南",
+        "主要的MOD使用、设置指南"
+      ],
+      "summary": "Currently Implemented events are"
+    },
+    {
+      "path": "③游戏指南/SPT联机模块——FIKA安装指南「翻译版」.md",
+      "title": "安装 Fika",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "gameplay",
+      "source": "③游戏指南",
+      "keywords": [
+        "安装 Fika 之前",
+        "先决条件",
+        "安装",
+        "③游戏指南"
+      ],
+      "summary": "始终记住，Fika 是一个非官方的SPT模组。在尝试安装 Fika 之前，您必须先安装一个可以正常工作的 SPT。在确保 SPT 可以正常工作之前，尝试安装 Fika 是毫无意义的。"
+    },
+    {
+      "path": "④塔科夫故事背景/1.逃离塔科夫：背景故事与世界观手册.md",
+      "title": "1.逃离塔科夫：背景故事与世界观手册",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "一、这个世界发生了什么？",
+        "二、谁在打谁？（派系速览）",
+        "三、TerraGroup 到底在搞什么？",
+        "四、商人：封锁区里的人脉",
+        "五、地图：塔科夫的 13 个战场",
+        "六、主线剧情：逃离塔科夫的路",
+        "七、术语小词典",
+        "八、赛季与删档：塔科夫的\"时间感\"",
+        "④塔科夫故事背景"
+      ],
+      "summary": "《逃离塔科夫》的故事发生在一个虚构的地区——俄罗斯西北部的诺文斯克特别经济区（Norvinsk SEZ）。"
+    },
+    {
+      "path": "④塔科夫故事背景/2.派系详解：谁在塔科夫打仗.md",
+      "title": "2.派系详解：谁在塔科夫打仗？",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "两大主角：USEC 与 BEAR",
+        "第三方势力",
+        "势力关系图",
+        "④塔科夫故事背景"
+      ],
+      "summary": "塔科夫的冲突不是两国战争，而是俄罗斯政府与跨国企业集团（TerraGroup）之间的代理战争——双方各自雇佣了一支私人军事公司，在封锁区内僵持。除此之外，还有大量第三方势力在废墟中浑水摸鱼。"
+    },
+    {
+      "path": "④塔科夫故事背景/3.地图背景：塔科夫的十三个战场.md",
+      "title": "3.地图背景：塔科夫的十三个战场",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "地图总览",
+        "逐图背景",
+        "转场（Transit）机制",
+        "④塔科夫故事背景"
+      ],
+      "summary": "1.0 版本起，塔科夫共有 13 张地图。每张地图都有自己的历史、控制势力和剧情意义——了解它们，能让你的每一次战局都更有\"在场感\"。"
+    },
+    {
+      "path": "④塔科夫故事背景/4.商人人物志：封锁区里的人脉.md",
+      "title": "4.商人人物志：封锁区里的人脉",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "商人总览",
+        "逐人背景",
+        "一句话记住他们",
+        "④塔科夫故事背景"
+      ],
+      "summary": "商人是你在这座废城里最重要的盟友：买卖装备、承接任务、处理保险。但每个人背后都有自己的故事——有的来自军队，有的来自医院，还有的压根没人知道他是谁。"
+    },
+    {
+      "path": "④塔科夫故事背景/5.主线剧情全览：逃离塔科夫的路.md",
+      "title": "5.主线剧情全览：逃离塔科夫的路",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "通用提示（先记住这条）",
+        "九章主线",
+        "终局：门票（The Ticket）——四个结局",
+        "支线：破冰船任务线（Boreas 后续）",
+        "章节速查表",
+        "④塔科夫故事背景"
+      ],
+      "summary": "1.0 起，塔科夫有了完整的主线章节系统：9 章主线 + 1 个终局分支，串联所有商人与地图。你的目标始终只有一个——逃离塔科夫。但路怎么走，由你前期的每个抉择决定。"
+    },
+    {
+      "path": "④塔科夫故事背景/6.塔科夫大事年表：从繁荣到封锁.md",
+      "title": "6.塔科夫大事年表：从繁荣到封锁",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "一、世界观时间线（游戏内）",
+        "二、游戏内主线（1.0）",
+        "三、现实版本演化（对照游戏史）",
+        "四、删档（Wipe）历史：塔科夫的\"时间感\"",
+        "五、地图发展史",
+        "六、给新玩家的一句话时间线",
+        "④塔科夫故事背景"
+      ],
+      "summary": "塔科夫不是一夜之间变成废墟的。从经济特区到全面封锁，这条时间线走了十几年——而游戏里你看到的每一面断墙，都对应着这条线上的一步。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/00-总览.md",
+      "title": "《零日之后》创作计划",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "一、主角",
+        "二、结局抉择锁定（贴原版）",
+        "三、三个自定义商人的植入映射",
+        "四、章节大纲（贴原版九章 + 序章 + 终章）",
+        "五、贯穿副线",
+        "六、文件组织",
+        "七、写作原则",
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ]
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/01-序章·零日.md",
+      "title": "序章·零日",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "封锁后的第一个黎明是从枪声开始的。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/02-第一章·塔科夫之旅.md",
+      "title": "第一章·塔科夫之旅",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "早上六点，\"祖母\"准时发来清单。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/03-第二章·陨落星辰.md",
+      "title": "第二章·陨落星辰",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "Prapor 的聚居点在 Verkhneye，一个被俄军军需仓库包围的定居点。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/04-第三章·Batya.md",
+      "title": "第三章·Batya",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "\"BEAR 在塔科夫的人员，\"祖母\"说，\"从来不止你们这些明面上的。\""
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/05-第四章·意外证人.md",
+      "title": "第四章·意外证人",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "海关的宿舍楼是 Reshala 的地盘。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/06-第五章·他们已经来了.md",
+      "title": "第五章·他们已经来了",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "圆圈是在一夜之间出现的。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/07-第六章·神秘蓝焰.md",
+      "title": "第六章·神秘蓝焰",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "摩天轮的座舱在风里摇晃。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/08-第七章·探秘迷宫.md",
+      "title": "第七章·探秘迷宫",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "过滤器的工作台在三天后派上了用场。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/09-第八章·无名者.md",
+      "title": "第八章·无名者",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "祖母的任务是去中心区的 TerraGroup 办公楼，找无名者留下的东西。出发前，沃尔克在港口区的 UN 检查站外停了一次。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/10-第九章·Boreas.md",
+      "title": "第九章·Boreas",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "求救信号是在凌晨三点被截获的。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/11-终章·门票.md",
+      "title": "终章·门票",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "灯塔在达利尼角。"
+    },
+    {
+      "path": "④塔科夫故事背景/BEAR视角主线故事小说《零日之后》/12-尾声·零日之后.md",
+      "title": "尾声·零日之后",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "MOD 基底映射（开发者参考）",
+        "④塔科夫故事背景",
+        "BEAR视角主线故事小说《零日之后》"
+      ],
+      "summary": "封锁没有解除。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/地图地点参考表.md",
+      "title": "地图地点参考表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "位置详情",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "位置数据参考表，包括 ID、名称、生成类型。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/技能参考表.md",
+      "title": "技能参考表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "技能枚举",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "技能相关参考资料"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/任务值参考表.md",
+      "title": "任务值参考表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一般信息",
+        "能见度条件",
+        "适用于成品条件",
+        "可立即开始的要求",
+        "失败条件",
+        "Rewards",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "为对任务创建或修改感兴趣的模组作者提供的参考页面。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/商人参考表.md",
+      "title": "商人参考表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "交易员信息参考表，包括 ID、姓名和其他信息。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/BOT信息参考表.md",
+      "title": "机器人信息参考表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "当前及先前已知的所有机器人及其名称列表"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/参考文档/WTTCommonLib中文自述.md",
+      "title": "WTT-CommonLib",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "目录",
+        "功能特性",
+        "安装方法",
+        "快速开始",
+        "可用的服务器服务",
+        "示例模组结构",
+        "可用的客户端服务",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "参考文档"
+      ],
+      "summary": "一个为 SPT 设计的综合性模组库，简化了向《逃离塔科夫》（Escape from Tarkov）添加自定义内容的过程。WTT-CommonLib 自动处理服务器端数据库修改和客户端资源加载——你只需要配置你的内容并调用相应的服务。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/教程/教程：如何使用 dnSpy 调试游戏客户端.md",
+      "title": "教程：如何使用 dnSpy 调试游戏客户端",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "第一章：客户准备",
+        "第二章：常见问题",
+        "第三章：笔记和提示",
+        "第四章：准备你自己的开发构建文件",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "教程"
+      ],
+      "summary": "就是这样！继续阅读，了解一些关于调试异常情况以及如何解决这些问题的注意事项。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/教程/客户端修改快速指南.md",
+      "title": "客户端修改快速指南",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "资源",
+        "步骤 0：安装所需程序",
+        "步骤 1：SPT 开发安装设置",
+        "步骤 3：模组项目设置",
+        "第四步：开始编写代码！",
+        "感谢这些酷炫的人们",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "教程"
+      ],
+      "summary": "客户端模组入门基础指南。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/教程/模组资源.md",
+      "title": "模组资源",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "SPT Discord 服务器模组开发频道",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "教程"
+      ],
+      "summary": "这里提供一些制作模组的入门资源。建议从服务器模组开始。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/教程/WTT - 物品创建指南 第一卷：静态物品入门.md",
+      "title": "WTT - 物品创建指南 第一卷：静态物品入门",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "先决条件",
+        "你将学到什么",
+        "寻找模型",
+        "导入 Blender",
+        "导入到 Unity",
+        "设置游戏对象",
+        "构建资产包",
+        "在塔科夫进行测试",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "教程"
+      ]
+    },
+    {
+      "path": "⑤整合包和MOD运维/创建SPTMOD的资源/塔科夫汉化/如何自己汉化塔科夫的MOD？.md",
+      "title": "如何自己汉化塔科夫的MOD？",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "前言",
+        "下载链接",
+        "讲解Configuration Manager",
+        "讲解Simple Translator",
+        "结束语：不想动手只想白嫖",
+        "⑤整合包和MOD运维",
+        "创建SPTMOD的资源",
+        "塔科夫汉化"
+      ],
+      "summary": "哈喽呀，我是Samuel， 掐指一算，我好像摆了很久关于整合包的内容了。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-全地图间移动-PathToTarkov的解析.md",
+      "title": "Path To Tarkov 运行逻辑文档",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "项目概述",
+        "服务端架构（src/）",
+        "客户端架构（PTT-Plugin/）",
+        "Fika 多人集成（PTT-Fika/）",
+        "数据流全景",
+        "总结",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "Path To Tarkov（以下简称 PTT）是一个 SPT（Single Player Tarkov）开放世界模组，通过改造游戏的所有撤离点，将《逃离塔科夫》的全部地图连接成一个无缝的开放世界网络。玩家不再仅仅是进入 raid、撤离、返回藏身处，而是从一个地图撤离后\"停留\"在塔科夫世界中的某个位置，并可以从该位置继续探索相邻地图。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-现实主义MOD解析.md",
+      "title": "SPT Realism Mod - 客户端",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、项目概述",
+        "二、项目架构",
+        "三、各子系统详解",
+        "四、配置系统",
+        "五、构建与安装",
+        "六、外部参照",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "SPT Realism Mod 是一款为离线版逃离塔科夫（SPT-AKI）打造的综合性玩法大修模组。它通过超过 120 个 Harmony 补丁，深度修改了 EFT 原版的武器后坐力、弹道学、医疗系统、换弹机制、武器姿态、音频（听力损伤）、危险区环境、装备系统等诸多核心玩法，使游戏趋近于现实军事模拟体验。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-战局大修MOD的解析.md",
+      "title": "RaidOverhaul - SPT 3.11.4 综合玩法大修模组",
+      "version": [
+        "3.11",
+        "3.11.4"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "架构概览",
+        "系统功能详解",
+        "配置",
+        "兼容性",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "RaidOverhaul 是一个针对 SPT（逃离塔科夫单机版）3.11.4 的综合玩法大修模组。通过动态突袭事件、自定义Boss、新经济系统和QOL改进，将塔科夫变成一个更深度、更不可预测的生存体验。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-ABPS-AI生成MOD的解析.md",
+      "title": "ABPS - Acid's Bot Placement System",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "项目概述",
+        "架构概述",
+        "数据流与生命周期",
+        "核心子系统详解",
+        "配置说明",
+        "已知问题与代码质量评估",
+        "推荐的优化与改进方向",
+        "文件结构",
+        "技术备注",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "ABPS（Acid's Bot Placement System）是一个针对 SPT（Single Player Tarkov）3.11.x 的客户端-服务端双端模组。它完全接管并替换了 SPT 的香草 AI 生成系统，提供精细的 PMC、Scav 和 Boss 生成控制，包括距离感知生成点选择、渐进式 Boss 生成概率、热点区域系统、Bot 远距离清除等功能。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-AI队友MOD-friendlypmc的功能解析.md",
+      "title": "friendlyPMC v4.4.12 - Bot 队友系统 功能解析",
+      "version": [
+        "3.11",
+        "4.4.12"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、MOD 概述",
+        "二、功能清单",
+        "三、技术架构",
+        "四、已知问题与限制",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "friendlyPMC 是一个双端 MOD（客户端 BepInEx + 服务端 TypeScript），为 SPT 提供完整的 PMC Bot 队友系统。玩家可以创建自定义 PMC 队友、带他们进 Raid、通过语音/快捷指令下达战术命令、管理队友装备，并与 Goon 小队（Knight / BigPipe / BirdEye）互动。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-APBS-AI装备调整MOD的解析.md",
+      "title": "Progressive Bot System (APBS) -- 渐进式AI装备系统",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、项目概述",
+        "二、核心架构",
+        "三、详细运作逻辑",
+        "四、配置文件说明",
+        "五、代码问题与潜在Bug",
+        "六、性能与帧数优化建议",
+        "七、文件结构总览",
+        "八、安装与注意事项",
+        "九、总结",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "Progressive Bot System 是《逃离塔科夫》离线版（SPT）的一个MOD，核心目标是让所有AI Bot的装备水平随玩家等级动态提升。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-Friendlypmc-AI队友的解析.md",
+      "title": "friendlyPMC v4.5.0 - Bot 队友系统 功能解析",
+      "version": [
+        "3.11",
+        "4.5.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、MOD 概述",
+        "二、功能清单",
+        "三、技术架构",
+        "四、已知问题与限制",
+        "五、v4.5.0 优化组件",
+        "六、相关文档",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "friendlyPMC 是一个双端 MOD（客户端 BepInEx + 服务端 TypeScript），为 SPT 提供完整的 PMC Bot 队友系统。玩家可以创建自定义 PMC 队友、带他们进 Raid、通过语音/快捷指令下达战术命令、管理队友装备，并与 Goon 小队（Knight / BigPipe / BirdEye）互动。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-LootingBot的解析.md",
+      "title": "SPT-LootingBots v1.6.1 (SPT 3.11.4 适配版)",
+      "version": [
+        "3.11",
+        "1.6.1",
+        "3.11.4"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "目录",
+        "项目概述",
+        "Mod架构与组成",
+        "核心运作逻辑详解",
+        "配置参数说明",
+        "与其他Mod的交互（Interop）",
+        "代码质量审查",
+        "性能优化建议",
+        "已知Bug与修复建议",
+        "安装说明",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "LootingBots 是一个为 SPT（Single Player Tarkov / 逃离塔科夫离线版） 开发的客户端+服务端双端Mod。它的核心功能是让地图中的AI Bot（SCAV、PMC、Raider、Boss等）在巡逻过程中主动搜索、移动靠近、并拾取战局中的战利品（尸体、容器、散落物品），包括装备对比与替换决策，模拟真实玩家的舔包行为。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-SAIN-AI战斗逻辑的解析.md",
+      "title": "SAIN -- Solarint's AI Modifications",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、项目简介",
+        "二、前置模组",
+        "三、整体架构",
+        "四、核心子系统详解",
+        "六、性能与帧数优化分析",
+        "七、已知问题与潜在 Bug 汇总",
+        "八、安装说明",
+        "十、开发信息",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "SAIN 是一个 BepInEx 插件，通过 Harmony Patch 深度注入替换《逃离塔科夫》原版 AI 的行为树系统，为离线版（SPT）的 Bot 提供类似真人玩家的战术行为。项目通过约 100 个 Harmony Patch 和 40+ 子组件类，完全接管 Bot 的视觉、听觉、移动、射击、掩体和决策系统。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-SAIN增强版的说明.md",
+      "title": "SAIN -- Solarint's AI Modifications",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、项目简介",
+        "二、前置模组",
+        "三、整体架构",
+        "四、核心子系统详解",
+        "六、性能与帧数优化分析",
+        "七、已知问题与潜在 Bug 汇总",
+        "八、安装说明",
+        "十一、开发信息",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "SAIN 是一个 BepInEx 插件，通过 Harmony Patch 深度注入替换《逃离塔科夫》原版 AI 的行为树系统，为离线版（SPT）的 Bot 提供类似真人玩家的战术行为。项目通过约 100 个 Harmony Patch 和 40+ 子组件类，完全接管 Bot 的视觉、听觉、移动、射击、掩体和决策系统。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-Softcore解析.md",
+      "title": "Softcore - 逃离塔科夫 SPT 单人版玩法大修",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "设计理念",
+        "工作原理",
+        "各系统详细说明",
+        "配置系统",
+        "推荐配套 MOD",
+        "注意事项",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "Softcore 的核心理念是将逃离塔科夫从\"最高效格位利润率\"的功利玩法，转变为以生存、搜刮、制作、交易为核心驱动力的单人 RPG 体验。在 Softcore 的世界里："
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-TarkovIRL-WHM解析.md",
+      "title": "TarkovIRL - Weapons Handling Mod (WHM)",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、项目概述",
+        "二、系统架构",
+        "三、各模块详解",
+        "四、Harmony 补丁清单",
+        "五、与 Realism Mod 的依赖关系",
+        "六、配置说明",
+        "七、安装方法",
+        "八、已知问题",
+        "九、技术栈",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "TarkovIRL Weapons Handling Mod（简称 WHM）是一个针对《逃离塔科夫》离线版(SPT-Aki)的 第一人称武器操控增强模组。它通过 Harmony 补丁框架深度拦截游戏的渲染管线，在原生武器动画之上叠加多层视觉修正，以求达到更真实、更具沉浸感的武器操控体验。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-That'sLitAI光照视野的解析.md",
+      "title": "That's Lit -- SPT 3.11.4 离线版塔科夫 AI 视野真实化模组",
+      "version": [
+        "3.11",
+        "3.11.4"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、模组概述",
+        "二、兼容性",
+        "三、核心系统与运作原理",
+        "四、项目文件结构",
+        "五、配置项一览",
+        "六、代码质量与问题分析",
+        "七、S.P.E.C.I.A.L. 评级",
+        "八、贡献与许可",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "\"That's Lit\"（\"亮瞎了\"）是一个 BepInEx 插件，核心目标是消除逃离塔科夫离线版（SPT）中 Bot AI 的\"夜视千里眼\"。在原版塔科夫中，Bot 的视觉系统几乎不受光照、植被、地形或者距离的影响——无论白天黑夜，无论你在草丛还是开阔地，AI 都能以相同的效率发现你。本模组通过 Harmony 运行时补丁的方式，将玩家的真实光照亮度、周围植被密度、地形草地覆盖、装备灯光/激光等数据注入到 Bot AI 的视觉判定中，…"
+    },
+    {
+      "path": "⑤整合包和MOD运维/各个MOD的运行机制解释/3114-UIFixes解析.md",
+      "title": "UI Fixes",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "Added features",
+        "Improved features",
+        "Fixes",
+        "Interop",
+        "⑤整合包和MOD运维",
+        "各个MOD的运行机制解释"
+      ],
+      "summary": "Quality of life improvements and fixes for SPT"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/补丁生成流程说明.md",
+      "title": "补丁生成流程说明",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "整体入口",
+        "程序启动后先做什么",
+        "开始生成：Generate 的主流程",
+        "第一步：检查目录",
+        "第二步：加载全部模板",
+        "第三步：扫描 input 下的所有输入文件",
+        "第四步：处理单个输入文件",
+        "第五步：识别单个物品是否可处理",
+        "第六步：提取物品上下文信息",
+        "第七步：以输入对象为基础创建 patch",
+        "第九步：规则修正具体怎么做",
+        "武器是如何生成和修正的"
+      ],
+      "summary": "本文说明当前精简版 Realism Patch Generator 是怎样从输入 JSON 一步步生成 output 补丁的。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/弹药属性规则指南.md",
+      "title": "弹药属性规则指南（v2.0）",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "规则文件结构",
+        "当前口径基础档",
+        "当前典型基础区间",
+        "特殊弹种修正",
+        "穿深档位修正",
+        "当前规则特点",
+        "调整建议",
+        "审计说明",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档对应当前 C# 版弹药规则链路，内容以 RealismItemRules/ammorules.json 为准，并与 RealismPatchGenerator.Core/AmmoRuleData.cs、RealismPatchGenerator.Core/RealismPatchGenerator.cs 的当前行为保持一致。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/附件属性规则指南.md",
+      "title": "附件属性规则指南（v2.0）",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "规则文件结构",
+        "全局夹紧范围",
+        "Price 定价区间",
+        "当前附件 profile",
+        "当前典型字段",
+        "当前几类典型区间",
+        "调整建议",
+        "审计与例外说明",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档对应当前 C# 版附件规则链路，内容以 RealismItemRules/attachmentrules.json 为准，并与 RealismPatchGenerator.Core/AttachmentRuleData.cs、RealismPatchGenerator.Core/RealismPatchGenerator.cs 的当前行为保持一致。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/规则说明.md",
+      "title": "SPT现实主义数值范围编辑生成器 v2.0 规则说明",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "规则文件清单",
+        "范围节点结构",
+        "四大类规则",
+        "GUI 如何映射这些规则",
+        "例外物品与规则的关系",
+        "调整建议",
+        "当前不做的事",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档说明当前 RealismItemRules 目录下各类规则文件的职责，以及 GUI 中看到的分类与实际 JSON 结构的对应关系。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/规则文件与文档同步对照清单.md",
+      "title": "规则文件与文档同步对照清单（v2.0）",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "A. 代码核对范围",
+        "B. docs 目录主文档",
+        "C. 每次改动后至少检查的点",
+        "D. 推荐发版顺序",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "用途：每次调整规则、模板映射、例外物品流程或审计逻辑后，快速确认代码与 docs 是否仍一致。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/使用说明.md",
+      "title": "SPT现实主义数值范围编辑生成器 v2.1 使用说明",
+      "version": [
+        "3.11",
+        "2.1"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "版本定位",
+        "目录约定",
+        "GUI 工作流",
+        "例外物品管理",
+        "输出行为",
+        "发布包",
+        "启动方式",
+        "当前边界",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档对应当前 C# 版项目的实际状态，覆盖 GUI、规则编辑、例外物品管理和补丁生成工作流。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/武器属性规则指南.md",
+      "title": "武器属性规则指南（v2.0）",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "规则文件结构",
+        "武器基础大类",
+        "全局夹紧范围",
+        "Price 定价区间",
+        "口径与弹种修正",
+        "枪托与结构修正",
+        "当前文档对应关系",
+        "调整建议",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档对应当前 C# 版武器规则链路，内容以 RealismItemRules/weaponrules.json 为准，并与 RealismPatchGenerator.Core/WeaponRuleData.cs、RealismPatchGenerator.Core/RealismPatchGenerator.cs 的当前行为保持一致。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/现实主义Realism装备补丁属性规则说明.md",
+      "title": "现实主义“Realism”装备补丁属性规则说明",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "文档目的",
+        "字段边界来源",
+        "总体原则",
+        "武器标准字段",
+        "附件标准字段",
+        "装备标准字段",
+        "弹药标准字段",
+        "消耗品标准字段",
+        "源字段与标准字段的关系",
+        "维护要求",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "本文档定义当前生成器认可的 Realism 标准输出字段边界，并说明各字段在最终补丁中的作用。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/装备属性规则指南.md",
+      "title": "装备属性规则指南（v2.0）",
+      "version": [
+        "3.11",
+        "2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "规则文件结构",
+        "全局夹紧范围",
+        "价格规则",
+        "当前装备 profile",
+        "当前常见字段",
+        "当前几类典型区间",
+        "当前规则特点",
+        "调整建议",
+        "审计说明",
+        "常见属性解释",
+        "文档策略",
+        "⑤整合包和MOD运维"
+      ],
+      "summary": "本文档对应当前 C# 版装备规则链路，内容以 RealismItemRules/gearrules.json 为准，并与 RealismPatchGenerator.Core/GearRuleData.cs、RealismPatchGenerator.Core/RealismPatchGenerator.cs 的当前行为保持一致。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/CHANGELOG.md",
+      "title": "更新日志",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "v2.1",
+        "v1.30.0",
+        "v1.22",
+        "v1.1",
+        "v1.0",
+        "v0.9",
+        "Unreleased",
+        "v2.0",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ]
+    },
+    {
+      "path": "⑤整合包和MOD运维/现实主义数值生成器文档/MOD物品数据结构统计报告.md",
+      "title": "input/usertemplates 数据结构统计",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "WTTtemplates",
+        "RaidOverhaultemplates",
+        "Mixedtemplates",
+        "MoxoTemplate",
+        "结论",
+        "⑤整合包和MOD运维",
+        "现实主义数值生成器文档"
+      ],
+      "summary": "统计范围：input/usertemplates 下全部 JSON 文件，共 172 个。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/专属商人及任务线资料/《诺文斯克之影》支线（废弃）.md",
+      "title": "诺文斯克之影支线",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "专属商人及任务线资料"
+      ]
+    },
+    {
+      "path": "⑤整合包和MOD运维/专属商人及任务线资料/《诺文斯克之影》主线（废弃）.md",
+      "title": "诺文斯克之影主线",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "专属商人及任务线资料"
+      ],
+      "summary": "-"
+    },
+    {
+      "path": "⑤整合包和MOD运维/专属商人及任务线资料/故事《Echoes of Kuznets：Ghost in Tarkov》.md",
+      "title": "故事线《Echoes of Kuznets：Ghost in Tarkov》",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "故事背景",
+        "剧情",
+        "⑤整合包和MOD运维",
+        "专属商人及任务线资料"
+      ],
+      "summary": "可能是来自东亚某国的黑客/强人工智能/数字意识体。在东亚某次政治事件中成为政府的追捕对象。"
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/1.1.8的浪人模式Traveler的config代码备份.md",
+      "title": "1.1.8的浪人模式Traveler的config代码备份",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "title: 1.1.8浪人模式Traveler config备份 tags: [config, traveler]"
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/3114的战局大修的本地化文本稿.md",
+      "title": "RaidOverhaul 战局内提示文本 -- 汉化提取表",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "格式说明",
+        "四、交互菜单 (KeyPatch.cs)",
+        "六、原文中的已知问题 / 翻译建议",
+        "七、润色方向建议",
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "启用 Requisition Office 时:"
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/3114的friendlypmc的优化内容.md",
+      "title": "friendlyPMC v4.5.0 更新日志",
+      "version": [
+        "3.11",
+        "4.5.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "交付架构",
+        "Optimizer 补丁清单 (5 项)",
+        "服务端优化清单 (8 项)",
+        "客户端源码优化 (9 项，参考交付)",
+        "新增文件",
+        "性能基准",
+        "升级说明",
+        "回滚",
+        "已知限制",
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "v4.5.0 通过三层组件协同工作："
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/3114的Path-To-Tarkov的优化内容.md",
+      "title": "Changelog",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "[Unreleased]",
+        "[6.2.0] - 2026-06-05",
+        "[6.0.0] - 2026-05-27",
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "All notable changes to Path To Tarkov will be documented in this file."
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/SAIN.v4.2.0增强版的更新内容.md",
+      "title": "SAIN v4.2.0 — Moew 兼容版增强更新",
+      "version": [
+        "3.11",
+        "4.2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "Bug 修复",
+        "感知公平性",
+        "战斗行为",
+        "LootingBots 深度整合",
+        "战术系统",
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ]
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/SAIN原版与v4.2.0增强版差异对照表.md",
+      "title": "SAIN 原版与 v4.2.0 增强版差异对照表",
+      "version": [
+        "3.11",
+        "4.2.0"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "一、Bug 修复",
+        "二、感知公平性",
+        "三、战斗行为",
+        "四、LootingBots 整合",
+        "五、战术系统",
+        "六、武器隐蔽值",
+        "七、F6 GUI 新增",
+        "八、v4.3.0 战斗逻辑优化",
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "v4.3.0 统计: SAIN 7 文件 + LootingBots 2 文件 / 0 编译错误"
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/Softcore解除跳蚤市场的禁售黑名单.md",
+      "title": "Softcore解除跳蚤市场的禁售黑名单",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "在《现实化诺文斯克》v0.9.0版Softcore沉浸感增强设置\\\\user\\\\mods\\\\odt-softcore\\\\src\\\\mod.ts添加以下代码："
+    },
+    {
+      "path": "⑤整合包和MOD运维/MOD相关的修改/Softcore增加可拾取袖标和近战武器功能.md",
+      "title": "Softcore增加可拾取袖标和近战武器功能",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "mods-ops",
+      "source": "⑤整合包和MOD运维",
+      "keywords": [
+        "⑤整合包和MOD运维",
+        "MOD相关的修改"
+      ],
+      "summary": "在《现实化诺文斯克》v0.9.0版Softcore沉浸感增强设置\\\\user\\\\mods\\\\odt-softcore\\\\src\\\\mod.ts添加以下代码："
+    }
+  ]
+}

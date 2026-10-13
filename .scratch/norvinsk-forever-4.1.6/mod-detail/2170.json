@@ -1,0 +1,48 @@
+{
+ "id": 2170,
+ "hub_id": 2873,
+ "guid": "com.mdzzwoc.akresonant",
+ "name": "Resonant AK from COD:MW2019 - ReUpload",
+ "slug": "resonant-ak-from-codmw2019-reupload",
+ "teaser": "The very sci-fi looking AK blueprint from Call of Duty: Modern Warfare (2019)",
+ "thumbnail": "https://files.sp-mod.com/mods/2873.webp",
+ "downloads": 4839,
+ "favourites_count": 16,
+ "endorsements_count": 3,
+ "description": "<p>Original mod by MDZZWOC. <strong>I’ve only updated it to be compatible with version 3.11 and re-uploaded it.</strong></p>\n<p><em>Special thanks to GrooveypenguinX for providing the WTT-BundleMaster tool — without it, I wouldn’t have been able to update this to 3.11 without knowing anything about Unity!</em></p>\n<p><strong>To install: Extract to your SPT folder.</strong></p>\n<blockquote>\n<p>Original mod page: <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2497-resonant-ak-from-cod-mw2019/\" rel=\"noreferrer noopener\">Resonant AK from COD:MW2019</a></p>\n<p>Original author: <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/71257-mdzzwoc/\" rel=\"noreferrer noopener\">MDZZWOC</a></p>\n</blockquote>\n<h2>Preview image:\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/1.png\" alt=\"1.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/2.png\" alt=\"2.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/3.png\" alt=\"3.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/4.png\" alt=\"4.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/5.png\" alt=\"5.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/6.png\" alt=\"6.png\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/MercerRH/SPT-AKResonant/refs/heads/main/docs/images/7.png\" alt=\"7.png\" /></h2>\n<p><strong>Below is the original mod description:</strong></p>\n<p><strong>The very sci-fi looking AK blueprint from Call of Duty: Modern Warfare (2019)</strong></p>\n<p><strong>Description:</strong></p>\n<pre><code>Introducing the “Resonant” legendary AK-47 blueprint to t*****.\n\nThese CoD things look weird, but still cool.\n</code></pre>\n<p><strong>Content:</strong></p>\n<ul>\n<li><strong>The “Resonant” heavy barrel for AK rifles</strong></li>\n<li><strong>The “Resonant” foregrip</strong></li>\n<li><strong>The “Resonant” dovetail rail</strong></li>\n<li><strong>The “Resonant” 762*39&amp;.366TKM extended magazine</strong></li>\n<li><strong>The “Resonant” pistol grip for AK rifles</strong></li>\n<li><strong>The “Resonant” stock (Two versions for both traditional and modernized AK rifles)</strong></li>\n<li><strong>The “Resonant” OKP-7 reflex sight</strong></li>\n<li><strong>The advanced “Resonant” AK rifle container</strong></li>\n<li><strong>All items can be bought from PEACEKEEPER LL4 and FLEA MARKET</strong></li>\n</ul>\n<p><strong>Credits:</strong></p>\n<ul>\n<li><strong>Infinity Ward:</strong> For the mesh and texture</li>\n<li><strong>GrooveypenguinX:</strong> For the WTT code framework this mod is using</li>\n<li><strong>The whole WTT community:</strong> Without their help and encourage, I wouldn’t finish the mod this quick</li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/2170/resonant-ak-from-codmw2019-reupload",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 13,
+ "published_at": "2026-05-22T01:36:00.000000Z",
+ "created_at": "2025-06-06T07:17:21.000000Z",
+ "updated_at": "2026-09-20T01:52:04.000000Z",
+ "owner": {
+  "id": 73400,
+  "name": "MercerA",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/d307ac74c299bcdae68a1af404324a4dba41e97c_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2025-02-13T05:51:11.000000Z",
+  "updated_at": "2026-10-06T02:13:59.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 68000,
+   "name": "MDZZWOC",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/1zgo4dSL4cqvYOhZxoBpylEjTzFYUIYU37xlPPiz_128w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/30fc492a939786e7dcd938eafb2ab2030cf8f1e7_1280w.webp",
+   "created_at": "2024-11-22T15:24:38.000000Z",
+   "updated_at": "2026-08-10T19:48:48.000000Z"
+  }
+ ],
+ "category": {
+  "id": 13,
+  "hub_id": 76,
+  "title": "Weapons",
+  "slug": "weapons",
+  "description": ""
+ }
+}

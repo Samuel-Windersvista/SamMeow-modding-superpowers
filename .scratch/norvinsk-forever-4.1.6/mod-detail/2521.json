@@ -1,0 +1,39 @@
+{
+ "id": 2521,
+ "hub_id": null,
+ "guid": "xyz.drakia.sense",
+ "name": "Amands' Sense - Updated",
+ "slug": "amands-sense-updated",
+ "teaser": "Interactable icons for items, containers, bodies and extracts.",
+ "thumbnail": "https://files.sp-mod.com/mods/9Wf52P2s2vmf2WRrkSl5ziP1b84VounUoLLX4nsg.png",
+ "downloads": 84693,
+ "favourites_count": 379,
+ "endorsements_count": 42,
+ "description": "<h3>Description</h3>\n<p>Sense shows icons over interactable items within a range, such as Loot, Containers, and Dead Bodies. There are unique highlights for Kappa, Quest and Wishlist Items. It will also show an icon and distance to map extracts, along with extract status.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/8DbjpFd.png\" alt=\"Preview\" /></p>\n<p>Activate Sense key is <strong>Double Click F</strong> by default.</p>\n<p>Colors, Audio, Keybind, Cooldown, Speed, Duration and Radius can all be changed in the F12 menu</p>\n<h3>Installation</h3>\n<p>1) Open the downloaded 7z file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folder in the 7z file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folder from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3>Thanks</h3>\n<p>Thanks to Amands2Mello for Sense, they did all the real work, I just updated it :)</p>\n<p>Permission was obtained from Amands2Mello to release this fork.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2521/amands-sense-updated",
+ "fika_compatibility": false,
+ "featured": true,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2025-12-29T23:20:00.000000Z",
+ "created_at": "2025-12-29T23:20:59.000000Z",
+ "updated_at": "2026-09-22T16:40:28.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

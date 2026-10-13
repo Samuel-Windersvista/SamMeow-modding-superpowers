@@ -1,0 +1,83 @@
+{
+ "idx": 121,
+ "entry": "[3]新配件-Echoes.of.Tarkov.-.Requisitions",
+ "terms": [
+  "Echoes of Tarkov - Requisitions",
+  "-Echoes.of.Tarkov.-.Requisitions"
+ ],
+ "all": [
+  {
+   "term": "-Echoes.of.Tarkov.-.Requisitions",
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "slug": "lots-of-loot-redux",
+   "dl": 250075,
+   "sc": 15
+  },
+  {
+   "term": "Echoes of Tarkov - Requisitions",
+   "id": 2195,
+   "name": "ECOT - Eukyre's Consortium of Things",
+   "slug": "ecot-eukyres-consortium-of-things",
+   "dl": 29627,
+   "sc": 15
+  },
+  {
+   "term": "-Echoes.of.Tarkov.-.Requisitions",
+   "id": 1131,
+   "name": "Live Flea Prices",
+   "slug": "live-flea-prices",
+   "dl": 294025,
+   "sc": 0
+  },
+  {
+   "term": "Echoes of Tarkov - Requisitions",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285013,
+   "sc": 0
+  },
+  {
+   "term": "-Echoes.of.Tarkov.-.Requisitions",
+   "id": 2706,
+   "name": "ORBIT 2.0",
+   "slug": "orbit-20",
+   "dl": 51883,
+   "sc": 0
+  },
+  {
+   "term": "Echoes of Tarkov - Requisitions",
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "slug": "croupier-loadout-generator-flea-quicksell",
+   "dl": 42122,
+   "sc": 0
+  },
+  {
+   "term": "Echoes of Tarkov - Requisitions",
+   "id": 2415,
+   "name": "Canted Aiming",
+   "slug": "canted-aiming",
+   "dl": 21502,
+   "sc": 0
+  },
+  {
+   "term": "-Echoes.of.Tarkov.-.Requisitions",
+   "id": 2621,
+   "name": "T***** DLSS 4.5",
+   "slug": "tarkov-dlss-45",
+   "dl": 12059,
+   "sc": 0
+  },
+  {
+   "term": "-Echoes.of.Tarkov.-.Requisitions",
+   "id": 3054,
+   "name": "QuestCodex",
+   "slug": "questcodex",
+   "dl": 1130,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

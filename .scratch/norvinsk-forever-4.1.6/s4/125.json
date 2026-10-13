@@ -1,0 +1,52 @@
+{
+ "idx": 125,
+ "entry": "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst",
+ "terms": [
+  "Ak-105-Hyperburst",
+  "- - BabaYaga x Hyperburst",
+  "WttHyperburstWrapper"
+ ],
+ "all": [
+  {
+   "term": "Ak-105-Hyperburst",
+   "id": 2170,
+   "name": "Resonant AK from COD:MW2019 - ReUpload",
+   "slug": "resonant-ak-from-codmw2019-reupload",
+   "dl": 4830,
+   "sc": 20
+  },
+  {
+   "term": "Ak-105-Hyperburst",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "Ak-105-Hyperburst",
+   "id": 1591,
+   "name": "Better Rear Sights",
+   "slug": "better-rear-sights",
+   "dl": 55821,
+   "sc": 0
+  },
+  {
+   "term": "Ak-105-Hyperburst",
+   "id": 3035,
+   "name": "Russian Special Forces Pack",
+   "slug": "russian-special-forces-pack",
+   "dl": 6570,
+   "sc": 0
+  },
+  {
+   "term": "Ak-105-Hyperburst",
+   "id": 3010,
+   "name": "Kalashnikov Enhanced Modding ",
+   "slug": "kalashnikov-enhanced-modding",
+   "dl": 1634,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

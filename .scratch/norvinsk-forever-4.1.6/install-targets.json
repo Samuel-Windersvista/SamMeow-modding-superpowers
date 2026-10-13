@@ -1,0 +1,1106 @@
+[
+ {
+  "batch": "B1",
+  "idxs": [
+   4
+  ],
+  "overlayName": "[13]战局外检修标签-DebugTooltip",
+  "forgeId": 1542,
+  "forgeName": "Debug Tooltip",
+  "version": "5.0.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1542/debug-tooltip/5.0.0",
+  "size": 10371,
+  "pinned": false,
+  "note": "",
+  "priority": 201
+ },
+ {
+  "batch": "B1",
+  "idxs": [
+   5
+  ],
+  "overlayName": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+  "forgeId": 918,
+  "forgeName": "BotDebug",
+  "version": "1.8.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/918/botdebug/1.8.0",
+  "size": 11044,
+  "pinned": false,
+  "note": "",
+  "priority": 202
+ },
+ {
+  "batch": "B1",
+  "idxs": [
+   97
+  ],
+  "overlayName": "[6]AI路径扩展-Waypoints",
+  "forgeId": 827,
+  "forgeName": "Waypoints - Expanded Navmesh",
+  "version": "1.9.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+  "size": 50349566,
+  "pinned": false,
+  "note": "",
+  "priority": 203
+ },
+ {
+  "batch": "B1",
+  "idxs": [
+   98
+  ],
+  "overlayName": "[6]AI拟人MOD的前置框架-BigBrain",
+  "forgeId": 902,
+  "forgeName": "BigBrain",
+  "version": "1.5.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+  "size": 16790,
+  "pinned": false,
+  "note": "",
+  "priority": 204
+ },
+ {
+  "batch": "B1",
+  "idxs": [
+   147
+  ],
+  "overlayName": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+  "forgeId": 2310,
+  "forgeName": "WTT - CommonLib",
+  "version": "3.0.6",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/3.0.6",
+  "size": 248445,
+  "pinned": false,
+  "note": "",
+  "priority": 205
+ },
+ {
+  "batch": "B2",
+  "idxs": [
+   90
+  ],
+  "overlayName": "[6]友方AI系统-PITFireteam",
+  "forgeId": 2676,
+  "forgeName": "PIT Fireteam",
+  "version": "0.10.3",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.3",
+  "size": 1494383,
+  "pinned": false,
+  "note": "近似: PIT Fireteam 独立版; friendlyPMC合并版无4.1.6",
+  "priority": 301
+ },
+ {
+  "batch": "B2",
+  "idxs": [
+   93
+  ],
+  "overlayName": "[6]AI增强-SAIN",
+  "forgeId": 791,
+  "forgeName": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+  "version": "4.5.1",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement/4.5.1",
+  "size": 541623,
+  "pinned": false,
+  "note": "",
+  "priority": 302
+ },
+ {
+  "batch": "B2",
+  "idxs": [
+   94
+  ],
+  "overlayName": "[6]AI自动搜索物品-LootingBots",
+  "forgeId": 812,
+  "forgeName": "Looting Bots",
+  "version": "1.8.0",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/812/looting-bots/1.8.0",
+  "size": 85484,
+  "pinned": false,
+  "note": "",
+  "priority": 303
+ },
+ {
+  "batch": "B2",
+  "idxs": [
+   95
+  ],
+  "overlayName": "[6]Acid的AI装备管理系统-progressivebotsystem",
+  "forgeId": 1594,
+  "forgeName": "APBS - Acid's Progressive Bot System",
+  "version": "2.4.1",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1594/apbs-acids-progressive-bot-system/2.4.1",
+  "size": 1036711,
+  "pinned": false,
+  "note": "",
+  "priority": 304
+ },
+ {
+  "batch": "B2",
+  "idxs": [
+   96
+  ],
+  "overlayName": "[6]Acid的AI生成系统-botplacementsystem",
+  "forgeId": 2097,
+  "forgeName": "ABPS - Acid's Bot Placement System",
+  "version": "2.1.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2097/abps-acids-bot-placement-system/2.1.0",
+  "size": 1182402,
+  "pinned": false,
+  "note": "",
+  "priority": 305
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   7
+  ],
+  "overlayName": "[12]商人列表滚动-TraderScrolling",
+  "forgeId": 1089,
+  "forgeName": "Kaeno-TraderScrolling",
+  "version": "4.1.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1089/kaeno-traderscrolling/4.1.0",
+  "size": 4347,
+  "pinned": false,
+  "note": "",
+  "priority": 401
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   8
+  ],
+  "overlayName": "[12]任务列表修复-TaskListFixes",
+  "forgeId": 824,
+  "forgeName": "Task List Fixes",
+  "version": "1.8.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/824/task-list-fixes/1.8.0",
+  "size": 7329,
+  "pinned": false,
+  "note": "",
+  "priority": 402
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   10
+  ],
+  "overlayName": "[7]面具修复-KnightMaskFix(4.1.3+)",
+  "forgeId": 3109,
+  "forgeName": "Knight Mask Fix (4.1.3+)",
+  "version": "1.0.0",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/3109/knight-mask-fix-413/1.0.0",
+  "size": 2078639,
+  "pinned": false,
+  "note": "",
+  "priority": 403
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   11
+  ],
+  "overlayName": "[12]防卡手-HandsAreNotBusy",
+  "forgeId": 1298,
+  "forgeName": "HandsAreNotBusy",
+  "version": "1.7.1",
+  "constraint": ">=4.1.3",
+  "link": "https://sp-mod.com/mod/download/1298/handsarenotbusy/1.7.1",
+  "size": 4984,
+  "pinned": false,
+  "note": "",
+  "priority": 404
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   22
+  ],
+  "overlayName": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+  "forgeId": 2955,
+  "forgeName": "Quick Sell",
+  "version": "4.2.0",
+  "constraint": ">=4.1.5",
+  "link": "https://sp-mod.com/mod/download/2955/quick-sell/4.2.0",
+  "size": 48175,
+  "pinned": false,
+  "note": "",
+  "priority": 405
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   23
+  ],
+  "overlayName": "[10]显示价格-showmethemoney",
+  "forgeId": 3011,
+  "forgeName": "Show Me The Money (Item Pricing) (4.1.x)",
+  "version": "3.0.2",
+  "constraint": ">=4.1.3",
+  "link": "https://sp-mod.com/mod/download/3011/show-me-the-money-item-pricing-41x/3.0.2",
+  "size": 41475,
+  "pinned": false,
+  "note": "",
+  "priority": 406
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   24
+  ],
+  "overlayName": "[10]物品容器间快速移动-QuickMoveToContainer",
+  "forgeId": 1341,
+  "forgeName": "Quick Move To Containers",
+  "version": "1.5.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1341/quick-move-to-containers/1.5.0",
+  "size": 6103,
+  "pinned": false,
+  "note": "",
+  "priority": 407
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   25
+  ],
+  "overlayName": "[10]自动存放-AutoDeposit",
+  "forgeId": 1469,
+  "forgeName": "AutoDeposit",
+  "version": "6.0.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1469/autodeposit/6.0.0",
+  "size": 9804,
+  "pinned": false,
+  "note": "",
+  "priority": 408
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   28
+  ],
+  "overlayName": "[10]从武器架装备武器-EquipFromWeaponRack",
+  "forgeId": 1136,
+  "forgeName": "Equip From Weapon Rack",
+  "version": "1.6.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1136/equip-from-weapon-rack/1.6.0",
+  "size": 4125,
+  "pinned": false,
+  "note": "",
+  "priority": 409
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   29
+  ],
+  "overlayName": "[10]拾取时快速放入容器-ContainerQuickLoot",
+  "forgeId": 3023,
+  "forgeName": "CactusPie's Transfer Loot Into Container Automatically",
+  "version": "1.9.1",
+  "constraint": "4.1.6",
+  "link": "https://sp-mod.com/mod/download/3023/cactuspies-transfer-loot-into-container-automatically/1.9.1",
+  "size": 6639,
+  "pinned": false,
+  "note": "CactusPie 原mod 4.1.6版(核对通过)",
+  "priority": 410
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   32
+  ],
+  "overlayName": "[10]UI大修-UIFixes",
+  "forgeId": 1342,
+  "forgeName": "UI Fixes",
+  "version": "6.0.4",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1342/ui-fixes/6.0.4",
+  "size": 184465,
+  "pinned": false,
+  "note": "",
+  "priority": 411
+ },
+ {
+  "batch": "B3",
+  "idxs": [
+   34
+  ],
+  "overlayName": "[9]预览窗口尺寸调整-previewsizer",
+  "forgeId": 2339,
+  "forgeName": "Preview Sizer",
+  "version": "1.1.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2339/preview-sizer/1.1.0",
+  "size": 6459,
+  "pinned": false,
+  "note": "",
+  "priority": 412
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   17
+  ],
+  "overlayName": "[11]物品感应-AmandsSense",
+  "forgeId": 2521,
+  "forgeName": "Amands' Sense - Updated",
+  "version": "3.1.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/2521/amands-sense-updated/3.1.0",
+  "size": 217647,
+  "pinned": false,
+  "note": "",
+  "priority": 501
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   18
+  ],
+  "overlayName": "[11]任务跳过功能-Skipper",
+  "forgeId": 1343,
+  "forgeName": "Skipper",
+  "version": "1.1.5",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1343/skipper/1.1.5",
+  "size": 5511,
+  "pinned": false,
+  "note": "",
+  "priority": 502
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   19
+  ],
+  "overlayName": "[11]内置动态地图-DynamicMaps",
+  "forgeId": 1431,
+  "forgeName": "Dynamic Maps",
+  "version": "1.2.1",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1431/dynamic-maps/1.2.1",
+  "size": 1330991,
+  "pinned": false,
+  "note": "",
+  "priority": 503
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   20
+  ],
+  "overlayName": "[11]声音可视化-accessibilityindicators",
+  "forgeId": 1760,
+  "forgeName": "Audio Accessibility Indicators",
+  "version": "2.1.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1760/audio-accessibility-indicators/2.1.0",
+  "size": 53362,
+  "pinned": false,
+  "note": "",
+  "priority": 504
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   36
+  ],
+  "overlayName": "[9]子弹专家-MunitionsExpert",
+  "forgeId": 3006,
+  "forgeName": "Munitions Expert - Reloaded",
+  "version": "2.1.1",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/3006/munitions-expert-reloaded/2.1.1",
+  "size": 28918,
+  "pinned": false,
+  "note": "",
+  "priority": 505
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   37
+  ],
+  "overlayName": "[9]简单的锻炼QTE-simpleworkoutqte",
+  "forgeId": 1437,
+  "forgeName": "Simple Workout QTE",
+  "version": "2.2.2",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.2.2",
+  "size": 13031,
+  "pinned": false,
+  "note": "",
+  "priority": 506
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   44
+  ],
+  "overlayName": "[9]主菜单大修-MenuOverhaul",
+  "forgeId": 1775,
+  "forgeName": "WTT - Menu Overhaul",
+  "version": "1.3.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.3.0",
+  "size": 779102,
+  "pinned": false,
+  "note": "",
+  "priority": 507
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   46
+  ],
+  "overlayName": "[8]边走边装子弹-ContinuousLoadAmmo",
+  "forgeId": 2112,
+  "forgeName": "Continuous Load Ammo",
+  "version": "1.2.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/2112/continuous-load-ammo/1.2.0",
+  "size": 39646,
+  "pinned": false,
+  "note": "",
+  "priority": 508
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   54
+  ],
+  "overlayName": "[8]任务跟踪显示-QuestTracker",
+  "forgeId": 1140,
+  "forgeName": "Quest Tracker",
+  "version": "1.7.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.7.0",
+  "size": 22840,
+  "pinned": false,
+  "note": "",
+  "priority": 509
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   56
+  ],
+  "overlayName": "[8]直接搜索已打开容器-SearchOpenContainers",
+  "forgeId": 934,
+  "forgeName": "Search Open Containers",
+  "version": "1.5.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/934/search-open-containers/1.5.0",
+  "size": 3307,
+  "pinned": false,
+  "note": "",
+  "priority": 510
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   57
+  ],
+  "overlayName": "[8]直接使用未捡物品-UseLooseLoot",
+  "forgeId": 933,
+  "forgeName": "Use Loose Loot",
+  "version": "1.6.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/933/use-loose-loot/1.6.0",
+  "size": 2783,
+  "pinned": false,
+  "note": "",
+  "priority": 511
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   58
+  ],
+  "overlayName": "[8]门的状态随机化-DoorRandomizer",
+  "forgeId": 820,
+  "forgeName": "Door Randomizer",
+  "version": "1.8.0",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/820/door-randomizer/1.8.0",
+  "size": 5112,
+  "pinned": false,
+  "note": "",
+  "priority": 512
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   59
+  ],
+  "overlayName": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+  "forgeId": 2386,
+  "forgeName": "Use Items Anywhere",
+  "version": "2.1.5",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.5",
+  "size": 1213638,
+  "pinned": false,
+  "note": "",
+  "priority": 513
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   62
+  ],
+  "overlayName": "[8]人物技能扩展和撬锁-SkillsExtended",
+  "forgeId": 2383,
+  "forgeName": "Skills Extended",
+  "version": "3.1.3",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2383/skills-extended/3.1.3",
+  "size": 114911151,
+  "pinned": false,
+  "note": "",
+  "priority": 514
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   63
+  ],
+  "overlayName": "[8]技能速度调节器-SkillMultiplier",
+  "forgeId": 2162,
+  "forgeName": "Skill Multiplier",
+  "version": "2.1.1",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/2162/skill-multiplier/2.1.1",
+  "size": 83699,
+  "pinned": false,
+  "note": "",
+  "priority": 515
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   64
+  ],
+  "overlayName": "[8]可以攀爬更高的地方-Increase Climb Height",
+  "forgeId": 1575,
+  "forgeName": "Increase Climb Height",
+  "version": "2.1.1",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1575/increase-climb-height/2.1.1",
+  "size": 7884,
+  "pinned": false,
+  "note": "",
+  "priority": 516
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   65
+  ],
+  "overlayName": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+  "forgeId": 1539,
+  "forgeName": "Bosses Have Lega Medals",
+  "version": "2.1.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/2.1.0",
+  "size": 8333,
+  "pinned": false,
+  "note": "",
+  "priority": 517
+ },
+ {
+  "batch": "B4",
+  "idxs": [
+   78
+  ],
+  "overlayName": "[7]可以合并消耗品-MergeConsumables",
+  "forgeId": 1657,
+  "forgeName": "MergeConsumables",
+  "version": "1.6.3",
+  "constraint": ">=4.1.3",
+  "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.3",
+  "size": 20653,
+  "pinned": false,
+  "note": "",
+  "priority": 518
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   112
+  ],
+  "overlayName": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+  "forgeId": 1971,
+  "forgeName": "Croupier - loadout generator + flea quicksell",
+  "version": "2.0.7",
+  "constraint": "~4.1.2",
+  "link": "https://sp-mod.com/mod/download/1971/croupier-loadout-generator-flea-quicksell/2.0.7",
+  "size": 21629825,
+  "pinned": false,
+  "note": "",
+  "priority": 601
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   113
+  ],
+  "overlayName": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+  "forgeId": 1303,
+  "forgeName": "HarryHideout",
+  "version": "3.1.2",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1303/harryhideout/3.1.2",
+  "size": 22794,
+  "pinned": false,
+  "note": "",
+  "priority": 602
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   114
+  ],
+  "overlayName": "[4]新商人-毒蝎-acidphantasm-scorpion",
+  "forgeId": 1348,
+  "forgeName": "Scorpion",
+  "version": "1.1.1",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1348/scorpion/1.1.1",
+  "size": 357758,
+  "pinned": false,
+  "note": "",
+  "priority": 603
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   115
+  ],
+  "overlayName": "[4]新商人-Artem",
+  "forgeId": 1023,
+  "forgeName": "WTT- Artem",
+  "version": "3.0.2",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1023/wtt-artem/3.0.2",
+  "size": 1622167511,
+  "pinned": false,
+  "note": "",
+  "priority": 604
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   116
+  ],
+  "overlayName": "[4]新商人-油漆匠-Painter",
+  "forgeId": 1025,
+  "forgeName": "Painter",
+  "version": "3.0.0",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/1025/painter/3.0.0",
+  "size": 22220369,
+  "pinned": false,
+  "note": "",
+  "priority": 605
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   117
+  ],
+  "overlayName": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+  "forgeId": 2483,
+  "forgeName": "Boxes At Ref (BARF) - NG",
+  "version": "3.0.0",
+  "constraint": "~4.1.2",
+  "link": "https://sp-mod.com/mod/download/2483/boxes-at-ref-barf-ng/3.0.0",
+  "size": 8787,
+  "pinned": false,
+  "note": "",
+  "priority": 606
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   118
+  ],
+  "overlayName": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+  "forgeId": 1538,
+  "forgeName": "Ref - SPT Friendly Quests",
+  "version": "2.1.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1538/ref-spt-friendly-quests/2.1.0",
+  "size": 14391,
+  "pinned": false,
+  "note": "",
+  "priority": 607
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   135
+  ],
+  "overlayName": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+  "forgeId": 1768,
+  "forgeName": "RCTA - Metal Gear [FORTNITE]",
+  "version": "1.0.4",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1768/rcta-metal-gear-fortnite/1.0.4",
+  "size": 49544438,
+  "pinned": false,
+  "note": "",
+  "priority": 608
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   136
+  ],
+  "overlayName": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+  "forgeId": 1766,
+  "forgeName": "RCTA - Synaptic Rig [CODIW]",
+  "version": "1.0.8",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1766/rcta-synaptic-rig-codiw/1.0.8",
+  "size": 247481427,
+  "pinned": false,
+  "note": "",
+  "priority": 609
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   138
+  ],
+  "overlayName": "[2]新装备、衣服-TacticalGearComponent",
+  "forgeId": 1125,
+  "forgeName": "Tactical Gear Component",
+  "version": "3.0.0",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/1125/tactical-gear-component/3.0.0",
+  "size": 656654851,
+  "pinned": false,
+  "note": "",
+  "priority": 610
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   139
+  ],
+  "overlayName": "[2]腰包-WTT-PackNStrap",
+  "forgeId": 1278,
+  "forgeName": "WTT - Pack 'n' Strap",
+  "version": "2.1.1",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/1278/wtt-pack-n-strap/2.1.1",
+  "size": 316944826,
+  "pinned": false,
+  "note": "",
+  "priority": 611
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   141
+  ],
+  "overlayName": "[2]新酒水-MoreEnergyDrinks(近似替代)",
+  "forgeId": 1688,
+  "forgeName": "More Energy Drinks",
+  "version": "1.3.0",
+  "constraint": "4.1.x",
+  "link": "https://sp-mod.com/mod/download/1688/more-energy-drinks/1.3.0",
+  "size": 117232656,
+  "pinned": false,
+  "note": "近似存疑: More Energy Drinks ≠ Hoods?",
+  "priority": 612
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   144
+  ],
+  "overlayName": "[2]新物品-镀金钥匙容器-GildedKeyStorage",
+  "forgeId": 865,
+  "forgeName": "Gilded Key Storage",
+  "version": "2.1.1",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/865/gilded-key-storage/2.1.1",
+  "size": 6814359,
+  "pinned": false,
+  "note": "",
+  "priority": 613
+ },
+ {
+  "batch": "B5",
+  "idxs": [
+   146
+  ],
+  "overlayName": "[2]新物品-藏身处猫咪-Tarkin'sHideoutCat",
+  "forgeId": 2908,
+  "forgeName": "Tarkin's Hideout Cat",
+  "version": "1.1.1",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/2908/tarkins-hideout-cat/1.1.1",
+  "size": 20818452,
+  "pinned": false,
+  "note": "近似: Tarkin Hideout Cat",
+  "priority": 614
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   66
+  ],
+  "overlayName": "[8]战场环境临场感增强-SPTBattleAmbience",
+  "forgeId": 2264,
+  "forgeName": "Battle Ambience",
+  "version": "2.4.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2264/battle-ambience/2.4.0",
+  "size": 12050875,
+  "pinned": false,
+  "note": "",
+  "priority": 701
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   67
+  ],
+  "overlayName": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics",
+  "forgeId": 2003,
+  "forgeName": "HollywoodFX",
+  "version": "3.0.0",
+  "constraint": "~4",
+  "link": "https://sp-mod.com/mod/download/2003/hollywoodfx/3.0.0",
+  "size": 270826931,
+  "pinned": false,
+  "note": "",
+  "priority": 702
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   70
+  ],
+  "overlayName": "[7]更好的枪匠界面-Tradermodding",
+  "forgeId": 1283,
+  "forgeName": "Trader Modding And Improved Weapon Building",
+  "version": "2.1.2",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1283/trader-modding-and-improved-weapon-building/2.1.2",
+  "size": 30477,
+  "pinned": false,
+  "note": "",
+  "priority": 703
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   73
+  ],
+  "overlayName": "[7]更亮的镭射线-brightlasers",
+  "forgeId": 1358,
+  "forgeName": "BrightLasers",
+  "version": "3.0.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1358/brightlasers/3.0.0",
+  "size": 12646,
+  "pinned": false,
+  "note": "",
+  "priority": 704
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   81
+  ],
+  "overlayName": "[7]武器配件位置自定义-WeaponCustomizer",
+  "forgeId": 1950,
+  "forgeName": "Weapon Customizer",
+  "version": "4.0.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/1950/weapon-customizer/4.0.0",
+  "size": 34426,
+  "pinned": false,
+  "note": "",
+  "priority": 705
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   82
+  ],
+  "overlayName": "[7]更好的机瞄-BetterRearSights",
+  "forgeId": 1591,
+  "forgeName": "Better Rear Sights",
+  "version": "1.8.0",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/1591/better-rear-sights/1.8.0",
+  "size": 54074476,
+  "pinned": false,
+  "note": "",
+  "priority": 706
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   88
+  ],
+  "overlayName": "[7]瞄准视野大修-FOV-Fix",
+  "forgeId": 701,
+  "forgeName": "Fontaine's FOV Fix",
+  "version": "4.1.0",
+  "constraint": "4.1.x",
+  "link": "https://sp-mod.com/mod/download/701/fontaines-fov-fix/4.1.0",
+  "size": 19980,
+  "pinned": false,
+  "note": "",
+  "priority": 707
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   119
+  ],
+  "overlayName": "[3]新配件-ConsortiumOfThings",
+  "forgeId": 2195,
+  "forgeName": "ECOT - Eukyre's Consortium of Things",
+  "version": "2.0.1",
+  "constraint": "~4.1.3",
+  "link": "https://sp-mod.com/mod/download/2195/ecot-eukyres-consortium-of-things/2.0.1",
+  "size": 1217404252,
+  "pinned": false,
+  "note": "",
+  "priority": 708
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   122
+  ],
+  "overlayName": "[3]武器整合-Epic's All in One",
+  "forgeId": 1263,
+  "forgeName": "Epic's All in One",
+  "version": "5.0.1",
+  "constraint": "~4.1.0",
+  "link": "https://sp-mod.com/mod/download/1263/epics-all-in-one/5.0.1",
+  "size": 1491253654,
+  "pinned": false,
+  "note": "近似: Epic All-in-One 整合包",
+  "priority": 709
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   126
+  ],
+  "overlayName": "[3]新武器-AKResonant",
+  "forgeId": 2170,
+  "forgeName": "Resonant AK from COD:MW2019 - ReUpload",
+  "version": "3.0.0",
+  "constraint": "~4.1",
+  "link": "https://sp-mod.com/mod/download/2170/resonant-ak-from-codmw2019-reupload/3.0.0",
+  "size": 40091937,
+  "pinned": false,
+  "note": "",
+  "priority": 710
+ },
+ {
+  "batch": "B6",
+  "idxs": [
+   131
+  ],
+  "overlayName": "[3]新武器-WTT武器库-WTT - Armory客户端",
+  "forgeId": 2246,
+  "forgeName": "WTT- Armory",
+  "version": "3.0.0",
+  "constraint": "~4.1.5",
+  "link": "https://sp-mod.com/mod/download/2246/wtt-armory/3.0.0",
+  "size": 4866137251,
+  "pinned": false,
+  "note": "",
+  "priority": 711
+ },
+ {
+  "batch": "B7",
+  "idxs": [
+   16
+  ],
+  "overlayName": "[11]扫敌雷达-RadarStandalone",
+  "forgeId": 1100,
+  "forgeName": "ACCURATE CIRCULAR RADAR",
+  "version": "1.3.4",
+  "constraint": "4.1.3",
+  "link": "https://sp-mod.com/mod/download/1100/accurate-circular-radar/1.3.4",
+  "size": 191103,
+  "pinned": true,
+  "note": "钉死小版本(实验批)",
+  "priority": 801
+ },
+ {
+  "batch": "B7",
+  "idxs": [
+   48
+  ],
+  "overlayName": "[8]boss刷新通知-BossNotifier",
+  "forgeId": 2543,
+  "forgeName": "BossNotifier",
+  "version": "1.2.1",
+  "constraint": "4.1.3",
+  "link": "https://sp-mod.com/mod/download/2543/bossnotifier/1.2.1",
+  "size": 17073,
+  "pinned": true,
+  "note": "钉死小版本(实验批)",
+  "priority": 802
+ },
+ {
+  "batch": "B7",
+  "idxs": [
+   89
+  ],
+  "overlayName": "[6]分离敌意-SeparateHostility",
+  "forgeId": 2248,
+  "forgeName": "Separate Hostility",
+  "version": "3.0.0",
+  "constraint": "4.1.3",
+  "link": "https://sp-mod.com/mod/download/2248/separate-hostility/3.0.0",
+  "size": 6789,
+  "pinned": true,
+  "note": "钉死小版本(实验批)",
+  "priority": 803
+ },
+ {
+  "batch": "B7",
+  "idxs": [
+   120
+  ],
+  "overlayName": "[3]新配件-Eco-Attachment Emporium",
+  "forgeId": 2882,
+  "forgeName": "Eco's Attachment Emporium",
+  "version": "3.0.0",
+  "constraint": "4.1.1",
+  "link": "https://sp-mod.com/mod/download/2882/ecos-attachment-emporium/3.0.0",
+  "size": 3107282117,
+  "pinned": true,
+  "note": "钉死小版本(实验批)",
+  "priority": 804
+ }
+]

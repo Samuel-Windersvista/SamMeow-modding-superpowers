@@ -1,0 +1,39 @@
+{
+ "id": 1760,
+ "hub_id": 2395,
+ "guid": "com.acidphantasm.accessibilityindicators",
+ "name": "Audio Accessibility Indicators",
+ "slug": "audio-accessibility-indicators",
+ "teaser": "Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each shot, sprint, sneak, voiceline or run audio played within a configurable range will draw an indicator on your screen dictating which direction.",
+ "thumbnail": "https://files.sp-mod.com/mods/2395.png",
+ "downloads": 58534,
+ "favourites_count": 97,
+ "endorsements_count": 7,
+ "description": "<p>Since T***** is a “hArDcOrE” shooter, there really isn’t any accessibility options. This mod aims to change that.</p>\n<p>Each running step, sprinting step, sneaking step, voice line, or gunshot within the configurable range will automatically show up on your HUD. There is a small arrow indicator clarifying if the sound is above or below you, but no arrow indicator if it’s level with you. The distance of these sounds can be interpreted based on how large the indicator is, and how faded it starts out. Each indicator will then fade on it’s own, unless the source of the sound is repeated.</p>\n<p>Each indicator is tied to the first bot that makes the specified sound, so if you see multiple indicators, there are multiple bots!</p>\n<p><em>This is my first time creating an accessibility mod (ever), so if you have feedback or require changes to help you do better – PLEASE, let me know!</em></p>\n<p><em><a target=\"_blank\" class=\"external-link\" href=\"https://www.youtube.com/watch?v=z8fNTD6ZJ2c\" rel=\"noreferrer noopener\">https://www.youtube.com/watch?v=z8fNTD6ZJ2c</a></em></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download Audio Accessibility Indicators</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the BepInEx folder in the zip file in 7-zip</li>\n<li>Drag the BepInEx folder from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-accessibilityindicators</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT</div>\n<div class=\"tab-content\"><p>Please comment on the hub page, or preferably create an issue on the GitHub, or <em>more</em> preferably visit #acidphantasm-mods in the SPT Discord!</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">CONFIG</div>\n<div class=\"tab-content\"><p><strong>Configuration Options Available in F12</strong></p>\n<p><strong>Hover over each option in F12 to see a description</strong></p>\n<ul>\n<li>\n<p>Enable/Disable Mod</p>\n</li>\n<li>\n<p>Show Teammates</p>\n<ul>\n<li>For Fika support. No idea if it works on Friendly PMC.</li>\n</ul>\n</li>\n<li>\n<p>Enable/Disable Normalize Distance</p>\n<ul>\n<li>Normalized distance makes all shot/sprint/step/sneak indicators the same size at the same range.</li>\n<li>If you disable this, the indicators make it harder to tell how far the sound actually is because the max distance is different for each indicator</li>\n</ul>\n</li>\n<li>\n<p>Minimum Normalized Distance</p>\n<ul>\n<li>All indicators that display sounds closer than this distance will always be the largest they can be.</li>\n</ul>\n</li>\n<li>\n<p>Maximum Normalized Distance</p>\n<ul>\n<li>All indicators that display sounds further than this distance will always be the smallest they can be.</li>\n</ul>\n</li>\n<li>\n<p>Indicator Offset</p>\n<ul>\n<li>Higher value = further from center. Lower value = closer to center.</li>\n</ul>\n</li>\n<li>\n<p>Enable/Disable Shot Indicators</p>\n</li>\n<li>\n<p>Max Distance for Shot Indicators to be visible</p>\n</li>\n<li>\n<p>Fade Time for Shots Indicators</p>\n</li>\n<li>\n<p>Enemy Shot Colours</p>\n</li>\n<li>\n<p>Friendly Shot Colours</p>\n</li>\n<li>\n<p>Enable/Disable Sprint Indicators</p>\n</li>\n<li>\n<p>Max Distance for Sprint Indicators to be visible</p>\n</li>\n<li>\n<p>Fade Time for Sprint Indicators</p>\n</li>\n<li>\n<p>Enemy Sprint Colours</p>\n</li>\n<li>\n<p>Friendly Sprint Colours</p>\n</li>\n<li>\n<p>Enable/Disable Run Indicators</p>\n</li>\n<li>\n<p>Max Distance for Run Indicators to be visible</p>\n</li>\n<li>\n<p>Fade Time for Run Indicators</p>\n</li>\n<li>\n<p>Enemy Run Colours</p>\n</li>\n<li>\n<p>Friendly Run Colours</p>\n</li>\n<li>\n<p>Enable/Disable Sneak Indicators</p>\n</li>\n<li>\n<p>Max Distance for Sneak Indicators to be visible</p>\n</li>\n<li>\n<p>Fade Time for Sneak Indicators</p>\n</li>\n<li>\n<p>Enemy Sneak Colours</p>\n</li>\n<li>\n<p>Friendly Sneak Colours</p>\n</li>\n<li>\n<p>Enable/Disable Voiceline Indicators</p>\n</li>\n<li>\n<p>Max Distance for Voiceline Indicators to be visible</p>\n</li>\n<li>\n<p>Fade Time for Voice Indicators</p>\n</li>\n</ul></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1760/audio-accessibility-indicators",
+ "fika_compatibility": true,
+ "featured": true,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2024-10-07T03:48:00.000000Z",
+ "created_at": "2024-10-07T03:48:25.000000Z",
+ "updated_at": "2026-08-07T18:02:18.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

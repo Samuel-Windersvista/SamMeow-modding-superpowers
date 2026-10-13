@@ -1,0 +1,108 @@
+{
+ "idx": 102,
+ "entry": "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化",
+ "terms": [
+  "-TarkovIRL_W.H.M( - AI",
+  "TarkovIRL-WHM",
+  "TarkovIRL"
+ ],
+ "all": [
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 2512,
+   "name": "WTT - Content Backport",
+   "slug": "wtt-content-backport",
+   "dl": 541006,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 2310,
+   "name": "WTT - CommonLib",
+   "slug": "wtt-commonlib",
+   "dl": 431800,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285013,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 1519,
+   "name": "WTT - W.A.A.C. (Women's Advanced Assault Corps)",
+   "slug": "wtt-waac-womens-advanced-assault-corps",
+   "dl": 53801,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 2423,
+   "name": "C11 - True North",
+   "slug": "c11-true-north",
+   "dl": 43743,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 2195,
+   "name": "ECOT - Eukyre's Consortium of Things",
+   "slug": "ecot-eukyres-consortium-of-things",
+   "dl": 29627,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 1994,
+   "name": "DLC - Vanilla Fem Clothing",
+   "slug": "dlc-vanilla-fem-clothing",
+   "dl": 28619,
+   "sc": 0
+  },
+  {
+   "term": "-TarkovIRL_W.H.M( - AI",
+   "id": 1477,
+   "name": "AutoRun",
+   "slug": "autorun",
+   "dl": 8559,
+   "sc": 0
+  },
+  {
+   "term": "TarkovIRL",
+   "id": 3062,
+   "name": "Tushonka Rare Collectibles",
+   "slug": "tushonka-rare-collectibles",
+   "dl": 2108,
+   "sc": 0
+  },
+  {
+   "term": "TarkovIRL",
+   "id": 2861,
+   "name": "[REDACTED] Redactor",
+   "slug": "redacted-redactor",
+   "dl": 1222,
+   "sc": 0
+  },
+  {
+   "term": "TarkovIRL",
+   "id": 2950,
+   "name": "Corter-ModSync",
+   "slug": "corter-modsync",
+   "dl": 995,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

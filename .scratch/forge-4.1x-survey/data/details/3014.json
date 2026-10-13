@@ -1,0 +1,32 @@
+{
+ "id": 3014,
+ "hub_id": null,
+ "guid": "com.elmerglue.refrework",
+ "name": "Ref Rework",
+ "slug": "ref-rework",
+ "teaser": "Sell dogtags to Ref for GP coins!",
+ "thumbnail": "https://files.sp-mod.com/mods/WOnv7zlsBJ9OSWNGbdIK9Qfp5aeNRiBFUASFHULT.png",
+ "downloads": 2249,
+ "favourites_count": 28,
+ "endorsements_count": 7,
+ "description": "<p>NOTE: The vast majority of this mod is from Geko’s Better Progression (sp-mod.com/mod/2088/gekos-better-progression) by DrunkGeko, with permission. Go check out their mod, this is just a small part of it ripped out and ported to SPT 4.1.x</p>\n<p>This mod lets you sell dogtags to Ref, in exchange for GP. Higher level dogtags are worth more GP.</p>\n<p>Config includes:</p>\n<p>-Fine tune how much dogtags are worth in GP, with default values, they increase in value by 1 GP for every 7 levels, capping at 10 GP</p>\n<p>-Blocks dogtag sales to other traders, can turn off</p>\n<p>-Lega Medal barter at Ref 1, costs 100 GP, adjustable</p>\n<p>-Lega Medals can no longer be sold, only used in barters</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3014/ref-rework",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-09-11T00:10:00.000000Z",
+ "created_at": "2026-09-11T00:13:56.000000Z",
+ "updated_at": "2026-09-11T00:31:05.000000Z",
+ "owner": {
+  "id": 12091,
+  "name": "Elmer Glue",
+  "profile_photo_url": "https://sp-mod.com/avatars/EG.svg",
+  "cover_photo_url": null,
+  "created_at": "2021-12-12T02:28:35.000000Z",
+  "updated_at": "2026-10-10T23:42:06.000000Z"
+ },
+ "additional_authors": []
+}

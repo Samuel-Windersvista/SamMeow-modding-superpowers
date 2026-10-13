@@ -1,0 +1,39 @@
+{
+ "id": 2162,
+ "hub_id": 2863,
+ "guid": "dazzuh.skillmultiplier",
+ "name": "Skill Multiplier",
+ "slug": "skill-multiplier",
+ "teaser": "Adds sliders for individual skill EXP multipliers.",
+ "thumbnail": "https://files.sp-mod.com/mods/2863.png",
+ "downloads": 14695,
+ "favourites_count": 21,
+ "endorsements_count": 7,
+ "description": "<p><img loading=\"lazy\" decoding=\"async\" src=\"https://raw.githubusercontent.com/Dazzuh/SkillMultiplier/refs/heads/main/docs/ui.png\" alt=\"ui\" /></p>\n<h2>Features</h2>\n<ul>\n<li>Per-skill XP multipliers (configurable via web, access it via your launcher)</li>\n<li>Global XP multiplier</li>\n<li>Option to disable skill fatigue (always gain full XP, enabled by default)</li>\n<li>Automatically generates config entries for all available skills (Should, in theory, work with any mod that adds custom skills)</li>\n<li>Compatible with Fika, Does not need to be installed on headless.</li>\n</ul>\n<p>Default multipliers are 1x, which effectively means disabled. must be configured in the web config to take effect!</p>\n<p>Installation instructions shamelessly stolen from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/user/30839-drakiaxyz/\" rel=\"noreferrer noopener\">DrakiaXYZ</a></p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>2) Select the folder in the zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></p>\n<p>3) Drag the selected folder from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to most mods. No, you don’t need to drop it onto LICENSE-Launcher.txt, just drop it into your SPT folder):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2162/skill-multiplier",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 3,
+ "published_at": "2025-05-26T11:37:00.000000Z",
+ "created_at": "2025-05-26T11:37:40.000000Z",
+ "updated_at": "2026-10-01T22:18:44.000000Z",
+ "owner": {
+  "id": 61596,
+  "name": "Dazzuh",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/d8b04059bb58964e2a0e977e7a4e6f203619984b_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-08-17T12:54:38.000000Z",
+  "updated_at": "2026-10-05T19:46:03.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 3,
+  "hub_id": 19,
+  "title": "Scripting",
+  "slug": "scripting",
+  "description": ""
+ }
+}

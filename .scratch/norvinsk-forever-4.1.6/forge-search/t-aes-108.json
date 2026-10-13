@@ -1,0 +1,449 @@
+{
+ "term": "AES",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2625,
+    "hub_id": null,
+    "guid": "com.vai.spmc",
+    "name": "VAI: SchizoPMC",
+    "slug": "vai-schizopmc",
+    "teaser": "Давайте как то организованно, б%#$ть!",
+    "thumbnail": "https://files.sp-mod.com/mods/8mhJfewyG2l1qTzObDw85JoGXZpH31cufYthOoK1.png",
+    "downloads": 2602,
+    "favourites_count": 18,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2625/vai-schizopmc",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 12,
+    "published_at": "2026-09-13T15:24:00.000000Z",
+    "created_at": "2026-03-12T11:20:37.000000Z",
+    "updated_at": "2026-09-13T15:38:50.000000Z",
+    "owner": {
+     "id": 30911,
+     "name": "VioletAmbush",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/a6e05384a3192dfc97c7864d8e3e5ec09c9bddd8_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/7eaa4d635a864924e523908409c148c8dd100404_1280w.webp",
+     "created_at": "2023-05-08T08:02:24.000000Z",
+     "updated_at": "2026-10-05T12:47:57.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22463,
+      "name": "Incurso",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/52c82a015bbcda176100729e63d2bfc9337cb5e4_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/2832fe76f07b9ad312a8d84d6820df2392650d86_1280w.webp",
+      "created_at": "2022-09-15T12:09:50.000000Z",
+      "updated_at": "2026-08-10T19:40:39.000000Z"
+     }
+    ],
+    "category": {
+     "id": 12,
+     "hub_id": 75,
+     "title": "Audio",
+     "slug": "audio",
+     "description": ""
+    }
+   },
+   {
+    "id": 1950,
+    "hub_id": 2622,
+    "guid": "com.tyfon.weaponcustomizer",
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "teaser": "Personalize your weapon! Adjust rails and attachment positioning.",
+    "thumbnail": "https://files.sp-mod.com/mods/2622.png",
+    "downloads": 130989,
+    "favourites_count": 289,
+    "endorsements_count": 30,
+    "detail_url": "https://sp-mod.com/mod/1950/weapon-customizer",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-01-06T22:11:00.000000Z",
+    "created_at": "2025-01-06T22:11:59.000000Z",
+    "updated_at": "2026-08-15T23:00:11.000000Z",
+    "owner": {
+     "id": 46005,
+     "name": "Tyfon",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-27T23:21:18.000000Z",
+     "updated_at": "2026-09-30T00:12:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 3084,
+    "hub_id": null,
+    "guid": "com.custom.flashlightmodifier",
+    "name": "Better Flashlights",
+    "slug": "better-flashlights",
+    "teaser": "A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams",
+    "thumbnail": "https://files.sp-mod.com/mods/QZiC1tunsf7P5tSiRfunb6JnKMUtp5PtKv7OVgwl.png",
+    "downloads": 1387,
+    "favourites_count": 25,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/3084/better-flashlights",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-09-30T19:06:00.000000Z",
+    "created_at": "2026-09-30T01:30:45.000000Z",
+    "updated_at": "2026-10-05T05:56:58.000000Z",
+    "owner": {
+     "id": 36725,
+     "name": "ThanashsK",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/iNJLEanYXhS3HEyeSZGWrDpxbtKBHqtJoBqHjqOw_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-09-07T08:12:05.000000Z",
+     "updated_at": "2026-10-05T16:25:11.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2921,
+    "hub_id": null,
+    "guid": "com.mybutthasarash.sptchecker",
+    "name": "SPTChecker",
+    "slug": "sptchecker",
+    "teaser": "Check SPT Forge religiously? Me too.",
+    "thumbnail": "https://files.sp-mod.com/mods/dlxodBvplKowpsw2hxZWJ28kMlLiuNytqGm8ft5y.png",
+    "downloads": 2857,
+    "favourites_count": 37,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2921/sptchecker",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-15T13:14:00.000000Z",
+    "created_at": "2026-08-15T03:58:44.000000Z",
+    "updated_at": "2026-09-25T00:33:03.000000Z",
+    "owner": {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-06T13:15:58.000000Z",
+     "updated_at": "2026-10-05T15:26:58.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 874,
+    "hub_id": 1183,
+    "guid": "com.dono.aes",
+    "name": "AES",
+    "slug": "aes",
+    "teaser": "3 interactive Traders, offering a wide range of quests and interactions between them, with extensive lore. Lots of weapons and accessories to unlock (available in multiple languages).",
+    "thumbnail": "https://files.sp-mod.com/mods/1183.png",
+    "downloads": 147262,
+    "favourites_count": 79,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/874/aes",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-05-05T08:48:00.000000Z",
+    "created_at": "2023-05-05T08:48:51.000000Z",
+    "updated_at": "2026-09-10T17:37:25.000000Z",
+    "owner": {
+     "id": 19327,
+     "name": "Dono",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/a00de5702816baac6a97cb99bb765a15febb4122_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/306b38f01d4414e02fcaa171adf4e9a33f2744be_1280w.webp",
+     "created_at": "2022-06-02T07:52:40.000000Z",
+     "updated_at": "2026-09-11T13:41:13.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2765,
+    "hub_id": null,
+    "guid": "com.vinarators.compasshud",
+    "name": "Compass HUD",
+    "slug": "compass-hud",
+    "teaser": "Adds a compass at the top of the screen during a raid, with customization options",
+    "thumbnail": "https://files.sp-mod.com/mods/gBFljRq8g1Pnb0R5MXzFKl3bzSd5ldp4Nixpndyx.png",
+    "downloads": 3863,
+    "favourites_count": 32,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2765/compass-hud",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-06-22T21:00:00.000000Z",
+    "created_at": "2026-06-22T22:56:13.000000Z",
+    "updated_at": "2026-07-28T09:24:21.000000Z",
+    "owner": {
+     "id": 115595,
+     "name": "Vinarator",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/73eae0X8LpbW2ww8uKdvQ7K0QXNp6CHoR2Lmbl0k_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/FbocQy6HwqZe2hkJtgmtQ5uiFvbzytRaNlwHnuTX_2560w.webp",
+     "created_at": "2026-06-14T14:25:45.000000Z",
+     "updated_at": "2026-09-29T01:09:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2724,
+    "hub_id": null,
+    "guid": "com.ricardoschurhaus.vanillatradersrework",
+    "name": "Vanilla Traders Rework",
+    "slug": "vanilla-traders-rework",
+    "teaser": "A complete visual overhaul of E*****************'s vanilla traders, plus bonus modded traders. Realistic portraits, unified art direction, improved consistency, and a lore-friendly presentation that fits T*****'s atmosphere.",
+    "thumbnail": "https://files.sp-mod.com/mods/7wTJxj9xOkP1ehyjH3ZOcYWEwdgpYQ9QKLZvo9qJ.jpg",
+    "downloads": 3319,
+    "favourites_count": 35,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2724/vanilla-traders-rework",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-06-08T18:42:00.000000Z",
+    "created_at": "2026-06-08T18:28:06.000000Z",
+    "updated_at": "2026-07-28T09:07:03.000000Z",
+    "owner": {
+     "id": 112413,
+     "name": "churrus",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/VJKsVwjg2hYH6aeosQmCeJ0U5D4Wt0x4RDCc3aB9_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-11T14:43:23.000000Z",
+     "updated_at": "2026-08-10T19:52:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2833,
+    "hub_id": null,
+    "guid": "org.kilodyne.modernweaponmods.client",
+    "name": "Modern Weapon Mods (MWM)",
+    "slug": "modern-weapon-mods-mwm",
+    "teaser": "Bring your builds into the modern day with nearly 150 new parts dedicated to allowing more flexibillity in how you setup up your weapon.",
+    "thumbnail": "https://files.sp-mod.com/mods/hJwCYRTj0dv6SeFiLLQETSyxJNAeMVrpMa9KdSus.png",
+    "downloads": 12028,
+    "favourites_count": 75,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2833/modern-weapon-mods-mwm",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-07-20T16:00:00.000000Z",
+    "created_at": "2026-07-20T19:48:56.000000Z",
+    "updated_at": "2026-07-28T09:43:40.000000Z",
+    "owner": {
+     "id": 118473,
+     "name": "Laserfish",
+     "profile_photo_url": "https://sp-mod.com/avatars/L.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-07-20T19:00:15.000000Z",
+     "updated_at": "2026-08-10T19:53:23.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 740,
+    "hub_id": 993,
+    "guid": "online.efcl.spt.welcomegifts",
+    "name": "Welcome Gifts",
+    "slug": "welcome-gifts",
+    "teaser": "The gifts given by B** in one place",
+    "thumbnail": "https://files.sp-mod.com/mods/993.jpg",
+    "downloads": 45254,
+    "favourites_count": 34,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/740/welcome-gifts",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2023-01-30T15:59:00.000000Z",
+    "created_at": "2023-01-30T15:59:05.000000Z",
+    "updated_at": "2026-07-28T08:02:12.000000Z",
+    "owner": {
+     "id": 13380,
+     "name": "ShadowXtrex",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/BsXCEJDeC6yR4WKa8Oxgz4JuG4Lwqo1hRH8f8GS1_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-01-11T04:35:01.000000Z",
+     "updated_at": "2026-09-04T11:39:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2308,
+    "hub_id": 3023,
+    "guid": null,
+    "name": "Poster's Galore",
+    "slug": "posters-galore",
+    "teaser": "100 New Posters To Find And Collect \r\n- Based On Various Medias -",
+    "thumbnail": "https://files.sp-mod.com/mods/3023.png",
+    "downloads": 2582,
+    "favourites_count": 2,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2308/posters-galore",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-09-13T16:38:02.000000Z",
+    "created_at": "2025-09-13T16:38:02.000000Z",
+    "updated_at": "2026-07-07T16:59:09.000000Z",
+    "owner": {
+     "id": 49193,
+     "name": "MrPenguin5292",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/0298a33474707d968f55c261128a683e6d294198_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/65313152416f3d85cd51ce4600119c42ed2b1e11.jpg",
+     "created_at": "2024-04-27T04:38:23.000000Z",
+     "updated_at": "2026-08-10T19:45:54.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     {
+      "id": 69857,
+      "name": "Drexira",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/be2adb47cf8da54438dcfe03e43759f07dec40c1_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-12-21T00:39:25.000000Z",
+      "updated_at": "2026-08-10T19:49:04.000000Z"
+     }
+    ],
+    "category": null
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 13
+  }
+ }
+}

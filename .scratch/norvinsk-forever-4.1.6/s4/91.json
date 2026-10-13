@@ -1,0 +1,107 @@
+{
+ "idx": 91,
+ "entry": "[6]AI锁头重定向-Headshot Damage Redirection",
+ "terms": [
+  "AI -Headshot Damage Redirection",
+  "somtam.HeadShotRedirect"
+ ],
+ "all": [
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327305,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2706,
+   "name": "ORBIT 2.0",
+   "slug": "orbit-20",
+   "dl": 51881,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "slug": "pit-fireteam",
+   "dl": 34425,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32563,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2419,
+   "name": "Amonya - Ammo Loving Trader & Quester",
+   "slug": "amonya-ammo-loving-trader-quester",
+   "dl": 17174,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2101,
+   "name": "SPT Leaderboard",
+   "slug": "spt-leaderboard",
+   "dl": 6901,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2893,
+   "name": "TraumaCore",
+   "slug": "traumacore",
+   "dl": 5062,
+   "sc": 0
+  },
+  {
+   "term": "somtam.HeadShotRedirect",
+   "id": 2953,
+   "name": "Headshot Damage Redirection",
+   "slug": "headshot-damage-redirection",
+   "dl": 2873,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 2575,
+   "name": "Fair Equipment Restoration",
+   "slug": "fair-equipment-restoration",
+   "dl": 1379,
+   "sc": 0
+  },
+  {
+   "term": "somtam.HeadShotRedirect",
+   "id": 3002,
+   "name": "Extra-Lives",
+   "slug": "extra-lives",
+   "dl": 1120,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 3049,
+   "name": "ArmorInfoPlus",
+   "slug": "armorinfoplus",
+   "dl": 269,
+   "sc": 0
+  },
+  {
+   "term": "AI -Headshot Damage Redirection",
+   "id": 3088,
+   "name": "Tarkova-cola",
+   "slug": "tarkova-cola",
+   "dl": 208,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

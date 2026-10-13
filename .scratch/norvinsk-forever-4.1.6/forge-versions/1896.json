@@ -1,0 +1,100 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 1139,
+   "hub_id": 13638,
+   "version": "0.43.0",
+   "description": "<p>Added:</p>\n<p>T-Plug</p>\n<p>Raven</p>\n<p>OFZ</p>\n<p>Updated support to 3.11</p>\n<p>NOTE: Currently some items are bugged with the item preview window where they look slightly transparent. I am looking into this and will post an update when I have it resolved. I have also currently not optimized all of the textures so there may be a slight performance hit on this update but I will optimize this for the next release.</p>\n<p>If there are any other bugs you discover with this release let me know!</p>\n<p>This is also compatible with 3.10 just need to change the package.json to version ~3.10.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1896/tarkov-hd-item-rework-project/0.43.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 6200,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-17T05:35:02.000000Z",
+   "created_at": "2025-03-17T05:35:02.000000Z",
+   "updated_at": "2026-05-14T02:04:44.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11727,
+   "hub_id": null,
+   "version": "0.43.1",
+   "description": "<p>Fixed some textures that were not loading correct. Validated functionality for 3.11.4</p>\n",
+   "link": "https://sp-mod.com/mod/download/1896/tarkov-hd-item-rework-project/0.43.1",
+   "content_length": null,
+   "spt_version_constraint": "3.11.4",
+   "downloads": 863,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-07T18:08:00.000000Z",
+   "created_at": "2025-10-08T01:06:08.000000Z",
+   "updated_at": "2026-05-14T06:14:30.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11970,
+   "hub_id": null,
+   "version": "0.43.4",
+   "description": "<p>Rewrote the mod from scratch in C#. Updated to be compatible with SPT 4.0.1 More to come soon.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1896/tarkov-hd-item-rework-project/0.43.4",
+   "content_length": 201424508,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 408,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-21T23:24:00.000000Z",
+   "created_at": "2025-10-21T23:24:12.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11976,
+   "hub_id": null,
+   "version": "0.43.5",
+   "description": "<p>Changed included folders to make installation easier.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1896/tarkov-hd-item-rework-project/0.43.5",
+   "content_length": 201425152,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 9137,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-22T15:22:00.000000Z",
+   "created_at": "2025-10-22T15:22:31.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1896/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1896/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1896/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1896/versions",
+  "per_page": 50,
+  "to": 4,
+  "total": 4
+ }
+}

@@ -1,0 +1,472 @@
+{
+ "term": "Weapons",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3045,
+    "hub_id": null,
+    "guid": "com.weaponsmg1.kahads",
+    "name": "KAHADS - Kill And Hit And Death Sounds",
+    "slug": "kahads-kill-and-hit-and-death-sounds",
+    "teaser": "Option to customize hit, kill, and death sounds",
+    "thumbnail": "https://files.sp-mod.com/mods/XUN4vD9M7vdw1FgYmkP5AM2FJfclPLj2JPMD6hq6.png",
+    "downloads": 450,
+    "favourites_count": 8,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/3045/kahads-kill-and-hit-and-death-sounds",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 12,
+    "published_at": "2026-09-20T16:52:50.000000Z",
+    "created_at": "2026-09-20T16:48:20.000000Z",
+    "updated_at": "2026-09-20T16:54:04.000000Z",
+    "owner": {
+     "id": 124557,
+     "name": "weapon_smg1",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fpQb9Xmzk3yuxSJ3JWioNxoQzYq4nVgh077QwGUl_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-09-20T07:11:13.000000Z",
+     "updated_at": "2026-10-01T13:33:05.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 12,
+     "hub_id": 75,
+     "title": "Audio",
+     "slug": "audio",
+     "description": ""
+    }
+   },
+   {
+    "id": 2763,
+    "hub_id": null,
+    "guid": "hiop.melee.multiplier",
+    "name": "MeleeMultiplier",
+    "slug": "meleemultiplier",
+    "teaser": "Damage multiplier for melee weapons",
+    "thumbnail": "https://files.sp-mod.com/mods/GYDLTFNAXoviMyycgkHXzxbGd9CHsD3ooAYZYSm5.png",
+    "downloads": 4283,
+    "favourites_count": 34,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2763/meleemultiplier",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-06-22T09:34:00.000000Z",
+    "created_at": "2026-06-22T09:34:23.000000Z",
+    "updated_at": "2026-08-03T08:27:48.000000Z",
+    "owner": {
+     "id": 72091,
+     "name": "hiop90",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/I6IhnX42pngxROJrGmcxMHitJJdog1nnZzQ8MrBA_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-01-23T05:43:23.000000Z",
+     "updated_at": "2026-10-04T08:44:20.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27174,
+      "name": "gaylatea",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/36ff2ea60e32966b4406be6a6ceefb6f16324d45_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-17T21:52:37.000000Z",
+      "updated_at": "2026-08-17T06:32:00.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1023,
+    "hub_id": 1410,
+    "guid": "com.crackbone.artem-wtt",
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "teaser": "In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons.",
+    "thumbnail": "https://files.sp-mod.com/mods/1410.jpg",
+    "downloads": 316642,
+    "favourites_count": 252,
+    "endorsements_count": 36,
+    "detail_url": "https://sp-mod.com/mod/1023/wtt-artem",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2023-08-21T10:52:00.000000Z",
+    "created_at": "2023-08-21T10:52:05.000000Z",
+    "updated_at": "2026-09-19T03:42:10.000000Z",
+    "owner": {
+     "id": 33851,
+     "name": "Crackbone",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/5ca8b11c81ad8d8e18ed5cd29c4d56049e03a1b8_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a9860bc04369ac21c1a12b052ea1a2ed3b15aebf.jpg",
+     "created_at": "2023-07-11T20:34:59.000000Z",
+     "updated_at": "2026-08-10T19:43:16.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 28568,
+      "name": "Dsnyder",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/16888b74799ea0f079dc1d5b0469b0907ae557f5_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-12T03:57:07.000000Z",
+      "updated_at": "2026-10-05T13:45:03.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1175,
+    "hub_id": 1645,
+    "guid": "com.vinihns.makevpo101greatagain",
+    "name": "Make VPO-101 Great Again!",
+    "slug": "make-vpo-101-great-again",
+    "teaser": "The VEPR-Hunter (Molot VPO-101) is a great weapon, but it has a flaw. This mod aims to fix it",
+    "thumbnail": "https://files.sp-mod.com/mods/1645.png",
+    "downloads": 12449,
+    "favourites_count": 19,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/1175/make-vpo-101-great-again",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2023-12-02T16:49:00.000000Z",
+    "created_at": "2023-12-02T16:49:20.000000Z",
+    "updated_at": "2026-10-02T00:44:11.000000Z",
+    "owner": {
+     "id": 24845,
+     "name": "viniHNS",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/84101c224775f3cd8ee04dcdc31158d6280cc336_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/fd12e19d8bfff462fbccc46bfeb6bb2eebf04094_1280w.webp",
+     "created_at": "2023-01-05T00:28:21.000000Z",
+     "updated_at": "2026-10-05T16:35:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1263,
+    "hub_id": 1764,
+    "guid": "com.epicrangetime.aio",
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.",
+    "thumbnail": "https://files.sp-mod.com/mods/1764.jpg",
+    "downloads": 274736,
+    "favourites_count": 347,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1263/epics-all-in-one",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2024-03-24T23:38:00.000000Z",
+    "created_at": "2024-03-24T23:38:18.000000Z",
+    "updated_at": "2026-09-21T21:02:35.000000Z",
+    "owner": {
+     "id": 36153,
+     "name": "EpicRangeTime",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+     "created_at": "2023-08-26T03:19:00.000000Z",
+     "updated_at": "2026-10-03T02:57:01.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1853,
+    "hub_id": 2501,
+    "guid": "com.acidphantasm.stattrack",
+    "name": "StatTrack",
+    "slug": "stattrack",
+    "teaser": "Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All weapons will individually track their kills and headshots and display on the info screen for the weapon. See how many you can rack up before you die!",
+    "thumbnail": "https://files.sp-mod.com/mods/2501.png",
+    "downloads": 46207,
+    "favourites_count": 89,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/1853/stattrack",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2024-11-26T15:10:00.000000Z",
+    "created_at": "2024-11-26T15:10:36.000000Z",
+    "updated_at": "2026-08-07T18:02:18.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T16:52:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2586,
+    "hub_id": null,
+    "guid": "com.slpf.caliberundername",
+    "name": "Caliber Under Ammo Name",
+    "slug": "caliber-under-ammo-name",
+    "teaser": "Adds a caliber label below the short name for ammo & ammo boxes.",
+    "thumbnail": "https://files.sp-mod.com/mods/g5VAuVzhV9hWAl46lPYoo1qKaN9UPyRTAXfrtCwh.jpg",
+    "downloads": 21361,
+    "favourites_count": 124,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/2586/caliber-under-ammo-name",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-02-12T12:30:00.000000Z",
+    "created_at": "2026-02-12T12:30:13.000000Z",
+    "updated_at": "2026-08-06T02:14:26.000000Z",
+    "owner": {
+     "id": 92651,
+     "name": "xvotex",
+     "profile_photo_url": "https://sp-mod.com/avatars/X.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-11-29T08:59:04.000000Z",
+     "updated_at": "2026-10-05T15:22:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2691,
+    "hub_id": null,
+    "guid": "com.foldthatstock",
+    "name": "Fold That Stock",
+    "slug": "fold-that-stock",
+    "teaser": "FoldThatStock adds working fold behavior to non-vanilla folding stock.",
+    "thumbnail": "https://files.sp-mod.com/mods/dVUFAOTQxK6gK765H1ltCHwulSFYzi7dhEchhOPm.png",
+    "downloads": 4000,
+    "favourites_count": 51,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2691/fold-that-stock",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-05-14T16:10:00.000000Z",
+    "created_at": "2026-05-14T16:07:25.000000Z",
+    "updated_at": "2026-09-08T06:39:32.000000Z",
+    "owner": {
+     "id": 89944,
+     "name": "yung_.",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CRp3IFN3jJ7V1v3u3hLtreXShQ25u3XleMiULTL3_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-11-18T01:44:43.000000Z",
+     "updated_at": "2026-10-05T04:47:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2884,
+    "hub_id": null,
+    "guid": "com.wtt.ecoww2pack",
+    "name": "Eco's WW2 Pack",
+    "slug": "ecos-ww2-pack",
+    "teaser": "Bring back the feeling of storming Normandy",
+    "thumbnail": "https://files.sp-mod.com/mods/rk4KoMWTAhsEABkVOzh9ctr3ZjmExPHA2DxnMUdX.png",
+    "downloads": 7686,
+    "favourites_count": 47,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2884/ecos-ww2-pack",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-08-04T01:13:00.000000Z",
+    "created_at": "2026-08-04T01:14:08.000000Z",
+    "updated_at": "2026-08-07T18:02:18.000000Z",
+    "owner": {
+     "id": 82679,
+     "name": "Eco",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GUaW9ijt2Ld2MAcapaQB0mxvjkEV0qHF1qZSRpuu_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-08-02T22:16:26.000000Z",
+     "updated_at": "2026-10-05T14:34:26.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1404,
+    "hub_id": 1944,
+    "guid": "com.house16.legs",
+    "name": "Legs the Trader",
+    "slug": "legs-the-trader",
+    "teaser": "30 custom quests that unlocks lower receivers/stripped weapons to mod from the ground up. QOL Mod, New Addition: 3 New Weapons",
+    "thumbnail": "https://files.sp-mod.com/mods/1O51XlbpmxH4GETAsNL9HHMsvqJwGAxS7V9dpgbI.png",
+    "downloads": 45669,
+    "favourites_count": 29,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/1404/legs-the-trader",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2025-11-05T03:36:00.000000Z",
+    "created_at": "2024-05-13T03:32:47.000000Z",
+    "updated_at": "2026-08-12T21:38:39.000000Z",
+    "owner": {
+     "id": 51662,
+     "name": "House16",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b7e91a66de73f5523ae93357afda100f3fb7617a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-13T02:10:16.000000Z",
+     "updated_at": "2026-09-07T20:27:08.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

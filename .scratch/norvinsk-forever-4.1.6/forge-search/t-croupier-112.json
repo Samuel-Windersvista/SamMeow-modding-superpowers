@@ -1,0 +1,204 @@
+{
+ "term": "croupier",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1971,
+    "hub_id": 2649,
+    "guid": "com.turbodestroyer.croupier",
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "teaser": "Gear up for your next raid in just 20 seconds!",
+    "thumbnail": "https://files.sp-mod.com/mods/Rnt3MPjWHfhJbbxzqh3cZOUMEqOzs6SEWh8Oij4f.jpg",
+    "downloads": 42120,
+    "favourites_count": 51,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1971/croupier-loadout-generator-flea-quicksell",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2025-01-18T13:18:00.000000Z",
+    "created_at": "2025-01-18T13:18:14.000000Z",
+    "updated_at": "2026-08-21T03:03:52.000000Z",
+    "owner": {
+     "id": 71742,
+     "name": "turbodestroyer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/178242a5fa7130736a3b618c0581e9f6d2808e73_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/VilS13qPoHZRuiZKVAlakr4UW85QLoTVG2clvolt_1280w.webp",
+     "created_at": "2025-01-18T07:02:26.000000Z",
+     "updated_at": "2026-10-05T13:29:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2239,
+    "hub_id": 2943,
+    "guid": "com.turbodestroyer.couturier",
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "teaser": "Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing",
+    "thumbnail": "https://files.sp-mod.com/mods/eEfD1LSVG1ZleGGq90e91iDfCzxt8Kezg6YV28MY.jpg",
+    "downloads": 49087,
+    "favourites_count": 99,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2239/couturier-gear-and-clothing-pack",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 14,
+    "published_at": "2025-08-01T13:36:00.000000Z",
+    "created_at": "2025-08-01T13:36:51.000000Z",
+    "updated_at": "2026-08-19T04:13:18.000000Z",
+    "owner": {
+     "id": 71742,
+     "name": "turbodestroyer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/178242a5fa7130736a3b618c0581e9f6d2808e73_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/VilS13qPoHZRuiZKVAlakr4UW85QLoTVG2clvolt_1280w.webp",
+     "created_at": "2025-01-18T07:02:26.000000Z",
+     "updated_at": "2026-10-05T13:29:20.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 77629,
+      "name": "Kojimbo0_0",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/Di4ztJQCSua2zbytC8CE7ycXTeCGCapGfPFSAhXa_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/ZBpdduK9iP9vypwCDkR7E1CDjTFBgRAg3gomJrug_2560w.webp",
+      "created_at": "2025-04-22T10:25:27.000000Z",
+      "updated_at": "2026-10-05T16:51:51.000000Z"
+     }
+    ],
+    "category": {
+     "id": 14,
+     "hub_id": 77,
+     "title": "Clothing",
+     "slug": "clothing",
+     "description": ""
+    }
+   },
+   {
+    "id": 2724,
+    "hub_id": null,
+    "guid": "com.ricardoschurhaus.vanillatradersrework",
+    "name": "Vanilla Traders Rework",
+    "slug": "vanilla-traders-rework",
+    "teaser": "A complete visual overhaul of E*****************'s vanilla traders, plus bonus modded traders. Realistic portraits, unified art direction, improved consistency, and a lore-friendly presentation that fits T*****'s atmosphere.",
+    "thumbnail": "https://files.sp-mod.com/mods/7wTJxj9xOkP1ehyjH3ZOcYWEwdgpYQ9QKLZvo9qJ.jpg",
+    "downloads": 3319,
+    "favourites_count": 35,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2724/vanilla-traders-rework",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-06-08T18:42:00.000000Z",
+    "created_at": "2026-06-08T18:28:06.000000Z",
+    "updated_at": "2026-07-28T09:07:03.000000Z",
+    "owner": {
+     "id": 112413,
+     "name": "churrus",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/VJKsVwjg2hYH6aeosQmCeJ0U5D4Wt0x4RDCc3aB9_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-11T14:43:23.000000Z",
+     "updated_at": "2026-08-10T19:52:41.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2249,
+    "hub_id": 2955,
+    "guid": "com.slunk.scc",
+    "name": "Slunk's Central City (SCC for PTT)",
+    "slug": "slunks-central-city-scc-for-ptt",
+    "teaser": "Addition to the PTT mod that shuffles the Maps to form a ring around Streets making Basement Decent in Streets your Hideout. (see the maps attached)",
+    "thumbnail": "https://files.sp-mod.com/mods/2955.jpg",
+    "downloads": 1976,
+    "favourites_count": 1,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2249/slunks-central-city-scc-for-ptt",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2025-08-09T17:22:00.000000Z",
+    "created_at": "2025-08-09T13:22:28.000000Z",
+    "updated_at": "2026-07-13T18:00:20.000000Z",
+    "owner": {
+     "id": 83056,
+     "name": "Slunk_",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/92191e4b1cb8734f0176f32e7aa67d08695d9a03_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-08-09T09:54:51.000000Z",
+     "updated_at": "2026-08-10T19:50:24.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 4,
+   "total": 4
+  }
+ }
+}

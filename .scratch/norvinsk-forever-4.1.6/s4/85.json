@@ -1,0 +1,75 @@
+{
+ "idx": 85,
+ "entry": "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化",
+ "terms": [
+  "AutoCompat Framework",
+  "MOD -autocompatframework- AI"
+ ],
+ "all": [
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "dl": 1315192,
+   "sc": 20
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 1945,
+   "name": "Ai Limit",
+   "slug": "ai-limit",
+   "dl": 64613,
+   "sc": 20
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 2945,
+   "name": "TCF Mod Manager",
+   "slug": "tcf-mod-manager",
+   "dl": 6053,
+   "sc": 20
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32563,
+   "sc": 0
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 2129,
+   "name": "Air Filter Warning",
+   "slug": "air-filter-warning",
+   "dl": 3400,
+   "sc": 0
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 2948,
+   "name": "Airburst",
+   "slug": "airburst",
+   "dl": 1320,
+   "sc": 0
+  },
+  {
+   "term": "MOD -autocompatframework- AI",
+   "id": 2985,
+   "name": "Quick Aim",
+   "slug": "quick-aim",
+   "dl": 1293,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

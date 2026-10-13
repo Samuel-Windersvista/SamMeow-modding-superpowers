@@ -24,18 +24,32 @@ Execute the modpack build: take the user's confirmed mod list and assemble it in
 
 ### Step 2: Install mods into MO2
 
-Every overlay must be self-documenting: a readable name following
-`<category>-<mod-name>-<version>` (e.g. `工具-MCP活跃探针-0.1.0`), plus
-`comments` (1–2 sentence summary shown in MO2's mod list) and `notes`
-(longer install record) in meta.ini. The install tools require `comments`
-and write both fields automatically.
+Every overlay must be self-documenting: a readable name matching the target
+pack's existing naming scheme (the user's packs use `[N]<系列/分类>-<中文功能名>-<英文mod名>`,
+e.g. `[5]现实主义系列-姿势大修-stance-overhaul-test-build` or `[13]MOD工具-综合调试工具包-SamMeow.DebugToolkit`),
+plus `comments`, `notes`, and `url` in meta.ini.
+
+**meta.ini content rules** (write in the pack's player-facing language, e.g. Simplified Chinese):
+
+- `comments` — one sentence on what the mod does for the player (no version, no source, no marketing).
+- `notes` — more detail than comments: player-readable coverage of the mod's features,
+  compressed from the mod's page description (Forge: `GET /api/v0/mod/{id}` → `description`,
+  HTML-stripped). ≤10 lines, one `- ` bullet per line.
+- `url` — the mod's full source link. Forge: `https://sp-mod.com/mod/<id>/<slug>`
+  (the slug segment is required; `.../mod/<id>` alone does not open).
+
+Write multi-line fields through the QSettings-safe writer: `notes` via
+`mo2_set_mod_notes` (quotes the value and escapes newlines as literal `\n`).
+Generic field writers (`mo2_edit_meta`) write raw text — MO2 reads back only
+the first line of a multi-line value written that way, so reach for them for
+single-line fields only (`comments`, `url`, `category`).
 
 For each mod in the confirmed list:
 
 1. **From Forge archive** (most common):
    - Locate the mod's release zip in `knowledge/spt-kb/archive/forge/mods/<id>_release/`
-   - Install into MO2 as a new mod overlay, passing `comments` (required) + `notes` (when useful)
-   - Name the overlay: `<category>-<mod-name>-<version>`
+   - Install into MO2 as a new mod overlay, passing `comments` (required) + `notes`; fill `url` in the same pass (see meta.ini content rules above)
+   - Name the overlay to match the pack's existing scheme (e.g. `[13]MOD工具-综合调试工具包-SamMeow.DebugToolkit`)
 
 2. **From source** (custom-developed mods):
    - Build the mod if not already built (`dotnet build -c Release`)
@@ -91,6 +105,7 @@ The build output is an **MO2 profile** that can be:
 
 - **Do not** write mod files directly into the SPT installation directory -- always use MO2 overlays
 - **Do not** install an overlay without a readable name + `comments`/`notes` -- a bare technical folder name is future debugging debt
+- **Do not** write multi-line meta.ini values through raw writers (`mo2_edit_meta`) -- MO2 truncates them to the first line on read-back; use `mo2_set_mod_notes` for `notes`
 - **Do not** skip conflict analysis before building -- even if the user says "just build it"
 - **Do not** hardcode MO2 or SPT paths -- use configured paths from environment setup
 - **Do not** declare a build successful without Level B verification

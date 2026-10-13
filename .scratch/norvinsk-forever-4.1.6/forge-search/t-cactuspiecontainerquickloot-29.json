@@ -1,0 +1,288 @@
+{
+ "term": "CactusPie.ContainerQuickLoot",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3023,
+    "hub_id": null,
+    "guid": "com.cactuspie.containerquickloot.415",
+    "name": "CactusPie's Transfer Loot Into Container Automatically",
+    "slug": "cactuspies-transfer-loot-into-container-automatically",
+    "teaser": "Looting an item will now place it in a matching container, such as a dogtag case or a document case",
+    "thumbnail": "https://files.sp-mod.com/mods/dDNhf72rB4HEyhg1iP3mGWWwy4EYqqyngLYVlRdo.png",
+    "downloads": 1107,
+    "favourites_count": 13,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/3023/cactuspies-transfer-loot-into-container-automatically",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-13T00:59:00.000000Z",
+    "created_at": "2026-09-13T00:50:01.000000Z",
+    "updated_at": "2026-10-02T16:35:54.000000Z",
+    "owner": {
+     "id": 34606,
+     "name": "hayk4500",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d2dXOqZRvmovrap79FxUcCsJnokNO0TBOwiueqmy_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/d4f30a1e75c68f88b4980d379c2106138d932296_1280w.webp",
+     "created_at": "2023-07-29T13:32:55.000000Z",
+     "updated_at": "2026-10-05T10:14:25.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 29315,
+      "name": "CactusPie",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/750af3e70705360132ca4bac33f06e8536a05070_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-27T06:24:49.000000Z",
+      "updated_at": "2026-08-10T19:42:18.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1551,
+    "hub_id": 2124,
+    "guid": "com.jbs4bmx.removethedead",
+    "name": "Remove The Dead",
+    "slug": "remove-the-dead",
+    "teaser": "Remove the unnecessary scum from the map!",
+    "thumbnail": "https://files.sp-mod.com/mods/2124.png",
+    "downloads": 10829,
+    "favourites_count": 28,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1551/remove-the-dead",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2024-07-12T12:09:00.000000Z",
+    "created_at": "2024-07-12T12:09:33.000000Z",
+    "updated_at": "2026-08-27T14:02:04.000000Z",
+    "owner": {
+     "id": 354,
+     "name": "jbs4bmx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/adf92f32f6332d757c9e0babf7ddc6766956bd5e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/36a2281a3fb58425f8454799ae3982f162df8447_1280w.webp",
+     "created_at": "2020-11-28T13:48:21.000000Z",
+     "updated_at": "2026-10-05T10:57:11.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2508,
+    "hub_id": null,
+    "guid": "com.cactuspie.containerquickloot",
+    "name": "CactusPie's Transfer Loot Into Container Automatically (4.0.x)",
+    "slug": "cactuspies-transfer-loot-into-container-automatically-40x",
+    "teaser": "Looting an item will now place it in a matching container, such as a dogtag case or a document case",
+    "thumbnail": "https://files.sp-mod.com/mods/LxVIneqI9XhGdoMgdqAFn8Yfby7afWbRJ7Nf07gy.png",
+    "downloads": 5056,
+    "favourites_count": 10,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2508/cactuspies-transfer-loot-into-container-automatically-40x",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2025-12-22T17:50:00.000000Z",
+    "created_at": "2025-12-22T23:47:44.000000Z",
+    "updated_at": "2026-07-28T07:07:36.000000Z",
+    "owner": {
+     "id": 15045,
+     "name": "diasiledu",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/BsmXEn4gx51cgUj7agEL3f0SWrMSzfQ33Wg6eyqY_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-02-24T02:47:25.000000Z",
+     "updated_at": "2026-08-10T19:31:08.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 5192,
+      "name": "bepis69",
+      "profile_photo_url": "https://sp-mod.com/avatars/B.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-05-30T19:16:28.000000Z",
+      "updated_at": "2026-08-10T19:16:49.000000Z"
+     },
+     {
+      "id": 29315,
+      "name": "CactusPie",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/750af3e70705360132ca4bac33f06e8536a05070_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-27T06:24:49.000000Z",
+      "updated_at": "2026-08-10T19:42:18.000000Z"
+     },
+     {
+      "id": 34957,
+      "name": "archmagetony",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/c30506641d3b602e1e24f4d33585a031632a095d_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-08-04T06:13:55.000000Z",
+      "updated_at": "2026-08-10T19:43:24.000000Z"
+     },
+     {
+      "id": 49463,
+      "name": "Reyson",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/aa5adaa95daf4f6533df64c44bded59130d4f3f6_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-27T16:17:12.000000Z",
+      "updated_at": "2026-08-10T19:45:49.000000Z"
+     },
+     {
+      "id": 69846,
+      "name": "shincfn",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2024-12-20T17:42:29.000000Z",
+      "updated_at": "2026-08-10T19:49:02.000000Z"
+     },
+     {
+      "id": 76618,
+      "name": "garlicbreadtcg",
+      "profile_photo_url": "https://sp-mod.com/avatars/G.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-04-11T03:07:52.000000Z",
+      "updated_at": "2026-08-10T19:49:50.000000Z"
+     }
+    ],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 2094,
+    "hub_id": 2779,
+    "guid": null,
+    "name": "CactusPie's Transfer Loot into Container Automatically (3.11 Port)",
+    "slug": "cactuspies-transfer-loot-into-container-automatically-311-port",
+    "teaser": "Looting an item will now place it in a matching container, such as a dogtag case or a document case",
+    "thumbnail": "https://files.sp-mod.com/mods/2779.png",
+    "downloads": 3979,
+    "favourites_count": 0,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2094/cactuspies-transfer-loot-into-container-automatically-311-port",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-04-11T03:31:43.000000Z",
+    "created_at": "2025-04-11T03:31:43.000000Z",
+    "updated_at": "2026-07-07T16:59:06.000000Z",
+    "owner": {
+     "id": 76618,
+     "name": "garlicbreadtcg",
+     "profile_photo_url": "https://sp-mod.com/avatars/G.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-04-11T03:07:52.000000Z",
+     "updated_at": "2026-08-10T19:49:50.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 5192,
+      "name": "bepis69",
+      "profile_photo_url": "https://sp-mod.com/avatars/B.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-05-30T19:16:28.000000Z",
+      "updated_at": "2026-08-10T19:16:49.000000Z"
+     },
+     {
+      "id": 29315,
+      "name": "CactusPie",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/750af3e70705360132ca4bac33f06e8536a05070_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-03-27T06:24:49.000000Z",
+      "updated_at": "2026-08-10T19:42:18.000000Z"
+     },
+     {
+      "id": 34957,
+      "name": "archmagetony",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/c30506641d3b602e1e24f4d33585a031632a095d_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-08-04T06:13:55.000000Z",
+      "updated_at": "2026-08-10T19:43:24.000000Z"
+     },
+     {
+      "id": 49463,
+      "name": "Reyson",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/aa5adaa95daf4f6533df64c44bded59130d4f3f6_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-27T16:17:12.000000Z",
+      "updated_at": "2026-08-10T19:45:49.000000Z"
+     },
+     {
+      "id": 69846,
+      "name": "shincfn",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2024-12-20T17:42:29.000000Z",
+      "updated_at": "2026-08-10T19:49:02.000000Z"
+     }
+    ],
+    "category": null
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 4,
+   "total": 4
+  }
+ }
+}

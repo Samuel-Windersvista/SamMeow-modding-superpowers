@@ -1,0 +1,39 @@
+{
+ "id": 3022,
+ "hub_id": null,
+ "guid": "com.manimal.lighthouse",
+ "name": "Manimal's 1.0 Lighthouse Rework Backport ",
+ "slug": "manimals-10-lighthouse-rework-backport",
+ "teaser": "Backports the new Lighthouse rework to SPT 4.1.",
+ "thumbnail": "https://files.sp-mod.com/mods/lCWau1yawUYcCaf73LpT5SWWHf3GIGuQl8cDTzZ4.png",
+ "downloads": 17459,
+ "favourites_count": 132,
+ "endorsements_count": 45,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>This mod backports and implements the new Lighthouse rework and changes that were released recently.\nIt contains all loot and the new marked room. It also includes the BTR with his new routes and Taxi Services.</p>\n<div class=\"youtube-lite\" data-video-id=\"y153xV6Rde8\" data-embed-url=\"https://www.youtube-nocookie.com/embed/y153xV6Rde8?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=y153xV6Rde8\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Drag it into the folder baby.\n<img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">WTT Discord Channel</a></li>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">My EVIL Discord Server….</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/3022/manimals-10-lighthouse-rework-backport",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-09-13T04:08:00.000000Z",
+ "created_at": "2026-09-12T22:57:15.000000Z",
+ "updated_at": "2026-09-28T02:23:03.000000Z",
+ "owner": {
+  "id": 119111,
+  "name": "Manimal1920",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-07-30T21:56:19.000000Z",
+  "updated_at": "2026-10-07T23:48:29.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

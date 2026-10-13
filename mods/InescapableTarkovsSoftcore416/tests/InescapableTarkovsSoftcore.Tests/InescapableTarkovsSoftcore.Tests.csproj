@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>InescapableTarkovsSoftcore.Tests</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <!--
+      测试夹具按生产形态构造可空 POCO，解引用告警为已知噪声
+      （CS8602 可能空引用解引用 / CS8604 可能空引用实参 / CS8629 可空值类型可能为 null）。
+      产品代码 src\ 不抑制，其告警须单独审查。
+    -->
+    <NoWarn>$(NoWarn);CS8602;CS8604;CS8629</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\InescapableTarkovsSoftcore\InescapableTarkovsSoftcore.csproj" />
+  </ItemGroup>
+
+  <!--
+    The test host must load the SPT assemblies to reflect over the mod types,
+    so they are copied locally here (unlike the mod build, which keeps them
+    Private=false). Microsoft.AspNetCore.App supplies the Microsoft.Extensions.*
+    assemblies that SPTarkov.Server.Core depends on.
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Reference Update="SemanticVersioning"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.Common"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.DI"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.Server.Core"><Private>true</Private></Reference>
+    <!-- ISptLogger<T> 签名引用 Spectre.Console.Color，测试桩需要该程序集 -->
+    <Reference Include="Spectre.Console.Ansi">
+      <HintPath>$(SptRuntimeDir)\Spectre.Console.Ansi.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

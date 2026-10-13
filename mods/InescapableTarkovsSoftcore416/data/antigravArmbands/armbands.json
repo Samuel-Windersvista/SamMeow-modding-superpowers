@@ -1,0 +1,28 @@
+// 反重力臂章查找表（IMM 终态，22 款）。
+// 来源：《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置
+//       user/mods/Kiki-AntigravArmbands/config/config.json
+// 数值核对：docs/specs/delta-table.md §1。weight 为减重后的 _props.Weight（kg）。
+[
+  { "id": "5b3f16c486f7747c327f55f7", "name": "White", "weight": -6 },
+  { "id": "5b3f3af486f774679e752c1f", "name": "Blue", "weight": -6 },
+  { "id": "5b3f3b0186f774021a2afef7", "name": "Green", "weight": -6 },
+  { "id": "5b3f3ade86f7746b6b790d8e", "name": "Red", "weight": -6 },
+  { "id": "5b3f3b0e86f7746752107cda", "name": "Yellow", "weight": -6 },
+  { "id": "619bdeb986e01e16f839a99e", "name": "RFARMY", "weight": -8 },
+  { "id": "619bdf9cc9546643a67df6f8", "name": "UNTAR", "weight": -8 },
+  { "id": "619bddffc9546643a67df6f0", "name": "Train Hard", "weight": -8 },
+  { "id": "619bdd8886e01e16f839a99c", "name": "BEAR", "weight": -10 },
+  { "id": "619bdfd4c9546643a67df6fa", "name": "USEC", "weight": -10 },
+  { "id": "660312cc4d6cdfa6f500c703", "name": "The Unheard", "weight": -10 },
+  { "id": "619bde3dc9546643a67df6f2", "name": "Kiba Arms", "weight": -10 },
+  { "id": "619bddc6c9546643a67df6ee", "name": "DEADSKUL", "weight": -10 },
+  { "id": "60b0f988c4449e4cb624c1da", "name": "Evasion", "weight": -15 },
+  { "id": "619bc61e86e01e16f839a999", "name": "Alpha", "weight": -15 },
+  { "id": "619bde7fc9546643a67df6f4", "name": "Labs", "weight": -15 },
+  { "id": "619bdef8c9546643a67df6f6", "name": "TerraGroup", "weight": -15 },
+  { "id": "664a5480bfcc521bad3192ca", "name": "ARENA", "weight": -15 },
+  { "id": "67614b3ab8c060ebb204b106", "name": "Khorovod", "weight": -15 },
+  { "id": "5f9949d869e2777a0e779ba5", "name": "Rivals 2020", "weight": -15 },
+  { "id": "67614b542eb91250020f2b86", "name": "Prestige 1", "weight": -20 },
+  { "id": "67614b6b47c71ea3d40256d7", "name": "Prestige 2", "weight": -25 }
+]

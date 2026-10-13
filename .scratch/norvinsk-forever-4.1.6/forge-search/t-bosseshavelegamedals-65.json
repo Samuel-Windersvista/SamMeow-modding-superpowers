@@ -1,0 +1,472 @@
+{
+ "term": "Bosses Have Lega Medals",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1539,
+    "hub_id": 2109,
+    "guid": "com.acidphantasm.bosseshavelegamedals",
+    "name": "Bosses Have Lega Medals",
+    "slug": "bosses-have-lega-medals",
+    "teaser": "Bosses have a configurable chance to have Lega Medals in their pockets.",
+    "thumbnail": "https://files.sp-mod.com/mods/2109.png",
+    "downloads": 213508,
+    "favourites_count": 467,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1539/bosses-have-lega-medals",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-07-09T10:03:00.000000Z",
+    "created_at": "2024-07-09T10:03:37.000000Z",
+    "updated_at": "2026-08-07T18:02:18.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2523,
+    "hub_id": null,
+    "guid": "com.acidphantasm.bosseshavegpcoins",
+    "name": "Bosses Have Gp Coins",
+    "slug": "bosses-have-gp-coins",
+    "teaser": "From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. Amazing.",
+    "thumbnail": "https://files.sp-mod.com/mods/oLo38uiIG222atjYaUllSWh3em3f6dcGxfXwPVcN.png",
+    "downloads": 43800,
+    "favourites_count": 306,
+    "endorsements_count": 29,
+    "detail_url": "https://sp-mod.com/mod/2523/bosses-have-gp-coins",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-12-31T16:16:00.000000Z",
+    "created_at": "2025-12-31T16:16:45.000000Z",
+    "updated_at": "2026-08-06T06:02:14.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1538,
+    "hub_id": 2108,
+    "guid": "com.acidphantasm.reffriendlyquests",
+    "name": "Ref - SPT Friendly Quests",
+    "slug": "ref-spt-friendly-quests",
+    "teaser": "Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an added Lega Medal to each quest. Includes the sword unlock and secure container.",
+    "thumbnail": "https://files.sp-mod.com/mods/2108.png",
+    "downloads": 306791,
+    "favourites_count": 556,
+    "endorsements_count": 52,
+    "detail_url": "https://sp-mod.com/mod/1538/ref-spt-friendly-quests",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-07-09T08:04:00.000000Z",
+    "created_at": "2024-07-09T08:04:45.000000Z",
+    "updated_at": "2026-08-08T06:02:11.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2524,
+    "hub_id": null,
+    "guid": "com.acidphantasm.itemlimitsbegone",
+    "name": "Item Limits Begone!",
+    "slug": "item-limits-begone",
+    "teaser": "Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42.",
+    "thumbnail": "https://files.sp-mod.com/mods/Z91e56Wcl719FVcqGvuxqb456RGxa1zflt79ycVO.png",
+    "downloads": 18220,
+    "favourites_count": 96,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2524/item-limits-begone",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-12-31T17:41:00.000000Z",
+    "created_at": "2025-12-31T17:41:41.000000Z",
+    "updated_at": "2026-08-06T06:02:14.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1594,
+    "hub_id": 2180,
+    "guid": "com.acidphantasm.progressivebotsystem",
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad more dangerous due to their progression. Everyone has something worth stealing or scavenging!",
+    "thumbnail": "https://files.sp-mod.com/mods/2180.png",
+    "downloads": 254151,
+    "favourites_count": 499,
+    "endorsements_count": 58,
+    "detail_url": "https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2024-07-26T20:03:00.000000Z",
+    "created_at": "2024-07-26T20:03:35.000000Z",
+    "updated_at": "2026-09-20T22:00:56.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187196,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2210,
+    "hub_id": 2913,
+    "guid": "com.danw.livelikebossspawnchances",
+    "name": "Live Like Boss Spawn Chances",
+    "slug": "live-like-boss-spawn-chances",
+    "teaser": "Simulates boss spawn chances gradually increasing throughout a \"wipe\" based on your player level and in-raid hours",
+    "thumbnail": "https://files.sp-mod.com/mods/2913.jpg",
+    "downloads": 4171,
+    "favourites_count": 14,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2210/live-like-boss-spawn-chances",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-07-03T03:31:00.000000Z",
+    "created_at": "2025-07-03T03:31:11.000000Z",
+    "updated_at": "2026-09-01T02:01:01.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1431,
+    "hub_id": 1981,
+    "guid": "com.mpstark.dynamicmaps",
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "teaser": "Replaces the in-game map screen with actually useful maps with dynamic information!",
+    "thumbnail": "https://files.sp-mod.com/mods/1981.png",
+    "downloads": 804827,
+    "favourites_count": 824,
+    "endorsements_count": 92,
+    "detail_url": "https://sp-mod.com/mod/1431/dynamic-maps",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-05-23T02:35:00.000000Z",
+    "created_at": "2024-05-23T02:35:55.000000Z",
+    "updated_at": "2026-08-26T04:22:33.000000Z",
+    "owner": {
+     "id": 47478,
+     "name": "mpstark",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-04-04T09:27:41.000000Z",
+     "updated_at": "2026-08-10T19:45:27.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     },
+     {
+      "id": 48110,
+      "name": "acidphantasm",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-11T21:22:35.000000Z",
+      "updated_at": "2026-10-05T03:07:48.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2676,
+    "hub_id": null,
+    "guid": "xyz.pit.fireteam",
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "teaser": "Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the battlefield.",
+    "thumbnail": "https://files.sp-mod.com/mods/rmTaDlcJz16ETdQz9CiZowcb8KteqMk6XSM4qx8L.png",
+    "downloads": 34424,
+    "favourites_count": 167,
+    "endorsements_count": 22,
+    "detail_url": "https://sp-mod.com/mod/2676/pit-fireteam",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-04-30T17:19:00.000000Z",
+    "created_at": "2026-04-30T17:14:40.000000Z",
+    "updated_at": "2026-09-08T02:40:33.000000Z",
+    "owner": {
+     "id": 105748,
+     "name": "pitAlex",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/kDH74PyXXPhIfFMHA4x5WOwYAl3uz1nuotpntZdz_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/r7QMMiNSNG0oIsV56gQg8rWMJZB7130xeJslrvyo_1280w.webp",
+     "created_at": "2026-02-22T05:14:32.000000Z",
+     "updated_at": "2026-10-05T12:07:16.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 3109,
+    "hub_id": null,
+    "guid": "com.fums.knightmaskfix",
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "teaser": "Fixes Death Knight's missing mask texture for SP Tushonka 4.1.3+",
+    "thumbnail": "https://files.sp-mod.com/mods/g04BBKezC8VmfniMIPm3KM0mcZeELDiAsRkE6IHs.png",
+    "downloads": 570,
+    "favourites_count": 10,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/3109/knight-mask-fix-413",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-10-05T00:35:00.000000Z",
+    "created_at": "2026-10-05T00:26:27.000000Z",
+    "updated_at": "2026-10-05T00:59:36.000000Z",
+    "owner": {
+     "id": 70223,
+     "name": "Fums",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3989d352aff611adb499153d72909a0223390757_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-27T20:28:20.000000Z",
+     "updated_at": "2026-10-05T15:56:23.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 85395,
+      "name": "Umbigo Preto",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/csB3VP0jIdPM6GNDWCWDYzuWSa5hjLP3AMqiPNYn_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/DuVXtm3R4c27S1qDGVIK7GyTXcaoZxSx6AEhvzm3_2560w.webp",
+      "created_at": "2025-10-05T08:36:43.000000Z",
+      "updated_at": "2026-08-10T19:50:47.000000Z"
+     },
+     {
+      "id": 111932,
+      "name": "Flex Wayne",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bItTPQAeWa25KuYVzBAAriBAsefZjlW4YA7sK5Po_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-05-06T13:39:58.000000Z",
+      "updated_at": "2026-08-10T19:52:39.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

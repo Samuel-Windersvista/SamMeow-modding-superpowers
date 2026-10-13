@@ -1,0 +1,182 @@
+[
+ {
+  "name": "《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》物品堆叠-True Items沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》更多的酒水MOD-CornerStore+HoodsEnergyDrinks沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》技能扩展-SkillsExtended沉浸感增强设置-已AI优化",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》腰包小容器-WTT-PackNStrap沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》战局大修-RaidOverhaul沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》AI生成-botplacementsystem沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》难度：容易-主家：中心区Nakatani地下室楼梯",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "《生活在诺文斯克》难度：中等-主家：森林山间仓库",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "《生活在诺文斯克》难度：困难-主家：海关17号仓库",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "《生活在诺文斯克》难度：生存-重生地：中心区-主家：立交桥安全屋",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》-单独-软核-Softcore沉浸感增强设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》-单独-现实主义-Realism数值重制+小火山汉化+兼容补丁",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》-单独-商人以物易物-barter_economy-经济系统设置",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》-单独-客户端MOD-F12设置cfg所在",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》SAIN增强版预设-Live in Norvinsk AI preset",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "《生活在诺文斯克》Samuel's Tweaks",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "[15]《现实化诺文斯克》数值、沉浸感再平衡_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[14]汉化模组_separator",
+  "reason": "separator"
+ },
+ {
+  "name": "[13]瞄准点坐标-AimPointCoordinates",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[13]MOD工具_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[12]修复、优化_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[11]新任务线-迎新礼物任务-EFCL-WelcomeGifts",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[11]多种可选准心-SimpleCrosshair",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[11]破坏沉浸感MOD_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[10]小火山的仓库搜索框修复-SearchBarFix",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[10]物品高效整理（告别华容道）_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[9]全局功能大修_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[8]自动奔跑-AutoRun-alt+W自动向前",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[8]战局内功能大修_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[7]装备、物品功能大修_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[6]AI修复-friendlyPMC护栏-FriendlyPmcGuard",
+  "reason": "custom-sammeow-guard(deferred)"
+ },
+ {
+  "name": "[6]AI修复-护卫NRE护栏-FollowerGuard",
+  "reason": "custom-sammeow-guard(deferred)"
+ },
+ {
+  "name": "[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[5]丧尸模式开关",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[5.5]整合包核心MOD-改变游戏玩法的大修（开关此类需重开档）_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[4]自定义商人、任务_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[3.1]新配件_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[3]新武器_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[2]新内容_separator",
+  "reason": "disabled-in-reference"
+ },
+ {
+  "name": "[1]前置-《生活在诺文斯克》修改本体及MOD排序文件和整合包说明文档",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "[1]前置-《生活在诺文斯克》好奇猫自用游戏设置及按键",
+  "reason": "custom-pack-content(deferred)"
+ },
+ {
+  "name": "[1]前置MOD（不要关）_separator",
+  "reason": "disabled-in-reference"
+ }
+]

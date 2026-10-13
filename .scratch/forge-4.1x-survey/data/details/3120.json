@@ -1,0 +1,39 @@
+{
+ "id": 3120,
+ "hub_id": null,
+ "guid": "com.iieuphoria.truehardcorerules",
+ "name": "TrueHardcoreRules",
+ "slug": "truehardcorerules",
+ "teaser": "No flea. No insurance. No mercy. Hardcore economy.",
+ "thumbnail": "https://files.sp-mod.com/mods/S0WyyDNty1gdKfacvz8410fPosIvu5CC8z6FInXM.png",
+ "downloads": 111,
+ "favourites_count": 3,
+ "endorsements_count": 3,
+ "description": "<h1>True Hardcore Rules</h1>\n<p><strong>One mod, one config, a complete hardcore economy for SPT 4.1.6.</strong></p>\n<p>True Hardcore Rules makes every raid count by changing the economy and services around them: no flea market, no insurance, expensive and scarce traders, and a small secure container. Raids themselves stay exactly as they are. Bot AI, bot spawns, bosses, loot spawns and extracts aren’t touched, so it works alongside SAIN, BSP or any other AI/spawn mod.</p>\n<h2>Features (default “Hardcore Classic” ruleset)</h2>\n<ul>\n<li><strong>Flea market locked.</strong> Gear comes from raids, traders and barters.</li>\n<li><strong>No insurance.</strong> When you lose a kit, it’s gone.</li>\n<li><strong>Harsher traders.</strong> Cash prices ×1.5, stock and buy limits halved, restocks take twice as long. Barter prices are unchanged.</li>\n<li><strong>Fence is a junk dealer.</strong> He pays half what he normally does and doesn’t sell weapons, armor, rigs, backpacks or ammo.</li>\n<li><strong>Smaller secure container.</strong> At most 2×2, and it only holds keys, info items, meds and ammo.</li>\n<li><strong>No post-raid treatment.</strong> You heal with the meds you brought home.</li>\n<li><strong>Repair kits only.</strong> No trader repairs.</li>\n<li><strong>No free starting gifts</strong> from Prapor or Mechanic.</li>\n<li><strong>Longer scav cooldown.</strong> 45 minutes, so scav runs are a way to recover from losses rather than a money farm.</li>\n<li><strong>Stash upgrades still work</strong> in the hideout.</li>\n</ul>\n<h2>Built to be safe</h2>\n<ul>\n<li><strong>Server-only.</strong> No client plugin, and it works with Fika without changes.</li>\n<li><strong>Everything can be toggled</strong> in one commented <code>config.json</code>: multipliers, categories, cooldowns and excluded traders.</li>\n<li><strong>Protects your items.</strong> If shrinking a secure container would cut off items inside it, that container keeps its size and the log tells you what to move.</li>\n<li><strong>Bots are left alone.</strong> Bots use the Boss container, which is excluded from the secure container rule.</li>\n<li><strong>Applies to modded traders too.</strong> Any trader can be excluded in the config.</li>\n<li><strong>Warns about overlapping mods</strong> in the server log, such as HardcoreRules, SVM, fleasimulator and item valuation mods.</li>\n</ul>\n<h2>Install</h2>\n<ol>\n<li>Extract the archive to <code>SPT\\user\\mods\\TrueHardcoreRules\\</code>.</li>\n<li>Remove HardcoreRules if you have it. This mod replaces it.</li>\n<li>Empty your secure container, or move anything outside its top-left 2×2, before the first launch.</li>\n</ol>\n<p><strong>Requires:</strong> SPT 4.1.6</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3120/truehardcorerules",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-10-07T12:49:00.000000Z",
+ "created_at": "2026-10-07T12:50:01.000000Z",
+ "updated_at": "2026-10-07T12:53:03.000000Z",
+ "owner": {
+  "id": 79718,
+  "name": "Euphoria",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/pjGRZ2Xdl68U5YniwwjpceLG2HAzion6rYCuQZYS_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2025-05-31T11:30:09.000000Z",
+  "updated_at": "2026-10-09T01:02:17.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 2,
+  "hub_id": 79,
+  "title": "Overhauls",
+  "slug": "overhauls",
+  "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+ }
+}

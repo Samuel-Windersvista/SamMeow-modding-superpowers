@@ -1,0 +1,100 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 14462,
+   "hub_id": null,
+   "version": "1.6.0",
+   "description": "<ul>\n<li>Updated for SPT 4.1.1</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.0",
+   "content_length": 30866,
+   "spt_version_constraint": ">=4.1.1",
+   "downloads": 2690,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-04T09:01:00.000000Z",
+   "created_at": "2026-08-04T09:02:16.000000Z",
+   "updated_at": "2026-08-04T18:02:40.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14590,
+   "hub_id": null,
+   "version": "1.6.1",
+   "description": "<ul>\n<li>Fixed a bug where you couldn’t merge food and drinks</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.1",
+   "content_length": 20610,
+   "spt_version_constraint": ">=4.1.0",
+   "downloads": 2946,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-09T12:24:00.000000Z",
+   "created_at": "2026-08-09T12:24:38.000000Z",
+   "updated_at": "2026-08-09T18:02:46.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14866,
+   "hub_id": null,
+   "version": "1.6.2",
+   "description": "<ul>\n<li>Updated for <code>4.1.3</code></li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.2",
+   "content_length": 20616,
+   "spt_version_constraint": ">=4.1.3",
+   "downloads": 8116,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-20T19:22:00.000000Z",
+   "created_at": "2026-08-20T19:22:09.000000Z",
+   "updated_at": "2026-08-20T19:23:07.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15517,
+   "hub_id": null,
+   "version": "1.6.3",
+   "description": "<ul>\n<li>Fixed Fika sync (thanks liquidwarp)</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1657/mergeconsumables/1.6.3",
+   "content_length": 20653,
+   "spt_version_constraint": ">=4.1.3",
+   "downloads": 4298,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-09-21T10:29:00.000000Z",
+   "created_at": "2026-09-21T10:29:19.000000Z",
+   "updated_at": "2026-09-21T10:30:06.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1657/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1657/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1657/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1657/versions",
+  "per_page": 50,
+  "to": 4,
+  "total": 4
+ }
+}

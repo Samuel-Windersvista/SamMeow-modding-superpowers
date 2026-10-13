@@ -1,0 +1,196 @@
+[10]UI大修-UIFixes	d2025.10.6.0	Tyfon-UIFixes-4.2.3.7z	https://hub.sp-tarkov.com/files/file/1860-ui-fixes/	0	对NJT的垃圾UI操作进行大量改进，让体验更好，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[10]从武器架装备武器-EquipFromWeaponRack	d2025.3.16.0	DrakiaXYZ-EquipFromWeaponRack-1.4.0.7z	https://hub.sp-tarkov.com/files/file/1567-equip-from-weapon-rack/	0	顾名思义
+[10]仓库搜索框-StashSearch	d2025.3.22.0	StashSearch.7z	https://hub.sp-tarkov.com/files/file/1769-stash-search/	0	在仓库上增加一个搜索栏方便搜索物品，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[10]小火山的仓库搜索框修复-SearchBarFix	d2026.9.6.0	SearchBarFix-1.5.0-SPT-3.11.zip		0	
+[10]小火山的仓库搜索框修复和扩展-SearchBarExtended	d2026.1.3.0	【3.11.x】SearchBarExtended 火山家的搜索栏修复&拓展.zip		0	
+[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化	d2025.4.12.0	SPT-ContainerQuickLoot1.7.1.zip		0	
+[10]显示价格-showmethemoney	d2025.10.10.0	swiftxp-showmethemoney-1.7.0.7z		0	
+[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）	d2025.10.6.0	swiftxp-showmethemoney-quick-sell-1.1.0.7z		0	
+[10]物品容器间快速移动-QuickMoveToContainer	d2025.3.16.0	DrakiaXYZ-QuickMoveToContainer-1.3.0.7z	https://hub.sp-tarkov.com/files/file/1859-quick-move-to-containers/	0	打开容器后，按Ctrl+点击物品即可自动将物品放到已打开的对应容器内
+[10]物品真实堆叠-True Items Redux	d2024.8.2.0	True-Items-Redux-1.2.1.zip	https://hub.sp-tarkov.com/files/file/2206-true-items-redux/#overview	0	提供其他物品的堆叠功能
+[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES	d2025.5.4.0	SPT-InventoryOrganizingFeatures1.4.0.zip	https://hub.sp-tarkov.com/files/file/2122-inventory-organizing-features-3-9-0/	0	使用特定的标签来实现自动物品分类和容器锁定位置。
+[10]物品高效整理（告别华容道）_separator				0	
+[10]自动存放-AutoDeposit - 已AI优化	d2025.3.16.0	Tyfon-AutoDeposit-4.0.0.zip		0	
+[11]任务跳过功能-Skipper	d2025.3.18.0	Terkoiz-Skipper-1.1.3.zip	https://hub.sp-tarkov.com/files/file/1861-skipper/	0	在任务条件项后面添加一个跳过按钮，可以一键完成任务。
+[11]内置动态地图-DynamicMaps	d2025.4.19.0	DynamicMaps-0.5.7-ba475092.zip	https://hub.sp-tarkov.com/files/file/1981-dynamic-maps/	0	战局内按M，或查看地图可显示。
+[11]声音可视化-accessibilityindicators	d2025.4.7.0	acidphantasm-accessibilityindicators.zip		0	顾名思义，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[11]多种可选准心-SimpleCrosshair	d2025.3.17.0	SimpleCrosshair-1.2.2-22d009a8.zip	https://hub.sp-tarkov.com/files/file/1920-simple-crosshair/	0	感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[11]好莱坞投掷武器视觉辅助-VisualAssist	d2025.8.24.0	VisualAssist_1.0.3.zip		0	
+[11]我就是爹作弊工具-DadGamerMode	d2025.3.17.0	dvize.DadGamerMode-v1.11.0.0.zip	https://hub.sp-tarkov.com/files/file/926-dad-gamer-mode/	0	其实就是无敌mod，也提供类COD呼吸回血，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[11]扫敌雷达-RadarStandalone	d2025.9.13.0	Radar-1.2.0.zip	https://hub.sp-tarkov.com/files/file/1522-accurate-circular-radar/	0	挂！光环雷达，可以标识周围120米内的AI分布。
+[11]新任务线-迎新礼物任务-EFCL-WelcomeGifts	d2025.9.19.0	mod_EFCL-WelcomeGifts-v317.7z	https://hub.sp-tarkov.com/files/file/993-welcome-gifts/	0	用任务的方式将礼品分派给了不同的商人
+[11]新商人-可购买自己创建的预设枪械-Hephaestus	d2025.6.16.0	Hephaestus1.1.14.zip		0	
+[11]更多界面信息-GamePanelHUD	d2025.3.23.0	kmyuhkyuk-GamePanelHUD.Release_3.3.0.7z	https://hub.sp-tarkov.com/files/file/652-game-panel-hud/	0	多功能用户界面
+[11]物品感应-AmandsSense	d2025.5.4.0	AmandsSense.2.0.0.zip	https://github.com/Amands2Mello/AmandsSense/releases/tag/2.0.0a	0	附近可拾取物扫描，使用方法：游戏内双击F。感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[11]破坏沉浸感MOD_separator				0	
+[12]任务列表修复-TaskListFixes	d2025.3.31.0	DrakiaXYZ-TaskListFixes-1.6.0.7z		0	
+[12]修复、优化_separator				0	
+[12]商人列表滚动-TraderScrolling	d2025.5.3.0	Kaeno-TraderScrolling.-.1.2.0.zip	https://hub.sp-tarkov.com/files/file/1508-kaeno-traderscrolling/	0	提供商人界面的滚动选择功能
+[12]尸体可删除-SPTCorpseCleaner	d2025.4.2.0	SPTCorpseCleaner.zip		0	
+[12]白色方块bug修复-WhiteBoxFix	d2025.4.22.0	MarsyApp-WhiteBoxFix.zip		0	
+[12]防卡手-HandsAreNotBusy	d2025.3.16.0	HandsAreNotBusy.zip	https://hub.sp-tarkov.com/files/file/1810-handsarenotbusy/	0	防卡手快捷键：SHIFT+L，手卡了就按一下
+[12]骑士面具修复-FacetheKnight-MaskFix	d2025.10.11.0	UmbigoPreto-FacetheKnight-MaskFix.zip		0	
+[13]MOD工具-AI刷新和行为检修-BotDebug	d2025.3.16.0	DrakiaXYZ-BotDebug-1.6.0.7z	https://hub.sp-tarkov.com/files/file/1242-botdebug/	0	检查PMC生成情况的工具，默认关闭。F9/F10可实现类似透视的效果，但主要是显示各AI的行为信息，用来检查AI是否出问题了。
+[13]MOD工具_separator				0	
+[13]好莱坞第三人称镜头-HollywoodCam	d2026.6.23.0	HollywoodCam_1.1.6.7z		0	
+[13]存档编辑器-SPT-AKI Profile Editor	d2025.5.3.0	[13]存档编辑器-SPT-AKI Profile Editor.zip	https://hub.sp-tarkov.com/files/file/184-spt-aki-profile-editor/	-1	
+[13]战局外检修标签-DebugTooltip	d2025.3.16.0	Tyfon-DebugTooltip-3.0.0.zip	https://hub.sp-tarkov.com/files/file/2112-debug-tooltip/	0	可以按\\键关了
+[13]瞄准点坐标-AimPointCoordinates	d2025.7.28.0	InternetDuce-AimPointCoordinates.zip		0	
+[14]客户端ModF12通用翻译器及菜单汉化文本	d2024.12.15.0	【全版本通用】ConfigurationManager 模组管理器 汉化修改版v1.0正式版.zip		0	这个mod会将所有F12的选项全部翻译且不影响原mod文件。
+[14]本体缺失翻译				-1	翻译者：群友✘✘✘✘。现包括Artem、Painter、scorpion三个商人的任务文本翻译。
+[14]汉化模组_separator				0	
+[15]《现实化诺文斯克》数值、沉浸感再平衡_separator				0	
+[1]前置-《生活在诺文斯克》修改本体及MOD排序文件和整合包说明文档				-1	利用Mo2的文件覆盖机制实现对本体文件的修改
+[1]前置-《生活在诺文斯克》好奇猫自用游戏设置及按键				-1	对游戏界面有自己习惯请关掉此项。否则进入游戏将只有左下角蹲姿体力槽
+[1]前置MOD（不要关）_separator				0	
+[1]前置框架-KmyTarkovApi	d2025.3.23.0	kmyuhkyuk-KmyTarkovApi.Release_1.4.0.7z	https://hub.sp-tarkov.com/files/file/1215-eft-api/	0	GamepanelHUD的前置
+[1]前置框架-WTT公共库-WTT-ClientCommonLib	d2026.8.6.0	WTT-ClientCommonLib.7z		0	
+[1]前置框架-自定义交互-CustomInteractions	d2025.5.8.0	CustomInteractions-1.7.0.zip	https://hub.sp-tarkov.com/files/file/1278-custom-interactions/	0	[8]人物技能扩展和撬锁-SkillsExtended和[9]项目上下文菜单扩展-ItemContextMenuExt的前置MOD
+[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件	d2025.3.16.0	VCQL-2.0.4.zip	https://hub.sp-tarkov.com/files/file/885-virtual-s-custom-quest-loader/	0	
+[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件	d2025.3.16.0	VCQL-2.0.4.zip	https://hub.sp-tarkov.com/files/file/885-virtual-s-custom-quest-loader/	0	
+[2]新内容_separator				0	
+[2]新物品-地图容器-SecureMapbookMod	d2025.3.26.0	MrVibesRSA-SecureMapbookMod.zip		0	
+[2]新物品-竞技场赛季奖励-SPT Battlepass	d2025.8.21.0	Pluto! - SPT Battlepass.rar		0	
+[2]新物品-藏身处猫咪-hideoutcat	d2025.3.18.0	hideoutcat-1.0.1.zip		0	
+[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件	d2025.3.22.0	Jehree-GildedKeyStorage-1.6.2.zip	https://hub.sp-tarkov.com/files/file/1166-gilded-key-storage/#versions	0	方便存放钥匙和钥匙卡，可帮助辨别捡到的钥匙是否重复
+[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件	d2025.3.22.0	Jehree-GildedKeyStorage-1.6.2.zip	https://hub.sp-tarkov.com/files/file/1166-gilded-key-storage/#versions	0	方便存放钥匙和钥匙卡，可帮助辨别捡到的钥匙是否重复
+[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]	d2025.7.18.0	RCTA - Metal Gear [FORTNITE].zip		0	
+[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)	d2025.6.11.0	RCTA - Synaptic Rig T1 [CODIW].zip		0	
+[2]新装备、衣服-TacticalGearComponent	d2025.7.9.0	MoxoPixel-TGC.zip	https://hub.sp-tarkov.com/files/file/1555-tactical-gear-component/	0	Civic系列服饰装备，自带现实主义兼容，已汉化
+[2]新酒水-HoodsEnergyDrinks	d2025.5.21.0	HoodsEnergyDrinks1.0.4.zip		0	
+[2]新酒水-WTT - CornerStore	d2025.9.25.0	WTT-CornerStore.7z	https://hub.sp-tarkov.com/files/file/2334-wtt-corner-store/	0	在《现实化诺文斯克》v0.9.0版药品酒水沉浸感增强设置有做针对性调整
+[2]腰包-WTT-PackNStrap客户端文件	d2025.9.30.0	WTT-PackNStrap-1.1.13.7z	https://hub.sp-tarkov.com/files/file/1790-wtt-pack-n-strap/	0	多款可放在臂章位置的腰包，属于第二个安全箱，已有现实主义兼容
+[2]腰包-WTT-PackNStrap服务器端文件	d2025.9.30.0	WTT-PackNStrap-1.1.13.7z	https://hub.sp-tarkov.com/files/file/1790-wtt-pack-n-strap/	0	多款可放在臂章位置的腰包，属于第二个安全箱，已有现实主义兼容
+[2]自定义配方-tarkovcraft	d2026.1.12.0	vinihns-tarkovcraft.zip		0	可用https://vinihns.github.io/TarkovCraft/生成配方文件
+[2]高清材质-TarkovHDRework	d2025.10.10.0	TarkovHDRework.zip		0	会增加显存负担
+[3.1]新配件_separator				0	
+[3].50BMG重制-Epics 50 BMG Remaster-Expansion	d2025.7.22.0	Epics 50 BMG Remaster-Expansion.zip		0	
+[3]新武器-AK50	d2025.7.16.0	Eukyre-AK50.zip		0	
+[3]新武器-AKResonant	d2025.6.7.0	MDZZWOC-AKResonant-3.11ver.zip		0	
+[3]新武器-SIG_MCX_VIRTUS	d2025.12.27.0	(0311)SIG_MCX_VIRTUS.7z		0	
+[3]新武器-WTT武器库-WTT - Armory客户端	d2025.8.22.0	WTT-Armory-1.1.0.7z		0	
+[3]新武器-WTT武器库-WTT - Armory服务端	d2025.12.21.0	WTT-Armory-1.2.1.7z		0	
+[3]新武器-国产武器-1SD-QBZ191	d2025.12.6.0	(spt3 final)1SD-QBZ191.7z		0	
+[3]新武器_separator				0	
+[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst	d2025.9.15.0	AK-105 - BabaYaga x Hyperburst (1).rar		0	[3]新武器-WTT武器库-WTT - Armory是前置
+[3]新配件-BlackCore	d2025.4.23.0	MoxoPixel-BlackCore.zip	https://hub.sp-tarkov.com/files/file/1345-blackcore/	0	新商人-油漆匠-CivicPainter的前置，已有现实主义兼容
+[3]新配件-ConsortiumOfThings	d2025.7.8.0	Eukyre-ConsortiumV1.1.0.zip		0	汉化进行中
+[3]新配件-Echoes.of.Tarkov.-.Requisitions	d2025.7.12.0	Echoes.of.Tarkov.Requistions.1.0.4.rar		0	汉化进行中
+[3]新配件-Eco-Attachment Emporium	d2025.9.21.0	Eco-Attachment Emporium.7z		0	汉化进行中
+[3]新配件-EpicRangeTime-Weapons	d2025.6.26.0	EpicRangeTime-Weapons.3.1.4.zip		0	内包含商人Badger
+[3]新配件-MagTape	d2025.4.19.0	MoxoPixel-MagTape.zip	https://hub.sp-tarkov.com/files/file/1404-mag-tape/	0	新商人-油漆匠-CivicPainter的前置，已有现实主义兼容，已汉化
+[4]新商人-AES	d2025.10.10.0	AES_0.6.0_3.11.x.7z		0	
+[4]新商人-Artem	d2025.6.7.0	Artem.2.1.2.zip		0	
+[4]新商人-Epakim1-1	d2025.5.18.0	Epakim1-1.zip		0	
+[4]新商人-VolkovTrader	d2025.3.25.0	VolkovTrader.zip		0	狗牌换购商人
+[4]新商人-不明生还者-UnknownSurvivor	d2025.4.27.0	UnknownSurvivor1.2.0.7z		0	
+[4]新商人-毒蝎-acidphantasm-scorpion	d2025.3.31.0	acidphantasm-scorpion.zip	https://hub.sp-tarkov.com/files/file/1869-beta-scorpion/	0	一大堆任务，群友✘✘✘✘对任务本文进行了翻译
+[4]新商人-油漆匠-Painter	d2025.7.9.0	MoxoPixel-Painter.zip	https://hub.sp-tarkov.com/files/file/1412-painter/	0	需要MagTape和BlackCore作为前置，已翻译
+[4]新商人-竞技场商人-ref-sptfriendly-quests	d2025.3.16.0	acidphantasm-refsptfriendlyquests.zip	https://hub.sp-tarkov.com/files/file/2108-ref-spt-friendly-quests/	0	已翻译
+[4]新商人-荷官-Croupier (random loadouts + flea quicksell)	d2025.3.22.0	spt_croupier_1_2_7.zip		0	
+[4]新商人-藏身处物资商人-acidphantasm-harryhideout	d2025.3.21.0	acidphantasm-harryhideout.zip	https://hub.sp-tarkov.com/files/file/1817-harryhideout/	0	
+[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)	d2025.5.9.0	BARF v0.3.2.7z		0	
+[4]自定义商人、任务_separator				0	
+[5.5]整合包核心MOD-改变游戏玩法的大修（开关此类需重开档）_separator				0	
+[5]丧尸模式开关				-1	利用Mo2的文件覆盖机制实现对丧尸模式的精准控制
+[5]以物易物经济系统-barter_economy-已AI优化	d2025.6.22.0	leaves-barter_economy1.1.8.zip	https://hub.sp-tarkov.com/files/file/1760-barter-economy/	0	让商人变成以物易物
+[5]全地图间移动套装-IEAPI+PTT - AI优化版	d2025.7.28.0	Trap-PathToTarkov-6.1.0.zip		0	关闭后要重开档案
+[5]战局内存储-LeaveItThere - 已AI优化	d2025.9.7.0	LeaveItThere-2.0.1.zip	https://hub.sp-tarkov.com/files/file/2572-leave-it-there/	0	PTT的配套MOD，任何物品都可以放在突袭中不消失，直到您将其捡回仓库！
+[5]战局大修-RaidOverhaul - 已AI增强版本	d2025.5.5.0	RaidOverhaul.7z		0	
+[5]整合包核心MOD-基于原玩法的大修（开关此类需重开档）_separator				0	
+[5]新增5个开局角色-CustomProfiles	d2025.5.3.0	mod_EFCL-CustomProfiles-v413.rar		0	
+[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化	d2026.3.5.0	TarkovIRL_WeaponsHandlingMod_1.0.0.zip	https://hub.sp-tarkov.com/files/file/2016-tarkovirl-weapons-handling-mod/#versions	0	完全改变操控枪械的手感，感觉难受的话可以关了。
+[5]现实主义大修-Realism - 已AI优化	d2025.12.5.0	Realism-Mod-1.6.3-SPT-3.11.0.zip	https://hub.sp-tarkov.com/files/file/606-spt-realism-mod/	0	让整个塔科夫现实化的关键MOD，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[5]经济与制造系统大修-Softcore - 已AI优化	d2025.2.1.0	odt-softcore (1).zip	https://hub.sp-tarkov.com/files/file/998-softcore-proper-singleplayer-experience-for-spt/	0	经济系统改造MOD，整合包核心MOD
+[5]舒适家园系统-HomeComforts - 已AI优化	d2025.9.7.0	HomeComforts-1.0.3.zip		0	基于LeaveItThere运行，也是配套MOD，提供战局内道具功能。
+[6]Acid的AI生成系统-botplacementsystem - 已AI优化	d2025.4.27.0	acidphantasm-botplacementsystem.zip		0	管理AI的波次生成
+[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化	d2026.1.17.0	acidphantasm-progressivebotsystem.zip		0	
+[6]AI修复-friendlyPMC护栏-FriendlyPmcGuard					FriendlyPmcGuard 0.1.0 - friendlyPMC follower lifecycle guards (Dismiss cleanup + dead-bot recruit guard)
+[6]AI修复-护卫NRE护栏-FollowerGuard					AI修复-护卫NRE护栏：修补 BotFollower.Dispose 释放缺口，消除 boss 死亡后跟班 NRE 刷屏与滑步（A+B+C 补丁）。
+[6]AI增强-SAIN-Moew-v4.4.0增强版	d2025.8.6.0	SAIN-4.1.3.zip	https://hub.sp-tarkov.com/files/file/1062-sain-2-0-solarint-s-ai-modifications-full-ai-combat-system-replacement/	0	增强的AI
+[6]AI拟人MOD的前置框架-BigBrain - 已AI优化	d2025.3.16.0	DrakiaXYZ-BigBrain-1.3.2.7z	https://hub.sp-tarkov.com/files/file/1219-bigbrain/	0	整套BigBrain系AI扩展的必备前置MOD，依赖它的：SAIN\nSWAG\nWaypoints\nLooting Bots
+[6]AI自动搜索物品-LootingBots - 已AI优化	d2025.4.15.0	Skwizzy-LootingBots-1.5.2.zip	https://hub.sp-tarkov.com/files/file/1096-looting-bots/	0	AI现在会搜索捡拾他看见的所有东西，包括你骗保的装备。感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[6]AI行为（吃帧数，帧数低可选择关这类，开丧尸模式请关闭整个大类）_separator				0	
+[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化	d2025.9.30.0	That.s.Lit.+.Sync.7z		0	
+[6]AI路径扩展-Waypoints - 已AI优化	d2025.6.20.0	DrakiaXYZ-Waypoints-1.7.1.7z	https://hub.sp-tarkov.com/files/file/1119-waypoints-expanded-navmesh/	0	更多的路径点，运行AI走得更远，更没有限制范围。
+[6]AI锁头重定向-Headshot Damage Redirection	d2025.6.2.0	somtam.HeadShotDamageRedirect.zip	https://hub.sp-tarkov.com/files/file/1809-headshot-damage-redirection-hdr/	0	防锁头MOD，这个mod的作用是将原本锁头带来的伤害重分配到其他身体部位，减少一枪喷子白头眼情况发生
+[6]分离敌意-SeparateHostility	d2026.2.24.0	SeparateHostility.zip		0	
+[6]友方AI系统-friendlypmc与PITFireTeam合并版本	d2025.9.16.0	friendlypmc-4.4.12.zip		0	[6]友方AI系统-friendlypmc - 已AI优化的增强版本，吸收了4013的PITFireTeam的部分功能，会AI队友更加智能，相对的帧数消耗也会多一些。
+[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化	d2025.9.24.0	solidrhoads-autocompatframework_v1.3.2.zip		0	
+[7]反射镜视野重做-ReflexSightsRework客户端文件	d2025.4.22.0	SamSWAT.ReflexSightsRework-3.11.x.zip	https://hub.sp-tarkov.com/files/file/1753-reflex-sights-rework-updated/	0	反射镜红点大修，不挡视野
+[7]反射镜视野重做-ReflexSightsRework服务器文件	d2025.4.22.0	SamSWAT.ReflexSightsRework-3.11.x.zip	https://hub.sp-tarkov.com/files/file/1753-reflex-sights-rework-updated/	0	反射镜红点大修，不挡视野
+[7]反重力臂章-AntigravArmbands	d2024.7.10.0	Kiki-AntigravArmbands.rar		0	让所有袖章可以减少5-25KG的负重，并可堆叠5个，力量满级后袖章请放在背包或者保险箱
+[7]可以合并消耗品-MergeConsumables	d2026.7.12.0	MergeConsumables.zip		0	
+[7]平衡的夜视装备视效-BRNVG客户端文件	d2025.8.21.0	BRNVG-1.7.2.zip	https://hub.sp-tarkov.com/files/file/1303-borkel-s-realistic-night-vision-goggles-nvgs-and-t-7/	0	更真实的夜视装备视野效果
+[7]平衡的夜视装备视效-BRNVG服务器文件	d2025.8.21.0	BRNVG-1.7.2.zip	https://hub.sp-tarkov.com/files/file/1303-borkel-s-realistic-night-vision-goggles-nvgs-and-t-7/	0	更真实的夜视装备视野效果
+[7]弹匣优化管理系统-MagazineManagementSystem	d2025.3.22.0	MagazineManagementSystem-1.0.2.zip		0	
+[7]更亮的镭射线-brightlasers	d2025.3.16.0	acidphantasm-brightlasers.zip	https://hub.sp-tarkov.com/files/file/1880-brightlasers/	0	
+[7]更大的背包-BetterBackpacks	d2025.4.5.0	JoshMate-BetterBackpacks.7z	https://hub.sp-tarkov.com/files/file/772-josh-mate-s-better-backpacks/	0	
+[7]更好的机瞄-BetterRearSights	d2025.4.30.0	BetterRearSights.zip		0	
+[7]更好的枪匠界面-Tradermodding客户端文件	d2025.3.22.0	ChooChoo-Tradermodding-1.10.0.zip	https://hub.sp-tarkov.com/files/file/1795-trader-modding-and-improved-weapon-building/	0	
+[7]更好的枪匠界面-Tradermodding服务器文件	d2025.3.22.0	ChooChoo-Tradermodding-1.10.0.zip	https://hub.sp-tarkov.com/files/file/1795-trader-modding-and-improved-weapon-building/	0	
+[7]武器动画更新-P90弹匣动画-transparentp90mag	d2025.5.14.0	choccy-transparentp90mag-1.0.2.zip		0	
+[7]武器动画更新器-AnimatorUpdater	d2025.4.9.0	AnimatorUpdater.7z		0	
+[7]武器配件位置自定义-WeaponCustomizer	d2025.4.23.0	Tyfon-WeaponCustomizer-2.0.1.zip		0	
+[7]真实的热成像-realisticThermalScopes	d2025.5.14.0	FiveF-realisticThermalScopes-1.4.0.zip		0	
+[7]瞄准视野大修-FOV-Fix	d2025.12.5.0	Fontaine-FOV-Fix-v3.1.4-SPT-v3.11.zip	https://hub.sp-tarkov.com/files/file/942-fontaine-s-fov-fix-variable-optics/	0	给部分光学倍镜添加Ctrl+鼠标滚轮的无极变焦功能，F12中可修改
+[7]装备、物品功能大修_separator				0	
+[7]面具修复-mask-fix	d2025.6.8.0	mask-fix.zip		0	解除头部装备的冲突
+[8]boss刷新通知-BossNotifier	d2025.5.16.0	BossNotifier.zip	https://hub.sp-tarkov.com/files/file/1737-boss-notifier/#versions	0	
+[8]Boss身上有lega徽章-bosseshavelegamedals	d2025.5.4.0	acidphantasm-bosseshavelegamedals.zip		0	
+[8]人物技能扩展和撬锁-SkillsExtended-已AI优化	d2025.4.2.0	SkillsExtended-dc5ce28d.zip	https://hub.sp-tarkov.com/files/file/1722-beta-skills-extended/	0	顾名思义，它会修改部分技能的效果，目前处于初期测试阶段，但和现实主义没有冲突
+[8]任务跟踪显示-QuestTracker	d2025.3.17.0	DrakiaXYZ-QuestTracker-1.5.1.7z	https://hub.sp-tarkov.com/files/file/1574-quest-tracker/	0	感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[8]可以攀爬更高的地方-Increase Climb Height	d2025.3.17.0	Increase Climb Height 1.4.zip		0	
+[8]可拾取穿墙物品-ReachExtender	d2025.5.16.0	ReachExtender.zip	https://hub.sp-tarkov.com/files/file/1758-reach-extender/#versions	0	
+[8]坠落的补给直升机-HeliCrash.ArysReloaded	d2025.4.19.0	SamSWAT.HeliCrash.ArysReloaded-2.3.0.7z		0	
+[8]塔科夫天气系统-Tarkov-Weather-System	d2026.1.25.0	1.0.1.3.10.5.release.7z	"https://hub.sp-tarkov.com/files/file/2796-tarkov-weather-system/?highlight=Tarkov%20Weather%20System"	0	
+[8]增加拾取距离-LootRadius	d2025.3.31.0	DrakiaXYZ-LootRadius-1.4.1.7z	https://hub.sp-tarkov.com/files/file/1870-loot-radius/	0	
+[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化	d2025.10.10.0	HollywoodFX_1.7.5.7z	https://hub.sp-tarkov.com/files/file/2683-hollywoodfx	0	HollywoodGraphics与阿曼达的图形不兼容，二选一，吃帧数，比较好看。
+[8]战场环境临场感增强-SPTBattleAmbience	d2025.9.30.0	SPTBattleAmbience220.7z		0	
+[8]战局内功能大修_separator				0	
+[8]技能速度调节器-SkillMultiplier	d2026.1.28.0	SkillMultiplier-1.1.1.zip		0	
+[8]更有意义的武器精通-MeaningfulWeaponMasteries	d2025.10.6.0	MeaningfulWeaponMasteries.zip		0	
+[8]武器破门-BackdoorBandit客户端文件	d2025.5.13.0	BackdoorBandit1.11.2.7z	https://hub.sp-tarkov.com/files/file/2575-backdoor-bandit-bb-3-10-port/#versions	0	整合包默认所有武器可破门，已汉化
+[8]武器破门-BackdoorBandit服务器文件	d2025.5.13.0	BackdoorBandit1.11.2.7z	https://hub.sp-tarkov.com/files/file/2575-backdoor-bandit-bb-3-10-port/#versions	0	整合包默认所有武器可破门，已汉化
+[8]沉浸感时间循环-ImmersiveDaylightCycle	d2026.6.23.0	ImmersiveDaylightCycle-2.2.0.zip		0	
+[8]火山家的实时字幕-Volcano-subtitle	d2026.8.11.0	【3.11.x】Volcano-subtitle 火山家的实时字幕v2.0.1.zip		0	
+[8]直接使用未捡物品-UseLooseLoot	d2025.3.16.0	Gaylatea-UseLooseLoot-1.4.0.7z	https://hub.sp-tarkov.com/files/file/1264-use-loose-loot/	0	对于未拾取的吃喝药品，可以直接使用，而不用先捡进包里
+[8]直接搜索已打开容器-SearchOpenContainers	d2025.3.16.0	DrakiaXYZ-SearchOpenContainers-1.3.0.7z	https://hub.sp-tarkov.com/files/file/1265-search-open-containers/	0	可以直接搜索打开的文件柜等，不用关了再开。
+[8]禁用Scav模式-DisableScavMode	d2025.3.25.0	DisableScavMode.zip	https://hub.sp-tarkov.com/files/file/1815-disablescavmode-egboggied/	0	因核心玩法需要，禁用Scav
+[8]自动奔跑-AutoRun-alt+W自动向前	d2025.5.4.0	Tyfon-AutoRun-4.0.0.zip		0	
+[8]超重也能练耐力-Always-Level-Endurance	d2025.8.11.0	Fontaine-Always-Level-Endurance-v1.7.0-SPT-v3.11.x.zip		0	
+[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere	d2025.3.16.0	UseItemsAnywhere-Debug-1.1.3-6889d2c4.zip	https://hub.sp-tarkov.com/files/file/1416-use-items-anywhere/	0	顾名思义
+[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化	d2026.3.5.0	ozen-ContinuousLoadAmmo.7z		0	边走边填装子弹快捷键：K，会导致AutoDeposit的容器按钮消失
+[8]门可以锁-LockableDoors	d2025.3.31.0	LockableDoors-1.2.1.zip		0	
+[8]门的状态随机化-DoorRandomizer	d2025.3.16.0	DrakiaXYZ-DoorRandomizer-1.6.0.7z	https://hub.sp-tarkov.com/files/file/1107-door-randomizer/	0	现在所有的门的开关状态不是一成不变的。
+[9]主菜单大修-MenuOverhaul	d2025.6.26.0	MoxoPixel-MenuOverhaul (1).zip	https://hub.sp-tarkov.com/files/file/2412-wtt-menu-overhaul/#versions	0	
+[9]任务交接自动化-TaskAutomation	d2025.8.21.0	TaskAutomation.zip		0	
+[9]全局功能大修_separator				0	
+[9]动态物品重量-DynamicItemWeights	d2025.10.9.0	Tosox.DynamicItemWeights-v1.0.0.zip		0	
+[9]子弹专家-MunitionsExpert	d2025.3.25.0	MunitionsExpert-1.6.0.zip	https://hub.sp-tarkov.com/files/file/1324-munitions-expert-reboot/	0	顾名思义
+[9]小火山的全界面中文字体切换	d2026.8.11.0	【3.11.x】Volcano-FontReplace 火山家的中文字体切换v1.3.0.zip		0	
+[9]物品打勾标记提供更多信息-MoreCheckmarks	d2025.3.16.0	MoreCheckmarks-1.5.16-for-3.11.0-35392.zip	https://hub.sp-tarkov.com/files/file/1159-morecheckmarks/	0	顾名思义，感谢Volcano的汉化工作及使用授权：https://sns.oddba.cn/139847.html
+[9]简单的锻炼QTE-simpleworkoutqte	d2025.5.8.0	acidphantasm-simpleworkoutqte.zip	https://hub.sp-tarkov.com/files/file/1989-simple-workout-qte/#versions	0	
+[9]腰带槽-BeltSlot	d2025.7.12.0	BeltSlot1.0.0.7z		0	
+[9]藏身处不用打勾-nofirhideout	d2025.10.21.0	schkuromi-nofirhideout.zip		0	
+[9]解锁所有藏身处装饰-UnlockHideoutCustomization	d2025.7.18.0	desze-UnlockHideoutCustomization.zip		0	
+[9]项目上下文菜单扩展-ItemContextMenuExt	d2025.5.8.0	ItemContextMenuExt-1.7.0.zip	https://hub.sp-tarkov.com/files/file/1283-item-context-menu-extended/#overview	0	
+[9]预览窗口尺寸调整-previewsizer	d2025.10.6.0	acidphantasm-previewsizer.zip		0	
+《生活在诺文斯克》-单独-商人以物易物-barter_economy-经济系统设置	d2025.3.9.0	leaves-barter_economy1.1.5.zip		0	所有商人的以物易物设置均在此设置。难度选项已包含此项目，启用难度会被完全覆盖。
+《生活在诺文斯克》-单独-客户端MOD-F12设置cfg所在				-1	对游戏界面有自己习惯请关掉此项。否则进入游戏将只有左下角蹲姿体力槽。难度选项已包含此项目，启用难度会被部分覆盖。
+《生活在诺文斯克》-单独-现实主义-Realism数值重制+小火山汉化+兼容补丁	d2025.2.7.0	Realism-Mod-v1.5.0-SPT-v3.10.5.zip		0	现实主义的本整合包所有自定义参数均在此。难度选项已包含此项目，启用难度会被部分覆盖。
+《生活在诺文斯克》-单独-软核-Softcore沉浸感增强设置	d2023.11.18.0	Realism-Mod-v0.14.2-SPT-v3.7.1.zip		0	软核的设置目前跟1.1.8一致。难度选项已包含此项目，启用难度会被完全覆盖。
+《生活在诺文斯克》AI生成-botplacementsystem沉浸感增强设置	d2025.4.27.0	acidphantasm-botplacementsystem.zip		0	
+《生活在诺文斯克》SAIN增强版预设-Live in Norvinsk AI preset				-1	整合包专属SAIN预设-持续更新
+《生活在诺文斯克》Samuel's Tweaks				-1	自制MOD，优化客户端底层/护甲弹挂不冲突/可以掠夺臂章近战武器/三格弹匣变两格
+《生活在诺文斯克》反重力袖章-AntigravArmbands沉浸感增强设置	d2023.11.2.0	Kiki-AntigravArmbands.2.2.6.zip		0	增加更多的反重力臂章和减重等级
+《生活在诺文斯克》战局大修-RaidOverhaul沉浸感增强设置	d2025.5.5.0	RaidOverhaul.7z		0	
+《生活在诺文斯克》技能扩展-SkillsExtended沉浸感增强设置-已AI优化	d2024.5.16.0	SkillsExtended.7z		0	在config里增加了BackdoorBandit的C4炸弹的工作台配方
+《生活在诺文斯克》更多的酒水MOD-CornerStore+HoodsEnergyDrinks沉浸感增强设置	d2024.5.16.0	SkillsExtended.7z		0	mod酒水吃喝效果全部改成缓慢增加
+《生活在诺文斯克》物品堆叠-True Items沉浸感增强设置	d2023.12.9.0	True Items v1.0.3.rar		0	增加了更多物品的堆叠
+《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置	d2024.8.7.0	JoshMate-BetterBackpacks_U24.zip	https://hub.sp-tarkov.com/files/file/772-josh-mate-s-better-backpacks/	0	增加了对MOD背包的支持
+《生活在诺文斯克》腰包小容器-WTT-PackNStrap沉浸感增强设置	d2024.5.3.0	WTT-PackNStrap.rar		0	增加更多可以放进保险箱的容器，并修正了臂包的售价。感谢群友：渗透者之心的定价计算
+《生活在诺文斯克》难度：中等-主家：森林山间仓库	d2024.9.16.0	Trap-PathToTarkov-5.3.3.zip		0	难度四选一。中等难度。
+《生活在诺文斯克》难度：困难-主家：海关17号仓库	d2024.9.16.0	Trap-PathToTarkov-5.3.3.zip		0	难度四选一。较难。
+《生活在诺文斯克》难度：容易-主家：中心区Nakatani地下室楼梯	d2024.9.16.0	Trap-PathToTarkov-5.3.3.zip		0	难度四选一。最容易。
+《生活在诺文斯克》难度：生存-重生地：中心区-主家：立交桥安全屋	d2024.9.16.0	Trap-PathToTarkov-5.3.3.zip		0	难度四选一。最难。

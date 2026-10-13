@@ -1,0 +1,48 @@
+{
+ "id": 2310,
+ "hub_id": 3025,
+ "guid": "com.wtt.commonlib",
+ "name": "WTT - CommonLib",
+ "slug": "wtt-commonlib",
+ "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+ "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+ "downloads": 432279,
+ "favourites_count": 1302,
+ "endorsements_count": 73,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p><strong>DISCLAIMER</strong>: <strong>YOU CANNOT INCLUDE THIS MOD IN YOUR RELEASES - ONLY LIST IT AS A DEPENDENCY</strong></p>\n<p><strong>WTT-CommonLib</strong> is a comprehensive modding library for SPT (Single Player T*****) that streamlines the creation and integration of custom content in E*****************. It automatically handles both server-side database changes and client-side resource loading, allowing mod authors to add new items, quests, loot, character assets, crafting recipes, and more with simple service calls and straightforward JSON configuration.</p>\n<p><strong>Key Features:</strong></p>\n<ul>\n<li>Custom items with helpers to integrate into traders, loot containers, hideout areas, and more</li>\n<li>Custom quests and quest zones</li>\n<li>Character customization (heads, voices, clothing)</li>\n<li>Lootspawn system for random loot items and forced quest items</li>\n<li>Hideout crafting recipes</li>\n<li>Multi-language localization</li>\n<li>Custom buff effects, inventory profiles, weapon presets, rig layouts, and more!</li>\n</ul>\n<p>For detailed implementation guides and full API documentation, see the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/WelcomeToTarkov/WTT-CommonLib/blob/main/README.md\" rel=\"noreferrer noopener\">README on GitHub</a>.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><hr />\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.imgur.com/3N6gTe2.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/3N6gTe2.gif\" alt=\"vKRw58b.gif\" /></a></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">What is WTT?</div>\n<div class=\"tab-content\"><p><strong>What is Welcome To T</strong>***?**</p>\n<p>Welcome To T***** (WTT) is a mod for SPT AKI that has been in development for over a year. What started as a small passion project has grown in size to incorporate 15+ core members as well as contributions from other well-known mod authors and friends of WTT alike.</p>\n<p><strong>How does Welcome To T</strong>*** change the game?**</p>\n<p>As a mod, WTT overhauls SPT AKI, touching on almost every vanilla game system, as well as adding completely new systems to the game and its core mechanics. Inspired by open-world hardcore survival projects like STALKER: Anomaly and STALKER: GAMMA, WTT takes SPT’s artificial multiplayer MMO difficulty adders and replaces them with a challenging world economy, loot scarcity rebalancing, a lore friendly quest overhaul, and a map-traveling system built from rewritten portions of the Traveler mod allowing seamless travel between maps. Aside from its changes to the game’s core properties, WTT also adds to the world’s variety of traders, NPC’s, characters, items, and quests:</p>\n<ul>\n<li>Over 1,000 custom bundles adding new weapons, attachments, wearables, containers, food, medical, and barter items.</li>\n<li>New bosses with their own custom gear that will be properly incorporated into WTT’s quest lines.</li>\n<li>New, meaningful traders with their own lore-friendly quests and narrative elements to help the player progress through the story-line of WTT.</li>\n<li>New playable characters and outfits that will add to the player’s customization abilities.</li>\n<li>New quest types incorporating brand new map extraction points, putting the player’s knowledge and familiarization of SPT’s maps to the test.</li>\n</ul>\n<p>Welcome To T***** stands as one of the largest mods created for SPT AKI thus far.</p>\n<p><strong>When does Welcome To T</strong>*** release?**</p>\n<p><em>Thursday.</em></p>\n<p><strong>Which Thursday?</strong></p>\n<p><em>TBD</em></p>\n<p><strong>Want to follow our progress?</strong></p>\n<p>You can follow the project through it’s development in our discord here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/WelcomeToTarkov\" rel=\"noreferrer noopener\">https://discord.gg/WelcomeToTarkov</a></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">WTT Standalone Mods</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2246/wtt-armory\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/M5K2z6fN/image.png\" alt=\"image.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2132/wtt-corner-store\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/wh6nTSXC/corner.png\" alt=\"corner.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1340/wtt-the-long-lost-heads-of-yojenkz\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/kgCYjkf7/heads.png\" alt=\"heads.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1775/wtt-menu-overhaul\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/wNffZM9s/menu.png\" alt=\"menu.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1278/wtt-pack-n-strap\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/TDYhZx29/packnstrap.png\" alt=\"packnstrap.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1590/wtt-taste-the-rainbow\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/gMXynQ8x/rainbow.png\" alt=\"rainbow.png\" /></a></p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/2085-wtt-w-a-a-c-women-s-advanced-assault-corps/\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/H9J2VTk/waac.png\" alt=\"waac.png\" /></a></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": true,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2025-09-15T02:44:00.000000Z",
+ "created_at": "2025-09-15T02:44:54.000000Z",
+ "updated_at": "2026-08-23T15:19:33.000000Z",
+ "owner": {
+  "id": 30890,
+  "name": "GrooveypenguinX",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-05-07T19:55:52.000000Z",
+  "updated_at": "2026-10-04T21:13:58.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 22121,
+   "name": "Tron",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+   "created_at": "2022-08-31T05:49:04.000000Z",
+   "updated_at": "2026-10-05T16:42:55.000000Z"
+  }
+ ],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

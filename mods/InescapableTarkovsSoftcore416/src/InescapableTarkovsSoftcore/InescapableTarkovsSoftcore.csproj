@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>InescapableTarkovsSoftcore</AssemblyName>
+    <RootNamespace>InescapableTarkovsSoftcore</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- 默认配置模板：随包分发（build.ps1 拷贝为 config.json）并内嵌为运行时重建来源 -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\config\default-config.json" LogicalName="InescapableTarkovsSoftcore.default-config.json" />
+  </ItemGroup>
+
+  <!-- 功能查找表：源 = 旧包（IMM 终态）；以 EmbeddedResource 嵌入，运行时与测试读取同一资源 -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\data\trueitems\barter.json" LogicalName="InescapableTarkovsSoftcore.trueitems.barter.json" />
+    <EmbeddedResource Include="..\..\data\trueitems\clothing.json" LogicalName="InescapableTarkovsSoftcore.trueitems.clothing.json" />
+    <EmbeddedResource Include="..\..\data\trueitems\keycards.json" LogicalName="InescapableTarkovsSoftcore.trueitems.keycards.json" />
+    <EmbeddedResource Include="..\..\data\trueitems\medicals.json" LogicalName="InescapableTarkovsSoftcore.trueitems.medicals.json" />
+    <EmbeddedResource Include="..\..\data\trueitems\partsnmods.json" LogicalName="InescapableTarkovsSoftcore.trueitems.partsnmods.json" />
+    <EmbeddedResource Include="..\..\data\trueitems\provisions.json" LogicalName="InescapableTarkovsSoftcore.trueitems.provisions.json" />
+    <EmbeddedResource Include="..\..\data\antigravArmbands\armbands.json" LogicalName="InescapableTarkovsSoftcore.antigravArmbands.armbands.json" />
+    <EmbeddedResource Include="..\..\data\backpacks\backpacks.json" LogicalName="InescapableTarkovsSoftcore.backpacks.backpacks.json" />
+    <EmbeddedResource Include="..\..\data\softcore\scavcase.json" LogicalName="InescapableTarkovsSoftcore.softcore.scavcase.json" />
+    <EmbeddedResource Include="..\..\data\softcore\fleamarket.json" LogicalName="InescapableTarkovsSoftcore.softcore.fleamarket.json" />
+    <EmbeddedResource Include="..\..\data\softcore\crafting-rebalance.json" LogicalName="InescapableTarkovsSoftcore.softcore.crafting-rebalance.json" />
+    <EmbeddedResource Include="..\..\data\softcore\crafting-recipes.json" LogicalName="InescapableTarkovsSoftcore.softcore.crafting-recipes.json" />
+  </ItemGroup>
+
+</Project>

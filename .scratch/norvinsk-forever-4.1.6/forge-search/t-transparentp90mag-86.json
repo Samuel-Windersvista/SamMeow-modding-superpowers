@@ -1,0 +1,498 @@
+{
+ "term": "Transparent P90 Mag",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2774,
+    "hub_id": null,
+    "guid": "7bpencil.transparentsights",
+    "name": "Transparent Sights",
+    "slug": "transparent-sights",
+    "teaser": "Keep both eyes open",
+    "thumbnail": "https://files.sp-mod.com/mods/2cZFxd7dGveu0n7npBmFqMappskwdUz0R6U5gf9g.png",
+    "downloads": 5940,
+    "favourites_count": 62,
+    "endorsements_count": 11,
+    "detail_url": "https://sp-mod.com/mod/2774/transparent-sights",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-06-25T11:46:00.000000Z",
+    "created_at": "2026-06-25T11:36:53.000000Z",
+    "updated_at": "2026-10-02T00:28:34.000000Z",
+    "owner": {
+     "id": 106491,
+     "name": "7Bpencil",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/m0WMEpWmYMyvlzjGaDzw4yYFLyLfv9zZIlDFctM3_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/eYWJOQryIx6DpPTaprSWYBSfUe5t8xPiHaaXgYQp_1280w.webp",
+     "created_at": "2026-03-03T10:57:21.000000Z",
+     "updated_at": "2026-10-05T04:16:04.000000Z"
+    },
+    "additional_authors": []
+   },
+   {
+    "id": 2206,
+    "hub_id": 2909,
+    "guid": "com.jbobyh.itempreviewqol",
+    "name": "Item Preview QoL + screenshots",
+    "slug": "item-preview-qol-screenshots",
+    "teaser": "Better item preview: zoom, pan, rotate lights, fullscreen, and alpha screenshots. UI Fixes compatible.",
+    "thumbnail": "https://files.sp-mod.com/mods/2909.jpg",
+    "downloads": 17818,
+    "favourites_count": 71,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2206/item-preview-qol-screenshots",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2025-06-29T19:51:00.000000Z",
+    "created_at": "2025-06-29T19:51:33.000000Z",
+    "updated_at": "2026-09-24T19:51:59.000000Z",
+    "owner": {
+     "id": 67989,
+     "name": "jbobyh",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/c3b9344a72ab93a1e5d319bea5d57d4877fff4bf_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-11-22T09:06:16.000000Z",
+     "updated_at": "2026-09-20T09:38:10.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2879,
+    "hub_id": null,
+    "guid": "com.anvil.weboverlay",
+    "name": "WebOverlay",
+    "slug": "weboverlay",
+    "teaser": "Lets mods show HTML panels and click-through HUDs over the game",
+    "thumbnail": "https://files.sp-mod.com/mods/km76RfiQDmlPoFjuOjMwaS4ZTe5u8NZDDOz8OAlp.png",
+    "downloads": 9173,
+    "favourites_count": 90,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/2879/weboverlay",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-02T13:23:00.000000Z",
+    "created_at": "2026-08-02T12:52:42.000000Z",
+    "updated_at": "2026-09-20T19:42:33.000000Z",
+    "owner": {
+     "id": 119256,
+     "name": "Anvil",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/BrtXN9TXb3F1hLedGGeheIITlDBqRh9U1ShNlR9S_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-08-01T18:07:45.000000Z",
+     "updated_at": "2026-08-12T08:37:06.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 109459,
+      "name": "maschine",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2xAHR3ttkN7Su6wHEefYq1aNQJLqsN3CqsMwuBpH_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-04-10T00:02:34.000000Z",
+      "updated_at": "2026-10-03T19:29:05.000000Z"
+     }
+    ],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2101,
+    "hub_id": 2787,
+    "guid": "harmonyzt.sptleaderboard",
+    "name": "SPT Leaderboard",
+    "slug": "spt-leaderboard",
+    "teaser": "The Ultimate Leaderboard for SPT. Connect and explore along other SPT players worldwide.",
+    "thumbnail": "https://files.sp-mod.com/mods/LNced5UKQwaVDpwz42y2gfllI310mIJmE2nGH6fK.png",
+    "downloads": 6901,
+    "favourites_count": 7,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2101/spt-leaderboard",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-04-16T17:01:00.000000Z",
+    "created_at": "2025-04-16T17:01:03.000000Z",
+    "updated_at": "2026-09-22T22:17:35.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 13632,
+      "name": "RuKira",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/HGcQlS8eu0WYX2W5AATPBli1aWVGsTXQd79WE4l5_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-01-18T06:31:54.000000Z",
+      "updated_at": "2026-10-05T13:30:09.000000Z"
+     },
+     {
+      "id": 65345,
+      "name": "yuyui.moe",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/690689ea1ac9a0eaadce8c01f2abaf25147c43b1_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/WvU2OUJlNTqWgxJweWYm1CQb3DU2ajCciDfFqsEH_1280w.webp",
+      "created_at": "2024-10-12T21:27:05.000000Z",
+      "updated_at": "2026-10-01T18:57:41.000000Z"
+     },
+     {
+      "id": 80313,
+      "name": "Katrin0522",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/b74b866bad43739616963992bc7d8187ea01f5c2_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/4aeb3bda77bd76170f24227d63d761ea8871defe.jpg",
+      "created_at": "2025-06-13T13:44:23.000000Z",
+      "updated_at": "2026-09-25T07:36:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2423,
+    "hub_id": null,
+    "guid": "com.c11.truenorth4",
+    "name": "C11 - True North",
+    "slug": "c11-true-north",
+    "teaser": "New guns and parts from foreign lands",
+    "thumbnail": "https://files.sp-mod.com/mods/CP9Y8wRWygHYoM19o2cqO6vbdgfwl7b7HDLyO21I.png",
+    "downloads": 43736,
+    "favourites_count": 77,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2423/c11-true-north",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-11-05T15:20:00.000000Z",
+    "created_at": "2025-11-05T15:44:15.000000Z",
+    "updated_at": "2026-09-27T04:48:47.000000Z",
+    "owner": {
+     "id": 84418,
+     "name": "bobinstien",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/57f4a22c37774255c5ffb84b42e031fc0aaf831b_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/7BxfWR8ojvpMHscIdCJ9pQMSCCRuEJOsqEXyblrT_2560w.webp",
+     "created_at": "2025-09-09T03:44:35.000000Z",
+     "updated_at": "2026-10-05T02:16:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 3069,
+    "hub_id": null,
+    "guid": "com.hj.improvedcustomizationui",
+    "name": "Hj's Improved Customization UI",
+    "slug": "hjs-improved-customization-ui",
+    "teaser": "Customization Tab from 1.0 but Improved + Ragman's Cross-faction Clothing Toggle from 1.0 + Photo Mode in Customization Tab",
+    "thumbnail": "https://files.sp-mod.com/mods/hKN7Ff6GR9hyj3qt3alh6CDqfHoG0RU07W9FK7YF.png",
+    "downloads": 2035,
+    "favourites_count": 38,
+    "endorsements_count": 26,
+    "detail_url": "https://sp-mod.com/mod/3069/hjs-improved-customization-ui",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-09-27T01:00:00.000000Z",
+    "created_at": "2026-09-27T00:42:49.000000Z",
+    "updated_at": "2026-10-04T16:53:06.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1125,
+    "hub_id": 1555,
+    "guid": "com.emilanderss0n.tgc",
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "teaser": "Adds a lot more unique gear and attachments for E*****************",
+    "thumbnail": "https://files.sp-mod.com/mods/1555.jpg",
+    "downloads": 302904,
+    "favourites_count": 158,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/1125/tactical-gear-component",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2023-10-22T03:19:00.000000Z",
+    "created_at": "2023-10-22T03:19:58.000000Z",
+    "updated_at": "2026-09-19T16:17:11.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 78428,
+      "name": "kobethuy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-05-04T22:32:08.000000Z",
+      "updated_at": "2026-10-05T13:13:57.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2246,
+    "hub_id": 2952,
+    "guid": "com.wtt.armory",
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "teaser": "The official weapons pack forged by the WTT developers & friends...  Arm yourself accordingly...",
+    "thumbnail": "https://files.sp-mod.com/mods/RrLPvL3Yfib2hl8Dvh9Q0PIC45xpy6AOai6bW5aN.png",
+    "downloads": 284993,
+    "favourites_count": 510,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2246/wtt-armory",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-08-08T03:08:00.000000Z",
+    "created_at": "2025-08-08T03:08:00.000000Z",
+    "updated_at": "2026-09-21T03:34:24.000000Z",
+    "owner": {
+     "id": 22121,
+     "name": "Tron",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+     "created_at": "2022-08-31T05:49:04.000000Z",
+     "updated_at": "2026-10-05T16:42:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 44,
+      "name": "Choccy Milk",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/385222d64fa85020e601547d6e3f90cd761236d0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2020-07-03T04:06:15.000000Z",
+      "updated_at": "2026-09-26T04:16:33.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     },
+     {
+      "id": 58981,
+      "name": "probablyEukyre",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/cPm9vaLcfkVVzoDMOExrrfpsEXEewByV365Q3n6f_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/R6EyJOpFIva4crkfO0ytnesAkMC7pMkrcPcgukFn_1280w.webp",
+      "created_at": "2024-07-21T15:22:59.000000Z",
+      "updated_at": "2026-10-03T18:38:44.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2658,
+    "hub_id": null,
+    "guid": "7bpencil.weaponcamoandstickers",
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "teaser": "New era of Drip",
+    "thumbnail": "https://files.sp-mod.com/mods/N0BlfVxbKixOJ4zdWgkksXG602dMNegT12HlUwnv.png",
+    "downloads": 49216,
+    "favourites_count": 222,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/2658/camo-and-stickers",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-04-08T00:45:00.000000Z",
+    "created_at": "2026-04-05T19:20:12.000000Z",
+    "updated_at": "2026-10-03T00:04:42.000000Z",
+    "owner": {
+     "id": 106491,
+     "name": "7Bpencil",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/m0WMEpWmYMyvlzjGaDzw4yYFLyLfv9zZIlDFctM3_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/eYWJOQryIx6DpPTaprSWYBSfUe5t8xPiHaaXgYQp_1280w.webp",
+     "created_at": "2026-03-03T10:57:21.000000Z",
+     "updated_at": "2026-10-05T04:16:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 3110,
+    "hub_id": null,
+    "guid": "com.matsix.fogsix",
+    "name": "FogSix",
+    "slug": "fogsix",
+    "teaser": "Replaces base game fog with a custom volumetric froxel shader and comes packaged with a server side dynamic fog mod",
+    "thumbnail": "https://files.sp-mod.com/mods/1IHpbbVJP2OYRxkgZVp7sxtrOeESRIBDsu2YXZ8G.png",
+    "downloads": 338,
+    "favourites_count": 7,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/3110/fogsix",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-10-05T00:12:00.000000Z",
+    "created_at": "2026-10-05T00:38:32.000000Z",
+    "updated_at": "2026-10-05T01:36:09.000000Z",
+    "owner": {
+     "id": 62969,
+     "name": "matsix",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-09-01T23:20:29.000000Z",
+     "updated_at": "2026-10-05T15:55:29.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

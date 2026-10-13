@@ -1,0 +1,39 @@
+{
+ "id": 2866,
+ "hub_id": null,
+ "guid": "com.manimal.icebreaker",
+ "name": "MANIMAL'S ICEBREAKER BACKPORT",
+ "slug": "manimals-icebreaker-backport",
+ "teaser": "A mod that backports the entire Icebreaker map and some of its related quests to SPT",
+ "thumbnail": "https://files.sp-mod.com/mods/L4Zw8DewaTC3S12nA9PrYql4TYkISvE4G1gpdKjy.png",
+ "downloads": 70464,
+ "favourites_count": 301,
+ "endorsements_count": 72,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">The Mod</div>\n<div class=\"tab-content\"><p>After a month of blood, sweat, and tears, I am finally releasing this.</p>\n<p>This mod backports the ENTIRE Icebreaker map from 1.0 start to finish, including loot, enemies, and the quests to unlock it. I have painstakingly recreated the map, as well as added some personal details that I thought would make the experience more immersive/enjoyable.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/peEDhkP.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">GALLERY:</div>\n<div class=\"tab-content\"><p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/QxQNoUi.jpeg\" alt=\"alt text\" />\n<img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/yJ1xOdc.jpeg\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">DISCLAIMER AND WARNINGS:</div>\n<div class=\"tab-content\"><ul>\n<li>THIS MOD IS A FANMADE RECREATION BASED HEAVILY ON THE OFFICIAL CONTENT. I HAVE ENSURED IT IS AS CLOSE AS I AM WILLING/ABLE, BUT DO NOT EXPECT IT TO MATCH EXACTLY WITH RETAIL.</li>\n<li>PLEASE ENSURE ANY AND ALL FEEDBACK IS CONSTRUCTIVE AND REPRESENTS YOUR PROBLEM CLEARLY. IF NOT, I WILL IGNORE IT.</li>\n<li>THIS PROJECT COULD NOT HAVE BEEN COMPLETED WITHOUT THE HELP AND RESOURCES OF BOTH THE WTT  AND SPT COMMUNITIES. THANK YOU ALL VERY MUCH.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><ul>\n<li>\n<p>Ensure that you have SPT 4.0.13 or higher installed.</p>\n</li>\n<li>\n<p>Ensure you have all of the dependencies listed installed at their most recent versions.</p>\n</li>\n</ul>\n<p><strong>IF USING FIKA:</strong></p>\n<ul>\n<li>Ensure that you have the ICEBREAKER FIKA SYNC addon installed. INSTALL IT EVERYWHERE. Client, server, headless, etc.</li>\n</ul>\n<p>Move the zipped files to your SPT installation as shown in the GIF below.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://imgur.com/34vXXDj.gif\" alt=\"alt text\" /></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Where to find me</div>\n<div class=\"tab-content\"><ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://manimal1920.soy/\" rel=\"noreferrer noopener\">My Website</a></li>\n<li>Here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/478334515488751617/1496355574579859556\" rel=\"noreferrer noopener\">(WTT Discord Channel)</a></li>\n<li>And here <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/z8g9VC2W2c\" rel=\"noreferrer noopener\">(My EVIL Discord Server….)</a></li>\n</ul></div></div></div>\n<p>If you like my work and wish to support me, you can do so <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/manimal1920\" rel=\"noreferrer noopener\">here.</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/2866/manimals-icebreaker-backport",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-08-01T08:36:00.000000Z",
+ "created_at": "2026-08-01T07:38:12.000000Z",
+ "updated_at": "2026-09-15T01:14:04.000000Z",
+ "owner": {
+  "id": 119111,
+  "name": "Manimal1920",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-07-30T21:56:19.000000Z",
+  "updated_at": "2026-10-07T23:48:29.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

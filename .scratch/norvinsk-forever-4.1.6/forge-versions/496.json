@@ -1,0 +1,85 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 3048,
+   "hub_id": 11382,
+   "version": "2.2.0",
+   "description": "<p>Work for SPT 3.9.x</p>\n<p>Installation requirements <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/399/custom-quests\" rel=\"noreferrer noopener\">Custom Quests</a></strong> (&gt;= v3.2.3) should be installed.</p>\n<h3>Changelog</h3>\n<p>Upgrade for SPT 3.9.x</p>\n",
+   "link": "https://sp-mod.com/mod/download/496/baba-yaga/2.2.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 358,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-19T17:16:41.000000Z",
+   "created_at": "2024-08-19T17:16:41.000000Z",
+   "updated_at": "2026-05-14T03:44:53.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3039,
+   "hub_id": 11395,
+   "version": "2.2.1",
+   "description": "<p>Work for SPT 3.9.x</p>\n<p>Installation requirements <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/399/custom-quests\" rel=\"noreferrer noopener\">Custom Quests</a> (&gt;= v3.2.3) should be installed.</p>\n<h1>Changelog</h1>\n<h2>Fixes</h2>\n<ul>\n<li>All dogtags are accepted (eod + unheard edition)</li>\n<li>Easier to install: the published zip file now respect the conventional directory structure of spt mods</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/496/baba-yaga/2.2.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 451,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-19T22:51:29.000000Z",
+   "created_at": "2024-08-19T22:51:29.000000Z",
+   "updated_at": "2026-05-14T03:44:51.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3032,
+   "hub_id": 11407,
+   "version": "2.2.2",
+   "description": "<p>Work for SPT 3.9.x</p>\n<p>Installation requirements <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/399/custom-quests\" rel=\"noreferrer noopener\">Custom Quests</a> (&gt;= v3.2.3) should be installed.</p>\n<h1>Changelog</h1>\n<p>No code changes: if you already have Baba Yaga v2.2.1 no need to reinstall</p>\n<h2>Zip fix</h2>\n<p>The published zip file now respect the conventional directory structure of spt mods</p>\n",
+   "link": "https://sp-mod.com/mod/download/496/baba-yaga/2.2.2",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 3642,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-08-20T15:43:23.000000Z",
+   "created_at": "2024-08-20T15:43:23.000000Z",
+   "updated_at": "2026-05-14T03:44:46.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/496/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/496/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/496/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/496/versions",
+  "per_page": 50,
+  "to": 3,
+  "total": 3
+ }
+}

@@ -1,0 +1,465 @@
+{
+ "term": "Ak-105-Hyperburst",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3010,
+    "hub_id": null,
+    "guid": "com.baliston.kalashnikov-enhanced-modding",
+    "name": "Kalashnikov Enhanced Modding ",
+    "slug": "kalashnikov-enhanced-modding",
+    "teaser": "Separated handguards and barrels on AK's? It's now a thing!",
+    "thumbnail": "https://files.sp-mod.com/mods/bX0W331r4l7hdWVMcF0DsRarMWAruvjzIFCOBbQV.png",
+    "downloads": 1634,
+    "favourites_count": 25,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/3010/kalashnikov-enhanced-modding",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-10T05:06:00.000000Z",
+    "created_at": "2026-09-10T04:31:16.000000Z",
+    "updated_at": "2026-09-10T05:07:04.000000Z",
+    "owner": {
+     "id": 119111,
+     "name": "Manimal1920",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-07-30T21:56:19.000000Z",
+     "updated_at": "2026-10-05T16:46:55.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1591,
+    "hub_id": 2176,
+    "guid": "com.pein.betterrearsights",
+    "name": "Better Rear Sights",
+    "slug": "better-rear-sights",
+    "teaser": "This mod attempts to make iron sights less crappy",
+    "thumbnail": "https://files.sp-mod.com/mods/2176.png",
+    "downloads": 55820,
+    "favourites_count": 91,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/1591/better-rear-sights",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2024-07-26T03:01:00.000000Z",
+    "created_at": "2024-07-26T03:01:07.000000Z",
+    "updated_at": "2026-09-17T16:03:05.000000Z",
+    "owner": {
+     "id": 12179,
+     "name": "pein",
+     "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+     "created_at": "2021-12-14T17:06:03.000000Z",
+     "updated_at": "2026-09-20T09:07:35.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 119111,
+      "name": "Manimal1920",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-07-30T21:56:19.000000Z",
+      "updated_at": "2026-10-05T16:46:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1263,
+    "hub_id": 1764,
+    "guid": "com.epicrangetime.aio",
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "teaser": "An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.",
+    "thumbnail": "https://files.sp-mod.com/mods/1764.jpg",
+    "downloads": 274736,
+    "favourites_count": 347,
+    "endorsements_count": 39,
+    "detail_url": "https://sp-mod.com/mod/1263/epics-all-in-one",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2024-03-24T23:38:00.000000Z",
+    "created_at": "2024-03-24T23:38:18.000000Z",
+    "updated_at": "2026-09-21T21:02:35.000000Z",
+    "owner": {
+     "id": 36153,
+     "name": "EpicRangeTime",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+     "created_at": "2023-08-26T03:19:00.000000Z",
+     "updated_at": "2026-10-03T02:57:01.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2170,
+    "hub_id": 2873,
+    "guid": "com.mdzzwoc.akresonant",
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "teaser": "The very sci-fi looking AK blueprint from Call of Duty: Modern Warfare (2019)",
+    "thumbnail": "https://files.sp-mod.com/mods/2873.webp",
+    "downloads": 4830,
+    "favourites_count": 16,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2170/resonant-ak-from-codmw2019-reupload",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-05-22T01:36:00.000000Z",
+    "created_at": "2025-06-06T07:17:21.000000Z",
+    "updated_at": "2026-09-20T01:52:04.000000Z",
+    "owner": {
+     "id": 73400,
+     "name": "MercerA",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d307ac74c299bcdae68a1af404324a4dba41e97c_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-13T05:51:11.000000Z",
+     "updated_at": "2026-10-05T13:48:29.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 68000,
+      "name": "MDZZWOC",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/1zgo4dSL4cqvYOhZxoBpylEjTzFYUIYU37xlPPiz_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/30fc492a939786e7dcd938eafb2ab2030cf8f1e7_1280w.webp",
+      "created_at": "2024-11-22T15:24:38.000000Z",
+      "updated_at": "2026-08-10T19:48:48.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 3035,
+    "hub_id": null,
+    "guid": "com.wtt.russiansfpack",
+    "name": "Russian Special Forces Pack",
+    "slug": "russian-special-forces-pack",
+    "teaser": "Compilation of guns from the russian federation",
+    "thumbnail": "https://files.sp-mod.com/mods/BvnB5VOPk9Zwk7vfrMY8ebgynOYejJQt5Zqip3zv.png",
+    "downloads": 6566,
+    "favourites_count": 62,
+    "endorsements_count": 37,
+    "detail_url": "https://sp-mod.com/mod/3035/russian-special-forces-pack",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-09-16T23:22:00.000000Z",
+    "created_at": "2026-09-16T23:23:12.000000Z",
+    "updated_at": "2026-09-23T11:19:03.000000Z",
+    "owner": {
+     "id": 82679,
+     "name": "Eco",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GUaW9ijt2Ld2MAcapaQB0mxvjkEV0qHF1qZSRpuu_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-08-02T22:16:26.000000Z",
+     "updated_at": "2026-10-05T14:34:26.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1972,
+    "hub_id": 2650,
+    "guid": "com.deadwolf.spt.fullautoguns",
+    "name": "Full Automatic Guns",
+    "slug": "full-automatic-guns",
+    "teaser": "Few SMGs, Assault Rifle, Carbines are now automatic",
+    "thumbnail": "https://files.sp-mod.com/mods/RuBiwlySgydnVl2Gs74hIEjzGsQVInqr3bsrTNlP.png",
+    "downloads": 3343,
+    "favourites_count": 7,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1972/full-automatic-guns",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-01-19T14:39:00.000000Z",
+    "created_at": "2025-01-19T14:39:32.000000Z",
+    "updated_at": "2026-09-26T13:19:58.000000Z",
+    "owner": {
+     "id": 5571,
+     "name": "DeadW0Lf",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/8cd99d706c98328dc5354eb7e5b798660ebd84e2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/4O7AEAfVmvW3sw1e3ZHm9yOaqHOpdPwrvFjBgq0d_1280w.webp",
+     "created_at": "2021-06-11T06:40:13.000000Z",
+     "updated_at": "2026-10-05T16:53:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 1963,
+    "hub_id": 2640,
+    "guid": "com.solethia.gunsmithbarters",
+    "name": "Gunsmith Barters",
+    "slug": "gunsmith-barters",
+    "teaser": "Gunsmith barters primarily for hardcore runs.",
+    "thumbnail": "https://files.sp-mod.com/mods/CdxxaXaRgMGyQSVqAT7SVhrrRUhwLx9R5clOZfJz.png",
+    "downloads": 6136,
+    "favourites_count": 13,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1963/gunsmith-barters",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-05-24T15:09:00.000000Z",
+    "created_at": "2025-01-13T18:07:08.000000Z",
+    "updated_at": "2026-07-28T09:55:29.000000Z",
+    "owner": {
+     "id": 71484,
+     "name": "Solethia",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-01-13T17:31:52.000000Z",
+     "updated_at": "2026-09-03T17:17:14.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2376,
+    "hub_id": null,
+    "guid": "com.cichaj.km",
+    "name": "KappaMarker",
+    "slug": "kappamarker",
+    "teaser": "Marks quests required for Kappa!",
+    "thumbnail": "https://files.sp-mod.com/mods/bf9UkJy2wock9SK1ozTf13Ij8c42tUgvwnZFrmkw.png",
+    "downloads": 9715,
+    "favourites_count": 18,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2376/kappamarker",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2025-10-18T00:06:00.000000Z",
+    "created_at": "2025-10-18T00:26:48.000000Z",
+    "updated_at": "2026-07-28T06:04:42.000000Z",
+    "owner": {
+     "id": 85807,
+     "name": "cichaj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/BvH4cfJtFSFwRrfX8eyis0MrfxFkoxmrYnvV2BWU_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-10-16T13:37:49.000000Z",
+     "updated_at": "2026-08-10T19:50:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2455,
+    "hub_id": null,
+    "guid": "com.norvinksevangelion.akrailextension",
+    "name": "AK Rail Extension - NG",
+    "slug": "ak-rail-extension-ng",
+    "teaser": "You can trust Kalashnikov forever!!!",
+    "thumbnail": "https://files.sp-mod.com/mods/howtgXZUIfvtcfrYLA5sR0v4mAHQk7pijweIvoUR.png",
+    "downloads": 7455,
+    "favourites_count": 11,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2455/ak-rail-extension-ng",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2025-11-19T06:48:00.000000Z",
+    "created_at": "2025-11-19T06:48:37.000000Z",
+    "updated_at": "2026-07-28T09:55:55.000000Z",
+    "owner": {
+     "id": 78428,
+     "name": "kobethuy",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-05-04T22:32:08.000000Z",
+     "updated_at": "2026-10-05T13:13:57.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 31289,
+      "name": "NORVINSK_EVANGELION",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/1d9caca430505c3cd672ba3c1bb914d12d0770f7_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/03be48efb0f7057a8e48aab537690dc84edbdd5e.jpg",
+      "created_at": "2023-05-19T14:09:31.000000Z",
+      "updated_at": "2026-08-10T19:42:49.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1503,
+    "hub_id": 2066,
+    "guid": "com.guiltyman.addmissingquestrequirements",
+    "name": "Add Missing Quest Weapon Requirements",
+    "slug": "add-missing-quest-weapon-requirements",
+    "teaser": "Dynamically reads and applies overrides to the weapon restrictions of kill/eliminate conditions of quests based on override files. Normally, the conditions' weapons need to be manually updated for every added gun. This mod aims to automate this process.",
+    "thumbnail": "https://files.sp-mod.com/mods/2066.png",
+    "downloads": 14218,
+    "favourites_count": 31,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1503/add-missing-quest-weapon-requirements",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2024-06-24T19:36:00.000000Z",
+    "created_at": "2024-06-24T19:36:13.000000Z",
+    "updated_at": "2026-07-28T09:03:51.000000Z",
+    "owner": {
+     "id": 53980,
+     "name": "GuiltyMan",
+     "profile_photo_url": "https://sp-mod.com/avatars/G.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-06-18T11:59:08.000000Z",
+     "updated_at": "2026-08-10T19:47:07.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

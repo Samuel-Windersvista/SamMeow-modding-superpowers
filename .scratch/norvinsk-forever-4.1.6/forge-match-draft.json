@@ -1,0 +1,6749 @@
+[
+ {
+  "idx": 1,
+  "entry": "[14]本体缺失翻译",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": []
+ },
+ {
+  "idx": 2,
+  "entry": "[14]客户端ModF12通用翻译器及菜单汉化文本",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 566,
+    "name": "ArmBandCore",
+    "slug": "armbandcore",
+    "downloads": 1620,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "ModF12"
+  ]
+ },
+ {
+  "idx": 3,
+  "entry": "[13]好莱坞第三人称镜头-HollywoodCam",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-HollywoodCam",
+   "HollywoodCam"
+  ]
+ },
+ {
+  "idx": 4,
+  "entry": "[13]战局外检修标签-DebugTooltip",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-DebugTooltip",
+   "DebugTooltip"
+  ]
+ },
+ {
+  "idx": 5,
+  "entry": "[13]MOD工具-AI刷新和行为检修-BotDebug",
+  "term": "BotDebug",
+  "status": "AUTO",
+  "match": {
+   "id": 918,
+   "name": "BotDebug",
+   "slug": "botdebug",
+   "downloads": 13548,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2851,
+    "name": "SPT Mod Manager",
+    "slug": "spt-mod-manager",
+    "downloads": 28569,
+    "score": 20
+   },
+   {
+    "id": 2431,
+    "name": "FPV Drone Mod",
+    "slug": "fpv-drone-mod",
+    "downloads": 26365,
+    "score": 20
+   },
+   {
+    "id": 2441,
+    "name": "NARCONet - Mod Sync",
+    "slug": "narconet-mod-sync",
+    "downloads": 14732,
+    "score": 20
+   },
+   {
+    "id": 918,
+    "name": "BotDebug",
+    "slug": "botdebug",
+    "downloads": 13548,
+    "score": 100
+   },
+   {
+    "id": 2274,
+    "name": "Jiang Hu 江湖",
+    "slug": "jiang-hu",
+    "downloads": 11836,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "MOD -AI -BotDebug",
+   "BotDebug"
+  ]
+ },
+ {
+  "idx": 6,
+  "entry": "[13]存档编辑器-SPT-AKI Profile Editor",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 1261,
+    "name": "Barter Economy",
+    "slug": "barter-economy",
+    "downloads": 7723,
+    "score": 0
+   },
+   {
+    "id": 544,
+    "name": "No Barter Trade",
+    "slug": "no-barter-trade",
+    "downloads": 6812,
+    "score": 0
+   },
+   {
+    "id": 1077,
+    "name": "Light's Automatic Armband Assistant",
+    "slug": "lights-automatic-armband-assistant",
+    "downloads": 3000,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "ProfileEditorHelper",
+   "-SPT-AKI Profile Editor"
+  ]
+ },
+ {
+  "idx": 7,
+  "entry": "[12]商人列表滚动-TraderScrolling",
+  "term": "Kaeno-TraderScrolling",
+  "status": "AUTO",
+  "match": {
+   "id": 1089,
+   "name": "Kaeno-TraderScrolling",
+   "slug": "kaeno-traderscrolling",
+   "downloads": 318151,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 592,
+    "name": "Amands's Graphics",
+    "slug": "amandss-graphics",
+    "downloads": 868052,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 1089,
+    "name": "Kaeno-TraderScrolling",
+    "slug": "kaeno-traderscrolling",
+    "downloads": 318151,
+    "score": 100
+   },
+   {
+    "id": 1538,
+    "name": "Ref - SPT Friendly Quests",
+    "slug": "ref-spt-friendly-quests",
+    "downloads": 306790,
+    "score": 0
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187196,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-TraderScrolling",
+   "Kaeno-TraderScrolling"
+  ]
+ },
+ {
+  "idx": 8,
+  "entry": "[12]任务列表修复-TaskListFixes",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-TaskListFixes",
+   "TaskListFixes"
+  ]
+ },
+ {
+  "idx": 9,
+  "entry": "[12]尸体可删除-SPTCorpseCleaner",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-SPTCorpseCleaner",
+   "SPTCorpseCleaner"
+  ]
+ },
+ {
+  "idx": 10,
+  "entry": "[12]骑士面具修复-FacetheKnight-MaskFix",
+  "term": "Face the Knight - Mask Fix",
+  "status": "MANUAL",
+  "match": {
+   "id": 2685,
+   "name": "Knight Mask Fix (4.0+)",
+   "slug": "knight-mask-fix-40",
+   "downloads": 9460,
+   "score": 36
+  },
+  "candidates": [
+   {
+    "id": 2685,
+    "name": "Knight Mask Fix (4.0+)",
+    "slug": "knight-mask-fix-40",
+    "downloads": 9460,
+    "score": 36
+   },
+   {
+    "id": 3109,
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "downloads": 568,
+    "score": 36
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187195,
+    "score": 0
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187195,
+    "score": 0
+   },
+   {
+    "id": 2685,
+    "name": "Knight Mask Fix (4.0+)",
+    "slug": "knight-mask-fix-40",
+    "downloads": 9460,
+    "score": 0
+   },
+   {
+    "id": 2554,
+    "name": "Change Helmet Visor",
+    "slug": "change-helmet-visor",
+    "downloads": 6903,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Face the Knight - Mask Fix",
+   "-FacetheKnight-MaskFix"
+  ]
+ },
+ {
+  "idx": 11,
+  "entry": "[12]防卡手-HandsAreNotBusy",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-HandsAreNotBusy",
+   "HandsAreNotBusy"
+  ]
+ },
+ {
+  "idx": 12,
+  "entry": "[12]白色方块bug修复-WhiteBoxFix",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 106,
+    "name": "SPT-AKI Profile Editor",
+    "slug": "spt-aki-profile-editor",
+    "downloads": 742156,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 1298,
+    "name": "HandsAreNotBusy",
+    "slug": "handsarenotbusy",
+    "downloads": 162306,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "bug -WhiteBoxFix",
+   "WhiteBoxFix"
+  ]
+ },
+ {
+  "idx": 13,
+  "entry": "[11]我就是爹作弊工具-DadGamerMode",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-DadGamerMode",
+   "DadGamerMode"
+  ]
+ },
+ {
+  "idx": 14,
+  "entry": "[11]新商人-可购买自己创建的预设枪械-Hephaestus",
+  "term": "Hephaestus",
+  "status": "AUTO",
+  "match": {
+   "id": 650,
+   "name": "Hephaestus",
+   "slug": "hephaestus",
+   "downloads": 97502,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 650,
+    "name": "Hephaestus",
+    "slug": "hephaestus",
+    "downloads": 97502,
+    "score": 100
+   },
+   {
+    "id": 2193,
+    "name": "Set of Gun Presets for Hephaestus",
+    "slug": "set-of-gun-presets-for-hephaestus",
+    "downloads": 10168,
+    "score": 82
+   },
+   {
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "downloads": 488,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Hephaestus"
+  ]
+ },
+ {
+  "idx": 15,
+  "entry": "[11]好莱坞投掷武器视觉辅助-VisualAssist",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-VisualAssist",
+   "VisualAssist"
+  ]
+ },
+ {
+  "idx": 16,
+  "entry": "[11]扫敌雷达-RadarStandalone",
+  "term": "Radar",
+  "status": "AUTO",
+  "match": {
+   "id": 1100,
+   "name": "ACCURATE CIRCULAR RADAR",
+   "slug": "accurate-circular-radar",
+   "downloads": 310311,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 1100,
+    "name": "ACCURATE CIRCULAR RADAR",
+    "slug": "accurate-circular-radar",
+    "downloads": 310311,
+    "score": 82
+   },
+   {
+    "id": 2791,
+    "name": "Tylevo's Tactical Service Control",
+    "slug": "tylevos-tactical-service-control",
+    "downloads": 9548,
+    "score": 0
+   },
+   {
+    "id": 2485,
+    "name": "ISB Special Forces",
+    "slug": "isb-special-forces",
+    "downloads": 8391,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-RadarStandalone",
+   "Radar"
+  ]
+ },
+ {
+  "idx": 17,
+  "entry": "[11]物品感应-AmandsSense",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-AmandsSense",
+   "AmandsSense"
+  ]
+ },
+ {
+  "idx": 18,
+  "entry": "[11]任务跳过功能-Skipper",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-Skipper",
+   "Skipper"
+  ]
+ },
+ {
+  "idx": 19,
+  "entry": "[11]内置动态地图-DynamicMaps",
+  "term": "SPT-DynamicMaps",
+  "status": "AUTO",
+  "match": {
+   "id": 1431,
+   "name": "Dynamic Maps",
+   "slug": "dynamic-maps",
+   "downloads": 804823,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "downloads": 804823,
+    "score": 82
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187196,
+    "score": 0
+   },
+   {
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "downloads": 32554,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "SPT-DynamicMaps"
+  ]
+ },
+ {
+  "idx": 20,
+  "entry": "[11]声音可视化-accessibilityindicators",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-accessibilityindicators",
+   "accessibilityindicators"
+  ]
+ },
+ {
+  "idx": 21,
+  "entry": "[11]更多界面信息-GamePanelHUD",
+  "term": "GamePanelHUDCore",
+  "status": "AUTO",
+  "match": {
+   "id": 456,
+   "name": "Game Panel HUD",
+   "slug": "game-panel-hud",
+   "downloads": 530315,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 456,
+    "name": "Game Panel HUD",
+    "slug": "game-panel-hud",
+    "downloads": 530315,
+    "score": 82
+   }
+  ],
+  "tried": [
+   "-GamePanelHUD",
+   "GamePanelHUDCore"
+  ]
+ },
+ {
+  "idx": 22,
+  "entry": "[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）",
+  "term": "-showmethemoney-quick-sell Q+ Q+",
+  "status": "AUTO",
+  "match": {
+   "id": 2955,
+   "name": "Quick Sell",
+   "slug": "quick-sell",
+   "downloads": 7468,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2955,
+    "name": "Quick Sell",
+    "slug": "quick-sell",
+    "downloads": 7468,
+    "score": 82
+   },
+   {
+    "id": 975,
+    "name": "Quick Launcher",
+    "slug": "quick-launcher",
+    "downloads": 10565,
+    "score": 20
+   },
+   {
+    "id": 2597,
+    "name": "Nested Quick Move",
+    "slug": "nested-quick-move",
+    "downloads": 4400,
+    "score": 20
+   }
+  ],
+  "tried": [
+   "-showmethemoney-quick-sell Q+ Q+"
+  ]
+ },
+ {
+  "idx": 23,
+  "entry": "[10]显示价格-showmethemoney",
+  "term": "ShowMeTheMoney",
+  "status": "AUTO",
+  "match": {
+   "id": 2299,
+   "name": "Show Me The Money (Item Pricing)",
+   "slug": "show-me-the-money-item-pricing",
+   "downloads": 129105,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2299,
+    "name": "Show Me The Money (Item Pricing)",
+    "slug": "show-me-the-money-item-pricing",
+    "downloads": 129105,
+    "score": 82
+   },
+   {
+    "id": 3011,
+    "name": "Show Me The Money (Item Pricing) (4.1.x)",
+    "slug": "show-me-the-money-item-pricing-41x",
+    "downloads": 7695,
+    "score": 82
+   },
+   {
+    "id": 2736,
+    "name": "Moe-TradeMarker",
+    "slug": "moe-trademarker",
+    "downloads": 976,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "ShowMeTheMoney"
+  ]
+ },
+ {
+  "idx": 24,
+  "entry": "[10]物品容器间快速移动-QuickMoveToContainer",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-QuickMoveToContainer",
+   "QuickMoveToContainer"
+  ]
+ },
+ {
+  "idx": 25,
+  "entry": "[10]自动存放-AutoDeposit - 已AI优化",
+  "term": "AutoDeposit",
+  "status": "AUTO",
+  "match": {
+   "id": 1469,
+   "name": "AutoDeposit",
+   "slug": "autodeposit",
+   "downloads": 104444,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315163,
+    "score": 30
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 30
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 1469,
+    "name": "AutoDeposit",
+    "slug": "autodeposit",
+    "downloads": 104444,
+    "score": 100
+   }
+  ],
+  "tried": [
+   "-AutoDeposit - AI",
+   "AutoDeposit"
+  ]
+ },
+ {
+  "idx": 26,
+  "entry": "[10]物品真实堆叠-True Items Redux",
+  "term": "-True Items Redux",
+  "status": "MANUAL",
+  "match": {
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "slug": "lots-of-loot-redux",
+   "downloads": 250067,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 1278,
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "downloads": 232971,
+    "score": 0
+   },
+   {
+    "id": 2239,
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "downloads": 49085,
+    "score": 0
+   },
+   {
+    "id": 2394,
+    "name": "Instant Insurance",
+    "slug": "instant-insurance",
+    "downloads": 36533,
+    "score": 0
+   },
+   {
+    "id": 1619,
+    "name": "Lots of Loot Redux",
+    "slug": "lots-of-loot-redux",
+    "downloads": 250067,
+    "score": 20
+   },
+   {
+    "id": 2069,
+    "name": "Loot Instant Search",
+    "slug": "loot-instant-search",
+    "downloads": 36531,
+    "score": 0
+   },
+   {
+    "id": 2676,
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "downloads": 34424,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "True Items Redone",
+   "-True Items Redux"
+  ]
+ },
+ {
+  "idx": 27,
+  "entry": "[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 2167,
+    "name": "CNN - CONTAINERS - RE-UPLOAD",
+    "slug": "cnn-containers-re-upload",
+    "downloads": 11207,
+    "score": 0
+   },
+   {
+    "id": 2825,
+    "name": "S&M PRT - Portable Radio Transmitter",
+    "slug": "sm-prt-portable-radio-transmitter",
+    "downloads": 1565,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-INVENTORY ORGANIZING FEATURES",
+   "Seion.Iof"
+  ]
+ },
+ {
+  "idx": 28,
+  "entry": "[10]从武器架装备武器-EquipFromWeaponRack",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-EquipFromWeaponRack",
+   "EquipFromWeaponRack"
+  ]
+ },
+ {
+  "idx": 29,
+  "entry": "[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化",
+  "term": "-ContainerQuickLoot - AI",
+  "status": "MANUAL",
+  "match": {
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "downloads": 1315163,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315163,
+    "score": 30
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 30
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 2508,
+    "name": "CactusPie's Transfer Loot Into Container Automatically (4.0.x)",
+    "slug": "cactuspies-transfer-loot-into-container-automatically-40x",
+    "downloads": 5056,
+    "score": 30
+   },
+   {
+    "id": 2094,
+    "name": "CactusPie's Transfer Loot into Container Automatically (3.11 Port)",
+    "slug": "cactuspies-transfer-loot-into-container-automatically-311-port",
+    "downloads": 3979,
+    "score": 30
+   },
+   {
+    "id": 3023,
+    "name": "CactusPie's Transfer Loot Into Container Automatically",
+    "slug": "cactuspies-transfer-loot-into-container-automatically",
+    "downloads": 1107,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "-ContainerQuickLoot - AI",
+   "CactusPie.ContainerQuickLoot"
+  ]
+ },
+ {
+  "idx": 30,
+  "entry": "[10]小火山的仓库搜索框修复和扩展-SearchBarExtended",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-SearchBarExtended",
+   "SearchBarExtended"
+  ]
+ },
+ {
+  "idx": 31,
+  "entry": "[10]仓库搜索框-StashSearch",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-StashSearch",
+   "StashSearch"
+  ]
+ },
+ {
+  "idx": 32,
+  "entry": "[10]UI大修-UIFixes",
+  "term": "uifixes",
+  "status": "AUTO",
+  "match": {
+   "id": 1342,
+   "name": "UI Fixes",
+   "slug": "ui-fixes",
+   "downloads": 453448,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1342,
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "downloads": 453448,
+    "score": 100
+   },
+   {
+    "id": 2112,
+    "name": "Continuous Load Ammo",
+    "slug": "continuous-load-ammo",
+    "downloads": 93335,
+    "score": 0
+   },
+   {
+    "id": 2207,
+    "name": "Fast Sell In Flea",
+    "slug": "fast-sell-in-flea",
+    "downloads": 77015,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "uifixes"
+  ]
+ },
+ {
+  "idx": 33,
+  "entry": "[9]解锁所有藏身处装饰-UnlockHideoutCustomization",
+  "term": "Hideout Customization Unlocker",
+  "status": "MANUAL",
+  "match": {
+   "id": 2076,
+   "name": "Hideout In Progress",
+   "slug": "hideout-in-progress",
+   "downloads": 55849,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 2076,
+    "name": "Hideout In Progress",
+    "slug": "hideout-in-progress",
+    "downloads": 55849,
+    "score": 20
+   },
+   {
+    "id": 2705,
+    "name": "Hideout Shootout",
+    "slug": "hideout-shootout",
+    "downloads": 3845,
+    "score": 20
+   },
+   {
+    "id": 2915,
+    "name": "Hideout Craft Modifier - HCM",
+    "slug": "hideout-craft-modifier-hcm",
+    "downloads": 1998,
+    "score": 20
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Hideout Customization Unlocker",
+   "-UnlockHideoutCustomization"
+  ]
+ },
+ {
+  "idx": 34,
+  "entry": "[9]预览窗口尺寸调整-previewsizer",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-previewsizer",
+   "previewsizer"
+  ]
+ },
+ {
+  "idx": 35,
+  "entry": "[9]项目上下文菜单扩展-ItemContextMenuExt",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-ItemContextMenuExt",
+   "ItemContextMenuExt"
+  ]
+ },
+ {
+  "idx": 36,
+  "entry": "[9]子弹专家-MunitionsExpert",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-MunitionsExpert",
+   "MunitionsExpert"
+  ]
+ },
+ {
+  "idx": 37,
+  "entry": "[9]简单的锻炼QTE-simpleworkoutqte",
+  "term": "SimpleWorkoutQTE",
+  "status": "AUTO",
+  "match": {
+   "id": 1437,
+   "name": "Simple Workout QTE",
+   "slug": "simple-workout-qte",
+   "downloads": 68064,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1437,
+    "name": "Simple Workout QTE",
+    "slug": "simple-workout-qte",
+    "downloads": 68064,
+    "score": 100
+   }
+  ],
+  "tried": [
+   "SimpleWorkoutQTE"
+  ]
+ },
+ {
+  "idx": 38,
+  "entry": "[9]物品打勾标记提供更多信息-MoreCheckmarks",
+  "term": "MoreCheckmarksBackend",
+  "status": "AUTO",
+  "match": {
+   "id": 861,
+   "name": "MoreCheckmarks",
+   "slug": "morecheckmarks",
+   "downloads": 491654,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 861,
+    "name": "MoreCheckmarks",
+    "slug": "morecheckmarks",
+    "downloads": 491654,
+    "score": 82
+   }
+  ],
+  "tried": [
+   "MoreCheckmarksBackend"
+  ]
+ },
+ {
+  "idx": 39,
+  "entry": "[9]任务交接自动化-TaskAutomation",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-TaskAutomation",
+   "TaskAutomation"
+  ]
+ },
+ {
+  "idx": 40,
+  "entry": "[9]藏身处不用打勾-nofirhideout",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 861,
+    "name": "MoreCheckmarks",
+    "slug": "morecheckmarks",
+    "downloads": 491654,
+    "score": 0
+   },
+   {
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "downloads": 61046,
+    "score": 0
+   },
+   {
+    "id": 2407,
+    "name": "QuickSellFlea",
+    "slug": "quicksellflea",
+    "downloads": 42206,
+    "score": 0
+   },
+   {
+    "id": 861,
+    "name": "MoreCheckmarks",
+    "slug": "morecheckmarks",
+    "downloads": 491654,
+    "score": 0
+   },
+   {
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "downloads": 61046,
+    "score": 0
+   },
+   {
+    "id": 2407,
+    "name": "QuickSellFlea",
+    "slug": "quicksellflea",
+    "downloads": 42206,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "no-fir-hideout",
+   "-nofirhideout"
+  ]
+ },
+ {
+  "idx": 41,
+  "entry": "[9]腰带槽-BeltSlot",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-BeltSlot",
+   "BeltSlot"
+  ]
+ },
+ {
+  "idx": 42,
+  "entry": "[9]动态物品重量-DynamicItemWeights",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-DynamicItemWeights",
+   "Tosox.DynamicItemWeights"
+  ]
+ },
+ {
+  "idx": 43,
+  "entry": "[9]小火山的全界面中文字体切换",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "FontReplace"
+  ]
+ },
+ {
+  "idx": 44,
+  "entry": "[9]主菜单大修-MenuOverhaul",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-MenuOverhaul",
+   "MenuOverhaul"
+  ]
+ },
+ {
+  "idx": 45,
+  "entry": "[8]沉浸感时间循环-ImmersiveDaylightCycle",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "ImmersiveDaylightCycle-Server",
+   "-ImmersiveDaylightCycle",
+   "ImmersiveDaylightCycle-FikaModule"
+  ]
+ },
+ {
+  "idx": 46,
+  "entry": "[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化",
+  "term": "ContinuousLoadAmmo",
+  "status": "AUTO",
+  "match": {
+   "id": 2112,
+   "name": "Continuous Load Ammo",
+   "slug": "continuous-load-ammo",
+   "downloads": 93335,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315163,
+    "score": 30
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 30
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 2112,
+    "name": "Continuous Load Ammo",
+    "slug": "continuous-load-ammo",
+    "downloads": 93335,
+    "score": 100
+   },
+   {
+    "id": 2681,
+    "name": "Manimal's Ammo Loading Animations",
+    "slug": "manimals-ammo-loading-animations",
+    "downloads": 17598,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-ContinuousLoadAmmo - AI",
+   "ContinuousLoadAmmo"
+  ]
+ },
+ {
+  "idx": 47,
+  "entry": "[8]可拾取穿墙物品-ReachExtender",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-ReachExtender",
+   "ReachExtender"
+  ]
+ },
+ {
+  "idx": 48,
+  "entry": "[8]boss刷新通知-BossNotifier",
+  "term": "BossNotifier",
+  "status": "AUTO",
+  "match": {
+   "id": 1247,
+   "name": "Boss Notifier",
+   "slug": "boss-notifier",
+   "downloads": 225809,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2594,
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "downloads": 10702,
+    "score": 30
+   },
+   {
+    "id": 2210,
+    "name": "Live Like Boss Spawn Chances",
+    "slug": "live-like-boss-spawn-chances",
+    "downloads": 4171,
+    "score": 30
+   },
+   {
+    "id": 1100,
+    "name": "ACCURATE CIRCULAR RADAR",
+    "slug": "accurate-circular-radar",
+    "downloads": 310311,
+    "score": 0
+   },
+   {
+    "id": 1247,
+    "name": "Boss Notifier",
+    "slug": "boss-notifier",
+    "downloads": 225809,
+    "score": 100
+   },
+   {
+    "id": 2543,
+    "name": "BossNotifier ",
+    "slug": "bossnotifier",
+    "downloads": 54504,
+    "score": 100
+   },
+   {
+    "id": 2760,
+    "name": "Bosses Extravaganza",
+    "slug": "bosses-extravaganza",
+    "downloads": 3562,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "boss -BossNotifier",
+   "BossNotifier"
+  ]
+ },
+ {
+  "idx": 49,
+  "entry": "[8]塔科夫天气系统-Tarkov-Weather-System",
+  "term": "Tarkov Weather System",
+  "status": "MANUAL",
+  "match": {
+   "id": 2120,
+   "name": "Time & Weather Changer NG",
+   "slug": "time-weather-changer-ng",
+   "downloads": 30446,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 2120,
+    "name": "Time & Weather Changer NG",
+    "slug": "time-weather-changer-ng",
+    "downloads": 30446,
+    "score": 20
+   },
+   {
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "downloads": 61046,
+    "score": 0
+   },
+   {
+    "id": 2318,
+    "name": "T***** Rare Collectibles",
+    "slug": "tarkov-rare-collectibles",
+    "downloads": 37839,
+    "score": 0
+   },
+   {
+    "id": 2120,
+    "name": "Time & Weather Changer NG",
+    "slug": "time-weather-changer-ng",
+    "downloads": 30446,
+    "score": 20
+   },
+   {
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "downloads": 61046,
+    "score": 0
+   },
+   {
+    "id": 2318,
+    "name": "T***** Rare Collectibles",
+    "slug": "tarkov-rare-collectibles",
+    "downloads": 37839,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Tarkov Weather System",
+   "-Tarkov-Weather-System"
+  ]
+ },
+ {
+  "idx": 50,
+  "entry": "[8]坠落的补给直升机-HeliCrash.ArysReloaded",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 1180,
+    "name": "SamSWAT's Fire Support - Arys Reloaded",
+    "slug": "samswats-fire-support-arys-reloaded",
+    "downloads": 56804,
+    "score": 0
+   },
+   {
+    "id": 2791,
+    "name": "Tylevo's Tactical Service Control",
+    "slug": "tylevos-tactical-service-control",
+    "downloads": 9548,
+    "score": 0
+   },
+   {
+    "id": 1180,
+    "name": "SamSWAT's Fire Support - Arys Reloaded",
+    "slug": "samswats-fire-support-arys-reloaded",
+    "downloads": 56804,
+    "score": 0
+   },
+   {
+    "id": 2791,
+    "name": "Tylevo's Tactical Service Control",
+    "slug": "tylevos-tactical-service-control",
+    "downloads": 9548,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-HeliCrash.ArysReloaded",
+   "HeliCrash.ArysReloaded"
+  ]
+ },
+ {
+  "idx": 51,
+  "entry": "[8]禁用Scav模式-DisableScavMode",
+  "term": "DisableScavMode",
+  "status": "AUTO",
+  "match": {
+   "id": 1301,
+   "name": "DisableScavMode egboggied",
+   "slug": "disablescavmode-egboggied",
+   "downloads": 7192,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2594,
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "downloads": 10702,
+    "score": 30
+   },
+   {
+    "id": 3042,
+    "name": "Super Scav Case",
+    "slug": "super-scav-case",
+    "downloads": 1068,
+    "score": 30
+   },
+   {
+    "id": 1341,
+    "name": "Quick Move To Containers",
+    "slug": "quick-move-to-containers",
+    "downloads": 139692,
+    "score": 0
+   },
+   {
+    "id": 1301,
+    "name": "DisableScavMode egboggied",
+    "slug": "disablescavmode-egboggied",
+    "downloads": 7192,
+    "score": 82
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "downloads": 18915,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Scav -DisableScavMode",
+   "DisableScavMode"
+  ]
+ },
+ {
+  "idx": 52,
+  "entry": "[8]武器破门-BackdoorBandit客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-BackdoorBandit",
+   "BackdoorBandit"
+  ]
+ },
+ {
+  "idx": 53,
+  "entry": "[8]武器破门-BackdoorBandit服务器文件",
+  "term": "props-doorbreacher",
+  "status": "MANUAL",
+  "match": {
+   "id": 2726,
+   "name": "Miyuki Props Dealer",
+   "slug": "miyuki-props-dealer",
+   "downloads": 969,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 2726,
+    "name": "Miyuki Props Dealer",
+    "slug": "miyuki-props-dealer",
+    "downloads": 969,
+    "score": 30
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "downloads": 804827,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "props-doorbreacher",
+   "-BackdoorBandit"
+  ]
+ },
+ {
+  "idx": 54,
+  "entry": "[8]任务跟踪显示-QuestTracker",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-QuestTracker",
+   "QuestTracker"
+  ]
+ },
+ {
+  "idx": 55,
+  "entry": "[8]增加拾取距离-LootRadius",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-LootRadius",
+   "LootRadius"
+  ]
+ },
+ {
+  "idx": 56,
+  "entry": "[8]直接搜索已打开容器-SearchOpenContainers",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-SearchOpenContainers",
+   "SearchOpenContainers"
+  ]
+ },
+ {
+  "idx": 57,
+  "entry": "[8]直接使用未捡物品-UseLooseLoot",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-UseLooseLoot",
+   "UseLooseLoot"
+  ]
+ },
+ {
+  "idx": 58,
+  "entry": "[8]门的状态随机化-DoorRandomizer",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-DoorRandomizer",
+   "DoorRandomizer"
+  ]
+ },
+ {
+  "idx": 59,
+  "entry": "[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-UseItemsFromAnywhere",
+   "UseItemsFromAnywhere"
+  ]
+ },
+ {
+  "idx": 60,
+  "entry": "[8]更有意义的武器精通-MeaningfulWeaponMasteries",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-MeaningfulWeaponMasteries",
+   "MeaningfulWeaponMasteries"
+  ]
+ },
+ {
+  "idx": 61,
+  "entry": "[8]超重也能练耐力-Always-Level-Endurance",
+  "term": "Endurance",
+  "status": "AUTO",
+  "match": {
+   "id": 2438,
+   "name": "Level Endurance and Strength",
+   "slug": "level-endurance-and-strength",
+   "downloads": 26683,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1706,
+    "name": "Health Per Level",
+    "slug": "health-per-level",
+    "downloads": 46536,
+    "score": 20
+   },
+   {
+    "id": 3005,
+    "name": "Trader Level Requirements Editor",
+    "slug": "trader-level-requirements-editor",
+    "downloads": 336,
+    "score": 20
+   },
+   {
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "downloads": 73241,
+    "score": 0
+   },
+   {
+    "id": 2438,
+    "name": "Level Endurance and Strength",
+    "slug": "level-endurance-and-strength",
+    "downloads": 26683,
+    "score": 82
+   },
+   {
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "downloads": 73241,
+    "score": 0
+   },
+   {
+    "id": 1437,
+    "name": "Simple Workout QTE",
+    "slug": "simple-workout-qte",
+    "downloads": 68065,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-Always-Level-Endurance",
+   "Endurance"
+  ]
+ },
+ {
+  "idx": 62,
+  "entry": "[8]人物技能扩展和撬锁-SkillsExtended-已AI优化",
+  "term": "Skills Extended",
+  "status": "AUTO",
+  "match": {
+   "id": 2383,
+   "name": "Skills Extended",
+   "slug": "skills-extended",
+   "downloads": 55500,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2383,
+    "name": "Skills Extended",
+    "slug": "skills-extended",
+    "downloads": 55500,
+    "score": 100
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Skills Extended"
+  ]
+ },
+ {
+  "idx": 63,
+  "entry": "[8]技能速度调节器-SkillMultiplier",
+  "term": "skillmultiplier",
+  "status": "AUTO",
+  "match": {
+   "id": 2162,
+   "name": "Skill Multiplier",
+   "slug": "skill-multiplier",
+   "downloads": 14658,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2162,
+    "name": "Skill Multiplier",
+    "slug": "skill-multiplier",
+    "downloads": 14658,
+    "score": 100
+   },
+   {
+    "id": 2144,
+    "name": "Skill Distribution",
+    "slug": "skill-distribution",
+    "downloads": 39248,
+    "score": 0
+   },
+   {
+    "id": 2088,
+    "name": "Geko's Better Progression",
+    "slug": "gekos-better-progression",
+    "downloads": 22330,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "skillmultiplier"
+  ]
+ },
+ {
+  "idx": 64,
+  "entry": "[8]可以攀爬更高的地方-Increase Climb Height",
+  "term": "Increase Climb Height",
+  "status": "AUTO",
+  "match": {
+   "id": 1575,
+   "name": "Increase Climb Height",
+   "slug": "increase-climb-height",
+   "downloads": 123966,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1575,
+    "name": "Increase Climb Height",
+    "slug": "increase-climb-height",
+    "downloads": 123966,
+    "score": 100
+   },
+   {
+    "id": 2121,
+    "name": "Increase Look Direction",
+    "slug": "increase-look-direction",
+    "downloads": 25710,
+    "score": 20
+   },
+   {
+    "id": 416,
+    "name": "SPT Realism Mod",
+    "slug": "spt-realism-mod",
+    "downloads": 452193,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Increase Climb Height"
+  ]
+ },
+ {
+  "idx": 65,
+  "entry": "[8]Boss身上有lega徽章-bosseshavelegamedals",
+  "term": "Bosses Have Lega Medals",
+  "status": "AUTO",
+  "match": {
+   "id": 1539,
+   "name": "Bosses Have Lega Medals",
+   "slug": "bosses-have-lega-medals",
+   "downloads": 213508,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1539,
+    "name": "Bosses Have Lega Medals",
+    "slug": "bosses-have-lega-medals",
+    "downloads": 213508,
+    "score": 100
+   },
+   {
+    "id": 2523,
+    "name": "Bosses Have Gp Coins",
+    "slug": "bosses-have-gp-coins",
+    "downloads": 43800,
+    "score": 30
+   },
+   {
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "downloads": 804827,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Bosses Have Lega Medals"
+  ]
+ },
+ {
+  "idx": 66,
+  "entry": "[8]战场环境临场感增强-SPTBattleAmbience",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-SPTBattleAmbience",
+   "SPTBattleAmbience"
+  ]
+ },
+ {
+  "idx": 67,
+  "entry": "[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化",
+  "term": "HollywoodFX",
+  "status": "AUTO",
+  "match": {
+   "id": 2003,
+   "name": "HollywoodFX",
+   "slug": "hollywoodfx",
+   "downloads": 219650,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1782,
+    "name": "SPT-VR",
+    "slug": "spt-vr",
+    "downloads": 35028,
+    "score": 0
+   },
+   {
+    "id": 2569,
+    "name": "AOSix",
+    "slug": "aosix",
+    "downloads": 9011,
+    "score": 0
+   },
+   {
+    "id": 2950,
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "downloads": 995,
+    "score": 0
+   },
+   {
+    "id": 2003,
+    "name": "HollywoodFX",
+    "slug": "hollywoodfx",
+    "downloads": 219650,
+    "score": 100
+   },
+   {
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "downloads": 263907,
+    "score": 0
+   },
+   {
+    "id": 1782,
+    "name": "SPT-VR",
+    "slug": "spt-vr",
+    "downloads": 35028,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-HollywoodFX+HollywoodGraphics- AI",
+   "HollywoodFX"
+  ]
+ },
+ {
+  "idx": 68,
+  "entry": "[8]门可以锁-LockableDoors",
+  "term": "LockableDoors-Server",
+  "status": "AUTO",
+  "match": {
+   "id": 1923,
+   "name": "Lockable Doors",
+   "slug": "lockable-doors",
+   "downloads": 13668,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1923,
+    "name": "Lockable Doors",
+    "slug": "lockable-doors",
+    "downloads": 13668,
+    "score": 82
+   },
+   {
+    "id": 814,
+    "name": "Late to the Party",
+    "slug": "late-to-the-party",
+    "downloads": 47321,
+    "score": 0
+   },
+   {
+    "id": 2027,
+    "name": "Home Comforts",
+    "slug": "home-comforts",
+    "downloads": 4819,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "LockableDoors-Server"
+  ]
+ },
+ {
+  "idx": 69,
+  "entry": "[8]火山家的实时字幕-Volcano-subtitle",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 2709,
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "downloads": 12854,
+    "score": 0
+   },
+   {
+    "id": 2709,
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "downloads": 12854,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-Volcano-subtitle",
+   "Subtitle"
+  ]
+ },
+ {
+  "idx": 70,
+  "entry": "[7]更好的枪匠界面-Tradermodding客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-Tradermodding",
+   "TraderModding"
+  ]
+ },
+ {
+  "idx": 71,
+  "entry": "[7]更好的枪匠界面-Tradermodding服务器文件",
+  "term": "TraderModding",
+  "status": "AUTO",
+  "match": {
+   "id": 1283,
+   "name": "Trader Modding And Improved Weapon Building",
+   "slug": "trader-modding-and-improved-weapon-building",
+   "downloads": 111390,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1283,
+    "name": "Trader Modding And Improved Weapon Building",
+    "slug": "trader-modding-and-improved-weapon-building",
+    "downloads": 111390,
+    "score": 82
+   },
+   {
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "downloads": 804827,
+    "score": 0
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187196,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "TraderModding"
+  ]
+ },
+ {
+  "idx": 72,
+  "entry": "[7]真实的热成像-realisticThermalScopes",
+  "term": "realisticThermalScopes",
+  "status": "AUTO",
+  "match": {
+   "id": 2056,
+   "name": "Realistic Thermal Scopes",
+   "slug": "realistic-thermal-scopes",
+   "downloads": 61028,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2056,
+    "name": "Realistic Thermal Scopes",
+    "slug": "realistic-thermal-scopes",
+    "downloads": 61028,
+    "score": 100
+   }
+  ],
+  "tried": [
+   "realisticThermalScopes"
+  ]
+ },
+ {
+  "idx": 73,
+  "entry": "[7]更亮的镭射线-brightlasers",
+  "term": "BrightLasers",
+  "status": "AUTO",
+  "match": {
+   "id": 1358,
+   "name": "BrightLasers",
+   "slug": "brightlasers",
+   "downloads": 127871,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1358,
+    "name": "BrightLasers",
+    "slug": "brightlasers",
+    "downloads": 127871,
+    "score": 100
+   },
+   {
+    "id": 431,
+    "name": "RGBLasers",
+    "slug": "rgblasers",
+    "downloads": 9669,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "BrightLasers"
+  ]
+ },
+ {
+  "idx": 74,
+  "entry": "[7]反重力臂章-AntigravArmbands",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "antigravarmbands",
+   "-AntigravArmbands"
+  ]
+ },
+ {
+  "idx": 75,
+  "entry": "[7]更大的背包-BetterBackpacks",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "JoshMateBetterBackPacks",
+   "-BetterBackpacks"
+  ]
+ },
+ {
+  "idx": 76,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-ReflexSightsRework",
+   "ReflexSightsRework"
+  ]
+ },
+ {
+  "idx": 77,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework服务器文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "ReflexSightsRework",
+   "-ReflexSightsRework"
+  ]
+ },
+ {
+  "idx": 78,
+  "entry": "[7]可以合并消耗品-MergeConsumables",
+  "term": "MergeConsumables",
+  "status": "AUTO",
+  "match": {
+   "id": 1657,
+   "name": "MergeConsumables",
+   "slug": "mergeconsumables",
+   "downloads": 85792,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1657,
+    "name": "MergeConsumables",
+    "slug": "mergeconsumables",
+    "downloads": 85792,
+    "score": 100
+   },
+   {
+    "id": 2082,
+    "name": "Item Stacking Plus",
+    "slug": "item-stacking-plus",
+    "downloads": 9991,
+    "score": 0
+   },
+   {
+    "id": 2575,
+    "name": "Fair Equipment Restoration",
+    "slug": "fair-equipment-restoration",
+    "downloads": 1379,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "MergeConsumables"
+  ]
+ },
+ {
+  "idx": 79,
+  "entry": "[7]平衡的夜视装备视效-BRNVG客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "downloads": 263907,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-BRNVG",
+   "BorkelRNVG",
+   "WindowsInput"
+  ]
+ },
+ {
+  "idx": 80,
+  "entry": "[7]平衡的夜视装备视效-BRNVG服务器文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "downloads": 263907,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "BRNVG - N-15 Adapter",
+   "-BRNVG"
+  ]
+ },
+ {
+  "idx": 81,
+  "entry": "[7]武器配件位置自定义-WeaponCustomizer",
+  "term": "weapon-customizer",
+  "status": "AUTO",
+  "match": {
+   "id": 1950,
+   "name": "Weapon Customizer",
+   "slug": "weapon-customizer",
+   "downloads": 130989,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1950,
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "downloads": 130989,
+    "score": 100
+   },
+   {
+    "id": 2010,
+    "name": "Definitive Weapon Variants",
+    "slug": "definitive-weapon-variants",
+    "downloads": 42992,
+    "score": 30
+   },
+   {
+    "id": 2833,
+    "name": "Modern Weapon Mods (MWM)",
+    "slug": "modern-weapon-mods-mwm",
+    "downloads": 12028,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "weapon-customizer"
+  ]
+ },
+ {
+  "idx": 82,
+  "entry": "[7]更好的机瞄-BetterRearSights",
+  "term": "better-rear-sights",
+  "status": "AUTO",
+  "match": {
+   "id": 1591,
+   "name": "Better Rear Sights",
+   "slug": "better-rear-sights",
+   "downloads": 55820,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1591,
+    "name": "Better Rear Sights",
+    "slug": "better-rear-sights",
+    "downloads": 55820,
+    "score": 100
+   },
+   {
+    "id": 1888,
+    "name": "Better Keys NG",
+    "slug": "better-keys-ng",
+    "downloads": 60530,
+    "score": 20
+   },
+   {
+    "id": 1939,
+    "name": "BETTER ATTACHMENTS",
+    "slug": "better-attachments",
+    "downloads": 32359,
+    "score": 20
+   }
+  ],
+  "tried": [
+   "better-rear-sights"
+  ]
+ },
+ {
+  "idx": 83,
+  "entry": "[7]弹匣优化管理系统-MagazineManagementSystem",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "[MMS] Magazine Management System",
+   "-MagazineManagementSystem"
+  ]
+ },
+ {
+  "idx": 84,
+  "entry": "[7]面具修复-mask-fix",
+  "term": "mask-fix",
+  "status": "AUTO",
+  "match": {
+   "id": 3109,
+   "name": "Knight Mask Fix (4.1.3+)",
+   "slug": "knight-mask-fix-413",
+   "downloads": 570,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 3109,
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "downloads": 570,
+    "score": 82
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302904,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "mask-fix"
+  ]
+ },
+ {
+  "idx": 85,
+  "entry": "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化",
+  "term": "MOD -autocompatframework- AI",
+  "status": "MANUAL",
+  "match": {
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "downloads": 1315165,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315165,
+    "score": 20
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 20
+   },
+   {
+    "id": 2945,
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "downloads": 6051,
+    "score": 20
+   }
+  ],
+  "tried": [
+   "AutoCompat Framework",
+   "MOD -autocompatframework- AI"
+  ]
+ },
+ {
+  "idx": 86,
+  "entry": "[7]武器动画更新-P90弹匣动画-transparentp90mag",
+  "term": "Transparent P90 Mag",
+  "status": "MANUAL",
+  "match": {
+   "id": 2774,
+   "name": "Transparent Sights",
+   "slug": "transparent-sights",
+   "downloads": 5940,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 2774,
+    "name": "Transparent Sights",
+    "slug": "transparent-sights",
+    "downloads": 5940,
+    "score": 20
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302904,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   },
+   {
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "downloads": 153482,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Transparent P90 Mag",
+   "-P90 -transparentp90mag"
+  ]
+ },
+ {
+  "idx": 87,
+  "entry": "[7]武器动画更新器-AnimatorUpdater",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-AnimatorUpdater",
+   "UpdateHierarchy"
+  ]
+ },
+ {
+  "idx": 88,
+  "entry": "[7]瞄准视野大修-FOV-Fix",
+  "term": "-FOV-Fix",
+  "status": "MANUAL",
+  "match": {
+   "id": 1621,
+   "name": "Shadow Flicker Fix",
+   "slug": "shadow-flicker-fix",
+   "downloads": 76357,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 1621,
+    "name": "Shadow Flicker Fix",
+    "slug": "shadow-flicker-fix",
+    "downloads": 76357,
+    "score": 30
+   },
+   {
+    "id": 910,
+    "name": "Item Attribute Fix",
+    "slug": "item-attribute-fix",
+    "downloads": 22699,
+    "score": 30
+   },
+   {
+    "id": 1937,
+    "name": "Dev Balaclava Fix",
+    "slug": "dev-balaclava-fix",
+    "downloads": 13384,
+    "score": 30
+   },
+   {
+    "id": 1342,
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "downloads": 453449,
+    "score": 0
+   },
+   {
+    "id": 824,
+    "name": "Task List Fixes",
+    "slug": "task-list-fixes",
+    "downloads": 87832,
+    "score": 0
+   },
+   {
+    "id": 1621,
+    "name": "Shadow Flicker Fix",
+    "slug": "shadow-flicker-fix",
+    "downloads": 76357,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-FOV-Fix",
+   "FOVFix"
+  ]
+ },
+ {
+  "idx": 89,
+  "entry": "[6]分离敌意-SeparateHostility",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192572,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-SeparateHostility",
+   "dk.SeparateHostility"
+  ]
+ },
+ {
+  "idx": 90,
+  "entry": "[6]友方AI系统-friendlypmc与PITFireTeam合并版本",
+  "term": "AI -friendlypmc PITFireTeam",
+  "status": "AUTO",
+  "match": {
+   "id": 2676,
+   "name": "PIT Fireteam",
+   "slug": "pit-fireteam",
+   "downloads": 34424,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "slug": "virtuals-custom-quest-loader",
+    "downloads": 388834,
+    "score": 0
+   },
+   {
+    "id": 1760,
+    "name": "Audio Accessibility Indicators",
+    "slug": "audio-accessibility-indicators",
+    "downloads": 58513,
+    "score": 0
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "downloads": 18915,
+    "score": 0
+   },
+   {
+    "id": 2676,
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "downloads": 34424,
+    "score": 82
+   },
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315165,
+    "score": 20
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 20
+   }
+  ],
+  "tried": [
+   "friendlyPMC",
+   "AI -friendlypmc PITFireTeam"
+  ]
+ },
+ {
+  "idx": 91,
+  "entry": "[6]AI锁头重定向-Headshot Damage Redirection",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327286,
+    "score": 0
+   },
+   {
+    "id": 2706,
+    "name": "ORBIT 2.0",
+    "slug": "orbit-20",
+    "downloads": 51861,
+    "score": 0
+   },
+   {
+    "id": 2676,
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "downloads": 34424,
+    "score": 0
+   },
+   {
+    "id": 2489,
+    "name": "Headshot Damage Redirection",
+    "slug": "headshot-damage-redirection",
+    "downloads": 9188,
+    "score": 0
+   },
+   {
+    "id": 2237,
+    "name": "Player Lives",
+    "slug": "player-lives",
+    "downloads": 7860,
+    "score": 0
+   },
+   {
+    "id": 2953,
+    "name": "Headshot Damage Redirection",
+    "slug": "headshot-damage-redirection",
+    "downloads": 2873,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AI -Headshot Damage Redirection",
+   "somtam.HeadShotRedirect"
+  ]
+ },
+ {
+  "idx": 92,
+  "entry": "[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化",
+  "term": "AI -thuynguyentrungdang That.s.Lit - AI",
+  "status": "MANUAL",
+  "match": {
+   "id": 2691,
+   "name": "Fold That Stock",
+   "slug": "fold-that-stock",
+   "downloads": 4000,
+   "score": 15
+  },
+  "candidates": [
+   {
+    "id": 2691,
+    "name": "Fold That Stock",
+    "slug": "fold-that-stock",
+    "downloads": 4000,
+    "score": 15
+   },
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "downloads": 434815,
+    "score": 0
+   },
+   {
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "downloads": 263907,
+    "score": 0
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "downloads": 18915,
+    "score": 0
+   },
+   {
+    "id": 2315,
+    "name": "Ombarella",
+    "slug": "ombarella",
+    "downloads": 8667,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AI -thuynguyentrungdang That.s.Lit - AI",
+   "ThatsLit.Core"
+  ]
+ },
+ {
+  "idx": 93,
+  "entry": "[6]AI增强-SAIN-Moew-v4.4.0增强版",
+  "term": "SAIN",
+  "status": "AUTO",
+  "match": {
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "downloads": 1315165,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315165,
+    "score": 82
+   },
+   {
+    "id": 1895,
+    "name": "[SAIN] Twitch Players",
+    "slug": "sain-twitch-players",
+    "downloads": 35017,
+    "score": 82
+   },
+   {
+    "id": 2590,
+    "name": "SaintDeerWeapons",
+    "slug": "saintdeerweapons",
+    "downloads": 16273,
+    "score": 82
+   }
+  ],
+  "tried": [
+   "SAIN"
+  ]
+ },
+ {
+  "idx": 94,
+  "entry": "[6]AI自动搜索物品-LootingBots - 已AI优化",
+  "term": "LootingBots-ServerMod",
+  "status": "AUTO",
+  "match": {
+   "id": 812,
+   "name": "Looting Bots",
+   "slug": "looting-bots",
+   "downloads": 747672,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 812,
+    "name": "Looting Bots",
+    "slug": "looting-bots",
+    "downloads": 747672,
+    "score": 82
+   },
+   {
+    "id": 827,
+    "name": "Waypoints - Expanded Navmesh",
+    "slug": "waypoints-expanded-navmesh",
+    "downloads": 1329608,
+    "score": 0
+   },
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315165,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "LootingBots-ServerMod"
+  ]
+ },
+ {
+  "idx": 95,
+  "entry": "[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化",
+  "term": "Acids Progressive Bot System",
+  "status": "AUTO",
+  "match": {
+   "id": 1594,
+   "name": "APBS - Acid's Progressive Bot System",
+   "slug": "apbs-acids-progressive-bot-system",
+   "downloads": 254151,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1594,
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "downloads": 254151,
+    "score": 82
+   },
+   {
+    "id": 2097,
+    "name": "ABPS - Acid's Bot Placement System",
+    "slug": "abps-acids-bot-placement-system",
+    "downloads": 189298,
+    "score": 30
+   },
+   {
+    "id": 2706,
+    "name": "ORBIT 2.0",
+    "slug": "orbit-20",
+    "downloads": 51861,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Acids Progressive Bot System"
+  ]
+ },
+ {
+  "idx": 96,
+  "entry": "[6]Acid的AI生成系统-botplacementsystem - 已AI优化",
+  "term": "Acids Bot Placement System",
+  "status": "AUTO",
+  "match": {
+   "id": 2097,
+   "name": "ABPS - Acid's Bot Placement System",
+   "slug": "abps-acids-bot-placement-system",
+   "downloads": 189298,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2097,
+    "name": "ABPS - Acid's Bot Placement System",
+    "slug": "abps-acids-bot-placement-system",
+    "downloads": 189298,
+    "score": 82
+   },
+   {
+    "id": 1594,
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "downloads": 254151,
+    "score": 30
+   },
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "downloads": 434815,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Acids Bot Placement System"
+  ]
+ },
+ {
+  "idx": 97,
+  "entry": "[6]AI路径扩展-Waypoints - 已AI优化",
+  "term": "Waypoints",
+  "status": "AUTO",
+  "match": {
+   "id": 827,
+   "name": "Waypoints - Expanded Navmesh",
+   "slug": "waypoints-expanded-navmesh",
+   "downloads": 1329608,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "downloads": 1315165,
+    "score": 30
+   },
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 30
+   },
+   {
+    "id": 1594,
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "downloads": 254151,
+    "score": 0
+   },
+   {
+    "id": 827,
+    "name": "Waypoints - Expanded Navmesh",
+    "slug": "waypoints-expanded-navmesh",
+    "downloads": 1329608,
+    "score": 82
+   },
+   {
+    "id": 812,
+    "name": "Looting Bots",
+    "slug": "looting-bots",
+    "downloads": 747672,
+    "score": 0
+   },
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "downloads": 434815,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AI -Waypoints - AI",
+   "Waypoints"
+  ]
+ },
+ {
+  "idx": 98,
+  "entry": "[6]AI拟人MOD的前置框架-BigBrain - 已AI优化",
+  "term": "BigBrain",
+  "status": "AUTO",
+  "match": {
+   "id": 902,
+   "name": "BigBrain",
+   "slug": "bigbrain",
+   "downloads": 1356986,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1945,
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "downloads": 64612,
+    "score": 20
+   },
+   {
+    "id": 2945,
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "downloads": 6051,
+    "score": 20
+   },
+   {
+    "id": 1706,
+    "name": "Health Per Level",
+    "slug": "health-per-level",
+    "downloads": 46536,
+    "score": 0
+   },
+   {
+    "id": 902,
+    "name": "BigBrain",
+    "slug": "bigbrain",
+    "downloads": 1356986,
+    "score": 100
+   },
+   {
+    "id": 812,
+    "name": "Looting Bots",
+    "slug": "looting-bots",
+    "downloads": 747672,
+    "score": 0
+   },
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "downloads": 434815,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AI MOD -BigBrain - AI",
+   "BigBrain"
+  ]
+ },
+ {
+  "idx": 99,
+  "entry": "[5]舒适家园系统-HomeComforts - 已AI优化",
+  "term": "HomeComforts-Server",
+  "status": "AUTO",
+  "match": {
+   "id": 2027,
+   "name": "Home Comforts",
+   "slug": "home-comforts",
+   "downloads": 4819,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2027,
+    "name": "Home Comforts",
+    "slug": "home-comforts",
+    "downloads": 4819,
+    "score": 82
+   },
+   {
+    "id": 2091,
+    "name": "Entry Point Selector",
+    "slug": "entry-point-selector",
+    "downloads": 14842,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "HomeComforts-Server"
+  ]
+ },
+ {
+  "idx": 100,
+  "entry": "[5]战局内存储-LeaveItThere - 已AI优化",
+  "term": "LeaveItThere-Server",
+  "status": "AUTO",
+  "match": {
+   "id": 1907,
+   "name": "Leave It There",
+   "slug": "leave-it-there",
+   "downloads": 27628,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1907,
+    "name": "Leave It There",
+    "slug": "leave-it-there",
+    "downloads": 27628,
+    "score": 82
+   }
+  ],
+  "tried": [
+   "LeaveItThere-Server"
+  ]
+ },
+ {
+  "idx": 101,
+  "entry": "[5]以物易物经济系统-barter_economy-已AI优化",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540934,
+    "score": 0
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 0
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316641,
+    "score": 0
+   },
+   {
+    "id": 2817,
+    "name": "The Quartermaster",
+    "slug": "the-quartermaster",
+    "downloads": 13128,
+    "score": 0
+   },
+   {
+    "id": 2161,
+    "name": "LiveBitcoinPricesREDUX",
+    "slug": "livebitcoinpricesredux",
+    "downloads": 7001,
+    "score": 0
+   },
+   {
+    "id": 2607,
+    "name": "Easy Game",
+    "slug": "easy-game",
+    "downloads": 3187,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "barter_economy",
+   "-barter_economy- AI"
+  ]
+ },
+ {
+  "idx": 102,
+  "entry": "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化",
+  "term": "TarkovIRL",
+  "status": "AUTO",
+  "match": {
+   "id": 1459,
+   "name": "TarkovIRL - Weapons Handling Mod",
+   "slug": "tarkovirl-weapons-handling-mod",
+   "downloads": 18915,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540935,
+    "score": 0
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "downloads": 18915,
+    "score": 30
+   },
+   {
+    "id": 2191,
+    "name": "TarkovIRL - Adi Bots",
+    "slug": "tarkovirl-adi-bots",
+    "downloads": 2647,
+    "score": 30
+   },
+   {
+    "id": 416,
+    "name": "SPT Realism Mod",
+    "slug": "spt-realism-mod",
+    "downloads": 452193,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-TarkovIRL_W.H.M( - AI",
+   "TarkovIRL-WHM",
+   "TarkovIRL"
+  ]
+ },
+ {
+  "idx": 103,
+  "entry": "[5]现实主义大修-Realism - 已AI优化",
+  "term": "SPT Realism Mod",
+  "status": "AUTO",
+  "match": {
+   "id": 416,
+   "name": "SPT Realism Mod",
+   "slug": "spt-realism-mod",
+   "downloads": 452193,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 416,
+    "name": "SPT Realism Mod",
+    "slug": "spt-realism-mod",
+    "downloads": 452193,
+    "score": 100
+   },
+   {
+    "id": 2468,
+    "name": "Realism Mod Compatibility",
+    "slug": "realism-mod-compatibility",
+    "downloads": 731,
+    "score": 40
+   },
+   {
+    "id": 2632,
+    "name": "SPT Realism Value Range Generator",
+    "slug": "spt-realism-value-range-generator",
+    "downloads": 300,
+    "score": 40
+   }
+  ],
+  "tried": [
+   "SPT Realism Mod"
+  ]
+ },
+ {
+  "idx": 104,
+  "entry": "[5]经济与制造系统大修-Softcore - 已AI优化",
+  "term": "softcore",
+  "status": "AUTO",
+  "match": {
+   "id": 2546,
+   "name": "Softcore Hideout",
+   "slug": "softcore-hideout",
+   "downloads": 5801,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2546,
+    "name": "Softcore Hideout",
+    "slug": "softcore-hideout",
+    "downloads": 5801,
+    "score": 82
+   },
+   {
+    "id": 2631,
+    "name": "Softcore Meds",
+    "slug": "softcore-meds",
+    "downloads": 4185,
+    "score": 82
+   },
+   {
+    "id": 2913,
+    "name": "Configurable Softcore",
+    "slug": "configurable-softcore",
+    "downloads": 209,
+    "score": 82
+   }
+  ],
+  "tried": [
+   "softcore"
+  ]
+ },
+ {
+  "idx": 105,
+  "entry": "[5]全地图间移动套装-IEAPI+PTT - AI优化版",
+  "term": "InteractableExfilsAPI",
+  "status": "AUTO",
+  "match": {
+   "id": 1676,
+   "name": "Interactable Exfils API",
+   "slug": "interactable-exfils-api",
+   "downloads": 24701,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "downloads": 434815,
+    "score": 0
+   },
+   {
+    "id": 865,
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "downloads": 173906,
+    "score": 0
+   },
+   {
+    "id": 1219,
+    "name": "SP-EFT Manager",
+    "slug": "sp-eft-manager",
+    "downloads": 125432,
+    "score": 0
+   },
+   {
+    "id": 2249,
+    "name": "Slunk's Central City (SCC for PTT)",
+    "slug": "slunks-central-city-scc-for-ptt",
+    "downloads": 1976,
+    "score": 20
+   },
+   {
+    "id": 865,
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "downloads": 173906,
+    "score": 0
+   },
+   {
+    "id": 1459,
+    "name": "TarkovIRL - Weapons Handling Mod",
+    "slug": "tarkovirl-weapons-handling-mod",
+    "downloads": 18915,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "path-to-tarkov",
+   "-IEAPI+PTT - AI",
+   "InteractableExfilsAPI"
+  ]
+ },
+ {
+  "idx": 106,
+  "entry": "[5]战局大修-RaidOverhaul - 已AI增强版本",
+  "term": "Raid Overhaul",
+  "status": "AUTO",
+  "match": {
+   "id": 1192,
+   "name": "Raid Overhaul",
+   "slug": "raid-overhaul",
+   "downloads": 31775,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1192,
+    "name": "Raid Overhaul",
+    "slug": "raid-overhaul",
+    "downloads": 31775,
+    "score": 100
+   },
+   {
+    "id": 1775,
+    "name": "WTT - Menu Overhaul",
+    "slug": "wtt-menu-overhaul",
+    "downloads": 125459,
+    "score": 30
+   },
+   {
+    "id": 2810,
+    "name": "Kill&Bill - Quest Condition Overhaul",
+    "slug": "killbill-quest-condition-overhaul",
+    "downloads": 3444,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "Raid Overhaul"
+  ]
+ },
+ {
+  "idx": 107,
+  "entry": "[5]新增5个开局角色-CustomProfiles",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 740,
+    "name": "Welcome Gifts",
+    "slug": "welcome-gifts",
+    "downloads": 45254,
+    "score": 0
+   },
+   {
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "downloads": 187196,
+    "score": 0
+   },
+   {
+    "id": 2621,
+    "name": "T***** DLSS 4.5",
+    "slug": "tarkov-dlss-45",
+    "downloads": 12059,
+    "score": 0
+   },
+   {
+    "id": 2594,
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "downloads": 10702,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "EFCL-CustomProfiles",
+   "5 -CustomProfiles"
+  ]
+ },
+ {
+  "idx": 108,
+  "entry": "[4]新商人-AES",
+  "term": "AES",
+  "status": "AUTO",
+  "match": {
+   "id": 874,
+   "name": "AES",
+   "slug": "aes",
+   "downloads": 147262,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 874,
+    "name": "AES",
+    "slug": "aes",
+    "downloads": 147262,
+    "score": 100
+   },
+   {
+    "id": 1950,
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "downloads": 130989,
+    "score": 0
+   },
+   {
+    "id": 740,
+    "name": "Welcome Gifts",
+    "slug": "welcome-gifts",
+    "downloads": 45254,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AES"
+  ]
+ },
+ {
+  "idx": 109,
+  "entry": "[4]新商人-VolkovTrader",
+  "term": "VolkovTrader",
+  "status": "AUTO",
+  "match": {
+   "id": 2009,
+   "name": "Volkov Trader",
+   "slug": "volkov-trader",
+   "downloads": 11298,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2009,
+    "name": "Volkov Trader",
+    "slug": "volkov-trader",
+    "downloads": 11298,
+    "score": 100
+   }
+  ],
+  "tried": [
+   "VolkovTrader"
+  ]
+ },
+ {
+  "idx": 110,
+  "entry": "[4]新商人-Epakim1-1",
+  "term": "EpaKim1",
+  "status": "AUTO",
+  "match": {
+   "id": 2119,
+   "name": "EPAKIM1 Trader Mod",
+   "slug": "epakim1-trader-mod",
+   "downloads": 11479,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2119,
+    "name": "EPAKIM1 Trader Mod",
+    "slug": "epakim1-trader-mod",
+    "downloads": 11479,
+    "score": 82
+   },
+   {
+    "id": 2249,
+    "name": "Slunk's Central City (SCC for PTT)",
+    "slug": "slunks-central-city-scc-for-ptt",
+    "downloads": 1976,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "EpaKim1"
+  ]
+ },
+ {
+  "idx": 111,
+  "entry": "[4]新商人-不明生还者-UnknownSurvivor",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "slug": "virtuals-custom-quest-loader",
+    "downloads": 388834,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1971,
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "downloads": 42120,
+    "score": 0
+   },
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "slug": "virtuals-custom-quest-loader",
+    "downloads": 388834,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1971,
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "downloads": 42120,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "UnknownSurvivor",
+   "- -UnknownSurvivor"
+  ]
+ },
+ {
+  "idx": 112,
+  "entry": "[4]新商人-荷官-Croupier (random loadouts + flea quicksell)",
+  "term": "croupier",
+  "status": "AUTO",
+  "match": {
+   "id": 1971,
+   "name": "Croupier - loadout generator + flea quicksell",
+   "slug": "croupier-loadout-generator-flea-quicksell",
+   "downloads": 42120,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1971,
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "downloads": 42120,
+    "score": 82
+   },
+   {
+    "id": 2239,
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "downloads": 49087,
+    "score": 0
+   },
+   {
+    "id": 2724,
+    "name": "Vanilla Traders Rework",
+    "slug": "vanilla-traders-rework",
+    "downloads": 3319,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "croupier"
+  ]
+ },
+ {
+  "idx": 113,
+  "entry": "[4]新商人-藏身处物资商人-acidphantasm-harryhideout",
+  "term": "HarryHideout",
+  "status": "AUTO",
+  "match": {
+   "id": 1303,
+   "name": "HarryHideout",
+   "slug": "harryhideout",
+   "downloads": 67875,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1303,
+    "name": "HarryHideout",
+    "slug": "harryhideout",
+    "downloads": 67875,
+    "score": 100
+   },
+   {
+    "id": 1765,
+    "name": "The Cat Burglar",
+    "slug": "the-cat-burglar",
+    "downloads": 9391,
+    "score": 0
+   },
+   {
+    "id": 2064,
+    "name": "TARK - Tactical Arms Racketeer: Kaliber",
+    "slug": "tark-tactical-arms-racketeer-kaliber",
+    "downloads": 8947,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "HarryHideout"
+  ]
+ },
+ {
+  "idx": 114,
+  "entry": "[4]新商人-毒蝎-acidphantasm-scorpion",
+  "term": "Scorpion",
+  "status": "AUTO",
+  "match": {
+   "id": 1348,
+   "name": "Scorpion",
+   "slug": "scorpion",
+   "downloads": 139763,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1348,
+    "name": "Scorpion",
+    "slug": "scorpion",
+    "downloads": 139763,
+    "score": 100
+   },
+   {
+    "id": 649,
+    "name": "Virtual's Custom Quest Loader",
+    "slug": "virtuals-custom-quest-loader",
+    "downloads": 388834,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Scorpion"
+  ]
+ },
+ {
+  "idx": 115,
+  "entry": "[4]新商人-Artem",
+  "term": "Artem",
+  "status": "AUTO",
+  "match": {
+   "id": 1023,
+   "name": "WTT- Artem",
+   "slug": "wtt-artem",
+   "downloads": 316642,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 82
+   },
+   {
+    "id": 1591,
+    "name": "Better Rear Sights",
+    "slug": "better-rear-sights",
+    "downloads": 55820,
+    "score": 0
+   },
+   {
+    "id": 2264,
+    "name": "Battle Ambience",
+    "slug": "battle-ambience",
+    "downloads": 29618,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Artem"
+  ]
+ },
+ {
+  "idx": 116,
+  "entry": "[4]新商人-油漆匠-Painter",
+  "term": "Painter",
+  "status": "AUTO",
+  "match": {
+   "id": 1025,
+   "name": "Painter",
+   "slug": "painter",
+   "downloads": 313547,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1025,
+    "name": "Painter",
+    "slug": "painter",
+    "downloads": 313547,
+    "score": 100
+   },
+   {
+    "id": 2878,
+    "name": "Painter - All in one",
+    "slug": "painter-all-in-one",
+    "downloads": 6790,
+    "score": 82
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Painter"
+  ]
+ },
+ {
+  "idx": 117,
+  "entry": "[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "Adam's Boxes at Ref (BARF)",
+   "-Adam's Boxes at Ref (BARF)"
+  ]
+ },
+ {
+  "idx": 118,
+  "entry": "[4]新商人-竞技场商人-ref-sptfriendly-quests",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "RefSPTFriendlyQuests",
+   "- -ref-sptfriendly-quests"
+  ]
+ },
+ {
+  "idx": 119,
+  "entry": "[3]新配件-ConsortiumOfThings",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "ConsortiumOfThings",
+   "-ConsortiumOfThings"
+  ]
+ },
+ {
+  "idx": 120,
+  "entry": "[3]新配件-Eco-Attachment Emporium",
+  "term": "Eco-Attachment-Emporium",
+  "status": "LIKELY",
+  "match": {
+   "id": 2882,
+   "name": "Eco's Attachment Emporium",
+   "slug": "ecos-attachment-emporium",
+   "downloads": 16177,
+   "score": 60
+  },
+  "candidates": [
+   {
+    "id": 2882,
+    "name": "Eco's Attachment Emporium",
+    "slug": "ecos-attachment-emporium",
+    "downloads": 16177,
+    "score": 60
+   },
+   {
+    "id": 2884,
+    "name": "Eco's WW2 Pack",
+    "slug": "ecos-ww2-pack",
+    "downloads": 7686,
+    "score": 20
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540935,
+    "score": 0
+   },
+   {
+    "id": 2882,
+    "name": "Eco's Attachment Emporium",
+    "slug": "ecos-attachment-emporium",
+    "downloads": 16177,
+    "score": 60
+   },
+   {
+    "id": 2884,
+    "name": "Eco's WW2 Pack",
+    "slug": "ecos-ww2-pack",
+    "downloads": 7686,
+    "score": 20
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540935,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Eco-Attachment-Emporium",
+   "-Eco-Attachment Emporium"
+  ]
+ },
+ {
+  "idx": 121,
+  "entry": "[3]新配件-Echoes.of.Tarkov.-.Requisitions",
+  "term": "Echoes of Tarkov - Requisitions",
+  "status": "AUTO",
+  "match": {
+   "id": 2143,
+   "name": "Echoes of T***** - Requisitions",
+   "slug": "echoes-of-tarkov-requisitions",
+   "downloads": 36705,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2143,
+    "name": "Echoes of T***** - Requisitions",
+    "slug": "echoes-of-tarkov-requisitions",
+    "downloads": 36705,
+    "score": 100
+   },
+   {
+    "id": 2451,
+    "name": "Echoes of T***** - Requisitions - NG",
+    "slug": "echoes-of-tarkov-requisitions-ng",
+    "downloads": 16038,
+    "score": 74
+   },
+   {
+    "id": 2296,
+    "name": "Echoes-of-T*****---Requisitions's Realism compatibility patch",
+    "slug": "echoes-of-tarkov-requisitionss-realism-compatibility-patch",
+    "downloads": 2193,
+    "score": 74
+   }
+  ],
+  "tried": [
+   "Echoes of Tarkov - Requisitions"
+  ]
+ },
+ {
+  "idx": 122,
+  "entry": "[3]新配件-EpicRangeTime-Weapons",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 1853,
+    "name": "StatTrack",
+    "slug": "stattrack",
+    "downloads": 46207,
+    "score": 0
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 0
+   },
+   {
+    "id": 1853,
+    "name": "StatTrack",
+    "slug": "stattrack",
+    "downloads": 46207,
+    "score": 0
+   },
+   {
+    "id": 1404,
+    "name": "Legs the Trader",
+    "slug": "legs-the-trader",
+    "downloads": 45669,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Weapons",
+   "-EpicRangeTime-Weapons"
+  ]
+ },
+ {
+  "idx": 123,
+  "entry": "[3]新配件-BlackCore",
+  "term": "Black Core",
+  "status": "MANUAL",
+  "match": {
+   "id": 2511,
+   "name": "WTT - Black Division [REDACTED] Home",
+   "slug": "wtt-black-division-redacted-home",
+   "downloads": 114439,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 2511,
+    "name": "WTT - Black Division [REDACTED] Home",
+    "slug": "wtt-black-division-redacted-home",
+    "downloads": 114439,
+    "score": 30
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Black Core",
+   "-BlackCore"
+  ]
+ },
+ {
+  "idx": 124,
+  "entry": "[3]新配件-MagTape",
+  "term": "Mag Tape",
+  "status": "AUTO",
+  "match": {
+   "id": 1018,
+   "name": "Mag Tape",
+   "slug": "mag-tape",
+   "downloads": 118994,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1018,
+    "name": "Mag Tape",
+    "slug": "mag-tape",
+    "downloads": 118994,
+    "score": 100
+   },
+   {
+    "id": 1025,
+    "name": "Painter",
+    "slug": "painter",
+    "downloads": 313547,
+    "score": 0
+   },
+   {
+    "id": 740,
+    "name": "Welcome Gifts",
+    "slug": "welcome-gifts",
+    "downloads": 45254,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Mag Tape"
+  ]
+ },
+ {
+  "idx": 125,
+  "entry": "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst",
+  "term": "Ak-105-Hyperburst",
+  "status": "MANUAL",
+  "match": {
+   "id": 2455,
+   "name": "AK Rail Extension - NG",
+   "slug": "ak-rail-extension-ng",
+   "downloads": 7455,
+   "score": 20
+  },
+  "candidates": [
+   {
+    "id": 2455,
+    "name": "AK Rail Extension - NG",
+    "slug": "ak-rail-extension-ng",
+    "downloads": 7455,
+    "score": 20
+   },
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "downloads": 4830,
+    "score": 20
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Ak-105-Hyperburst",
+   "- - BabaYaga x Hyperburst",
+   "WttHyperburstWrapper"
+  ]
+ },
+ {
+  "idx": 126,
+  "entry": "[3]新武器-AKResonant",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "downloads": 4830,
+    "score": 0
+   },
+   {
+    "id": 2170,
+    "name": "Resonant AK from COD:MW2019 - ReUpload",
+    "slug": "resonant-ak-from-codmw2019-reupload",
+    "downloads": 4830,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AKResonant",
+   "-AKResonant"
+  ]
+ },
+ {
+  "idx": 127,
+  "entry": "[3]新武器-国产武器-1SD-QBZ191",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "1SD-QBZ191",
+   "- -1SD-QBZ191"
+  ]
+ },
+ {
+  "idx": 128,
+  "entry": "[3].50BMG重制-Epics 50 BMG Remaster-Expansion",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "downloads": 49216,
+    "score": 0
+   },
+   {
+    "id": 820,
+    "name": "Door Randomizer",
+    "slug": "door-randomizer",
+    "downloads": 49167,
+    "score": 0
+   },
+   {
+    "id": 2588,
+    "name": "MassivesoftWeapons",
+    "slug": "massivesoftweapons",
+    "downloads": 35679,
+    "score": 0
+   },
+   {
+    "id": 2463,
+    "name": "VanillaAmmoCrafts",
+    "slug": "vanillaammocrafts",
+    "downloads": 7619,
+    "score": 0
+   },
+   {
+    "id": 2577,
+    "name": "DaGrogs Weapon AddOn Pack",
+    "slug": "dagrogs-weapon-addon-pack",
+    "downloads": 7371,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "50 BMG Remaster/Expansion",
+   ".50BMG -Epics 50 BMG Remaster-Expansion"
+  ]
+ },
+ {
+  "idx": 129,
+  "entry": "[3]新武器-AK50",
+  "term": "AK50",
+  "status": "AUTO",
+  "match": {
+   "id": 2215,
+   "name": "Eukyre's AK-50 backport",
+   "slug": "eukyres-ak-50-backport",
+   "downloads": 19719,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2215,
+    "name": "Eukyre's AK-50 backport",
+    "slug": "eukyres-ak-50-backport",
+    "downloads": 19719,
+    "score": 82
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "downloads": 49216,
+    "score": 0
+   },
+   {
+    "id": 2403,
+    "name": "Trader Jeronimo",
+    "slug": "trader-jeronimo",
+    "downloads": 9487,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "AK50"
+  ]
+ },
+ {
+  "idx": 130,
+  "entry": "[3]新武器-SIG_MCX_VIRTUS",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "downloads": 49216,
+    "score": 0
+   },
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 0
+   },
+   {
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "downloads": 274736,
+    "score": 0
+   },
+   {
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "downloads": 49216,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "sig_mcx_virtus",
+   "-SIG_MCX_VIRTUS"
+  ]
+ },
+ {
+  "idx": 131,
+  "entry": "[3]新武器-WTT武器库-WTT - Armory客户端",
+  "term": "WTT-Armory",
+  "status": "AUTO",
+  "match": {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "downloads": 284993,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1453,
+    "name": "Make Shotguns Great Again!",
+    "slug": "make-shotguns-great-again",
+    "downloads": 48406,
+    "score": 0
+   },
+   {
+    "id": 1878,
+    "name": "Unrestricted Armor Plate",
+    "slug": "unrestricted-armor-plate",
+    "downloads": 22632,
+    "score": 0
+   },
+   {
+    "id": 1946,
+    "name": "Arse Scratching Service (ASS)",
+    "slug": "arse-scratching-service-ass",
+    "downloads": 11652,
+    "score": 0
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 100
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540936,
+    "score": 30
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "-WTT -WTT - Armory",
+   "WTT-Armory"
+  ]
+ },
+ {
+  "idx": 132,
+  "entry": "[3]新武器-WTT武器库-WTT - Armory服务端",
+  "term": "WTT-Armory",
+  "status": "AUTO",
+  "match": {
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "downloads": 284993,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 100
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540936,
+    "score": 30
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "WTT-Armory"
+  ]
+ },
+ {
+  "idx": 133,
+  "entry": "[2]高清材质-TarkovHDRework",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "TarkovHDRework",
+   "-TarkovHDRework"
+  ]
+ },
+ {
+  "idx": 134,
+  "entry": "[2]自定义配方-tarkovcraft",
+  "term": "TarkovCraft",
+  "status": "AUTO",
+  "match": {
+   "id": 1979,
+   "name": "T***** Craft",
+   "slug": "tarkov-craft",
+   "downloads": 4735,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1979,
+    "name": "T***** Craft",
+    "slug": "tarkov-craft",
+    "downloads": 4735,
+    "score": 100
+   },
+   {
+    "id": 2628,
+    "name": "T***** Craft Loader",
+    "slug": "tarkov-craft-loader",
+    "downloads": 871,
+    "score": 74
+   },
+   {
+    "id": 2469,
+    "name": "Custom Recipes",
+    "slug": "custom-recipes",
+    "downloads": 1349,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "TarkovCraft"
+  ]
+ },
+ {
+  "idx": 135,
+  "entry": "[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]",
+  "term": "RCTA - Metal Gear [FORTNITE]",
+  "status": "AUTO",
+  "match": {
+   "id": 1768,
+   "name": "RCTA - Metal Gear [FORTNITE]",
+   "slug": "rcta-metal-gear-fortnite",
+   "downloads": 3865,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1768,
+    "name": "RCTA - Metal Gear [FORTNITE]",
+    "slug": "rcta-metal-gear-fortnite",
+    "downloads": 3865,
+    "score": 100
+   },
+   {
+    "id": 1777,
+    "name": "RCTA - Peely Default [FORTNITE]",
+    "slug": "rcta-peely-default-fortnite",
+    "downloads": 2784,
+    "score": 30
+   },
+   {
+    "id": 1993,
+    "name": "RCTA - Ada Wong [RE4R]",
+    "slug": "rcta-ada-wong-re4r",
+    "downloads": 10360,
+    "score": 15
+   }
+  ],
+  "tried": [
+   "RCTA - Metal Gear [FORTNITE]"
+  ]
+ },
+ {
+  "idx": 136,
+  "entry": "[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)",
+  "term": "RCTA - Synaptic Rig T1 (CODIW)",
+  "status": "MANUAL",
+  "match": {
+   "id": 1766,
+   "name": "RCTA - Synaptic Rig [CODIW]",
+   "slug": "rcta-synaptic-rig-codiw",
+   "downloads": 3764,
+   "score": 48
+  },
+  "candidates": [
+   {
+    "id": 1766,
+    "name": "RCTA - Synaptic Rig [CODIW]",
+    "slug": "rcta-synaptic-rig-codiw",
+    "downloads": 3764,
+    "score": 48
+   },
+   {
+    "id": 1993,
+    "name": "RCTA - Ada Wong [RE4R]",
+    "slug": "rcta-ada-wong-re4r",
+    "downloads": 10360,
+    "score": 12
+   },
+   {
+    "id": 1774,
+    "name": "RCTA - Callisto Standard, Deluge [CODMW3]",
+    "slug": "rcta-callisto-standard-deluge-codmw3",
+    "downloads": 4828,
+    "score": 12
+   },
+   {
+    "id": 1766,
+    "name": "RCTA - Synaptic Rig [CODIW]",
+    "slug": "rcta-synaptic-rig-codiw",
+    "downloads": 3764,
+    "score": 48
+   },
+   {
+    "id": 1993,
+    "name": "RCTA - Ada Wong [RE4R]",
+    "slug": "rcta-ada-wong-re4r",
+    "downloads": 10360,
+    "score": 12
+   },
+   {
+    "id": 1774,
+    "name": "RCTA - Callisto Standard, Deluge [CODMW3]",
+    "slug": "rcta-callisto-standard-deluge-codmw3",
+    "downloads": 4828,
+    "score": 12
+   }
+  ],
+  "tried": [
+   "RCTA - Synaptic Rig T1 (CODIW)",
+   "-RCTA - Synaptic Rig T1 (CODIW)"
+  ]
+ },
+ {
+  "idx": 137,
+  "entry": "[2]新物品-竞技场赛季奖励-SPT Battlepass",
+  "term": "Pluto! - SPT Battlepass",
+  "status": "AUTO",
+  "match": {
+   "id": 2098,
+   "name": "SPT Battlepass",
+   "slug": "spt-battlepass",
+   "downloads": 22971,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2098,
+    "name": "SPT Battlepass",
+    "slug": "spt-battlepass",
+    "downloads": 22971,
+    "score": 82
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 0
+   },
+   {
+    "id": 1971,
+    "name": "Croupier - loadout generator + flea quicksell",
+    "slug": "croupier-loadout-generator-flea-quicksell",
+    "downloads": 42120,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Pluto! - SPT Battlepass"
+  ]
+ },
+ {
+  "idx": 138,
+  "entry": "[2]新装备、衣服-TacticalGearComponent",
+  "term": "Tactical Gear Component (TGC)",
+  "status": "AUTO",
+  "match": {
+   "id": 1125,
+   "name": "Tactical Gear Component",
+   "slug": "tactical-gear-component",
+   "downloads": 302905,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "downloads": 302905,
+    "score": 82
+   },
+   {
+    "id": 1025,
+    "name": "Painter",
+    "slug": "painter",
+    "downloads": 313547,
+    "score": 0
+   },
+   {
+    "id": 1456,
+    "name": "Gambler - Trader",
+    "slug": "gambler-trader",
+    "downloads": 49269,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Tactical Gear Component (TGC)"
+  ]
+ },
+ {
+  "idx": 139,
+  "entry": "[2]腰包-WTT-PackNStrap客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [],
+  "tried": [
+   "-WTT-PackNStrap",
+   "WTT-PackNStrap"
+  ]
+ },
+ {
+  "idx": 140,
+  "entry": "[2]腰包-WTT-PackNStrap服务器端文件",
+  "term": "WTT-PackNStrap",
+  "status": "AUTO",
+  "match": {
+   "id": 1278,
+   "name": "WTT - Pack 'n' Strap",
+   "slug": "wtt-pack-n-strap",
+   "downloads": 232972,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 1278,
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "downloads": 232972,
+    "score": 100
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540936,
+    "score": 30
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "WTT-PackNStrap"
+  ]
+ },
+ {
+  "idx": 141,
+  "entry": "[2]新酒水-HoodsEnergyDrinks",
+  "term": "Hoods Energy Drinks",
+  "status": "MANUAL",
+  "match": {
+   "id": 1688,
+   "name": "More Energy Drinks",
+   "slug": "more-energy-drinks",
+   "downloads": 73241,
+   "score": 40
+  },
+  "candidates": [
+   {
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "downloads": 73241,
+    "score": 40
+   },
+   {
+    "id": 865,
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "downloads": 173906,
+    "score": 0
+   },
+   {
+    "id": 1569,
+    "name": "Wolfik's Heavy Trooper Masks",
+    "slug": "wolfiks-heavy-trooper-masks",
+    "downloads": 45379,
+    "score": 0
+   },
+   {
+    "id": 865,
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "downloads": 173906,
+    "score": 0
+   },
+   {
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "downloads": 73241,
+    "score": 0
+   },
+   {
+    "id": 1569,
+    "name": "Wolfik's Heavy Trooper Masks",
+    "slug": "wolfiks-heavy-trooper-masks",
+    "downloads": 45379,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Hoods Energy Drinks",
+   "-HoodsEnergyDrinks"
+  ]
+ },
+ {
+  "idx": 142,
+  "entry": "[2]新酒水-WTT - CornerStore",
+  "term": "-WTT - CornerStore",
+  "status": "MANUAL",
+  "match": {
+   "id": 2512,
+   "name": "WTT - Content Backport",
+   "slug": "wtt-content-backport",
+   "downloads": 540936,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540936,
+    "score": 20
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 20
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 20
+   },
+   {
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "downloads": 540936,
+    "score": 30
+   },
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 30
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "WTT-Corner Store",
+   "-WTT - CornerStore"
+  ]
+ },
+ {
+  "idx": 143,
+  "entry": "[2]新物品-地图容器-SecureMapbookMod",
+  "term": "MrVibesRSA-SecureMapbookMod",
+  "status": "AUTO",
+  "match": {
+   "id": 2060,
+   "name": "Secure Mapbook",
+   "slug": "secure-mapbook",
+   "downloads": 9175,
+   "score": 82
+  },
+  "candidates": [
+   {
+    "id": 2060,
+    "name": "Secure Mapbook",
+    "slug": "secure-mapbook",
+    "downloads": 9175,
+    "score": 82
+   },
+   {
+    "id": 2167,
+    "name": "CNN - CONTAINERS - RE-UPLOAD",
+    "slug": "cnn-containers-re-upload",
+    "downloads": 11207,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "MrVibesRSA-SecureMapbookMod"
+  ]
+ },
+ {
+  "idx": 144,
+  "entry": "[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "- -GildedKeyStorage",
+   "GildedKeyStorage"
+  ]
+ },
+ {
+  "idx": 145,
+  "entry": "[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件",
+  "term": "Gilded Key Storage",
+  "status": "AUTO",
+  "match": {
+   "id": 865,
+   "name": "Gilded Key Storage",
+   "slug": "gilded-key-storage",
+   "downloads": 173906,
+   "score": 100
+  },
+  "candidates": [
+   {
+    "id": 865,
+    "name": "Gilded Key Storage",
+    "slug": "gilded-key-storage",
+    "downloads": 173906,
+    "score": 100
+   },
+   {
+    "id": 2178,
+    "name": "Key Case",
+    "slug": "key-case",
+    "downloads": 9254,
+    "score": 20
+   },
+   {
+    "id": 1248,
+    "name": "Keys In Loot (KIL)",
+    "slug": "keys-in-loot-kil",
+    "downloads": 76390,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Gilded Key Storage"
+  ]
+ },
+ {
+  "idx": 146,
+  "entry": "[2]新物品-藏身处猫咪-hideoutcat",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "- -hideoutcat",
+   "AssetBundleLoader",
+   "hideoutcat"
+  ]
+ },
+ {
+  "idx": 147,
+  "entry": "[1]前置框架-WTT公共库-WTT-ClientCommonLib",
+  "term": "WTT-ClientCommonLib",
+  "status": "MANUAL",
+  "match": {
+   "id": 2310,
+   "name": "WTT - CommonLib",
+   "slug": "wtt-commonlib",
+   "downloads": 431779,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "downloads": 431779,
+    "score": 30
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 30
+   },
+   {
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "downloads": 284993,
+    "score": 30
+   }
+  ],
+  "tried": [
+   "-WTT -WTT-ClientCommonLib",
+   "WTT-ClientCommonLib"
+  ]
+ },
+ {
+  "idx": 148,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 2706,
+    "name": "ORBIT 2.0",
+    "slug": "orbit-20",
+    "downloads": 51862,
+    "score": 0
+   },
+   {
+    "id": 2010,
+    "name": "Definitive Weapon Variants",
+    "slug": "definitive-weapon-variants",
+    "downloads": 42992,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "- -Virtual's Custom Quest Loader",
+   "VCQLQuestZones"
+  ]
+ },
+ {
+  "idx": 149,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件",
+  "term": "- -Virtual's Custom Quest Loader",
+  "status": "MANUAL",
+  "match": {
+   "id": 2093,
+   "name": "Virtual's Custom Quests - Updated",
+   "slug": "virtuals-custom-quests-updated",
+   "downloads": 19931,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 1537,
+    "name": "sgtlaggy's Quest Tweaks",
+    "slug": "sgtlaggys-quest-tweaks",
+    "downloads": 23926,
+    "score": 15
+   },
+   {
+    "id": 2093,
+    "name": "Virtual's Custom Quests - Updated",
+    "slug": "virtuals-custom-quests-updated",
+    "downloads": 19931,
+    "score": 15
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 0
+   },
+   {
+    "id": 2093,
+    "name": "Virtual's Custom Quests - Updated",
+    "slug": "virtuals-custom-quests-updated",
+    "downloads": 19931,
+    "score": 30
+   },
+   {
+    "id": 1537,
+    "name": "sgtlaggy's Quest Tweaks",
+    "slug": "sgtlaggys-quest-tweaks",
+    "downloads": 23926,
+    "score": 15
+   },
+   {
+    "id": 1023,
+    "name": "WTT- Artem",
+    "slug": "wtt-artem",
+    "downloads": 316642,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "Virtuals Custom Quest Loader",
+   "- -Virtual's Custom Quest Loader"
+  ]
+ },
+ {
+  "idx": 150,
+  "entry": "[1]前置框架-自定义交互-CustomInteractions",
+  "term": null,
+  "status": "MANUAL",
+  "match": null,
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   },
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "- -CustomInteractions",
+   "CustomInteractions"
+  ]
+ },
+ {
+  "idx": 151,
+  "entry": "[1]前置框架-KmyTarkovApi",
+  "term": "Crc32.NET",
+  "status": "MANUAL",
+  "match": {
+   "id": 2563,
+   "name": "LoadBundleFaster (Crc32 Patch)",
+   "slug": "loadbundlefaster-crc32-patch",
+   "downloads": 15187,
+   "score": 30
+  },
+  "candidates": [
+   {
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "downloads": 1327288,
+    "score": 0
+   },
+   {
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "downloads": 212482,
+    "score": 0
+   },
+   {
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "downloads": 192573,
+    "score": 0
+   },
+   {
+    "id": 2563,
+    "name": "LoadBundleFaster (Crc32 Patch)",
+    "slug": "loadbundlefaster-crc32-patch",
+    "downloads": 15187,
+    "score": 30
+   },
+   {
+    "id": 2599,
+    "name": "LoadBundleEvenFaster",
+    "slug": "loadbundleevenfaster",
+    "downloads": 9576,
+    "score": 0
+   }
+  ],
+  "tried": [
+   "-KmyTarkovApi",
+   "Crc32.NET",
+   "HtmlAgilityPack"
+  ]
+ }
+]

@@ -1,0 +1,76 @@
+{
+ "idx": 79,
+ "entry": "[7]平衡的夜视装备视效-BRNVG客户端文件",
+ "terms": [
+  "-BRNVG",
+  "BorkelRNVG",
+  "WindowsInput"
+ ],
+ "all": [
+  {
+   "term": "-BRNVG",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327302,
+   "sc": 0
+  },
+  {
+   "term": "BorkelRNVG",
+   "id": 954,
+   "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+   "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+   "dl": 263915,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192577,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "-BRNVG",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

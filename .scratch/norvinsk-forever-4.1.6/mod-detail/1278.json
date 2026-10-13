@@ -1,0 +1,48 @@
+{
+ "id": 1278,
+ "hub_id": 1790,
+ "guid": "com.wtt.packnstrap",
+ "name": "WTT - Pack 'n' Strap",
+ "slug": "wtt-pack-n-strap",
+ "teaser": "Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, for all your early-game adventures.",
+ "thumbnail": "https://files.sp-mod.com/mods/1790.png",
+ "downloads": 233105,
+ "favourites_count": 304,
+ "endorsements_count": 35,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Mod Description</div>\n<div class=\"tab-content\"><p><strong>REQUIRES WTT-COMMONLIB ~2.0.0</strong>\n<strong>REQUIRES USE ITEMS ANYWHERE ~1.3.1</strong></p>\n<p>The development team behind WTT proudly present our second standalone module for T***** - Pack ‘n’ Strap! This successor to <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/968/deprecated-small-cases-now-with-fannypack\" rel=\"noreferrer noopener\">[DEPRECATED] Small Cases - Now With Fannypack!</a> comes packed with a brand new addition: Battle Belts!</p>\n<p>This mod adds a total sixteen items (eight cases, and eight<em>TEEN</em> belts) to various traders at different loyalty levels. The code has undergone a complete upgrade, some of the cases have been resized and rebalanced, and the belts are all configured to go into your tactical rig slot, as well as your armband slot!</p>\n<p>Since this can be game-breaking to some people who prefer a more normal run-through, included is a config to enable losing your armband slot on death. Simply set loseArmbandOnDeath to true in the config.json to lose the battle belts on death.</p>\n<p>This one has been in the works for a while, folks. We thought for a long time that custom rig layouts were all but impossible, and now we’re able to release the first of many new layouts made by the WTT team.</p>\n<p>Here’s to the second entry in our standalone series of mods. We hope you enjoy!</p>\n<p>Like my work? Buy me a coffee!<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/grooveypenguinx\" rel=\"noreferrer noopener\">https://ko-fi.com/grooveypenguinx</a></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation Instructions:</div>\n<div class=\"tab-content\"><p>To Download Pack N’ Strap:</p>\n<p>- Navigate to the download page, and click on the WTT-PackNStrap.rar. Should look like this:<br />\n<a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/yfr9DkS/image.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/yfr9DkS/image.png\" alt=\"image.png\" /></a></p>\n<p>To Install Pack N’ Strap:</p>\n<p>Open the archive, and drag/drop the users AND BepInEx folder into your main SPT install directory like this:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/PtH555x/ezgif-3-93e2efa678.gif\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/PtH555x/ezgif-3-93e2efa678.gif\" alt=\"ezgif-3-93e2efa678.gif\" /></a></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Battle Belts</div>\n<div class=\"tab-content\"><p>Battle Belts are the newest addition to Small Cases family! Featuring <em>fully custom layouts</em>, belts are a new rig type that can be worn in your tactical rig slot, as well as your armband slot!</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/gbT20rMR/image-1.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/gbT20rMR/image-1.png\" alt=\"image-1.png\" /></a></p>\n<p>Before custom rig layouts were possible, we discussed how cool battle belts would be to have. A new way to give the player just <em>a little more</em> space to utilize medicine, weapons, or store some extra loot while traveling through the maps.</p>\n<p>Now, thanks to the hard work of the WTT team, you can!</p>\n<p>Once the belt is equipped into your armband slot, you are able to hotkey, reload, and use items directly from the Battle Belts!</p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Small Cases</div>\n<div class=\"tab-content\"><p>Along with the belt additions, Small Cases underwent some minor balancing and additions as well! The server code has been converted to a newer system, the small documents case and small toolpouch both received their own unique layouts, some cases were resized and rebalanced pricewise, and the Fannypack no longer goes in your special slot, as it’s now part of the battlebelt system that goes in your armband/rig slot.</p>\n<p>Here’s a rundown of each case:</p>\n<p>Small Ammunition Pouch: A small pouch that has a 4x2 internal grid to store ammunition. (Prapor sells this at level 1)Small Key Ring: A small keyring with a 3x2 internal grid to store keys. (Therapist sells this at level 1)Vintage Lunchbox: A lunchbox with a 3x3 internal grid to store your food and drinks. (Jaegar sells this at level 1)Small Medicial Pouch: A medicine pouch with a 3x4 internal grid to store all your meds. (Therapist sells this at level 1)<br />\nSmall Magazine Pouch: A small pouch with a 4x4 internal grid to store your mags. (Prapor sells this at level 1)Small Scavenger’s Case: A small case with a 8x5 internal grid to store all your junk. (Therapist sells this at level 1)Small Tool Bag: A toolcase with a 1x2, 3x3, 1x2 and 1x2 internal grid to store all your tools. (Mechanic sells this at level 1)Small Leather Docket: A small docscase with a 2x3 and a 2x2 internal grid to store documents, money, and keycards. (Therapist sells this at level 1)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://i.ibb.co/Tj8f4Kd/image.png\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" src=\"https://i.ibb.co/Tj8f4Kd/image.png\" alt=\"image.png\" /></a></p></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">What is WTT?</div>\n<div class=\"tab-content\"><p><strong>What is Welcome To T</strong>***?**</p>\n<p>Welcome To T***** (WTT) is a mod for SPT AKI that has been in development for over a year. What started as a small passion project has grown in size to incorporate 10+ core members as well as contributions from other well-known mod authors and friends of WTT alike.</p>\n<p><strong>How does Welcome To T</strong>*** change the game?**</p>\n<p>As a mod, WTT overhauls SPT AKI, touching on almost every vanilla game system, as well as adding completely new systems to the game and its core mechanics. Inspired by open-world hardcore survival projects like STALKER: Anomaly and STALKER: GAMMA, WTT takes SPT’s artificial multiplayer MMO difficulty adders and replaces them with a challenging world economy, loot scarcity rebalancing, a lore friendly quest overhaul, and a map-traveling system built from rewritten portions of the Traveler mod allowing seamless travel between maps. Aside from its changes to the game’s core properties, WTT also adds to the world’s variety of traders, NPC’s, characters, items, and quests:</p>\n<ul>\n<li>Over 500 custom bundles adding new weapons, attachments, wearables, containers, food, medical, and barter items.</li>\n<li>New bosses with their own custom gear that will be properly incorporated into WTT’s quest lines.</li>\n<li>New, meaningful traders with their own lore-friendly quests and narrative elements to help the player progress through the story-line of WTT.</li>\n<li>New playable characters and outfits that will add to the player’s customization abilities.</li>\n<li>New quest types incorporating brand new map extraction points, putting the player’s knowledge and familiarization of SPT’s maps to the test.</li>\n</ul>\n<p>Welcome To T***** stands as one of the largest mods created for SPT AKI thus far.</p>\n<p><strong>When does Welcome To T</strong>*** release?**</p>\n<p><em>Thursday.</em></p>\n<p><strong>Which Thursday?</strong></p>\n<p><em>TBD</em></p>\n<p><strong>Want to follow our progress?</strong></p>\n<p>You can follow the project through it’s development in our discord here:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/Nz6VX78xRa\" rel=\"noreferrer noopener\">https://discord.gg/Nz6VX78xRa</a></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/1278/wtt-pack-n-strap",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": true,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 15,
+ "published_at": "2024-04-05T03:35:00.000000Z",
+ "created_at": "2024-04-05T03:35:19.000000Z",
+ "updated_at": "2026-09-07T18:48:06.000000Z",
+ "owner": {
+  "id": 30890,
+  "name": "GrooveypenguinX",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-05-07T19:55:52.000000Z",
+  "updated_at": "2026-10-04T21:13:58.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 22121,
+   "name": "Tron",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+   "created_at": "2022-08-31T05:49:04.000000Z",
+   "updated_at": "2026-10-05T16:42:55.000000Z"
+  }
+ ],
+ "category": {
+  "id": 15,
+  "hub_id": 78,
+  "title": "Equipment",
+  "slug": "equipment",
+  "description": ""
+ }
+}

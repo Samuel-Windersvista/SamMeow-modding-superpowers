@@ -1,0 +1,4201 @@
+[
+ {
+  "idx": 1,
+  "entry": "[14]本体缺失翻译",
+  "terms": [],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 2,
+  "entry": "[14]客户端ModF12通用翻译器及菜单汉化文本",
+  "terms": [
+   "ModF12"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 3,
+  "entry": "[13]好莱坞第三人称镜头-HollywoodCam",
+  "terms": [
+   "-HollywoodCam",
+   "HollywoodCam"
+  ],
+  "best": {
+   "term": "-HollywoodCam",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-HollywoodCam",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-HollywoodCam",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "HollywoodCam",
+    "id": 2639,
+    "name": "Auto Shoulder Swap",
+    "slug": "auto-shoulder-swap",
+    "dl": 10499,
+    "sc": 0
+   },
+   {
+    "term": "HollywoodCam",
+    "id": 2003,
+    "name": "HollywoodFX",
+    "slug": "hollywoodfx",
+    "dl": 219654,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 6,
+  "entry": "[13]存档编辑器-SPT-AKI Profile Editor",
+  "terms": [
+   "ProfileEditorHelper",
+   "-SPT-AKI Profile Editor"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 9,
+  "entry": "[12]尸体可删除-SPTCorpseCleaner",
+  "terms": [
+   "-SPTCorpseCleaner",
+   "SPTCorpseCleaner"
+  ],
+  "best": {
+   "term": "-SPTCorpseCleaner",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-SPTCorpseCleaner",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 12,
+  "entry": "[12]白色方块bug修复-WhiteBoxFix",
+  "terms": [
+   "bug -WhiteBoxFix",
+   "WhiteBoxFix"
+  ],
+  "best": {
+   "term": "bug -WhiteBoxFix",
+   "id": 1298,
+   "name": "HandsAreNotBusy",
+   "slug": "handsarenotbusy",
+   "dl": 162312,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "bug -WhiteBoxFix",
+    "id": 1298,
+    "name": "HandsAreNotBusy",
+    "slug": "handsarenotbusy",
+    "dl": 162312,
+    "sc": 0
+   },
+   {
+    "term": "bug -WhiteBoxFix",
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "dl": 274738,
+    "sc": 0
+   },
+   {
+    "term": "bug -WhiteBoxFix",
+    "id": 1477,
+    "name": "AutoRun",
+    "slug": "autorun",
+    "dl": 8559,
+    "sc": 0
+   },
+   {
+    "term": "bug -WhiteBoxFix",
+    "id": 1657,
+    "name": "MergeConsumables",
+    "slug": "mergeconsumables",
+    "dl": 85797,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 13,
+  "entry": "[11]我就是爹作弊工具-DadGamerMode",
+  "terms": [
+   "-DadGamerMode",
+   "DadGamerMode"
+  ],
+  "best": {
+   "term": "-DadGamerMode",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-DadGamerMode",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-DadGamerMode",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 14,
+  "entry": "[11]新商人-可购买自己创建的预设枪械-Hephaestus",
+  "terms": [
+   "Hephaestus",
+   "- -Hephaestus"
+  ],
+  "best": {
+   "term": "Hephaestus",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "Hephaestus",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "- -Hephaestus",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 15,
+  "entry": "[11]好莱坞投掷武器视觉辅助-VisualAssist",
+  "terms": [
+   "-VisualAssist",
+   "VisualAssist"
+  ],
+  "best": {
+   "term": "-VisualAssist",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-VisualAssist",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-VisualAssist",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "VisualAssist",
+    "id": 2783,
+    "name": "Fast Grenade Throw",
+    "slug": "fast-grenade-throw",
+    "dl": 7356,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 16,
+  "entry": "[11]扫敌雷达-RadarStandalone",
+  "terms": [
+   "-RadarStandalone",
+   "Radar"
+  ],
+  "best": {
+   "term": "-RadarStandalone",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-RadarStandalone",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-RadarStandalone",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "Radar",
+    "id": 2101,
+    "name": "SPT Leaderboard",
+    "slug": "spt-leaderboard",
+    "dl": 6901,
+    "sc": 0
+   },
+   {
+    "term": "Radar",
+    "id": 2583,
+    "name": "Fika Discord Presence",
+    "slug": "fika-discord-presence",
+    "dl": 1344,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 21,
+  "entry": "[11]更多界面信息-GamePanelHUD",
+  "terms": [
+   "-GamePanelHUD",
+   "GamePanelHUDCore",
+   "GamePanelHUDCompass",
+   "GamePanelHUDGrenade"
+  ],
+  "best": {
+   "term": "-GamePanelHUD",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-GamePanelHUD",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-GamePanelHUD",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 26,
+  "entry": "[10]物品真实堆叠-True Items Redux",
+  "terms": [
+   "True Items Redone",
+   "-True Items Redux"
+  ],
+  "best": {
+   "term": "-True Items Redux",
+   "id": 1619,
+   "name": "Lots of Loot Redux",
+   "slug": "lots-of-loot-redux",
+   "dl": 250073,
+   "sc": 20
+  },
+  "all": [
+   {
+    "term": "True Items Redone",
+    "id": 2898,
+    "name": "FIR Means FIR",
+    "slug": "fir-means-fir",
+    "dl": 3889,
+    "sc": 0
+   },
+   {
+    "term": "True Items Redone",
+    "id": 2239,
+    "name": "Couturier - gear and clothing pack",
+    "slug": "couturier-gear-and-clothing-pack",
+    "dl": 49090,
+    "sc": 0
+   },
+   {
+    "term": "True Items Redone",
+    "id": 1278,
+    "name": "WTT - Pack 'n' Strap",
+    "slug": "wtt-pack-n-strap",
+    "dl": 232976,
+    "sc": 0
+   },
+   {
+    "term": "True Items Redone",
+    "id": 2394,
+    "name": "Instant Insurance",
+    "slug": "instant-insurance",
+    "dl": 36533,
+    "sc": 0
+   },
+   {
+    "term": "True Items Redone",
+    "id": 1362,
+    "name": "Repeatable Quest Config",
+    "slug": "repeatable-quest-config",
+    "dl": 8992,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 1619,
+    "name": "Lots of Loot Redux",
+    "slug": "lots-of-loot-redux",
+    "dl": 250073,
+    "sc": 20
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 3066,
+    "name": "Loot Normalizer",
+    "slug": "loot-normalizer",
+    "dl": 1109,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 2069,
+    "name": "Loot Instant Search",
+    "slug": "loot-instant-search",
+    "dl": 36532,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 2676,
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "dl": 34424,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 875,
+    "name": "VAI: Non-Realistic Tapkov Project",
+    "slug": "vai-non-realistic-tapkov-project",
+    "dl": 15504,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 3059,
+    "name": "Strange Curios",
+    "slug": "strange-curios",
+    "dl": 1301,
+    "sc": 0
+   },
+   {
+    "term": "-True Items Redux",
+    "id": 3106,
+    "name": "Armor Expert",
+    "slug": "armor-expert",
+    "dl": 284,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 27,
+  "entry": "[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES",
+  "terms": [
+   "-INVENTORY ORGANIZING FEATURES",
+   "Seion.Iof"
+  ],
+  "best": {
+   "term": "-INVENTORY ORGANIZING FEATURES",
+   "id": 2167,
+   "name": "CNN - CONTAINERS - RE-UPLOAD",
+   "slug": "cnn-containers-re-upload",
+   "dl": 11208,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-INVENTORY ORGANIZING FEATURES",
+    "id": 2167,
+    "name": "CNN - CONTAINERS - RE-UPLOAD",
+    "slug": "cnn-containers-re-upload",
+    "dl": 11208,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 30,
+  "entry": "[10]小火山的仓库搜索框修复和扩展-SearchBarExtended",
+  "terms": [
+   "-SearchBarExtended",
+   "SearchBarExtended"
+  ],
+  "best": {
+   "term": "-SearchBarExtended",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-SearchBarExtended",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-SearchBarExtended",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 31,
+  "entry": "[10]仓库搜索框-StashSearch",
+  "terms": [
+   "-StashSearch",
+   "StashSearch"
+  ],
+  "best": {
+   "term": "-StashSearch",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-StashSearch",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-StashSearch",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 2907,
+    "name": "StashFilter",
+    "slug": "stashfilter",
+    "dl": 1214,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 2731,
+    "name": "LinkedSearchInStash",
+    "slug": "linkedsearchinstash",
+    "dl": 3043,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 1469,
+    "name": "AutoDeposit",
+    "slug": "autodeposit",
+    "dl": 104449,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 1374,
+    "name": "Player Encumbrance Bar",
+    "slug": "player-encumbrance-bar",
+    "dl": 99257,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 1387,
+    "name": "Simple Crosshair",
+    "slug": "simple-crosshair",
+    "dl": 59222,
+    "sc": 0
+   },
+   {
+    "term": "StashSearch",
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "dl": 804855,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 33,
+  "entry": "[9]解锁所有藏身处装饰-UnlockHideoutCustomization",
+  "terms": [
+   "Hideout Customization Unlocker",
+   "-UnlockHideoutCustomization"
+  ],
+  "best": {
+   "term": "Hideout Customization Unlocker",
+   "id": 2076,
+   "name": "Hideout In Progress",
+   "slug": "hideout-in-progress",
+   "dl": 55852,
+   "sc": 20
+  },
+  "all": [
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2865,
+    "name": "WTT - DoomArcade",
+    "slug": "wtt-doomarcade",
+    "dl": 3019,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2512,
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "dl": 540998,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2500,
+    "name": "Wishlist Extended",
+    "slug": "wishlist-extended",
+    "dl": 7592,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2310,
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "dl": 431796,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2395,
+    "name": "Lacy's PvE Tweaks",
+    "slug": "lacys-pve-tweaks",
+    "dl": 40720,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 1950,
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "dl": 130998,
+    "sc": 0
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2076,
+    "name": "Hideout In Progress",
+    "slug": "hideout-in-progress",
+    "dl": 55852,
+    "sc": 20
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2696,
+    "name": "Hideout Sky",
+    "slug": "hideout-sky",
+    "dl": 1728,
+    "sc": 20
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2705,
+    "name": "Hideout Shootout",
+    "slug": "hideout-shootout",
+    "dl": 3847,
+    "sc": 20
+   },
+   {
+    "term": "Hideout Customization Unlocker",
+    "id": 2915,
+    "name": "Hideout Craft Modifier - HCM",
+    "slug": "hideout-craft-modifier-hcm",
+    "dl": 1998,
+    "sc": 20
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-UnlockHideoutCustomization",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 35,
+  "entry": "[9]项目上下文菜单扩展-ItemContextMenuExt",
+  "terms": [
+   "-ItemContextMenuExt",
+   "ItemContextMenuExt"
+  ],
+  "best": {
+   "term": "-ItemContextMenuExt",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-ItemContextMenuExt",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 36,
+  "entry": "[9]子弹专家-MunitionsExpert",
+  "terms": [
+   "-MunitionsExpert",
+   "MunitionsExpert"
+  ],
+  "best": {
+   "term": "MunitionsExpert",
+   "id": 3006,
+   "name": "Munitions Expert - Reloaded",
+   "slug": "munitions-expert-reloaded",
+   "dl": 2333,
+   "sc": 82
+  },
+  "all": [
+   {
+    "term": "-MunitionsExpert",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-MunitionsExpert",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "MunitionsExpert",
+    "id": 3006,
+    "name": "Munitions Expert - Reloaded",
+    "slug": "munitions-expert-reloaded",
+    "dl": 2333,
+    "sc": 82
+   },
+   {
+    "term": "MunitionsExpert",
+    "id": 3106,
+    "name": "Armor Expert",
+    "slug": "armor-expert",
+    "dl": 284,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 38,
+  "entry": "[9]物品打勾标记提供更多信息-MoreCheckmarks",
+  "terms": [
+   "MoreCheckmarksBackend",
+   "-MoreCheckmarks",
+   "MoreCheckmarks"
+  ],
+  "best": {
+   "term": "-MoreCheckmarks",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-MoreCheckmarks",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-MoreCheckmarks",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "dl": 61050,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 1232,
+    "name": "Lotus",
+    "slug": "lotus",
+    "dl": 187202,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 1342,
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "dl": 453460,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 2419,
+    "name": "Amonya - Ammo Loving Trader & Quester",
+    "slug": "amonya-ammo-loving-trader-quester",
+    "dl": 17174,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "dl": 32562,
+    "sc": 0
+   },
+   {
+    "term": "MoreCheckmarks",
+    "id": 2500,
+    "name": "Wishlist Extended",
+    "slug": "wishlist-extended",
+    "dl": 7592,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 39,
+  "entry": "[9]任务交接自动化-TaskAutomation",
+  "terms": [
+   "-TaskAutomation",
+   "TaskAutomation"
+  ],
+  "best": {
+   "term": "-TaskAutomation",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-TaskAutomation",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-TaskAutomation",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 40,
+  "entry": "[9]藏身处不用打勾-nofirhideout",
+  "terms": [
+   "no-fir-hideout",
+   "-nofirhideout"
+  ],
+  "best": {
+   "term": "no-fir-hideout",
+   "id": 2500,
+   "name": "Wishlist Extended",
+   "slug": "wishlist-extended",
+   "dl": 7592,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "no-fir-hideout",
+    "id": 2500,
+    "name": "Wishlist Extended",
+    "slug": "wishlist-extended",
+    "dl": 7592,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 2407,
+    "name": "QuickSellFlea",
+    "slug": "quicksellflea",
+    "dl": 42206,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 2960,
+    "name": "IOF: Inventory Organizing Feature",
+    "slug": "iof-inventory-organizing-feature",
+    "dl": 1384,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 3054,
+    "name": "QuestCodex",
+    "slug": "questcodex",
+    "dl": 1129,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "dl": 61050,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "dl": 32562,
+    "sc": 0
+   },
+   {
+    "term": "no-fir-hideout",
+    "id": 2887,
+    "name": "Discord Raid Feed",
+    "slug": "discord-raid-feed",
+    "dl": 557,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-nofirhideout",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 41,
+  "entry": "[9]腰带槽-BeltSlot",
+  "terms": [
+   "-BeltSlot",
+   "BeltSlot"
+  ],
+  "best": {
+   "term": "-BeltSlot",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-BeltSlot",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BeltSlot",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 42,
+  "entry": "[9]动态物品重量-DynamicItemWeights",
+  "terms": [
+   "-DynamicItemWeights",
+   "Tosox.DynamicItemWeights"
+  ],
+  "best": {
+   "term": "-DynamicItemWeights",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-DynamicItemWeights",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-DynamicItemWeights",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 43,
+  "entry": "[9]小火山的全界面中文字体切换",
+  "terms": [
+   "FontReplace"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 45,
+  "entry": "[8]沉浸感时间循环-ImmersiveDaylightCycle",
+  "terms": [
+   "ImmersiveDaylightCycle-Server",
+   "-ImmersiveDaylightCycle",
+   "ImmersiveDaylightCycle-FikaModule",
+   "ImmersiveDaylightCycle"
+  ],
+  "best": {
+   "term": "-ImmersiveDaylightCycle",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-ImmersiveDaylightCycle",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 47,
+  "entry": "[8]可拾取穿墙物品-ReachExtender",
+  "terms": [
+   "-ReachExtender",
+   "ReachExtender"
+  ],
+  "best": {
+   "term": "-ReachExtender",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-ReachExtender",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-ReachExtender",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 48,
+  "entry": "[8]boss刷新通知-BossNotifier",
+  "terms": [
+   "boss -BossNotifier",
+   "BossNotifier"
+  ],
+  "best": {
+   "term": "boss -BossNotifier",
+   "id": 2594,
+   "name": "Player Boss Scav",
+   "slug": "player-boss-scav",
+   "dl": 10704,
+   "sc": 30
+  },
+  "all": [
+   {
+    "term": "boss -BossNotifier",
+    "id": 2594,
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "dl": 10704,
+    "sc": 30
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 2210,
+    "name": "Live Like Boss Spawn Chances",
+    "slug": "live-like-boss-spawn-chances",
+    "dl": 4171,
+    "sc": 30
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 1453,
+    "name": "Make Shotguns Great Again!",
+    "slug": "make-shotguns-great-again",
+    "dl": 48422,
+    "sc": 0
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 285008,
+    "sc": 0
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 2583,
+    "name": "Fika Discord Presence",
+    "slug": "fika-discord-presence",
+    "dl": 1344,
+    "sc": 0
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 2949,
+    "name": "Realistic Insurance",
+    "slug": "realistic-insurance",
+    "dl": 1684,
+    "sc": 0
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 2982,
+    "name": "Hideout Overhaul",
+    "slug": "hideout-overhaul",
+    "dl": 2980,
+    "sc": 0
+   },
+   {
+    "term": "boss -BossNotifier",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 49,
+  "entry": "[8]塔科夫天气系统-Tarkov-Weather-System",
+  "terms": [
+   "Tarkov Weather System",
+   "-Tarkov-Weather-System"
+  ],
+  "best": {
+   "term": "Tarkov Weather System",
+   "id": 2120,
+   "name": "Time & Weather Changer NG",
+   "slug": "time-weather-changer-ng",
+   "dl": 30448,
+   "sc": 20
+  },
+  "all": [
+   {
+    "term": "Tarkov Weather System",
+    "id": 2314,
+    "name": "Season Rotator",
+    "slug": "season-rotator",
+    "dl": 36324,
+    "sc": 0
+   },
+   {
+    "term": "Tarkov Weather System",
+    "id": 2120,
+    "name": "Time & Weather Changer NG",
+    "slug": "time-weather-changer-ng",
+    "dl": 30448,
+    "sc": 20
+   },
+   {
+    "term": "Tarkov Weather System",
+    "id": 3062,
+    "name": "Tushonka Rare Collectibles",
+    "slug": "tushonka-rare-collectibles",
+    "dl": 2108,
+    "sc": 0
+   },
+   {
+    "term": "Tarkov Weather System",
+    "id": 2025,
+    "name": "All Quests Checkmarks",
+    "slug": "all-quests-checkmarks",
+    "dl": 61050,
+    "sc": 0
+   },
+   {
+    "term": "Tarkov Weather System",
+    "id": 2621,
+    "name": "T***** DLSS 4.5",
+    "slug": "tarkov-dlss-45",
+    "dl": 12059,
+    "sc": 0
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 791,
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "dl": 1315190,
+    "sc": 20
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 2968,
+    "name": "Quiet Weather",
+    "slug": "quiet-weather",
+    "dl": 1586,
+    "sc": 20
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 2567,
+    "name": "CloudSix - Volumetric Clouds",
+    "slug": "cloudsix-volumetric-clouds",
+    "dl": 19171,
+    "sc": 0
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 3047,
+    "name": "Deploy Screen Overhaul",
+    "slug": "deploy-screen-overhaul",
+    "dl": 1372,
+    "sc": 0
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 3050,
+    "name": "DebugTools",
+    "slug": "debugtools",
+    "dl": 578,
+    "sc": 0
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 3110,
+    "name": "FogSix",
+    "slug": "fogsix",
+    "dl": 349,
+    "sc": 0
+   },
+   {
+    "term": "-Tarkov-Weather-System",
+    "id": 592,
+    "name": "Amands's Graphics",
+    "slug": "amandss-graphics",
+    "dl": 868064,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 50,
+  "entry": "[8]坠落的补给直升机-HeliCrash.ArysReloaded",
+  "terms": [
+   "-HeliCrash.ArysReloaded",
+   "HeliCrash.ArysReloaded"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 51,
+  "entry": "[8]禁用Scav模式-DisableScavMode",
+  "terms": [
+   "Scav -DisableScavMode",
+   "DisableScavMode"
+  ],
+  "best": {
+   "term": "Scav -DisableScavMode",
+   "id": 3042,
+   "name": "Super Scav Case",
+   "slug": "super-scav-case",
+   "dl": 1069,
+   "sc": 30
+  },
+  "all": [
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 3042,
+    "name": "Super Scav Case",
+    "slug": "super-scav-case",
+    "dl": 1069,
+    "sc": 30
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 2594,
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "dl": 10704,
+    "sc": 30
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 1341,
+    "name": "Quick Move To Containers",
+    "slug": "quick-move-to-containers",
+    "dl": 139694,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 2416,
+    "name": "Enable Labyrinth",
+    "slug": "enable-labyrinth",
+    "dl": 59800,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 1755,
+    "name": "Scavs 4 All",
+    "slug": "scavs-4-all",
+    "dl": 14065,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 3025,
+    "name": "Manimal's 1.0 Interchange Expansion Backport ",
+    "slug": "manimals-10-interchange-expansion-backport",
+    "dl": 22551,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 3027,
+    "name": "Exfil Rewards",
+    "slug": "exfil-rewards",
+    "dl": 1534,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 1656,
+    "name": "SPT Discord Rich Presence",
+    "slug": "spt-discord-rich-presence",
+    "dl": 9503,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 1858,
+    "name": "Enemy Markers",
+    "slug": "enemy-markers",
+    "dl": 22568,
+    "sc": 0
+   },
+   {
+    "term": "Scav -DisableScavMode",
+    "id": 2049,
+    "name": "Add Secret Exfil Notes to Caches",
+    "slug": "add-secret-exfil-notes-to-caches",
+    "dl": 10830,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 52,
+  "entry": "[8]武器破门-BackdoorBandit客户端文件",
+  "terms": [
+   "-BackdoorBandit",
+   "BackdoorBandit"
+  ],
+  "best": {
+   "term": "-BackdoorBandit",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-BackdoorBandit",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "BackdoorBandit",
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "dl": 263915,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 53,
+  "entry": "[8]武器破门-BackdoorBandit服务器文件",
+  "terms": [
+   "props-doorbreacher",
+   "-BackdoorBandit"
+  ],
+  "best": {
+   "term": "props-doorbreacher",
+   "id": 3007,
+   "name": "Breakout Outlines",
+   "slug": "breakout-outlines",
+   "dl": 4143,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "props-doorbreacher",
+    "id": 3007,
+    "name": "Breakout Outlines",
+    "slug": "breakout-outlines",
+    "dl": 4143,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 918,
+    "name": "BotDebug",
+    "slug": "botdebug",
+    "dl": 13549,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "dl": 263915,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 1109,
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "dl": 434820,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 1973,
+    "name": "Event Auto Profile Backup",
+    "slug": "event-auto-profile-backup",
+    "dl": 4932,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 3062,
+    "name": "Tushonka Rare Collectibles",
+    "slug": "tushonka-rare-collectibles",
+    "dl": 2108,
+    "sc": 0
+   },
+   {
+    "term": "props-doorbreacher",
+    "id": 1431,
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "dl": 804856,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BackdoorBandit",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 55,
+  "entry": "[8]增加拾取距离-LootRadius",
+  "terms": [
+   "-LootRadius",
+   "LootRadius"
+  ],
+  "best": {
+   "term": "-LootRadius",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-LootRadius",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-LootRadius",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 60,
+  "entry": "[8]更有意义的武器精通-MeaningfulWeaponMasteries",
+  "terms": [
+   "-MeaningfulWeaponMasteries",
+   "MeaningfulWeaponMasteries"
+  ],
+  "best": {
+   "term": "-MeaningfulWeaponMasteries",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-MeaningfulWeaponMasteries",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 61,
+  "entry": "[8]超重也能练耐力-Always-Level-Endurance",
+  "terms": [
+   "-Always-Level-Endurance",
+   "Endurance"
+  ],
+  "best": {
+   "term": "-Always-Level-Endurance",
+   "id": 3005,
+   "name": "Trader Level Requirements Editor",
+   "slug": "trader-level-requirements-editor",
+   "dl": 337,
+   "sc": 20
+  },
+  "all": [
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 2144,
+    "name": "Skill Distribution",
+    "slug": "skill-distribution",
+    "dl": 39250,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 1437,
+    "name": "Simple Workout QTE",
+    "slug": "simple-workout-qte",
+    "dl": 68069,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 2383,
+    "name": "Skills Extended",
+    "slug": "skills-extended",
+    "dl": 55510,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "dl": 73243,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 1237,
+    "name": "Consumables Galore",
+    "slug": "consumables-galore",
+    "dl": 13526,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 3005,
+    "name": "Trader Level Requirements Editor",
+    "slug": "trader-level-requirements-editor",
+    "dl": 337,
+    "sc": 20
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 1706,
+    "name": "Health Per Level",
+    "slug": "health-per-level",
+    "dl": 46538,
+    "sc": 20
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 1305,
+    "name": "Repair Max Durability",
+    "slug": "repair-max-durability",
+    "dl": 37634,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 2961,
+    "name": "Weight Leveling",
+    "slug": "weight-leveling",
+    "dl": 3596,
+    "sc": 0
+   },
+   {
+    "term": "-Always-Level-Endurance",
+    "id": 2863,
+    "name": "Operator Registry",
+    "slug": "operator-registry",
+    "dl": 2579,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 2152,
+    "name": "SJX Elite Stims Addon for Consumables Galore",
+    "slug": "sjx-elite-stims-addon-for-consumables-galore",
+    "dl": 3786,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 1437,
+    "name": "Simple Workout QTE",
+    "slug": "simple-workout-qte",
+    "dl": 68069,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 1688,
+    "name": "More Energy Drinks",
+    "slug": "more-energy-drinks",
+    "dl": 73243,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 2144,
+    "name": "Skill Distribution",
+    "slug": "skill-distribution",
+    "dl": 39250,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 2383,
+    "name": "Skills Extended",
+    "slug": "skills-extended",
+    "dl": 55510,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 1237,
+    "name": "Consumables Galore",
+    "slug": "consumables-galore",
+    "dl": 13526,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 2642,
+    "name": "Vagabond",
+    "slug": "vagabond",
+    "dl": 7049,
+    "sc": 0
+   },
+   {
+    "term": "Endurance",
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "dl": 32562,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 68,
+  "entry": "[8]门可以锁-LockableDoors",
+  "terms": [
+   "LockableDoors-Server",
+   "-LockableDoors",
+   "LockableDoors-FikaModule",
+   "LockableDoors"
+  ],
+  "best": {
+   "term": "LockableDoors-Server",
+   "id": 814,
+   "name": "Late to the Party",
+   "slug": "late-to-the-party",
+   "dl": 47321,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "LockableDoors-Server",
+    "id": 814,
+    "name": "Late to the Party",
+    "slug": "late-to-the-party",
+    "dl": 47321,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-LockableDoors",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "LockableDoors-FikaModule",
+    "id": 814,
+    "name": "Late to the Party",
+    "slug": "late-to-the-party",
+    "dl": 47321,
+    "sc": 0
+   },
+   {
+    "term": "LockableDoors",
+    "id": 814,
+    "name": "Late to the Party",
+    "slug": "late-to-the-party",
+    "dl": 47321,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 69,
+  "entry": "[8]火山家的实时字幕-Volcano-subtitle",
+  "terms": [
+   "-Volcano-subtitle",
+   "Subtitle"
+  ],
+  "best": {
+   "term": "-Volcano-subtitle",
+   "id": 2709,
+   "name": "Miyako Carry Service",
+   "slug": "miyako-carry-service",
+   "dl": 12854,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-Volcano-subtitle",
+    "id": 2709,
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "dl": 12854,
+    "sc": 0
+   },
+   {
+    "term": "Subtitle",
+    "id": 2709,
+    "name": "Miyako Carry Service",
+    "slug": "miyako-carry-service",
+    "dl": 12854,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 72,
+  "entry": "[7]真实的热成像-realisticThermalScopes",
+  "terms": [
+   "realisticThermalScopes",
+   "-realisticThermalScopes"
+  ],
+  "best": {
+   "term": "-realisticThermalScopes",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-realisticThermalScopes",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-realisticThermalScopes",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 74,
+  "entry": "[7]反重力臂章-AntigravArmbands",
+  "terms": [
+   "antigravarmbands",
+   "-AntigravArmbands"
+  ],
+  "best": {
+   "term": "-AntigravArmbands",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-AntigravArmbands",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-AntigravArmbands",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 75,
+  "entry": "[7]更大的背包-BetterBackpacks",
+  "terms": [
+   "JoshMateBetterBackPacks",
+   "-BetterBackpacks"
+  ],
+  "best": {
+   "term": "-BetterBackpacks",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-BetterBackpacks",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BetterBackpacks",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 76,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework客户端文件",
+  "terms": [
+   "-ReflexSightsRework",
+   "ReflexSightsRework"
+  ],
+  "best": {
+   "term": "-ReflexSightsRework",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-ReflexSightsRework",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 77,
+  "entry": "[7]反射镜视野重做-ReflexSightsRework服务器文件",
+  "terms": [
+   "ReflexSightsRework",
+   "-ReflexSightsRework"
+  ],
+  "best": {
+   "term": "-ReflexSightsRework",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-ReflexSightsRework",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-ReflexSightsRework",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 79,
+  "entry": "[7]平衡的夜视装备视效-BRNVG客户端文件",
+  "terms": [
+   "-BRNVG",
+   "BorkelRNVG",
+   "WindowsInput"
+  ],
+  "best": {
+   "term": "-BRNVG",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-BRNVG",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   },
+   {
+    "term": "BorkelRNVG",
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "dl": 263915,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 80,
+  "entry": "[7]平衡的夜视装备视效-BRNVG服务器文件",
+  "terms": [
+   "BRNVG - N-15 Adapter",
+   "-BRNVG"
+  ],
+  "best": {
+   "term": "BRNVG - N-15 Adapter",
+   "id": 954,
+   "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+   "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+   "dl": 263915,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "BRNVG - N-15 Adapter",
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "dl": 263915,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-BRNVG",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 83,
+  "entry": "[7]弹匣优化管理系统-MagazineManagementSystem",
+  "terms": [
+   "[MMS] Magazine Management System",
+   "-MagazineManagementSystem"
+  ],
+  "best": {
+   "term": "-MagazineManagementSystem",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-MagazineManagementSystem",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 84,
+  "entry": "[7]面具修复-mask-fix",
+  "terms": [
+   "mask-fix",
+   "-mask-fix"
+  ],
+  "best": {
+   "term": "mask-fix",
+   "id": 3109,
+   "name": "Knight Mask Fix (4.1.3+)",
+   "slug": "knight-mask-fix-413",
+   "dl": 582,
+   "sc": 82
+  },
+  "all": [
+   {
+    "term": "mask-fix",
+    "id": 3109,
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "dl": 582,
+    "sc": 82
+   },
+   {
+    "term": "mask-fix",
+    "id": 3090,
+    "name": "DaCard",
+    "slug": "dacard",
+    "dl": 633,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 1263,
+    "name": "Epic's All in One",
+    "slug": "epics-all-in-one",
+    "dl": 274738,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 954,
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "dl": 263915,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 2478,
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "dl": 32562,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 2864,
+    "name": "Manimal's CS Gas",
+    "slug": "manimals-cs-gas",
+    "dl": 32915,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 1569,
+    "name": "Wolfik's Heavy Trooper Masks",
+    "slug": "wolfiks-heavy-trooper-masks",
+    "dl": 45382,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 2554,
+    "name": "Change Helmet Visor",
+    "slug": "change-helmet-visor",
+    "dl": 6903,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "dl": 302914,
+    "sc": 0
+   },
+   {
+    "term": "mask-fix",
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "dl": 49221,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 85,
+  "entry": "[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化",
+  "terms": [
+   "AutoCompat Framework",
+   "MOD -autocompatframework- AI"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 86,
+  "entry": "[7]武器动画更新-P90弹匣动画-transparentp90mag",
+  "terms": [
+   "Transparent P90 Mag",
+   "-P90 -transparentp90mag"
+  ],
+  "best": {
+   "term": "Transparent P90 Mag",
+   "id": 2774,
+   "name": "Transparent Sights",
+   "slug": "transparent-sights",
+   "dl": 5940,
+   "sc": 20
+  },
+  "all": [
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2774,
+    "name": "Transparent Sights",
+    "slug": "transparent-sights",
+    "dl": 5940,
+    "sc": 20
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2206,
+    "name": "Item Preview QoL + screenshots",
+    "slug": "item-preview-qol-screenshots",
+    "dl": 17818,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2879,
+    "name": "WebOverlay",
+    "slug": "weboverlay",
+    "dl": 9173,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2101,
+    "name": "SPT Leaderboard",
+    "slug": "spt-leaderboard",
+    "dl": 6901,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2423,
+    "name": "C11 - True North",
+    "slug": "c11-true-north",
+    "dl": 43739,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 3069,
+    "name": "Hj's Improved Customization UI",
+    "slug": "hjs-improved-customization-ui",
+    "dl": 2042,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 1125,
+    "name": "Tactical Gear Component",
+    "slug": "tactical-gear-component",
+    "dl": 302914,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2246,
+    "name": "WTT- Armory",
+    "slug": "wtt-armory",
+    "dl": 285008,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 2658,
+    "name": "Camo And Stickers",
+    "slug": "camo-and-stickers",
+    "dl": 49221,
+    "sc": 0
+   },
+   {
+    "term": "Transparent P90 Mag",
+    "id": 3110,
+    "name": "FogSix",
+    "slug": "fogsix",
+    "dl": 349,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 87,
+  "entry": "[7]武器动画更新器-AnimatorUpdater",
+  "terms": [
+   "-AnimatorUpdater",
+   "UpdateHierarchy"
+  ],
+  "best": {
+   "term": "-AnimatorUpdater",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-AnimatorUpdater",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-AnimatorUpdater",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 89,
+  "entry": "[6]分离敌意-SeparateHostility",
+  "terms": [
+   "-SeparateHostility",
+   "dk.SeparateHostility"
+  ],
+  "best": {
+   "term": "-SeparateHostility",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  "all": [
+   {
+    "term": "-SeparateHostility",
+    "id": 164,
+    "name": "Freecam",
+    "slug": "freecam",
+    "dl": 52991,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 167,
+    "name": "Ammo Stats",
+    "slug": "ammo-stats",
+    "dl": 212487,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 236,
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "dl": 1327302,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 374,
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "dl": 153491,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 505,
+    "name": "Olympus",
+    "slug": "olympus",
+    "dl": 488,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 526,
+    "name": "All The Clothes",
+    "slug": "all-the-clothes",
+    "dl": 192577,
+    "sc": 0
+   },
+   {
+    "term": "-SeparateHostility",
+    "id": 535,
+    "name": "Andrudis QuestManiac",
+    "slug": "andrudis-questmaniac",
+    "dl": 10551,
+    "sc": 0
+   }
+  ]
+ },
+ {
+  "idx": 91,
+  "entry": "[6]AI锁头重定向-Headshot Damage Redirection",
+  "terms": [
+   "AI -Headshot Damage Redirection",
+   "somtam.HeadShotRedirect"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 92,
+  "entry": "[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化",
+  "terms": [
+   "AI -thuynguyentrungdang That.s.Lit - AI",
+   "ThatsLit.Core"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 99,
+  "entry": "[5]舒适家园系统-HomeComforts - 已AI优化",
+  "terms": [
+   "HomeComforts-Server",
+   "-HomeComforts - AI",
+   "HomeComforts-Packets",
+   "HomeComforts"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 100,
+  "entry": "[5]战局内存储-LeaveItThere - 已AI优化",
+  "terms": [
+   "LeaveItThere-Server",
+   "-LeaveItThere - AI",
+   "LeaveItThere-FikaModule",
+   "LeaveItThere"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 101,
+  "entry": "[5]以物易物经济系统-barter_economy-已AI优化",
+  "terms": [
+   "barter_economy",
+   "-barter_economy- AI"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 102,
+  "entry": "[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化",
+  "terms": [
+   "-TarkovIRL_W.H.M( - AI",
+   "TarkovIRL-WHM",
+   "TarkovIRL"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 103,
+  "entry": "[5]现实主义大修-Realism - 已AI优化",
+  "terms": [
+   "SPT Realism Mod",
+   "-Realism - AI",
+   "RealismMod"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 104,
+  "entry": "[5]经济与制造系统大修-Softcore - 已AI优化",
+  "terms": [
+   "softcore",
+   "-Softcore - AI"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 105,
+  "entry": "[5]全地图间移动套装-IEAPI+PTT - AI优化版",
+  "terms": [
+   "path-to-tarkov",
+   "-IEAPI+PTT - AI",
+   "InteractableExfilsAPI",
+   "PTT-Fika"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 106,
+  "entry": "[5]战局大修-RaidOverhaul - 已AI增强版本",
+  "terms": [
+   "Raid Overhaul",
+   "-RaidOverhaul - AI",
+   "RaidOverhaul",
+   "RaidOverhaulFika"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 107,
+  "entry": "[5]新增5个开局角色-CustomProfiles",
+  "terms": [
+   "EFCL-CustomProfiles",
+   "5 -CustomProfiles"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 108,
+  "entry": "[4]新商人-AES",
+  "terms": [
+   "AES",
+   "-AES"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 109,
+  "entry": "[4]新商人-VolkovTrader",
+  "terms": [
+   "VolkovTrader",
+   "-VolkovTrader"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 110,
+  "entry": "[4]新商人-Epakim1-1",
+  "terms": [
+   "EpaKim1",
+   "-Epakim1-1"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 111,
+  "entry": "[4]新商人-不明生还者-UnknownSurvivor",
+  "terms": [
+   "UnknownSurvivor",
+   "- -UnknownSurvivor"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 120,
+  "entry": "[3]新配件-Eco-Attachment Emporium",
+  "terms": [
+   "Eco-Attachment-Emporium",
+   "-Eco-Attachment Emporium"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 121,
+  "entry": "[3]新配件-Echoes.of.Tarkov.-.Requisitions",
+  "terms": [
+   "Echoes of Tarkov - Requisitions",
+   "-Echoes.of.Tarkov.-.Requisitions"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 123,
+  "entry": "[3]新配件-BlackCore",
+  "terms": [
+   "Black Core",
+   "-BlackCore"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 124,
+  "entry": "[3]新配件-MagTape",
+  "terms": [
+   "Mag Tape",
+   "-MagTape"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 125,
+  "entry": "[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst",
+  "terms": [
+   "Ak-105-Hyperburst",
+   "- - BabaYaga x Hyperburst",
+   "WttHyperburstWrapper"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 127,
+  "entry": "[3]新武器-国产武器-1SD-QBZ191",
+  "terms": [
+   "1SD-QBZ191",
+   "- -1SD-QBZ191"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 129,
+  "entry": "[3]新武器-AK50",
+  "terms": [
+   "AK50",
+   "-AK50"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 130,
+  "entry": "[3]新武器-SIG_MCX_VIRTUS",
+  "terms": [
+   "sig_mcx_virtus",
+   "-SIG_MCX_VIRTUS"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 133,
+  "entry": "[2]高清材质-TarkovHDRework",
+  "terms": [
+   "TarkovHDRework",
+   "-TarkovHDRework"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 134,
+  "entry": "[2]自定义配方-tarkovcraft",
+  "terms": [
+   "TarkovCraft",
+   "-tarkovcraft"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 137,
+  "entry": "[2]新物品-竞技场赛季奖励-SPT Battlepass",
+  "terms": [
+   "Pluto! - SPT Battlepass",
+   "- -SPT Battlepass"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 142,
+  "entry": "[2]新酒水-WTT - CornerStore",
+  "terms": [
+   "WTT-Corner Store",
+   "-WTT - CornerStore"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 143,
+  "entry": "[2]新物品-地图容器-SecureMapbookMod",
+  "terms": [
+   "MrVibesRSA-SecureMapbookMod",
+   "- -SecureMapbookMod"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 146,
+  "entry": "[2]新物品-藏身处猫咪-hideoutcat",
+  "terms": [
+   "- -hideoutcat",
+   "AssetBundleLoader",
+   "hideoutcat"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 148,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件",
+  "terms": [
+   "- -Virtual's Custom Quest Loader",
+   "VCQLQuestZones"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 149,
+  "entry": "[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件",
+  "terms": [
+   "Virtuals Custom Quest Loader",
+   "- -Virtual's Custom Quest Loader"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 150,
+  "entry": "[1]前置框架-自定义交互-CustomInteractions",
+  "terms": [
+   "- -CustomInteractions",
+   "CustomInteractions"
+  ],
+  "best": null,
+  "all": []
+ },
+ {
+  "idx": 151,
+  "entry": "[1]前置框架-KmyTarkovApi",
+  "terms": [
+   "-KmyTarkovApi",
+   "Crc32.NET",
+   "HtmlAgilityPack",
+   "KmyTarkovApi"
+  ],
+  "best": null,
+  "all": []
+ }
+]

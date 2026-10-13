@@ -1,0 +1,33 @@
+{
+ "id": 1469,
+ "hub_id": 2027,
+ "guid": "com.tyfon.autodeposit",
+ "name": "AutoDeposit",
+ "slug": "autodeposit",
+ "teaser": "Transfer items into stash containers with matching items, inspired by Terraria's Quick Stack.",
+ "thumbnail": "https://files.sp-mod.com/mods/2027.png",
+ "downloads": 104481,
+ "favourites_count": 136,
+ "endorsements_count": 15,
+ "description": "<h3>AutoDeposit</h3>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Features</div>\n<div class=\"tab-content\"><p>Features</p>\n<h3>What this mod will do</h3>\n<p>Click the button added to your equipment, and items will be transferred to containers in your stash that already contain that same item. This allows you to quickly group multiple copies of items into the same container. This leaves it up to you, the player, to decide where to put the first instance of any given item that you get.</p>\n<p>If you have containers in your equipment (like a rig in your backpack), it will transfer items inside those containers. It will also transfer the container itself if and once they are empty, following the same rules as any other item. It will not transfer non-empty containers.</p>\n<p><strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/Qk0k2aa.png\" alt=\"Qk0k2aa.png\" /></strong></p>\n<h3>What this mod is NOT</h3>\n<p>This mod is not a “dump my whole inventory and automatically sort it into specialty containers” mod. The responsibility of organizing your stash is still on you, but (for example) once you’ve decided that 855A1 ammo goes into that particular ammo box, this mod will deposit future 855A1 into that same box.</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Installation</div>\n<div class=\"tab-content\"><p>Installation</p>\n<p>Like almost every mod here, extract the 7z archive into your SPT directory.</p>\n<p>You need <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7zip</a> to extract and install this mod.</p>\n<p>Example (thanks DrakiaXYZ for the gif)</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/vKRw58b.gif\" alt=\"vKRw58b.gif\" /></p>\n<h3>Uninstallation</h3>\n<p>To uninstall, simply delete <strong>Tyfon.AutoDeposit.dll</strong> from <strong>&lt;your SPT folder&gt;/BepInEx/plugins</strong></p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Troubleshooting</div>\n<div class=\"tab-content\"><p>Troubleshooting</p>\n<p><strong>Q: My items were deleted!</strong></p>\n<p>A: Have you double and triple checked? This mod will put items into containers even if they’re nested 50 backpacks deep. Check again. Use <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2148/stash-search\" rel=\"noreferrer noopener\">Stash Search</a>.</p>\n<p><strong>Q: Your icon is Terraria’s deposit icon, not quick stack.</strong></p>\n<p>A: Hush, you.</p>\n<p><strong>Q: I found a bug!</strong></p>\n<p>A: Open an <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/tyfon7/AutoDeposit/issues\" rel=\"noreferrer noopener\">issue</a> or make a comment here. Please include logs if possible!</p></div></div></div>\n<p>If you’d like to support my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/tyfon\" rel=\"noreferrer noopener\">buy me a coffee</a> ☕</p>\n",
+ "detail_url": "https://sp-mod.com/mod/1469/autodeposit",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": null,
+ "published_at": "2024-06-07T08:03:44.000000Z",
+ "created_at": "2024-06-07T08:03:44.000000Z",
+ "updated_at": "2026-08-12T22:53:05.000000Z",
+ "owner": {
+  "id": 46005,
+  "name": "Tyfon",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-02-27T23:21:18.000000Z",
+  "updated_at": "2026-09-30T00:12:22.000000Z"
+ },
+ "additional_authors": [],
+ "category": null
+}

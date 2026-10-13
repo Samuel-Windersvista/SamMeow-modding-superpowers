@@ -1,0 +1,160 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 12935,
+   "hub_id": null,
+   "version": "1.1.0",
+   "description": "<p>Updated to 4.0!\nEnjoy!</p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.1.0",
+   "content_length": 2724694,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 17240,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-01-28T22:59:00.000000Z",
+   "created_at": "2026-01-28T22:59:53.000000Z",
+   "updated_at": "2026-07-28T07:57:42.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13653,
+   "hub_id": null,
+   "version": "1.2.0",
+   "description": "<ul>\n<li>Refactored whole project to better use original methods for cleanup. Now the mod will only affect initial main menu, weapon/armor modding screens. Before this change our menu changes bleed into other screens like in raid menu and other similar menu views.</li>\n<li>Added ability to spin character in main menu!</li>\n</ul>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/dcb64c14-049f-4e9d-9277-a6ccca32057e\" alt=\"Menu Overhaul Spin Preview\" /></p>\n<hr />\n<p><em>Install by dragging the folder in the ZIP into your SPT folder</em></p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.2.0",
+   "content_length": 2731763,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 3072,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-05-25T22:52:00.000000Z",
+   "created_at": "2026-05-25T22:53:07.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13703,
+   "hub_id": null,
+   "version": "1.2.1",
+   "description": "<ul>\n<li>New advanced settings for Player Preview camera rotation and position</li>\n<li>Updated icons to fit default EFT style/theme more</li>\n<li>Users now have the ability to change background and icon images by replacing the ones that comes with this mod</li>\n<li>Added option for enabling Player Preview animations (same animations as on matchmaking/loading screen)</li>\n<li>Added option for increased anti-aliasing and texture fidelity of Player Preview.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.2.1",
+   "content_length": 764017,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 2431,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-06-04T20:42:00.000000Z",
+   "created_at": "2026-06-04T20:42:49.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13753,
+   "hub_id": null,
+   "version": "1.2.2",
+   "description": "<ul>\n<li>Improved hover effect of menu items, now looks more professional</li>\n<li>Added advanced settings for hover effects</li>\n<li>Added setting for moving individual menu items (user requested)</li>\n<li>Refactor behind the scenes to make the project more solid</li>\n</ul>\n<hr />\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://github.com/user-attachments/assets/07b913aa-9bb0-416e-92a0-79a0806bc5fa\" alt=\"Menu Overhaul Hover Effect\" /></p>\n<hr />\n<p><em>Install by dragging the folder in the ZIP into your SPT folder, remember to backup your custom backgrounds or icons</em></p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.2.2",
+   "content_length": 779064,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 18042,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-06-12T01:55:00.000000Z",
+   "created_at": "2026-06-12T01:56:19.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14757,
+   "hub_id": null,
+   "version": "1.3.0",
+   "description": "<p>Updated to SPT 4.1</p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.3.0",
+   "content_length": 779102,
+   "spt_version_constraint": "~4.1",
+   "downloads": 12311,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-15T19:23:00.000000Z",
+   "created_at": "2026-08-15T19:24:04.000000Z",
+   "updated_at": "2026-08-15T19:36:29.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1610,
+   "hub_id": 13129,
+   "version": "1.0.5",
+   "description": "<ul>\n<li>Plugin now disables while in-raid. No more preview character and broken buttons when pressing ESC in-raid.</li>\n<li>Changes to the player preview. It had some visual artifacts after returning to the main menu inside the hideout. This is now fixed</li>\n</ul>\n<p>Known issue: There can be a white line crossing over your character preview on rare occasions. Should go away if you run a raid. This happened 1 out of 10 times loading the menu for me. I will try to fix it.</p>\n<p>This release is only for SPT 3.10+</p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.0.5",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 3967,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-01-16T17:46:26.000000Z",
+   "created_at": "2025-01-16T17:46:26.000000Z",
+   "updated_at": "2026-05-14T02:31:26.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 900,
+   "hub_id": 13896,
+   "version": "1.0.7",
+   "description": "<p>Updated to SPT version 3.11</p>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.0.7",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 11883,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-04-01T20:51:59.000000Z",
+   "created_at": "2025-04-01T20:51:59.000000Z",
+   "updated_at": "2026-05-14T02:01:51.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 349,
+   "hub_id": 14523,
+   "version": "1.0.9",
+   "description": "<ul>\n<li>Added the ability to set a custom color for some elements</li>\n<li>Updated one of the lights on the player model to share that color</li>\n<li>Improved project structure and logic</li>\n</ul>\n<div class=\"youtube-lite\" data-video-id=\"AzcTRCgWmD4\" data-embed-url=\"https://www.youtube-nocookie.com/embed/AzcTRCgWmD4?autoplay=1\"><a href=\"https://www.youtube.com/watch?v=AzcTRCgWmD4\" target=\"_blank\" rel=\"noreferrer noopener\">Play YouTube video</a></div>\n",
+   "link": "https://sp-mod.com/mod/download/1775/wtt-menu-overhaul/1.0.9",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 19388,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-06-26T02:50:24.000000Z",
+   "created_at": "2025-06-26T02:50:24.000000Z",
+   "updated_at": "2026-05-14T01:45:08.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1775/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1775/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1775/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1775/versions",
+  "per_page": 50,
+  "to": 8,
+  "total": 8
+ }
+}

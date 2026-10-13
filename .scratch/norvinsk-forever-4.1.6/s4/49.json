@@ -1,0 +1,107 @@
+{
+ "idx": 49,
+ "entry": "[8]塔科夫天气系统-Tarkov-Weather-System",
+ "terms": [
+  "Tarkov Weather System",
+  "-Tarkov-Weather-System"
+ ],
+ "all": [
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "dl": 1315190,
+   "sc": 20
+  },
+  {
+   "term": "Tarkov Weather System",
+   "id": 2120,
+   "name": "Time & Weather Changer NG",
+   "slug": "time-weather-changer-ng",
+   "dl": 30448,
+   "sc": 20
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 2968,
+   "name": "Quiet Weather",
+   "slug": "quiet-weather",
+   "dl": 1586,
+   "sc": 20
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 592,
+   "name": "Amands's Graphics",
+   "slug": "amandss-graphics",
+   "dl": 868064,
+   "sc": 0
+  },
+  {
+   "term": "Tarkov Weather System",
+   "id": 2025,
+   "name": "All Quests Checkmarks",
+   "slug": "all-quests-checkmarks",
+   "dl": 61050,
+   "sc": 0
+  },
+  {
+   "term": "Tarkov Weather System",
+   "id": 2314,
+   "name": "Season Rotator",
+   "slug": "season-rotator",
+   "dl": 36324,
+   "sc": 0
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 2567,
+   "name": "CloudSix - Volumetric Clouds",
+   "slug": "cloudsix-volumetric-clouds",
+   "dl": 19171,
+   "sc": 0
+  },
+  {
+   "term": "Tarkov Weather System",
+   "id": 2621,
+   "name": "T***** DLSS 4.5",
+   "slug": "tarkov-dlss-45",
+   "dl": 12059,
+   "sc": 0
+  },
+  {
+   "term": "Tarkov Weather System",
+   "id": 3062,
+   "name": "Tushonka Rare Collectibles",
+   "slug": "tushonka-rare-collectibles",
+   "dl": 2108,
+   "sc": 0
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 3047,
+   "name": "Deploy Screen Overhaul",
+   "slug": "deploy-screen-overhaul",
+   "dl": 1372,
+   "sc": 0
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 3050,
+   "name": "DebugTools",
+   "slug": "debugtools",
+   "dl": 578,
+   "sc": 0
+  },
+  {
+   "term": "-Tarkov-Weather-System",
+   "id": 3110,
+   "name": "FogSix",
+   "slug": "fogsix",
+   "dl": 349,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

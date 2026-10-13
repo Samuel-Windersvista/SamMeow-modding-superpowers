@@ -1,0 +1,464 @@
+{
+ "term": "Hideout Customization Unlocker",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2865,
+    "hub_id": null,
+    "guid": "com.wtt.doomarcade",
+    "name": "WTT - DoomArcade",
+    "slug": "wtt-doomarcade",
+    "teaser": "Experience hell on earth... in your hideout?",
+    "thumbnail": "https://files.sp-mod.com/mods/j5H8EiHCzZERxVT4mXBPTDGLxg0GC9y5FmWV3zOv.png",
+    "downloads": 3018,
+    "favourites_count": 21,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2865/wtt-doomarcade",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-01T03:10:00.000000Z",
+    "created_at": "2026-08-01T03:57:59.000000Z",
+    "updated_at": "2026-08-02T06:02:13.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2512,
+    "hub_id": null,
+    "guid": "com.wtt.contentbackport",
+    "name": "WTT - Content Backport",
+    "slug": "wtt-content-backport",
+    "teaser": "The moment you've all been waiting for....",
+    "thumbnail": "https://files.sp-mod.com/mods/55TZW6CnHJHPtEYdFvuJWmHazdFuhlCiMLfsbagQ.jpg",
+    "downloads": 540932,
+    "favourites_count": 1059,
+    "endorsements_count": 138,
+    "detail_url": "https://sp-mod.com/mod/2512/wtt-content-backport",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2025-12-26T03:52:00.000000Z",
+    "created_at": "2025-12-26T03:52:16.000000Z",
+    "updated_at": "2026-10-04T20:25:05.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 36153,
+      "name": "EpicRangeTime",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/80209a4aec54836a03e10eeabd944d2668084215_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/e92f6113cef81fe9a7ad58950e63d8fb25468163_1280w.webp",
+      "created_at": "2023-08-26T03:19:00.000000Z",
+      "updated_at": "2026-10-03T02:57:01.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 2500,
+    "hub_id": null,
+    "guid": "com.zgfuedkx.wishlistextended",
+    "name": "Wishlist Extended",
+    "slug": "wishlist-extended",
+    "teaser": "Extends EFT’s auto-wishlist system with advanced customization options. Automatically wishlist items for selected crafts, hideout upgrades, and barters. ",
+    "thumbnail": "https://files.sp-mod.com/mods/ZbMJC1Owde78GfkgW5rdh9n590gGmeXYb5uJUBcF.png",
+    "downloads": 7592,
+    "favourites_count": 67,
+    "endorsements_count": 16,
+    "detail_url": "https://sp-mod.com/mod/2500/wishlist-extended",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-12-15T17:19:00.000000Z",
+    "created_at": "2025-12-15T16:19:53.000000Z",
+    "updated_at": "2026-09-01T09:46:38.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2310,
+    "hub_id": 3025,
+    "guid": "com.wtt.commonlib",
+    "name": "WTT - CommonLib",
+    "slug": "wtt-commonlib",
+    "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+    "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+    "downloads": 431776,
+    "favourites_count": 1302,
+    "endorsements_count": 73,
+    "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": true,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-09-15T02:44:00.000000Z",
+    "created_at": "2025-09-15T02:44:54.000000Z",
+    "updated_at": "2026-08-23T15:19:33.000000Z",
+    "owner": {
+     "id": 30890,
+     "name": "GrooveypenguinX",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-05-07T19:55:52.000000Z",
+     "updated_at": "2026-10-04T21:13:58.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2395,
+    "hub_id": null,
+    "guid": "com.lacyway.lpt",
+    "name": "Lacy's PvE Tweaks",
+    "slug": "lacys-pve-tweaks",
+    "teaser": "Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now you can queue right into it! Want to make quests less grindy, or less restrictive? Now you can!",
+    "thumbnail": "https://files.sp-mod.com/mods/0ug5F4fg5Eacip5HI2O2JQAWPalcgzexsooby6xn.png",
+    "downloads": 40719,
+    "favourites_count": 163,
+    "endorsements_count": 26,
+    "detail_url": "https://sp-mod.com/mod/2395/lacys-pve-tweaks",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-08-19T19:13:00.000000Z",
+    "created_at": "2025-10-23T07:52:05.000000Z",
+    "updated_at": "2026-09-28T20:21:04.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1950,
+    "hub_id": 2622,
+    "guid": "com.tyfon.weaponcustomizer",
+    "name": "Weapon Customizer",
+    "slug": "weapon-customizer",
+    "teaser": "Personalize your weapon! Adjust rails and attachment positioning.",
+    "thumbnail": "https://files.sp-mod.com/mods/2622.png",
+    "downloads": 130989,
+    "favourites_count": 289,
+    "endorsements_count": 30,
+    "detail_url": "https://sp-mod.com/mod/1950/weapon-customizer",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-01-06T22:11:00.000000Z",
+    "created_at": "2025-01-06T22:11:59.000000Z",
+    "updated_at": "2026-08-15T23:00:11.000000Z",
+    "owner": {
+     "id": 46005,
+     "name": "Tyfon",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-27T23:21:18.000000Z",
+     "updated_at": "2026-09-30T00:12:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2076,
+    "hub_id": 2760,
+    "guid": "com.tyfon.hideoutinprogress",
+    "name": "Hideout In Progress",
+    "slug": "hideout-in-progress",
+    "teaser": "Turn in items for hideout construction as you get them!",
+    "thumbnail": "https://files.sp-mod.com/mods/2760.png",
+    "downloads": 55849,
+    "favourites_count": 191,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/2076/hideout-in-progress",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2025-04-02T09:30:00.000000Z",
+    "created_at": "2025-04-02T09:30:00.000000Z",
+    "updated_at": "2026-08-16T19:44:05.000000Z",
+    "owner": {
+     "id": 46005,
+     "name": "Tyfon",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-27T23:21:18.000000Z",
+     "updated_at": "2026-09-30T00:12:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2696,
+    "hub_id": null,
+    "guid": "7bpencil.hideoutsky",
+    "name": "Hideout Sky",
+    "slug": "hideout-sky",
+    "teaser": "Finally some fresh air",
+    "thumbnail": "https://files.sp-mod.com/mods/jDz2cPvWk97hMuly1HV8fTVQKggLVVxxLyO3RP4J.png",
+    "downloads": 1728,
+    "favourites_count": 9,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2696/hideout-sky",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2026-05-18T15:08:00.000000Z",
+    "created_at": "2026-05-18T15:05:23.000000Z",
+    "updated_at": "2026-08-05T06:03:56.000000Z",
+    "owner": {
+     "id": 106491,
+     "name": "7Bpencil",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/m0WMEpWmYMyvlzjGaDzw4yYFLyLfv9zZIlDFctM3_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/eYWJOQryIx6DpPTaprSWYBSfUe5t8xPiHaaXgYQp_1280w.webp",
+     "created_at": "2026-03-03T10:57:21.000000Z",
+     "updated_at": "2026-10-05T04:16:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2705,
+    "hub_id": null,
+    "guid": "com.moxopixel.hideoutshootout",
+    "name": "Hideout Shootout",
+    "slug": "hideout-shootout",
+    "teaser": "Enables use of your weapon in the Hideout outside of the shooting range",
+    "thumbnail": "https://files.sp-mod.com/mods/pqPenHoHrqlSiEArqWs0eVeH6fNVyuVFInqvFWXz.jpg",
+    "downloads": 3845,
+    "favourites_count": 41,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2705/hideout-shootout",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2026-05-25T23:03:00.000000Z",
+    "created_at": "2026-05-25T23:13:48.000000Z",
+    "updated_at": "2026-08-15T23:33:03.000000Z",
+    "owner": {
+     "id": 29835,
+     "name": "MoxoPixel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+     "created_at": "2023-04-08T03:49:17.000000Z",
+     "updated_at": "2026-10-02T10:37:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2915,
+    "hub_id": null,
+    "guid": "com.elchivor.hideoutcraftmodifier",
+    "name": "Hideout Craft Modifier - HCM",
+    "slug": "hideout-craft-modifier-hcm",
+    "teaser": "Modify your hideout recipes to your liking.",
+    "thumbnail": "https://files.sp-mod.com/mods/0TLK6rcngr5AIqvR2sGHsE7tB0KFXhNLVfnZYpws.png",
+    "downloads": 1998,
+    "favourites_count": 26,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/2915/hideout-craft-modifier-hcm",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2026-08-14T18:08:00.000000Z",
+    "created_at": "2026-08-14T19:00:05.000000Z",
+    "updated_at": "2026-09-25T18:32:05.000000Z",
+    "owner": {
+     "id": 120536,
+     "name": "elChivoR",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/O6qIf3odImeXfdrC1lybIqqdvXLiSR9cYhJqUohg_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-08-14T14:45:41.000000Z",
+     "updated_at": "2026-09-26T04:00:36.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

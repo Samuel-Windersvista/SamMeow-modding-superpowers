@@ -1,0 +1,464 @@
+{
+ "term": "AI MOD -BigBrain - AI",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1706,
+    "hub_id": 2327,
+    "guid": "com.fryciarz7.spt.hpl",
+    "name": "Health Per Level",
+    "slug": "health-per-level",
+    "teaser": "Increase health depending on player level",
+    "thumbnail": "https://files.sp-mod.com/mods/2327.png",
+    "downloads": 46536,
+    "favourites_count": 98,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/1706/health-per-level",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-09-02T09:33:00.000000Z",
+    "created_at": "2024-09-02T09:33:06.000000Z",
+    "updated_at": "2026-08-08T12:13:00.000000Z",
+    "owner": {
+     "id": 499,
+     "name": "fryciarz7",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/ccf11793b77a66f80c3f48681fd843817cec2a96_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/Ny86wIzIcrlEaynXtVVKFxwdH226UflXIb2ahje5_2560w.webp",
+     "created_at": "2020-12-27T13:29:08.000000Z",
+     "updated_at": "2026-09-22T15:49:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 19621,
+      "name": "Capataina",
+      "profile_photo_url": "https://sp-mod.com/avatars/C.svg",
+      "cover_photo_url": null,
+      "created_at": "2022-06-14T05:28:36.000000Z",
+      "updated_at": "2026-08-10T19:35:57.000000Z"
+     },
+     {
+      "id": 42161,
+      "name": "MNSTR",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/63ed734b6e442d78d0084f5b08a0efc06859e234_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-12-14T01:05:33.000000Z",
+      "updated_at": "2026-08-10T19:44:45.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1945,
+    "hub_id": 2617,
+    "guid": "com.dvize.ailimit",
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "teaser": "Temporarily disable far bots to reduce cpu load",
+    "thumbnail": "https://files.sp-mod.com/mods/iFN5tmtV0BCSMeEQLeU1CoMwB4x4XgF27OU2xmbj.png",
+    "downloads": 64612,
+    "favourites_count": 69,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/1945/ai-limit",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-01-06T10:28:00.000000Z",
+    "created_at": "2025-01-06T10:28:40.000000Z",
+    "updated_at": "2026-09-04T09:00:11.000000Z",
+    "owner": {
+     "id": 26519,
+     "name": "wizard83",
+     "profile_photo_url": "https://sp-mod.com/avatars/W.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-03T13:05:13.000000Z",
+     "updated_at": "2026-10-04T19:51:10.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 15516,
+      "name": "Props",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/53f17847d86ea53a84f69a549ce2b50baf31d665_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-03-09T07:33:42.000000Z",
+      "updated_at": "2026-08-10T19:31:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 3091,
+    "hub_id": null,
+    "guid": "com.tricoloursky.astraldivide",
+    "name": "Astral Divide",
+    "slug": "astral-divide",
+    "teaser": "Custom Trader with story chapter and unique mechanic and custom outfits with physics system.",
+    "thumbnail": "https://files.sp-mod.com/mods/uXZ6dHhUoQYrY9s9ZRrYsGFPn6kUJUsBWeBiwOUQ.png",
+    "downloads": 1040,
+    "favourites_count": 18,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3091/astral-divide",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-10-01T11:02:00.000000Z",
+    "created_at": "2026-10-01T16:39:23.000000Z",
+    "updated_at": "2026-10-02T01:47:47.000000Z",
+    "owner": {
+     "id": 101080,
+     "name": "TricolourLM7",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/TVwOwkK1SEaJxX9OJeqyILraJBosxBwldG4Qw1HL_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/YHGyEjhKsg7zM8frW6UKT8NAwz26JDtgaDHI9072_1280w.webp",
+     "created_at": "2026-01-09T08:50:45.000000Z",
+     "updated_at": "2026-10-05T11:01:38.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32555,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2945,
+    "hub_id": null,
+    "guid": "com.tcf.tcfmodmanager",
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "teaser": "Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.",
+    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
+    "downloads": 6051,
+    "favourites_count": 38,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-21T16:52:00.000000Z",
+    "created_at": "2026-08-20T20:11:12.000000Z",
+    "updated_at": "2026-10-04T09:33:37.000000Z",
+    "owner": {
+     "id": 96898,
+     "name": "the.crimson.fuckr",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/q6W4ELDHFO4coicwMm4IWNhUClQ4AB5ecquG30AK_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-12-16T08:54:31.000000Z",
+     "updated_at": "2026-10-05T16:31:56.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2874,
+    "hub_id": null,
+    "guid": "com.hysocs.adaptivebotculling",
+    "name": "Adaptive Bot Culling",
+    "slug": "adaptive-bot-culling",
+    "teaser": "Integrates AI brain and animation pausing into EFT’s native asset-culling and LOD system, reducing CPU usage when bots are far away",
+    "thumbnail": "https://files.sp-mod.com/mods/U69LKHdaWZAKIa1emEfDp71yNMvUI0mNwVFz5CuS.png",
+    "downloads": 6350,
+    "favourites_count": 38,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/2874/adaptive-bot-culling",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-02T00:15:00.000000Z",
+    "created_at": "2026-08-02T00:05:49.000000Z",
+    "updated_at": "2026-08-17T09:40:01.000000Z",
+    "owner": {
+     "id": 118937,
+     "name": "Hysocs",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/lAHgRO7c2a5ET6Cu2bCjFOI2s7dt8SukoSsjUgaC_1280w.webp",
+     "created_at": "2026-07-27T18:19:13.000000Z",
+     "updated_at": "2026-10-05T11:20:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3000,
+    "hub_id": null,
+    "guid": "moe.flea.refresh",
+    "name": "Moe Flea Refresh",
+    "slug": "moe-flea-refresh",
+    "teaser": "Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。",
+    "thumbnail": "",
+    "downloads": 304,
+    "favourites_count": 1,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/3000/moe-flea-refresh",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2026-09-06T20:43:00.000000Z",
+    "created_at": "2026-09-06T20:46:15.000000Z",
+    "updated_at": "2026-09-06T21:47:43.000000Z",
+    "owner": {
+     "id": 115215,
+     "name": "moucashi",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-06-11T16:10:00.000000Z",
+     "updated_at": "2026-09-23T08:42:19.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 2011,
+    "hub_id": 2691,
+    "guid": "com.rukiragaming.actuallyfir",
+    "name": "Actually Found In Raid (UPDATED)",
+    "slug": "actually-found-in-raid-updated",
+    "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will make sure that AI PMCs spawn with all items as Found In Raid.",
+    "thumbnail": "",
+    "downloads": 25574,
+    "favourites_count": 60,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2011/actually-found-in-raid-updated",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-02-16T18:16:00.000000Z",
+    "created_at": "2025-02-16T18:16:29.000000Z",
+    "updated_at": "2026-10-02T15:24:04.000000Z",
+    "owner": {
+     "id": 13632,
+     "name": "RuKira",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/HGcQlS8eu0WYX2W5AATPBli1aWVGsTXQd79WE4l5_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-01-18T06:31:54.000000Z",
+     "updated_at": "2026-10-05T13:30:09.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 56859,
+      "name": "MadBrother",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/5aREXCJMYv2f3Ez7O4RmskvxXE2bV4MgLamB1ACj_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-07-10T14:22:15.000000Z",
+      "updated_at": "2026-10-05T14:45:29.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2758,
+    "hub_id": null,
+    "guid": "com.spt.botcounter",
+    "name": "BotCounter",
+    "slug": "botcounter",
+    "teaser": "Shows all bots alive ingame. Simple UI.",
+    "thumbnail": "https://files.sp-mod.com/mods/EnfNArALCpPoBsJyfIWCt2vzJ6yZwsgzeQQJF2eG.png",
+    "downloads": 4880,
+    "favourites_count": 31,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2758/botcounter",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-06-20T10:35:00.000000Z",
+    "created_at": "2026-06-20T10:25:10.000000Z",
+    "updated_at": "2026-07-28T09:41:15.000000Z",
+    "owner": {
+     "id": 115725,
+     "name": "Schluid",
+     "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-06-15T14:00:09.000000Z",
+     "updated_at": "2026-08-10T19:52:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2348,
+    "hub_id": null,
+    "guid": "com.lightoftheworld.samesideisfriendly",
+    "name": "SameSideIsFriendly",
+    "slug": "samesideisfriendly",
+    "teaser": "It's just a discount friendlyPMC",
+    "thumbnail": "",
+    "downloads": 4669,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2348/samesideisfriendly",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-10-10T08:19:00.000000Z",
+    "created_at": "2025-10-10T08:19:40.000000Z",
+    "updated_at": "2026-08-01T16:02:36.000000Z",
+    "owner": {
+     "id": 21928,
+     "name": "LightoftheWorld",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3f57316eb57284f8f2c42b487889d3d09b7237bc_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-08-22T23:09:32.000000Z",
+     "updated_at": "2026-09-18T14:49:53.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

@@ -1,0 +1,447 @@
+{
+ "term": "Scav -DisableScavMode",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3042,
+    "hub_id": null,
+    "guid": "com.mercer.rhx.superscavcase",
+    "name": "Super Scav Case",
+    "slug": "super-scav-case",
+    "teaser": "Make the Scav Case useful again. It can now be built from the early game, and adds separate options for searching for ammunition, keys, and high-value loot.",
+    "thumbnail": "https://files.sp-mod.com/mods/VIKpiWTpn4Fu5usyZJw2HwGpJ5oHNdH3Dfu9z2ZW.png",
+    "downloads": 1068,
+    "favourites_count": 14,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/3042/super-scav-case",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2026-09-20T04:43:00.000000Z",
+    "created_at": "2026-09-20T04:43:58.000000Z",
+    "updated_at": "2026-09-20T04:46:03.000000Z",
+    "owner": {
+     "id": 73400,
+     "name": "MercerA",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/d307ac74c299bcdae68a1af404324a4dba41e97c_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-13T05:51:11.000000Z",
+     "updated_at": "2026-10-05T13:48:29.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2594,
+    "hub_id": null,
+    "guid": "com.acidphantasm.playerbossscav",
+    "name": "Player Boss Scav",
+    "slug": "player-boss-scav",
+    "teaser": "Standalone component from APBS. Allows your scav to generate as a boss with a configurable chance.",
+    "thumbnail": "https://files.sp-mod.com/mods/NPm1PUyeBnKs0nrJEqhxeQbJeMFMdUL4KnRNAPo5.png",
+    "downloads": 10702,
+    "favourites_count": 28,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2594/player-boss-scav",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-02-17T06:35:00.000000Z",
+    "created_at": "2026-02-17T06:35:23.000000Z",
+    "updated_at": "2026-08-05T06:03:56.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1341,
+    "hub_id": 1859,
+    "guid": "xyz.drakia.quickmovetocontainer",
+    "name": "Quick Move To Containers",
+    "slug": "quick-move-to-containers",
+    "teaser": "Quickly move items between your inventory or stash, and any open container(s)",
+    "thumbnail": "https://files.sp-mod.com/mods/1859.png",
+    "downloads": 139692,
+    "favourites_count": 195,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/1341/quick-move-to-containers",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-04-19T06:36:00.000000Z",
+    "created_at": "2024-04-19T06:36:31.000000Z",
+    "updated_at": "2026-08-03T06:02:26.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:45:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2416,
+    "hub_id": null,
+    "guid": "com.acidphantasm.enablelabyrinth",
+    "name": "Enable Labyrinth",
+    "slug": "enable-labyrinth",
+    "teaser": "Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as the non-secret exfil for PMCs. Requirements for entry are removed.",
+    "thumbnail": "https://files.sp-mod.com/mods/moTTEdLsNmHB2CesJ9ovhkefd5mzqh95Na8EhN0S.png",
+    "downloads": 59797,
+    "favourites_count": 218,
+    "endorsements_count": 19,
+    "detail_url": "https://sp-mod.com/mod/2416/enable-labyrinth",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 8,
+    "published_at": "2025-11-02T06:35:00.000000Z",
+    "created_at": "2025-11-02T07:33:59.000000Z",
+    "updated_at": "2026-08-04T06:02:32.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 8,
+     "hub_id": 25,
+     "title": "Locations",
+     "slug": "locations",
+     "description": ""
+    }
+   },
+   {
+    "id": 1755,
+    "hub_id": 2389,
+    "guid": "com.sp-tarkov.jonjetjon.scavs4all",
+    "name": "Scavs 4 All",
+    "slug": "scavs-4-all",
+    "teaser": "A quick and simple way to make those pesky quests that require only scav kills to count pmc kills towards your progress as well.",
+    "thumbnail": "",
+    "downloads": 14065,
+    "favourites_count": 33,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/1755/scavs-4-all",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-09-30T17:24:00.000000Z",
+    "created_at": "2024-09-30T17:24:05.000000Z",
+    "updated_at": "2026-09-05T14:15:08.000000Z",
+    "owner": {
+     "id": 64759,
+     "name": "LeftHandedCat",
+     "profile_photo_url": "https://sp-mod.com/avatars/L.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-09-30T17:17:59.000000Z",
+     "updated_at": "2026-08-10T19:48:27.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 70754,
+      "name": "CrocodileJonesy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/rYukf9ucpTosx75JcEx5oow0LFLskESDBuovkqZA_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-01-03T16:02:06.000000Z",
+      "updated_at": "2026-09-25T20:36:25.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3025,
+    "hub_id": null,
+    "guid": "com.manimal.interchange",
+    "name": "Manimal's 1.0 Interchange Expansion Backport ",
+    "slug": "manimals-10-interchange-expansion-backport",
+    "teaser": "Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra.",
+    "thumbnail": "https://files.sp-mod.com/mods/KyLLW8JR79TsTVFozeVeF40eKtTluhkLiMxaMZF3.png",
+    "downloads": 22523,
+    "favourites_count": 165,
+    "endorsements_count": 48,
+    "detail_url": "https://sp-mod.com/mod/3025/manimals-10-interchange-expansion-backport",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 8,
+    "published_at": "2026-09-14T09:34:00.000000Z",
+    "created_at": "2026-09-14T08:29:23.000000Z",
+    "updated_at": "2026-09-28T04:39:04.000000Z",
+    "owner": {
+     "id": 119111,
+     "name": "Manimal1920",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-07-30T21:56:19.000000Z",
+     "updated_at": "2026-10-05T16:46:55.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 8,
+     "hub_id": 25,
+     "title": "Locations",
+     "slug": "locations",
+     "description": ""
+    }
+   },
+   {
+    "id": 3027,
+    "hub_id": null,
+    "guid": "com.froze.exfilrewards",
+    "name": "Exfil Rewards",
+    "slug": "exfil-rewards",
+    "teaser": "Earn bonus money for extracting from raids.",
+    "thumbnail": "https://files.sp-mod.com/mods/CR1k1Iyrj5VLTojr2SYsHNv3m1Xkm4IGGCVNs4LW.png",
+    "downloads": 1534,
+    "favourites_count": 19,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/3027/exfil-rewards",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2026-09-14T16:09:00.000000Z",
+    "created_at": "2026-09-14T16:16:03.000000Z",
+    "updated_at": "2026-09-14T18:30:48.000000Z",
+    "owner": {
+     "id": 124173,
+     "name": "V-E-I-N",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2CO6aqYcEuecefiuRyIWbduxS7gYOXNSQB4qxpZk_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/DYNJGjBvXeTw7EjPxyMWCUVyzP3ib5ItOCpKDDK2_2560w.webp",
+     "created_at": "2026-09-14T13:21:06.000000Z",
+     "updated_at": "2026-10-04T09:09:33.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 1656,
+    "hub_id": 2256,
+    "guid": "nessu1n.sptrpc",
+    "name": "SPT Discord Rich Presence",
+    "slug": "spt-discord-rich-presence",
+    "teaser": "Display basic game information on your Discord Activity!",
+    "thumbnail": "https://files.sp-mod.com/mods/2256.jpg",
+    "downloads": 9503,
+    "favourites_count": 16,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/1656/spt-discord-rich-presence",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-08-15T17:23:00.000000Z",
+    "created_at": "2024-08-15T17:23:50.000000Z",
+    "updated_at": "2026-09-13T17:29:55.000000Z",
+    "owner": {
+     "id": 33297,
+     "name": "nessu",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/dKDFyGE1X183qFWOKYVTRkOKJb8BORkb3IPGGLFq_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/f4218938e8f317ef597a385b9f40d17790e4aafe.jpg",
+     "created_at": "2023-06-28T07:06:08.000000Z",
+     "updated_at": "2026-10-05T13:48:31.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 1858,
+    "hub_id": 2509,
+    "guid": "flir.enemymarkers",
+    "name": "Enemy Markers",
+    "slug": "enemy-markers",
+    "teaser": "Simply a Marker that shows the enemies with a \"v\" shaped marker. Can also display the distance from the enemy.",
+    "thumbnail": "https://files.sp-mod.com/mods/2509.png",
+    "downloads": 22567,
+    "favourites_count": 54,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/1858/enemy-markers",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-11-28T23:35:00.000000Z",
+    "created_at": "2024-11-28T23:35:10.000000Z",
+    "updated_at": "2026-08-17T00:33:05.000000Z",
+    "owner": {
+     "id": 46667,
+     "name": "APerson",
+     "profile_photo_url": "https://sp-mod.com/avatars/A.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-03-18T04:26:48.000000Z",
+     "updated_at": "2026-10-05T14:02:54.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 69402,
+      "name": "flir",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/DKLerEnM8Sr3SaE9jjPwZdeDpm5UERbKUMqsS0s0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-12-12T12:24:24.000000Z",
+      "updated_at": "2026-09-16T12:46:00.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2049,
+    "hub_id": 2732,
+    "guid": "com.acidphantasm.addsecretexfilnotestocaches",
+    "name": "Add Secret Exfil Notes to Caches",
+    "slug": "add-secret-exfil-notes-to-caches",
+    "teaser": "Simple mod that adds the Secret Exfil Code Notes to Barrel/Wood caches as well as dead PMC/SCAV bodies on maps that have Secret Exfils. At the configurable rate that you choose.",
+    "thumbnail": "https://files.sp-mod.com/mods/2732.png",
+    "downloads": 10829,
+    "favourites_count": 60,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/2049/add-secret-exfil-notes-to-caches",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-03-23T08:11:00.000000Z",
+    "created_at": "2025-03-23T08:11:02.000000Z",
+    "updated_at": "2026-08-06T06:02:14.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T03:07:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

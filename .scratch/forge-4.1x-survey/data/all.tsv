@@ -1,0 +1,601 @@
+id	name	downloads	favourites	category	updated	created	latestVer	latestConstraint	sup415	sup416	fika	ads	profileNote	cheatNote	src	teaser
+902	BigBrain	1363232	1235	Bots	2026-08-03	2023-05-31	1.5.0	~4.1.0	1	1	0	0	0	0	1	A library for adding extra logic layers to existing bot brains
+827	Waypoints - Expanded Navmesh	1335662	1143	Other	2026-08-03	2023-04-03	1.9.0	~4.1.0	1	1	0	0	0	0	1	Expand where bots can explore with full map navmesh coverage!
+236	Server Value Modifier [SVM]	1332065	785	Overhauls	2026-09-19	2021-09-26	2.2.3	~4.1.3	1	1	1	1	1	0	1	Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a huge variety of options
+791	SAIN - Solarint's AI Modifications - Full AI Combat System Replacement	1321014	1009	Bots	2026-09-04	2023-03-09	4.5.1	~4.1.3	1	1	1	0	0	0	2	Bots that don't suck.
+592	Amands's Graphics	870498	470	Retextures	2026-08-02	2022-09-01	1.8.0	~4.1	1	1	1	0	0	0	2	Lighting and postprocessing overhaul
+1431	Dynamic Maps	810374	850	Other	2026-08-26	2024-05-23	1.2.1	~4.1	1	1	1	0	0	0	1	Replaces the in-game map screen with actually useful maps with dynamic information!
+812	Looting Bots	749682	287	Bots	2026-09-21	2023-03-22	1.8.0	~4.1.3	1	1	1	0	0	0	2	Add more life to the bots by enhancing looting behaviors letting them loot items, containers, and corpses!
+2512	WTT - Content Backport	554869	1094	Overhauls	2026-10-10	2025-12-26	2.0.5	~4.1.6	1	1	1	1	1	0	1	The moment you've all been waiting for....
+1342	UI Fixes	457363	676	Other	2026-10-03	2024-04-19	6.0.4	~4.1	1	1	1	0	0	0	1	Quality of life improvements and fixes for SPT
+2310	WTT - CommonLib	438789	1345	Other	2026-08-23	2025-09-15	3.0.6	~4.1.3	1	1	1	1	0	0	2	A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT
+1109	Questing Bots	436826	171	Bots	2026-10-10	2023-10-14	1.1.0	~4.1.0	1	1	1	0	0	0	1	You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...
+701	Fontaine's FOV Fix	352379	221	Overhauls	2026-10-03	2023-01-05	4.1.0	4.1.x	1	1	1	0	0	0	1	Removes the FOV change on aiming by default, and lets you customize the FOV change amount. Has options for modifying FOV scale, view model FOV, ADS camera movement smoothing, and optional toggle zoom (like ARMA or DAYZ).
+1343	Skipper	342868	522	Other	2026-08-09	2024-04-19	1.1.5	~4.1	1	1	0	0	0	0	2	A small client mod for conveniently skipping quests
+1089	Kaeno-TraderScrolling	320569	419	Scripting	2026-08-27	2023-10-08	4.1.0	~4.1.0	1	1	1	0	0	0	2	Allows for side scrolling of the traders
+1023	WTT- Artem	318345	263	Traders	2026-09-19	2023-08-21	3.0.2	~4.1.0	1	1	0	0	1	0	1	In the T***** District, an ex-cultist wields uncanny dealmaking skills, intricate connections, and crafts deadly weapons.
+1025	Painter	315101	161	Traders	2026-09-19	2023-08-22	3.0.0	~4.1.5	1	1	1	0	1	0	2	Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons).
+1100	ACCURATE CIRCULAR RADAR	311030	191	Bots	2026-09-04	2023-10-12	1.3.4	4.1.3	0	0	0	0	0	0	1	A radar mod that displays enemy locations and identifies various enemy types.
+1538	Ref - SPT Friendly Quests	309244	572	Traders	2026-08-08	2024-07-09	2.1.0	~4.1	1	1	1	0	1	0	2	Converted all the Arena specific quests for Ref into SPT quests. Rewards the same things as Live, with an added Lega Medal to each quest. Includes the sword unlock and secure container.
+1125	Tactical Gear Component	304709	164	Items	2026-09-19	2023-10-22	3.0.0	~4.1.5	1	1	1	0	1	0	2	Adds a lot more unique gear and attachments for E*****************
+1131	Live Flea Prices	295125	292	Other	2026-08-04	2023-10-27	2.1.0	~4.1.1	1	1	0	0	0	0	2	Keep your flea prices up to date with data processed from Tarkov.dev
+2246	WTT- Armory	289257	531	Weapons	2026-09-21	2025-08-08	3.0.0	~4.1.5	1	1	1	1	1	0	1	The official weapons pack forged by the WTT developers & friends... Arm yourself accordingly...
+1426	UnityToolkit	278396	367	Other	2026-09-06	2024-05-20	2.0.2	4.1.5	1	0	1	0	0	0	1	A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.
+1263	Epic's All in One	276797	363	Weapons	2026-09-21	2024-03-24	5.0.1	~4.1.0	1	1	1	0	1	0	1	An all in one expansion of the weapons and weapon parts of the game complete with the Badger trader.
+954	Borkel's Realistic Night Vision Goggles (NVGs and T-7)	265838	360	Overhauls	2026-10-03	2023-06-30	3.0.4	~4.1	1	1	1	0	1	0	1	Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customizable ingame (colors and everything).
+1594	APBS - Acid's Progressive Bot System	256235	507	Bots	2026-09-20	2024-07-26	2.4.1	~4.1.0	1	1	1	0	0	0	2	Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad more dangerous due to their progression. Everyone has something worth stealing or scavenging!
+1619	Lots of Loot Redux	252235	427	Locations	2026-09-26	2024-08-03	4.2.2	~4.1	1	1	1	0	0	0	1	Tired of having barely any loot in your raids? Lots of Loot Redux aims to bring back that old T***** feeling from when loot wasn't so scarce. If you are a loot goblin then this mod is for you!
+1278	WTT - Pack 'n' Strap	234742	315	Equipment	2026-09-07	2024-04-05	2.1.1	~4.1.5	1	1	1	1	1	0	1	Gear up with Pack 'n' Strap - the perfect combo of Small Cases and an ALL NEW battle belt module, for all your early-game adventures.
+2003	HollywoodFX	221469	363	Other	2026-09-17	2025-02-06	3.0.0	~4	1	1	1	0	0	0	1	Make battles look cinematic and immersive by rebuilding almost every single impact and special effect from scratch. Realism is not the aim, but the mod doesn't go overboard.
+1539	Bosses Have Lega Medals	215298	482	Other	2026-08-07	2024-07-09	2.1.0	~4.1	1	1	1	0	0	0	2	Bosses have a configurable chance to have Lega Medals in their pockets.
+167	Ammo Stats	212979	119	Locales	2026-08-14	2021-06-14	4.1.0	~4.1.0	1	1	1	1	0	0	1	Now updated for 4.1.0+!
+526	All The Clothes	193810	249	Clothing	2026-08-14	2022-08-01	3.2.0	~4.1.0	1	1	1	1	1	0	1	ALL THE CLOTHES FOREVER
+2097	ABPS - Acid's Bot Placement System	191106	459	Bots	2026-08-14	2025-04-13	2.1.0	~4.1	1	1	1	0	0	0	2	Configurable spawn mod, allows waves / starting PMCs / boss chances / progressive boss chances. ABPS will always try to keep your raids full and different each time.
+1232	Lotus	188690	180	Quests	2026-10-10	2024-01-17	1.8.1	~4.1.6	0	1	1	0	1	0	3	Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.
+934	Search Open Containers	187567	348	Other	2026-08-03	2023-06-20	1.5.0	~4.1.0	1	1	0	0	0	0	1	Allow searching open containers without needing to close them first
+865	Gilded Key Storage	174871	251	Other	2026-08-31	2023-04-23	2.1.1	~4.1.0	1	1	1	0	0	0	2	A balanced progression based approach to convenient all in one key storage!
+755	The Blacklist - flea market enhancements	169391	161	Items	2026-08-25	2023-02-11	3.1.1	~4.1	1	1	1	0	0	0	2	Disables the B** blacklist in the flea market. Rebalances the prices of blacklisted ammo like Igolnik. Speeds up sell times for offers. Additional configs to set flea prices for any item in the game.
+1298	HandsAreNotBusy	164045	374	Scripting	2026-09-02	2024-04-10	1.7.1	>=4.1.3	1	1	1	0	0	0	1	Annoyed by the ancient "Hands are busy" bug? HandsAreNotBusy (HANB) is a mod that can fix certain scenarios of the "Hands are busy" bug for you!
+1140	Quest Tracker	162516	268	Other	2026-08-03	2023-11-02	1.7.0	~4.1.0	1	1	0	0	0	0	1	Track quests while in-raid with a handy toggleable overlay!
+374	bluehead's AIO Trader	153895	69	Traders	2026-09-05	2022-02-16	5.2.4	~4.0.0	1	1	0	0	1	0	1	Buy everything from one trader. Get all keys with one command.
+1884	Continuous Healing	142009	351	Scripting	2026-09-05	2024-12-12	1.6.3	>=4.1.3	1	1	1	0	0	0	1	Tired of having to heal every limb one by one? Now you can heal them all in one go until done or manually cancelled!
+1348	Scorpion	140671	226	Traders	2026-08-10	2024-04-22	1.1.1	~4.1	1	1	1	0	1	0	2	Scorpion has 122 quests available from the start of your T***** journey. Including time based event quests!
+1341	Quick Move To Containers	140498	201	Other	2026-08-03	2024-04-19	1.5.0	~4.1.0	1	1	0	0	0	0	1	Quickly move items between your inventory or stash, and any open container(s)
+1860	Classic Movement	140145	240	Overhauls	2026-08-21	2024-11-29	1.1.3	~4.1.0	1	1	1	0	0	0	2	Completely removes any inertia and slowed down movement, and replaces it with the official much faster movement from 12.10
+1950	Weapon Customizer	132270	296	Weapons	2026-08-15	2025-01-06	4.0.0	~4.1	1	1	1	0	0	0	1	Personalize your weapon! Adjust rails and attachment positioning.
+1358	BrightLasers	128767	238	Retextures	2026-08-13	2024-04-23	3.0.0	~4.1	1	1	1	0	0	0	2	Brighter lasers for your guns. No more blue laser, best laser. (It's still the best)
+2426	MoreBotsAPI	127761	573	Bots	2026-09-06	2025-11-06	2.1.1	~4.1.5	1	1	1	0	0	0	1	API for making the implementation of custom bots easier
+1775	WTT - Menu Overhaul	126758	321	Overhauls	2026-08-17	2024-10-19	1.3.0	~4.1	1	1	1	0	0	0	1	Add a new menu layout to SPT and add your player to the menu screen.
+1575	Increase Climb Height	124842	186	Other	2026-09-08	2024-07-19	2.1.1	~4.1	1	1	1	0	0	0	1	Increases the height at which you can perform a climb.
+2386	Use Items Anywhere	121552	435	Equipment	2026-10-07	2025-10-20	2.1.6	~4.1	1	1	1	1	0	0	2	Use and bind items from anywhere in your inventory
+2511	WTT - Black Division [REDACTED] Home	117798	508	Bots	2026-09-06	2025-12-24	1.3.1	~4.1.5	1	1	1	0	0	0	1	[REDACTED]
+1283	Trader Modding And Improved Weapon Building	112083	198	Weapons	2026-08-05	2024-04-05	2.1.2	~4.1	1	1	0	0	1	0	1	Weapon modding 2.0: Checkbox to only show current Trader LL / owned mods, Shows Trader/Flea Prices/Build Cost, Adds Quick Buy Button, Adds Button to detach items in use, Highlights mods attached to other guns or ready to use, Ability to zoom in/out.
+1090	Color Converter API	111317	265	Tools	2026-08-21	2023-10-08	1.2.0	>=4.1.3	1	1	1	1	0	0	1	Client-side mod to allow using hexcode colors for your items! Custom background colors for your items, or any color tracer you want!
+933	Use Loose Loot	111145	228	Other	2026-08-03	2023-06-20	1.6.0	~4.1.0	1	1	0	0	0	0	1	Use meds and food direct from the world instead of only your pockets. ;)
+1265	Rai's Hidden Caches	109087	132	Other	2026-08-16	2024-04-01	1.4.0	~4.1.0	1	1	1	1	0	0	1	Adds a flare-like effect to all of the hidden stashes on the map! Smoke, lighting, and audio will emit from all the random secret caches to help you find them! Effects can be customized and toggled.
+1469	AutoDeposit	104966	140		2026-08-12	2024-06-07	6.0.0	~4.1	1	1	1	0	0	0	1	Transfer items into stash containers with matching items, inspired by Terraria's Quick Stack.
+1374	Player Encumbrance Bar	100002	234	Equipment	2026-08-08	2024-05-01	1.3.0	>=4.1.0	1	1	1	0	0	0	1	Adds a progress bar to the inventory that shows total player encumbrance
+2326	Project Fika	98074	227	Overhauls	2026-10-05	2025-09-26	2.4.4	>=4.1.3	1	1	1	0	0	0	1	Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items and quest progression, fight AI bots (PMCs, SCAVs, and bosses) together and much more.
+2112	Continuous Load Ammo	95709	396	Scripting	2026-09-20	2025-04-23	1.2.0	~4.1.0	1	1	1	0	0	0	1	You are now able to continuously load or unload ammo outside your inventory!
+2173	VRAM Cleaner	92781	206	Other	2026-10-03	2025-06-07	1.1.0	4.1.6	0	1	1	0	0	0	1	Clears up unused assets after raid start timer finishes
+1277	WTT - Head and Voice Selector	92177	198	Other	2026-08-03	2024-04-04	1.0.8	~4.1.0	1	1	1	1	0	0	3	Customize your character's voice and head appearance post-creation using new dropdown boxes in the Overall panel.
+1274	Healing Autocancel	90095	137	Other	2026-09-29	2024-04-02	5.0.1	4.1.6	0	1	1	0	0	0	1	Healing Autocancel
+824	Task List Fixes	88556	207	Other	2026-08-03	2023-04-01	1.8.0	~4.1.0	1	1	0	0	0	0	1	Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you'll get it all in one simple DLL
+1657	MergeConsumables	87046	291	Items	2026-09-21	2024-08-19	1.6.3	>=4.1.3	1	1	1	0	0	0	1	Tired of not being able to merge your medical items or food? Now you can!
+2521	Amands' Sense - Updated	86159	390	Other	2026-09-22	2025-12-29	3.1.0	~4.1.0	1	1	0	0	0	0	1	Interactable icons for items, containers, bodies and extracts.
+2649	Climbable Ladders	80411	577	Other	2026-08-17	2026-04-01	1.0.4	~4.1.0	1	1	1	0	0	0	1	Ladders
+2207	Fast Sell In Flea	77947	213	Tools	2026-08-23	2025-06-29	1.3.1	~4.1	1	1	1	0	0	0	1	Quickly add items on the flea market with automatic fitting of the current price
+1621	Shadow Flicker Fix	77033	164	Other	2026-09-17	2024-08-04	1.5.3	~4.1	1	1	1	0	0	0	1	Fixes distant shadow flickering which was most noticeable with anti-aliasing disabled.
+1688	More Energy Drinks	73807	143	Items	2026-08-17	2024-08-27	1.3.0	4.1.x	1	1	1	0	1	0	2	Adds 38 unique energy drinks that range in rarity and provide interesting effects that your PMC can enjoy during raids. Now you can share your caffeine addiction with your PMC!
+1617	give-ui	71858	97		2026-10-05	2024-08-01	5.0.1	~4.1.0	1	1	1	0	0	0	1	Simple UI for the give, trader and profile commands
+2866	MANIMAL'S ICEBREAKER BACKPORT	70464	301	Locations	2026-09-15	2026-08-01	1.1.3	~4.1.5	1	1	1	0	0	0	1	A mod that backports the entire Icebreaker map and some of its related quests to SPT
+1184	Open Sesame	69249	72	Tools	2026-09-15	2023-12-10	3.0.1	~4.1.0	1	1	0	0	0	1	1	A tool for developers (and cheaters) to open locked doors, safes, etc. without requiring the key
+1873	Bot Callsigns - Reloaded	68843	216	Bots	2026-09-29	2024-12-07	2.0.5	~4.1.1	1	1	1	0	0	0	1	Adds a big (and sometimes funny) variety of bot names for flea and game.
+1437	Simple Workout QTE	68837	235	Hideout	2026-08-30	2024-05-26	2.2.2	~4.1.3	1	1	1	0	0	0	2	Workout QTE in hideout is now much easier, and configurable!
+1303	HarryHideout	68380	91	Traders	2026-08-19	2024-04-11	3.1.2	~4.1	1	1	1	0	1	0	2	Trader that sells all items for hideout construction/upgrades
+2613	Brighter Interiors	66943	341	Other	2026-08-08	2026-03-03	1.1.1	4.1.*	1	1	1	0	0	0	1	Tweak darkness of interior shadows to your taste
+1300	Modding Stats Helper - by wara	66591	104	Weapons	2026-10-08	2024-04-10	1.2.0	~4.1	1	1	1	0	1	0	1	Adds a tooltip when hovering parts in the weapon building screen that shows a quick overview of relevant stats and comparisons.
+1945	Ai Limit	65132	70	Bots	2026-09-04	2025-01-06	1.9.2	~4.1	1	1	0	0	0	0	1	Temporarily disable far bots to reduce cpu load
+2025	All Quests Checkmarks	62238	199	Quests	2026-08-29	2025-03-06	1.4.0	~4.1	1	1	1	0	0	0	1	Tired of having to remember what items you have to keep for future quests? This mod adds new checkmarks for items that are required in future quests. It also works with Fika and shows items required by your friends!
+1888	Better Keys NG	61346	210	Other	2026-08-17	2024-12-13	1.8.0	~4.1	1	1	1	0	0	0	1	Get some useful info about each key. Is it required for a quest? What is behind the lock? Is it used to exit/transit ?
+1117	Deminvincibility	61069	91	Scripting	2026-08-24	2023-10-18	2.2.0	~4.1.3	1	1	1	0	0	0	1	A standalone version of DadGamerMode's Keep 1 Health section with extended settings.
+2416	Enable Labyrinth	60845	226	Locations	2026-08-04	2025-11-02	1.1.0	~4.1	1	1	1	0	0	0	1	Enables Labyrinth for PMCs and Scavs. Adds a custom exfil point for Scavs at the same location as the non-secret exfil for PMCs. Requirements for entry are removed.
+2540	Content Backport - Prestiges	60440	324	Overhauls	2026-08-15	2026-01-07	1.1.0	~4.1	1	1	1	0	1	0	1	Already at prestige 4 and want to grind more? Then this mod is for you!
+1387	Simple Crosshair	59513	114	Other	2026-08-03	2024-05-06	1.4.0	~4.1.0	1	1	0	0	0	0	1	A pointfire/hipfire crosshair for all the non-purists among us.
+1760	Audio Accessibility Indicators	58836	98	Other	2026-08-07	2024-10-07	2.1.0	~4.1	1	1	1	0	0	0	1	Hard of hearing? Deaf? This mod will even the playing field without being straight up radar. Each shot, sprint, sneak, voiceline or run audio played within a configurable range will draw an indicator on your screen dictating which direction.
+2383	Skills Extended	57845	278	Overhauls	2026-10-06	2025-10-19	3.1.4	~4.1	1	1	1	0	1	0	1	Lack of skills is no longer a skill issue
+1479	Raid Review	56810	111	Tools	2026-10-01	2024-06-11	1.8.0	~4.1.6	1	1	1	0	0	0	2	A web-based post raid replay system of your SPT raids; detailed replay system with heatmap overlay, review kills, lootings, positional data, and just get a general understanding of what was going on in your raids!
+2076	Hideout In Progress	56616	198	Hideout	2026-08-16	2025-04-02	3.0.0	~4.1	1	1	1	0	0	0	1	Turn in items for hideout construction as you get them!
+1591	Better Rear Sights	56191	94	Overhauls	2026-09-17	2024-07-26	1.8.0	~4.1.5	1	1	0	0	1	0	1	This mod attempts to make iron sights less crappy
+2543	BossNotifier	55547	244	Tools	2026-08-29	2026-01-09	1.2.1	4.1.3	0	0	1	0	0	0	1	v1.2.1 out now! Know which bosses spawned in your raid! Get notifications at spawn with locations.
+1554	ALL AMMO TRADER - UPDATED BY TILTUSHKIN	55021	47	Traders	2026-09-14	2024-07-13	1.5.0	~4.1.3	1	1	1	0	1	0	2	Need all the ammo? Here's a trader
+2480	BarterItemsStacks	54837	243		2026-09-04	2025-12-01	1.4.3	~4.1.0	1	1	0	0	0	0	1	A mod that changes the stack size for barter items.. And a little more…
+2706	ORBIT 2.0	54598	475	Bots	2026-10-04	2026-05-27	2.1.1	~4.1.6	1	1	1	0	0	0	1	Bots play the raid like you do, and a "Ghost Mode" to run it all at high fps
+1519	WTT - W.A.A.C. (Women's Advanced Assault Corps)	54199	54	Clothing	2026-09-30	2024-07-04	2.1.0	~4.1.6	0	1	1	1	1	0	1	Did you know? There are HOT, SINGLE women in your AO that are ready for INTENSE tactical ops?
+164	Freecam	53166	33	Other	2026-08-02	2021-06-02	1.4.8	~4.1	1	1	0	0	0	0	2	A flying free camera mode for EFT
+1582	Headshot Darkness	53151	75	Other	2026-09-17	2024-07-22	1.2.5	~4.1	1	1	1	0	0	0	1	Instant feedback for when you get head, eyes'd.
+2430	ODT's Item Info - SPT 4.0	50321	104	Items	2026-09-19	2025-11-08	3.0.0	~4.1.5	1	1	1	0	1	0	1	Massive QOL Item Info mod for SPTarkov
+2658	Camo And Stickers	50179	228	Weapons	2026-10-03	2026-04-05	1.19.0	~4.1.5	1	1	1	0	0	0	1	New era of Drip
+2239	Couturier - gear and clothing pack	49627	104	Clothing	2026-08-19	2025-08-01	2.0.4	~4.1.2	1	1	0	0	1	0	1	Backpacks, helmets, armors and chestrigs (retextures) + trader for them + some clothing
+820	Door Randomizer	49463	78	Other	2026-08-19	2023-03-30	1.8.0	~4.1.0	1	1	1	0	0	0	1	Getting tired of doors always being in the same state at raid start? Randomize them instead!
+1453	Make Shotguns Great Again!	49288	75	Weapons	2026-10-05	2024-06-01	1.17.0	~4.1.6	0	1	0	1	1	0	1	New attachments, new guns, and key rebalances. Also introduces specialized cartridges to shotguns, including the Dragon's Breath and .700 Nitro.
+814	Late to the Party	47467	24	Other	2026-09-23	2023-03-27	3.1.1	~4.1.0	1	1	1	0	0	0	1	Make your SPT experience closer to live T***** with loot disappearing, doors opening, switches being turned on, and car extracts leaving throughout the raid. Bosses will also be less likely to spawn during Scav raids.
+2422	Foldables	47350	215	Equipment	2026-09-20	2025-11-05	1.1.1	~4.1.2	1	1	1	0	0	0	1	You can now fold backpacks and vests!
+1706	Health Per Level	46972	103	Other	2026-08-08	2024-09-02	2.2.0	4.1.*	1	1	0	0	0	0	2	Increase health depending on player level
+1853	StatTrack	46527	89	Tools	2026-08-07	2024-11-26	2.1.1	~4.1	1	1	1	0	0	0	2	Ever wanted to know how many kills and headshots you have with a specific weapon? Now you can. All weapons will individually track their kills and headshots and display on the info screen for the weapon. See how many you can rack up before you die!
+1569	Wolfik's Heavy Trooper Masks	45852	86	Equipment	2026-09-26	2024-07-17	1.2.0	~4.1	1	1	1	0	1	0	1	Adds 5 new heavy trooper masks: Tan, Black, Coyote, Wolf, and Cult that actually provide protection
+2357	Project Fika - Server	44882	119	Other	2026-10-05	2025-10-11	2.4.2	>=4.1.3	1	1	1	0	0	0	1	Server component for the Fika mod.
+2523	Bosses Have Gp Coins	44842	315	Other	2026-08-06	2025-12-31	1.1.0	~4.1	1	1	1	0	0	0	1	From the maker of Bosses Have Lega Medals! Now... the exact same mod, but with Gp Coins. Such wow. Amazing.
+2423	C11 - True North	44404	78	Weapons	2026-09-27	2025-11-05	4.0.3	~4.1.6	0	1	0	0	1	0	4	New guns and parts from foreign lands
+1252	SPT Mods Installer	43671	53	Tools	2026-08-24	2024-02-24	2.1.0	~4.1.3	1	1	0	0	0	0	1	A simple little application that allows drag-and-dropping mods in zip formats.
+2010	Definitive Weapon Variants	43271	71	Weapons	2026-09-20	2025-02-16	4.3.2	~4.1.2	1	1	1	0	1	0	2	600+ weapon variants based on existing guns. Whether you want an automatic version of your favourite weapon, click scavs to death, tap bosses with anti-materiel rifles, or simply collect unique variants, this mod has it all!
+1925	NerfBotGrenades	43101	107	Bots	2026-08-20	2024-12-30	1.3.1	>=4.1.3	1	1	1	0	0	0	1	Allows you to multiply bot inaccuracy with grenades.
+2407	QuickSellFlea	42760	161	Other	2026-09-06	2025-10-29	1.4.5	>=4.1.3	1	1	1	0	0	0	1	Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now you can instantly place it with the average price - with just ONE click and no other mods needed!
+1971	Croupier - loadout generator + flea quicksell	42416	53	Traders	2026-08-21	2025-01-18	2.0.7	~4.1.2	1	1	0	0	1	0	1	Gear up for your next raid in just 20 seconds!
+2342	UNTAR Go Home!	41938	130	Bots	2026-09-06	2025-10-08	3.2.1	~4.1.5	1	1	1	0	0	0	1	Yet they're still here in T*****... New UNTAR bot types patrol the region.
+2395	Lacy's PvE Tweaks	41345	165	Overhauls	2026-09-28	2025-10-23	1.3.2	>=4.1.3	1	1	1	0	1	0	1	Several options to make PvE less annoying. Want to go to Labyrinth without using the transit? Now you can queue right into it! Want to make quests less grindy, or less restrictive? Now you can!
+1249	Exfil Flare Notification	41064	170	Other	2026-08-09	2024-02-19	1.0.6	~4.1	1	1	1	0	0	0	2	A small QoL mod for folks that are paranoid if their exfil flare was used correctly
+179	BALANCED MEDS	40673	72	Items	2026-09-16	2021-07-03	4.1.5	4.1.5	1	0	0	0	1	0	2	All the meds item are changed. Increased uses and better healing.
+2144	Skill Distribution	39910	156	Overhauls	2026-08-30	2025-05-21	1.3.0	~4.1	1	1	1	0	0	0	1	Want to level your skills faster but also want to keep vanilla feel of progression? Give this mod a try, you might like it.
+2427	RUAF Come Home!	38626	129	Bots	2026-09-06	2025-11-06	1.2.1	~4.1.5	1	1	1	0	0	0	1	RUAF have finally returned to resolve the Norvinsk conflict.
+1305	Repair Max Durability	38051	59	Items	2026-10-11	2024-04-12	2.2.0	4.1.x	1	1	1	0	1	0	1	Literally just adds an item that repairs the max durability of weapons
+1136	Equip From Weapon Rack	37622	73	Other	2026-08-03	2023-10-28	1.6.0	~4.1.0	1	1	0	0	0	0	1	Allow equipping weapons directly from your weapon rack
+2069	Loot Instant Search	36950	82	Other	2026-09-04	2025-03-29	1.0.5	~4.1	1	1	0	0	0	0	1	Instant search items in containers and dead bots
+2394	Instant Insurance	36907	89	Traders	2026-09-20	2025-10-22	1.1.2	~4.1.2	1	1	1	0	0	0	1	Keep your insured items equipped after death!
+2314	Season Rotator	36826	109	Other	2026-08-08	2025-09-17	2.0.1	~4.1.2	1	1	1	0	0	0	1	Auto-rotate seasons at the pace you decide
+2530	Vertical Hideout	36289	262	Hideout	2026-08-12	2026-01-03	1.1.1	~4.1.0	1	1	1	0	0	0	1	Replace the horizontal carousel with a sane vertical list
+1895	[SAIN] Twitch Players	35535	50	Bots	2026-10-08	2024-12-17	3.1.1	~4.1	1	1	1	0	0	0	1	EFT was never forgiving. So are they.
+1831	Agony SFX	35156	80	Audio	2026-08-29	2024-11-09	1.2.0	~4.1.0	1	1	1	0	0	0	1	Client mod that allows bots to play additional voice lines upon dying.
+2676	PIT Fireteam	35070	170	Bots	2026-09-08	2026-04-30	0.10.3	~4.1.0	1	1	0	0	0	0	1	Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the battlefield.
+2864	Manimal's CS Gas	35018	287	Items	2026-09-07	2026-08-01	2.0.0	~4.1.5	1	1	1	0	1	0	1	A mod that adds the CS Gas grenade from 1.0
+2190	Recoil Rework (Legacy)	34959	34	Other	2026-09-09	2025-06-17	2.0.0	4.1.x	1	1	0	0	0	0	1	Or.. tweaks? Doesn't matter. Vanilla recoil sucks anyway.
+2445	Natalya Trader	34264	105	Traders	2026-09-10	2025-11-14	1.0.1	4.1.3	0	0	0	0	1	0	1	Trader that adds quests, sells ammo, cases, meds, weapons with quest unlock, upgraded meds, upgraded gear
+2478	ISB Aishi	33621	181	Traders	2026-09-22	2025-11-30	2.0.2	~4.1.0	1	1	1	0	1	0	1	Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.
+1939	BETTER ATTACHMENTS	32705	79	Items	2026-09-16	2025-01-04	4.1.5	4.1.5	1	0	0	0	1	0	2	All gun attachments are better ergonomics and confgurable recoils. To deal with OP AIs you need OP guns.
+2221	BALL - Better Ammo Loading List	32530	148	Other	2026-08-02	2025-07-19	1.1.1	~4.1	1	1	1	0	0	0	1	Choosing ammo shouldn’t feel like defusing a bomb...
+2120	Time & Weather Changer NG	30800	97	Other	2026-08-17	2025-05-01	2.7.0	~4.1	1	1	1	0	0	0	1	Time & Weather changer
+2195	ECOT - Eukyre's Consortium of Things	30692	106	Items	2026-09-30	2025-06-22	2.0.1	~4.1.3	1	1	1	1	1	0	1	Home of the Blahaj and the FNX-45.
+1340	WTT - The Long Lost Heads of Yojenkz	30598	46	Models	2026-09-30	2024-04-19	2.1.0	~4.1.6	0	1	1	1	0	0	1	This mod adds 10 new options for the player head. Wait... Head? Aye lmao?
+2851	SPT Mod Manager	30577	151	Other	2026-09-30	2026-07-27	0.6.4	4.1.x	1	1	1	0	0	0	1	Open-source mod manager for SPT featuring easy installation, management and Forge integration.
+1262	Easy Ammo Names	30022	114	Locales	2026-08-03	2024-03-24	2.1.0	~4.1.1	1	1	0	0	0	0	2	A simple mod that renames ammunition in SPT so that it's easier to identiy.
+2264	Battle Ambience	29979	106	Audio	2026-08-24	2025-08-23	2.4.0	~4.1	1	1	1	0	0	0	1	Because the world is bigger than your raid.
+2679	LootNET	29656	139	Other	2026-09-19	2026-05-04	1.1.2	4.1.5	1	1	1	0	0	0	1	a mod adding a summary of the total loot value of the raid
+2021	Item Valuation	29554	112	Tools	2026-08-06	2025-03-02	2.1.0	~4.1	1	1	1	0	0	0	2	Lightweight quick reference valuation tool. Items will be coloured based on configurable values (price, armour class, penetration, etc). Automatically works natively with Live Flea Prices.
+1994	DLC - Vanilla Fem Clothing	28793	44	Clothing	2026-08-08	2025-02-02	1.0.3	~4.1	1	1	1	0	1	0	1	112 Feminine Proportion Reshaped Vanilla Clothing (Non-Replacing)
+2667	Picture in Picture Disabler	27875	121	Other	2026-10-07	2026-04-19	2.0.0	~4.1	1	1	1	0	0	0	1	FPS maxxxing and PiP scopes begone
+1861	Stash Management Helper	27317	80	Hideout	2026-08-28	2024-11-30	0.3.0	~4.1	1	1	1	0	0	0	1	Enhances stash management with extra sorting features. This can sort your stash long after the default sorting fails.
+2843	Blackout	27083	161	Locations	2026-09-20	2026-07-25	4.1.1	~4.1.1	1	1	1	0	0	0	1	Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors.
+2200	Dynamic External Resolution Patch (DERP)	27035	100	Other	2026-08-19	2025-06-24	1.1.2	4.1.x	1	1	0	0	0	0	1	Dynamically change the resolution of the external image rendering when we enter the optical sight, which gives us an increase in frame rate
+2516	.22lr Ammunition	26854	75	Weapons	2026-09-25	2025-12-27	2.0.0	~4.1.6	0	1	0	0	1	0	1	Adds the most popular round in the world to the end of the world.
+2125	DeHazardifier - Updated by Tetris	26769	75	Other	2026-09-12	2025-05-04	1.2.0	~4.1	1	1	1	0	0	0	1	Dislike being sniped because you walked into an open area sniper zone on streets? Hate randomly blowing up because invisible 'minefields'? Think the claymores on streets are a pain in the ass and hard to see? Do you hate being stung by barbed wire?
+2531	Better Thermal & Night Vision	26457	86	Scripting	2026-10-10	2026-01-03	2.1.1	4.1.6	0	1	1	0	0	0	1	Solve FPS, Pixel, Noise, Blur, Scanline, Mask of Thermals & NV. Use Red-Hot T7 with Optic Scope
+3025	Manimal's 1.0 Interchange Expansion Backport	26286	181	Locations	2026-09-28	2026-09-14	1.0.8	~4.1.6	1	1	0	0	0	0	1	Backports the new Interchange expansion to SPT 4.1. Become the Master of Ultra.
+2121	Increase Look Direction	26066	97	Other	2026-08-19	2025-05-01	1.3.0	~4.1	1	1	1	0	0	0	1	Tired of having neck injuries, go see the chiropractor and enjoy turning your head normally again !
+2011	Actually Found In Raid (UPDATED)	26021	63	Bots	2026-10-06	2025-02-16	1.1.1	~4.1	1	1	0	0	0	0	1	Tired of killing a PMC and the loot isn't "Found In Raid", even though you literally just found it in the raid? Actually Found In Raid will make sure that AI PMCs spawn with all items as Found In Raid.
+1533	More Tag Colours	25095	81	Other	2026-08-08	2024-07-08	1.5.0	~4.1	1	1	1	0	0	0	1	Tired of not having enough tag colours to identify your 15 ammo cases? No more! This mod adds additional colours for you to use! 27 of them!
+2405	LetMeRightClick	25002	149	Other	2026-08-21	2025-10-28	1.1.1	>=4.1.3	1	1	1	0	0	0	1	Why can't I right-click when searching? Well - now I can.
+1537	sgtlaggy's Quest Tweaks	24418	48	Quests	2026-10-06	2024-07-08	4.9.0	~4.1.0	1	1	1	0	1	0	2	Some QoL quest changes.
+1818	Make Meds Great Again!	24226	39	Overhauls	2026-10-02	2024-11-04	1.3.0	~4.1.6	0	1	0	1	1	0	1	Move while performing surgery, sprint while healing and customize medkits' HP and painkiller uses.
+2937	Manimal's 1.0 Labs Office Backport	24171	193	Locations	2026-09-07	2026-08-16	2.0.0	~4.1.3	1	1	1	0	0	0	1	Backports the 1.0 Labs expansion to SPT 4.0.
+1986	GTFO NG	24164	34	Other	2026-08-27	2025-01-26	1.5.3	~4.1	1	1	1	0	0	0	1	Want to learn maps visually for quests or extracts? Use this visual learning tool that will show extracts and quest objectives that are available to you and the distance from your player's current position.
+2483	Boxes At Ref (BARF) - NG	23338	106	Traders	2026-08-12	2025-12-03	3.0.0	~4.1.2	1	1	1	0	1	0	1	Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the new trader Ref.
+1878	Unrestricted Armor Plate	22867	32	Equipment	2026-09-28	2024-12-09	2.1.0	~4.1	1	1	0	0	0	0	2	Allows to insert any Armor Plate into any Armored Chest Rig​ or Armor Vest​.
+1858	Enemy Markers	22831	54	Other	2026-08-17	2024-11-28	1.4.0	~4.1	1	1	1	0	0	0	1	Simply a Marker that shows the enemies with a "v" shaped marker. Can also display the distance from the enemy.
+2634	Escape From Low Frames	22323	112	Other	2026-09-26	2026-03-20	1.0.4	4.1.6	1	1	1	0	0	0	2	A way to escape that disturbingly low framerate
+2415	Canted Aiming	21844	89	Items	2026-08-12	2025-11-02	2.0.0	~4.1.0	1	1	1	0	1	0	1	Allow the player to point shoot without a backup sight mount.
+2586	Caliber Under Ammo Name	21753	126	Other	2026-08-06	2026-02-12	1.2.0	~4.1.0	1	1	1	0	0	0	1	Adds a caliber label below the short name for ammo & ammo boxes.
+2369	Jero Backpack	20811	21	Equipment	2026-10-10	2025-10-14	4.1.1	4.1.6	0	1	0	0	1	0	1	Increases backpack inventory space by resizing grids. Supports custom sizes and blacklist.
+2329	BushWhacker - Standalone	20713	89	Scripting	2026-08-10	2025-09-28	1.7.0	~4.1	1	1	0	0	0	0	1	Disables the slowdown effect of bushes and swamps
+2093	Virtual's Custom Quests - Updated	20043	40	Quests	2026-09-02	2025-04-10	2.5.6	4.1.3	0	0	0	0	1	0	1	A set of custom lore-based quests to fill that deep desire for more content.
+2567	CloudSix - Volumetric Clouds	19756	67	Other	2026-10-05	2026-01-29	4.0.0	4.1.6	0	1	1	0	0	0	1	Replaces base game clouds with volumetric clouds using a custom shader built from the ground up
+2235	Sharper Tushonka Better Life	19300	34	Other	2026-09-19	2025-07-30	1.1.3	*	1	1	1	0	0	0	1	A simple and lightweight ReShade preset that improves visibility and enhances the overall look of EFT by making the game sharper without over-sharpening it or making UI elements an eyesore to look at.
+2681	Manimal's Ammo Loading Animations	19233	147	Items	2026-10-03	2026-05-06	2.0.0	~4.1.5	1	1	1	0	1	0	1	First person animations for loading bullets into a mag
+2524	Item Limits Begone!	18592	99	Other	2026-08-06	2025-12-31	1.1.0	~4.1	1	1	1	0	0	0	1	Removes in-raid, inventory, and flea listing limits for all items. Also changes back pack stack limit to 42.
+2481	Crates In Airdrop	18574	79	Other	2026-08-12	2025-12-03	2.0.0	~4.1.0	1	1	1	0	0	0	1	Ref's Locked Cases in Airdrops
+2601	Smajlec's Lights	18496	58	Other	2026-08-24	2026-02-22	1.3.0	~4.1	1	1	1	0	0	0	1	Changes the default greyish-brown color grading to a more natural one
+2153	Expanded Task Text (ETT)	18445	71	Locales	2026-08-30	2025-05-26	2.1.0	~4.1	1	1	1	0	0	0	2	Knowledge is power, unfortunately Nikita doesn't see it that way.
+2206	Item Preview QoL + screenshots	18030	73	Overhauls	2026-09-24	2025-06-29	1.2.0	4.1.6	0	1	0	0	1	0	1	Better item preview: zoom, pan, rotate lights, fullscreen, and alpha screenshots. UI Fixes compatible.
+2643	Magazine Check Interrupt	17873	140	Scripting	2026-09-20	2026-03-28	1.1.1	~4.1.2	1	1	1	0	0	0	1	Seamlessly transition from a magazine check to a reload!
+2214	DoorDash	17548	61	Other	2026-09-28	2025-07-08	1.2.0	~4.1.0	1	1	0	0	0	0	1	Blow open doors without stopping
+180	USEFUL FOODS AND DRINKS	17500	48	Items	2026-09-16	2021-07-03	4.1.5	4.1.5	1	0	0	0	1	0	2	All the food/drink items are changed. Better and Handy.
+2419	Amonya - Ammo Loving Trader & Quester	17479	82	Traders	2026-09-20	2025-11-04	2.2.0	~4.1.2	1	1	1	0	1	0	2	Ammo-obsessed pony trader who rewards your effort with the best bullets in the game
+3022	Manimal's 1.0 Lighthouse Rework Backport	17459	132	Locations	2026-09-28	2026-09-12	1.0.7	~4.1.6	1	1	0	0	0	0	1	Backports the new Lighthouse rework to SPT 4.1.
+1745	Discarder	17412	64	Other	2026-08-09	2024-09-23	5.0.0	~4.1	1	1	1	0	0	0	1	Multi-select discard for UI Fixes
+2882	Eco's Attachment Emporium	17282	108	Weapons	2026-08-04	2026-08-04	3.0.0	4.1.1	0	0	1	0	1	0	1	New gear. More builds.
+1416	Default Fire Mode Fixer	16768	38	Other	2026-08-09	2024-05-17	2.1.0	~4.1	1	1	1	0	0	0	2	Fixes weapons to default to full auto instead of single fire. Shotguns default to double instead of single if available. SMGs default to Full Auto over Single / Burst
+1965	Plant Time Modifier - Updated by CrocodileJonesy	16564	41		2026-09-01	2025-01-14	1.5.0	~4.1	1	1	1	0	0	0	1	An update for the original plant time modifier mod that allows you to set the time it takes to plant items for certain quests, you can adjust it to be either quicker or slower.
+2780	No Barrel Shadow	16289	152	Overhauls	2026-09-20	2026-06-27	2.0.1	~4.1.0	1	1	1	0	1	0	1	Removes the barrel shadow cast by flashlights and tactical devices on all weapons.
+2380	Black Exfil Revision	16221	75	Equipment	2026-10-08	2025-10-18	1.1.0	~4.1.0	1	1	1	0	1	0	1	Bring back full protection! This mod lets you equip compatible face shields on the Black Exfil helmet once again, just like in the old days.
+2737	JSOC Service Weapon Replacment Program	15710	79	Weapons	2026-09-25	2026-06-12	3.0.1	~4.1.6	0	1	1	0	1	0	2	You've been chosen to select the next JSOC assault rifle and DMR. Choose wisely.
+875	VAI: Non-Realistic Tapkov Project	15526	15	Overhauls	2026-09-23	2023-05-09	1.1.2	~4.1	1	1	0	0	1	0	1	This mod aims to make SPT more fun experience by sacrificing its realistic nature.
+2698	Loot In Vicinity	15256	113	Tools	2026-09-21	2026-05-20	3.0.6	>=4.1 <4.2.0	1	1	0	0	0	0	1	See the loot all around you! Organize your loot during raids! And more!
+2162	Skill Multiplier	15227	27	Scripting	2026-10-10	2025-05-26	2.1.2	~4.1.6	1	1	1	0	0	0	1	Adds sliders for individual skill EXP multipliers.
+1629	SPT Korean Project - Locale Patcher	14956	16	Locales	2026-09-21	2024-08-08	2.1.1	~4	1	1	1	0	0	0	1	SPT Korean Translation Project. Updated and improved missing Korean localization.
+2441	NARCONet - Mod Sync	14919	48	Tools	2026-09-15	2025-11-12	1.9.1	~4.1.3	1	1	1	0	0	0	1	One Connection. Every Mod. Every Setting. More Reliable than your dealer.
+2735	ScopeRangefinder	14837	109	Tools	2026-09-29	2026-06-11	3.5.0	~4.1.0	1	1	1	0	0	0	1	In-scope rangefinder, meter-precise auto zero, and trajectory/dispersion preview while aiming
+2635	Smooth Talker	14671	82	Audio	2026-09-21	2026-03-22	1.3.0	~4.1	1	1	1	0	0	0	2	Today your PMC could be as dumb as yesterday but a little more talkative.
+2344	Dynamic Item Weights	14537	71	Items	2026-10-08	2025-10-08	1.2.0	~4.1.0	1	1	1	0	0	0	1	Say bye to the empty 9kg jerry can! This mod adjusts the weight of items based on their current usage.
+1866	Gunsmith Tweaks	14349	35	Quests	2026-08-02	2024-12-03	4.1.0	~4.1.0	1	1	1	0	1	0	1	Makes Mechanic actually gives guns.
+1755	Scavs 4 All	14185	34	Other	2026-09-05	2024-09-30	2.0.2	~4.0.0	1	1	1	0	0	0	2	A quick and simple way to make those pesky quests that require only scav kills to count pmc kills towards your progress as well.
+2789	NVG Sight Dimmer	14012	134	Scripting	2026-09-20	2026-06-30	2.1.0	~4.1.0	1	1	1	0	0	0	1	Automatically dims sight and scope brightness when your NVGs are on — no more blinding reticles.
+2070	VCO - Viewmodel Camera Offset	13880	30	Scripting	2026-09-01	2025-03-30	1.3.0	~4.1.3	1	1	1	0	0	0	1	A simple client mod that allows you to offset the player camera for cosmetic purposes.
+2859	Compatibility Highlighter	13870	138	Other	2026-09-24	2026-07-31	1.3.0	~4.1	1	1	1	0	0	0	1	Highlight compatible mags ammo and attachments.
+1237	Consumables Galore	13666	26	Items	2026-08-03	2024-01-23	3.0.0	~4.1.1	1	1	1	0	1	0	1	Easily create your stims and foods in-game. Tool that comes pre-packed with some new and old stims and foods.
+2730	AutoCorpseSearch	13650	103	Tools	2026-09-29	2026-06-10	2.2.0	~4.1.0	1	1	1	0	0	0	1	Automatically starts searching a corpse's equipment slots when you open the loot screen - no more clicking Search on each slot individually
+918	BotDebug	13623	8	Tools	2026-08-03	2023-06-11	1.8.0	~4.1.0	1	1	0	0	0	0	1	A development utility for seeing what's going on with bots
+1937	Dev Balaclava Fix	13488	31	Equipment	2026-08-07	2025-01-03	1.2.0	~4.1	1	1	1	0	0	0	1	Just makes you actually invincible while wearing the Dev Balaclava. Meant for mod developers. Immune to explosions, border snipers, BTR running you over, etc
+2817	The Quartermaster	13266	67	Traders	2026-08-13	2026-07-13	1.4.3	~4.1.0	1	1	0	0	1	0	1	A global, player-driven second-hand marketplace. Sell gear from your stash. Buy gear that other players have sold. Every item has a history.
+2657	Cultist Circle Improvements	13185	95	Hideout	2026-08-09	2026-04-05	1.1.0	~4.1	1	1	1	0	0	0	1	Fine tune your Cultist Circle, change all the values and timers. Add new direct reward crafts! Also comes with a web config, which at this point is probably expected from me. Oof.
+2686	Quest Presence Detector	13111	103	Quests	2026-09-01	2026-05-11	2.0.0	>=4.1.3	1	1	1	0	0	0	1	Detects when quest items are nearby by showing a progress bar with an optional arrow pointing towards it.
+2709	Miyako Carry Service	13040	70	Bots	2026-09-20	2026-05-31	1.1.4	~4.1.2	1	1	1	0	0	0	1	MiyakoCarryService is a mod that generates AI teammates.
+2037	Colored Tracers	13027	24	Scripting	2026-08-09	2025-03-16	3.0.1	~4.1.2	1	1	1	0	0	0	2	Bullets now have tracers colored by their penetration value!
+784	Hardcore Rules	12824	17	Overhauls	2026-08-16	2023-03-04	3.1.0	~4.1.0	1	1	1	0	1	0	1	Is SPT getting too easy? Too much nice gear collecting dust in your stash? Fix that problem with a hardcore playthrough similar to DeadlySlob's hardcore rules for live T*****.
+2803	ItemGen	12779	86	Items	2026-08-03	2026-07-07	1.5.1	~4.1.1	1	1	0	0	1	0	1	A server-side framework for SPTarkov that lets anyone, including non-programmers, create custom items using simple JSON packs. Includes a web-based tool for generating packs visually and a client-side bundle injector for custom 3D models.
+1171	Make PL-15 Great Again!	12688	20	Overhauls	2026-10-02	2023-11-25	1.5.0	~4.1.6	0	1	0	1	1	0	1	The PL-15 is a great weapon, but it has some flaws. This mod aims to fix them
+1175	Make VPO-101 Great Again!	12615	20	Overhauls	2026-10-02	2023-12-02	1.5.0	~4.1.6	0	1	0	1	1	0	1	The VEPR-Hunter (Molot VPO-101) is a great weapon, but it has a flaw. This mod aims to fix it
+2621	T***** DLSS 4.5	12296	67	Tools	2026-08-19	2026-03-08	1.0.0	>=4.0.0	1	1	1	0	0	0	1	This pre-patcher enables DLSS 4.5 support in SPT/Fika.
+1474	Disable Traitor Scavs	12269	33	Other	2026-08-09	2024-06-08	2.1.0	~4.1	1	1	1	0	0	0	2	Disables Traitor Scavs. You can also, alternatively, adjust the chance they do spawn instead of disabling them. Stop getting shot in the back!
+2677	Scrollable Attachments	12255	91	Other	2026-10-04	2026-04-30	2.0.0	~4.1.6	0	1	1	0	0	0	1	because looking for attachments is :waytoodank:
+2930	ECOTI - Enhanced Clip-On Thermal Imager	12074	91	Items	2026-10-10	2026-08-16	3.3.1	~4.1.3	1	1	1	0	1	0	1	A clip-on thermal imager for your night vision. It clamps to the objective and fuses heat into the tube's circle, so hot shapes stand out while the night vision image still shows through - rather than replacing your view with a thermal one.
+2689	Item Property Backport	11956	102	Other	2026-08-23	2026-05-12	1.5.2	~4.1.0	1	1	1	0	0	0	1	Get live item stat/balance changes!
+1946	Arse Scratching Service (ASS)	11789	19	Other	2026-09-04	2025-01-06	1.7.4	~4.1	1	1	0	0	0	0	1	Restore armour and weapon durability after gunfights in raid over time.
+2371	FIR Fence Purchases	11605	49	Traders	2026-10-08	2025-10-15	1.1.0	~4.1.0	1	1	1	0	0	0	1	Give Fence’s stock a boost! This mod ensures that every item you buy from Fence is marked as Found in Raid.
+2798	Key Tips	11498	126	Other	2026-08-07	2026-07-05	1.1.0	~4.1.2	1	1	1	0	0	0	1	Adds tips for using keys or keycards, and shows which key is needed for a door.
+2167	CNN - CONTAINERS - RE-UPLOAD	11357	54	Items	2026-08-04	2025-06-02	5.0.0	~4.1	1	1	1	0	1	0	3	Re-Upload of Cannuccia's CNN-Container mod, updated for SPT v3.11.X and a port for SPT 4.0.X
+2240	LET ME OUT	11049	44	Locations	2026-08-06	2025-08-02	1.1.0	~4.1	1	1	1	0	0	0	1	Stops transit interaction from disabling all the other exfils. I want out, let me out!
+2049	Add Secret Exfil Notes to Caches	10957	60	Other	2026-08-06	2025-03-23	2.1.0	~4.1	1	1	1	0	0	0	2	Simple mod that adds the Secret Exfil Code Notes to Barrel/Wood caches as well as dead PMC/SCAV bodies on maps that have Secret Exfils. At the configurable rate that you choose.
+1551	Remove The Dead	10904	28	Tools	2026-08-27	2024-07-12	4.1.3	4.1.3	0	0	0	0	0	0	1	Remove the unnecessary scum from the map!
+2594	Player Boss Scav	10846	28	Bots	2026-08-05	2026-02-17	1.1.0	~4.1	1	1	1	0	0	0	1	Standalone component from APBS. Allows your scav to generate as a boss with a configurable chance.
+2550	Bring Back Concussion	10839	72	Audio	2026-10-06	2026-01-14	1.2.0	~4.1	1	1	1	0	0	0	1	Revamp of EFT's lost brutality and headshots that've never been so brutal.
+2639	Auto Shoulder Swap	10817	93	Scripting	2026-08-10	2026-03-23	1.1.1	~4.1	1	1	1	0	0	0	1	A simple mod that enables syncing leaning and shoulder swapping.
+2779	Cooler Stims	10700	72	Items	2026-09-20	2026-06-26	2.0.2	~4.1.1	1	1	1	0	0	0	1	Five custom stims, each built for a different way to play — entry fragging, sustained healing, tanking, looting, limb repair. Now with their own models, icons, and in-hands skins. Everything configurable.
+535	Andrudis QuestManiac	10654	28	Quests	2026-08-15	2022-08-07	3.0.2	~4.1	1	1	0	0	1	0	1	This is a reupload of Andrudis-QuestManiac for SPT-AKI's latest version (hopefully).
+2655	Stat Rewards	10622	57	Other	2026-09-13	2026-04-03	1.2.0	~4.1.5	1	1	1	0	0	0	1	Random rewards for hitting stat milestones — kills, damage, looting, and more. 48 repeatable milestones, fully configurable.
+975	Quick Launcher	10593	7	Tools	2026-09-01	2023-07-13	3.1.0	~4.1	1	1	0	0	0	0	1	A very simple one-click launcher designed as a lightweight alternative to my SPT Launcher.
+2786	Auto Ranging	10552	84	Scripting	2026-09-20	2026-06-28	2.0.0	~4.1.0	1	1	0	0	0	0	1	Your scope zeroes itself to whatever you're aiming at. Aim, and the sight snaps to the closest zeroing distance — no clicking through steps mid-fight. Now also zeroes for the ammo actually in your gun, not the weapon's default round.
+2934	Armor Class Icon	10551	113	Items	2026-08-20	2026-08-16	0.4.0	~4.0.0	1	1	0	0	0	0	1	Shows armor class icon on body armor, helmets, armored rigs, visors and face covers
+1993	RCTA - Ada Wong [RE4R]	10441	20	Clothing	2026-08-08	2025-02-01	1.0.3	~4.1	1	1	1	0	1	0	1	Ada Wong from Resident Evil 4 Remake
+2425	SamSWAT's Anime Rear Sights - 4.0 Port	10290	25	Items	2026-08-12	2025-11-05	1.4.1	~4.1.0	1	1	1	0	0	0	1	Adds 24 anime styled rear sights that are sold by Mechanic.
+2448	SNACC Pack	10271	31	Items	2026-09-02	2025-11-14	1.0.1	4.1.3	0	0	1	0	1	0	1	SNACC pack for all those treats
+2790	EasyMounting	10271	90	Tools	2026-09-09	2026-07-01	2.0.1	~4.1.0	1	1	1	0	0	0	1	No more existential dreads while trying to mount your weapon
+2475	Restore The Old Number Of Medical Uses	10256	42	Overhauls	2026-08-21	2025-11-28	1.1.0	~4.1	1	1	0	0	1	0	1	The number of uses of medicine is like in the good old days
+2700	knife sprint	10205	86	Other	2026-09-19	2026-05-20	1.0.1	~4.1	1	1	0	0	0	0	1	a simple mod letting you sprint faster with your knife out
+2248	Separate Hostility	10172	43	Bots	2026-08-30	2025-08-09	3.0.0	4.1.3	0	0	0	0	0	0	2	Completely fixes the hostility issue in EFT 0.16 / SPT 3.11 where bots don't fight others as they should.
+2459	Ammo Weight Modifier	10135	58	Items	2026-08-13	2025-11-20	2.1.0	4.1.0	0	0	1	0	1	0	1	Modify the weight of ammo
+2373	Slimmer Magazines	10122	56	Weapons	2026-08-12	2025-10-16	2.0.0	~4.1.0	1	1	1	0	1	0	1	All your 2x2 magazines are now a 1x2.
+2212	Unbreakable keys	10121	36	Items	2026-08-12	2025-07-05	1.3.0	~4.1.0	1	1	1	0	1	0	1	TL;DR: Makes keys and keycards unbreakable.
+2791	Tylevo's Tactical Service Control	9923	100	Equipment	2026-09-11	2026-07-01	1.3.13	4.1.5	1	0	1	0	1	0	1	Adds a TSC phone and Fika-ready Fire Support options, including UAV recon, A-10 strikes, Black Hawk extraction, stash payments, and host-controlled pricing.
+2879	WebOverlay	9803	96	Tools	2026-09-20	2026-08-02	1.11.0	^4.0.0	1	1	1	0	0	0	1	Lets mods show HTML panels and click-through HUDs over the game
+2458	Bela.s.Speedloader	9758	31	Scripting	2026-10-06	2025-11-20	1.2.4	~4.1.2	1	1	0	0	0	0	1	Faster ammo loading speed. Extended raid time. Larger ammo stacks.
+1656	SPT Discord Rich Presence	9572	17	Other	2026-09-13	2024-08-15	2.0.0	4.1.x	1	1	1	0	0	0	1	Display basic game information on your Discord Activity!
+1988	Low Budget Bullet Time NG	9514	21	Other	2026-08-17	2025-01-27	2.3.0	~4.1	1	1	1	0	0	0	1	Want to slow down time to corner peak a bunch of AI? Now you can... with some limitations
+2734	Better Night Skies	9471	88	Models	2026-09-11	2026-06-11	2.0.0	~4.1	1	1	1	0	0	0	1	What's that giant star ? Could it be yo mama ?
+2414	Peacemaker Continued	9434	26	Weapons	2026-08-03	2025-11-02	2.1.0	~4.1.1	1	1	1	0	1	0	1	It's so different from simply changing a clip!
+2569	AOSix	9314	36	Other	2026-10-03	2026-01-30	2.0.0	4.1.6	0	1	1	0	0	0	1	Replaces base games HBAO with GTAO, a more accurate ambient occlusion method
+2788	VisitAPI Framework	9256	104	Overhauls	2026-10-06	2026-06-29	1.3.6	~4.1	1	1	1	0	1	0	1	Recreating Storyline and Dialog feature from the Offcial to SPT. Easy to apply to native or custom Trader with a sign file.
+3029	ImpactCue-UI-MOD	9242	67	Other	2026-10-11	2026-09-14	2.0.2	4.1.x	1	1	1	0	0	0	1	Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons
+2608	Smajlec's Stamina	9235	53	Other	2026-08-24	2026-02-27	1.4.0	~4.1	1	1	1	0	0	0	1	When you cannot sprint anymore, jog!
+2733	RaidMenuCleanupFix	9101	88	Tools	2026-09-09	2026-06-10	2.0.0	~4.1.0	1	1	1	0	0	0	1	Removes the brief freeze when opening the escape menu during a raid
+2526	Advanced Flea Simulator	9087	36	Other	2026-09-19	2026-01-01	2.0.1	~4.1.3	1	1	1	0	0	0	1	Highly configurable simulator that aims to make using the flea market closer to how it feels to use in the live game.
+3011	Show Me The Money (Item Pricing) (4.1.x)	9070	98	Items	2026-09-10	2026-09-10	3.0.2	>=4.1.3	1	1	1	0	0	0	1	Show Me The Money, updated for 4.1.x.
+555	Special Slots	9035	34	Other	2026-08-27	2022-08-15	4.1.3	4.1.3	0	0	0	0	0	0	1	They're my pockets and I want to use them!
+1362	Repeatable Quest Config	9035	13	Other	2026-08-10	2024-04-27	2.1.0	~4.1	1	1	1	0	0	0	2	Disable certain types of Repeatable Quests and/or set multipliers for XP/Money/Rep/Skill gain rewards from Repeatable Quests. Allows instantly receiving new repeatables! Do all things repeatable!
+2888	Task Item Indicator	8649	104	Scripting	2026-09-20	2026-08-07	1.0.0	~4.1.0	1	1	1	0	0	0	1	This is a recreation of the task indicator from Live EFT, not a 1:1 backport, although it is pretty spot on.
+1477	AutoRun	8600	28	Other	2026-08-09	2024-06-10	6.0.0	~4.1	1	1	1	0	0	0	1	Just keep running.
+1527	Trader Namer	8593	7	Other	2026-08-03	2024-07-07	4.1.0	~4.1.0	1	1	1	0	0	0	2	Change your traders' names and avatars.
+2556	Repair Skill Extension	8559	43	Equipment	2026-10-11	2026-01-21	1.4.0	4.1.6	0	1	1	0	1	0	1	Custom higher buff chance for repairing armor & weapon. Repair skills work on all armor items. Fully repaired at once.
+2814	LMSP - Let Me Switch Plates	8555	103	Equipment	2026-09-13	2026-07-12	1.0.1	4.1.x	1	1	1	0	0	0	1	Switch plates without removing your equipped armor / rig in raid, FIKA compatible
+757	SPT Mini-Launcher	8467	0	Tools	2026-08-24	2023-02-15	4.1.0	~4.1.3	1	1	0	0	0	0	1	A comprehensive SPT-AKI launcher with third party app support and other cool features.
+2881	AutoKeycard for Labs	8278	79	Scripting	2026-08-06	2026-08-03	1.0.1	~4.1	1	1	1	0	0	0	1	Automatically uses the correct keycard when interacting with doors on Labs.
+2955	Quick Sell	8143	63	Tools	2026-10-02	2026-08-25	4.2.0	>=4.1.5	1	1	1	0	0	0	1	Quick-sell to the best trader or the flea, with prices on item tooltips.
+2494	Keycard Door Simplify Breach	8080	12	Tools	2026-10-10	2025-12-11	1.2.0	4.1.6	0	1	0	0	0	0	1	Simplify doors without card selection, optional 100% breach success to any doors.
+2884	Eco's WW2 Pack	8020	47	Weapons	2026-08-07	2026-08-04	2.0.0	4.1.2	0	0	1	0	1	0	1	Bring back the feeling of storming Normandy
+1229	LumurkFox - PINEAPPLE BLITZ GRENADE (RE-UPLOAD)	7972	8	Items	2026-08-13	2024-01-16	2.1.0	4.1.0	0	0	1	0	1	0	1	Nade go boom.
+2500	Wishlist Extended	7787	68	Other	2026-09-01	2025-12-15	1.2.0	~4.1	1	1	1	0	0	0	1	Extends EFT’s auto-wishlist system with advanced customization options. Automatically wishlist items for selected crafts, hideout upgrades, and barters.
+1981	READABLE KEYS by DeadW0Lf	7739	30	Items	2026-09-23	2025-01-25	4.0.13	4.0.13	1	0	0	0	1	0	1	Improved descriptions, tooltip and short names for Keys and Keycards. Also modifiable usage count in config.
+2576	All In Weapon: Unslotted	7685	24	Scripting	2026-10-08	2026-02-06	1.2.0	~4.1.2	1	1	1	0	0	0	1	"Unslot" your weapons. Slot your mistakes. No filters. No rules. Only cursed weapons
+2783	Fast Grenade Throw	7516	65	Overhauls	2026-09-20	2026-06-27	2.0.0	~4.1.0	1	1	0	0	0	0	1	Brings back the classic instant grenade throw with dedicated key binds for overhand and underhand quick throws.
+3035	Russian Special Forces Pack	7422	67	Weapons	2026-09-23	2026-09-16	1.0.1	4.0.13	1	1	1	0	1	0	1	Compilation of guns from the russian federation
+2903	Raids Are Infinite	7275	59	Locations	2026-08-26	2026-08-12	1.1.0	~4.1	1	1	1	0	0	0	1	TL;DR: Ever wished to just roam the map forever? Now you can!
+2479	Weighted Season Randomizer	7228	36	Locations	2026-09-28	2025-12-01	2.0.1	~4.1.0	1	1	1	0	0	0	1	Configure weighted random seasons - higher weight = more common!
+2776	Parmesan - Partizan Rework	7198	80	Bots	2026-09-19	2026-06-26	1.0.1	4.1.2	0	0	0	0	0	0	1	fixes partizan by makeing him hunt AI pmcs instead of you all the time
+2364	NoMenuFPSLimit	7176	24	Other	2026-08-23	2025-10-13	1.1.0	>=4.1.3	1	1	1	0	0	0	1	Removes the FPS limit of 60 in the main menu.
+2642	Vagabond	7155	74	Overhauls	2026-09-27	2026-03-26	0.8.3	~4.1.6	1	1	1	0	1	0	1	Vagabond is an overhaul mod, which aims to turn the game into an open world. You start with limited money to buy a simple loadout, and your challenge is now to survive using only transits and access traders via their own extracts.
+2503	Nerf Frostbite	7103	13	Other	2026-08-29	2025-12-16	1.0.1	~4.1.3	1	1	1	0	0	0	1	Removes most negative effects from frostbite.
+1851	VAI: Rogue-Lite Tapkov Project	7050	12	Overhauls	2026-09-13	2024-11-23	1.2.3	~4.1	1	1	0	0	1	0	1	This mod is a Rogue-Lite conversion of the progression system.
+2554	Change Helmet Visor	7046	50	Equipment	2026-09-27	2026-01-16	3.0.0	~4.1.3	1	1	1	0	0	0	2	A mod that lets you swap between how the face shield/face cover visor is rendered
+2777	AmmoGen	7035	50	Items	2026-08-06	2026-06-26	2.4.0	~4.1.1	1	1	1	0	1	0	1	AmmoGen is a server-side framework for SPTarkov that lets anyone create custom ammo, ammo boxes, and loot injections using simple JSON packs, no programming required.
+147	Medical Attention	6988	26		2026-08-27	2021-05-12	4.1.3	4.1.3	0	0	0	0	0	0	1	"He's dead, Jim!" is no longer part of your vocabulary.
+2650	Holster Everything	6931	40	Weapons	2026-09-05	2026-04-01	2.0.0	~4.1.0	1	1	0	0	1	0	1	HolsterEverything is a server-side SPT mod that expands what can be equipped in the PMC holster slot.
+2945	TCF Mod Manager	6931	43	Other	2026-10-10	2026-08-20	1.21.2-beta	>=4.0.13	1	1	1	0	0	0	1	Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.
+2101	SPT Leaderboard	6923	7	Other	2026-09-22	2025-04-16	5.1.2	~4.1	1	1	1	1	0	0	2	The Ultimate Leaderboard for SPT. Connect and explore along other SPT players worldwide.
+2743	WeaponBuilderSearch	6793	76	Tools	2026-09-15	2026-06-14	2.0.0	~4.1.0	1	1	1	0	0	0	1	Adds a live search field to the attachment dropdown in the Weapon Builder and Weapon Modding screens
+1425	Un-flashbang Hideout	6637	12	Other	2026-08-02	2024-05-20	1.0.5	~4.1	1	1	1	0	0	0	1	Running Super Sampling and have just completed a few raids late at night? Went into your hideout to upgrade something or craft and just got flashbanged? No more!
+2710	female pmc voice (U***)	6617	42	Audio	2026-09-24	2026-05-31	1.0.3	~4.1	1	1	1	1	0	0	1	ever wanted a female U*** voice in t*****? well now you do!
+2553	Chamber Ammo Info	6598	35	Weapons	2026-10-08	2026-01-14	1.1.0	~4.1.0	1	1	1	0	0	0	1	Know your next shot! This mod displays the ammo type loaded in your chamber when checking it.
+2905	Ragdoll Kinetics	6554	74	Overhauls	2026-08-15	2026-08-13	1.2.0	~4.1.0	1	1	0	0	0	0	1	Ragdoll Kinetics attempts to deliver natural, animation-driven death physics with realistic momentum, joint movement, and muscle reactions.
+2874	Adaptive Bot Culling	6485	38	Other	2026-08-17	2026-08-02	1.2.0	~4.1.0	1	1	0	0	0	0	1	Integrates AI brain and animation pausing into EFT’s native asset-culling and LOD system, reducing CPU usage when bots are far away
+2749	TraderGen	6466	47	Traders	2026-08-17	2026-06-17	2.4.1	~4.1.0	1	1	0	0	1	0	1	A dependency/framework mod that lets anyone, including non-programmers, create custom traders for SPTarkov using simple JSON files.
+2617	Don't Shoot The Bus	6438	49	Bots	2026-09-13	2026-03-05	1.1.0	~4.1	1	1	1	0	0	0	1	PMC bots keep picking fights with a 13-ton armored vehicle. This mod fixes that.
+1280	Warzone Cat Ears	6411	12	Equipment	2026-08-14	2024-04-05	2.1.0	~4.1.0	1	1	1	1	1	0	1	Nya Nya, Motherfuckers.
+2589	Mag Retention Reload	6411	48	Weapons	2026-10-10	2026-02-13	1.3.0	~4.1.0	1	1	1	0	0	0	1	No more feeding the floor with magazines! This mod makes every reload a proper mag-retention reload.
+2616	Better (Picatinny) OKP	6344	39	Items	2026-08-12	2026-03-03	2.0.0	~4.1.0	1	1	1	0	1	0	1	No more gigantic red dot with the picatinny OKP optic!
+3103	Cabinet Looter	6334	83	Other	2026-10-07	2026-10-04	0.5.2	~4.0.0	1	1	1	0	0	0	1	Gone are the days of checking drawer by drawer.
+2745	Manimal's Watch Animations	6281	66	Models	2026-09-10	2026-06-15	2.0.0	~4.1.5	1	1	0	0	0	0	1	Left hand animation when checking remaining time in raid
+2876	Simple Raid HUD	6244	58	Other	2026-08-02	2026-08-02	1.3.3	4.1.0	0	0	0	0	0	0	1	A clean and configurable raid HUD for health, hydration, energy and magazine ammo.
+2840	Cobra's Ammo Stack	6158	40	Items	2026-08-06	2026-07-23	1.1.0	~4.1.0	1	1	1	0	1	0	1	Configure ammunition stack sizes by caliber with support for vanilla and modded ammo.
+2774	Transparent Sights	6140	62	Weapons	2026-10-02	2026-06-25	0.2.3	~4.1.6	1	1	1	0	0	0	1	Keep both eyes open
+2528	Self Breath Volume	6116	24	Audio	2026-10-10	2026-01-01	1.2.0	4.1.6	0	1	1	0	0	0	1	Modify the breath volume & hurt vocal of yourself (Using mask, low stamina, get injured …)
+2752	DualSideDoorBreach	6107	61	Tools	2026-09-09	2026-06-18	2.0.1	~4.1.0	1	1	1	0	0	0	1	Don't tell me whether I should push or pull this door.
+1867	QCAdjustments	6026	9	Quests	2026-09-23	2024-12-03	5.1.0	~4.1	1	1	1	0	0	0	1	Customize quest requirements with adjustable item amounts and new Gunsmith options. Add kill objectives, skip weapon turn-ins, and tailor tasks to your gameplay style.
+2908	Tarkin's Hideout Cat	6017	87	Hideout	2026-08-14	2026-08-13	1.1.1	~4.1.0	1	1	1	0	0	0	1	Hideout Cat, but for SPT 4.1!
+3040	Map Variants	5983	81	Locations	2026-10-09	2026-09-19	1.0.2	~4.1.3	1	1	1	0	0	0	1	Choose between the map SPT ships and a backported version of it
+1797	Hazardifier	5869	12	Other	2026-08-03	2024-10-27	1.4.0	~4.1.0	1	1	0	0	0	0	1	Make your time in T***** a living hell
+2909	Hj's Task Search	5848	71	Quests	2026-09-29	2026-08-13	2.0.2	~4.1	1	1	1	0	0	0	1	Task Search from 1.0
+2883	Franchi SPAS-12	5841	41	Weapons	2026-08-07	2026-08-04	1.0.2	4.1.2	0	0	1	0	1	0	1	Forget about Freeman
+2687	Sicc Case Fix	5790	53	Items	2026-09-13	2026-05-11	2.0.0	~4.1.3	1	1	1	0	1	0	2	Simple Fix for the Sicc Case not being able to hold Prestige 3 and 4 dog tags
+2151	SJX Stims Addon for Consumables Galore	5779	13		2026-08-03	2025-05-25	1.0.2	~4.1.1	1	1	0	0	0	0	1	Welcome to SJX Stims Addon, a powerful expansion to the Consumables Galore mod.
+2016	Delayed Flea Sales	5774	16	Other	2026-08-07	2025-02-22	2.1.0	~4.1	1	1	1	0	0	0	2	If you are tired of having your flea offers being sold instantly, maybe you don't like money - I don't know, this mod is for you.
+2821	Raiders Vs Rogues	5668	48	Bots	2026-08-29	2026-07-16	1.7.0	4.1.3	0	0	1	0	0	0	1	In a world of uncertainty, you can never be sure what you'll come across next. In true T***** fashion, Rogues and Raiders are now roaming the entire region. New brains
+2552	No Version Label in Raid	5623	29	Other	2026-08-07	2026-01-14	1.0.0	~4.	1	1	1	0	0	0	1	Disables the version label in raid. It is enabled when in the menu.
+994	Set Speed - Set Player Speed with Hotkeys	5511	7	Other	2026-08-03	2023-08-03	1.5.0	~4.1.0	1	1	0	0	0	0	1	Quickly change between pre-set walk speeds using hotkeys
+3026	Quest Backport	5489	65	Quests	2026-10-09	2026-09-14	1.0.6	4.1.6	1	1	0	0	1	0	1	Rebuilding and porting select quests from the official EFT release for compatibility with SPT.
+1406	Dick Marcinko - Rogue Warrior Voice Pack	5463	17	Audio	2026-08-29	2024-05-14	1.0.7	4.1.3	0	0	1	0	0	0	1	The Rogue Warrior is on a classified mission.
+2499	WikiLinks	5421	24	Other	2026-08-27	2025-12-13	2.0.0	~4.1	1	1	1	0	0	0	1	Adds in-game links to the EFT Wiki
+3097	DynamicMaps Extended	5384	57	Tools	2026-10-07	2026-10-02	2.1.0	>=4.1.6	0	1	1	0	0	0	1	Expands DynamicMaps with new maps, backports, and more visual options.
+2893	TraumaCore	5299	61	Overhauls	2026-09-23	2026-08-10	1.7.0	~4.1.0	1	1	0	0	1	0	1	TraumaCore is a configurable damage and injury overhaul for SPT
+2784	AutoIFF	5284	57	Tools	2026-10-06	2026-06-28	2.1.0	~4.1.0	1	1	1	0	0	0	1	Auto-identify Friend or Foe when aiming, plus Scav traitor alerts and friendly-fire protection
+2507	Remove Frostbite Overlay	5281	15	Other	2026-08-29	2025-12-20	1.0.1	~4.1.2	1	1	1	0	0	0	1	Removes the visual effect of frostbite.
+2175	🛠️ Limitless – Unlimited or Multiply Buy Limits	5207	16	Overhauls	2026-08-03	2025-06-09	1.0.0	~4.1.1	1	1	0	0	1	0	1	No more running out of ammo or gear due to stock restrictions — unless you want to keep a higher limit. It’s all configurable.
+2739	UnloadAllMagazines	5181	53	Tools	2026-09-09	2026-06-12	2.2.1	~4.1.0	1	1	1	0	0	0	1	Never again having to puzzle where the good ammunition went.
+1973	Event Auto Profile Backup	5079	29	Other	2026-08-14	2025-01-20	2.1.0	>=4.1.2	1	1	1	0	0	0	1	No more worries to backup your profile. Automatic event-based profile backup system with easy restore system.
+2757	ImmersiveRaidTime	5036	48	Other	2026-08-07	2026-06-20	1.1.0	~4.1.2	1	1	1	0	0	0	1	Sync your in-game time with reality and custom timezone.
+2618	Tripwire Improvement	5030	30	Scripting	2026-10-11	2026-03-06	1.1.0	4.1.6	0	1	1	0	0	0	1	Infinite tripwire kit, customize count down (instant explosion grenade), longer and freer placement
+2994	SPT Casino	5015	26	Other	2026-10-01	2026-09-05	1.3.3	~4.1.0	1	1	1	0	0	0	1	Take a break from dying in T****v. Lose your money another way.
+2651	Environment Volume Control	4968	28	Audio	2026-09-11	2026-04-02	2.0.0	~4.1	1	1	1	0	0	0	1	Old man yells at Cloud and BTR and Airplane and Wind
+2824	TraderSearch	4957	54	Tools	2026-09-19	2026-07-17	2.1.0	~4.1.0	1	1	1	0	0	0	1	The search bar the trader window always lacked - now also in the flea market's Add Offer window
+2954	QuestMarker	4952	32	Tools	2026-09-29	2026-08-24	1.4.0	~4.1.0	1	1	1	0	0	0	1	Quest objectives and your extracts as markers in the world, with name and distance, on one key
+2860	CraftQueue	4946	36	Tools	2026-10-06	2026-07-31	2.4.0	~4.1.0	1	1	1	0	0	0	1	Queue hideout crafts across all stations and manage them from a web UI - even while you raid
+2694	TraderSpace	4931	32	Other	2026-09-11	2026-05-15	2.0.0	~4.1	1	1	1	0	0	0	1	Tired of scrolling your traders ? It's free real estate
+2170	Resonant AK from COD:MW2019 - ReUpload	4920	17	Weapons	2026-09-20	2025-06-06	3.0.0	~4.1	1	1	0	0	1	0	1	The very sci-fi looking AK blueprint from Call of Duty: Modern Warfare (2019)
+2785	ReceiveAllChats	4885	44	Tools	2026-09-13	2026-06-28	2.0.1	~4.1.0	1	1	1	0	0	0	1	Makes the "Receive all" button actually receive all attachments from all chats
+2408	Politely Remove Events	4881	14	Other	2026-08-12	2025-10-29	2.0.0	~4.1.0	1	1	1	0	0	0	1	Selectively remove the annoying seasonal events.
+2830	Bot Census	4866	50	Other	2026-08-29	2026-07-19	1.5.0	4.1.3	0	0	1	0	0	0	1	Are you tired of going in to a raid blind? Do you want to know who Nikita is sending to prevent you from extracting? Well welcome Bot Census!
+1774	RCTA - Callisto Standard, Deluge [CODMW3]	4848	13	Clothing	2026-08-08	2024-10-18	1.0.4	~4.1	1	1	1	0	1	0	1	Callisto Standard and Deluge Operator Outfits from Call of Duty : Modern Warfare 3 (2023)
+2646	Flexible Builds	4835	25	Overhauls	2026-09-30	2026-03-30	1.2.2	~4.1.0	1	1	1	0	0	0	1	Weapon preset and build improvements for SPT
+2519	Armbands For All	4780	30	Bots	2026-08-09	2025-12-29	1.1.0	~4.1	1	1	0	0	0	0	1	Nothing against people with no arms, but all bots have arms...why not armbands?
+2446	Handy Toolbox	4779	15	Items	2026-09-02	2025-11-14	1.0.1	4.1.3	0	0	1	0	1	0	1	Handy Toolbox Updated
+2641	Change Version Label	4776	30	Other	2026-08-08	2026-03-26	1.1.0	4.1.*	1	1	1	0	0	0	1	That thingy in bottom left corner
+2999	Terminal Commander	4717	38	Traders	2026-09-28	2026-09-06	1.3.0	4.1.6	1	1	1	0	1	0	1	Adds a new trader with an in-raid storyline with voice acting, chapters, and a large variety of equipment. Great for people who want a lot of story and trader content similar to vanilla EFT.
+3007	Breakout Outlines	4713	48	Other	2026-10-01	2026-09-08	1.2.0	~4.1	1	1	1	0	0	0	1	Highlight any loot, containers and dead bodies with Breakout-Like style.
+2147	MagTuning – Make Mags Better	4711	17	Overhauls	2026-08-03	2025-05-24	2.1.0	~4.1.1	1	1	0	0	1	0	0	🧲 MagTuning – Make Mags Better This mod tweaks mags in SPT so they don’t suck as much. Simple. Fast. Tunable. 💥
+2998	Original Story	4537	41	Quests	2026-09-18	2026-09-06	1.5.2	~4.1.1	1	1	1	0	1	0	1	Story line for SPT, from Journey to T***** to the Ending
+2816	Trash Talk	4528	28	Scripting	2026-09-20	2026-07-13	2.0.0	~4.1.0	1	1	0	0	0	0	1	The PMC that killed you just texted. Now you can text back. TrashTalk gives every PMC killer/victim message a real AI-generated voice — reply to them, get answers based on what you said, and enjoy the beef. Local LLM or your own API key.
+2597	Nested Quick Move	4467	24	Other	2026-08-05	2026-02-19	1.1.0	~4.1.0	1	1	0	0	0	0	1	Quick move extends to nested containers
+2997	EternalCycle	4427	39	Other	2026-09-17	2026-09-06	1.7.0	~4.1.1	1	1	1	0	0	0	2	Modern, lightweight and scalable front-end libraries for my mod
+2612	Super Sprint and Jump	4381	12	Other	2026-10-10	2026-03-01	2.0.0	4.1.6	0	1	1	0	0	0	1	Adjust run speed and jump height with hotkey. Move faster or jump higher up to 20x
+2763	MeleeMultiplier	4366	34	Weapons	2026-08-03	2026-06-22	0.0.4	~4.1	1	1	1	0	0	0	1	Damage multiplier for melee weapons
+2434	500 Euro for Skier	4345	26	Traders	2026-08-12	2025-11-09	2.0.0	~4.1.0	1	1	1	0	1	0	1	Skier should be trading in Euros, not Roubles!
+2210	Live Like Boss Spawn Chances	4280	13	Bots	2026-10-11	2025-07-03	2.3.0	~4.1.0	1	1	1	0	0	0	1	Simulates boss spawn chances gradually increasing throughout a "wipe" based on your player level and in-raid hours
+3055	Rook	4280	45	Traders	2026-10-03	2026-09-22	1.2.0	4.1.6	0	1	1	0	1	0	1	Rook is a lore-friendly custom trader offering curated weapons, equipment, custom presets, and intelligence-focused trading.
+2539	Progressive Flea	4251	26	Other	2026-08-12	2026-01-06	2.0.0	~4.1.0	1	1	1	0	0	0	1	Adds level locking to items on the flea market.
+2631	Softcore Meds	4248	16	Items	2026-09-12	2026-03-16	1.0.3	~4.1.0	1	1	0	0	0	0	1	Fast-Paced Healing: Restore Black Limbs With Stim, Restore All Black Limbs With Surgical In One Go
+1734	Southern-Hemisphere-Seasons	4234	6	Other	2026-08-04	2024-09-14	3.0.0	~4.1	1	1	1	0	0	0	2	The Southern-Hemisphere-Seasons mod aligns the in-game seasons with the real-world seasons for players in the Southern Hemisphere.
+2805	Map Editor Lite	4193	31	Other	2026-08-07	2026-07-07	2.1.0	~4.1.0	1	1	0	0	0	1	1	Map Editor Lite is a server-side framework for SPTarkov that lets anyone create and share custom map content - using an in-raid editor and simple JSON packs, no programming required.
+2496	Specially Weightless	4188	24	Items	2026-08-12	2025-12-12	2.0.0	~4.1.0	1	1	1	0	1	0	1	Weightless Special Items
+2691	Fold That Stock	4183	50	Weapons	2026-09-08	2026-05-14	2.1.0	~4.1.0	1	1	0	0	1	0	1	FoldThatStock adds working fold behavior to non-vanilla folding stock.
+2339	Preview Sizer	4166	25	Other	2026-08-06	2025-10-05	1.1.0	~4.1	1	1	1	0	0	0	1	Primarily required if you are using StatTrack or Realism, especially so if you use both. This will allow you to customize the preview icons and window sizes by removing fields.
+2582	Certified PMC	4139	14	Other	2026-08-06	2026-02-09	1.1.0	4.1.*	1	1	0	0	0	0	1	Randomizes your PMC's skills and masteries at character creation, because not every 'trained operative' starts life the same way.
+2946	More Cases Updated	4081	37	Items	2026-08-23	2026-08-21	3.0.0	4.1.3	0	0	0	0	1	0	1	Expand your organizational possibilities with more cases added to your stash!
+2898	FIR Means FIR	4073	52	Items	2026-08-15	2026-08-12	1.2.0	~4.1	1	1	1	0	1	0	1	TL;DR: This mod allows your items to keep FIR status, if it spawned in the raid, it's FIR
+2108	More Mannequin Pose	4022	9	Hideout	2026-08-29	2025-04-22	2.0.0	4.1.3	0	0	0	0	0	0	1	Adds extra poses to make your mannequin more lively
+982	Reisen Inaba	4014	5	Models	2026-09-22	2023-07-24	1.9.0	~4.1	1	1	1	0	0	0	1	Lunatic Rabbit in Tushonka
+1542	Debug Tooltip	3953	10		2026-08-12	2024-07-10	5.0.0	~4.1	1	1	1	0	0	0	1	Adds debug information to tooltips for mod developers
+2705	Hideout Shootout	3927	42	Hideout	2026-08-15	2026-05-25	1.8.0	~4.1	1	1	1	0	0	0	1	Enables use of your weapon in the Hideout outside of the shooting range
+2961	Weight Leveling	3893	35	Overhauls	2026-09-08	2026-08-26	4.1.3	^4.1.3	1	1	1	0	0	0	1	Item Weights go down as you level
+1768	RCTA - Metal Gear [FORTNITE]	3890	12	Clothing	2026-08-08	2024-10-14	1.0.4	~4.1	1	1	1	0	1	0	1	The Metal Gear collab outfits from Fortnite (but not cringe)
+2152	SJX Elite Stims Addon for Consumables Galore	3847	7	Items	2026-08-03	2025-05-25	1.0.2	~4.1.1	1	1	0	0	1	0	1	Welcome to SJX Elite Stims Addon, a powerful expansion to the Consumables Galore mod.
+2711	Better OKP-7	3818	33	Equipment	2026-09-25	2026-05-31	1.1.0	~4.1.3	1	1	1	1	1	0	1	New OKP-7 reticles for both the Dovetail and Picatinny varients!
+1766	RCTA - Synaptic Rig [CODIW]	3776	2	Clothing	2026-08-08	2024-10-12	1.0.8	~4.1	1	1	1	0	1	0	1	[EARLY VERSION] The Synaptic Rig from Call of Duty : Infinite Warfare
+2719	No Aim Swing	3739	33	Scripting	2026-10-11	2026-06-04	1.2.0	4.1.6	0	1	1	0	0	0	1	Reduce crosshair's overswing of start-aim. Less shaking when hold-breath
+2648	AllGoodsTrader	3670	12	Traders	2026-10-02	2026-03-31	2.0.0	~4.1.3	1	1	0	0	1	0	1	This mod adds four bilingual traders. Traders buy most items; equipment trader offers repair & insurance. Automatically handles rocket ammo & ammo boxes. Dynamic registration. Pricing supports three modes with configurable multiplier.
+1623	Bronzemanmode by KcY >3.9 port	3612	1	Overhauls	2026-08-21	2024-08-04	2.0.0	4.1.2	0	0	0	0	1	0	1	For true zero to hero experience, no trader/flea stock until you unlock it through raid extract or quest. Highly customizable.
+2831	Transits Count	3592	38	Quests	2026-08-10	2026-07-19	1.1.1	~4.1	1	1	1	0	0	0	1	Because B** does what B** does and doesn't update everything. Make transits count.
+2978	UnlockAllBackgrounds	3588	38	Other	2026-09-01	2026-08-31	1.0.0	~4.1.0	1	1	0	0	0	0	1	For the people like myself who will never finish all of the endings.
+2844	Ultimate Flea	3558	28	Overhauls	2026-09-27	2026-07-26	1.2.0	~4.1.0	1	1	1	0	1	0	1	Full flea control for SPT 4.1: manage the item pool, set prices, pull Tarkov.dev averages, and run a local supply/demand economy with early-wipe scaling.
+2967	Quick Meds	3543	40	Tools	2026-10-11	2026-08-29	1.2.0	>=4.1.6	1	1	1	0	0	0	1	Healing that changes with how you move.
+2810	Kill&Bill - Quest Condition Overhaul	3482	20	Quests	2026-08-13	2026-07-08	1.1.0	~4.1.0	1	1	0	0	1	0	1	Turns existing quests into kill, dogtag, or money handover objectives while preserving quest chains, traders, and rewards.
+2129	Air Filter Warning	3476	21	Hideout	2026-08-29	2025-05-07	1.2.0	~4.1	1	1	1	0	0	0	1	Tired of forgetting about air filter when you exit the game? Maybe this mod will help you save your precious FP-100 filters.
+1972	Full Automatic Guns	3426	7	Weapons	2026-09-26	2025-01-19	4.1.5	4.1.5	1	0	0	0	1	0	1	Few SMGs, Assault Rifle, Carbines are now automatic
+3030	NATO Quartermaster — Western Gear Trader, Presets & Quest Unlocks	3315	32	Traders	2026-09-21	2026-09-16	1.1.3	4.1.6	1	1	1	0	1	0	1	A custom NATO-themed trader offering premium Western weapons, armor, ammo, presets, supplies, and quest-gated high-end gear.
+1936	No Unfair Trade System (NUTS)	3278	4	Overhauls	2026-09-11	2025-01-03	1.5.0	~4.1	1	1	0	1	1	0	2	NUTS (No Unfair Trade System) removes access to the Flea Market (customizable), ensuring a fairer, more balanced gameplay experience!
+2982	Hideout Overhaul	3233	36	Hideout	2026-09-20	2026-09-01	0.2.0	~4.1.3	1	1	0	0	0	0	1	Replaces hideout construction recipes into something much more sensible. Because last time I checked, you don't build a door with two bricks of TNT.
+3033	Better Suppressors	3233	46	Overhauls	2026-10-08	2026-09-16	1.0.0	4.1.5	1	0	1	0	1	0	1	Makes suppressors useful and realistic.
+2943	Death Shadow Tweaks	3189	33	Items	2026-08-19	2026-08-19	1.0.0	~4.1.0	1	1	1	0	1	0	1	It's small enough to be worn with a helmet.
+2988	The Locksmith	3180	33	Traders	2026-09-04	2026-09-03	1.0.1	4.1.3	0	0	0	0	1	0	1	A trader who sells every map key — one by one, or bundled per map in a ready-to-open box.
+2506	Funtar	3147	22	Equipment	2026-08-12	2025-12-19	2.0.0	~4.1.0	1	1	1	0	1	0	1	Make UNTAR Fun Again
+2623	Refined Flea Offer List	3130	23	Scripting	2026-10-10	2026-03-09	1.2.0	4.1.6	0	1	1	0	0	0	1	Only show cheapest offers for each item in flea category page. Smarter display Ruble, Full-state, different weapon & armor builds.
+2857	Raid Settings Skipper	3117	38	Other	2026-09-28	2026-07-29	1.3.0	4.1.x	1	1	1	0	0	0	1	Skips the raid settings screen when fika server settings are disabled.
+2731	LinkedSearchInStash	3106	33	Tools	2026-09-09	2026-06-10	2.0.1	~4.1.0	1	1	1	0	0	0	1	Extends Tushonka's Linked Search to your own stash. Adds a separate context-menu action that opens the stash search window filtered to items that are actually compatible with the selected piece of equipment.
+2953	Headshot Damage Redirection	3096	32	Bots	2026-09-17	2026-08-23	1.9.0	4.1.5	1	1	1	0	0	0	1	Survive headshots by redirecting damage to other body parts. Fully configurable split ratios, thresholds, and RNG options. Stop getting one-tapped and fight back! Compatible with SPT 4.1.3 & FIKA
+2865	WTT - DoomArcade	3086	21	Other	2026-08-02	2026-08-01	1.1.0	~4.1.0	1	1	1	1	0	0	1	Experience hell on earth... in your hideout?
+2835	RCTA - Ghost [WARZONE 1]	3066	16	Clothing	2026-09-08	2026-07-21	1.0.1	~4.1	1	1	1	0	1	0	1	Simon "Ghost" Riley from Call of Duty: Warzone 1
+2942	Tushonka Territories	3050	35	Overhauls	2026-10-11	2026-08-19	2.0.1	~4.1.3	1	1	1	0	1	0	1	Adds territory warfare to the land of Tushonka where factions fight each other for control over each map.
+2740	DefaultAutoFireMode	3035	23	Tools	2026-09-09	2026-06-12	2.0.0	~4.1.0	1	1	1	0	0	0	1	Automatically switches weapons to full-auto whenever you draw them into your hands.
+2899	Start Collector Early	3023	33	Quests	2026-08-12	2026-08-12	1.5.1	~4.1.0	1	1	1	0	1	0	1	TL;DR: Port of Mattdokn's StartCollectorEarly to SPT 4.1.2.
+2032	NoCheese	2999	5	Other	2026-08-08	2025-03-15	3.0.0	~4.1.0	1	1	0	0	0	0	2	I'm lactose intolerant, get that cheese away from me!
+1788	RCTA - Kleo Hustle [CODMW2]	2988	8	Clothing	2026-08-08	2024-10-25	1.0.4	~4.1	1	1	1	0	1	0	1	Kleo Hustle from cod mw2 blah blah u get it, dis my main ngl
+2921	SPTChecker	2939	36	Tools	2026-09-25	2026-08-15	3.4.6	~4.1.0	1	1	1	0	0	0	1	Check SPT Forge religiously? Me too.
+2966	PresetTrader	2922	22	Traders	2026-09-18	2026-08-28	1.2.0	~4.1.2	1	1	0	0	1	0	1	Your new favorite rip-off artist, selling saved builds and gear at brutal prices.
+2973	Restore Armor Plates	2891	29	Equipment	2026-08-31	2026-08-30	1.0.1	~4.0.13	1	1	0	0	1	0	1	Restore fully repaired detachable armor plates to their original maximum durability with a dedicated refurbishment kit.
+2951	CookingGrenades 4.1	2873	35	Tools	2026-09-17	2026-08-23	1.4.4	~4.1.2	1	1	1	0	0	0	1	CookingGrenades: enables grenade cooking, grenade parabolic tra jectory, grenade selection wheel, and medicine selection wheel features.
+2996	Backpack Resizer	2868	27	Equipment	2026-09-19	2026-09-06	1.1.0	~4.1.3	1	1	0	0	1	0	1	Change the height and width of backpacks that don't have a split pocket grid.
+2924	Advanced Stash Sorting	2865	46	Items	2026-09-16	2026-08-15	1.0.6	~4.1.0	1	1	0	0	0	0	1	Adds configurable rules and additional options to the standard stash sorting system.
+1795	RCTA - Doom Slayer Eternal [DOOME]	2844	2	Clothing	2026-08-08	2024-10-26	1.0.4	~4.1	1	1	1	0	1	0	1	DOOM DOOM DOOM
+3069	Hj's Improved Customization UI	2837	51		2026-10-04	2026-09-27	1.1.1	~4.1	1	1	1	0	0	0	1	Customization Tab from 1.0 but Improved + Ragman's Cross-faction Clothing Toggle from 1.0 + Photo Mode in Customization Tab
+1777	RCTA - Peely Default [FORTNITE]	2793	3	Clothing	2026-08-08	2024-10-19	1.0.4	~4.1	1	1	1	0	1	0	1	Default Peely from: Fortnite Battle Royale
+2801	FSR4 Bridge	2782	20	Other	2026-10-03	2026-07-05	1.1.0	4.1.6	0	1	1	0	0	0	1	Implements native FSR4 upscaler support
+3006	Munitions Expert - Reloaded	2771	40	Other	2026-10-08	2026-09-08	2.1.1	~4.1	1	1	1	0	0	0	2	View hidden attributes of ammo and explosives, with custom background colors based on penetration power values.
+2855	Dev Tools	2764	23	Other	2026-08-29	2026-07-28	1.9.0	4.1.3	0	0	1	0	0	1	1	A testing kit for mod work: stand in the fire while you read your logs, mag-dump without reloading, and watch every bot on the map through the walls. For building mods, not for beating raids.
+2397	Start Is This A Reference? Early	2688	16	Quests	2026-08-12	2025-10-24	2.0.0	~4.1.0	1	1	1	0	1	0	1	Start Is This A Reference? at an early level.
+1778	RCTA - Gundam [CODMW3]	2659	2	Clothing	2026-08-08	2024-10-20	1.0.4	~4.1	1	1	1	0	1	0	1	Mobile Suit – XVX-016 Gundam from the Call of Duty X Gundam Collaboration from MW3
+2625	VAI: SchizoPMC	2629	19	Audio	2026-09-13	2026-03-12	1.0.1	~4.1	1	1	0	0	0	0	1	Давайте как то организованно, б%#$ть!
+319	Holtzman Shield	2627	9	Items	2026-08-27	2022-01-08	4.1.3	4.1.3	0	0	0	0	0	0	1	“My name is a killing word.” -Paul Atreides
+2863	Operator Registry	2604	19	Other	2026-08-06	2026-08-01	1.1.0	~4.1.1	1	1	0	0	0	0	1	A shared community identity system, dog tags use real player names and levels from other mod users.
+2406	Remove The Irremovables	2592	15	Items	2026-08-27	2025-10-28	4.1.3	4.1.3	0	0	0	0	0	0	1	A simple mod that lets you remove irremovable items from your inventory.
+2969	Manimal's Quick Cancel	2591	40	Scripting	2026-09-13	2026-08-29	2.0.0	~4.1.3	1	1	0	0	0	0	1	Allows you to quick cancel a consumable animation using your quick reload key, dropping the item in the process.
+2713	Career Log	2578	31	Tools	2026-09-21	2026-06-01	2.0.0	>=4.1 <4.2.0	1	1	1	0	0	0	1	Your T***** career in one place — every raid mapped and logged, lifetime stats, and stash history.
+1790	RCTA - Rhea Ripley Miami [CODMW3]	2572	6	Clothing	2026-08-08	2024-10-25	1.0.4	~4.1	1	1	1	0	1	0	1	I didn't want to open cod and grind for her, so I port her... no freaky
+3062	Tushonka Rare Collectibles	2522	27	Items	2026-09-26	2026-09-25	1.2.2	~4.1.5	1	1	1	0	1	0	1	Make Loot Valuable Again! Adds 15 highly valuable and rare collectible items.
+2889	Ashley Schaeffers Gear and Clothing	2512	16	Clothing	2026-09-17	2026-08-07	4.0.2	4.1.5	1	0	0	0	1	0	1	B*** and U*** Gear and Clothing
+2487	Ratshot of Unusual Size	2496	9	Items	2026-08-12	2025-12-08	2.0.0	~4.1.0	1	1	1	0	1	0	1	For Rodents of Unusual Size
+2472	Standard EoD Edition	2494	8	Other	2026-08-18	2025-11-28	1.1.0	~4.1	1	1	0	0	0	0	1	Standard edition with bonuses from Edge Of Darkness edition
+2652	Fair Progression	2456	17	Overhauls	2026-10-06	2026-04-02	1.1.0	~4.1.6	0	1	1	0	0	0	1	Automatically rebalances quest XP to preserve vanilla progression when modded quests are installed.
+2669	Weapon Build Master	2450	19	Weapons	2026-08-07	2026-04-22	1.2.0	~4.1.2	1	1	1	0	0	0	1	share your weapon build with your friend or anyone just with a code
+2992	Inspectionless Malfunctions Reborn	2394	40	Other	2026-09-10	2026-09-04	1.0.0	~4.1.	1	1	0	0	0	0	1	No more inspecting malfunctions before clearing them!
+2852	True Valday	2371	20	Other	2026-08-29	2026-07-28	1.1.0	4.1.3	0	0	1	0	0	0	1	The Valday PS-320 used to be clean glass, then the optics rework filled it with a shadow that swims every time you move. True Valday hands the old sight picture back.
+1978	Configurable End Raid Status	2354	3	Scripting	2026-08-31	2025-01-23	1.0.0	~4.0	1	1	0	0	0	0	1	A simple mod that allows you to change the raid exit statuses to something else (e.g MIA to survived)
+2894	Task List Locations	2350	40	Other	2026-09-23	2026-08-10	1.1.0	4.1.6	0	1	1	0	0	0	1	Increase location information in Task List
+2917	Vanguard	2346	23	Weapons	2026-08-18	2026-08-14	2.0.0	~4.1	1	1	1	0	1	0	1	A mod requested by Vanguard, adds the WMLX light and Sandman X suppressor
+2947	BringBackContainers	2265	31	Other	2026-08-22	2026-08-21	1.1.0	~4.1	1	1	0	0	0	0	1	Restores the abundance of Loot Containers from older versions of SPT.
+2952	ModProfiler	2264	36	Tools	2026-09-20	2026-08-23	1.3.0	~4.1.0	1	1	1	0	0	0	1	Find the mod eating your frames: live CPU time per installed mod, without disabling any
+3014	Ref Rework	2249	28	Overhauls	2026-09-11	2026-09-11	1.0.0	4.1.x	1	1	0	0	0	0	1	Sell dogtags to Ref for GP coins!
+2819	Pre 12.12 Recoil Patch	2183	18	Overhauls	2026-08-29	2026-07-15	1.1.1	4.1.3	0	0	1	0	1	0	1	Remember when recoil was something you actually enjoyed? When the gun kicked realistically, and landing the burst meant you'd earned it? Pre-12.12 Recoil puts that back.
+2981	Kappa Tracker	2181	33	Quests	2026-09-11	2026-09-01	1.3.0	>= 4.1.3	1	1	0	0	1	0	1	Your Kappa grind at a glance — quests, requirements, unlock chains.
+2915	Hideout Craft Modifier - HCM	2159	26	Hideout	2026-10-10	2026-08-14	1.9.2	>= 4.1.3	1	1	0	0	0	0	1	Modify your hideout recipes to your liking.
+2659	Fidget Spinner	2050	10	Other	2026-09-11	2026-04-06	2.0.0	~4.1	1	1	1	0	0	0	1	Doesn't make your loading times shorter but makes them go by faster.
+3082	Hj's Task Item Indicator	2033	32	Scripting	2026-10-09	2026-09-29	1.0.1	~4.1	1	1	1	0	0	0	1	1:1 Task Item Indicator Ring from EFT 1.0.5
+2732	Quest Filter Mod	2027	11	Quests	2026-09-20	2026-06-10	1.0.6	4.1.5	1	0	1	0	1	0	1	A mod for changing quests and a random quest generator with rewards.
+2877	WhereAreThePeople(WATP)	1988	11	Other	2026-08-02	2026-08-02	1.2.0	4.1.0	0	0	0	0	0	0	1	A compact AI proximity tracker showing the nearest contacts by faction.
+2962	Music Extender	1987	28	Audio	2026-09-27	2026-08-26	1.1.1	~4.1	1	1	1	0	0	0	1	Are you a geneburn enjoyer? Me too. This mod expands lovely geneburn tracks for the main menu now.
+2812	MoreQuickSlots	1986	23	Tools	2026-09-09	2026-07-11	2.0.0	~4.1.0	1	1	1	0	0	0	1	When you simply can't decide - Increases the number of freely assignable quick slots by up to 6 additional slots
+3091	Astral Divide	1977	23	Traders	2026-10-09	2026-10-01	0.2.0	~4.1.0	1	1	1	0	1	0	1	Custom Trader with story chapter and unique mechanic and custom outfits with physics system.
+2460	Bela.s.VersionLabel	1966	1	Scripting	2026-09-26	2025-11-22	1.1.0	~4.1.0	1	1	0	0	0	0	1	Show, hide, or customize the in-game version label
+3061	Extra Special Slots	1945	33	Tools	2026-10-02	2026-09-23	1.1.1	>=4.1.6	0	1	1	0	0	0	1	Adds Special Slots 4, 5 and 6 with SVM, SpecialSlots, TSC and Fika compatibility.
+3084	Better Flashlights	1931	28	Equipment	2026-10-05	2026-09-30	1.0.1	~4.1.1	1	1	0	0	0	0	1	A lightweight, tactical flashlight overhaul for players and bots with custom Kelvin temperature and procedural beams
+3105	SOMF - SitOnMyFace	1927	30	Equipment	2026-10-06	2026-10-04	0.1.2	4.1.6	0	1	1	0	0	0	1	Face can't fit more than one chonky piece of gear? This mod lets you fit all the gear you want on your face at once.
+1796	Fujiwara Mokou (Touhou)	1921	0	Models	2026-09-22	2024-10-27	1.1.0	~4.0.0	1	1	1	0	0	0	1	Immortal Being in SPT, now you can RP not dying to anything.
+1531	Not So Secure Container	1914	4	Other	2026-08-03	2024-07-07	3.1.0	~4.1.0	1	1	1	0	0	0	2	Configurable chances of losing items in secure container on death.
+3064	Realistic PMC Names	1888	24	Bots	2026-10-04	2026-09-25	1.1.0	~4.1.0	1	1	0	0	0	0	1	8,000 realistic PMC identities. Unique callsigns. Living Flea Market. Make every encounter personal.
+2853	Universal Sensitivity	1873	14	Overhauls	2026-08-29	2026-07-28	1.1.0	4.1.3	0	0	1	0	1	0	1	T***** turns your mouse down every time you sprint, jump, crouch or go prone — and never tells you. One sensitivity, everywhere, with free look finally on your mouse instead of the engine's.
+2901	KeepLockedCases	1859	25	Items	2026-08-12	2026-08-12	1.0.1	~4.1.0	1	1	1	0	1	0	1	TL;DR: Why does the box I unlocked disappear? I have a use for that, do you hear me?
+2892	Remove Single Raid Quest Requirements	1844	22	Quests	2026-08-10	2026-08-09	1.1.0	~4.1	1	1	1	0	0	0	1	Removes the "single raid" completion requirement from all tasks in the game.
+2839	SoulPlayer	1832	24	Audio	2026-09-07	2026-07-23	0.10.0	4.1.5	1	0	0	0	0	0	1	Collect cassettes in raids and play your own music inside SPT.
+3010	Kalashnikov Enhanced Modding	1823	24	Items	2026-09-10	2026-09-10	4.1.2	~4.1.5	1	1	0	0	1	0	1	Separated handguards and barrels on AK's? It's now a thing!
+2949	Realistic Insurance	1795	23	Other	2026-09-12	2026-08-21	0.0.93	~4.0.0	1	1	0	0	0	0	1	Your killer decides what comes back. Prapor just does the paperwork.
+2834	Ultimate Trader Assort Editor	1789	23	Tools	2026-09-11	2026-07-20	2.1.1	~4.1	1	1	1	0	0	0	1	An in depth trader assort editor
+2738	GFLVoices	1784	13	Audio	2026-09-29	2026-06-12	2.4.1	4.1.6	1	1	0	0	0	0	1	Just cover your manly face up or let everyone know you found a voice changer
+3054	Quest Codex	1782	26	Quests	2026-10-10	2026-09-22	1.7.0	4.1.6	0	1	0	0	0	0	1	Quest wiki that includes custom quest & trader mods. Maps, raid prep and unlock paths, kappa tracker too.
+2746	Ultimate Loot Editor	1764	25	Tools	2026-09-11	2026-06-16	2.1.1	~4.1	1	1	0	0	0	0	1	An in depth in raid loose loot editor
+2696	Hideout Sky	1752	9	Hideout	2026-08-05	2026-05-18	1.2.0	4.1.*	1	1	1	0	0	0	1	Finally some fresh air
+3027	Exfil Rewards	1743	19	Scripting	2026-09-14	2026-09-14	1.0.0	~4.1.4	1	1	0	0	0	0	1	Earn bonus money for extracting from raids.
+2931	ASBP - Acid's Scalable BepinEx Panel	1730	25	Tools	2026-08-31	2026-08-16	1.0.1	~4.0	1	1	1	0	0	0	1	Makes the BepinEx F12 menu scalable and resizable
+2968	Quiet Weather	1694	28	Audio	2026-08-31	2026-08-29	1.0.1	~4.1.0	1	1	1	0	0	0	1	A volume slider mod that let's you turn down the rain volume.
+3086	[Melx] Loot Value	1659	8	Other	2026-10-01	2026-09-30	1.1.0	4.1.6	0	1	0	0	0	0	1	Pretty simple mod. Displays the current flea price, best trader price and price per slot on the tool tip of an item when hovered.
+2561	Ratshot of Usual Size	1648	7	Items	2026-08-12	2026-01-25	2.0.0	~4.1.0	1	1	1	0	1	0	1	Damn, if that ain't a lot of ratshot!
+2568	Disable Headshot Protect	1637	9	Bots	2026-08-02	2026-01-30	1.1.0	~4.1	1	1	1	0	0	0	1	Want to die from getting shot in the head? Time to fix another jank B** design decision
+2933	HideoutTV	1637	19	Hideout	2026-08-23	2026-08-16	1.2.6	4.1.3	0	0	0	0	0	0	2	Custom videos for the hideout TV
+566	ArmBandCore	1630	1	Equipment	2026-08-27	2022-08-21	4.1.3	4.1.3	0	0	0	0	0	0	1	We wear our armor on our sleeves!
+2932	Target Dummies	1628	12	Hideout	2026-09-18	2026-08-16	0.3.1	~4.1.5	1	1	1	0	0	0	1	Replace shooting range targets with bots
+3047	Deploy Screen Overhaul	1616	17	Overhauls	2026-09-20	2026-09-20	1.0.0	~4.1.0	1	1	0	0	1	0	1	You’ve spent enough time staring at the same loading screen. So have I.
+3038	Blacksite Mod Manager	1606	12	Tools	2026-10-10	2026-09-18	2.0.0	4.1.6	1	1	0	0	0	0	1	Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.
+3109	Knight Mask Fix (4.1.3+)	1592	21	Equipment	2026-10-05	2026-10-05	1.0.0	~4.1.3	1	1	1	0	0	0	1	Fixes Death Knight's missing mask texture
+3024	CaseTrader — Buy any case	1590	13	Traders	2026-10-02	2026-09-13	1.0.1	4.1.6	0	1	0	0	1	0	1	Adds a new trader — Case (Victor Barinov). He sells storage cases, key holders, wallets, med cases, ammo boxes and other ordinary containers.
+2825	S&M PRT - Portable Radio Transmitter	1588	14	Audio	2026-08-24	2026-07-18	1.0.2	4.1.3	0	0	1	0	0	0	2	Realistic portable radio communications for EFT + FIKA with the ability to talk during a raid, with detailed interface customization and raid recordings included.
+1789	RCTA - Fender Do You Even Lift [CODMW3]	1566	0	Clothing	2026-08-08	2024-10-25	1.0.4	~4.1	1	1	1	0	1	0	1	warzone mw2 mw3 who cares just look at how buff
+2897	Equipment Is Eternal	1541	16	Equipment	2026-08-26	2026-08-12	1.2.0	~4.1	1	1	1	0	1	0	1	TL;DR: Do not lose equipment, specific slots configurable
+3057	Beretta 93R Raffica Continued	1538	11	Weapons	2026-10-02	2026-09-23	1.1.3	4.1.6	0	1	0	0	1	0	2	Choccy Milk's Beretta 93R Raffica, migrated and updated for SPT 4.0.13 and 4.1.6.
+2858	CineKit - Freecam, Cinematic Camera, Point Path Editor & Follower	1535	13	Other	2026-08-16	2026-07-29	1.2.0	~4.1.0	1	1	0	0	0	0	1	an in-raid cinematic Freecam toolkit for SPT players who want to record videos, create smooth camera movements, plan shots, or explore T***** from new perspectives.
+3046	LowAmmoCue	1529	21	Tools	2026-09-29	2026-09-20	0.9.0	~4.0.4	1	1	1	0	0	0	1	Hear your ammo running low: metallic clicks grow louder with your final shots.
+2960	IOF: Inventory Organizing Feature	1526	22	Items	2026-08-26	2026-08-26	1.9.0	~4.1	1	1	1	0	1	0	1	Automate organizing your stash
+3051	Hj's Achievement Skipper	1514	22	Other	2026-09-29	2026-09-21	1.1.0	~4.1	1	1	1	0	0	0	1	Skip any achievement and receive the reward
+2963	CreatureComforts	1513	15	Other	2026-09-26	2026-08-28	2.0.0	~4.1	1	1	0	0	0	0	1	Assortment of small, but impactful changes.
+3052	Black and Blue	1505	19	Equipment	2026-09-25	2026-09-22	3.0.1	~4.1.6	0	1	0	0	1	0	2	And when you've got nothing left to turn black and blue, you've still got Hell to look forward to.
+3059	Strange Curios	1488	21	Items	2026-09-29	2026-09-23	1.1.0	~4.1.5	1	1	1	0	1	0	1	Adds STALKER artefact-like items to the game as endgame cult items.
+2985	Quick Aim	1459	25	Tools	2026-10-02	2026-09-03	1.0.0	>=4.1.3 <4.2.0	1	1	0	0	0	0	1	Hold your aim longer when crouched, prone, or with the weapon mounted on something.
+3056	China Lake Grenade Launcher Continued	1451	15	Weapons	2026-09-28	2026-09-22	1.1.1	4.1.6	0	1	0	0	1	0	2	Restores Choccy Milk’s China Lake pump-action grenade launcher for SPT 4.0.13 and 4.1.6.
+3085	Ledger	1431	16	Traders	2026-10-02	2026-09-30	1.1.0	4.1.6	0	1	0	0	1	0	1	Custom dogtag trader with 40+ quest story. Help him with his collection and see where it takes you.
+2575	Fair Equipment Restoration	1414	8	Equipment	2026-09-12	2026-02-04	1.1.0	~4.1.5	1	1	1	0	1	0	1	A customizable equipment restoration mod that preserves item wear and consumption.
+3066	Loot Normalizer	1407	19	Other	2026-09-25	2026-09-25	1.0.0	~4.1.5	1	1	1	0	0	0	1	Normalizes all loose loot relative probabilities to make rarer items more likely to appear.
+2583	Fika Discord Presence	1405	7	Scripting	2026-09-11	2026-02-10	2.0.0	~4.1	1	1	1	0	0	0	1	Discord integration for all !
+3063	Walther WA 2000 Sniper Rifle Continued	1405	15	Weapons	2026-09-30	2026-09-25	1.1.1	4.1.6	0	1	0	0	1	0	2	Restores Choccy Milk’s Walther WA 2000 for SPT 4.0.13 and 4.1.6.
+2948	Airburst	1392	16	Weapons	2026-09-09	2026-08-21	1.1.2	~4.1.0	1	1	1	0	1	0	1	Lase the cover, lob the round: 40mm airburst grenades that detonate right above the enemy behind it
+3002	Extra-Lives	1386	12	Other	2026-10-09	2026-09-07	4.1.6	~4.1.0	1	1	1	0	0	0	1	Allows players to gain extra lives in-raid.
+3100	POMSix	1363	11	Other	2026-10-05	2026-10-03	1.0.1	4.1.6	0	1	1	0	0	0	1	Adds parallax occlusion mapping and optional tessellation to the terrain/roads
+3113	Sage's Incendiary Grenade	1359	9	Weapons	2026-10-09	2026-10-05	1.0.2	4.1.*	1	1	0	0	1	0	1	Introducing "Incendiary Grenade"
+3071	Hj's Task Turn in Indicator	1294	25	Quests	2026-09-29	2026-09-27	1.0.0	~4.1	1	1	1	0	0	0	1	Task Turn in Indicator from EFT 1.1.5
+3021	Roubles Equivalent for Dollars and Euros	1284	22	Items	2026-09-13	2026-09-12	1.0.0	4.1.5	1	0	0	0	1	0	1	Lets you see the equivalent for dollars and euros in roubles next to each instance of the currency ingame.
+2653	Mission Control	1277	4	Quests	2026-09-13	2026-04-02	1.1.0	~4.1.5	1	1	1	0	0	0	1	Limits visible quests to a configurable number of random slots. Reroll anytime at Prapor.
+2907	StashFilter	1266	19	Tools	2026-09-09	2026-08-13	0.9.0	~4.0.4	1	1	1	0	0	0	1	Extended filter and sort tabs for the stash search: weapons, armor, mags, ammo, meds and attachments
+2358	DebugPlus	1263	3	Tools	2026-08-28	2025-10-11	1.4.0	~4.1	1	1	1	0	0	0	1	Additional debug logging and utilities for mod developers
+3023	CactusPie's Transfer Loot Into Container Automatically	1247	14	Items	2026-10-02	2026-09-13	1.9.1	4.1.6	1	1	0	0	1	0	1	Looting an item will now place it in a matching container, such as a dogtag case or a document case
+3013	UnlockAllDogtags	1246	20	Other	2026-10-07	2026-09-10	1.1.0	~4.1.0	1	1	1	0	0	0	1	The most useless mod on the Forge <3
+3042	Super Scav Case	1244	16	Hideout	2026-09-20	2026-09-20	2.0.0	~4.1	1	1	0	0	0	0	1	Make the Scav Case useful again. It can now be built from the early game, and adds separate options for searching for ammunition, keys, and high-value loot.
+3108	Infinite Everything	1237	12	Other	2026-10-10	2026-10-04	2.5.2	~4.1	1	1	0	0	0	0	1	18 switchable "infinite" options: ammo, magazines, grenades, meds, keys, money, health, stamina, turrets, hideout fuel and more.
+2861	[REDACTED] Redactor	1235	6	Other	2026-08-02	2026-07-31	1.0.2	~4.1.0	1	1	1	0	0	0	1	when were u when spt was kil
+2715	RainCap	1232	8	Equipment	2026-09-27	2026-06-02	2.0.0	~4.1.3	1	1	0	0	0	0	2	A mod which lets you reduce/disable the rain drops on your screen when wearing a cap
+2979	Sixth Sense	1219	16	Other	2026-09-21	2026-08-31	1.1.0	~4.1.3	1	1	1	0	0	0	1	You always know someone's looking, but not sure from where.
+2964	Arma Zoom	1157	15	Other	2026-08-28	2026-08-28	1.0.0	4.1.3	0	0	1	0	0	0	1	Arma style zoom in Tushonka
+3041	Factory Classic	1147	14	Locations	2026-10-09	2026-09-19	1.0.2	~4.1.3	1	1	1	0	0	0	1	The pre-rework Factory, playable on SPT 4.1
+3076	Performance Scope	1140	16	Other	2026-09-30	2026-09-28	0.2.0	~4.1.0	1	1	1	0	0	0	1	Adjust resolution in scope , make PiP sharper or increase FPS.
+3083	Hj's Mod Source	1091	22	Tools	2026-10-01	2026-09-29	0.9.0	4.0.*	1	1	1	0	0	0	1	See which mod added what
+2950	Corter-ModSync	1066	14	Tools	2026-08-22	2026-08-22	0.13.1+pre1	~4.1	1	1	1	0	0	0	3	The OG ModSync mod by Corter ported to SPT4 versions
+2989	Ammo Stats In Names	1026	20	Scripting	2026-09-03	2026-09-03	1.0.0	~4.1.3	1	1	1	0	0	0	1	OMG! There are stats in my ammo names!
+3099	SSRSix	988	12	Other	2026-10-03	2026-10-03	1.0.0	4.1.6	0	1	1	0	0	0	1	Adds an improved SSR method that works with CloudSix
+3037	Handbook Disabler	983	18	Other	2026-09-18	2026-09-18	1.0.0	~4.1.0	1	1	1	0	0	0	1	Blyat man don't read
+2736	Moe-TradeMarker	981	1	Items	2026-09-07	2026-06-11	1.2.6	~4.1.0	1	1	1	0	1	0	1	Shows NPC trader-bought items, can block flea resale, and now supports QuickSell.
+2990	Caliber Split Storage Solutions	973	16	Items	2026-09-20	2026-09-03	1.0.1	~4.1.3	1	1	1	0	1	0	1	Resolving your stash problems, one caliber at a time
+2729	NotificationFilter	965	14	Tools	2026-09-09	2026-06-10	2.0.0	~4.1.0	1	1	1	0	0	0	1	Gives you full control over the notification popups that appear during raids.
+3075	BodyCamera	960	20	Scripting	2026-10-10	2026-09-28	0.3.0	4.1.6	0	1	0	0	0	0	1	A more immersive camera experience with natural movement, realistic inertia and dynamic camera shake.
+3080	Raid Recovery	959	22	Other	2026-10-01	2026-09-29	1.3.0	4.1.6	0	1	1	0	0	0	1	Resume your raid after a crash.
+3077	PityLoot	931	10	Items	2026-09-30	2026-09-28	1.0.0	~4.1.6	0	1	0	0	1	0	1	Can't find that one quest item? Every raid without it makes it more likely to spawn. Pity loot for quests, hideout upgrades, quest keys and Gunsmith parts.
+2971	Universal Co-op Exfil	918	7	Other	2026-09-08	2026-08-30	1.0.1	~4.1.3	1	1	1	0	0	0	1	Removes the Scav and PMC requirement from co-op exfils, allowing any group of at least 2 to extract
+3101	Magic Optic Mount	894	9	Weapons	2026-10-04	2026-10-03	0.1.0	~4.1.6	0	1	1	0	1	0	1	Optic + Thermal/Night Vision
+2220	Junko.	888	0	Models	2026-09-22	2025-07-18	1.2.0	~4.1	1	1	1	0	0	0	1	CHANG"E!!!!
+3058	Inventory Walker	876	9	Other	2026-09-30	2026-09-23	0.3.1	~4.1	1	1	0	0	0	0	1	Don't stop moving, ever.
+3127	MassivesoftWeapons Updates for SPT 4.1.x	873	7	Weapons	2026-10-09	2026-10-09	2.0.1	4.1.5	1	0	0	0	1	0	1	MassivesoftWeapons Update Patch for SPT 4.1.x
+3126	MassivesoftCore Update 4.1.5	869	7	Tools	2026-10-09	2026-10-09	2.0.1	4.1.5	1	0	0	0	0	0	1	MassivesoftCore Update 4.1.5
+3118	ShrapnelFix	854	13	Weapons	2026-10-07	2026-10-07	1.0.0	4.1.6	0	1	0	0	1	0	1	Grenade fragments now fly at body height. Deadly, configurable and FIKA-ready.
+3090	DaCard	852	9	Items	2026-10-02	2026-10-01	2.1.0	~4.1.0	1	1	0	0	1	0	1	Collectable Card Mod with in-depth custom card customization.
+3081	Advanced Modding Lights	844	10	Overhauls	2026-09-29	2026-09-29	2.0.0	~4.1	1	1	1	0	0	0	1	Enhance the lighting in weapon modding and build screens for better visibility and aesthetics
+3019	Cobra's Durability Tweaks	842	11	Weapons	2026-09-12	2026-09-12	1.0.0	~4.1.0	1	1	1	0	1	0	1	Reduce or completely disable weapon durability burn and optionally eliminate weapon malfunctions with a simple JSON configuration.
+3089	Roulette SPT	840	9	Items	2026-10-01	2026-09-30	1.0.0	~4.1.6	0	1	0	0	1	0	1	Open cases CS2-style in SPT! Unpack a case and watch the roulette spin to your prize. Create your own cases with a simple JSON file.
+3070	Flea Price Progression	829	11	Other	2026-10-10	2026-09-27	1.1.0	~4.1.0	1	1	1	0	0	0	1	Realistic flea prices derived from live data that scale with player level
+3110	FogSix	809	12	Other	2026-10-05	2026-10-05	1.0.0	4.1.6	0	1	1	0	0	0	1	Replaces base game fog with a custom volumetric froxel shader and comes packaged with a server side dynamic fog mod
+2845	Hj's Custom UI Sounds	807	13	Audio	2026-09-30	2026-07-26	1.1.0	~4.1	1	1	1	0	0	0	1	Swapping the in-game UI Audio to a custom soundpack
+3053	Ultrawide Stash	797	5	Other	2026-10-02	2026-09-22	1.1.1	~4.1.0	1	1	1	0	0	0	1	Stretch that stash baby.
+3106	Armor Expert	789	11	Other	2026-10-08	2026-10-04	2.0.0	~4.1	1	1	1	0	0	0	1	View hidden attributes of armored equipment and headsets.
+2906	SIM - Simple Item Modifier	758	8	Items	2026-08-13	2026-08-13	0.1.0	~4.1.0	1	1	0	0	1	0	1	Inspect your current modded database, build reusable rules, and rebalance items without editing server JSON by hand.
+3115	Zero to Hero + Unheard Edition	750	5	Other	2026-10-06	2026-10-06	4.1.6	4.1.6	0	1	0	0	0	0	1	Zero to Hero
+3074	Direct Reload & Painless Meds	722	14	Other	2026-09-30	2026-09-28	1.2.0	4.1.6	0	1	1	0	0	0	1	Reload directly from loose ammo — no more spare-mag juggling. Magazines stay on your weapon and define capacity. Surgery is faster, restores all blacked limbs at once, and no longer reduces max HP. and FOV unlock.
+2223	Watatsuki No Yorihime	707	0	Models	2026-09-22	2025-07-21	1.2.0	~4.1	1	1	1	0	0	0	1	"The Marshall Of the Moon"
+2837	Hj's Custom UI Fonts	704	6	Other	2026-09-29	2026-07-22	1.2.0	~4.1	1	1	1	0	0	0	1	Swapping the in-game UI font to a custom font
+2633	SPT Scaffold	689	6	Tools	2026-10-05	2026-03-18	0.3.0	~4.1.2	1	1	0	1	0	0	1	Interactive TUI wizard to create ready-to-build SPT 4.1.x mod projects in seconds.
+3050	DebugTools	683	11	Tools	2026-09-22	2026-09-21	1.1.0	>=4.1.3	1	1	0	0	0	0	1	The mods add an in-game database viewer that can be used whilst in raid to spawn items. It also features a debug menu that has several utilities, as well as developer commands for the console and the freecam from Fika.
+3067	Deadzone	680	11	Scripting	2026-09-26	2026-09-26	1.2.0	~4.1.6	0	1	0	0	0	0	1	Adds insurgency style deadzone/free aim, allowing your weapon to drift from the center of the screen.
+2401	WTT Halloween Masks	678	7	Equipment	2026-10-09	2025-10-26	2.0.0	~4.1.6	0	1	1	0	1	0	1	Are you ready for some real masks?
+2714	Discord Raid Map	671	5	Other	2026-09-11	2026-06-01	2.0.0	~4.1	1	1	1	0	0	0	1	I wonder what the squad's up to...
+3096	ebz7-BlackoutAddons	589	8	Overhauls	2026-10-06	2026-10-02	1.26.6	4.1.x	1	1	0	0	1	0	1	Turns Vultify's Blackout into a survival event: restart failing generators, fix breakers, repair a burnt control, race a 3-minute emergency-power escape, fight Black Division hunters and a surprise Killa. Unofficial add-on.
+3129	Sage's Tutorial Backport	578	9	Locations	2026-10-10	2026-10-09	1.0.1	4.1.*	1	1	0	0	0	0	1	Backports the 1.0 Tutorial into SPT
+2887	Discord Raid Feed	568	3	Other	2026-08-11	2026-08-07	1.0.0	~4.1.0	1	1	0	0	0	0	1	A mod that posts raid activity to Discord text channels through Discord Webhooks.
+3079	Tag Over Name	558	8	Other	2026-09-29	2026-09-29	1.0.2	~4.1	1	1	0	0	0	0	1	Hide an item's name when it has a tag. Finally organize your stash properly!
+505	Olympus	548	14	Items	2026-09-13	2022-07-14	4.1.3	~4.1.3	1	1	0	0	1	0	1	The clouds above Mt. Olympus crack with a thunderous roar. The gods beckon you to their battle.
+3124	Gunsmith Task Trader	529	5	Traders	2026-10-11	2026-10-08	1.0.2	~4.1.0	1	1	1	0	1	0	2	Adds Trader that sells the gun for every Gunsmith task (And a couple extras)
+3045	KAHADS - Kill And Hit And Death Sounds	517	10	Audio	2026-09-20	2026-09-20	1.0.0	~4.1	1	1	0	0	0	0	1	Option to customize hit, kill, and death sounds
+2993	Hispanic PMC (Harry) - Custom Head	513	1	Models	2026-10-08	2026-09-05	1.0.0	~4.0.13	1	1	1	0	0	0	1	New Custom PMC Head for 4.1.X.
+3032	Bookie - Casino Trader	507	8	Traders	2026-09-21	2026-09-16	1.0.0	4.1.5	1	0	1	0	1	0	1	Gamble roubles, Bitcoins, and high-stakes loot with Bookie.
+2766	Quest Experience Multiplier	499	10	Quests	2026-10-02	2026-06-23	1.0.1	~4.1	1	1	0	0	1	0	1	Multiplies the experience amount given by quest by a factor.
+3095	Integrated Configuration Manager	496	10	Tools	2026-10-02	2026-10-02	1.0.0	4.1.*	1	1	1	0	0	0	1	Integrates BepInEx's Configuration Manager into EFT Settings
+3039	SPT Dev Kit	475	2	Other	2026-09-24	2026-09-18	1.0.6	4.1.6	0	1	1	0	0	0	1	SPT Dev Kit for quests, assorts, items and etc.
+3048	Moar Supplies	451	2	Items	2026-10-06	2026-09-20	0.8.5	~4.1	1	1	1	0	1	0	2	Configurable items that are simple to understand and easy to control. View what each item does, then add, remove, and tune effects without being locked into someone else’s preset.
+3016	ShitInTushonka	450	9	Overhauls	2026-09-13	2026-09-11	1.0.2	>=4.1.3	1	1	1	0	1	0	1	A lightweight, fully immersive ambient mod for Single Player Tushonka. Shit In Tushonka introduces real-time surface impacts, custom positional audio, and persistent visual decals to add an extra layer of raw, tactical realism to your raids.
+3098	SPT Trader Restock Refresh	437	5	Traders	2026-10-02	2026-10-02	1.0.0	~4.1.0	1	1	0	0	0	0	1	Refreshes the trader screen you have open when that trader restocks.
+3128	Gunwright	428	3	Traders	2026-10-09	2026-10-09	4.1.5	4.1.x	1	1	0	0	1	0	1	Gunsmith Presets, Own Custom Weapon Builds, and Fully Configurable Pricing. Gear Up. Lock In. Deploy.
+3065	MagicBullet	420	8	Scripting	2026-10-02	2026-09-25	1.0.0	4.1.6	0	1	0	0	0	1	1	Outgoing bullet and melee damage multiplier for the local player only. Bots keep vanilla damage.
+3072	CombatLog	397	11	Tools	2026-09-27	2026-09-27	1.0.0	~4.1.0	1	1	0	0	0	0	1	Understand each firefight with post-raid hit analysis, weapon statistics and combat history.
+3088	Tarkova-cola	383	3	Items	2026-10-06	2026-09-30	1.2.0	4.1.6	0	1	0	0	1	0	1	Black ops zombies perks on raid?...SIGN ME UP!
+3005	Trader Level Requirements Editor	375	3	Traders	2026-09-29	2026-09-08	1.0.0	~4.1	1	1	0	0	0	0	1	Let's you alter the level requirements for SPT's traders
+3001	Manimal's Quest Briefing API	362	5	Audio	2026-09-07	2026-09-07	1.0.0	~4.1.5	1	1	0	0	0	0	1	An API that allows modders to create custom Briefing audio for quests.
+3125	Tylevo's Field Attachments	352	12	Weapons	2026-10-11	2026-10-09	1.1.0	4.1.6	0	1	0	0	1	0	1	Allows for change of optics, muzzle devices, tactical devices and foregrips without opening your inventory in a 3d weapon card view.
+3000	Moe Flea Refresh	330	1	Scripting	2026-09-06	2026-09-06	1.1.1	~4.1.0	1	1	1	0	0	0	1	Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。
+2965	Ironman	323	4	Overhauls	2026-09-20	2026-08-28	1.0.2	~4.1.3	1	1	0	0	1	0	1	Ironman Profiles to apply rules and modifiers to make the game scoped to "Ironman" adjacent. Similar to Ironman modes in other games.
+2974	Configuration Manager Input Fix	318	8	Other	2026-09-12	2026-08-31	1.0.0	~4	1	1	1	0	0	0	1	Fix virtual Configuration Manager F13 key presses such as from Nvidia's performance overlay
+3049	ArmorInfoPlus	308	7	Tools	2026-09-21	2026-09-21	1.0.0	4.1.6	0	1	0	0	0	0	1	Displays the 24-character template ID of all items in the game, including those added via backports. Displays hidden stats for armors in detail, such as blunt throughput and material destructibility.
+3036	Moe Need Marks	285	3	Tools	2026-09-18	2026-09-18	1.0.3	=4.1.5	1	0	0	0	0	0	1	Quest and hideout requirement checkmarks, progress and inventory counts in native tooltips. / 任务与藏身处需求彩色勾、提交进度和库存统计。
+2957	MIA-Lounge	284	4	Other	2026-09-19	2026-08-26	1.0.0	4.1.3	0	0	1	0	0	0	1	adding minigames to play while spectating your friend inraid or waiting in the main menu for them
+2725	SPT-VR-ProVolver	270	1	Other	2026-08-22	2026-06-08	1.0.0	4.1.x	1	1	0	0	0	0	1	Haptic feedback support for the ProVolver in SPT-VR.
+3028	FIR Flea only	253	4	Scripting	2026-09-14	2026-09-14	1.0.0	~4.1.3	1	1	1	0	0	0	1	Is the flea market a breeze? Install this mod.
+3068	Grappendix	246	6	Equipment	2026-09-26	2026-09-26	0.1.0	~4.1.0	1	1	1	0	0	0	1	An additional external intestine for climbing and swinging.
+3122	Fika Downed Spectator	246	7	Other	2026-10-08	2026-10-07	1.0.0	~4.1.0	1	1	1	0	0	0	1	Spectate your teammates while downed in Fika with a clean, native T***** tactical HUD banner.
+3078	Icon Changer	226	6	Other	2026-09-29	2026-09-28	1.0.1	4.1.*	1	1	1	0	0	0	1	Adds the ability to give your account icons: Sherpa, Emissary or Developer.
+2987	No Gear?	225	4	Traders	2026-09-21	2026-09-03	0.1.1	~4.1	1	1	1	0	1	0	1	Remove weapons and gear offers from traders (configurable).
+3009	Cobra's SPT Explorer	219	4	Tools	2026-09-08	2026-09-08	1.0.0	~4.1.5	1	1	1	0	0	1	1	A read-only SPT database explorer and in-raid helper for mod developers and players.
+2896	Shelf Whitelist Editor	206	0	Other	2026-08-12	2026-08-12	1.0.1	~4.0.0	1	1	1	0	0	0	1	Edit the whitelist of the Hall of Fame shelves.
+3131	Name Plate	206	4	Other	2026-10-09	2026-10-09	1.0.0	~4.1.0	1	1	1	0	0	0	1	Get flex'd on after head-eyes
+3102	Hardcore Standard Profile	200	3	Other	2026-10-05	2026-10-03	1.0.0	4.1.6	0	1	1	0	0	0	1	S.T.A.L.K.E.R.-style start
+3121	Broken Limbs Don't Heal	175	1	Overhauls	2026-10-10	2026-10-07	1.1.0	~4.1	1	1	0	0	0	0	1	Broken limbs aren't supposed to heal instantly. This mod introduces a new health effect and mechanic for that.
+3073	Open World Map	168	8	Locations	2026-09-27	2026-09-27	0.0.1	~4.1.6	0	1	0	0	0	0	1	Bringing maps together
+2940	Easy Slot Filters	114	1	Tools	2026-08-18	2026-08-18	1.0.0	~4.1.0	1	1	1	0	0	0	1	Push things to an item's slot filters using a simple JSON file.
+3120	TrueHardcoreRules	111	3	Overhauls	2026-10-07	2026-10-07	1.0.0	4.1.6	0	1	0	0	1	0	1	No flea. No insurance. No mercy. Hardcore economy.
+2959	Copy Config	104	3	Tools	2026-08-27	2026-08-26	1.3.2	3.7.1 - 4.1.3	0	0	1	0	0	0	1	This SCRIPT will copy ONLY config and preset files while retaining folder structure into a new directory
+3123	EFT Effects Manager	70	2	Tools	2026-10-10	2026-10-08	1.0.0	~4.1	1	1	0	0	0	0	1	A modding toolkit for managing health controller effects and creating custom effects with your own logic.

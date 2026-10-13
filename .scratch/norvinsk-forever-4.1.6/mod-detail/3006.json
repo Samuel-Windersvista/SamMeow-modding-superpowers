@@ -1,0 +1,39 @@
+{
+ "id": 3006,
+ "hub_id": null,
+ "guid": "com.liquidwarp.munitionsexpert",
+ "name": "Munitions Expert - Reloaded",
+ "slug": "munitions-expert-reloaded",
+ "teaser": "View hidden attributes of ammo and explosives, with custom background colors based on penetration power values.",
+ "thumbnail": "https://files.sp-mod.com/mods/NjAe7f9MbFzHcE61xcKue9EOpGSAz2O6cXJ8XAhy.png",
+ "downloads": 2373,
+ "favourites_count": 37,
+ "endorsements_count": 10,
+ "description": "<h2>Nerd stats on your ammo</h2>\n<p><em>Update of <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/972/munitions-expert-reboot\" rel=\"noreferrer noopener\">IcyClawz’s Munitions Expert (Reboot)</a> for SPT 4.1+.</em></p>\n<ul>\n<li>Show hidden stats on all types of ammo, including explosives.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/2dcygTX.png\" alt=\"\" /></p>\n<ul>\n<li>Works with modded ammo!</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/oElEPWp.png\" alt=\"\" /></p>\n<ul>\n<li>Replace background colors with custom ones according to penetration value.</li>\n</ul>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/MDZo0Ne.png\" alt=\"\" /></p>\n<hr />\n<h2>Configuration</h2>\n<p>F12 BepinEx menu.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/pao1ZEO.png\" alt=\"\" /></p>\n<hr />\n<h2>Support</h2>\n<p>Ideally open up a GitHub issue, or reach out to <code>liquidwarp</code> on the SPT or WTT Discord servers!</p>\n<hr />\n<h2>Installation</h2>\n<ol>\n<li>\n<p>Open the downloaded zip file.</p>\n</li>\n<li>\n<p>Drag the <code>SPT_Runtime</code> folder from the zip file into your SPT folder.</p>\n</li>\n</ol>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/34vXXDj.gif\" alt=\"\" /></p>\n<hr />\n<h2>About this mod</h2>\n<p>This fork and reupload was made in respect of the original Open-Source license, after I did not manage to get hold of the original author for explicit authorization.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3006/munitions-expert-reloaded",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2026-09-08T11:09:00.000000Z",
+ "created_at": "2026-09-08T11:20:55.000000Z",
+ "updated_at": "2026-10-04T08:48:04.000000Z",
+ "owner": {
+  "id": 120411,
+  "name": "Liquidwarp",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/a8uNqS72MNAYZCoemVERo2bLfxiniyx7N8q09BZO_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-08-14T00:38:41.000000Z",
+  "updated_at": "2026-10-05T14:21:25.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

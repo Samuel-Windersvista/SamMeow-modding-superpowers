@@ -1,0 +1,151 @@
+{
+ "term": "HarryHideout",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1303,
+    "hub_id": 1817,
+    "guid": "com.acidphantasm.harryhideout",
+    "name": "HarryHideout",
+    "slug": "harryhideout",
+    "teaser": "Trader that sells all items for hideout construction/upgrades",
+    "thumbnail": "https://files.sp-mod.com/mods/1817.jpg",
+    "downloads": 67875,
+    "favourites_count": 92,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/1303/harryhideout",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-04-11T22:10:00.000000Z",
+    "created_at": "2024-04-11T22:10:45.000000Z",
+    "updated_at": "2026-08-19T02:38:04.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T16:52:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 1765,
+    "hub_id": 2400,
+    "guid": "com.lefthandedcat.catburglar",
+    "name": "The Cat Burglar",
+    "slug": "the-cat-burglar",
+    "teaser": "Every key(and keycard) in all of T***** for sale at a reasonable and balanced price for a no flea playthrough.",
+    "thumbnail": "https://files.sp-mod.com/mods/2400.jpg",
+    "downloads": 9391,
+    "favourites_count": 12,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/1765/the-cat-burglar",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2024-10-12T07:37:00.000000Z",
+    "created_at": "2024-10-12T07:37:53.000000Z",
+    "updated_at": "2026-07-28T07:56:10.000000Z",
+    "owner": {
+     "id": 64759,
+     "name": "LeftHandedCat",
+     "profile_photo_url": "https://sp-mod.com/avatars/L.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-09-30T17:17:59.000000Z",
+     "updated_at": "2026-08-10T19:48:27.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2064,
+    "hub_id": 2748,
+    "guid": null,
+    "name": "TARK - Tactical Arms Racketeer: Kaliber",
+    "slug": "tark-tactical-arms-racketeer-kaliber",
+    "teaser": "New trader who sells all of the ammunition and grenades you could ever need.",
+    "thumbnail": "https://files.sp-mod.com/mods/2748.jpg",
+    "downloads": 8947,
+    "favourites_count": 0,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2064/tark-tactical-arms-racketeer-kaliber",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-03-28T06:11:59.000000Z",
+    "created_at": "2025-03-28T06:11:59.000000Z",
+    "updated_at": "2026-07-13T18:01:26.000000Z",
+    "owner": {
+     "id": 74544,
+     "name": "IdiotTurdle",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/a684946319630bae581fa522f222fb7a261c66db_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-03-09T04:11:09.000000Z",
+     "updated_at": "2026-08-10T19:49:37.000000Z"
+    },
+    "additional_authors": [],
+    "category": null
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=1",
+   "prev": null,
+   "next": null
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 1,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": null,
+     "label": "Next »",
+     "page": null,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 3,
+   "total": 3
+  }
+ }
+}

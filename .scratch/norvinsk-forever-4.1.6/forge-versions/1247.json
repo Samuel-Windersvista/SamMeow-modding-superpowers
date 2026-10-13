@@ -1,0 +1,85 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 4963,
+   "hub_id": 9022,
+   "version": "1.3.4",
+   "description": "<p>Updated for 3.8.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1247/boss-notifier/1.3.4",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 8053,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-01T21:36:47.000000Z",
+   "created_at": "2024-04-01T21:36:47.000000Z",
+   "updated_at": "2026-05-14T04:20:55.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3746,
+   "hub_id": 10506,
+   "version": "1.5.0",
+   "description": "<p>Updated for 3.9.X!</p>\n<ul>\n<li>Changed debug messages into info, that way they show in console by default. (Use this to see if the mod is working properly when you think there’s an issue!)</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1247/boss-notifier/1.5.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 33342,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-06T21:29:29.000000Z",
+   "created_at": "2024-07-06T21:29:29.000000Z",
+   "updated_at": "2026-05-14T03:55:56.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 586,
+   "hub_id": 14267,
+   "version": "1.6.0",
+   "description": "<p>Updated for 3.11.x</p>\n",
+   "link": "https://sp-mod.com/mod/download/1247/boss-notifier/1.6.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 48415,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-05-16T15:21:41.000000Z",
+   "created_at": "2025-05-16T15:21:41.000000Z",
+   "updated_at": "2026-05-14T01:51:56.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1247/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1247/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1247/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1247/versions",
+  "per_page": 50,
+  "to": 3,
+  "total": 3
+ }
+}

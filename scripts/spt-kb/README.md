@@ -1,12 +1,14 @@
 # scripts/spt-kb —— sp-mod.com 源码归档工具 + KB 索引管线
 
-本目录有两组工具：
+本目录有三组工具：
 
 1. **Forge 源码归档**（`fetch → clone → finalize`）：把 [sp-mod.com](https://sp-mod.com)
    上按 SPT 版本 + 更新时间窗口筛选出的 mod 源码，批量浅克隆进知识库归档目录
    `knowledge/spt-kb/archive/forge/mods/`，并生成 provenance MANIFEST。
 2. **KB 索引管线**（`sync-index` / `validate-index`）：维护并校验
    `knowledge/spt-kb/index.json`（schema_version 2 契约）。
+3. **Forge 元数据快照**（`fetch-metadata`）：刷新全量 mod 目录
+   （`api/mods-catalog.json`）与 SPT 4.1.x 兼容集（`api/compat-4.1x.json`）。
 
 归档脚本源自 2026-09 一次手工采集（271 mod / 297 条源码链接）跑通的临时脚本，
 现固化为可重复使用的仓库工具。算法照搬，仅做参数化与合并。
@@ -78,6 +80,21 @@ node scripts/spt-kb/validate-index.mjs --index D:\Temp\opencode\index.json
 - dist 缺失时给出构建提示。bootstrap 检查 `tests/bootstrap/verify-kb-index.ps1` 调用本脚本。
 - 退出码：0 = 契约通过；1 = 契约失败 / 索引不可读 / dist 缺失；2 = 用法错误
   （未知参数 / `--index` 缺少取值）。
+
+## fetch-metadata —— 刷新 mod 元数据快照（catalog + 4.1.x 兼容集）
+
+```powershell
+node scripts/spt-kb/fetch-metadata.mjs
+```
+
+- 抓取两份快照并覆盖写入 `knowledge/spt-kb/archive/forge/api/`：
+  - `mods-catalog.json` — 全量 mod 元数据（不带 include；`sort=created_at` 翻页）。
+  - `compat-4.1x.json` — SPT 4.1.x 兼容集（`filter[spt_version]=~4.1.0` + `include=versions,source_code_links`）。
+- 输出 UTF-8 带 BOM + 4 空格缩进（与归档既有文件风格一致）；按 `id` 去重合并。
+- 限速：默认每两个请求间隔 2s（`SP_MOD_RATE_MS` 可覆盖）；每页最多重试 3 次（退避 10s/30s/60s）。**不要并发多进程同时抓取**。
+- 退出码：0 = 成功且计数一致；1 = 已写文件但条数 ≠ `meta.total`；2 = 抓取失败（不写文件）。
+- 教训（已内建）：节流检测必须先 `JSON.parse`，不要用 `/slow down/i` 扫全文——mod 内容里就可能出现该词（实例："Low Budget Bullet Time" 的 teaser 含 "slow down time"）。
+- 注意：清单接口的 `include=versions` **只返回最近若干版本**（官方文档称最近 6 个；2026-10-11 实测最多 10 个），非完整历史；补丁级兼容判定请用 `filter[spt_version]=<补丁>` 的服务端筛选（先例：`.scratch/forge-4.1x-survey/scripts/fetch-patch-sets.mjs`）。
 
 ## 三步工作流（Forge 源码归档）
 
@@ -179,19 +196,27 @@ $env:SP_MOD_PROXY = "http://127.0.0.1:1080"
 
 ## [重要] URL 规范化教训
 
-API 的 `source_code_links[].url` 并不总是仓库根 URL，而是**混有 GitHub 网页 URL**：
+API 的 `source_code_links[].url` 并不总是仓库根 URL，而是**混有 GitHub / Codeberg 网页 URL**：
 
 ```
 https://github.com/LycorisOni/SiccCaseFix/tree/4.1
 https://github.com/<o>/<r>/releases/tag/<tag>
+https://github.com/<o>/<r>/releases            (裸 releases 页，无 tag)
+https://github.com/<o>/<r>/upload              (upload 页)
+https://codeberg.org/<o>/<r>/src/branch/<ref>  (branch 或 tag)
 ```
 
 直接 `git clone` 这类 URL 会失败。必须先规范化：
 
 ```
 https://github.com/<o>/<r>/(tree|<releases/tag>)/<ref>
+https://codeberg.org/<o>/<r>/src/(branch|tag)/<ref>
    ↓
-git clone --depth 1 --branch <ref> https://github.com/<o>/<r>
+git clone --depth 1 --branch <ref> https://github.com/<o>/<r>   # 或 codeberg.org/<o>/<r>
+
+https://github.com/<o>/<r>/(releases|upload)[/]
+   ↓
+git clone --depth 1 https://github.com/<o>/<r>                  # 无 ref，克隆默认分支
 ```
 
 `clone-sources.mjs` 已内建该规范化（合并自原 `fixup-tree-urls.mjs`）。

@@ -1,0 +1,48 @@
+{
+ "id": 1025,
+ "hub_id": 1412,
+ "guid": "com.emilanderss0n.painter",
+ "name": "Painter",
+ "slug": "painter",
+ "teaser": "Painter is a trader who sells unique weapon mods and gear. Also painted weapon parts (incl. whole weapons).",
+ "thumbnail": "https://files.sp-mod.com/mods/1412.jpg",
+ "downloads": 313662,
+ "favourites_count": 154,
+ "endorsements_count": 14,
+ "description": "<h3>Trader for <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1125/tactical-gear-component\" rel=\"noreferrer noopener\">Tactical Gear Component</a></strong>, <strong><a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/files/file/1379-sandcore-fde-retextures/\" rel=\"noreferrer noopener\">SandCore</a></strong>, <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/985/blackcore\" rel=\"noreferrer noopener\">BlackCore</a></strong>, <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/963/whitecore\" rel=\"noreferrer noopener\">WhiteCore</a></strong>, <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/930/greencore\" rel=\"noreferrer noopener\">GreenCore</a></strong>, <strong><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1018/mag-tape\" rel=\"noreferrer noopener\">Mag Tape</a></strong></h3>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Overview</div>\n<div class=\"tab-content\"><p>THIS MOD IS NOT MAINTAINED BY ME ANYMORE! I will not continue making item mods. Kobe Thuy (@kobethuy) is now keeping Painter and TGC alive.</p>\n<p><strong>Painter’s questline languages: English (default), German, Chinese, Russian</strong></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/txN7rPo.png\" alt=\"txN7rPo.png\" /></p>\n<p>Ivan Ivan Samoylov is a master craftsman known for his unparalleled skill in designing rare gear and specialized weapon attachments. With a sharp eye for innovation and detail, he enhances standard loadouts with unique equipment that offers both flair and function.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/301sGUu.png\" alt=\"301sGUu.png\" /></p>\n<p>Painter is unlocked at player level 1. You can sell him information-based barter items (SSDs, intelligence folders, and more). I designed this trader to feel naturally integrated into the game world—no jarring progression or balance issues. Painter doesn’t require any other mods to work, but you should install at least one of my content mods—otherwise, his inventory will be emptier than a Scav’s promises. Currently, Painter features 9 quests, available in 4 languages. Completing his tasks will unlock new assort items, rare gear, and exclusive rewards.</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://gitsummarize.com/emilanderss0n/Painter\" rel=\"noreferrer noopener\"><strong>Documentation</strong></a></p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/V2Ql207.png\" alt=\"V2Ql207.png\" /></p>\n<p><strong>Painter new loyalty level requirements</strong></p>\n<p><strong>LL</strong> <strong>Player Level</strong> <strong>Sales Sum</strong> <strong>Standing</strong> <img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/YDZ5YMv.png\" alt=\"YDZ5YMv.png\" /> level <strong>1</strong> 0 Roubles 0 <img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/WvoGMT6.png\" alt=\"WvoGMT6.png\" /> level <strong>9</strong> <strong>500,000</strong> Roubles <strong>0.08</strong> <img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/9jRgK7T.png\" alt=\"9jRgK7T.png\" /> level <strong>18</strong> <strong>1,300,000</strong> Roubles <strong>0.16</strong> <img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/6bCS8fd.png\" alt=\"6bCS8fd.png\" /> level <strong>30</strong> <strong>3,000,000</strong> Roubles <strong>0.22</strong><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/DQ2ZGjo.png\" alt=\"DQ2ZGjo.png\" /> Install the mod by dropping the folder in the zip into your SPT folder</p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">FAQ</div>\n<div class=\"tab-content\"><p><strong>Q: Can I rename the folders of your mods?</strong></p>\n<p>A: No, you will get errors and you should only do it if you know what you’re doing.</p>\n<p><strong>Q: Why do I get assort error?</strong></p>\n<p>A: You didn’t load Painter before my mods that require him / you didn’t follow the install instructions / in VERY rare occasions mods can conflict with each other.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/cwgIZ12.png\" alt=\"cwgIZ12.png\" /> If you use custom load order: If a mod maker names his folder as I do with Painter with “a” before the mod name, you should not load that mod last in the order stack. Try to respect the mod maker’s decisions to load mods first or last. “A” means load first, “Z” means load last. SAIN has z in the beginning of the folder name because the mod author wants it to load last. <strong>Q: Why is Painter not selling any items?</strong></p>\n<p>A: You need at least one of my other mods that adds new content (BlackCore, TGC, etc). Also, at LL1 there are a limited amount of items due to trying to keep the balance of the progression in the game.</p>\n<p><strong>Q: Can I edit items in your mods?</strong></p>\n<p>A: Yes but I do not answer any questions about how you edit my mods. They work like any other mod and it’s up to you to learn how to do it.</p>\n<p><strong>Q: Are these items compatible with Realism mod?</strong></p>\n<p>A: I do not provide support for the mod but there are patches from other modders if you search for them.</p>\n<p><strong>Q: I get: “TypeError: Cannot read properties of undefined (reading ‘base’)”?</strong></p>\n<p>A: You didn’t load Painter before my content mods.</p>\n<p><strong>Q: I get doge cubes instead of your items?</strong></p>\n<p>A: You didn’t load Painter before my mods that require him (Keeping the naming structure of my mod folders to default should be enough) or there is a mod conflict.</p>\n<p><strong>Q: Why did you not answer my question or report the error?</strong></p>\n<p>A: Sometimes I get the same question 10-20 times and if you search for the answer you will most likely find the answer. Errors are often the user making a mistake in reading the overview text / FAQ or not searching for an answer first. It’s ok to report things but please search through comments or discord before doing it.</p></div></div></div>\n<p><em>Feel free to add your own modded items to this trader. The ID for this trader is “<em>668aaff35fd574b6dcc4a686</em>”. Thanks to Mighty_Condor for the help! I do have a <a target=\"_blank\" class=\"external-link\" href=\"http://ko-fi.com/moxopixel\" rel=\"noreferrer noopener\">Ko-Fi</a> if you want to leave a donation.</em></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1025/painter",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 16,
+ "published_at": "2023-08-22T17:18:00.000000Z",
+ "created_at": "2023-08-22T17:18:44.000000Z",
+ "updated_at": "2026-09-19T15:57:10.000000Z",
+ "owner": {
+  "id": 29835,
+  "name": "MoxoPixel",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/464072aceb40281611921f5b148200b2fbf86664_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/96b6bc2954ac77a69d9ce6363d504454cad88e0d_1280w.webp",
+  "created_at": "2023-04-08T03:49:17.000000Z",
+  "updated_at": "2026-10-05T17:21:12.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 78428,
+   "name": "kobethuy",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2025-05-04T22:32:08.000000Z",
+   "updated_at": "2026-10-05T13:13:57.000000Z"
+  }
+ ],
+ "category": {
+  "id": 16,
+  "hub_id": 29,
+  "title": "Traders",
+  "slug": "traders",
+  "description": ""
+ }
+}

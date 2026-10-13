@@ -1,0 +1,473 @@
+{
+ "term": "AI -friendlypmc PITFireTeam",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2676,
+    "hub_id": null,
+    "guid": "xyz.pit.fireteam",
+    "name": "PIT Fireteam",
+    "slug": "pit-fireteam",
+    "teaser": "Spawn with a squad on your side, customize them, recruit others while in the raid, and command them on the battlefield.",
+    "thumbnail": "https://files.sp-mod.com/mods/rmTaDlcJz16ETdQz9CiZowcb8KteqMk6XSM4qx8L.png",
+    "downloads": 34424,
+    "favourites_count": 167,
+    "endorsements_count": 22,
+    "detail_url": "https://sp-mod.com/mod/2676/pit-fireteam",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-04-30T17:19:00.000000Z",
+    "created_at": "2026-04-30T17:14:40.000000Z",
+    "updated_at": "2026-09-08T02:40:33.000000Z",
+    "owner": {
+     "id": 105748,
+     "name": "pitAlex",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/kDH74PyXXPhIfFMHA4x5WOwYAl3uz1nuotpntZdz_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/r7QMMiNSNG0oIsV56gQg8rWMJZB7130xeJslrvyo_1280w.webp",
+     "created_at": "2026-02-22T05:14:32.000000Z",
+     "updated_at": "2026-10-05T12:07:16.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1945,
+    "hub_id": 2617,
+    "guid": "com.dvize.ailimit",
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "teaser": "Temporarily disable far bots to reduce cpu load",
+    "thumbnail": "https://files.sp-mod.com/mods/iFN5tmtV0BCSMeEQLeU1CoMwB4x4XgF27OU2xmbj.png",
+    "downloads": 64612,
+    "favourites_count": 69,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/1945/ai-limit",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-01-06T10:28:00.000000Z",
+    "created_at": "2025-01-06T10:28:40.000000Z",
+    "updated_at": "2026-09-04T09:00:11.000000Z",
+    "owner": {
+     "id": 26519,
+     "name": "wizard83",
+     "profile_photo_url": "https://sp-mod.com/avatars/W.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-03T13:05:13.000000Z",
+     "updated_at": "2026-10-04T19:51:10.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 15516,
+      "name": "Props",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/53f17847d86ea53a84f69a549ce2b50baf31d665_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-03-09T07:33:42.000000Z",
+      "updated_at": "2026-08-10T19:31:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 791,
+    "hub_id": 1062,
+    "guid": "me.sol.sain",
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "teaser": "Bots that don't suck.",
+    "thumbnail": "https://files.sp-mod.com/mods/1062.jpg",
+    "downloads": 1315165,
+    "favourites_count": 976,
+    "endorsements_count": 133,
+    "detail_url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-03-09T02:46:00.000000Z",
+    "created_at": "2023-03-09T02:46:50.000000Z",
+    "updated_at": "2026-09-04T18:41:43.000000Z",
+    "owner": {
+     "id": 27463,
+     "name": "Solarint",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-23T17:11:59.000000Z",
+     "updated_at": "2026-08-10T19:41:43.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     },
+     {
+      "id": 52282,
+      "name": "ArchangelWTF",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-20T14:55:34.000000Z",
+      "updated_at": "2026-10-05T14:23:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2874,
+    "hub_id": null,
+    "guid": "com.hysocs.adaptivebotculling",
+    "name": "Adaptive Bot Culling",
+    "slug": "adaptive-bot-culling",
+    "teaser": "Integrates AI brain and animation pausing into EFT’s native asset-culling and LOD system, reducing CPU usage when bots are far away",
+    "thumbnail": "https://files.sp-mod.com/mods/U69LKHdaWZAKIa1emEfDp71yNMvUI0mNwVFz5CuS.png",
+    "downloads": 6350,
+    "favourites_count": 38,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/2874/adaptive-bot-culling",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-02T00:15:00.000000Z",
+    "created_at": "2026-08-02T00:05:49.000000Z",
+    "updated_at": "2026-08-17T09:40:01.000000Z",
+    "owner": {
+     "id": 118937,
+     "name": "Hysocs",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2kp7OvMk67Cdf5VvO12p9sOk7mAuqgBAaLv0SQSM_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/lAHgRO7c2a5ET6Cu2bCjFOI2s7dt8SukoSsjUgaC_1280w.webp",
+     "created_at": "2026-07-27T18:19:13.000000Z",
+     "updated_at": "2026-10-05T11:20:51.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3091,
+    "hub_id": null,
+    "guid": "com.tricoloursky.astraldivide",
+    "name": "Astral Divide",
+    "slug": "astral-divide",
+    "teaser": "Custom Trader with story chapter and unique mechanic and custom outfits with physics system.",
+    "thumbnail": "https://files.sp-mod.com/mods/uXZ6dHhUoQYrY9s9ZRrYsGFPn6kUJUsBWeBiwOUQ.png",
+    "downloads": 1040,
+    "favourites_count": 18,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3091/astral-divide",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-10-01T11:02:00.000000Z",
+    "created_at": "2026-10-01T16:39:23.000000Z",
+    "updated_at": "2026-10-02T01:47:47.000000Z",
+    "owner": {
+     "id": 101080,
+     "name": "TricolourLM7",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/TVwOwkK1SEaJxX9OJeqyILraJBosxBwldG4Qw1HL_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/YHGyEjhKsg7zM8frW6UKT8NAwz26JDtgaDHI9072_1280w.webp",
+     "created_at": "2026-01-09T08:50:45.000000Z",
+     "updated_at": "2026-10-05T11:01:38.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2011,
+    "hub_id": 2691,
+    "guid": "com.rukiragaming.actuallyfir",
+    "name": "Actually Found In Raid (UPDATED)",
+    "slug": "actually-found-in-raid-updated",
+    "teaser": "Tired of killing a PMC and the loot isn't \"Found In Raid\", even though you literally just found it in the raid? Actually Found In Raid will make sure that AI PMCs spawn with all items as Found In Raid.",
+    "thumbnail": "",
+    "downloads": 25574,
+    "favourites_count": 60,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2011/actually-found-in-raid-updated",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-02-16T18:16:00.000000Z",
+    "created_at": "2025-02-16T18:16:29.000000Z",
+    "updated_at": "2026-10-02T15:24:04.000000Z",
+    "owner": {
+     "id": 13632,
+     "name": "RuKira",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/HGcQlS8eu0WYX2W5AATPBli1aWVGsTXQd79WE4l5_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-01-18T06:31:54.000000Z",
+     "updated_at": "2026-10-05T13:30:09.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 56859,
+      "name": "MadBrother",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/5aREXCJMYv2f3Ez7O4RmskvxXE2bV4MgLamB1ACj_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-07-10T14:22:15.000000Z",
+      "updated_at": "2026-10-05T14:45:29.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 3000,
+    "hub_id": null,
+    "guid": "moe.flea.refresh",
+    "name": "Moe Flea Refresh",
+    "slug": "moe-flea-refresh",
+    "teaser": "Regenerate AI flea market offers after raids or on configurable schedules. / 在战局结束或按计划重新生成 AI 跳蚤市场报价。",
+    "thumbnail": "",
+    "downloads": 304,
+    "favourites_count": 1,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/3000/moe-flea-refresh",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2026-09-06T20:43:00.000000Z",
+    "created_at": "2026-09-06T20:46:15.000000Z",
+    "updated_at": "2026-09-06T21:47:43.000000Z",
+    "owner": {
+     "id": 115215,
+     "name": "moucashi",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2026-06-11T16:10:00.000000Z",
+     "updated_at": "2026-09-23T08:42:19.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 1109,
+    "hub_id": 1534,
+    "guid": "com.danw.questingbots",
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...",
+    "thumbnail": "https://files.sp-mod.com/mods/1534.jpg",
+    "downloads": 434815,
+    "favourites_count": 161,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/1109/questing-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-10-14T21:05:00.000000Z",
+    "created_at": "2023-10-14T21:05:26.000000Z",
+    "updated_at": "2026-09-19T03:57:50.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1594,
+    "hub_id": 2180,
+    "guid": "com.acidphantasm.progressivebotsystem",
+    "name": "APBS - Acid's Progressive Bot System",
+    "slug": "apbs-acids-progressive-bot-system",
+    "teaser": "Fully customizable progression system. By default, all AI will level with you, have appropriate gear for their level, and might be a tad more dangerous due to their progression. Everyone has something worth stealing or scavenging!",
+    "thumbnail": "https://files.sp-mod.com/mods/2180.png",
+    "downloads": 254151,
+    "favourites_count": 499,
+    "endorsements_count": 58,
+    "detail_url": "https://sp-mod.com/mod/1594/apbs-acids-progressive-bot-system",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2024-07-26T20:03:00.000000Z",
+    "created_at": "2024-07-26T20:03:35.000000Z",
+    "updated_at": "2026-09-20T22:00:56.000000Z",
+    "owner": {
+     "id": 48110,
+     "name": "acidphantasm",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-04-11T21:22:35.000000Z",
+     "updated_at": "2026-10-05T16:52:09.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1895,
+    "hub_id": 2557,
+    "guid": "com.twitchplayers",
+    "name": "[SAIN] Twitch Players",
+    "slug": "sain-twitch-players",
+    "teaser": "EFT was never forgiving. So are they.",
+    "thumbnail": "https://files.sp-mod.com/mods/SPDckoZ7xbs2PSAd9MoYrfFZfRqveqTer2s1gJtE.png",
+    "downloads": 35017,
+    "favourites_count": 46,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/1895/sain-twitch-players",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-01-09T01:09:00.000000Z",
+    "created_at": "2024-12-17T08:58:03.000000Z",
+    "updated_at": "2026-09-12T23:57:39.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 65345,
+      "name": "yuyui.moe",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/690689ea1ac9a0eaadce8c01f2abaf25147c43b1_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/WvU2OUJlNTqWgxJweWYm1CQb3DU2ajCciDfFqsEH_1280w.webp",
+      "created_at": "2024-10-12T21:27:05.000000Z",
+      "updated_at": "2026-10-01T18:57:41.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

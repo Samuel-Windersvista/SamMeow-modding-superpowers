@@ -1,0 +1,145 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 11781,
+   "hub_id": null,
+   "version": "2.0.0",
+   "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>No functionality change</p>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/2.0.0",
+   "content_length": 4958,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 31552,
+   "fika_compatibility": "compatible",
+   "published_at": "2025-10-11T21:24:00.000000Z",
+   "created_at": "2025-10-11T21:24:55.000000Z",
+   "updated_at": "2026-07-28T06:02:30.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 12727,
+   "hub_id": null,
+   "version": "2.0.1",
+   "description": "<h3><strong>This version will only work for SPT 4.0.10+</strong></h3>\n<p>New Features</p>\n<ul>\n<li>Added toggle for also adding to followers</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/2.0.1",
+   "content_length": 4867,
+   "spt_version_constraint": "~4.0.10",
+   "downloads": 61535,
+   "fika_compatibility": "compatible",
+   "published_at": "2025-12-31T16:17:00.000000Z",
+   "created_at": "2025-12-31T16:17:17.000000Z",
+   "updated_at": "2026-07-28T07:24:49.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14522,
+   "hub_id": null,
+   "version": "2.1.0",
+   "description": "<h3><strong>This version will only work for SPT 4.1.x</strong></h3>\n<p>4.1 update</p>\n<p>Added config to SIC</p>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/2.1.0",
+   "content_length": 8333,
+   "spt_version_constraint": "~4.1",
+   "downloads": 22098,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-07T16:04:00.000000Z",
+   "created_at": "2026-08-07T16:04:18.000000Z",
+   "updated_at": "2026-08-07T18:02:18.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3617,
+   "hub_id": 10662,
+   "version": "1.0.0",
+   "description": "<h3><strong>This version will only work for SPT 3.9.x</strong></h3>\n<p>Initial release</p>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/1.0.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 14314,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-09T10:03:37.000000Z",
+   "created_at": "2024-07-09T10:03:37.000000Z",
+   "updated_at": "2026-05-14T03:54:38.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2887,
+   "hub_id": 11613,
+   "version": "1.1.0",
+   "description": "<h3><strong>This version will only work for SPT 3.9.x</strong></h3>\n<p>Completely re-wrote the mod</p>\n<p>Added config to adjust “chance” of Lega Medals</p>\n<p>Now applies to all bosses (including Knight)</p>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/1.1.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.9.0",
+   "downloads": 12377,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-09-04T02:50:48.000000Z",
+   "created_at": "2024-09-04T02:50:48.000000Z",
+   "updated_at": "2026-05-14T03:42:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2367,
+   "hub_id": 12228,
+   "version": "1.2.0",
+   "description": "<p><strong>This version will only work for SPT 3.10.x</strong></p>\n<p>3.10 Update</p>\n<ul>\n<li>Minor code change</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 23342,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-26T15:06:02.000000Z",
+   "created_at": "2024-11-26T15:06:02.000000Z",
+   "updated_at": "2026-05-14T03:20:15.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1208,
+   "hub_id": 13568,
+   "version": "1.3.0",
+   "description": "<h3><strong>This version will only work for SPT 3.11.x</strong></h3>\n<p>3.11 Update</p>\n<p>Changes</p>\n<ul>\n<li>Replaced VFS with FileSystemSync</li>\n<li>Removed some logging</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1539/bosses-have-lega-medals/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 48295,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-15T20:26:42.000000Z",
+   "created_at": "2025-03-15T20:26:42.000000Z",
+   "updated_at": "2026-05-14T02:07:47.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1539/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1539/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1539/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1539/versions",
+  "per_page": 50,
+  "to": 7,
+  "total": 7
+ }
+}

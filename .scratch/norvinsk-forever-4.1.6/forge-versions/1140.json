@@ -1,0 +1,190 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 5655,
+   "hub_id": 8120,
+   "version": "1.0.0",
+   "description": "<h3>This version will only work with SPT 3.7.1</h3>\n<p>Initial Release</p>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.0.0",
+   "content_length": null,
+   "spt_version_constraint": "3.7.1",
+   "downloads": 1267,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-11-02T07:08:18.000000Z",
+   "created_at": "2023-11-02T07:08:18.000000Z",
+   "updated_at": "2026-05-14T04:27:19.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 5646,
+   "hub_id": 8132,
+   "version": "1.1.0",
+   "description": "<h3>This version was written to be generic, and support as many <em>future</em> versions of SPT as possible. Currently only tested on 3.7.0-3.7.6</h3>\n<h3>Changelog:</h3>\n<ul>\n<li>Re-organized settings. Note: Some of your settings will have reset because of this.</li>\n<li>Allow hiding completed quests and objectives</li>\n<li>Allow setting a max width (Default 1/6th screen width)</li>\n<li>Quest name and objectives will now wrap if they won’t fit on a single line</li>\n<li>Allow setting panel background transparency</li>\n<li>Allow aligning panel to the left or right side of the screen</li>\n<li>Make version agnostic\n<ul>\n<li>\n<p>Officially tested/supported on SPT 3.7.0 - 3.7.6</p>\n</li>\n<li>\n<p>User tested as working on: SPT 3.6.1</p>\n</li>\n</ul>\n</li>\n</ul>\n<h3>Known Issues:</h3>\n<ul>\n<li>Some daily/weekly tasks may have confusing objectives, such as missing what map to extract from</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.1.0",
+   "content_length": null,
+   "spt_version_constraint": "3.7.6",
+   "downloads": 13963,
+   "fika_compatibility": "unknown",
+   "published_at": "2023-11-03T21:43:28.000000Z",
+   "created_at": "2023-11-03T21:43:28.000000Z",
+   "updated_at": "2026-05-14T04:27:15.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4976,
+   "hub_id": 9007,
+   "version": "1.2.0",
+   "description": "<h3>This version is NOT version agnostic, and REQUIRES SPT 3.8.0</h3>\n<p>Update for 3.8.0</p>\n<h3>Known Issues:</h3>\n<ul>\n<li>Some daily/weekly tasks may have confusing objectives, such as missing what map to extract from</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 19824,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-01T21:18:32.000000Z",
+   "created_at": "2024-04-01T21:18:32.000000Z",
+   "updated_at": "2026-05-14T04:21:11.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3768,
+   "hub_id": 10483,
+   "version": "1.3.0",
+   "description": "<h3>This version will only work with SPT 3.9.x</h3>\n<ul>\n<li>Update for 3.9.0</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 22791,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-06T19:18:49.000000Z",
+   "created_at": "2024-07-06T19:18:49.000000Z",
+   "updated_at": "2026-05-14T03:56:18.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2294,
+   "hub_id": 12314,
+   "version": "1.4.0",
+   "description": "<h3>This version will only work with SPT 3.10.x</h3>\n<ul>\n<li>Update for SPT 3.10.0</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.4.0",
+   "content_length": null,
+   "spt_version_constraint": "3.10.0",
+   "downloads": 5401,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-27T05:15:26.000000Z",
+   "created_at": "2024-11-27T05:15:26.000000Z",
+   "updated_at": "2026-05-14T03:19:15.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1936,
+   "hub_id": 12749,
+   "version": "1.4.1",
+   "description": "<h3>This version will only work with SPT 3.10.x</h3>\n<ul>\n<li>Fix issue when using Fika Dedicated where the tracker list wouldn’t show in-raid</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.4.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 13208,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-21T05:21:39.000000Z",
+   "created_at": "2024-12-21T05:21:39.000000Z",
+   "updated_at": "2026-05-14T02:41:14.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1153,
+   "hub_id": 13624,
+   "version": "1.5.0",
+   "description": "<h3>This version will only work with SPT 3.11.x</h3>\n<p>Update for SPT 3.11</p>\n<p>- Show “Factory day” tasks when on Factory Night</p>\n<p>- Show “Ground Zero” tasks when on Ground Zero High</p>\n<p>- Show Marathon tasks no matter the map (Treat them the same as “any” location), as they don’t include all required maps in their conditions</p>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.5.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 477,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-16T20:01:00.000000Z",
+   "created_at": "2025-03-16T20:01:00.000000Z",
+   "updated_at": "2026-05-14T02:06:11.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1143,
+   "hub_id": 13634,
+   "version": "1.5.1",
+   "description": "<h3>This version will only work with SPT 3.11.x</h3>\n<p>Tracking can now be done at the objective level, useful for tasks that span multiple maps (Such as Shooter Born in Heaven)</p>\n<ul>\n<li>Tracking an objective will automatically track the parent quest</li>\n<li>Untracking the last tracked objective on a quest will untrack the parent quest</li>\n<li>If no specific objectives are tracked, all objectives are shown in the quest tracker</li>\n</ul>\n<p>Note that this update will clear any previously tracked quests, as the structure of the tracking file has changed</p>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.5.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 28007,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-17T00:42:17.000000Z",
+   "created_at": "2025-03-17T00:42:17.000000Z",
+   "updated_at": "2026-05-14T02:04:34.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 11767,
+   "hub_id": null,
+   "version": "1.6.0",
+   "description": "<ul>\n<li>Update for SPT 4.0.0</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.6.0",
+   "content_length": 24090,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 44101,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-10-11T19:30:03.000000Z",
+   "created_at": "2025-10-11T17:43:02.000000Z",
+   "updated_at": "2026-07-28T06:02:11.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14417,
+   "hub_id": null,
+   "version": "1.7.0",
+   "description": "<p>Update for SPT 4.1.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1140/quest-tracker/1.7.0",
+   "content_length": 22840,
+   "spt_version_constraint": "~4.1.0",
+   "downloads": 12664,
+   "fika_compatibility": "unknown",
+   "published_at": "2026-08-03T04:23:00.000000Z",
+   "created_at": "2026-08-03T04:26:52.000000Z",
+   "updated_at": "2026-08-03T06:02:27.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1140/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1140/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1140/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1140/versions",
+  "per_page": 50,
+  "to": 10,
+  "total": 10
+ }
+}

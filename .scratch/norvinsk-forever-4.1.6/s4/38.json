@@ -1,0 +1,116 @@
+{
+ "idx": 38,
+ "entry": "[9]物品打勾标记提供更多信息-MoreCheckmarks",
+ "terms": [
+  "MoreCheckmarksBackend",
+  "-MoreCheckmarks",
+  "MoreCheckmarks"
+ ],
+ "all": [
+  {
+   "term": "-MoreCheckmarks",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327302,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 1342,
+   "name": "UI Fixes",
+   "slug": "ui-fixes",
+   "dl": 453460,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192577,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 1232,
+   "name": "Lotus",
+   "slug": "lotus",
+   "dl": 187202,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 2025,
+   "name": "All Quests Checkmarks",
+   "slug": "all-quests-checkmarks",
+   "dl": 61050,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32562,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 2419,
+   "name": "Amonya - Ammo Loving Trader & Quester",
+   "slug": "amonya-ammo-loving-trader-quester",
+   "dl": 17174,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "MoreCheckmarks",
+   "id": 2500,
+   "name": "Wishlist Extended",
+   "slug": "wishlist-extended",
+   "dl": 7592,
+   "sc": 0
+  },
+  {
+   "term": "-MoreCheckmarks",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

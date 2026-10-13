@@ -1,0 +1,448 @@
+{
+ "entry": "[10]UI大修-UIFixes",
+ "term": "uifixes",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 1342,
+    "hub_id": 1860,
+    "guid": "com.tyfon.uifixes",
+    "name": "UI Fixes",
+    "slug": "ui-fixes",
+    "teaser": "Quality of life improvements and fixes for SPT",
+    "thumbnail": "https://files.sp-mod.com/mods/1860.png",
+    "downloads": 453448,
+    "favourites_count": 652,
+    "endorsements_count": 118,
+    "detail_url": "https://sp-mod.com/mod/1342/ui-fixes",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-04-19T07:23:00.000000Z",
+    "created_at": "2024-04-19T07:23:35.000000Z",
+    "updated_at": "2026-10-03T00:02:04.000000Z",
+    "owner": {
+     "id": 46005,
+     "name": "Tyfon",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-27T23:21:18.000000Z",
+     "updated_at": "2026-09-30T00:12:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2207,
+    "hub_id": 2910,
+    "guid": "katrin0522.fastsellinflea",
+    "name": "Fast Sell In Flea",
+    "slug": "fast-sell-in-flea",
+    "teaser": "Quickly add items on the flea market with automatic fitting of the current price",
+    "thumbnail": "https://files.sp-mod.com/mods/2910.png",
+    "downloads": 77015,
+    "favourites_count": 209,
+    "endorsements_count": 16,
+    "detail_url": "https://sp-mod.com/mod/2207/fast-sell-in-flea",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-06-29T22:55:00.000000Z",
+    "created_at": "2025-06-29T22:55:16.000000Z",
+    "updated_at": "2026-08-23T11:32:05.000000Z",
+    "owner": {
+     "id": 80313,
+     "name": "Katrin0522",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b74b866bad43739616963992bc7d8187ea01f5c2_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/4aeb3bda77bd76170f24227d63d761ea8871defe.jpg",
+     "created_at": "2025-06-13T13:44:23.000000Z",
+     "updated_at": "2026-09-25T07:36:47.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2407,
+    "hub_id": null,
+    "guid": "com.lacyway.csf",
+    "name": "QuickSellFlea",
+    "slug": "quicksellflea",
+    "teaser": "Tired of placing orders on the flea? Tired of having to install 20 mods to quick sell on flea? Now you can instantly place it with the average price - with just ONE click and no other mods needed!",
+    "thumbnail": "https://files.sp-mod.com/mods/DKD1Wl0DKh0VvDfyq0nyMHxCBwC3HhPhiOMirGIG.png",
+    "downloads": 42206,
+    "favourites_count": 157,
+    "endorsements_count": 21,
+    "detail_url": "https://sp-mod.com/mod/2407/quicksellflea",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-08-19T19:13:00.000000Z",
+    "created_at": "2025-10-29T12:15:33.000000Z",
+    "updated_at": "2026-09-06T11:59:04.000000Z",
+    "owner": {
+     "id": 47969,
+     "name": "Lacyway",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+     "created_at": "2024-04-09T17:00:56.000000Z",
+     "updated_at": "2026-10-05T08:57:49.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2681,
+    "hub_id": null,
+    "guid": "com.manimal.loadammoanim",
+    "name": "Manimal's Ammo Loading Animations",
+    "slug": "manimals-ammo-loading-animations",
+    "teaser": "First person animations for loading bullets into a mag",
+    "thumbnail": "https://files.sp-mod.com/mods/K449U2CG8oTyYLQzrGfB7aGMH9mvOsM0y53lhJx4.png",
+    "downloads": 17598,
+    "favourites_count": 136,
+    "endorsements_count": 27,
+    "detail_url": "https://sp-mod.com/mod/2681/manimals-ammo-loading-animations",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-14T23:26:00.000000Z",
+    "created_at": "2026-05-06T04:32:11.000000Z",
+    "updated_at": "2026-10-03T00:41:10.000000Z",
+    "owner": {
+     "id": 119111,
+     "name": "Manimal1920",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-07-30T21:56:19.000000Z",
+     "updated_at": "2026-10-05T16:46:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 2112,
+    "hub_id": 2798,
+    "guid": "com.ozen.continuousloadammo",
+    "name": "Continuous Load Ammo",
+    "slug": "continuous-load-ammo",
+    "teaser": "You are now able to continuously load or unload ammo outside your inventory!",
+    "thumbnail": "https://files.sp-mod.com/mods/2798.png",
+    "downloads": 93335,
+    "favourites_count": 380,
+    "endorsements_count": 53,
+    "detail_url": "https://sp-mod.com/mod/2112/continuous-load-ammo",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 3,
+    "published_at": "2025-04-23T15:22:00.000000Z",
+    "created_at": "2025-04-23T15:22:52.000000Z",
+    "updated_at": "2026-09-20T03:03:57.000000Z",
+    "owner": {
+     "id": 77756,
+     "name": "ozen",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-04-23T14:40:25.000000Z",
+     "updated_at": "2026-10-05T12:18:36.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 3,
+     "hub_id": 19,
+     "title": "Scripting",
+     "slug": "scripting",
+     "description": ""
+    }
+   },
+   {
+    "id": 2422,
+    "hub_id": null,
+    "guid": "com.ozen.foldables",
+    "name": "Foldables",
+    "slug": "foldables",
+    "teaser": "You can now fold backpacks and vests!",
+    "thumbnail": "https://files.sp-mod.com/mods/cjnoVWqg1AE62mJzHu3I0znSVh6fVsm3JZYOxxZH.png",
+    "downloads": 46394,
+    "favourites_count": 202,
+    "endorsements_count": 34,
+    "detail_url": "https://sp-mod.com/mod/2422/foldables",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2025-11-07T18:57:00.000000Z",
+    "created_at": "2025-11-05T13:59:02.000000Z",
+    "updated_at": "2026-09-20T03:03:54.000000Z",
+    "owner": {
+     "id": 77756,
+     "name": "ozen",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/1aglmhPJvrzyi93w0EuTd1OMEZeGAtUt15niHWWU_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-04-23T14:40:25.000000Z",
+     "updated_at": "2026-10-05T12:18:36.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2950,
+    "hub_id": null,
+    "guid": "com.corter.modsync",
+    "name": "Corter-ModSync",
+    "slug": "corter-modsync",
+    "teaser": "The OG ModSync mod by Corter ported to SPT4 versions",
+    "thumbnail": "https://files.sp-mod.com/mods/a9SItVDZXTrIlioc7LQiiTCiH609yCh4YiJp1fbn.png",
+    "downloads": 995,
+    "favourites_count": 14,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2950/corter-modsync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-22T09:44:00.000000Z",
+    "created_at": "2026-08-22T09:47:22.000000Z",
+    "updated_at": "2026-08-22T10:40:21.000000Z",
+    "owner": {
+     "id": 11050,
+     "name": "Dildz",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/272c7e5adaac509abc6f6743e0717d4289b34dd0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-11-02T06:59:35.000000Z",
+     "updated_at": "2026-09-02T18:42:48.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3011,
+    "hub_id": null,
+    "guid": "com.dark.spt.showmethemoney",
+    "name": "Show Me The Money (Item Pricing) (4.1.x)",
+    "slug": "show-me-the-money-item-pricing-41x",
+    "teaser": "Show Me The Money, updated for 4.1.x.",
+    "thumbnail": "https://files.sp-mod.com/mods/K65XPMTmqFDDnADksRboFVHxihsqVpySUB3FCd2G.png",
+    "downloads": 7695,
+    "favourites_count": 89,
+    "endorsements_count": 23,
+    "detail_url": "https://sp-mod.com/mod/3011/show-me-the-money-item-pricing-41x",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-10T15:21:00.000000Z",
+    "created_at": "2026-09-10T15:29:52.000000Z",
+    "updated_at": "2026-09-10T15:57:44.000000Z",
+    "owner": {
+     "id": 68531,
+     "name": "Daark",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/tHAQntRAmvLXM3srdcxTzvTKeB99FjATP2QNgoSP_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-11-29T14:57:39.000000Z",
+     "updated_at": "2026-10-03T18:29:13.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84437,
+      "name": "swiftxp",
+      "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+      "cover_photo_url": null,
+      "created_at": "2025-09-09T13:48:33.000000Z",
+      "updated_at": "2026-08-10T19:50:33.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1745,
+    "hub_id": 2378,
+    "guid": "com.tyfon.discarder",
+    "name": "Discarder",
+    "slug": "discarder",
+    "teaser": "Multi-select discard for UI Fixes",
+    "thumbnail": "https://files.sp-mod.com/mods/2378.png",
+    "downloads": 17175,
+    "favourites_count": 59,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/1745/discarder",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-09-23T17:35:00.000000Z",
+    "created_at": "2024-09-23T17:35:44.000000Z",
+    "updated_at": "2026-08-09T18:02:47.000000Z",
+    "owner": {
+     "id": 46005,
+     "name": "Tyfon",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/63c0fc245b25b135a26465ea268ebdd8a35b62d0_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-02-27T23:21:18.000000Z",
+     "updated_at": "2026-09-30T00:12:22.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2955,
+    "hub_id": null,
+    "guid": "com.blackhawk.quicksell",
+    "name": "Quick Sell",
+    "slug": "quick-sell",
+    "teaser": "Quick-sell to the best trader or the flea, with prices on item tooltips.",
+    "thumbnail": "https://files.sp-mod.com/mods/SP6nNkpHFOBcnMSVUwqmXEWMyOpl5gyrMM2doinW.jpg",
+    "downloads": 7468,
+    "favourites_count": 57,
+    "endorsements_count": 14,
+    "detail_url": "https://sp-mod.com/mod/2955/quick-sell",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-25T16:13:00.000000Z",
+    "created_at": "2026-08-25T16:06:21.000000Z",
+    "updated_at": "2026-10-02T22:24:09.000000Z",
+    "owner": {
+     "id": 85915,
+     "name": "BLACK HAWK",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/nhL30RWS9AcT5J4gcosWsoKk6dZ8UaPTQxtQYYU3_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-10-18T23:34:37.000000Z",
+     "updated_at": "2026-10-05T16:42:04.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

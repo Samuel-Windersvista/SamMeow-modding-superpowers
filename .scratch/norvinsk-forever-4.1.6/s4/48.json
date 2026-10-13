@@ -1,0 +1,75 @@
+{
+ "idx": 48,
+ "entry": "[8]boss刷新通知-BossNotifier",
+ "terms": [
+  "boss -BossNotifier",
+  "BossNotifier"
+ ],
+ "all": [
+  {
+   "term": "boss -BossNotifier",
+   "id": 2594,
+   "name": "Player Boss Scav",
+   "slug": "player-boss-scav",
+   "dl": 10704,
+   "sc": 30
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 2210,
+   "name": "Live Like Boss Spawn Chances",
+   "slug": "live-like-boss-spawn-chances",
+   "dl": 4171,
+   "sc": 30
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 2246,
+   "name": "WTT- Armory",
+   "slug": "wtt-armory",
+   "dl": 285008,
+   "sc": 0
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192577,
+   "sc": 0
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 1453,
+   "name": "Make Shotguns Great Again!",
+   "slug": "make-shotguns-great-again",
+   "dl": 48422,
+   "sc": 0
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 2982,
+   "name": "Hideout Overhaul",
+   "slug": "hideout-overhaul",
+   "dl": 2980,
+   "sc": 0
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 2949,
+   "name": "Realistic Insurance",
+   "slug": "realistic-insurance",
+   "dl": 1684,
+   "sc": 0
+  },
+  {
+   "term": "boss -BossNotifier",
+   "id": 2583,
+   "name": "Fika Discord Presence",
+   "slug": "fika-discord-presence",
+   "dl": 1344,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

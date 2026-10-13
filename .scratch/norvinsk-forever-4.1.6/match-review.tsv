@@ -1,0 +1,151 @@
+1	[14]本体缺失翻译			MANUAL		
+2	[14]客户端ModF12通用翻译器及菜单汉化文本		ConfigurationManager.dll	MANUAL		
+3	[13]好莱坞第三人称镜头-HollywoodCam		HollywoodCam.dll	MANUAL		2201|HollywoodCam|100
+4	[13]战局外检修标签-DebugTooltip		Tyfon.DebugTooltip.dll	MANUAL		1542|Debug Tooltip|100
+5	[13]MOD工具-AI刷新和行为检修-BotDebug		DrakiaXYZ-BotDebug.dll	OK	918|BotDebug|100	918|BotDebug|100
+6	[13]存档编辑器-SPT-AKI Profile Editor	ProfileEditorHelper		MANUAL		106|SPT-AKI Profile Editor|100 ;; 803|LOE (Load Order Editor)|85 ;; 1390|Load Order Editor Drag-Drop|85 ;; 407|Custom Quests Editor|85
+7	[12]商人列表滚动-TraderScrolling		Kaeno-TraderScrolling.dll	OK	1089|Kaeno-TraderScrolling|100	1089|Kaeno-TraderScrolling|100
+8	[12]任务列表修复-TaskListFixes		DrakiaXYZ-TaskListFixes.dll	MANUAL		824|Task List Fixes|100
+9	[12]尸体可删除-SPTCorpseCleaner		SPTCorpseCleaner.dll	MANUAL		2058|SPTCorpseCleaner|100
+10	[12]骑士面具修复-FacetheKnight-MaskFix	Face the Knight - Mask Fix		OK	2685|Knight Mask Fix (4.0+)|36	1532|Mask Fix|100 ;; 2352|Face the Knight - Mask Fix|100 ;; 2685|Knight Mask Fix (4.0+)|85 ;; 2260|Death Knight Mask Fix|85
+11	[12]防卡手-HandsAreNotBusy		HandsAreNotBusy.dll	MANUAL		1298|HandsAreNotBusy|100
+12	[12]白色方块bug修复-WhiteBoxFix		MarsyApp-WhiteBoxFix.dll	MANUAL		1401|White Box Fix|100 ;; 2109|White Box Fix - Updated|85 ;; 1767|White Box Fix 1.0.1|85
+13	[11]我就是爹作弊工具-DadGamerMode		dvize.DadGamerMode.dll	MANUAL		686|Dad Gamer Mode|100
+14	[11]新商人-可购买自己创建的预设枪械-Hephaestus	Hephaestus		OK	650|Hephaestus|100	650|Hephaestus|100 ;; 2193|Set of Gun Presets for Hephaestus|85
+15	[11]好莱坞投掷武器视觉辅助-VisualAssist		VisualAssist.dll	MANUAL		2213|Janky's Visual Assist|85
+16	[11]扫敌雷达-RadarStandalone		Tyrian-Radar.dll	OK	1100|ACCURATE CIRCULAR RADAR|82	1100|ACCURATE CIRCULAR RADAR|70
+17	[11]物品感应-AmandsSense		AmandsSense.dll	MANUAL		993|Amands' Sense|100 ;; 2521|Amands' Sense - Updated|85
+18	[11]任务跳过功能-Skipper		Terkoiz.Skipper.dll	MANUAL		1343|Skipper|100 ;; 2857|Raid Settings Skipper|85
+19	[11]内置动态地图-DynamicMaps	SPT-DynamicMaps	DynamicMaps.dll	OK	1431|Dynamic Maps|82	1431|Dynamic Maps|100 ;; 106|SPT-AKI Profile Editor|50 ;; 416|SPT Realism Mod|50 ;; 1538|Ref - SPT Friendly Quests|50
+20	[11]声音可视化-accessibilityindicators		acidphantasm-accessibilityindicators.dll	MANUAL		1760|Audio Accessibility Indicators|85
+21	[11]更多界面信息-GamePanelHUD		GamePanelHUDCore.dll,GamePanelHUDCompass.dll,GamePanelHUDGrenade.dll	OK	456|Game Panel HUD|82	456|Game Panel HUD|100
+22	[10]显示价格之快速出售-showmethemoney-quick-sell（Q+左Q+右）		SwiftXP.SPT.ShowMeTheMoney.QuickSell.dll	CHECK	2955|Quick Sell|82	2299|Show Me The Money (Item Pricing)|85 ;; 1341|Quick Move To Containers|70 ;; 975|Quick Launcher|70 ;; 1364|Quick Weapon Rack Access|70
+23	[10]显示价格-showmethemoney	ShowMeTheMoney	SwiftXP.ShowMeTheMoney.dll	OK	2299|Show Me The Money (Item Pricing)|82	2299|Show Me The Money (Item Pricing)|85
+24	[10]物品容器间快速移动-QuickMoveToContainer		DrakiaXYZ-QuickMoveToContainer.dll	MANUAL		1341|Quick Move To Containers|85
+25	[10]自动存放-AutoDeposit - 已AI优化		Tyfon.AutoDeposit.dll	OK	1469|AutoDeposit|100	1469|AutoDeposit|100 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50
+26	[10]物品真实堆叠-True Items Redux	True Items Redone		OK	1619|Lots of Loot Redux|20	1616|True Items Redux|100 ;; 1179|True Items|85 ;; 1619|Lots of Loot Redux|70 ;; 2386|Use Items Anywhere|70
+27	[10]物品自动分类功能-INVENTORY ORGANIZING FEATURES		Seion.Iof.dll	MANUAL		1550|INVENTORY ORGANIZING FEATURES|100 ;; 856|Inventory Organizing Features|100 ;; 2399|Inventory Organizing Features (Ported to 4.0.x)|85 ;; 2096|Inventory Organizing Features (Ported to 3.11.x)|85
+28	[10]从武器架装备武器-EquipFromWeaponRack		DrakiaXYZ-EquipFromWeaponRack.dll	MANUAL		1136|Equip From Weapon Rack|100
+29	[10]拾取时快速放入容器-ContainerQuickLoot - 已AI优化		CactusPie.ContainerQuickLoot.dll	CHECK	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|30	2656|Quick Loot|85 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50
+30	[10]小火山的仓库搜索框修复和扩展-SearchBarExtended		SearchBarExtended.dll	MANUAL		
+31	[10]仓库搜索框-StashSearch		StashSearch.dll	MANUAL		2148|Stash Search|100
+32	[10]UI大修-UIFixes	uifixes	Tyfon.UIFixes.dll,Tyfon.UIFixes.Net.dll	OK	1342|UI Fixes|100	1342|UI Fixes|100 ;; 1617|give-ui|50 ;; 2300|UI Refresh|50 ;; 2647|UI Scaling|50
+33	[9]解锁所有藏身处装饰-UnlockHideoutCustomization	Hideout Customization Unlocker		CHECK	2076|Hideout In Progress|20	2053|Unlock All Hideout Customization|50 ;; 2054|Unlock Hideout Kindergarten Customization|50
+34	[9]预览窗口尺寸调整-previewsizer		acidphantasm-previewsizer.dll	MANUAL		2339|Preview Sizer|100
+35	[9]项目上下文菜单扩展-ItemContextMenuExt		IcyClawz.ItemContextMenuExt.dll	MANUAL		940|Item Context Menu Extended|85
+36	[9]子弹专家-MunitionsExpert		IcyClawz.MunitionsExpert.dll	MANUAL		972|Munitions Expert (Reboot)|85
+37	[9]简单的锻炼QTE-simpleworkoutqte	SimpleWorkoutQTE		OK	1437|Simple Workout QTE|100	1437|Simple Workout QTE|100
+38	[9]物品打勾标记提供更多信息-MoreCheckmarks	MoreCheckmarksBackend	MoreCheckmarks.dll	OK	861|MoreCheckmarks|82	861|MoreCheckmarks|100
+39	[9]任务交接自动化-TaskAutomation		TaskAutomation.dll	MANUAL		2238|Task Automation|100
+40	[9]藏身处不用打勾-nofirhideout	no-fir-hideout		MANUAL		2050|No FIR Hideout|100 ;; 366|No FIR for repeatable quests|50
+41	[9]腰带槽-BeltSlot		BeltSlot.dll	MANUAL		2181|Belt Slot|100
+42	[9]动态物品重量-DynamicItemWeights		Tosox.DynamicItemWeights.dll	MANUAL		2344|Dynamic Item Weights|100
+43	[9]小火山的全界面中文字体切换		FontReplace.dll	MANUAL		
+44	[9]主菜单大修-MenuOverhaul		MoxoPixel-MenuOverhaul.dll	MANUAL		1775|WTT - Menu Overhaul|85
+45	[8]沉浸感时间循环-ImmersiveDaylightCycle	ImmersiveDaylightCycle-Server	ImmersiveDaylightCycle-FikaModule.dll,ImmersiveDaylightCycle.dll	MANUAL		1462|Immersive Daylight Cycle|100 ;; 236|Server Value Modifier [SVM]|50 ;; 2357|Project Fika - Server|50 ;; 2360|Server Tweaks - Discount SVM|50
+46	[8]边走边装子弹-ContinuousLoadAmmo - 已AI优化		ContinuousLoadAmmo.dll	OK	2112|Continuous Load Ammo|100	2112|Continuous Load Ammo|100 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50
+47	[8]可拾取穿墙物品-ReachExtender		ReachExtender.dll	MANUAL		1260|Reach Extender|100
+48	[8]boss刷新通知-BossNotifier		BossNotifier.dll	OK	1247|Boss Notifier|100	1247|Boss Notifier|100 ;; 2543|BossNotifier |100 ;; 2095|No Boss PMCs|50 ;; 1691|Boss Nerf|50
+49	[8]塔科夫天气系统-Tarkov-Weather-System	Tarkov Weather System		CHECK	2120|Time & Weather Changer NG|20	2110|Tarkov Weather System|100 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|85 ;; 898|Kmy Tarkov Api|85 ;; 1594|APBS - Acid's Progressive Bot System|85
+50	[8]坠落的补给直升机-HeliCrash.ArysReloaded		SamSWAT.HeliCrash.ArysReloaded.dll	MANUAL		1180|SamSWAT's Fire Support - Arys Reloaded|85 ;; 1292|SamSWAT's Helicopter Crash Sites - Arys Reloaded|85
+51	[8]禁用Scav模式-DisableScavMode		DisableScavMode.dll	OK	1301|DisableScavMode egboggied|82	977|DisableScavMode|100 ;; 1301|DisableScavMode egboggied|85 ;; 31|Scav Cat Trader Mod|50 ;; 1006|Scav Experience Counts|50
+52	[8]武器破门-BackdoorBandit客户端文件		dvize.BackdoorBandit.dll	MANUAL		858|Backdoor Bandit (BB)|85 ;; 1909|Backdoor Bandit (BB) (Updated)|85 ;; 2443|Backdoor Bandit - NG|85
+53	[8]武器破门-BackdoorBandit服务器文件	props-doorbreacher		CHECK	2726|Miyuki Props Dealer|30	858|Backdoor Bandit (BB)|85 ;; 1909|Backdoor Bandit (BB) (Updated)|85 ;; 2443|Backdoor Bandit - NG|85 ;; 1875|Props Dad Gamer Mod for >3.9|50
+54	[8]任务跟踪显示-QuestTracker		DrakiaXYZ-QuestTracker.dll	MANUAL		1140|Quest Tracker|100
+55	[8]增加拾取距离-LootRadius		DrakiaXYZ-LootRadius.dll	MANUAL		1349|Loot Radius|100
+56	[8]直接搜索已打开容器-SearchOpenContainers		DrakiaXYZ-SearchOpenContainers.dll	MANUAL		934|Search Open Containers|100
+57	[8]直接使用未捡物品-UseLooseLoot		Gaylatea-UseLooseLoot.dll	MANUAL		933|Use Loose Loot|100
+58	[8]门的状态随机化-DoorRandomizer		DrakiaXYZ-DoorRandomizer.dll	MANUAL		820|Door Randomizer|100
+59	[8]身上任何物品均可绑定快捷键-UseItemsFromAnywhere		UseItemsFromAnywhere.dll	MANUAL		
+60	[8]更有意义的武器精通-MeaningfulWeaponMasteries		MeaningfulWeaponMasteries.dll	MANUAL		1989|Meaningful Weapon Masteries|100
+61	[8]超重也能练耐力-Always-Level-Endurance		Endurance.dll	OK	2438|Level Endurance and Strength|82	697|Fontaine's Always Level Endurance (ALE)|85 ;; 2438|Level Endurance and Strength|85 ;; 2033|Always Spawn Containers|85 ;; 2611|Boosty's Hideout Lights Always On|85
+62	[8]人物技能扩展和撬锁-SkillsExtended-已AI优化	Skills Extended	SkillsExtended.dll	CHECK	2383|Skills Extended|100	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50 ;; 1945|Ai Limit|50
+63	[8]技能速度调节器-SkillMultiplier	skillmultiplier	dazzuh.skillmultiplier.dll	OK	2162|Skill Multiplier|100	2162|Skill Multiplier|100
+64	[8]可以攀爬更高的地方-Increase Climb Height	Increase Climb Height		OK	1575|Increase Climb Height|100	1575|Increase Climb Height|100 ;; 1071|SamSwat's INCREASED FOV - Reupload|85 ;; 2121|Increase Look Direction|85 ;; 2065|SamSWAT's IncreasedFOV (3.11)|85
+65	[8]Boss身上有lega徽章-bosseshavelegamedals	Bosses Have Lega Medals		OK	1539|Bosses Have Lega Medals|100	1539|Bosses Have Lega Medals|100 ;; 2523|Bosses Have Gp Coins|50
+66	[8]战场环境临场感增强-SPTBattleAmbience		SPTBattleAmbience.dll	MANUAL		2264|Battle Ambience|85
+67	[8]好莱坞级视觉系统合集-HollywoodFX+HollywoodGraphics-已AI优化		HollywoodFX.dll,HollywoodGraphics.dll	OK	2003|HollywoodFX|100	2003|HollywoodFX|100
+68	[8]门可以锁-LockableDoors	LockableDoors-Server	LockableDoors-FikaModule.dll,LockableDoors.dll	OK	1923|Lockable Doors|82	1923|Lockable Doors|100 ;; 236|Server Value Modifier [SVM]|50 ;; 2357|Project Fika - Server|50 ;; 2360|Server Tweaks - Discount SVM|50
+69	[8]火山家的实时字幕-Volcano-subtitle		Subtitle.dll	MANUAL		
+70	[7]更好的枪匠界面-Tradermodding客户端文件		ChooChoo-TraderModding.dll	MANUAL		1038|Trader Modding|100 ;; 1283|Trader Modding And Improved Weapon Building|85
+71	[7]更好的枪匠界面-Tradermodding服务器文件	TraderModding		OK	1283|Trader Modding And Improved Weapon Building|82	1038|Trader Modding|100 ;; 1283|Trader Modding And Improved Weapon Building|85
+72	[7]真实的热成像-realisticThermalScopes	realisticThermalScopes		OK	2056|Realistic Thermal Scopes|100	2056|Realistic Thermal Scopes|100 ;; 2000|Realistic Thermal Scopes|100
+73	[7]更亮的镭射线-brightlasers	BrightLasers		OK	1358|BrightLasers|100	1358|BrightLasers|100
+74	[7]反重力臂章-AntigravArmbands	antigravarmbands		MANUAL		
+75	[7]更大的背包-BetterBackpacks	JoshMateBetterBackPacks		MANUAL		552|Josh Mate's Better Backpacks|85 ;; 2079|Josh Mate's Better Backpacks (Ported to 3.11)|85 ;; 1552|JOSH MATE'S BETTER BACKPACKS - ReLoaded|85
+76	[7]反射镜视野重做-ReflexSightsRework客户端文件		SamSWAT.ReflexSightsRework.dll	MANUAL		
+77	[7]反射镜视野重做-ReflexSightsRework服务器文件	ReflexSightsRework		MANUAL		
+78	[7]可以合并消耗品-MergeConsumables	MergeConsumables	MergeConsumables.dll	OK	1657|MergeConsumables|100	1657|MergeConsumables|100
+79	[7]平衡的夜视装备视效-BRNVG客户端文件		BorkelRNVG.dll,WindowsInput.dll	MANUAL		
+80	[7]平衡的夜视装备视效-BRNVG服务器文件	BRNVG - N-15 Adapter		MANUAL		
+81	[7]武器配件位置自定义-WeaponCustomizer	weapon-customizer	Tyfon.WeaponCustomizer.dll	OK	1950|Weapon Customizer|100	1950|Weapon Customizer|100 ;; 1283|Trader Modding And Improved Weapon Building|50 ;; 266|Kawaii Weapon Mods|50 ;; 2010|Definitive Weapon Variants|50
+82	[7]更好的机瞄-BetterRearSights	better-rear-sights		OK	1591|Better Rear Sights|100	1591|Better Rear Sights|100 ;; 1571|SamSWAT's Anime Rear Sights - Reupload|50 ;; 2425|SamSWAT's Anime Rear Sights - 4.0 Port|50
+83	[7]弹匣优化管理系统-MagazineManagementSystem	[MMS] Magazine Management System		MANUAL		2047|Magazine Management System|100
+84	[7]面具修复-mask-fix	mask-fix		CHECK	3109|Knight Mask Fix (4.1.3+)|82	1532|Mask Fix|100 ;; 2685|Knight Mask Fix (4.0+)|85 ;; 2260|Death Knight Mask Fix|85 ;; 2352|Face the Knight - Mask Fix|85
+85	[7]MOD武器配件自动兼容框架-autocompatframework-已AI优化	AutoCompat Framework		CHECK	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|20	2251|AutoCompatibility Framework|50 ;; 2520|Hideout Recipe Framework|50 ;; 2087|Light's Voice Acting framework|50 ;; 2788|VisitAPI Framework|50
+86	[7]武器动画更新-P90弹匣动画-transparentp90mag	Transparent P90 Mag		CHECK	2774|Transparent Sights|20	2007|Transparent P90 Mag|100
+87	[7]武器动画更新器-AnimatorUpdater		UpdateHierarchy.dll	MANUAL		2006|Animator Updater|100
+88	[7]瞄准视野大修-FOV-Fix		FOVFix.dll	CHECK	1621|Shadow Flicker Fix|30	701|Fontaine's FOV Fix|85 ;; 1621|Shadow Flicker Fix|50 ;; 1071|SamSwat's INCREASED FOV - Reupload|50 ;; 910|Item Attribute Fix|50
+89	[6]分离敌意-SeparateHostility		dk.SeparateHostility.dll	MANUAL		2248|Separate Hostility|100
+90	[6]友方AI系统-friendlypmc与PITFireTeam合并版本	friendlyPMC	FriendlyFireTeam.dll,FriendlyFireTeam.SAINAddon.dll,friendlyPMC.dll	OK	2676|PIT Fireteam|82	2676|PIT Fireteam|100
+91	[6]AI锁头重定向-Headshot Damage Redirection		somtam.HeadShotRedirect.dll	MANUAL		1582|Headshot Darkness|85 ;; 1297|Headshot Damage Redirection - HDR|85 ;; 2489|Headshot Damage Redirection|85 ;; 2115|Headshot Damage Redirection|85
+92	[6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化		ThatsLit.Core.dll	CHECK	2691|Fold That Stock|15	1055|That's Lit - Logical AI Vision|70 ;; 235|JustNU Core|50
+93	[6]AI增强-SAIN-Moew-v4.4.0增强版	SAIN	SAIN.dll	OK	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|82	791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|70 ;; 1895|[SAIN] Twitch Players|70 ;; 1637|Realistic Combat Overhaul (Preset for SAIN)|70 ;; 1162|PMC Terminators - a custom SAIN preset|70
+94	[6]AI自动搜索物品-LootingBots - 已AI优化	LootingBots-ServerMod	skwizzy.LootingBots.dll	OK	812|Looting Bots|82	812|Looting Bots|100 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50
+95	[6]Acid的AI装备管理系统-progressivebotsystem - 已AI优化	Acids Progressive Bot System		OK	1594|APBS - Acid's Progressive Bot System|82	1594|APBS - Acid's Progressive Bot System|85 ;; 2097|ABPS - Acid's Bot Placement System|50
+96	[6]Acid的AI生成系统-botplacementsystem - 已AI优化	Acids Bot Placement System	acidphantasm-botplacementsystem.dll	OK	2097|ABPS - Acid's Bot Placement System|82	2097|ABPS - Acid's Bot Placement System|85 ;; 1594|APBS - Acid's Progressive Bot System|50
+97	[6]AI路径扩展-Waypoints - 已AI优化		DrakiaXYZ-Waypoints.dll	OK	827|Waypoints - Expanded Navmesh|82	827|Waypoints - Expanded Navmesh|85 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50 ;; 572|AI Limit|50
+98	[6]AI拟人MOD的前置框架-BigBrain - 已AI优化		DrakiaXYZ-BigBrain.dll	OK	902|BigBrain|100	902|BigBrain|100
+99	[5]舒适家园系统-HomeComforts - 已AI优化	HomeComforts-Server	HomeComforts-Packets.dll,HomeComforts.dll	OK	2027|Home Comforts|82	2027|Home Comforts|100 ;; 236|Server Value Modifier [SVM]|50 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50
+100	[5]战局内存储-LeaveItThere - 已AI优化	LeaveItThere-Server	LeaveItThere-FikaModule.dll,LeaveItThere.dll	OK	1907|Leave It There|82	1907|Leave It There|100 ;; 236|Server Value Modifier [SVM]|50 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50
+101	[5]以物易物经济系统-barter_economy-已AI优化	barter_economy		MANUAL		1261|Barter Economy|100 ;; 544|No Barter Trade|50 ;; 1042|Algorithmic Barter Randomizer|50 ;; 2636|Quick Barter|50
+102	[5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化		TarkovIRL-WHM.dll,TarkovIRL.dll	OK	1459|TarkovIRL - Weapons Handling Mod|82	1459|TarkovIRL - Weapons Handling Mod|85 ;; 2191|TarkovIRL - Adi Bots|85 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50
+103	[5]现实主义大修-Realism - 已AI优化	SPT Realism Mod	RealismMod.dll	OK	416|SPT Realism Mod|100	416|SPT Realism Mod|100 ;; 1091|Borkel's Big Realistic Thermal Package - Bring real life realism to your thermal scopes|85 ;; 1206|Realism compatibility patch pack|85 ;; 711|SPT Realism Ammo Stats|85
+104	[5]经济与制造系统大修-Softcore - 已AI优化	softcore		OK	2546|Softcore Hideout|82	742|Softcore (Proper Singleplayer Experience for SPT)|85 ;; 2587|MassivesoftCore|85 ;; 2546|Softcore Hideout|85 ;; 2631|Softcore Meds|85
+105	[5]全地图间移动套装-IEAPI+PTT - AI优化版	path-to-tarkov	InteractableExfilsAPI.dll,PTT-Fika.dll,Trap.PathToTarkov-Packets.dll	OK	1676|Interactable Exfils API|100	1676|Interactable Exfils API|100 ;; 382|Path To Tarkov|100 ;; 2234|Trap's Path to Tarkov - 3.11 Update|85 ;; 2326|Project Fika|50
+106	[5]战局大修-RaidOverhaul - 已AI增强版本	Raid Overhaul	RaidOverhaul.dll,RaidOverhaulFika.dll	OK	1192|Raid Overhaul|100	1192|Raid Overhaul|100 ;; 1906|UNNAMED NAVI PROJECT - Raid Overhaul [Only quest's]|85 ;; 791|SAIN - Solarint's AI Modifications - Full AI Combat System Replacement|50 ;; 1055|That's Lit - Logical AI Vision|50
+107	[5]新增5个开局角色-CustomProfiles	EFCL-CustomProfiles		MANUAL		2614|RZCustomProfiles|85
+108	[4]新商人-AES	AES		CHECK	874|AES|100	
+109	[4]新商人-VolkovTrader	VolkovTrader		OK	2009|Volkov Trader|100	2009|Volkov Trader|100
+110	[4]新商人-Epakim1-1	EpaKim1		OK	2119|EPAKIM1 Trader Mod|82	2119|EPAKIM1 Trader Mod|85
+111	[4]新商人-不明生还者-UnknownSurvivor	UnknownSurvivor		MANUAL		
+112	[4]新商人-荷官-Croupier (random loadouts + flea quicksell)	croupier		OK	1971|Croupier - loadout generator + flea quicksell|82	820|Door Randomizer|85 ;; 1971|Croupier - loadout generator + flea quicksell|85 ;; 2407|QuickSellFlea|85 ;; 669|Loot Randomiser|85
+113	[4]新商人-藏身处物资商人-acidphantasm-harryhideout	HarryHideout		OK	1303|HarryHideout|100	1303|HarryHideout|100
+114	[4]新商人-毒蝎-acidphantasm-scorpion	Scorpion		OK	1348|Scorpion|100	1348|Scorpion|100 ;; 1377|WTT- CZ Scorpion Evo 3|85
+115	[4]新商人-Artem	Artem		OK	1023|WTT- Artem|82	1023|WTT- Artem|70 ;; 1904|UNNAMED NAVI PROJECT - Artem [Russian Localization]|70
+116	[4]新商人-油漆匠-Painter	Painter		OK	1025|Painter|100	1025|Painter|100 ;; 2878|Painter - All in one|85
+117	[4]竞技场商人的箱子-Adam's Boxes at Ref (BARF)	Adam's Boxes at Ref (BARF)		MANUAL		1560|Boxes at ReF (BARF)|85 ;; 2483|Boxes At Ref (BARF) - NG|70 ;; 2128|Boxes at ReF (BARF) again|70 ;; 695|JoshJ5Hawk Loot Boxes|70
+118	[4]新商人-竞技场商人-ref-sptfriendly-quests	RefSPTFriendlyQuests		MANUAL		1538|Ref - SPT Friendly Quests|100 ;; 2025|All Quests Checkmarks|85 ;; 1835|SOCOM Armory + New Quests & Story Line|85 ;; 399|Custom Quests|85
+119	[3]新配件-ConsortiumOfThings	ConsortiumOfThings		MANUAL		2195|ECOT - Eukyre's Consortium of Things|85
+120	[3]新配件-Eco-Attachment Emporium	Eco-Attachment-Emporium		CHECK	2882|Eco's Attachment Emporium|60	1939|BETTER ATTACHMENTS|85 ;; 1202|14.0 CONTENT PREVIEW - GUNS,GEAR,AMMO AND ATTACHMENTS ADDED|85 ;; 2677|Scrollable Attachments|85 ;; 1163|AUG ATTACHMENT PACK 1.0.0|85
+121	[3]新配件-Echoes.of.Tarkov.-.Requisitions	Echoes of Tarkov - Requisitions		OK	2143|Echoes of T***** - Requisitions|100	2143|Echoes of Tarkov - Requisitions|100 ;; 898|Kmy Tarkov Api|85 ;; 1860|Old Tarkov Movement (No Inertia)|85 ;; 2318|Tarkov Rare Collectibles|85
+122	[3]新配件-EpicRangeTime-Weapons	Weapons		MANUAL		764|ATLAS Custom Weapons & Equipment|85 ;; 609|Priscilu Special Weapons|85 ;; 2588|MassivesoftWeapons|85 ;; 1459|TarkovIRL - Weapons Handling Mod|85
+123	[3]新配件-BlackCore	Black Core		CHECK	2511|WTT - Black Division [REDACTED] Home|30	985|BlackCore|100 ;; 2511|WTT - Black Division [REDACTED] Home|50 ;; 235|JustNU Core|50 ;; 1730|Black Equipment Pack|50
+124	[3]新配件-MagTape	Mag Tape		OK	1018|Mag Tape|100	1018|Mag Tape|100 ;; 2007|Transparent P90 Mag|50 ;; 2589|Mag Retention Reload|50 ;; 1769|HotDog & Nate's Chaos Queen (Bluey themed) AK-103 Mag!|50
+125	[3]新武器功能-其他武器可使用超速射 - BabaYaga x Hyperburst	Ak-105-Hyperburst	WttHyperburstWrapper.dll	CHECK	2455|AK Rail Extension - NG|20	496|Baba Yaga|100
+126	[3]新武器-AKResonant	AKResonant		MANUAL		
+127	[3]新武器-国产武器-1SD-QBZ191	1SD-QBZ191		MANUAL		
+128	[3].50BMG重制-Epics 50 BMG Remaster-Expansion	50 BMG Remaster/Expansion		MANUAL		1026|.300 Blackout Expansion BY CARL MAKES MODS|85 ;; 1150|SamSwat's - Helicopter Crash Sites - Remastered|85 ;; 1176|andre1337's Expansion Pack|85 ;; 1138|Storage Expansion|85
+129	[3]新武器-AK50	AK50		CHECK	2215|Eukyre's AK-50 backport|82	
+130	[3]新武器-SIG_MCX_VIRTUS	sig_mcx_virtus		MANUAL		1373|Sig Sauer MCX VIRTUS multi carlibre rifle|70
+131	[3]新武器-WTT武器库-WTT - Armory客户端		WTT-Armory.dll	OK	2246|WTT- Armory|100	2246|WTT- Armory|100 ;; 1835|SOCOM Armory + New Quests & Story Line|85 ;; 1432|WTT - Armory - HK417|85 ;; 1748|WTT - Armory - M249|85
+132	[3]新武器-WTT武器库-WTT - Armory服务端	WTT-Armory		OK	2246|WTT- Armory|100	2246|WTT- Armory|100 ;; 1835|SOCOM Armory + New Quests & Story Line|85 ;; 1432|WTT - Armory - HK417|85 ;; 1748|WTT - Armory - M249|85
+133	[2]高清材质-TarkovHDRework	TarkovHDRework		MANUAL		
+134	[2]自定义配方-tarkovcraft	TarkovCraft		OK	1979|T***** Craft|100	1979|Tarkov Craft|100 ;; 2628|Tarkov Craft Loader|85
+135	[2]新衣服-MGS服装-RCTA - Metal Gear [FORTNITE]	RCTA - Metal Gear [FORTNITE]		OK	1768|RCTA - Metal Gear [FORTNITE]|100	1768|RCTA - Metal Gear [FORTNITE]|100 ;; 1777|RCTA - Peely Default [FORTNITE]|85
+136	[2]新衣服-RCTA - Synaptic Rig T1 (CODIW)	RCTA - Synaptic Rig T1 (CODIW)		OK	1766|RCTA - Synaptic Rig [CODIW]|48	1766|RCTA - Synaptic Rig [CODIW]|85
+137	[2]新物品-竞技场赛季奖励-SPT Battlepass	Pluto! - SPT Battlepass		OK	2098|SPT Battlepass|82	2098|SPT Battlepass|100 ;; 106|SPT-AKI Profile Editor|50 ;; 416|SPT Realism Mod|50 ;; 1538|Ref - SPT Friendly Quests|50
+138	[2]新装备、衣服-TacticalGearComponent	Tactical Gear Component (TGC)		OK	1125|Tactical Gear Component|82	1125|Tactical Gear Component|100 ;; 1827|Enhanced Tactical Gear(ETG)|50
+139	[2]腰包-WTT-PackNStrap客户端文件		WTT-PackNStrap.dll	MANUAL		1278|WTT - Pack 'n' Strap|100 ;; 2512|WTT - Content Backport|50 ;; 2310|WTT - CommonLib|50 ;; 1023|WTT- Artem|50
+140	[2]腰包-WTT-PackNStrap服务器端文件	WTT-PackNStrap		OK	1278|WTT - Pack 'n' Strap|100	1278|WTT - Pack 'n' Strap|100 ;; 2512|WTT - Content Backport|50 ;; 2310|WTT - CommonLib|50 ;; 1023|WTT- Artem|50
+141	[2]新酒水-HoodsEnergyDrinks	Hoods Energy Drinks		CHECK	1688|More Energy Drinks|40	1688|More Energy Drinks|50
+142	[2]新酒水-WTT - CornerStore	WTT-Corner Store		CHECK	2512|WTT - Content Backport|30	2132|WTT - Corner Store|100 ;; 2512|WTT - Content Backport|50 ;; 2310|WTT - CommonLib|50 ;; 1023|WTT- Artem|50
+143	[2]新物品-地图容器-SecureMapbookMod	MrVibesRSA-SecureMapbookMod		OK	2060|Secure Mapbook|82	2060|Secure Mapbook|85
+144	[2]新物品-镀金钥匙容器-GildedKeyStorage客户端文件		DrakiaXYZ-GildedKeyStorage.dll	MANUAL		865|Gilded Key Storage|100
+145	[2]新物品-镀金钥匙容器-GildedKeyStorage服务器文件	Gilded Key Storage		OK	865|Gilded Key Storage|100	865|Gilded Key Storage|100
+146	[2]新物品-藏身处猫咪-hideoutcat		AssetBundleLoader.dll,hideoutcat.dll	MANUAL		2038|Hideout Cat|100
+147	[1]前置框架-WTT公共库-WTT-ClientCommonLib		WTT-ClientCommonLib.dll	CHECK	2310|WTT - CommonLib|30	2512|WTT - Content Backport|50 ;; 2310|WTT - CommonLib|50 ;; 1023|WTT- Artem|50 ;; 2246|WTT- Armory|50
+148	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件		VCQLQuestZones.dll	MANUAL		649|Virtual's Custom Quest Loader|100 ;; 644|SWAG + Donuts - Dynamic Spawn Waves and Custom Spawn Points|85 ;; 1950|Weapon Customizer|85 ;; 764|ATLAS Custom Weapons & Equipment|85
+149	[1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件	Virtuals Custom Quest Loader		CHECK	2093|Virtual's Custom Quests - Updated|30	649|Virtual's Custom Quest Loader|100 ;; 644|SWAG + Donuts - Dynamic Spawn Waves and Custom Spawn Points|85 ;; 1950|Weapon Customizer|85 ;; 764|ATLAS Custom Weapons & Equipment|85
+150	[1]前置框架-自定义交互-CustomInteractions		IcyClawz.CustomInteractions.dll	MANUAL		938|Custom Interactions|100
+151	[1]前置框架-KmyTarkovApi		Crc32.NET.dll,HtmlAgilityPack.dll,KmyTarkovApi.dll	CHECK	2563|LoadBundleFaster (Crc32 Patch)|30	898|Kmy Tarkov Api|100 ;; 2563|LoadBundleFaster (Crc32 Patch)|50

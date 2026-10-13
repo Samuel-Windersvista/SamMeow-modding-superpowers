@@ -1,0 +1,39 @@
+{
+ "id": 3032,
+ "hub_id": null,
+ "guid": "com.michael.bookietrader",
+ "name": "Bookie - Casino Trader",
+ "slug": "bookie-casino-trader",
+ "teaser": "Gamble roubles, Bitcoins, and high-stakes loot with Bookie.",
+ "thumbnail": "https://files.sp-mod.com/mods/YX14hQXDRiwnYoxlJUlbcb55lNHngIPJApD1DrDs.jpg",
+ "downloads": 507,
+ "favourites_count": 8,
+ "endorsements_count": 2,
+ "description": "<h1>🎰 Bookie</h1>\n<p>Inspired by SPT Casino by MyButtHasARash</p>\n<p><strong>A new gambling trader for SPT where you can risk roubles, Bitcoins, and your better judgment.</strong></p>\n<p>Bookie is a new mod I’m actively working on, so this first version is just the start. I’d love suggestions for new bets, rewards, balance changes, or anything else that could make the trader more fun.</p>\n<h2>🎲 What You Can Do</h2>\n<p><strong>Double or Nothing</strong></p>\n<p>Risk anywhere from ₽50,000 up to ₽1,000,000.</p>\n<p>Win and double your money.</p>\n<p>Lose and you get a BUST slip.</p>\n<p><strong>Let It Ride</strong></p>\n<p>Start with ₽100,000 and keep pushing your luck.</p>\n<p>₽100k → ₽200k → ₽400k → ₽800k → ₽1.6M</p>\n<p>Cash out whenever you want, or keep gambling until Bookie takes it all.</p>\n<p><strong>Bitcoin Gambling</strong></p>\n<p>Risk physical Bitcoins for a chance to double them.</p>\n<p>Because apparently selling them normally is too boring.</p>\n<p><strong>Lucky 7 and High Roller</strong></p>\n<p>Randomized bets with bigger possible payouts and plenty of ways to lose.</p>\n<h2>💰 Cash Out Or Keep Going</h2>\n<p>Some wins give you a chip representing your payout.</p>\n<p>You can sell it back to Bookie for the money, or use it to keep the streak going.</p>\n<p>Your choice.</p>\n<h2>🔮 This Is Just The Beginning</h2>\n<p>I’m planning to keep expanding Bookie with more wagers, more reward pools, larger bets, and eventually casino style games such as Blackjack with a custom UI.</p>\n<p>If you have ideas for bets or features, <strong>leave a suggestion.</strong> I want this mod to grow around what people actually want to gamble on.</p>\n<p>Built for <strong>SPT 4.1.x</strong></p>\n<blockquote>\n<p><em>“Everybody knows when to walk away. They just never do.”</em></p>\n</blockquote>\n",
+ "detail_url": "https://sp-mod.com/mod/3032/bookie-casino-trader",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 16,
+ "published_at": "2026-09-21T16:04:00.000000Z",
+ "created_at": "2026-09-16T09:09:11.000000Z",
+ "updated_at": "2026-09-21T16:21:21.000000Z",
+ "owner": {
+  "id": 124276,
+  "name": "5strmichael",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/S1nbf324SUSsZ5W9sgKeoGMPtgclglfqTceESfgy_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2026-09-16T03:32:02.000000Z",
+  "updated_at": "2026-10-11T01:46:29.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 16,
+  "hub_id": 29,
+  "title": "Traders",
+  "slug": "traders",
+  "description": ""
+ }
+}

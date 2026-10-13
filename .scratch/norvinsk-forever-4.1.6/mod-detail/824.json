@@ -1,0 +1,39 @@
+{
+ "id": 824,
+ "hub_id": 1114,
+ "guid": "xyz.drakia.tasklistfixes",
+ "name": "Task List Fixes",
+ "slug": "task-list-fixes",
+ "teaser": "Do you want to fix sorting, improve sorting, and improve performance? Grab Task List Fixes and you'll get it all in one simple DLL",
+ "thumbnail": "https://files.sp-mod.com/mods/1114.png",
+ "downloads": 87887,
+ "favourites_count": 202,
+ "endorsements_count": 32,
+ "description": "<h3><strong>Installation</strong></h3>\n<p>1) Open the downloaded zip file in 7-zip</p>\n<p>2) Select the folders in the zip file in 7-zip</p>\n<p>3) Drag the selected folders from 7-zip into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3><strong>Description</strong></h3>\n<p>Fix a few issues people have encountered with the Task list:</p>\n<ul>\n<li>Task list is now properly sorted alphabetically by the selected column</li>\n<li>Sorting by trader now sorts by their nickname, instead of their ID</li>\n<li>Sorting by location now sorts by its name, instead of its ID</li>\n<li>Progress column data is now cached for sorting, to reduce the time it takes to sort by the Progress column</li>\n</ul>\n<p>Togglable Options:</p>\n<ul>\n<li>Add a new feature that defaults the sort order of columns to a more sane value when changing between columns\n<ul>\n<li>\n<p>Task, Trader and Location will now default to sorting in ascending order</p>\n</li>\n<li>\n<p>Progress and Status will now default to sorting in descending order</p>\n</li>\n</ul>\n</li>\n<li>Improved sorting order to include sub-sorting, to make finding quests in your list a lot easier\n<ul>\n<li>Sorting by trader now sub-sorts by location, then name</li>\n<li>Sorting by location now sub-sorts by trader, then name</li>\n<li>Sorting by type now sub-sorts by name</li>\n<li>Sorting by status now sub-sorts by name</li>\n<li>Sorting by progress now sub-sorts by name</li>\n</ul>\n</li>\n</ul>\n<h3><strong>Compatibility</strong></h3>\n<p>Note that this mod is not compatible with other task list sorting fix mods, as they will all be modifying the same method and conflict with each other.</p>\n<p>Functionality-wise, this mod both fixes sorting, and improves it, so should cover all cases that might be resolved by other mods.</p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n<p><strong>NOTE: Any requests for assistance MUST be accompanied by the “BepInEx/LogOutput.log” file. Any support request without this file provided will be met with a request for this file, then ignored. Log content can be uploaded to: <a target=\"_blank\" class=\"external-link\" href=\"https://pastebin.com/\" rel=\"noreferrer noopener\">https://pastebin.com/</a></strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/824/task-list-fixes",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2023-04-01T22:32:00.000000Z",
+ "created_at": "2023-04-01T22:32:41.000000Z",
+ "updated_at": "2026-08-03T06:02:27.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

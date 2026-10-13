@@ -4,15 +4,16 @@
 // 对比需要常驻 daemon + named pipe + 生命周期管理的分析型 harness（如 xEdit）：
 // SPT mod 分析是纯文件操作 + 纯计算，所有工具同步返回，无需异步状态。
 //
-// 工具面（8 个）：
+// 工具面（9 个）：
 //   spt_list_mods            扫描目录列出 mod（server = package.json 子目录，client = .dll）
 //   spt_read_mod_metadata    读单个 mod 完整元数据
 //   spt_scan_mod_files       列出 mod 目录全部文件
 //   spt_analyze_conflicts    冲突分析（GUID 重复 / SPT 版本失配 / 文件覆盖 / 配置 key 碰撞）
 //   spt_predict_load_order   预测服务端 mod 加载顺序（TypePriority 升序 + GUID 字母序）
 //   spt_forge_search         搜索 Forge 归档（mods-catalog.json + hot-index.json）
-//   spt_kb_query             查询 SPT 知识库（index.json）
-//   spt_health               运行时布局只读自查（KB / archive / helper 可用性）
+//   spt_kb_query             查知识库（多库：kb/topic/domain/version/keyword/limit）
+//   spt_kb_list              知识库清单与自检（有哪些库、各管什么、索引是否过期）
+//   spt_health               运行时布局只读自查（KB / archive / registry / helper 可用性）
 //
 // 运行时布局（KB 根 / 归档 / helper 产物）由 shared/runtime-layout.mjs 统一解析：
 // 启动时把不可用资源写到 stderr，KB/Forge 工具在资源缺失时返回 kb_unavailable。
@@ -33,6 +34,7 @@ import {
 import { AnalyzeConflictsInput, runAnalyzeConflicts } from "./tools/analyze-conflicts.js";
 import { ForgeSearchInput, runForgeSearch } from "./tools/forge-search.js";
 import { HealthInput, runHealth } from "./tools/health.js";
+import { KbListInput, runKbList } from "./tools/kb-list.js";
 import { KbQueryInput, runKbQuery } from "./tools/kb-query.js";
 import { ListModsInput, runListMods } from "./tools/list-mods.js";
 import { PredictLoadOrderInput, runPredictLoadOrder } from "./tools/predict-load-order.js";
@@ -84,8 +86,14 @@ export const TOOL_DEFINITIONS = [
   {
     name: "spt_kb_query",
     description:
-      "查询 SPT 知识库（knowledge/spt-kb/index.json）。支持 topic / domain / version 过滤与 keyword 标题匹配；domain='both' 与 version='通用' 的条目始终包含。知识库不可用时返回 kb_unavailable。",
+      "查知识库（多库）。kb = 库 id（见 spt_kb_list），省略则跨全部已注册库检索；topic / domain / version 过滤与 keyword（匹配 title ∪ keywords）匹配；domain='both' 与 version='通用' 的条目始终包含。keyword 是索引字段，盖不住概念词时缺省会自动按正文兜底检索（matchedBy=content，命中带 contentHits/snippet），content 参数可强制/关闭。返回 data.results[] 逐库分组，每组含 kb / root（与 entry.path 拼绝对路径）/ authority（冲突时据此取舍）/ matchCount / truncated / stale / matchedBy 与 matches[]；limit 为每库返回上限（缺省 30）。库不可用时返回 kb_unavailable。",
     inputSchema: schemaFor(KbQueryInput),
+  },
+  {
+    name: "spt_kb_list",
+    description:
+      "知识库清单与自检：返回每个已注册库的 id / title（用途）/ authority（权威范围）/ root / envKey / entryCount / generated / topics（可用的 topic 过滤值）/ stale（源文件比索引新 => 索引可能过期）。不知道该查哪个库、或不确定过滤参数时先调它；注册表不可用时退化为单库模式并在 reason 里说明。",
+    inputSchema: schemaFor(KbListInput),
   },
   {
     name: "spt_health",
@@ -103,6 +111,7 @@ const HANDLERS: Record<string, ToolHandler> = {
   spt_predict_load_order: (args) => runPredictLoadOrder(args),
   spt_forge_search: (args) => runForgeSearch(args),
   spt_kb_query: (args) => runKbQuery(args),
+  spt_kb_list: (args) => runKbList(args),
   spt_health: () => runHealth(),
 };
 

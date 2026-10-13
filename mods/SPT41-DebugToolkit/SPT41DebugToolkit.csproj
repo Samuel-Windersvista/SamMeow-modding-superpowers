@@ -1,0 +1,141 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      SPT 4.1.6 (EFT 0.16.9.40743) 客户端 mod。4.1 官方客户端模块以 netstandard2.1 为目标，
+      BepInEx 5 / Unity Mono；勿改成 net6+ / net10.0（Mono 无法加载）。
+      与 5.0 线（SamMeow-DebugToolkit，IL2CPP / BepInEx 6 / net6.0）为同身份版本线，
+      共享 AssemblyName / GUID，独立源码、独立演进。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.DebugToolkit</RootNamespace>
+    <AssemblyName>SamMeow.DebugToolkit</AssemblyName>
+    <Version>0.1.0</Version>
+
+    <!-- SPT 4.1.6 安装根目录（含 EscapeFromTarkov.exe）。
+         SptRoot 由 mods/Directory.Build.props 集中提供；可覆盖：
+           dotnet build -p:SptRoot="D:\SPT"
+           dotnet build -p:SPTInstallPath="D:\SPT\SPT_41x" -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x</SPTInstallPath>
+
+    <!-- BigBrain 1.5.0（Bot 覆盖层 BigBrainLayer/BigBrainLogic 两模式的硬依赖，ADR-0011）。
+         默认取 Norvinsk_Forever 覆盖层内 DLL；可覆盖：-p:BigBrainPath="D:\...\DrakiaXYZ-BigBrain.dll" -->
+    <BigBrainPath Condition="'$(BigBrainPath)' == ''">$(SptRoot)\Norvinsk_Forever\mods\[6]AI拟人MOD的前置框架-BigBrain\BepInEx\plugins\DrakiaXYZ-BigBrain.dll</BigBrainPath>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 5 核心（插件由它加载） -->
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 2.x（补丁库；本工程经 SPT.Reflection.Patching.ModulePatch 间接使用） -->
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- EFT 0.16.9.40743 主程序集（4.1 已反混淆，真名真命名空间），补丁目标类在这里 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- MonoBehaviour 基类所在（BaseUnityPlugin 继承它），必须引用 -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Comfort.Common（Singleton<T> 全局单例访问） -->
+    <Reference Include="Comfort">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- SPT 客户端公共程序集（ModulePatch 等） -->
+    <Reference Include="spt-common">
+      <HintPath>$(SPTInstallPath)\BepInEx\plugins\spt\spt-common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>$(SPTInstallPath)\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 模块公共引用面（编排者预置，工单 03-06 共用；并行工单勿重排此段，缺引用时仅追加单条）。 -->
+  <ItemGroup>
+    <!-- UnityEngine 模块（IMGUI 绘制 / 输入 / UI 事件）。 -->
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- UI 文本 / 序列化 / 后处理（Tooltip 与 Bot 覆盖层链条）。 -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\ItemComponent.Types.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- TextAnchor（UnityEngine.TextRenderingModule）与 IDissonancePlayer（DissonanceVoip）：
+         Bot 覆盖层 IMGUI/语音相关类型依赖（工单 04 汇编时发现缺失，追加单条）。 -->
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\DissonanceVoip.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- BigBrain 1.5.0：Bot 覆盖层两模式的硬依赖编译引用（路径见 BigBrainPath 属性）。 -->
+  <ItemGroup>
+    <Reference Include="DrakiaXYZ-BigBrain">
+      <HintPath>$(BigBrainPath)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 构建后把 DLL 复制到 release/，方便直接拿取部署到 BepInEx/plugins/。
+       验证/打包脚本以 -p:SkipCopyToRelease=true 关闭本步骤。 -->
+  <Target Name="CopyToRelease" AfterTargets="Build" Condition="'$(SkipCopyToRelease)' != 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)release" />
+  </Target>
+
+</Project>

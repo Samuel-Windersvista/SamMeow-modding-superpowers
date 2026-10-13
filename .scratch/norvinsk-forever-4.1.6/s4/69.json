@@ -1,0 +1,27 @@
+{
+ "idx": 69,
+ "entry": "[8]火山家的实时字幕-Volcano-subtitle",
+ "terms": [
+  "-Volcano-subtitle",
+  "Subtitle"
+ ],
+ "all": [
+  {
+   "term": "-Volcano-subtitle",
+   "id": 2709,
+   "name": "Miyako Carry Service",
+   "slug": "miyako-carry-service",
+   "dl": 12854,
+   "sc": 0
+  },
+  {
+   "term": "Subtitle",
+   "id": 2709,
+   "name": "Miyako Carry Service",
+   "slug": "miyako-carry-service",
+   "dl": 12854,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

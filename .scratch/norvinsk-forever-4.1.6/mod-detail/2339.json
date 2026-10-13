@@ -1,0 +1,39 @@
+{
+ "id": 2339,
+ "hub_id": null,
+ "guid": "com.acidphantasm.previewsizer",
+ "name": "Preview Sizer",
+ "slug": "preview-sizer",
+ "teaser": "Primarily required if you are using StatTrack or Realism, especially so if you use both. This will allow you to customize the preview icons and window sizes by removing fields.",
+ "thumbnail": "https://files.sp-mod.com/mods/Pidu179c2KNZq23FqafCqyoXbHfRQ8XatisK1VZw.png",
+ "downloads": 4124,
+ "favourites_count": 25,
+ "endorsements_count": 6,
+ "description": "<p>Fix your item preview windows so they show up on the screen properly. Customizable in F12.</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/RfMoE0G.png\" alt=\"Imgur\" /></p>\n<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">INSTALLATION</div>\n<div class=\"tab-content\"><p>Installation</p>\n<ol>\n<li>Download Preview Sizer</li>\n<li>Open the downloaded zip file in 7-zip</li>\n<li>Select the BepInEx folder in the zip file in 7-zip</li>\n<li>Drag the BepInEx folder from 7-zip into your SPT folder</li>\n</ol>\n<p>Demonstration Video (yoink):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/mZ1aLrW.gif\" alt=\"mZ1aLrW.gif\" /></p></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">UNINSTALLATION</div>\n<div class=\"tab-content\"><hr />\n<ol>\n<li>Delete <code>/ROOTSPT/Bepinex/plugins/acidphantasm-previewsizer</code></li>\n<li>Done</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">RECOMMENDED MODS</div>\n<div class=\"tab-content\"><p><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1853/stattrack\" rel=\"noreferrer noopener\">StatTrack</a></p></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">SUPPORT</div>\n<div class=\"tab-content\"><p>Please comment on the hub page, or preferably create an issue on the GitHub, or <em>more</em> preferably visit #acidphantasm-mods in the SPT Discord!</p></div></div></div>\n<p>If you enjoy my work - you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/acidphantasm\" rel=\"noreferrer noopener\">buy me a coffee</a>~</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2339/preview-sizer",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 17,
+ "published_at": "2025-10-05T10:04:00.000000Z",
+ "created_at": "2025-10-05T10:01:41.000000Z",
+ "updated_at": "2026-08-06T06:02:14.000000Z",
+ "owner": {
+  "id": 48110,
+  "name": "acidphantasm",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-04-11T21:22:35.000000Z",
+  "updated_at": "2026-10-06T00:55:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 17,
+  "hub_id": 28,
+  "title": "Other",
+  "slug": "other",
+  "description": ""
+ }
+}

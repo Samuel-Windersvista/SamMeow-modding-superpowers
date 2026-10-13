@@ -1,0 +1,91 @@
+# 未就绪 × 本地源码 —— 4.1.6 移植候选清点
+
+未就绪 76 项；以下为「本地存在源码」的交集。
+
+## A. 自有 GitHub 仓库命中
+
+- [13]好莱坞第三人称镜头-HollywoodCam
+  - 仓库: SamMeow-HollywoodCam | sptVersion: [] | csproj TF: [] | .ts/.cs: 0/22 | 4.x迹象: false
+- [12]白色方块bug修复-WhiteBoxFix
+  - 仓库: WhiteBoxFix | sptVersion: [] | csproj TF: [] | .ts/.cs: 0/4 | 4.x迹象: false
+- [8]沉浸感时间循环-ImmersiveDaylightCycle
+  - 仓库: SamMeow-ImmersiveDaylightCycle | sptVersion: [~3.11] | csproj TF: [] | .ts/.cs: 221/12 | 4.x迹象: false
+- [7]更大的背包-BetterBackpacks
+  - 仓库: JoshMate-BetterBackpacks | sptVersion: [3.11] | csproj TF: [] | .ts/.cs: 1/0 | 4.x迹象: false
+- [6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化
+  - 仓库: SamMeow-ThatsLit-For-3114 | sptVersion: [] | csproj TF: [net472, net472] | .ts/.cs: 0/33 | 4.x迹象: false
+- [5]舒适家园系统-HomeComforts - 已AI优化
+  - 仓库: SamMeow-HomeComforts-for3114 | sptVersion: [~3.11] | csproj TF: [] | .ts/.cs: 219/19 | 4.x迹象: false
+- [5]战局内存储-LeaveItThere - 已AI优化
+  - 仓库: SamMeow-LeaveItThere-For3114 | sptVersion: [~3.11] | csproj TF: [] | .ts/.cs: 218/36 | 4.x迹象: false
+- [5]以物易物经济系统-barter_economy-已AI优化
+  - 仓库: SamMeow-barter_economy | sptVersion: [>= 3.10.0] | csproj TF: [] | .ts/.cs: 4/0 | 4.x迹象: false
+- [5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化
+  - 仓库: SamMeow-TarkovIRL_WeaponsHandlingMod | sptVersion: [] | csproj TF: [netstandard2.1, netstandard2.1] | .ts/.cs: 0/41 | 4.x迹象: false
+- [5]现实主义大修-Realism - 已AI优化
+  - 仓库: LIN-Realism-Mod-Client | sptVersion: [] | csproj TF: [netstandard2.1] | .ts/.cs: 0/57 | 4.x迹象: false
+- [5]现实主义大修-Realism - 已AI优化
+  - 仓库: LIN-Realism-Server | sptVersion: [3.11.x, 3.11.x] | csproj TF: [] | .ts/.cs: 53/0 | 4.x迹象: false
+- [5]经济与制造系统大修-Softcore - 已AI优化
+  - 仓库: SamMeow--Softcore | sptVersion: [~3.11] | csproj TF: [] | .ts/.cs: 29/0 | 4.x迹象: false
+- [5]经济与制造系统大修-Softcore - 已AI优化
+  - 仓库: SamMeow-Inescapable-Tarkovs-Softcore | sptVersion: [] | csproj TF: [net10.0, net10.0] | .ts/.cs: 0/56 | 4.x迹象: true
+- [5]全地图间移动套装-IEAPI+PTT - AI优化版
+  - 仓库: SamMeow-PathToTarkov | sptVersion: [~3.11.3] | csproj TF: [net472, net471, net471] | .ts/.cs: 375/53 | 4.x迹象: false
+- [5]全地图间移动套装-IEAPI+PTT - AI优化版
+  - 仓库: SamMeow-InteractableExfilsAPI | sptVersion: [] | csproj TF: [net471] | .ts/.cs: 0/11 | 4.x迹象: false
+- [5]战局大修-RaidOverhaul - 已AI增强版本
+  - 仓库: SamMeow-Raid-Overhaul-For-3114 | sptVersion: [~3.11] | csproj TF: [net471, net471, net471, net471] | .ts/.cs: 24/41 | 4.x迹象: false
+
+## B. Forge 归档源码快照命中
+
+- [13]好莱坞第三人称镜头-HollywoodCam  → [HollywoodFX_2003_source]
+- [13]存档编辑器-SPT-AKI Profile Editor  → [CineKit-Freecam,-Cinematic-Camera,-Point-Path-Editor-&-Follower_2858_source ; Event-Auto-Profile-Backup_1973_source ; ModProfiler_2952_source ; ProfileEditor_106_source]
+- [12]尸体可删除-SPTCorpseCleaner  → [SPTCorpseCleaner_2058_source ; VRAM-Cleaner_2173_source]
+- [11]我就是爹作弊工具-DadGamerMode  → [DadGamerMode_686_source ; DefaultAutoFireMode_2740_source ; DisableScavMode_977_source ; VCO-Viewmodel-Camera-Offset_2070_source]
+- [11]好莱坞投掷武器视觉辅助-VisualAssist  → [Janky-s-Visual-Assist_2213_source]
+- [11]更多界面信息-GamePanelHUD  → [ASBP-Acid's-Scalable-BepinEx-Panel_2931_source ; DadGamerMode_686_source ; Game-Panel-HUD_456_source]
+- [10]物品真实堆叠-True Items Redux  → [BarterItemsStacks_2480_source ; Lots-of-Loot-Redux_1619_source ; Use-Items-Anywhere_2386-2_source ; Use-Items-Anywhere_2386_source]
+- [10]物品自动分类功能-INVENTORY ORGANIZING FEATURES  → [InventoryOrganizingFeatures_856_source ; IOF-Inventory-Organizing-Feature_2960_source]
+- [10]小火山的仓库搜索框修复和扩展-SearchBarExtended  → [AutoCorpseSearch_2730_source ; Item-Context-Menu-Extended_940_source ; LinkedSearchInStash_2731_source ; Loot-Instant-Search_2069_source]
+- [10]仓库搜索框-StashSearch  → [Advanced-Stash-Sorting_2924_source ; AutoCorpseSearch_2730_source ; LinkedSearchInStash_2731_source ; Loot-Instant-Search_2069_source]
+- [9]解锁所有藏身处装饰-UnlockHideoutCustomization  → [HarryHideout_1303-2_source ; HarryHideout_1303_source ; Hideout-Craft-Modifier-HCM_2915_source ; Hideout-In-Progress_2076_source]
+- [9]项目上下文菜单扩展-ItemContextMenuExt  → [BarterItemsStacks_2480_source ; DynamicItemWeights_2344_source ; Item-Attribute-Fix_910_source ; Item-Context-Menu-Extended_940_source]
+- [9]物品打勾标记提供更多信息-MoreCheckmarks  → [All-Quests-Checkmarks_2025_source ; More-Energy-Drinks_1688-2_source ; More-Energy-Drinks_1688_source ; MoreBotsAPI_2426_source]
+- [9]任务交接自动化-TaskAutomation  → [Expanded-Task-Text-(ETT)_2153-2_source ; Expanded-Task-Text-(ETT)_2153_source ; Expanded-Task-Text_2153_source ; Task-Item-Indicator_2888_source]
+- [9]腰带槽-BeltSlot  → [Easy-Slot-Filters_2940_source ; MoreQuickSlots_2812_source]
+- [9]动态物品重量-DynamicItemWeights  → [BarterItemsStacks_2480_source ; Dynamic-External-Resolution-Patch-(DERP)_2200_source ; Dynamic-External-Resolution-Patch_2200_source ; Dynamic-Maps_1431_source]
+- [8]沉浸感时间循环-ImmersiveDaylightCycle  → [EternalCycle_2997-2_source ; EternalCycle_2997_source]
+- [8]可拾取穿墙物品-ReachExtender  → [DualSideDoorBreach_2752_source ; Keycard-Door-Simplify-Breach_2494_source ; Music-Extender_2962_source ; Reach-Extender_1260_source]
+- [8]塔科夫天气系统-Tarkov-Weather-System  → [ABPS-Acid's-Bot-Placement-System_2097-2_source ; ABPS-Acid's-Bot-Placement-System_2097_source ; APBS-Acid's-Progressive-Bot-System_1594-2_source ; APBS-Acid's-Progressive-Bot-System_1594_source]
+- [8]坠落的补给直升机-HeliCrash.ArysReloaded  → [Bot-Callsigns-Reloaded_1873_source ; HeliCrash_1292_source ; Munitions-Expert-Reloaded_3006-2_source ; Munitions-Expert-Reloaded_3006_source]
+- [8]禁用Scav模式-DisableScavMode  → [DadGamerMode_686_source ; DefaultAutoFireMode_2740_source ; DisableScavMode_977_source ; Picture-in-Picture-Disabler_2667_source]
+- [8]武器破门-BackdoorBandit客户端文件  → [BackdoorBandit_858_source]
+- [8]武器破门-BackdoorBandit服务器文件  → [BackdoorBandit_858_source]
+- [8]增加拾取距离-LootRadius  → [CactusPie's-Transfer-Loot-Into-Container-Automatically_3023_source ; FieldKit-Dev-Toolkit,-Weapon-Control,-Loot-Entity-Browser,-Spawning-&-ESP_2856_source ; Loot-Highlighter_2136_source ; Loot-Instant-Search_2069_source]
+- [8]更有意义的武器精通-MeaningfulWeaponMasteries  → [EquipFromWeaponRack_1136_source ; FieldKit-Dev-Toolkit,-Weapon-Control,-Loot-Entity-Browser,-Spawning-&-ESP_2856_source ; MeaningfulWeaponMasteries_1989_source ; Trader-Modding-And-Improved-Weapon-Building_1283_source]
+- [8]超重也能练耐力-Always-Level-Endurance  → [AlwaysLevelEndurance_697_source ; Trader-Level-Requirements-Editor_3005_source ; Weight-Leveling_2961_source]
+- [8]门可以锁-LockableDoors  → [LockableDoors_1923_source]
+- [7]真实的热成像-realisticThermalScopes  → [Borkel's-Realistic-Night-Vision-Goggles-(NVGs-and-T-7)_954_source ; Borkel-s-Realistic-Night-Vision-Goggles_954_source ; ECOTI-Enhanced-Clip-On-Thermal-Imager_2930_source ; Realistic-Insurance_2949_source]
+- [7]更大的背包-BetterBackpacks  → [Better-Keys-NG_1888_source ; Better-Night-Skies_2734_source ; Better-Rear-Sights_1591_source ; Sharper-Tushonka-Better-Life_2235_source]
+- [7]反射镜视野重做-ReflexSightsRework客户端文件  → [Better-Rear-Sights_1591_source ; Interchange-Rework_3020_source ; Manimal's-1.0-Lighthouse-Rework-Backport_3022_source ; Recoil-Rework-(Legacy)_2190_source]
+- [7]反射镜视野重做-ReflexSightsRework服务器文件  → [Better-Rear-Sights_1591_source ; Interchange-Rework_3020_source ; Manimal's-1.0-Lighthouse-Rework-Backport_3022_source ; Recoil-Rework-(Legacy)_2190_source]
+- [7]弹匣优化管理系统-MagazineManagementSystem  → [ABPS-Acid's-Bot-Placement-System_2097-2_source ; ABPS-Acid's-Bot-Placement-System_2097_source ; APBS-Acid's-Progressive-Bot-System_1594-2_source ; APBS-Acid's-Progressive-Bot-System_1594_source]
+- [7]武器动画更新器-AnimatorUpdater  → [AnimatorUpdater_2006_source]
+- [6]AI锁头重定向-Headshot Damage Redirection  → [Headshot-Damage-Redirection_2953_source ; Headshot-Darkness_1582_source ; HeadshotDamageRedirect_2115_source]
+- [6]AI视线优化-thuynguyentrungdang版That.s.Lit - 已AI优化  → [Fold-That-Stock_2691_source]
+- [5]舒适家园系统-HomeComforts - 已AI优化  → [CreatureComforts_2963_source ; RUAF-Come-Home!_2427_source ; UNTAR-Go-Home!_2342_source ; WTT-Black-Division-[REDACTED]-Home_2511_source]
+- [5]以物易物经济系统-barter_economy-已AI优化  → [BarterItemsStacks_2480_source]
+- [5]武器操控大修-TarkovIRL_W.H.M(关现实主义这个也一起关） - 已AI优化  → [KmyTarkovApi_898_source ; Old-Tarkov-Movement_1860_source]
+- [5]经济与制造系统大修-Softcore - 已AI优化  → [Softcore-Meds_2631_source]
+- [5]战局大修-RaidOverhaul - 已AI增强版本  → [Configurable-End-Raid-Status_1978_source ; Custom-Raid-Times_551_source ; Discord-Raid-Map_2714_source ; Hideout-Overhaul_2982_source]
+- [5]新增5个开局角色-CustomProfiles  → [Custom-Raid-Times_551_source ; CustomQuestLoader_649_source ; Hispanic-PMC-(Harry)-Custom-Head_2993_source ; Weapon-Customizer_1950_source]
+- [4]新商人-VolkovTrader  → [Amonya-Ammo-Loving-Trader-&-Quester_2419-2_source ; Amonya-Ammo-Loving-Trader-&-Quester_2419_source ; bluehead's-AIO-Trader_374_source ; Kaeno-TraderScrolling_1089-2_source]
+- [3]新配件-Echoes.of.Tarkov.-.Requisitions  → [KmyTarkovApi_898_source ; Old-Tarkov-Movement_1860_source]
+- [3]新配件-BlackCore  → [Blackout_2843_source ; The-Blacklist-flea-market-enhancements_755-2_source ; The-Blacklist-flea-market-enhancements_755_source ; WTT-Black-Division-[REDACTED]-Home_2511_source]
+- [2]高清材质-TarkovHDRework  → [KmyTarkovApi_898_source ; Old-Tarkov-Movement_1860_source]
+- [2]新酒水-WTT - CornerStore  → [Restore-Armor-Plates_2973_source ; Restore-The-Old-Number-Of-Medical-Uses_2475_source]
+- [1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader客户端文件  → [All-Quests-Checkmarks_2025_source ; Amonya-Ammo-Loving-Trader-&-Quester_2419-2_source ; Amonya-Ammo-Loving-Trader-&-Quester_2419_source ; Andrudis-QuestManiac_535_source]
+- [1]前置框架-自定义任务加载器-Virtual's Custom Quest Loader服务器文件  → [All-Quests-Checkmarks_2025_source ; Amonya-Ammo-Loving-Trader-&-Quester_2419-2_source ; Amonya-Ammo-Loving-Trader-&-Quester_2419_source ; Andrudis-QuestManiac_535_source]
+- [1]前置框架-自定义交互-CustomInteractions  → [Custom-Raid-Times_551_source ; CustomQuestLoader_649_source ; Hispanic-PMC-(Harry)-Custom-Head_2993_source ; Weapon-Customizer_1950_source]
+- [1]前置框架-KmyTarkovApi  → [KmyTarkovApi_898_source ; Old-Tarkov-Movement_1860_source]

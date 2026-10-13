@@ -1,0 +1,145 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 4485,
+   "hub_id": 9582,
+   "version": "1.0.0",
+   "description": "<h3>This mod was written to be generic, and support as many <em>future</em> versions of SPT as possible. Currently only tested on 3.8.0</h3>\n<p>Initial Release</p>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.0.0",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 1210,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-22T05:56:08.000000Z",
+   "created_at": "2024-04-22T05:56:08.000000Z",
+   "updated_at": "2026-05-14T04:09:31.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4476,
+   "hub_id": 9594,
+   "version": "1.0.1",
+   "description": "<h3>This mod was written to be generic, and support as many <em>future</em> versions of SPT as possible. Currently only tested on 3.8.0</h3>\n<p>- Resolve foot level loot check</p>\n<p>- Add new patch to disallow dragging quest items into your inventory. Can be collected with Ctrl+Click</p>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.0.1",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 15277,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-23T05:39:07.000000Z",
+   "created_at": "2024-04-23T05:39:07.000000Z",
+   "updated_at": "2026-05-14T04:09:27.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3769,
+   "hub_id": 10482,
+   "version": "1.1.0",
+   "description": "<h3>This version will only work with SPT 3.9.x</h3>\n<ul>\n<li>Update for 3.9.0</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.1.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 31226,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-06T19:18:48.000000Z",
+   "created_at": "2024-07-06T19:18:48.000000Z",
+   "updated_at": "2026-05-14T03:56:20.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2287,
+   "hub_id": 12321,
+   "version": "1.2.0",
+   "description": "<h3>This version will only work with SPT 3.10.x</h3>\n<ul>\n<li>Update for SPT 3.10.0</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "3.10.0",
+   "downloads": 24800,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-27T05:16:48.000000Z",
+   "created_at": "2024-11-27T05:16:48.000000Z",
+   "updated_at": "2026-05-14T03:19:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1227,
+   "hub_id": 13545,
+   "version": "1.3.0",
+   "description": "<h3>This version will only work with SPT 3.11.x</h3>\n<p>Update for SPT 3.11</p>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 3575,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-15T20:01:10.000000Z",
+   "created_at": "2025-03-15T20:01:10.000000Z",
+   "updated_at": "2026-05-14T02:07:59.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1007,
+   "hub_id": 13780,
+   "version": "1.4.0",
+   "description": "<h3>This version will only work with SPT 3.11.x</h3>\n<p>Huge rewrite of most of core of the mod, the grid is now a custom grid implementation that better respects item ownership for loose loot.</p>\n<p>This rewrite, in combination with some other tweaks, now makes Loot Radius (hopefully) fully Fika compatible.</p>\n<p>Note that while I have tested this, there is a chance that things have broken due to the refactor. Please report bugs if you encounter any issues.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.4.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 1812,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-25T02:43:31.000000Z",
+   "created_at": "2025-03-25T02:43:31.000000Z",
+   "updated_at": "2026-05-14T02:03:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 940,
+   "hub_id": 13851,
+   "version": "1.4.1",
+   "description": "<h3>This version will only work with SPT 3.11.x</h3>\n<ul>\n<li>Fix issue with removing plates from armor in the loot radius grid</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1349/loot-radius/1.4.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 39895,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-29T02:48:01.000000Z",
+   "created_at": "2025-03-29T02:48:01.000000Z",
+   "updated_at": "2026-05-14T02:02:21.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1349/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1349/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1349/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1349/versions",
+  "per_page": 50,
+  "to": 7,
+  "total": 7
+ }
+}

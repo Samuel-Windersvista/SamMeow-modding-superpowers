@@ -1,0 +1,48 @@
+{
+ "id": 2483,
+ "hub_id": null,
+ "guid": "com.someonenamedadam.barf",
+ "name": "Boxes At Ref (BARF) - NG",
+ "slug": "boxes-at-ref-barf-ng",
+ "teaser": "Missed this mod? Well, I did too, so it's back! This mod adds lootboxes and other items from EFT:Arena to the new trader Ref.",
+ "thumbnail": "https://files.sp-mod.com/mods/QMBkx2dNQ1SvOfLaHfXBF4zpDoZqLJf9oGFNv7ov.jpg",
+ "downloads": 23020,
+ "favourites_count": 104,
+ "endorsements_count": 9,
+ "description": "<p>Updated version of Boxes At Ref (BARF) mod.</p>\n<p>Original mod link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1560/boxes-at-ref-barf\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/1560/boxes-at-ref-barf</a>\n3.11 version link: <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2128/boxes-at-ref-barf-again\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2128/boxes-at-ref-barf-again</a></p>\n<p>Licensing: The original author has been inactive for a very long time and with the mod has MIT License I will maintain this mod for 4.0 until the author returns and take over should they wish to.</p>\n<h2>📂 Installation</h2>\n<h3>Requirements</h3>\n<ul>\n<li><strong>SPT 4.1.2++</strong></li>\n<li>Server mod only — <em>no BepInEx plugin required</em></li>\n</ul>\n<h3>Steps</h3>\n<ol>\n<li>Download the latest release</li>\n<li>Extract it into your SPT installation</li>\n<li>You should see:</li>\n</ol>\n<pre><code>SPT_Runtime/user/mods/BoxesAtRef/\n    BoxesAtRef.dll\n    database/\n</code></pre>\n<p>Restart your server and enjoy.</p>\n<h2>⚙️ Configuration</h2>\n<p>Configuration lives here:</p>\n<pre><code>SPT_Runtime/user/mods/BoxesAtRef/database/itemsToAdd.json\nSPT_Runtime/user/mods/BoxesAtRef/database/crateContents.json\n</code></pre>\n<p>Editing the items:</p>\n<h3><strong>1) Indivdual item</strong></h3>\n<pre><code>{\n  \"items\": [\n    {\n      \"_id\": \"crate_unique_id\", // Don't touch\n      \"_tpl\": \"template_id\", // Don't touch\n      \"openID\": \"open_animation_id\", // Don't touch\n      \"price\": 50,\n      \"buyRestrictionMax\": 1,\n      \"loyaltyLevel\": 1\n    }\n  ]\n}\n</code></pre>\n<h3><strong>2) Crate contents</strong></h3>\n<pre><code>{\n  \"66573310a1657263d816a139\": {\n    \"rewardCount\": 3,\n    \"foundInRaid\": true,\n    \"rewardTplPool\": [] // Add MongoIds here\n  }\n}\n</code></pre>\n",
+ "detail_url": "https://sp-mod.com/mod/2483/boxes-at-ref-barf-ng",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 16,
+ "published_at": "2025-12-03T18:28:00.000000Z",
+ "created_at": "2025-12-03T18:28:59.000000Z",
+ "updated_at": "2026-08-12T11:44:42.000000Z",
+ "owner": {
+  "id": 78428,
+  "name": "kobethuy",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/UVgJBc40uviDBfSUm1MP91ktdwR8Dvm7casIG95Y_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2025-05-04T22:32:08.000000Z",
+  "updated_at": "2026-10-05T13:13:57.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 57635,
+   "name": "SomeoneNamedAdam",
+   "profile_photo_url": "https://sp-mod.com/avatars/S.svg",
+   "cover_photo_url": null,
+   "created_at": "2024-07-13T20:45:53.000000Z",
+   "updated_at": "2026-08-10T19:47:26.000000Z"
+  }
+ ],
+ "category": {
+  "id": 16,
+  "hub_id": 29,
+  "title": "Traders",
+  "slug": "traders",
+  "description": ""
+ }
+}

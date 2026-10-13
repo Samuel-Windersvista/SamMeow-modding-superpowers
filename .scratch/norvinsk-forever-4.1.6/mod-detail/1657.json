@@ -1,0 +1,32 @@
+{
+ "id": 1657,
+ "hub_id": 2262,
+ "guid": "com.lacyway.mc",
+ "name": "MergeConsumables",
+ "slug": "mergeconsumables",
+ "teaser": "Tired of not being able to merge your medical items or food? Now you can!",
+ "thumbnail": "https://files.sp-mod.com/mods/2262.png",
+ "downloads": 85895,
+ "favourites_count": 280,
+ "endorsements_count": 33,
+ "description": "<h2>What is MergeConsumables?</h2>\n<p>MergeConsumables lets you merge (not stack!) any consumable item with a limited amount of uses, such as a bottle of water or an AFAK. Simply drag and drop one item on top of another item of the same type! For example, dragging an AFAK with 200/400 on to an AFAK with 50/400 would result in one item with 250/400!</p>\n<h2>What do I do if it didn’t work or want to report a bug/incompatibility?</h2>\n<p>Report the exact steps to reproduce the bug, and provide log files. I’ve tried as many cases as I can to find limitations, but it’s hard to find them all! A detailed report makes them easier to fix.</p>\n<h2>How do I install the mod?</h2>\n<p>Extract the contents of the .zip to your SPT install</p>\n<h3>You can support me on Ko-Fi</h3>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\">Click</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1657/mergeconsumables",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 4,
+ "published_at": "2026-08-19T19:14:00.000000Z",
+ "created_at": "2024-08-19T14:30:23.000000Z",
+ "updated_at": "2026-09-21T10:30:06.000000Z",
+ "owner": {
+  "id": 47969,
+  "name": "Lacyway",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+  "created_at": "2024-04-09T17:00:56.000000Z",
+  "updated_at": "2026-10-05T20:57:46.000000Z"
+ },
+ "additional_authors": []
+}

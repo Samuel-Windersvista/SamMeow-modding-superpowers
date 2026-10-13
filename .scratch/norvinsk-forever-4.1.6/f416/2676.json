@@ -1,0 +1,536 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 14913,
+   "hub_id": null,
+   "version": "0.10.0",
+   "description": "<ul>\n<li><strong>Added support for SPT 4.1.3</strong>, including the required client and server compatibility updates.</li>\n<li><strong>Updated compatibility for SAIN 4.5.0</strong>, preserving pitFireTeam follower combat and SAIN integration on the new version.</li>\n<li><strong>Includes all improvements and fixes from Beta 0.9.1.</strong></li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.0",
+   "content_length": 1407174,
+   "spt_version_constraint": "~4.1.0",
+   "downloads": 1779,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-22T19:09:00.000000Z",
+   "created_at": "2026-08-22T19:09:51.000000Z",
+   "updated_at": "2026-09-07T01:17:39.000000Z",
+   "dependencies": [
+    {
+     "id": 827,
+     "hub_id": 1119,
+     "guid": "xyz.drakia.waypoints",
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "teaser": "Expand where bots can explore with full map navmesh coverage!",
+     "thumbnail": "https://files.sp-mod.com/mods/1119.png",
+     "downloads": 1329636,
+     "favourites_count": 1111,
+     "endorsements_count": 65,
+     "detail_url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2023-04-03T04:38:00.000000Z",
+     "created_at": "2023-04-03T04:38:28.000000Z",
+     "updated_at": "2026-08-03T06:02:27.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14423,
+       "hub_id": null,
+       "version": "1.9.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+       "content_length": 50349566,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 63242,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:29:06.000000Z",
+       "updated_at": "2026-08-03T06:02:27.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 902,
+     "hub_id": 1219,
+     "guid": "xyz.drakia.bigbrain",
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "teaser": "A library for adding extra logic layers to existing bot brains",
+     "thumbnail": "",
+     "downloads": 1357015,
+     "favourites_count": 1199,
+     "endorsements_count": 69,
+     "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2023-05-31T03:20:00.000000Z",
+     "created_at": "2023-05-31T03:20:55.000000Z",
+     "updated_at": "2026-08-03T06:02:26.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14411,
+       "hub_id": null,
+       "version": "1.5.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+       "content_length": 16790,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 69033,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:24:41.000000Z",
+       "updated_at": "2026-08-03T06:02:26.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 15161,
+   "hub_id": null,
+   "version": "0.10.1",
+   "description": "<ul>\n<li>Added separate post-raid kill lists for you and each teammate, plus fixes for teammate profiles, clothing, starting weapons, and looting.</li>\n<li>Added per-teammate <strong>Proficiency</strong> settings: Vision, Precision, and Reaction, alongside Aggression.</li>\n<li>Gave Riflemen and Marksmen more distinct strengths. Followers now use a consistent proficiency baseline regardless of the selected SAIN difficulty preset.</li>\n<li>Improved combat decisions, cover use, pushing, regrouping, suppression, and aiming at exposed body parts.</li>\n<li>Improved healing and reloading, reducing interrupted medical animations and stalled recovery.</li>\n<li>Added more natural post-combat stances, glances, and an occasional squad <code>Clear</code> callout.</li>\n<li>Improved <strong>Contact</strong> and <strong>Suppress</strong> commands. Repeating Contact can bring followers closer to check the called direction; <strong>Exit Located</strong> now gathers the squad tightly around you.</li>\n<li>Improved multi-follower combat recovery and Attention responsiveness.</li>\n<li>Improved SAIN, Menu Overhaul, and AILimit compatibilityd.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.1",
+   "content_length": 1486124,
+   "spt_version_constraint": "~4.1.0",
+   "downloads": 830,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-02T14:50:00.000000Z",
+   "created_at": "2026-09-02T14:50:44.000000Z",
+   "updated_at": "2026-09-07T01:17:22.000000Z",
+   "dependencies": [
+    {
+     "id": 827,
+     "hub_id": 1119,
+     "guid": "xyz.drakia.waypoints",
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "teaser": "Expand where bots can explore with full map navmesh coverage!",
+     "thumbnail": "https://files.sp-mod.com/mods/1119.png",
+     "downloads": 1329636,
+     "favourites_count": 1111,
+     "endorsements_count": 65,
+     "detail_url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2023-04-03T04:38:00.000000Z",
+     "created_at": "2023-04-03T04:38:28.000000Z",
+     "updated_at": "2026-08-03T06:02:27.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14423,
+       "hub_id": null,
+       "version": "1.9.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+       "content_length": 50349566,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 63242,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:29:06.000000Z",
+       "updated_at": "2026-08-03T06:02:27.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 902,
+     "hub_id": 1219,
+     "guid": "xyz.drakia.bigbrain",
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "teaser": "A library for adding extra logic layers to existing bot brains",
+     "thumbnail": "",
+     "downloads": 1357015,
+     "favourites_count": 1199,
+     "endorsements_count": 69,
+     "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2023-05-31T03:20:00.000000Z",
+     "created_at": "2023-05-31T03:20:55.000000Z",
+     "updated_at": "2026-08-03T06:02:26.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14411,
+       "hub_id": null,
+       "version": "1.5.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+       "content_length": 16790,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 69033,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:24:41.000000Z",
+       "updated_at": "2026-08-03T06:02:26.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 15258,
+   "hub_id": null,
+   "version": "0.10.2",
+   "description": "<ul>\n<li>Improved Marksman engagement and repositioning, reducing idle cover loops and premature regrouping. Automatic support weapons, including holster pistols, switch more reliably and remain selected when needed for close defense.</li>\n<li>Fixed unwanted weapon swapping and reload interruptions during combat, Hold commands, and patrol. Improved launcher preparation and carried-weapon top-offs.</li>\n<li>Improved healing under fire: followers keep moving toward their selected medical cover while returning fire when possible. More consistent cover arrival and route-aware recovery reduce decision loops and long detours.</li>\n<li>Optimized follower vision checks and status displays to reduce CPU overhead.</li>\n<li>Fixed the KIT LOADOUTS Purchase/EQUIP button becoming incorrectly disabled.</li>\n<li>Fixed inconsistency in recruited followers’ proficiency due to them picking up randomized difficulty settings that they spawned with during the raid.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.2",
+   "content_length": 1491892,
+   "spt_version_constraint": "~4.1.0",
+   "downloads": 443,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-07T01:16:00.000000Z",
+   "created_at": "2026-09-07T01:17:03.000000Z",
+   "updated_at": "2026-09-07T02:26:44.000000Z",
+   "dependencies": [
+    {
+     "id": 827,
+     "hub_id": 1119,
+     "guid": "xyz.drakia.waypoints",
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "teaser": "Expand where bots can explore with full map navmesh coverage!",
+     "thumbnail": "https://files.sp-mod.com/mods/1119.png",
+     "downloads": 1329636,
+     "favourites_count": 1111,
+     "endorsements_count": 65,
+     "detail_url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2023-04-03T04:38:00.000000Z",
+     "created_at": "2023-04-03T04:38:28.000000Z",
+     "updated_at": "2026-08-03T06:02:27.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14423,
+       "hub_id": null,
+       "version": "1.9.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+       "content_length": 50349566,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 63242,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:29:06.000000Z",
+       "updated_at": "2026-08-03T06:02:27.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 902,
+     "hub_id": 1219,
+     "guid": "xyz.drakia.bigbrain",
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "teaser": "A library for adding extra logic layers to existing bot brains",
+     "thumbnail": "",
+     "downloads": 1357015,
+     "favourites_count": 1199,
+     "endorsements_count": 69,
+     "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2023-05-31T03:20:00.000000Z",
+     "created_at": "2023-05-31T03:20:55.000000Z",
+     "updated_at": "2026-08-03T06:02:26.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14411,
+       "hub_id": null,
+       "version": "1.5.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+       "content_length": 16790,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 69033,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:24:41.000000Z",
+       "updated_at": "2026-08-03T06:02:26.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 15278,
+   "hub_id": null,
+   "version": "0.10.3",
+   "description": "<ul>\n<li>Updated compatibility with SAIN 4.5.1, restoring follower sound reactions and preventing SAIN from overriding follower aim-point selection.</li>\n<li>Removed the unintended SPT 4.1.3-only server dependency. Builds now use the SPT 4.1.0 baseline for the intended 4.1.x support range.</li>\n<li>Fixed dead enemy references preventing followers from resuming patrol or post-combat healing, leaving them stuck until Attention.</li>\n<li>Fixed post-combat handoff gaps while squadmates remain engaged and healing recovery timers failing to start when a heal action is reused. Added bounded Release diagnostics for prolonged post-combat waits.</li>\n<li>Fixed movement turns toward outdated enemy sightings and an invalid run-approach destination, while preserving close-threat defense and normal non-sprinting look behavior.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2676/pit-fireteam/0.10.3",
+   "content_length": 1494383,
+   "spt_version_constraint": "~4.1.0",
+   "downloads": 3325,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-07T23:12:00.000000Z",
+   "created_at": "2026-09-07T23:12:25.000000Z",
+   "updated_at": "2026-09-07T23:52:58.000000Z",
+   "dependencies": [
+    {
+     "id": 827,
+     "hub_id": 1119,
+     "guid": "xyz.drakia.waypoints",
+     "name": "Waypoints - Expanded Navmesh",
+     "slug": "waypoints-expanded-navmesh",
+     "teaser": "Expand where bots can explore with full map navmesh coverage!",
+     "thumbnail": "https://files.sp-mod.com/mods/1119.png",
+     "downloads": 1329636,
+     "favourites_count": 1111,
+     "endorsements_count": 65,
+     "detail_url": "https://sp-mod.com/mod/827/waypoints-expanded-navmesh",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2023-04-03T04:38:00.000000Z",
+     "created_at": "2023-04-03T04:38:28.000000Z",
+     "updated_at": "2026-08-03T06:02:27.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14423,
+       "hub_id": null,
+       "version": "1.9.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/827/waypoints-expanded-navmesh/1.9.0",
+       "content_length": 50349566,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 63242,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:29:06.000000Z",
+       "updated_at": "2026-08-03T06:02:27.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 902,
+     "hub_id": 1219,
+     "guid": "xyz.drakia.bigbrain",
+     "name": "BigBrain",
+     "slug": "bigbrain",
+     "teaser": "A library for adding extra logic layers to existing bot brains",
+     "thumbnail": "",
+     "downloads": 1357015,
+     "favourites_count": 1199,
+     "endorsements_count": 69,
+     "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+     "fika_compatibility": false,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2023-05-31T03:20:00.000000Z",
+     "created_at": "2023-05-31T03:20:55.000000Z",
+     "updated_at": "2026-08-03T06:02:26.000000Z",
+     "owner": {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T17:00:49.000000Z"
+     },
+     "additional_authors": [],
+     "versions": [
+      {
+       "id": 14411,
+       "hub_id": null,
+       "version": "1.5.0",
+       "description": "<p>Update for SPT 4.1.0</p>\n",
+       "link": "https://sp-mod.com/mod/download/902/bigbrain/1.5.0",
+       "content_length": 16790,
+       "spt_version_constraint": "~4.1.0",
+       "downloads": 69033,
+       "fika_compatibility": "unknown",
+       "published_at": "2026-08-03T04:23:00.000000Z",
+       "created_at": "2026-08-03T04:24:41.000000Z",
+       "updated_at": "2026-08-03T06:02:26.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2676/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2676/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2676/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2676/versions",
+  "per_page": 50,
+  "to": 4,
+  "total": 4
+ }
+}

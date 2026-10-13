@@ -1,0 +1,149 @@
+{
+ "idx": 106,
+ "entry": "[5]战局大修-RaidOverhaul - 已AI增强版本",
+ "terms": [
+  "Raid Overhaul",
+  "-RaidOverhaul - AI",
+  "RaidOverhaul",
+  "RaidOverhaulFika"
+ ],
+ "all": [
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 791,
+   "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+   "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+   "dl": 1315192,
+   "sc": 30
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 1775,
+   "name": "WTT - Menu Overhaul",
+   "slug": "wtt-menu-overhaul",
+   "dl": 125463,
+   "sc": 30
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 1945,
+   "name": "Ai Limit",
+   "slug": "ai-limit",
+   "dl": 64613,
+   "sc": 30
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 2810,
+   "name": "Kill&Bill - Quest Condition Overhaul",
+   "slug": "killbill-quest-condition-overhaul",
+   "dl": 3444,
+   "sc": 30
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 3047,
+   "name": "Deploy Screen Overhaul",
+   "slug": "deploy-screen-overhaul",
+   "dl": 1372,
+   "sc": 30
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 1263,
+   "name": "Epic's All in One",
+   "slug": "epics-all-in-one",
+   "dl": 274741,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 2025,
+   "name": "All Quests Checkmarks",
+   "slug": "all-quests-checkmarks",
+   "dl": 61051,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2478,
+   "name": "ISB Aishi",
+   "slug": "isb-aishi",
+   "dl": 32563,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2415,
+   "name": "Canted Aiming",
+   "slug": "canted-aiming",
+   "dl": 21502,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2481,
+   "name": "Crates In Airdrop",
+   "slug": "crates-in-airdrop",
+   "dl": 18295,
+   "sc": 0
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 2642,
+   "name": "Vagabond",
+   "slug": "vagabond",
+   "dl": 7049,
+   "sc": 0
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 2893,
+   "name": "TraumaCore",
+   "slug": "traumacore",
+   "dl": 5062,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2129,
+   "name": "Air Filter Warning",
+   "slug": "air-filter-warning",
+   "dl": 3400,
+   "sc": 0
+  },
+  {
+   "term": "Raid Overhaul",
+   "id": 3084,
+   "name": "Better Flashlights",
+   "slug": "better-flashlights",
+   "dl": 1388,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2948,
+   "name": "Airburst",
+   "slug": "airburst",
+   "dl": 1320,
+   "sc": 0
+  },
+  {
+   "term": "-RaidOverhaul - AI",
+   "id": 2985,
+   "name": "Quick Aim",
+   "slug": "quick-aim",
+   "dl": 1293,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

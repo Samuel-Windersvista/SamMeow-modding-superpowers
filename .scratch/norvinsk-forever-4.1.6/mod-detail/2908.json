@@ -1,0 +1,48 @@
+{
+ "id": 2908,
+ "hub_id": null,
+ "guid": "com.tarkin.hideoutcat",
+ "name": "Tarkin's Hideout Cat",
+ "slug": "tarkins-hideout-cat",
+ "teaser": "Hideout Cat, but for SPT 4.1!",
+ "thumbnail": "https://files.sp-mod.com/mods/fns8qFbEJIWaw6dY8NvHatwS8QOUfA14D7zWPv8l.png",
+ "downloads": 5643,
+ "favourites_count": 86,
+ "endorsements_count": 20,
+ "description": "<p>It’s the end of the line for major releases of SPT, and since 4.1 will be our forever-version, I’ve decided to give Hideout Cat a forever-home.</p>\n<p>Tarkin was nice enough to allow me to update and publish this mod, and for that I thank him.</p>\n<p>The mod is identical to it’s 3.11 counterpart, with a roaming cat walking around your hideout, making it just feel a hell of a lot more comfortable than it did before.</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2908/tarkins-hideout-cat",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 6,
+ "published_at": "2026-08-13T20:02:00.000000Z",
+ "created_at": "2026-08-13T20:03:45.000000Z",
+ "updated_at": "2026-08-14T15:06:36.000000Z",
+ "owner": {
+  "id": 33775,
+  "name": "bushtail",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/TdWzpvy2rqkXMd0ZgmhFFK4drV4CyIIonC6CpuXT_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/9kPkXgrFjtLcjpFyR4bUGOAc6Rr8PaFIl5GMCjnt.png",
+  "created_at": "2023-07-09T21:22:21.000000Z",
+  "updated_at": "2026-10-03T23:07:08.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 65264,
+   "name": "tarkin",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/3458fcb0a0ba6b7402a1b797878ac6613f59c0e0_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2024-10-11T13:28:38.000000Z",
+   "updated_at": "2026-10-05T12:33:44.000000Z"
+  }
+ ],
+ "category": {
+  "id": 6,
+  "hub_id": 23,
+  "title": "Hideout",
+  "slug": "hideout",
+  "description": ""
+ }
+}

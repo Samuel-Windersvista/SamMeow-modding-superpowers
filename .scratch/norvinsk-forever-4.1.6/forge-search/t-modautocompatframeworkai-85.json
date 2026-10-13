@@ -1,0 +1,455 @@
+{
+ "term": "MOD -autocompatframework- AI",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2129,
+    "hub_id": 2820,
+    "guid": "com.zgfuedkx.airfilterwarning",
+    "name": "Air Filter Warning",
+    "slug": "air-filter-warning",
+    "teaser": "Tired of forgetting about air filter when you exit the game? Maybe this mod will help you save your precious FP-100 filters.",
+    "thumbnail": "https://files.sp-mod.com/mods/2820.png",
+    "downloads": 3400,
+    "favourites_count": 20,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2129/air-filter-warning",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2025-05-07T19:54:00.000000Z",
+    "created_at": "2025-05-07T19:54:39.000000Z",
+    "updated_at": "2026-08-29T21:29:49.000000Z",
+    "owner": {
+     "id": 73890,
+     "name": "ZGFueDkx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/shFV6dfE8m11qwxD5J6PxOHSA7UmZSVBRTyrvJzQ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-02-23T03:54:03.000000Z",
+     "updated_at": "2026-09-09T01:39:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2985,
+    "hub_id": null,
+    "guid": "com.blackhawk.quickaim",
+    "name": "Quick Aim",
+    "slug": "quick-aim",
+    "teaser": "Hold your aim longer when crouched, prone, or with the weapon mounted on something.",
+    "thumbnail": "https://files.sp-mod.com/mods/VnsrNKHTuFcthL4IQcg181FMEK3Z6g7VWbdj9sLO.png",
+    "downloads": 1293,
+    "favourites_count": 23,
+    "endorsements_count": 5,
+    "detail_url": "https://sp-mod.com/mod/2985/quick-aim",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-03T07:08:00.000000Z",
+    "created_at": "2026-09-03T07:09:58.000000Z",
+    "updated_at": "2026-10-02T22:23:40.000000Z",
+    "owner": {
+     "id": 85915,
+     "name": "BLACK HAWK",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/nhL30RWS9AcT5J4gcosWsoKk6dZ8UaPTQxtQYYU3_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-10-18T23:34:37.000000Z",
+     "updated_at": "2026-10-05T16:51:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 1945,
+    "hub_id": 2617,
+    "guid": "com.dvize.ailimit",
+    "name": "Ai Limit",
+    "slug": "ai-limit",
+    "teaser": "Temporarily disable far bots to reduce cpu load",
+    "thumbnail": "https://files.sp-mod.com/mods/iFN5tmtV0BCSMeEQLeU1CoMwB4x4XgF27OU2xmbj.png",
+    "downloads": 64612,
+    "favourites_count": 69,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/1945/ai-limit",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-01-06T10:28:00.000000Z",
+    "created_at": "2025-01-06T10:28:40.000000Z",
+    "updated_at": "2026-09-04T09:00:11.000000Z",
+    "owner": {
+     "id": 26519,
+     "name": "wizard83",
+     "profile_photo_url": "https://sp-mod.com/avatars/W.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-03T13:05:13.000000Z",
+     "updated_at": "2026-10-04T19:51:10.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 15516,
+      "name": "Props",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/53f17847d86ea53a84f69a549ce2b50baf31d665_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2022-03-09T07:33:42.000000Z",
+      "updated_at": "2026-08-10T19:31:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 374,
+    "hub_id": 558,
+    "guid": "com.bluehead.aiotrader",
+    "name": "bluehead's AIO Trader",
+    "slug": "blueheads-aio-trader",
+    "teaser": "Buy everything from one trader. Get all keys with one command.",
+    "thumbnail": "https://files.sp-mod.com/mods/558.png",
+    "downloads": 153482,
+    "favourites_count": 67,
+    "endorsements_count": 7,
+    "detail_url": "https://sp-mod.com/mod/374/blueheads-aio-trader",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2022-02-16T05:21:00.000000Z",
+    "created_at": "2022-02-16T05:21:09.000000Z",
+    "updated_at": "2026-09-05T09:56:04.000000Z",
+    "owner": {
+     "id": 14715,
+     "name": "bluehead",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/169efa7218e6871ad2bca23a80daf3fc4ac5db86_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2022-02-16T05:05:12.000000Z",
+     "updated_at": "2026-09-08T01:44:02.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2478,
+    "hub_id": null,
+    "guid": "com.samc137.aishi",
+    "name": "ISB Aishi",
+    "slug": "isb-aishi",
+    "teaser": "Aishi is a Trader with +110 quests, a attractive and unique assort, custom gear and extensive lore.",
+    "thumbnail": "https://files.sp-mod.com/mods/6XuVe1Kt3K9gkapoZ0IBI2hVtt8CLGAhK46vQgLb.png",
+    "downloads": 32555,
+    "favourites_count": 173,
+    "endorsements_count": 63,
+    "detail_url": "https://sp-mod.com/mod/2478/isb-aishi",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-08-01T06:23:00.000000Z",
+    "created_at": "2025-11-30T17:45:53.000000Z",
+    "updated_at": "2026-09-22T15:11:45.000000Z",
+    "owner": {
+     "id": 92975,
+     "name": "Sam C-137",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fReV0MfR93fJwBwCqJFmHdvJEcSpcHd2UntXzpqs_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/qGqWJ02nu6FzLcQytwxEQbA95SONrpF3ov3hQEEn_1280w.webp",
+     "created_at": "2025-11-30T06:43:55.000000Z",
+     "updated_at": "2026-10-04T20:26:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2948,
+    "hub_id": null,
+    "guid": "com.maschine.airburst",
+    "name": "Airburst",
+    "slug": "airburst",
+    "teaser": "Lase the cover, lob the round: 40mm airburst grenades that detonate right above the enemy behind it",
+    "thumbnail": "https://files.sp-mod.com/mods/TRESz6Q7RYLc9V8sKjSHeKExGVTb7vV7geCwfADQ.png",
+    "downloads": 1320,
+    "favourites_count": 14,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2948/airburst",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-08-21T19:40:00.000000Z",
+    "created_at": "2026-08-21T16:21:11.000000Z",
+    "updated_at": "2026-09-09T18:29:16.000000Z",
+    "owner": {
+     "id": 109459,
+     "name": "maschine",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2xAHR3ttkN7Su6wHEefYq1aNQJLqsN3CqsMwuBpH_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-04-10T00:02:34.000000Z",
+     "updated_at": "2026-10-03T19:29:05.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 791,
+    "hub_id": 1062,
+    "guid": "me.sol.sain",
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "teaser": "Bots that don't suck.",
+    "thumbnail": "https://files.sp-mod.com/mods/1062.jpg",
+    "downloads": 1315165,
+    "favourites_count": 976,
+    "endorsements_count": 133,
+    "detail_url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-03-09T02:46:00.000000Z",
+    "created_at": "2023-03-09T02:46:50.000000Z",
+    "updated_at": "2026-09-04T18:41:43.000000Z",
+    "owner": {
+     "id": 27463,
+     "name": "Solarint",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-23T17:11:59.000000Z",
+     "updated_at": "2026-08-10T19:41:43.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     },
+     {
+      "id": 52282,
+      "name": "ArchangelWTF",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-20T14:55:34.000000Z",
+      "updated_at": "2026-10-05T14:23:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2945,
+    "hub_id": null,
+    "guid": "com.tcf.tcfmodmanager",
+    "name": "TCF Mod Manager",
+    "slug": "tcf-mod-manager",
+    "teaser": "Sometimes you don't want to think about mods at all. Sometimes that's all you want to do... Manage them, share them, serve them to others.",
+    "thumbnail": "https://files.sp-mod.com/mods/0qEVyA4TX4PiPAZFcbH1Rt4jBzJCscp8CL6xOztx.png",
+    "downloads": 6051,
+    "favourites_count": 38,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/2945/tcf-mod-manager",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-08-21T16:52:00.000000Z",
+    "created_at": "2026-08-20T20:11:12.000000Z",
+    "updated_at": "2026-10-04T09:33:37.000000Z",
+    "owner": {
+     "id": 96898,
+     "name": "the.crimson.fuckr",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/q6W4ELDHFO4coicwMm4IWNhUClQ4AB5ecquG30AK_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-12-16T08:54:31.000000Z",
+     "updated_at": "2026-10-05T16:31:56.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2532,
+    "hub_id": null,
+    "guid": "com.utjan.airfilterqol",
+    "name": "Air Filter Only Drains In Raid",
+    "slug": "air-filter-only-drains-in-raid",
+    "teaser": "The air filters in your hideout will only drain when you're in a PMC raid",
+    "thumbnail": "https://files.sp-mod.com/mods/9G8LO0AD1yIflFWPuwxFEXizQiFppddK0yAnCGR3.png",
+    "downloads": 9159,
+    "favourites_count": 61,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2532/air-filter-only-drains-in-raid",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 6,
+    "published_at": "2026-01-04T01:16:00.000000Z",
+    "created_at": "2026-01-04T01:16:28.000000Z",
+    "updated_at": "2026-07-28T07:40:35.000000Z",
+    "owner": {
+     "id": 52958,
+     "name": "Utjan",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b2315b34c693da726ec3fad055059562ba4ba826_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-30T19:49:38.000000Z",
+     "updated_at": "2026-08-10T19:46:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 6,
+     "hub_id": 23,
+     "title": "Hideout",
+     "slug": "hideout",
+     "description": ""
+    }
+   },
+   {
+    "id": 2378,
+    "hub_id": null,
+    "guid": "spt.mod.tracker",
+    "name": "SPT Mod Tracker",
+    "slug": "spt-mod-tracker",
+    "teaser": "Allows you to track mods change (mod version, compatibility SPT version).",
+    "thumbnail": "https://files.sp-mod.com/mods/ENgHbCyNyfJcYZnH08960CsM2pE6odnWqBuZbw0h.png",
+    "downloads": 3166,
+    "favourites_count": 6,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2378/spt-mod-tracker",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-10-18T16:36:00.000000Z",
+    "created_at": "2025-10-18T15:56:46.000000Z",
+    "updated_at": "2026-07-28T06:34:10.000000Z",
+    "owner": {
+     "id": 72091,
+     "name": "hiop90",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/I6IhnX42pngxROJrGmcxMHitJJdog1nnZzQ8MrBA_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-01-23T05:43:23.000000Z",
+     "updated_at": "2026-10-04T08:44:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

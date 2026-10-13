@@ -1,0 +1,70 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 261,
+   "hub_id": 14616,
+   "version": "1.0.4",
+   "description": "<p>- Updated to 3.11.x</p>\n<p>- The quest creation feature has been removed due to technical issues and to better align the mod with its core purpose.</p>\n<p>- I’ve tested the mod with 5 new crafts and barters on a clean SPT installation, and it loaded normally for me. If you encounter any issues, please let me know!</p>\n",
+   "link": "https://sp-mod.com/mod/download/1979/tarkov-craft/1.0.4",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 1518,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-07-14T18:54:31.000000Z",
+   "created_at": "2025-07-14T18:54:31.000000Z",
+   "updated_at": "2026-05-14T01:42:09.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13258,
+   "hub_id": null,
+   "version": "2.0.0",
+   "description": "<h2>Tarkov Craft v2.0.0 — Full Rewrite</h2>\n<p>Complete rewrite from the ground up. Same purpose, entirely new codebase.</p>\n<p><strong>What changed</strong></p>\n<ul>\n<li>New UI built from scratch with an EFT-inspired design</li>\n<li>Item search rebuilt as a virtual-scroll combobox with keyboard navigation</li>\n</ul>\n<p><strong>What was dropped</strong></p>\n<ul>\n<li>Quest creation</li>\n<li>Barter creation</li>\n</ul>\n<p>These may return in future releases as separate modules.</p>\n<h3>Try the tool <a target=\"_blank\" class=\"external-link\" href=\"https://vinihns.github.io/TarkovCraft/\" rel=\"noreferrer noopener\">HERE</a></h3>\n",
+   "link": "https://sp-mod.com/mod/download/1979/tarkov-craft/2.0.0",
+   "content_length": 486063,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 540,
+   "fika_compatibility": "unknown",
+   "published_at": "2026-03-14T18:59:00.000000Z",
+   "created_at": "2026-03-14T19:09:22.000000Z",
+   "updated_at": "2026-07-28T08:09:59.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1979/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1979/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1979/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1979/versions",
+  "per_page": 50,
+  "to": 2,
+  "total": 2
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": 3096,
+ "hub_id": null,
+ "guid": "com.blackoutaddons.powerrestore",
+ "name": "ebz7-BlackoutAddons",
+ "slug": "ebz7-blackoutaddons",
+ "teaser": "Turns Vultify's Blackout into a survival event: restart failing generators, fix breakers, repair a burnt control, race a 3-minute emergency-power escape, fight Black Division hunters and a surprise Killa. Unofficial add-on.",
+ "thumbnail": "https://files.sp-mod.com/mods/nGMT6B9ZWWNG77tNiSps3fycEyznLVzSRIxetXuv.png",
+ "downloads": 589,
+ "favourites_count": 8,
+ "endorsements_count": 6,
+ "description": "<p><strong>Unofficial add-on for [Blackout] by Vultify.</strong> It extends the Labs blackout event. Blackout is required.</p>\n<blockquote>\n<p>⚠️ <strong>How this was made:</strong> I designed, balanced and play-tested this mod; the code was written with the help of an AI assistant, i have a great background in testing software, but no so much with code, im still learning, i hope this is okay. Source code is public (see Source Code Links).</p>\n</blockquote>\n<h2>What it adds</h2>\n<h3>⚡ Bring the power back – if you can</h3>\n<ul>\n<li>A generator control switch in the basement generator room. Starting the old generators is <strong>hard</strong>: they fail to start, generator B trips during sync, and the control can <strong>burn out for good</strong> (brutal default settings: roughly 1 in 3 raids gets full power).</li>\n<li>Staged power-up: generators spin up, lights come back wave by wave with flicker, siren and red warning beacons in the generator room.</li>\n<li><strong>Generator B trips</strong> → only half of Labs has power (half the extracts and keycard doors) until you reset the tripped <strong>breakers in the switchgear room</strong> and restart B.</li>\n<li>Minutes after full power, the <strong>sector B breaker can fail</strong> again: auto-reclose keeps trying (lights back for seconds, then out) until you reset the cabinet.</li>\n<li><strong>Burnt control:</strong> the generators try to start by themselves now and then (<strong>false starts</strong>). The whole facility flickers with the struggling engine for 15–30 s, then dies again.</li>\n<li>No power = nothing works: keycard readers are dead and there’s <strong>no emergency code</strong>.</li>\n</ul>\n<h3>🔧 Repair kit</h3>\n<p>A burnt control can be repaired with a <strong>Toolset, a Spark plug and 2 Bundles of wires</strong>. The toolset and wires are hidden in the facility; the <strong>spark plug is in a Black Division guard’s pockets</strong> (they took it when they cut the power). After the repair the generator starts for sure: 50% full power, 50% only generator A.</p>\n<h3>🚨 Emergency power – 3 minutes to get out</h3>\n<p>Wedge carries Blackout’s key. Using it on the gate switch puts Labs on <strong>emergency batteries</strong>: both gates and the parking door open, <strong>red beacons</strong> spin in the main rooms and an on-screen countdown starts. After 3 minutes the batteries are flat: the gates close and even the emergency lamps die.</p>\n<h3>💀 Black Division and Killa</h3>\n<ul>\n<li><strong>Wedge + 4 Black Division guards</strong> are the ones who cut the power: they arrive in the generator room, then the lights go out.</li>\n<li>They <strong>hunt</strong> – you, PMCs, raiders – and are hostile to everyone. With SAIN + BigBrain they really move instead of camping.</li>\n<li><strong>Second wave:</strong> 3 more come back when you restore power or open the gates.</li>\n<li>Black Division can carry <strong>Labs keycards</strong> (25% each).</li>\n<li><strong>Surprise final boss:</strong> once Black Division is wiped out, <strong>Killa</strong> breaks in through the <strong>sewage conduit</strong> – banging, screaming, then he stalks you. The sewage conduit opens as an extract when he breaks in.</li>\n</ul>\n<h3>🔊 Sound</h3>\n<p>Own generator, breaker, false-start and PA sounds; the game’s own Labs announcer lines are played from your game files.</p>\n<h2>Requirements</h2>\n<ul>\n<li>SPT 4.1.x</li>\n<li><strong>Blackout</strong> (Vultify) – client + server</li>\n<li><strong>WTT Black Division</strong> (+ its requirements: <strong>MoreBotsAPI</strong>, <strong>BigBrain</strong>)</li>\n<li>Recommended: <strong>SAIN</strong> (Black Division hunts through SAIN)</li>\n</ul>\n<h2>Install</h2>\n<p>Extract the zip into your SPT folder:</p>\n<ul>\n<li><code>BepInEx/plugins/BlackoutPowerRestore/</code> (client)</li>\n<li><code>user/mods/BlackoutBlackDivision/</code> (server)</li>\n</ul>\n<h2>Configuration</h2>\n<ul>\n<li>Client: F12 configuration manager → “Blackout Power Restore” (difficulty, timers, Black Division, Killa, sounds…).</li>\n<li>Server: <code>user/mods/BlackoutBlackDivision/config.jsonc</code> (Wedge, guards, keycards, Killa).</li>\n<li>Placement keys (optional): Ctrl+F7 breaker cabinet, Ctrl+F2 repair-part spot, Ctrl+F3 emergency beacon, Ctrl+F5 shows where Killa / Black Division / parts are.</li>\n</ul>\n<h2>Credits</h2>\n<ul>\n<li><strong>Blackout</strong> – Vultify (required; this is an unofficial add-on)</li>\n<li><strong>WTT Black Division</strong>, <strong>MoreBotsAPI</strong>, <strong>BigBrain</strong> (DrakiaXYZ), <strong>SAIN</strong> (Solarint) – their authors</li>\n<li>Not affiliated with Battlestate Games, SPT or any of the authors above.</li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/3096/ebz7-blackoutaddons",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2026-10-02T16:52:00.000000Z",
+ "created_at": "2026-10-02T16:59:53.000000Z",
+ "updated_at": "2026-10-06T15:23:13.000000Z",
+ "owner": {
+  "id": 124158,
+  "name": "ebz7",
+  "profile_photo_url": "https://sp-mod.com/avatars/E.svg",
+  "cover_photo_url": null,
+  "created_at": "2026-09-14T08:12:27.000000Z",
+  "updated_at": "2026-10-07T11:27:52.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 2,
+  "hub_id": 79,
+  "title": "Overhauls",
+  "slug": "overhauls",
+  "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+ }
+}

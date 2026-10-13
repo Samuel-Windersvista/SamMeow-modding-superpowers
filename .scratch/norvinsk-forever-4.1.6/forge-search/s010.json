@@ -1,0 +1,451 @@
+{
+ "entry": "[12]骑士面具修复-FacetheKnight-MaskFix",
+ "term": "Face the Knight - Mask Fix",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3109,
+    "hub_id": null,
+    "guid": "com.fums.knightmaskfix",
+    "name": "Knight Mask Fix (4.1.3+)",
+    "slug": "knight-mask-fix-413",
+    "teaser": "Fixes Death Knight's missing mask texture for SP Tushonka 4.1.3+",
+    "thumbnail": "https://files.sp-mod.com/mods/g04BBKezC8VmfniMIPm3KM0mcZeELDiAsRkE6IHs.png",
+    "downloads": 568,
+    "favourites_count": 10,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/3109/knight-mask-fix-413",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-10-05T00:35:00.000000Z",
+    "created_at": "2026-10-05T00:26:27.000000Z",
+    "updated_at": "2026-10-05T00:59:36.000000Z",
+    "owner": {
+     "id": 70223,
+     "name": "Fums",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3989d352aff611adb499153d72909a0223390757_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-12-27T20:28:20.000000Z",
+     "updated_at": "2026-10-05T15:56:23.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 85395,
+      "name": "Umbigo Preto",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/csB3VP0jIdPM6GNDWCWDYzuWSa5hjLP3AMqiPNYn_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/DuVXtm3R4c27S1qDGVIK7GyTXcaoZxSx6AEhvzm3_2560w.webp",
+      "created_at": "2025-10-05T08:36:43.000000Z",
+      "updated_at": "2026-08-10T19:50:47.000000Z"
+     },
+     {
+      "id": 111932,
+      "name": "Flex Wayne",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bItTPQAeWa25KuYVzBAAriBAsefZjlW4YA7sK5Po_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-05-06T13:39:58.000000Z",
+      "updated_at": "2026-08-10T19:52:39.000000Z"
+     }
+    ]
+   },
+   {
+    "id": 2554,
+    "hub_id": null,
+    "guid": "com.trinagan.changehelmetvisor",
+    "name": "Change Helmet Visor",
+    "slug": "change-helmet-visor",
+    "teaser": "A mod that lets you swap between how the face shield/face cover visor is rendered",
+    "thumbnail": "https://files.sp-mod.com/mods/AzyGDhQEEzdMvSSol4Nx4VNFwC6B5mmpy6b4jyFR.png",
+    "downloads": 6903,
+    "favourites_count": 50,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2554/change-helmet-visor",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-02-02T19:10:00.000000Z",
+    "created_at": "2026-01-16T16:21:53.000000Z",
+    "updated_at": "2026-09-27T11:55:10.000000Z",
+    "owner": {
+     "id": 80238,
+     "name": "Trinagan",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/f5c8c2d67ac3c820b4247b25dc968b71a6f7c1ac_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-06-11T14:00:08.000000Z",
+     "updated_at": "2026-10-05T13:03:28.000000Z"
+    },
+    "additional_authors": []
+   },
+   {
+    "id": 2032,
+    "hub_id": 2714,
+    "guid": "xyz.drakia.nocheese",
+    "name": "NoCheese",
+    "slug": "nocheese",
+    "teaser": "I'm lactose intolerant, get that cheese away from me!",
+    "thumbnail": "https://files.sp-mod.com/mods/2714.png",
+    "downloads": 2971,
+    "favourites_count": 5,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2032/nocheese",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-03-15T20:16:00.000000Z",
+    "created_at": "2025-03-15T20:16:29.000000Z",
+    "updated_at": "2026-08-08T04:14:49.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:42:56.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2715,
+    "hub_id": null,
+    "guid": "com.trinagan.raincap",
+    "name": "RainCap",
+    "slug": "raincap",
+    "teaser": "A mod which lets you reduce/disable the rain drops on your screen when wearing a cap",
+    "thumbnail": "https://files.sp-mod.com/mods/onncgmh4tPBZBVTTC9w754JvijejOa1EnqS7Xeqo.png",
+    "downloads": 1199,
+    "favourites_count": 8,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2715/raincap",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-06-02T12:51:00.000000Z",
+    "created_at": "2026-06-02T12:52:02.000000Z",
+    "updated_at": "2026-09-27T11:55:35.000000Z",
+    "owner": {
+     "id": 80238,
+     "name": "Trinagan",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/f5c8c2d67ac3c820b4247b25dc968b71a6f7c1ac_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-06-11T14:00:08.000000Z",
+     "updated_at": "2026-10-05T13:03:28.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2994,
+    "hub_id": null,
+    "guid": "com.mybutthasarash.sptcasino",
+    "name": "SPT Casino",
+    "slug": "spt-casino",
+    "teaser": "Take a break from dying in T****v. Lose your money another way.",
+    "thumbnail": "https://files.sp-mod.com/mods/TE8Kkm1QpdfMyrqmoqpoat5QXS3dU2ZqMuUZzxzG.png",
+    "downloads": 4625,
+    "favourites_count": 22,
+    "endorsements_count": 13,
+    "detail_url": "https://sp-mod.com/mod/2994/spt-casino",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-09T22:48:00.000000Z",
+    "created_at": "2026-09-05T20:47:52.000000Z",
+    "updated_at": "2026-10-01T23:09:44.000000Z",
+    "owner": {
+     "id": 51018,
+     "name": "MyButtHasARash",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/eSszQU6NfgJKTNe4maY9gdYnijH2W29cA3z0LDKd_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-06T13:15:58.000000Z",
+     "updated_at": "2026-10-05T15:26:58.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3105,
+    "hub_id": null,
+    "guid": "com.4nub15.sitonmyface",
+    "name": "SOMF - SitOnMyFace",
+    "slug": "somf-sitonmyface",
+    "teaser": "Face can't fit more than one chonky piece of gear? This mod lets you fit all the gear you want on your face at once. Enjoy brother!",
+    "thumbnail": "https://files.sp-mod.com/mods/BbhpLMiZlVS4jWo5boNChvjD1J7xjGQxscS9dAmu.png",
+    "downloads": 919,
+    "favourites_count": 19,
+    "endorsements_count": 12,
+    "detail_url": "https://sp-mod.com/mod/3105/somf-sitonmyface",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-10-04T04:27:00.000000Z",
+    "created_at": "2026-10-04T04:50:24.000000Z",
+    "updated_at": "2026-10-04T19:58:29.000000Z",
+    "owner": {
+     "id": 12630,
+     "name": "4nub15",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b54535ccac06314ce4876903f83cbb14a5f3d126_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2021-12-27T20:47:19.000000Z",
+     "updated_at": "2026-10-05T05:30:03.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 1232,
+    "hub_id": 1717,
+    "guid": "com.luna.lunnayalunalotus",
+    "name": "Lotus",
+    "slug": "lotus",
+    "teaser": "Custom Trader with over 340+ Quests, 900+ sold and bartered items and a special keycard that gives infinite labs access.",
+    "thumbnail": "https://files.sp-mod.com/mods/1717.png",
+    "downloads": 187195,
+    "favourites_count": 176,
+    "endorsements_count": 31,
+    "detail_url": "https://sp-mod.com/mod/1232/lotus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-09-21T23:10:00.000000Z",
+    "created_at": "2024-01-17T20:08:28.000000Z",
+    "updated_at": "2026-09-21T23:10:18.000000Z",
+    "owner": {
+     "id": 29460,
+     "name": "LotusLuna",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/CwGC4pDVkXDnC5zgx3Puhq2RGl1u1Vqbx19kXnEW_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/NkKUyY0u9WlNPK22DbTKr2PkIyphqFSFLJbQjcBV_1280w.webp",
+     "created_at": "2023-03-30T19:06:34.000000Z",
+     "updated_at": "2026-10-05T11:10:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 63875,
+      "name": "LycorisOni",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+      "created_at": "2024-09-15T05:15:47.000000Z",
+      "updated_at": "2026-10-02T00:28:30.000000Z"
+     }
+    ],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2752,
+    "hub_id": null,
+    "guid": "com.maschine.dualsidedoorbreach",
+    "name": "DualSideDoorBreach",
+    "slug": "dualsidedoorbreach",
+    "teaser": "Don't tell me whether I should push or pull this door.",
+    "thumbnail": "https://files.sp-mod.com/mods/qImGorsDcCxQzKVtRlqHLhSftO1QCJZivRA03lWi.png",
+    "downloads": 5939,
+    "favourites_count": 60,
+    "endorsements_count": 9,
+    "detail_url": "https://sp-mod.com/mod/2752/dualsidedoorbreach",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-06-18T17:51:00.000000Z",
+    "created_at": "2026-06-18T17:43:21.000000Z",
+    "updated_at": "2026-09-09T18:34:20.000000Z",
+    "owner": {
+     "id": 109459,
+     "name": "maschine",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/2xAHR3ttkN7Su6wHEefYq1aNQJLqsN3CqsMwuBpH_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-04-10T00:02:34.000000Z",
+     "updated_at": "2026-10-03T19:29:05.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2685,
+    "hub_id": null,
+    "guid": "com.flex-wayne.knightmaskfix",
+    "name": "Knight Mask Fix (4.0+)",
+    "slug": "knight-mask-fix-40",
+    "teaser": "v4.0.13 \"Death Knight mask\" missing texture fix",
+    "thumbnail": "https://files.sp-mod.com/mods/3mzkHXwJbLde5zuHDdlrh4xJOV5UIm2eC37JfVKv.jpg",
+    "downloads": 9460,
+    "favourites_count": 35,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2685/knight-mask-fix-40",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-07-22T14:39:00.000000Z",
+    "created_at": "2026-05-09T17:34:44.000000Z",
+    "updated_at": "2026-08-01T18:02:15.000000Z",
+    "owner": {
+     "id": 111932,
+     "name": "Flex Wayne",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/bItTPQAeWa25KuYVzBAAriBAsefZjlW4YA7sK5Po_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-05-06T13:39:58.000000Z",
+     "updated_at": "2026-08-10T19:52:39.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 85395,
+      "name": "Umbigo Preto",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/csB3VP0jIdPM6GNDWCWDYzuWSa5hjLP3AMqiPNYn_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/DuVXtm3R4c27S1qDGVIK7GyTXcaoZxSx6AEhvzm3_2560w.webp",
+      "created_at": "2025-10-05T08:36:43.000000Z",
+      "updated_at": "2026-08-10T19:50:47.000000Z"
+     }
+    ],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   },
+   {
+    "id": 2637,
+    "hub_id": null,
+    "guid": "com.rz.essentials",
+    "name": "RZEssentials",
+    "slug": "rzessentials",
+    "teaser": "Your server, your rules. Every system optional, every detail configurable.",
+    "thumbnail": "https://files.sp-mod.com/mods/dqRygmH5LFcamujGgkd0vxBEI2BDekcobfFI8GXE.png",
+    "downloads": 2462,
+    "favourites_count": 11,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2637/rzessentials",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2026-04-12T23:07:00.000000Z",
+    "created_at": "2026-03-22T21:52:00.000000Z",
+    "updated_at": "2026-07-28T08:25:55.000000Z",
+    "owner": {
+     "id": 105867,
+     "name": "RemzDNB",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/SILVz01a0uIhADQ4hPlz624eOhWll3wkPf8DlRZx_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-02-23T05:15:38.000000Z",
+     "updated_at": "2026-08-10T19:52:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

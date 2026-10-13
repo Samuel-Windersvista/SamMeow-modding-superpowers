@@ -1,0 +1,49 @@
+{
+ "id": 3109,
+ "hub_id": null,
+ "guid": "com.fums.knightmaskfix",
+ "name": "Knight Mask Fix (4.1.3+)",
+ "slug": "knight-mask-fix-413",
+ "teaser": "Fixes Death Knight's missing mask texture",
+ "thumbnail": "https://files.sp-mod.com/mods/g04BBKezC8VmfniMIPm3KM0mcZeELDiAsRkE6IHs.png",
+ "downloads": 740,
+ "favourites_count": 12,
+ "endorsements_count": 11,
+ "description": "<p>This mod fixes the missing Death Knight texture for his mask on all in-game character models so you no longer have one of the coolest bosses in the game being bald and missing the coolest mask in the game! Game breaking if you ask me.</p>\n<p>It is an incredibly light server mod that injects on server start and that’s it. There should be absolutely zero issues with compatibility with other mods. Unless you mess with Knight’s mask… duh.</p>\n<h3>Credits</h3>\n<p>This mod is an updated version of Flex Wayne’s Knight Mask Fix (4.0+) which was an update from the original author’s mod Umbigo Preto. Massive thanks to Umbigo Preto for their incredible work to get this fixed in the first place and Flex Wayne for porting it to C# / 4.0</p>\n<p>Umbigo Preto’s original version repo - <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/Umbigo-Preto/Face-the-Knight---Mask-Fix\" rel=\"noreferrer noopener\">https://github.com/Umbigo-Preto/Face-the-Knight---Mask-Fix</a></p>\n<p>Flex Wayne’s 4.0 port repo - <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/TheOfficialSkull/FW---Knight-Mask-Fix---4.0.13\" rel=\"noreferrer noopener\">https://github.com/TheOfficialSkull/FW---Knight-Mask-Fix---4.0.13</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/3109/knight-mask-fix-413",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 15,
+ "published_at": "2026-10-05T00:35:00.000000Z",
+ "created_at": "2026-10-05T00:26:27.000000Z",
+ "updated_at": "2026-10-05T18:42:00.000000Z",
+ "owner": {
+  "id": 70223,
+  "name": "Fums",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3989d352aff611adb499153d72909a0223390757_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-12-27T20:28:20.000000Z",
+  "updated_at": "2026-10-06T02:03:29.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 85395,
+   "name": "Umbigo Preto",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/csB3VP0jIdPM6GNDWCWDYzuWSa5hjLP3AMqiPNYn_128w.webp",
+   "cover_photo_url": "https://files.sp-mod.com/cover-photos/DuVXtm3R4c27S1qDGVIK7GyTXcaoZxSx6AEhvzm3_2560w.webp",
+   "created_at": "2025-10-05T08:36:43.000000Z",
+   "updated_at": "2026-08-10T19:50:47.000000Z"
+  },
+  {
+   "id": 111932,
+   "name": "Flex Wayne",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/bItTPQAeWa25KuYVzBAAriBAsefZjlW4YA7sK5Po_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2026-05-06T13:39:58.000000Z",
+   "updated_at": "2026-08-10T19:52:39.000000Z"
+  }
+ ]
+}

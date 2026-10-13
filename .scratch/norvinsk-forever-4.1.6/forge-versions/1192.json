@@ -1,0 +1,649 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 13409,
+   "hub_id": null,
+   "version": "3.0.2",
+   "description": "<p>ADDITIONS</p>\n<ul>\n<li>Added in new legionnaire bot type that should spawn with and follow legion as his guards.</li>\n<li>Added legion/legionnaire support for SAIN. They should now be added to the presets/configs properly and not break everything. Will probably add custom layers to them in the future but idc enough to do it right now. They work perfectly well with the normal layers. You can tweak them in SAINs bot tab and they will 100% destroy you lol</li>\n<li>Finished full invasion event implementation. Only allowed to run once per raid (you can modify the weightings in the server config and disable it in the BepInEx menu if you’re so inclined). The event spawns in a random boss with their guards to make things a little more hectic. It doesn’t modify waves so it won’t conflict with spawn mods since it hooks right into the bot spawner and force spawns the boss + guards. This does however add the bots even if it goes over your bot cap. That can slow down waves since you’ll need to drop back below the cap for them to continue spawning or add to your performance overhead with the additional bots. (Most noticeable with Kaban since it’s him plus 6 guards lol)</li>\n</ul>\n<p>CHANGELOG</p>\n<ul>\n<li>Changed config app to WPF instead of Winforms. Should be easier to maintain than the old format (winforms pissed me off to no end. I hate winforms….) and runs smoother.</li>\n<li>Update bots and items to load from MoreBotsAPI and WTT-CommonLib respectively. Easier to maintain and allows me to expand features more easily without reworking tons of systems. Also much less for me to maintain so I don’t need to dread updates as much in the future.</li>\n<li>Adjusted weight for currencies to be 0 and properly added them to the money handbook category. No more 90kg stacks of coins lol. Especially if you’re bringing stuff in raid for the exfil UI system.</li>\n<li>Increased trader grid size to compensate for the amount of items that can be added since it now loads later in postDb. Should catch presets and items from other mods that load before it. (PostDb +10)</li>\n<li>Some fixes to Legion loadouts/config. You’ll see overlap with Legionnaire names since I just threw in the phonetic alphabet but loadouts should be plenty varied. Legion still has his normal loadout with just a bit more variety for his non custom items and lots of additions to his actual loot gen pool.</li>\n<li>Fixed slow load issue that I was chasing my tail over (apparently raid times were changed to minutes from seconds and I missed it lol. Trying to make raid times 999 * 60 really fucks with loading times). Exfils should stay open properly during especially long raids.</li>\n<li>Fixed issues with legion and season progression not tracking properly. Also fixed weird edge case with legion chance going past 100 and getting wonky (spoiler alert, I forgor the if block)</li>\n<li>Switched grid layout for rhino.</li>\n<li>Tweaked how stock randomization works for the req shop. Should now only randomize on restock as opposed to attempting it anytime the trader api was called.</li>\n<li>Fixed some bugs with the exfil UI. SHOULD (?) now properly open/close for everyone? Idk, I never ran into the issue and couldn’t reproduce it but I tried to make it a little more ironclad. Also fixed the special req forms being consumed on opening the transfer menu as opposed to when actually transferring the items. Should now only use them when you’ve selected the items to send and actually hit the transfer items button. No more wasting tons of money to get the form and it getting eaten before you can do anything.</li>\n<li>Fixed some small bugs with other events and some minor optimizations.</li>\n<li>Theres probably more stuff I’m forgetting but this was essentially another full rewrite after the last full rewrite I did so they got overshadowed by the bigger stuff and lost between my dev builds.</li>\n</ul>\n<p>FOLDER LAYOUTS CHANGED!!! If you still have a previous version installed you’ll need to remove the old version completely before installing this version.</p>\n<ul>\n<li>Just check the uninstall tab here and make sure you’ve removed the server side and both client side parts of this mod.</li>\n</ul>\n<p>Now back to the void………………………………….. ♥</p>\n",
+   "link": "https://sp-mod.com/mod/download/1192/raid-overhaul/3.0.2",
+   "content_length": 128994624,
+   "spt_version_constraint": "4.0.13",
+   "downloads": 440,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-04-10T12:25:00.000000Z",
+   "created_at": "2026-04-10T12:25:11.000000Z",
+   "updated_at": "2026-07-28T08:21:03.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 2310,
+     "hub_id": 3025,
+     "guid": "com.wtt.commonlib",
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+     "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+     "downloads": 431789,
+     "favourites_count": 1302,
+     "endorsements_count": 73,
+     "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": true,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2025-09-15T02:44:00.000000Z",
+     "created_at": "2025-09-15T02:44:54.000000Z",
+     "updated_at": "2026-08-23T15:19:33.000000Z",
+     "owner": {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 22121,
+       "name": "Tron",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+       "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+       "created_at": "2022-08-31T05:49:04.000000Z",
+       "updated_at": "2026-10-05T16:42:55.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 13398,
+       "hub_id": null,
+       "version": "2.0.17",
+       "description": "<ul>\n<li>fixed hideout crafts service not supporting anything but arrays /bonk</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.17",
+       "content_length": 151817,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 5072,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-08T13:26:00.000000Z",
+       "created_at": "2026-04-08T13:26:58.000000Z",
+       "updated_at": "2026-07-28T08:20:36.000000Z"
+      },
+      {
+       "id": 13391,
+       "hub_id": null,
+       "version": "2.0.16",
+       "description": "<ul>\n<li>Added new helper to slothelper to add ids by name</li>\n<li>Added fix custom item sort order patch (thanks Pein! ❤️ )</li>\n<li>Added new “Salvage” zones to possible quest types</li>\n<li>Added locales for the salvage zone interactions</li>\n<li>Fixed hideout crafts not supporting .jsonc /bonk</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.16",
+       "content_length": 151472,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 1598,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-07T22:15:00.000000Z",
+       "created_at": "2026-04-07T22:16:03.000000Z",
+       "updated_at": "2026-07-28T08:20:01.000000Z"
+      },
+      {
+       "id": 12977,
+       "hub_id": null,
+       "version": "2.0.15",
+       "description": "<ul>\n<li>Implemented random loot container support for customitemserviceextended</li>\n<li>Added save method to confighelper</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.15",
+       "content_length": 141736,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 49234,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-02-02T21:52:00.000000Z",
+       "created_at": "2026-02-02T21:52:47.000000Z",
+       "updated_at": "2026-07-28T07:58:57.000000Z"
+      },
+      {
+       "id": 13416,
+       "hub_id": null,
+       "version": "2.0.18",
+       "description": "<ul>\n<li>added new itemservice helper for adding items to blacklist</li>\n<li>fixed nuget package forcibly including the en.json locale for the salvage zones in your project /bonk</li>\n<li>fixed slothelper method and added support for creating new slot info</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.18",
+       "content_length": 157079,
+       "spt_version_constraint": "~4.0.2",
+       "downloads": 17712,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-11T22:24:00.000000Z",
+       "created_at": "2026-04-11T22:25:48.000000Z",
+       "updated_at": "2026-07-28T08:21:24.000000Z"
+      },
+      {
+       "id": 13486,
+       "hub_id": null,
+       "version": "2.0.20",
+       "description": "<p>Version so good it jumped a number!</p>\n<ul>\n<li>new hideout crafting expansion by pein, now supports multi-endproducts and endproducts with nested children</li>\n<li>reworked custom parent mapping into a server service + client attribute (also by pein)</li>\n<li>separated logic in the slothelper methods, added a new one</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.20",
+       "content_length": 167466,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 104012,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-25T04:15:00.000000Z",
+       "created_at": "2026-04-25T04:16:03.000000Z",
+       "updated_at": "2026-07-28T08:25:15.000000Z"
+      },
+      {
+       "id": 14222,
+       "hub_id": null,
+       "version": "2.0.22",
+       "description": "<ul>\n<li>FINALLY fixed salvage zones :prayge:</li>\n<li>salvage zone UI update + icon!</li>\n<li>add random craft result amount options</li>\n<li>initialized buyrestrictioncurrent for traderhelper barters (ty for the detailed bug report!)</li>\n<li>added client handling for random craft amounts</li>\n<li>added better validation warnings and a config for validation logging</li>\n<li>added fixplugintypesserialization patcher (thank you tarkin ❤️)</li>\n<li>added new quest service for making quest items</li>\n<li>removed dependency on spt customitemservice</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.22",
+       "content_length": 245907,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 3163,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-07-25T17:47:00.000000Z",
+       "created_at": "2026-07-25T17:47:29.000000Z",
+       "updated_at": "2026-07-28T09:55:31.000000Z"
+      },
+      {
+       "id": 14228,
+       "hub_id": null,
+       "version": "2.0.23",
+       "description": "<p>reduced the error logging to be behind config.\nMODDERS THAT USE COMMONLIB - ENABLE ITEM DEBUGGING IN THE CONFIG AND FIX YOUR SHIT</p>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.23",
+       "content_length": 245746,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 28598,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-07-26T04:25:00.000000Z",
+       "created_at": "2026-07-26T04:26:24.000000Z",
+       "updated_at": "2026-07-28T18:02:31.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 2426,
+     "hub_id": null,
+     "guid": "com.morebotsapi.tacticaltoaster",
+     "name": "MoreBotsAPI",
+     "slug": "morebotsapi",
+     "teaser": "API for making the implementation of custom bots easier",
+     "thumbnail": "https://files.sp-mod.com/mods/6Wb2mnMw9FZ5UICdern1nYkwGy7oyIWTtAouIN97.png",
+     "downloads": 124370,
+     "favourites_count": 555,
+     "endorsements_count": 28,
+     "detail_url": "https://sp-mod.com/mod/2426/morebotsapi",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2025-11-06T06:48:00.000000Z",
+     "created_at": "2025-11-06T06:36:01.000000Z",
+     "updated_at": "2026-09-06T14:28:03.000000Z",
+     "owner": {
+      "id": 7768,
+      "name": "TacticalToaster",
+      "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-08-11T22:12:09.000000Z",
+      "updated_at": "2026-09-26T19:08:41.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 22121,
+       "name": "Tron",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+       "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+       "created_at": "2022-08-31T05:49:04.000000Z",
+       "updated_at": "2026-10-05T16:42:55.000000Z"
+      },
+      {
+       "id": 30890,
+       "name": "GrooveypenguinX",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2023-05-07T19:55:52.000000Z",
+       "updated_at": "2026-10-04T21:13:58.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12304,
+       "hub_id": null,
+       "version": "1.1.0",
+       "description": "<h1>MoreBotsAPI 1.1.0 for SPT 4.0.X, tested with latest Fika for 4.0.4 (Coop and Headless)</h1>\n<p>I have tested both Coop and Headless on the latest Fika for SPT 4.0.4 and both my faction mods alongside this API work on it. When using Fika, MAKE SURE you have the client part (BepInEx folder, plugins and patchers) of my mods installed on the host, clients, and headless. Also, make sure you update to the latest WTT Common Lib that supports Fika now.</p>\n<ul>\n<li>Added some new API server functionality.</li>\n<li>Added new server config for debug logs and increasing bot cap on all maps by an int.</li>\n<li>By default this mod now increases the bot cap on all maps for 10 to account for the new factions. If you use a spawning mod, it is best to set this new value in the new server config to 0 and let those mods change the bot cap if they do.</li>\n<li>Added new server logger that only logs debug stuff if config value is set. (Should fix the warn messges that don’t cause problems from showing)</li>\n<li>Added show bot zones as a debug option (just shows the names at the center of spawnpoints).</li>\n<li>Fixed potential client error when checking for custom WildSpawnTypes.</li>\n<li>Changed license to CC BY-NC-SA 4.0</li>\n</ul>\n<p>VT link: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/ba7121d31feaabc6c0a213acbdc7da076b695aca61468fb5505ca6fd34bd757b?nocache=1\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/ba7121d31feaabc6c0a213acbdc7da076b695aca61468fb5505ca6fd34bd757b?nocache=1</a></p>\n",
+       "link": "https://sp-mod.com/mod/download/2426/morebotsapi/1.1.0",
+       "content_length": 34650,
+       "spt_version_constraint": "~4.0.4",
+       "downloads": 39362,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-11-13T03:57:00.000000Z",
+       "created_at": "2025-11-13T03:57:24.000000Z",
+       "updated_at": "2026-07-28T06:26:36.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 13412,
+   "hub_id": null,
+   "version": "3.0.3",
+   "description": "<p>Small hotfix</p>\n<ul>\n<li>Added achievement for killing Legion + 3 Legionnaires. More additions will be added down the road.</li>\n<li>Removed VIP keycard and Skeleton Key functionality temporarily. Could cause some weird interactions in combination with other mods and wasn’t working exactly how I wanted it to yet. Will get reworked in the future. The items themselves haven’t been removed in case someone already has them (to avoid borking profiles) but they aren’t acquirable for now.</li>\n<li>Removed some orphaned code.</li>\n</ul>\n<p>Folder layout has stayed the same so you can just overwrite the old files. Configs haven’t changed so you can skip overwriting those if you feel so inclined. Or just back them up and overwrite the new ones. Or just make the changes again. The world is your oyster.</p>\n<p>Back to the void ♥</p>\n",
+   "link": "https://sp-mod.com/mod/download/1192/raid-overhaul/3.0.3",
+   "content_length": 129268476,
+   "spt_version_constraint": "4.0.13",
+   "downloads": 10362,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-04-11T00:43:00.000000Z",
+   "created_at": "2026-04-11T00:43:53.000000Z",
+   "updated_at": "2026-07-28T08:21:17.000000Z",
+   "dependencies": [
+    {
+     "id": 1426,
+     "hub_id": 1976,
+     "guid": "com.arys.unitytoolkit",
+     "name": "UnityToolkit",
+     "slug": "unitytoolkit",
+     "teaser": "A collection of Unity libraries for client modders to make writing efficient, allocation-free code easier.",
+     "thumbnail": "",
+     "downloads": 275469,
+     "favourites_count": 345,
+     "endorsements_count": 20,
+     "detail_url": "https://sp-mod.com/mod/1426/unitytoolkit",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2024-05-20T21:40:00.000000Z",
+     "created_at": "2024-05-20T21:40:32.000000Z",
+     "updated_at": "2026-09-06T22:57:04.000000Z",
+     "owner": {
+      "id": 13652,
+      "name": "Arys",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/kMKmevtkLA6hP3tfnVyCilGHyTxGp8GOKbvBHpVY_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/fe2e005ba43d701886614c464c1f9039694e30e4_1280w.webp",
+      "created_at": "2022-01-18T19:35:58.000000Z",
+      "updated_at": "2026-10-03T15:42:26.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 116840,
+       "name": "tylevo",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2FwZdmXyP7Hl0GmetDZvBvsWf5eaThlAdIpvP3wc_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2026-06-22T22:41:56.000000Z",
+       "updated_at": "2026-10-05T03:13:07.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12026,
+       "hub_id": null,
+       "version": "2.0.1",
+       "description": "<h2>In this release</h2>\n<ul>\n<li>Removed redundant code</li>\n<li>Removed FixPluginTypesSerialization\n<ul>\n<li>Unfortunately this plugin caused conflicts with some other mods so the decision was made to remove it</li>\n</ul>\n</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/1426/unitytoolkit/2.0.1",
+       "content_length": 500753,
+       "spt_version_constraint": ">=4.0.0 <4.1.0",
+       "downloads": 52194,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-10-25T20:46:00.000000Z",
+       "created_at": "2025-10-25T20:48:51.000000Z",
+       "updated_at": "2026-08-01T20:39:03.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 2310,
+     "hub_id": 3025,
+     "guid": "com.wtt.commonlib",
+     "name": "WTT - CommonLib",
+     "slug": "wtt-commonlib",
+     "teaser": "A modding utility library that eliminates boilerplate when adding custom items, quests, characters, and more to SPT",
+     "thumbnail": "https://files.sp-mod.com/mods/FVbVeBHaQuaij0cbN9akYctRp36WNPNU6FYzarMw.png",
+     "downloads": 431789,
+     "favourites_count": 1302,
+     "endorsements_count": 73,
+     "detail_url": "https://sp-mod.com/mod/2310/wtt-commonlib",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": true,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 17,
+     "published_at": "2025-09-15T02:44:00.000000Z",
+     "created_at": "2025-09-15T02:44:54.000000Z",
+     "updated_at": "2026-08-23T15:19:33.000000Z",
+     "owner": {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 22121,
+       "name": "Tron",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+       "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+       "created_at": "2022-08-31T05:49:04.000000Z",
+       "updated_at": "2026-10-05T16:42:55.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 13398,
+       "hub_id": null,
+       "version": "2.0.17",
+       "description": "<ul>\n<li>fixed hideout crafts service not supporting anything but arrays /bonk</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.17",
+       "content_length": 151817,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 5072,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-08T13:26:00.000000Z",
+       "created_at": "2026-04-08T13:26:58.000000Z",
+       "updated_at": "2026-07-28T08:20:36.000000Z"
+      },
+      {
+       "id": 13391,
+       "hub_id": null,
+       "version": "2.0.16",
+       "description": "<ul>\n<li>Added new helper to slothelper to add ids by name</li>\n<li>Added fix custom item sort order patch (thanks Pein! ❤️ )</li>\n<li>Added new “Salvage” zones to possible quest types</li>\n<li>Added locales for the salvage zone interactions</li>\n<li>Fixed hideout crafts not supporting .jsonc /bonk</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.16",
+       "content_length": 151472,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 1598,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-07T22:15:00.000000Z",
+       "created_at": "2026-04-07T22:16:03.000000Z",
+       "updated_at": "2026-07-28T08:20:01.000000Z"
+      },
+      {
+       "id": 12977,
+       "hub_id": null,
+       "version": "2.0.15",
+       "description": "<ul>\n<li>Implemented random loot container support for customitemserviceextended</li>\n<li>Added save method to confighelper</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.15",
+       "content_length": 141736,
+       "spt_version_constraint": "~4.0.1",
+       "downloads": 49234,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-02-02T21:52:00.000000Z",
+       "created_at": "2026-02-02T21:52:47.000000Z",
+       "updated_at": "2026-07-28T07:58:57.000000Z"
+      },
+      {
+       "id": 13416,
+       "hub_id": null,
+       "version": "2.0.18",
+       "description": "<ul>\n<li>added new itemservice helper for adding items to blacklist</li>\n<li>fixed nuget package forcibly including the en.json locale for the salvage zones in your project /bonk</li>\n<li>fixed slothelper method and added support for creating new slot info</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.18",
+       "content_length": 157079,
+       "spt_version_constraint": "~4.0.2",
+       "downloads": 17712,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-11T22:24:00.000000Z",
+       "created_at": "2026-04-11T22:25:48.000000Z",
+       "updated_at": "2026-07-28T08:21:24.000000Z"
+      },
+      {
+       "id": 13486,
+       "hub_id": null,
+       "version": "2.0.20",
+       "description": "<p>Version so good it jumped a number!</p>\n<ul>\n<li>new hideout crafting expansion by pein, now supports multi-endproducts and endproducts with nested children</li>\n<li>reworked custom parent mapping into a server service + client attribute (also by pein)</li>\n<li>separated logic in the slothelper methods, added a new one</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.20",
+       "content_length": 167466,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 104012,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-04-25T04:15:00.000000Z",
+       "created_at": "2026-04-25T04:16:03.000000Z",
+       "updated_at": "2026-07-28T08:25:15.000000Z"
+      },
+      {
+       "id": 14222,
+       "hub_id": null,
+       "version": "2.0.22",
+       "description": "<ul>\n<li>FINALLY fixed salvage zones :prayge:</li>\n<li>salvage zone UI update + icon!</li>\n<li>add random craft result amount options</li>\n<li>initialized buyrestrictioncurrent for traderhelper barters (ty for the detailed bug report!)</li>\n<li>added client handling for random craft amounts</li>\n<li>added better validation warnings and a config for validation logging</li>\n<li>added fixplugintypesserialization patcher (thank you tarkin ❤️)</li>\n<li>added new quest service for making quest items</li>\n<li>removed dependency on spt customitemservice</li>\n</ul>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.22",
+       "content_length": 245907,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 3163,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-07-25T17:47:00.000000Z",
+       "created_at": "2026-07-25T17:47:29.000000Z",
+       "updated_at": "2026-07-28T09:55:31.000000Z"
+      },
+      {
+       "id": 14228,
+       "hub_id": null,
+       "version": "2.0.23",
+       "description": "<p>reduced the error logging to be behind config.\nMODDERS THAT USE COMMONLIB - ENABLE ITEM DEBUGGING IN THE CONFIG AND FIX YOUR SHIT</p>\n",
+       "link": "https://sp-mod.com/mod/download/2310/wtt-commonlib/2.0.23",
+       "content_length": 245746,
+       "spt_version_constraint": "~4.0.13",
+       "downloads": 28598,
+       "fika_compatibility": "compatible",
+       "published_at": "2026-07-26T04:25:00.000000Z",
+       "created_at": "2026-07-26T04:26:24.000000Z",
+       "updated_at": "2026-07-28T18:02:31.000000Z"
+      }
+     ],
+     "category": {
+      "id": 17,
+      "hub_id": 28,
+      "title": "Other",
+      "slug": "other",
+      "description": ""
+     }
+    },
+    {
+     "id": 2426,
+     "hub_id": null,
+     "guid": "com.morebotsapi.tacticaltoaster",
+     "name": "MoreBotsAPI",
+     "slug": "morebotsapi",
+     "teaser": "API for making the implementation of custom bots easier",
+     "thumbnail": "https://files.sp-mod.com/mods/6Wb2mnMw9FZ5UICdern1nYkwGy7oyIWTtAouIN97.png",
+     "downloads": 124370,
+     "favourites_count": 555,
+     "endorsements_count": 28,
+     "detail_url": "https://sp-mod.com/mod/2426/morebotsapi",
+     "fika_compatibility": true,
+     "featured": false,
+     "contains_ads": false,
+     "shows_profile_binding_notice": false,
+     "cheat_notice": false,
+     "category_id": 5,
+     "published_at": "2025-11-06T06:48:00.000000Z",
+     "created_at": "2025-11-06T06:36:01.000000Z",
+     "updated_at": "2026-09-06T14:28:03.000000Z",
+     "owner": {
+      "id": 7768,
+      "name": "TacticalToaster",
+      "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+      "cover_photo_url": null,
+      "created_at": "2021-08-11T22:12:09.000000Z",
+      "updated_at": "2026-09-26T19:08:41.000000Z"
+     },
+     "additional_authors": [
+      {
+       "id": 22121,
+       "name": "Tron",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+       "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+       "created_at": "2022-08-31T05:49:04.000000Z",
+       "updated_at": "2026-10-05T16:42:55.000000Z"
+      },
+      {
+       "id": 30890,
+       "name": "GrooveypenguinX",
+       "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+       "cover_photo_url": null,
+       "created_at": "2023-05-07T19:55:52.000000Z",
+       "updated_at": "2026-10-04T21:13:58.000000Z"
+      }
+     ],
+     "versions": [
+      {
+       "id": 12304,
+       "hub_id": null,
+       "version": "1.1.0",
+       "description": "<h1>MoreBotsAPI 1.1.0 for SPT 4.0.X, tested with latest Fika for 4.0.4 (Coop and Headless)</h1>\n<p>I have tested both Coop and Headless on the latest Fika for SPT 4.0.4 and both my faction mods alongside this API work on it. When using Fika, MAKE SURE you have the client part (BepInEx folder, plugins and patchers) of my mods installed on the host, clients, and headless. Also, make sure you update to the latest WTT Common Lib that supports Fika now.</p>\n<ul>\n<li>Added some new API server functionality.</li>\n<li>Added new server config for debug logs and increasing bot cap on all maps by an int.</li>\n<li>By default this mod now increases the bot cap on all maps for 10 to account for the new factions. If you use a spawning mod, it is best to set this new value in the new server config to 0 and let those mods change the bot cap if they do.</li>\n<li>Added new server logger that only logs debug stuff if config value is set. (Should fix the warn messges that don’t cause problems from showing)</li>\n<li>Added show bot zones as a debug option (just shows the names at the center of spawnpoints).</li>\n<li>Fixed potential client error when checking for custom WildSpawnTypes.</li>\n<li>Changed license to CC BY-NC-SA 4.0</li>\n</ul>\n<p>VT link: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/ba7121d31feaabc6c0a213acbdc7da076b695aca61468fb5505ca6fd34bd757b?nocache=1\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/ba7121d31feaabc6c0a213acbdc7da076b695aca61468fb5505ca6fd34bd757b?nocache=1</a></p>\n",
+       "link": "https://sp-mod.com/mod/download/2426/morebotsapi/1.1.0",
+       "content_length": 34650,
+       "spt_version_constraint": "~4.0.4",
+       "downloads": 39362,
+       "fika_compatibility": "compatible",
+       "published_at": "2025-11-13T03:57:00.000000Z",
+       "created_at": "2025-11-13T03:57:24.000000Z",
+       "updated_at": "2026-07-28T06:26:36.000000Z"
+      }
+     ],
+     "category": {
+      "id": 5,
+      "hub_id": 22,
+      "title": "Bots",
+      "slug": "bots",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": 737,
+   "hub_id": 14085,
+   "version": "2.7.1",
+   "description": "<p><strong>LTS Build 1</strong></p>\n<ul>\n<li>Should have restored compatibility with Fika? Needs more testing but I haven’t had any issues.</li>\n<li>Fixed exfil lockdown event not actually locking the zones.</li>\n<li>Restored time changes. Defaults to enabled but can be changed in the f12 menu. (Not tested across fika instances, will probably be wonky if you’re in different timezones since I’m not doing any syncing for it but I wanted to push this before I disappear again)</li>\n<li>Fixed legion bugs. Mostly related to rig layouts being borked.</li>\n<li>Added new bundles for the rhino, legion armor and legion facemask. Also replaced the custom nice comm backpack with a new oakley backpack and the armless osprey with a new rig. Easier for me to remake them with new assets than keep updating the old ones.</li>\n<li>Added in a new smaller version of the keytool and an upgraded army wallet.</li>\n<li>Fixed custom key and keycard not working. Used a similar implementation to Boogles skeleton key since I don’t have the time or energy to do this all from scratch so all credit should go their way</li>\n<li>Corrected the casing in import paths for consistency courtesy of forcedroidbrain. Should resolve any errors related to botInfo.json pathing.</li>\n<li>Maybe some other shit, I can’t remember. This has been in the oven for a while lol</li>\n</ul>\n<p>Due to the large amount of bugs in and around 3.11.3 + the urge to experiment with more bundles I came back to finish this update. However, I’m still going to be on an indefinite hiatus so don’t expect any releases/updates for quite a while. Feel free to put in pr’s on my github if you find anything broken but I probably won’t be getting to it in a timely manner lol. I really appreciate all the support nonetheless</p>\n<p>That’s all for now, enjoy</p>\n<p>Back to the void</p>\n",
+   "link": "https://sp-mod.com/mod/download/1192/raid-overhaul/2.7.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 20973,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-04-24T15:36:23.000000Z",
+   "created_at": "2025-04-24T15:36:23.000000Z",
+   "updated_at": "2026-05-14T01:56:19.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1192/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1192/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1192/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1192/versions",
+  "per_page": 50,
+  "to": 3,
+  "total": 3
+ }
+}

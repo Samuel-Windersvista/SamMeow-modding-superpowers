@@ -1,0 +1,39 @@
+{
+ "id": 2843,
+ "hub_id": null,
+ "guid": "com.vultify.blackout",
+ "name": "Blackout",
+ "slug": "blackout",
+ "teaser": "Recreates the live EFT Blackout event on Labs. The power dies, the facility goes dark. Real darkness, extract lockdown, keypad code doors.",
+ "thumbnail": "https://files.sp-mod.com/mods/TUbFUbxJ2fMDesjdhv96XyJvUvXlGEoLpy4tF64F.png",
+ "downloads": 27083,
+ "favourites_count": 161,
+ "endorsements_count": 12,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">Description</div>\n<div class=\"tab-content\"><p>Recreates the live EFT “Blackout” event on Labs. Seconds into the raid the generators die, the lights go out, and you run the facility on emergency power and if you use WTT Black division, Wedge and his guard patrol the floors.</p>\n<p>Configure event roll chance in the config.json</p>\n<h3>The blackout</h3>\n<ul>\n<li>Darkness Done in my own image. BSGs version and settings for darkness were unobtainable (by me at least)</li>\n<li>The live event’s power-cut sound and intercom announcement through the map’s own PA speakers</li>\n<li>Amber emergency floods at the real event positions, keycard LEDs stay lit like live keeps them</li>\n<li>Extract lockdown: only the two gates are live, and one press of the Admin Office Room power switch opens both</li>\n<li>Keycard doors take a fresh 4-digit code each raid instead of swipes, written on the admin office whiteboard in the event’s own marker digits</li>\n<li>Admin key to unlock power room is now in Managers Office. (Key for that room is required in order to reach it)</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Recommended</div>\n<div class=\"tab-content\"><p>-WTT Black Divsion: Set <code>LabsStartchance</code> to 100 and <code>LabsGateChance</code> to 100</p></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Install Instructions</div>\n<div class=\"tab-content\"><ol>\n<li>Extract the archive</li>\n<li>Drop the <code>BepInEx</code> and <code>SPT</code> folders into your SPT root directory</li>\n<li>Requires WTT-CommonLib</li>\n<li>Load into Labs</li>\n</ol></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Known Limitations / Bugs</div>\n<div class=\"tab-content\"><ul>\n<li>Some issues with fika headless maybe. Test it out of if there’s issues then report them to my discord thread.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Support</div>\n<div class=\"tab-content\"><p>Found a bug or have a question? Leave a comment here, or reach out in my thread on the SPT Discord: <a target=\"_blank\" class=\"external-link\" href=\"https://discord.com/channels/875684761291599922/1521972310595338260\" rel=\"noreferrer noopener\">https://discord.com/channels/875684761291599922/1521972310595338260</a></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/2843/blackout",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-07-25T06:36:00.000000Z",
+ "created_at": "2026-07-25T06:26:57.000000Z",
+ "updated_at": "2026-09-20T21:04:11.000000Z",
+ "owner": {
+  "id": 52241,
+  "name": "Vultify",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/4457233962ecb2b7d1e522ec0ad81c03210096ee_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2024-05-20T01:39:49.000000Z",
+  "updated_at": "2026-10-10T20:32:54.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

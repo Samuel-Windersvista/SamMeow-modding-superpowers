@@ -1,0 +1,48 @@
+{
+ "id": 3023,
+ "hub_id": null,
+ "guid": "com.cactuspie.containerquickloot.415",
+ "name": "CactusPie's Transfer Loot Into Container Automatically",
+ "slug": "cactuspies-transfer-loot-into-container-automatically",
+ "teaser": "Looting an item will now place it in a matching container, such as a dogtag case or a document case",
+ "thumbnail": "https://files.sp-mod.com/mods/dDNhf72rB4HEyhg1iP3mGWWwy4EYqqyngLYVlRdo.png",
+ "downloads": 1121,
+ "favourites_count": 13,
+ "endorsements_count": 7,
+ "description": "<h3>Description</h3>\n<p>Using <code>ctrl+click</code> on a loot item will move it into a matching container marked with a <code>@loot</code> tag. For instance, if you mark your Documents case with a <code>@loot</code> tag and put it in your secure container, all keys you loot using <code>ctrl+click</code> will be placed in that documents case automatically. Works only in raid - will not work with your hideout stash!</p>\n<h3>Installation</h3>\n<p>Copy <code>CactusPie.ContainerQuickLoot.dll</code> to <code>BepInEx\\plugins</code> directory</p>\n<h3>Settings (F12 menu)</h3>\n<p><em>Enable for Ctrl+click</em> - whether or not the items should be automatically transferred to containers when moving them using <code>ctrl+click</code> in the loot menu</p>\n<p><em>Enable for loose loot</em> - whether or not loose loot you pick up should be automatically palced in a container. This works for all the loot you just find lying around on the ground, shelves, etc.</p>\n<h3>Usage</h3>\n<p>Put a container in your inventory. For instance a Documents case:\nRight click the container and select the “tag” option\nSet a <code>@loot</code> tag for the item.\nCtrl+clicking a compatible loot item (such as a key) in raid or picking up loose loot will now put it in the documents case\nRemoving the <code>@loot</code> tag will stop the items from being automatically put in it</p>\n<p>You can also add numbered suffixes to <code>@loot</code> tags in order to give a certain container a priority. For instance a container with <code>@loot2</code> tag will take higher priority than a container with <code>@loot3</code> tag. Not specifying any suffix assumes a “0” suffix/priority.</p>\n<hr />\n<p>Examples:</p>\n<p><code>@loot</code> will take higher priority than <code>@loot1</code></p>\n<p><code>@loot10</code> will take higher priorty than <code>@loot20</code></p>\n<p>In case of two containers with the same <code>@loot</code> tag, the game will automatically assign a higher priority to one</p>\n<hr />\n<p>Credits:</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/CactusPie\" rel=\"noreferrer noopener\">https://github.com/CactusPie</a> (original mod)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/reysonk\" rel=\"noreferrer noopener\">https://github.com/reysonk</a> (Support for recursive containers)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/ArchmageTony\" rel=\"noreferrer noopener\">https://github.com/ArchmageTony</a> (3.8.x port)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://dev.sp-tarkov.com/ShinCFN\" rel=\"noreferrer noopener\">https://dev.sp-tarkov.com/ShinCFN</a> (3.10.x port)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://dev.sp-tarkov.com/bepis69\" rel=\"noreferrer noopener\">https://dev.sp-tarkov.com/bepis69</a> (3.10.x reupload)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://gitea.com/garlicbreadtcg\" rel=\"noreferrer noopener\">https://gitea.com/garlicbreadtcg</a> (3.11.x port)</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://github.com/DIASILEDU/SPT-ContainerQuickLoot\" rel=\"noreferrer noopener\">https://github.com/DIASILEDU/SPT-ContainerQuickLoot</a> (4.0.13 port)</p>\n",
+ "detail_url": "https://sp-mod.com/mod/3023/cactuspies-transfer-loot-into-container-automatically",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 4,
+ "published_at": "2026-09-13T00:59:00.000000Z",
+ "created_at": "2026-09-13T00:50:01.000000Z",
+ "updated_at": "2026-10-02T16:35:54.000000Z",
+ "owner": {
+  "id": 34606,
+  "name": "hayk4500",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/d2dXOqZRvmovrap79FxUcCsJnokNO0TBOwiueqmy_256w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/d4f30a1e75c68f88b4980d379c2106138d932296_1280w.webp",
+  "created_at": "2023-07-29T13:32:55.000000Z",
+  "updated_at": "2026-10-05T19:23:26.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 29315,
+   "name": "CactusPie",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/750af3e70705360132ca4bac33f06e8536a05070_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2023-03-27T06:24:49.000000Z",
+   "updated_at": "2026-08-10T19:42:18.000000Z"
+  }
+ ],
+ "category": {
+  "id": 4,
+  "hub_id": 21,
+  "title": "Items",
+  "slug": "items",
+  "description": ""
+ }
+}

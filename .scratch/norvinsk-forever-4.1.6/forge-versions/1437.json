@@ -1,0 +1,190 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 11791,
+   "hub_id": null,
+   "version": "2.0.0",
+   "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>No functionality change</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.0.0",
+   "content_length": 5517,
+   "spt_version_constraint": "~4.0.0",
+   "downloads": 17840,
+   "fika_compatibility": "compatible",
+   "published_at": "2025-10-11T22:51:00.000000Z",
+   "created_at": "2025-10-11T22:51:34.000000Z",
+   "updated_at": "2026-07-28T06:02:48.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13433,
+   "hub_id": null,
+   "version": "2.1.0",
+   "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>New Features</p>\n<ul>\n<li>Configurable number of reps</li>\n<li>Configurable weighted skill selection (no longer just Strength+Endurance)</li>\n<li>Configurable Energy/Hydration</li>\n<li>Skill exp multipliers are now every 10 levels instead of 0, 10 and 25</li>\n<li>Non Easy-Mode is fully configurable with options for speed, size, and difficulty (Exponential or Linear)</li>\n</ul>\n<p>Now includes a client side!</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.1.0",
+   "content_length": 12284,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 548,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-04-13T23:26:00.000000Z",
+   "created_at": "2026-04-13T23:26:53.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 13441,
+   "hub_id": null,
+   "version": "2.1.1",
+   "description": "<h3><strong>This version will only work for SPT 4.0.x</strong></h3>\n<p>Changes</p>\n<ul>\n<li>Load Order PostDB + 420</li>\n<li>Adjusted Exponential to be more… exponential</li>\n</ul>\n<p>If you have an issue, putting it on the mod comments with zero information will get you zero results. Go to the SPT Discord.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.1.1",
+   "content_length": 12332,
+   "spt_version_constraint": "~4.0 <4.1.0",
+   "downloads": 13698,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-04-15T22:42:00.000000Z",
+   "created_at": "2026-04-15T22:43:06.000000Z",
+   "updated_at": "2026-08-01T20:39:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14344,
+   "hub_id": null,
+   "version": "2.2.0",
+   "description": "<h3><strong>This version will only work for SPT 4.1.x</strong></h3>\n<p>Updated to 4.1</p>\n<p>Added editing the config through SIC - mod no longer ships with the config.json, it only exists on first run of SPT Server</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.2.0",
+   "content_length": 14962,
+   "spt_version_constraint": "~4.1",
+   "downloads": 6515,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-01T22:35:00.000000Z",
+   "created_at": "2026-08-01T22:36:37.000000Z",
+   "updated_at": "2026-08-02T06:02:12.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15075,
+   "hub_id": null,
+   "version": "2.2.1",
+   "description": "<h3><strong>This version will only work for SPT 4.1.3+</strong></h3>\n<p>Bugs Squashed</p>\n<ul>\n<li>Resolved client/server mismatched skill data by removing client side logic (still ships with a client mod but it does nothing)</li>\n</ul>\n<p>Note: Any skills you want to use just now require a weight OVER 0. If you set it to 0 then it won’t be a reward. The value you set it to does not matter anymore.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.2.1",
+   "content_length": 12986,
+   "spt_version_constraint": "~4.1.3",
+   "downloads": 716,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-29T20:42:00.000000Z",
+   "created_at": "2026-08-29T20:42:49.000000Z",
+   "updated_at": "2026-08-30T23:47:52.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15100,
+   "hub_id": null,
+   "version": "2.2.2",
+   "description": "<h3><strong>This version will only work for SPT 4.1.3+</strong></h3>\n<p>Changes</p>\n<ul>\n<li>Adjusted config load to work properly with SIC and added callback to reapply changes</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/2.2.2",
+   "content_length": 13031,
+   "spt_version_constraint": "~4.1.3",
+   "downloads": 6107,
+   "fika_compatibility": "compatible",
+   "published_at": "2026-08-30T23:47:00.000000Z",
+   "created_at": "2026-08-30T23:47:32.000000Z",
+   "updated_at": "2026-08-30T23:48:06.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4094,
+   "hub_id": 10058,
+   "version": "1.0.0",
+   "description": "<p><strong>This version will only work for SPT 3.8.X</strong></p>\n<p>Initial Release</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/1.0.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.8.0",
+   "downloads": 2269,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-05-26T01:50:39.000000Z",
+   "created_at": "2024-05-26T01:50:39.000000Z",
+   "updated_at": "2026-05-14T04:02:56.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3759,
+   "hub_id": 10492,
+   "version": "1.1.0",
+   "description": "<p><strong>This version will only work for SPT 3.9.X</strong></p>\n<p>Updated to 3.9.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/1.1.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 4985,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-06T19:39:33.000000Z",
+   "created_at": "2024-07-06T19:39:33.000000Z",
+   "updated_at": "2026-05-14T03:56:09.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2364,
+   "hub_id": 12231,
+   "version": "1.2.0",
+   "description": "<p><strong>This version will only work for SPT 3.10.x</strong></p>\n<p>3.10 Update</p>\n<ul>\n<li>Increased experience gains</li>\n<li>Halved duration of Muscle Pain (timer configurable)</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 5014,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-11-26T15:06:09.000000Z",
+   "created_at": "2024-11-26T15:06:09.000000Z",
+   "updated_at": "2026-05-14T03:20:13.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 1213,
+   "hub_id": 13563,
+   "version": "1.3.0",
+   "description": "<h3><strong>This version will only work for SPT 3.11.x</strong></h3>\n<p>3.11 Update</p>\n<p>Changes</p>\n<ul>\n<li>Experience Multiplier exposed to config</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/1437/simple-workout-qte/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "~3.11.0",
+   "downloads": 10376,
+   "fika_compatibility": "unknown",
+   "published_at": "2025-03-15T20:26:26.000000Z",
+   "created_at": "2025-03-15T20:26:26.000000Z",
+   "updated_at": "2026-05-14T02:07:50.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1437/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1437/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1437/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1437/versions",
+  "per_page": 50,
+  "to": 10,
+  "total": 10
+ }
+}

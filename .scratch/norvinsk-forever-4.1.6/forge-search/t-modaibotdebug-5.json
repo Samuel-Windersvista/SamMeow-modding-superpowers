@@ -1,0 +1,447 @@
+{
+ "term": "MOD -AI -BotDebug",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 2441,
+    "hub_id": null,
+    "guid": "com.madmanbeavis.narconet",
+    "name": "NARCONet - Mod Sync",
+    "slug": "narconet-mod-sync",
+    "teaser": "One Connection. Every Mod. Every Setting. More Reliable than your dealer.",
+    "thumbnail": "https://files.sp-mod.com/mods/4NouoXA6ejwVZ8WpJra6nUljkYLdGCCVcHCHYUir.png",
+    "downloads": 14732,
+    "favourites_count": 48,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/2441/narconet-mod-sync",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-11-12T13:25:00.000000Z",
+    "created_at": "2025-11-12T18:22:49.000000Z",
+    "updated_at": "2026-09-15T22:22:24.000000Z",
+    "owner": {
+     "id": 63811,
+     "name": "madmanbeavis",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-09-14T08:26:21.000000Z",
+     "updated_at": "2026-08-10T19:48:16.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 69402,
+      "name": "flir",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/DKLerEnM8Sr3SaE9jjPwZdeDpm5UERbKUMqsS0s0_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-12-12T12:24:24.000000Z",
+      "updated_at": "2026-09-16T12:46:00.000000Z"
+     }
+    ],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2851,
+    "hub_id": null,
+    "guid": "com.nevek20.sptmodmanager",
+    "name": "SPT Mod Manager",
+    "slug": "spt-mod-manager",
+    "teaser": "Open-source mod manager for SPT featuring easy installation, management and Forge integration.",
+    "thumbnail": "https://files.sp-mod.com/mods/vrJPEuHFoXvwoCAoMn5Zzo9JM3ekLGPqfjOjeZ4a.png",
+    "downloads": 28569,
+    "favourites_count": 145,
+    "endorsements_count": 33,
+    "detail_url": "https://sp-mod.com/mod/2851/spt-mod-manager",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-07-27T19:03:00.000000Z",
+    "created_at": "2026-07-27T19:09:50.000000Z",
+    "updated_at": "2026-09-30T15:25:28.000000Z",
+    "owner": {
+     "id": 117466,
+     "name": "TioEmir",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/fPjDjjdxZLnsV2U53bPIJ0YDguFdUNcCRBU8nTp5_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-07-03T21:30:01.000000Z",
+     "updated_at": "2026-10-04T20:21:31.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3038,
+    "hub_id": null,
+    "guid": "com.blacksite.modmanager",
+    "name": "Blacksite Mod Manager",
+    "slug": "blacksite-mod-manager",
+    "teaser": "Blacksite Mod Manager is an ultra-fast desktop app for Single Player Tushonka (SPT). Features 1-click mod installs, auto dependency resolution, parallel archive extraction, an in-app config editor, conflict detection, and an integrated launcher.",
+    "thumbnail": "https://files.sp-mod.com/mods/8Tizzrnaf31eOvwPbU0CBDYfYe6HYa6XgZDECuvF.jpg",
+    "downloads": 1306,
+    "favourites_count": 9,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/3038/blacksite-mod-manager",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-18T07:29:00.000000Z",
+    "created_at": "2026-09-18T07:23:35.000000Z",
+    "updated_at": "2026-09-22T07:40:34.000000Z",
+    "owner": {
+     "id": 55880,
+     "name": "Manpig03",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/lSatWwDKOJMz8GPYns9OdI7IDmEaQDmD7KXRFLGb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-07-07T05:39:27.000000Z",
+     "updated_at": "2026-10-04T21:43:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3083,
+    "hub_id": null,
+    "guid": "com.hj.modsource",
+    "name": "Hj's Mod Source",
+    "slug": "hjs-mod-source",
+    "teaser": "See which mod added what",
+    "thumbnail": "https://files.sp-mod.com/mods/a58M5EaTtl9uVfHftBNe8qJavelmthBkLbCAFHMN.jpg",
+    "downloads": 783,
+    "favourites_count": 19,
+    "endorsements_count": 16,
+    "detail_url": "https://sp-mod.com/mod/3083/hjs-mod-source",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2026-09-29T23:52:00.000000Z",
+    "created_at": "2026-09-29T23:44:56.000000Z",
+    "updated_at": "2026-10-01T09:44:50.000000Z",
+    "owner": {
+     "id": 2059,
+     "name": "Hj",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/R7T9Uom9mp9FnxyIGz44xarnoLa15G4Bvi68xk82_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/5472e31aa1d16aaa23a05df13c78a43345d5c9bb_1280w.webp",
+     "created_at": "2021-01-11T10:39:08.000000Z",
+     "updated_at": "2026-10-05T16:48:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 3029,
+    "hub_id": null,
+    "guid": "com.dizzlow.impactcue",
+    "name": "ImpactCue-UI-MOD",
+    "slug": "impactcue-ui-mod",
+    "teaser": " Hit feedback, kill feedback, tactical HUD elements, raid information, custom sounds, weapon icons",
+    "thumbnail": "https://files.sp-mod.com/mods/ORtUIsaaBqTfRH0K4BtPQ1vsx6QiCKxsH1lZxTcv.png",
+    "downloads": 8438,
+    "favourites_count": 64,
+    "endorsements_count": 43,
+    "detail_url": "https://sp-mod.com/mod/3029/impactcue-ui-mod",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-14T20:03:00.000000Z",
+    "created_at": "2026-09-14T18:52:53.000000Z",
+    "updated_at": "2026-09-29T14:27:23.000000Z",
+    "owner": {
+     "id": 123884,
+     "name": "dizzlowg",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/vt9vsiscu4Wx0uVVUh51KLZFkdo35Dmr9zgFhDlb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2026-09-11T02:28:11.000000Z",
+     "updated_at": "2026-10-04T09:12:32.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2732,
+    "hub_id": null,
+    "guid": "com.cccpvs.questfiltermod",
+    "name": "Quest Filter Mod",
+    "slug": "quest-filter-mod",
+    "teaser": "A mod for changing quests and a random quest generator with rewards.",
+    "thumbnail": "https://files.sp-mod.com/mods/PvR8x4eRerSDtQAl2MhJriJ5s5YXw6AaZp3LFkOS.png",
+    "downloads": 2019,
+    "favourites_count": 11,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2732/quest-filter-mod",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 7,
+    "published_at": "2026-06-10T19:19:00.000000Z",
+    "created_at": "2026-06-10T19:12:40.000000Z",
+    "updated_at": "2026-09-20T10:13:47.000000Z",
+    "owner": {
+     "id": 87648,
+     "name": "cccpvs",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/J5p4QnebjRQMDUpCliibfGVok47Uk1rd3cmeByFr_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/UiUiDyIPjK6TWt862xZvP8BhqbnppBvBbCEoCBna_1280w.webp",
+     "created_at": "2025-10-30T14:46:21.000000Z",
+     "updated_at": "2026-10-04T11:56:55.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 7,
+     "hub_id": 24,
+     "title": "Quests",
+     "slug": "quests",
+     "description": ""
+    }
+   },
+   {
+    "id": 2431,
+    "hub_id": null,
+    "guid": "com.pein.fpvdronemod",
+    "name": "FPV Drone Mod",
+    "slug": "fpv-drone-mod",
+    "teaser": "Adds controllable kamikaze and reconnaissance drones to Tushonka",
+    "thumbnail": "https://files.sp-mod.com/mods/H8MP04024DpOZK0L36taQ5OB4c2RnCD2yhHOxP0R.png",
+    "downloads": 26365,
+    "favourites_count": 68,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/2431/fpv-drone-mod",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2025-11-08T17:33:00.000000Z",
+    "created_at": "2025-11-08T16:18:15.000000Z",
+    "updated_at": "2026-10-03T00:21:30.000000Z",
+    "owner": {
+     "id": 12179,
+     "name": "pein",
+     "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+     "created_at": "2021-12-14T17:06:03.000000Z",
+     "updated_at": "2026-09-20T09:07:35.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 119111,
+      "name": "Manimal1920",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/GqCEb1x0m8HH6UEQ1R4C7YtvyMxSO5TWVMUzSYUQ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2026-07-30T21:56:19.000000Z",
+      "updated_at": "2026-10-05T16:46:55.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2462,
+    "hub_id": null,
+    "guid": "com.lycorisoni.fleaadjustments",
+    "name": "LycorisOni's FleaAdjustment Mod",
+    "slug": "lycorisonis-fleaadjustment-mod",
+    "teaser": "A configurable Single Player T***** mod that allows you to adjust flea market prices with a simple multiplier or advanced range-based pricing. With even more precision with a section to adjust specific items.",
+    "thumbnail": "https://files.sp-mod.com/mods/z0CFqzOKHhT5YPHf2RLwnhJBsYav1JcpFyVBOjzW.jpg",
+    "downloads": 1815,
+    "favourites_count": 1,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2462/lycorisonis-fleaadjustment-mod",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-11-23T17:06:00.000000Z",
+    "created_at": "2025-11-23T21:58:41.000000Z",
+    "updated_at": "2026-07-28T07:02:49.000000Z",
+    "owner": {
+     "id": 63875,
+     "name": "LycorisOni",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/0424cee66e082ce2ea18ed98818ae29313a90d0f_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/b04c2b4d5a172bdead6098a7befbc86bb39ecd32.jpg",
+     "created_at": "2024-09-15T05:15:47.000000Z",
+     "updated_at": "2026-10-02T00:28:30.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2514,
+    "hub_id": null,
+    "guid": "hiop.spt.mod.viewer",
+    "name": "SPTModViewer",
+    "slug": "sptmodviewer",
+    "teaser": "Allows you to track the status of mods relative to the Forge site",
+    "thumbnail": "https://files.sp-mod.com/mods/5aie7h0e2RUSMFS6AjyoW1H7Fi6h2WMpeiJF6T49.png",
+    "downloads": 4139,
+    "favourites_count": 13,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2514/sptmodviewer",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2025-12-27T13:04:00.000000Z",
+    "created_at": "2025-12-27T13:05:05.000000Z",
+    "updated_at": "2026-07-28T07:19:11.000000Z",
+    "owner": {
+     "id": 72091,
+     "name": "hiop90",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/I6IhnX42pngxROJrGmcxMHitJJdog1nnZzQ8MrBA_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2025-01-23T05:43:23.000000Z",
+     "updated_at": "2026-10-04T08:44:20.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 2573,
+    "hub_id": null,
+    "guid": "com.aga.mod",
+    "name": "ArmorGreatAgain",
+    "slug": "armorgreatagain",
+    "teaser": "FullSize armor will be great again",
+    "thumbnail": "https://files.sp-mod.com/mods/o2dK8tAIbNxQtTbtHtHEfreK30Taw8ObqjhrxKJH.png",
+    "downloads": 5887,
+    "favourites_count": 19,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2573/armorgreatagain",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 15,
+    "published_at": "2026-02-01T18:00:00.000000Z",
+    "created_at": "2026-02-01T17:44:16.000000Z",
+    "updated_at": "2026-07-28T07:58:48.000000Z",
+    "owner": {
+     "id": 78456,
+     "name": "Try4ckme",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/en1yS75PXqqP6xrftLlf2rxFsI2SLqPjKMXU8NnV_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/4247OxL9bqNmoLyR4aeDxiwVyTRblzD9BOBYyZj2.png",
+     "created_at": "2025-05-05T11:53:42.000000Z",
+     "updated_at": "2026-08-10T19:50:05.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 15,
+     "hub_id": 78,
+     "title": "Equipment",
+     "slug": "equipment",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 4696,
+   "hub_id": 9346,
+   "version": "1.0.0",
+   "description": "<p>Only works with SPT 3.8.0</p>\n",
+   "link": "https://sp-mod.com/mod/download/1297/headshot-damage-redirection-hdr/1.0.0",
+   "content_length": null,
+   "spt_version_constraint": "3.8.0",
+   "downloads": 1335,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-04-10T10:02:20.000000Z",
+   "created_at": "2024-04-10T10:02:20.000000Z",
+   "updated_at": "2026-05-14T04:14:03.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 4201,
+   "hub_id": 9933,
+   "version": "1.1.1",
+   "description": "<p>Only works on SPT 3.8<br />\nFixed redirected damage happening before armor damage reduction happens. Now it should be properly implemented.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1297/headshot-damage-redirection-hdr/1.1.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.8.0",
+   "downloads": 3150,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-05-16T04:16:02.000000Z",
+   "created_at": "2024-05-16T04:16:02.000000Z",
+   "updated_at": "2026-05-14T04:04:32.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3709,
+   "hub_id": 10549,
+   "version": "1.2.0",
+   "description": "<p>Updated for 3.9.0<br />\nOnly works on 3.9</p>\n",
+   "link": "https://sp-mod.com/mod/download/1297/headshot-damage-redirection-hdr/1.2.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 2195,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-07T14:36:11.000000Z",
+   "created_at": "2024-07-07T14:36:11.000000Z",
+   "updated_at": "2026-05-14T03:55:30.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 3276,
+   "hub_id": 11088,
+   "version": "1.3.0",
+   "description": "<p>SPT 3.9.0+ only.</p>\n<p>Added option to only redirect based on a random chance roll.</p>\n<p>Added option to spread damage to multiple body parts.</p>\n<p>Added optional damage multiplier, so you can increase the damage received that gets redirected. Intended for use with multiple parts selected.</p>\n",
+   "link": "https://sp-mod.com/mod/download/1297/headshot-damage-redirection-hdr/1.3.0",
+   "content_length": null,
+   "spt_version_constraint": "3.9.0",
+   "downloads": 4730,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-07-27T15:19:23.000000Z",
+   "created_at": "2024-07-27T15:19:23.000000Z",
+   "updated_at": "2026-05-14T03:48:06.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 2121,
+   "hub_id": 12531,
+   "version": "1.3.1",
+   "description": "<p>Updated to work with SPT310, will not work for older versions.</p>\n<p>Virustotal Results: <a target=\"_blank\" class=\"external-link\" href=\"https://www.virustotal.com/gui/file/18e18fd996725c4da7638dd58e2bfb7367e717b8c989ca9d1e20ba79b30ea0db\" rel=\"noreferrer noopener\">https://www.virustotal.com/gui/file/18e18fd996725c4da7638dd58e2bfb7367e717b8c989ca9d1e20ba79b30ea0db</a></p>\n",
+   "link": "https://sp-mod.com/mod/download/1297/headshot-damage-redirection-hdr/1.3.1",
+   "content_length": null,
+   "spt_version_constraint": "~3.10.0",
+   "downloads": 4914,
+   "fika_compatibility": "unknown",
+   "published_at": "2024-12-07T07:39:29.000000Z",
+   "created_at": "2024-12-07T07:39:29.000000Z",
+   "updated_at": "2026-05-14T03:14:09.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/1297/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/1297/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/1297/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/1297/versions",
+  "per_page": 50,
+  "to": 5,
+  "total": 5
+ }
+}

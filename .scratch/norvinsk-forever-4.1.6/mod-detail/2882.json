@@ -1,0 +1,39 @@
+{
+ "id": 2882,
+ "hub_id": null,
+ "guid": "com.wtt.ecoattachmentemporium",
+ "name": "Eco's Attachment Emporium",
+ "slug": "ecos-attachment-emporium",
+ "teaser": "New gear. More builds.",
+ "thumbnail": "https://files.sp-mod.com/mods/k3qdGYU7yxIdwJmJ7wREraB58KhEnetXJ6BSDlq1.png",
+ "downloads": 16266,
+ "favourites_count": 98,
+ "endorsements_count": 20,
+ "description": "<p>this is a reupload of my mod.</p>\n<p>adds a variety of guns and attachments to the world of t*****.\nall working for quests,</p>\n<p>see the github page for full item list</p>\n<p>thank you GrooveyPenguinX for the codebase</p>\n",
+ "detail_url": "https://sp-mod.com/mod/2882/ecos-attachment-emporium",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": true,
+ "cheat_notice": false,
+ "category_id": 13,
+ "published_at": "2026-08-04T00:04:00.000000Z",
+ "created_at": "2026-08-04T00:14:38.000000Z",
+ "updated_at": "2026-08-04T18:02:41.000000Z",
+ "owner": {
+  "id": 82679,
+  "name": "Eco",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/GUaW9ijt2Ld2MAcapaQB0mxvjkEV0qHF1qZSRpuu_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2025-08-02T22:16:26.000000Z",
+  "updated_at": "2026-10-05T18:24:14.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 13,
+  "hub_id": 76,
+  "title": "Weapons",
+  "slug": "weapons",
+  "description": ""
+ }
+}

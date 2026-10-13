@@ -109,6 +109,7 @@ Record the style declaration in the modpack project's dev-log.
 Modpack naming: `<Name>-<Version>` (e.g., `Norvinsk-0.1.0`).
 MO2 profile naming: same as modpack name.
 Mod overlay naming in MO2: `<category>-<mod-name>-<version>` for clarity.
+Overlay meta content (`comments` / `notes` / `url` + the QSettings-safe writers): follow `building-spt-modpack`'s meta.ini content rules.
 
 ## See also
 

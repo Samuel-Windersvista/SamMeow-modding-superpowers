@@ -1,0 +1,481 @@
+{
+ "term": "SAIN",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 791,
+    "hub_id": 1062,
+    "guid": "me.sol.sain",
+    "name": "SAIN - Solarint's AI Modifications - Full AI Combat System Replacement",
+    "slug": "sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "teaser": "Bots that don't suck.",
+    "thumbnail": "https://files.sp-mod.com/mods/1062.jpg",
+    "downloads": 1315165,
+    "favourites_count": 976,
+    "endorsements_count": 133,
+    "detail_url": "https://sp-mod.com/mod/791/sain-solarints-ai-modifications-full-ai-combat-system-replacement",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-03-09T02:46:00.000000Z",
+    "created_at": "2023-03-09T02:46:50.000000Z",
+    "updated_at": "2026-09-04T18:41:43.000000Z",
+    "owner": {
+     "id": 27463,
+     "name": "Solarint",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/9fa66985990895e0c115adbdee4dbf71409d1566_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-23T17:11:59.000000Z",
+     "updated_at": "2026-08-10T19:41:43.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     },
+     {
+      "id": 52282,
+      "name": "ArchangelWTF",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-20T14:55:34.000000Z",
+      "updated_at": "2026-10-05T14:23:46.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1895,
+    "hub_id": 2557,
+    "guid": "com.twitchplayers",
+    "name": "[SAIN] Twitch Players",
+    "slug": "sain-twitch-players",
+    "teaser": "EFT was never forgiving. So are they.",
+    "thumbnail": "https://files.sp-mod.com/mods/SPDckoZ7xbs2PSAd9MoYrfFZfRqveqTer2s1gJtE.png",
+    "downloads": 35017,
+    "favourites_count": 46,
+    "endorsements_count": 8,
+    "detail_url": "https://sp-mod.com/mod/1895/sain-twitch-players",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-01-09T01:09:00.000000Z",
+    "created_at": "2024-12-17T08:58:03.000000Z",
+    "updated_at": "2026-09-12T23:57:39.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 65345,
+      "name": "yuyui.moe",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/690689ea1ac9a0eaadce8c01f2abaf25147c43b1_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/WvU2OUJlNTqWgxJweWYm1CQb3DU2ajCciDfFqsEH_1280w.webp",
+      "created_at": "2024-10-12T21:27:05.000000Z",
+      "updated_at": "2026-10-01T18:57:41.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1109,
+    "hub_id": 1534,
+    "guid": "com.danw.questingbots",
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...",
+    "thumbnail": "https://files.sp-mod.com/mods/1534.jpg",
+    "downloads": 434815,
+    "favourites_count": 161,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/1109/questing-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-10-14T21:05:00.000000Z",
+    "created_at": "2023-10-14T21:05:26.000000Z",
+    "updated_at": "2026-09-19T03:57:50.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2568,
+    "hub_id": null,
+    "guid": "wtf.archangel.disableheadshotprotect",
+    "name": "Disable Headshot Protect",
+    "slug": "disable-headshot-protect",
+    "teaser": "Want to die from getting shot in the head? Time to fix another jank B** design decision",
+    "thumbnail": "",
+    "downloads": 1628,
+    "favourites_count": 9,
+    "endorsements_count": 4,
+    "detail_url": "https://sp-mod.com/mod/2568/disable-headshot-protect",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-01-30T01:48:00.000000Z",
+    "created_at": "2026-01-30T01:48:47.000000Z",
+    "updated_at": "2026-08-02T06:02:13.000000Z",
+    "owner": {
+     "id": 52282,
+     "name": "ArchangelWTF",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-05-20T14:55:34.000000Z",
+     "updated_at": "2026-10-05T14:23:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1973,
+    "hub_id": 2651,
+    "guid": "com.friedengineer.eventautoprofilebackup",
+    "name": "Event Auto Profile Backup",
+    "slug": "event-auto-profile-backup",
+    "teaser": "No more worries to backup your profile. Automatic event-based profile backup system with easy restore system.",
+    "thumbnail": "https://files.sp-mod.com/mods/2651.png",
+    "downloads": 4930,
+    "favourites_count": 28,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1973/event-auto-profile-backup",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-01-20T19:43:00.000000Z",
+    "created_at": "2025-01-20T19:43:53.000000Z",
+    "updated_at": "2026-08-14T04:28:37.000000Z",
+    "owner": {
+     "id": 59225,
+     "name": "FriedEngineer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/91891bd774ac1b69c20a05d344b99328c8586f3c_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/cEEbS8VzFZzi2nuKoiuuKh4V1ox6IISnNe4U8FJv_1280w.webp",
+     "created_at": "2024-07-23T06:28:10.000000Z",
+     "updated_at": "2026-10-05T01:01:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2153,
+    "hub_id": 2853,
+    "guid": "com.friedengineer.ett",
+    "name": "Expanded Task Text (ETT)",
+    "slug": "expanded-task-text-ett",
+    "teaser": "Knowledge is power, unfortunately Nikita doesn't see it that way.",
+    "thumbnail": "https://files.sp-mod.com/mods/2853.png",
+    "downloads": 17979,
+    "favourites_count": 68,
+    "endorsements_count": 14,
+    "detail_url": "https://sp-mod.com/mod/2153/expanded-task-text-ett",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 9,
+    "published_at": "2025-05-26T02:00:00.000000Z",
+    "created_at": "2025-05-26T02:00:14.000000Z",
+    "updated_at": "2026-08-30T22:35:31.000000Z",
+    "owner": {
+     "id": 59225,
+     "name": "FriedEngineer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/91891bd774ac1b69c20a05d344b99328c8586f3c_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/cEEbS8VzFZzi2nuKoiuuKh4V1ox6IISnNe4U8FJv_1280w.webp",
+     "created_at": "2024-07-23T06:28:10.000000Z",
+     "updated_at": "2026-10-05T01:01:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 9,
+     "hub_id": 20,
+     "title": "Locales",
+     "slug": "locales",
+     "description": ""
+    }
+   },
+   {
+    "id": 2511,
+    "hub_id": null,
+    "guid": "com.blackdiv.tacticaltoaster",
+    "name": "WTT - Black Division [REDACTED] Home",
+    "slug": "wtt-black-division-redacted-home",
+    "teaser": "[REDACTED]",
+    "thumbnail": "https://files.sp-mod.com/mods/ZFIiCkmETKFUGGbnyR522ogkJMyEpZdJylpwllq2.png",
+    "downloads": 114437,
+    "favourites_count": 490,
+    "endorsements_count": 46,
+    "detail_url": "https://sp-mod.com/mod/2511/wtt-black-division-redacted-home",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2025-12-26T01:46:00.000000Z",
+    "created_at": "2025-12-24T05:41:17.000000Z",
+    "updated_at": "2026-09-06T14:39:03.000000Z",
+    "owner": {
+     "id": 7768,
+     "name": "TacticalToaster",
+     "profile_photo_url": "https://sp-mod.com/avatars/T.svg",
+     "cover_photo_url": null,
+     "created_at": "2021-08-11T22:12:09.000000Z",
+     "updated_at": "2026-09-26T19:08:41.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 22121,
+      "name": "Tron",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/2e25bad47ca8504c2559e88fb16cea7adfc20189_128w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/719d357b66aa2a18f3bd21f3a8c192b0a8bdcc5d_1280w.webp",
+      "created_at": "2022-08-31T05:49:04.000000Z",
+      "updated_at": "2026-10-05T16:42:55.000000Z"
+     },
+     {
+      "id": 30890,
+      "name": "GrooveypenguinX",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/dbec02c8d33df986b0e101bea4deec01b992b02a_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-05-07T19:55:52.000000Z",
+      "updated_at": "2026-10-04T21:13:58.000000Z"
+     }
+    ],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2617,
+    "hub_id": null,
+    "guid": "com.chazu.dont-shoot-the-bus",
+    "name": "Don't Shoot The Bus",
+    "slug": "dont-shoot-the-bus",
+    "teaser": "PMC bots keep picking fights with a 13-ton armored vehicle. This mod fixes that.",
+    "thumbnail": "https://files.sp-mod.com/mods/KZL4Ua97tBnwg43LeO28Wfh7HZxYqBBj7RMpvL9v.png",
+    "downloads": 6179,
+    "favourites_count": 48,
+    "endorsements_count": 6,
+    "detail_url": "https://sp-mod.com/mod/2617/dont-shoot-the-bus",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2026-03-05T19:10:00.000000Z",
+    "created_at": "2026-03-05T19:11:18.000000Z",
+    "updated_at": "2026-09-13T15:35:02.000000Z",
+    "owner": {
+     "id": 53567,
+     "name": "Chazut",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/wSrlHtBNN4ZSSdNHl7EIOJ2gdQg4SheCfvJRFJOb_128w.webp",
+     "cover_photo_url": null,
+     "created_at": "2024-06-11T18:31:06.000000Z",
+     "updated_at": "2026-10-05T16:22:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 2590,
+    "hub_id": null,
+    "guid": "com.massivesoft.saintdeerweapons",
+    "name": "SaintDeerWeapons",
+    "slug": "saintdeerweapons",
+    "teaser": "Collection of saintdeer's special weapons for SPT 4.0.0+",
+    "thumbnail": "https://files.sp-mod.com/mods/cpkVkWZMoQYaWvqNTI1338G1nnWOLjrPQg3efNkC.png",
+    "downloads": 16273,
+    "favourites_count": 29,
+    "endorsements_count": 1,
+    "detail_url": "https://sp-mod.com/mod/2590/saintdeerweapons",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-02-14T11:44:00.000000Z",
+    "created_at": "2026-02-14T11:53:56.000000Z",
+    "updated_at": "2026-07-28T08:04:07.000000Z",
+    "owner": {
+     "id": 15672,
+     "name": "Massivesoft",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2022-03-14T13:54:37.000000Z",
+     "updated_at": "2026-10-05T05:23:17.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 50237,
+      "name": "saintdeer",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/7fbec50612ec7801c4b7d503d85c0573ecd85a64_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-05-01T01:01:59.000000Z",
+      "updated_at": "2026-08-10T19:46:08.000000Z"
+     }
+    ],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   },
+   {
+    "id": 2603,
+    "hub_id": null,
+    "guid": "com.dagrog.dagrogssubsonics",
+    "name": "Da Grog's Subsonics",
+    "slug": "da-grogs-subsonics",
+    "teaser": "\"Why is it called Whisper if it is hypersonic?\"",
+    "thumbnail": "https://files.sp-mod.com/mods/lIsTTHXHuJC70V5NFkbiAIIpUECFbooi2OrmF1vB.png",
+    "downloads": 2850,
+    "favourites_count": 4,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2603/da-grogs-subsonics",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 13,
+    "published_at": "2026-02-22T13:03:00.000000Z",
+    "created_at": "2026-02-22T19:09:49.000000Z",
+    "updated_at": "2026-07-28T08:15:13.000000Z",
+    "owner": {
+     "id": 73299,
+     "name": "Carbon Black",
+     "profile_photo_url": "https://sp-mod.com/avatars/CB.svg",
+     "cover_photo_url": null,
+     "created_at": "2025-02-11T04:00:39.000000Z",
+     "updated_at": "2026-08-10T19:49:33.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 13,
+     "hub_id": 76,
+     "title": "Weapons",
+     "slug": "weapons",
+     "description": ""
+    }
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 20
+  }
+ }
+}

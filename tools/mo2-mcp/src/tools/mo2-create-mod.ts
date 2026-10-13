@@ -137,7 +137,7 @@ registerTool({
   name: "mo2_create_mod",
   tier: "T3",
   description:
-    "Create empty mod via broker mods.create. Optional 'above' positions it above a named mod. comments (required — short summary shown in MO2's list) + notes (optional — longer install record) are written to meta.ini; name per '<category>-<mod-name>-<version>'.",
+    "Create empty mod via broker mods.create. Optional 'above' positions it above a named mod. comments (required — short summary shown in MO2's list) + notes (optional — longer install record) are written to meta.ini; name per the target pack's existing mod naming scheme (e.g. '[13]MOD工具-综合调试工具包-SamMeow.DebugToolkit'; fallback '<category>-<mod-name>-<version>').",
   inputSchema,
   handler: (args, ctx) =>
     routeToPlanApply(handler, args, ctx, ctx.plans, ctx.snapshots) as Promise<unknown>,

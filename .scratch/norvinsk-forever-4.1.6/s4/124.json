@@ -1,0 +1,99 @@
+{
+ "idx": 124,
+ "entry": "[3]新配件-MagTape",
+ "terms": [
+  "Mag Tape",
+  "-MagTape"
+ ],
+ "all": [
+  {
+   "term": "-MagTape",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327306,
+   "sc": 0
+  },
+  {
+   "term": "Mag Tape",
+   "id": 1025,
+   "name": "Painter",
+   "slug": "painter",
+   "dl": 313555,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192578,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "Mag Tape",
+   "id": 2681,
+   "name": "Manimal's Ammo Loading Animations",
+   "slug": "manimals-ammo-loading-animations",
+   "dl": 17604,
+   "sc": 0
+  },
+  {
+   "term": "Mag Tape",
+   "id": 2643,
+   "name": "Magazine Check Interrupt",
+   "slug": "magazine-check-interrupt",
+   "dl": 17465,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "Mag Tape",
+   "id": 2147,
+   "name": "MagTuning – Make Mags Better",
+   "slug": "magtuning-make-mags-better",
+   "dl": 4674,
+   "sc": 0
+  },
+  {
+   "term": "-MagTape",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

@@ -1,0 +1,175 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 15039,
+   "hub_id": null,
+   "version": "2.0.0",
+   "description": "<p>A total rewrite of the mod to accommodate features that many have been wanting for a long time. This update should be considered a beta, don’t install it if you want a bug free experience. As always, report all bugs on the Github.</p>\n<p>No I will not back port these changes to any other game versions.</p>\n<h1>New</h1>\n<h2>Configuration</h2>\n<ul>\n<li>(Internal) Custom Drawer for multi-selection item lists</li>\n<li>Configure what slots you can bind weapons from.\n<ul>\n<li>The default weapon slots are always included in addition to anything you select in the config. These cannot be changed at this time.</li>\n</ul>\n</li>\n<li>Configure what slots you can bind and or throw grenades from.</li>\n<li>Configure what slots you can bind and or use meds from.</li>\n<li>Configure what slots you can use all items not covered by the above categories from.</li>\n</ul>\n<h2>Item Use Delay System (BETA)</h2>\n<p>This is a beta feature that is disabled by default and not Fika compatible until a sync is written for it.</p>\n<ul>\n<li>Slots can now be configured with delay timers to simulate the time it would take it use it from that slot.</li>\n<li>Each slot can be configured with a different timer.</li>\n<li>A configurable timer panel is shown to indicate that an item is queued.</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.0.0",
+   "content_length": 14878,
+   "spt_version_constraint": "~4.1",
+   "downloads": 490,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-28T06:17:00.000000Z",
+   "created_at": "2026-08-28T06:18:35.000000Z",
+   "updated_at": "2026-09-01T16:39:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15047,
+   "hub_id": null,
+   "version": "2.0.1",
+   "description": "<ul>\n<li>Added a configurable key-bind to clear the current delay queue.\n<ul>\n<li>This is unset by default, you must set it yourself.</li>\n</ul>\n</li>\n<li>Added a configurable additional nesting delay.</li>\n<li>Flares now have their own slot category.</li>\n<li>Fix Use Delay System being active regardless of config entry.</li>\n</ul>\n<p>Report all bugs.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.0.1",
+   "content_length": 15850,
+   "spt_version_constraint": "~4.1",
+   "downloads": 791,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-28T17:58:00.000000Z",
+   "created_at": "2026-08-28T17:58:52.000000Z",
+   "updated_at": "2026-09-01T16:39:46.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15067,
+   "hub_id": null,
+   "version": "2.1.0",
+   "description": "<p>Due to the addition of bundles for new UI elements and this mod living in the root plugins folder, a clean installation is required to update to 2.1.0, simply delete <code>UseItemsFromAnywhere.dll</code> from the plugins folder. Failing to do so could result in issues. You’ve been warned.</p>\n<h1>Added</h1>\n<ul>\n<li>Configurable quick use wheel system\n<ul>\n<li>Items don’t need to be bound to keys to be discovered, it will find things based on your slot filtering rules automatically</li>\n</ul>\n</li>\n<li>New UI element for the item delay timer to match the style of the newly added quick use wheel UI</li>\n<li>New Slot filter categories for food/drink and melee weapons</li>\n</ul>\n<h1>Fixed</h1>\n<ul>\n<li>Melee weapons can now be drawn</li>\n</ul>\n<p>Report All Issues.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.0",
+   "content_length": 57948,
+   "spt_version_constraint": "~4.1",
+   "downloads": 707,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-29T17:30:00.000000Z",
+   "created_at": "2026-08-29T17:32:28.000000Z",
+   "updated_at": "2026-09-01T16:22:07.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15084,
+   "hub_id": null,
+   "version": "2.1.1",
+   "description": "<h1>New</h1>\n<ul>\n<li>Quick use wheel favorites system\n<ul>\n<li>Use MMB on a item in the wheel to favorite or “pin” it to the top of your wheel</li>\n<li>Persists through raids, its saved to an invisible BepInEx config entry</li>\n</ul>\n</li>\n<li>Configurable pending item behavior\n<ul>\n<li>Controls item use attempts made while an access delay is active</li>\n<li>It is presented with the following options\n<ul>\n<li>Ignore them: Ignores the request entirely</li>\n<li>Cancel and Use: Cancels and uses the newly selected item</li>\n<li>Queue one: Queues the next selected item to be used after completing the previous item</li>\n<li>Open Wheel: Allows the wheel to be opened to choose a replacement</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Redesigned the UI components color and style to more closely match the rest of the games UI\n<ul>\n<li>Subject to further tweaks</li>\n</ul>\n</li>\n<li>The delay timer panel now shows the source of the item</li>\n<li>The delay timer panel now shows why a delay is longer <code>+1.0s 2 Layers</code></li>\n<li>The configured cancel key bind is now shown on the delay timer panel</li>\n<li>The delay timer now has configurable cancel and completion sounds (enable/disable)</li>\n<li>The quick use wheel now shows compact item details when applicable\n<ul>\n<li>Med-kit Hp (200/440)</li>\n<li>Water/Food resource remaining</li>\n<li>Weapons show magazine remaining ammo count, weapon durability</li>\n</ul>\n</li>\n<li>The entire middle circle of the quick use wheel now acts as a cancel zone</li>\n<li>Queued items show as queued in the quick use wheel</li>\n<li>Unavailable items show as unavailable in the quick use wheel, this could mean one of the following:\n<ul>\n<li>This usually means you’ve already used it and the wheel is subject to a refresh (re-open it to make it go away)</li>\n<li>Could mean your in the process of using an item and the mod is preventing you from having some ricky bobby hands (busy hands)</li>\n</ul>\n</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Incorrect tool tips in the configuration</li>\n<li>Removed mouse pointer from being active when the quick access wheel was open, it lead to buggy behavior especially with overlays such as nvidia’s performance overlay.</li>\n<li>After using an item with the quick use wheel and opening it again while an item is queued results in an empty wheel. This has been somewhat mitigated by populating the shown empty wheel once the data is available again. This is due to inventory actions blocking the query of the inventory status, which is probably for the best tbh.</li>\n</ul>\n<p>As always, report all bugs.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.1",
+   "content_length": 62331,
+   "spt_version_constraint": "~4.1",
+   "downloads": 793,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-30T08:42:00.000000Z",
+   "created_at": "2026-08-30T08:42:49.000000Z",
+   "updated_at": "2026-09-01T16:21:31.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15102,
+   "hub_id": null,
+   "version": "2.1.2",
+   "description": "<h1>New</h1>\n<ul>\n<li>Quick use wheel item grouping\n<ul>\n<li>Can be enabled or disabled</li>\n<li>Groups matching meds, food/drink, grenades, and flares</li>\n<li>Displays the quantity as <code>x3</code></li>\n<li>Related Settings\n<ul>\n<li>Group Identical Items</li>\n<li>Grouped Item Selection\n<ul>\n<li>Lowest resource first - Uses the item with the lowest resource</li>\n<li>Highest resource first - Uses the item with the highest resource</li>\n<li>Fastest access first - Use the item you can access the fastest</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Quick use wheel tap for last item\n<ul>\n<li>Can be enabled or disabled</li>\n<li>Tap the wheel key to reuse the last item selected from the wheel</li>\n<li>Hold for 0.25 seconds to open the wheel\n<ul>\n<li>Adjustable from 0.1-1 second</li>\n</ul>\n</li>\n<li>If no more items remain of the last used type, nothing will happen</li>\n<li>Related settings\n<ul>\n<li>Tap Uses Last Item - Tapping the wheel key will use the last item selected from the wheel</li>\n<li>Wheel Hold Duration - Duration in seconds before a press is no longer considered a tap and the wheel opens</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Quick use wheel now has interface sounds</li>\n<li>Quick use wheel now refreshes every 150ms to remove stale items after use</li>\n<li>Quick use wheel now locks the camera while open</li>\n<li>Quick use wheel can now show grenades</li>\n<li>Quick use wheel now shows pending item behavior and group selection settings active below the wheel</li>\n<li>Quick use wheel segments are now dynamically sized to remove dead space</li>\n<li>Item use delay now re-validates that an item is still usable after the timer is up before attempting to use it</li>\n<li>Item use delay timer now correctly reflects the result of <code>TryProceed()</code> for more accurate item timings</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>incorrect config entry text</li>\n<li>The quick use wheel now respects all weapon slots selected instead of just the default weapon slots</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.2",
+   "content_length": 66337,
+   "spt_version_constraint": "~4.1",
+   "downloads": 887,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-08-31T00:06:00.000000Z",
+   "created_at": "2026-08-31T00:07:43.000000Z",
+   "updated_at": "2026-09-01T16:18:12.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15131,
+   "hub_id": null,
+   "version": "2.1.3",
+   "description": "<h1>New</h1>\n<ul>\n<li>Tactical weapon wheel\n<ul>\n<li>Control fire mode and tactical devices independently for your active weapon\n<ul>\n<li>Tactical device(s) on/off</li>\n<li>Tactical device(s) modes</li>\n<li>All on/off</li>\n<li>Fire modes</li>\n</ul>\n</li>\n<li>You need to have a tactical device or be able to change your fire mode for the wheel to open</li>\n<li><code>left alt + h</code> by default to open it (Shit binding I know, feel free to rebind it)</li>\n</ul>\n</li>\n</ul>\n<h1>Improvements</h1>\n<ul>\n<li>Quick use wheel wedges now show only the item name and sprite in favor of an info panel that shows upon hovering an item on the right side of the wheel\n<ul>\n<li>I was trying to display too much info on small wedges causing the layout to look bad, this massively cleans up the look and should be the last major change to the layout going forward bar info for any new features</li>\n</ul>\n</li>\n<li>Quick use wheel has received UI improvements to reduce aliasing on the wedge lines</li>\n<li>Quick use wheel now shows estimated access time</li>\n<li>Quick use wheel now shows a detailed breakdown of estimated time in the center of the wheel on selected items</li>\n<li>Quick use wheel now supports the belt slot from an upcoming 4.1.x WTT pack n strap release</li>\n<li>Timer panel now displays the next queued item if applicable</li>\n</ul>\n<h1>Fixes</h1>\n<ul>\n<li>Fixes an incompatibility with a future 4.1.x release of WTT pack n strap</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.3",
+   "content_length": 1193538,
+   "spt_version_constraint": "~4.1",
+   "downloads": 4926,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-01T05:53:00.000000Z",
+   "created_at": "2026-09-01T05:54:24.000000Z",
+   "updated_at": "2026-09-01T16:17:51.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15424,
+   "hub_id": null,
+   "version": "2.1.4",
+   "description": "<h3>New features</h3>\n<ul>\n<li><strong>Item access delay cancel on movement:</strong> Cancels the item delay when you move. Enable with <strong>Moving Cancels Access</strong> in the mod settings.</li>\n<li><strong>Item access delay cancel on damage:</strong> Cancels the item delay when you take damage. Enable with <strong>Damage Cancels Access</strong> in the mod settings.</li>\n<li><strong>Eight configurable positions:</strong> Assign categories to compass positions through <strong>Quick Use Wheel Category Slots</strong> in the mod settings.</li>\n<li><strong>Automatic refill:</strong> Each slot keeps its selected item while usable. When it becomes unavailable, the slot prefers usable favorites, then items with the shortest access delay.</li>\n<li><strong>Medical subcategories:</strong> Pin medkits, bleeding treatments, fracture treatments, surgery, painkillers, or stimulants. Multifunction medical items qualify for treatments they support, provided they have enough resources.</li>\n<li><strong>Stable empty slots:</strong> Assigned positions remain visible when no matching item is available.</li>\n</ul>\n<h3>How to use</h3>\n<p>Assign at least one category to enable the new first page. Scroll to access the normal item pages, where all items remain available with their existing grouping and favorite controls.</p>\n<p>All positions default to <strong>Unassigned</strong>. Leaving every position unassigned preserves the original wheel layout.</p>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.4",
+   "content_length": 1212045,
+   "spt_version_constraint": "~4.1",
+   "downloads": 203,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-15T19:02:00.000000Z",
+   "created_at": "2026-09-15T19:03:10.000000Z",
+   "updated_at": "2026-09-15T19:04:04.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 15426,
+   "hub_id": null,
+   "version": "2.1.5",
+   "description": "<ul>\n<li>Fix bot reload issues</li>\n</ul>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/2.1.5",
+   "content_length": 1213638,
+   "spt_version_constraint": "~4.1",
+   "downloads": 4688,
+   "fika_compatibility": "incompatible",
+   "published_at": "2026-09-15T22:34:00.000000Z",
+   "created_at": "2026-09-15T22:34:32.000000Z",
+   "updated_at": "2026-09-15T22:35:06.000000Z",
+   "dependencies": []
+  },
+  {
+   "id": 14645,
+   "hub_id": null,
+   "version": "1.4.0",
+   "description": "<p>4.1.x</p>\n",
+   "link": "https://sp-mod.com/mod/download/2386/use-items-anywhere/1.4.0",
+   "content_length": 6676,
+   "spt_version_constraint": "~4.1",
+   "downloads": 6110,
+   "fika_compatibility": "unknown",
+   "published_at": "2026-08-12T03:20:00.000000Z",
+   "created_at": "2026-08-12T03:22:05.000000Z",
+   "updated_at": "2026-08-12T11:44:21.000000Z",
+   "dependencies": []
+  }
+ ],
+ "links": {
+  "first": "https://sp-mod.com/api/v0/mod/2386/versions?page=1",
+  "last": "https://sp-mod.com/api/v0/mod/2386/versions?page=1",
+  "prev": null,
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "links": [
+   {
+    "url": null,
+    "label": "« Previous",
+    "page": null,
+    "active": false
+   },
+   {
+    "url": "https://sp-mod.com/api/v0/mod/2386/versions?page=1",
+    "label": "1",
+    "page": 1,
+    "active": true
+   },
+   {
+    "url": null,
+    "label": "Next »",
+    "page": null,
+    "active": false
+   }
+  ],
+  "path": "https://sp-mod.com/api/v0/mod/2386/versions",
+  "per_page": 50,
+  "to": 9,
+  "total": 9
+ }
+}

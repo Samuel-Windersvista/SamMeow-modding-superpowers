@@ -1,0 +1,49 @@
+{
+ "id": 2326,
+ "hub_id": null,
+ "guid": "com.fika.core",
+ "name": "Project Fika",
+ "slug": "project-fika",
+ "teaser": "Project Fika is a mod designed to enable co-op multiplayer game play with your friends in SPT. You can progress through quests, share items and quest progression, fight AI bots (PMCs, SCAVs, and bosses) together and much more.",
+ "thumbnail": "https://files.sp-mod.com/mods/RhGQs4svMQ3MWGiEwn8WUQXxP3GUdVhLorptQcXA.png",
+ "downloads": 98076,
+ "favourites_count": 227,
+ "endorsements_count": 28,
+ "description": "<div class=\"tabset\"><div id=\"tabset-1-panel-1\" class=\"tab-panel\"><div class=\"tab-title\">What is Fika? ❓</div>\n<div class=\"tab-content\"><p>Fika is a cooperative multiplayer mod for <a target=\"_blank\" class=\"external-link\" href=\"https://sp-tarkov.com/\" rel=\"noreferrer noopener\">SPT</a>. Fika adds a lobby interface to join other players’ raids and provide in-game networking capabilities, along with additional features that do not alter the standard E***************** experience by default.</p>\n<p>You can find our installation guide <a target=\"_blank\" class=\"external-link\" href=\"https://project-fika.gitbook.io/wiki/\" rel=\"noreferrer noopener\">HERE</a></p>\n<p>We do not provide support on the Forge, use our <a target=\"_blank\" class=\"external-link\" href=\"http://project-fika.com/discord\" rel=\"noreferrer noopener\">discord</a> for support. Please try to minimize the burden on SPT moderators and use our discord for questions.</p>\n<p>In summary:</p>\n<ul>\n<li>SPT is the back-end server that allows you to start the game without using B** servers — it provides the player profile, inventory, flea market, and many other E***************** features.</li>\n<li>Fika is the mod component that adds cooperative multiplayer capabilities which allow players to host or join a raid to play together.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-2\" class=\"tab-panel\"><div class=\"tab-title\">Specifications 📃</div>\n<div class=\"tab-content\"><ul>\n<li>Fika is a combination of a <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/project-fika/Fika-Plugin\" rel=\"noreferrer noopener\">BepInEx plugin</a> and a <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/project-fika/Fika-Server\" rel=\"noreferrer noopener\">SPT server mod</a>.</li>\n<li>Fika uses SPT (with the Fika-Server plugin) as the back-end server for profile and lobby management.</li>\n<li>Fika uses a Server &lt;-&gt; Client UDP networking model for game play. While Fika is still in development, the general consensus is that network performance is better than E***************** live (provided the host has proper networking capabilities). Fika 2.0 (coming with SPT 4.0) will have <em>much better</em> net code than live, outperforming both speed, bandwidth usage and accuracy.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-3\" class=\"tab-panel\"><div class=\"tab-title\">Main features ⭐</div>\n<div class=\"tab-content\"><ul>\n<li>Host your own server or join a local/external server.</li>\n<li>Create your own raid (or play solo).</li>\n<li>Join someone else’s raid.</li>\n<li>Play together against bots, share items, progress quests together in the same raid.</li>\n<li>Preserve character, quest, inventory, and hideout progression.</li>\n<li>Use client/server mods from <a target=\"_blank\" class=\"external-link\" href=\"https://hub.sp-tarkov.com/\" rel=\"noreferrer noopener\">SPT</a> (some mods are not compatible - see <strong>Limitations</strong>).</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-4\" class=\"tab-panel\"><div class=\"tab-title\">Other features 🌟</div>\n<div class=\"tab-content\"><ul>\n<li>Item Sending\n<ul>\n<li>Right-click an item in your stash to send it to another account</li>\n<li>Can be customized in the <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/project-fika/Fika-Documentation/wiki/6.-Fika-configuration\" rel=\"noreferrer noopener\">server</a> config</li>\n</ul>\n</li>\n<li>Free cam (default to <code>F9</code> key)\n<ul>\n<li>In free cam you can teleport to the cam position by pressing <code>T</code></li>\n<li>You can jump to another player by <code>Left/Right</code> clicking</li>\n<li>You can snap to their head by holding <code>SPACE</code> when jumping</li>\n<li>You can snap to their back in a 3rd position view by holding <code>CTRL</code> when jumping</li>\n<li>You can press the <code>HOME</code> key to temporarily toggle free cam controls</li>\n</ul>\n</li>\n<li>In-game chat system</li>\n<li>In-raid VOIP</li>\n<li>Online player list</li>\n<li>Culling system to increase performance</li>\n<li>Custom notifications (teammate died, boss got killed by a player, etc.)</li>\n<li>Pinging system to ping an area in the game for your teammates</li>\n<li>Player health bars for your teammates</li>\n<li>Quest progress sharing in raids</li>\n<li>Optional/Advanced Headless client to offload AI and gain performance (more info <a target=\"_blank\" class=\"external-link\" href=\"https://project-fika.gitbook.io/wiki/advanced-features/headless-client\" rel=\"noreferrer noopener\">here</a>)</li>\n<li>Network interpolation for smoother gameplay</li>\n<li>UPnP and NAT Punching</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-5\" class=\"tab-panel\"><div class=\"tab-title\">Limitations ❌</div>\n<div class=\"tab-content\"><ul>\n<li>You cannot play Fika without owning a legitimate copy of E*****************.</li>\n<li>There is no protection against abuse or cheating. Fika is designed to be played with trusted friends. <strong>Hosting a public server is strongly discouraged</strong>. We will NEVER support public servers.</li>\n<li>Fika does not include any PvP mechanisms. Supporting PvP is not the goal of this project.</li>\n<li>Fika does not offer a global matchmaking service. Only players connected to the same server can create or join raids.</li>\n<li>Certain SPT mods are incompatible with Fika. SPT mods are typically designed for a standard SPT installation, which does not include multiplayer functionality. It is the responsibility of the mod’s author to make their mod compatible with Fika, if they choose to do so.</li>\n</ul></div></div>\n<div id=\"tabset-1-panel-6\" class=\"tab-panel\"><div class=\"tab-title\">Modding Fika🛠️</div>\n<div class=\"tab-content\"><p>Please find our wiki page for modding <a target=\"_blank\" class=\"external-link\" href=\"https://wiki.project-fika.com/modding-fika\" rel=\"noreferrer noopener\">here</a>.</p></div></div>\n<div id=\"tabset-1-panel-7\" class=\"tab-panel\"><div class=\"tab-title\">Support Me 💖</div>\n<div class=\"tab-content\"><p>You can support me on Ko-Fi</p>\n<p><a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/lacyway\" rel=\"noreferrer noopener\">Click</a></p></div></div></div>\n",
+ "detail_url": "https://sp-mod.com/mod/2326/project-fika",
+ "fika_compatibility": true,
+ "featured": true,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 2,
+ "published_at": "2025-09-26T20:43:00.000000Z",
+ "created_at": "2025-09-26T20:14:55.000000Z",
+ "updated_at": "2026-10-05T19:27:03.000000Z",
+ "owner": {
+  "id": 47969,
+  "name": "Lacyway",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/95a5b3e7532938e8baff549cb4defc29e382f4ac_128w.webp",
+  "cover_photo_url": "https://files.sp-mod.com/cover-photos/05b1bc6e2a3f74b8f41de186273e89430b36bb0a_1280w.webp",
+  "created_at": "2024-04-09T17:00:56.000000Z",
+  "updated_at": "2026-10-11T04:13:16.000000Z"
+ },
+ "additional_authors": [
+  {
+   "id": 52282,
+   "name": "ArchangelWTF",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/bc678ae6a663d65b719827be994414a484a8e356_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2024-05-20T14:55:34.000000Z",
+   "updated_at": "2026-10-11T01:08:41.000000Z"
+  },
+  {
+   "id": 85060,
+   "name": "trippyone",
+   "profile_photo_url": "https://files.sp-mod.com/profile-photos/gloYnvKsCxIr4hzbMtfeGisaXi1jgGOJp8ifmVpj_128w.webp",
+   "cover_photo_url": null,
+   "created_at": "2025-09-26T20:56:18.000000Z",
+   "updated_at": "2026-08-10T19:50:34.000000Z"
+  }
+ ]
+}

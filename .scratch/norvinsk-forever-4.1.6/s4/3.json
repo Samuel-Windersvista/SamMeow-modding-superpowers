@@ -1,0 +1,83 @@
+{
+ "idx": 3,
+ "entry": "[13]好莱坞第三人称镜头-HollywoodCam",
+ "terms": [
+  "-HollywoodCam",
+  "HollywoodCam"
+ ],
+ "all": [
+  {
+   "term": "-HollywoodCam",
+   "id": 236,
+   "name": "Server Value Modifier [SVM]",
+   "slug": "server-value-modifier-svm",
+   "dl": 1327302,
+   "sc": 0
+  },
+  {
+   "term": "HollywoodCam",
+   "id": 2003,
+   "name": "HollywoodFX",
+   "slug": "hollywoodfx",
+   "dl": 219654,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 167,
+   "name": "Ammo Stats",
+   "slug": "ammo-stats",
+   "dl": 212487,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 526,
+   "name": "All The Clothes",
+   "slug": "all-the-clothes",
+   "dl": 192577,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 374,
+   "name": "bluehead's AIO Trader",
+   "slug": "blueheads-aio-trader",
+   "dl": 153491,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 164,
+   "name": "Freecam",
+   "slug": "freecam",
+   "dl": 52991,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 535,
+   "name": "Andrudis QuestManiac",
+   "slug": "andrudis-questmaniac",
+   "dl": 10551,
+   "sc": 0
+  },
+  {
+   "term": "HollywoodCam",
+   "id": 2639,
+   "name": "Auto Shoulder Swap",
+   "slug": "auto-shoulder-swap",
+   "dl": 10499,
+   "sc": 0
+  },
+  {
+   "term": "-HollywoodCam",
+   "id": 505,
+   "name": "Olympus",
+   "slug": "olympus",
+   "dl": 488,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

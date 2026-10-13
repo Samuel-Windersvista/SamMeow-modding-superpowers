@@ -1,0 +1,39 @@
+{
+ "id": 1100,
+ "hub_id": 1522,
+ "guid": "com.leonana69.radar",
+ "name": "ACCURATE CIRCULAR RADAR",
+ "slug": "accurate-circular-radar",
+ "teaser": "A radar mod that displays enemy locations and identifies various enemy types.",
+ "thumbnail": "https://files.sp-mod.com/mods/1522.png",
+ "downloads": 310366,
+ "favourites_count": 188,
+ "endorsements_count": 15,
+ "description": "<h4>[Description]</h4>\n<p><strong>Tired of being shot but can’t figure out where the enemy is?</strong></p>\n<p><strong>Want to know if the target is SCAV, PMC, or BOSS?</strong></p>\n<p><strong>Can’t find the dead body in the bush?</strong></p>\n<p><strong>Don’t want to miss a high-value loot in the marked room?</strong></p>\n<p>This mod provides accurate location indications of enemies and loots on the radar map to enable you to play a more casual gameplay style. Also, it can help you identify the side of enemies, like SCAV, U***, B***, and BOSS. For example, if you only want to see the SCAV, set the alpha of the other sides to zero. If you only want to see the corpse, just enable corpse detection and set the alpha of all the other sides to zero. The loot detection allows you to see high-value loot (value above the loot threshold in the settings) on the radar map and helps you find them easily.</p>\n<p>Use at your wish and enjoy the game! Join the <a target=\"_blank\" class=\"external-link\" href=\"https://discord.gg/K44Zgj5JHB\" rel=\"noreferrer noopener\">discord</a> if you want to help test the new features or give any feedback.</p>\n<h4>[Acknowledgments]</h4>\n<p>This mod is upgraded from Tyrian’s ACCURATE CIRCULAR RADAR STANDALONE. Please give the credit to Tyrian.</p>\n<h4>[Installation]</h4>\n<p>Unzip the file and drag the BepInEx folder into your game folder, and make sure the DLL file is placed at gameFolder/BepInEx/plugins/Tyrian-Radar.dll. For better flea market prices used by the loot detection, please install <a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/1155/lootvalue\" rel=\"noreferrer noopener\">LootValue</a>.</p>\n<h4>[Features]</h4>\n<ul>\n<li>Show the enemy’s location.</li>\n<li>Show different colors for different types of enemies.\n<ul>\n<li>You can disable the indication for a certain type of enemy by setting the alpha to zero.</li>\n</ul>\n</li>\n<li>Show the corpse’s location.</li>\n<li>Show high-value loot.\n<ul>\n<li>Set the value threshold to filter the loot.</li>\n<li>Per-slot value option.</li>\n<li>Wishlist items regardless of value (only for the Others category).</li>\n</ul>\n</li>\n<li>Adjustable scan interval, you can increase the uncertainty of the enemy.</li>\n<li>Fire mode, where the enemy will show on the radar only after firing.</li>\n<li>Mine zone and claymore detection.</li>\n<li>Compass mode, where the radar panel will be part of the compass screen, and only works when you’re holding a compass.</li>\n</ul>\n<p><strong>Normal Mode</strong></p>\n<p><strong>Compass Mode (Not work due to an issue with the game itself)</strong></p>\n",
+ "detail_url": "https://sp-mod.com/mod/1100/accurate-circular-radar",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 5,
+ "published_at": "2023-10-12T17:24:00.000000Z",
+ "created_at": "2023-10-12T17:24:15.000000Z",
+ "updated_at": "2026-09-04T19:03:04.000000Z",
+ "owner": {
+  "id": 37276,
+  "name": "Leonana69",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/25f2170159ee82b68d945983779c2e04d575d8c4_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-09-20T03:24:24.000000Z",
+  "updated_at": "2026-09-05T00:32:04.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 5,
+  "hub_id": 22,
+  "title": "Bots",
+  "slug": "bots",
+  "description": ""
+ }
+}

@@ -1,0 +1,467 @@
+{
+ "term": "props-doorbreacher",
+ "data": {
+  "success": true,
+  "data": [
+   {
+    "id": 3007,
+    "hub_id": null,
+    "guid": "com.harmonyzt.breakoutoutlines",
+    "name": "Breakout Outlines",
+    "slug": "breakout-outlines",
+    "teaser": "Highlight any loot, containers and dead bodies with Breakout-Like style.",
+    "thumbnail": "https://files.sp-mod.com/mods/nlTAxyVs9RuNWheUXOg1axOlrb0C0ZrEYkv6GM65.png",
+    "downloads": 4142,
+    "favourites_count": 48,
+    "endorsements_count": 28,
+    "detail_url": "https://sp-mod.com/mod/3007/breakout-outlines",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2026-09-08T17:24:00.000000Z",
+    "created_at": "2026-09-08T17:18:26.000000Z",
+    "updated_at": "2026-10-01T16:58:34.000000Z",
+    "owner": {
+     "id": 30878,
+     "name": "harmony",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/zCGf86MOlzlGlGoDlIYL3IgPnAyHSRRX82XKlfMB_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/sOfeZOKwozRC3qpSES8BHbhlzBwuCRkMlL1Gtoem_1280w.webp",
+     "created_at": "2023-05-07T14:52:19.000000Z",
+     "updated_at": "2026-10-05T16:40:44.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 43600,
+      "name": "20fpsguy",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/K5dcn99iSoBK3zKI9TdB8wljTr67c8Jrk2Ikd3bW_256w.webp",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/3XeLpx2NFpiWfauZEuOtSrIUrCPbzkOe7SFJwDFp_1280w.webp",
+      "created_at": "2024-01-11T12:46:02.000000Z",
+      "updated_at": "2026-10-05T13:17:50.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 918,
+    "hub_id": 1242,
+    "guid": "xyz.drakia.botdebug",
+    "name": "BotDebug",
+    "slug": "botdebug",
+    "teaser": "A development utility for seeing what's going on with bots",
+    "thumbnail": "https://files.sp-mod.com/mods/1242.png",
+    "downloads": 13548,
+    "favourites_count": 8,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/918/botdebug",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 1,
+    "published_at": "2023-06-11T19:14:00.000000Z",
+    "created_at": "2023-06-11T19:14:31.000000Z",
+    "updated_at": "2026-08-03T06:02:26.000000Z",
+    "owner": {
+     "id": 27605,
+     "name": "DrakiaXYZ",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+     "cover_photo_url": null,
+     "created_at": "2023-02-26T18:51:50.000000Z",
+     "updated_at": "2026-10-05T16:45:54.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 1,
+     "hub_id": 17,
+     "title": "Tools",
+     "slug": "tools",
+     "description": "Various standalone tools and programs that aren't installed like normal mods"
+    }
+   },
+   {
+    "id": 236,
+    "hub_id": 379,
+    "guid": "fika.ghostfenixx.svm",
+    "name": "Server Value Modifier [SVM]",
+    "slug": "server-value-modifier-svm",
+    "teaser": "Swiss knife of SPT. Standalone extensive All-In-One Server mod that comes with User Interface and a huge variety of options",
+    "thumbnail": "https://files.sp-mod.com/mods/379.png",
+    "downloads": 1327286,
+    "favourites_count": 766,
+    "endorsements_count": 91,
+    "detail_url": "https://sp-mod.com/mod/236/server-value-modifier-svm",
+    "fika_compatibility": true,
+    "featured": true,
+    "contains_ads": true,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2021-09-26T22:01:00.000000Z",
+    "created_at": "2021-09-26T22:01:55.000000Z",
+    "updated_at": "2026-09-19T19:55:46.000000Z",
+    "owner": {
+     "id": 3972,
+     "name": "GhostFenixx",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6b26056cefeb30ad605def9f0f3fa58feface48e_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/ef9f3b10c1acbab9d013feb8d42a031300538e6d_1280w.webp",
+     "created_at": "2021-04-08T21:39:10.000000Z",
+     "updated_at": "2026-10-05T11:05:46.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 954,
+    "hub_id": 1303,
+    "guid": "com.borkel.nvgmasks",
+    "name": "Borkel's Realistic Night Vision Goggles (NVGs and T-7)",
+    "slug": "borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "teaser": "Now with new realistic NVG masks and natural light outside the tubes. I looked at real life NVGs and I tried to imitate them ingame. Customizable ingame (colors and everything).",
+    "thumbnail": "https://files.sp-mod.com/mods/1303.png",
+    "downloads": 263907,
+    "favourites_count": 351,
+    "endorsements_count": 76,
+    "detail_url": "https://sp-mod.com/mod/954/borkels-realistic-night-vision-goggles-nvgs-and-t-7",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 2,
+    "published_at": "2023-06-30T20:48:00.000000Z",
+    "created_at": "2023-06-30T20:48:45.000000Z",
+    "updated_at": "2026-10-03T16:45:16.000000Z",
+    "owner": {
+     "id": 28436,
+     "name": "Borkel",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/6aef9d279c1868359776de260a42b3f9c54499c4_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/a779512b58096f6f543f05646588329fbba37f5c_1280w.webp",
+     "created_at": "2023-03-10T18:10:13.000000Z",
+     "updated_at": "2026-10-03T21:58:55.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 12179,
+      "name": "pein",
+      "profile_photo_url": "https://sp-mod.com/avatars/P.svg",
+      "cover_photo_url": "https://files.sp-mod.com/cover-photos/0nesldn7JSutui4nqPF0GyFFSoQKV6zImNcy5brD.jpg",
+      "created_at": "2021-12-14T17:06:03.000000Z",
+      "updated_at": "2026-09-20T09:07:35.000000Z"
+     }
+    ],
+    "category": {
+     "id": 2,
+     "hub_id": 79,
+     "title": "Overhauls",
+     "slug": "overhauls",
+     "description": "Large-scale mod packs that overhaul many game systems. Typically combines both client-side and server-side mods into one package."
+    }
+   },
+   {
+    "id": 1109,
+    "hub_id": 1534,
+    "guid": "com.danw.questingbots",
+    "name": "Questing Bots",
+    "slug": "questing-bots",
+    "teaser": "You're no longer the only PMC running around placing markers and collecting quest items. The bots have transcended and are coming for you...",
+    "thumbnail": "https://files.sp-mod.com/mods/1534.jpg",
+    "downloads": 434815,
+    "favourites_count": 161,
+    "endorsements_count": 24,
+    "detail_url": "https://sp-mod.com/mod/1109/questing-bots",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 5,
+    "published_at": "2023-10-14T21:05:00.000000Z",
+    "created_at": "2023-10-14T21:05:26.000000Z",
+    "updated_at": "2026-09-19T03:57:50.000000Z",
+    "owner": {
+     "id": 27632,
+     "name": "DanW",
+     "profile_photo_url": "https://sp-mod.com/avatars/D.svg",
+     "cover_photo_url": null,
+     "created_at": "2023-02-27T02:34:15.000000Z",
+     "updated_at": "2026-10-05T16:02:35.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 5,
+     "hub_id": 22,
+     "title": "Bots",
+     "slug": "bots",
+     "description": ""
+    }
+   },
+   {
+    "id": 1973,
+    "hub_id": 2651,
+    "guid": "com.friedengineer.eventautoprofilebackup",
+    "name": "Event Auto Profile Backup",
+    "slug": "event-auto-profile-backup",
+    "teaser": "No more worries to backup your profile. Automatic event-based profile backup system with easy restore system.",
+    "thumbnail": "https://files.sp-mod.com/mods/2651.png",
+    "downloads": 4930,
+    "favourites_count": 28,
+    "endorsements_count": 2,
+    "detail_url": "https://sp-mod.com/mod/1973/event-auto-profile-backup",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2025-01-20T19:43:00.000000Z",
+    "created_at": "2025-01-20T19:43:53.000000Z",
+    "updated_at": "2026-08-14T04:28:37.000000Z",
+    "owner": {
+     "id": 59225,
+     "name": "FriedEngineer",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/91891bd774ac1b69c20a05d344b99328c8586f3c_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/cEEbS8VzFZzi2nuKoiuuKh4V1ox6IISnNe4U8FJv_1280w.webp",
+     "created_at": "2024-07-23T06:28:10.000000Z",
+     "updated_at": "2026-10-05T01:01:17.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 3062,
+    "hub_id": null,
+    "guid": "com.binkobunko.tarkovrarecollectibles",
+    "name": "Tushonka Rare Collectibles",
+    "slug": "tushonka-rare-collectibles",
+    "teaser": "Make Loot Valuable Again! Adds 15 highly valuable and rare collectible items.",
+    "thumbnail": "https://files.sp-mod.com/mods/jjQvJtW3ZQ5DwEjGVcGiD7A1go1GHzMzTBRxoSfw.jpg",
+    "downloads": 2106,
+    "favourites_count": 23,
+    "endorsements_count": 10,
+    "detail_url": "https://sp-mod.com/mod/3062/tushonka-rare-collectibles",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 4,
+    "published_at": "2026-09-25T00:30:00.000000Z",
+    "created_at": "2026-09-25T00:31:49.000000Z",
+    "updated_at": "2026-09-26T14:05:44.000000Z",
+    "owner": {
+     "id": 10793,
+     "name": "BinkoBunko",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/IA3gCReDytWpNutORK4rvUkiifiNuaIPyW2rezTK_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/SF2r0IcoGmYHELUH1uqkYXyUTnAEUMBFxITTD9zb.png",
+     "created_at": "2021-10-24T20:54:06.000000Z",
+     "updated_at": "2026-10-05T03:11:29.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 84701,
+      "name": "YellowDoge",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/b545285eabee29891614e9e9bdfd54313232b3af_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2025-09-16T14:15:36.000000Z",
+      "updated_at": "2026-08-10T19:50:45.000000Z"
+     }
+    ],
+    "category": {
+     "id": 4,
+     "hub_id": 21,
+     "title": "Items",
+     "slug": "items",
+     "description": ""
+    }
+   },
+   {
+    "id": 1431,
+    "hub_id": 1981,
+    "guid": "com.mpstark.dynamicmaps",
+    "name": "Dynamic Maps",
+    "slug": "dynamic-maps",
+    "teaser": "Replaces the in-game map screen with actually useful maps with dynamic information!",
+    "thumbnail": "https://files.sp-mod.com/mods/1981.png",
+    "downloads": 804827,
+    "favourites_count": 824,
+    "endorsements_count": 92,
+    "detail_url": "https://sp-mod.com/mod/1431/dynamic-maps",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": 17,
+    "published_at": "2024-05-23T02:35:00.000000Z",
+    "created_at": "2024-05-23T02:35:55.000000Z",
+    "updated_at": "2026-08-26T04:22:33.000000Z",
+    "owner": {
+     "id": 47478,
+     "name": "mpstark",
+     "profile_photo_url": "https://sp-mod.com/avatars/M.svg",
+     "cover_photo_url": null,
+     "created_at": "2024-04-04T09:27:41.000000Z",
+     "updated_at": "2026-08-10T19:45:27.000000Z"
+    },
+    "additional_authors": [
+     {
+      "id": 27605,
+      "name": "DrakiaXYZ",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+      "cover_photo_url": null,
+      "created_at": "2023-02-26T18:51:50.000000Z",
+      "updated_at": "2026-10-05T16:45:54.000000Z"
+     },
+     {
+      "id": 48110,
+      "name": "acidphantasm",
+      "profile_photo_url": "https://files.sp-mod.com/profile-photos/zdcvJTXL8uljGS9xjs6cj2DCf2truL3irycdjlkk_128w.webp",
+      "cover_photo_url": null,
+      "created_at": "2024-04-11T21:22:35.000000Z",
+      "updated_at": "2026-10-05T03:07:48.000000Z"
+     }
+    ],
+    "category": {
+     "id": 17,
+     "hub_id": 28,
+     "title": "Other",
+     "slug": "other",
+     "description": ""
+    }
+   },
+   {
+    "id": 2726,
+    "hub_id": null,
+    "guid": "spt-miyuki-props-dealer",
+    "name": "Miyuki Props Dealer",
+    "slug": "miyuki-props-dealer",
+    "teaser": "This mod adds different objects to the game, created for entertainment purposes.  Suitable for those who want to shoot some videos as props.",
+    "thumbnail": "https://files.sp-mod.com/mods/b6joiLnc5p2bu9D1tV6ve9tnXOAH0viyJky45mOC.png",
+    "downloads": 969,
+    "favourites_count": 2,
+    "endorsements_count": 0,
+    "detail_url": "https://sp-mod.com/mod/2726/miyuki-props-dealer",
+    "fika_compatibility": true,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": true,
+    "cheat_notice": false,
+    "category_id": 16,
+    "published_at": "2026-06-12T13:19:00.000000Z",
+    "created_at": "2026-06-09T00:44:28.000000Z",
+    "updated_at": "2026-07-28T09:25:40.000000Z",
+    "owner": {
+     "id": 41623,
+     "name": "NotDifficult",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/Sg0E8H2HAACLmuoMicYQljfkTiJ1ETyE77PkMLJt_256w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/JhfGZwLhpAlqAdNBGOSdJP21vHv3ALT6qaPsaoWT_1280w.webp",
+     "created_at": "2023-12-04T07:34:55.000000Z",
+     "updated_at": "2026-09-29T12:44:03.000000Z"
+    },
+    "additional_authors": [],
+    "category": {
+     "id": 16,
+     "hub_id": 29,
+     "title": "Traders",
+     "slug": "traders",
+     "description": ""
+    }
+   },
+   {
+    "id": 2046,
+    "hub_id": 2729,
+    "guid": "com.netvnum.pause",
+    "name": "PAUSE",
+    "slug": "pause",
+    "teaser": "This mod allows you to PAUSE the raid in progress, giving you time to take care of real life!",
+    "thumbnail": "https://files.sp-mod.com/mods/2729.jpeg",
+    "downloads": 66916,
+    "favourites_count": 133,
+    "endorsements_count": 3,
+    "detail_url": "https://sp-mod.com/mod/2046/pause",
+    "fika_compatibility": false,
+    "featured": false,
+    "contains_ads": false,
+    "shows_profile_binding_notice": false,
+    "cheat_notice": false,
+    "category_id": null,
+    "published_at": "2025-03-21T15:56:05.000000Z",
+    "created_at": "2025-03-21T15:56:05.000000Z",
+    "updated_at": "2026-07-28T06:04:44.000000Z",
+    "owner": {
+     "id": 74904,
+     "name": "netVnum",
+     "profile_photo_url": "https://files.sp-mod.com/profile-photos/b68be39e6843ad710a55abd84b558947f1225475_128w.webp",
+     "cover_photo_url": "https://files.sp-mod.com/cover-photos/78cb218cc38e5b93331c9aa78d8e5fec08002427.jpeg",
+     "created_at": "2025-03-16T11:59:03.000000Z",
+     "updated_at": "2026-09-15T19:11:07.000000Z"
+    },
+    "additional_authors": [],
+    "category": null
+   }
+  ],
+  "links": {
+   "first": "https://sp-mod.com/api/v0/mods?page=1",
+   "last": "https://sp-mod.com/api/v0/mods?page=2",
+   "prev": null,
+   "next": "https://sp-mod.com/api/v0/mods?page=2"
+  },
+  "meta": {
+   "current_page": 1,
+   "from": 1,
+   "last_page": 2,
+   "links": [
+    {
+     "url": null,
+     "label": "« Previous",
+     "page": null,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=1",
+     "label": "1",
+     "page": 1,
+     "active": true
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "2",
+     "page": 2,
+     "active": false
+    },
+    {
+     "url": "https://sp-mod.com/api/v0/mods?page=2",
+     "label": "Next »",
+     "page": 2,
+     "active": false
+    }
+   ],
+   "path": "https://sp-mod.com/api/v0/mods",
+   "per_page": 10,
+   "to": 10,
+   "total": 18
+  }
+ }
+}

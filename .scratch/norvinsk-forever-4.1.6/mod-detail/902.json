@@ -1,0 +1,39 @@
+{
+ "id": 902,
+ "hub_id": 1219,
+ "guid": "xyz.drakia.bigbrain",
+ "name": "BigBrain",
+ "slug": "bigbrain",
+ "teaser": "A library for adding extra logic layers to existing bot brains",
+ "thumbnail": "",
+ "downloads": 1357433,
+ "favourites_count": 1199,
+ "endorsements_count": 69,
+ "description": "<p><strong>This is a library meant for use by developers, and may be required as a dependency for some plugins. Installing it by itself will have no effect on your game, without another plugin that utilizes it.</strong></p>\n<h3>Installation</h3>\n<p>1) Open the downloaded zip file in <strong><a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\">7-zip</a></strong></p>\n<p>2) Select the folders in the zip file in <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"><strong>7-zip</strong></a></p>\n<p>3) Drag the selected folders from <a target=\"_blank\" class=\"external-link\" href=\"https://www.7-zip.org/\" rel=\"noreferrer noopener\"><strong>7-zip</strong></a> into your SPT folder</p>\n<p>Demonstration Video (Yes, it’s Quest Tracker, but the same concept applies to all of my mods, I’m not making mod-specific extraction example videos):</p>\n<p><img loading=\"lazy\" decoding=\"async\" src=\"https://i.imgur.com/afNPjAw.gif\" alt=\"Install Gif\" /></p>\n<h3>What is BigBrain</h3>\n<p>Have you ever wanted to take full control of bots, but found that patching into methods only gets you so far? BigBrain will allow you to insert your own logic layers into bot brains, at whatever priority you want, allowing you to take full control of the bots. If you’ve ever wanted to completely re-write how a bot behaves in certain circumstances, you are also able to remove original layers, so you don’t have to worry about the original B** brains conflicting with yours.</p>\n<h3>Mod Developer Notice</h3>\n<p>Please do not bundle BigBrain directly with your plugin, link users to this mod page to download and install it alongside your plugin. This allows multiple mods to utilize it, without risk of one mod or another being bundled with an old version of BigBrain and potentially breaking things.</p>\n<h3>Documentation</h3>\n<p>Documentation is still a to-do, for now the code is the documentation.</p>\n<p>I’ve created a test brain that re-implements the logic of the “PatrolAssault” layer, which can be found on GitHub: <a target=\"_blank\" class=\"external-link\" href=\"https://github.com/DrakiaXYZ/SPT-BrainTest\" rel=\"noreferrer noopener\">https://github.com/DrakiaXYZ/SPT-BrainTest</a></p>\n<p>Note due to this being an almost direct re-implementation of the “PatrolAssault” layer, that was mostly used for testing that I was able to interact with all of the things required to re-implement a base logic layer, the logic may not be implemented in the most concise or best manner.</p>\n<p>If you enjoy my work, you can <a target=\"_blank\" class=\"external-link\" href=\"https://ko-fi.com/drakiaxyz\" rel=\"noreferrer noopener\">feed my caffeine addiction</a></p>\n",
+ "detail_url": "https://sp-mod.com/mod/902/bigbrain",
+ "fika_compatibility": false,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 5,
+ "published_at": "2023-05-31T03:20:00.000000Z",
+ "created_at": "2023-05-31T03:20:55.000000Z",
+ "updated_at": "2026-08-03T06:02:26.000000Z",
+ "owner": {
+  "id": 27605,
+  "name": "DrakiaXYZ",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/3QNnXtLVCemFEnHBPEbJlHUotMxBLgyZ69qLxgnZ_256w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-02-26T18:51:50.000000Z",
+  "updated_at": "2026-10-05T23:57:19.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 5,
+  "hub_id": 22,
+  "title": "Bots",
+  "slug": "bots",
+  "description": ""
+ }
+}

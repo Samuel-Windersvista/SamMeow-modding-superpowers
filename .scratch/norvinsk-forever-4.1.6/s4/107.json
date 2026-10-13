@@ -1,0 +1,75 @@
+{
+ "idx": 107,
+ "entry": "[5]新增5个开局角色-CustomProfiles",
+ "terms": [
+  "EFCL-CustomProfiles",
+  "5 -CustomProfiles"
+ ],
+ "all": [
+  {
+   "term": "5 -CustomProfiles",
+   "id": 1232,
+   "name": "Lotus",
+   "slug": "lotus",
+   "dl": 187202,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 2621,
+   "name": "T***** DLSS 4.5",
+   "slug": "tarkov-dlss-45",
+   "dl": 12059,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 2594,
+   "name": "Player Boss Scav",
+   "slug": "player-boss-scav",
+   "dl": 10704,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 3011,
+   "name": "Show Me The Money (Item Pricing) (4.1.x)",
+   "slug": "show-me-the-money-item-pricing-41x",
+   "dl": 7703,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 994,
+   "name": "Set Speed - Set Player Speed with Hotkeys",
+   "slug": "set-speed-set-player-speed-with-hotkeys",
+   "dl": 5488,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 3061,
+   "name": "Extra Special Slots",
+   "slug": "extra-special-slots",
+   "dl": 1531,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 3082,
+   "name": "Hj's Task Item Indicator",
+   "slug": "hjs-task-item-indicator",
+   "dl": 1111,
+   "sc": 0
+  },
+  {
+   "term": "5 -CustomProfiles",
+   "id": 3071,
+   "name": "Hj's Task Turn in Indicator",
+   "slug": "hjs-task-turn-in-indicator",
+   "dl": 947,
+   "sc": 0
+  }
+ ],
+ "done": true
+}

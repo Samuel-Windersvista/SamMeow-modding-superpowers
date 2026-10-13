@@ -1,0 +1,288 @@
+{
+    "Active": true,
+    "StackMult": 2,
+    "List": [
+        {
+            "name": "Propital regenerative stimulant injector",
+            "_id": "5c0e530286f7747fa1419862",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "SJ1 TGLabs combat stimulant injector",
+            "_id": "5c0e531286f7747fa54205c2",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "SJ6 TGLabs combat stimulant injector",
+            "_id": "5c0e531d86f7747fa23f4d42",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "Zagustin hemostatic drug injector",
+            "_id": "5c0e533786f7747fa23f4d47",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "eTG-change regenerative stimulant injector",
+            "_id": "5c0e534186f7747fa1419867",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "Adrenaline injector",
+            "_id": "5c10c8fd86f7743d7d706df3",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "3-(b-TG) stimulant injector",
+            "_id": "5ed515c8d380ab312177c0fa",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "L1 (Norepinephrine) injector",
+            "_id": "5ed515e03a40a50460332579",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "P22 (Product 22) stimulant injector",
+            "_id": "5ed515ece452db0eb56fc028",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "AHF1-M stimulant injector",
+            "_id": "5ed515f6915ec335206e4152",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "Meldonin injector",
+            "_id": "5ed5160a87bb8443d10680b5",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "M.U.L.E. stimulant injector",
+            "_id": "5ed51652f6c34d2cc26336a1",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "'Obdolbos' cocktail injector",
+            "_id": "5ed5166ad380ab312177c100",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "xTG-12 antidote injector",
+            "_id": "5fca138c2a7b221b2852a5c6",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "SJ9 TGLabs combat stimulant injector",
+            "_id": "5fca13ca637ee0341a484f46",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "'Obdolbos 2' cocktail injector",
+            "_id": "637b60c3b7afa97bfc3d7001",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "SJ12 TGLabs combat stimulant injector",
+            "_id": "637b612fb7afa97bfc3d7005",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "PNB (Product 16) stimulant injector",
+            "_id": "637b6179104668754b72f8f5",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "Trimadol stimulant injector",
+            "_id": "637b620db7afa97bfc3d7009",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },{
+            "name": "Perfotoran (Blue Blood) stimulant injector",
+            "_id": "637b6251104668754b72f8f9",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "cheeta_stim",
+            "_id": "cheeta_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "boar_stim",
+            "_id": "boar_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "adrenal_plus_stim",
+            "_id": "adrenal_plus_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "gepard_stim",
+            "_id": "gepard_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "glucose_stim",
+            "_id": "glucose_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "elephant_stim",
+            "_id": "elephant_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "ehets_stim",
+            "_id": "ehets_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "bbloodshot_stim",
+            "_id": "bbloodshot_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Amphetamine_stim",
+            "_id": "Amphetamine_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Caffeine_Stim",
+            "_id": "Caffeine_Stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "cocaine_stim",
+            "_id": "cocaine_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Glucose_shot",
+            "_id": "Glucose_shot",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "fastshot",
+            "_id": "fastshot",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "mbloodshot_stim",
+            "_id": "mbloodshot_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "meldonin_v13.5",
+            "_id": "meldonin_v13.5",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Nic_Stim",
+            "_id": "Nic_Stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "obdolbos_v13.0",
+            "_id": "obdolbos_v13.0",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "sbloodshot_stim",
+            "_id": "sbloodshot_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "regen_stim",
+            "_id": "regen_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "salnrg_stim",
+            "_id": "salnrg_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "rebirth_stim",
+            "_id": "rebirth_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "radioactiveblood_stim",
+            "_id": "radioactiveblood_stim",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "2A2-(b-TG) stimulant injector",
+            "_id": "66507eabf5ddb0818b085b68",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        }
+    ]
+}

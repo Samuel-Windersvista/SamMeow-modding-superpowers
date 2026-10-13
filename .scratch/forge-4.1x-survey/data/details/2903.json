@@ -1,0 +1,39 @@
+{
+ "id": 2903,
+ "hub_id": null,
+ "guid": "eu.thescrewcollab.raidsareinfinite",
+ "name": "Raids Are Infinite",
+ "slug": "raids-are-infinite",
+ "teaser": "TL;DR: Ever wished to just roam the map forever? Now you can!",
+ "thumbnail": "https://files.sp-mod.com/mods/qWAPqeIXyrtholIgtnxG9eLEWOI6zm4p3xZHyjri.jpg",
+ "downloads": 7275,
+ "favourites_count": 59,
+ "endorsements_count": 7,
+ "description": "<h2>Overview</h2>\n<p>All playable raid locations have their time limits set to 99999 minutes on server startup. No more getting MIA because the raid timer ran out — take as long as you need.</p>\n<p>Since v1.1.0 the mod also ships a <strong>client plugin</strong> that keeps the in-raid clock honest: raids start at your real system time and run 1:1 with it, the raid timer shows a wall clock instead of a countdown, and in Fika co-op every player’s sky matches the host’s.</p>\n<h2>How It Works</h2>\n<h3>Server</h3>\n<p>The mod hooks into the database after it’s loaded and overrides <code>EscapeTimeLimit</code>, <code>EscapeTimeLimitCoop</code>, and <code>EscapeTimeLimitPVE</code> for every location that has a non-zero time limit. Locations with a value of 0 (unused maps) or 99999 (Hideout) are left untouched.</p>\n<p>Since the override happens at runtime in memory, the database files on disk stay pristine — no integrity check issues.</p>\n<h3>Client</h3>\n<p>Raising the server-side limit alone isn’t enough — the client runs its own end-of-raid checks and its own clock, so the plugin covers four things the server can’t reach:</p>\n<ul>\n<li><strong>MIA is disarmed at the source.</strong> Rather than clearing the session timer (which breaks extraction, since Fika reads it unguarded), the plugin <em>extends</em> it to the year 2200. Every timer reader keeps working normally while the “time is up” comparison stays false for ~174 years, closing all three MIA paths at once.</li>\n<li><strong>Raids start at your real system time</strong>, running 1:1 with the clock instead of T*****‘s 7× acceleration. In Fika the host’s choice is published before the raid is created, so every client seeds from the same value.</li>\n<li><strong>The raid timer shows a clock</strong>, not a countdown. It renders the <em>raid</em> clock, so it matches the sky and is identical on every machine — not your local system time. Extraction and transit countdowns are left alone and still count down.</li>\n<li><strong>Client lighting is bound to the host’s clock.</strong> Fika syncs the raid clock but not the sky’s separate clock reference, so a client could stand in darkness inside a daytime raid. The plugin repoints the sky at the synced clock so it tracks it permanently.</li>\n</ul>\n<p>The raid-setup screen also shows real system time instead of the accelerated backend clock.</p>\n<h2>Patched Locations</h2>\n<table>\n<thead>\n<tr>\n<th>Location</th>\n<th>Stock Limit</th>\n<th>Co-op</th>\n<th>Patched</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Customs</td>\n<td>40</td>\n<td>25</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Factory (Day)</td>\n<td>20</td>\n<td>15</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Factory (Night)</td>\n<td>25</td>\n<td>15</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Interchange</td>\n<td>40</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Labs</td>\n<td>35</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Lighthouse</td>\n<td>40</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Reserve</td>\n<td>40</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Shoreline</td>\n<td>45</td>\n<td>35</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Streets</td>\n<td>50</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Woods</td>\n<td>40</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Ground Zero</td>\n<td>35</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Ground Zero (High)</td>\n<td>35</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Labyrinth</td>\n<td>40</td>\n<td>30</td>\n<td>99999</td>\n</tr>\n<tr>\n<td>Arena</td>\n<td>60000</td>\n<td>60000</td>\n<td>99999</td>\n</tr>\n</tbody>\n</table>\n<p>Untouched: Hideout (already 99999), and the unused Private Sector, Suburbs, Terminal and Town (all 0).</p>\n<h2>Configuration</h2>\n<p>The infinite raid time itself is not configurable — that’s the whole point of the mod. The client plugin exposes a few display options in <code>BepInEx/config</code>:</p>\n<table>\n<thead>\n<tr>\n<th>Setting</th>\n<th>Default</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ShowClockInRaid</code></td>\n<td><code>true</code></td>\n<td>Show the current time on the raid timer instead of a countdown. Also forces the panel visible, which normally only appears in the last 10 minutes.</td>\n</tr>\n<tr>\n<td><code>EnableLogging</code></td>\n<td><code>false</code></td>\n<td>Verbose trace output to the BepInEx log. Only needed when diagnosing.</td>\n</tr>\n<tr>\n<td><code>LogIntervalSeconds</code></td>\n<td><code>5</code></td>\n<td>Throttle for repeated per-frame log lines.</td>\n</tr>\n</tbody>\n</table>\n<h2>Compatibility</h2>\n<ul>\n<li><strong>SPT 4.1.x</strong></li>\n<li><strong>Fika</strong> — supported but not required. The co-op time sync detects Fika at load and skips cleanly in singleplayer.</li>\n</ul>\n<h2>Installation</h2>\n<p>Standard drag and drop installation. The archive contains both <code>SPT_Runtime/</code> (server mod) and <code>BepInEx/</code> (client plugin) — extract into your SPT root so both land in place.</p>\n<p>In Fika co-op, <strong>every player needs the client plugin</strong>, not just the host. The MIA checks run on each machine independently, so a player without it can still be pulled out as MIA while everyone else carries on.</p>\n<h2>Known Issues</h2>\n<p>In Fika co-op, a client’s raid clock can sit a fixed offset behind the host’s (roughly the time the client spent loading in). It’s constant, not drifting, and has no gameplay effect.</p>\n<h1>KNOWN CONFLICTS</h1>\n<ul>\n<li><a target=\"_blank\" class=\"external-link\" href=\"https://sp-mod.com/mod/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp\" rel=\"noreferrer noopener\">https://sp-mod.com/mod/2856/fieldkit-dev-toolkit-weapon-control-lootentity-browser-spawning-esp</a></li>\n</ul>\n",
+ "detail_url": "https://sp-mod.com/mod/2903/raids-are-infinite",
+ "fika_compatibility": true,
+ "featured": false,
+ "contains_ads": false,
+ "shows_profile_binding_notice": false,
+ "cheat_notice": false,
+ "category_id": 8,
+ "published_at": "2026-08-12T21:32:00.000000Z",
+ "created_at": "2026-08-12T21:33:58.000000Z",
+ "updated_at": "2026-08-26T20:35:02.000000Z",
+ "owner": {
+  "id": 34185,
+  "name": "ScrewTSW",
+  "profile_photo_url": "https://files.sp-mod.com/profile-photos/9ee56920d18c92a8ce8c1438a2df49cd628cd405_128w.webp",
+  "cover_photo_url": null,
+  "created_at": "2023-07-19T08:23:15.000000Z",
+  "updated_at": "2026-10-11T06:50:21.000000Z"
+ },
+ "additional_authors": [],
+ "category": {
+  "id": 8,
+  "hub_id": 25,
+  "title": "Locations",
+  "slug": "locations",
+  "description": ""
+ }
+}

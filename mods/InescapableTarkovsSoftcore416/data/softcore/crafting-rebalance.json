@@ -1,0 +1,714 @@
+{
+  "recipeAdjustments": [
+    {
+      "id": "5c13cef886f774072e618e82",
+      "ops": [
+        {
+          "op": "count",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "59e358a886f7741776641ac3",
+      "ops": [
+        {
+          "op": "count",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "5c12688486f77426843c7d32",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "59e35cbb86f7741778269d83",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        },
+        {
+          "op": "count",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5d1b385e86f774252167b98a",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "590c595c86f7747884343ad7",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "60098b1705871270cd5352a1",
+      "recipeId": "61c77cc6fcc1673f08540e9b",
+      "ops": [
+        {
+          "op": "count",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "5af0484c86f7740f02001f7f",
+      "ops": [
+        {
+          "op": "count",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "5448fee04bdc2dbc018b4567",
+      "recipeId": "5dc1f4d9e078d303d91b44c7",
+      "ops": [
+        {
+          "op": "count",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "id": "5ed51652f6c34d2cc26336a1",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "5c0e534186f7747fa1419867",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        },
+        {
+          "op": "setCount",
+          "templateId": "5e8488fa988a8701445df1e4",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "60098ad7c2240c0fe85c570a",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "590c678286f77426c9660122",
+          "value": 1
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "5751a25924597722c463c472",
+          "to": "5e8488fa988a8701445df1e4"
+        }
+      ]
+    },
+    {
+      "id": "5d02797c86f774203f38e30a",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "5d02797c86f774203f38e30a",
+          "value": 2
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "5d02797c86f774203f38e30a",
+          "to": "5d02778e86f774203e7dedbe"
+        }
+      ]
+    },
+    {
+      "id": "5c052e6986f7746b207bc3c9",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "5af0561e86f7745f5f3ad6ac",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "5c0530ee86f774697952d952",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5d02778e86f774203e7dedbe",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "619cc01e0a7c3a1a2731940c",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "590c657e86f77412b013051d",
+      "ops": [
+        {
+          "op": "count",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5c0e531d86f7747fa23f4d42",
+      "ops": [
+        {
+          "op": "count",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "62a0a124de7ac81993580542",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "62a0a16d0b9d3c46de5b6e97",
+      "ops": [
+        {
+          "op": "count",
+          "value": 1
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "590c621186f774138d11ea29",
+          "to": "5c05300686f7746dce784e5d"
+        },
+        {
+          "op": "setAreaLevel",
+          "value": 2
+        },
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5c12613b86f7743bbe2c3f76",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "62a0a16d0b9d3c46de5b6e97",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5c05300686f7746dce784e5d",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "5c05308086f7746b2101e90b",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "5d0376a486f7747d8050965c",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "57347ca924597744596b4e71",
+      "ops": [
+        {
+          "op": "setCount",
+          "templateId": "5c05300686f7746dce784e5d",
+          "value": 1
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "5c05300686f7746dce784e5d",
+          "to": "5c05308086f7746b2101e90b"
+        },
+        {
+          "op": "setCount",
+          "templateId": "573477e124597737dd42e191",
+          "value": 1
+        },
+        {
+          "op": "setCount",
+          "templateId": "590a3b0486f7743954552bdb",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5d0376a486f7747d8050965c",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "5d1b5e94d7ad1a2b865a96b0",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "590c37d286f77443be3d7827",
+          "to": "5b3b6e495acfc4330140bd88"
+        }
+      ]
+    },
+    {
+      "id": "5c052fb986f7746b2101e909",
+      "ops": [
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 11,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "5c1265fc86f7743f896a21c2",
+              "count": 1,
+              "isFunctional": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5ac78a9b86f7741cca0bbd8d",
+              "count": 1,
+              "isFunctional": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d4042a986f7743185265463",
+              "type": "Tool"
+            },
+            {
+              "templateId": "5d63d33b86f7746ea9275524",
+              "type": "Tool"
+            },
+            {
+              "type": "QuestComplete",
+              "questId": "63966fccac6f8f3c677b9d89"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "590a3efd86f77437d351a25b",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5d6fc87386f77449db3db94e",
+      "recipeId": "5dd3c5a67da3785e63275437",
+      "ops": [
+        {
+          "op": "replaceTemplate",
+          "from": "57347b8b24597737dd42e192",
+          "to": "60391a8b3364dc22b04d0ce5"
+        },
+        {
+          "op": "setAreaLevel",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "590a3c0a86f774385a33c450",
+      "ops": [
+        {
+          "op": "count",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "590a3b0486f7743954552bdb",
+      "ops": [
+        {
+          "op": "count",
+          "value": 3
+        },
+        {
+          "op": "replaceTemplate",
+          "from": "590a3efd86f77437d351a25b",
+          "to": "5672cb724bdc2dc2088b456b"
+        }
+      ]
+    },
+    {
+      "id": "5672cb724bdc2dc2088b456b",
+      "ops": [
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 1,
+              "type": "Area"
+            },
+            {
+              "templateId": "590a3efd86f77437d351a25b",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c2e1186f77425357b6124",
+              "type": "Tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5e2aedd986f7746d404f3aa4",
+      "ops": [
+        {
+          "op": "count",
+          "value": 2
+        },
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "5af0561e86f7745f5f3ad6ac",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d1b31ce86f7742523398394",
+              "type": "Tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5e340dcdcb6d5863cc5e5efb",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "5d1b309586f77425227d1676",
+      "ops": [
+        {
+          "op": "count",
+          "value": 1
+        },
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5e85a9f4add9fe03027d9bf1",
+      "ops": [
+        {
+          "op": "count",
+          "value": 20
+        },
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "5d6fc78386f77449d825f9dc",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5e85a9a6eacf8c039e4e2ac1",
+              "count": 20,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5a0c27731526d80618476ac4",
+              "count": 2,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c2e1186f77425357b6124",
+              "type": "Tool"
+            },
+            {
+              "templateId": "544fb5454bdc2df8738b456a",
+              "type": "Tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "590a358486f77429692b2790",
+      "ops": [
+        {
+          "op": "replaceTemplate",
+          "from": "5af0561e86f7745f5f3ad6ac",
+          "to": "59e35de086f7741778269d84"
+        }
+      ]
+    },
+    {
+      "id": "60391a8b3364dc22b04d0ce5",
+      "ops": [
+        {
+          "op": "replaceTemplate",
+          "from": "5780cf722459777a5108b9a1",
+          "to": "57e26ea924597715ca604a09"
+        }
+      ]
+    },
+    {
+      "id": "5efb0cabfb3e451d70735af5",
+      "ops": [
+        {
+          "op": "count",
+          "value": 120
+        },
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "5efb0d4f4bc50b58e81710f3",
+              "count": 120,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "544fb5454bdc2df8738b456a",
+              "type": "Tool"
+            },
+            {
+              "templateId": "5d6fc78386f77449d825f9dc",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "590c31c586f774245e3141b2",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "62a0a0bb621468534a797ad5",
+              "type": "Tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60194943740c5d77f6705eea",
+      "ops": [
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "59e6927d86f77411da468256",
+              "count": 150,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d6fc78386f77449d825f9dc",
+              "count": 1,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5af04b6486f774195a3ebb49",
+              "type": "Tool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "57371aab2459775a77142f22",
+      "ops": [
+        {
+          "op": "pushRequirement",
+          "requirement": {
+            "templateId": "5737201124597760fc4431f1",
+            "count": 140,
+            "isFunctional": false,
+            "isEncoded": false,
+            "type": "Item"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5d6e68a8a4b9360b6c0d54e2",
+      "ops": [
+        {
+          "op": "replaceRequirements",
+          "requirements": [
+            {
+              "areaType": 10,
+              "requiredLevel": 2,
+              "type": "Area"
+            },
+            {
+              "templateId": "5d6e6806a4b936088465b17e",
+              "count": 80,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5c925fa22e221601da359b7b",
+              "count": 80,
+              "isFunctional": false,
+              "isEncoded": false,
+              "type": "Item"
+            },
+            {
+              "templateId": "5d40425986f7743185265461",
+              "type": "Tool"
+            },
+            {
+              "templateId": "5d4042a986f7743185265463",
+              "type": "Tool"
+            },
+            {
+              "type": "QuestComplete",
+              "questId": "6179ad0a6e9dd54ac275e3f2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5d0379a886f77420407aa271",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5448be9a4bdc2dfd2f8b456a",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "5a0c27731526d80618476ac4",
+      "ops": [
+        {
+          "op": "setAllCounts",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "64b8ee384b75259c590fa89b",
+      "ops": [
+        {
+          "op": "count",
+          "value": 150
+        }
+      ]
+    },
+    {
+      "id": "56dfef82d2720bbd668b4567",
+      "ops": [
+        {
+          "op": "count",
+          "value": 180
+        }
+      ]
+    },
+    {
+      "id": "54527ac44bdc2d36668b4567",
+      "ops": [
+        {
+          "op": "count",
+          "value": 180
+        }
+      ]
+    }
+  ]
+}
