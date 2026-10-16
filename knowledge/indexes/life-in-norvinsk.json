@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "generated": "2026-10-13",
+  "kb": {
+    "id": "life-in-norvinsk",
+    "title": "《生活在诺文斯克》Life in Norvinsk 包内构建知识（3.11.4 主力线）",
+    "root": "E:\\Game\\EFT_Offline\\Life_in_Norvinsk_v0.3.2"
+  },
+  "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。",
+  "entries": [
+    {
+      "path": "docs/bot修复补丁-v1.0-安装说明.md",
+      "title": "【生活在诺文斯克】bot 行为修复补丁 v1.0",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "patch",
+      "source": "package",
+      "keywords": [
+        "一、修复内容（一句话版）",
+        "二、文件清单（覆盖目标以包内目录结构为准）",
+        "三、安装方法",
+        "四、安装后自检（BepInEx 日志）",
+        "五、回滚",
+        "六、注意事项"
+      ],
+      "summary": "完整 SHA256 见 SHA256SUMS.txt。"
+    },
+    {
+      "path": "docs/README.md",
+      "title": "《生活在诺文斯克》Life in Norvinsk 包档案卡（SPT 3.11.4 · 主力线）",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "pack-profile",
+      "source": "package",
+      "keywords": [
+        "Life-in-Norvinsk",
+        "生活在诺文斯克",
+        "诺文斯克",
+        "3.11.4",
+        "SPT_3114",
+        "196 mods",
+        "order.json",
+        "整合包档案卡",
+        "pack-profile",
+        "bot修复补丁",
+        "FriendlyPmcGuard",
+        "FollowerGuard",
+        "LootingBots",
+        "SAIN",
+        "难度分级",
+        "好奇猫设置",
+        "版本回滚"
+      ],
+      "summary": "定位：现役 SPT 3.11.4 主力整合包《生活在诺文斯克》(Life in Norvinsk)，196 个 mod，同时充当 4.1.6《永远的诺文斯克》的参照基准（197 条目 vs 本包 196）；版本线：v0.3.2.2 现役 -> v0.3.3(+bot修复补丁 v1.0) -> 3.11.5 特别优化版；构成与 profile：前置覆盖层 + 196 mods，三 profile 单机运行整合包(活跃)/生化危机配置(分支)/default(遗留)，实例 gameName=SPT3、gamePath=E:\\\\Game\\\\EFT_Offline\\\\SPT_3114；本体修改与设置载体：改写后的 Assembly-CSharp.dll 与 SPT_Data 配置、user\\\\mods\\\\order.json 加载序、好奇猫自用 sptsettings 五 ini 与 GamePanelHUD cfg；bot 补丁要点：修复 LootingBots 空手扫描死循环、boss 护卫每帧 NRE(单场约 4.5 万次)、价格链、SAIN 互操作闩锁、friendlyPMC 死跟班、扫描性能(并发默认 3)，自检锚点 [FollowerGuard] applied 8/8 与 [FriendlyPmcGuard] applied 2/2；升级/回滚资产：3.11.5 特别优化版补丁包、3.11.4 服务端回滚包、特别优化版 MO2 v2.5.2；证据指针：order.json、三 profile modlist、补丁包安装说明与 SHA256SUMS、游戏资料四图、工具链 WTT/Realism 生成器。"
+    }
+  ]
+}

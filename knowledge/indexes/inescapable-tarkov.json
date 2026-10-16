@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "generated": "2026-10-13",
+  "kb": {
+    "id": "inescapable-tarkov",
+    "title": "《无法逃离塔科夫》Inescapable Tarkov 包内构建知识（SPT 5.0 线）",
+    "root": "E:\\Game\\EFT_Offline\\Inescapable Tarkov"
+  },
+  "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。",
+  "entries": [
+    {
+      "path": "docs/README.md",
+      "title": "《无法逃离塔科夫》Inescapable Tarkov 包档案卡（SPT 5.0 · Alpha）",
+      "version": [
+        "5.0"
+      ],
+      "domain": "both",
+      "topic": "pack-profile",
+      "source": "package",
+      "keywords": [
+        "Inescapable Tarkov",
+        "无法逃离塔科夫",
+        "SPT5",
+        "IL2CPP",
+        "ITBS",
+        "Softcore",
+        "DebugToolkit",
+        "QoL",
+        "BettersNorvinskQoL",
+        "AccurateCircularRadar",
+        "TrueRealTimeMap",
+        "自建mod",
+        "Alpha",
+        "MO2",
+        "丹尼斯",
+        "Norvinsk"
+      ],
+      "summary": "《无法逃离塔科夫》Inescapable Tarkov 是 SamMeow 系自用 SPT 整合包，代号 Alpha，以自建 mod 为主；目标运行在 SPT 5.0 线（IL2CPP / gameName=SPT5 / EFT 1.1.5，日志 1.1.5.0.47242），实例位于 E:\\\\Game\\\\EFT_Offline\\\\Inescapable Tarkov（profile=Default，另有 %LOCALAPPDATA% 注册）；构成 12 个 mod 目录、启用 11 / 禁用 1（TrueRealTimeMap 禁用），核心为 ITBS 机器人系统、Softcore、BettersNorvinskQoL，工具链含 MCP 活跃探针、tarkov-runtime-client-bridge、SamMeow.DebugToolkit；构建知识索引见 hub 工单 softcore416、mods/InescapableTarkovsSoftcore416、SamMeow-Inescapable-Tarkov-Betters-Norvinsk-QoL 源码仓与 curated migration 经验文档；待办含 Barter Economy / Samuel's Tweaks / Traveler 或 PTT 移植，缺口为实例内零说明文档与笔记侧版本标签待修正。"
+    }
+  ]
+}

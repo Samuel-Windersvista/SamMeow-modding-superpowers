@@ -4,6 +4,7 @@ using Xunit;
 
 namespace InescapableTarkovsSoftcore.Tests;
 
+[Collection("ExternalJsonFile")]
 public class ModuleOrchestratorTests
 {
     [Fact]
@@ -171,6 +172,25 @@ public class ModuleOrchestratorTests
         var disabledReport = orchestrator.Run(config);
         Assert.Empty(executed);
         Assert.Contains("trueItems", disabledReport.SkippedModuleIds);
+    }
+
+    [Fact]
+    public void Run_DrainsPendingExternalFileWarnings_AtWarningLevel()
+    {
+        // 清空其它测试/静态初始化遗留，注入唯一标记后运行，验证编排器在汇总后以 Warning 输出。
+        ExternalJsonFile.DrainPendingWarnings();
+        const string marker = "[ITS] 外置数据表 config/trueitems/barter.json 解析失败";
+        ExternalJsonFile.AddPendingWarnings([marker]);
+
+        var executed = new List<string>();
+        IFeatureModule[] modules = [new FakeModule("softcore", ModuleOrders.Softcore, executed)];
+        var orchestrator = CreateOrchestrator(modules, out var logger);
+
+        var report = orchestrator.Run(new SoftcoreConfig());
+
+        Assert.Contains(marker, logger.WarningMessages);
+        // 外置表告警不并入模块自身告警计数
+        Assert.Equal(0, report.TotalWarnings);
     }
 
     private static ModuleOrchestrator CreateOrchestrator(IEnumerable<IFeatureModule> modules, out RecordingLogger<ModuleOrchestrator> logger)

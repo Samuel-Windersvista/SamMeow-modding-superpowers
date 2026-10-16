@@ -26,8 +26,8 @@ SamMeow SPT modding 工具包的纯 SPT 版本——面向 SPT 4.1 mod 开发与
 
 - SPT 5.0 已正式发布（官方组织 2026-08-11 归档全部仓库后，SP-Tushonka 社区 fork 成为事实延续）。创立前提——「SPT 可能停止运作，立即归档一切」——经 ADR-0006 全仓退役。
 - 新姿态：现役生态工具链。归档层（wiki vendor 副本、Forge 归档、源码登记册）已建成，转为长期参考 + 离线兜底。
-- 版本策略重述：4.1.5 稳定开发基线（Modding Standard Dev-Baseline，理由改为生态成熟而非版本终局性）；5.0 为已发布新主线（version-matrix 管辖双轨）；3.11.x 仅历史对照。「final locked version」表述已从 README、VERSIONS.md、skills、docs 清除。
-- 本地资产清单扩展为六项：20 仓归档 clone、4.1.5 源码 fork、3.11.4 源码、5.x 源码、SPT 特化版 MO2 源码（`SamMeow-Tarkov-specific-Mod-Organizer`）、特化版 MO2 构建产物（`E:\build\spt-mo2\prefix\install\bin`）。
+- 版本策略重述：4.1 稳定开发基线（现行补丁 4.1.6，2026-10-14 随补丁更新；Modding Standard Dev-Baseline，理由改为生态成熟而非版本终局性）；5.0 为已发布新主线（version-matrix 管辖双轨）；3.11.x 仅历史对照。「final locked version」表述已从 README、VERSIONS.md、skills、docs 清除。
+- 本地资产清单扩展为六项：20 仓归档 clone、4.1 源码 fork（现行为 `SamMeow_SP-Tushonka_source_code`，tag 4.1.6；初始克隆 `SamMeow_SPT410_source_code`）、3.11.4 源码、5.x 源码、SPT 特化版 MO2 源码（`SamMeow-Tarkov-specific-Mod-Organizer`）、特化版 MO2 构建产物（`E:\build\spt-mo2\prefix\install\bin`）。
 - ADR-0002（tarkov-runtime-mcp 只适配 5.x）维持不变——5.0 发布后该范围决策反而更加成立。
 - 后续：按正式 release tag 复核 5.0 相关的 KB 内容（api-notes-5.0 的 UNSTABLE 标记、5xx-source-verification 状态、version-matrix 快照基线）。
 

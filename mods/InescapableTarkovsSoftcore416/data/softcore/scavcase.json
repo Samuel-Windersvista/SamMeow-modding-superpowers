@@ -1,3 +1,5 @@
+// ScavCase 数据表（外置数据表：config/softcore/scavcase.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
   // ScavCase 重做数据（迁移自源 TS assets/scavcase.ts；软核 G6-B / T09）
   // 价值区间（卢布）
@@ -121,6 +123,7 @@
     "644120aa86ffbe10ee032b6f"
   ],
   // ScavCase 配方重做（源 scavCaseRecipesReworked 5 条）
+  // 注：recipes[].id 为配方自身标识（ScavCaseChanger.ToRecipes 运行时新建 ScavRecipe 使用），非物品引用，无需匹配数据库。
   "recipes": [
     {
       "id": "62710974e71632321e5afd5f",

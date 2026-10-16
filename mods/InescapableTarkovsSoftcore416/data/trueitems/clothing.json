@@ -1,3 +1,5 @@
+// True Items 衣物表（外置数据表：config/trueitems/clothing.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
     "Active": true,
     "StackMult": 1,
@@ -131,6 +133,72 @@
         },{
             "name": "Beret (Olive)",
             "_id": "5f60e784f2bcbb675b00dac7",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (EFT Patch)",
+            "_id": "68f263f099d2172e150d7ff8",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "New Year ushanka hat",
+            "_id": "6937efd50543dcc2560a2c81",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Domontovich ushanka hat",
+            "_id": "6937f02dfd6488bb27024839",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Zaebtsa Berezka)",
+            "_id": "69ce8ea6c5fbc777150faf69",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Zaebtsa Flecktarn)",
+            "_id": "69ce8fa8579d5d18300a1fd3",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Boston)",
+            "_id": "69ceab1a8562e71bbe063511",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (MultiCam Black)",
+            "_id": "69ceab3a8562e71bbe063514",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Zaebtsa Woodland)",
+            "_id": "6a622ebeace4474db90fc85c",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Zaebtsa Red Tiger Stripe)",
+            "_id": "6a622f797a1ca14e57077819",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (MultiCam)",
+            "_id": "6a8316cb0ccd0eb28d02f264",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Baseball cap (Trauma)",
+            "_id": "6a8316e7608278aaac018b5b",
             "_props": {
                 "StackMaxSize": 2
             }

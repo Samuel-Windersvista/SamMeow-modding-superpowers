@@ -90,6 +90,13 @@ public sealed class ModuleOrchestrator(
         logger.Info(
             $"[ITS] 合计：执行 {reports.Count} 个模块，变更 {totalChanged}，警告 {totalWarnings}，错误 {totalErrors}，跳过 {skipped.Count}");
 
+        // 外部数据表加载期告警（缺失重建 / 解析失败回落）统一在编排完成后以 Warning 输出；
+        // 不并入模块自身告警计数（OrchestrationReport 语义保持 = 模块告警）。
+        foreach (var warning in ExternalJsonFile.DrainPendingWarnings())
+        {
+            logger.Warning(warning);
+        }
+
         return new OrchestrationReport(reports, skipped, false, totalChanged, totalWarnings, totalErrors);
     }
 

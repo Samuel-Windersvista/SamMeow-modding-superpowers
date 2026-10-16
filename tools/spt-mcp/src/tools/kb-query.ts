@@ -239,6 +239,28 @@ export function runKbQuery(args: unknown): Envelope {
     hints.push(`注册表不可用，已退化为单库模式（${status.reason}）；注册表：${status.path}`);
   }
 
+  // ---- 覆盖提示：只查了一个库时，明确告诉调用方还有哪些库没查 ----
+  // 动机：多库并存时，「某个库命中了看起来够用」会静默变成单库作答，而漏掉的那半
+  // 答案（例：作者怎么设的 vs 引擎为什么这样）不会自己现身。让工具说出来。
+  const allIds = status.kbs.map((kb) => kb.id);
+  const queriedIds = targets.map((kb) => kb.id);
+  const notQueried = allIds.filter((id) => !queriedIds.includes(id));
+  const coverage =
+    allIds.length > 1
+      ? {
+          queried: queriedIds,
+          withHits: groups.filter((group) => group.matchCount > 0).map((group) => group.kb),
+          empty: groups.filter((group) => group.matchCount === 0).map((group) => group.kb),
+          notQueried,
+        }
+      : null;
+
+  if (notQueried.length > 0) {
+    hints.push(
+      `本次只查了 ${queriedIds.join(", ")}；未查：${notQueried.join(", ")}。跨库问题请省略 kb（一次拿全部库的分组结果），或对未查的库补一次查询 —— 单库限定会漏掉另一半答案。`,
+    );
+  }
+
   const totalMatches = groups.reduce((sum, group) => sum + group.matchCount, 0);
   const returned = groups.reduce((sum, group) => sum + group.matches.length, 0);
   const truncated = groups.some((group) => group.truncated);
@@ -259,6 +281,7 @@ export function runKbQuery(args: unknown): Envelope {
       ok: status.ok,
       ...(status.reason !== undefined ? { reason: status.reason } : {}),
     },
+    ...(coverage !== null ? { coverage } : {}),
     ...(hints.length > 0 ? { hints } : {}),
     results: groups,
   });

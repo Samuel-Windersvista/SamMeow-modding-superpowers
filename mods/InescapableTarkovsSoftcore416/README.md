@@ -9,7 +9,7 @@ Softcore 经济与制造系统大修）加战局时长控制，重写为一个 C
 - 游戏线：SPT 4.1.6（build 40743 / EFT 0.16.9 / net10.0）。
 - 目标实例：MO2 便携实例 `Norvinsk_Forever`（profile Default），游戏根 `E:\Game\EFT_Offline\SPT_41x`。
 - 部署单元：MO2 overlay `[5]软核大修-InescapableTarkovsSoftcore`（向目标实例投影）。
-- 版本：`0.1.0`（GUID `com.sammeow.inescapable-softcore`）。
+- 版本：`0.2.0`（GUID `com.sammeow.inescapable-softcore`）。
 - 形态：单程序集服务端 mod，无 `package.json`；只作用于服务端，不写入游戏本体文件。
 - 本项目从同一产品的 SPT 5.0 实现移植而来（见 `docs/adr/0001-port-from-5.0-codebase.md`），
   数值真相继承其 `docs/specs/delta-table.md`。
@@ -19,7 +19,7 @@ Softcore 经济与制造系统大修）加战局时长控制，重写为一个 C
 1. **Samuel's Tweaks（G1）**：护甲弹挂冲突修复 / 可掠夺臂章与近战 / 三格弹匣缩格。
 2. **True Items Redux（G2）**：物品真实堆叠上限（多数 2–5、注射器 8、配件不堆叠、钥匙卡不堆叠）。
 3. **noFirHideout（G3）**：藏身处建造/升级移除 FIR 要求。
-4. **反重力臂章（G4）**：22 款臂章按色阶减重 6–25kg 且可堆叠 5。
+4. **反重力臂章（G4）**：37 款臂章按色阶减重 6–25kg 且可堆叠 5。
 5. **更大的背包（G5）**：主流背包网格扩容、容器过滤清空。
 6. **Softcore 经济与制造系统大修（G6）**：20 个 changer（安全容器 / 仓库 / 藏身处容器 / 制造 /
    建设 / 燃料 / 比特币 / ScavCase / 经济 / 商人 / 保险 / 制造配方 / 杂项）。
@@ -37,7 +37,8 @@ G6 通用倍率）。
 
 - `GLOSSARY.md` — 术语表。
 - `docs/adr/` — 架构决策记录。
-- `docs/specs/spec-v0.1.0.md` — 规格书快照。
+- `docs/specs/spec-v0.1.0.md` — 规格书快照（v0.1.0）。
+- `docs/specs/spec-v0.2.0.md` — 规格书快照（v0.2.0：配置外置化与数据全量对齐）。
 - `docs/port-notes.md` — 移植记录（4.1.6 适配执行结果、数据形态实测、部署验收登记）。
 
 ## 工程布局
@@ -46,9 +47,9 @@ G6 通用倍率）。
 InescapableTarkovsSoftcore.sln
 Directory.Build.props                    项目自包含构建属性（SptRoot / SptRuntimeDir）
 config/default-config.json               受控默认配置模板（JSONC，内嵌 + 随包分发）
-data/                                    功能查找表（EmbeddedResource 源文件）
+data/                                    功能查找表源（EmbeddedResource 源文件；build.ps1 分发为 overlay config/ 外置模板）
   trueitems/                             G2 True Items 六张表
-  antigravArmbands/armbands.json         G4 反重力臂章表（22 款）
+  antigravArmbands/armbands.json         G4 反重力臂章表（37 款）
   backpacks/backpacks.json               G5 背包扩容表
   softcore/scavcase.json                 G6 ScavCase 数据表
   softcore/fleamarket.json               G6 经济数据表（白/黑名单等）
@@ -62,8 +63,9 @@ scripts/build.ps1                        构建 + overlay 组装脚本
 build/overlay/                           构建产物（git 忽略）
 ```
 
-查找表经 `EmbeddedResource` 嵌入主程序集（逻辑名见 `InescapableTarkovsSoftcore.csproj`），
-运行时模块与测试经 `FeatureTables` 读取同一资源，无需随 overlay 拷贝。
+查找表以两种形态分布：随包分发于 overlay 的 `config/` 子树（可编辑，外部优先），并同时经
+`EmbeddedResource` 嵌入主程序集（逻辑名见 `InescapableTarkovsSoftcore.csproj`）——内嵌资源仅作
+缺失重建与解析失败的兜底来源；运行时模块与测试经 `FeatureTables` 走同一加载助手读取。详见「配置」章。
 
 > 说明：`scripts/build.ps1`（UTF-8 with BOM）为部署流水线入口：构建主工程 Release 并组装
 > `build/overlay/`（DLL + config.json 逐字节拷贝；每次运行清空重建、幂等）。
@@ -79,8 +81,8 @@ build/overlay/                           构建产物（git 忽略）
 
 ```powershell
 dotnet build -c Release          # Release 构建，产出 InescapableTarkovsSoftcore.dll
-dotnet test                      # 运行单测（215 项）
-powershell -File scripts/build.ps1     # 幂等组装 overlay 产物（DLL + config.json 逐字节拷贝）
+dotnet test                      # 运行单测（235 项）
+powershell -File scripts/build.ps1     # 幂等组装 overlay 产物（DLL + config.json + config/ 12 外置表）
 ```
 
 ### 路径覆盖
@@ -106,10 +108,18 @@ build/overlay/
       └─ mods/
          └─ com.sammeow.inescapable-softcore/
             ├─ InescapableTarkovsSoftcore.dll
-            └─ config.json      # config/default-config.json 的逐字节拷贝
+            ├─ config.json                  # config/default-config.json 的逐字节拷贝
+            └─ config/                      # 外置数据表模板（可编辑；外部优先）
+               ├─ trueitems/                # 6 表：barter / clothing / keycards / medicals / partsnmods / provisions
+               │  └─ *.json
+               ├─ armbands.json
+               ├─ backpacks.json
+               └─ softcore/                 # 4 表：scavcase / fleamarket / crafting-rebalance / crafting-recipes
+                  └─ *.json
 ```
 
-本期无任何静态件（启动器背景已移除）；查找表已内嵌进 DLL，不投影到 overlay。
+本期无任何静态件（启动器背景已移除）；查找表随包分发于 `config/` 子树（可编辑），内嵌资源仅作
+缺失重建与解析失败的兜底来源。`build.ps1` 组装后断言 12 张外置表全部就位（缺失则非零退出）。
 
 ## 配置
 
@@ -118,8 +128,45 @@ build/overlay/
 - 模板（仓库内受控源）：`config/default-config.json`
 - 运行时实例（随 overlay 分发）：`SPT_Runtime\user\mods\com.sammeow.inescapable-softcore\config.json`
   （`scripts/build.ps1` 从模板逐字节拷贝）
+- 外置数据表（随 overlay 分发，可编辑）：`SPT_Runtime\user\mods\com.sammeow.inescapable-softcore\config\`
+  （`scripts/build.ps1` 从 `data/` 逐字节拷贝，见下节）
 
 若运行时缺失 `config.json`，mod 会从内嵌默认模板重建该文件并输出告警（不崩溃）。
+
+### 外置数据表（`config/` 子树）
+
+除 `config.json` 外，mod 目录下的 `config/` 子目录随包分发 **12 个可编辑数据表**（模板与内嵌资源同源）：
+
+```
+config/
+├─ trueitems/                          # G2 True Items 六表
+│  ├─ barter.json                      #       杂物/以物易物物品堆叠（219 条）
+│  ├─ clothing.json                    #       衣物堆叠（33 条）
+│  ├─ keycards.json                    #       门卡父类堆叠 = 1（ParentList 1 条，不堆叠）
+│  ├─ medicals.json                    #       医疗容器堆叠（21 条；StackMult 2，注射器实得 8）
+│  ├─ partsnmods.json                  #       配件（Active=false，104 条 List + 10 条 ParentList，不生效）
+│  └─ provisions.json                  #       食品/饮料堆叠（23 条）
+├─ armbands.json                       # G4 反重力臂章表（37 款，id → weight）
+├─ backpacks.json                      # G5 背包扩容表（56 款，id → cellsH/cellsV）
+└─ softcore/                           # G6 四表
+   ├─ scavcase.json                    #       ScavCase 奖励池数据表
+   ├─ fleamarket.json                  #       经济数据表（白/黑名单等）
+   ├─ crafting-rebalance.json          #       配方重平衡表
+   └─ crafting-recipes.json            #       新增配方表
+```
+
+**加载语义**（与 `config.json` 同构；实现见 `Features/ExternalJsonFile.cs`，唯一共享缝）：
+
+- **外部优先**：同名外置文件存在即以该文件为权威，取代内嵌资源。
+- **缺失重建**：外置文件缺失时，从内嵌模板重建该文件到磁盘（一行中文告警）后加载；删除文件即可「恢复出厂」。
+- **损坏回落**：解析失败（JSON 语法或模型结构非法）时输出告警并回落内嵌默认，**不覆写用户文件**，服务器不崩溃。
+- **JSONC**：支持 `//` 注释与尾随逗号（与 `config.json` 一致）。
+- **条目级容错**：单条目/单键非法仅告警跳过该条目，其余照常处理（不整体失败）。
+- **生效时机**：改动后需重启 SPT 服务器生效（无热重载）。
+
+**与 `config.json` 的关系**：`config.json` 保持单文件、**不拆分**；外置数据表为**追加式**新增面，
+二者职责分离——`config.json` 承载总开关 / 组开关 / 各模块数值，`config/` 承载被应用的数据表主体
+（含 `config.json` 中 `trueItems.overrides`、`antigravArmbands.overrides` 在此表之上最后应用）。
 
 ### 格式与容错
 
@@ -142,8 +189,8 @@ build/overlay/
     "enabled": true,                                // 组开关；false 时整组跳过（零变更）
     "armorConflictFix": true,                       // 护甲弹挂冲突修复：含 RigLayoutName 的弹挂甲 → BlocksArmorVest=false
     "lootableItems": {                              // 可掠夺物品（可分别控制）
-      "armband": true,                              // 臂章（父类 5447e1d04bdc2dff2f8b4567）可掠夺
-      "meleeWeapons": true                          // 近战武器（类目 5b3f15d486f77432d0509248）可掠夺
+      "armband": true,                              // 臂章（父类 5b3f15d486f77432d0509248）可掠夺
+      "meleeWeapons": true                          // 近战武器（类目 5447e1d04bdc2dff2f8b4567）可掠夺
     },
     "magazineResize": {                             // 扩展弹匣缩格：宽 1 且高 >2 且容量在 [min,max] → 高 2、ExtraSizeDown−1
       "enabled": true,
@@ -288,7 +335,7 @@ build/overlay/
         "insuranceCostPercentage": 50
       }
     },
-    "craftingChanges": {                            // 制造（数据内嵌 crafting-rebalance.json / crafting-recipes.json）
+    "craftingChanges": {                            // 制造（数据 = 外置 config/softcore/crafting-rebalance.json / crafting-recipes.json）
       "enabled": true,
       "craftingRebalance": true,                    // 配方重平衡（按 endProduct 定位）
       "additionalCraftingRecipes": true             // 新增 12 条配方（3-b-TG / 肾上腺素 / L1 / AHF1-M / CALOK-B 等）
@@ -332,7 +379,7 @@ build/overlay/
 
 - **顺序约束（制造）**：`CraftingChangesChanger` 注册在 `FasterCraftingTimeChanger` 之后，故新增配方的
   `productionTime` 保持源值，不被全局 ÷3（与源 `Softcore.ts` 应用顺序等效，测试已钉住）。
-- **配方重平衡**：数据 = 内嵌 `crafting-rebalance.json`，按 `endProduct` 定位；`find` 语义 = 仅命中首条。
+- **配方重平衡**：数据 = 外置 `config/softcore/crafting-rebalance.json`（内嵌兜底），按 `endProduct` 定位；`find` 语义 = 仅命中首条。
 - **`vestsBlockArmor=false`**：`false` 表示含 `RigLayoutName` 的弹挂甲 `BlocksArmorVest=false`
   （弹挂与护甲不冲突，与 G1 修复同向）。置 `true` 则不改动。
 - **弹药堆叠**：父类为 Ammo 且 `StackMaxSize≠0` → ×`stackMultiplier`。
@@ -343,22 +390,24 @@ build/overlay/
 
 ## 数据表
 
-查找表已作为内嵌资源随 DLL 分发，运行时无需外部文件，也不投影到 overlay。
+12 张查找表随包分发于 overlay 的 `config/` 子树（可编辑；外部优先），并同时以 `EmbeddedResource`
+嵌入主程序集作为缺失重建与解析失败的兜底来源。运行时无需额外文件即可启动（缺失时自动重建）。
+下表「路径」为 `config/` 内的相对路径（与内嵌资源逻辑名后缀一致）；计数以数据为准（v0.2.0 对齐后终值）。
 
-| 资源 | 语义 |
-|---|---|
-| `trueitems/barter.json` | 杂物/以物易物物品堆叠 |
-| `trueitems/clothing.json` | 衣物堆叠 |
-| `trueitems/keycards.json` | 门卡父类堆叠 = 1（不堆叠） |
-| `trueitems/medicals.json` | 医疗容器堆叠（StackMult 2；注射器实得 8） |
-| `trueitems/partsnmods.json` | 配件（源 IMM 层 `Active=false`，不生效） |
-| `trueitems/provisions.json` | 食品/饮料堆叠 |
-| `antigravArmbands/armbands.json` | G4 反重力臂章表（22 款，含减重值） |
-| `backpacks/backpacks.json` | G5 背包扩容表 |
-| `softcore/scavcase.json` | G6 ScavCase 数据表 |
-| `softcore/fleamarket.json` | G6 经济数据表（白/黑名单等） |
-| `softcore/crafting-rebalance.json` | G6 配方重平衡表 |
-| `softcore/crafting-recipes.json` | G6 新增配方表 |
+| 路径 | 计数 | 语义 |
+|---|---|---|
+| `trueitems/barter.json` | List 219 | 杂物/以物易物物品堆叠 |
+| `trueitems/clothing.json` | List 33 | 衣物堆叠 |
+| `trueitems/keycards.json` | ParentList 1 | 门卡父类堆叠 = 1（不堆叠） |
+| `trueitems/medicals.json` | List 21 | 医疗容器堆叠（StackMult 2；注射器实得 8） |
+| `trueitems/partsnmods.json` | List 104 + ParentList 10 | 配件（源 IMM 层 `Active=false`，不生效） |
+| `trueitems/provisions.json` | List 23 | 食品/饮料堆叠 |
+| `armbands.json` | 37 | G4 反重力臂章表（id → 减重后重量） |
+| `backpacks.json` | 56 | G5 背包扩容表（id → 网格宽高） |
+| `softcore/scavcase.json` | — | G6 ScavCase 数据表 |
+| `softcore/fleamarket.json` | — | G6 经济数据表（白/黑名单等） |
+| `softcore/crafting-rebalance.json` | — | G6 配方重平衡表 |
+| `softcore/crafting-recipes.json` | — | G6 新增配方表 |
 
 G2 应用规则：`StackMaxSize = 条目值 × StackMult`，并置 `StackMinRandom = 1`；未命中 `_id` 输出告警并跳过；
 表 `Active=false` 时该文件零变更。`overrides` 在所有查找表之后应用：key 先按物品 `_id` 精确匹配，
@@ -395,15 +444,15 @@ G2 应用规则：`StackMaxSize = 条目值 × StackMult`，并置 `StackMinRand
 ### 已达
 
 - `dotnet build -c Release` 通过（0 错误）；src 范围零告警。
-- 单测全绿（215 项）：配置层、G1–G7 样例、可空守卫专项断言、数据资源校验。
+- 单测全绿（235 项）：配置层、G1–G7 样例、可空守卫专项断言、外置文件加载专项（外部覆盖/缺失重建/损坏回落/JSONC/条目级容错）、数据资源校验。
 - 构建产物 `InescapableTarkovsSoftcore.dll` 生成。
 
-### 待验证（需服务器启动与进游戏）
+### 待验证（需服务器启动与进游戏；工单 17 实测）
 
 - 服务器启动日志出现各组 summary（变更计数与警告）。
+- **零缺失验收**：v0.2.0 重部署后本 mod 的「未找到/未命中/跳过」类告警 = 0（含 B 类 8 条背包 + Vinyl 1 条由阶段后移真实生效）。
 - 玩家进游戏逐组验收（臂章重量与堆叠、背包尺寸与过滤、堆叠上限、藏身处建造、跳蚤入口与等级、
   商人/保险、战局时长）。
-- 数据缺口告警计数（预期：背包 9 / barter 1）。
-- 具体登记见 `docs/port-notes.md`。
+- 具体登记见 `docs/port-notes.md` §7。
 
-版本自 `0.1.0` 起步。
+版本自 `0.1.0` 起步，当前 `0.2.0`。

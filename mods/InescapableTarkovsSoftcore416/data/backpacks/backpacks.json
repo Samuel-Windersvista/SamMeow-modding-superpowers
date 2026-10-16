@@ -1,4 +1,6 @@
-// 更大的背包查找表（IMM 终态，43 条）。
+// 更大的背包表（外置数据表：config/backpacks.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
+// 更大的背包查找表（IMM 终态，56 条）。
 // 来源：《生活在诺文斯克》背包容量扩展-BetterBackpacks沉浸感增强设置
 //       user/mods/JoshMate-BetterBackpacks/src/mod.ts
 // 数值核对：docs/specs/delta-table.md §2。所有条目在应用中清空 Grids[0].filters。
@@ -28,7 +30,6 @@
   { "id": "672e2e75b9082dbf88dd1dbd", "name": "MR NICE COMM 3 BVS", "cellsH": 6, "cellsV": 7 },
   { "id": "672e2e75c076d2093b05c764", "name": "MR NICE COMM 3 BVS", "cellsH": 6, "cellsV": 7 },
   { "id": "628bc7fb408e2b2e9c0801b1", "name": "MR NICE COMM 3 BVS", "cellsH": 6, "cellsV": 7 },
-  { "id": "6621b28d9411498998d408c3", "name": "MR NICE COMM 3 BVS", "cellsH": 6, "cellsV": 7 },
   { "id": "66a9f98f3bd5a41b162030f4", "name": "Partisan's Bag", "cellsH": 6, "cellsV": 5 },
   { "id": "59e763f286f7742ee57895da", "name": "Pilgrim tourist", "cellsH": 7, "cellsV": 9 },
   { "id": "61b9e1aaef9a1b5d6a79899a", "name": "Santa", "cellsH": 7, "cellsV": 9 },
@@ -45,5 +46,19 @@
   { "id": "672e2e754544ab54214fd56c", "name": "Duffle bag", "cellsH": 6, "cellsV": 6 },
   { "id": "672e2e75d276dfa8dd76770c", "name": "Duffle bag", "cellsH": 6, "cellsV": 6 },
   { "id": "672e2e75592eb3c91e248717", "name": "Duffle bag", "cellsH": 6, "cellsV": 6 },
-  { "id": "56e33680d2720be2748b4576", "name": "Transformer Bag", "cellsH": 5, "cellsV": 5 }
+  { "id": "56e33680d2720be2748b4576", "name": "Transformer Bag", "cellsH": 5, "cellsV": 5 },
+  { "id": "68947ab5a733b1602007e2fe", "name": "Mystery Ranch 2 Day Assault Pack (Black)", "cellsH": 5, "cellsV": 6 },
+  { "id": "68947ad3e4bf255d1b0ca75c", "name": "Mystery Ranch NICE Frame Load Sling", "cellsH": 5, "cellsV": 7 },
+  { "id": "68947a8ce4bf255d1b0ca759", "name": "Tasmanian Tiger Modular Pack 45 Plus (MultiCam Black)", "cellsH": 5, "cellsV": 8 },
+  { "id": "56e294cdd2720b603a8b4575", "name": "Developer Pack (endlessBackpack)", "cellsH": 8, "cellsV": 9 },
+  { "id": "656f198fb27298d6fd005466", "name": "Dragon Egg Mk II", "cellsH": 2, "cellsV": 2 },
+  { "id": "5f5e46b96bdad616ad46d613", "name": "Eberlestock F4 Terminator", "cellsH": 5, "cellsV": 4 },
+  { "id": "6034d2d697633951dc245ea6", "name": "Eberlestock G2 Gunslinger II", "cellsH": 3, "cellsV": 5 },
+  { "id": "5d5d940f86f7742797262046", "name": "Oakley Mechanism", "cellsH": 4, "cellsV": 4 },
+  { "id": "656e0436d44a1bb4220303a0", "name": "Mystery Ranch SATL Bridger", "cellsH": 6, "cellsV": 2 },
+  { "id": "674da107c512807d1a0e7436", "name": "Mystery Ranch Terraframe", "cellsH": 2, "cellsV": 5 },
+  { "id": "674da9cf0cb4bcde7103c07b", "name": "Mystery Ranch Terraframe (Xmas)", "cellsH": 2, "cellsV": 5 },
+  { "id": "5c0e805e86f774683f3dd637", "name": "3V Gear Paratus", "cellsH": 5, "cellsV": 5 },
+  { "id": "656ddcf0f02d7bcea90bf395", "name": "Tehinkom Patrol", "cellsH": 6, "cellsV": 7 },
+  { "id": "67458730df3c1da90b0b052b", "name": "5.11 Tactical RUSH 100", "cellsH": 2, "cellsV": 2 }
 ]

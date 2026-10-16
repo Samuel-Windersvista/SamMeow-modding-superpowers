@@ -7,7 +7,7 @@ source: curated
 ---
 # SPT 4.1 Mod 任务配方集
 
-> 状态：**11/11 全部完成**（2026-08-02） | 每条配方 = 一个可独立完成的具体任务
+> 状态：**13 条**（11 条于 2026-08-02；12–13 于 2026-10 增补） | 每条配方 = 一个可独立完成的具体任务
 > 版本目标：[4.1] | 配方中的源码坐标基于本地 fork `SamMeow_SPT410_source_code` 实读验证
 
 ## 配方模板
@@ -30,6 +30,7 @@ source: curated
 - [x] 添加自定义物品 → `03-add-custom-item.md`
 - [x] 修改现有物品属性 → `04-edit-item-properties.md`
 - [x] 修改战利品刷新（loot）→ `05-loot-tweaks.md`
+- [x] 武器预设与配装（assort）→ `12-weapon-preset-assort.md`
 
 ### 游戏机制类
 - [x] 添加自定义任务（quest）→ `06-add-custom-quest.md`
@@ -40,6 +41,7 @@ source: curated
 - [x] 挂自定义 HTTP 路由 → `09-custom-http-routes.md`
 - [x] mod 间通信 → `10-mod-communication.md`
 - [x] mod 配置界面（4.1 Mod Web Pages）→ `11-mod-web-config-ui.md`
+- [x] 玩家↔商人文字聊天管线（Messenger + LLM 基线）→ `13-trader-chat-pipeline.md`
 
 ## 素材来源
 

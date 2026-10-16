@@ -1,6 +1,6 @@
 # SPT 知识库 (spt-kb)
 
-为 SPT mod 开发与整合包搭建服务的知识库（4.1.5 稳定基线 + 5.0 已发布新主线，双轨）。
+为 SPT mod 开发与整合包搭建服务的知识库（4.1 稳定基线，现行补丁 4.1.6 + 5.0 已发布新主线，双轨）。
 建立日期：2026-08-02 | 初始背景：官方组织归档期的资料抢救；该前提 2026-09-14 作废（ADR-0006），本库现作为长期参考资产 + 离线兜底维护。
 
 ## 目录导航
@@ -19,7 +19,7 @@
 | 资产 | 路径 |
 |------|------|
 | SPT 官方仓库归档（20 个全量 clone） | `E:\云文件\GitHub\SPT-archive\` |
-| SPT 4.1.5 服务端源码（本地 fork） | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 4.1.6 服务端源码（本地 fork，现行） | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（tag `4.1.6` = `731d7a2a`；早期克隆 `SamMeow_SPT410_source_code` 至 4.1.5） |
 | SPT 3.11.4 服务端源码 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` |
 | SPT 5.x 服务端源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code` |
 | SPT 特化版 MO2（源码） | `E:\云文件\GitHub\SamMeow-Tarkov-specific-Mod-Organizer` |

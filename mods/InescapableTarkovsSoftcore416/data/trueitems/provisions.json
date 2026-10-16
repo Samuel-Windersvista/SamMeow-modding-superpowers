@@ -1,3 +1,5 @@
+// True Items 食品饮料表（外置数据表：config/trueitems/provisions.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
     "Active": true,
     "StackMult": 1,
@@ -115,6 +117,30 @@
             "_id": "62a09f32621468534a797acb",
             "_props": {
                 "StackMaxSize": 2
+            }
+        },{
+            "name": "Can of duck pate",
+            "_id": "69774bb0a247161ff1068335",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "French bakery baguette",
+            "_id": "6a35322b81d315afe1018ef3",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },{
+            "name": "Can of GigaBeef meat",
+            "_id": "6a3532423ec9d7082a05d430",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },{
+            "name": "Bottle of YXMC water",
+            "_id": "6a3557f841667bc4bb00fea4",
+            "_props": {
+                "StackMaxSize": 4
             }
         }
     ]

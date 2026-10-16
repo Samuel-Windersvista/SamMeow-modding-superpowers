@@ -120,3 +120,67 @@ trueItems 250（警告 23）/ noFirHideout 277 / raidDuration 0（倍率 1.0 无
   接取、完成与存档兼容。（2026-10-13 起随游玩渐进验证，见 §5.3）
 - **旧存档超上限堆叠**：旧存档中超过新堆叠上限的物品在 `InvalidStackObjectsCountFix` 迁移路径下的行为。
 - **各 Config 游戏表现**：barter / 报价数 / 保险 / Fence 参数等的实际游戏表现。
+
+## 7. v0.2.0（配置外置化与数据全量对齐）
+
+本节登记 v0.2.0 相对 v0.1.0 的数据与阶段变更结果，引用各工单 Comments；部署与服务器日志验收待
+工单 17 实测填充（见 §7.6）。上游规格 `docs/specs/spec-v0.2.0.md`。
+
+### 7.1 配置外置化（工单 08）
+
+- 产品版本 0.1.0 → **0.2.0**（GUID / Name 不变）。
+- 12 张数据表随包分发于 overlay `config/` 子树（外部文件优先）；内嵌资源仅作**缺失重建 / 解析失败回落**兜底。
+- 唯一共享缝 `Features/ExternalJsonFile.cs`；支持 JSONC（注释 + 尾随逗号）与条目级容错；`config.json` 保持单文件不拆分。
+- 覆盖验证：外部覆盖生效 / 缺失重建 / 损坏回落 / JSONC / 条目级容错（`ExternalJsonFileTests` 等）。
+
+### 7.2 数据全量对齐（工单 09–13）
+
+A/B/C 三类终态（以数据为准）：
+
+- **A 删除**：
+  - medicals 删 22 条旧包自定义 stim 占位（`cheeta_stim`、`boar_stim` … `radioactiveblood_stim`，均非 24-hex、全整合包无提供者）：43 → **21**（工单 11）。
+  - 背包删 1 条 `6621b28d9411498998d408c3`（全整合包不存在，工单 10）。
+  - softcore 四表 **31 条 neither 引用逐条核实后全部保留**（非死引用）：scavcase 5 条 = 配方自身 id；fleamarket 20 条 = 4.1.6 `handbook.json` 类目节点 Id；crafting-rebalance 5 条 = 配方 `_id` / 任务 `_id`；crafting-recipes 12 条 = 附加配方自身 `_id`。核对基准 `SPT_41x\SPT_Runtime\SPT_Data\database\`（工单 13 Comments）。
+- **B 阶段后移生效**（不删）：8 条背包（WTT-Artem 2 / TGC-NG 6）+ Vinyl 记录 1 条（Epic AIO）——见 §7.3。
+- **C 补档**：
+  - 臂章 22 → **37**（+15：基础库 4 + WTT-ContentBackport 11）；按既有减重档位（-6/-8/-10/-15/-20/-25）分配，终态分组 `-6=5 / -8=6 / -10=9 / -15=11 / -20=1 / -25=5`（工单 09）。
+  - 背包 43 → **56**（删 1 + 补 14：基础库 11 + WTT 3）；对旧包曾移除的 9 条先做体积/网格核查，旧包原版直系值优先，WTT 3 条采纳作者原值（工单 10）。
+  - trueItems（工单 12）：barter +44（175 → **219**）、clothing +11（22 → **33**）、provisions +4（19 → **23**）；medicals 21（不变）、keycards ParentList 1（不变）、partsnmods List 104 + ParentList 10（`Active=false` 不变）。
+  - **barter/clothing 裁定与 86 条暂缓**（工单 12 Comments）：候选 barter 85 / clothing 56，经**保守口径**（仅纳入既有替换源可证同类别；排除自造、来袭固定、未落地模板、硬错帽）裁定采纳 **55 条**（barter 44 + clothing 11）；剩余 **86 条暂缓**（barter 41 + clothing 45），待用户裁决后续工单。
+- **规格笔误登记**：`spec-v0.2.0.md` Testing Decisions 记「barter 175 不变」，与 D3-C（trueItems 同类新增补条目）自相矛盾；实况**按 D3-C 执行**，barter 终值 **219**（以数据为准）。
+
+### 7.3 处理阶段后移（工单 14）
+
+- 入口 `TypePriority` 由 `OnLoadOrder.Preload + 1` 改为 `OnLoadOrder.PostLoad + 1`（n=1）。
+- 证据：v0.1.0 于 14:39:02 完成处理时，包内内容注入 mod（Croupier 14:39:05 / TGC 14:39:08）尚未完成装载 → B 类物品不可见。PostLoad 为 4.1 阶段链最末窗口，n=1 保证排在全部内容注入之后（同相位按 ModGuid 字母序）。
+- 内部模块固定顺序（G6→G1→G4→G5→G2→G3→G7）不变。
+
+### 7.4 缺陷修复：臂章 / 近战父类互换（工单 15）
+
+- 纠正常量：`ArmbandParentId = 5b3f15d486f77432d0509248`、`MeleeWeaponParentId = 5447e1d04bdc2dff2f8b4567`（来源 mod 标反，按 DB 真值纠正；已加防回归字面值断言）。
+- 默认全开时两族均处理、变更总数不变；纠正后单开关语义与日志标签一一对应。README / `config.json` 注释同步。
+
+### 7.5 测试与构建（v0.2.0）
+
+- 单测：**235 项**全绿（v0.1.0 基线 215 → 工单 08 +13、复验 +2、审查收口 +3、工单 09/10 钉值同步、工单 14 改名、工单 15 +1）。
+- `scripts/build.ps1` 幂等产出 overlay：DLL + `config.json` + `config/` 12 外置表（内置存在性断言）。
+
+### 7.6 部署与验收登记（工单 17 实测，2026-10-17）
+
+| 项目 | 结果 |
+|---|---|
+| profile 备份 | `Default_pre-softcore416-v0.2.0`（5 文件：modlist / settings.ini / archives / initweaks.ini / lockedorder） |
+| overlay 更新 | `[5]软核大修-InescapableTarkovsSoftcore`：DLL + config.json + config/ 12 表，逐文件 SHA256 核对 **14/14 一致（mismatch=0）**；meta.ini 未动 |
+| DLL | SHA256 `C2E0DE2927F714F5449623EE4051BF7A4930841A016B3FC0900463D095846255`（334336 B） |
+| 服务器日志 | `Norvinsk_Forever\overwrite\SPT_Runtime\user\logs\spt\spt20261016.log`（MO2 启动的服务器日志写权重定向至实例 `overwrite/`） |
+| 加载确认 | `[ITS] Inescapable Tarkov's Softcore v0.2.0 loaded`（2026-10-16 16:12:10） |
+| 同类告警（未找到 / 未命中 / 跳过） | **0**（全模块 `warnings=0`；外置表 0 重建、0 回落消息；全文件 ITS Error / Critical = 0） |
+| 模块 summary（变更 / 警告） | softcore 16905/0；samuelTweaks 247/0（护甲冲突修复 162、臂章可掠夺 **37**、近战可掠夺 27、弹匣缩格 21）；antigravArmbands **37**/0；backpacks **56**/0；trueItems **328**/0；noFirHideout 277/0；raidDuration 0/0；**合计 17850 变更，警告 0，错误 0，跳过 0** |
+| B 类覆盖 | 8 背包（WTT-Artem 2 / TGC-NG 6）全部纳入（backpacks 56/56 命中）；Vinyl 记录随 trueItems 328 项应用（0 告警） |
+| 阶段后移实证 | 内容注入 mod 物品在 `PostLoad + 1` 全部可见：samuelTweaks 覆盖面 67→162、弹匣 10→21、backpacks 34→56、trueItems 250→328、softcore 9900→16905（均为「此前不可见项」现被处理） |
+| 用户抽查（进游戏渐进确认，非阻塞） | 清单已交付：新增臂章重量（Discord −10 / Prestige 5 −25 等 15 款）、WTT 背包尺寸（2 Day 5×6 / NICE Sling 5×7 / TT 45P 5×8）、Vinyl 堆叠、Developer Pack 归一 8×9、新增 barter / clothing / provisions 堆叠抽验；状态：进行中 |
+
+> 回退预案：禁用 / 移除 overlay + 恢复 `Default_pre-softcore416-v0.2.0` profile 备份。
+> overlay 路径纪律（F2 教训）：本产物全树物理路径远低于 260 阈值。
+> 存档兼容：本版为服务端数据/加载方式变更，不破坏存档，无需开新档（spec User Story 28）。
+

@@ -1,6 +1,6 @@
 # SPT 知识库全局索引
 
-按「我想做什么」检索。最后更新：2026-09-14
+按「我想做什么」检索。最后更新：2026-10-15
 > Agent 机读索引：`index.json`（按 version/domain/topic 过滤）
 
 ## 写服务端 mod (Server Mod)
@@ -13,7 +13,7 @@
 | 4.1 Mod 网页（Mod Web Pages） | `wiki/SPT_41/modding/server/Mod_Web_Pages.md` | [4.1] |
 | 服务端 API 笔记（源码提炼） | `curated/api-notes-4.1/`（含 architecture-map.md 架构图） | [4.1] |
 | 4.1/5.0 mod 开发规范（Modding Standard） | `curated/modding-standard/`（README 入口；84 条规则 + evidence-index + version-matrix；机读索引 `index.json`） | [4.1][5.0] |
-| 4.1.5 服务端完整源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（fork，目录 `SPTushonka.*`，命名空间 `SPTarkov.*`） | [4.1] |
+| 4.1.6 服务端完整源码（tag `4.1.6` = `731d7a2a`） | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（fork，目录 `SPTushonka.*`，命名空间 `SPTarkov.*`） | [4.1] |
 | 4.1.5 源码审查报告（bug/优化） | `curated/operations/415-source-review-report.md` | [4.1] |
 | 3.11 服务端实现对照 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code`（SPT-AKI 3.11.5-Live-In-Norvinsk-Edition，基线 3.11.x） | [3.11] |
 | 3.11 服务端 API 笔记（源码提炼） | `curated/api-notes-3.11/`（DI/路由/mod 加载/config/数据库/存档） | [3.11] |
@@ -60,9 +60,10 @@
 | 已知问题（SPT/mod/EFT） | `wiki/Known_SPT_Issues_40.md` 等三篇 |
 | 性能调优 | `wiki/Performance_Tuning.md` |
 
-## 任务配方（curated，持续填充）
+## 任务配方与实战复盘（curated，持续填充）
 
-见 `curated/recipes/` — 加商人、改物品、自定义任务等逐步配方。
+见 `curated/recipes/` — 加商人、改物品、自定义任务等逐步配方（含 `13-trader-chat-pipeline.md`：玩家↔商人文字聊天管线，Messenger + LLM 基线）。
+LLM 接入 mod 经验（商人聊天项目复盘）：`curated/operations/llm-mod-integration-lessons.md`。
 
 ## 资料溯源与应急（应急预案为 2026-08 历史备案）
 

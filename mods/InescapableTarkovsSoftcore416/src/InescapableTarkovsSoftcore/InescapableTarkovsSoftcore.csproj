@@ -14,7 +14,12 @@
     <EmbeddedResource Include="..\..\config\default-config.json" LogicalName="InescapableTarkovsSoftcore.default-config.json" />
   </ItemGroup>
 
-  <!-- 功能查找表：源 = 旧包（IMM 终态）；以 EmbeddedResource 嵌入，运行时与测试读取同一资源 -->
+  <!-- 测试程序集可见性：ExternalJsonFile 与各加载器的 internal 目录重载（显式目录避免静态缓存串扰） -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="InescapableTarkovsSoftcore.Tests" />
+  </ItemGroup>
+
+  <!-- 功能查找表：以 EmbeddedResource 嵌入主程序集（缺失重建与解析失败的兜底来源）；build.ps1 另将 data/ 分发为 overlay 的 config/ 外置模板（外部优先，内嵌兜底） -->
   <ItemGroup>
     <EmbeddedResource Include="..\..\data\trueitems\barter.json" LogicalName="InescapableTarkovsSoftcore.trueitems.barter.json" />
     <EmbeddedResource Include="..\..\data\trueitems\clothing.json" LogicalName="InescapableTarkovsSoftcore.trueitems.clothing.json" />

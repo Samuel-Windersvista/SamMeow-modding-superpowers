@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- 客户端在 Unity 的 Mono 运行时下加载，必须 netstandard2.1（net10.0 程序集无法被 Mono 加载） -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.LLMTraderChat.Client</RootNamespace>
+    <AssemblyName>SamMeow.LLMTraderChat.Client</AssemblyName>
+
+    <!-- 输出路径不带框架名，方便把 DLL 复制到 BepInEx/plugins/ -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 两端共享的纯数据/常量 -->
+    <ProjectReference Include="..\Shared\SamMeow.LLMTraderChat.Shared.csproj" />
+  </ItemGroup>
+
+  <!-- 客户端运行时引用（BepInEx / 0Harmony / Assembly-CSharp / UnityEngine）由项目级 Directory.Build.props 提供 -->
+
+</Project>

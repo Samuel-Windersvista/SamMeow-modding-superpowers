@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { dirname, resolve } from "node:path";
@@ -18,6 +18,30 @@ import { getLayout, resetLayoutForTest } from "../../src/runtime-layout.js";
 function repoKbRoot(): string {
   const here = dirname(fileURLToPath(import.meta.url));
   return resolve(here, "..", "..", "..", "..", "knowledge", "spt-kb");
+}
+
+/**
+ * 从源文件直接读条目数组（测试侧独立解析，不复用被测代码 —— 否则断言自证）。
+ *
+ * 用途：把"条数/首元素"这类断言从手写常量改成与源文件交叉核对。手写常量每刷新
+ * 一次 Forge 快照就要人工改一次，且红的时候分不清「快照长大了」还是「解析器走样」；
+ * 交叉核对只对后者报警，正是这类断言要抓的东西。
+ */
+function readSourceArray(filePath: string): unknown[] {
+  const raw = readFileSync(filePath, "utf8").replace(/^\uFEFF/, "");
+  const parsed: unknown = JSON.parse(raw);
+  if (!Array.isArray(parsed)) {
+    throw new Error(`源文件不是 JSON 数组：${filePath}`);
+  }
+  return parsed;
+}
+
+/** 源文件里前若干条的身份字段（id / name），用于「源 -> 对象」映射交叉核对 */
+function identityOf(entries: unknown[], count = 5): Array<{ id: unknown; name: unknown }> {
+  return entries.slice(0, count).map((entry) => {
+    const record = (entry ?? {}) as Record<string, unknown>;
+    return { id: record.id, name: record.name };
+  });
 }
 
 // -----------------------------------------------------------------------------
@@ -95,19 +119,40 @@ afterAll(() => {
 
 describe("forge-reader: 目录加载", () => {
   // 需要本机 archive/forge API 快照；缺失则跳过（见文件头 skipNote）
-  it.skipIf(!hasRealForgeSnapshot)("真实 mods-catalog.json 加载 1830 个 mod（含 BOM 兼容）", () => {
-    const kbRoot = repoKbRoot();
-    const catalog = loadCatalog(kbRoot);
-    expect(catalog.length).toBe(1830);
-    expect(catalog[0].name).toBe("FikaSync");
-  });
+  it.skipIf(!hasRealForgeSnapshot)(
+    "真实 mods-catalog.json 加载：条数与身份字段均与源文件一致（含 BOM 兼容）",
+    () => {
+      const kbRoot = repoKbRoot();
+      const source = readSourceArray(realCatalogPath);
+      const catalog = loadCatalog(kbRoot);
 
-  it.skipIf(!hasRealForgeSnapshot)("真实 hot-index.json 加载 94 条（含 BOM 兼容）", () => {
-    const kbRoot = repoKbRoot();
-    const hot = loadHotIndex(kbRoot);
-    expect(hot.length).toBe(94);
-    expect(hot[0].best_spt).toBeTruthy();
-  });
+      // 两侧都从磁盘现算：快照刷新不会红，解析走样/读错文件才红
+      expect(catalog.length).toBeGreaterThan(0);
+      expect(catalog.length).toBe(source.length);
+      for (const [index, expected] of identityOf(source).entries()) {
+        expect(catalog[index].id).toBe(expected.id);
+        expect(catalog[index].name).toBe(expected.name);
+      }
+    },
+  );
+
+  it.skipIf(!hasRealForgeSnapshot)(
+    "真实 hot-index.json 加载：条数与身份字段均与源文件一致（含 BOM 兼容）",
+    () => {
+      const kbRoot = repoKbRoot();
+      const source = readSourceArray(realHotIndexPath);
+      const hot = loadHotIndex(kbRoot);
+
+      expect(hot.length).toBeGreaterThan(0);
+      expect(hot.length).toBe(source.length);
+      for (const [index, expected] of identityOf(source).entries()) {
+        expect(hot[index].id).toBe(expected.id);
+        expect(hot[index].name).toBe(expected.name);
+      }
+      // 数据质量信号（与快照内容有关，但"非空"不随条数变化）
+      expect(hot[0].best_spt).toBeTruthy();
+    },
+  );
 
   it("默认 KB 根（env 未设）指向仓库 knowledge/spt-kb", () => {
     const saved = process.env.SPT_KB_ROOT;
@@ -209,9 +254,14 @@ describe.skipIf(!hasRealForgeSnapshot)("forge-reader: 真实知识库搜索冒�
     }
   });
 
-  it("resetForgeCache 后可重新加载", () => {
+  it("resetForgeCache 后可重新加载（清缓存前后条数一致）", () => {
+    // 本条验的是缓存语义（清缓存后能重新加载，而不是把空数组缓存住），
+    // 与具体数据量无关 —— 故不钉条数，只钉「两次一致且非空」。
+    const first = loadCatalog(repoKbRoot()).length;
     resetForgeCache();
-    expect(loadCatalog(repoKbRoot()).length).toBe(1830);
+    const second = loadCatalog(repoKbRoot()).length;
     resetForgeCache();
+    expect(first).toBeGreaterThan(0);
+    expect(second).toBe(first);
   });
 });

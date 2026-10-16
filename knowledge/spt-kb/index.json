@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "schema_version": 2,
  "entries": [
   {
@@ -2723,6 +2723,213 @@
    ],
    "domain": "both",
    "topic": "troubleshooting",
+   "source": "curated"
+  },
+  {
+   "path": "curated/migration/pilot-experience-softcore-416-backport.md",
+   "title": "SPT 5.0 → 4.1.6 反向移植实战：Inescapable-Tarkovs-Softcore（骨架同构判定 / 可空性适配清单 / 部署保护）",
+   "version": [
+    "4.1",
+    "5.0"
+   ],
+   "domain": "server",
+   "topic": "migration",
+   "source": "curated",
+   "keywords": [
+    "反向移植",
+    "backport",
+    "5.0→4.1.6",
+    "Inescapable-Tarkovs-Softcore",
+    "可空性",
+    "nullable",
+    "空值守卫",
+    "计数语义",
+    "骨架同构",
+    "SptVersion",
+    "ModValidator",
+    "运行时真值",
+    "仓库行数",
+    "OOB",
+    "隔离区",
+    "MO2",
+    "部署保护",
+    "EmbeddedResource",
+    "进游戏核对"
+   ],
+   "summary": "Inescapable-Tarkovs-Softcore 从 SPT 5.0（net10.0 C# 服务端）反向移植到 4.1.6 的实战沉淀：两端服务端骨架同构（Models/Spt/Mod、Modding、DI 层 git diff 零输出）→ 走受控适配而非重写，适配点合计 15 处（可空性 9 / 类型取整 1 / 工程与元数据 3 / 清单外与部署期 2），核心规则 = 以运行时程序集为真值逐项对照、可空一律 null 跳过且不计数、类型收窄保留原取整语义；工程侧：7 工单显式依赖链、215 项测试（含守卫专项断言）、src 零告警 + 测试 NoWarn 纪律、build.ps1 幂等 overlay、部署保护三保险（profile 备份 / MO2 关闭态 / 游戏全关）、隔离区操作、服务器日志标定预期值（7 模块 / 变更 10609 / 错误 0）；部署期修复四例（死目录 / 残货 / 开局仓库 50→56 行 OOB / 长路径另条）；与 3.11→4.1 跨架构重写的本质区别；开放项与两线并行维护约定。"
+  },
+  {
+   "path": "curated/migration/pilot-experience-spt41-debugtoolkit.md",
+   "title": "SPT 4.1.6 客户端三源整合移植实战：SamMeow.DebugToolkit（触点先行 / 模块并行 / 独立双轴评审）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "migration",
+   "source": "curated",
+   "keywords": [
+    "DebugToolkit",
+    "SPT4.1.6",
+    "Mono",
+    "BepInEx5",
+    "Harmony",
+    "ModulePatch",
+    "触点核验",
+    "模块降级",
+    "PatchSet",
+    "fail-open",
+    "版本门禁",
+    "ConfigDescriptions",
+    "ADR-0010",
+    "ADR-0011",
+    "BigBrain",
+    "ilspycmd",
+    "反混淆",
+    "双轴评审",
+    "工单依赖链",
+    "MO2覆盖层"
+   ],
+   "summary": "SPT 4.1.6（Mono / BepInEx 5 / netstandard2.1）客户端三源整合移植 SamMeow.DebugToolkit 项目级复盘：8 工单依赖链（01 脚手架曳光弹 → 02 触点核实闸门 → 03/04/05 并行模块移植 → 06 串行 → 07 集成文档部署 → 08 终验）；触点先行策略（ilspycmd 反编译 0.16.9 反混淆 Managed 与 BigBrain DLL，产出三份核实表，状态分 [OK]/[CHANGED]/[MISSING]/[UNCERTAIN]，主控台独立复跑抽查 7/6/12 条）；全部补丁体 fail-open；版本门禁读 FilePrivatePart 比对 40743 仅警告；F12 六节配置（键名英文 + 显示名中文、原生下拉/滑块、枚举走 ConfigEntry<string>+AcceptableValueList<string>、无配置迁移器）；模块降级登记（补丁点不可定位 → 单项禁用 + 日志警告 + README 偏差表）；身份版本线 ADR-0010（与 5.0 线同 AssemblyName/GUID、独立源码独立演进，否决从 5.0 回迁 Mono 与独立新身份）与 BigBrain 硬依赖 ADR-0011（[BepInDependency] 硬门 + 编译引用参数化 + STANDALONE 逃生符号）；部署形态 MO2 覆盖层替代三源（目录保留一键回滚）且 BigBrain 保持启用；独立双轴评审（Standards ora-1 / Spec ora-2，与实现会话隔离）抓到补丁生命周期不可逆、偏差记录制度未落实、ConfigDescription 五处重复与命名歧义等，经共享 PatchSet.cs 与 ConfigDescriptions.cs 修订闭环；三族功能在 4.1.6 几乎逐行可移植（零 MISSING），差异集中在可见性 [CHANGED]、类型改名/值语义、混淆名映射与运行时字符串空判。"
+  },
+  {
+   "path": "curated/migration/porting-candidate-assessment.md",
+   "title": "移植候选批量评估方法论（4.1.6 未就绪清单实战）：源码真实性核验 / 上游就绪复核 / 迁移量口径 / 难度分级",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "migration",
+   "source": "curated",
+   "keywords": [
+    "移植评估",
+    "源码快照",
+    "Forge",
+    "上游就绪",
+    "LOC",
+    "难度分级",
+    "重写型",
+    "依赖阻断",
+    "Softcore-NG",
+    "静态评估",
+    "性价比顺序",
+    "数据可信度",
+    "未就绪清单",
+    "net10.0",
+    "BepInEx",
+    "客户端引用集",
+    "目标线",
+    "归档快照"
+   ],
+   "summary": "《永远的诺文斯克》4.1.6 未就绪清单静态评估沉淀出的批量移植候选筛选方法：四项判据——源码真实性核验（逐目录清点 .cs/.ts/.csproj/.sln/.dll，剔除仅剩 bin/obj 的快照）、上游就绪复核（源码证据显示疑似已就绪者先与 Forge/Hub 实况核对再决定自建）、实际迁移量口径（以有效源码 LOC 计而非文件数，剔除 types/*.d.ts 与 node_modules）、难度分级与结论分类（低/中/高 + 适合移植/有条件/重写型/不建议）；三项附加维度——依赖阻断、冲突矩阵、可裁剪性；直接结论：B 类 22 快照仅 5 个含真实源码，IOF/BRNVG 疑似已就绪应先复核，Softcore-NG 重定向一次覆盖 5 个未就绪条目为最高性价比，Realism/PTT/RaidOverhaul/Softcore 直译四项为高工作量重写型；输出物为分档详述 + 性价比顺序表 + 待复核事项"
+  },
+  {
+   "path": "curated/operations/client-api-touchpoint-verification.md",
+   "title": "4.1.x 客户端移植 API 触点核验标准流程：反编译 + 反射双通路 / 四态判据 / 版本锚定",
+   "version": [
+    "4.1"
+   ],
+   "domain": "client",
+   "topic": "verification",
+   "source": "curated",
+   "keywords": [
+    "触点核验",
+    "ilspycmd",
+    "反射",
+    "Assembly-CSharp",
+    "TarkovVersion",
+    "混淆名映射",
+    "全局命名空间",
+    "Mono",
+    "IL2CPP",
+    "跨线污染",
+    "四态判据",
+    "二次独立核实",
+    "版本锚定",
+    "字符串堆扫描",
+    "FileVersionInfo",
+    "Harmony",
+    "BepInEx5",
+    "可见性变化",
+    "值类型语义",
+    "降级预案"
+   ],
+   "summary": "SPT 4.1.x（Mono / BepInEx 5 / netstandard2.1）客户端移植前逐触点核验 API 的标准方法：以已反混淆真名的 Assembly-CSharp.dll 为目标，用 ilspycmd 定向反编译与 PowerShell .NET 反射两条独立元数据通路交叉取证，逐触点给出 [OK]/[CHANGED]/[MISSING]/[UNCERTAIN] 四态及来源行/目标签名/实测/降级预案/一行实现指引，随机抽取若干条做二次独立核实；以 FileVersionInfo.FilePrivatePart 做版本门禁并优先采信上游 TarkovVersion 锚点；坑位覆盖目标程序集误选 .spt-bak、全局命名空间类型被臆造 EFT. 前缀、运行期字符串不可静态核实、值类型/引用类型语义差异、可见性 protected↔public 变化、混淆名须按成员面与方法体语义指纹映射；并标出跨 5.0 线的污染陷阱（QuestListItem 改名仅属 1.1.5、UIContext→UIParent、BackendConfigSettingsClass→GlobalConfiguration、DamageInfo 为 struct、EBodyPart 在 4.1.6 仍留在 Assembly-CSharp）；适用于任何 4.1.x / 0.16.x 客户端移植，不适用于 IL2CPP 5.0 线或 server 端 mod。"
+  },
+  {
+   "path": "curated/operations/mo2-spt-version-misdetection.md",
+   "title": "MO2 fork 的 SPT 版本误判（4.1.x → 4.0.x）：looksValid 谓词等价根因与修复（2026-10-12 实证）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "troubleshooting",
+   "source": "curated",
+   "keywords": [
+    "MO2",
+    "SPT4.1",
+    "looksValid",
+    "gameName",
+    "basic_games",
+    "sptvfsbridge.bat",
+    "SPT_Runtime",
+    "版本误判",
+    "fail-closed",
+    "互斥谓词",
+    "core.json",
+    "compatibleTarkovVersion",
+    "game_spt4",
+    "game_spt41",
+    "game_spt5",
+    "spt_diagnose",
+    "KEY_LAYOUT",
+    "Browse",
+    "实例重建"
+   ],
+   "summary": "MO2 fork 把 SPT 4.1.x 实例识别为 SPT 4.0.x，启动服务器报「Windows 找不到文件」；机制链为版本识别不发生在插件内（MO2 选插件三路径：ini gameName 全等匹配 / Browse 与缺 gameName 兜底均取枚举序首个 looksValid 命中），而 SPT4/SPT4.1/SPT5 三个 def 的 looksValid 默认谓词完全等价（都只查 GameBinary EscapeFromTarkov.exe 是否存在），叠加枚举文件名序与自然序双偏置均指向 SPT4，非当前的 managed game executables() 每次重写 sptvfsbridge.bat 为 4.0 布局（spt_dir=SPT），4.1 安装只有 SPT_Runtime 故服务器起不来；历史根因是 2026-08-05 961c0ab 的正解版本探测 looksValid 在同日 24b5618 拆分为逐版本插件时被整体删除；修复方案 A 为三个 def 各覆写互斥版本感知 looksValid（4.0 要求 SPT\\SPT.Server.exe；4.1 要求 SPT_Runtime\\SPT.Server.exe 且 core.json 主版本==0；5.x 同布局且主版本>=1，缺 JSON/解析失败 fail-fast 返回 False），配套 spt_diagnose.py 一致性校验与 CHANGELOG 回归警示；独立复验四项全绿（部署 SHA256 4/4、AST 12/12、离线谓词矩阵三树各 8/8、diagnose 6/6，且同 harness 对修复前源码 8/8 全红）；预防为恢复互斥判别 + 操作规约「创建 SPT 实例手选版本勿 Browse 盲选」+ 发布说明标注 strict 谓词让历史错配显式暴露。"
+  },
+  {
+   "path": "curated/operations/llm-mod-integration-lessons.md",
+   "title": "LLM 接入 SPT mod 的工程复盘（商人聊天项目 0.1.0，2026-10-14/15 实证）",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "llm-integration",
+   "source": "curated",
+   "keywords": [
+    "LLM",
+    "OpenAI兼容",
+    "DeepSeek",
+    "apiKey",
+    "ASCII header",
+    "prompt预算",
+    "截断告警",
+    "RAG",
+    "关键词检索",
+    "检索适配口",
+    "bigram",
+    "IDialogueChatBot",
+    "MailSendService",
+    "MO2",
+    "overwrite",
+    "文件级覆盖",
+    "保key",
+    "人设蒸馏",
+    "延迟回复",
+    "失败面",
+    "结果对象",
+    "占位符"
+   ],
+   "summary": "SamMeow-LLMTraderChat 全流程复盘的可复用经验：① LLM 失败面以结果对象表达（不抛业务异常；catch 面须覆盖 URL 构造与 body 读取）；② apiKey 进 HTTP 头，非 ASCII 占位符触发 Request headers must contain only ASCII characters——装载层做『非 ASCII=占位符』启动警告（空 key 不警告以兼容本地 Ollama）；③ endpoint 用绝对 http/https（DeepSeek 2026-10 文档 base_url 不带 /v1、模型 deepseek-flash）；④ prompt 需『逐条+总量』字符预算与截断告警（防小上下文溢出被误判为网络错）；⑤ 轻量 RAG 走适配口 IKnowledgeRetriever + 关键词实现（CJK bigram；常见问法命中 0 优先文档侧补问法而非调参），命中数/来源进日志；⑥ 一次性状态键含 sessionId 防跨档串扰，文件落 MO2 overwrite；⑦ 开发循环用手动『文件级覆盖+保 key』替代需 live broker 的 reinstall；⑧ 人设蒸馏自 lore sections+任务文案，输出 2–5 句注入 system prompt。"
+  },
+  {
+   "path": "curated/recipes/13-trader-chat-pipeline.md",
+   "title": "配方：玩家↔商人文字聊天管线（原生 Messenger + LLM 接入基线）[4.1]",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "recipe",
    "source": "curated"
   }
  ],

@@ -1,4 +1,7 @@
+// 新增制造配方表（外置数据表：config/softcore/crafting-recipes.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
+  // additionalRecipes[]._id 为附加配方自身 _id（运行时直接注册），非物品引用；保留不动。
   "additionalRecipes": [
     {
       "_id": "63da4dbee8fa73e225000006",

@@ -12,6 +12,7 @@ source: curated
 > 证据来源以 KB 文档路径（相对本目录）与 `5.0x-dev` 源码路径（`SPTushonka.*`）为准。
 > 状态：ticket 07 交付（2026-09-14）。SPT 5.0 已由社区 fork 正式发布（2026-09-14 确认，ADR-0006）；本矩阵基于预发布快照 HEAD `ff0bf3281` 核实，5.0 正式版的差异需按 release tag 复核。
 > 模板落位：4.1.5 → `templates/{client,server,paired}-mod/`；5.0 → `templates/spt5-{client,server,paired}-mod/`（`skills/writing-spt-mod` 按版本线分流；构建依据见 `docs/research/spt-5.0-mod-template-design.md`）。
+> **2026-10-14 注**：4.1 线现行补丁为 **4.1.6**（tag `731d7a2a`，2026-09-18）；本表「4.1.5」列为 4.1 线标签（Mono / BepInEx 5 / netstandard2.1），含 4.1.6。
 
 ## 0. `Applies` 非 both 的规则清单
 

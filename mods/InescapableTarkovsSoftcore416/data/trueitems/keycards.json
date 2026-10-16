@@ -1,3 +1,5 @@
+// True Items 门卡表（外置数据表：config/trueitems/keycards.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
     "Active": true,
     "StackMult": 1,

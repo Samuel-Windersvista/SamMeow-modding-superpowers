@@ -1,0 +1,119 @@
+<Project>
+
+  <!--
+    本项目自包含构建配置（SPT 4.1.6 线；paired mod：客户端 Mono/netstandard2.1 + 服务端 net10.0）。
+
+    本项目级 Directory.Build.props 会遮蔽仓库 mods\ 根的同名文件，故 SptRoot 及其派生路径
+    必须在此自包含声明（不依赖父级文件）。路径均可经命令行覆盖：
+      dotnet build -c Release -p:SptRoot="D:\SPT"
+      dotnet build -c Release -p:SptClientDir="D:\SPT" -p:SptRuntimeDir="D:\SPT\SPT_Runtime"
+    SptRoot 默认按本机实际布局（与 mods\Directory.Build.props 一致）。
+  -->
+  <PropertyGroup>
+    <!-- 两端共用同一版本号（唯一来源）；pack.ps1 亦从此解析 -->
+    <Version>0.1.0</Version>
+    <LangVersion>latest</LangVersion>
+    <SptRoot Condition="'$(SptRoot)' == ''">E:\Game\EFT_Offline</SptRoot>
+    <!-- 客户端运行时（BepInEx / Assembly-CSharp / UnityEngine）所在：SPT 4.1.6 游戏根 -->
+    <SptClientDir Condition="'$(SptClientDir)' == ''">$(SptRoot)\SPT_41x</SptClientDir>
+    <!-- 服务端运行时（SPTarkov.*.dll / SemanticVersioning.dll）所在：SPT_Runtime -->
+    <SptRuntimeDir Condition="'$(SptRuntimeDir)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SptRuntimeDir>
+  </PropertyGroup>
+
+  <!--
+    版本联动到代码：把 $(Version) 生成为编译期常量 ModVersion.Value，
+    供客户端 [BepInPlugin] 与服务端 IModMetadata.Version 引用（代码内无第二处版本字符串）。
+    const 可作为特性实参，改版本只改上面一行 <Version>。
+  -->
+  <Target Name="GenerateModVersionConstant" BeforeTargets="BeforeCompile;CoreCompile">
+    <PropertyGroup>
+      <ModVersionGeneratedFile>$(IntermediateOutputPath)ModVersion.g.cs</ModVersionGeneratedFile>
+    </PropertyGroup>
+    <MakeDir Directories="$(IntermediateOutputPath)" />
+    <WriteLinesToFile
+      File="$(ModVersionGeneratedFile)"
+      Overwrite="true"
+      Lines="internal static class ModVersion { public const string Value = &quot;$(Version)&quot;%3B }" />
+    <ItemGroup>
+      <Compile Include="$(ModVersionGeneratedFile)" />
+    </ItemGroup>
+  </Target>
+
+  <!--
+    服务端运行时引用：仅服务端工程与其测试工程。
+    本项目是 paired mod，两端 TFM 不同（net10.0 与 netstandard2.1），无法在单一无条件 ItemGroup 中
+    同时为两端声明引用（netstandard2.1 工程不能引用 net10.0 的 SPTarkov.*），故按工程名区分。
+    Private=false：SPT 服务器运行时自带这些程序集，不复制进 mod 输出（测试工程会覆盖为 true）。
+  -->
+  <ItemGroup Condition="'$(MSBuildProjectName)' == 'SamMeow.LLMTraderChat.Server' Or '$(MSBuildProjectName)' == 'SamMeow.LLMTraderChat.Tests'">
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SptRuntimeDir)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 补丁框架（AbstractPatch / IRuntimePatch）与其依赖的 HarmonyLib -->
+    <Reference Include="SPTarkov.Reflection">
+      <HintPath>$(SptRuntimeDir)\SPTarkov.Reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SptRuntimeDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!--
+    客户端运行时引用：仅客户端工程。
+    Private=false：由 BepInEx / 游戏运行时提供，不复制进构建输出。
+  -->
+  <ItemGroup Condition="'$(MSBuildProjectName)' == 'SamMeow.LLMTraderChat.Client'">
+    <Reference Include="BepInEx">
+      <HintPath>$(SptClientDir)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(SptClientDir)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!--
+      聊天输入补丁（工单 12）：ValidationInputField 的基类链含 TMP_InputField（→ UnityEngine.UI.Selectable）；
+      ChatScreen 的基类链含 SerializedMonoBehaviour（Sirenix.Serialization）。以下引用满足编译期类型解析。
+    -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(SptClientDir)\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

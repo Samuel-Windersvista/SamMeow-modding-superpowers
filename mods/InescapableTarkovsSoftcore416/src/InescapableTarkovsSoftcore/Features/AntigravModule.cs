@@ -6,7 +6,7 @@ using SPTarkov.Server.Core.Models.Common;
 namespace InescapableTarkovsSoftcore.Features;
 
 /// <summary>
-/// G4 反重力臂章（顺序 300）。按内嵌查找表把 22 款臂章的
+/// G4 反重力臂章（顺序 300）。按查找表把各臂章的
 /// <c>_props.Weight</c> 置为色阶减重值、<c>_props.StackMaxSize</c> 置为配置堆叠上限；
 /// 配置 <c>overrides</c> 最后应用，可逐款覆盖重量。缺失臂章 id → 告警并跳过。
 /// </summary>

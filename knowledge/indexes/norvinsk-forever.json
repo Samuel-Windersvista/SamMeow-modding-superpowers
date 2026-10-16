@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "generated": "2026-10-13",
+  "kb": {
+    "id": "norvinsk-forever",
+    "title": "《永远的诺文斯克》4.1.6 包内构建知识（清单 / 批次 / 评估 / 日志）",
+    "root": "E:\\Game\\EFT_Offline\\Norvinsk_Forever"
+  },
+  "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。",
+  "entries": [
+    {
+      "path": "docs/对照表-v0.1.0.md",
+      "title": "《永远的诺文斯克》v0.1.0 —— 安装对照表",
+      "version": [
+        "4.1"
+      ],
+      "domain": "both",
+      "topic": "ledger",
+      "source": "package",
+      "keywords": [
+        "一、已安装（69 项）",
+        "二、未就绪（80 项，暂缓跟踪）",
+        "三、排除项（45 条）",
+        "四、增量补装（2026-10-06）【已记录】",
+        "十一、待确认清单（7 项）"
+      ],
+      "summary": "等待上游发布 4.1.6 版本后增量补装。主要类别："
+    },
+    {
+      "path": "docs/dev-log.md",
+      "title": "《永远的诺文斯克》 Dev Log",
+      "version": [
+        "4.1"
+      ],
+      "domain": "both",
+      "topic": "dev-log",
+      "source": "package",
+      "keywords": [
+        "Entries"
+      ],
+      "summary": "Started: 2026-10-06T10:41:45+08:00"
+    },
+    {
+      "path": "docs/pending-mods-v0.1.0.md",
+      "title": "未就绪清单 v0.1.0 —— 待上游 4.1.6 更新后增量补装",
+      "version": [
+        "4.1"
+      ],
+      "domain": "both",
+      "topic": "pending",
+      "source": "package",
+      "keywords": [
+        "-10-14 更新"
+      ],
+      "summary": "共 72 项（对照 LifeinNorvinskv0.3.2 完整复刻目标中尚无 4.1.6 兼容版本的上游 mod）。"
+    },
+    {
+      "path": "docs/porting-assessment.md",
+      "title": "《永远的诺文斯克》4.1.6 移植可行性评估",
+      "version": [
+        "4.1"
+      ],
+      "domain": "both",
+      "topic": "assessment",
+      "source": "package",
+      "keywords": [
+        "关键结论摘要",
+        "总表",
+        "分档详述",
+        "建议移植顺序（性价比排序）",
+        "数据可信度备注",
+        "附：本评估使用的关键事实来源",
+        "复核结果（2026-10-06 补录）"
+      ],
+      "summary": "不建议进入本批：Realism（A10）、PTT（A12）、RaidOverhaul（A13）——重写型，先决策 4.1.6 与 5.0 的目标线；若目标线仍是 4.1.6，按专项立项（各自 1-4 周）。"
+    },
+    {
+      "path": "docs/README.md",
+      "title": "《永远的诺文斯克》NorvinskForever 包档案卡（SPT 4.1.6 · 主线）",
+      "version": [
+        "4.1"
+      ],
+      "domain": "both",
+      "topic": "pack-profile",
+      "source": "package",
+      "keywords": [
+        "Norvinsk_Forever",
+        "永远的诺文斯克",
+        "4.1.6",
+        "SPT_41x",
+        "MO2",
+        "构造清单",
+        "B8",
+        "Softcore416",
+        "DebugToolkit",
+        "回滚点",
+        "参照基准",
+        "增量账",
+        "modlist",
+        "包档案卡",
+        "整合包",
+        "档案导引"
+      ],
+      "summary": "定位：以 Life_in_Norvinsk_v0.3.2（3.11.4 参照基准）为蓝本重建的 SPT 4.1.6 主线整合包；版本线：3.11.4 参照 → v0.1.0 首建 69+3 → B8 批次 → 10-12/13 扩充与更新批；当前构成（10-14 实测）：105 mod 实体（93 启用 + 12 禁用，另 15 分隔符），较 B8 后净增 29；文档导引：dev-log / 对照表 / pending / assessment 四份记录；实例与回滚点：MO2 in-dir 实例 + 三处 profile 备份；待确认 7 项。"
+    }
+  ]
+}

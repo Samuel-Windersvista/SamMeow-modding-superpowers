@@ -1,3 +1,5 @@
+// 制造配方重平衡表（外置数据表：config/softcore/crafting-rebalance.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
   "recipeAdjustments": [
     {
@@ -52,6 +54,7 @@
     },
     {
       "id": "60098b1705871270cd5352a1",
+      // 已核实：recipeId 为 4.1.6 production.json 配方 _id（行 7653）；钉定配方用，保留。
       "recipeId": "61c77cc6fcc1673f08540e9b",
       "ops": [
         {
@@ -71,6 +74,7 @@
     },
     {
       "id": "5448fee04bdc2dbc018b4567",
+      // 已核实：recipeId 为 4.1.6 production.json 配方 _id（行 6214）；钉定配方用，保留。
       "recipeId": "5dc1f4d9e078d303d91b44c7",
       "ops": [
         {
@@ -319,6 +323,7 @@
               "type": "Tool"
             },
             {
+              // 已核实：questId 为 4.1.6 quests.json 任务 _id（"Snatch"，行 90087）；QuestComplete 前置可满足，保留。
               "type": "QuestComplete",
               "questId": "63966fccac6f8f3c677b9d89"
             }
@@ -337,6 +342,7 @@
     },
     {
       "id": "5d6fc87386f77449db3db94e",
+      // 已核实：recipeId 为 4.1.6 production.json 配方 _id（行 7809）；钉定配方用，保留。
       "recipeId": "5dd3c5a67da3785e63275437",
       "ops": [
         {
@@ -649,6 +655,7 @@
               "type": "Tool"
             },
             {
+              // 已核实：questId 为 4.1.6 quests.json 任务 _id（"The Huntsman Path - Outcasts"，行 76968）；保留。
               "type": "QuestComplete",
               "questId": "6179ad0a6e9dd54ac275e3f2"
             }

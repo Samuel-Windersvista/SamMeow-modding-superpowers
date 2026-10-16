@@ -29,7 +29,7 @@ public class ModMetadataTests
         Assert.Equal("com.sammeow.inescapable-softcore", metadata.ModGuid);
         Assert.Equal("Inescapable Tarkov's Softcore", metadata.Name);
         Assert.Equal("SamMeow", metadata.Author);
-        Assert.Equal("0.1.0", metadata.Version.ToString());
+        Assert.Equal("0.2.0", metadata.Version.ToString());
         Assert.Equal("MIT", metadata.License);
         Assert.False(metadata.HasPrepatcher);
     }

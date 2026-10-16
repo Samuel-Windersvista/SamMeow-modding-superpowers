@@ -29,11 +29,11 @@ public sealed class SamuelTweaksConfig : ModuleConfig
 /// <summary>G1 可掠夺物品开关（臂章 / 近战武器）。</summary>
 public sealed class LootableItemsConfig
 {
-    /// <summary>使臂章（父类 5447e1d04bdc2dff2f8b4567）可掠夺。</summary>
+    /// <summary>使臂章（父类 5b3f15d486f77432d0509248）可掠夺。</summary>
     [JsonPropertyName("armband")]
     public bool Armband { get; set; } = true;
 
-    /// <summary>使近战武器（类目 5b3f15d486f77432d0509248）可掠夺。</summary>
+    /// <summary>使近战武器（类目 5447e1d04bdc2dff2f8b4567）可掠夺。</summary>
     [JsonPropertyName("meleeWeapons")]
     public bool MeleeWeapons { get; set; } = true;
 }

@@ -17,9 +17,9 @@
     "armorConflictFix": true,
     // 可掠夺物品
     "lootableItems": {
-      // 臂章（父类 5447e1d04bdc2dff2f8b4567）可掠夺
+      // 臂章（父类 5b3f15d486f77432d0509248）可掠夺
       "armband": true,
-      // 近战武器（类目 5b3f15d486f77432d0509248）可掠夺
+      // 近战武器（类目 5447e1d04bdc2dff2f8b4567）可掠夺
       "meleeWeapons": true
     },
     // 扩展弹匣缩格：宽 1 且高 >2 且容量在 [minCapacity, maxCapacity] → 高 2、ExtraSizeDown−1

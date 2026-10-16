@@ -235,14 +235,15 @@ public class TrueItemsModuleTests
     }
 
     [Fact]
-    public void Apply_RealTemplates_PlaceholderStimIds_DoNotMatch_AndWarn()
+    public void Apply_RealTemplates_UnmatchedIds_DoNotMatch_AndWarn()
     {
         var table = TestItemTables.Items((Propital, "", 1, 0));
 
         var report = TrueItemsApplier.Apply(TrueItemsResourceLoader.Load(), table, new TrueItemsConfig());
 
-        // 占位 _id（非 24 位 hex）按「匹配不到 = 不生效」复刻：不抛异常，仅告警。
-        Assert.Contains(report.Warnings, warning => warning.Contains("cheeta_stim", StringComparison.Ordinal));
+        // 真实模板中未命中目标表的条目（如 SJ1，目标表仅含 Propital）按「匹配不到 = 不生效」复刻：
+        // 不抛异常，仅告警。工单 11 删除全部非 24-hex 占位 stim 后，占位锚点改由合法未命中 id 承接。
+        Assert.Contains(report.Warnings, warning => warning.Contains(Sj1, StringComparison.Ordinal));
         Assert.Equal(8, TestItemTables.Props(table, Propital).StackMaxSize);
     }
 

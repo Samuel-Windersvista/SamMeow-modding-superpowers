@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>SamMeow.LLMTraderChat.Tests</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Server\SamMeow.LLMTraderChat.Server.csproj" />
+    <ProjectReference Include="..\..\src\Shared\SamMeow.LLMTraderChat.Shared.csproj" />
+  </ItemGroup>
+
+  <!--
+    测试宿主需加载 SPT 程序集以反射 mod 类型，故对所需子集把引用覆盖为 Private=true
+    （mod 构建本身保持 Private=false）。Microsoft.AspNetCore.App 提供 SPTarkov.Server.Core
+    依赖的 Microsoft.Extensions.* 程序集。
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Reference Update="SemanticVersioning"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.Common"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.DI"><Private>true</Private></Reference>
+    <Reference Update="SPTarkov.Server.Core"><Private>true</Private></Reference>
+    <!-- 反射 Server.dll 时会触及其 AbstractPatch 子类的基类，需在测试输出中可用 -->
+    <Reference Update="SPTarkov.Reflection"><Private>true</Private></Reference>
+    <Reference Update="0Harmony"><Private>true</Private></Reference>
+    <!-- ISptLogger<T> 签名引用 Spectre.Console.Color，测试桩需要该程序集 -->
+    <Reference Include="Spectre.Console.Ansi">
+      <HintPath>$(SptRuntimeDir)\Spectre.Console.Ansi.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

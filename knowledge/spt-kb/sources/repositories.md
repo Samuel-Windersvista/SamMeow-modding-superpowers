@@ -2,6 +2,7 @@
 
 抓取日期：2026-08-02 | 归档位置：`E:\云文件\GitHub\SPT-archive\`
 上游组织：https://github.com/sp-tarkov （共 21 个公开仓库，20 个已本地归档，server-csharp 另有本地 fork）
+最近更新：2026-10-14（补记 SP-Tushonka fork 克隆与 4.1.6 tag `731d7a2a`，见「本地已有（未重复 clone）」表）
 
 ## Tier 1 — 写 mod 直接依赖
 
@@ -42,7 +43,8 @@
 
 | 仓库 | 本地路径 | 说明 |
 |------|---------|------|
-| server-csharp (fork) | `E:\云文件\GitHub\SamMeow_SPT410_source_code` | SPT 4.1 C# 服务端，fork 自 sp-tarkov/server-csharp。本地 `main` 已同步至 4.1.2（`cf04a112`，tag `4.1.2`）；`upstream/4.1.x-dev` = `04a58332`（4.1 开发线）。**部署验证**：`E:\Game\EFT_Offline\SPT_410\SPT_Runtime\SPTarkov.Server.Core.dll` FileVersion=4.1.2，ProductVersion 含 `cf04a112` —— 与 fork tag 一致，服务器运行的就是 4.1.2 源码构建 |
+| server-csharp (SP-Tushonka fork，4.1.x 现行) | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code` | SPT 4.1 C# 服务端现行源码（origin = SamMeow 自有 fork，upstream = SP-Tushonka/server-csharp）。tags 含 `4.1.0`~`4.1.6`；**tag `4.1.6` = `731d7a2a`（2026-09-18；较 4.1.5 `7d7add55` +21 commits / 44 files）**；`upstream/4.1x-dev` = `62896c02`（2026-10-01，较 tag 再领先 1 个 locale commit）；最后 fetch 2026-10-05。**部署验证**：`E:\Game\EFT_Offline\SPT_41x\SPT_Runtime\SPTarkov.Server.Core.dll` ProductVersion = `4.1.6-RELEASE+731d7a2.20260918` —— 与 tag `4.1.6` 同 commit。读码入口：工作树在 `refactor/buy-restriction-module` 分支，读 4.1.6 源码用 `git show 4.1.6:<路径>` 或 worktree 检出 |
+| server-csharp (早期 fork) | `E:\云文件\GitHub\SamMeow_SPT410_source_code` | SPT 4.1 C# 服务端早期克隆。本地 `main` 停在 4.1.2（`cf04a112`，tag `4.1.2`）；`tushonka/4.1x-dev` = `9b5d735a`（2026-09-05）；`upstream/4.1.x-dev` = `e97f4426`（2026-08-08）；**无 4.1.6 tag——查 4.1.6 请用上一行 SP-Tushonka 克隆**。历史部署验证（2026-08 期登记）：SPT_410 环境 DLL 与 `cf04a112` 一致；该目录现已不在 `EFT_Offline` 原位，未复核 |
 | server (3.11 branch, 本地) | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` | SPT-AKI 3.11.5-Live-In-Norvinsk-Edition（基线 SPT-AKI 3.11.x，TypeScript 版）。与官方 sp-tarkov/server（Tier 2 登记，96e5b73f/2025-09-07）同代；`server/project/package.json` `spt-server` v3.11.3，`assets/configs/core.json` sptVersion=3.11.4。**api-notes-3.11/ 笔记的实读来源** |
 | server-csharp (5.0x-dev, 本地) | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code` | SPT 5.0.0 开发线，SP-Tushonka fork。分支 `5.0x-dev`（克隆时 HEAD `ff0bf3281`/2026-09-12），`Build.props` SptVersion=5.0.0，`core.json` compatibleTarkovVersion=1.1.5.0.47242；含 `5.0.0-BEM-20260909/0910` 预发布标签。**克隆需走代理 `http://127.0.0.1:7890`（直连 GitHub git 被重置）；LFS 已 pull（18 文件约 257MB）**。核实记录见 `curated/operations/5xx-source-verification.md` |
 | wiki (SP-Tushonka fork, 本地) | `E:\云文件\GitHub\SP-Tushonka-wiki` | SP-Tushonka fork 的 wiki 源（现行 wiki.sp-tushonka.com 的渲染源）；锁定 commit `392e5005`（2026-09-11）；已 vendor 进 `../wiki-tushonka/`。克隆需走代理 `http://127.0.0.1:7890` |

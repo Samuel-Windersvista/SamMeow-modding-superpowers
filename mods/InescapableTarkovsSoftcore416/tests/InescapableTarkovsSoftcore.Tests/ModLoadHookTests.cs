@@ -15,17 +15,17 @@ public class ModLoadHookTests
     }
 
     [Fact]
-    public void Loader_IsInjectable_AtPreloadPlusOne()
+    public void Loader_IsInjectable_AtPostLoadPlusOne()
     {
         var attribute = typeof(ModLoadHook).GetCustomAttribute<Injectable>();
 
         Assert.NotNull(attribute);
-        Assert.Equal(OnLoadOrder.Preload + 1, attribute!.TypePriority);
+        Assert.Equal(OnLoadOrder.PostLoad + 1, attribute!.TypePriority);
     }
 
     [Fact]
     public void Loader_LogLine_IsFixedItsFormat()
     {
-        Assert.Equal("[ITS] Inescapable Tarkov's Softcore v0.1.0 loaded", ModLoadHook.LoadLogLine);
+        Assert.Equal("[ITS] Inescapable Tarkov's Softcore v0.2.0 loaded", ModLoadHook.LoadLogLine);
     }
 }

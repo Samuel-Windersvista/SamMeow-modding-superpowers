@@ -285,3 +285,166 @@
 - **工具修复**：`clone-sources.mjs` URL 规范化扩展（GitHub 裸 `/releases`、`/upload`；Codeberg `/src/branch|tag/<ref>`）——捞回 5 个 mod / 8 条源码（Choccy Milk 的 93R / WA2000 / China Lake 迁移仓库 + ShrapnelFix + Moar Supplies）。
 - **报告**：`docs/forge-4.1x-mod-survey-2026-10.md`（生态速览 + 颠覆潜力清单：Fika 联机 / 内容大回移 / 开放世界实验 / 硬核 Ironman / ORBIT 2.0 等）；分析数据与脚本在 `.scratch/forge-4.1x-survey/`；`docs/README.md` 已登记。
 - 全部变更未提交（按 Overseer 规则）。
+
+## 2026-10-13 — KB 回填：最近实战经验五条（softcore416 反向移植 / DebugToolkit 整合移植 / 触点核验方法 / MO2 版本误判 / 移植评估方法）
+
+- **背景**：将 2026-10-11 ~ 13 一批 SPT 实战经验沉淀进 spt-kb（此前除 USVFS 长路径条目外均未入库）。编排：4 路只读侦察消化一手材料 → 5 路撰写（主控 1 + @fixer 4，目标文件互不重叠）。
+- **新增条目（5 条，合计 547 行）**：
+  - `curated/migration/pilot-experience-softcore-416-backport.md`（101 行）——SPT 5.0→4.1.6 反向移植：骨架同构判定 → 15 处适配清单（可空性 9 / 取整 1 / 工程与元数据 3 / 清单外与部署期 2）；null 跳过且不计数；部署保护三保险 / 隔离区 / 日志标定；与 3.11→4.1 跨架构重写的本质区别。
+  - `curated/migration/pilot-experience-spt41-debugtoolkit.md`（133 行）——4.1.6 三源整合移植项目复盘：8 工单依赖链 / 触点闸门 / fail-open / F12 配置面 / ADR-0010 身份版本线 / ADR-0011 BigBrain 硬依赖 / 双轴评审闭环（PatchSet 教训：重复代码与健壮性缺陷同根因）。
+  - `curated/operations/client-api-touchpoint-verification.md`（110 行）——4.1.x 客户端触点核验标准流程：反编译 + 反射双通路 / 四态判据 / 版本锚定 / 混淆名语义指纹映射 / 跨线污染陷阱对照表。
+  - `curated/operations/mo2-spt-version-misdetection.md`（120 行）——MO2 fork 版本误判（4.1.x→4.0.x）：looksValid 谓词等价 + 双排序偏置机制链 / 方案 A 互斥谓词修复 / 独立复验四项 / 复发条件与预防。
+  - `curated/migration/porting-candidate-assessment.md`（83 行）——移植候选批量评估方法论：源码真实性核验 / 上游就绪复核 / 有效 LOC 口径 / 难度与结论分类；附仍有效结论（IOF / BRNVG / Softcore-NG）。
+- **索引**：`node scripts/spt-kb/sync-index.mjs --write` 新增 5 条，total 227→232，exit 0；写后复跑幂等。交叉引用 14 条路径全量核验存在。
+- **说明**：条目事实取自各工作区 spec / 工单 / 评审 / 核实表 / 研究报告（证据锚点随文保留）；未改任何代码、未提交 git；工作区既有未提交改动（多库查询系统 WIP）未触碰。
+
+## 2026-10-14 — 整合包知识全量接入知识库：一包一库（5 新库）+ Norvinsk_Forever 增量回写（10-06 → 10-14）
+
+- **背景**：Overseer 指示「其他 MO2 整合包的知识也不在知识库」→ 全量接入。范围 =《生活在诺文斯克》3.11.4 /《独享的塔科夫》3.11.4 /《无法逃离塔科夫》SPT5 /《诺文斯克潜行者》3.7.x（归档）+《永远的诺文斯克》本体回写。编排：4 路只读侦察（实例与知识载体全量盘点 + 增量账重建）+ 6 路撰写（4 档案卡 + NF 回写双线 + 潜行者档案卡）+ 主控收口。
+- **一包一库（kb-registry 2 → 7 库）**：新增 `norvinsk-forever` / `life-in-norvinsk` / `exclusive-tarkov` / `inescapable-tarkov` / `norvinsk-stalker`——root 指向各包目录（`E:/Game/EFT_Offline/…`；envKey 逐库独立、可覆盖），scan 白名单 `docs`，sections 逐文件映射 topic（pack-profile / dev-log / ledger / pending / assessment / patch）。索引逐库构建（`scripts/kb/build-index.mjs --kb <id> --write`，刻意不走默认全库，避免动 spt-kb / norvinsk-notes 既有管线）：norvinsk-forever 5 条 / life-in-norvinsk 2 / exclusive-tarkov 1 / inescapable-tarkov 1 / norvinsk-stalker 1；非法 0。
+- **包档案卡（5 份 `docs/README.md`，随包落位）**：独享 80 行 / 生活 111 行 / 无法逃离 94 行 / 潜行者 44 行（归档版）/ Norvinsk_Forever 81 行——首次为各包建档（此前「整合包说明文档」均为空目录，名不副实）。
+- **Norvinsk_Forever 增量回写**：dev-log 新增 5 条条目（10-11 B8 → 10-11 DebugToolkit → 10-12 Softcore416+F1/F4/F6+扩充批 → 10-13 更新批+F2 复验 → 10-14 追加安装 2 项），既有条目一字未动；对照表 116 → 245 行（§四–§十一：增量补装 / B8 / 扩充批【重建推定】/ 就地更新 / 禁用清单 12 / 修复登记 / 10-14 追加 / 待确认 7）；pending 同步（6 项被自建/替代覆盖：Softcore 连带 4 项 + DadGamerMode）。
+- **数据修复**：norvinsk-notes 两篇无法逃离笔记 version `[3.11]` → `[4.0]`（按正文「基于 SPT4.0.x/SPT4」定标；手改条目，builder 不改写）。
+- **验证**：5 库 dry-run/--write exit 0、非法 0；条目 title/topic/version 抽取抽查通过；NF 文档计数交叉核对（modlist 120 = 93 启用 mod + 12 禁用 mod + 15 分隔符；mods 实体 105）。
+- **边界（重要）**：运行时注册表为**模块级缓存**（`tools/spt-mcp/src/kb/registry.ts`）——**重启 MCP / 新会话后 7 库可见**；本会话实测仍报 2 库（预期行为，磁盘侧已全部就位）。
+- **施工漂移**：实例持续在建（执行快照后 +2：DoorOverhaul / BackpackGunSlot，已补记）；后续新增按 dev-log 惯例滚动记录。
+- 全部变更未提交（按 Overseer 规则）。
+
+## 2026-10-14（维护批次）— 4.1.6 目标线文档校准 + 本机工件清理
+
+- **背景**：后续工作以 SPT 4.1.6 整合包搭建为主线（Overseer 指示）→ 全库文档校准 + 过时工件清理。
+- **登记更新（4.1.5 → 4.1.6）**：VERSIONS.md（发布线补 4.1.4/4.1.5/4.1.6 行 + 基线改 4.1.6 + 环境表复核实：4.1 线 `4.1.6-RELEASE+731d7a2` / 5.0 线 `8b1e800.20261010`）；根 README（基线行 + 资产行改指 `SamMeow_SP-Tushonka_source_code` + index 计数 221→232 修正现行机检失配）；KB `INDEX.md` / `sources/repositories.md` / `README.md`（4.1.6 源码 tag `731d7a2a` 登记）；RELEASE-NOTES v0.2.0 节；skills 目标版本声明（5 个文件 6 处：using-spt / setting-up / maintaining / evaluating×2 / interpreting）；modding-standard `version-matrix.md` 补 4.1.6 注记（线标签语义：4.1.5 列 = 4.1 线含 4.1.6）；ADR-0006 加 2026-10-14 注记（原文未改写）。
+- **对锚证据**：SPT_41x DLL ProductVersion `4.1.6-RELEASE+731d7a2.20260918` == fork tag `4.1.6` commit `731d7a2a`（逐字一致）；4.1.6 = 较 4.1.5 +21 commits / 44 files。
+- **工件清理**：移除 5 个已并入 main 的 `omos/ticket-0{2,3,4,5,7}` 工作树 + 分支（零未提交；`.slim/worktrees*` 为 gitignored 本地工件）；清空 `.slim/worktrees.json` lanes；删除仓库根 MO2 崩溃转储 `ModOrganizer-2.5.2-20260924T164004.dmp`（未跟踪、全库零引用）。
+- **遗留（未动）**：`dist/portable-plugin`（2026-09-17 便携产物，62.9MB，可由 `scripts/build-portable-plugin.ps1` 重建）与既有未提交改动（KB 回写 WIP 等）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14 — 调研交付：LLM 商人聊天 mod 可行性（Messenger + IDialogueChatBot + RAG）
+
+- **背景**：Overseer 设想"在游戏信息面板里与商人文字聊天"（LLM API + 知识库/文档库生成回复，可扩展到 mod 商人），此前判断"没有可行方案"→ 立项调研。
+- **交付**：`docs/research/llm-trader-chat-feasibility.md`——三路后台只读侦察汇总（本地 KB/模板/官方示例；本地 Forge 归档 570 mod 源码快照；外部 Forge live API/GitHub/发行说明）+ 主控台磁盘抽查（TrashTalk `UpdatableChatDialogue.CanSendMessage` 补丁、MiyakoChatBot `IDialogueChatBot` 实现、server-mod-examples 目录，逐项核验）。
+- **核心结论**：可行且已有整例——Miyako Carry Service（#2709，自定义商人 + LLM 多 provider 对话）与 Trash Talk（#2816，Messenger 回复 + 客户端输入解锁）已在 4.1.x 实现并发布；空白 = "泛化到任意第三方 mod 商人 + RAG 知识库"（无先例，机制齐备）。服务端官方扩展点 `IDialogueChatBot`/`MailSendService`；客户端解锁点 `UpdatableChatDialogue.CanSendMessage`。
+- **索引**：`docs/README.md` research 表（7 → 8 篇）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14 — LLM 商人聊天：设计冻结 + spec + 工单发布（grill → to-spec → to-tickets）
+
+- **设计闭合**：grill-with-docs 三轮（11 + 9 + 2 项决策全部闭合，均按推荐）——载体=复用原生 Messenger（入口并入商人现有消息线程，骨架不通过则回退独立联系人）；试点=Peacekeeper + Therapist（mod 商人验证排 M2）；v1 纯配置驱动扩展；LLM=OpenAI 兼容单层（Ollama/DeepSeek 示例）；知识库=本地文档 + 轻量关键词检索（留检索后端适配口）；会话=被动回复 + 一次性开场 + reset 指令，历史存 profile（注入最近 20 条）；默认中文；延迟 2–6s 可配；不承诺 Fika、按共存设计；非目标=语音/交易联动/自建面板/5.0。
+- **双端触点核验**（fixer，ilspycmd + 反射双通路）：客户端 8 组、服务端 6 组全部命中（2 处修正：字段 `_receiveAllButton` 单下划线、`CG_TransferAll` 为方法）；关键发现：`[Injectable] IDialogueChatBot` 自动收编 + `ChatbotFeatures.EnabledBots` 门禁；产物 `.artifacts/llm-trader-chat-ilspy/`；报告 §8 已补记。
+- **交付**：`.scratch/llm-trader-chat/spec.md`（ready-for-agent：26 条用户故事 / 17 项实现决策 / 4 层测试接缝 / 6 条验收清单）+ 11 张工单（issues/01–11；frontier：01 立即可施工，03/04/05 可并行）。
+- **下一步**：工单 01（项目脚手架）起按 frontier 施工；需 Overseer 实机操作的环节（M1 骨架验收等）将提前提示。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14 — LLM 商人聊天：工单 01–05 实现 + MO2 部署 + 双轴评审闭环（M1 实机待验）
+
+- **工单 01（脚手架）**：`mods/SamMeow-LLMTraderChat/` 四工程（Client netstandard2.1 / Server net10.0 / Shared netstandard2.0 / Tests xunit net10.0）+ ADR×3 + pack.ps1；oracle 评审修订后收口（ADR 补齐 + NIT×4）。
+- **工单 02（M1 骨架）**：客户端 `CanSendMessage` Postfix 解锁（目标＝Therapist，收敛为 Shared 常量）；服务端路线 A（`[Injectable] IDialogueChatBot`，回显经 `MailSendService`；`EnabledBots` 门禁经源码定性为不影响发信路由且有意不开启）+ 缺失对话一次性补发；三项未知（输入解锁/路由归属/同线程落回）待 Overseer 实机回报。
+- **工单 03–05（配置/LLM/检索）**：ConfigLoader 纯函数 + `IOnDIConstruct` 首启复制（示例配置随包）；OpenAI 兼容 LlmClient（失败面＝结果对象，含 endpoint/读体异常映射）；KeywordKnowledgeRetriever（CJK 双字 + 上限）。oracle 双轴评审修订后收口（异常逃逸 + README 漂移两条 SHOULD 已修）；测试 37 全绿（5 + 27 + 修订 5）。
+- **MO2 自动部署**：修正 MO2 MCP 绑定（旧路径失效 → `Norvinsk_Forever`，其实例数据目录；game_path＝`SPT_41x`，VFS 托管）；overlay `[9]全局功能大修-商人LLM对话-llm-trader-chat-test-build` 安装并启用（priority 81，[9] 组内）；profile 备份 `pre-llmtc-m1`；快照 adaaeddd / 0048ebe7。注意：本地部署的构建与源码头存在一轮修订差（下次测试轮前更新）。
+- **遗留**：M1 实机验证（Overseer 操作中）；check-mod-standard 2 类 FAIL（CFG-006 → 客户端工单；BUILD-001/006 + META-003 → 检查器缺陷，发布门禁前修或 waiver）；数值钳制与 prompt 模板 → 工单 06 验收项已登记。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14（补）— M1 实机验证通过（LLM 商人聊天）
+
+- **结果**：Therapist 对话打字「喂」→ `/client/mail/msg/send` → `[LLMTC][recv]`（路由=IDialogueChatBot）→ `[LLMTC][reply]`（14 字）→ 同一对话目视收到 `[M1-echo] 收到：喂`（无需额外刷新补丁）。三个未知落定：① 输入解锁生效；② 路线 A 实机成立（`EnabledBots` 门禁确无影响）；③ 同线程回显成立。
+- **旁证**：未启用商人（Prapor）无输入框、原版行为；两端日志无本 mod 报错；`[LLMTC][config]` 行正常（DI 钩子生效）；seed 未触发（档案已有商人对话题）。
+- **工单 02 收口**；下一 frontier＝工单 06（引擎），随后 07（接线 + M2）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14（续）— 工单 06（引擎核心）收口 + 工单 07 派发
+
+- 交付：`src/Server/Engine/*`（六态 outcome + 只读历史/状态/模板接口 + 内置模板兜底）+ `IKnowledgeRetrieverFactory` + `knowledgeTopK` + `config/prompts/system-zh.txt`；测试 73 全绿（5+27+5+26+10）。
+- oracle 双轴评审修订后收口：E1 prompt 尺寸预算（历史 500/条·4000 总量；知识 800/条·3000 总量，截断告警）+ 单趟替换 + 异常/兜底面 + 测试补强全部完成。
+- frontier 推进：工单 07（服务端接线 + 试点内容）已派发；M2 实机需 LLM 可用（Ollama 或云端端点——待 Overseer 确认环境）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14（续 2）— 工单 07 评审闭环 + 待 M2 实机
+
+- 工单 07 agent 侧完成：引擎接线（历史/状态/开场/延迟/日志）+ 两试点商人 persona 与知识文档草稿 + 客户端名单配置化（STD-CFG-006 转 PASS）；测试 97 全绿（主控台复验）。
+- oracle 双轴评审修订后收口：reset 改"选择性清空"（保留未领取附件 + 角标重算）；开场原子 claim（TryClaimOpeningAsync）；客户端边界补强（空数组语义/大小写/异常面）。
+- 待办：Overseer 审改人设与文档 + LLM 环境确认 + 关闭游戏/服务器/MO2 以重部署；随后 M2 实机（清单已备）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14（续 3）— M2 验收通过；工单 12/08 完成与评审
+
+- **M2 实机验收通过**（工单 07/09 收口）：两商人真实 LLM 对话（DeepSeek `deepseek-flash`，耗时 2.0–3.0s）；检索命中、reset 选择性清空、开场一次性、延迟、兜底路径全部实证。发现：中文全角标点被原版输入白名单剥离。
+- **工单 12**（标点修复）：过滤点＝`EFT.UI.ValidationInputField` 白名单（`\w` 含 CJK 解释"汉字过、标点拦"）；补丁按"解锁名单"限定作用域；oracle 评审可收口（代码侧），实机复验待下轮。测试 103。
+- **工单 08**（mod 商人接入）：Overseer 指定「油漆匠 Painter」（id `668aaff35fd574b6dcc4a686`）；配置侧接入 + 最小接入契约（三处配置、零代码）入文档；oracle 评审修订后收口（README LLM 段重写 + 文档同步 + 升级 nuance）。测试 104。
+- **部署前须知**（oracle SHOULD-2 两颗雷）：① 运行时 `BepInEx\config\SamMeow.LLMTraderChat.traders.json` 需加 Painter id（或删除重建）；② overlay 刷新必须保留已填 DeepSeek key（当前 overlay config 含真实 key）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-14（续 4）— 工单 12/08 实机验证通过并收口
+
+- **工单 12**：全角标点实机进入服务端（`text="我就是路过的……"`、`text="你都有啥？"`，本地 23:21）；对照项未单独实测（按作用域结论维持）。
+- **工单 08**：3/3 商人启用；Painter 开场 + ≥2 轮真对话 + 重置全通过；客户端名单含 Painter；零代码接入验证成立；原版交易/任务按 Overseer 确认无变化。
+- **部署过程**：文件级覆盖（保 key，注入核验 `sk-75***c1e1`）+ 运行时名单加 id；overlay 与 downloads 副本同步。
+- frontier：工单 10（检索接线/文档打磨/M3）派发；随后 11（共存 + 终验 + 发布准备）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-15 — LLM 商人聊天：工单 10/11 收口 + 终审 + 最终部署（12/12 工单闭环）
+
+- **工单 10（M3 检索）**：`[kg] 命中数/来源` 日志、3×2 文档细节验收问答（Overseer 实测「提问都没问题」）、FAQ 文档侧打磨（未调参）、apiKey 占位符启动警告；oracle 评审可收口。
+- **工单 11（终验 + 发布准备）**：`docs/acceptance.md`（六条验收汇总 + 共存分析[未同装] + NIT-2/3 决定与理由）、`docs/standards-waiver.md`（检查器 3 条误报豁免 + severity + 门禁注记）、发布资料收尾（README/隐私/AI 声明/release）；终审「修订后收口」→ 修订轮（仅文档状态同步）。
+- **最终部署**：NF overlay = 最终构建（保 key `sk-75***c1e1`；Server.dll 78,848B @ 00:32:52；3 商人；downloads 副本同步）；运行时客户端名单含 3 商人；`[kg] 来源` 自本构建生效。
+- **交付状态**：12/12 工单闭环；测试 108/108；check-mod-standard 27/3（3 条已豁免记录）；zip 76,921 bytes / 28 entries 可部署。
+- **遗留（流程外）**：`git commit`、Forge 上传、release notes——均未执行（按 Overseer 规则）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-15（续）— KB 回填：LLM 商人聊天经验 2 条（配方 + 复盘）
+
+- **新增条目**（`node scripts/spt-kb/sync-index.mjs --write`，total 232 → 234；非法 0；孤儿 4 为 archive 预期项不处理）：
+  - `curated/recipes/13-trader-chat-pipeline.md` — 玩家↔商人文字聊天管线配方（客户端 `CanSendMessage` 解锁 / `IDialogueChatBot` 路线 A / `MailSendService` 回信 / 开场 / reset 语义 / `ValidationInputField` 标点白名单坑 / 共存分析）。
+  - `curated/operations/llm-mod-integration-lessons.md` — LLM 接入 SPT mod 工程复盘（失败面契约 / apiKey ASCII 坑 / prompt 预算 / 轻量 RAG 适配口 / MO2 保 key 部署循环 / 人设蒸馏方法）。
+- **索引与登记**：`knowledge/spt-kb/INDEX.md`（日期 + 「任务配方与实战复盘」节）；`curated/recipes/README.md`（11 → 13 条，补登 12/13）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-15（续 2）— 全商人接入批次（工单 13）：12 原版 + 7 mod 共 19 位
+
+- **范围**：接手（handoff `docs/handoff-llm-trader-chat-2026-10-15.md`）。侦察确认整合包商人人集＝12 位原版（SPT 4.1.6 trader DB）+ 7 位 mod（Painter 既有 / Artem / Scorpion / Croupier / Hideout Harry / Badger / Courier）；排除项（BARF 箱子、Ref 任务补丁、Tradermodding UI、改原版 assort 的若干 mod、停用 mod 等）记录于工单 13。
+- **实现**：`config.jsonc` / `defaultConfig.jsonc` 各 19 条（persona + 开场语 + docsDir + resetKeywords，两份 traderId 集合由单测守护）；`SharedConstants` 新增 16 位 id 常量 + `DefaultEnabledTraderIds` → 19；`ConfigLoaderTests` 计数 3→19 + 新增「客户端默认名单覆盖」守卫测试。
+- **文档**：64 篇新知识文档（16 位 × 4）由 4 条 fixer lane 并行产出，风格对齐治疗师样例；结构核查 19 目录 × 4 文件 + 抽查通过。
+- **门禁**：`dotnet test` **109/109**；`pack.ps1` 产出 `release\SamMeow.LLMTraderChat-0.1.0.zip`（137,701 bytes）。
+- **部署**：文件级覆盖 overlay（robocopy，保留 meta.ini）→ 注入旧 key 并核验（`sk-75***c1e1`，placeholder=False）→ config traders=19；运行时客户端名单 JSON → 19 位；`downloads\llmtc-m1.zip` 同步；overlay README/GLOSSARY 随新包刷新。
+- **待办**：Overseer 实机验收（服务器 `[LLMTC][route]` ×19 + 抽测新商人对话），通过后工单 13 收口并补记 acceptance。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-15（续 3）— 全商人接入实机验收通过；工单 13 收口
+
+- **验收证据**（`spt20261014.log` 17:15 起）：`[LLMTC][config] 启用商人=19/19`；`[LLMTC][route]` ×19 全名单；16 位新商人开场全部发出；新商人真对话（Mechanic / Croupier / Fence / BTR Driver，含 `[kg]` 命中 `04-faq.md` / `01-background.md`）；窗口内无 `[LLMTC]` 告警；客户端 `可聊天商人=` 19 位。Overseer 确认「测试没问题」。
+- **收口**：工单 13 勾选完成；`docs/acceptance.md` §四 补记通过证据。全商人接入批次（12 原版 + 7 mod = 19 位）交付完成。
+- **下一工作（已交接）**：商人按玩家**任务进度与好感度（standing）动态改变态度**——v2 特性，交接文档已备（见 `docs/handoff-llm-trader-chat-attitude-2026-10-15.md`）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-15（续 4）— v2 动态态度（工单 14）：grilling → 实现 → 双轴审查 → 部署
+
+- **决策（grilling Q1–Q7）**：状态信号＝该商人 standing/loyalty/unlocked + 名下任务进度（活跃/最近完成/计数）+ 玩家阵营与等级带；5 档 `Hostile/Cold/Familiar/Trusted/Ally`（`Unlocked==false` 或 `Standing<0` → Hostile；否则按 `LoyaltyLevel` 1/2/3/4+）；内置通用档位语义 + per-trader `attitudePrompts` 可选覆写；注入粒度＝计数 + 活跃任务名≤5 + 最近完成≤3（单名≤60 字，整段≤600 字）；反泄露禁令；prompt 新增 `{{attitude}}` 且旧模板自动追加兼容；服务端日志 `[LLMTC][attitude]`。
+- **实现**：新增 `TraderAttitudeEvaluator`（评测/渲染/诊断）、`TraderRelationshipSnapshot`、`ITraderRelationshipProvider`、`SptTraderRelationshipProvider`（4.1：`ProfileHelper`/`TemplateTable`/`LocaleService`）；改动 Config（`AttitudePrompts` + `TraderAttitudeKeys`）、`TraderChatEngine`（注入关系提供器 + 渲染 + 兼容 + 告警）、`TraderChatBot`、`SystemPromptDefaults`/`system-zh.txt`；严格垂直切片 TDD。
+- **验证（orchestrator 独立复验）**：`dotnet build -c Release` 0 警告 0 错误；`dotnet test -c Release` **144/144**（原 109，+35）。
+- **审查**：`@oracle` 双轴（Standards / Spec）。修订 R1–R7（裸 catch → 记日志；`AttitudeTier` 注释术语；档位键单一归属 `TraderAttitudeKeys`；`config/README.md` 补齐；测试魔数 → 常量；默认模板补禁令条款；模板缺 `{{persona}}`/`{{attitude}}` 告警）。驳回 Spec 轴 `MongoId.IsValidMongoId` 误报（4.1.6 源码实为 24 位十六进制校验）。记录于 `issues/14` §审查记录。
+- **部署（最小保 key 集）**：仅覆盖变化文件——`Server.dll`（102,400 B，二进制含 `EvaluateTier`/`RenderAttitudeBlock`）、`config/prompts/system-zh.txt`（含 `{{attitude}}`）、`config/README.md`、根 `README.md`/`GLOSSARY.md`；**`config.jsonc` 未动**（真实 apiKey 在位，placeholder=False）；`downloads\llmtc-m1.zip` 同步（149,679 B）；zip `release\SamMeow.LLMTraderChat-0.1.0.zip`（149,679 B）；覆盖前备份在 `.artifacts/overlay-backup-llmtc-v2-20261015/`。部署时游戏/服务器未运行（MO2 开着）。
+- **待办**：实机验收（低好感 vs 高好感语气差异可判读 + `[LLMTC][attitude]` 日志 + 不泄露内部数值），由 Overseer 进游戏回报。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-16（续 5）— 实机故障：商人回复兜底话术（「联系不上」）根因定位与修复
+
+- **症状**：与 Therapist 对话两条消息均收到兜底文案「（商人暂时联系不上，请稍后再试。）」（玩家截图 + 日志 `[LLMTC][fallback]`）。
+- **排障链路**：`[LLMTC][recv]` → `[LLMTC][route]` → `LLM 返回空内容` → `结果=Fallback`；同时 `[LLMTC][attitude] 档位=Cold(unlocked=True,ll=1,standing=0.24,done=2,active=2)` 正常 → **v2 接线无恙，问题在 LLM 响应侧**。
+- **直连 API 对照实验**（key 取自部署副本，仅内存使用、未打印）：最小提示词正常（`finish=stop`、content 154–168 字、响应含 `reasoning_content`）；近似真实 prompt + `max_tokens=512` → 复现 `finish=length`、`contentLen=0`、`reasoningLen=2038`；同 prompt + `max_tokens=2048` → `finish=stop`、`contentLen=155`。
+- **根因**：`deepseek-flash` 为**推理型模型**，推理链同样计入 `max_tokens` 预算；512 被推理吃满时 API 返回空 `content`，mod 表现为兜底话术。v2 态度块使 prompt 由 314 → 449 token，显著提高触发概率（10/15 的 v1 成功属概率性通过，日志 0 次空响应）。
+- **修复（配置层，无需改码）**：`maxTokens` 512 → 4096（仓库 `config.jsonc` / `defaultConfig.jsonc` 加注原因；部署副本以「仓库文本 + 原位注入 key」重写，核验 `keyUnchanged=True`、mask `sk-75***c1e1`、placeholder=False）；重新打包 `release\SamMeow.LLMTraderChat-0.1.0.zip`（150,107 B）并同步 `downloads\llmtc-m1.zip`。
+- **后续工单**：`issues/15-llm-empty-response-diagnostics.md`——客户端应解析 `finish_reason`，把 `length` 截断与「模型空回复」区分开，日志直指「调大 maxTokens」。
+- **待办**：Overseer 重启 SPT 服务器后复测对话。
+- **复测通过（同日 13:54–13:58，重启后）**：6/6 轮真实回复（107 / 93 / 150 / 108 / 101 字），`[LLMTC][attitude]` 逐条输出（Therapist 档位=Cold, unlocked=True, ll=1, standing=0.24, done=2, active=2），`[kg]` 命中 `02-stance.md` / `04-faq.md`；0 次空响应。引擎耗时 2.9–12.6 s（推理型模型特性，叠加 2–6 s 回复延迟后玩家可见等待约 10–18 s，如需提速可评估换非推理模型）。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-16（续 6）— v3 任务知识（工单 16/17）：实机缺陷取证 → grilling → 实现 → 双轴审查 → 部署
+
+- **触发与取证**：玩家问 Therapist「水瓶座行动」，模型**自信编造**——首答地点为「储备站水处理区」（实为**海关宿舍楼**），被纠正后未承认不知道，反以「我知道但不细说」的姿态补圆（「编号我不背」「带盥洗室那间」）。取证：Therapist 四篇知识文档对 钥匙/水瓶/海关/宿舍/任务 命中**全 0**、检索 `[kg] 命中数=0`；对照复现（真实模板+空知识）确认编造行为。
+- **判定修正**：**不是好感度扣留，也不是无害的「不知道」，而是自信编造**——比拒答更危险（会误导玩家跑错地图/买错钥匙）。
+- **决策（grilling Q1–Q7，Overseer 全部采纳）**：仅注入该商人名下进行中委托详情；态度档位→披露三档 None/Hint/Full；独立占位符 `{{quests}}` 与独立预算（单任务 ≤500 字、整段 ≤800 字）；静态层改为**自动生成**的任务手册（非人工起草）；Full 档允许报房间号/钥匙名；加入反编造硬约束。
+- **实现**：工单 16（`DisclosureLevel`/`TraderQuestDetail`/`TraderQuestRenderer` + 引擎/提供器/模板接线，测试 144→165）；工单 17（`scripts/gen-quest-manuals.mjs` + 15 份 `05-quests.md`，742 条任务、幂等、跳过 4 位零任务商人）。
+- **关键数据事实**：任务目标文本＝**裸 24-hex 条件 id 作为独立 locale 键**（链路 `Quest.Conditions.AvailableForFinish[].Id`，非 `_props.id`）；实机 profile 位于 MO2 profile 的 `saves\`（非游戏目录 `SPT_Runtime\user\profiles`）。
+- **双轴审查（@oracle）**：Standards 1 条术语漂移（已统一为「任务知识」）；Spec 4 项，其中 **1 项击穿验收靶心**——`None` 档/零委托时反编造禁令整段消失，叠加模板缺「禁止借口搪塞」子句，实机 Cold 档 prompt 内**无任何反编造指令** → 修订 R1–R6（禁令恒存 + 模板补全 + Hint 收敛 + 预算诊断校正）后 165/165。
+- **部署**：最小保 key 集（DIFF 5 + NEW 15）覆盖 overlay，**20/20 哈希校验通过**；`config.jsonc` 未动（key 在，`maxTokens=4096`）；`Server.dll` 109,056 B；zip 350,801 B；`downloads\llmtc-m1.zip` 已同步；备份在 `.artifacts/overlay-backup-llmtc-v3-20261016/`。
+- **待办**：实机验收（Cold 档问任务细节应拒答且不编造；未接任务提问应命中 `05-quests.md`；日志出现 `[LLMTC][quests]`）。
+- 未提交（按 Overseer 规则）。

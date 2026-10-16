@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- SPT 4.1 服务端目标框架必须是 net10.0，与服务器程序集保持一致 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.LLMTraderChat.Server</RootNamespace>
+    <AssemblyName>SamMeow.LLMTraderChat.Server</AssemblyName>
+
+    <!-- 输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 两端共享的纯数据/常量 -->
+    <ProjectReference Include="..\Shared\SamMeow.LLMTraderChat.Shared.csproj" />
+  </ItemGroup>
+
+  <!-- SPTarkov.* / SemanticVersioning 引用由项目级 Directory.Build.props 提供 -->
+
+  <ItemGroup>
+    <!-- 后续配置注册（IOnDIConstruct + IServiceCollection）需要该共享框架 -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

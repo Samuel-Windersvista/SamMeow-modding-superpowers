@@ -1,0 +1,633 @@
+==============================================================================
+softcore416 数据对齐枚举报告
+生成脚本: D:\Temp\opencode\align_enum.py
+==============================================================================
+
+方法说明:
+  BASE = items.json 顶层键集（键==_id，共 4673）
+  MOD  = 包内路径含 CustomItems 的 .json 顶层键集（去重 3318；扫描文件 387）
+  我方表: backpacks/armbands/softcore 四表用正则 [0-9a-fA-F]{24} 提取 id;
+          trueitems 六表 json.load 后遍历 JSON 树收集全部 `_id` 字段值。
+  编码: 统一用 utf-8-sig 读取（兼容 BOM）。
+  域匹配: 种子 = (BASE 中 _parent==父类 id 的子项) ∪ 我方表 id;
+          再迭代吸收 parentId==父类 id 或 itemTplToClone∈种子 的 MOD 项（克隆链传递闭包，直至不动点）。
+  分类: 已在我表 = id∈我方表且可解析(BASE∪MOD);
+        我表死链(B类) = id∈我方表但既不在 BASE 也不在 MOD;
+        未覆盖候选(C类) = id∈BASE∪MOD 但不在我方表。
+
+------------------------------------------------------------------------------
+A. 计数
+------------------------------------------------------------------------------
+BASE 总量: 4673
+MOD 总量(去重): 3318
+MOD CustomItems 文件扫描数: 387
+
+MOD 按文件分组计数(顶层键数):
+     117  [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json
+      69  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Suppressors.json
+      53  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Misc_Mounts.json
+      49  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponMasada.json
+      47  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Handguard_config.json
+      47  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AR_15_handguards.json
+      45  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Scopes.json
+      42  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\armoredequipment_config.json
+      42  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponCZScorpion.json
+      41  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Patches.json
+      40  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Helmets.json
+      39  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Foregrips.json
+      37  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\M700XL.json
+      34  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Mounts.json
+      34  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AR_Stocks.json
+      33  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAK5C.json
+      32  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponCheytacM200.json
+      30  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\LR300.json
+      29  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Mount_config.json
+      28  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponGrizzly.json
+      28  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponXM8.json
+      26  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Beretta_1301.json
+      25  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAEK.json
+      24  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Stock_config.json
+      24  [2]腰包-WTT-PackNStrap\SPT_Runtime\user\mods\WTT-PackNStrapServer\db\CustomItems\Gear_Belts.json
+      24  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AR_Muzzle_Devices.json
+      24  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Masks.json
+      23  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponMK23.json
+      23  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponMSBS.json
+      23  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\VEPR12.json
+      23  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AR_15_Stocks.json
+      22  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\handguard_config.json
+      22  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponWagesOfSin.json
+      21  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\BuiltInInserts_config.json
+      21  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Other_config.json
+      21  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Ammo.json
+      21  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\BRN180.json
+      20  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\IronSights.json
+      19  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Jewelry_config.json
+      19  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_Magazines.json
+      19  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponF2000.json
+      19  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponStaccatoXC.json
+      19  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponX95.json
+      19  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AK_HGS.json
+      18  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Barrel_config.json
+      18  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponM249.json
+      18  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Optics.json
+      18  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Zastava_m19.json
+      18  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AR_Barrels.json
+      18  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Lasers.json
+      17  [2]腰包-WTT-PackNStrap\SPT_Runtime\user\mods\WTT-PackNStrapServer\db\CustomItems\Item_Containers.json
+      17  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponDragunov.json
+      17  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Handguards.json
+      17  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK_Stuff.json
+      16  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Headwear_config.json
+      16  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\keycard_config.json
+      16  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\headwear_config.json
+      16  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponM76.json
+      16  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponM78.json
+      16  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\AM17.json
+      16  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\DD_MFR.json
+      16  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Vests.json
+      15  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponPMM12.json
+      15  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Mags.json
+      15  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Mounts.json
+      15  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\MCX_Parts.json
+      15  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\MK4_Rails.json
+      15  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Pistol_Grips.json
+      14  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\vest_config.json
+      14  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAXMC_300WM.json
+      14  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponCarmel.json
+      14  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponProdigy.json
+      14  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponWilsonCombatEDCX9.json
+      13  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\other_config.json
+      13  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Vest_config.json
+      13  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAuto5.json
+      13  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponHK417.json
+      13  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponM107.json
+      13  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponMSR.json
+      13  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponPSARock57.json
+      13  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Suppressors.json
+      13  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AC_TX_XC.json
+      13  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\BM59.json
+      13  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\BP12.json
+      12  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\AmmoBox_config.json
+      12  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\SVDM.json
+      12  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SUR300.json
+      12  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\BCM_MCMR.json
+      12  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\MK8 Rails.json
+      12  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\RISIIIL_Rails.json
+      12  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\RISIIIU_Rails.json
+      11  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\BuiltInInserts_config.json
+      11  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\keymechanical_config.json
+      11  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WTT_Posters.json
+      11  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponEvolys.json
+      11  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponPitViper.json
+      11  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\PP2000.json
+      11  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\PistolGrips.json
+      11  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Stocks.json
+      11  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SR1.json
+      10  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\stock_config.json
+      10  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\QuestItems.json
+      10  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponPM9.json
+      10  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\PistolGrips.json
+      10  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SAK21.json
+      10  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Hogue_Tube.json
+      10  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Krink_MK3.json
+      10  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\New_AKs.json
+      10  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Red_Dots.json
+       9  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\FlashHider_config.json
+       9  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\IronSight_config.json
+       9  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Stock_config.json
+       9  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\handguard_config.json
+       9  [3]新武器-AKResonant\SPT_Runtime\user\mods\AKResonant\db\CustomItems\AKResonant.json
+       9  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAN94.json
+       9  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponKACPDW.json
+       9  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponM1894.json
+       9  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponUCP.json
+       9  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\VSSK.json
+       9  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Ammo.json
+       9  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\WeaponFNX.json
+       9  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Kochevnik.json
+       9  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Service_Rifle.json
+       9  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Sport_Kits.json
+       9  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Glock_parts.json
+       9  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Magnifiers.json
+       9  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\RISII_Rails.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Ammo_config.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\AuxiliaryMod_config.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Flyer_config.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\mount_config.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\ArmoredEquipment_config.json
+       8  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Headphones_config.json
+       8  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponRO991.json
+       8  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponXM109.json
+       8  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\SVCH.json
+       8  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AMT_HardBaller.json
+       8  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Cobalt_Kinetics_Model_27.json
+       8  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Magazines.json
+       8  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\PSA_JAKL.json
+       8  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\URX4_Rails.json
+       8  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Misc.json
+       7  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json
+       7  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Magazine_config.json
+       7  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Vest_config.json
+       7  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\barrel_config.json
+       7  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\flyer_config.json
+       7  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponCZ75.json
+       7  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponRuger57.json
+       7  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponUdav.json
+       7  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Recievers.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\416_Handguards.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK12M1.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK12_Zublin.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\PKM_Zenitco_kit.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\PPK_20.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Stoner_63.json
+       7  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Warn_metal.json
+       7  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\MP5_Accessories.json
+       6  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\PistolGrip_config.json
+       6  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Receiver_config.json
+       6  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\silencer_config.json
+       6  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\New_50_BMG.json
+       6  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Weapon92fs.json
+       6  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponUMP9.json
+       6  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\AK200.json
+       6  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Foregrips.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AS_1.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\BRO_Commando.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Clutch_CH.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\M240.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\MK22_HushPuppy.json
+       6  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\MTS_handguard.json
+       6  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\M700.json
+       6  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Magazines.json
+       6  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\New_MK47s.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\AssaultRifle_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Charge_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\FaceCover_config_2.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Flyer_config_3.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Gasblock_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\ammo_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\charge_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\ironsight_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Info_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\PistolGrip_config.json
+       5  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\builtininserts_config.json
+       5  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_Scopes.json
+       5  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAGSeries.json
+       5  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponC9.json
+       5  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\AMB17.json
+       5  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\PLK.json
+       5  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\AmmoBoxes.json
+       5  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\WeaponMP540.json
+       5  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\MK12_Mod0.json
+       5  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\USPS.json
+       5  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\VPO185.json
+       5  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AK_Muzzle Devices.json
+       5  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AK_Pgrips.json
+       5  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Misc_Barter.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config_3.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Handguard_config_2.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Headwear_config_2.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\MuzzleCombo_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\SimpleContainer_config_2.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Vest_config_2.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\flashhider_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\flyer_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\magazine_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\pistolgrip_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Armor_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\FaceCover_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Visors_config.json
+       4  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-12\ammobox_config.json
+       4  [2]腰包-WTT-PackNStrap\SPT_Runtime\user\mods\WTT-PackNStrapServer\db\CustomItems\Item_SecureContainers.json
+       4  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_IronSights.json
+       4  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponA545.json
+       4  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponHenryBBS.json
+       4  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\A762.json
+       4  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\IronSights.json
+       4  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\WeaponHK337.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AUGA3_300blk.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AUG_Parts.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\GHM9_Gen1.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Lasers.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\M700.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\MP5_Parts.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SureFire.json
+       4  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\svd_short.json
+       4  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Amps.json
+       4  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Armor Plates.json
+       4  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\HK_SMR.json
+       4  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\MK16_Rails.json
+       4  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Midwest_SS.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Backpack_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\FaceCover_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Headwear_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\MobContainer_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Silencer_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\assaultrifle_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\assaultscope_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\jewelry_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\receiver_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Mount_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\electronics_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\auxiliarymod_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\headphones_config.json
+       3  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\visors_config.json
+       3  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponUSC.json
+       3  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\ADS.json
+       3  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Barrels.json
+       3  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Barters.json
+       3  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Headsets.json
+       3  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\WeaponGlock22.json
+       3  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\WeaponUMP40.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK12SK.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AR_15_Receivers.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\As_Val_Mod_3_5.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\M17S.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\MP9_Parts.json
+       3  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\TR1.json
+       3  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AK_Stocks.json
+       3  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AXMC_Barrels.json
+       3  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Bipods.json
+       3  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Iron_Sights.json
+       3  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Midwest_NF_Rails.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmoredEquipment_config_2.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Bipod_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\CompactCollimator_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Gasblock_config_2.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Headphones_config_2.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Jewelry_config_2.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Knife_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Silencer_config_2.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\food_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\foregrip_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\gasblock_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\knife_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\specitem_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Foregrip_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Jewelry_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\info_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\medicalsupplies_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\stock_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\armor_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\flashhider_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\other_config.json
+       2  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\stock_config.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_Foregrips.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_PistolGrips.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_Suppressors.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponPatriot.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponSA01.json
+       2  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponSerbuSuperShorty.json
+       2  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\Ammo\127x55_ST130.json
+       2  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\Attachments\Rails.json
+       2  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\Attachments\handguards.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK12K.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Anaconda_Riser.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Beretta_CX4.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Keymod_adapter.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SL8.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Scope.json
+       2  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Tulyak.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\AK15_Muzzle_Devices.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Lights.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Midwest_AR10_rails.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\New_Spear.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Rail_Covers.json
+       2  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\URX3_Rails.json
+       2  [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Backpacks.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmorPlate_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Armor_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmoredEquipment_config_3.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\AssaultCarbine_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Charge_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Collimator_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\FlashHider_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Flashlight_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Food_config_3.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Headwear_config_3.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Jewelry_config_3.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\MarksmanRifle_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\MarksmanRifle_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Medical_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\NightVision_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\OpticScope_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Receiver_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\SimpleContainer_config_3.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\SniperRifle_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\SpecItem_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Stock_config_2.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\TacticalCombo_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Visors_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\compactcollimator_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\drink_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\info_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\keymechanical_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\opticscope_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\kordbreach\tacticalcombo_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Collimator_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\CompactCollimator_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\CultistAmulet_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Electronics_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Handguard_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Money_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Other_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Receiver_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\Shotgun_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update4\SpecItem_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\armoredequipment_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\flashhider_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\flyer_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\jewelry_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\lubricant_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\simplecontainer_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\specitem_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update5\vest_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-12\keymechanical_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-12\other_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-12\specitem_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\compactcollimator_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\facecover_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\foregrip_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\muzzlecombo_config.json
+       1  [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\update9-20-26\smg_config.json
+       1  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_Muzzles.json
+       1  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\Attachment_VSSM.json
+       1  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\M700XL_Norma.json
+       1  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponAK107.json
+       1  [3]新武器-WTT武器库-WTT - Armory客户端\SPT_Runtime\user\mods\WTT-Armory\db\CustomItems\WeaponSV98M.json
+       1  [3]新武器-俄罗斯特种部队武器包-Russian-SF-Pack\SPT_Runtime\user\mods\Russian-SF-Pack\db\CustomItems\AK205.json
+       1  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\GasBlocks.json
+       1  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Lasers.json
+       1  [3]新配件-ConsortiumOfThings\SPT_Runtime\user\mods\EukyreECOT\db\CustomItems\Weapon556Krink.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK105_new.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\AK74M_new.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\M60A3 Kit.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Norinco_m14.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SAG_AK105.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\SR_3M_handguard.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\Thompson_Tokarev.json
+       1  [3]新配件-Eco-Attachment Emporium\SPT_Runtime\user\mods\Eco-Attachment-Emporium\db\CustomItems\dbal_pad.json
+       1  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\Headgear.json
+       1  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\KAC_FF_RAS_SR25.json
+       1  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\My_Barter.json
+       1  [3]武器整合-Epic's All in One\SPT_Runtime\user\mods\EpicRangeTime-Epic's All In One\db\CustomItems\New_M4.json
+
+------------------------------------------------------------------------------
+B. 背包域
+------------------------------------------------------------------------------
+父类: 5448e53e4bdc2d60728b4567 (Backpack)
+BASE 子项: 45 | MOD 域项: 11 | 我方表 id: 43 | 并集行数: 57
+  已在我表: 42
+  我表死链(B类): 1
+  未覆盖候选(C类): 14
+
+全表 (id | 名称 | 来源 | 分类):
+  668bc5cd834c88e06b08b928 | 6Sh118 raid backpack (Alpine) | [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Backpacks.json | 已在我表
+  6673b1ac5cae0610f1079d71 | 6Sh118 raid backpack (Black) | [4]新商人-Artem\SPT_Runtime\user\mods\WTT-Artem\db\CustomItems\Artem_Backpacks.json | 已在我表
+  672e2e7563b1a22a3c7b3895 | Back Panel v1 | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  672e2e754544ab54214fd56c | Back Panel v1 (Black) | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  672e2e75d276dfa8dd76770c | Back Panel v2 | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  672e2e75592eb3c91e248717 | Back Panel v2 (Black) | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  672e2e75c076d2093b05c764 | Mystery Ranch NICE COMM 3 BVS frame system (Black) | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  672e2e75b9082dbf88dd1dbd | Mystery Ranch NICE COMM 3 BVS frame system (M90) | [2]新装备、衣服-TacticalGearComponent\SPT_Runtime\user\mods\TGC-NG\db\CustomItems\modTGC_items.json | 已在我表
+  5df8a4d786f77412672a1e3b | backpack_Raid_6SH118 | base | 已在我表
+  5ab8f04f86f774585f4237d8 | backpack_molle | base | 已在我表
+  66a9f98f3bd5a41b162030f4 | backpack_partizan | base | 已在我表
+  59e763f286f7742ee57895da | backpack_pilgrim | base | 已在我表
+  61b9e1aaef9a1b5d6a79899a | backpack_pilgrim_red | base | 已在我表
+  5e997f0b86f7741ac73993e2 | backpack_sanitar_medbag | base | 已在我表
+  5ab8ebf186f7742d8b372e80 | backpack_sso_attack2 | base | 已在我表
+  5ab8ee7786f7742d8f33f0b9 | backpack_vkboarmy | base | 已在我表
+  56e335e4d2720b6c058b456d | backpack_wild | base | 已在我表
+  545cdae64bdc2d39198b4568 | bigBackpack | base | 已在我表
+  56e33634d2720bd8058b456b | forward_backpack | base | 已在我表
+  6038d614d10cbf667352dd44 | item_equipment_backpack_Takedown_sling_multicam | base | 已在我表
+  5b44c6ae86f7742d1627baea | item_equipment_backpack_betav2 | base | 已在我表
+  5c0e774286f77468413cc5b2 | item_equipment_backpack_blackjack | base | 已在我表
+  628bc7fb408e2b2e9c0801b1 | item_equipment_backpack_boss_birdeye | base | 已在我表
+  66b5f22b78bbc0200425f904 | item_equipment_backpack_camelback_trizip_multicam | base | 已在我表
+  5e9dcf5986f7746c417435b3 | item_equipment_backpack_daypack14 | base | 已在我表
+  60a272cc93ef783291411d8e | item_equipment_backpack_drawbridge | base | 已在我表
+  5f5e467b0bc58666c37e7821 | item_equipment_backpack_f5switchblade | base | 已在我表
+  628e1ffc83ec92260c0f437f | item_equipment_backpack_gr99_t30 | base | 已在我表
+  62a1b7fbc30cfa1d366af586 | item_equipment_backpack_gr99_t30_multicam | base | 已在我表
+  618bb76513f5097c8d5aa2d5 | item_equipment_backpack_gr99t20 | base | 已在我表
+  619cf0335771dd3c390269ae | item_equipment_backpack_gr99t20_multicam | base | 已在我表
+  618cfae774bb2d036a049e7c | item_equipment_backpack_lbt1476a | base | 已在我表
+  67458794e21e5d724e066976 | item_equipment_backpack_lbt1476a_slick_winter | base | 已在我表
+  5e4abc6786f77406812bd572 | item_equipment_backpack_medpack | base | 已在我表
+  60a2828e8689911a226117f9 | item_equipment_backpack_pillbox | base | 已在我表
+  5f5e45cc5021ce62144be7aa | item_equipment_backpack_redfox | base | 已在我表
+  6034d103ca006d2dca39b3f0 | item_equipment_backpack_takedown_sling | base | 已在我表
+  639346cc1c8f182ad90c8972 | item_equipment_backpack_trooper_35 | base | 已在我表
+  66b5f247af44ca0014063c02 | item_equipment_backpack_vertx_readypack_red | base | 已在我表
+  5ca20d5986f774331e7c9602 | item_equipment_backpack_wartech | base | 已在我表
+  544a5cde4bdc2d39388b456b | standartBackpack | base | 已在我表
+  56e33680d2720be2748b4576 | tactical_backpack | base | 已在我表
+  6621b28d9411498998d408c3 | MR NICE COMM 3 BVS | (our-table-only) | 我表死链(B类)
+  68947ab5a733b1602007e2fe | Mystery Ranch 2 Day Assault Pack (Black) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Backpack_config.json | 未覆盖候选(C类)
+  68947ad3e4bf255d1b0ca75c | Mystery Ranch NICE Frame Load Sling | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Backpack_config.json | 未覆盖候选(C类)
+  68947a8ce4bf255d1b0ca759 | Tasmanian Tiger Modular Pack 45 Plus (MultiCam Black) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\Backpack_config.json | 未覆盖候选(C类)
+  56e294cdd2720b603a8b4575 | endlessBackpack | base | 未覆盖候选(C类)
+  656f198fb27298d6fd005466 | item_equipment_backpack_dragon_egg_mk_ii | base | 未覆盖候选(C类)
+  5f5e46b96bdad616ad46d613 | item_equipment_backpack_f4terminator | base | 未覆盖候选(C类)
+  6034d2d697633951dc245ea6 | item_equipment_backpack_g2_gunslinger | base | 未覆盖候选(C类)
+  5d5d940f86f7742797262046 | item_equipment_backpack_mech | base | 未覆盖候选(C类)
+  656e0436d44a1bb4220303a0 | item_equipment_backpack_mystery_ranch_satl | base | 未覆盖候选(C类)
+  674da107c512807d1a0e7436 | item_equipment_backpack_mystery_ranch_terraframe | base | 未覆盖候选(C类)
+  674da9cf0cb4bcde7103c07b | item_equipment_backpack_mystery_ranch_terraframe_xmass | base | 未覆盖候选(C类)
+  5c0e805e86f774683f3dd637 | item_equipment_backpack_paratus | base | 未覆盖候选(C类)
+  656ddcf0f02d7bcea90bf395 | item_equipment_backpack_tehinkom_patrol | base | 未覆盖候选(C类)
+  67458730df3c1da90b0b052b | item_equipment_tactical_rush100 | base | 未覆盖候选(C类)
+
+------------------------------------------------------------------------------
+C. 臂章域
+------------------------------------------------------------------------------
+父类: 5b3f15d486f77432d0509248 (ArmBand)
+BASE 子项: 26 | MOD 域项: 11 | 我方表 id: 22 | 并集行数: 37
+  已在我表: 22
+  我表死链(B类): 0
+  未覆盖候选(C类): 15
+
+全表 (id | 名称 | 来源 | 分类):
+  5b3f3af486f774679e752c1f | armband_blue | base | 已在我表
+  5b3f3b0186f774021a2afef7 | armband_green | base | 已在我表
+  5b3f3ade86f7746b6b790d8e | armband_red | base | 已在我表
+  60b0f988c4449e4cb624c1da | armband_sigma | base | 已在我表
+  5b3f16c486f7747c327f55f7 | armband_white | base | 已在我表
+  5b3f3b0e86f7746752107cda | armband_yellow | base | 已在我表
+  619bc61e86e01e16f839a999 | item_equipment_armband_alpha | base | 已在我表
+  664a5480bfcc521bad3192ca | item_equipment_armband_arena | base | 已在我表
+  619bdd8886e01e16f839a99c | item_equipment_armband_bear | base | 已在我表
+  619bddc6c9546643a67df6ee | item_equipment_armband_dead | base | 已在我表
+  619bddffc9546643a67df6f0 | item_equipment_armband_helmet | base | 已在我表
+  619bde3dc9546643a67df6f2 | item_equipment_armband_kibaarms | base | 已在我表
+  619bde7fc9546643a67df6f4 | item_equipment_armband_labs | base | 已在我表
+  67614b542eb91250020f2b86 | item_equipment_armband_prestige_1 | base | 已在我表
+  67614b6b47c71ea3d40256d7 | item_equipment_armband_prestige_2 | base | 已在我表
+  5f9949d869e2777a0e779ba5 | item_equipment_armband_r2 | base | 已在我表
+  619bdeb986e01e16f839a99e | item_equipment_armband_russia | base | 已在我表
+  619bdef8c9546643a67df6f6 | item_equipment_armband_terragroup | base | 已在我表
+  619bdf9cc9546643a67df6f8 | item_equipment_armband_un | base | 已在我表
+  660312cc4d6cdfa6f500c703 | item_equipment_armband_unheard | base | 已在我表
+  619bdfd4c9546643a67df6fa | item_equipment_armband_usec | base | 已在我表
+  67614b3ab8c060ebb204b106 | item_equipment_armband_xmass | base | 已在我表
+  68f25be683ec644ebf046787 | Armband (Beta) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68d41fde2937f3f17c04864d | Armband (For Humanity) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config_3.json | 未覆盖候选(C类)
+  68f8ccb11cc53ada67036e27 | Armband (HEAD, EYES Protection) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68f8ccbc4c78615ba6079b20 | Armband (LOOT Prayer) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68d41fb0a1c275dbaa0798bf | Armband (Lighthouse) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config_3.json | 未覆盖候选(C类)
+  68d65766916a108d7a023c98 | Armband (Prestige 6) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68f25b772605ccea240dd684 | Armband (Release) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68f8ccf06a6869fe97026c3b | Armband (SBEU KOMAR Protection) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  68d41e65a706eba9a204ed27 | Armband (Survivor) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config_3.json | 未覆盖候选(C类)
+  68d41f017cb8c03da8079004 | Armband (To Fall in the Darkness) | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config_3.json | 未覆盖候选(C类)
+  68fb9480e6ad35a767066feb | Forged In Beta Armband | [2]WTT正式版内容\SPT_Runtime\user\mods\WTT-ContentBackport\db\CustomItems\ArmBand_config.json | 未覆盖候选(C类)
+  688b2e574172ca83e70cf868 | item_equipment_armband_discord | base | 未覆盖候选(C类)
+  6841b2506c1fcc41ed0db319 | item_equipment_armband_prestige_3 | base | 未覆盖候选(C类)
+  6841b3463fcc417de40a6768 | item_equipment_armband_prestige_4 | base | 未覆盖候选(C类)
+  6841b3ab322db20d190b4b9b | item_equipment_armband_prestige_5 | base | 未覆盖候选(C类)
+
+------------------------------------------------------------------------------
+D. trueitems 六表（遍历 _id）
+------------------------------------------------------------------------------
+  barter: _id 命中 175(去重) -> base 174 | mod 1 | neither 0
+    neither 全列:
+  clothing: _id 命中 22(去重) -> base 22 | mod 0 | neither 0
+    neither 全列:
+  keycards: _id 命中 1(去重) -> base 1 | mod 0 | neither 0
+    neither 全列:
+  medicals: _id 命中 43(去重) -> base 21 | mod 0 | neither 22
+    neither 全列:
+      cheeta_stim
+      boar_stim
+      adrenal_plus_stim
+      gepard_stim
+      glucose_stim
+      elephant_stim
+      ehets_stim
+      bbloodshot_stim
+      Amphetamine_stim
+      Caffeine_Stim
+      cocaine_stim
+      Glucose_shot
+      fastshot
+      mbloodshot_stim
+      meldonin_v13.5
+      Nic_Stim
+      obdolbos_v13.0
+      sbloodshot_stim
+      regen_stim
+      salnrg_stim
+      rebirth_stim
+      radioactiveblood_stim
+  partsnmods: _id 命中 114(去重) -> base 114 | mod 0 | neither 0
+    neither 全列:
+  provisions: _id 命中 19(去重) -> base 19 | mod 0 | neither 0
+    neither 全列:
+
+------------------------------------------------------------------------------
+E. softcore 四表（正则 24-hex）
+------------------------------------------------------------------------------
+  scavcase: 命中 113(去重，原始 115) -> base 108 | mod 0 | neither 5
+    neither 列表(每表上限 200):
+      62710974e71632321e5afd5f
+      62710a8c403346379e3de9be
+      62710a69adfbd4354d79c58e
+      6271093e621b0a76055cd61e
+      62710a0e436dcc0b9c55f4ec
+  fleamarket: 命中 583(去重，原始 725) -> base 563 | mod 0 | neither 20
+    neither 列表(每表上限 200):
+      5b47574386f77428ca22b2ed
+      5b47574386f77428ca22b2ee
+      5b47574386f77428ca22b2ef
+      5b47574386f77428ca22b2f0
+      5b47574386f77428ca22b2f1
+      5b47574386f77428ca22b2f2
+      5b47574386f77428ca22b2f3
+      5b47574386f77428ca22b2f4
+      5b47574386f77428ca22b2f6
+      5b47574386f77428ca22b335
+      5b47574386f77428ca22b336
+      5b47574386f77428ca22b337
+      5b47574386f77428ca22b338
+      5b47574386f77428ca22b339
+      5b47574386f77428ca22b33a
+      5b47574386f77428ca22b33e
+      5b47574386f77428ca22b340
+      5b47574386f77428ca22b341
+      5b47574386f77428ca22b343
+      5b47574386f77428ca22b344
+  crafting-rebalance: 命中 84(去重，原始 107) -> base 79 | mod 0 | neither 5
+    neither 列表(每表上限 200):
+      61c77cc6fcc1673f08540e9b
+      5dc1f4d9e078d303d91b44c7
+      63966fccac6f8f3c677b9d89
+      5dd3c5a67da3785e63275437
+      6179ad0a6e9dd54ac275e3f2
+  crafting-recipes: 命中 57(去重，原始 66) -> base 45 | mod 0 | neither 12
+    neither 列表(每表上限 200):
+      63da4dbee8fa73e225000006
+      63da4dbee8fa73e225000005
+      63da4dbee8fa73e225000009
+      63da4dbee8fa73e225000007
+      63da4dbee8fa73e225000004
+      63da4dbee8fa73e225000001
+      63da4dbee8fa73e225000002
+      63da4dbee8fa73e225000003
+      63da4dbee8fa73e225000008
+      63da4dbee8fa73e225000014
+      63da4dbee8fa73e225000011
+      63da4dbee8fa73e225000012
+
+------------------------------------------------------------------------------
+F. 异常
+------------------------------------------------------------------------------
+CustomItems 解析失败: 0
+
+跳过的大文件(>50MB, 未解析): 0
+
+大文件(>10MB, 已解析): 0
+
+==============================================================================
+报告结束。
+==============================================================================

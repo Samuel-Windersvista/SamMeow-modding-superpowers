@@ -16,12 +16,12 @@ public class TrueItemsResourceTests
 
         Assert.True(tables.Barter.Active);
         Assert.Equal(1, tables.Barter.StackMult);
-        Assert.Equal(175, tables.Barter.List.Count);
+        Assert.Equal(219, tables.Barter.List.Count);
         Assert.Empty(tables.Barter.ParentList);
 
         Assert.True(tables.Clothing.Active);
         Assert.Equal(1, tables.Clothing.StackMult);
-        Assert.Equal(22, tables.Clothing.List.Count);
+        Assert.Equal(33, tables.Clothing.List.Count);
 
         Assert.True(tables.Keycards.Active);
         Assert.Equal(1, tables.Keycards.StackMult);
@@ -30,7 +30,7 @@ public class TrueItemsResourceTests
 
         Assert.True(tables.Medicals.Active);
         Assert.Equal(2, tables.Medicals.StackMult);
-        Assert.Equal(43, tables.Medicals.List.Count);
+        Assert.Equal(21, tables.Medicals.List.Count);
 
         // 源文件 List 实为 104 项 + 10 父类；delta-table.md / 工单所记 107 为陈旧数字（见工单报告不确定项）。
         Assert.False(tables.PartsnMods.Active);
@@ -40,7 +40,20 @@ public class TrueItemsResourceTests
 
         Assert.True(tables.Provisions.Active);
         Assert.Equal(1, tables.Provisions.StackMult);
-        Assert.Equal(19, tables.Provisions.List.Count);
+        Assert.Equal(23, tables.Provisions.List.Count);
+    }
+
+    [Fact]
+    public void Load_ProvisionsNewAdditions_HaveSameClassValues()
+    {
+        // 工单 12 同类新增：包内新内容（WTT-ContentBackport）食品饮料补档 4 条，
+        // 值按同子类既有先例取值（罐头 2 / 面包中位 3 / 瓶装饮水 4）。
+        var provisions = TrueItemsResourceLoader.Load().Provisions;
+
+        Assert.Equal(2, ListValue(provisions, "69774bb0a247161ff1068335")); // Can of duck pate
+        Assert.Equal(3, ListValue(provisions, "6a35322b81d315afe1018ef3")); // French bakery baguette
+        Assert.Equal(2, ListValue(provisions, "6a3532423ec9d7082a05d430")); // Can of GigaBeef meat
+        Assert.Equal(4, ListValue(provisions, "6a3557f841667bc4bb00fea4")); // Bottle of YXMC water
     }
 
     [Fact]
@@ -52,6 +65,19 @@ public class TrueItemsResourceTests
         Assert.Equal(5, ListValue(barter, "59faff1d86f7746c51718c9c"));  // Physical Bitcoin
         Assert.Equal(3, ListValue(barter, "5c0530ee86f774697952d952"));  // LEDX Skin Transilluminator
         Assert.Equal(12, ListValue(barter, "56742c284bdc2d98058b456d")); // Crickent lighter
+        // 工单 12 编排者裁定纳入（2026-10-16）：货币=15 / 雕像=4
+        Assert.Equal(15, ListValue(barter, "69dd0de23dfe95d9e70b5ebb")); // TarCoin
+        Assert.Equal(4, ListValue(barter, "68f25c64b2b53abd200b954f"));  // Prapor figurine
+    }
+
+    [Fact]
+    public void Load_ClothingNewAdditions_HaveSameClassValues()
+    {
+        // 工单 12 编排者裁定纳入：clothing +11 条软质帽（棒球帽/护耳帽），值均为族值 2。
+        var clothing = TrueItemsResourceLoader.Load().Clothing;
+
+        Assert.Equal(2, ListValue(clothing, "6a8316e7608278aaac018b5b")); // Baseball cap (Trauma)
+        Assert.Equal(2, ListValue(clothing, "6937efd50543dcc2560a2c81")); // New Year ushanka hat
     }
 
     [Fact]

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated": "2026-10-13",
+  "generated": "2026-10-14",
   "_README": [
     "知识库注册表 —— 单一真相源。加新库 = 这里加一条 + 跑一次 builder（scripts/kb/build-index.mjs），",
     "不在任何提示词/skill 里写死路径，也不要给新库加新 MCP 工具（统一走 spt_kb_list / spt_kb_query）。",
-    "字段：id / title（一句话用途，供 kb_list 展示）/ authority（它权威覆盖什么，冲突时据此取舍）/",
+    "字段：id / title（一句话用途，供 kb_list 展示）/ authority（它权威覆盖什么 —— **仲裁规则，不是选边规则**：只有两库对同一件事说法不一致时，才据此判谁可信；绝不意味着「查了命中的那个库就够」）/",
     "root（绝对路径，或相对仓库根）/ index（绝对；'./x' 相对 root；否则相对仓库根）/ envKey（可选根覆盖，",
     "显式设置但无效即报错、不回退）/ enabled / scan（builder 与过期检测共用的白名单目录 + exclude 通配）/",
     "sections（目录 -> topic/source 映射）/ versionDefaults + versionPatterns（无 frontmatter 的库靠这个标版本）。",
@@ -83,6 +83,121 @@
         "summary": "firstParagraph",
         "summaryMaxChars": 220
       },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "norvinsk-forever",
+      "title": "《永远的诺文斯克》4.1.6 包内构建知识（清单 / 批次 / 评估 / 日志）",
+      "authority": "《永远的诺文斯克》包本体事实：版本与构成、批次清单与未就绪清单、移植评估、修复与回滚记录",
+      "root": "E:/Game/EFT_Offline/Norvinsk_Forever",
+      "index": "knowledge/indexes/norvinsk-forever.json",
+      "envKey": "KB_NORVINSK_FOREVER_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["docs"],
+        "exclude": []
+      },
+      "sections": [
+        { "dir": "docs/README.md", "topic": "pack-profile", "source": "package" },
+        { "dir": "docs/dev-log.md", "topic": "dev-log", "source": "package" },
+        { "dir": "docs/对照表-v0.1.0.md", "topic": "ledger", "source": "package" },
+        { "dir": "docs/pending-mods-v0.1.0.md", "topic": "pending", "source": "package" },
+        { "dir": "docs/porting-assessment.md", "topic": "assessment", "source": "package" },
+        { "dir": "docs", "topic": "build", "source": "package" }
+      ],
+      "versionDefaults": ["4.1"],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "life-in-norvinsk",
+      "title": "《生活在诺文斯克》Life in Norvinsk 包内构建知识（3.11.4 主力线）",
+      "authority": "《生活在诺文斯克》包本体事实：版本线与升级资产、构成与排序、bot 修复补丁、实例与资料位置",
+      "root": "E:/Game/EFT_Offline/Life_in_Norvinsk_v0.3.2",
+      "index": "knowledge/indexes/life-in-norvinsk.json",
+      "envKey": "KB_LIFE_IN_NORVINSK_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["docs"],
+        "exclude": []
+      },
+      "sections": [
+        { "dir": "docs/README.md", "topic": "pack-profile", "source": "package" },
+        { "dir": "docs/bot修复补丁-v1.0-安装说明.md", "topic": "patch", "source": "package" },
+        { "dir": "docs", "topic": "build", "source": "package" }
+      ],
+      "versionDefaults": ["3.11"],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "exclusive-tarkov",
+      "title": "《独享的塔科夫》Exclusive Tarkov 包内构建知识（3.11.4 入门线）",
+      "authority": "《独享的塔科夫》包本体事实：版本线、构成与排序、本体覆盖内容、实例注册与已知问题",
+      "root": "E:/Game/EFT_Offline/Exclusive_Tarkov",
+      "index": "knowledge/indexes/exclusive-tarkov.json",
+      "envKey": "KB_EXCLUSIVE_TARKOV_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["docs"],
+        "exclude": []
+      },
+      "sections": [
+        { "dir": "docs/README.md", "topic": "pack-profile", "source": "package" },
+        { "dir": "docs", "topic": "build", "source": "package" }
+      ],
+      "versionDefaults": ["3.11"],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "inescapable-tarkov",
+      "title": "《无法逃离塔科夫》Inescapable Tarkov 包内构建知识（SPT 5.0 线）",
+      "authority": "《无法逃离塔科夫》包本体事实：SPT5 Alpha 构成与排序、构建史与待办、实例注册",
+      "root": "E:/Game/EFT_Offline/Inescapable Tarkov",
+      "index": "knowledge/indexes/inescapable-tarkov.json",
+      "envKey": "KB_INESCAPABLE_TARKOV_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["docs"],
+        "exclude": []
+      },
+      "sections": [
+        { "dir": "docs/README.md", "topic": "pack-profile", "source": "package" },
+        { "dir": "docs", "topic": "build", "source": "package" }
+      ],
+      "versionDefaults": ["5.0"],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "norvinsk-stalker",
+      "title": "《诺文斯克潜行者》包档案（3.7.x · 已封存）",
+      "authority": "《诺文斯克潜行者》历史包事实：3.7.x 世代构成、封存状态与历史文档位置",
+      "root": "E:/Game/EFT_Offline/Norvinsk_Stalker",
+      "index": "knowledge/indexes/norvinsk-stalker.json",
+      "envKey": "KB_NORVINSK_STALKER_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["docs"],
+        "exclude": []
+      },
+      "sections": [
+        { "dir": "docs/README.md", "topic": "pack-profile", "source": "package" },
+        { "dir": "docs", "topic": "build", "source": "package" }
+      ],
+      "versionDefaults": ["3.7"],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
       "builder": "scripts/kb/build-index.mjs",
       "indexPolicy": "preserve"
     }

@@ -287,6 +287,55 @@ describe("spt_kb_query: 正文兜底（索引字段盖不住概念词时）", ()
   });
 });
 
+describe("spt_kb_query: 单库限定时的覆盖提示", () => {
+  it("只指定一个库 -> coverage.notQueried 与 hints 点名未查的库", () => {
+    const kbA = join(tmp, "kbA");
+    const kbB = join(tmp, "kbB");
+    makeKb(kbA, [entry("docs/a.md", "A")], { rel: "docs/a.md", text: "# A\n" });
+    makeKb(kbB, [entry("notes/b.md", "B")], { rel: "notes/b.md", text: "# B\n" });
+    writeRegistry([
+      { id: "kb-a", title: "A 库", authority: "A", root: kbA, index: "./index.json", enabled: true },
+      { id: "kb-b", title: "B 库", authority: "B", root: kbB, index: "./index.json", enabled: true },
+    ]);
+
+    const res = runKbQuery({ kb: "kb-a" });
+    expect(res.ok).toBe(true);
+    if (!res.ok) return;
+    const data = res.data as {
+      coverage?: { queried: string[]; notQueried: string[]; empty: string[] };
+      hints?: string[];
+    };
+    expect(data.coverage?.queried).toEqual(["kb-a"]);
+    expect(data.coverage?.notQueried).toEqual(["kb-b"]);
+    // 无过滤查询下 kb-a 必有命中 => empty 为空
+    expect(data.coverage?.empty).toEqual([]);
+    expect(data.hints?.join(" ")).toContain("未查：kb-b");
+  });
+
+  it("跨库查询（不传 kb）-> coverage.notQueried 为空、无未查提示", () => {
+    const kbA = join(tmp, "kbA");
+    const kbB = join(tmp, "kbB");
+    makeKb(kbA, [entry("docs/a.md", "A")]);
+    makeKb(kbB, [entry("notes/b.md", "B")]);
+    writeRegistry([
+      { id: "kb-a", title: "A 库", authority: "A", root: kbA, index: "./index.json", enabled: true },
+      { id: "kb-b", title: "B 库", authority: "B", root: kbB, index: "./index.json", enabled: true },
+    ]);
+
+    const res = runKbQuery({});
+    expect(res.ok).toBe(true);
+    if (!res.ok) return;
+    const data = res.data as {
+      coverage?: { queried: string[]; notQueried: string[]; withHits: string[] };
+      hints?: string[];
+    };
+    expect(data.coverage?.queried).toEqual(["kb-a", "kb-b"]);
+    expect(data.coverage?.notQueried).toEqual([]);
+    expect(data.coverage?.withHits).toEqual(["kb-a", "kb-b"]);
+    expect(data.hints ?? []).toEqual([]);
+  });
+});
+
 describe("spt_kb_list: 清单与自检", () => {
   it("列出各库用途/权威/条目数/topics/envKey", () => {
     const kbA = join(tmp, "kbA");

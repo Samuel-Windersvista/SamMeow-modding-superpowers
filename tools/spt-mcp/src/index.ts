@@ -86,7 +86,7 @@ export const TOOL_DEFINITIONS = [
   {
     name: "spt_kb_query",
     description:
-      "查知识库（多库）。kb = 库 id（见 spt_kb_list），省略则跨全部已注册库检索；topic / domain / version 过滤与 keyword（匹配 title ∪ keywords）匹配；domain='both' 与 version='通用' 的条目始终包含。keyword 是索引字段，盖不住概念词时缺省会自动按正文兜底检索（matchedBy=content，命中带 contentHits/snippet），content 参数可强制/关闭。返回 data.results[] 逐库分组，每组含 kb / root（与 entry.path 拼绝对路径）/ authority（冲突时据此取舍）/ matchCount / truncated / stale / matchedBy 与 matches[]；limit 为每库返回上限（缺省 30）。库不可用时返回 kb_unavailable。",
+      "查知识库（多库）。**默认不要传 kb**（省略即跨全部已注册库检索，一次拿到各库分组结果）；kb 仅在问题明确只属于某一个库时才限定，此时会返回 coverage.notQueried 并在 hints 里点名未查的库。topic / domain / version 过滤与 keyword（匹配 title ∪ keywords）匹配；domain='both' 与 version='通用' 的条目始终包含。keyword 是索引字段，盖不住概念词时缺省会自动按正文兜底检索（matchedBy=content，命中带 contentHits/snippet），content 参数可强制/关闭。返回 data.results[] 逐库分组，每组含 kb / root（与 entry.path 拼绝对路径）/ authority（两库说法冲突时据此仲裁，不是选边依据）/ matchCount / truncated / stale / matchedBy 与 matches[]；limit 为每库返回上限（缺省 30）。库不可用时返回 kb_unavailable。",
     inputSchema: schemaFor(KbQueryInput),
   },
   {

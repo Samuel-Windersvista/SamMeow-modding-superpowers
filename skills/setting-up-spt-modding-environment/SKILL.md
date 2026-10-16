@@ -16,7 +16,7 @@ This is the first-run bootstrap. Use it when:
 - A subsequent skill (e.g., `writing-spt-mod` or `curating-spt-modpack`) finds
   the environment incomplete and routes back here.
 
-Target version: **SPT 4.1.5** (stable development baseline per Modding Standard).
+Target version: **SPT 4.1.6** (stable development baseline per Modding Standard; 4.1 line).
 **SPT 5.0 is released** as the forward line (dual-track; see version-matrix).
 SPT 3.11 materials are reference-only. The mod management layer is **MO2** — retained from the BGS
 lineage. There is **no xEdit** in this ecosystem. The Forge API v0 is LIVE at

@@ -10,21 +10,25 @@ public class AntigravModuleTests
 {
     private const string WhiteId = "5b3f16c486f7747c327f55f7";
     private const string Prestige2Id = "67614b6b47c71ea3d40256d7";
+    private const string Prestige5Id = "6841b3ab322db20d190b4b9b";
+    private const string DiscordId = "688b2e574172ca83e70cf868";
 
     [Fact]
-    public void Table_HasTwentyTwoArmbands_WithPinnedWeightTiers()
+    public void Table_HasThirtySevenArmbands_WithPinnedWeightTiers()
     {
         var armbands = FeatureTables.Armbands;
 
-        Assert.Equal(22, armbands.Count);
+        Assert.Equal(37, armbands.Count);
         Assert.Equal(-6.0, armbands.Single(entry => entry.Id == WhiteId).Weight);
+        Assert.Equal(-10.0, armbands.Single(entry => entry.Id == DiscordId).Weight);
         Assert.Equal(-25.0, armbands.Single(entry => entry.Id == Prestige2Id).Weight);
+        Assert.Equal(-25.0, armbands.Single(entry => entry.Id == Prestige5Id).Weight);
         Assert.Equal(5, armbands.Count(entry => entry.Weight == -6));
-        Assert.Equal(3, armbands.Count(entry => entry.Weight == -8));
-        Assert.Equal(5, armbands.Count(entry => entry.Weight == -10));
-        Assert.Equal(7, armbands.Count(entry => entry.Weight == -15));
+        Assert.Equal(6, armbands.Count(entry => entry.Weight == -8));
+        Assert.Equal(9, armbands.Count(entry => entry.Weight == -10));
+        Assert.Equal(11, armbands.Count(entry => entry.Weight == -15));
         Assert.Equal(1, armbands.Count(entry => entry.Weight == -20));
-        Assert.Equal(1, armbands.Count(entry => entry.Weight == -25));
+        Assert.Equal(5, armbands.Count(entry => entry.Weight == -25));
     }
 
     [Theory]
@@ -66,7 +70,7 @@ public class AntigravModuleTests
     }
 
     [Fact]
-    public void Apply_AllTwentyTwoArmbands_AreChangedAndMatchTable()
+    public void Apply_AllThirtySevenArmbands_AreChangedAndMatchTable()
     {
         var table = TestTemplateTables.Create(
             FeatureTables.Armbands.Select(entry => (entry.Id, TestItems.Armband(entry.Weight + 100, 1))).ToArray());
@@ -74,7 +78,7 @@ public class AntigravModuleTests
         var report = new AntigravModule(new RecordingLogger<AntigravModule>())
             .Apply(Context(table));
 
-        Assert.Equal(22, report.ChangedCount);
+        Assert.Equal(37, report.ChangedCount);
         Assert.Empty(report.Warnings);
         foreach (var entry in FeatureTables.Armbands)
         {
@@ -93,9 +97,9 @@ public class AntigravModuleTests
         var report = new AntigravModule(logger).Apply(Context(table));
 
         Assert.Equal(0, report.ChangedCount);
-        Assert.Equal(22, report.Warnings.Count);
+        Assert.Equal(37, report.Warnings.Count);
         Assert.Contains(report.Warnings, warning => warning.Contains(WhiteId, StringComparison.Ordinal));
-        Assert.Equal(22, logger.WarningMessages.Count);
+        Assert.Equal(37, logger.WarningMessages.Count);
     }
 
     [Fact]

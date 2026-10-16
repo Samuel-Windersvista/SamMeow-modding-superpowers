@@ -21,7 +21,8 @@
 |------|------|------|
 | `使用指南.md` | Overseer 快速上手（工具链全貌、常用流程） | 入口 |
 | `dev-log.md` | 状态时间线（按时间升序，最新在末尾） | 现行 · 权威 |
-| `adr/` | 架构决策记录（ADR-0001 … 0008） | 现行 |
+| `handoff-llm-trader-chat-2026-10-15.md` | 交接：LLM 商人聊天项目（发布前接手动线） | 现行 |
+| `adr/` | 架构决策记录（ADR-0001 … 0011） | 现行 |
 | `agents/` | agent 技能配置（issue tracker / triage labels / domain） | 现行 |
 
 ## 设计文档
@@ -30,7 +31,7 @@
 |------|------|------|
 | `internal/` | 内部设计（`mcp-specs/`、`specs/`、`standards/`、`hook-specs/`；含 BGS 时代 `superpowers/` 遗留） | 现行（部分历史） |
 | `internal/specs/session-wiring-contract.md` | 会话接线契约（插件行为面 / config.mcp 清单 / 不物化声明） | 现行 · 权威 |
-| `research/` | 调研资料（`spt-runtime-state-export.md`、`spt-5.0-mod-template-design.md`） | 参考 |
+| `research/` | 调研资料（8 篇：spt-runtime-state-export、spt-5.0-mod-template-design、ui-fixes-1342-spt5-port-analysis、spt5-sort-ammo-merge-mechanism、qol-mod-consolidation-feasibility、opencode-1.18-to-1.19-update-impact、mo2-spt-version-misdetection、llm-trader-chat-feasibility） | 参考 |
 
 ## 报告（审计 / 可行性 / 性能）
 
@@ -57,6 +58,8 @@
 | `server-optimization-audit-report.md` | 3114 / 415 服务端优化综合审计（2026-09-07） | 参考 |
 | `SPT5-mod开发问题与新旧对比报告.md` | SPT 5.0 mod 开发问题、难点与新旧版本差异总结（人话版，2026-10-05） | 参考 |
 | `forge-4.1x-mod-survey-2026-10.md` | Forge 4.1.x mod 生态速览与颠覆潜力清单（2026-10-11 快照，600 mod 数据集） | 参考 |
+| `project-status-20260917.html` | 项目现状说明 HTML 快照（2026-09-17） | HISTORICAL（快照） |
+| `SPT 离线塔科夫 mod 开发与整合包策展 agent 工具包现状.html` | 项目现状说明 HTML 快照 | HISTORICAL（快照） |
 
 ## 决策记录（wayfinder，历史）
 

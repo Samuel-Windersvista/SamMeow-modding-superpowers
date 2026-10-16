@@ -3,14 +3,28 @@ using System.Text.Json.Serialization;
 namespace InescapableTarkovsSoftcore.Features.Softcore;
 
 /// <summary>
-/// 内嵌跳蚤市场数据表（源 TS assets/fleamarket.ts + keys.ts + itemBaseClasses.ts 迁移）。
-/// 数据文件以 EmbeddedResource 嵌入主工程，运行时与测试读同一资源。
+/// 跳蚤市场数据表（源 TS assets/fleamarket.ts + keys.ts + itemBaseClasses.ts 迁移）。
+/// 外部文件 config/softcore/fleamarket.json 优先，缺失从内嵌模板重建，解析失败回落内嵌。首次调用后缓存。
 /// </summary>
 public static class FleaMarketResourceLoader
 {
     internal const string ResourceName = "InescapableTarkovsSoftcore.softcore.fleamarket.json";
 
-    public static FleaMarketTables Load() => EmbeddedJsonResource<FleaMarketTables>.Load(ResourceName);
+    internal const string RelativePath = "config/softcore/fleamarket.json";
+
+    private static readonly Lazy<FleaMarketTables> Cached =
+        new(() => ExternalJsonFile.LoadProduction(typeof(FleaMarketResourceLoader).Assembly, LoadFrom));
+
+    public static FleaMarketTables Load() => Cached.Value;
+
+    /// <summary>测试与外部调用入口：从显式目录加载，告警写入调用方提供的列表。</summary>
+    internal static FleaMarketTables LoadFrom(string modDirectory, List<string> warnings) =>
+        ExternalJsonFile.ReadTable(
+            modDirectory,
+            RelativePath,
+            ResourceName,
+            json => ExternalJsonFile.ParseObjectTolerant<FleaMarketTables>(json, "跳蚤市场表", warnings),
+            warnings);
 }
 
 /// <summary>跳蚤市场数据表根。</summary>

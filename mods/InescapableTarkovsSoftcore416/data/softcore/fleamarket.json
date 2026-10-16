@@ -1,3 +1,5 @@
+// 跳蚤市场数据表（外置数据表：config/softcore/fleamarket.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
     "whitelist":  [
                       "60363c0c92ec1c31037959f5",
@@ -185,6 +187,8 @@
                              "67586af7036d7f3da60c3612":  0,
                              "67586b7e49c2fa592e0d8ed9":  0
                          },
+    // fleaListingsWhitelistHandBook 20 条 id 已核实为 4.1.6 handbook 类目节点 Id（templates/handbook.json Categories[].Id），
+    // 与 EconomyOptionsChanger 对 handbookItem.ParentId 的匹配一致；保留。
     "fleaListingsWhitelistHandBook":  [
                                           "5b47574386f77428ca22b2ed",
                                           "5b47574386f77428ca22b2ee",

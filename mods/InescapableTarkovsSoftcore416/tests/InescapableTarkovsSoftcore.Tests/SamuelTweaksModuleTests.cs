@@ -268,6 +268,15 @@ public class SamuelTweaksModuleTests
         Assert.Equal(SPTarkov.DI.Annotations.InjectionType.Singleton, injectable.InjectionType);
     }
 
+    [Fact]
+    public void ParentConstants_MatchDatabaseTruth()
+    {
+        // DB 真值：5b3f15d486f77432d0509248 = ArmBand 类；5447e1d04bdc2dff2f8b4567 = Melee 类。
+        // 来源 mod 原始代码两常量标反，此处字面值断言防回归（D5）。
+        Assert.Equal("5b3f15d486f77432d0509248", SamuelTweaksModule.ArmbandParentId);
+        Assert.Equal("5447e1d04bdc2dff2f8b4567", SamuelTweaksModule.MeleeWeaponParentId);
+    }
+
     // ---------------------------------------------------------------- 启动器背景静态件
     // 启动器背景（customBackground）为 v0.1.0 移除项（spec Out of Scope）；
     // 5.0 的资产存在性 / build.ps1 拷贝断言随该功能一并移除。

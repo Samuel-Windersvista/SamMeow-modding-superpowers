@@ -1,3 +1,5 @@
+// True Items 贵重杂物表（外置数据表：config/trueitems/barter.json）
+// 编辑须知：支持 // 注释与尾随逗号；改动后重启 SPT 服务器生效；删除本文件将从内嵌默认自动重建。
 {
     "Active": true,
     "StackMult": 1,
@@ -1124,6 +1126,314 @@
             "_id": "5d0377ce86f774186372f689",
             "_props": {
                 "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Flash drive with Mr. Kerman's hash codes",
+            "_id": "67c0345b354fca26a0008036",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Flash drive with Prapor's hash codes",
+            "_id": "67c04a9bd98287be7b0923d8",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Prapor's letter for the port checkpoint",
+            "_id": "68f213f8ea61d1803707cf7a",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Armored case",
+            "_id": "68fa8e253666e2fd5b00a626",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Interchange underground utility plan",
+            "_id": "6900a54ae85e475e590c96be",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Right half of a Physical Bitcoin",
+            "_id": "68f119c6121d878a2303eee3",
+            "_props": {
+                "StackMaxSize": 15
+            }
+        },
+        {
+            "name": "Left half of a Physical Bitcoin",
+            "_id": "68f11adfcd0babab2c0fb003",
+            "_props": {
+                "StackMaxSize": 15
+            }
+        },
+        {
+            "name": "Tangerine",
+            "_id": "6937ed118715e9fd1b0f286d",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Mazoni golden dumbbell",
+            "_id": "6937edb912d456a817083e82",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "AMG-10 hydraulic fluid",
+            "_id": "699f09de81a6c812900a77b7",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Aceso Xpress semi-automatic biochemical analyzer",
+            "_id": "69bb435ff609db77390b0e25",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Nooby Shield potassium iodide tablets",
+            "_id": "69bb43df99f3fda8f1072483",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "DesmondPilak CD",
+            "_id": "69f9d547b98cc4120608692a",
+            "_props": {
+                "StackMaxSize": 2
+            }
+        },
+        {
+            "name": "Hardened PMC figurine",
+            "_id": "68f11224197b61ffe703b16f",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Prapor figurine",
+            "_id": "68f25c64b2b53abd200b954f",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Therapist figurine",
+            "_id": "68f25ce9b2b53abd200b9551",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Fence figurine",
+            "_id": "68f25da3b84c6e1f8a09cffb",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Skier figurine",
+            "_id": "68f25eba19a2b503d70dc28f",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Peacekeeper figurine",
+            "_id": "68f25eef19a2b503d70dc291",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Mechanic figurine",
+            "_id": "68f25f1201fb9de974058be4",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Ragman figurine",
+            "_id": "68f25f3a5d977110860c3350",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Jaeger figurine",
+            "_id": "68f25faa22c8979ee308f4da",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Lightkeeper figurine",
+            "_id": "68f25fdf928cd23ddf0471fb",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Ref figurine",
+            "_id": "68f26063b2b53abd200b9553",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "BTR figurine",
+            "_id": "68f2608301fb9de974058be6",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Hideout Cat figurine",
+            "_id": "68f260d7b84c6e1f8a09cffd",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Walking Tank figurine",
+            "_id": "68f26124b84c6e1f8a09cfff",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Escape figurine",
+            "_id": "68f26161b84c6e1f8a09d001",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Mastichin figurine",
+            "_id": "68f261f6928cd23ddf0471fd",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Elvisvista figurine",
+            "_id": "690c70a2a1461a01d605a1bd",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Duck figurine",
+            "_id": "697cddb414e932098005748d",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Icebreaker model kit",
+            "_id": "6a3d38063357ef2b260d1891",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "LM KC-130 model aircraft",
+            "_id": "6a4ce086b5644e9f0a08d08a",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Icebreaker model",
+            "_id": "6a4ff1e23e95f68a650fcb13",
+            "_props": {
+                "StackMaxSize": 4
+            }
+        },
+        {
+            "name": "Dunduk floppy disk",
+            "_id": "69f9d60b5de6674f08060f2a",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Rogue intel maps",
+            "_id": "6a04fab776cb0efb8f05969f",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "Black Division encryption keys",
+            "_id": "6a5f9cfcc409750b6e065592",
+            "_props": {
+                "StackMaxSize": 5
+            }
+        },
+        {
+            "name": "TarCoin",
+            "_id": "69dd0de23dfe95d9e70b5ebb",
+            "_props": {
+                "StackMaxSize": 15
+            }
+        },
+        {
+            "name": "Unknown device fragment",
+            "_id": "68e6394e658d876c930977b1",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Ultralink satellite communication module",
+            "_id": "69bb41c03b5fb75517065960",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "IBX Gigachad cryptographic processor",
+            "_id": "69bb4203f94327bc0f0230cd",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Memento Server RAM Module",
+            "_id": "69bb424e99f3fda8f107247d",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Everclear two-stage water filter",
+            "_id": "6a9980872a87c16fef04789f",
+            "_props": {
+                "StackMaxSize": 3
+            }
+        },
+        {
+            "name": "Strelets' amulet",
+            "_id": "68da4fe6f0e86677fe06bfe4",
+            "_props": {
+                "StackMaxSize": 4
             }
         }
     ]

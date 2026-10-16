@@ -17,7 +17,7 @@ SPT 生态在社区手中延续发展：官方 sp-tarkov 组织 2026-08 归档�
 | 阶段 | 版本 | 说明 |
 |------|------|------|
 | 历史基线 | SPT 3.11.x | 概念对照材料（大量社区 mod 与教程基于 3.11） |
-| 稳定开发基线 | **SPT 4.1.5** | mod 开发目标（Modding Standard Dev-Baseline，C# 服务端 `IModMetadata`/DI/Table 注入体系） |
+| 稳定开发基线 | **SPT 4.1.6** | 4.1 线最新补丁（2026-09-18）mod 开发目标（Modding Standard Dev-Baseline，C# 服务端 `IModMetadata`/DI/Table 注入体系） |
 | 新主线（已发布） | **SPT 5.0** | SP-Tushonka fork 正式发布；双轨适配中：差异与风险见 `version-matrix.md`，规则以 `Applies` 标注 4.1.5 / 5.0 / both |
 
 开发规范由 **Modding Standard** 统一约束（见下文专节），3.11 资料仅作概念对照。
@@ -70,7 +70,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 | [`knowledge/spt-kb/archive/forge/`](knowledge/spt-kb/archive/forge/) | Forge 模组站归档：全站目录 + 热门详情 + 成品 zip + 源码 clone + 抓取脚本 | 全站目录 + 热门详情 + 成品 zip + 源码 clone |
 | [`knowledge/spt-kb/sources/`](knowledge/spt-kb/sources/) | 仓库登记册（commit 锁定）、第三方资料、应急预案（2026-08 历史备案） | 登记册 + 应急预案 |
 
-入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。计数以事实源为准：机读索引 `index.json`（221 条，可按 version/domain/topic 过滤），目录规模以 `scripts/verify-doc-stats.ps1` 的机检锚点与文件系统为准。
+入口：`knowledge/spt-kb/INDEX.md`（按「我想做什么」检索）、`VERSIONS.md`（版本地图）。计数以事实源为准：机读索引 `index.json`（232 条，可按 version/domain/topic 过滤），目录规模以 `scripts/verify-doc-stats.ps1` 的机检锚点与文件系统为准。
 
 ### Modding Standard（mod 开发规范）
 
@@ -88,7 +88,7 @@ MO2 控制面由 C++ MO2 插件 DLL + Python 加载器/broker + sidecar 组成�
 | 资产 | 路径 |
 |------|------|
 | SPT 官方 20 仓库全量 clone | `E:\云文件\GitHub\SPT-archive\` |
-| SPT 4.1.5 服务端源码 fork | `E:\云文件\GitHub\SamMeow_SPT410_source_code` |
+| SPT 4.1.6 服务端源码 fork（现行） | `E:\云文件\GitHub\SamMeow_SP-Tushonka_source_code`（tag `4.1.6` = `731d7a2a`；早期克隆 `SamMeow_SPT410_source_code` 至 4.1.5） |
 | SPT 3.11.4 服务端源码 | `E:\云文件\GitHub\SamMeow_SPT3114_source_code` |
 | SPT 5.x 服务端源码 | `E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code` |
 | SPT 特化版 MO2（源码，ticket #8 验证） | `E:\云文件\GitHub\SamMeow-Tarkov-specific-Mod-Organizer` |

@@ -204,7 +204,7 @@ Never write custom content into `wiki/` (read-only vendor copy).
 
 ## Version-pinning advice
 
-- **SPT version policy (ADR-0006): 4.1.5 is the stable development baseline; SPT 5.0 is released as the forward line (dual-track).** SPT 3.11
+- **SPT version policy (ADR-0006 + 2026-10-14 注记): 4.1.6 is the stable development baseline; SPT 5.0 is released as the forward line (dual-track).** SPT 3.11
   materials are reference-only learning material, not install targets. Record
   any deviation in the modpack dev-log.
 - **Forge mod versions**: the archive's `best_version` / `best_spt` fields are

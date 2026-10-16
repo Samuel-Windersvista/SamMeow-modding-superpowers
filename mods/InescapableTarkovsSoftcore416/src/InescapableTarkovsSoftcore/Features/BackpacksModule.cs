@@ -6,7 +6,7 @@ using SPTarkov.Server.Core.Models.Common;
 namespace InescapableTarkovsSoftcore.Features;
 
 /// <summary>
-/// G5 更大的背包（顺序 400）。按内嵌查找表把 43 条背包的
+/// G5 更大的背包（顺序 400）。按查找表把各背包的
 /// <c>_props.Grids[0]._props.cellsH/cellsV</c> 置为目标尺寸，并清空容器过滤
 /// （<c>filters = []</c>）。缺失背包 id / 无网格 → 告警并跳过。
 /// </summary>

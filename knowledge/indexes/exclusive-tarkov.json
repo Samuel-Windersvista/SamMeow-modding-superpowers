@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "generated": "2026-10-13",
+  "kb": {
+    "id": "exclusive-tarkov",
+    "title": "《独享的塔科夫》Exclusive Tarkov 包内构建知识（3.11.4 入门线）",
+    "root": "E:\\Game\\EFT_Offline\\Exclusive_Tarkov"
+  },
+  "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。",
+  "entries": [
+    {
+      "path": "docs/README.md",
+      "title": "《独享的塔科夫》Exclusive Tarkov 包档案卡（SPT 3.11.4 · 入门线）",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "pack-profile",
+      "source": "package",
+      "keywords": [
+        "Exclusive_Tarkov",
+        "独享的塔科夫",
+        "3.11.4",
+        "SPT_3114",
+        "Live-in-Norvinsk",
+        "生活在诺文斯克",
+        "入门包",
+        "新手整合包",
+        "order.json",
+        "modlist",
+        "MO2",
+        "AI优化",
+        "PerformanceTweaks",
+        "CustomProfiles",
+        "单机运行整合包",
+        "包档案卡"
+      ],
+      "summary": "定位：《生活在诺文斯克》(Live in Norvinsk) 的新手入门版本，基于 SPT 3.11.4 制作；目标版本：core.json sptVersion=3.11.4，运行日志载入 SPT.Singleplayer 3.11.4，MO2 实例名 SPT3.11.4《独享的塔科夫》，EFT 客户端日志目录名 0.16.1.3.35392（core.json 记 0.16.0）；实例注册：MO2 2.5.3beta2 世代，ModOrganizer.ini 位于 %LOCALAPPDATA%\\\\ModOrganizer\\\\SPT3.11.4《独享的塔科夫》，gameName=SPT3、gamePath=E:\\\\Game\\\\EFT_Offline\\\\SPT_3114、selected_profile=单机运行整合包，数据目录 E:\\\\Game\\\\EFT_Offline\\\\Exclusive_Tarkov；构成：mods 目录 130 个、modlist 131 行（+115/-15，16 个分隔符，实际 mod 114 条且全部启用）、user/mods/order.json 107 条（106 唯一，Hephaestus 重复一次）、mods 树 5885 文件 / 16.86 GB / 89 个 DLL；关键特性：AI 优化（下放 Live_in_Norvinsk v0.3.3）、自制 SamMeow.PerformanceTweaks 帧数优化、CustomProfiles 5 个开局角色；本体修改载体：覆盖层内含改写后的 Assembly-CSharp.dll(15,243,264 B) + core.json + database/settings.json，依靠 MO2 文件覆盖机制生效；已知问题：跳蚤市场搜某些物品无交易条目（不崩服），另有 v0.3 遗留待查项；证据指针：包内 order.json / core.json / modlist.txt / meta.ini / ModOrganizer.ini / overwrite 目录；缺口：包内尚无成篇说明文本（零 README），本档案卡为首次建档。"
+    }
+  ]
+}
