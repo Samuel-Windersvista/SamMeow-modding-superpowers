@@ -1,14 +1,17 @@
-# Standard compliance invariant, in three segments:
+# Standard compliance invariant, in four segments:
 #
 #   1. registry integrity -- scripts/validate-mod-standard.ps1 asserts that
-#      rules.json (the machine-readable registry) and the 13 prose chapters
-#      agree on ID set, title, Level and Applies;
+#      rules.json (the machine-readable registry) and the prose chapters (count
+#      derived from registry.domains) agree on ID set, title, Level and Applies;
 #   2. template machine-check -- the mod templates satisfy the machine-checkable
 #      subset of the Modding Standard (scripts/check-mod-standard.ps1).
 #      Scaffold placeholders {{LIKE_THIS}} demote value-shape checks to SKIP,
 #      which is acceptable for unscaffolded templates;
 #   3. checker fixture regression -- tests/mod-standard/run-fixtures.ps1 pins the
 #      checker's exit codes, FAIL ID sets and per-rule statuses.
+#   4. validator dimension-count regression -- tests/mod-standard/
+#      validator-dimension-count.ps1 proves the validator's dimension count is
+#      derived from registry.domains (not hardcoded).
 #
 # Any unwaived FAIL fails this gate.
 
@@ -20,10 +23,11 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $checker = Join-Path $repoRoot "scripts/check-mod-standard.ps1"
 $validator = Join-Path $repoRoot "scripts/validate-mod-standard.ps1"
 $fixtureRunner = Join-Path $repoRoot "tests/mod-standard/run-fixtures.ps1"
+$dimensionCountRunner = Join-Path $repoRoot "tests/mod-standard/validator-dimension-count.ps1"
 
-# ---- 1/3 registry <-> prose --------------------------------------------------
+# ---- 1/4 registry <-> prose --------------------------------------------------
 
-Write-Host "  [1/3] registry validator (rules.json <-> prose) ..."
+Write-Host "  [1/4] registry validator (rules.json <-> prose) ..."
 
 if (-not (Test-Path -LiteralPath $validator)) {
     Add-BootstrapFailure "registry validator not found: scripts/validate-mod-standard.ps1"
@@ -34,9 +38,9 @@ if (-not (Test-Path -LiteralPath $validator)) {
     }
 }
 
-# ---- 2/3 template machine-check ---------------------------------------------
+# ---- 2/4 template machine-check ---------------------------------------------
 
-Write-Host "  [2/3] template machine-check ..."
+Write-Host "  [2/4] template machine-check ..."
 
 $targets = @(
     @{ Path = "templates/server-mod";       Kind = "server" },
@@ -58,9 +62,9 @@ if (-not (Test-Path -LiteralPath $checker)) {
     }
 }
 
-# ---- 3/3 checker fixture regression -----------------------------------------
+# ---- 3/4 checker fixture regression -----------------------------------------
 
-Write-Host "  [3/3] checker fixture regression ..."
+Write-Host "  [3/4] checker fixture regression ..."
 
 if (-not (Test-Path -LiteralPath $fixtureRunner)) {
     Add-BootstrapFailure "fixture runner not found: tests/mod-standard/run-fixtures.ps1"
@@ -71,4 +75,17 @@ if (-not (Test-Path -LiteralPath $fixtureRunner)) {
     }
 }
 
-Complete-BootstrapCheck -SuccessMessage "registry, templates and fixtures all satisfy the machine-checkable Modding Standard subset."
+# ---- 4/4 validator dimension-count regression -------------------------------
+
+Write-Host "  [4/4] validator dimension-count regression ..."
+
+if (-not (Test-Path -LiteralPath $dimensionCountRunner)) {
+    Add-BootstrapFailure "dimension-count regression not found: tests/mod-standard/validator-dimension-count.ps1"
+} else {
+    & powershell -NoProfile -ExecutionPolicy Bypass -File $dimensionCountRunner
+    if ($LASTEXITCODE -ne 0) {
+        Add-BootstrapFailure "Modding Standard validator dimension-count regression failed (tests/mod-standard/validator-dimension-count.ps1, exit $LASTEXITCODE)"
+    }
+}
+
+Complete-BootstrapCheck -SuccessMessage "registry, templates, fixtures and validator dimension-count all satisfy the machine-checkable Modding Standard subset."

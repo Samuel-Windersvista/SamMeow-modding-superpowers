@@ -1,12 +1,13 @@
 ﻿# Modding Standard 注册表校验器（C8）
 #
-# 双向校验 rules.json（机读注册表）↔ 13 章 prose（唯一权威文本）：
+# 双向校验 rules.json（机读注册表）↔ 维度章节 prose（唯一权威文本）：
 #   1. ID 集合一致（prose `### STD-...` ↔ registry；无孤儿、无缺失）；
 #   2. ID 唯一性两侧各查：registry 内不重复；prose 内同一 ID 出现两次（重复标题）报错；
 #   3. 每条规则的 title / Level / Applies 与 prose 逐字一致。Level / Applies /
 #      Evidence 按**规则块作用域**解析（本规则标题 -> 下一条 `###` 标题或文末），
 #      缺行不得继承下一条的值；
-#   4. domain slug 合法且与该规则所在章节一致；维度章节数 = 13；
+#   4. domain slug 合法且与该规则所在章节一致；维度章节数 = registry.domains
+#      条目数（数据驱动，非硬编码；新增维度只需改数据）；
 #   5. registry 内部：ID 格式、checkable 必有 check 规格、非 checkable 的 check
 #      必须为 null、check.kind/handler/params 齐备；
 #   6. 声明式 handler 的必需 params 键齐备（键名拼错 = 缺键；否则取值类检查会静默
@@ -17,16 +18,24 @@
 #      显式登记的「检查器专用」集合；同一 ID 不得被跨规则重复发射；白名单不得出现
 #      死条目（登记了却没有任何检查发射它）。
 #
-# 说明：prose 扫描范围仅 13 个维度章节（`NN-*.md`）；README / evidence-index /
-# version-matrix 不参与（README 含示例行，不是规则来源）。
+# 说明：prose 扫描范围仅维度章节（`NN-*.md`；章数由 registry.domains 条目数推导，
+# 不硬编码）；README / evidence-index / version-matrix 不参与（README 含示例行，
+# 不是规则来源）。
 #
 # 退出码：0 = 双向一致；1 = 存在校验错误。
 #
 # 用法:
 #   powershell -NoProfile -ExecutionPolicy Bypass -File scripts/validate-mod-standard.ps1
+#   powershell -NoProfile -ExecutionPolicy Bypass -File scripts/validate-mod-standard.ps1 `
+#       -StdDir <临时标准目录> [-RulesPath <临时 rules.json>]
 
 [CmdletBinding()]
-param()
+param(
+    # 可选：在临时标准目录副本上运行（测试用）。缺省用仓库内标准目录。
+    [string]$StdDir = "",
+    # 可选：显式指定 rules.json；缺省为 <StdDir>/rules.json。
+    [string]$RulesPath = ""
+)
 
 $ErrorActionPreference = "Stop"
 
@@ -36,8 +45,27 @@ $ErrorActionPreference = "Stop"
 try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false) } catch { }
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$stdDir = Join-Path $repoRoot "knowledge/spt-kb/curated/modding-standard"
-$rulesPath = Join-Path $stdDir "rules.json"
+
+# 路径解析：显式参数优先（测试时可指向标准目录的临时副本）；缺省保持原行为。
+if (-not [string]::IsNullOrWhiteSpace($StdDir)) {
+    if (-not (Test-Path -LiteralPath $StdDir -PathType Container)) {
+        Write-Host "[validate-mod-standard] 指定的 StdDir 不存在或不是目录：$StdDir"
+        exit 1
+    }
+    $stdDir = (Resolve-Path -LiteralPath $StdDir).Path
+} else {
+    $stdDir = Join-Path $repoRoot "knowledge/spt-kb/curated/modding-standard"
+}
+
+if (-not [string]::IsNullOrWhiteSpace($RulesPath)) {
+    if (-not (Test-Path -LiteralPath $RulesPath -PathType Leaf)) {
+        Write-Host "[validate-mod-standard] 指定的 RulesPath 不存在或不是文件：$RulesPath"
+        exit 1
+    }
+    $rulesPath = (Resolve-Path -LiteralPath $RulesPath).Path
+} else {
+    $rulesPath = Join-Path $stdDir "rules.json"
+}
 
 # 检查器专用发射 ID（prose 无对应规则）——显式登记；出现新 ID 即报错。
 # 决策记录：STD-VER-001 是 STD-META-004（sptversion-range）的第二行输出，旧检查器
@@ -86,8 +114,12 @@ if ($registry.schema_version -ne 1) {
 if ($null -eq $registry.rules) {
     Add-ValidationError "registry 缺少 rules 数组"
 }
+# 期望维度数：从 registry.domains 条目数推导（数据驱动）。缺 domains 时报告错误。
+$expectedDomainCount = 0
 if ($null -eq $registry.domains) {
-    Add-ValidationError "registry 缺少 domains 映射"
+    Add-ValidationError "registry 缺少 domains 映射（无法推导期望维度数）"
+} else {
+    $expectedDomainCount = @($registry.domains.PSObject.Properties).Count
 }
 
 $rules = @($registry.rules)
@@ -106,7 +138,7 @@ foreach ($rule in $rules) {
         $seenIds[$id] = $true
     }
 
-    if ($null -eq $registry.domains.PSObject.Properties[$rule.domain]) {
+    if ($null -ne $registry.domains -and $null -eq $registry.domains.PSObject.Properties[$rule.domain]) {
         Add-ValidationError "$id：domain '$($rule.domain)' 不在 domains 映射中"
     }
 
@@ -179,8 +211,8 @@ $proseDomains = @{}
 $chapters = @(Get-ChildItem -LiteralPath $stdDir -File -Filter "*.md" |
     Where-Object { $_.Name -match '^\d{2}-' } | Sort-Object Name)
 
-if ($chapters.Count -ne 13) {
-    Add-ValidationError "维度章节数应为 13（实际：$($chapters.Count)）"
+if ($chapters.Count -ne $expectedDomainCount) {
+    Add-ValidationError "维度章节数应为 $expectedDomainCount（来自 registry.domains；实际：$($chapters.Count)）"
 }
 
 $seenProseIds = @{}
@@ -231,15 +263,17 @@ foreach ($chapter in $chapters) {
     }
 }
 
-# domains 映射 ↔ prose 实际 slug
-foreach ($slug in $proseDomains.Keys) {
-    if ($null -eq $registry.domains.PSObject.Properties[$slug]) {
-        Add-ValidationError "prose domain '$slug' 不在 registry.domains 中"
+# domains 映射 ↔ prose 实际 slug（domains 缺失时已在前面报告，跳过以免级联报错）
+if ($null -ne $registry.domains) {
+    foreach ($slug in $proseDomains.Keys) {
+        if ($null -eq $registry.domains.PSObject.Properties[$slug]) {
+            Add-ValidationError "prose domain '$slug' 不在 registry.domains 中"
+        }
     }
-}
-foreach ($prop in $registry.domains.PSObject.Properties) {
-    if (-not $proseDomains.ContainsKey($prop.Name)) {
-        Add-ValidationError "registry.domains 含未知 domain '$($prop.Name)'"
+    foreach ($prop in $registry.domains.PSObject.Properties) {
+        if (-not $proseDomains.ContainsKey($prop.Name)) {
+            Add-ValidationError "registry.domains 含未知 domain '$($prop.Name)'"
+        }
     }
 }
 

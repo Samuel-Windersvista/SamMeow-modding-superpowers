@@ -9,12 +9,13 @@ source: curated
 
 > 用途：Modding Standard 全部规则的统一证据来源。规则文件以 `EV-*` 锚点引用本文件条目。
 > 固化自：`.scratch/modding-standard/corpus-survey.md`（2026-09-14）、`.scratch/modding-standard/gap-investigation.md`（2026-09-14）。
+> 语料基线刷新（2026-10-18）：`EV-CORPUS-*` 计数已按 **631 个 `_source` 目录 / 34,050 个文件**重算；种子产物见 `.artifacts/forge-refresh-2026-10-18/`（corpus-classification / evidence-refresh-data / metadata-scan2 / metadata-scan）。2026-09 的 297 / 392 计数保留为**历史基线**并在各节标注。
 > 维护约定：语料或源码更新后，按文末「复核触发」复核受影响条目。
 
 ## 0. 证据分级约定
 
 - **机制证据（源码/接口）**：直接来自 SPT 4.1/5.0 源码、官方示例与模板的接口定义和校验逻辑，优先级最高。
-- **语料证据（统计）**：来自 297 个近期源码目录 / 392 个 `_source` 目录 / 8066 个 `.cs` 文件的统计，优先级次之。
+- **语料证据（统计）**：来自 **631 个 `_source` 目录 / 34,050 个文件 / 13,795 个 `.cs` 文件**（2026-10-18 全量刷新）的统计，优先级次之。历史基线：2026-09 的 297 个近期目录 / 392 个 `_source` 目录 / 8066 个 `.cs` 文件。
 - **经验证据**：从既有 KB 文档与实测归纳的惯例，优先级最低。
 - **MUST 需机制 + 语料双源**：任何 MUST 级规则必须同时具备机制证据与语料证据（语料样本 ≥10 或全量检查）；仅有语料归纳的结论不得升级为 MUST。
 - **规则引用格式**：规则条目以 `（EV-XXX）` 形式引用本文件锚点，例如 `（EV-GAP-DEP）`。
@@ -23,117 +24,138 @@ source: curated
 
 ### EV-CORPUS-SOURCE — 调查范围
 
-- 近期源码目录：**297 个**，来自 `knowledge/spt-kb/archive/forge/mods/MANIFEST-sp-mod-2026-09.md` 所列目录。
-- 全量源码目录：**392 个** `_source` 目录（同一 `archive/forge/mods/` 下）。
+- 全量源码目录：**631 个** `_source` 目录（`knowledge/spt-kb/archive/forge/mods/` 下），共 **34,050 个文件**；统计日期 **2026-10-18**。
+- 历史基线（2026-09-14）：近期目录 **297 个**（`MANIFEST-sp-mod-2026-09.md` 所列）、全量 `_source` 目录 **392 个**、**8066 个** `.cs` 文件。2026-10 起本节及各 `EV-CORPUS-*` 计数以 631 全量为准，旧值仅作方法溯源。
 - 机制调查源码：`E:\云文件\GitHub\SamMeow_SPT410_source_code`、`E:\云文件\GitHub\SamMeow_SP-Tushonka_5xx_source_code`。
 - 官方示例：`external/spt-archive/server-mod-examples`、`mod-examples`、`modules`、`wiki`。
 - 项目模板：`templates/server-mod/`、`templates/client-mod/`。
-- 报告生成时间：2026-09-14。
-- 报告路径：`E:\云文件\GitHub\SamMeow-modding-superpowers\.scratch\modding-standard\corpus-survey.md`、`E:\云文件\GitHub\SamMeow-modding-superpowers\.scratch\modding-standard\gap-investigation.md`。
-- 统计方法：所有计数均通过 PowerShell 脚本读取清单并映射到实际目录完成，判定命令在各小节给出。
+- 报告生成时间：2026-10-18（本轮刷新）；2026-09-14（前序基线）。
+- 证据产物（2026-10-18 刷新）：
+  - `.artifacts/forge-refresh-2026-10-18/corpus-classification.json` — 类型 / 语言 / 顶层目录 / csproj 位置 / 根文件 / 元数据存在性 / 配置 / 异常 的仓库级统计。
+  - `.artifacts/forge-refresh-2026-10-18/evidence-refresh-data.json` — csproj / 机制 / 配置 / Top5 / changelog 的聚合计数。
+  - `.artifacts/forge-refresh-2026-10-18/metadata-scan2.json` — ModGuid / SptVersion / ModDependencies / monorepo / package.json 的精确统计与样例。
+  - `.artifacts/forge-refresh-2026-10-18/metadata-scan.json` — 依赖 / 迁移 / 诊断 / Fika / 补丁 / 阻塞调用的行级样例。
+- 历史报告路径：`E:\云文件\GitHub\SamMeow-modding-superpowers\.scratch\modding-standard\corpus-survey.md`、`E:\云文件\GitHub\SamMeow-modding-superpowers\.scratch\modding-standard\gap-investigation.md`（2026-09-14）。
+- 统计方法：所有计数均通过脚本读取语料目录完成（Node `.mjs` 于 `.artifacts/forge-refresh-2026-10-18/`，PowerShell 用于历史小节），判定命令在各小节给出。
 
 ### EV-CORPUS-TYPE — 类型分布
 
 判定方法：对每个源码目录递归查找 `.csproj`，读取文本后检查是否出现 `SPTarkov.Server`（服务端引用）与 `BepInEx`（客户端引用）；根目录存在 `package.json` 视为 JS/TS 服务端 mod；两者兼有记为 hybrid；两者皆无记为 other。
 
-| 类型 | 计数 | 说明 |
+| 类型 | 计数（2026-10-18，631 全量） | 说明 |
 |------|------|------|
-| client-only | 148 | 仅引用 BepInEx 的客户端插件 |
-| server-only (C#) | 43 | 引用 SPTarkov.Server.* 且不引用 BepInEx |
-| server-only (JS/TS) | 11 | 仅有 `package.json`，无 C# 工程 |
-| hybrid | 58 | 同时引用 SPTarkov.Server.* 与 BepInEx（常见 paired mod） |
-| other | 37 | 无代码工程，多为资源/Reshade/数据库覆盖包 |
+| client-only | 253 | 仅引用 BepInEx 的客户端插件 |
+| server-only (C#) | 139 | 引用 SPTarkov.Server.* 且不引用 BepInEx |
+| server-only (JS/TS) | 17 | 仅有 `package.json`，无 C# 工程 |
+| hybrid | 132 | 同时引用 SPTarkov.Server.* 与 BepInEx（常见 paired mod） |
+| other | 90 | 无代码工程，多为资源/Reshade/数据库覆盖包 |
+| **合计** | **631** | |
 
-> 复核注（2026-09-14）：原报告记「未能映射 1」例（`[SAIN]-Twitch-Players_1895_source`，称括号编码差异）；复核确认该目录实际存在（`Test-Path -LiteralPath` 为真），MANIFEST 实表 297 行、`total=297 ok=297 missing=0`，本表五类合计 297。原 1 例差异系源报告映射口径（PowerShell 通配符对 `[ ]` 的处理）所致；本表已按实际口径修正。
+> 历史基线（2026-09-14，297 个近期目录）：client-only 148 / server-only (C#) 43 / server-only (JS/TS) 11 / hybrid 58 / other 37，五类合计 297。原报告记「未能映射 1」例（`[SAIN]-Twitch-Players_1895_source`）系 PowerShell 通配符对 `[ ]` 的处理所致，复核确认该目录实际存在；旧口径已并入上表历史值。
 
-命令概要：
+命令概要（2026-10-18 全量口径，扫描全部 `_source` 目录）：
 
-```powershell
-$recent = Get-Content MANIFEST-sp-mod-2026-09.md | ...
-foreach ($r in $recent) {
-    $csprojs = Get-ChildItem -LiteralPath $r -File -Filter '*.csproj' -Recurse
-    $hasPkg   = Test-Path -LiteralPath (Join-Path $r 'package.json')
-}
+```javascript
+const repos = fs.readdirSync(ARCHIVE, { withFileTypes: true })
+  .filter((d) => d.isDirectory() && /_source(?:-|$)/.test(d.name))
+  .map((d) => d.name).sort();
+// 每个 repo：递归收集 .csproj；/SPTarkov\.Server|SPTushonka\.Server/ 判服务端，/BepInEx/ 判客户端；
+// 根目录 package.json 判 JS/TS；两者兼有 = hybrid，皆无 = other。
 ```
 
 ### EV-CORPUS-LANG — 语言分布
 
-| 语言 | 计数 | 判定 |
+| 语言 | 计数（2026-10-18，631 全量） | 判定 |
 |------|------|------|
-| C# | 278 | 存在 `.csproj` |
-| TypeScript/JavaScript | 10 | 仅有 `package.json` 且无 csproj |
-| 两者兼有 | 1 | 同时存在 csproj 与根目录 package.json |
-| 其他 | 8 | 既无 csproj 也无 package.json |
+| C# | 547 | 存在 `.csproj` |
+| TypeScript/JavaScript | 16 | 仅有 `package.json` 且无 csproj |
+| 两者兼有 | 4 | 同时存在 csproj 与根目录 package.json |
+| 其他 | 64 | 既无 csproj 也无 package.json |
+| **合计** | **631** | |
+
+> 历史基线（2026-09-14，297 个近期目录）：C# 278 / TS-JS 10 / 两者兼有 1 / 其他 8。
 
 命令概要：与类型分布（EV-CORPUS-TYPE）相同，额外统计 `package.json` 与 `.csproj` 的存在性。
 
 ### EV-CORPUS-STRUCT — 结构惯例
 
-近期目录顶层子目录出现频率（按出现次数降序）：
+631 个源码目录顶层子目录出现频率（按出现次数降序，**已排除 `.git`**；全量含 `.git` 578）：
 
 | 目录 | 出现次数 | 备注 |
 |------|----------|------|
-| Patches | 61 | 客户端 Harmony Patch 集中地 |
-| Properties | 35 | C# 工程默认生成 |
-| src | 34 | 通用源码目录 |
-| Client | 33 | paired mod 的客户端工程 |
-| Server | 28 | paired mod 的服务端工程 |
-| .github | 27 | GitHub Actions / 工作流 |
-| config | 27 | 配置文件目录 |
-| Resources | 20 | 资源文件 |
-| obj / bin | 19 / 19 | 构建产物，部分仓库误提交 |
-| docs | 17 | 文档目录 |
-| db | 14 | 数据库 JSON 覆盖 |
-| Helpers / Utils | 14 / 12 | 辅助类目录 |
-| tests | 13 | 测试目录 |
-| Assets | 13 | 美术/音频资源 |
-| Scripts | 12 | 脚本/工具 |
+| obj | 324 | 构建产物（含编译中间输出），非源码 |
+| bin | 314 | 构建产物（编译输出），非源码 |
+| Patches | 112 | 客户端 Harmony Patch 集中地 |
+| src | 82 | 通用源码目录 |
+| Properties | 56 | C# 工程默认生成 |
+| .github | 53 | GitHub Actions / 工作流 |
+| Client | 50 | paired mod 的客户端工程 |
+| Server | 48 | paired mod 的服务端工程 |
+| docs | 39 | 文档目录 |
+| config | 36 | 配置文件目录 |
+| db | 34 | 数据库 JSON 覆盖 |
+| scripts | 29 | 脚本/工具 |
+| tools | 29 | 工具目录 |
+| tests | 28 | 测试目录 |
+| Resources | 27 | 资源文件 |
+| Helpers | 24 | 辅助类目录 |
+| assets | 20 | 美术/音频资源 |
+| bundles | 19 | bundle 资源 |
+| .idea | 18 | JetBrains IDE 配置 |
 
-`csproj` 位置分布（近期 509 个 csproj）：
+> 口径说明：上表为**目录存在性**统计，`obj` / `bin` 计入本地构建输出目录（`corpus-classification.mjs` 在遍历文件时跳过 `bin`/`obj`，但顶层目录名仍被计入）。**真正的「构建产物提交」违规数**按 git 跟踪判定，见 `EV-CORPUS-TOP5` 第 1 条（仅 7 / 9 个目录被跟踪）。
+
+`csproj` 位置分布（631 全量，共 977 个 csproj）：
 
 | 位置 | 计数 |
 |------|------|
-| 源码根目录 | 151 |
-| Client/ | 39 |
-| src/ | 37 |
-| Server/ | 27 |
-| tests/ | 20 |
-| 其他（project/tools/Plugin/Prepatch/Fika 等） | 235 |
+| 源码根目录 | 307 |
+| src/ | 74 |
+| Client/ | 56 |
+| Server/ | 46 |
+| tests/ | 32 |
+| 其他（`*/子项目/`、`properties/`、`tools/`、`Plugin/`、`Fika/` 等） | 462 |
 
-工程文件与仓库文件惯例：
+工程文件与仓库文件惯例（631 个仓库根目录）：
 
-| 文件/目录 | 出现次数（近期 297） | 比例 |
+| 文件/目录 | 出现次数（631） | 比例 |
 |-----------|----------------------|------|
-| README* | 217 | ~73 % |
-| LICENSE* | 227 | ~76 % |
-| 构建脚本（*.sh / *.ps1 / *.bat / Build* / Makefile） | 35 | ~12 % |
-| CI（.github / .gitlab-ci.yml） | 34 | ~11 % |
+| README*（大小写不敏感 glob） | 420 | ~66.6 % |
+| LICENSE*（大小写不敏感 glob） | 455 | ~72.1 % |
+| `.gitignore` | 503 | ~79.7 % |
+| 构建脚本（`build*` / `Makefile` / `*.ps1` / `*.sh` / `*.bat`） | 74 | ~11.7 % |
+| CI（`.github/workflows` / `.gitlab-ci.yml`） | 49 | ~7.8 % |
+
+> 注：TOP5 中的「缺失 README / LICENSE」按精确文件名 `README.md`/`readme.md` 与 `LICENSE`/`LICENSE.md`/`LICENSE.txt` 判定，数值略低于本表的 glob 计数（418 / 455）。
 
 命令概要：
 
-```powershell
-Get-ChildItem -LiteralPath $modRoot -Directory | Group-Object Name | Sort-Object Count -Descending
-Get-ChildItem -LiteralPath $modRoot -File | Where-Object { $_.Name -like 'README*' }
+```javascript
+// 顶层子目录（含构建/IDE 目录，仅 .git 单独说明）
+const top = fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+// 根文件
+const rootFiles = fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.isFile()).map((d) => d.name);
 ```
 
 ### EV-CORPUS-CSPROJ — 工程文件普查（csproj / .gitignore / ModMetadata.cs）
 
-> 补充普查（2026-09-14，ticket 02 撰写期执行，只读）。对象：MANIFEST 近期 297 个源码目录，共 509 个 csproj。供 STRUCT / META / BUILD 维度规则引用。
+> 普查（2026-10-18 刷新）。对象：全部 **631 个** `_source` 源码目录，共 **977 个** csproj。供 STRUCT / META / BUILD 维度规则引用。
+> 历史基线（2026-09-14）：297 个近期源码目录 / 509 个 csproj（旧值在下方命令块标注）。
 
-| 指标 | 结果 |
+| 指标 | 结果（2026-10-18） |
 |------|------|
-| `.gitignore` 存在 | 269 / 297 |
-| 文件名恰为 `ModMetadata.cs` | 63 / 297（其余散落 `Metadata.cs`、`*Metadata.cs` 等） |
-| 服务端 csproj（引用 `SPTarkov.Server`） | 114 |
-| └ TargetFramework | `net10.0` 95 / `net9.0` 17 / `net9.0-windows` 1 |
-| └ 引用方式 | `<PackageReference>` 83 / 本地 DLL 31 |
-| └ `AppendTargetFrameworkToOutputPath=false` | 67；`<Private>false</Private>` 26；`<HintPath>` 34 |
-| 客户端 csproj（引用 BepInEx、不含服务端） | 264 |
-| └ TargetFramework | `netstandard2.1` 135 / `net472` 79 / `net471` 7 / `netstandard21` 3 / `net48` 2 / `net46` 1 / `net10.0` 1 |
-| └ `<HintPath>` | 226；`AppendTargetFrameworkToOutputPath=false` 43；`<Private>false</Private>` 111 |
-| `<Version>` 格式 | 三段式 214 / 四段式 5 / MSBuild 属性插值 72（`$(AssemblyVersion)` 49、`$(ModVersion)` 14、`$(Version)` 9） |
+| `.gitignore` 存在 | 503 / 631 |
+| 文件名恰为 `ModMetadata.cs` | 118 / 631（其余散落 `Metadata.cs`、`*Metadata.cs`、嵌套路径等） |
+| 服务端 csproj（引用 `SPTarkov.Server`） | 322 |
+| └ TargetFramework | `net10.0` 259 / `net9.0` 57 / `net9.0-windows` 1 / 无 5 |
+| └ 引用方式 | `<PackageReference>` 149 / 本地 DLL 173 |
+| └ `AppendTargetFrameworkToOutputPath=false` | 204；`<Private>false</Private>` 48；`<HintPath>` 77 |
+| 客户端 csproj（引用 BepInEx、不含服务端） | 470 |
+| └ TargetFramework | `netstandard2.1` 266 / `net472` 119 / `net471` 16 / `net48` 4 / `netstandard21` 3 / `netstandard2.0` 1 / `net481` 1 / `net8.0` 1 / `net46` 1 / 无 58 |
+| └ `<HintPath>` | 395；`AppendTargetFrameworkToOutputPath=false` 80；`<Private>false</Private>` 156 |
+| `<Version>` 格式 | 三段式 412 / 四段式 5 / 其他 140（MSBuild 属性插值等） |
 
-命令（完整脚本，可复现）：
+命令（完整脚本，2026-09 方法，扫描 MANIFEST 近期 297 个目录，可复现历史基线；下方附 2026-10 全量产物）：
 
 ```powershell
 $root = 'knowledge\spt-kb\archive\forge\mods'
@@ -178,35 +200,43 @@ foreach ($d in $dirs) {
   appendTargetFrameworkFalseTotal=$appendTotal; version3Seg=$ver3; version4Seg=$ver4; versionOther=$verOther } | ConvertTo-Json -Depth 6
 ```
 
-结果（2026-09-14 实跑）：
+结果（2026-10-18 全量刷新，631 个 `_source` 目录；来源 `.artifacts/forge-refresh-2026-10-18/evidence-refresh-data.json`）：
 
 ```json
 {
-  "manifestDirs": 297, "csprojTotal": 509, "gitignore": 269, "modMetadataFile": 63,
-  "serverCsproj": 114,
-  "serverTargetFramework": { "net9.0": 17, "net9.0-windows": 1, "net10.0": 95 },
-  "serverPkgRef": 83, "serverLocalRef": 31,
-  "serverAppendFalse": 67, "serverPrivateFalse": 26, "serverHintPath": 34,
-  "clientCsproj": 264,
-  "clientTargetFramework": { "net471": 7, "net472": 79, "net46": 1, "net10.0": 1, "netstandard21": 3, "netstandard2.1": 135, "net48": 2 },
-  "clientHintPath": 226, "clientAppendFalse": 43, "clientPrivateFalse": 111,
-  "appendTargetFrameworkFalseTotal": 145,
-  "version3Seg": 214, "version4Seg": 5, "versionOther": 72
+  "repos": 631, "csprojTotal": 977, "gitignore": 503, "modMetadataFilename": 118,
+  "serverCsproj": 322,
+  "serverTargetFramework": { "net10.0": 259, "net9.0": 57, "net9.0-windows": 1, "(none)": 5 },
+  "serverPkgRef": 149, "serverLocalRef": 173,
+  "serverAppendFalse": 204, "serverPrivateFalse": 48, "serverHint": 77,
+  "clientCsproj": 470,
+  "clientTargetFramework": { "netstandard2.1": 266, "net472": 119, "net471": 16, "net48": 4,
+    "netstandard21": 3, "netstandard2.0": 1, "net481": 1, "net8.0": 1, "net46": 1, "(none)": 58 },
+  "clientHint": 395, "clientAppendFalse": 80, "clientPrivateFalse": 156,
+  "appendTargetFrameworkFalseTotal": 297,
+  "version3": 412, "version4": 5, "versionOther": 140
 }
 ```
 
-注：`versionOther` 72 例为 MSBuild 属性插值（`$(AssemblyVersion)` 49、`$(ModVersion)` 14、`$(Version)` 9），非违规。`net9.0` 17 例可能含向 5.x 迁移的过渡期样本。
+> 2026-10 全量扫描脚本：`.artifacts/forge-refresh-2026-10-18/evidence-refresh-data.mjs`（遍历全部 `_source` 目录，跳过 `node_modules`/`.git`/`bin`/`obj` 等）。
+> 历史基线（2026-09-14，297 个近期目录 / 509 csproj）：`gitignore` 269、`modMetadataFile` 63、`serverCsproj` 114（`net10.0` 95 / `net9.0` 17 / `net9.0-windows` 1；`serverPkgRef` 83 / `serverLocalRef` 31）、`clientCsproj` 264（`netstandard2.1` 135 / `net472` 79 / `net471` 7 / `netstandard21` 3 / `net48` 2 / `net46` 1 / `net10.0` 1）、`version3Seg` 214 / `version4Seg` 5 / `versionOther` 72。
+> 注：2026-09 的 `versionOther` 72 例为 MSBuild 属性插值（`$(AssemblyVersion)` 49、`$(ModVersion)` 14、`$(Version)` 9），非违规；2026-10 的 140 例同属该口径。`net9.0`（57 例）可能含向 5.x 迁移的过渡期样本。
 
 ### EV-CORPUS-META — 元数据惯例
 
-采样 19 例含 `IModMetadata` / `AbstractModMetadata` 的 C# 服务端 mod（下表列出 15 例坐标），加上 183 个 `[BepInPlugin("...",...)]` 客户端插件入口，观察结果如下：
+**存在性（2026-10-18，631 个 `_source` 目录，来源 `corpus-classification.json`）**：296 个仓库出现 `ModGuid`；294 个出现 `SptVersion`；292 个出现 `IModMetadata` / `AbstractModMetadata`。
 
-- **服务端元数据文件位置极不统一**：`ModMetadata.cs`、`Metadata.cs`、`src/ModMetadata.cs`、`Server/Metadata.cs`、`csharp/*/Mod/*Metadata.cs` 等均有出现。
-- **GUID 命名**：服务端样例中 `com.author.name` 反向域名占多数，但也能见到 `Ombarella`、`me.sol.sain`、`7Bpencil.WeaponCamoAndStickers` 等非 `com.*` 写法；客户端 `[BepInPlugin]` 中约 155/183 使用 `com.*`。
-- **SptVersion 写法**：样例全部为 tilde 范围，例如 `~4.1.0`、`~4.1.2`、`~4.1.3`、`~4.1`，以及插值 `$"~{SAINVersionInfo.SptVersion}"`；未见到 `^4.1` 或精确版本。
-- **ModDependencies**：C# 服务端元数据中几乎全部为 `null`、`[]` 或 `new()`；客户端依赖则通过 `[BepInDependency]` 声明，共 170 处，常见 soft/hard dependency。
+**ModGuid（来源 `metadata-scan2.json`）**：共 **322 条**赋值声明，**277 个唯一值**，其中 **266 个反向域名**（占唯一值 **96 %**，`com.author.name` 形态）；反向域名之外的 11 个唯一值包括 `Ombarella`、`me.sol.sain`、`local.heborian`、`UNIQUE PACKAGE NAME HERE`、`Light.LightsAutomaticIdentiier` 等。按仓库计，**14 / 631** 个仓库至少含一个非反向域名 GUID（`evidence-refresh-data.json`），仍属少数。
 
-采样文件路径：
+**SptVersion（来源 `metadata-scan2.json`）**：共 **326 条**声明，其中 **297 条为 tilde 范围**（**91 %**，如 `~4.1.0` 137、`~4.0.0` 38、`~4.1.3` 30、`~4.1.6` 25、`~4.1` 10，含插值 `$"~{SAINVersionInfo.SptVersion}"` 形态）；**15 条精确版本**（如 `4.0.13` 4、`3.11.3` 4、`4.1.6` 3）；**13 条范围**（如 `>=4.1.3 <4.2.0` 3、`^4.0.13` 2）；**1 条其他**（`/narconet/sptversion`）。
+> 修正（2026-10-18）：2026-09 的「样例全部为 tilde 范围，未见到 `^4.1` 或精确版本」仅基于 15 例采样，**与全量语料不符**——精确实例与范围/`^` 写法确有存在，只是占比小（15 + 13 / 326）。tilde 仍是生态主导写法。
+
+**ModDependencies（来源 `metadata-scan2.json`）**：共 **53 个仓库 / 82 对**非空依赖。最常见依赖：`com.wtt.commonlib` 49、`com.wtt.contentbackport` 11、`com.morebotsapi.tacticaltoaster` 4、`com.epicrangetime.aio` 3、`me.sol.sain` 3。典型写法：`["com.wtt.commonlib"] = new Range("~3.0.6")` / `{ "com.wtt.commonlib", new Range("~3.0.0") }`。
+> 修正（2026-10-18）：2026-09 的「C# 服务端元数据中几乎全部为 `null` / `[]` / `new()`，无语料先例」基于 297 近期目录，**与 631 全量不符**——真实非空依赖声明有 53 仓库 / 82 对。客户端依赖仍主要通过 `[BepInDependency]` 声明（`[BepInDependency]` 共 291 处，见 `EV-CORPUS-MECH`）。
+
+**服务端元数据文件位置极不统一**：`ModMetadata.cs`、`Metadata.cs`、`src/ModMetadata.cs`、`Server/Metadata.cs`、`csharp/*/Mod/*Metadata.cs` 等均有出现（文件名恰为 `ModMetadata.cs` 者仅 118 / 631，见 `EV-CORPUS-CSPROJ`）。
+
+2026-09 采样坐标（历史；15 例）：
 
 - `Advanced-Flea-Simulator_2526_source/FleaSimulatorMetaData.cs`
 - `Hideout-Overhaul_2982_source/src/ModMetadata.cs`
@@ -226,46 +256,56 @@ foreach ($d in $dirs) {
 
 命令概要：
 
-```powershell
-Select-String -LiteralPath $csFiles -Pattern 'IModMetadata|AbstractModMetadata'
-Select-String -LiteralPath $csFiles -Pattern '\[BepInPlugin\("([^"]+)"'
+```javascript
+// 声明级正则（metadata-scan2.mjs）
+text.matchAll(/ModGuid\s*(?:\{[^}]*\})?\s*=\s*"([^"]+)"/g);
+text.matchAll(/SptVersion\s*(?:\{[^}]*\})?\s*=\s*(?:new\s*\(\s*)?"([^"]+)"/g);
+// 反向域名判定：/^[A-Za-z][\w-]*(\.[\w-]+){2,}$/
 ```
 
 ### EV-CORPUS-MECH — 机制用法频率
 
-在近期 297 个目录的 8066 个 `.cs` 文件中统计出现次数：
+在全部 **631 个** `_source` 目录的 **13,795 个 `.cs` 文件**中统计**原始正则命中次数**（2026-10-18；来源 `evidence-refresh-data.json`）：
 
-| 机制/类型 | 出现次数 | 备注 |
+| 机制/类型 | 命中次数 | 备注 |
 |-----------|----------|------|
-| `[Injectable]` | 1018 | 服务端 DI 注册 |
-| `IOnLoad` | 279 | 服务端生命周期 |
-| `ISptLogger` | 614 | 服务端日志 |
-| `StaticRouter` | 90 | 服务端路由 |
-| `DynamicRouter` | 12 | 服务端动态路由 |
-| `IOnUpdate` | 6 | 服务端更新回调 |
-| `BaseUnityPlugin` | 275 | 客户端 BepInEx 入口 |
-| `[BepInPlugin]` | 251 | 客户端插件声明 |
-| `[BepInDependency]` | 170 | 客户端依赖声明 |
-| `Logger.` | 4968 | 客户端 BepInEx `BaseUnityPlugin.Logger` 调用 |
-| `ModMetadata` | 271 | 元数据类型引用 |
-| `AbstractModMetadata` | 24 | 4.0 遗留抽象类 |
+| `[Injectable]` | 1720 | 服务端 DI 注册 |
+| `IOnLoad` | 565 | 服务端生命周期 |
+| `ISptLogger` | 1004 | 服务端日志 |
+| `StaticRouter` | 143 | 服务端路由 |
+| `DynamicRouter` | 17 | 服务端动态路由 |
+| `IOnUpdate` | 15 | 服务端更新回调 |
+| `BaseUnityPlugin` | 505 | 客户端 BepInEx 入口 |
+| `[BepInPlugin]` | 481 | 客户端插件声明 |
+| `[BepInDependency]` | 291 | 客户端依赖声明 |
+| `Logger.` | 3758 | 客户端 BepInEx `BaseUnityPlugin.Logger` 调用 |
+| `ModMetadata` | 542 | 元数据类型引用 |
+| `AbstractModMetadata` | 76 | 4.0 遗留抽象类 |
+
+> 口径：上表为**未去重的正则命中次数**（同一 token 多次出现即多次计数），非文件数或仓库数；跨 631 目录汇总。
+> 历史基线（2026-09-14，297 个近期目录 / 8066 个 `.cs`）：`[Injectable]` 1018、`IOnLoad` 279、`ISptLogger` 614、`StaticRouter` 90、`DynamicRouter` 12、`IOnUpdate` 6、`BaseUnityPlugin` 275、`[BepInPlugin]` 251、`[BepInDependency]` 170、`Logger.` 4968、`ModMetadata` 271、`AbstractModMetadata` 24（旧表口径不同，不可直接对比）。
 
 命令概要：
 
-```powershell
-$files = $recentPaths | ForEach-Object { Get-ChildItem -LiteralPath $_ -File -Filter '*.cs' -Recurse }
-(Select-String -LiteralPath $files -Pattern '^\s*\[Injectable').Count
-(Select-String -LiteralPath $files -Pattern '\bIOnLoad\b').Count
-(Select-String -LiteralPath $files -Pattern '\bISptLogger\b').Count
+```javascript
+// evidence-refresh-data.mjs：对每个仓库的 .cs 文件累计正则命中
+mech.injectable += (t.match(/\[Injectable/g) || []).length;
+mech.onLoad     += (t.match(/\bIOnLoad\b/g) || []).length;
+mech.sptLogger  += (t.match(/\bISptLogger\b/g) || []).length;
 ```
 
 ### EV-CORPUS-CFG — 配置惯例
 
-| 配置文件类型 | 出现次数 | 说明 |
+631 个 `_source` 目录内的**文件级**计数（2026-10-18；来源 `evidence-refresh-data.json`）：
+
+| 配置文件类型 | 文件数 | 说明 |
 |--------------|----------|------|
-| `config.json`（任意位置） | 47 | 多为 mod 配置或资源元数据 |
-| `*.jsonc`（任意位置） | 85 | 服务端默认配置、预设等常见 |
-| `.cfg`（源码根目录） | 0 | BepInEx 运行时配置不在源码中提交 |
+| `config.json`（任意位置，文件名精确匹配） | 133 | 多为 mod 配置或资源元数据 |
+| `*.jsonc`（任意位置） | 113 | 服务端默认配置、预设等常见 |
+| `.cfg`（源码根目录） | 1 | BepInEx 运行时配置一般不在源码中提交 |
+| 含 `ConfigVersion` / `configVersion` 的仓库 | 11 | 配置 schema 版本管理（见 `STD-CFG-007..010` 候选） |
+
+> 历史基线（2026-09-14，297 近期目录）：`config.json` 47、`*.jsonc` 85、根 `.cfg` 0。
 
 常见位置/命名样例：
 
@@ -278,9 +318,10 @@ $files = $recentPaths | ForEach-Object { Get-ChildItem -LiteralPath $_ -File -Fi
 
 命令概要：
 
-```powershell
-Get-ChildItem -LiteralPath $modRoot -Filter 'config.json' -Recurse
-Get-ChildItem -LiteralPath $modRoot -Filter '*.cfg' -Recurse
+```javascript
+if (base === "config.json") cfg.configJson++;
+if (base.endsWith(".jsonc")) cfg.jsonc++;
+if (base.endsWith(".cfg") && path.dirname(f) === root) cfg.cfgRoot++;
 ```
 
 ### EV-CORPUS-ANOMALY — 异常样本
@@ -297,13 +338,59 @@ Get-ChildItem -LiteralPath $modRoot -Filter '*.cfg' -Recurse
 2. `AlwaysLevelEndurance_697_source`：目录下只有 `bin/` 与 `obj/`，无可见源码，疑似仅提交构建产物。
 3. `Sicc-Case-Fix_2687_source`：全部源码与工程文件平铺在根目录，无子目录组织，依赖单一 `SiccCaseFix.cs`。
 
+**当前异常计数（2026-10-18，631 个 `_source` 目录；来源 `corpus-classification.json` / `evidence-refresh-data.json`）**：
+
+| 异常 | 仓库数 | 口径 |
+|------|--------|------|
+| 空 `catch { }` | 96 | 正则命中至少一处空捕获块 |
+| git 跟踪的 `bin/` / `obj/` | 7 / 9（任一 = 11，~1.7 %） | `git ls-files bin obj` 判定；注意「目录存在」为 324 / 314，但绝大多数未被跟踪 |
+| 硬编码绝对路径 | 19 | 命中盘符路径 / `Path.Combine(@"C:...")` |
+| 无根 README | 213（418 个存在） | 精确文件名 `README.md`/`readme.md` |
+| 无根 LICENSE | 176（455 个存在） | `LICENSE`/`LICENSE.md`/`LICENSE.txt` |
+| 扁平根目录 | 261 | 根目录直接含 `.cs` 且无 `src/`/`Server/`/`Client` 分层 |
+
+> 口径说明：**261 / 631 的「扁平根目录」不等于 261 个违规**。大量仓库是单文件小型客户端 mod，源码直接放根目录是常见且合理的形态；只有当仓库为多组件（client + server + shared 等）或规模较大、难以导航时，才应按 `STD-STRUCT-001` 判为结构问题。`bin` / `obj` 同理：目录存在 ≠ 提交，务必以 git 跟踪为准。
+
 ### EV-CORPUS-TOP5 — 语料最大不规范点 Top 5
 
-1. **构建产物 `bin/` / `obj/` 大量提交到源码仓库**：近期 297 个目录中 `bin/` 与 `obj/` 各出现 19 次，部分目录（如 `Ai-Limit_1945_source`、`AlwaysLevelEndurance_697_source`）几乎只包含构建产物。估计约 6–7 % 的近期仓库存在此问题。
-2. **缺乏 README / LICENSE**：约 27 % 无 README，约 24 % 无 LICENSE；对玩家与整合包维护者不友好。
-3. **`ModMetadata.cs` 文件名与位置不统一**：同一接口实现散布为 `ModMetadata.cs`、`Metadata.cs`、`*Metadata.cs` 或内嵌于其他类，路径可能在根、`src/`、`Server/`、`csharp/*/Mod/` 等；增加工具自动扫描成本。
-4. **GUID 命名不统一**：虽然 `com.author.name` 是主流，但仍存在 `Ombarella`、`me.sol.sain`、`7Bpencil.xxx` 等非反向域名写法，可能导致冲突。
-5. **全部源码平铺根目录**：少数 mod（如 `Sicc-Case-Fix_2687_source`、`Ai-Limit_1945_source`）没有 `src/`、`Server/`、`Client/` 等分层，所有 `.cs` 与工程文件混在一起，可维护性差。
+（2026-10-18，631 个 `_source` 目录）
+
+1. **构建产物 `bin/` / `obj/` 提交到源码仓库**：324 个 `obj` 目录、314 个 `bin` 目录**存在于本地**，但按 git 跟踪判定只有 **7 / 9** 个被跟踪（任一 = 11 个仓库，**~1.7 %**）。旧 6–7 % 的估计基于目录存在性，**不准确**；git 跟踪口径才是可信指标。
+2. **缺乏 README / LICENSE**：**213 / 631**（~33.8 %）无根 `README`，**176 / 631**（~27.9 %）无根 `LICENSE`；对玩家与整合包维护者不友好。
+3. **`ModMetadata.cs` 文件名与位置不统一**：仅 **118 / 631** 使用精确文件名 `ModMetadata.cs`；其余散布为 `Metadata.cs`、`*Metadata.cs` 或嵌套在 `src/`、`Server/`、`csharp/*/Mod/` 等路径，增加工具自动扫描成本。
+4. **GUID 命名**：**14 / 631** 个仓库至少含一个非反向域名 `ModGuid`（如 `Ombarella`、`me.sol.sain`、`Light.LightsAutomaticIdentiier`），仍属少数；反向域名 `com.author.name` 是绝对主流（266 / 277 个唯一值，96 %）。
+5. **扁平根目录**：**261 / 631** 个仓库在根目录直接放 `.cs` 且无 `src/`/`Server/`/`Client` 分层，但**不可一概判为违规**——其中大量是单文件小型客户端 mod，根目录直放是合理惯例；仅当仓库为多组件或规模较大、难以导航时才按结构规则处理。
+
+### EV-CORPUS-MO2META — MO2 overlay meta.ini 描述字段冻结事故
+
+> 单例语料（2026-10-16 观测）。与上方统计型语料不同，本条为实测事件证据：一次真实部署流程中描述字段与能力脱节的完整记录，为 `STD-PKG-002`、`STD-PKG-008` 提供语料侧依据。
+
+- **对象**：自研 mod `mods/SamMeow-LLMTraderChat`（paired：客户端插件 + 服务端 mod）。
+- **事件**：MO2 overlay 的 `meta.ini` `comments`/`notes` 冻结于首次安装文本（M1：「M1 测试构建 / 仅解锁 Therapist 回显」），而 mod 此后历经 6+ 次能力跃迁（19 个商人、LLM 回复、动态态度、任务知识）。
+- **直接原因**：每次重部署都用 `robocopy（保留 meta.ini）`——保护 MO2 记账字段（正确）的同时，从未刷新描述字段。
+- **结构性原因**：`meta.ini` 只存在于 MO2 实例，不在 mod 仓库内 → 脱离版本控制、打包与审查。
+- **规则原因**：原 `STD-PKG-002` 将 `notes` 定义为「安装记录（来源、版本、安装日期、作者说明）」，在该字面口径下 M1 文本是合规的，因此没有任何机制要求更新。
+- **整改方向**：描述字段真源移入仓库（`<mod>/deploy/meta.json`），部署时用 `tools/mo2-meta-sync/sync.mjs` 同步进 overlay `meta.ini`（只改描述字段、保留记账字段）；触发条件为任何影响用户可见能力或版本号的变更。
+- **证据坐标**：`mods/SamMeow-LLMTraderChat/docs/acceptance.md:57`（robocopy 保 meta.ini 部署记录）、`.scratch/llm-trader-chat/issues/13-all-traders-onboarding.md:61`（overlay 部署收口记录）。
+- **适用规则**：`STD-PKG-002`、`STD-PKG-008`（均为 SHOULD）。
+
+### EV-CORPUS-CHANGELOG — mod 仓库内 CHANGELOG.md 惯例
+
+> 语料普查（2026-10-18 刷新）。对象：`knowledge/spt-kb/archive/forge/mods/` 下全部 `_source` 目录，以及自研 `mods/` 目录。为 `STD-PKG-009` 提供语料侧依据。
+
+- **计数**：**82 个** `_source` 目录随仓库提供 `CHANGELOG.md`，共 **82 个** `CHANGELOG.md` 文件（2026-10-18；来源 `evidence-refresh-data.json`）。历史基线（2026-09）：61 个目录 / 109 个文件（旧值含嵌套多份，文件名大小写不一）。
+- **格式观测**：主流为 `## [<version>] - <YYYY-MM-DD>` 分节、**最新在上**，节内按 `### Added` / `### Changed` / `### Fixed` 等分组——如 `Kappa-Tracker_2981_source/CHANGELOG.md`（`## [1.3.0] - 2026-09-11` + `### Added` / `### Changed`）、`CombatLog_3072_source/CHANGELOG.md`、`AutoIFF_2784_source/CHANGELOG.md` 结构相同。部分目录的版本节点不带方括号或日期（如 `## [1.0.0]`）。
+- **自研对照**：`mods/SamMeow-LLMTraderChat/CHANGELOG.md`、`mods/PerformanceTweaks/CHANGELOG.md`、`mods/PerformanceTweaks413/CHANGELOG.md`。
+- **技能侧佐证**：`skills/writing-spt-mod/SKILL.md`、`skills/writing-spt-modpack-changelog/SKILL.md`、`skills/porting-spt-mod-to-spt5/SKILL.md` 均已把「每 mod 自带 `CHANGELOG.md`」定为强制流程并引用 `STD-PKG-009`。
+- **覆盖面说明**：82 个目录提供 changelog，占 631 全量语料约 **13 %**（历史口径为近期 297 目录的 ~20 %），说明该惯例尚未普及；但样本量 82 仍 **≥10**，满足 MUST 语料门槛（README「分级与证据标准」）。
+- **适用规则**：`STD-PKG-009`（MUST）。
+
+命令概要：
+
+```javascript
+const cl = walk(repo).filter((f) => path.basename(f).toLowerCase() === "changelog.md");
+if (cl.length > 0) { changelog.repos++; changelog.files += cl.length; }
+```
 
 ### EV-CORPUS-MATERIALS — 既有规范素材
 
@@ -644,7 +731,6 @@ my-paired-mod/
 | `06-config.md` | STD-CFG-004 | config 类禁 `[Injectable]`：无直接语料计数（机制：modding-guide/02 警告） |
 | `07-logging.md` | STD-LOG-004、STD-LOG-005 | 异常记录降级、取消传播：语料未统计（机制：ISptLogger 签名、modding-guide/02） |
 | `08-dependencies.md` | STD-DEP-003 | 可选依赖 `IOnLoad` 自判：无自判模式语料（机制：ModValidator 仅硬依赖） |
-| `09-packaging.md` | STD-PKG-002 | MO2 overlay / meta.ini 约定：无约定语料（机制：tools/mo2-mcp 接口） |
 | `10-verification.md` | STD-VERIFY-002、STD-VERIFY-003、STD-VERIFY-004、STD-VERIFY-005、STD-VERIFY-006、STD-VERIFY-007、STD-VERIFY-008、STD-VERIFY-009 | 工具链/技能文档单源（机制：skills/testing-spt-modpack、tools/spt-mcp、tools/tarkov-runtime-mcp） |
 | `11-version-differences.md` | STD-VER-004 | 5.0 无 mod 语料（机制：5xx-source-verification「待专项评估」） |
 | `13-perf-security.md` | STD-PERF-007、STD-PERF-008 | 路径遍历、fail-closed：单点审查发现（机制：415-source-review-report） |
@@ -656,10 +742,15 @@ my-paired-mod/
 - **语料集更新**（新增 MANIFEST 或新增 `_source` 目录）→ 复核 `EV-CORPUS-*`（类型/语言/结构/元数据/机制/配置/异常/TOP5）。
 - **4.1/5.0 源码更新** → 复核 `EV-GAP-*` 与 `EV-MECH-COORD`（接口定义、校验逻辑、路径 API、本地化文本）。
 - **KB 新增文档**（modding-guide / api-notes / operations / migration / templates / wiki-tushonka / docs/agents）→ 复核 `EV-CORPUS-MATERIALS`。
+- **mod 仓库 CHANGELOG 惯例变化**（发布模板 / 技能流程调整）→ 复核 `EV-CORPUS-CHANGELOG`。
+
+> 本轮刷新记录（2026-10-18）：语料从 392 扩至 **631 个 `_source` 目录 / 34,050 个文件**，`EV-CORPUS-*` 全部重算；证据产物见 `.artifacts/forge-refresh-2026-10-18/`（corpus-classification / evidence-refresh-data / metadata-scan2 / metadata-scan）。**审阅者需在本次刷新后重新核对各 MUST 规则的语料计数**（尤其 `STD-PKG-009`、`STD-DEP-001` 与新增候选规则所引用的数字），确认仍满足 ≥10 样本门槛。
 
 ## 6. 校准记录（EV-CALIBRATION）
 
 ticket 11 试点校准（2026-09-14）：以 3 个自研 mod 的逐规则合规报告为输入，对规则集做以下修订。报告：`.scratch/modding-standard/pilot/warsaw-trader.md`（PASS 31 / FAIL 4 / N-A 49）、`tarkov-active-probe.md`（23 / 6 / 55）、`spt5-no-stamina-drain.md`（19 / 7 / 58）。
+
+**语料基线刷新（2026-10-18）**：语料扩至 **631 个 `_source` 目录 / 34,050 个文件**；`EV-CORPUS-*` 全部按新全量重算，证据产物位于 `.artifacts/forge-refresh-2026-10-18/`（corpus-classification.json / evidence-refresh-data.json / metadata-scan2.json / metadata-scan.json）。本次仅刷新证据计数，**未改动任何规则 ID、Level、Applies 或规则文本**；审阅者应按 `EV-REVIEW` 提示重新核对受影响 MUST 规则的语料计数。
 
 | 修订 | 涉及规则 | 类型 | 改了什么 | 为什么 |
 |------|----------|------|----------|--------|

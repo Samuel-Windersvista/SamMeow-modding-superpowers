@@ -789,7 +789,7 @@
       "domain": "PKG",
       "level": "SHOULD",
       "applies": "both",
-      "title": "为每个 mod 建立独立 MO2 overlay 并填写 meta.ini `comments`/`notes`",
+      "title": "为每个 mod 建立独立 MO2 overlay 并维护 meta.ini 描述字段",
       "checkable": false,
       "check": null
     },
@@ -835,6 +835,24 @@
       "level": "SHOULD",
       "applies": "both",
       "title": "组装多来源 mod 时重命名冲突的运行时文件并迁移旧目录",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-008",
+      "domain": "PKG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "meta.ini 描述字段以 mod 仓库为真源并随部署同步",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PKG-009",
+      "domain": "PKG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "为每个产出可用版本的 mod 维护仓库内 `CHANGELOG.md`",
       "checkable": false,
       "check": null
     },
