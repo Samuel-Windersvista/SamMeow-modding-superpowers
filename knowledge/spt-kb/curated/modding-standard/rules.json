@@ -733,7 +733,7 @@
     {
       "id": "STD-DEP-001",
       "domain": "DEP",
-      "level": "SHOULD",
+      "level": "MUST",
       "applies": "both",
       "title": "用 ModDependencies 声明服务端硬依赖（key=ModGuid，value=SemVer Range）",
       "checkable": false,
