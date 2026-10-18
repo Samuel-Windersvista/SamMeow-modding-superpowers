@@ -21,10 +21,10 @@ source: curated
 
 ### STD-DEP-001 — 用 ModDependencies 声明服务端硬依赖（key=ModGuid，value=SemVer Range）
 
-- **Level:** SHOULD
+- **Level:** MUST
 - **Applies:** both
-- **Evidence:** 机制：`Libraries/SPTarkov.Server.Core/Models/Spt/Mod/IModMetadata.cs:91`（key=依赖 ModGuid、value=`Range`）、`SPTarkov.Server/Modding/ModValidator.cs:243-287`（EV-GAP-DEP）；语料：0 真实声明（EV-NOCORPUS #1；机制推断，无语料先例）
-- **Rule:** 服务端 mod 若硬依赖另一个 mod，必须在 `IModMetadata.ModDependencies` 中以 `["<依赖 ModGuid>"] = new Range("<SemVer 范围>")` 声明；key 是依赖 mod 的 `ModGuid`（不是程序集名、不是 NuGet 包名）。
+- **Evidence:** 机制：`Libraries/SPTarkov.Server.Core/Models/Spt/Mod/IModMetadata.cs:91`（key=依赖 ModGuid、value=`Range`）、`SPTarkov.Server/Modding/ModValidator.cs:243-287`（缺失或版本不满足即整批拒载，EV-GAP-DEP）；语料：53 个仓库 / 82 对非空声明，主导依赖 `com.wtt.commonlib` 49、`com.wtt.contentbackport` 11（EV-GAP-DEP、EV-CORPUS-META）
+- **Rule:** 服务端 mod 若硬依赖另一个 mod，必须在 `IModMetadata.ModDependencies` 中以 `["<依赖 ModGuid>"] = new Range("<SemVer 范围>")` 声明；key 是依赖 mod 的 `ModGuid`（不是程序集名、不是 NuGet 包名）。共享库依赖（如 `com.wtt.commonlib`）是生态主导场景，声明的范围必须与目标运行时实际承载的版本一致并经过实测。
 
 ```csharp
 using SemanticVersioning;
@@ -42,7 +42,7 @@ public Dictionary<string, Range>? ModDependencies { get; init; } = new()
 
 - **Level:** MUST
 - **Applies:** both
-- **Evidence:** 机制：`SPTarkov.Server/Modding/ModValidator.cs:243-287`（任一依赖缺失或版本不满足即 `errorsFound = true`，`ValidateMods` 返回空列表整批拒载）；语料：157 个 `.cs` 文件全部空初始化、392 个 `_source` 目录中 28 个 `= new()`、0 个真实键值（EV-GAP-DEP、EV-CORPUS-META）
+- **Evidence:** 机制：`SPTarkov.Server/Modding/ModValidator.cs:243-287`（任一依赖缺失或版本不满足即 `errorsFound = true`，`ValidateMods` 返回空列表整批拒载）；语料：无硬依赖的 mod 保持空初始化（631 个 `_source` 目录中 28 个 `= new()`）；53 个仓库 / 82 对声明了真实非空依赖，见 EV-GAP-DEP（EV-CORPUS-META）
 - **Rule:** 没有硬依赖时，`ModDependencies` 保持 `null` 或空字典；不要把"可选 / 软依赖"写进 `ModDependencies`——服务端没有软依赖语义，声明即硬约束，依赖缺失会导致全部 mod 拒载。
 
 ```csharp

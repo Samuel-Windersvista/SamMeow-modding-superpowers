@@ -474,7 +474,7 @@ corpus-survey.md C 节结论（方向性提示，不含统计数字）：
 
 **缺少证据、需进一步调查/实验的维度（6 条；1–3 已解决）**：
 
-1. ModDependencies 的标准用法 → 已解决，见 `EV-GAP-DEP`（机制推断，无语料先例）。
+1. ModDependencies 的标准用法 → 已解决，见 `EV-GAP-DEP`（机制 + 53 仓库 / 82 对语料）。
 2. config.json 的"标准"位置 → 已解决，见 `EV-GAP-CFG`。
 3. paired mod 的仓库组织 → 已解决，见 `EV-GAP-PAIRED`。
 4. **Web 页面 / Blazor 元数据的工程模板**（开放）：`02-server-mod-anatomy.md` 有说明，但模板未包含 `IModBlazorMetadata` 示例，语料中实现方式多样。
@@ -504,12 +504,18 @@ corpus-survey.md C 节结论（方向性提示，不含统计数字）：
   - `modloader-missing_dependency`: "Mod: {{mod}} requires: {{modDependency}} to be installed."
   - `modloader-outdated_dependency`: "Mod: {{mod}} requires: {{modDependency}} version: {{requiredVersion}}. Current installed version is: {{currentVersion}}"
 
-**实践端结论**：**语料中没有任何真实非空依赖声明**。所有服务端 `ModDependencies` 都是 `null`、`new()`、`new Dictionary<...>()`、`[]`。
+**实践端结论**：631 全量语料中**存在真实非空依赖声明**——共 **53 个仓库 / 82 对**（54 个声明文件；来源 `metadata-scan2.json`）。
 
-- 近期 297 个目录中，157 个 `.cs` 文件出现 `ModDependencies`，全部为**空初始化**；
-- 全量 392 个 `_source` 目录中，28 个文件以 `= new()` 形式初始化，**0 个**包含真实键值；
-- 官方 `server-mod-examples`（`1Logging/Logging.cs:60`、`13AddTraderWithAssortJson/AddTraderWithAssortJson.cs:25` 等）全部置为 `null`；
-- 4.1/5.0 源码中的 `Testing/TestMod/TestMod.cs:21`、`Testing/TestMod2/TestMod2.cs:22` 同样为 `null`。
+- 依赖分布（`metadata-scan2.json` byGuid）：`com.wtt.commonlib` 49、`com.wtt.contentbackport` 11、`com.morebotsapi.tacticaltoaster` 4、`com.epicrangetime.aio` 3、`me.sol.sain` 3，其余为 1–2 次的零散依赖。
+- **两种等价写法**均出现：
+  - 索引器写法：`["com.wtt.commonlib"] = new Range("~3.0.6")`（`.22lr-Ammunition_2516_source/ModMetadata.cs`）；
+  - 集合初始化器写法：`{ "com.wtt.commonlib", new Range("~3.0.0") }`（`Content-Backport-Prestiges_2540_source/ContentBackportPrestigesServer/ContentBackportPrestigesModMetadata.cs`、`ECOT-Eukyre's-Consortium-of-Things_2195_source/EukyreECOT/EukyreMod.cs`）。
+- 范围写法以 tilde 为主（`~3.0.6` 17 次、`~3.0.0` 12 次），另有 `^`、`>=` 与精确版本（如 `2.0.24`）。
+- **共享库依赖是主导场景**：`com.wtt.commonlib` 一类共享库占绝大多数对次，其次为内容回填库（`com.wtt.contentbackport`）。
+- 客户端依赖仍主要通过 `[BepInDependency]` 声明（`[BepInDependency]` 共 291 处，见 `EV-CORPUS-MECH`）。
+- 官方 `server-mod-examples`（`1Logging/Logging.cs:60`、`13AddTraderWithAssortJson/AddTraderWithAssortJson.cs:25` 等）与源码测试 mod（`Testing/TestMod/TestMod.cs:21`、`Testing/TestMod2/TestMod2.cs:22`）仍为 `null`——其存在不推翻生态中 53 个仓库的真实声明。
+
+> 修正（2026-10-18）：2026-09 的「语料中没有任何真实非空依赖声明」基于 297 近期目录，**与 631 全量不符**——真实非空依赖声明有 53 仓库 / 82 对。
 
 **推荐写法**：
 
@@ -687,7 +693,7 @@ my-paired-mod/
 
 ### EV-GAP-NOEV — 未找到证据的声明
 
-- 未在 392 个源码目录或官方示例中找到任何**非空** `ModDependencies` 的真实样例；推荐写法是根据接口类型与校验器逻辑推断得出。
+- （已解决，2026-10-18）原「未在 392 个源码目录或官方示例中找到任何**非空** `ModDependencies` 真实样例」的声明**不再成立**：631 全量语料中有 53 个仓库 / 82 对，见 `EV-GAP-DEP`。
 - wiki/curated 文档中**没有**针对 paired mod 仓库目录结构的明确规范；推荐布局是根据语料中 58 个 hybrid mod 的共同做法归纳。
 
 ## 3. 机制证据坐标（EV-MECH-COORD）
@@ -717,8 +723,7 @@ my-paired-mod/
 
 ## 4. 无语料先例清单（EV-NOCORPUS）
 
-1. **ModDependencies 真实声明** — 适用标注：**机制推断，无语料先例**。392 个源码目录与官方示例中均无非空 `ModDependencies`；推荐写法（`new()` + `Add("guid", range)`）由 `IModMetadata.cs:91` 接口类型与 `ModValidator.cs:243-287` 校验逻辑推断。
-2. **paired mod 仓库结构的文档级规范** — 适用标注：**机制推断，无语料先例**。wiki/curated 文档无明确规范；推荐布局由语料中 58 个 hybrid mod 的共同做法归纳。
+1. **paired mod 仓库结构的文档级规范** — 适用标注：**机制推断，无语料先例**。wiki/curated 文档无明确规范；推荐布局由语料中 58 个 hybrid mod 的共同做法归纳。
 
 ### 规则级登记（ticket 02–06 撰写期，2026-09-14）
 
@@ -734,8 +739,6 @@ my-paired-mod/
 | `10-verification.md` | STD-VERIFY-002、STD-VERIFY-003、STD-VERIFY-004、STD-VERIFY-005、STD-VERIFY-006、STD-VERIFY-007、STD-VERIFY-008、STD-VERIFY-009 | 工具链/技能文档单源（机制：skills/testing-spt-modpack、tools/spt-mcp、tools/tarkov-runtime-mcp） |
 | `11-version-differences.md` | STD-VER-004 | 5.0 无 mod 语料（机制：5xx-source-verification「待专项评估」） |
 | `13-perf-security.md` | STD-PERF-007、STD-PERF-008 | 路径遍历、fail-closed：单点审查发现（机制：415-source-review-report） |
-
-注：`STD-DEP-001` 由上方第 1 条覆盖。
 
 ## 5. 复核触发（EV-REVIEW）
 
