@@ -653,11 +653,29 @@
       "check": null
     },
     {
+      "id": "STD-STRUCT-008",
+      "domain": "STRUCT",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "允许一个仓库含多个可部署 mod 目录，每个部署目录恰好一个 `IModMetadata`",
+      "checkable": false,
+      "check": null
+    },
+    {
       "id": "STD-META-007",
       "domain": "META",
       "level": "SHOULD",
       "applies": "both",
       "title": "让 paired mod 两端共用同一版本号",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-META-008",
+      "domain": "META",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "识别 `package.json` + `sptVersion` 为 3.11 遗产，4.1/5.0 服务端 mod 用 C# `IModMetadata`",
       "checkable": false,
       "check": null
     },
@@ -1000,6 +1018,15 @@
       "level": "SHOULD",
       "applies": "5.0",
       "title": "面向 5.0 的客户端与服务端按新 EFT 版本重新迁移绑定",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-VER-005",
+      "domain": "VER",
+      "level": "MAY",
+      "applies": "both",
+      "title": "移植 3.11 TS 服务端 mod 时按元数据字段迁移映射",
       "checkable": false,
       "check": null
     },
