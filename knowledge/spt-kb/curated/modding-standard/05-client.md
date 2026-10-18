@@ -101,8 +101,8 @@ public class MyModPlugin : BasePlugin
 
 - **Level:** MUST
 - **Applies:** both
-- **Evidence:** 机制：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)、模板 `templates/client-mod/src/Patches/ExamplePatch.cs`（`PatchAll` 扫描程序集内 `[HarmonyPatch]` 类）；语料：顶层 `Patches` 目录出现 61 次（EV-CORPUS-STRUCT）
-- **Rule:** 每个 Harmony 补丁类用 `[HarmonyPatch(typeof(<目标类型>), "<方法名>")]` 标注，补丁类独立，由入口统一 `Harmony.PatchAll()` 应用；建议把补丁类集中放在 `Patches/` 目录便于审计。
+- **Evidence:** 机制：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)、模板 `templates/client-mod/src/Patches/ExamplePatch.cs`（补丁类用 `[HarmonyPatch(typeof(...), "...")]` 标注）；[operations/5xx-client-mod-dev-lessons.md](../operations/5xx-client-mod-dev-lessons.md)（`ModulePatch` 的 Harmony id = 类型名，撤销走 `UnpatchID`）；语料：`ModulePatch` / `PatchSet` 277 仓库 vs `PatchAll()` 仅 91 文件；顶层 `Patches` 目录出现 112 次（EV-CORPUS-STRUCT）
+- **Rule:** 每个 Harmony 补丁类用 `[HarmonyPatch(typeof(<目标类型>), "<方法名>")]` 标注，补丁类独立，建议集中放在 `Patches/` 目录便于审计。默认应用方式为 `ModulePatch` / `PatchSet` 的显式 `Enable()`（逐 patch 可隔离、可撤销，是当前生态主导形态）；`Harmony.PatchAll()` 仅在「所有目标都已逐个验证存在、且接受全有或全无」时使用，不得当作未验证目标的捷径。
 
 ```csharp
 using HarmonyLib;
@@ -224,3 +224,84 @@ public override bool Unload()
 ```
 
 > 深入：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)
+
+### STD-CLI-008 — 单个 patch 目标解析失败时记录 Error 并跳过，不中断其余补丁
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：[operations/3114-il-conflict-report.md](../operations/3114-il-conflict-report.md)（IL helper 读 `ModulePatch` 子类与目标方法）；语料：`Adaptive-Bot-Culling_2874_source/Client/Plugin.cs:248-263`（目标为 null 时记日志并跳过该 patch）、`ABPS-Acid's-Bot-Placement-System_2097-2_source/Client/Plugin.cs:85-97`（逐 patch `Enable()`）；`ModulePatch` / `PatchSet` 277 仓库、`PatchAll()` 91 文件（EV-CORPUS-MECH 未单列，计数来自 2026-10 语料扫描）
+- **Rule:** 逐个应用补丁时，单个 patch 的 Harmony 目标解析失败（重命名 / 缺失 / 签名变化）只记录 Error 并跳过该 patch，其余补丁照常应用；不得让一个缺失目标中断全部补丁，也不得静默吞掉失败（见 `STD-LOG-004`）。
+
+```csharp
+// 逐 patch 应用：单个目标解析失败只跳过该 patch，其余照常
+foreach (var patch in _patches)
+{
+    try
+    {
+        patch.Enable();
+    }
+    catch (Exception ex)
+    {
+        // 记录 Error 后继续下一个 patch；不中断全部补丁
+        Logger.LogError($"补丁 {patch.GetType().Name} 应用失败，已跳过：{ex}");
+    }
+}
+```
+
+> 深入：[operations/3114-il-conflict-report.md](../operations/3114-il-conflict-report.md)
+> 交叉引用：`STD-CLI-003`（`ModulePatch` / `PatchSet` 逐项 `Enable()`）、`STD-LOG-004`（异常记录并降级）。
+
+### STD-CLI-009 — 撤销补丁前先恢复被修改的游戏状态
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)；语料：`Adaptive-Bot-Culling_2874_source/Client/Plugin.cs:1283-1312`（`OnDestroy` 中先还原 bot 表现/移动状态，再 `UnpatchSelf`）（EV-CORPUS-MECH；EV 表暂无对应专列，计数为本次语料内联）
+- **Rule:** 撤销补丁前，先恢复该补丁修改过的游戏状态与缓存（被压制的 bot 表现 / 移动、临时改写的字段等），再调用 `UnpatchSelf()` 或 `UnpatchID`；否则会留下「被压制的 bot」或幽灵缓存。
+
+```csharp
+private void OnDestroy()
+{
+    // 先恢复被修改的游戏状态（bot 表现 / 移动 / 缓存），再撤销补丁
+    _botStateRestore?.Restore();
+    _harmony?.UnpatchSelf();
+}
+```
+
+> 深入：[modding-guide/03-client-mod-anatomy.md](../modding-guide/03-client-mod-anatomy.md)
+> 交叉引用：`STD-CLI-007`（入口应用、生命周期撤销）。
+
+### STD-CLI-010 — 在 raid 结束时复位或修剪缓存的 raid 对象
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：Unity 对象销毁后为「伪 null」，跨 raid 累积会留下悬空引用；语料：Airburst 的 `ClearRaidState`、Blackout 的 `_registered = false`、`Advanced-Modding-Lights_3081_source` 的 `PruneDestroyedObjects`（EV-CORPUS-MECH；EV 表暂无对应专列，计数为本次语料内联）
+- **Rule:** 补丁缓存的 raid 对象（bot、可交互物、注册表项）在 raid 结束或对象销毁时复位或修剪，避免反复进图累积 Unity 伪 null 引用与过期状态。
+
+```csharp
+// raid 结束：复位 / 修剪缓存的 raid 对象，避免伪 null 引用累积
+private void OnRaidEnd()
+{
+    _cachedRaidObjects.Clear();
+    _registered = false;
+    PruneDestroyedObjects();
+}
+```
+
+> 深入：[operations/3114-eft016-perf-hotspots.md](../operations/3114-eft016-perf-hotspots.md)
+
+### STD-CLI-011 — 隐式接口或非常规目标用 `AccessTools` 精确解析
+
+- **Level:** MAY
+- **Applies:** both
+- **Evidence:** 机制：`HarmonyLib.AccessTools`（`DeclaredMethod` / `GetInterfaceMap` 精确定位成员）；语料：`Advanced-Modding-Lights_3081_source/Patches/WeaponModdingPatch.cs:291-317`（精确 `AccessTools` 目标）、`Adaptive-Bot-Culling_2874_source`（接口 / 非常规目标解析）（EV-CORPUS-MECH；EV 表暂无对应专列，计数为本次语料内联）
+- **Rule:** 隐式接口实现或非常规目标（重载、显式接口实现、泛型实例化）用 `AccessTools.DeclaredMethod` / `GetInterfaceMap` 等精确解析目标方法，不按方法名猜测；名字匹配在目标重命名或重载时即失效。
+
+```csharp
+// 隐式接口 / 非常规目标：用 AccessTools 精确解析，不按名字猜
+MethodInfo target = AccessTools.DeclaredMethod(typeof(SomeType), nameof(SomeType.SomeMethod));
+
+// 显式接口实现：用 GetInterfaceMap 定位实现方法
+var map = typeof(SomeType).GetInterfaceMap(typeof(ISomeInterface));
+```
+
+> 深入：[operations/5xx-client-mod-dev-lessons.md](../operations/5xx-client-mod-dev-lessons.md)

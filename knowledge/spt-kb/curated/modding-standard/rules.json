@@ -364,6 +364,15 @@
       }
     },
     {
+      "id": "STD-SRV-009",
+      "domain": "SRV",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "服务端 Harmony 补丁用 `IRuntimePatch` 经 DI 收集并在 `IOnLoad` 中启用",
+      "checkable": false,
+      "check": null
+    },
+    {
       "id": "STD-CFG-003",
       "domain": "CFG",
       "level": "MUST",
@@ -524,12 +533,15 @@
           "usagePatterns": [
             "new\\s+Harmony\\s*\\(",
             "HarmonyLib\\.Harmony",
-            "\\bPatchAll\\s*\\("
+            "\\bPatchAll\\s*\\(",
+            "\\bModulePatch\\b",
+            "\\bPatchSet\\b"
           ],
-          "patchPattern": "\\.PatchAll\\s*\\(",
+          "patchPattern": "\\.PatchAll\\s*\\(|\\.Enable\\s*\\(",
           "unpatchPatterns": [
             "UnpatchSelf",
-            "override\\s+bool\\s+Unload\\s*\\("
+            "override\\s+bool\\s+Unload\\s*\\(",
+            "\\.UnpatchID\\s*\\("
           ],
           "messages": {
             "na": "no Harmony usage; rule not applicable",
@@ -537,6 +549,42 @@
           }
         }
       }
+    },
+    {
+      "id": "STD-CLI-008",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "单个 patch 目标解析失败时记录 Error 并跳过，不中断其余补丁",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-009",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "撤销补丁前先恢复被修改的游戏状态",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-010",
+      "domain": "CLI",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在 raid 结束时复位或修剪缓存的 raid 对象",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CLI-011",
+      "domain": "CLI",
+      "level": "MAY",
+      "applies": "both",
+      "title": "隐式接口或非常规目标用 `AccessTools` 精确解析",
+      "checkable": false,
+      "check": null
     },
     {
       "id": "STD-CLI-006",

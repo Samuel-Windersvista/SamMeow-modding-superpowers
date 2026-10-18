@@ -130,6 +130,28 @@ $fixtures = @(
             "STD-META-005" = "FAIL"; "STD-CLI-001" = "PASS"
         }
     }
+    @{
+        # ModulePatch / .Enable() 主导形态：补丁经 .Enable() 应用（非 PatchAll）、OnDestroy 撤销 -> PASS
+        Name         = "pass-client-modulepatch"
+        Kind         = "client"
+        ExpectExit   = 0
+        ExpectFail   = @()
+        ExpectStatus = @{
+            "STD-CLI-001" = "PASS"; "STD-CLI-003" = "PASS"; "STD-CLI-007" = "PASS"
+            "STD-CLI-006" = "PASS"; "STD-META-006" = "PASS"; "STD-CFG-006" = "PASS"
+        }
+    }
+    @{
+        # 证明 ModulePatch / .Enable() 被识别为 Harmony 使用（旧检查器误判为 N/A）：缺撤销即 FAIL
+        Name         = "fail-client-modulepatch"
+        Kind         = "client"
+        ExpectExit   = 1
+        ExpectFail   = @("STD-CLI-007")
+        ExpectStatus = @{
+            "STD-CLI-007" = "FAIL"; "STD-CLI-001" = "PASS"; "STD-CLI-003" = "PASS"
+            "STD-CLI-006" = "PASS"; "STD-CFG-006" = "PASS"
+        }
+    }
 )
 
 # ---- 检查器调用 -------------------------------------------------------------

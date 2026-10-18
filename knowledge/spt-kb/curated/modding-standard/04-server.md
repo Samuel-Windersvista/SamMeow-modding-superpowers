@@ -238,3 +238,56 @@ public class MyService(ISptLogger<MyService> logger)
 
 > 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
 > 交叉引用：`STD-LOG-001`、`STD-LOG-004`（日志与错误处理约定）。
+
+### STD-SRV-009 — 服务端 Harmony 补丁用 `IRuntimePatch` 经 DI 收集并在 `IOnLoad` 中启用
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)（Patch 由 DI 管理：标 `[Injectable]`、注入 `IEnumerable<IRuntimePatch>` 统一启用，`AbstractPatch` 实现 `IRuntimePatch`，在 `Preload` 阶段启用）、[api-notes-4.1/di-container.md](../api-notes-4.1/di-container.md)（`IEnumerable<IRuntimePatch>` 多实例注入）、[wiki-tushonka/modding/SPT_41_Modding/Server_40_to_41.md](../../wiki-tushonka/modding/SPT_41_Modding/Server_40_to_41.md)（`[PatchPostfix]` + `Enable()`、`ServiceLocator` 已移除）；语料：约 28 个仓库含服务端补丁管理器（如 `ABPS-Acid's-Bot-Placement-System_2097-2_source/Server/PatchManager.cs`、Strange-Curios、EternalCycle、Ironman、WTT-CommonLib）（EV-CORPUS-MECH；EV 表暂无 server patch-manager 专列，计数为本次语料内联）
+- **Rule:** 服务端 Harmony 补丁用 `IRuntimePatch`（经 `AbstractPatch`）表达，标 `[Injectable]` 由 DI 容器构造；在入口 `IOnLoad` 中注入 `IEnumerable<IRuntimePatch>` 并逐个 `Enable()`，在 `OnLoadOrder.Preload + n` 阶段启用（早于被打补丁的代码运行）。不要在服务端用 `Harmony.PatchAll()` 扫程序集。
+
+```csharp
+using HarmonyLib;
+using SPTarkov.Common.Models.Logging;
+using SPTarkov.DI.Annotations;
+using SPTarkov.Server.Core.DI;
+
+// 补丁类：继承 AbstractPatch，标 [Injectable] 由容器构造
+[Injectable]
+public class MyServerPatch : AbstractPatch
+{
+    private static ISptLogger<MyServerPatch> _logger = default!;
+
+    public MyServerPatch(ISptLogger<MyServerPatch> logger)
+    {
+        // Harmony 补丁方法必须是 static，依赖经 static 字段传递
+        _logger = logger;
+    }
+
+    protected override MethodBase GetTargetMethod()
+        => AccessTools.DeclaredMethod(typeof(SomeTarget), nameof(SomeTarget.SomeMethod));
+
+    [PatchPostfix]
+    public static void PatchPostfix()
+    {
+        _logger.Info("MyServerPatch 已生效");
+    }
+}
+
+// 入口：注入所有补丁，在 Preload 阶段统一 Enable
+[Injectable(TypePriority = OnLoadOrder.Preload + 1)]
+public class MyModPatchLoader(IEnumerable<IRuntimePatch> patches) : IOnLoad
+{
+    public Task OnLoadAsync(CancellationToken cancellationToken)
+    {
+        foreach (var patch in patches)
+        {
+            patch.Enable();
+        }
+        return Task.CompletedTask;
+    }
+}
+```
+
+> 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md) · [api-notes-4.1/di-container.md](../api-notes-4.1/di-container.md)
+> 交叉引用：`STD-SRV-001`（`[Injectable]` DI 构造）、`STD-SRV-002`（`OnLoadOrder.X + n` 偏移写法）。

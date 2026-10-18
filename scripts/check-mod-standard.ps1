@@ -400,15 +400,22 @@ $script:handlers["cfg-004-injectable-config"] = {
 
 # 命名 handler：Harmony 生命周期（未使用 -> N/A PASS；使用 -> 需 patch + 撤销）
 # N/A rationale: the rule governs the Harmony create/patch/undo lifecycle.
-# A client mod that never instantiates Harmony has no such lifecycle to govern,
-# so the rule's precondition is absent and it PASSes. Detection covers the
-# common ways Harmony shows up (`new Harmony(`, the fully qualified
-# `HarmonyLib.Harmony`, and a `PatchAll(` call) so that a mod that DOES use
-# Harmony cannot slip through the N/A branch. With Harmony in use -> require a
-# patch call plus a real teardown declaration: `UnpatchSelf` or an
+# A client mod that never instantiates Harmony (and never applies patches through
+# the ecosystem's ModulePatch/PatchSet form) has no such lifecycle to govern, so
+# the rule's precondition is absent and it PASSes. Usage detection covers the
+# common ways Harmony shows up: `new Harmony(`, the fully qualified
+# `HarmonyLib.Harmony`, a `PatchAll(` call, and the `ModulePatch` / `PatchSet`
+# bases (see STD-CLI-003) — so a mod that DOES use Harmony cannot slip through
+# the N/A branch. A bare `.Enable()` call is NOT a usage trigger (it would
+# misfire on unrelated APIs such as `InputAction.Enable()`); it only counts as a
+# patch apply once Harmony usage is already established. With Harmony in use ->
+# require a patch call (`.PatchAll(` OR a `ModulePatch` `.Enable()`) plus a real
+# teardown declaration: `UnpatchSelf`, `UnpatchID(...)`, or an
 # `override bool Unload(...)` method body (5.0 BasePlugin). Bare `Unload(` calls
 # or unrelated `.Dispose()` are NOT accepted: they can be a method invocation or
 # an unrelated component and would let the rule pass without any teardown.
+# All rule constants (patterns / messages) live in rules.json check.params; this
+# handler only applies the generic mechanism.
 $script:handlers["cli-007-harmony-lifecycle"] = {
     param($check, $emitIds)
     $p = $check.params
