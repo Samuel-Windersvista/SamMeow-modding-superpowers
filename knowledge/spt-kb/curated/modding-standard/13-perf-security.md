@@ -156,3 +156,42 @@ if (!IsValid(cookie)) { response.StatusCode = 400; return; }
 ```
 
 > 深入：[operations/415-source-review-report.md](../operations/415-source-review-report.md)
+
+### STD-PERF-009 — 禁止在 client spawn/tick/patch 路径用 `Thread.Sleep` 轮询阻塞
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：Unity 客户端的 `Update`/`Awake` 与 Harmony patch 都在主线程执行，`Thread.Sleep` 会直接冻结帧（`curated/operations/3114-eft016-perf-hotspots.md`、`curated/operations/415-source-review-report.md` §3 `Thread.Sleep(500)` 阻塞样例）；语料：27 个文件 / 20 个仓库含 `Thread.Sleep`（EV-CORPUS-MECH），典型在 bot 生成路径 `ABPS-Acid's-Bot-Placement-System_2097-2_source/Client/Spawning/PMCSpawning.cs:421-440`（50ms 轮询）
+- **Rule:** 不要在 client 的 spawn / tick / patch 等主线程热路径用 `Thread.Sleep` 轮询等待条件；改用时间戳比较或宿主 `Update` / 协程驱动重试，把等待拆成非阻塞的下一帧检查。
+
+```csharp
+// 反例：主线程 spawn/tick 路径用 Thread.Sleep 轮询，冻结帧
+Thread.Sleep(50);
+if (TrySpawn()) { return; }
+
+// 正例：时间戳 + Update 驱动重试，不阻塞帧
+if (Time.time < _nextRetryAt) { return; }
+_nextRetryAt = Time.time + 0.05f;
+if (TrySpawn()) { return; }
+```
+
+> 深入：[operations/3114-eft016-perf-hotspots.md](../operations/3114-eft016-perf-hotspots.md)
+
+### STD-PERF-010 — 共享可变状态用 `Interlocked` CAS / `SemaphoreSlim` / 窄锁守卫
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：配置重载/保存与共享缓存在并发 tick/spawn 下需原子或串行化，全局锁包裹 I/O 会拖垮吞吐（`curated/operations/415-source-review-report.md` §3 全局锁反例）；语料：`SemaphoreSlim` 60 个文件、`lock` 89 个仓库（EV-CORPUS-MECH），样例 `ABPS-Acid's-Bot-Placement-System_2097-2_source/Server/Globals/ModConfig.cs:84-114`（`Interlocked` CAS 门禁）、`Corter-ModSync_2950_source/ModSync/Plugin.cs:200`（`SemaphoreSlim(8)`）、`ABPS.../Client/Patches/BotOwnerCreationPatch.cs:31-43`（窄锁）
+- **Rule:** 可变共享状态（配置重载/保存、共享缓存、跨 patch 注册表）用 `Interlocked` CAS 或 `SemaphoreSlim` 守卫；Harmony 补丁内锁粒度最小化，锁内不做 I/O 或长计算。口径说明：对已完成的 `Task` 做 `await Task.WhenAll(...)` 之后的 `.Result` / `.Wait()` 读取是良性用法，本规则只禁止在**未完成**的 Task 上阻塞，命中计数不能当死锁数。
+
+```csharp
+// 正例一：Interlocked CAS 门禁，重入直接返回
+if (Interlocked.CompareExchange(ref _reloading, 1, 0) != 0) { return; }
+try { Reload(); } finally { Volatile.Write(ref _reloading, 0); }
+
+// 正例二：SemaphoreSlim 串行化配置保存
+await _saveGate.WaitAsync(ct);
+try { await SaveAsync(ct); } finally { _saveGate.Release(); }
+```
+
+> 深入：[operations/415-source-review-report.md](../operations/415-source-review-report.md)

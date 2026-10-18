@@ -123,3 +123,60 @@ public async Task OnLoadAsync(CancellationToken cancellationToken)
 
 > 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
 > 交叉引用：`STD-SRV-003`（token 传播）。
+
+### STD-LOG-006 — `async void` 必须自带 try/catch 围栏或改为 `async Task`
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：`async void` 的异常无法被调用方捕获，只能冒泡为 `AppDomain`/Unity 未处理异常（`knowledge/spt-kb/curated/modding-guide/02-server-mod-anatomy.md` 生命周期 async 约定、STD-SRV-003 的 `async Task` 签名、STD-LOG-004 的异常记录）；语料：129 个文件含 `async void`（EV-CORPUS-MECH）
+- **Rule:** `async void` 方法必须在方法体内用 try/catch 完整包裹并记录异常（见 `STD-LOG-004`），或改为 `async Task` 交由调用方 await；仅事件处理器等不得不为 `async void` 的签名保留该形态，并由其自身承担异常围栏。
+
+```csharp
+// 正例：async void 自带 try/catch 围栏，异常不会逃逸
+private async void OnSomething(object? sender, EventArgs e)
+{
+    try { await DoWorkAsync(); }
+    catch (Exception ex) { Logger.LogError($"OnSomething 失败: {ex}"); }
+}
+
+// 更优：能等待就改成 async Task，由调用方捕获
+private async Task DoWorkTrackedAsync() => await DoWorkAsync();
+```
+
+> 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
+> 交叉引用：`STD-LOG-004`（捕获必须记录并降级）。
+
+### STD-LOG-007 — verbose / 性能诊断日志由配置门控且默认关闭
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：服务端 `ISptLogger.IsLogEnabled(LogLevel.Debug)` 与客户端 BepInEx 日志级别可门控诊断输出（`Libraries/SPTarkov.Common/Models/Logging/ISptLogger.cs:7-15`、STD-LOG-002）；语料：194 个仓库 / 2,171 命中含诊断相关代码（EV-CORPUS-MECH），样例 C11-True-North 的 Diagnostics 配置段（metadata-scan 诊断样例）
+- **Rule:** verbose / 性能诊断日志（逐帧计时、逐 bot 细节、序列化 dump）必须由配置项或常量门控，并默认关闭；不要在热路径无条件拼装诊断字符串。
+
+```csharp
+if (configuration.VerboseDiagnostics.Value && logger.IsLogEnabled(LogLevel.Debug))
+{
+    logger.Debug($"bot {botId} goal={goal} t={elapsedMs}ms");
+}
+```
+
+> 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
+> 交叉引用：`STD-LOG-002`（级别语义）、`STD-PERF-009`（热路径）。
+
+### STD-LOG-008 — 对热路径/每包重复失败日志做去重，避免刷屏
+
+- **Level:** MAY
+- **Applies:** both
+- **Evidence:** 机制：热路径或每包回调内的 `Error`/`Warning` 会刷屏并淹没其它信号（STD-LOG-002 级别语义）；语料：样例 Airburst 的 `_sendFailureLogged` 一次性标记（metadata-scan 诊断样例；EV-CORPUS-MECH；诊断/日志计数为本次语料内联）
+- **Rule:** 对每帧 / 每包 / 每请求都可能重复触发的失败日志，用一次性标记或去重键抑制重复输出，避免刷屏。
+
+```csharp
+if (!_sendFailureLogged)
+{
+    _sendFailureLogged = true;
+    logger.Error("首次发送失败，后续同类错误不再重复记录", ex);
+}
+```
+
+> 深入：[modding-guide/02-server-mod-anatomy.md](../modding-guide/02-server-mod-anatomy.md)
+> 交叉引用：`STD-LOG-002`（级别语义）。
