@@ -52,3 +52,20 @@ source: curated
 - **Rule:** 面向 5.0 的 mod 不能假定 4.1 的客户端类名绑定与服务端 EFT 模型表沿用；按 `Class_Name_Mappings` 与 5.0 源码重新核对后再发布。
 
 > 深入：[operations/5xx-source-verification.md](../operations/5xx-source-verification.md)、[migration/client-mod-311-to-41.md](../migration/client-mod-311-to-41.md)
+
+### STD-VER-005 — 移植 3.11 TS 服务端 mod 时按元数据字段迁移映射
+
+- **Level:** MAY
+- **Applies:** both
+- **Evidence:** 机制：[migration/api-mapping-311-to-41.md](../migration/api-mapping-311-to-41.md)（`package.json` 的 `sptVersion` → `SptVersion` Range、`incompatibilities` → `Incompatibilities`、`loadBefore`/`loadAfter` → `TypePriority`）、[migration/server-mod-311-to-41.md](../migration/server-mod-311-to-41.md)（`IsModCompatibleWithSpt` 以 `semVer.Satisfies(SPT_VERSION, mod.SptVersion)` 做门禁）、[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)（`IModMetadata` 字段）；语料：`ABPS-Acid's-Bot-Placement-System_2097_source/Server/package.json`（3.11 TS，`sptVersion`）与 `ABPS..._2097-2_source/Server/ModMetadata.cs`（4.1 C#）同 mod 双版本对照（`EV-CORPUS-META`）。
+- **Rule:** 把 3.11 TS/JS 服务端 mod 移植到 4.1/5.0 时，按元数据字段逐项迁移：`sptVersion` → `SptVersion`（tilde 范围，见 `STD-META-004`）、`loadBefore` / `loadAfter` → `TypePriority`（`OnLoadOrder.X` 偏移，见 `STD-SRV-002`）、`incompatibilities` → `Incompatibilities`；迁移后按运行时版本门禁（`SptVersion` 区间）核对，`SptVersion` 不满足当前版本会被 `ModValidator` 拒载。
+
+```text
+package.json (3.11)          ->  IModMetadata (4.1/5.0)
+sptVersion                   ->  Range SptVersion = new("~4.1.0")
+loadBefore / loadAfter       ->  TypePriority = OnLoadOrder.X + n
+incompatibilities            ->  List<string>? Incompatibilities
+```
+
+> 深入：[migration/api-mapping-311-to-41.md](../migration/api-mapping-311-to-41.md)、[migration/server-mod-311-to-41.md](../migration/server-mod-311-to-41.md)
+> 交叉引用：`STD-META-004`（tilde 区间）、`STD-META-008`（TS 遗产识别）、`STD-SRV-002`（`TypePriority` 写法）。

@@ -141,3 +141,23 @@ public class MyModPlugin : BaseUnityPlugin { /* ... */ }
 ```
 
 > 深入：[evidence-index.md](evidence-index.md) `EV-GAP-PAIRED`
+
+### STD-META-008 — 识别 `package.json` + `sptVersion` 为 3.11 遗产，4.1/5.0 服务端 mod 用 C# `IModMetadata`
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)、[api-notes-5.0/mod-loading.md](../api-notes-5.0/mod-loading.md)（4.1/5.0 服务端 mod 以 C# `IModMetadata` 声明元数据），[api-notes-3.11/mod-loading.md](../api-notes-3.11/mod-loading.md)（3.11 服务端 mod 为 `package.json` + `sptVersion` 的 TS/JS 形态），[migration/api-mapping-311-to-41.md](../migration/api-mapping-311-to-41.md)（`package.json` 的 `sptVersion` → `IModMetadata.SptVersion`）；语料：631 个 `_source` 目录中 41 个 `package.json` **全部为 SPT 3.10/3.11 或工具，0 个 4.1+ 服务端 mod**——`ABPS-Acid's-Bot-Placement-System_2097_source/Server/package.json`（3.11 TS）与同 mod 的 `ABPS..._2097-2_source/Server/ModMetadata.cs`（4.1 C#）即 C# 重写的前后对照（`EV-CORPUS-META`、`EV-CORPUS-TYPE`）。
+- **Rule:** `package.json`（含 `sptVersion` 字段）的服务端 mod 是 SPT 3.11 及更早的 TS/JS 遗产形态；面向 4.1/5.0 的**新**服务端 mod 必须使用 C# `IModMetadata`（元数据类 + 编译 DLL），不要新增或沿用 `package.json` 作为服务端入口。搬迁旧 3.11 TS mod 时按 `STD-VER-005` 做字段迁移，而非继续维护 `package.json`。
+
+```text
+# 3.11 遗产形态（不再用于 4.1+ 新服务端 mod）
+Server/package.json          # { "sptVersion": "~3.11.0", "loadBefore": [...], ... }
+Server/src/mod.ts
+
+# 4.1/5.0 形态（C# 重写）
+Server/ModMetadata.cs        # public record ... : IModMetadata { Range SptVersion = new("~4.1.0"); }
+Server/MyMod.Server.csproj   # net10.0
+```
+
+> 深入：[migration/server-mod-311-to-41.md](../migration/server-mod-311-to-41.md)、[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)
+> 交叉引用：`STD-META-001`、`STD-VER-005`。

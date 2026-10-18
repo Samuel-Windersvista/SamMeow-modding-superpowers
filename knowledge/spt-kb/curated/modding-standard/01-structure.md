@@ -146,3 +146,22 @@ end_of_line = lf
 ```
 
 > 深入：[evidence-index.md](evidence-index.md) `EV-CORPUS-ANOMALY`
+
+### STD-STRUCT-008 — 允许一个仓库含多个可部署 mod 目录，每个部署目录恰好一个 `IModMetadata`
+
+- **Level:** SHOULD
+- **Applies:** both
+- **Evidence:** 机制：`ModLoader` 按**目录**加载、一个目录即一个 mod，目录内重复实现抛 "Duplicate mod metadata found"（`SingleOrDefault`）（`EV-GAP-PAIRED`、[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)）；语料：631 个 `_source` 目录中 11 个含多个 metadata 目录——`RCTA-Ghost-[WARZONE-1]_2835_source` 12 个、`Gunwright_3128_source` 8 个、`Junko._2220_source` 8 个，`Hj's-Achievement-Skipper_3051_source`（`AchievementSkipper4.0/` + `AchievementSkipper4.1/`）与 `Tushonka-Rare-Collectibles_3062_source`（4.1/4.0 并行）各含两个并存目录（`EV-CORPUS-META`）。
+- **Rule:** 一个仓库**可以**包含多个可部署 mod 目录（monorepo）；每个可部署目录恰好实现一个 `IModMetadata`——**加载边界是目录，不是仓库**。仓库 README 必须标注各可部署目录及其部署边界（哪个目录对应 `user/mods/<Name>/` 或 `BepInEx/plugins/<Name>/`），避免维护者与工具把同仓库的多个 `IModMetadata` 误判为「一个 mod 目录内的重复实现」。
+
+```text
+my-monorepo/
+├── ModA/                 # 部署边界 1 -> user/mods/ModA/
+│   └── ModMetadata.cs    # IModMetadata（恰好一个）
+├── ModB/                 # 部署边界 2 -> user/mods/ModB/
+│   └── ModMetadata.cs    # IModMetadata（恰好一个）
+└── README.md             # 标注每个可部署目录及其部署目标
+```
+
+> 深入：[api-notes-4.1/mod-loading.md](../api-notes-4.1/mod-loading.md)、[09-packaging.md](09-packaging.md)（`STD-PKG-004`）
+> 交叉引用：`STD-META-001`（单个 mod 目录内恰好一个 `IModMetadata`）、`STD-PKG-004`。
