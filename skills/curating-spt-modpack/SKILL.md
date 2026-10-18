@@ -44,8 +44,8 @@ Decompose direction into feature requirements. Example:
 
 Search the local Forge archive (`knowledge/spt-kb/archive/forge/`) for candidate mods:
 
-1. Read `knowledge/spt-kb/archive/forge/hot-index.json` for the 95 hot mods
-2. Read `knowledge/spt-kb/archive/forge/api/mods-catalog.json` for the full 1822 mod catalog
+1. Read `knowledge/spt-kb/archive/forge/hot-index.json` for the SPT 4.1.x compatible set
+2. Read `knowledge/spt-kb/archive/forge/api/mods-catalog.json` for the full 2001 mod catalog
 3. Filter by: SPT version compatibility (4.1), mod type (server/client), category
 4. For each candidate, route to `evaluating-spt-mods` for quality/fit assessment
 

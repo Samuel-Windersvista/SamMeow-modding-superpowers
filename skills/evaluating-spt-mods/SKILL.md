@@ -65,12 +65,12 @@ links (`include=source_code_links`). Refresh tooling: `scripts/spt-kb/`.
 
 | Archive path | What it gives you |
 |---|---|
-| `archive/forge/api/mods-catalog.json` | Full 1822-mod catalog (id/name/slug/downloads) |
-| `archive/forge/hot-index.json` | 95 hot mods: `id`, `name`, `guid`, `downloads`, `fika`, `github`, `version_count`, `best_version`, `best_spt`, `best_size` |
+| `archive/forge/api/mods-catalog.json` | Full 2001-mod catalog (id/name/slug/downloads) |
+| `archive/forge/hot-index.json` | SPT 4.1.x compatible set (~636 mods): `id`, `name`, `guid`, `downloads`, `fika`, `github`, `version_count`, `best_version`, `best_spt`, `best_size` |
 | `archive/forge/api/hot-mods/<id>.json` | Mod detail: description (author 说明), teaser, links |
 | `archive/forge/api/hot-mods/<id>.versions.json` | Full version history with per-version notes |
 | `archive/forge/mods/<id>_release/<version>.zip` | Best-version release zip (inspect for DLLs, config files, README) |
-| `archive/forge/mods/<id>_source/` | GitHub source clones (18 mods) — author README, code quality, dependencies |
+| `archive/forge/mods/<id>_source/` | Source clones by MANIFEST batch (600+ dirs) — author README, code quality, dependencies |
 
 A mod missing from the archive is un-evaluable from Forge metadata; surface it
 as `[GAP]` rather than guessing. A mod whose `best_spt` does not include 4.1

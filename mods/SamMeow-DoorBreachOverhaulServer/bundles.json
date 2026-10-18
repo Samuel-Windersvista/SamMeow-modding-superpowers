@@ -1,0 +1,12 @@
+{
+  "manifest": [
+    {
+      "key": "C4Explosive.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    }
+  ]
+}

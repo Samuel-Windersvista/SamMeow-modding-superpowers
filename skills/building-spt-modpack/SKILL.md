@@ -44,6 +44,25 @@ Generic field writers (`mo2_edit_meta`) write raw text — MO2 reads back only
 the first line of a multi-line value written that way, so reach for them for
 single-line fields only (`comments`, `url`, `category`).
 
+**meta.ini 描述字段同步（meta-sync，必需）：**
+
+`comments` / `notes` / `version` / `installationFile` 的唯一真源在 mod 仓库：
+`<repo>/mods/<ModName>/deploy/meta.json`；overlay 的 `meta.ini` 只是它的投影。overlay 刷新通常会保留
+`meta.ini`（守住 MO2 bookkeeping 与注入的密钥），但没有任何步骤会刷新描述字段，于是 `comments` / `notes`
+会冻结在首次安装时的版本。因此每次部署、以及每一次影响用户可见能力的版本变更之后，都必须把真源同步进 `meta.ini`：
+
+```text
+node tools/mo2-meta-sync/sync.mjs --fragment <repo>/mods/<ModName>/deploy/meta.json --meta <overlay>/meta.ini
+```
+
+- 触碰范围仅限 `comments` / `notes` / `version` / `installationFile` 四个键；其余 MO2 bookkeeping 字段
+  （`validated` / `nexus*` / `color` / `tracked` / `[installedFiles]` / 注入的密钥状态）必须原样存活。
+- MO2 正在运行时：优先走 MO2 MCP 的写路径；若直接改文件，注意 MO2 可能在退出时重写 `meta.ini`——
+  应在 MO2 关闭时同步，或同步后按 `F5` 刷新再核验。
+- 核验：读回 overlay `meta.ini`，确认描述字段与仓库 `deploy/meta.json` 一致，且 bookkeeping 字段未被改动。
+- 仓库尚无 `deploy/meta.json` 时，先用 `--pull` 从现有 `meta.ini` 反向生成 fragment 落库，再执行同步。
+- 预演：加 `--dry-run` 先看 diff，再实际写入。
+
 For each mod in the confirmed list:
 
 1. **From Forge archive** (most common):
@@ -82,6 +101,7 @@ Route to `testing-spt-modpack` for post-build verification.
 4. Confirm game reaches main menu
 5. Parse server log for each mod's registration confirmation
 6. Parse BepInEx console output for each plugin's load confirmation
+7. 每个新建/刷新的 overlay，读回其 `meta.ini` 核验：描述字段与仓库 `deploy/meta.json` 一致（meta-sync 已跑），且 bookkeeping 字段未被改动
 
 **If verification fails:** route to `diagnosing-spt-problems` with the failure details.
 
@@ -106,6 +126,7 @@ The build output is an **MO2 profile** that can be:
 - **Do not** write mod files directly into the SPT installation directory -- always use MO2 overlays
 - **Do not** install an overlay without a readable name + `comments`/`notes` -- a bare technical folder name is future debugging debt
 - **Do not** write multi-line meta.ini values through raw writers (`mo2_edit_meta`) -- MO2 truncates them to the first line on read-back; use `mo2_set_mod_notes` for `notes`
+- **Do not** 重新部署 overlay 时只刷文件、不同步 `meta.ini` 描述字段 —— `comments`/`notes` 会冻结在首次安装版本，成为未来的调试债；每次部署/影响用户可见能力的版本变更后必须跑 meta-sync
 - **Do not** skip conflict analysis before building -- even if the user says "just build it"
 - **Do not** hardcode MO2 or SPT paths -- use configured paths from environment setup
 - **Do not** declare a build successful without Level B verification

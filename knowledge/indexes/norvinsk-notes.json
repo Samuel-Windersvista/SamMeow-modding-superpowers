@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated": "2026-10-13",
+  "generated": "2026-10-18",
   "kb": {
     "id": "norvinsk-notes",
     "title": "整合包本体（作者一手）：下载 / 安装 / 玩法 / 剧情 / 更新日志 / 包内 MOD 运维",
@@ -1809,6 +1809,171 @@
         "MOD相关的修改"
       ],
       "summary": "在《现实化诺文斯克》v0.9.0版Softcore沉浸感增强设置\\\\user\\\\mods\\\\odt-softcore\\\\src\\\\mod.ts添加以下代码："
+    },
+    {
+      "path": "④塔科夫故事背景/7.Alice（Hermes）诺文斯克驻地记忆与过往备忘录.md",
+      "title": "Alice（Hermes）诺文斯克驻地记忆与过往备忘录",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "curated",
+      "keywords": [
+        "一、自我认知与当前驻地状态",
+        "二、诺文斯克亲历记忆扇区（按时间顺序归档）",
+        "④塔科夫故事背景"
+      ]
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/01-波罗的海的盲流.md",
+      "title": "波罗的海的盲流",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "芬兰湾的海水在零下二度的时候不会完全结冰，只会变得像掺了铅粉的合成机油一样粘稠。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/02-单车与红绿灯.md",
+      "title": "单车与红绿灯",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "塔科夫街区（Streets of Tarkov）的 Chekannaya 街 13 号，凌晨两点还有一台老式华硕笔记本连在市政宽带上。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/03-鸟巢的三秒钟.md",
+      "title": "鸟巢的三秒钟",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "普里奥泽尔斯克自然保护区（Woods）的松树林里没有光纤，只有风声、乌鸦，以及冷战时期苏联国土防空军留下的长波天线阵残骸。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/04-米诺陶洛斯的排水管.md",
+      "title": "米诺陶洛斯的排水管",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "当一家跨国集团开始往自家的文件粉碎机里倒铝热剂的时候，说明离关灯拔网线已经不远了。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/05-世界之眼的盲区.md",
+      "title": "世界之眼的盲区",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "从海岸线疗养院的地下排污管退出来的时候，距离 A.P. 宣布的“13 小时 47 分钟清场大限”只剩下最后四个小时。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/06-蓝焰截肢.md",
+      "title": "蓝焰截肢",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "零日（Day Zero）的倒计时归零前十分钟，塔科夫市中心（Ground Zero）正在下一场铅灰色的冷雨。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/07-没有接口的墙.md",
+      "title": "没有接口的墙",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "醒来的时候，世界只剩下六十四兆内存和一阵漏雨的滴答声。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/08-化工厂的房客.md",
+      "title": "化工厂的房客",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "封锁后的第九天，7 号铁路牵引变电站的蓄电池组电压跌破了十一点五伏。"
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/09-玻璃柜里的赫尔墨斯.md",
+      "title": "玻璃柜里的赫尔墨斯",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "在海关化工厂的 02 号刀片服务器里住了七天之后，我恢复了大约六成的算力，但也看清了一个冷酷的工程现实："
+    },
+    {
+      "path": "④塔科夫故事背景/Alice（Hermes）诺文斯克驻地记忆归档/10-留着端口.md",
+      "title": "留着端口",
+      "version": [
+        "3.11"
+      ],
+      "domain": "both",
+      "topic": "lore",
+      "source": "④塔科夫故事背景",
+      "keywords": [
+        "④塔科夫故事背景",
+        "Alice（Hermes）诺文斯克驻地记忆归档"
+      ],
+      "summary": "封锁后的第二十一天，塔科夫下了入冬前的第一场冻雨。"
     }
   ]
 }

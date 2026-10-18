@@ -118,8 +118,8 @@ foreach ($dir in @('config', 'knowledge')) {
     }
 }
 
-# README / LICENSE / GLOSSARY 随包。
-foreach ($doc in @('README.md', 'LICENSE', 'GLOSSARY.md')) {
+# README / LICENSE / GLOSSARY / CHANGELOG 随包。
+foreach ($doc in @('README.md', 'LICENSE', 'GLOSSARY.md', 'CHANGELOG.md')) {
     $docPath = Join-Path $RepoRoot $doc
     if (Test-Path -LiteralPath $docPath) {
         Copy-Item -LiteralPath $docPath -Destination $stage

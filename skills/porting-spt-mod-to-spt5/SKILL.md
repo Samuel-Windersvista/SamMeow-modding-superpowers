@@ -82,11 +82,13 @@ description: Use when porting an existing SPT 4.x mod (source available) to SPT 
 1. 产物核验：DLL 存在 + 内嵌资源名与代码常量匹配（二进制 grep 资源前缀）。
 2. 覆盖层命名**沿用目标整合包既有结构**（如 Norvinsk 实例为 `[N]<系列/分类>-<中文功能名>-<英文mod名>`，例 `[13]MOD工具-综合调试工具包-SamMeow.DebugToolkit`；无既有结构时回退 `<category>-<mod-name>-<version>`）；布局 = 游戏根相对（`BepInEx\plugins\<DLL>`）。
 3. meta.ini：`comments`（一句话作用）+ `notes`（≤10 行功能说明，**用 `mo2_set_mod_notes` 写入**——含 QSettings 转义；`mo2_edit_meta` 只用于单行字段）+ `url`（完整来源链接）。完整规则见 `building-spt-modpack` 的 meta.ini content rules。
+   重新部署（覆盖已有 overlay、文件级刷新保留 `meta.ini`）之后，必须跑 meta-sync 把 `comments`/`notes`/`version`/`installationFile` 从仓库 `deploy/meta.json` 同步进 `meta.ini`：`node tools/mo2-meta-sync/sync.mjs --fragment <repo>/mods/<ModName>/deploy/meta.json --meta <overlay>/meta.ini`（可先加 `--dry-run` 看 diff）。只写这四个键，MO2 bookkeeping 字段（`validated`/`nexus*`/`color`/`tracked`/`[installedFiles]`/注入密钥）必须存活；MO2 运行时优先走 MCP 写路径，否则在 MO2 关闭时同步或同步后 F5 刷新。读回 `meta.ini` 核验描述字段与 fragment 一致。完整规则见 `building-spt-modpack` 的 meta-sync 段。
 4. modlist：`+<overlay>` 一行。**MO2 GUI 运行时其目录监视器会自动把新 mod 以 `-`（禁用）写入 modlist** —— 刷新（F5）后确认条目为 `+` 且唯一；重启 MO2 最稳。读回验证：`mo2_modlist`。
 5. MCP 限制（离线场景）：`mo2_install` 需 sidecar、`mo2_create_mod` 需 live broker、`mo2_toggle_mod` 只操作已在 modlist 的条目 → 降级路径 = 文件系统铺放 + `mo2_edit_meta` + 手工 modlist 行。
 6. **游戏必须关闭**（运行中的游戏锁定覆盖层 DLL）。
+7. **Changelog 与版本一致性**（`STD-PKG-009`）：移植即产出新版本 —— 仓库内尚无 `<mod>/CHANGELOG.md` 则新建，否则追加本次移植版本节（`## <version> - <YYYY-MM-DD>`，最新在上；分组 新增 / 变更 / 修复 / 移除 / 已知限制）；最新版本号须与版本真源（`Directory.Build.props <Version>`，无则 csproj `<Version>`）及 `deploy/meta.json` 的 `version` 三处一致。这是 mod 自身的 changelog，与整合包级 release-changelog 分属两个层级。
 
-**完成判据**：`mo2_modlist` 读回 = 目标 mod 唯一且 `enabled=true`。
+**完成判据**：`mo2_modlist` 读回 = 目标 mod 唯一且 `enabled=true`；`<mod>/CHANGELOG.md` 含本次移植版本节且版本号三处一致（`STD-PKG-009`）。
 
 ### Phase 6 — 运行时验证
 

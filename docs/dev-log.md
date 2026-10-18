@@ -448,3 +448,25 @@
 - **部署**：最小保 key 集（DIFF 5 + NEW 15）覆盖 overlay，**20/20 哈希校验通过**；`config.jsonc` 未动（key 在，`maxTokens=4096`）；`Server.dll` 109,056 B；zip 350,801 B；`downloads\llmtc-m1.zip` 已同步；备份在 `.artifacts/overlay-backup-llmtc-v3-20261016/`。
 - **待办**：实机验收（Cold 档问任务细节应拒答且不编造；未接任务提问应命中 `05-quests.md`；日志出现 `[LLMTC][quests]`）。
 - 未提交（按 Overseer 规则）。
+
+## 2026-10-16（续 7）— 流程缺陷修复：MO2 `meta.ini` 描述字段冻结（P1–P4）
+
+- **事故**：`[9]全局功能大修-商人LLM对话…` overlay 的 `meta.ini` `comments/notes` 冻结在 M1（"M1 测试构建 / 仅解锁 Therapist 回显"），而 mod 已经历 6+ 次能力跃迁（19 位商人 / LLM 回复 / 动态态度 / 任务知识）——元数据与实际能力完全脱节。
+- **根因（四层）**：① 部署流程 `robocopy（保 meta.ini）` 保护 MO2 记账字段（正确），但**没有配对的"刷新描述字段"步骤**；② `meta.ini` 只存在于游戏实例、**不在仓库** → 脱离版本控制 / 打包 / 审查三条防线；③ `STD-PKG-002` 旧文把 `notes` 定义为「安装记录（来源/版本/安装日期）」——按字面 **M1 文案当时是合规的**，规则未要求随状态更新；④ mo2-mcp 的 create/install 只在创建时写一次，`set_mod_notes` 需人工调用，**无任何机制绑定代码状态与元数据**。
+- **修复（P1–P4）**：
+  - **P1/P2 工具与真源**：新增 `tools/mo2-meta-sync/sync.mjs`（push / pull / self-test；QSettings 转义；只改 `comments`/`notes`/`version`/`installationFile`，其余字节逐字不动；保留 CRLF/BOM；原子写）+ `README.md`；本 mod 真源落地为 `mods/SamMeow-LLMTraderChat/deploy/meta.json`（经 `--pull` 自 overlay 引导）。
+  - **P3 流程**：meta-sync 写入 `building-spt-modpack`（Step 2 必需步骤 + Step 4 验收第 7 项 + Anti-patterns 一条）、`porting-spt-mod-to-spt5` Phase 5、`writing-spt-mod` Step 5（**事故实际发生地**）。
+  - **P4 规则**：`09-packaging.md` 的 **STD-PKG-002 就地重写**为现行语义（`comments`=一行摘要；`notes`=当前能力/前置/隐私/回滚；描述字段须反映当前能力；N-A 条款限定）；新增 **STD-PKG-008**（真源在仓库 + 部署同步 + 触发条件 + 反模式「保 meta.ini 不得作为唯一部署手段」）；证据升级——`STD-PKG-002` 的 `EV-NOCORPUS` 摘除，新增语料证据 `EV-CORPUS-MO2META`；`rules.json` 84→85、`evidence-index.md`、`README.md` 计数同步。
+- **验证（orchestrator 亲测，非采信自述）**：`sync.mjs --self-test` → `SELF-TEST PASS`；`--pull` 自真实 overlay 引导 4 键 → `--dry-run` 回推报 `no changes (4 key(s) already in sync)`（幂等，overlay 哈希未变）；`EV-CORPUS-MO2META` 登记于 `evidence-index.md:308` 且被 `09-packaging.md:48/156/173` 引用；`rules.json` 中 `STD-PKG-002` 已不含 `EV-NOCORPUS`；3 个技能文件引用 `mo2-meta-sync`。
+- 未提交（按 Overseer 规则）。
+
+## 2026-10-17（续 8）— 新增规范 STD-PKG-009：每个 mod 维护仓库内 `CHANGELOG.md`
+
+- **需求（Overseer）**：每个 mod 的**首个可用版本后**新建 changelog，记录版本与版本变化，供后续每次修改与版本迭代留痕。
+- **规范**：`09-packaging.md` 新增 **STD-PKG-009**（MUST / both）——产物 `<mod>/CHANGELOG.md`（随代码版本控制）；首个可用版本产出时创建并写入该版本；此后每次版本迭代或用户可见变更**必须**追加；格式 `## <version> - <YYYY-MM-DD>`（最新在上；分组 新增/变更/修复/移除/已知限制）；**版本三处一致**（`Directory.Build.props <Version>` ＝ `deploy/meta.json version` ＝ CHANGELOG 最新节）；与整合包级 `<project>/docs/release-changelog.md` 是**两个层级、互不替代**；N-A 口径同 STD-PKG-002。
+- **证据决策**：语料**存在**（Forge 归档 61 个 `_source` 目录含 `CHANGELOG.md`，全盘 109 份，样本 ≥10）→ 登记新语料锚点 `EV-CORPUS-CHANGELOG`，**未**走 `EV-NOCORPUS`；机制侧如实标注为「版本真源一致性锚点」（`STD-META-005` / `STD-PKG-008`），不冒充加载机制。
+- **技能接线**：`writing-spt-mod`（主落点：新增「版本与 Changelog」段 + Level B 验收第 5 条 + paired 单仓库单份）、`writing-spt-modpack-changelog`（新增 `Scope: modpack level, not mod level` 层次对照 + When-NOT-to-Use 一行）、`porting-spt-mod-to-spt5`（Phase 5 第 7 条 + 完成判据）；`building-spt-modpack` 经判定**无需改动**（该技能面向第三方 Forge 包，CHANGELOG 属仓库产物）。
+- **本 mod 落地**：新建 `mods/SamMeow-LLMTraderChat/CHANGELOG.md`（`0.1.0` 单节 + M1→v3 里程碑分组 + 4 条已知限制）；`pack.ps1` 随包清单加入 `CHANGELOG.md`；README 结构图更新。
+- **验证（orchestrator 亲测）**：`scripts/validate-mod-standard.ps1` **PASS**（13 章 / **86 条**；MUST=29 SHOULD=52 MAY=5；**MUST 双源标记 29/29**；registry ↔ prose 双向一致）；`STD-PKG-009` 登记于 `rules.json` + `09-packaging.md`，`EV-CORPUS-CHANGELOG` 登记于 `evidence-index.md`；**版本三处一致 = True**（0.1.0 / 0.1.0 / 0.1.0）。
+- **部署**：增量 **6/6 哈希校验通过**（新增 `CHANGELOG.md`、更新 `README.md`、重建 DLL），zip 353,051 B 并同步 `downloads\llmtc-m1.zip`；`config.jsonc` 的 key 完好；覆盖前备份在 `.artifacts/overlay-backup-llmtc-changelog-20261017/`。
+- 未提交（按 Overseer 规则）。

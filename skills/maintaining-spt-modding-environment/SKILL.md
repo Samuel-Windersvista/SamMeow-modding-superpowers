@@ -122,11 +122,24 @@ read knowledge/spt-kb/index.json
 ## Cache / archive hygiene (Forge snapshot)
 
 The Forge snapshot under `knowledge/spt-kb/archive/forge/` is a **point-in-time
-archive**. The old BGS-era scripts (`snapshot.ps1`, `fetch-versions.ps1`,
-`fetch-releases.ps1`, `build-index.ps1`) targeted the former Forge host and are
-obsolete — do not re-run them. The current Forge host is `sp-mod.com` (API v0
-live); refresh deliberately via `scripts/spt-kb/` (fetch -> clone -> finalize
-MANIFEST).
+archive**. The current Forge host is `sp-mod.com` (API v0 live); refresh
+deliberately via `scripts/spt-kb/` (fetch -> clone -> finalize MANIFEST).
+
+Derived Forge indexes:
+
+- `node scripts/spt-kb/build-hot-index.mjs` — rebuild `hot-index.json` from
+  `api/compat-4.1x.json` (all SPT 4.1.x compatible mods; `best_version` /
+  `best_spt`). Since 2026-10-18 this is the full 4.1.x set, not the old 94-mod
+  wiki list.
+- `node scripts/spt-kb/build-mods-index.mjs` — rebuild `MODS-INDEX.md` from
+  `mods/*_source/`.
+
+Daily update checker: `archive/forge/tools/check-forge-updates.ps1` targets
+`sp-mod.com/api/v0`, uses `SP_MOD_PROXY` (default `http://127.0.0.1:7890`),
+reads IDs from `hot-index.json`, and exits non-zero when the preflight fails.
+The old BGS-era scripts (`snapshot.ps1`, `fetch-versions.ps1`,
+`fetch-releases.ps1`, `build-index.ps1`) targeted the former host and remain
+obsolete — do not re-run them.
 
 Hygiene policy:
 

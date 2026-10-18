@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- STD-BUILD-001：SPT 4.1 服务端目标框架必须是 net10.0，与服务器程序集保持一致 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamMeow.DoorBreachOverhaulServer</RootNamespace>
+    <AssemblyName>SamMeow.DoorBreachOverhaulServer</AssemblyName>
+    <!-- STD-META-005：三段式 semver，与 ModMetadata 的 Version 同源 -->
+    <Version>0.1.0</Version>
+
+    <!--
+      STD-BUILD-006：SPT 4.1 服务器安装根目录（含 SPT.Server.exe 与 SPTarkov.*.dll 的目录）。
+      默认值由 mods/Directory.Build.props 的 SptRoot 派生；可在命令行覆盖：
+        dotnet build -c Release -p:SPTInstallPath="D:\SPT\Server"
+      禁止写成无法覆盖的硬编码。
+    -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x\SPT_Runtime</SPTInstallPath>
+
+    <!-- STD-BUILD-005：输出路径不带框架名，方便找 DLL；SPT DLL 不拷进输出目录（服务器运行时自带） -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      STD-BUILD-004：服务端必须引用 SPTarkov.Server.Core（及 SPTarkov.DI、SPTarkov.Common），
+      且引用的 SPTarkov.Server.* 版本不得高于目标运行时版本。此处用 HintPath 指向目标安装的运行时 DLL，
+      版本天然与运行时匹配。
+    -->
+    <!-- 4.1 必需：核心库（IModMetadata / TemplateTable / HideoutTable / CustomItemService / OnLoadOrder / IOnLoad） -->
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：DI 注解（[Injectable]） -->
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SPTInstallPath)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：公共库（ISptLogger） -->
+    <Reference Include="SPTarkov.Common">
+      <HintPath>$(SPTInstallPath)\SPTarkov.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 4.1 必需：SemanticVersioning（IModMetadata 的 Version/Range 类型） -->
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SPTInstallPath)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- 如需 Mod Web Pages（IModBlazorMetadata），再引用 SPTarkov.Server.Web.dll 并把 SDK 换成 Microsoft.NET.Sdk.Web -->
+  </ItemGroup>
+
+  <!--
+    STD-CFG-003 备注：SPT.Server 运行在 Microsoft.AspNetCore.App 共享框架上
+    （见 SPT.Server.runtimeconfig.json），这里用 FrameworkReference 引用同一框架即可；
+    共享框架程序集不会被复制进输出目录。
+  -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <!--
+    运行时资源随构建产物输出（DLL 旁边的 bundles.json / bundles/ / db/）：
+      bundles.json + bundles/C4Explosive.bundle —— 4.1 bundle 契约（BundleLoader 自动扫描，见调研）
+      db/customitems + db/hideout —— 物品模板与工作台配方数据（由 mod 代码显式加载，STD-BND-006）
+  -->
+  <ItemGroup>
+    <None Update="bundles.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="bundles\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="db\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,6 @@
 # scripts/spt-kb —— sp-mod.com 源码归档工具 + KB 索引管线
 
-本目录有三组工具：
+本目录有五组工具：
 
 1. **Forge 源码归档**（`fetch → clone → finalize`）：把 [sp-mod.com](https://sp-mod.com)
    上按 SPT 版本 + 更新时间窗口筛选出的 mod 源码，批量浅克隆进知识库归档目录
@@ -9,6 +9,11 @@
    `knowledge/spt-kb/index.json`（schema_version 2 契约）。
 3. **Forge 元数据快照**（`fetch-metadata`）：刷新全量 mod 目录
    （`api/mods-catalog.json`）与 SPT 4.1.x 兼容集（`api/compat-4.1x.json`）。
+4. **4.1.x 兼容索引**（`build-hot-index`）：从 `api/compat-4.1x.json` 生成
+   `hot-index.json`（`best_version` / `best_spt`，供 `spt_forge_search` 的
+   sptVersion 过滤）。
+5. **归档 ID 对照表**（`build-mods-index`）：扫描 `mods/*_source/` 生成
+   `MODS-INDEX.md`。
 
 归档脚本源自 2026-09 一次手工采集（271 mod / 297 条源码链接）跑通的临时脚本，
 现固化为可重复使用的仓库工具。算法照搬，仅做参数化与合并。
@@ -95,6 +100,29 @@ node scripts/spt-kb/fetch-metadata.mjs
 - 退出码：0 = 成功且计数一致；1 = 已写文件但条数 ≠ `meta.total`；2 = 抓取失败（不写文件）。
 - 教训（已内建）：节流检测必须先 `JSON.parse`，不要用 `/slow down/i` 扫全文——mod 内容里就可能出现该词（实例："Low Budget Bullet Time" 的 teaser 含 "slow down time"）。
 - 注意：清单接口的 `include=versions` **只返回最近若干版本**（官方文档称最近 6 个；2026-10-11 实测最多 10 个），非完整历史；补丁级兼容判定请用 `filter[spt_version]=<补丁>` 的服务端筛选（先例：`.scratch/forge-4.1x-survey/scripts/fetch-patch-sets.mjs`）。
+
+## build-hot-index —— 重建 4.1.x 兼容索引
+
+```powershell
+node scripts/spt-kb/build-hot-index.mjs
+```
+
+- 输入 `<archive>/api/compat-4.1x.json`（4.1.x 兼容集，含 `versions` 与 `source_code_links`）。
+- 为每个 mod 选出最新一条 4.1.x 版本（按 `published_at`），写 `best_version` / `best_spt` / `best_link` / `best_size`。
+- 输出 `<archive>/hot-index.json`（UTF-8 带 BOM + 4 空格缩进）。
+- 语义：2026-10-18 起 `hot-index.json` 表示「全部 4.1.x 兼容 mod」，不再是旧的 94 条 wiki 推荐集。
+- 与 `tools/spt-mcp` 的契约：保留 `id` / `name` / `best_spt` 等字段；`spt_forge_search` 的 sptVersion 过滤覆盖全表。
+
+## build-mods-index —— 重建归档 ID 对照表
+
+```powershell
+node scripts/spt-kb/build-mods-index.mjs
+```
+
+- 扫描 `<archive>/mods/*_source/` 目录名（`<Name>_<id>[_n]_source`），按 id 归并。
+- 名称优先取 `api/mods-catalog.json` 的官方名称，缺失时回退目录名。
+- 输出 `<archive>/MODS-INDEX.md`（ID / Mod 名称 / 源码目录数）。
+- 只读本地目录，不访问网络。
 
 ## 三步工作流（Forge 源码归档）
 

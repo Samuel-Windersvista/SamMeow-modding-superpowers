@@ -90,8 +90,8 @@ xedit MCP 需要一个运行中的 xEdit 进程（60-240s 启动，named pipe �
 | `spt_forge_get_mod` | 获取 mod 详情 | `{ modId }` | 完整元数据 + 版本历史 + 文件列表 |
 
 **实现要点：**
-- 读 `knowledge/spt-kb/archive/forge/api/mods-catalog.json`（1822 mod 目录）
-- 读 `knowledge/spt-kb/archive/forge/hot-index.json`（95 热门 mod 索引）
+- 读 `knowledge/spt-kb/archive/forge/api/mods-catalog.json`（2001 mod 目录）
+- 读 `knowledge/spt-kb/archive/forge/hot-index.json`（4.1.x 兼容 mod 索引）
 - 读 `knowledge/spt-kb/archive/forge/api/hot-mods/<id>.json`（单个 mod 详情）
 - 搜索 = 对 catalog 做内存过滤（标题、描述、分类匹配）
 

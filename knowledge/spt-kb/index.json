@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14",
+ "generated": "2026-10-18",
  "schema_version": 2,
  "entries": [
   {
@@ -2931,6 +2931,46 @@
    "domain": "both",
    "topic": "recipe",
    "source": "curated"
+  },
+  {
+   "path": "curated/lore/14-alice-hermes-lore.md",
+   "title": "Alice（Hermes）诺文斯克驻地记忆与过往备忘录",
+   "version": [
+    "通用"
+   ],
+   "domain": "both",
+   "topic": "lore",
+   "source": "curated"
+  },
+  {
+   "path": "curated/operations/416-softcore-v0.2.0-lessons.md",
+   "title": "SPT 4.1.6 服务端 mod 经验：配置外置化 · PostLoad+1 阶段实证 · 数据全量对齐方法论 — Inescapable Tarkov's Softcore v0.2.0",
+   "version": [
+    "4.1"
+   ],
+   "domain": "both",
+   "topic": "operations",
+   "source": "curated",
+   "keywords": [
+    "外置数据表",
+    "外部优先",
+    "缺失重建",
+    "损坏回落",
+    "PostLoad+1",
+    "阶段窗口",
+    "内容注入",
+    "A/B/C 对齐",
+    "handbook 节点",
+    "Grids[0]",
+    "多网格背包",
+    "狗牌",
+    "克隆源",
+    "JSONC",
+    "条目级容错",
+    "告警队列",
+    "冷启动竞态"
+   ],
+   "summary": "Inescapable Tarkov's Softcore v0.2.0（4.1.6 线）三段经验：其一配置外置化——12 张数据表随包分发 config/ 子树，外部优先/缺失重建/损坏回落不覆写/JSONC/条目级容错，静态加载器以 assembly.Location 解析目录、告警经静态队列由编排器注入 logger 输出；其二阶段窗口实证——内容 mod 注入物品须 PostLoad+n 才可见，迁窗后覆盖面显著扩大（backpacks 34→56 且告警清零）；其三数据全量对齐方法论——A 删/B 后移/C 补档，引用核对三源（production/quests/handbook），多网格背包 Grids[0] 上限、狗牌禁堆叠、父类真值与克隆源优先级；附多 lane 协作与独立复验经验。"
   }
  ],
  "tarkov_dev": {
@@ -2946,5 +2986,11 @@
  "external_repos": {
   "path": "external/spt-archive/",
   "manifest": "external/spt-archive/MANIFEST.md"
- }
+ },
+ "kb": {
+  "id": "spt-kb",
+  "title": "SPT mod 开发 / API / 版本 / 冲突（modder 向）",
+  "root": "E:\\云文件\\GitHub\\SamMeow-modding-superpowers\\knowledge\\spt-kb"
+ },
+ "versionNote": "version 标签来自 versionDefaults + versionPatterns 对文件名/标题的词法匹配（如 'v4.2.0' 指该文档叙述的对象版本），是检索线索而非权威版本声明；要改标签请改注册表规则后重跑，或直接手改本条目（条目一经写入不再被 builder 改写）。"
 }

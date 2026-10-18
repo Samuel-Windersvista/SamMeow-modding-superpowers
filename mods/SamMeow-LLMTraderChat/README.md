@@ -30,7 +30,7 @@ SamMeow-LLMTraderChat/
 ├── knowledge/                         # 商人知识文档（knowledge/traders/<traderId>/，随包分发）
 ├── scripts/pack.ps1                   # 构建 + 打包（单 zip 双端）
 ├── release/                           # 发行归档（zip 被 .gitignore 忽略）
-├── README.md / GLOSSARY.md / LICENSE / .gitignore
+├── README.md / GLOSSARY.md / LICENSE / CHANGELOG.md / .gitignore
 ```
 
 ## 构建（三步）

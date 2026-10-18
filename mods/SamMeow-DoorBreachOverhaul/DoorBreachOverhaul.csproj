@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      Door Breach Overhaul（破门大修）— SPT 4.1.6（EFT 0.16.9.40743）客户端 mod。
+      4.1 官方客户端模块以 netstandard2.1 为目标，BepInEx 5 / Unity Mono；
+      勿改成 net6+ / net10.0（Mono 无法加载）。
+      以 Backdoor Bandit NG（BB-NG）master 为合并基座，命名空间保持上游 DoorBreach 便于对账。
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DoorBreach</RootNamespace>
+    <AssemblyName>DoorBreachOverhaul</AssemblyName>
+    <Version>0.1.0</Version>
+
+    <!-- SPT 4.1.6 安装根目录（含 EscapeFromTarkov.exe）。
+         SptRoot 由 mods/Directory.Build.props 集中提供；可覆盖：
+           dotnet build -p:SptRoot="D:\SPT"
+           dotnet build -p:SPTInstallPath="D:\SPT\SPT_41x" -->
+    <SPTInstallPath Condition="'$(SPTInstallPath)' == ''">$(SptRoot)\SPT_41x</SPTInstallPath>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 5 核心（插件由它加载） -->
+    <Reference Include="BepInEx">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 2.x（补丁目标重载显式绑定用 AccessTools） -->
+    <Reference Include="0Harmony">
+      <HintPath>$(SPTInstallPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- SPT 客户端公共程序集（ModulePatch / PatchPrefix / PatchPostfix 等） -->
+    <Reference Include="spt-reflection">
+      <HintPath>$(SPTInstallPath)\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- EFT 0.16.9.40743 主程序集（4.1 已反混淆，真名真命名空间），补丁目标类在这里 -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- UnityEngine 基础与模块（组件生命周期 / 物理 / 音频 / 网络请求） -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- DO 破坏系统调试 GUI（DestructionController.OnGUI 的 GUI/GUIStyle/Event）需要 IMGUI 模块 -->
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- DoorTakeover 访问 door.Obstacle（NavMeshObstacle）触发编译期对 AIModule 的依赖 -->
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Comfort.Common（Singleton<T> 全局单例访问） -->
+    <Reference Include="Comfort">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- 注：JetBrains.Annotations（[CanBeNull]）无需单独引用——
+         UnityEngine.CoreModule 已内建一份 JetBrains.Annotations 命名空间副本；
+         若再引用 SPT_Runtime\JetBrains.Annotations.dll，同命名空间同类型会触发 CS0433 二义。 -->
+
+    <!-- DissonanceVoip：Player.InteractablePlayer（IPlayer 实现 IDissonancePlayer）触发编译期需要。 -->
+    <Reference Include="DissonanceVoip">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\DissonanceVoip.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 音频资源：随构建复制到输出根 audio\ 下，运行时以插件目录为根解析 -->
+  <ItemGroup>
+    <None Include="assets\audio\*.mp3" CopyToOutputDirectory="PreserveNewest" Link="audio\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <!-- 构建后把 DLL 与音频复制到 release/，方便直接拿取部署到 BepInEx/plugins/。
+       验证/打包脚本以 -p:SkipCopyToRelease=true 关闭本步骤。 -->
+  <Target Name="CopyToRelease" AfterTargets="Build" Condition="'$(SkipCopyToRelease)' != 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)release" />
+    <Copy SourceFiles="$(TargetDir)audio\Beep.mp3;$(TargetDir)audio\FinalBeepTone.mp3"
+          DestinationFolder="$(ProjectDir)release\audio"
+          SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>

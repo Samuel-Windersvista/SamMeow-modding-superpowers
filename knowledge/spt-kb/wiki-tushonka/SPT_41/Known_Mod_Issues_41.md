@@ -2,7 +2,7 @@
 title: Known Mod Issues for SPT 4.1
 description: Known EFT issues and possible fixes for SPT 4.1.
 published: true
-date: 2026-09-09T03:23:38.242Z
+date: 2026-10-13T02:26:28.400Z
 tags: 
 editor: markdown
 dateCreated: 2026-08-08T15:13:45.705Z
@@ -44,8 +44,6 @@ It can have a number of causes:
 ## Can only list FIR items on the Flea with [The Blacklist](https://sp-mod.com/mod/755/the-blacklist-flea-market-enhancements) installed
 Set `"enableFIRFleaSelling"` to `false` in its config.
 
-## `Could not load file or assembly 'X'. An Application Control policy has blocked the file.`
-In `Windows Security` > `App & browser control` > `Smart App Control settings` select `Off`.
 
 ## `Unable to add item: [id], items must be added before profiles load. Lower the mods TypePriority where items are added to OnLoadOrder.Preload`
 Issue present with [BensBurnedWaffles' custom ammo mods](https://sp-mod.com/user/120002/bensburnedwaffles#mods). [Uninstall](/SPT_4x/Uninstalling_Mods) them.
@@ -56,7 +54,18 @@ Update the mod.
 ## `Requested value '[bot type]' was not found.` error on loading a raid
 [Uninstall](/SPT_4x/Uninstalling_Mods) any outdated mods. Make sure to uninstall them from the `BepInEx\patchers` folder as well.
 
+## Bots are frozen in place while using [ORBIT](https://sp-mod.com/mod/2706/orbit-20)
+ORBIT is incompatible with any mod that limits or culls bots. [AI Limit](https://sp-mod.com/mod/1945/ai-limit) is entirely incompatible, while [ABPS](https://sp-mod.com/mod/2097/abps-acids-bot-placement-system)'s bot despawning needs to be turned off.
+
+## `The given key '[id]' was not present in the dictionary.` server error when using [Item Info](https://sp-mod.com/mod/2430/odts-item-info-spt-40)
+Add the `id` that's in the error message to `\SPT_Runtime\user\mods\ODT-ItemInfo-4.0\config\bsgblacklist.json`. Each entry should be in quotations `""`, and all entries except the last one should end with a comma `,`.
+
+## Looting a bot only displays a bugged tactical rig
+Update [WTT - Content Backport](<https://sp-mod.com/mod/2512/wtt-content-backport>).
 
 
 
+
+# See also
+[Frequently Asked Questions for SPT 4.1](/SPT_41/FAQs_41)
 

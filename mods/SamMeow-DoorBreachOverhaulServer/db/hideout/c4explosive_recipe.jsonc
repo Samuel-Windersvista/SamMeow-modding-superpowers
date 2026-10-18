@@ -1,0 +1,54 @@
+[
+    {
+        "_id": "665d4ce7e381d16c8676292b", // 配方唯一 MongoID（与上游发行一致）
+        "areaType": 10, // Workbench（HideoutAreas.Workbench = 10）
+        "requirements": [
+            {
+                "areaType": 10, // Workbench
+                "requiredLevel": 2,
+                "type": "Area"
+            },
+            {
+                "templateId": "60391b0fb847c71012789415", // TNT
+                "count": 2,
+                "isFunctional": false,
+                "isEncoded": false,
+                "type": "Item"
+            },
+            {
+                "templateId": "5c06779c86f77426e00dd782", // Bundle of wires
+                "count": 1,
+                "isFunctional": false,
+                "isEncoded": false,
+                "type": "Item"
+            },
+            {
+                "templateId": "5e2af51086f7746d3f3c3402", // Grenade fuze
+                "count": 1,
+                "isFunctional": false,
+                "isEncoded": false,
+                "type": "Item"
+            },
+            {
+                "templateId": "5d0376a486f7747d8050965c", // Military circuit board
+                "count": 1,
+                "isFunctional": false,
+                "isEncoded": false,
+                "type": "Item"
+            },
+            {
+                "templateId": "5af04b6486f774195a3ebb49", // Pliers elite tool
+                "type": "Tool"
+            }
+        ],
+        "productionTime": 3600, // 制作耗时（秒）
+        "needFuelForAllProductionTime": false,
+        "locked": false,
+        "endProduct": "6636606320e842b50084e51a", // C4 模板 ID，不得更改（客户端契约）
+        "continuous": false,
+        "count": 1, // 单次产出数量
+        "productionLimitCount": 0,
+        "isEncoded": false,
+        "isCodeProduction": false
+    }
+]

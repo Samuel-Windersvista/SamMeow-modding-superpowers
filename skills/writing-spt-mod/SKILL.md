@@ -98,6 +98,11 @@ Release build is the first verification step (`STD-VERIFY-001`). Compilation ref
 2. Launch SPT.Server.exe
 3. Check server console/log for mod registration confirmation -- assert the load log (`STD-VERIFY-003`)
 4. Check for DI errors, config type mismatches, or startup crashes
+5. 版本三处一致：版本真源（`Directory.Build.props <Version>`；单端工程则为 csproj `<Version>`） = `deploy/meta.json` 的 `version` = `<mod>/CHANGELOG.md` 最新节版本号（`STD-PKG-009`）。
+
+部署为 MO2 overlay（覆盖已有 overlay、文件级刷新保留 `meta.ini`）时，每次部署、以及每一次影响用户可见能力的版本变更之后，必须跑 meta-sync 把 `comments`/`notes`/`version`/`installationFile` 从仓库 `deploy/meta.json` 同步进 overlay 的 `meta.ini`：`node tools/mo2-meta-sync/sync.mjs --fragment <repo>/mods/<ModName>/deploy/meta.json --meta <overlay>/meta.ini`（可先加 `--dry-run` 看 diff）。只写这四个键，MO2 bookkeeping 字段（`validated`/`nexus*`/`color`/`tracked`/`[installedFiles]`/注入密钥）必须存活；MO2 运行时优先走 MCP 写路径，否则在 MO2 关闭时同步或同步后 F5 刷新。读回 `meta.ini` 核验描述字段与 fragment 一致。完整规则见 `building-spt-modpack` 的 meta-sync 段。
+
+**版本与 Changelog（每个 mod 必备，`STD-PKG-009`）：** 首个可用版本（首次可部署/可发布产物）产出时，即创建仓库内 `<mod>/CHANGELOG.md`（随代码版本控制），写入该版本；此后每次版本迭代或任何影响用户可见能力的变更**必须**追加一节。格式：`## <version> - <YYYY-MM-DD>`，最新在上；节内分组（新增 / 变更 / 修复 / 移除 / 已知限制）。最新版本号须与版本真源（`Directory.Build.props <Version>`；单端工程则为 csproj `<Version>`）及 `deploy/meta.json` 的 `version` 三处一致。这是 mod 自身的 changelog，与整合包级 release-changelog（`<project>/docs/release-changelog.md`，见 `writing-spt-modpack-changelog`）是**两个层级**，互不替代。
 
 **Optional functional verification (Level C):** (`STD-VERIFY-009`) per mod type, where feasible:
 - Added a trader? Query the trader list endpoint.
@@ -145,7 +150,7 @@ Follow BepInEx + Harmony patterns, anchored to the standard:
 
 ### Step 5: Build and verify
 
-Same as server mod, but deploy to `<SPT>/BepInEx/plugins/`.
+Same as server mod, but deploy to `<SPT>/BepInEx/plugins/`. 首个可用版本产出时创建 `<mod>/CHANGELOG.md`、此后每次版本迭代或影响用户可见能力的变更追加一节的要求同样适用（`STD-PKG-009`，见 Server mod workflow 的「版本与 Changelog」段）。
 
 **Verification:** Check BepInEx console output for plugin load confirmation -- assert the client plugin load log (`STD-VERIFY-004`). Check for Harmony patch errors.
 
@@ -162,6 +167,7 @@ Some mods need both a server component and a client component:
 4. Communication via custom routes (`STD-SRV-005`/`STD-SRV-006`/`STD-SRV-007`); see `knowledge/spt-kb/curated/recipes/10-mod-communication.md`
 5. Client can check server mod presence via reflection (see conflict taxonomy patterns from `docs/wayfinder/findings/001-spt-conflict-taxonomy.md`)
 6. Package as one zip covering both halves: game-root-relative archive layout (`STD-PKG-001`), both halves in the same archive and the server half in a single `user/mods/<Name>/` directory (`STD-PKG-003`), exactly one `IModMetadata` implementation in that directory (`STD-PKG-004`), README/LICENSE shipped with the archive (`STD-PKG-006`)
+7. 仓库内单份 `<mod>/CHANGELOG.md`：首个可用版本产出时创建、每次版本迭代或影响用户可见能力的变更追加一节（`STD-PKG-009`；两条 pipeline 共用一份，见 Server mod workflow 的「版本与 Changelog」段）
 
 ## 豁免流程（Waiver）
 

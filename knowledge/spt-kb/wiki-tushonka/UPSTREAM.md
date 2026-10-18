@@ -10,8 +10,8 @@ source: wiki
 
 - 上游仓库：https://github.com/SP-Tushonka/wiki
 - 线上渲染版：https://wiki.sp-tushonka.com/（Wiki.js，内容即本仓库）
-- 锁定 commit：`392e500531749644c86a580d426e89b04b469386`（2026-09-11）
-- 锁定日期：2026-09-14
+- 锁定 commit：`3dbe21b67bb625b45d84be2b9351e5ee6c0d7bea`（2026-10-18）
+- 锁定日期：2026-10-18
 - 抓取方式：`git clone --depth 50`（经代理 `http://127.0.0.1:7890`）+ robocopy（剔除 `.git`）
 - 原始归档位置：`E:\云文件\GitHub\SP-Tushonka-wiki`
 

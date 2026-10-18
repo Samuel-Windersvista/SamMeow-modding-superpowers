@@ -2,11 +2,11 @@
 // forge-reader.ts — Forge 归档读取与搜索
 //
 // 数据源（knowledge/spt-kb/archive/forge/）：
-//   api/mods-catalog.json  1822 mod 元数据（快照，无 best_spt / mod_type 字段）
-//   hot-index.json         95 热门 mod 索引（含 best_spt / best_version）
+//   api/mods-catalog.json  2001 mod 元数据（快照，无 best_spt / mod_type 字段）
+//   hot-index.json         4.1.x 兼容 mod 索引（含 best_spt / best_version）
 //
 // sptVersion 过滤：mods-catalog 无 best_spt 字段，通过与 hot-index 按 id 合并
-// 获得 best_spt；仅对 hot-index 中存在的 95 个 mod 生效，其余 sptVersion 为
+// 获得 best_spt；仅对 hot-index 中存在的 mod 生效（当前约 636 条），其余 sptVersion 为
 // null。modType 过滤：归档快照无 mod_type 字段，命中为空并给出说明。
 // =============================================================================
 

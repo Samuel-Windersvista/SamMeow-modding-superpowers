@@ -74,10 +74,12 @@ LLM 接入 mod 经验（商人聊天项目复盘）：`curated/operations/llm-mo
 
 | 要什么 | 位置 |
 |--------|------|
-| 热门 mod 总索引（元数据+源码+版本） | `archive/forge/hot-index.json` |
-| 全站 1822 个 mod 目录 | `archive/forge/api/mods-catalog.json` |
+| 4.1.x 兼容 mod 总索引（元数据+源码+版本） | `archive/forge/hot-index.json` |
+| 全站 2001 个 mod 目录 | `archive/forge/api/mods-catalog.json` |
 | 某 mod 详情/全版本历史 | `archive/forge/api/hot-mods/<id>.json`、`<id>.versions.json` |
 | 源码 clone | `archive/forge/mods/<id>_source/` |
 | 抓取/续跑脚本 | `archive/forge/tools/` |
 
 > 2026-09-02：`mods/<id>_release/` 成品 zip 已清理（94 目录约 398MB）——release 版对知识参照价值低且占空间，源码 clone 保留；hot-index 中 `best_link` 为 Forge 站外 URL 记录不受影响。
+>
+> 2026-10-18：`hot-index.json` 重建为全部 SPT 4.1.x 兼容 mod（636 条，`scripts/spt-kb/build-hot-index.mjs`）；`MODS-INDEX.md` 重建为归档 ID 对照表（546 个 ID / 631 个源码目录，`scripts/spt-kb/build-mods-index.mjs`）；每日检查器 `archive/forge/tools/check-forge-updates.ps1` 已切换到 `sp-mod.com` + 代理，并修复状态键 bug。

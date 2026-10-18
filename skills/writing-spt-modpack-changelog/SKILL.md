@@ -7,6 +7,17 @@ description: "Use when cutting an SPT modpack release. Creates <project>/docs/re
 
 The SPT modpack release changelog is the user-visible record of what changed between releases, grouped by semantic category: Added, Changed, Fixed, Removed, and Compatibility. This skill creates `<project>/docs/release-changelog.md` at runtime, then inserts a new version section whenever the curator cuts a release.
 
+## Scope: modpack level, not mod level
+
+This skill maintains the **modpack-level** release changelog only. It is one of two distinct changelog levels; neither substitutes for the other.
+
+| Level | File | Scope | Governed by |
+| --- | --- | --- | --- |
+| Mod | `<mod>/CHANGELOG.md` (in the mod's own repo, under version control) | One mod's own version history | `STD-PKG-009` in the Modding Standard |
+| Modpack | `<project>/docs/release-changelog.md` | Player-facing modpack releases | this skill |
+
+A per-mod changelog is created with the mod's first usable version and appended on every version bump; its shape is `## <version> - <YYYY-MM-DD>` (newest first) with buckets Added / Changed / Fixed / Removed / Known Limitations, and the newest version must match the mod's version source and `deploy/meta.json` `version`. Do not write per-mod version history here, and do not fold the modpack changelog into a mod's `CHANGELOG.md`. Full requirement: `STD-PKG-009` (see `writing-spt-mod`).
+
 ## When to Use
 
 | Use this skill when... | Result |
@@ -23,6 +34,7 @@ The SPT modpack release changelog is the user-visible record of what changed bet
 | --- | --- |
 | The user made a random working change and wants to remember it later | `writing-spt-modpack-devlog` |
 | The user wants a single-mod curator note | `writing-spt-modpack-devlog` |
+| The user wants to record one mod's own version history | Maintain that mod's `<mod>/CHANGELOG.md` per `STD-PKG-009` (see `writing-spt-mod`). This skill is only for the modpack-level release changelog. |
 | The user asks for mod conflict inspection or resolution | `spt-conflict-audit` first. |
 | There is no release boundary, version, tag, or player-facing summary intent | Keep working; do not invent a release. |
 | The user needs to set up the SPT modpack project structure first | `setting-up-spt-modding-environment` |
@@ -180,5 +192,6 @@ This section gives players the version, date, grouped changes, and upgrade risk 
 
 ## See also
 
+- `writing-spt-mod` - creates and maintains the per-mod `<mod>/CHANGELOG.md` version record (`STD-PKG-009`); a separate level from this modpack changelog.
 - `writing-spt-modpack-devlog` - use for curator-facing chronological work records.
 - `setting-up-spt-modding-environment` - use when the SPT modpack project root or docs structure must be established first.
