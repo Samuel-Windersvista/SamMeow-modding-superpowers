@@ -30,7 +30,7 @@ source: curated
 ```
 modding-standard/
 ├── README.md                    # 本文件：使用说明 + 索引 + 豁免流程
-├── rules.json                   # 机读注册表（单一源）：86 条规则元数据 + 29 条可检规格
+├── rules.json                   # 机读注册表（单一源）：91 条规则元数据 + 29 条可检规格
 ├── 01-structure.md              # 维度 ① 仓库与目录结构（STRUCT）
 ├── 02-metadata.md               # 维度 ② 元数据与版本声明（META）
 ├── 03-build.md                  # 维度 ③ 构建与目标框架（BUILD）
@@ -148,7 +148,7 @@ mod README / dev-log 中的记录示例：
 
 规则集的机读单一源是 `rules.json`（检查器与校验器都读它）；13 章 prose 仍是权威文本，两者由校验器双向锁定：
 
-- `rules.json`：86 条规则元数据（`id` / `domain` / `level` / `applies` / `title`）+ 29 条可检规则的检查规格（`check.kind` / `check.handler` / `check.params`）。**规则常量（正则 / 取值 / 消息模板）只落在注册表**，检查器 handler 不内嵌任何规则常量。
+- `rules.json`：91 条规则元数据（`id` / `domain` / `level` / `applies` / `title`）+ 29 条可检规则的检查规格（`check.kind` / `check.handler` / `check.params`）。**规则常量（正则 / 取值 / 消息模板）只落在注册表**，检查器 handler 不内嵌任何规则常量。
 - `scripts/validate-mod-standard.ps1`：双向校验（registry ↔ prose）——ID 集合一致（无孤儿、无缺失）、`title` / `Level` / `Applies` / `domain` 逐字一致、可检规则必有 `check` 规格、发射 ID 归属登记。exit 0 即一致。
 - `scripts/check-mod-standard.ps1`：按注册表顺序对一个 mod 源码目录执行可检子集，逐条输出 `[PASS] STD-XXX-NNN  --  <detail>`，存在未豁免 FAIL 时 exit 1；豁免标记 `Waiver: STD-XXX-nnn: <reason>`（缺省读 `<mod>/MODDING-STD-WAIVER.md`）。
 - 夹具回归：`tests/mod-standard/run-fixtures.ps1`（合成夹具锁定 exit 码、FAIL 集合与逐条状态）。
