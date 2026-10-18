@@ -1128,6 +1128,87 @@
       "title": "输入校验 fail-closed，不 log-then-continue",
       "checkable": false,
       "check": null
+    },
+    {
+      "id": "STD-CFG-007",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "在隐藏的 `Internal` 段保存配置 schema 版本",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CFG-008",
+      "domain": "CFG",
+      "level": "MUST",
+      "applies": "both",
+      "title": "配置 schema 版本不匹配时显式迁移或重置，不得静默按新 schema 重解释",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CFG-009",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "让配置 schema 版本独立于发布版本并整数递增",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-CFG-010",
+      "domain": "CFG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "服务端持久化 JSON 记录 `SchemaVersion` 与 `CurrentSchemaVersion` 并对 `<=0` 回填",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-009",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "禁止在 client spawn/tick/patch 路径用 `Thread.Sleep` 轮询阻塞",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-PERF-010",
+      "domain": "PERF",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "共享可变状态用 `Interlocked` CAS / `SemaphoreSlim` / 窄锁守卫",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-006",
+      "domain": "LOG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "`async void` 必须自带 try/catch 围栏或改为 `async Task`",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-007",
+      "domain": "LOG",
+      "level": "SHOULD",
+      "applies": "both",
+      "title": "verbose / 性能诊断日志由配置门控且默认关闭",
+      "checkable": false,
+      "check": null
+    },
+    {
+      "id": "STD-LOG-008",
+      "domain": "LOG",
+      "level": "MAY",
+      "applies": "both",
+      "title": "对热路径/每包重复失败日志做去重，避免刷屏",
+      "checkable": false,
+      "check": null
     }
   ]
 }
