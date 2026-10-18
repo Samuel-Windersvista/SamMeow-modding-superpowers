@@ -4,12 +4,16 @@
 
 **Blocked by:** 02（证据基线刷新）
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] 新增 `STD-STRUCT-008`（SHOULD）：一个仓库可含多个可部署 mod 目录；每个部署目录恰好一个 `IModMetadata`；README 标注目录与部署边界。
-- [ ] 新增 `STD-META-008`（SHOULD）：`package.json` + `sptVersion` 的 TS/JS 服务端 mod 是 3.11 遗产；4.1/5.0 新服务端 mod 使用 C# `IModMetadata`。
-- [ ] 新增 `STD-VER-005`（MAY）：移植映射 `sptVersion` → `SptVersion`、`loadBefore/loadAfter` → `TypePriority`、`incompatibilities` → `Incompatibilities`。
-- [ ] 结构 / 元数据 / 版本差异章节的 Evidence 引用 11 个 monorepo 仓库、41 个 package.json mod、ABPS 3.11 TS 与 4.1 C# 双版本对照。
-- [ ] `validate-mod-standard.ps1` 与 `run-fixtures.ps1` 全绿。
+- [x] 新增 `STD-STRUCT-008`（SHOULD）：一个仓库可含多个可部署 mod 目录；每个部署目录恰好一个 `IModMetadata`；README 标注目录与部署边界。
+- [x] 新增 `STD-META-008`（SHOULD）：`package.json` + `sptVersion` 的 TS/JS 服务端 mod 是 3.11 遗产；4.1/5.0 新服务端 mod 使用 C# `IModMetadata`。
+- [x] 新增 `STD-VER-005`（MAY）：移植映射 `sptVersion` → `SptVersion`、`loadBefore/loadAfter` → `TypePriority`、`incompatibilities` → `Incompatibilities`。
+- [x] 结构 / 元数据 / 版本差异章节的 Evidence 引用 11 个 monorepo 仓库、41 个 package.json mod、ABPS 3.11 TS 与 4.1 C# 双版本对照。
+- [x] `validate-mod-standard.ps1` 与 `run-fixtures.ps1` 全绿。
 
 **执行说明：** 与 04、05 采用 worktree 并行；共享注册表 / README / 证据索引冲突由 09 收口。依据 spec 的 D9。
+
+## Comments
+
+- 2026-10-18：实现并合并。新增 STRUCT-008 / META-008 / VER-005；覆盖 monorepo 多 mod、TS 3.11 遗产识别、TS→C# 迁移映射。最终集成 103 条 / MUST 31/31。

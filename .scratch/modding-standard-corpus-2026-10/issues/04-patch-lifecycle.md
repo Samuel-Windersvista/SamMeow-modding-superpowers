@@ -4,13 +4,17 @@
 
 **Blocked by:** 02（证据基线刷新）
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `STD-CLI-003` 保留 `[HarmonyPatch(typeof(...), "...")]` 要求，但把默认应用方式改为 `ModulePatch` / `PatchSet` 的显式 `Enable()`；`PatchAll()` 仅在所有目标已验证时允许。
-- [ ] 新增 `STD-CLI-008`（目标解析失败记 Error 并跳过该 patch）、`STD-CLI-009`（撤销前恢复游戏状态）、`STD-CLI-010`（raid 结束复位缓存对象）、`STD-CLI-011`（精确目标解析），Level / Applies / Evidence 完整。
-- [ ] 新增 `STD-SRV-009`：服务端补丁用 `IRuntimePatch` / `AbstractPatch` + DI `IEnumerable<IRuntimePatch>` + `IOnLoad` 统一 `Enable()`；服务端不以 `PatchAll()` 扫程序集。
-- [ ] `STD-CLI-007` 的 `cli-007-harmony-lifecycle` 检查器补充 `ModulePatch` / `.Enable()` 识别，避免主导形态被误判为 N/A。
-- [ ] 夹具覆盖：`ModulePatch.Enable` 通过、受控 `PatchAll` 通过、单个目标缺失只影响该 patch。
-- [ ] `validate-mod-standard.ps1` 与 `run-fixtures.ps1` 全绿。
+- [x] `STD-CLI-003` 保留 `[HarmonyPatch(typeof(...), "...")]` 要求，但把默认应用方式改为 `ModulePatch` / `PatchSet` 的显式 `Enable()`；`PatchAll()` 仅在所有目标已验证时允许。
+- [x] 新增 `STD-CLI-008`（目标解析失败记 Error 并跳过该 patch）、`STD-CLI-009`（撤销前恢复游戏状态）、`STD-CLI-010`（raid 结束复位缓存对象）、`STD-CLI-011`（精确目标解析），Level / Applies / Evidence 完整。
+- [x] 新增 `STD-SRV-009`：服务端补丁用 `IRuntimePatch` / `AbstractPatch` + DI `IEnumerable<IRuntimePatch>` + `IOnLoad` 统一 `Enable()`；服务端不以 `PatchAll()` 扫程序集。
+- [x] `STD-CLI-007` 的 `cli-007-harmony-lifecycle` 检查器补充 `ModulePatch` / `.Enable()` 识别，避免主导形态被误判为 N/A。
+- [x] 夹具覆盖：`ModulePatch.Enable` 通过、受控 `PatchAll` 通过、单个目标缺失只影响该 patch。
+- [x] `validate-mod-standard.ps1` 与 `run-fixtures.ps1` 全绿。
 
 **执行说明：** 与 05、06 采用 worktree 并行；共享的规则注册表 / README / 证据索引冲突由 09 统一收口。本票只保证补丁相关规则自洽。依据 spec 的 D3、D4。
+
+## Comments
+
+- 2026-10-18：实现并合并。CLI-003 改为 ModulePatch/PatchSet 显式 Enable() 默认、PatchAll 受控；新增 CLI-008..011 + SRV-009；cli-007 识别 ModulePatch/PatchSet/.Enable()/UnpatchID；新增 pass/fail modulepatch 夹具，最终 fixtures 9/9。CLI-008 的“单目标缺失”夹具因 check:null 未做（prose-only），已在 review 记录。

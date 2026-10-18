@@ -282,6 +282,16 @@ text.matchAll(/SptVersion\s*(?:\{[^}]*\})?\s*=\s*(?:new\s*\(\s*)?"([^"]+)"/g);
 | `ModMetadata` | 542 | 元数据类型引用 |
 | `AbstractModMetadata` | 76 | 4.0 遗留抽象类 |
 
+补充计数（文件/仓库级，2026-10-18；供补丁/异步/并发规则引用）：
+
+| 机制/类型 | 计数 | 备注 |
+|-----------|------|------|
+| `ModulePatch` / `PatchSet` | 277 仓库 | 客户端补丁主导形态 |
+| `PatchAll()` | 91 文件 | 受控/全程序集应用 |
+| `Thread.Sleep` | 27 文件 / 20 仓库 | 客户端热路径风险 |
+| `async void` | 129 文件 | 异常围栏缺口 |
+| `SemaphoreSlim` | 60 文件 | 并发限流 |
+
 > 口径：上表为**未去重的正则命中次数**（同一 token 多次出现即多次计数），非文件数或仓库数；跨 631 目录汇总。
 > 历史基线（2026-09-14，297 个近期目录 / 8066 个 `.cs`）：`[Injectable]` 1018、`IOnLoad` 279、`ISptLogger` 614、`StaticRouter` 90、`DynamicRouter` 12、`IOnUpdate` 6、`BaseUnityPlugin` 275、`[BepInPlugin]` 251、`[BepInDependency]` 170、`Logger.` 4968、`ModMetadata` 271、`AbstractModMetadata` 24（旧表口径不同，不可直接对比）。
 
