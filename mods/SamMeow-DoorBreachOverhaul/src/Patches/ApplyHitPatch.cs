@@ -2,6 +2,7 @@ using System;
 using System.Reflection;
 using SPT.Reflection.Patching;
 using DoorBreach.Fika;
+using DoorBreach.Rules;
 using DoorOverhaul.Destruction;
 using EFT;
 using EFT.Ballistics;
@@ -71,6 +72,22 @@ internal class ApplyHit : ModulePatch
 
             if (DoorDestructionRegistry.TryGetByCollider(collider, out DoorEntry entry))
             {
+                AttackDecision decision = AttackPolicyAdapter.EvaluateDestruction(damageInfo, entry);
+                if (!entry.DecisionLogged)
+                {
+                    // 每扇门每局仅记录首次判定，供 Level C 日志断言（不随每次命中刷屏）。
+                    entry.DecisionLogged = true;
+                    DoorBreachPlugin.Logger.LogInfo(
+                        $"[Policy] {entry.Door.Id} ({entry.DoorClass}/{entry.Exclusion}): " +
+                        $"accepted={decision.DestructionAccepted} ({decision.DestructionReason})");
+                }
+
+                if (!decision.DestructionAccepted)
+                {
+                    DoorBreachPlugin.Logger.LogDebug($"[Policy] 破坏不受理：{decision.DestructionReason}");
+                    return;
+                }
+
                 DoorDamageIntake.OnHit(entry, damageInfo);
             }
         }
@@ -95,7 +112,7 @@ internal class ApplyHit : ModulePatch
         BallisticCollider collider = damageInfo.HittedBallisticCollider;
         if (collider == null) return; // Unity null-safe 检查
 
-        bool validDamage = DoorBreachPlugin.PlebMode;
+        bool validDamage = false;
 
         bool isCarTrunk = collider.GetComponentInParent<Trunk>() != null;
         bool isLootableContainer = collider.GetComponentInParent<LootableContainer>() != null;
@@ -118,9 +135,10 @@ internal class ApplyHit : ModulePatch
     private static void HandleCarTrunkDamage(DamageInfo damageInfo, BallisticCollider collider,
         ref bool validDamage)
     {
-        if (!DoorBreachPlugin.PlebMode &&
-            DoorBreachPlugin.OpenCarDoors)
-            DamageUtility.CheckCarWeaponAndAmmo(damageInfo, ref validDamage);
+        AttackDecision decision = AttackPolicyAdapter.EvaluateLock(damageInfo, TargetKind.Trunk);
+        validDamage = decision.LockAccepted;
+        if (validDamage)
+            damageInfo.Damage = decision.LockDamage;
 
         HandleDamage(damageInfo, collider, ref validDamage, "Car Trunk", (hitpoints, entity) =>
         {
@@ -136,9 +154,10 @@ internal class ApplyHit : ModulePatch
                                                     BallisticCollider collider,
                                                     ref bool validDamage)
     {
-        if (!DoorBreachPlugin.PlebMode &&
-            DoorBreachPlugin.OpenLootableContainers)
-            DamageUtility.CheckLootableContainerWeaponAndAmmo(damageInfo, ref validDamage);
+        AttackDecision decision = AttackPolicyAdapter.EvaluateLock(damageInfo, TargetKind.LootableContainer);
+        validDamage = decision.LockAccepted;
+        if (validDamage)
+            damageInfo.Damage = decision.LockDamage;
 
         HandleDamage(damageInfo, collider, ref validDamage, "Lootable Container", (hitpoints, entity) =>
         {
@@ -154,21 +173,12 @@ internal class ApplyHit : ModulePatch
                                         BallisticCollider collider,
                                         ref bool validDamage)
     {
-        if (!DoorBreachPlugin.PlebMode)
-        {
-            DamageUtility.CheckDoorWeaponAndAmmo(damageInfo, ref validDamage);
+        AttackDecision decision = AttackPolicyAdapter.EvaluateLock(damageInfo, TargetKind.Door);
+        validDamage = decision.LockAccepted;
+        if (validDamage)
+            damageInfo.Damage = decision.LockDamage;
 
-            if (validDamage)
-                DamageUtility.IsMarkedRoom(collider.GetComponentInParent<Door>(), ref validDamage);
-        }
-        else
-        {
-            // 全放行：放行武器/弹药/材质/黑名单，但锁血池仍只吃锁区（门把手附近）命中。
-            // 否则任意命中都在积攒锁血池，门会在破坏（尤其铰链实验）完成前被破门打开。
-            validDamage = DamageUtility.IsValidDoorLockHit(damageInfo);
-        }
-
-        DoorBreachPlugin.Logger.LogDebug($"[Patches] 调用 HandleDamage() 前 validDamage: {validDamage}");
+        DoorBreachPlugin.Logger.LogDebug($"[Policy] 锁血池受理：{decision.LockAccepted}（{decision.LockReason}），伤害：{decision.LockDamage}");
         HandleDamage(damageInfo, collider, ref validDamage, "Door", (hitpoints, entity) =>
         {
             WorldInteractiveObject door = entity.GetComponentInParent<WorldInteractiveObject>();

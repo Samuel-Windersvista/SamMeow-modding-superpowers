@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Comfort.Common;
+using DoorBreach.Rules;
 using EFT;
 using EFT.Interactive;
 using UnityEngine;
@@ -62,6 +63,12 @@ public class DoorBreachComponent : MonoBehaviour
 
         SetupApplicableWeapons();
 
+        if (DoorBreachPlugin.RuleConfig != null && !DoorBreachPlugin.RuleConfig.IsValidHitPointRange)
+        {
+            DoorBreachPlugin.Logger.LogWarning(
+                $"[Breach] 血量区间无效：{DoorBreachPlugin.MinHitPoints}-{DoorBreachPlugin.MaxHitPoints}；已按最小值/最大值归一化。");
+        }
+
         ProcessObjectsOfType<Door>("Doors", interactiveLayer);
         ProcessObjectsOfType<LootableContainer>("Containers", interactiveLayer);
         ProcessObjectsOfType<Trunk>("Trunks", interactiveLayer);
@@ -86,7 +93,9 @@ public class DoorBreachComponent : MonoBehaviour
             if (!IsValidObject(obj, ref invalidCount, ref inoperableCount, ref invalidLayerCount, interactiveLayer))
                 return;
 
-            int randHitPoints = Random.Range(DoorBreachPlugin.MinHitPoints, DoorBreachPlugin.MaxHitPoints);
+            int minHitPoints = Mathf.Max(1, Mathf.Min(DoorBreachPlugin.MinHitPoints, DoorBreachPlugin.MaxHitPoints));
+            int maxHitPoints = Mathf.Max(minHitPoints, Mathf.Max(DoorBreachPlugin.MinHitPoints, DoorBreachPlugin.MaxHitPoints));
+            int randHitPoints = Random.Range(minHitPoints, maxHitPoints);
             Hitpoints hitpoints = obj.gameObject.GetOrAddComponent<Hitpoints>();
 
             hitpoints.hitpoints = randHitPoints;

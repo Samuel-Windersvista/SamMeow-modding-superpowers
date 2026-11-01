@@ -226,6 +226,29 @@ namespace DoorOverhaul.Destruction
             ResolveDoor(entry, momentum);
         }
 
+        /// <summary>
+        /// C4 引爆：整扇门板一次性脱离（跳过铰链实验开关），走既有分组/视觉/接管管线。
+        /// 门对象保留（不 Destroy），供任务触发/撤离判定继续使用。
+        /// </summary>
+        public static void ApplyDetonation(DoorEntry entry, Vector3 momentum)
+        {
+            if (entry == null || entry.Frame == null || entry.Door == null)
+            {
+                return;
+            }
+
+            FractureState state = entry.State ?? (entry.State = CreateState(entry));
+            if (state.Leaf == LeafStatus.Detached)
+            {
+                return;
+            }
+
+            DestructionResult result = state.Detonate();
+            Processed++;
+            DestructionVisuals.OnResolved(entry, result, momentum);
+            DoorGlass.OnCellsGone(entry, result, momentum);
+        }
+
         public static void Clear()
         {
             Pending.Clear();

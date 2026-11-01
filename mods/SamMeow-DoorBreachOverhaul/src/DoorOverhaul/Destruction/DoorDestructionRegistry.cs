@@ -1,4 +1,5 @@
 using DoorBreach;
+using DoorBreach.Rules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,13 @@ namespace DoorOverhaul.Destruction
         public Door Door;
         public bool Eligible;
         public string Reason = string.Empty;
+
+        /// <summary>运行时门类（安全类/高危组/物理不可行由注册表分类，规则层同源判定）。</summary>
+        public DoorClassKind DoorClass = DoorClassKind.Normal;
+
+        /// <summary>排除分类（调试面板逐类显示；None = 可破坏）。</summary>
+        public ExclusionCategory Exclusion = ExclusionCategory.None;
+
         public MaterialType Material;
         public MaterialProfile Profile;
         public LeafFrame Frame;
@@ -33,6 +41,9 @@ namespace DoorOverhaul.Destruction
         public int Hits;
         public int IgnoredHits;
         public string LastIgnoreReason = string.Empty;
+
+        /// <summary>是否已记录本扇门的首次破坏判定（每局一次，供日志断言）。</summary>
+        public bool DecisionLogged;
     }
 
     internal static class DoorDestructionRegistry
@@ -90,6 +101,15 @@ namespace DoorOverhaul.Destruction
             }
 
             MarkPossibleDoubleDoors();
+
+            int eligible = Entries.Values.Count(e => e.Eligible);
+            int safety = Entries.Values.Count(e => !e.Eligible && e.Exclusion == ExclusionCategory.Safety);
+            int highRisk = Entries.Values.Count(e => !e.Eligible && e.Exclusion == ExclusionCategory.HighRisk);
+            int physical = Entries.Values.Count(e => e.Exclusion == ExclusionCategory.Physical);
+            DoorBreachPlugin.Logger.LogInfo(
+                $"[Destruction] {Entries.Count} doors: {eligible} destructible, safety excluded {safety}, " +
+                $"high risk excluded {highRisk}, physical {physical}" +
+                (FikaPresent ? ", Fika hard-off" : string.Empty));
 
             foreach (DoorEntry entry in Entries.Values.Where(e => e.Eligible))
             {
@@ -173,48 +193,84 @@ namespace DoorOverhaul.Destruction
             entry.Material = DominantMaterial(entry.Colliders);
             entry.Profile = ProfileFor(entry.Material);
             entry.Frame = LeafFrame.Build(door);
-            entry.Reason = ExclusionReason(door, entry);
-            entry.Eligible = entry.Reason.Length == 0;
+            entry.DoorClass = Classify(door);
+            ApplyExclusion(entry);
             return entry;
         }
 
-        private static string ExclusionReason(Door door, DoorEntry entry)
+        /// <summary>运行时事实 → 门类（安全类 / 高危组 / 物理不可行）。</summary>
+        private static DoorClassKind Classify(Door door)
         {
-            if (FikaPresent)
-            {
-                return "Fika installed (destruction not synced yet)";
-            }
-
             if (door is KeycardDoor)
             {
-                return "keycard door";
+                return DoorClassKind.Keycard;
             }
 
             if (door is SlidingDoor)
             {
-                return "sliding door";
+                return DoorClassKind.Sliding;
             }
 
             if (door is DoorSwitch)
             {
-                return "door switch";
+                return DoorClassKind.DoorSwitch;
             }
 
             if (door.TriggersMap != null && door.TriggersMap.Length > 0)
             {
-                return "fires map/quest triggers";
+                return DoorClassKind.Trigger;
             }
 
             if (IsExtractionDoor(door))
             {
-                return "extraction door";
+                return DoorClassKind.Extraction;
             }
 
             if (!door.Operatable)
             {
-                return "not operatable";
+                return DoorClassKind.NonOperatable;
             }
 
+            return DoorClassKind.Normal;
+        }
+
+        /// <summary>
+        /// 排除判定：Fika 环境硬排除 → 物理不可行（永不可开关化）→ 规则层 ExclusionPolicy。
+        /// 注册表与 AttackPolicy 共用同一纯函数，避免两处判定漂移。
+        /// </summary>
+        private static void ApplyExclusion(DoorEntry entry)
+        {
+            if (FikaPresent)
+            {
+                SetExclusion(entry, ExclusionCategory.Fika, false, "Fika installed (destruction not synced yet)");
+                return;
+            }
+
+            string physical = PhysicalReason(entry);
+            if (physical != null)
+            {
+                // 规则层同类表示：物理不可行项永不可开关化。
+                entry.DoorClass = DoorClassKind.Excluded;
+                SetExclusion(entry, ExclusionCategory.Physical, false, $"physical: {physical}");
+                return;
+            }
+
+            RuleConfig config = DoorBreachPlugin.RuleConfig
+                ?? throw new InvalidOperationException("RuleConfig 未初始化（DestructionRegistry.Build 前须 RefreshConfigSnapshot）");
+            ExclusionDecision decision = ExclusionPolicy.Evaluate(entry.DoorClass, config);
+            SetExclusion(entry, decision.Category, decision.Allowed, decision.Reason);
+        }
+
+        private static void SetExclusion(DoorEntry entry, ExclusionCategory category, bool eligible, string reason)
+        {
+            entry.Exclusion = category;
+            entry.Eligible = eligible;
+            entry.Reason = reason ?? string.Empty;
+        }
+
+        /// <summary>物理不可行项：无弹道碰撞体 / 材质不处理 / 无几何 / 异常尺寸。</summary>
+        private static string PhysicalReason(DoorEntry entry)
+        {
             if (entry.Colliders.Count == 0)
             {
                 return "no ballistic collider";
@@ -225,12 +281,17 @@ namespace DoorOverhaul.Destruction
                 return $"material {entry.Material} stays vanilla";
             }
 
-            if (entry.Frame == null || entry.Frame.Width < 0.3f || entry.Frame.Height < 1.0f || entry.Frame.Thickness > 0.25f)
+            if (entry.Frame == null)
             {
-                return entry.Frame == null ? "no leaf geometry" : $"unexpected leaf shape {entry.Frame.Width:0.00}x{entry.Frame.Height:0.00}x{entry.Frame.Thickness:0.000}";
+                return "no leaf geometry";
             }
 
-            return string.Empty;
+            if (entry.Frame.Width < 0.3f || entry.Frame.Height < 1.0f || entry.Frame.Thickness > 0.25f)
+            {
+                return $"unexpected leaf shape {entry.Frame.Width:0.00}x{entry.Frame.Height:0.00}x{entry.Frame.Thickness:0.000}";
+            }
+
+            return null;
         }
 
         private static bool IsExtractionDoor(Door door)
@@ -266,7 +327,14 @@ namespace DoorOverhaul.Destruction
 
         private static void MarkPossibleDoubleDoors()
         {
-            List<DoorEntry> candidates = Entries.Values.Where(e => e.Eligible && e.Frame != null).ToList();
+            // 候选只含可成对的普通/安全类门；物理不可行、Fika 与高危组不参与
+            // （高危组由独立子开关管理，避免与安全类开关形成半扇翻转）。
+            List<DoorEntry> candidates = Entries.Values
+                .Where(e => e.Frame != null
+                    && e.Exclusion != ExclusionCategory.Physical
+                    && e.Exclusion != ExclusionCategory.Fika
+                    && e.Exclusion != ExclusionCategory.HighRisk)
+                .ToList();
             for (int i = 0; i < candidates.Count; i++)
             {
                 for (int j = i + 1; j < candidates.Count; j++)
@@ -277,11 +345,23 @@ namespace DoorOverhaul.Destruction
                     bool meeting = Vector3.Distance(LatchEdge(a), LatchEdge(b)) < 0.25f;
                     if (sameFrame || meeting)
                     {
-                        a.Eligible = b.Eligible = false;
-                        a.Reason = b.Reason = "possible double door (until surveyed)";
+                        MarkAsDouble(a);
+                        MarkAsDouble(b);
                     }
                 }
             }
+        }
+
+        /// <summary>双门标记：只改写 Normal（保留 Keycard/Sliding/Trigger 等更具体分类），并重跑排除判定。</summary>
+        private static void MarkAsDouble(DoorEntry entry)
+        {
+            if (entry.DoorClass != DoorClassKind.Normal)
+            {
+                return;
+            }
+
+            entry.DoorClass = DoorClassKind.Double;
+            ApplyExclusion(entry);
         }
 
         private static Vector3 LatchEdge(DoorEntry entry)

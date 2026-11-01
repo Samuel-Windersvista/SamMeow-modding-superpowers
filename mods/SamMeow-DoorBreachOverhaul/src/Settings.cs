@@ -1,13 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using BepInEx.Configuration;
 using DoorBreach.Models;
+using DoorBreach.Rules;
 
 namespace DoorBreach
 {
     /// <summary>
     /// 统一 F12 配置面：以本地 BepInEx 配置承载全部限制旋钮（见 ADR-0002）。
-    /// 7 个中文节名；节 4 为后续工单（04）预留，节 3（破坏）与节 7（调试）由工单 03 填充。
+    /// 7 个中文节名；节 3（破坏）、节 4（交互）与节 7（调试）已填充。
     /// </summary>
     /// <remarks>
     /// 列表型配置为逗号分隔字符串（键名英文，显示名中文，范围项走 AcceptableValueRange 滑块）。
@@ -16,11 +18,11 @@ namespace DoorBreach
     {
         public const string SectionGeneral = "1. 通用";
         public const string SectionBreach = "2. 破门";
-        public const string SectionDestruction = "3. 破坏";     // 预留（工单 03/05 填充）
-        public const string SectionInteractions = "4. 交互";    // 预留（工单 04/05 填充）
+        public const string SectionDestruction = "3. 破坏";
+        public const string SectionInteractions = "4. 交互";
         public const string SectionExplosive = "5. 爆炸";
         public const string SectionExclusions = "6. 排除与开关";
-        public const string SectionDebug = "7. 调试";           // 预留（工单 05/07 填充）
+        public const string SectionDebug = "7. 调试";
 
         // 默认武器/弹药/房间 ID 串（源自上游 additional_files 与配方，去掉重复项）。
         private const string DefaultShotgunWeapons =
@@ -57,6 +59,8 @@ namespace DoorBreach
         private static ConfigEntry<int> _explosionRadius;
         private static ConfigEntry<int> _explosionDamage;
         private static ConfigEntry<string> _blacklistedRooms;
+        private static ConfigEntry<bool> _allowSafetyExclusions;
+        private static ConfigEntry<bool> _allowHighRiskExclusions;
 
         // 3. 破坏：DO 破坏系统实时代码按名直读，故须为 public static（不可用私有 _ 命名）。
         public static ConfigEntry<bool> DestructionEnabled;
@@ -68,6 +72,19 @@ namespace DoorBreach
         public static ConfigEntry<float> ThroughPenWoodThick;
         public static ConfigEntry<float> ThroughPenMetalThin;
         public static ConfigEntry<float> CellSizeCm;
+
+        // 4. 交互：DO 交互侧实时代码按名直读，故须为 public static（不可用私有 _ 命名）。
+        public static ConfigEntry<bool> KickWeaponReady;
+        public static ConfigEntry<bool> KickWeaponForward;
+        public static ConfigEntry<bool> BodyPush;
+        public static ConfigEntry<float> BodyPushStrength;
+        public static ConfigEntry<float> SecondsToFullyOpen;
+        public static ConfigEntry<int> MinimumPeekPercent;
+        public static ConfigEntry<int> QuickPeekPercent;
+        public static ConfigEntry<bool> SilentPeek;
+        public static ConfigEntry<int> QuietOpenPercent;
+        public static ConfigEntry<float> QuietSwingSlowdown;
+        public static ConfigEntry<float> QuietVolume;
 
         // 7. 调试：同上，DO 调试 GUI 实时读值。
         public static ConfigEntry<bool> ShowImpacts;
@@ -186,6 +203,92 @@ namespace DoorBreach
                     "弹药白名单（模板 ID，逗号分隔）",
                     "允许破门的弹药模板 ID 列表。"));
 
+            // 4. 交互
+            KickWeaponReady = config.Bind(
+                SectionInteractions,
+                "Kick Weapon Ready",
+                true,
+                ConfigDescriptions.Describe(
+                    "踢门时武器保持就绪",
+                    "踢门时武器保持就绪并可腰射；踢门期间阻止开镜。"));
+            KickWeaponForward = config.Bind(
+                SectionInteractions,
+                "Kick Weapon Forward",
+                true,
+                ConfigDescriptions.Describe(
+                    "踢门时武器朝前",
+                    "踢门时武器保持指向视线方向（腰射也朝该方向），而不是随踢门身体转向。需开启“踢门时武器保持就绪”。"));
+            BodyPush = config.Bind(
+                SectionInteractions,
+                "Body Push",
+                true,
+                ConfigDescriptions.Describe(
+                    "用身体推门",
+                    "走向已打开或已开缝的门会把它推得更开；上锁（门闩扣住）的门不会移动。"));
+            BodyPushStrength = config.Bind(
+                SectionInteractions,
+                "Body Push Strength",
+                1f,
+                ConfigDescriptions.Describe(
+                    "推门力度",
+                    "走向门时门被推开的容易程度（1 = 以步行速度移动）。",
+                    new AcceptableValueRange<float>(0.3f, 3f)));
+            SecondsToFullyOpen = config.Bind(
+                SectionInteractions,
+                "Seconds To Fully Open",
+                2.5f,
+                ConfigDescriptions.Describe(
+                    "完全打开所需秒数",
+                    "在滚动菜单中选择 Peek 或 Open Further 后按住 F：从关闭到完全打开所需时间。松开即停止。",
+                    new AcceptableValueRange<float>(0.5f, 10f)));
+            MinimumPeekPercent = config.Bind(
+                SectionInteractions,
+                "Minimum Peek Percent",
+                8,
+                ConfigDescriptions.Describe(
+                    "初始开缝（%）",
+                    "在关闭的门上开始按住 Peek 时门闩打开的距离；继续按住会从该处继续打开。",
+                    new AcceptableValueRange<int>(1, 50)));
+            QuickPeekPercent = config.Bind(
+                SectionInteractions,
+                "Quick Peek Percent",
+                33,
+                ConfigDescriptions.Describe(
+                    "轻点 Peek 开度（%）",
+                    "在 Peek 上轻点 F 时门打开的距离（在 Open Further 上轻点会完全打开）。",
+                    new AcceptableValueRange<int>(5, 100)));
+            SilentPeek = config.Bind(
+                SectionInteractions,
+                "Silent Peek",
+                false,
+                ConfigDescriptions.Describe(
+                    "静音 Peek",
+                    "Peek 时压低开门音效，类似 Open Quietly。"));
+            QuietOpenPercent = config.Bind(
+                SectionInteractions,
+                "Quiet Open Percent",
+                60,
+                ConfigDescriptions.Describe(
+                    "静开幅度（%）",
+                    "Open Quietly 把门打开的距离。",
+                    new AcceptableValueRange<int>(10, 100)));
+            QuietSwingSlowdown = config.Bind(
+                SectionInteractions,
+                "Quiet Swing Slowdown",
+                2f,
+                ConfigDescriptions.Describe(
+                    "静开减速倍数",
+                    "静开时门扇摆动比正常慢多少倍。",
+                    new AcceptableValueRange<float>(1f, 5f)));
+            QuietVolume = config.Bind(
+                SectionInteractions,
+                "Quiet Volume",
+                0f,
+                ConfigDescriptions.Describe(
+                    "静开音量",
+                    "静开时开门/吱呀声的音量（0 = 静音，1 = 正常）。",
+                    new AcceptableValueRange<float>(0f, 1f)));
+
             // 5. 爆炸
             _explosiveTimerSeconds = config.Bind(
                 SectionExplosive,
@@ -220,6 +323,20 @@ namespace DoorBreach
                     new AcceptableValueRange<int>(0, 1000)));
 
             // 6. 排除与开关
+            _allowSafetyExclusions = config.Bind(
+                SectionExclusions,
+                "Allow Safety Exclusions",
+                false,
+                ConfigDescriptions.Describe(
+                    "解除安全类排除（总开关）",
+                    "开启后，钥匙卡门 / 滑门 / 开关门 / 成对双门 / 非可操作门参与破坏。默认保持排除（工程性限制）；开启后这些门的破坏表现未经验证，可能出现穿模 / 卡门。物理不可行项（无碰撞体 / 无几何 / 异常尺寸）不受此开关影响。"));
+            _allowHighRiskExclusions = config.Bind(
+                SectionExclusions,
+                "Allow High Risk Exclusions",
+                false,
+                ConfigDescriptions.Describe(
+                    "解除高危组排除（任务触发门 / 撤离门）",
+                    "警告：高危开关。开启后，会触发地图 / 任务脚本的门与撤离门可被破坏；可能打断任务脚本或撤离交互。默认关闭，仅调试或特殊玩法时使用。"));
             _blacklistedRooms = config.Bind(
                 SectionExclusions,
                 "Blacklisted Rooms",
@@ -323,8 +440,7 @@ namespace DoorBreach
 
             DoorBreachPlugin.Logger?.LogInfo(
                 $"[Settings] 已绑定配置节：{SectionGeneral} / {SectionBreach} / {SectionDestruction} / " +
-                $"{SectionExplosive} / {SectionExclusions} / {SectionDebug}" +
-                $"（{SectionInteractions} 为后续工单预留）。");
+                $"{SectionInteractions} / {SectionExplosive} / {SectionExclusions} / {SectionDebug}。");
         }
 
         /// <summary>从各 ConfigEntry 读值构造运行时配置快照。</summary>
@@ -343,6 +459,8 @@ namespace DoorBreach
                 BreachingRoundsOpenMetalDoors = _breachingRoundsOpenMetalDoors.Value,
                 OpenLootableContainers = _openLootableContainers.Value,
                 OpenCarDoors = _openCarDoors.Value,
+                AllowSafetyExclusions = _allowSafetyExclusions.Value,
+                AllowHighRiskExclusions = _allowHighRiskExclusions.Value,
                 MinHitPoints = _minHitPoints.Value,
                 MaxHitPoints = _maxHitPoints.Value,
                 ExplosiveTimerInSec = _explosiveTimerSeconds.Value,
@@ -352,6 +470,30 @@ namespace DoorBreach
                     ExplosionRadius = _explosionRadius.Value,
                     ExplosionDamage = _explosionDamage.Value,
                 },
+            };
+        }
+
+        /// <summary>由运行时快照构造纯规则层配置（列表转 HashSet，供 O(1) 判定）。</summary>
+        public static RuleConfig BuildRuleConfig(ModConfig config)
+        {
+            return new RuleConfig
+            {
+                PlebMode = config.PlebMode,
+                SemiPlebMode = config.SemiPlebMode,
+                BreachingRoundsOpenMetalDoors = config.BreachingRoundsOpenMetalDoors,
+                OpenLootableContainers = config.OpenLootableContainers,
+                OpenCarDoors = config.OpenCarDoors,
+                AllowSafetyExclusions = config.AllowSafetyExclusions,
+                AllowHighRiskExclusions = config.AllowHighRiskExclusions,
+                DestructionEnabled = DestructionEnabled?.Value ?? true,
+                ShotgunWeapons = new HashSet<string>(config.ShotgunList ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                GrenadeLauncherWeapons = new HashSet<string>(config.GrenadeLauncherList ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                MeleeWeapons = new HashSet<string>(config.MeleeWeaponList ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                OtherWeapons = new HashSet<string>(config.OtherWeaponList ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                WhitelistedRounds = new HashSet<string>(config.WhitelistedRounds ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                BlacklistedRooms = new HashSet<string>(config.BlacklistedRooms ?? new List<string>(), StringComparer.OrdinalIgnoreCase),
+                MinHitPoints = config.MinHitPoints,
+                MaxHitPoints = config.MaxHitPoints,
             };
         }
 

@@ -1,17 +1,14 @@
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using EFT;
 using EFT.Interactive;
-using DoorBreach.Fika;
 using EFT.UI;
 
 namespace DoorBreach.Patches
 {
     /// <summary>
-    /// 钥匙卡门交互菜单补丁：为 KeycardDoor 追加 "Plant Explosive"（与门补丁去重）。
+    /// 钥匙卡门交互菜单补丁：复用单点合并入口，保证 DO 三动作与 Plant Explosive 不重复。
     /// </summary>
     internal class ActionMenuKeyCardPatch : ModulePatch
     {
@@ -22,35 +19,11 @@ namespace DoorBreach.Patches
                 new[] { typeof(GamePlayerOwner), typeof(KeycardDoor), typeof(bool) });
 
 
-        // 检查动作是否已添加（门补丁的动作优先）
-        public static bool IsActionAdded(List<InteractionAction> actions, string actionName)
-        {
-            return actions.Any(action => action.Name.ToLower() == actionName.ToLower());
-        }
-
         [PatchPostfix]
         public static void Postfix(ref AvailableInteractionState __result, GamePlayerOwner owner, Door door)
         {
-            if (__result == null ||
-                __result.Actions == null ||
-                IsActionAdded(__result.Actions, "Plant Explosive"))
-                return;
-
-            // 追加到现有动作之后
-            __result.Actions.Add(new InteractionAction
-            {
-                Name = "Plant Explosive",
-                Action = () =>
-                {
-                    ExplosiveBreachComponent.StartExplosiveBreach(door, owner.Player);
-                    ExplosiveBreachComponent.RemoveItemFromPlayerInventory(owner.Player);
-
-                    FikaBridge.SendPlantC4PacketPacket(owner.Player, door.Id, DoorBreachPlugin.explosiveTimerInSec);
-                },
-                Disabled = !door.IsBreachAngle(owner.Player.Position) ||
-                           !ExplosiveBreachComponent.IsValidDoorState(door) ||
-                           !ExplosiveBreachComponent.HasC4Explosives(owner.Player)
-            });
+            // KeyCard 重载只保留 C4 去重守卫；DO 三动作由 Door 重载单点注入。
+            DoorMenuMerge.AppendPlantExplosiveOnly(__result, owner, door);
         }
     }
 }

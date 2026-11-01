@@ -1,6 +1,6 @@
 ---
 name: porting-spt-mod-to-spt5
-description: Use when porting an existing SPT 4.x mod (source available) to SPT 5.0 (EFT 1.1.5 / IL2CPP / BepInEx 6 / net6.0). Triggers - "port to SPT5", "port this mod to 5.0", "移植到5", "移植到SPT5", "update this mod for SPT 5.0", "make this mod work on SPT 5". Covers: source acquisition + archive check, API surface verification via ilspycmd, IL2CPP adaptation patterns, build, MO2 overlay deployment, BepInEx log verification. NOT for writing a new mod (use writing-spt-mod), installing a prebuilt mod (use interpreting-spt-mod-instructions), or translating mod text (use using-spt-translator).
+description: Use when porting an existing SPT 4.x mod (source available) to SPT 5.0 (EFT 1.1.5 / IL2CPP / BepInEx 6 / net6.0). Triggers - "port to SPT5", "port this mod to 5.0", "移植到5", "移植到SPT5", "update this mod for SPT 5.0", "make this mod work on SPT 5". Covers — source acquisition + archive check, API surface verification via ilspycmd, IL2CPP adaptation patterns, build, MO2 overlay deployment, BepInEx log verification. NOT for writing a new mod (use writing-spt-mod), installing a prebuilt mod (use interpreting-spt-mod-instructions), or translating mod text (use using-spt-translator).
 ---
 
 # Porting an SPT Mod to SPT 5.0（执行技能）

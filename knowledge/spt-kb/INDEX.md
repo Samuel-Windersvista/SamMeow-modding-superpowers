@@ -1,6 +1,6 @@
 # SPT 知识库全局索引
 
-按「我想做什么」检索。最后更新：2026-10-15
+按「我想做什么」检索。最后更新：2026-11-01
 > Agent 机读索引：`index.json`（按 version/domain/topic 过滤）
 
 ## 写服务端 mod (Server Mod)
@@ -60,6 +60,17 @@
 | 已知问题（SPT/mod/EFT） | `wiki/Known_SPT_Issues_40.md` 等三篇 |
 | 性能调优 | `wiki/Performance_Tuning.md` |
 
+## 整合包构成档案（curated/packs，离线可查）
+
+| 要什么 | 位置 |
+|--------|------|
+| 四个包的关系 / 共有底座 / 排序框架 | `curated/packs/README.md`（矩阵页：5.0 / 4.1.6 / 3.11.4×2） |
+| 《无法逃离塔科夫》SPT 5.0 包构成 | `curated/packs/inescapable-tarkov.md` |
+| 《永远的诺文斯克》SPT 4.1.6 包构成 | `curated/packs/norvinsk-forever.md` |
+| 《生活在诺文斯克》SPT 3.11.4 包构成 | `curated/packs/life-in-norvinsk.md` |
+| 《独享的塔科夫》SPT 3.11.4 包构成 | `curated/packs/exclusive-tarkov.md` |
+| 扫描/渲染工具 | `scripts/packs/scan-pack.mjs`、`scripts/packs/render-pack-tables.mjs` |
+
 ## 任务配方与实战复盘（curated，持续填充）
 
 见 `curated/recipes/` — 加商人、改物品、自定义任务等逐步配方（含 `13-trader-chat-pipeline.md`：玩家↔商人文字聊天管线，Messenger + LLM 基线）。
@@ -75,6 +86,7 @@ LLM 接入 mod 经验（商人聊天项目复盘）：`curated/operations/llm-mo
 | 要什么 | 位置 |
 |--------|------|
 | 4.1.x 兼容 mod 总索引（元数据+源码+版本） | `archive/forge/hot-index.json` |
+| 近期更新增量（窗口日志 + 数据快照） | `curated/operations/forge-update-log.md`（快照 `archive/forge/api/updates/<日期>/`） |
 | 全站 2001 个 mod 目录 | `archive/forge/api/mods-catalog.json` |
 | 某 mod 详情/全版本历史 | `archive/forge/api/hot-mods/<id>.json`、`<id>.versions.json` |
 | 源码 clone | `archive/forge/mods/<id>_source/` |

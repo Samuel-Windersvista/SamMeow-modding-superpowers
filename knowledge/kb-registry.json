@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated": "2026-10-14",
+  "generated": "2026-11-01",
   "_README": [
     "知识库注册表 —— 单一真相源。加新库 = 这里加一条 + 跑一次 builder（scripts/kb/build-index.mjs），",
     "不在任何提示词/skill 里写死路径，也不要给新库加新 MCP 工具（统一走 spt_kb_list / spt_kb_query）。",
@@ -198,6 +198,28 @@
       "versionDefaults": ["3.7"],
       "domainDefault": "both",
       "extract": { "keywords": ["h2"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
+      "builder": "scripts/kb/build-index.mjs",
+      "indexPolicy": "preserve"
+    },
+    {
+      "id": "books-kb",
+      "title": "个人书库：军事史 / 战略 / 情报 / 政经（逐章精读 + 体系页）",
+      "authority": "书籍作者的主张与论证：某本书对某问题的立场、证据与限定条件。**不作事实仲裁**——它权威回答「这本书怎么说」，不权威回答「世界是不是这样」；与 spt-kb / 包档案冲突时各归各域",
+      "root": "E:/云文件/GitHub/Some_books_knowledgeBase",
+      "index": "knowledge/indexes/books-kb.json",
+      "envKey": "KB_BOOKS_ROOT",
+      "enabled": true,
+      "scan": {
+        "dirs": ["中文精读摘要", "体系"],
+        "exclude": ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.webp", "**/*.gif", "**/*.pdf", "**/*.epub", "**/*.zip", "**/.obsidian/**"]
+      },
+      "sections": [
+        { "dir": "中文精读摘要", "topic": "digest" },
+        { "dir": "体系", "topic": "system" }
+      ],
+      "versionDefaults": [],
+      "domainDefault": "both",
+      "extract": { "keywords": ["h2", "dirs"], "keywordsMax": 12, "summary": "firstParagraph", "summaryMaxChars": 220 },
       "builder": "scripts/kb/build-index.mjs",
       "indexPolicy": "preserve"
     }

@@ -20,6 +20,13 @@ public class ModConfig
     public bool BreachingRoundsOpenMetalDoors { get; set; }
     public bool OpenLootableContainers { get; set; }
     public bool OpenCarDoors { get; set; }
+
+    /// <summary>安全类排除总开关（钥匙卡/滑门/开关门/双门/非可操作）。</summary>
+    public bool AllowSafetyExclusions { get; set; }
+
+    /// <summary>高危组子开关（触发任务门/撤离门）。</summary>
+    public bool AllowHighRiskExclusions { get; set; }
+
     public int MinHitPoints { get; set; }
     public int MaxHitPoints { get; set; }
     public int ExplosiveTimerInSec { get; set; }

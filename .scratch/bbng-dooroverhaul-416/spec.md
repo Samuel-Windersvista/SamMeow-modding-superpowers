@@ -155,10 +155,11 @@ Status: ready-for-agent
 - **已知风险面（工单逐点复核）**：
   - 触点核验第一批：`BallisticCollider.ApplyHit` / `InteractionContextHelper.GetAvailableActions` / `StartInteraction`·`ExecuteDoorInteraction` / `Door.KickOpen` / `Door.IsBreachAngle` / `PerfectCullingBakeGroup.Toggle` 在 4.1.6 的签名。**【02 已闭环：全部 [OK]，无 CHANGED/MISSING；BB 三处 4.1 迁移绑定缺陷已在 01 修复并经运行时验证。证据：`mods/SamMeow-DoorBreachOverhaul/docs/api-touchpoints/`（bb-breach / do-destruction / do-interactions）。】**
   - WTT-ClientCommonLib 是否为编译必需依赖（上游 Forge 标注硬依赖，源码未见消费）。**【02 已闭环：BB 与 DO 源码均 0 引用 → 非编译必需依赖，不声明 BepInDependency。】**
-  - 交互菜单挤占（与门状态随机化等包内组合的实测）。
-  - 双状态机交叠场景（C4 × 破坏模拟 × 踹门动画、上锁门大破片落的通行判定）。
-  - 音频资源打包布局（上游仓库 `additional_files` 与运行路径不一致）。
-  - 上游元数据旧值（AssemblyInfo 的 TarkovVersion）在初次构建时刷新。
-  - BB-NG master 的 4.1 迁移**尚无运行时实测**——首张工单即编译 + 触点核验，结果回填本 spec 的偏差记录。
+  - 交互菜单挤占（与门状态随机化等包内组合的实测）。**【代码侧已闭环：04 单点合并 + 按键名/动作种类去重；06/07 未改菜单入口。实机与 DoorRandomizer 共存待 Level C。】**
+  - 双状态机交叠场景（C4 × 破坏模拟 × 踹门动画、上锁门大破片落的通行判定）。**【代码侧已统一：06 共用 `ExclusionPolicy`；07 C4 → `FractureState.Detonate` → 既有视觉/接管管线，门对象不再 Destroy，回退路径独立。实机时序（DoorTakeover 下一帧创建）与通行判定待 Level C。】**
+  - 音频资源打包布局（上游仓库 `additional_files` 与运行路径不一致）。**【已闭环：插件目录相对解析 + 缺失静音；Level B 日志 `[C4] 音频加载成功`（Beep / FinalBeepTone）。】**
+  - 上游元数据旧值（AssemblyInfo 的 TarkovVersion）在初次构建时刷新。**【已闭环：多次 `dotnet build -c Release` 0/0；日志版本门禁匹配 EFT 0.16.9.40743。】**
+  - BB-NG master 的 4.1 迁移**尚无运行时实测**——首张工单即编译 + 触点核验，结果回填本 spec 的偏差记录。**【已闭环：01 修复三处绑定缺陷；05/06 运行时日志 17 个 DoorBreach 补丁全部 Enabled、0 `Failed to create patch`、0 DoorBreach 异常。】**
+  - **06/07 残余风险（实机 Level C 待验）**：任务触发门/撤离门解除高危组后的脚本与撤离判定副作用；滑门/开关门的门扇几何与接管动画；C4 在锁具/把手/中心三种锚定的模型位置与 `DoorTakeover` 时序；双门两扇同时翻转的可见性。
 - **整合包影响**：替换 `[8]门的大修-DoorOverhaul`（目录保留可回滚）；BB 两项未就绪条目收口；`[15]` cfg 叠层新增本 mod 配置项（含既有 DO 配置的迁移对照）。
 - **授权**：MIT（dvize / v-engelowski / kobethuy）× BSD-3（Sage）；LICENSE + THIRD-PARTY-NOTICES 随工程与覆盖层携带；偏差表制度沿用包内惯例。

@@ -3,7 +3,9 @@ using BepInEx;
 using BepInEx.Logging;
 using DoorBreach.Models;
 using DoorBreach.Patches;
+using DoorBreach.Rules;
 using DoorOverhaul.Destruction.Patches;
+using DoorOverhaul.Patches;
 using UnityEngine;
 
 namespace DoorBreach
@@ -36,6 +38,9 @@ namespace DoorBreach
         public static int explosionDamage;
 
         public static ModConfig ModConfig { get; set; }
+
+        /// <summary>纯规则层配置快照（战局启动重建；由 Settings.BuildRuleConfig 构造）。</summary>
+        public static RuleConfig RuleConfig { get; private set; }
 
         /// <summary>Fika 桥保留位（子工程未并入，事件无人订阅时为空操作）。</summary>
         public static bool FikaInstalled { get; private set; }
@@ -74,6 +79,11 @@ namespace DoorBreach
             _patches.Enable(new ApplyHit());
             _patches.Enable(new ActionMenuDoorPatch());
             _patches.Enable(new ActionMenuKeyCardPatch());
+            _patches.Enable(new InteractKeyCapturePatch());
+            _patches.Enable(new KickWeaponReadyPatch());
+            _patches.Enable(new KickWeaponForwardPatch());
+            _patches.Enable(new PartialOpenSwingPatch());
+            _patches.Enable(new QuietOpenSoundPatch());
             _patches.Enable(new PerfectCullingNullRefPatch());
             _patches.Enable(new OnGameStartedPatch());
             _patches.Enable(new DestructionBreachPatch());
@@ -89,6 +99,7 @@ namespace DoorBreach
             _host.hideFlags = HideFlags.HideAndDontSave;
             DontDestroyOnLoad(_host);
             _host.AddComponent<DoorOverhaul.Destruction.DestructionController>();
+            _host.AddComponent<DoorOverhaul.Doors.DoorRuntime>();
 
             Logger.LogInfo($"[DoorBreachOverhaul] {PluginVersion} 已加载。");
         }
@@ -116,6 +127,7 @@ namespace DoorBreach
             try
             {
                 ModConfig = Settings.BuildSnapshot();
+                RuleConfig = Settings.BuildRuleConfig(ModConfig);
 
                 PlebMode = ModConfig.PlebMode;
                 SemiPlebMode = ModConfig.SemiPlebMode;
@@ -132,6 +144,7 @@ namespace DoorBreach
                 Logger?.LogInfo(
                     $"[Settings] 配置快照：Pleb={PlebMode}, SemiPleb={SemiPlebMode}, " +
                     $"金属门破门弹={BreachingRoundsOpenMetalDoors}, 容器={OpenLootableContainers}, 后备箱={OpenCarDoors}, " +
+                    $"安全类排除={ModConfig.AllowSafetyExclusions}, 高危组排除={ModConfig.AllowHighRiskExclusions}, " +
                     $"耐久={MinHitPoints}-{MaxHitPoints}, 霰弹={ModConfig.ShotgunList.Count}, " +
                     $"榴弹={ModConfig.GrenadeLauncherList.Count}, 近战={ModConfig.MeleeWeaponList.Count}, " +
                     $"其他={ModConfig.OtherWeaponList.Count}, 弹药={ModConfig.WhitelistedRounds.Count}, " +

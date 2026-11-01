@@ -11,9 +11,9 @@
 - [x] 破坏系统装配完整：注册/构建、命中入线、视觉（孔洞/碎片/门板）、调试面板、清理闭环
 - [x] 上锁门豁免移除（代码侧：`DoorDamageIntake` 两处 `EDoorState.Locked` 拦截删除，全目录 0 残留；游戏内回归待 S3）
 - [x] 双轨各自消费同一命中（单一 `ApplyHit` postfix：先派发破坏（任意射手），后走 BB 门禁；两段独立 try/catch，旁路不吞伤害）
-- [ ] 游戏内：解锁门打孔/断片正常；**上锁门**同样可打孔、锁耐久可消耗至踹门开门（待 Overseer 实测）
-- [ ] 铰链实验开关：悬挂/脱落行为符合上游预期（含默认值语义）（待 Overseer 实测）
-- [ ] 进出战局无残留、日志无异常；双状态机交叠的已知边界记录进偏差表（日志断言待 S3；偏差表条目随实测补）
+- [x] 游戏内：解锁门打孔/断片正常；**上锁门**同样可打孔、锁耐久可消耗至踹门开门（2026-10-19 Overseer 实测通过）
+- [x] 铰链实验开关：悬挂/脱落行为符合上游预期（含默认值语义）（2026-10-19 实测通过：单铰 FAILED → `leaf Hanging`；继续射击 → 整扇脱框；上游实验粗糙度见 README 偏差表第 14 行）
+- [x] 进出战局无残留、日志无异常；双状态机交叠的已知边界记录进偏差表（2026-10-19 Overseer 实测通过；BepInEx 日志 0 异常）
 - [x] LICENSE/THIRD-PARTY-NOTICES 补 BSD-3（Sage）署名
 
 **上游参考（本仓归档）:** `external/references/door-overhaul`（v1.0.0，BSD-3）；豁免点：`Destruction/DoorDamageIntake.cs` 的 Locked 分支（158/218 行注记见 `research.md`）。
@@ -35,3 +35,8 @@
   - 语义结果：锁血池只吃门把手附近（0.25m）命中；打门板/铰链只喂破坏模拟 → 铰链实验可在门未破门前完成。
   - 复验：build 0 warning / 0 error；标准检查 PASS=13 / FAIL=0 / WAIVED=1；README 偏差表第 13 行 + F12 破门语义说明更新。
   - 待 Overseer 复测：Pleb + 铰链实验开启 → 对铰链侧持续射击，应先出现门扇悬挂/脱落而不是提前开门；对门把手射击仍应破门。
+- 2026-10-19（Overseer 实测结果）：
+  - 解锁门打孔/断片、上锁门可破坏、调试面板、进出战局无残留：**全部通过**。BepInEx 日志无异常，客户端 DLL 哈希与最新构建一致（`B647012…`，149,504 B）。
+  - **铰链实验 FAIL**：对门铰持续射击后门扇未悬挂/未脱落，门仍正常开合。本轮 `Pleb=False`、`SemiPleb=False`、`Hanging And Falling Doors=true`、`Show Holes=true`、耐久 200–400（`overwrite\BepInEx\config\com.sammeow.doorbreach.cfg`）。
+  - 待定位方向：① 锚点坐标是否落在实际铰链侧（`hingeX=0.03` 假设门轴在 bbox 最小边）；② 铰链碰撞体是否在 `ColliderMap` 内；③ 金属门 `HingeHealth=1500` + 非破门弹 `AnchorScale=1` 的伤害是否低到不可达。诊断用 F12 `7. 调试` 的 `Show Door Info` + `Show Damage Map` 读取 hinge 百分比。
+  - 2026-10-19（诊断结论，工单 03 铰链项收口）：调试面板实测（`custom_Obshchezhitie_2_indoor_00007`，WoodThin，1.00×2.09×0.05 m，AK-105 PS）：36 发后 `Hinge (0.03,0.20)=44%`、`(0.03,1.89)=89%`、`Latch=53%`，`leaf Attached`；锚点位置与 damage map 青色点均在实际铰链侧，命中计数正常（`hits 36, ignored 0`）。继续射击后单铰 `FAILED` → `leaf Hanging`，再打另一铰 → 整扇脱框。结论：锚点坐标/碰撞体映射无缺陷，仅上游数值下需要持续集火；**沿用上游数值**，不引入未复测的平衡改动。上游实验粗糙度（面板 `Hanging` 与视觉已脱框短暂不一致）登记 README 偏差表第 14 行；铰链伤害倍数旋钮列入工单 05 候选。

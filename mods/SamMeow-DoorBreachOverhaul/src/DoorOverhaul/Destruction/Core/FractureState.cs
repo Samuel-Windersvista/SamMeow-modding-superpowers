@@ -63,6 +63,9 @@ namespace DoorOverhaul.Destruction.Core
         public int HangingAnchor = -1;
         public bool LeafDetached;
 
+        /// <summary>C4 引爆：整扇门板一次性脱离（用于门扇炸飞语义）。</summary>
+        public bool Detonated;
+
         public bool Changed => RemovedCells.Count > 0 || BrokenBonds.Count > 0 || Groups.Count > 0 || FailedAnchors.Count > 0 || BecameHanging || LeafDetached;
     }
 
@@ -269,6 +272,23 @@ namespace DoorOverhaul.Destruction.Core
             }
 
             DetachUnsupported(SupportDepth(), result);
+            return result;
+        }
+
+        /// <summary>
+        /// C4 引爆：跳过铰链开关，整扇门板一次性脱离；复用 DetachEverything 的
+        /// 分组/视觉/接管管线（门对象保留，由 DoorTakeover 接管门扇）。
+        /// </summary>
+        public DestructionResult Detonate()
+        {
+            var result = new DestructionResult();
+            if (Leaf == LeafStatus.Detached)
+            {
+                return result;
+            }
+
+            DetachEverything(result);
+            result.Detonated = true;
             return result;
         }
 

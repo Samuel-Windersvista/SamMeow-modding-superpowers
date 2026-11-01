@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>SamMeow.DoorBreachOverhaul.Tests</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2" />
+  </ItemGroup>
+
+  <!--
+    S0 唯一单元测试接缝：只编译纯规则层（src/Rules），不把 Unity/EFT 依赖拖进 net10 测试宿主。
+    主工程通过 <Compile Remove="tests\**\*.cs" /> 排除测试源码。
+  -->
+  <ItemGroup>
+    <Compile Include="..\..\src\Rules\**\*.cs" LinkBase="Rules" />
+  </ItemGroup>
+
+</Project>

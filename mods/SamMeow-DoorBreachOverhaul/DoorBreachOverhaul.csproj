@@ -26,6 +26,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- 单元测试工程只编译 src/Rules 纯规则层；主工程排除 tests/ 下的测试源码 -->
+    <Compile Remove="tests\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <!-- BepInEx 5 核心（插件由它加载） -->
     <Reference Include="BepInEx">
       <HintPath>$(SPTInstallPath)\BepInEx\core\BepInEx.dll</HintPath>
@@ -60,6 +65,11 @@
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
       <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- DO 交互键入捕获（InteractKey.Held）使用 UnityEngine.Input（legacy Input Manager） -->
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(SPTInstallPath)\EscapeFromTarkov_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <!-- DO 破坏系统调试 GUI（DestructionController.OnGUI 的 GUI/GUIStyle/Event）需要 IMGUI 模块 -->

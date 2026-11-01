@@ -5,3 +5,5 @@
 ## 已登记豁免
 
 Waiver: STD-CLI-003: 本工程统一 `SPT.Reflection.Patching.ModulePatch` 装配（5+ 补丁类经共享 `PatchSet` 逐项 Enable/撤销），刻意不使用 `[HarmonyPatch(typeof(...))]` 特性；每个补丁类 `GetTargetMethod()` 显式给出目标（含 4.1.6 重载的显式选择），装配与撤销由 Plugin 生命周期驱动。该规则要求特性形态，与本工程约定冲突。规则的设计意图（显式声明补丁目标、补丁类独立集中、不经 `PatchAll` 盲扫、生命周期可控）已满足。属有意偏离。
+
+Waiver: STD-CLI-007: 本工程使用 BepInEx 5 `BaseUnityPlugin`，正确卸载点是 `OnDestroy()` 中的 `PatchSet.DisableAll()`（逐项撤销所有 `ModulePatch`）。检查器的 `unpatchPatterns` 只识别 `UnpatchSelf` / `UnpatchID` / SPT 5.0 `override bool Unload(...)`，不识别 `DisableAll()`，因此误报。规则意图（补丁有对应撤销、生命周期可控）已满足；`DisableAll()` 与 `Enable` 成对出现于同一 `PatchSet`。

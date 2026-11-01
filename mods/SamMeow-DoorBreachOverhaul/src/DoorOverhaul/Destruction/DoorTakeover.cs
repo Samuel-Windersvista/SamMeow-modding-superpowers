@@ -38,7 +38,7 @@ namespace DoorOverhaul.Destruction
         public bool Hanging => _joint != null;
         public bool Moving => _body != null && !_body.IsSleeping();
 
-        public DoorTakeover(DoorEntry entry, IReadOnlyList<MeshFilter> leafFilters, Action<MeshFilter, MeshFilter> retarget, Anchor hinge, Vector3 momentum)
+        public DoorTakeover(DoorEntry entry, IReadOnlyList<MeshFilter> leafFilters, Action<MeshFilter, MeshFilter> retarget, Anchor hinge, Vector3 momentum, bool explosive = false)
         {
             _entry = entry;
             Door door = entry.Door;
@@ -132,7 +132,9 @@ namespace DoorOverhaul.Destruction
             }
 
             PhysicsExtensions.UpdateController.SupportRigidbody(_body, 0f);
-            _body.AddForceAtPosition(Vector3.ClampMagnitude(momentum, _body.mass * 0.5f), _root.transform.TransformPoint(Centre(entry)), ForceMode.Impulse);
+            // 子弹脱落用较小的冲量上限（避免单发把门打飞）；C4 引爆允许更大的“炸飞”冲量。
+            float impulseCap = _body.mass * (explosive ? 8f : 0.5f);
+            _body.AddForceAtPosition(Vector3.ClampMagnitude(momentum, impulseCap), _root.transform.TransformPoint(Centre(entry)), ForceMode.Impulse);
 
             Alert(door.transform.position);
         }

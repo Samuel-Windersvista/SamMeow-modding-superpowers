@@ -36,6 +36,7 @@ namespace DoorOverhaul.Destruction
         private bool[] _visible;
 
         private bool _leafEvent;
+        private bool _detonated;
         private Vector3 _leafMomentum;
 
         private readonly List<(DetachedGroup Group, Vector3 Momentum)> _pendingPieces = new List<(DetachedGroup, Vector3)>();
@@ -224,6 +225,7 @@ namespace DoorOverhaul.Destruction
             if (result.BecameHanging || result.LeafDetached)
             {
                 _leafEvent = true;
+                _detonated = result.Detonated;
                 _leafMomentum = momentum;
             }
 
@@ -353,7 +355,7 @@ namespace DoorOverhaul.Destruction
                     }
                 }
 
-                _entry.Takeover = new DoorTakeover(_entry, filters, Retarget, hinge, _leafMomentum);
+                _entry.Takeover = new DoorTakeover(_entry, filters, Retarget, hinge, _leafMomentum, _detonated);
             }
             else if (state.Leaf == LeafStatus.Detached && _entry.Takeover.Hanging)
             {

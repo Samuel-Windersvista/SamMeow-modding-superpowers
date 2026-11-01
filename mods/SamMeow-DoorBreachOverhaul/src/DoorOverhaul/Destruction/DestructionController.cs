@@ -1,4 +1,5 @@
 using DoorBreach;
+using DoorBreach.Rules;
 using System.Linq;
 using System.Text;
 using Comfort.Common;
@@ -100,7 +101,9 @@ namespace DoorOverhaul.Destruction
         {
             var text = new StringBuilder();
             text.AppendLine("<b>Destructible doors (debug)</b>");
-            text.AppendLine($"{DoorDestructionRegistry.All.Count} doors, {DoorDestructionRegistry.All.Count(e => e.Eligible)} destructible" +
+            text.AppendLine($"{DoorDestructionRegistry.All.Count} doors, {DoorDestructionRegistry.All.Count(e => e.Eligible)} destructible, " +
+                $"safety excluded {CountCategory(ExclusionCategory.Safety)}, high risk excluded {CountCategory(ExclusionCategory.HighRisk)}, " +
+                $"physical {CountCategory(ExclusionCategory.Physical)}" +
                 (DoorDestructionRegistry.FikaPresent ? ", <color=orange>Fika: off</color>" : string.Empty));
             text.AppendLine($"hits {DoorDamageIntake.Processed}, duplicates {DoorDamageIntake.Duplicates}, ignored {DoorDamageIntake.Ignored}, " +
                 $"simulated doors {DoorDestructionRegistry.All.Count(e => e.State != null)}, pieces {DestructionFragments.Count}/{DestructionFragments.Cap} ({DestructionFragments.Moving} moving)");
@@ -119,7 +122,7 @@ namespace DoorOverhaul.Destruction
                 text.AppendLine($"<b>{door.Id}</b> ({door.GetType().Name}) {door.DoorState}");
                 text.AppendLine(entry.Eligible
                     ? $"<color=lime>destructible</color>: {entry.Material} ({entry.Profile.Name}, punch-through at pen {entry.Profile.ThroughPenetration:0})"
-                    : $"<color=orange>vanilla</color>: {entry.Reason}");
+                    : $"<color=orange>{(entry.Reason.Length > 0 ? entry.Reason : entry.Exclusion.ToString())}</color>");
                 if (entry.Frame != null)
                 {
                     text.AppendLine($"leaf {entry.Frame.Width:0.00} x {entry.Frame.Height:0.00} x {entry.Frame.Thickness:0.000} m from {entry.Frame.Source}");
@@ -228,6 +231,12 @@ namespace DoorOverhaul.Destruction
         private static Vector2 ToMap(Vector2 origin, float scale, System.Numerics.Vector2 panel)
         {
             return new Vector2(origin.x + panel.X * scale, origin.y + MapHeight - panel.Y * scale);
+        }
+
+        /// <summary>只统计当前仍被排除的门（开关开启后已放行的不再计入排除数）。</summary>
+        private static int CountCategory(ExclusionCategory category)
+        {
+            return DoorDestructionRegistry.All.Count(e => !e.Eligible && e.Exclusion == category);
         }
 
         private static int CountLines(StringBuilder text)

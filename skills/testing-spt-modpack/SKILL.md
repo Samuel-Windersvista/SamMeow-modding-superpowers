@@ -1,6 +1,6 @@
 ---
 name: testing-spt-modpack
-description: Use when proactively verifying an installed SPT modpack batch before declaring it good. Triggers - "test the pack", "verification", "post-install check", "is it stable", "what should I test", "测试整合包", "验证安装". Verification standard: Level B (MO2 launches SPT, Server starts, Launcher connects, game reaches main menu, each mod's loading confirmed via server log + BepInEx console output parsing) with Level C (raid smoke test) as optional manual deep verification. NOT for reactive failure diagnosis (use diagnosing-spt-problems), pre-install mod evaluation (evaluating-spt-mods), or defining batch boundaries/style (curating-spt-modpack).
+description: Use when proactively verifying an installed SPT modpack batch before declaring it good. Triggers - "test the pack", "verification", "post-install check", "is it stable", "what should I test", "测试整合包", "验证安装". Verification standard — Level B (MO2 launches SPT, Server starts, Launcher connects, game reaches main menu, each mod's loading confirmed via server log + BepInEx console output parsing) with Level C (raid smoke test) as optional manual deep verification. NOT for reactive failure diagnosis (use diagnosing-spt-problems), pre-install mod evaluation (evaluating-spt-mods), or defining batch boundaries/style (curating-spt-modpack).
 ---
 
 # Testing SPT Modpack Batches (judgment skill)

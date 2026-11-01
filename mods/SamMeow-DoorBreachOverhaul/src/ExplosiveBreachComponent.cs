@@ -12,7 +12,10 @@ using Systems.Effects;
 using UnityEngine;
 using UnityEngine.Networking;
 using DoorBreach.Patches;
+using DoorOverhaul.Destruction;
+using DoorOverhaul.Destruction.Core;
 using EFT.Ballistics;
+using NVector2 = System.Numerics.Vector2;
 
 namespace DoorBreach;
 
@@ -34,13 +37,19 @@ public class ExplosiveBreachComponent : MonoBehaviour
     internal static AudioClip beepClip;
     internal static AudioClip finalToneClip;
 
+    // 降级路径的单次告警标记（物品/模板/音频缺失时不刷屏）。
+    private static bool _inventoryErrorLogged;
+    private static bool _breachAngleErrorLogged;
+    private static bool _placementErrorLogged;
+    private static bool _effectsErrorLogged;
+
     private void Start()
     {
         // 初始化变量
         c4Instances = [];
         componentInstance = this;
         gameWorld = Singleton<GameWorld>.Instance;
-        player = gameWorld.MainPlayer;
+        player = gameWorld != null ? gameWorld.MainPlayer : null;
         _impactsGagRadius = new Vector2(1f, 3f);
         effectsInstance = Singleton<Effects>.Instance;
 
@@ -85,100 +94,168 @@ public class ExplosiveBreachComponent : MonoBehaviour
     }
     public static bool HasC4Explosives(Player player)
     {
-        // 在玩家物品中查找第一个 C4
-        Item foundItem = null;
-
-        foreach (var x in player.Inventory.GetPlayerItems(EPlayerItems.Equipment))
+        if (player?.Inventory == null)
         {
-            if (x.TemplateId != C4ExplosiveId)
-                continue;
-
-            foundItem = x;
-            break;
+            return false;
         }
 
-        return foundItem != null;
+        try
+        {
+            foreach (Item x in player.Inventory.GetPlayerItems(EPlayerItems.Equipment))
+            {
+                if (x.TemplateId == C4ExplosiveId)
+                {
+                    return true;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            LogOnce(ref _inventoryErrorLogged, $"[C4] 读取玩家装备栏失败（C4 菜单项将禁用）：{ex.Message}");
+        }
+
+        return false;
     }
 
     public static bool IsValidDoorState(Door door) =>
-        door.DoorState == EDoorState.Shut || door.DoorState == EDoorState.Locked || door.DoorState == EDoorState.Breaching;
+        door != null &&
+        (door.DoorState == EDoorState.Shut || door.DoorState == EDoorState.Locked || door.DoorState == EDoorState.Breaching);
 
-    public static void StartExplosiveBreach(Door door, Player player)
+    /// <summary>
+    /// 菜单门控（上游语义）：持有 C4 + 门状态合规 + 破门角度合规。
+    /// 任意一项失败都返回 true（禁用菜单项），不抛异常、不刷屏。
+    /// </summary>
+    public static bool IsPlantExplosiveDisabled(Door door, Player player)
     {
-        if (door == null ||
-            player == null)
+        if (door == null || player == null || !HasC4Explosives(player) || !IsValidDoorState(door))
         {
-            DoorBreachPlugin.Logger.LogError("[C4] 门或 Player 为 null，无法开始破门。");
-            return;
+            return true;
         }
 
-        TryPlaceC4OnDoor(door, player);
+        try
+        {
+            return !door.IsBreachAngle(player.Position);
+        }
+        catch (Exception ex)
+        {
+            LogOnce(ref _breachAngleErrorLogged, $"[C4] 破门角度判定失败（菜单项禁用）：{ex.Message}");
+            return true;
+        }
+    }
 
-        //RemoveItemFromPlayerInventory(player);
+    /// <summary>放置 C4 并启动倒计时；放置失败返回 false（调用方不得扣除物品 / 发包）。</summary>
+    public static bool StartExplosiveBreach(Door door, Player player)
+    {
+        if (door == null || player == null)
+        {
+            DoorBreachPlugin.Logger.LogError("[C4] 门或 Player 为 null，无法开始破门。");
+            return false;
+        }
+
+        if (!TryPlaceC4OnDoor(door, player))
+        {
+            return false;
+        }
+
+        if (gameWorld == null)
+        {
+            gameWorld = Singleton<GameWorld>.Instance;
+        }
+
+        if (gameWorld == null)
+        {
+            DoorBreachPlugin.Logger.LogError("[C4] GameWorld 不可用，无法启动倒计时。");
+            return false;
+        }
 
         // 确保持有 ExplosiveBreachComponent 引用
         if (componentInstance == null)
         {
             componentInstance = gameWorld.GetComponent<ExplosiveBreachComponent>();
             if (componentInstance == null)
+            {
                 componentInstance = gameWorld.gameObject.AddComponent<ExplosiveBreachComponent>();
+            }
         }
 
         // 为最近放置的 C4 启动协程
-        if (!c4Instances.Any())
-            return;
+        if (c4Instances == null || c4Instances.Count == 0)
+        {
+            return false;
+        }
 
         C4Instance latestC4Instance = c4Instances.Last();
         StartDelayedExplosionCoroutine(door, player, componentInstance, latestC4Instance);
+        return true;
     }
-    private static void TryPlaceC4OnDoor(Door door, Player player)
+    private static bool TryPlaceC4OnDoor(Door door, Player player)
     {
-        ItemFactory itemFactory = Singleton<ItemFactory>.Instance;
-        Item c4Item = itemFactory.CreateItem(MongoID.Generate(), C4ExplosiveId, null);
+        if (!Singleton<ItemFactory>.Instantiated)
+        {
+            LogOnce(ref _placementErrorLogged, "[C4] ItemFactory 未就绪（服务端组件/物品表未加载？），C4 无法放置。");
+            return false;
+        }
 
-        Transform lockTransform = door.transform.Find("Lock");
-        Transform doorHandleTransform = null;
+        if (gameWorld == null)
+        {
+            gameWorld = Singleton<GameWorld>.Instance;
+        }
 
+        if (gameWorld == null)
+        {
+            DoorBreachPlugin.Logger.LogError("[C4] GameWorld 不可用，C4 无法放置。");
+            return false;
+        }
+
+        if (c4Instances == null)
+        {
+            c4Instances = new List<C4Instance>();
+        }
+
+        Item c4Item;
         try
         {
-            // 安全访问 door.Handle
-            doorHandleTransform = door.Handle?.transform;
+            c4Item = Singleton<ItemFactory>.Instance.CreateItem(MongoID.Generate(), C4ExplosiveId, null);
         }
         catch (Exception ex)
         {
-            DoorBreachPlugin.Logger.LogError($"[C4] 访问门把手失败：{ex.Message}");
+            LogOnce(ref _placementErrorLogged, $"[C4] 创建 C4 物品失败（服务端组件缺失？）：{ex.Message}");
+            return false;
         }
 
-        Component lockComponent = door.gameObject.GetComponent("Lock");
+        if (c4Item == null)
+        {
+            LogOnce(ref _placementErrorLogged, "[C4] 创建 C4 物品返回 null（物品模板未注册？）。");
+            return false;
+        }
 
-        // 依可用组件决定目标 transform
-        Transform targetTransform;
+        // 锚定回退链（工单 07）：锁具 → 门把手 → 门中心。
+        Transform targetTransform = door.transform.Find("Lock");
+        string anchor = "Lock";
+        if (targetTransform == null)
+        {
+            try
+            {
+                targetTransform = door.Handle?.transform;
+            }
+            catch (Exception ex)
+            {
+                LogOnce(ref _placementErrorLogged, $"[C4] 访问门把手失败（回退门中心）：{ex.Message}");
+            }
 
-        if (lockTransform != null)
-        {
-            targetTransform = lockTransform;
+            anchor = "Handle";
         }
-        else if (doorHandleTransform != null)
+
+        if (targetTransform == null)
         {
-            targetTransform = doorHandleTransform;
-        }
-        else if (lockComponent != null && lockComponent.transform != null)
-        {
-            targetTransform = lockComponent.transform;
-        }
-        else
-        {
-            // 无 Lock 组件与门把手时，默认取门中心
-#if DEBUG
-            DoorBreachPlugin.Logger.LogInfo("[C4] 未找到 Lock 组件与门把手，默认使用门中心位置");
-#endif
             targetTransform = door.transform;
+            anchor = "Center";
         }
 
         if (targetTransform == null)
         {
             DoorBreachPlugin.Logger.LogError("[C4] 找不到适合放置 C4 的门位置。");
-            return;
+            return false;
         }
 
         Vector3 targetPosition = targetTransform.position;
@@ -188,7 +265,9 @@ public class ExplosiveBreachComponent : MonoBehaviour
         Vector3 doorToPlayer = playerPosition - targetPosition;
         doorToPlayer.y = 0;
 
-        Vector3 doorForward = doorToPlayer.normalized;
+        Vector3 doorForward = doorToPlayer.sqrMagnitude > 1e-6f
+            ? doorToPlayer.normalized
+            : door.transform.forward;
         float doorThickness = 0.07f; // 需要时调整厚度
         Vector3 c4Position = targetPosition + doorForward * doorThickness; // 略微前置
 
@@ -198,46 +277,58 @@ public class ExplosiveBreachComponent : MonoBehaviour
 
         // 在世界中放置 C4 物品
         LootItem lootItem = gameWorld.SetupItem(c4Item, player.InteractablePlayer, c4Position, rotation);
+        if (lootItem == null)
+        {
+            DoorBreachPlugin.Logger.LogError("[C4] SetupItem 返回 null，C4 未放置。");
+            return false;
+        }
+
         c4Instances.Add(new C4Instance(lootItem, c4Position));
+        DoorBreachPlugin.Logger.LogInfo($"[C4] 放置：{door.Id} anchor={anchor} pos={c4Position}");
+        return true;
     }
 
     public static void RemoveItemFromPlayerInventory(Player player)
     {
-        DoorBreachPlugin.Logger.LogInfo("[C4] RemoveItemFromPlayerInventory 被调用。");
-
-        if (player == null)
-            return;
-
-        IEnumerable<Item> items = player.Inventory.GetPlayerItems(EPlayerItems.Equipment);
-        Item foundItem = null;
-
-        foreach (var item in items)
+        if (player?.Inventory == null || player.InventoryController == null)
         {
-            if (item.TemplateId != C4ExplosiveId)
-                continue;
-
-            foundItem = item;
-            break;
-        }
-
-        InventoryController inventoryController = player.InventoryController;
-
-        DoorBreachPlugin.Logger.LogInfo($"[C4] 尝试从玩家背包移除 C4。Player ID: {player.ProfileId}");
-
-        if (foundItem == null)
-            return;
-
-        DoorBreachPlugin.Logger.LogInfo($"[C4] 正在移除 C4，ID：{foundItem?.Id}");
-
-        OperationResult discardResult = ItemManipulator.Discard(foundItem, inventoryController, true);
-
-        if (discardResult.Failed)
-        {
-            DoorBreachPlugin.Logger.LogError($"[C4] 无法移除物品：{discardResult.Error}");
             return;
         }
 
-        inventoryController.TryRunNetworkTransaction(discardResult);
+        try
+        {
+            Item foundItem = null;
+            foreach (Item item in player.Inventory.GetPlayerItems(EPlayerItems.Equipment))
+            {
+                if (item.TemplateId != C4ExplosiveId)
+                {
+                    continue;
+                }
+
+                foundItem = item;
+                break;
+            }
+
+            if (foundItem == null)
+            {
+                return;
+            }
+
+            DoorBreachPlugin.Logger.LogInfo($"[C4] 正在移除 C4，ID：{foundItem.Id}");
+
+            OperationResult discardResult = ItemManipulator.Discard(foundItem, player.InventoryController, true);
+            if (discardResult.Failed)
+            {
+                DoorBreachPlugin.Logger.LogError($"[C4] 无法移除物品：{discardResult.Error}");
+                return;
+            }
+
+            player.InventoryController.TryRunNetworkTransaction(discardResult);
+        }
+        catch (Exception ex)
+        {
+            DoorBreachPlugin.Logger.LogError($"[C4] 移除 C4 异常（物品保留在背包）：{ex.Message}");
+        }
     }
 
     private static void StartDelayedExplosionCoroutine(Door door, Player player, MonoBehaviour monoBehaviour, C4Instance c4Instance)
@@ -293,11 +384,12 @@ public class ExplosiveBreachComponent : MonoBehaviour
                 yield break;
             }
 
-            // 仅在音效不正确时切换 clip
+            // 仅在音效不正确时切换 clip；音频资源缺失（null）时静音运行
             AudioClip intendedClip = (waitTime - timer <= finalToneStart) ? finalToneClip : beepClip;
 
-            if (audioSource.clip != intendedClip ||
-                !audioSource.isPlaying)
+            if (intendedClip != null &&
+                (audioSource.clip != intendedClip ||
+                 !audioSource.isPlaying))
             {
                 audioSource.clip = intendedClip;
                 audioSource.Play();
@@ -335,92 +427,174 @@ public class ExplosiveBreachComponent : MonoBehaviour
         }
     }
 
+    private const float DetonationImpulse = 120f;
+
     private static void TriggerExplosion(Door door, Player player, C4Instance c4Instance)
     {
-        if (c4Instance.LootItem == null ||
-            c4Instance.LootItem.gameObject == null)
+        if (c4Instance?.LootItem == null || c4Instance.LootItem.gameObject == null)
+        {
             return;
+        }
 
-        effectsInstance.EmitGrenade("big_explosion",
-                                    c4Instance.LootItem.transform.position,
-                                    Vector3.forward);
+        Vector3 explosionPosition = c4Instance.LootItem.transform.position;
 
+        EmitExplosionEffect(explosionPosition);
         if (DoorBreachPlugin.explosionDoesDamage)
         {
-            float explosionRadius = DoorBreachPlugin.explosionRadius;
-            float baseDamage = DoorBreachPlugin.explosionDamage;
-            Vector3 explosionPosition = c4Instance.LootItem.transform.position;
+            ApplyExplosionDamage(explosionPosition);
+        }
 
-            Collider[] hitColliders = Physics.OverlapSphere(explosionPosition, explosionRadius);
+        // 先销毁 C4 本体（物品已消耗）
+        Destroy(c4Instance.LootItem.gameObject);
 
-            foreach (Collider hitCollider in hitColliders)
+        if (door != null && door.gameObject != null)
+        {
+            bool detonated = TryDetonateDoor(door, explosionPosition);
+            if (!detonated && player != null)
             {
-                Player tempplayer = hitCollider.GetComponentInParent<Player>();
-
-                if (tempplayer == null)
-                    continue;
-
-                float distance = Vector3.Distance(hitCollider.transform.position, explosionPosition);
-
-                if (!CheckLineOfSight(explosionPosition, hitCollider.transform.position))
-                    continue;
-
-                float damageMultiplier = Mathf.Clamp01(1 - distance / explosionRadius);
-                float damageAmount = baseDamage * damageMultiplier;
-
-                DamageInfo damageInfo = new DamageInfo
-                {
-                    DamageType = EDamageType.Explosion,
-                    Damage = damageAmount,
-                    Direction = (tempplayer.Transform.position - explosionPosition).normalized,
-                    HitPoint = tempplayer.Transform.position,
-                    HitNormal = -(tempplayer.Transform.position - explosionPosition).normalized,
-                    Player = null,
-                    Weapon = null,
-                    ArmorDamage = damageAmount * 0.5f,
-                };
-
-                tempplayer.ApplyDamageInfo(damageInfo, EBodyPart.Chest, EBodyPartColliderType.Pelvis, 0f);
+                // 不可破坏 / 未注册 / 破坏开关关闭：回退强制开门（上游 C4 永远有效语义）。
+                ApplyHit.OpenDoorIfNotAlreadyOpen(door, player, EInteractionType.Breach);
             }
+
+            DoorBreachPlugin.Logger.LogInfo(
+                $"[C4] 引爆：{door.Id} -> {(detonated ? "destruction" : "fallback-open")}");
         }
 
-        // 确认 C4 存在后销毁
-        if (c4Instance != null &&
-            c4Instance.LootItem != null)
-        {
-            Destroy(c4Instance.LootItem.gameObject);
-        }
-
-        // 确认门存在且未销毁后开门并销毁
-        if (door != null &&
-            door.gameObject != null)
-        {
-            ApplyHit.OpenDoorIfNotAlreadyOpen(door, player, EInteractionType.Breach);
-
-            // 删除门；相关玻璃的联动检查另行处理
-            Destroy(door.gameObject);
-        }
-
-        // 清理引用
         if (c4Instances.Contains(c4Instance))
         {
             c4Instances.Remove(c4Instance);
         }
     }
 
-    private static bool ExistsInGame(string id)
+    /// <summary>
+    /// C4 引爆接入 DO 破坏管线：整扇门板脱离（DoorTakeover 接管，门对象保留）。
+    /// 返回 false 时调用方回退强制开门；安全类/高危组开关关闭、物理不可行、破坏关闭都会走到回退。
+    /// </summary>
+    private static bool TryDetonateDoor(Door door, Vector3 explosionPosition)
     {
-        return gameWorld.FindItemById(id).Value != null;
+        if (!Settings.DestructionEnabled.Value || !Settings.ShowHoles.Value)
+        {
+            return false;
+        }
+
+        if (!DoorDestructionRegistry.TryGet(door, out DoorEntry entry) || !entry.Eligible || entry.Frame == null)
+        {
+            return false;
+        }
+
+        try
+        {
+            Vector3 center = entry.Frame.ToWorld(entry.LeafTransform, new NVector2(entry.Frame.Width * 0.5f, entry.Frame.Height * 0.5f));
+            Vector3 push = center - explosionPosition;
+            if (push.sqrMagnitude < 1e-6f)
+            {
+                push = entry.Frame.NormalWorld(entry.LeafTransform);
+            }
+
+            DoorDamageIntake.ApplyDetonation(entry, push.normalized * DetonationImpulse);
+            return entry.State != null && entry.State.Leaf == LeafStatus.Detached;
+        }
+        catch (Exception ex)
+        {
+            DoorBreachPlugin.Logger.LogError($"[C4] 破坏管线异常 {door.Id}: {ex}");
+            return false;
+        }
     }
 
-    private static bool CheckLineOfSight(Vector3 explosionPosition, Vector3 playerPosition)
+    private static void EmitExplosionEffect(Vector3 position)
     {
-        Vector3 direction = playerPosition - explosionPosition;
+        if (effectsInstance == null)
+        {
+            effectsInstance = Singleton<Effects>.Instance;
+        }
+
+        if (effectsInstance == null)
+        {
+            LogOnce(ref _effectsErrorLogged, "[C4] Effects 单例不可用，爆炸特效跳过。");
+            return;
+        }
+
+        effectsInstance.EmitGrenade("big_explosion", position, Vector3.forward);
+    }
+
+    private static void ApplyExplosionDamage(Vector3 explosionPosition)
+    {
+        float explosionRadius = DoorBreachPlugin.explosionRadius;
+        float baseDamage = DoorBreachPlugin.explosionDamage;
+        if (explosionRadius <= 0f || baseDamage <= 0f)
+        {
+            return;
+        }
+
+        Collider[] hitColliders = Physics.OverlapSphere(explosionPosition, explosionRadius);
+        var damaged = new HashSet<Player>();
+        foreach (Collider hitCollider in hitColliders)
+        {
+            Player target = hitCollider.GetComponentInParent<Player>();
+            if (target == null || !damaged.Add(target))
+            {
+                continue;
+            }
+
+            Vector3 targetPosition = target.Transform.position;
+            float distance = Vector3.Distance(targetPosition, explosionPosition);
+            if (distance > explosionRadius || !CheckLineOfSight(explosionPosition, targetPosition))
+            {
+                continue;
+            }
+
+            float damageAmount = baseDamage * Mathf.Clamp01(1f - distance / explosionRadius);
+            if (damageAmount <= 0f)
+            {
+                continue;
+            }
+
+            var damageInfo = new DamageInfo
+            {
+                DamageType = EDamageType.Explosion,
+                Damage = damageAmount,
+                Direction = (targetPosition - explosionPosition).normalized,
+                HitPoint = targetPosition,
+                HitNormal = -(targetPosition - explosionPosition).normalized,
+                Player = null,
+                Weapon = null,
+                ArmorDamage = damageAmount * 0.5f,
+            };
+
+            target.ApplyDamageInfo(damageInfo, EBodyPart.Chest, EBodyPartColliderType.Pelvis, 0f);
+        }
+    }
+
+    private static bool ExistsInGame(string id)
+    {
+        return gameWorld != null && gameWorld.FindItemById(id).Value != null;
+    }
+
+    private static bool CheckLineOfSight(Vector3 explosionPosition, Vector3 targetPosition)
+    {
+        Vector3 direction = targetPosition - explosionPosition;
+        if (direction.sqrMagnitude < 1e-6f)
+        {
+            return true;
+        }
+
         if (Physics.Raycast(explosionPosition, direction.normalized, out RaycastHit hit, direction.magnitude))
         {
-            return hit.collider.GetComponent<Player>() != null;
+            return hit.collider.GetComponent<Player>() != null || hit.collider.GetComponentInParent<Player>() != null;
         }
+
         return false;
+    }
+
+    private static void LogOnce(ref bool flag, string message)
+    {
+        if (flag)
+        {
+            return;
+        }
+
+        flag = true;
+        DoorBreachPlugin.Logger.LogWarning($"{message}（后续同类消息已抑制）");
     }
 
     public static void Enable()
